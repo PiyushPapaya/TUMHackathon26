@@ -1,6 +1,6 @@
 # Aditya
 
-- **GitHub:** @adityarawat1804
+- **GitHub:** @AdiAvocado
 - **Rolle:** Testing & Demo (+ Design-Support)
 - **Zuständig für:** `tests/`, `demo/`
 
