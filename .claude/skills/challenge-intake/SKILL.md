@@ -10,7 +10,7 @@ Ziel: In 20 Minuten von Brief zu Entscheidungsvorlage. Ergebnis landet in `docs/
 ## Eingaben lesen
 
 1. Den Brief **wörtlich** übernehmen (Kernsätze zitieren). Der EHL-KI-Reviewer misst Challenge-Alignment am Brief-Text.
-2. Vorbereitung lesen: `docs/wissen/SPONSOREN.md` (Fakten, 3 Ideen-Hypothesen, Fragen pro Partner) und `docs/wissen/VERGANGENE-PROJEKTE.md` (Winning Patterns).
+2. Vorbereitung lesen: `docs/wissen/SPONSOREN.md` (Fakten, 3 Ideen-Hypothesen, Fragen pro Partner), `docs/wissen/SCAFFOLD-PLAENE.md` (fertiger Bauplan pro Idee: Dateien, Endpunkte, Datenmodell, OpenAI-Baustein, Zahl, Demo in 5 Klicks) und `docs/wissen/VERGANGENE-PROJEKTE.md` (Winning Patterns).
 
 ## Schritte
 
@@ -21,7 +21,7 @@ Ziel: In 20 Minuten von Brief zu Entscheidungsvorlage. Ergebnis landet in `docs/
    `Review = (CQ·30+Arch·25+Align·25+Inn·20)/100`, `Gesamt = 0,6·Review + 0,2·Machbarkeit + 0,2·Demo`. Rechne mit Python nach, nicht im Kopf.
 5. **Die eine Zahl** pro Top-Idee: Metrik, Testset (wer labelt wie viele Fälle bis wann), Baseline.
 6. **MVP-Schnitt** für die Top-Idee: Must-have bis Sa 22:00 / Nice-to-have / bewusst NICHT.
-7. **API-Vertrag-Entwurf**: 2-4 Endpunkte mit Beispiel-Request/Response (geht an Piyush für `src/shared/API.md`).
+7. **API-Vertrag-Entwurf**: Passt eine Hypothese, den Scaffold-Plan aus `SCAFFOLD-PLAENE.md` als Startpunkt nehmen und an den Brief anpassen. Ergebnis: 2-4 Endpunkte mit Beispiel-Request/Response (geht an Piyush für `src/shared/API.md`).
 8. **Aufgabenverteilung** auf die 5 Rollen (Tabelle in `CLAUDE.md`), jede Aufgabe mit Deadline aus `docs/ZEITPLAN.md`.
 9. **Fragen an den Partner** für den Deep Dive (aus `SPONSOREN.md` + neue aus dem Brief), max. 5, die Antworten ändern unsere Entscheidung.
 

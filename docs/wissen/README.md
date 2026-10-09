@@ -12,6 +12,7 @@ Alles, was wir vor dem Event recherchiert haben. Die Kurzfassung steht in [`docs
 | [EHL-BEWERTUNG.md](EHL-BEWERTUNG.md) | Wie Abgabe, KI-Review, Entire-Check und Jury funktionieren, mit Codebelegen | alle, v. a. Piyush |
 | [VERGANGENE-PROJEKTE.md](VERGANGENE-PROJEKTE.md) | Alle Season-1-Ergebnisse, Winning und Losing Patterns | alle |
 | [SPONSOREN.md](SPONSOREN.md) | BMW, Atira, tacto: Fakten, je 3 Ideen mit Score, Fragen für den Deep Dive | Dennis, Piyush, Fabian |
+| [SCAFFOLD-PLAENE.md](SCAFFOLD-PLAENE.md) | Bauplan pro Idee: Dateien, Endpunkte, Datenmodell, OpenAI-Baustein, Zahl, Demo in 5 Klicks | Piyush, Lasse, Dennis |
 | [STACK.md](STACK.md) | Stack-Entscheidung, Scaffold-Befehle für Samstag, Hosting | Piyush, Lasse |
 | [OPENAI-UND-ENTIRE.md](OPENAI-UND-ENTIRE.md) | Credits, Modelle, Keys, Entire-Installation und Best Practices | alle |
 | [GLOSSAR.md](GLOSSAR.md) | Fachbegriffe einfach erklärt | Nicht-Coder |

@@ -43,7 +43,7 @@ Du brauchst ein Claude-Abo (Pro oder höher). Offizielle Anleitung: https://docs
 |---|---|
 | `irm https://claude.ai/install.ps1 \| iex` | `curl -fsSL https://claude.ai/install.sh \| bash` |
 
-**Windows:** Claude Code braucht Git for Windows (Schritt 2), denn unsere Hooks laufen über Git Bash.
+**Windows: Git for Windows ist bei uns Pflicht** (Schritt 2), obwohl die Claude-Doku es „optional“ nennt. Ohne Git for Windows nutzt Claude Code nur PowerShell, `sh` fehlt, und dann laufen **weder die Entire-Hooks noch der Git-Schutz** (beide sind `sh`-Befehle in `.claude/settings.json`). Mit Git for Windows darfst du Claude ganz normal aus PowerShell starten. Getestet am 09./10.10. auf Windows 11: Hooks laufen, Git-Schutz blockiert live. Findet Claude Git Bash nicht, in `%USERPROFILE%\.claude\settings.json` eintragen: `{"env": {"CLAUDE_CODE_GIT_BASH_PATH": "C:\\Program Files\\Git\\bin\\bash.exe"}}` (Quelle: code.claude.com/docs/en/setup).
 
 **Prüfen:** `claude --version`. Beim ersten Start `claude` mit deinem Claude-Account einloggen.
 

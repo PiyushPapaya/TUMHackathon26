@@ -20,12 +20,14 @@ Erkläre **vor jedem Git-Befehl in einem Satz**, was er tut. Nichts Destruktives
 8. **PR erstellen** mit Vorlage `.github/pull_request_template.md`:
    `gh pr create --base main --title "<Was>" --body-file <temp-datei>` (Body = ausgefüllte Vorlage: Was / Entscheidung + Warum / Wie verifiziert / Ordner / Checkliste). Reviewer `PiyushPapaya` hinzufügen (`--reviewer PiyushPapaya`), außer Piyush ist selbst Autor.
 9. **CI abwarten:** `gh pr checks <nr> --watch`. Rot → Fehler zeigen, erklären, beheben, neu pushen.
+10. **Merge-Fenster zeigen** (`docs/ZEITPLAN.md`): Sa jede volle Stunde 14-24 Uhr, So 08:00 / 09:00 / 10:00 / 10:30 (letzter). Aktuelle Uhrzeit holen (`date +%H:%M`, PowerShell `Get-Date -Format HH:mm`) und das nächste Fenster nennen. **5 Minuten vor dem Fenster** prüfen: CI grün und PR aktuell mit main (`gh pr view <nr> --json mergeStateStatus`; bei `BEHIND` Schritt 5 wiederholen und pushen). Wir holen main per Merge herein, nicht per Rebase.
 
 ## Ausgabe
 
 ```
 PR #<nr>: <Titel> → <Link>
 Checks: ✅/❌   Konflikte: keine/gelöst
+Nächstes Merge-Fenster: <hh:mm>. Bis dahin grün und aktuell halten.
 Nächster Schritt: Piyush reviewt und merged (nur er kann das).
 ```
 

@@ -87,7 +87,11 @@ flowchart LR
   G --> H[Branch wird automatisch gelöscht]
 ```
 
-## 8. Konflikt-Übung (aus der alten README, freiwillig am Freitagabend)
+## 8. Merge-Fenster
+
+Piyush merged **zur vollen Stunde**: Sa 14:00-24:00, So 08:00, 09:00, 10:00, **10:30 als letzter Merge**. Ein PR kommt nur rein, wenn er zum Fenster grün und aktuell mit main ist (`git merge origin/main`). Wer das Fenster verpasst, wartet aufs nächste. Der Skill `sync-und-pr` zeigt das nächste Fenster an. Fällt Piyush aus: Vertretungsmodus in `docs/ABGABE.md` (Notfall B).
+
+## 9. Konflikt-Übung (aus der alten README, freiwillig am Freitagabend)
 
 Ziel: einmal einen Merge-Konflikt erleben, bevor es ernst wird.
 

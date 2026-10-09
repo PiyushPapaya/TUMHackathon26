@@ -62,3 +62,41 @@ Felder laut Plattform: `project_name`, `short_description`, `fields` (Repo, Deck
 | „checkpoint data present but no captured prompts“ | Mit laufender Claude-Session eine kleine Änderung committen + pushen |
 | „temporarily unavailable or rate limited“ | Organisator-Problem: in 2 min erneut; Discord; **nichts am Repo ändern** |
 | Demo-URL tot | Backup-Video-Link ins Demo-Feld, im Pitch lokale Demo |
+
+## Notfall A: Wissen aus `main` auslagern (nur wenn nötig)
+
+**Warum normalerweise unnötig:** Jede neue Abgabe hat Revision ≥ 1 (`tum-ai/ehl` `supabase/migrations/00072_verified_submission_versions.sql:77`). Damit lädt die EHL den GitHub-Zipball des eingefrorenen Commits (`lib/code-review/ingest.ts:158`, `archive.ts:52`), und der beachtet `export-ignore` (getestet am 09.10.). Nur im Alt-Modus ohne SHA (Trees-API, `ingest.ts:164-169`) würden `docs/wissen` + `workspace` + `.claude` **43 % des Budgets** belegen.
+
+**Auslöser:** Der Report zeigt Doku-Dateien als gelesen, oder die Orga bestätigt, dass ohne Zipball gelesen wird. Dann So 11:00 (Piyush), Befehle am 10.10. in einem Wegwerf-Clone getestet:
+
+```bash
+git switch main && git pull
+git branch archiv/wissen && git push -u origin archiv/wissen      # alles bleibt im Archiv-Branch erhalten
+git switch -c piyush/wissen-auslagern
+git rm -r docs/wissen workspace .claude/skills .claude/agents
+git commit -m "Wissen nach archiv/wissen ausgelagert, weil die Review-KI sonst Doku statt Code liest"
+git push -u origin piyush/wissen-auslagern && gh pr create --base main --fill
+```
+
+Ergebnis im Test: Archiv enthält alle 10 Wissensdateien, `main` danach keine; Fallback-Budget Doku 28 %. Danach mergen (Bypass) und „Update Submission“.
+
+## Notfall B: Piyush fällt aus (Vertretung durch Lasse)
+
+**Warum vorher nötig:** Nur Piyush ist Admin. Fällt er unerreichbar aus, kann **niemand** die Regeln ändern. Persönliche Repos kennen keinen zweiten Admin und keine Bypass-Liste für Personen. Deshalb schaltet Piyush den Vertretungsmodus **vor** seiner Schlafschicht oder einer längeren Abwesenheit selbst an. Im Vertretungsmodus kann jedes Teammitglied einen PR mergen, sobald die CI grün ist. Absprache: **nur Lasse merged**.
+
+Vertretung **an** (nur Piyush, nicht vorab ausführen):
+
+```bash
+gh api -X PUT repos/PiyushPapaya/TUMHackathon26/rulesets/24814533 --input - <<'EOF'
+{"name":"main-nur-piyush-merged","target":"branch","enforcement":"active",
+ "conditions":{"ref_name":{"include":["~DEFAULT_BRANCH"],"exclude":[]}},
+ "bypass_actors":[{"actor_id":5,"actor_type":"RepositoryRole","bypass_mode":"always"}],
+ "rules":[{"type":"deletion"},{"type":"non_fast_forward"},
+  {"type":"pull_request","parameters":{"required_approving_review_count":0,"dismiss_stale_reviews_on_push":true,"require_code_owner_review":false,"require_last_push_approval":false,"required_review_thread_resolution":false,"allowed_merge_methods":["merge"]}},
+  {"type":"required_status_checks","parameters":{"strict_required_status_checks_policy":false,"do_not_enforce_on_create":false,"required_status_checks":[{"context":"checks","integration_id":15368}]}}]}
+EOF
+```
+
+Vertretung **aus** (zurück zum Normalzustand): derselbe Befehl, aber zusätzlich `{"type":"update","parameters":{"update_allows_fetch_and_merge":false}}` in `rules` und im `pull_request`-Teil `"required_approving_review_count":1,"require_code_owner_review":true`.
+
+Prüfen: `gh api repos/PiyushPapaya/TUMHackathon26/rules/branches/main --jq '[.[].type]'`. Normal: `update` ist enthalten, im Vertretungsmodus fehlt er.

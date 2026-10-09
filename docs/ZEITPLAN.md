@@ -47,6 +47,18 @@ Regel nachts: Nur kleine, getestete PRs. Piyush merged vor dem Schlafen alles Gr
 | 12:00 | Deadline (hart) · danach Pitches 12:00-14:30, 6 min/Team | | | | |
 | 14:30 | Finalisten · 16:30 Preisverleihung | | | | |
 
+## Merge-Fenster (Piyush ist der einzige Merger)
+
+| Tag | Fenster |
+|---|---|
+| Sa | **jede volle Stunde 14:00-24:00** (14, 15, … 23, 24 Uhr) |
+| Nacht | nur nach Absprache (Vertretungsmodus, `docs/ABGABE.md` Notfall B) |
+| So | **08:00, 09:00, 10:00, 10:30 (letzter Merge = Code-Freeze)** |
+
+- Zum Fenster muss der PR **grün** sein (CI `checks`) und **aktuell mit main** (`git merge origin/main`, kein Rebase).
+- PRs, die das Fenster verpassen oder rot sind, warten aufs nächste. Kein Hinterherrufen.
+- Warum: Ein Merger für 5 Leute wird sonst zum Engpass und muss ständig den Kontext wechseln. Feste Takte machen Merges planbar.
+
 ## Timeboxing-Regeln
 
 - Jede Aufgabe bekommt eine Zeitbox. **Nach 45 min festgefahren → Piyush/Team fragen**, nicht weiterbohren.
