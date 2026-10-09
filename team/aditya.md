@@ -1,8 +1,14 @@
 # Aditya
 
 - **GitHub:** @AdiAvocado
-- **Rolle:** Testing & Demo (+ Design-Support)
-- **Zuständig für:** `tests/`, `demo/`
+- **Rolle:** Daten, Testfälle & Evaluation, Demo-Daten, Backup-Video (+ Design-Support)
+- **Zuständig für (schreiben):** `tests/`, `demo/`
+- **Eigener Arbeitsbereich:** `workspace/aditya/` (Notizen, Prompts, Experimente; landet nicht im Abgabe-Snapshot)
+
+## Unser Produkt in 2 Sätzen
+
+<!-- Ab Sa 13:00 ausfüllen und auswendig können. Die Jury fragt JEDE Person. -->
+[Satz 1: Was macht es für wen?] [Satz 2: Warum ist das besser als heute?]
 
 ## Skills
 
@@ -13,7 +19,12 @@
 - **CS50 (Harvard, online):** Grundlagen der Informatik mit Fokus auf C
 - **API-Anbindung:** App mit KI-Chat über die OpenAI-API entwickelt
 
-## Was ich am Wochenende übernehme
+## Aufgaben am Wochenende
 
-<!-- Konkrete Aufgaben, die du dir vornimmst -->
-<!-- Wird nach dem Discord-Call am 09.10. ergänzt. -->
+- [ ] Sa 13:30 Partner-Daten sichten, 20-50 Testfälle labeln
+- [ ] Sa 18:00 erste Zahl gegen Baseline (Eval-Skript in `tests/`)
+- [ ] Demo-Daten + Cache in `demo/`
+- [ ] So 08:30 Backup-Video aufnehmen
+- [ ] So 10:30 Checks im Abgabe-Runbook mit Piyush
+
+Zeitplan: [`docs/ZEITPLAN.md`](../docs/ZEITPLAN.md)

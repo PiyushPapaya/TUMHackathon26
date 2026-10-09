@@ -1,13 +1,25 @@
 # Dennis
 
 - **GitHub:** @Di0n-0
-- **Rolle:** Product & Research (+ Python-Support im Backend)
-- **Zuständig für:** `docs/research/`
+- **Rolle:** Partner-Kontakt & Anforderungen, Research, README-Texte (+ Python-Support im Backend)
+- **Zuständig für (schreiben):** `docs/research/`, `docs/wissen/`
+- **Eigener Arbeitsbereich:** `workspace/dennis/` (Notizen, Prompts, Experimente; landet nicht im Abgabe-Snapshot)
+
+## Unser Produkt in 2 Sätzen
+
+<!-- Ab Sa 13:00 ausfüllen und auswendig können. Die Jury fragt JEDE Person. -->
+[Satz 1: Was macht es für wen?] [Satz 2: Warum ist das besser als heute?]
 
 ## Skills
 
-<!-- Was kannst du gut? z. B. Python, Design, Präsentieren, Recherche -->
+<!-- Was kannst du gut? -->
 
-## Was ich am Wochenende übernehme
+## Aufgaben am Wochenende
 
-<!-- Konkrete Aufgaben, die du dir vornimmst -->
+- [ ] Sa 10:00 Briefs wörtlich mitschreiben → `docs/research/CHALLENGE.md`
+- [ ] Sa 11:00 Skill `challenge-intake` pro Partner
+- [ ] Sa 12:00 Deep Dive: Fragen aus `docs/wissen/SPONSOREN.md` stellen
+- [ ] Mentoren und Cherry-Office-Hours nutzen
+- [ ] README-Texte und Formularfelder vorformulieren (Entwurf in `workspace/dennis/`)
+
+Zeitplan: [`docs/ZEITPLAN.md`](../docs/ZEITPLAN.md)
