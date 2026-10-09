@@ -1,0 +1,85 @@
+<pasted_content id="8b74">
+# Feinschliff-Runde (max. 60 Min, danach Stopp)
+
+PR #5 ist gemergt bzw. wird gemergt. Arbeite auf einem neuen Branch
+`piyush/feinschliff` und öffne am Ende EINEN PR. Nur Änderungen, die am
+Samstag messbar helfen. Keine neuen großen Dokus. Ownership-Sprache wie gehabt.
+
+## 1. Snapshot-Risiko klären (höchste Priorität)
+- Lies tum-ai/ehl lib/code-review/archive.ts + ingest.ts: Wird der GitHub-
+  Zipball geladen oder klont/packt EHL selbst? Zeig die exakten Zeilen.
+- Wenn EHL selbst packt (export-ignore wirkungslos): Rechne mit
+  scripts/ehl_budget.py OHNE export-ignore nach. Wenn docs/wissen + workspace
+  + .claude > 25 % des Budgets: Leg einen Plan in ABGABE.md an — So 11:00
+  `docs/wissen/` und `workspace/` per `git mv` in einen Branch `archiv/wissen`
+  auslagern und aus main entfernen, mit genauen Befehlen. Teste diese
+  Befehle jetzt auf einem Wegwerf-Branch.
+- Ergebnis als 3-Zeilen-Fazit in KURZFASSUNG.md.
+
+## 2. Regeln zu Vorab-Code endgültig klären
+- Suche auf ehl.gg, im ehl-Repo (Terms, FAQ, Seed-Daten), Luma/Bewerbungs-
+  seiten nach Regeln zu vorab erstelltem Code/Templates. Zitiere die Stelle.
+- Prüfe, ob unsere 9+ Commits vor dem Event (nur Doku/Tooling) im
+  Originalitäts-Check (git activity, boilerplate ratio) negativ auffallen
+  könnten. Falls ja: Gegenmaßnahme vorschlagen (z. B. README-Abschnitt
+  „Vor dem Event vorbereitet: nur Tooling, kein Produkt-Code“ mit Commit-
+  Hash-Grenze).
+
+## 3. Merge-Engpass entschärfen
+- Ich bin der einzige Merger. Ergänze ZEITPLAN.md + ZUSAMMENARBEIT.md um
+  feste Merge-Fenster (jede volle Stunde, Sa 14–24 Uhr; So 08, 09, 10, 10:30
+  letzter Merge). PRs, die das Fenster verpassen, warten aufs nächste.
+- Ergänze den Skill sync-und-pr: zeigt dem Mitglied das nächste Merge-
+  Fenster und stellt sicher, dass der PR vorher grün und rebased ist.
+- Dokumentiere in ABGABE.md einen Notfall-Ablauf, falls ich ausfalle
+  (wer bekommt temporär Bypass, genauer gh-Befehl zum Hinzufügen/Entfernen).
+  Nicht ausführen, nur dokumentieren.
+
+## 4. Teammitglieder-Test morgen früh vorbereiten
+- Erstelle docs/MORGEN-0800.md (max. 40 Zeilen), eine Checkliste pro Person
+  für Sa 07:30–09:30, Windows UND Mac:
+  Repo klonen → SETUP.md → `entire enable` → `entire status` → OpenAI-Key in
+  .env → Claude Code im Repo starten → Skill sitzung-start → eine Zeile in
+  workspace/<name>/notizen.md → Skill sync-und-pr → PR offen.
+  Jeder Schritt mit „So sieht Erfolg aus“ und „Wenn Fehler X → tue Y“.
+- Prüfe SETUP.md gegen die offiziellen Entire-Docs für Windows
+  (PowerShell-Install, PATH, Git-Bash vs. PowerShell bei Hooks). Teste, ob
+  .claude/settings.json-Hooks und git-schutz.sh unter Windows laufen
+  (bash verfügbar? Fallback?). Wenn nicht sicher: in SETUP.md eine klare
+  Anweisung „Claude Code in Git Bash starten“ o. ä.
+- Schreib eine fertige Gruppennachricht (WhatsApp, Deutsch, kurz, mit
+  Repo-Link, Link zu MORGEN-0800.md, Discord-Link, Check-in 09:00 Garching
+  U6 Forschungszentrum, Packliste in 5 Punkten). Gib sie mir am Ende im
+  Chat aus, nicht ins Repo.
+
+## 5. Erste 2 Stunden am Samstag vorbereiten
+- docs/SAMSTAG-START.md (max. 60 Zeilen): exakter Ablauf 10:00–13:00
+  - 10:00–11:00 Kick-off: wer notiert was (Brief jeder Challenge wörtlich
+    erfassen, Fotos von Slides, Bewertungskriterien, gegebene Daten/APIs).
+  - 11:00–11:30 Entire-Onboarding: wer hört zu, was abgleichen.
+  - 11:30–12:00 challenge-intake für alle 3 Challenges parallel.
+  - 12:00–13:00 Deep Dives: welches Mitglied geht in welchen Raum, mit den
+    5 vorbereiteten Fragen pro Partner aus docs/wissen.
+  - 12:50 Entscheidung (Kriterien + IDEEN-Score), 12:55 Captain wählt auf
+    ehl.gg (Voraussetzung: alle eingecheckt!).
+  - 13:00–14:00 API-Vertrag in src/shared + Aufgaben-Issues pro Person.
+- Für jede der Top-3-Ideen pro Partner (BMW, Atira, tacto): einen
+  fertigen „Scaffold-Plan“ als Abschnitt im Wiki/docs/wissen (Ordner,
+  Endpunkte, Datenmodell, welche OpenAI-API, welche Zahl wir messen,
+  Demo-Ablauf in 5 Klicks). KEIN Code committen.
+- Prüfe, dass der Skill challenge-intake diese Scaffold-Pläne nutzt.
+
+## 6. Demo- und Pitch-Absicherung
+- Ergänze demo/README.md: Backup-Plan (feste Testdaten, Offline-Modus /
+  gecachte LLM-Antworten falls WLAN/API ausfällt, aufgezeichnetes Video,
+  Screenshots). Erkläre, wie man LLM-Antworten für die Demo cacht.
+- PITCH.md: 6-Min-Slot hart takten (Sekunden pro Teil), Sprecher-Zuteilung
+  auf alle 5, „Was tun wenn die Demo hängt“-Satz.
+
+## 7. Verifikation & Abschluss
+- CI grün, Secret-Scan sauber, Link-Check, ehl_budget.py (beide Varianten
+  aus Punkt 1), Markdown-Länge der neuen Dateien eingehalten.
+- PR öffnen. Abschlussnachricht an mich: (a) Antwort zu Punkt 1 und 2 in je
+  2 Sätzen, (b) die WhatsApp-Nachricht, (c) was ich vor 09:00 noch tun muss,
+  (d) offene Risiken. Max. 25 Zeilen.
+</pasted_content id="8b74">

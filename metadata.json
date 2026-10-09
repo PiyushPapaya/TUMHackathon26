@@ -1,0 +1,36 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4HCV3F2XQ1DFQQ847773X3D",
+  "strategy": "manual-commit",
+  "branch": "piyush/feinschliff",
+  "checkpoints_count": 1,
+  "files_touched": [
+    ".claude/skills/challenge-intake/SKILL.md",
+    ".claude/skills/sync-und-pr/SKILL.md",
+    ".gitattributes",
+    "docs/ABGABE.md",
+    "docs/MORGEN-0800.md",
+    "docs/SAMSTAG-START.md",
+    "docs/SETUP.md",
+    "docs/ZEITPLAN.md",
+    "docs/ZUSAMMENARBEIT.md",
+    "docs/wissen/README.md",
+    "docs/wissen/SCAFFOLD-PLAENE.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 46,
+    "cache_creation_tokens": 50385,
+    "cache_read_tokens": 10378904,
+    "output_tokens": 24003,
+    "api_call_count": 23
+  }
+}
