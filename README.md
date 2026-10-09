@@ -47,7 +47,7 @@ Start-Befehle für Frontend und Backend ergänzen wir hier, sobald der Stack fes
 | Name | GitHub | Rolle | Zuständig für |
 |---|---|---|---|
 | Piyush | [@PiyushPapaya](https://github.com/PiyushPapaya) | Lead & Developer, merged PRs | alles, v. a. `src/backend/` |
-| Lasse | [@JoleEight](https://github.com/JoleEight) | Developer (App/Frontend), darf PRs freigeben | `src/frontend/` |
+| Lasse | [@JoleEight](https://github.com/JoleEight) | Developer (App/Frontend) | `src/frontend/` |
 | Aditya | [@adityarawat1804](https://github.com/adityarawat1804) | Testing & Demo (+ Design-Support) | `tests/`, `demo/` |
 | Dennis | [@Di0n-0](https://github.com/Di0n-0) | Product & Research (+ Python-Support im Backend) | `docs/research/` |
 | Fabian | [GitHub-Username folgt] | Pitch & Story, Design & Slides | `docs/pitch/`, `design/` |

@@ -1,7 +1,7 @@
 # Lasse
 
 - **GitHub:** @JoleEight
-- **Rolle:** Developer (App/Frontend), darf PRs freigeben
+- **Rolle:** Developer (App/Frontend)
 - **Zuständig für:** `src/frontend/`
 
 ## Skills

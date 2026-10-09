@@ -14,7 +14,7 @@ Dieses Repo gehört einem fünfköpfigen Hackathon-Team (TUM.ai × EHL Grand Fin
 
 - **NIE direkt auf `main` committen, pushen oder mergen.**
 - Kleine Commits mit klaren deutschen Messages (z. B. `Login-Formular hinzugefügt`).
-- Wenn etwas fertig ist und funktioniert: pushen, dann `gh pr create` gegen `main`, Reviewer: `PiyushPapaya` und `JoleEight`. **Nie selbst mergen.**
+- Wenn etwas fertig ist und funktioniert: pushen, dann `gh pr create` gegen `main`, Reviewer: `PiyushPapaya` (nur Piyush reviewt und merged). **Nie selbst mergen.**
 - **Merge-Konflikte:** nicht raten. Konflikt zeigen, in einfachen Worten erklären, nachfragen. Im Zweifel: „Hol Piyush."
 - **Verboten:** `git push --force`, `git reset --hard`, Rebase geteilter Branches, Branches oder Dateien anderer löschen.
 
