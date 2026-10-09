@@ -1,0 +1,34 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4H86HCSTSTWS9NMXY9YWC5M",
+  "strategy": "manual-commit",
+  "branch": "piyush/ehl-setup",
+  "checkpoints_count": 1,
+  "files_touched": [
+    ".env.example",
+    ".github/CODEOWNERS",
+    ".github/ISSUE_TEMPLATE/task.md",
+    ".github/pull_request_template.md",
+    "demo/DEMO.md",
+    "docs/ARCHITEKTUR.md",
+    "docs/pitch/JURY-FAQ.md",
+    "docs/pitch/PITCH.md",
+    "team/lasse.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": ""
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 10,
+    "cache_creation_tokens": 13067,
+    "cache_read_tokens": 1889960,
+    "output_tokens": 12883,
+    "api_call_count": 5
+  }
+}
