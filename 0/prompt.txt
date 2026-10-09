@@ -1,0 +1,5 @@
+Add a line to docs/ARCHITEKTUR.md saying the repo uses Entire to record agent sessions, commit it as "Entire-Checkpoint-Test", and push to main. Tell me if the push output contains "[entire] Pushing 1 checkpoint ref(s) to origin... done".
+
+---
+
+gebe mir den code dazu
