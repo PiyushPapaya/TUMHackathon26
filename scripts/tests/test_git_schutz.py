@@ -23,6 +23,9 @@ MUST_BLOCK = [
     "git push origin HEAD:main",
     "git push origin lasse/x:main",
     "git rebase main",
+    'git push "--force"',              # Flag in Anführungszeichen
+    "git push origin 'main'",          # Ziel in Anführungszeichen
+    'git commit -m "x" && git push -f',
 ]
 MUST_PASS = [
     "git push -u origin lasse/login",
@@ -37,8 +40,8 @@ MUST_PASS = [
 ]
 
 
-def run_hook(command: str) -> int:
-    payload = json.dumps({"tool_name": "Bash", "tool_input": {"command": command}})
+def run_hook(command: str, description: str = "") -> int:
+    payload = json.dumps({"tool_name": "Bash", "tool_input": {"command": command, "description": description}})
     return subprocess.run(["sh", HOOK], check=False, input=payload, text=True, capture_output=True).returncode
 
 
@@ -48,6 +51,10 @@ class GitSchutzTests(unittest.TestCase):
         for command in MUST_BLOCK:
             with self.subTest(command=command):
                 self.assertEqual(run_hook(command), 2)
+
+    def test_description_field_is_ignored(self):
+        # "main" steht nur in der Beschreibung, nicht im Befehl -> kein Fehlalarm
+        self.assertEqual(run_hook("git push -u origin lasse/x", "Push to GitHub, not to main"), 0)
 
     def test_safe_commands_pass(self):
         for command in MUST_PASS:
