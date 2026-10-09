@@ -10,7 +10,7 @@ Ausführlich und mit Quellen: [`docs/wissen/`](../wissen/README.md).
 - **Viel Doku und viele Commits gewinnen nicht.** binbusy hatte beides und keinen Platz.
 
 **Snapshot-Fazit (geprüft 10.10.):** Die EHL lädt bei jeder neuen Abgabe den **GitHub-Zipball** des eingefrorenen Commits (Revision ≥ 1 → `frozen_sha` → `archive.ts:52`), packt also nicht selbst.
-`export-ignore` wirkt deshalb (am eigenen Repo getestet). Doku belegt 11 % des Budgets; nur im Alt-Modus ohne SHA wären es 43 %.
+`export-ignore` wirkt deshalb (am eigenen Repo getestet). Doku belegt 12 % des Budgets; nur im Alt-Modus ohne SHA wären es 78 % (davon `docs/wissen` + `workspace` + `.claude` ≥ 43 %).
 Notfallplan zum Auslagern nach `archiv/wissen` steht getestet in `docs/ABGABE.md` (Notfall A), wird aber nicht gebraucht.
 
 ## 2. Abgabe: die 6 Fallen

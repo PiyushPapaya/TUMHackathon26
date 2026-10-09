@@ -18,8 +18,7 @@ Rollen: **P** Piyush · **L** Lasse · **A** Aditya · **D** Dennis · **F** Fab
 
 ## 11:00-11:30 Entire-Onboarding
 
-- **P + L hören zu.** Abgleichen mit `docs/wissen/OPENAI-UND-ENTIRE.md`: `commit_linking`, Ref-Format `refs/entire/checkpoints/…`, „signed“-Bonus, Anforderungen an die Abgabe. Abweichungen sofort in `workspace/piyush/notizen.md`.
-- D, A, F tippen ihre Brief-Notizen sauber ab.
+- **P + L hören zu** und gleichen mit `docs/wissen/OPENAI-UND-ENTIRE.md` ab (`commit_linking`, Ref-Format, „signed“-Bonus, Abgabe-Anforderungen); Abweichungen → `workspace/piyush/notizen.md`. D, A, F tippen ihre Brief-Notizen ab.
 
 ## 11:30-12:00 `challenge-intake` für alle 3 Challenges parallel
 
@@ -35,8 +34,7 @@ Rollen: **P** Piyush · **L** Lasse · **A** Aditya · **D** Dennis · **F** Fab
 | Favorit 2 | **L + F** | 5 Fragen; Demo-Erwartung und Nutzer klären |
 | Favorit 3 | **A** | 5 Fragen; Datenformat und Größe notieren |
 
-- Antworten live in die Gruppe: „Partner, Frage, Antwort, ändert das unsere Wahl? ja/nein“.
-- **12:45** alle treffen sich am Team-Tisch.
+- Antworten live in die Gruppe („Partner, Frage, Antwort, ändert das die Wahl?“). **12:45** alle am Team-Tisch.
 
 ## 12:50 Entscheidung (10 min, P moderiert)
 
