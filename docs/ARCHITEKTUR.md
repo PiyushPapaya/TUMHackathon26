@@ -26,7 +26,7 @@
 
 | Entscheidung | Warum? | Alternativen |
 |---|---|---|
-| | | |
+| Agent-Sessions werden mit Entire aufgezeichnet | Nachvollziehbar, wie KI-Agenten am Code mitgearbeitet haben (Checkpoints pro Commit) | Keine Aufzeichnung |
 
 ## Offene Punkte
 
