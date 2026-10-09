@@ -1,0 +1,27 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4HD154EWJ61XTXGWW7P77AP",
+  "strategy": "manual-commit",
+  "branch": "piyush/feinschliff",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/SAMSTAG-START.md",
+    "docs/research/KURZFASSUNG.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": ""
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 4,
+    "cache_creation_tokens": 4084,
+    "cache_read_tokens": 985947,
+    "output_tokens": 1745,
+    "api_call_count": 2
+  }
+}
