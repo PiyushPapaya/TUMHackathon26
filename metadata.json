@@ -1,0 +1,30 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4H7SK73NCYYXR2T59A1XQ8B",
+  "strategy": "manual-commit",
+  "branch": "piyush/ehl-setup",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/ABGABE.md",
+    "docs/ZEITPLAN.md",
+    "docs/research/CHALLENGE.md",
+    "docs/research/KURZFASSUNG.md",
+    "scripts/tests/test_git_schutz.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 14,
+    "cache_creation_tokens": 17286,
+    "cache_read_tokens": 2412361,
+    "output_tokens": 14861,
+    "api_call_count": 7
+  }
+}
