@@ -6,3 +6,5 @@
 
 ## Notizen
 
+
+- Simulationslauf 09.10.: Setup, Branch, Workspace-Änderung, PR (wird wieder geschlossen)
