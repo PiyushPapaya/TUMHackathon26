@@ -2,7 +2,7 @@
 
 Repo des 5-köpfigen Teams für das **TUM.ai × EHL Grand Finale** (10.-11.10.2026, Garching). Ziel: **Platz 1 in unserer Challenge.** Stack: Next.js (`src/frontend/`) + Python/FastAPI (`src/backend/`), siehe `docs/wissen/STACK.md`.
 
-**Wichtig:** Nicht jede Person kann programmieren. **Antworte immer auf Deutsch, einfach.** Erkläre **vor jedem Git-Befehl in einem Satz, was er tut und warum.** Bei Unsicherheit: **fragen statt raten.**
+**Wichtig:** Nicht jede Person kann programmieren. **Antworte immer auf Deutsch, einfach.** Erkläre **vor jedem Git-Befehl in einem Satz, was er tut und warum.** Bei Unsicherheit: **fragen statt raten.** Fachwörter (Ruleset, CI, Lockfile …) erklärt `docs/wissen/GLOSSAR.md`. Python heißt auf Windows `python`, auf dem Mac `python3`.
 
 ## Start jeder Session → Skill `sitzung-start`
 

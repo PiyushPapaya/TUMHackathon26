@@ -45,7 +45,7 @@ flowchart LR
 ```
 
 1. [Nutzer gibt … ein / lädt … hoch.]
-2. [Frontend sendet … an `POST /…` (Vertrag: [`src/shared/API.md`](src/shared/API.md)).]
+2. [Frontend sendet … an `POST /…` (Vertrag: `src/shared/API.md`, entsteht Sa 14:00).]
 3. [Backend lässt das Modell … als JSON extrahieren.]
 4. [Python prüft/rechnet …, weil …]
 5. [Ergebnis mit Begründung und Belegstelle wird angezeigt.]
