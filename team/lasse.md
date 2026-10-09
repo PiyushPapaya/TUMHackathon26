@@ -5,9 +5,16 @@
 - **Zuständig für:** `src/frontend/`
 
 ## Skills
-
-<!-- Was kannst du gut? z. B. Python, Design, Präsentieren, Recherche -->
+-**Coding** 
+    -*C#* main language | used for developing small games with the unity engine
+    -*java* small side projects | school
+    -*C* build and programmed a microcontroller for moving a car through an obstacle course
+    -*Dart* building some apps in flutter & firebase (e.g. for hosting polls)
+    -*python* coding challenges
+-**Art**
+    -*Blender* modelling, texturing, rigging, animating 3d models
+    -*Krita & Aseprite* drawing sprites for my games
 
 ## Was ich am Wochenende übernehme
 
-<!-- Konkrete Aufgaben, die du dir vornimmst -->
+-**Frontend**
