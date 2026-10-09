@@ -5,11 +5,18 @@
 # Claude Code ruft das Skript vor jedem Bash/PowerShell-Befehl auf und gibt den
 # Befehl als JSON auf stdin. Exit-Code 2 = blockieren, die Meldung sieht Claude.
 # Bewusst nur POSIX-sh (kein jq, kein Python), damit es auf Windows (Git Bash) und Mac läuft.
+#
+# WICHTIG: Das ist ein Komfort-Netz gegen VERSEHEN, keine Sicherheitsgrenze. Ein Muster-Filter
+# lässt sich immer umgehen. Die echte Durchsetzung macht GitHub serverseitig: Ruleset
+# "main-nur-piyush-merged" (kein Push/Merge auf main außer Piyush, kein force-push, kein Löschen).
 
-input=$(cat)
+raw=$(cat)
+# Inhalte in Anführungszeichen (z. B. Commit-Nachrichten) entfernen, damit eine Nachricht wie
+# "kein push --force" keinen Fehlalarm auslöst, Flags NACH der Nachricht aber erkannt werden.
+input=$(printf '%s' "$raw" | sed -e 's/\\"[^"\]*\\"//g' -e "s/'[^']*'//g")
 
 # Nur Git-Befehle prüfen; alles andere sofort durchlassen.
-case "$input" in
+case "$raw" in
   *git*) ;;
   *) exit 0 ;;
 esac
@@ -34,7 +41,7 @@ has 'git[^"&;|]*branch[^"&;|]*[[:space:]]-D([[:space:]]|"|$)' \
   && block "branch -D löscht einen Branch ohne Rückfrage."
 has 'git[^"&;|]*push[^"&;|]*(--delete|[[:space:]]:[^[:space:]"]+)' \
   && block "Branches auf GitHub löschen ist verboten (passiert automatisch nach dem Merge)."
-has 'git[^"&;|]*push[^"&;|]*[[:space:]](origin[[:space:]]+)?(HEAD:)?(refs/heads/)?main([[:space:]]|"|$)' \
+has 'git[^"&;|]*push[^"&;|]*([[:space:]](origin[[:space:]]+)?|:)(HEAD:)?(refs/heads/)?main([[:space:]]|"|$)' \
   && block "Direkt auf main pushen ist verboten. Nur über Pull Request, Piyush merged."
 if has 'git[^"&;|]*rebase' && ! has 'git[^"&;|]*rebase[^"&;|]*--(abort|continue)'; then
   block "Rebase schreibt Geschichte um. Wir holen main per 'git merge origin/main' herein."
