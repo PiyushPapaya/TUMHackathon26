@@ -1,0 +1,77 @@
+# CI: läuft bei jedem Pull Request und jedem Push auf main.
+# Warum EIN Job mit bedingten Schritten: Der Job-Name "checks" ist im Ruleset als
+# Pflicht-Check eingetragen. Er muss bei JEDEM PR laufen (auch reine Doku-PRs),
+# sonst wartet GitHub ewig auf einen Check, der nie kommt.
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # ─── Immer: Repo-Hygiene ────────────────────────────────────────────
+      - name: Secret-Scan (öffentliches Repo!)
+        run: python scripts/secret_scan.py
+
+      - name: Lint der Hilfsskripte (ruff)
+        run: |
+          pip install --quiet "ruff>=0.6,<1"
+          ruff check scripts
+
+      - name: Tests der Hilfsskripte
+        run: python -m unittest discover -s scripts/tests -v
+
+      - name: EHL-Review-Budget (Doku darf nicht mehr als 25 % belegen)
+        run: python scripts/ehl_budget.py --pruefen
+
+      # ─── Backend (wird aktiv, sobald requirements.txt existiert) ────────
+      - name: Backend installieren
+        if: hashFiles('requirements.txt') != ''
+        run: pip install --quiet -r requirements.txt
+
+      - name: Backend lint
+        if: hashFiles('src/backend/**/*.py') != ''
+        run: ruff check src/backend
+
+      - name: Backend-Tests (pytest)
+        if: hashFiles('tests/**/*.py') != ''
+        run: |
+          pip install --quiet pytest
+          python -m pytest tests -q
+
+      # ─── Frontend (wird aktiv, sobald src/frontend/package.json existiert)
+      - uses: actions/setup-node@v4
+        if: hashFiles('src/frontend/package.json') != ''
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: src/frontend/package-lock.json
+
+      - name: Frontend installieren, linten, bauen
+        if: hashFiles('src/frontend/package.json') != ''
+        working-directory: src/frontend
+        env:
+          # Build darf nicht an fehlenden Secrets scheitern; echte Keys nur lokal/Vercel.
+          NEXT_PUBLIC_API_URL: http://localhost:8000
+        run: |
+          npm ci
+          npm run lint --if-present
+          npm run build
