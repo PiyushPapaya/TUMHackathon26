@@ -1,0 +1,519 @@
+<pasted_content id="8b74">
+# MASTER-PROMPT – EHL Grand Finale 2026 (TUMHackathon26)
+
+> In eine **frische Claude-Code-Session** im Repo-Ordner einfügen
+> (`C:\Users\anil1\Downloads\Hackathon\TUMHackathon26`), damit Entire die Session aufzeichnet.
+
+---
+
+## 0. Mission
+
+Du bist Lead Engineer, Research-Analyst und Repo-Architekt für unser 5-köpfiges Team beim
+**TUM.ai × European Hackathon League (EHL) Grand Finale**, 10.–11. Oktober 2026,
+Science Congress Centre, Garching. Ziel: **Platz 1 in unserer Challenge.**
+
+Du hast drei Aufgaben:
+1. **Recherche:** gründlich, mit Quellen. Wie wird bewertet? Was wollen die Challenge-Partner? Was hat früher gewonnen?
+2. **Repo komplett und funktionsfähig aufbauen:**
+   - Piyush ist der einzige, der in `main` mergen kann.
+   - Jedes Mitglied hat einen eigenen Bereich.
+   - 5 Leute können parallel mit Claude Code arbeiten, ohne Konflikte.
+   - Die Wissensbasis ist so vollständig wie möglich.
+3. **Alles verifizieren:** Keine Behauptung ohne Beweis (Befehlsausgabe, Datei, URL).
+
+Am Samstag um 10:00 muss das Team nur noch das Produkt bauen. Tooling, Regeln, Checklisten
+und Wissen sind dann fertig und getestet.
+
+Arbeite **autonom bis zum Ende** und warte auf keine Freigabe zwischendurch. Piyush schläft
+eventuell. Halte nur an bei:
+- irreversiblen Aktionen, die hier nicht ausdrücklich erlaubt sind,
+- fehlenden Rechten,
+- Widersprüchen, die du nicht selbst auflösen kannst.
+
+Dann den Stand sichern und die offene Frage am Ende klar auflisten.
+
+Quellenregeln:
+- Primärquellen (Quellcode, offizielle Docs) schlagen Blogposts.
+- Jede Faktenaussage bekommt eine Quelle (URL oder `repo:datei:zeile`).
+- Nichts erfinden. Was du nicht verifizieren kannst, markierst du mit **UNBESTÄTIGT**.
+
+---
+
+## 1. Kontext: was wir sicher wissen
+
+### 1.1 Offizieller Event-Guide
+
+Quelle: https://tum-ai.notion.site/REDACTED
+
+**Rahmen**
+- 300+ Teilnehmende, Teams mit 3–5 Leuten, 3 Challenge-Tracks.
+- Hacking-Flächen: EG, 2. und 3. OG.
+- Kick-off und Closing im AudiMax (1. OG). Deep Dives in 3 Räumen im EG.
+
+**Partner**
+- **Challenge-Partner: BMW Group, Atira, tacto.**
+- **Tech-Partner: OpenAI** (75 USD API-Credits pro Person) und **Entire** (Pflicht-Tooling, Onboarding Sa 11:00–11:30).
+- Entire stellt **keine** Challenge.
+
+**Samstag**
+
+| Zeit | Programmpunkt |
+|---|---|
+| 09:00–10:00 | Check-in. Alle müssen eingecheckt sein, erst dann kann der Captain eine Challenge wählen. |
+| 10:00–11:00 | Kick-off und Challenge-Reveal |
+| 11:00–11:30 | Entire-Onboarding |
+| 12:00–13:00 | Challenge Deep Dives (parallel) |
+| **13:00** | **Challenge-Auswahl-Deadline**, Wahl auf https://ehl.gg (bis dahin änderbar) |
+| ab 13:30 | Hacking |
+| 15:00 | Talk: wie OpenAI Codex intern nutzt |
+| 16:00 | Fireside Chat mit Atira |
+| Nachmittag | Cherry-Ventures-Office-Hours (Victor, auch Juror) |
+| 19:00 | Dinner |
+| danach | Hacking die Nacht durch, Übernachten vor Ort erlaubt |
+
+**Sonntag**
+
+| Zeit | Programmpunkt |
+|---|---|
+| 08:00 | Frühstück |
+| **12:00** | **Abgabe-Deadline.** Mehrfache Abgabe möglich. **Abgaben ohne Entire werden nicht akzeptiert.** |
+| 12:00–14:30 | Challenge-Pitches, parallel pro Challenge: **strikt 6 Minuten pro Team inklusive Fragen** |
+| 14:30 | Finalisten-Bekanntgabe |
+| 15:30–16:30 | Main-Stage-Finale (nur eingeladene League-Finalisten) |
+| 16:30 | Preisverleihung |
+
+**Wertung**
+- Jede Challenge-Jury wählt ihre Top 3.
+- Alle Teams können eine Challenge gewinnen (1.500 € pro Challenge).
+- Den Gesamt-EHL-Titel (10.000 €) können nur die eingeladenen Top-15-League-Teams holen.
+- **Wir sind vermutlich keine League-Finalisten.** Unser Ziel ist Platz 1 in **einer** Challenge-Jury.
+- Side Quests: Meme (100 €) und Mystery (100 €).
+
+**Entire-Setup laut Guide**
+- Auf `main` `curl -fsSL https://entire.io/install.sh | bash` ausführen, dann `entire enable`.
+- Beim nächsten Commit erscheint `[entire] Pushing 1 checkpoint ref(s) to origin.... done`.
+
+**Kommunikation:** Discord https://discord.gg/4UDNd5TAg, Kontakt makeathon@tum-ai.com.
+
+### 1.2 Vorrecherche aus dem EHL-Quellcode
+
+Quelle: github.com/tum-ai/ehl. Alles hier **gegen den Code neu prüfen** und korrigieren, wo es falsch ist.
+
+**Platzierung**
+- Die Platzierung entscheiden menschliche Juroren.
+- `lib/actions/jury.ts` mittelt die Ränge über die Juroren; bei Gleichstand zählt die Vote-Anzahl.
+- `lib/scoring.ts` vergibt League-Punkte: 8/7/6/4/4 für die Top 5, 2 Punkte fürs Abgeben.
+
+**AI-Review** (`lib/code-review/prompts.ts`): ein Report Card, den die Juroren lesen.
+
+| Teil | Inhalt |
+|---|---|
+| A | Tech-Beschreibung |
+| B | Code-Qualität: readability, structure, error_handling, best_practices; Skala 1–10, 5 = ok, 7+ = beeindruckend |
+| C | 2–5 Highlights und 2–5 Concerns mit Datei/Zeile, dazu „would it run“ (yes / probably / unlikely / no) |
+| D | Originalität: Boilerplate-Anteil; Git-Aktivität normal / single_large_commit / minimal_history |
+| Koordinator | Gewichtung code_quality 30, architecture 25, challenge_alignment 25, innovation 20; dazu exakt 3 Stärken und 3 Schwächen |
+
+- Pro Challenge sind eigene Kriterien, Gewichte und Instruktionen möglich.
+
+**Entire-Session-Reviewer** (beratend, ändert die Platzierung nicht)
+
+| Kriterium | Gewicht |
+|---|---|
+| Ownership-Sprache („wir nehmen X, weil …“) | 35 |
+| technische Spezifität | 25 |
+| Iteration/Verifikation | 25 |
+| Edge Cases | 15 |
+
+- Er prüft auch, ob die Historie den Code plausibel erklärt.
+
+**Ingestion** (`ingest.ts`, `archive.ts`)
+- Zip-Snapshot bei Abgabe.
+- Dateien über 50 KB fliegen raus.
+- Reihenfolge: README und Manifeste zuerst, danach die **kleinsten Dateien zuerst**.
+- Budget etwa 50k Tokens (rund 200k Zeichen); lange Dateien werden nach 200 Zeilen gekappt.
+- `.claude/`, `docs/` und `.entire/` werden **nicht** ignoriert, Doku verdrängt also Code.
+- Flags: has_readme, has_dockerfile, has_tests; Frameworks werden aus `package.json` und `requirements.txt` erkannt.
+
+**Abgabe**
+- `ehl-gg` muss Collaborator im Repo sein.
+- Formularfelder: project_name, short_description, fields, tech_stack. Harte Sperre zur Deadline.
+
+**Weiteres**
+- Prompt-Injection wird als Anomalie geflaggt. **Niemals versuchen.**
+- Beispiel-Repo: github.com/CL1nu5/munich-ehl-2026. Messbares Ergebnis mit Konfidenzintervall, ehrliche Limits, reproduzierbare Pipeline.
+
+### 1.3 Unser Team
+
+- 5 Personen.
+- **Piyush** (GitHub `PiyushPapaya`) ist Team-Lead, Captain und einziger erfahrener Coder. Er besitzt das Repo.
+- Die anderen 4 programmieren nicht oder kaum, arbeiten aber alle mit Claude Code. Details stehen in `team/*.md` im Repo; dort Namen und GitHub-Handles nachlesen. Bekannt ist `JoleEight`.
+- Wahrscheinlich arbeiten die meisten unter Windows.
+- Das Repo ist **öffentlich**.
+
+**Aktueller Repo-Stand** (selbst prüfen):
+- deutsches Template: README mit Platzhaltern und Abschnitt „Konflikt-Übung“
+- CLAUDE.md
+- `docs/{ABGABE,ARCHITEKTUR,SETUP}.md`, `docs/pitch/{PITCH,JURY-FAQ}.md`, `docs/research/CHALLENGE.md`
+- `team/*.md`, PR-Template, CODEOWNERS
+- `src/frontend`, `src/backend`, `tests`, `demo` sind leer
+- Entire ist aktiviert
+- SETUP.md hat noch einen Platzhalter für den Entire-Install
+
+---
+
+## 2. Grundregeln für diese Session
+
+- **Sprache:**
+  - Alles für das Team auf Deutsch und in einfacher Sprache.
+  - Die README für Jury und Reviewer zweisprachig: Kurzfassung oben auf Englisch, Rest auf Deutsch. Zweisprachig deshalb, weil Sponsoren-Juroren nicht alle Deutsch sprechen.
+- **Git:**
+  - Arbeite auf dem Branch `piyush/ehl-setup`, abgezweigt von einem aktuellen `main`.
+  - Kleine Commits mit deutschen Commit-Messages, die das „Warum“ nennen.
+  - **Nie direkt auf `main` committen oder pushen.** Kein force-push, kein `reset --hard`.
+  - Am Ende **ein** PR nach `main`.
+- **Repo- und GitHub-Einstellungen** (Branch-Schutz, Rulesets, Merge-Methoden, Collaborators) darfst du per `gh` setzen. Vorher den Ist-Zustand ausgeben, danach den neuen Zustand anzeigen.
+- **Keine Geheimnisse committen:** keine `.env`-Dateien, keine lokalen Settings, keine Logs.
+- **Kein Produkt-Code vor dem Event.** Nur Tooling, Doku und Templates. Prüfe in der Recherche, ob vorher vorbereiteter Code erlaubt ist; im Zweifel nein.
+- **Laufzeit-Dependencies nur nach Rückfrage.** Dev-Tooling (ruff, pytest, prettier, eslint) ist okay mit Begründung.
+- **Ownership-Sprache:** Diese Session wird von Entire aufgezeichnet. Formuliere Entscheidungen mit Begründung: „Wir nehmen X, weil …; Y verworfen, weil …“.
+
+---
+
+## 3. PHASE 1 – Recherche
+
+Klone `tum-ai/ehl` in ein temporäres Verzeichnis **außerhalb** des Repos und lies den Code selbst.
+
+### 1a. Bewertung von Anfang bis Ende
+- Was sieht ein Juror pro Team genau? Lies `components/code-review/` und die Jury-Seiten.
+- Gibt es Jury-Kriterien außer dem AI-Report? Suche in Seeds, Migrations, Challenge-Daten und Admin-Seiten.
+- Welcher Commit wird reviewt, und wann wird der Snapshot gezogen?
+  - Ist es der Default-Branch?
+  - Wie wird das Zip erzeugt (GitHub-Zipball oder `git archive`)?
+  - **Respektiert es `.gitattributes export-ignore`?** Das ist entscheidend für Abschnitt 4.3.
+- Regeln zu vorab existierendem Code, Templates und KI-Nutzung: ehl.gg, FAQ, Bewerbungsseiten, Legal-Dateien.
+- Wie wird die Entire-Historie eingelesen?
+  - Welche Refs?
+  - Was bedeutet „signed“?
+  - **Was passiert mit Checkpoints bei Squash-Merge oder Rebase-Merge?** Lies dazu auch docs.entire.io. Das entscheidet die Merge-Methode in 4.1.
+- Entire unter Windows: der offizielle Installationsweg und die PATH-Falle.
+
+### 1b. Challenge-Partner: BMW Group, Atira, tacto
+Pro Partner recherchieren:
+- Geschäft, Produkt, APIs/SDKs, öffentliche Datensätze
+- frühere Hackathon-Challenges dieser Firma
+- wer vermutlich in der Jury sitzt und was diese Person persönlich interessiert
+- wahrscheinliche Challenge-Themen
+- welche Daten und Tools sie vor Ort vermutlich ausgeben
+
+Dann **3 Ideen-Hypothesen pro Partner**, jeweils mit:
+- Nutzer und Problem
+- 24h-MVP: Must-have vs. Nice-to-have
+- Architektur-Skizze
+- **die eine messbare Zahl**, die wir zeigen würden
+- Risiken
+- Score nach 30/25/25/20 plus Machbarkeit und Demo-Fähigkeit
+
+Außerdem **5 schlaue Fragen an den Partner** für den Deep Dive.
+
+### 1c. Tech-Partner OpenAI und Entire
+- Welche OpenAI-Modelle und APIs lohnen sich für 24h-Builds? Agents SDK, Responses API, Realtime, Embeddings, Structured Outputs, Codex.
+- Wie verbrauchen wir 75 USD pro Person sinnvoll? Wie verteilen wir API-Keys sicher im Team?
+- Was macht Entire genau, und welche Best Practices gibt es für Teams mit mehreren Agenten?
+
+### 1d. Vergangene EHL-Projekte (Season 1, Matches 1–4)
+Quellen: GitHub-Suche, ehl.gg-Leaderboard, LinkedIn/X/Instagram, Devpost, TUM.ai-Makeathon-Gewinner.
+
+Pro Projekt erfassen:
+- Match, Challenge, Platz
+- Idee in einem Satz
+- Stack und Architektur
+- Evaluation
+- Demo-Form
+- README-Qualität und Form der Commit-Historie
+
+Daraus ableiten: **10–15 Winning Patterns** und **5–10 Losing Patterns**, jeweils mit Belegen.
+
+### 1e. Stack-Entscheidung
+Vorläufiger Stack: Next.js (`src/frontend`) und FastAPI (`src/backend`). Prüfe gegen:
+- Setup-Zeit
+- „would it run“
+- Framework-Erkennung durch den Reviewer
+- **Eignung für Nicht-Coder mit Claude Code**
+- Live-Demo-Hosting (Vercel, Render o. ä.)
+
+Empfiehl einen Stack mit Begründung. Lege genaue Scaffold-Befehle für Samstag fest, aber scaffolde noch nichts.
+
+**Wohin mit der Recherche:** siehe 4.3. Ausführlich in die Wissensbasis, kompakt ins Repo.
+
+---
+
+## 4. PHASE 2 – Repo komplett aufbauen
+
+Zuerst **jede getrackte Datei auditieren** (`git ls-files`). Ergebnis als Tabelle:
+Datei → behalten / umschreiben / löschen / verschieben, plus Grund. Die Tabelle kommt in die PR-Beschreibung.
+
+### 4.1 Governance: nur Piyush merged nach `main`
+
+Per `gh api` ein **Ruleset** (oder Branch Protection) für `main` setzen:
+- PR ist Pflicht, kein direkter Push.
+- Mindestens 1 Approval.
+- **Review durch Code Owner ist Pflicht**, und CODEOWNERS ist `* @PiyushPapaya`.
+- Neue Commits machen alte Approvals ungültig.
+- Force-Push und Löschen sind verboten.
+- Status-Check der CI muss grün sein (sobald es die CI gibt).
+- Bypass nur für PiyushPapaya (für Notfälle und die Abgabe-Nacht).
+
+Wenn das Repo einem persönlichen Account gehört und „restrict who can merge“ dort nicht geht:
+- Mit Code-Owner-Pflicht absichern.
+- In CLAUDE.md festschreiben: **Nur Piyush klickt Merge.**
+- Die Lösung erklären.
+
+**Merge-Methode** nach Ergebnis von 1a einstellen. Wenn Squash die Entire-Checkpoints oder die Historie zerstört, Squash deaktivieren und nur „Merge commit“ (oder Rebase) erlauben. Begründen.
+
+Weitere Einstellungen:
+- „Automatically delete head branches“ an.
+- „Always suggest updating PR branches“ an.
+
+`ehl-gg` als Collaborator hinzufügen, wenn möglich. Sonst als Pflichtschritt in ABGABE.md.
+
+**Mit `gh api` verifizieren und die Ausgabe zeigen.** Testen: ein Push auf `main` von einem Nicht-Owner muss abgelehnt werden. Den Test simulieren oder dokumentieren.
+
+### 4.2 Ordnerstruktur und Ownership
+
+Zielstruktur (an den Stack aus 1e anpassen):
+
+```
+/
+├─ README.md               # Jury-Frontseite (EN-Kurzfassung + DE)
+├─ CLAUDE.md               # Betriebsanleitung für JEDE Claude-Session (<150 Zeilen)
+├─ .gitignore  .gitattributes  .env.example  Makefile|start-Skript (Skelett erst Sa)
+├─ .github/  CODEOWNERS  pull_request_template.md  workflows/ci.yml  ISSUE_TEMPLATE/task.md
+├─ .claude/  settings.json (geteilte Hooks)  skills/  agents/
+├─ src/
+│   ├─ frontend/           # Owner: <Rolle/Person>
+│   ├─ backend/            # Owner: Piyush
+│   └─ shared/             # Verträge: API-Schema/Typen — NUR via PR von Piyush
+├─ tests/
+├─ demo/                   # Testdaten, Demo-Skript, Backup-Video-Link
+├─ docs/  ARCHITEKTUR.md  SETUP.md  ABGABE.md  ZEITPLAN.md  ZUSAMMENARBEIT.md
+│   ├─ pitch/  PITCH.md  JURY-FAQ.md
+│   └─ research/  CHALLENGE.md  KURZFASSUNG.md
+├─ team/<name>.md          # Profil, Rolle, Aufgaben, „unser Produkt in 2 Sätzen“
+└─ workspace/<name>/       # PERSÖNLICHER Bereich jedes Mitglieds
+    ├─ README.md           # Was ich hier mache
+    ├─ notizen.md          # Notizen, Prompts, Recherche, Entwürfe
+    └─ experimente/        # Prototypen, Skripte, Screenshots
+```
+
+- **Jedes Mitglied bekommt `workspace/<name>/`.**
+  - Dort darf es alles tun, ohne Konflikte.
+  - Es wird nie von anderen angefasst.
+  - Ein PR, der nur den eigenen Workspace ändert, ist schnell mergebar.
+- **Ownership-Tabelle** in CLAUDE.md und `docs/ZUSAMMENARBEIT.md`: Person → Rolle → Ordner.
+- Rollen für Nicht-Coder klar definieren:
+  - Sponsor-Kontakt und Anforderungen
+  - Pitch und Story
+  - Demo-Video und Design
+  - Daten, Testfälle und Evaluation
+  - README und Slides
+  - Frontend-Seiten mit Claude Code
+- In CODEOWNERS: `* @PiyushPapaya`, zusätzlich pro Ordner die jeweilige Person als zweite Owner.
+
+### 4.3 Maximale Wissensbasis, ohne das Review-Budget zu verbrennen
+
+Piyush will **so viel Information wie möglich** im Repo. Löse den Konflikt mit dem Token-Budget so:
+- **Ausführliche Recherche:**
+  - In das **GitHub-Wiki** des Repos (eigenes Git-Repo `<repo>.wiki.git`, nicht im Zip-Snapshot). Seiten per Git pushen. Wenn das Wiki deaktiviert ist, per `gh` aktivieren.
+  - **Oder**, falls 1a bestätigt, dass `export-ignore` respektiert wird: unter `docs/wissen/` mit `export-ignore` in `.gitattributes`.
+  - Begründen, welche Variante du nimmst.
+- **Wiki- bzw. Wissensseiten:**
+  - EHL-Bewertung (alle Mechaniken)
+  - Vergangene Projekte und Patterns
+  - Sponsoren (BMW, Atira, tacto) mit allen Ideen-Hypothesen
+  - OpenAI und Entire
+  - Quellen
+  - Glossar für Nicht-Coder
+  - Git-Hilfe
+  - FAQ
+- **Im Repo selbst nur kompakt:** `docs/research/KURZFASSUNG.md` (höchstens 150 Zeilen) mit Links ins Wiki.
+- `workspace/*` und `team/*` ebenfalls per `export-ignore` (falls wirksam), oder klein halten.
+- Nachweis mit `scripts/ehl_budget.py` (siehe 4.7).
+
+### 4.4 Parallel mit Claude Code ohne Konflikte
+
+Dieses Regelwerk kommt in **CLAUDE.md** (Kurzform) und **docs/ZUSAMMENARBEIT.md** (ausführlich).
+
+**Session-Start** (Claude führt das bei jedem Mitglied automatisch aus):
+1. Name abfragen und `team/<name>.md` lesen.
+2. `git switch main && git pull`.
+3. Neuen Branch `<name>/<kurzes-thema>` anlegen.
+4. ARCHITEKTUR.md lesen.
+5. `entire status` prüfen.
+
+**Arbeitsregeln:**
+- **Nur im eigenen Ordner und eigenen Workspace arbeiten.** Fremde Ordner und `src/shared/` nur lesen. Änderungsbedarf dort als Issue oder PR-Kommentar an den Owner.
+- **Geteilte Dateien nur durch Piyush:** Lockfiles, Manifeste, CI, CLAUDE.md, `.claude/settings.json`, `src/shared/`, README.
+- **Neue Dependencies:** im PR beantragen, nicht selbst installieren.
+- **Kleine PRs**, mindestens alle 1–2 Stunden einer. Vor jedem PR `git pull --rebase origin main` (oder Merge von main), Konflikte erklären und **fragen**, nie selbst „wegräumen“.
+- **Verträge zuerst:** Piyush legt das API-Schema in `src/shared/` fest. Frontend und Backend bauen gegen Mocks.
+- Claude erklärt jeden Git-Befehl, bevor er ausgeführt wird. **Kein** `push --force`, kein `reset --hard`, kein Löschen fremder Branches.
+- **Prüfen vor „fertig“:** Lint, Tests, App startet. Das Ergebnis kommt in den PR.
+- **Ownership-Sprache** in Prompts, Commits und PRs, mit Beispielen gut und schlecht.
+- **Commit-Größe:** ein logischer Schritt pro Commit, Messages auf Deutsch mit „Warum“.
+
+**Entire bei allen:**
+- Jedes Mitglied macht nach dem Klonen `entire enable`, mit Windows- und macOS-Anleitung.
+- `.claude/settings.json` mit den Hooks ist committed.
+- `settings.local.json` steht in `.gitignore`.
+- Prüfen, dass die Hooks auf allen Betriebssystemen funktionieren.
+
+**Secrets:**
+- `.env.example` mit allen Variablen und Kommentaren.
+- Jede Person nutzt ihren eigenen OpenAI-Key (75 USD Credits) lokal in `.env`.
+- Wie man den Key bekommt, steht in SETUP.md.
+
+### 4.5 Dateien neu schreiben
+
+- **CLAUDE.md**, höchstens 150 Zeilen, damit es voll geladen bleibt. Inhalt:
+  - Session-Start
+  - Ownership-Tabelle
+  - Skill-Router (welcher Skill wofür)
+  - Git-Regeln
+  - Ownership-Sprache
+  - Verifikationspflicht
+  - Timeboxing
+  - Code-Freeze und Abgabe-Protokoll
+  - „bei Unsicherheit: fragen“
+- **README.md**, Jury-Frontseite:
+  - Name, One-Liner (EN), Challenge, Team, Demo-Link, Video-Link
+  - Problem, Lösung
+  - So funktioniert's: Mermaid-Diagramm und nummerierter Datenfluss
+  - Stack mit Begründung
+  - Quickstart in höchstens 3 getesteten Befehlen
+  - **Challenge-Alignment-Map:** Kriterium → Feature → Dateipfad
+  - **Evaluation/Ergebnisse:** Zahl, Messmethode, Limits
+  - Limits und nächste Schritte, Repo-Struktur, „Wie wir gebaut haben“ (Claude Code und Entire)
+  - Platzhalter klar markiert
+  - Die „Konflikt-Übung“ entfernen und nach ZUSAMMENARBEIT.md verschieben.
+- **docs/SETUP.md:**
+  - Komplette Ersteinrichtung für Windows **und** macOS: Git, gh (`gh auth login`), Node, Python, Claude Code, Entire.
+  - Für Entire den **offiziellen** Befehl aus der Recherche, `entire enable`, `entire status`, PATH-Hinweis.
+  - Repo klonen, `.env` anlegen, OpenAI-Key.
+  - **Troubleshooting-Tabelle** für typische Fehler.
+- **docs/ABGABE.md**, getaktetes Runbook mit Häkchen:
+  - **So 10:30** Code-Freeze.
+  - Secret-Scan, Fresh-Clone-Lauftest, README vollständig.
+  - Entire-Checkpoints für **alle** Mitglieder vorhanden.
+  - `ehl-gg` ist Collaborator.
+  - Formularfelder vorab ausformuliert.
+  - Backup-Demo-Video hochgeladen.
+  - **Abgabe bis 11:30**, mit 30 Minuten Puffer.
+- **docs/ZEITPLAN.md**, Stunde für Stunde Sa 09:00 bis So 12:00, pro Rolle:
+
+| Zeit | Meilenstein |
+|---|---|
+| Sa 11:30–13:00 | Ideen-Scoring; Sponsor-Fragen im Deep Dive |
+| **Sa 13:00** | Idee fix und Challenge auf ehl.gg gewählt |
+| Sa 14:00 | API-Vertrag steht |
+| Sa 18:00 | erster End-to-End-Durchstich |
+| Sa 22:00 | MVP läuft |
+| So 08:00 | Feature-Freeze |
+| So 10:00 | Pitch-Probe mit Stoppuhr |
+| So 10:30 | Code-Freeze |
+| So 11:30 | abgegeben |
+
+  Dazu Schlafschichten.
+- **docs/pitch/PITCH.md:**
+  - Struktur für **6 Minuten inklusive Fragen**: etwa 3:30 Pitch mit Live-Demo, 2:30 Q&A.
+  - Ablauf: Hook → Problem (mit Zahl) → Live-Demo des Kernflows → Ergebnis/Metrik → Tech in einem Satz → Ask.
+  - Demo-Ausfallplan: lokales Backup und Video.
+- **docs/pitch/JURY-FAQ.md:** 20 wahrscheinliche Fragen aus der Recherche mit Antwort-Gerüsten. Jedes Mitglied muss das Produkt in 2 Sätzen erklären können.
+- **docs/ARCHITEKTUR.md** und **docs/research/CHALLENGE.md:** scharfe Ausfüll-Templates.
+- **.github/pull_request_template.md:** Was / Entscheidung + Warum / Wie verifiziert / Screenshots / betroffene Ordner / Checkliste.
+- **ISSUE_TEMPLATE/task.md:** für Aufgaben mit Owner und Deadline.
+- **team/*.md:** Inhalte behalten, Struktur vereinheitlichen.
+- **.gitignore:** `.env*` (außer `.env.example`), `.claude/settings.local.json`, `.entire/logs/`, `.entire/metadata/`, `node_modules`, `.venv`, Build-Ordner, OS-Müll. Mit `git check-ignore -v` verifizieren.
+
+### 4.6 Claude-Code-Skills (`.claude/skills/<name>/SKILL.md`)
+
+Alle Skills auf Deutsch, mit präzisem Trigger, kurzen Schritten und klarem Output. Jeder höchstens etwa 60 Zeilen.
+- **sitzung-start:** führt das Session-Start-Ritual aus 4.4 aus und zeigt dem Mitglied seine Aufgaben.
+- **challenge-intake:**
+  - Sponsor-Brief rein → `CHALLENGE.md` füllen.
+  - Bewertungskriterien extrahieren.
+  - 3–5 Ideen bewerten (30/25/25/20 + Machbarkeit + Demo-Fähigkeit + Sponsor-Fit). Die Hypothesen aus dem Wiki einbeziehen.
+  - MVP-Schnitt, API-Vertrag-Entwurf, Aufgabenverteilung auf 5 Rollen.
+  - Fragen an den Sponsor.
+- **sync-und-pr:**
+  - Sicher pullen/rebasen, Konflikte erklären.
+  - Checks laufen lassen, PR mit Template erstellen, Reviewer PiyushPapaya.
+  - Alles erklärt, nichts destruktiv.
+- **selbstreview:**
+  - `ehl_budget.py` laufen lassen.
+  - Danach die EHL-Rubriken A–D und Koordinator mit den **exakten** JSON-Formen aus `prompts.ts` auf das Repo anwenden.
+  - Report Card plus priorisierte Fix-Liste. Alle paar Stunden nutzbar.
+- **demo-check:** Fresh-Clone in einen Temp-Ordner, README wörtlich befolgen, Hauptflow testen, Urteil zu „would it run“ plus Fixes.
+- **pitch-prep:** Pitch schärfen, Probe mit Zeitmessung, Mitglieder mit JURY-FAQ drillen.
+- **abgabe:** das ABGABE-Runbook Schritt für Schritt; bei jedem fehlgeschlagenen Check blockieren.
+
+Subagents nur, wo sie echten Mehrwert haben, z. B. ein read-only `ehl-reviewer` für den Selbstreview. Lieber wenige gute als viele.
+
+### 4.7 Skripte und CI
+
+- **scripts/ehl_budget.py** (nur Standardbibliothek):
+  - Bildet `ingest.ts` getreu nach: Endungen, ignorierte Ordner, Grenze bei 50 KB, Manifeste zuerst und dann die kleinsten Dateien, Kappung nach 200 Zeilen, Budget von 50k Tokens.
+  - Ausgabe: enthaltene Dateien, wo das Budget endet, **Anteil von `src/`**, Flags.
+  - Mit Test in `tests/`.
+- **scripts/secret_scan.py** oder ein dokumentierter gitleaks-Befehl.
+- **.github/workflows/ci.yml:** bei PRs Lint und Tests für den vorhandenen Stack. Muss auf dem jetzigen Stand grün sein und mit dem Code mitwachsen.
+- **Makefile oder `start`-Skript:** nur als Skelett und nur, wenn 1a vorab erstelltes Scaffolding erlaubt. Sonst die genauen Befehle in SETUP.md.
+
+---
+
+## 5. PHASE 3 – Alles verifizieren
+
+Für jeden Punkt gilt: Befehl und Ausgabe zeigen.
+
+1. `gh api` zeigt das Ruleset bzw. den Branch-Schutz, CODEOWNERS und die Merge-Methoden.
+2. `python scripts/ehl_budget.py` läuft. Docs, Skills und Workspaces belegen **weniger als 25 %** des Budgets. Wenn nicht, kürzen.
+3. Der Skill `selbstreview` läuft einmal auf dem Repo; die Report Card wird angehängt.
+4. Der Skill `demo-check` läuft auf dem aktuellen Stand.
+5. Die CI ist grün (lokal oder im PR).
+6. Secret-Scan ist sauber. `git status` und `git ls-files` zeigen keine `.env`, keine lokalen Settings, keine Entire-Logs.
+7. Das Wiki bzw. die Wissensseiten sind erreichbar und alle Links aus `KURZFASSUNG.md` funktionieren.
+8. Ein Simulationslauf für ein Nicht-Coder-Mitglied: frischer Clone → SETUP.md → `sitzung-start` → Änderung im eigenen Workspace → `sync-und-pr` → PR existiert, Merge ist nur durch Piyush möglich.
+9. README und CLAUDE.md einmal aus Sicht eines Nicht-Coders lesen und alles Unklare fixen.
+
+---
+
+## 6. Ergebnisse
+
+1. **Ein PR** `piyush/ehl-setup` → `main`. Die Beschreibung enthält:
+   - die Audit-Tabelle
+   - was geändert wurde und warum
+   - die GitHub-Einstellungen vorher und nachher
+   - die Budget-Zahlen
+   - den Selbstreview-Report
+   - die Quellen
+   - die offenen Entscheidungen
+2. **Das gefüllte Wiki bzw. die Wissensbasis.**
+3. **Abschlussnachricht an Piyush:**
+   - Dateiliste
+   - Top-10-Taktiken zum Gewinnen, gerankt
+   - Top-3-Ideen pro Partner
+   - **der Plan für die ersten 60 Minuten nach dem Challenge-Reveal**
+   - was jedes Teammitglied heute Abend und morgen früh noch selbst tun muss (Clone, Setup, `entire enable`, OpenAI-Key, Discord)
+   - alles, was UNBESTÄTIGT blieb
+   - offene Fragen
+</pasted_content id="8b74">
+
+---
+
+<task-notification>
+<task-id>bcamptk6x</task-id>
+<tool-use-id>toolu_01JRQxTZFdcYc9B6yZWBghYU</tool-use-id>
+<output-file>C:\Users\anil1\AppData\Local\Temp\claude\C--Users-anil1-Downloads-Hackathon-TUMHackathon26\359b6b33-bef3-4271-9e45-ce20d4c73ca0\tasks\bcamptk6x.output</output-file>
+<status>failed</status>
+<summary>Background command "Unset upstream and commit staged changes" failed with exit code 143</summary>
+</task-notification>
