@@ -1,18 +1,32 @@
-# Secrets
+# ─── Secrets (Repo ist ÖFFENTLICH, ein geleakter Key ist sofort weg) ─────
 .env
 .env.*
 !.env.example
+*.pem
+*.key
 
-# Node / Next.js
+# ─── Lokale Einstellungen von Claude Code und Entire ─────────────────────
+.claude/settings.local.json
+.entire/settings.local.json
+.entire/logs/
+.entire/metadata/
+.entire/tmp/
+
+# ─── Node / Next.js ──────────────────────────────────────────────────────
 node_modules/
 .next/
 out/
 dist/
 build/
-npm-debug.log*
+.turbo/
 .vercel/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tsbuildinfo
+next-env.d.ts
 
-# Python
+# ─── Python ──────────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 .venv/
@@ -20,9 +34,17 @@ venv/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.coverage
+htmlcov/
 
-# OS / Editor
+# ─── Logs und große Dateien (Demo-Videos gehören nach Drive, nicht ins Repo)
+*.log
+*.mp4
+*.mov
+
+# ─── Betriebssystem / Editor ─────────────────────────────────────────────
 .DS_Store
 Thumbs.db
+desktop.ini
 .idea/
 .vscode/
