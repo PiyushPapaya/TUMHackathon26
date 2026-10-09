@@ -1,0 +1,30 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4H6K2W1WXX8M0MMC7FGQ77V",
+  "strategy": "manual-commit",
+  "branch": "piyush/ehl-setup",
+  "checkpoints_count": 1,
+  "files_touched": [
+    ".github/workflows/ci.yml",
+    "scripts/ehl_budget.py",
+    "scripts/secret_scan.py",
+    "scripts/tests/test_ehl_budget.py",
+    "scripts/tests/test_secret_scan.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": ""
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 22,
+    "cache_creation_tokens": 21382,
+    "cache_read_tokens": 2680126,
+    "output_tokens": 16928,
+    "api_call_count": 11
+  }
+}
