@@ -9,6 +9,10 @@ Ausführlich und mit Quellen: [`docs/wissen/`](../wissen/README.md).
 - **Bei früheren Gewinnern** stand eine harte Zahl in den ersten Zeilen (z. B. „MRR = 1.000“, „Platz 1 von 17“), außerdem Vergleich gegen Alternativen, ehrliche Grenzen, eine Demo, die nie ausfällt, und ein Mermaid-Diagramm. → [VERGANGENE-PROJEKTE](../wissen/VERGANGENE-PROJEKTE.md#winning-patterns-mit-beleg)
 - **Viel Doku und viele Commits gewinnen nicht.** binbusy hatte beides und keinen Platz.
 
+**Snapshot-Fazit (geprüft 10.10.):** Die EHL lädt bei jeder neuen Abgabe den **GitHub-Zipball** des eingefrorenen Commits (Revision ≥ 1 → `frozen_sha` → `archive.ts:52`), packt also nicht selbst.
+`export-ignore` wirkt deshalb (am eigenen Repo getestet). Doku belegt 11 % des Budgets; nur im Alt-Modus ohne SHA wären es 43 %.
+Notfallplan zum Auslagern nach `archiv/wissen` steht getestet in `docs/ABGABE.md` (Notfall A), wird aber nicht gebraucht.
+
 ## 2. Abgabe: die 6 Fallen
 
 1. Bewertet wird **der Commit oben auf `main` beim Klick auf Submit**. Später gepushter Code zählt nur nach **„Update Submission“**. → [EHL-BEWERTUNG §2](../wissen/EHL-BEWERTUNG.md#2-die-abgabe-submit)
@@ -57,7 +61,7 @@ Wir nehmen **FastAPI (Python) + Next.js**, weil das Team Python kann, Daten/PDF 
 
 ## 7. Offene Punkte (UNBESTÄTIGT)
 
-- Ist vorab gescaffoldeter Code erlaubt? Regeln schweigen. Wir scaffolden erst Samstag.
+- Vorab-Code: Einzige Regel ist „Cheating, plagiarism, or any form of misconduct will result in disqualification“ (`tum-ai/ehl` `app/(public)/rules/page.tsx:373-375`). Wir scaffolden erst Samstag und markieren den Stand davor mit dem Tag `vor-event`.
 - Wer sitzt in welcher Jury? Welche BMW-Sparte stellt die Challenge?
 - Welche Abgabefelder verlangt jede Challenge genau (Deck, Demo-Link, Video)?
 - Kommen die OpenAI-Credit-Codes vorab per Mail oder vor Ort?

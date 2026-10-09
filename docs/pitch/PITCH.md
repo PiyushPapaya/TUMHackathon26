@@ -18,6 +18,26 @@
 
 Faustregel: **Wenn die Probe länger als 3:30 dauert, fliegt Inhalt raus, nicht Tempo rein.**
 
+### Harte Taktung (Sekunden, Summe 360)
+
+| Teil | Sek. | Sprecher | Übergabe-Satz |
+|---|---|---|---|
+| Hook | 20 | Fabian | „… genau das hat Dennis beim Partner gehört.“ |
+| Problem | 30 | Dennis | „Lasse zeigt euch, wie das mit uns aussieht.“ |
+| Demo | 100 | Lasse klickt, Piyush erzählt | „Wie gut ist das? Aditya.“ |
+| Ergebnis | 30 | Aditya | „Wie das technisch geht, in einem Satz: Piyush.“ |
+| Tech | 15 | Piyush | „Und was als Nächstes kommt: Fabian.“ |
+| Ask | 15 | Fabian | „Danke, wir freuen uns auf eure Fragen.“ |
+| **Fragen** | **150** | Partner/Nutzen: Dennis · Technik: Piyush · Zahl/Evaluation: Aditya · UI/Demo: Lasse · Vision/Team: Fabian | Bei 5:45 beendet Fabian höflich. |
+
+Zeitwächter: Aditya hält das Handy mit Stoppuhr hoch, bei 3:00 ein Finger und bei 3:30 die Faust (= sofort zum Ask).
+
+### Wenn die Demo hängt (auswendig, Piyush)
+
+> „Während das Netz nachdenkt, zeigen wir euch dieselbe Strecke aus unserer Aufnahme. Gleiche Eingabe, gleiche Ausgabe.“
+
+Dann sofort, **ohne zu debuggen**: nach 5 Sekunden ohne Reaktion → Offline-Modus-Tab (`DEMO_MODUS=true`) oder Backup-Video (Ebenen siehe `demo/README.md`). Nie länger als 10 Sekunden warten.
+
 ## Folien (maximal 6, als PDF exportieren, ist Pflichtfeld bei der Abgabe)
 
 1. Titel: Projektname, One-Liner, Team, Challenge

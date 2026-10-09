@@ -112,7 +112,10 @@ Ohne OpenAI-Key: `DEMO_MODUS=true` in `.env` nutzt gespeicherte Antworten aus `d
 - **5 Personen, 5 Claude-Code-Agenten parallel.** Jede Person arbeitet nur in ihrem Ordner und eigenem Branch; Regeln in [`CLAUDE.md`](CLAUDE.md) und [`docs/ZUSAMMENARBEIT.md`](docs/ZUSAMMENARBEIT.md).
 - **Entire** zeichnet alle Agent-Sessions auf; jeder Commit ist mit seinem Checkpoint verknüpft (`Entire-Checkpoint`-Trailer). Mit `entire why <datei>:<zeile>` sieht man, welcher Prompt eine Zeile erzeugt hat.
 - **Qualitätssicherung:** CI bei jedem PR (Secret-Scan, Tests, Lint), `main` geschützt (nur per PR, Review durch Code-Owner).
-- Vorbereitung vor dem Event: nur Tooling und Doku, Produkt-Code ab Samstag.
+
+### Vor dem Event vorbereitet: nur Tooling, kein Produkt-Code
+
+Alles bis zum Git-Tag [`vor-event`](https://github.com/PiyushPapaya/TUMHackathon26/tree/vor-event) (gesetzt Sa 10.10., 09:55, vor dem Challenge-Reveal) ist Team-Infrastruktur: Regeln für unsere Claude-Agenten, CI, Secret-Scan, Doku-Templates und Recherche. **Jede Zeile Produkt-Code in `src/`, `tests/` und `demo/` entstand nach dem Reveal.** Prüfen: `git diff --stat vor-event..main -- src tests demo`.
 
 ## Team
 
