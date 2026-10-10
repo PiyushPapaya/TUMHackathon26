@@ -113,55 +113,53 @@ export default function RequirementsPage() {
 
       {/* Mitte: Ergebnis-Fenster, 2cm Abstand zu Rand, Top-Bar und Prompt-Leiste */}
       <main className="m-[2cm] flex flex-1 flex-col">
-        <div className="flex-1 overflow-hidden rounded-lg border border-zinc-200 bg-surface backdrop-blur-sm dark:border-zinc-800">
-          <div className="h-full overflow-auto">
-            {error && (
-              <div className="m-4 rounded-md border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-800 dark:border-rose-800 dark:bg-rose-950 dark:text-rose-300">
-                {error}
-              </div>
-            )}
+        <div className="rounded-lg border border-zinc-200 bg-surface backdrop-blur-sm dark:border-zinc-800">
+          {error && (
+            <div className="m-4 rounded-md border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-800 dark:border-rose-800 dark:bg-rose-950 dark:text-rose-300">
+              {error}
+            </div>
+          )}
 
-            {!error && isLoading && <p className="p-4 text-sm text-zinc-500 dark:text-zinc-400">Loading…</p>}
+          {!error && isLoading && <p className="p-4 text-sm text-zinc-500 dark:text-zinc-400">Loading…</p>}
 
-            {!error && !isLoading && requirements !== null && requirements.length === 0 && (
-              <p className="p-4 text-sm text-zinc-500 dark:text-zinc-400">No requirements for this scenario yet.</p>
-            )}
+          {!error && !isLoading && requirements !== null && requirements.length === 0 && (
+            <p className="p-4 text-sm text-zinc-500 dark:text-zinc-400">No requirements for this scenario yet.</p>
+          )}
 
-            {!error && !isLoading && requirements !== null && requirements.length > 0 && (
-              <table className="w-full text-left text-sm">
-                <thead className="border-b border-zinc-200 bg-zinc-50 text-xs uppercase tracking-wide text-zinc-500 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
-                  <tr>
-                    <th className="px-4 py-3">Score</th>
-                    <th className="px-4 py-3">Title</th>
-                    <th className="px-4 py-3">Category</th>
+          {!error && !isLoading && requirements !== null && requirements.length > 0 && (
+            <table className="w-full text-left text-sm">
+              <thead className="border-b border-zinc-200 bg-zinc-50 text-xs uppercase tracking-wide text-zinc-500 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
+                <tr>
+                  <th className="px-4 py-3">Score</th>
+                  <th className="px-4 py-3">Title</th>
+                  <th className="px-4 py-3">Category</th>
+                </tr>
+              </thead>
+              <tbody>
+                {requirements.map((req) => (
+                  <tr
+                    key={req.id}
+                    role="link"
+                    tabIndex={0}
+                    onClick={() => router.push(`/requirements/${req.id}`)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        router.push(`/requirements/${req.id}`);
+                      }
+                    }}
+                    className="cursor-pointer border-b border-zinc-100 last:border-0 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none dark:border-zinc-800 dark:hover:bg-zinc-900 dark:focus:bg-zinc-900"
+                  >
+                    <td className="px-4 py-3">
+                      <ScoreBar score={req.score} />
+                    </td>
+                    <td className="px-4 py-3 font-medium text-[#0b1f3a] dark:text-zinc-100">{req.title}</td>
+                    <td className="px-4 py-3 text-zinc-700 dark:text-zinc-300">{categoryLabel(req.category)}</td>
                   </tr>
-                </thead>
-                <tbody>
-                  {requirements.map((req) => (
-                    <tr
-                      key={req.id}
-                      role="link"
-                      tabIndex={0}
-                      onClick={() => router.push(`/requirements/${req.id}`)}
-                      onKeyDown={(e) => {
-                        if (e.key === "Enter" || e.key === " ") {
-                          e.preventDefault();
-                          router.push(`/requirements/${req.id}`);
-                        }
-                      }}
-                      className="cursor-pointer border-b border-zinc-100 last:border-0 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none dark:border-zinc-800 dark:hover:bg-zinc-900 dark:focus:bg-zinc-900"
-                    >
-                      <td className="px-4 py-3">
-                        <ScoreBar score={req.score} />
-                      </td>
-                      <td className="px-4 py-3 font-medium text-[#0b1f3a] dark:text-zinc-100">{req.title}</td>
-                      <td className="px-4 py-3 text-zinc-700 dark:text-zinc-300">{categoryLabel(req.category)}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            )}
-          </div>
+                ))}
+              </tbody>
+            </table>
+          )}
         </div>
       </main>
 
