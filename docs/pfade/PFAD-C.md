@@ -86,7 +86,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - **Fertig, wenn:** Tests grün · über `http://localhost:8000/docs` eine Challenge auf Platz 1 schicken → sinnvolle Antwort · `sync` vor 22:00.
 - **Für die Demo:** Lasse zeigt 3 Vorschlagsfragen als Buttons („Is this only a US issue?“, „Is this just a habit of older customers?“, „What speaks against it?“). Lass sie vorab einmal laufen, damit sie im Cache sind.
 
-### [ ] C7 · Evidenzstufen kalibrieren (45 min, 22:00-23:00)
+### [x] C7 · Evidenzstufen kalibrieren (45 min, 22:00-23:00)
 - Prompt: „Ticket C7. Zeig mir die Verteilung A/B/C/D und die Nennungen pro Anforderung für G60-US. Passe die Schwellen in `evidence_level.py` so an, dass A wirklich stark ist (Richtwert: 2-4× A, mehrere B/C, Trends D). Begründe die Schwellen im Docstring mit den echten Zahlen.“
 - **Fertig, wenn:** Verteilung plausibel, Docstring begründet, Tests angepasst, `sync`. **Dann schlafen (Schicht 1, 23:30-03:30).**
 
