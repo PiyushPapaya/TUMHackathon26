@@ -36,10 +36,21 @@ def test_customer_pain_gewichtet_nach_art_und_nennungen():
     assert "40 mentions" in text["customer_pain"]
 
 
-def test_reach_ist_anteil_an_groesster_nennungszahl():
+def test_reach_ist_wurzel_aus_anteil_an_groesster_nennungszahl():
+    # Wurzel statt linear: Sonst drückt ein Ausreißer (581 Nennungen Lob) alle anderen auf fast 0.
     values, text = _run([_signal("S1", SignalKind.COMPLAINT, 25, [])], [], max_mentions=100)
-    assert values["reach"] == pytest.approx(0.25)
-    assert "US" in text["reach"] and "25 %" in text["reach"]
+    assert values["reach"] == pytest.approx(0.5)  # Wurzel aus 25/100
+    assert "US" in text["reach"] and "25 %" in text["reach"] and "square root" in text["reach"]
+
+
+def test_reach_kleine_themen_zaehlen_wieder():
+    values, _ = _run([_signal("S1", SignalKind.COMPLAINT, 7, [])], [], max_mentions=581)
+    assert values["reach"] > 0.1  # linear wären es nur 0,012
+
+
+def test_reach_ohne_nennungen_ist_null():
+    values, _ = _run([_signal("S1", SignalKind.COMPLAINT, 0, [])], [], max_mentions=0)
+    assert values["reach"] == 0
 
 
 def test_satisfaction_gap_us_negativanteil_durch_0_25():
