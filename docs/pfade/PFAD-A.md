@@ -74,7 +74,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 > `share_of_total_2030` = Volumen 2030 des Markts / Summe aller Märkte 2030. Test mit Mini-DataFrame.
 - **Fertig, wenn:** G60-US → `share_of_total_2030 ≈ 0.253`, `volume_2030 = 80000`.
 
-### [ ] A4 · Push + M1 (10 min, 17:20-17:30)
+### [x] A4 · Push + M1 (10 min, 17:20-17:30)
 - `sync`, dann Piyush im Chat: „A1-A3 auf main, bitte Stufe evidence laufen lassen.“
 - Du selbst: `python src/backend/pipeline.py --scenario G60-US --stage evidence` → `data/processed/G60-US/evidence.json` + `context.json`.
 
