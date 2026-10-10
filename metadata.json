@@ -3,8 +3,10 @@
   "checkpoint_id": "01M4JXECFB8FN31BPMKRNE611Z",
   "strategy": "manual-commit",
   "branch": "piyush/neustart",
-  "checkpoints_count": 1,
-  "files_touched": null,
+  "checkpoints_count": 2,
+  "files_touched": [
+    ".gitattributes"
+  ],
   "sessions": [
     {
       "metadata": "/0/metadata.json",
@@ -12,13 +14,20 @@
       "compact_transcript": "/0/transcript.jsonl",
       "content_hash": "/0/content_hash.txt",
       "prompt": "/0/prompt.txt"
+    },
+    {
+      "metadata": "/1/metadata.json",
+      "transcript": "/1/full.jsonl",
+      "compact_transcript": "/1/transcript.jsonl",
+      "content_hash": "/1/content_hash.txt",
+      "prompt": "/1/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 36,
-    "cache_creation_tokens": 37614,
-    "cache_read_tokens": 5315091,
-    "output_tokens": 18697,
-    "api_call_count": 18
+    "input_tokens": 72,
+    "cache_creation_tokens": 107974,
+    "cache_read_tokens": 6885772,
+    "output_tokens": 28806,
+    "api_call_count": 36
   }
 }
