@@ -30,7 +30,7 @@ def ask_json(system: str, user: str, schema: type[BaseModel], model: str | None 
 
     tools: z. B. [{"type": "web_search"}] für Pfad B (Webrecherche mit Quellen).
     """
-    model = model or os.getenv("OPENAI_MODEL", "gpt-5-mini")
+    model = model or os.getenv("OPENAI_MODEL") or "gpt-5-mini"  # leerer Wert in .env zählt als nicht gesetzt
     path = _cache_path(model, system, user + json.dumps(tools or []), schema.__name__)
     if path.exists():
         return schema.model_validate_json(path.read_text(encoding="utf-8"))
