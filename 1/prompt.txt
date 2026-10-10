@@ -1,0 +1,129 @@
+implemneetierde diesen plan in piyush-frintend barch: 
+
+<pasted_content id="bc1a">
+Plan saved to: ~\.claude\plans\okay-nown-i-wnat-spicy-swan.md · /plan to edit
+Plan: Signal2Spec im BMW-Look komplett neu bauen
+
+Context
+
+Das Cockpit (Next.js 16.4, React 19, Tailwind 4) ist funktional fertig, sieht aber wie ein Standard-Dashboard aus (slate/blau, Rundungen, Schatten). Ziel: eine Seite, die wie bmw.de wirkt (Screenshots: Vollbild-Hero, Hairline-Header mit Mega-Menü, Linien-Icons, Vollbild-Modellsektionen, graues Footer-Raster, „KI-generierte Inhalte“-Hinweis), dazu eine Scroll-Story, in der sich ein Auto beim Scrollen bewegt. Alle bestehenden Funktionen bleiben (Szenario-Wahl, Rangliste, Gewichte + Apply/Reset, Detail, Entscheidungen, Challenge, Audit, Overview, CSV-Export, Guide). Es ändert sich nur das Gesicht, nicht die Logik und nicht src/lib/api.ts.
+
+Entscheidungen des Users: neue Startseite / + Cockpit unter /cockpit · Auto-Bewegung per Google-Flow-Video als Scroll-Frame-Sequenz · UI Englisch · neue Pakete GSAP + Lenis erlaubt (Begründung kommt in die Commit-Nachricht).
+
+Wichtig vorab:
+- src/frontend/AGENTS.md: Next.js 16.4 hat Breaking Changes → vor dem Coden die passenden Seiten in node_modules/next/dist/docs/01-app/ lesen (Layouts, Routing, next/font, next/image).
+- Pfad D (src/frontend/) gehört Lasse. Das ist ein großer Umbau: Lasse vorher Bescheid geben, damit er parallel nichts anderes im Frontend ändert (sonst Merge-Konflikte).
+- Jede Datei unter ~200 Zeilen halten (app/page.tsx hat 370, DecisionPanel 248 → werden aufgeteilt).                                                                                                               Design-Konzept: „The car drives through the data“
+
+Leitidee: Ein Auto fährt beim Scrollen durch die Pipeline von Kundenstimme zu Anforderung. Jedes Kapitel der   Scroll-Story ist ein Schritt des Produkts mit echten Zahlen aus dem Backend (getScenarios → headline_numbers, zB. 3.755 Kundenstimmen · 47 Funde · 15 Anforderungen). Keine erfundenen Zahlen.
+
+BMW-Sprache (aus den Screenshots abgeleitet):                                                                  - Ton: viel Schwarz und Weiß, Fotografie statt Dekoration, 0 px Radius, 1 px Hairlines statt Schatten,
+  Überschriften hell (300), Satzfall, mit Punkt am Ende („Find your requirement.“).
+- Farben (Tokens in globals.css): --blue #1c69d4 (Primärknopf, Aktiv-Menü), --blue-hover #0653b6, --ink #262626,
+  --black #0a0a0b, --grey-100 #f6f6f6, --hairline #e6e6e6. Signatur-Detail: der dreifarbige „M-Strei#81c4ff, dunkelblau #16588e, rot #e22718) als 3 px-Linie unter dem Header und als Scroll-Fortschrittsbalken.
+- Schrift: BMW Type Next ist proprietär → next/font/google Hanken Grotesk (200–700), Fallback system-ui. Große  Hero-Zeile 200/300, Labels 600 klein.
+- Knöpfe: gefüllt blau („Open cockpit“), Outline weiß/schwarz („See how it works“), eckig, 52 px hoch.
+- Eigenes Logo statt BMW-Roundel: abgeleitete „Signal-Marke“ (Kreis mit zwei blauen Vierteln + Signalwelle) als
+  SVG, keine BMW-Logodateien, kein BMW-Fotomaterial. Footer-Hinweis: „Hackathon prototype for the TUM.ai × EHL BMW
+  challenge. BMW is a trademark of BMW AG.“- Cooler Bezug zum Produkt: der BMW-Streifen „KI-generierte Inhalte“ wird bei uns zum echten Feature-Hinweis     („AI-generated content: proposals are drafted by AI, every claim cites evidence IDs“).
+
+Seitenstruktur                                                                                                                                                                                                                /                     NEU  Cinematic-Startseite (Scroll-Story)/cockpit              bisher "/"  Rangliste + Gewichte (+ ?scenario=G60-US Deep-Link)                          /cockpit/overview ... bleibt bei /overview, /audit, /guide, /requirements/[id] (Pfade unverändert,
+                      nur "Zurück"-Links von "/" auf "/cockpit" umbiegen)                                                                                                               Startseite / (Scroll-Story)
+
+1. Preloader: dünne blaue Linie + Prozent, lädt Poster + Frames, dann Hero-Reveal.                             2. Hero (Vollbild, schwarz): erstes Frame/Poster, Signal2Spec. hell und groß, Unterzeile „From customer voice to
+   the next BMW.“, Knöpfe „Open cockpit“ (blau) und „See how it works“ (Outline), darunter graue Fußnote wie die   WLTP-Zeile, bei uns die echten Datenzahlen.                                                                 3. Gepinnte Scroll-Szene (~450 vh): Canvas mit Flow-Frames (Auto fährt von links nach rechts bzw. Kamera-Fahrt).
+   Vier Kapitel blenden per Scroll ein/aus, mit Zähler-Animation und einer SVG-Hairline-Route, die sich zeichnet:   01 Listen (Kundenstimmen) → 02 Find signals (Funde) → 03 Prove it (Evidenzstufen A–D) → 04 Decide              (Anforderungen, Rang 1–N).
+4. „Find your requirement.“: 4 Kacheln mit Linien-Icons wie im Screenshot (Ranked list · Evidence trail · What-if
+   weights · Audit trail), je ein Outline-Knopf.                                                               5. Vollbild-Szenario-Sektionen (wie iX5/i3): pro Szenario aus getScenarios ein Bild mit Parallax, Titel „The 5
+   Series (G60) in the US.“, Zahlenzeile, Knöpfe „Open in cockpit“ → /cockpit?scenario=… und „Discover“.
+6. Split-Sektion (wie Skateboard-Bild): Bild links, Text rechts „Every decision leaves a trail.“ + Links „Audit
+   trail ›“, „Guide ›“.                                                                              KI-Hinweisleiste + Footer (grau, 4 Spalten: Product · Cockpit · Docs · Team/Challenge, Legal-Zeile,   Social-Icons weglassen).                                                                                    - Schwebender Chat-Knopf unten rechts (wie bei BMW) öffnet die Guide-Seite als Seitenleiste. Kein erfundenes
+  KI-Chat-Feature.
+                                                                                                               Globale Hülle (alle Seiten)                                                                                    
+SiteHeader: Logo, Menüpunkte Cockpit · Overview · Audit trail · Guide, Mega-Menü „Scenarios“ (4 Spalten wie
+Screenshot 5; füllt sich aus getScenarios, Schnellaktionen Export CSV/JSON/MD), rechts Szenario-Wahl und ExportAuf der Startseite transparent über dem Hero, danach weiß mit 1 px Hairline; Aktiv-Punkt blau mit Unterstrich;
+Scrim dimmt die Seite beim offenen Menü. Tastatur: Pfeile/Esc/Tab, aria-expanded.
+
+Cockpit-Umbau (/cockpit) – gleiche Funktionen, neues Gesicht                                        
+- app/page.tsx (370 Zeilen) → app/cockpit/page.tsx + src/components/cockpit/: useCockpit.ts (gesamter State und API-Aufrufe unverändert übernommen), CockpitHero.tsx, RequirementsTable.tsx, WeightControls.tsx, DemoSteps.tsx.
+- Zeilen: große helle Rangzahl, Titel 300, dünne Score-Linie (Blau) statt dicker Balken, Evidenz-Badge als eckiges
+  Etikett, Hover = ganze Zeile --grey-100.- FLIP-Animation beim Apply: Zeilen gleiten animiert auf ihre neuen Plätze, Rangänderungen (RankDelta) zeigen ▲  mit Zahl. Heute gibt es nur eine 2-s-Hervorhebung → das ist der beste Demo-Moment für die Jury.
+- Regler im BMW-Stil (Hairline-Schiene, quadratischer Griff), Apply (blau) / Reset (Outline) / Demo-Begründung
+  bleiben; Apply bekommt Ladezustand und Toast („WEIGHTS_CHANGED recorded“).                                   - /overview, /audit, /requirements/[id], /guide: gleiche Komponenten (ScoreWaterfall, FindingCard, DecisionPaneAuditTrail, badges), nur mit neuen UI-Bausteinen und Tokens. Guide wird ins Englische übersetzt.
+
+Gemeinsame Bausteine src/components/ui/
+
+Button, Eyebrow, SectionHeading, HairlineCard, Badge, MStripe, Reveal (Scroll-Einblendung), Icon (8 selbst gezeichnete Linien-Icons als SVG). Das ersetzt die ~40-fach kopierten Tailwind-Klassenketten.
+
+Bewegung & Technik
+
+- Pakete: gsap (ScrollTrigger), lenis. Beide nur auf der Startseite, per dynamic import, damit das Cockpit leicht bleibt. Im Cockpit natives Scrollen (Datenwerkzeug).
+- CarScene.tsx: liest public/media/car/manifest.json (Frame-Anzahl, Pfad, Breite). Zeichnet das zum Scrollfortschritt passende WebP-Frame auf ein <canvas> (requestAnimationFrame, devicePixelRatio, object-fit: cover-Logik). Lädt Frames progressiv (erst jedes 4., dann auffüllen).
+- Fallback ohne Assets: fehlt das Manifest, zeigt die Szene ein dunkles Studio-Verlaufsbild mit animierten
+  SVG-Signallinien. Die Seite sieht also vor der Video-Lieferung schon gut aus und bricht nie.
+- Barrierefreiheit/Performance: prefers-reduced-motion → kein Pinning, kein Lenis, statisches Poster. Mobil (< 768px) weniger Frames (jedes 2.), kürzere Szene. Hero-Poster per next/image mit priority. Ziel LCP < 2,5 s, keinLayout-Sprung, Kontrast AA, sichtbarer Fokusring, lang="en".
+- Frame-Pipeline: scripts/make_frames.sh (ffmpeg): ffmpeg -i car.mp4 -vf "fps=24,scale=1600:-2" -c:v libwebp -quality 78 public/media/car/f_%04d.webp + Manifest. Ziel ≤ 8 MB gesamt (Repo ist öffentlich). Poster separat als JPG.
+                                                                                                             ogle-Flow-Prompts (Datei: visuals/flow-prompts.md, wird beim Umsetzen angelegt)                               
+Stil-Anker für alle Prompts (hinten anhängen): cinematic automotive commercial, anamorphic 35 mm, shallow depth of
+field, moody dusk light, wet asphalt reflections, deep blacks, restrained blue accent light, photoreal, no text, logos, no readable license plate. Auto immer als „fictional premium German electric sedan with a modern
+twin-kidney-inspired grille“ beschreiben (kein echter Markenname, damit Flow nicht ablehnt und es keine      rkenprobleme gibt).                                                                                           
+Videos (16:9, 1080p, 8 s, „Frames to Video“ mit Start- und Endbild, wo möglich):                             V1 Hero-Loop: Low tracking shot, a dark grey fictional premium electric sedan emerges slowly from a concrete  tunnel at dusk, headlights on, long shadows from pillars, volumetric light, slow push-in.
+- V2 Scroll-Drive (wichtigstes Video): Locked parallel tracking shot, the sedan drives left to right at constant
+  speed along a coastal mountain road at golden hour, strong motion blur on road and background, car sharp, one
+  continuous take, no cuts. Start-Bild: Auto am linken Rand · End-Bild: Auto am rechten Rand.
+- V3 Datenstadt: The sedan drives through a night city, long blue light trails, abstract glowing thin data lines     floating in the air, calm and precise.                                                                         - V4 Innenraum: Macro slow dolly across a modern car dashboard, large curved touch display, steering wheel,  ambient blue light. (passt zu den Top-Beschwerden: Touchscreens, Lüftung)                             
+Bilder (16:9, 2K): I1 Hero-Poster = erstes Frame von V1 · I2–I4 je ein Szenario-Bild (Limousine, Kompaktwagenerklasse; Studio im Nebel/Berglandschaft, Auto im Dreiviertel-Winkel) · I5 Split-Bild: Auto in herbstlicher   rglandschaft, zwei Menschen auf Longboards (Lifestyle) · I6 Open-Graph-Bild (1200×630, dunkel, Auto + vieleiraum links für Text).
+                                                                                                             lauf für den User: Bilder/Videos in Flow erzeugen → Dateien in werkstatt/<name>/media/ ablegen → ich lasse    ke_frames.sh laufen und binde alles ein.
+
+Umsetzung in Etappen (je Etappe ein Commit auf piyush-frontend, Skill sync)
+
+┌─────┬──────────────┬────────────────────────────────────────────────────────────────┬──────────────────────────┐ │  #  │    Etappe    │                             Inhalt                             │          Beleg           ├─────┼──────────────┼────────────────────────────────────────────────────────────────┼────────────────────│ 0   │ Vorbereitung │ Next-Docs lesen, npm i gsap lenis (Commit-Begründung), Lasse   │ npm run build gr│     │              │ informieren                                                    │                          │
+├─────┼──────────────┼────────────────────────────────────────────────────────────────┼──────────────────────────┤
+│ 1   │ Fundament    │ Tokens, Hanken Grotesk, ui/-Bausteine, MStripe, Icons          │ Lint + Build             │────┼──────────────┼────────────────────────────────────────────────────────────────┼──────────────────────────┤
+│ 2   │ Hülle        │ SiteHeader + Mega-Menü + Footer + Chat-Knopf, Route /cockpit   │ alle 5 Routen HTTP 20    │              │ anlegen, Links umbiegen                                        │                         ────┼──────────────┼────────────────────────────────────────────────────────────────┼──────────────────────────┤3   │ Cockpit      │ Aufteilen, Reskin, FLIP-Animation, Deep-Link ?scenario=        │ Funktions-Checkliste     │
+│     │              │                                                                │ (unten)              ────┼──────────────┼────────────────────────────────────────────────────────────────┼─────────────────────────4   │ Unterseiten  │ Overview, Audit, Detail, Guide (EN) im neuen Stil              │ Playwright-Screenshots   │
+├─────┼──────────────┼────────────────────────────────────────────────────────────────┼──────────────────────────┤
+│ 5   │ Startseite   │ Preloader, Hero, CarScene mit Fallback, Kapitel, Kacheln,      │ Scroll-Test per          │
+│     │              │ Szenario-Sektionen, Split, KI-Leiste                           │ Playwright               │
+├─────┼──────────────┼────────────────────────────────────────────────────────────────┼──────────────────────────┤ │ 6   │ Medien       │ visuals/flow-prompts.md, make_frames.sh, Manifest, echte       │ Frames laden, ≤ 8 MB     │     │              │ Assets einbinden (sobald geliefert)                            │                    ├─────┼──────────────┼────────────────────────────────────────────────────────────────┼─────────────────│ 7   │ Feinschliff  │ A11y, Reduced-Motion, Mobil 375/768/1440, Performance,         │ Checkliste               │
+│     │              │ Open-Graph                                                     │                          │
+├─────┼──────────────┼────────────────────────────────────────────────────────────────┼──────────────────────────┤
+│     │              │ docs/ARCHITEKTUR.md (Frontend-Komponenten,                     │                        8   │ Doku         │ Designentscheidungen), Demo-Ablauf in docs/pitch/PITCH.md,     │ Diff                     │
+│     │              │ AGENTS.md unverändert mitcommitten                             │                          ────┴──────────────┴────────────────────────────────────────────────────────────────┴─────────────────────────
+Wiederverwendet (nicht neu schreiben): gesamte src/lib/api.ts (unverändert), useEffect-/State-Logik aus      p/page.tsx (nach useCockpit.ts verschoben), ScoreWaterfall, FindingCard, DecisionPanel-Logik, badges.tsx-MappiVIDENCE_STYLE, Statuslabels), scenarioLabel, getExportUrl. ShaderBackground/ThemeToggle sind aktuell von keinerute genutzt → bleiben unangetastet (kein Dark-Mode im ersten Wurf, BMW-Seite ist hell mit dunklen
+Hero-Flächen).                                                                                               
+Verifikation (vor jedem Push, laut CLAUDE.md)                                                                                                                                                                               cd src/frontend && npm run lint && npm run build grün; python -m ruff check src/backend tests, python -m pytest
+   -q (Backend darf nicht berührt sein), python scripts/secret_scan.py.
+2. Backend localhost:8000 + npm run dev, dann im Browser (Playwright-MCP) bei 1440, 768, 375 px Screenshots von /,
+   /cockpit, /overview, /audit, /guide, /requirements/<id>.
+3. Funktions-Checkliste Cockpit (nichts darf fehlen): Szenario wechseln · Tabelle zeigt                               Rang/Titel/Score/Evidenz/Kategorie/Status/Konflikt · Zeilenklick öffnet Detail · Regler bewegen → Apply →        Rangliste ändert sich, Audit zeigt WEIGHTS_CHANGED · Reset setzt Regler zurück · Demo-Begründung · Detai   Approve/Reject/Edit/Challenge, Belege, Score-Waterfall, Audit je Anforderung · Export-CSV-Link öffnet   · Overview (Funnel, Top, Evidenzstufen, Workflow, Warnungen) · Audit-Seite.
+4. Scroll-Test Startseite: per Playwright window.scrollTo an 0 %, 25 %, 50 %, 75 %, 100 % der Szene, Screenshot
+   jeweils; Canvas-Frame-Index ändert sich; mit prefers-reduced-motion emuliert → statisches Poster; ohne Manifest
+   → Fallback-Szene ohne Konsolenfehler.                                                                        Konsole ohne Fehler, kein horizontales Scrollen bei 375 px, Tab-Navigation durch Header/Mega-Menü funktioniert,
+   Kontrast der Texte auf Hero ≥ 4,5:1.                                                                                                                                                                                        siken
+                                                                                                                 Merge-Konflikte mit Lasse (Pfad D, 14+ Dateien betroffen): vorher absprechen, Branch piyush-frontend nicht nach
+  main mergen, bevor er zugestimmt hat. Rückfrage vor dem Merge.                                             Flow-Videos zu schwer/ruckelig: Frame-Zahl und Breite einstellbar (Manifest), Fallback vorhanden.             Marken: nur eigenes Logo, keine BMW-Assets, Hinweistext im Footer. Jury-Review liest Code → Kommentare erklären
+  das WARUM (Ownership-Regel).Umfang: Wackelt die Zeit, kürzen wir zuerst Mega-Menü-Spalten, Preloader und Split-Sektion, nie die
+  Cockpit-Funktionen.                                                                                         /cockpit, /overview, /audit, /guide, /requirements/<id>.
+3. Funktions-Checkliste Cockpit (nichts darf fehlen): Szenario wechseln · Tabelle zeigt Rang/Titel/Score/Evidenz/Kategorie/Status/Konflikt · Zeilenklick öffnet Detail · Regler bewegen → Apply → Rangliste ändert sich, Audit zeigt WEIGHTS_CHANGED · Reset setzt Regler zurück · Demo-Begründung · Detail: Approve/Reject/Edit/Challenge, Belege, Score-Waterfall, Audit je Anforderung · Export-CSV-Link öffnet Download · Overview (Funnel, Top, Evidenzstufen, Workflow, Warnungen) · Audit-Seite.
+4. Scroll-Test Startseite: per Playwright window.scrollTo an 0 %, 25 %, 50 %, 75 %, 100 % der Szene, Screenshot jeweils; Canvas-Frame-Index ändert sich; mit prefers-reduced-motion emuliert → statisches Poster; ohne Manifest → Fallback-Szene ohne Konsolenfehler.
+5. Konsole ohne Fehler, kein horizontales Scrollen bei 375 px, Tab-Navigation durch Header/Mega-Menü funktioniert, Kontrast der Texte auf Hero ≥ 4,5:1.
+
+Risiken
+
+- Merge-Konflikte mit Lasse (Pfad D, 14+ Dateien betroffen): vorher absprechen, Branch piyush-frontend nicht nach main mergen, bevor er zugestimmt hat. Rückfrage vor dem Merge.
+- Flow-Videos zu schwer/ruckelig: Frame-Zahl und Breite einstellbar (Manifest), Fallback vorhanden.
+- Marken: nur eigenes Logo, keine BMW-Assets, Hinweistext im Footer. Jury-Review liest Code → Kommentare erklären das WARUM (Ownership-Regel).
+- Umfang: Wackelt die Zeit, kürzen wir zuerst Mega-Menü-Spalten, Preloader und Split-Sektion, nie die Cockpit-Funktionen.
+</pasted_content id="bc1a">
+
+---
+
+<task-notification>
+<task-id>bua3f2us6</task-id>
+<tool-use-id>toolu_014x6iQ7cRf6uCQGxbNP3h2o</tool-use-id>
+<output-file>C:\Users\anil1\AppData\Local\Temp\claude\C--Users-anil1-Downloads-Hackathon-TUMHackathon26\c6f572b2-7e5b-4b6c-a808-672aac4a83f6\tasks\bua3f2us6.output</output-file>
+<status>completed</status>
+<summary>Background command "npm run dev -- -p 3100 &gt; /tmp/dev.log 2&gt;&amp;1 &amp;
+sleep 1; echo started" completed (exit code 0)</summary>
+</task-notification>
