@@ -1,0 +1,112 @@
+{
+  "drafts": [
+    {
+      "title": "Headlight beam provides US-appropriate, non-glare illumination",
+      "description": "When driving at night on US roads customers experience stable, well-defined low- and high-beam illumination with no excessive glare toward oncoming traffic or sidewalk users and consistent road visibility for the driver.",
+      "acceptance_criterion": "Vehicle lighting passes the relevant NHTSA/FMVSS photometric test cases for low- and high-beam (as verified in homologation/laboratory photometric tests) and passes a defined on-road glare verification with no more than 5% of controlled test runs flagged for excessive glare by independent observers.",
+      "category": "exterior",
+      "signal_ids": [
+        "SIG-1"
+      ],
+      "assumptions": [
+        "NHTSA/FMVSS photometric test procedures and pass/fail thresholds remain the reference for US market verification.",
+        "Independent on-road glare verification uses a repeatable protocol with trained observers and standardized routes.",
+        "Lighting hardware and software can be adapted within the vehicle architecture for the successor model."
+      ],
+      "uncertainties": [
+        "Exact interpretation of customer complaint data vs. regulatory thresholds (some customer reports may reflect local alignment or damage rather than design).",
+        "On-road verification outcomes may vary with aftermarket lamps, lens contamination, or misalignment in service vehicles."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": false,
+      "scope_reason": "Regulation / homologation requirement referenced by the customer signal; compliance and homologation are out of scope for product feature definition here."
+    },
+    {
+      "title": "Provide physical, non-distracting controls for frequent infotainment and climate functions",
+      "description": "Drivers can operate common controls (e.g., volume, temperature, fan speed, seat heating) quickly by touch without looking at the screen, reducing distraction during driving.",
+      "acceptance_criterion": "At least four frequently used functions have tactile, labeled physical controls reachable from the seated driving position; in a usability test 95% of participants can locate and operate each control within 3 seconds without visual confirmation.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-5"
+      ],
+      "assumptions": [
+        "Frequent functions for the test set will be defined as: audio volume, driver temperature, fan speed, and seat heating/ventilation.",
+        "Usability test participants represent the target driver population (mixed ages, handedness) and use standardized seating/posture.",
+        "Vehicle packaging allows integration of dedicated tactile controls near the steering wheel or center console."
+      ],
+      "uncertainties": [
+        "Exact number and placement of physical controls that customers consider 'frequent' may vary by region or option pack.",
+        "Trade-offs with minimalist interior aesthetics and touch surface integration could constrain placement or size of physical controls."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Provide a clearly measurable increase in rear-seat knee clearance for tall passengers",
+      "description": "Rear-seat passengers of height 1.85 m experience noticeably improved knee room so that kneecap contact or extreme discomfort is avoided when the front seats are set to a typical driver position.",
+      "acceptance_criterion": "With the front seats set to a standardized driver seating reference, rear-seat knee clearance (measured as horizontal distance from the front seat back surface to the rear passenger knees) is at least 50 mm for a 1.85 m test dummy or human subject; validated in an anthropometric seating test with 95% of tall participants reporting no knee contact.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-4"
+      ],
+      "assumptions": [
+        "Standardized seating reference points and measurement procedures (e.g., SAE J826-style seating) will be used to measure knee clearance.",
+        "50 mm clearance is a practical, perceptible improvement relative to the current model and feasible within successor packaging with moderate architectural changes.",
+        "Front-seat travel and typical driver seating positions are preserved to represent realistic use cases."
+      ],
+      "uncertainties": [
+        "Achieving the target clearance may require changes to front-seat packaging, seat back thickness, or vehicle floor/seat rails that impact cost, trunk space, or structural design.",
+        "Customer perception of 'knee room' is also influenced by seat cushion angle and rear-seat cushion thickness, not only horizontal clearance."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Explicit engineering spec requested for volume control hardware (rotary encoder)",
+      "description": "Customers requesting a tactile volume control expressed a specific hardware preference for a rotary encoder with precise electrical and resolution characteristics.",
+      "acceptance_criterion": "A rotary encoder meeting 12-bit resolution and a 48 V supply specification is defined and documented for engineering evaluation / procurement.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-2"
+      ],
+      "assumptions": [
+        "The customer's request is an engineering-level specification rather than a purely customer-facing outcome.",
+        "Implementing a 12-bit encoder and 48 V supply may require changes to infotainment electrical architecture and supplier sourcing."
+      ],
+      "uncertainties": [
+        "The requested 48 V supply and 12-bit resolution may conflict with vehicle electrical architecture choices or EMC and safety requirements.",
+        "Customers asked for a specific component spec; alternative solutions (e.g., high-resolution encoder at different supply voltage) might deliver equivalent user experience."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": false,
+      "scope_reason": "This is an engineering / component specification rather than a customer-facing requirement and is therefore out of scope for product-level requirements."
+    },
+    {
+      "title": "Customer request for lower base price and better business case",
+      "description": "Multiple customers report the base vehicle price is too high and explicitly requested a price reduction of about $5,000 to improve perceived value.",
+      "acceptance_criterion": "Achieve a base MSRP at launch that is at least $5,000 lower than the reported current-model baseline for an equivalent configuration (or provide an alternative entry variant meeting that pricing target).",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SIG-3"
+      ],
+      "assumptions": [
+        "The $5,000 target is measured against a clearly defined baseline configuration of the current model in the same market and currency.",
+        "Pricing and packaging changes are a cross-functional business decision influenced by cost, options, and market positioning."
+      ],
+      "uncertainties": [
+        "Market conditions, supplier costs, and features included in the base configuration may prevent achieving the requested absolute price reduction without trade-offs.",
+        "Customers may accept alternative value propositions (e.g., more features at the same price) rather than a direct price cut."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": false,
+      "scope_reason": "Pricing and business-case targets are out of scope for engineering product requirements."
+    }
+  ]
+}

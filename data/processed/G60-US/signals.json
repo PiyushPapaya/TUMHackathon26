@@ -1,0 +1,942 @@
+[
+ {
+  "id": "SIG-G60-US-001",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Love how fast and powerful it feels",
+  "summary": "Customers say the car delivers strong acceleration, great pickup, and a smooth, enjoyable driving feel. Many also appreciate the efficiency and convenience of the electric or plug-in hybrid drivetrain, making everyday driving more satisfying.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0012",
+   "EV-G60-US-FB-G60-0205",
+   "EV-G60-US-FB-G60-0534",
+   "EV-G60-US-FB-G60-0752",
+   "EV-G60-US-FB-G60-0874"
+  ],
+  "mention_count": 268,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-012",
+   "SIG-G60-US-036"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-002",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Smooth and comfortable ride with sporty, responsive handling",
+  "summary": "Customers say the car rides very smoothly and feels comfortable while still delivering a sporty, nimble driving experience. They praise its quiet, refined nature and how well it responds to driver inputs.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0030",
+   "EV-G60-US-FB-G60-0277",
+   "EV-G60-US-FB-G60-0448",
+   "EV-G60-US-FB-G60-0874",
+   "EV-G60-US-FB-G60-1410"
+  ],
+  "mention_count": 174,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-012"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-003",
+  "kind": "delight",
+  "category": "exterior",
+  "title": "Love the car's exterior styling",
+  "summary": "Customers say they really like the car's exterior look and styling. They praise the color options and sporty yet luxurious appearance, and report getting compliments and attention for the design.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0045",
+   "EV-G60-US-FB-G60-0168",
+   "EV-G60-US-FB-G60-0375",
+   "EV-G60-US-FB-G60-0610",
+   "EV-G60-US-FB-G60-1013"
+  ],
+  "mention_count": 135,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-033"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-004",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Drives like a dream and feels luxurious",
+  "summary": "Customers say the car is fun to drive, with a smooth ride, strong performance, and responsive handling that makes driving satisfying. Many also mention a comfortable, well‑finished cabin and tech features that add to the overall enjoyment.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0874",
+   "EV-G60-US-FB-G60-3386",
+   "EV-G60-US-FB-G60-3431",
+   "EV-G60-US-FB-G60-3485",
+   "EV-G60-US-FB-G60-0320"
+  ],
+  "mention_count": 77,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-005",
+  "kind": "delight",
+  "category": "interior",
+  "title": "I really love the interior design",
+  "summary": "Customers are very pleased with the interior, praising the look, color combinations, materials, and refined layout. Many say it feels luxurious, is easy to keep clean, and is preferable to previous cars they owned.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0140",
+   "EV-G60-US-FB-G60-0434",
+   "EV-G60-US-FB-G60-0405",
+   "EV-G60-US-FB-G60-1473",
+   "EV-G60-US-FB-G60-1712"
+  ],
+  "mention_count": 74,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-031"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-006",
+  "kind": "delight",
+  "category": "comfort_space",
+  "title": "Interior feels very comfortable and luxurious",
+  "summary": "Customers consistently say the interior is comfortable and gives a luxurious, upscale feel. Many note it is more comfortable than their previous cars or other brands and is well suited for long trips.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0038",
+   "EV-G60-US-FB-G60-0712",
+   "EV-G60-US-FB-G60-2015",
+   "EV-G60-US-FB-G60-2739",
+   "EV-G60-US-FB-G60-3869"
+  ],
+  "mention_count": 48,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-008",
+   "SIG-G60-US-010"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-007",
+  "kind": "delight",
+  "category": "comfort_space",
+  "title": "Seats are very comfortable and supportive",
+  "summary": "Customers say the seats are very comfortable and supportive, and many like the Veganza and leather materials. They also value the seat automatically moving back when unbuckled, the strong side bolsters during sporty driving, and the leg extension that eases knee pain.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0482",
+   "EV-G60-US-FB-G60-0997",
+   "EV-G60-US-FB-G60-1365",
+   "EV-G60-US-FB-G60-3096",
+   "EV-G60-US-FB-G60-3455"
+  ],
+  "mention_count": 41,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-010",
+   "SIG-G60-US-038"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-008",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Hands free trunk doesn't work consistently",
+  "summary": "Customers report the touchless kick-to-open trunk often fails or only activates after repeated tries, and sometimes opens randomly or with a lag. They find the required motion too picky and frustrating when their hands are full.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0835",
+   "EV-G60-US-FB-G60-3337",
+   "EV-G60-US-FB-G60-1403",
+   "EV-G60-US-FB-G60-3214",
+   "EV-G60-US-FB-G60-3264"
+  ],
+  "mention_count": 40,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-006"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-009",
+  "kind": "complaint",
+  "category": "range_charging",
+  "title": "Range feels limited and fluctuates",
+  "summary": "Customers say the real-world electric range is lower than they expected and the range display often jumps around or shows inconsistent estimates. This causes anxiety on longer trips and leads owners to rely on gasoline or public chargers, especially in cold weather or areas with few chargers.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0650",
+   "EV-G60-US-FB-G60-2095",
+   "EV-G60-US-FB-G60-0398",
+   "EV-G60-US-FB-G60-1993"
+  ],
+  "mention_count": 38,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-014"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-010",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Seat height doesn't go high enough",
+  "summary": "Customers report the driver seat cannot be raised enough to get a clear view over the hood or around the instrument/passenger bar, which is especially problematic for shorter drivers. They also say the seats can be too firm, the bolsters can press uncomfortably or fail to hold smaller occupants, and some seat adjustments are confusing or don't work as expected.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0291",
+   "EV-G60-US-FB-G60-1194",
+   "EV-G60-US-FB-G60-1381",
+   "EV-G60-US-FB-G60-2797",
+   "EV-G60-US-FB-G60-3887"
+  ],
+  "mention_count": 36,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-007",
+   "SIG-G60-US-006"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-011",
+  "kind": "delight",
+  "category": "infotainment_digital",
+  "title": "Love the large touchscreen and long display",
+  "summary": "Customers say the new large, long touchscreen looks great and is enjoyable to use, with many praising its design and presence across the dash. Several noted it can feel intimidating at first but quickly proves straightforward and responsive to touch.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-1661",
+   "EV-G60-US-FB-G60-2233",
+   "EV-G60-US-FB-G60-3329",
+   "EV-G60-US-FB-G60-1142",
+   "EV-G60-US-FB-G60-2085"
+  ],
+  "mention_count": 35,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-023"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-012",
+  "kind": "complaint",
+  "category": "driving_experience",
+  "title": "Power delivery is weak, jerky, or inconsistent",
+  "summary": "Customers say the car's power delivery doesn't feel right. Some report it feels underpowered and not as peppy as expected, while others experience abrupt surges, jerky launches, delayed engine response when switching power sources, rough idling, and poorer fuel economy than advertised.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-1321",
+   "EV-G60-US-FB-G60-3354",
+   "EV-G60-US-FB-G60-3235",
+   "EV-G60-US-FB-G60-0880",
+   "EV-G60-US-FB-G60-3548"
+  ],
+  "mention_count": 32,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-001",
+   "SIG-G60-US-002"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-013",
+  "kind": "delight",
+  "category": "exterior",
+  "title": "Size feels just right, not too big or small",
+  "summary": "Customers appreciate that the car is larger than their previous vehicles but still the right size for everyday use and parking. They say it feels roomy without being too large or hard to handle.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0394",
+   "EV-G60-US-FB-G60-0910",
+   "EV-G60-US-FB-G60-1133",
+   "EV-G60-US-FB-G60-1319",
+   "EV-G60-US-FB-G60-2127"
+  ],
+  "mention_count": 31,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-014",
+  "kind": "delight",
+  "category": "range_charging",
+  "title": "Range is better than quoted and fits commute",
+  "summary": "Customers say the electric/plug‑in range meets or exceeds their expectations for everyday driving and works well with home charging. Many report it reduces gas use, fits their daily commute, and that the displayed range feels accurate and reliable.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0078",
+   "EV-G60-US-FB-G60-0156",
+   "EV-G60-US-FB-G60-0389",
+   "EV-G60-US-FB-G60-0995",
+   "EV-G60-US-FB-G60-2195"
+  ],
+  "mention_count": 28,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-009"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-015",
+  "kind": "complaint",
+  "category": "driving_experience",
+  "title": "Brakes squeal, grind, have heavy dust and feel grabby",
+  "summary": "Customers report loud squeaking or grinding noises, heavy brake dust on the wheels, and braking that feels overly sensitive or grabby, leading to jerky or rough stops. Many say the issues appear soon after ownership and make driving unpleasant.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0848",
+   "EV-G60-US-FB-G60-0403",
+   "EV-G60-US-FB-G60-2840",
+   "EV-G60-US-FB-G60-0292",
+   "EV-G60-US-FB-G60-2712"
+  ],
+  "mention_count": 27,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-016",
+  "kind": "delight",
+  "category": "comfort_space",
+  "title": "Feels much roomier inside",
+  "summary": "Customers say the cabin feels very roomy and noticeably more spacious than their previous BMWs. Many highlight roomy rear seats with good legroom, making tall passengers, children, and pets more comfortable in the back.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0188",
+   "EV-G60-US-FB-G60-0721",
+   "EV-G60-US-FB-G60-3162",
+   "EV-G60-US-FB-G60-2577",
+   "EV-G60-US-FB-G60-3338"
+  ],
+  "mention_count": 27,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-017",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Enjoy the various drive modes",
+  "summary": "Customers enjoy the range of driving modes and like experimenting with My Modes. They call out Sport mode for a sporty feel, Personal mode for customization like lighting and HUD, and Comfort/Efficient modes for a smooth daily ride and better battery use.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0926",
+   "EV-G60-US-FB-G60-2204",
+   "EV-G60-US-FB-G60-2783",
+   "EV-G60-US-FB-G60-1786",
+   "EV-G60-US-FB-G60-3346"
+  ],
+  "mention_count": 26,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-034"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-018",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Only the driver door unlocks",
+  "summary": "The car often only unlocks the driver door when approaching or using the key, leaving rear doors locked or failing to open. Customers find this behavior confusing, hard to change because the setting is not obvious, and sometimes the auto-lock can act unexpectedly.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0309",
+   "EV-G60-US-FB-G60-1039",
+   "EV-G60-US-FB-G60-2925",
+   "EV-G60-US-FB-G60-2910",
+   "EV-G60-US-FB-G60-3434"
+  ],
+  "mention_count": 26,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-019",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Apple CarPlay is glitchy and unreliable",
+  "summary": "Customers report CarPlay is unreliable and difficult to use, with problems pairing or connecting and media or audio not showing or playing correctly. Some drivers find the interface hard to operate and have disconnected it because of these issues.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-1756",
+   "EV-G60-US-FB-G60-1591",
+   "EV-G60-US-FB-G60-2221",
+   "EV-G60-US-FB-G60-1030",
+   "EV-G60-US-FB-G60-3163"
+  ],
+  "mention_count": 25,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-020",
+  "kind": "complaint",
+  "category": "range_charging",
+  "title": "Hard to find compatible charging stations",
+  "summary": "Customers say it is difficult to locate available and compatible public chargers near them. They report stations are often scarce, out of service or occupied, placed in inconvenient or unsafe locations, and Electrify America coverage feels insufficient in their area.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0159",
+   "EV-G60-US-FB-G60-0273",
+   "EV-G60-US-FB-G60-0469",
+   "EV-G60-US-FB-G60-1658",
+   "EV-G60-US-FB-G60-2326"
+  ],
+  "mention_count": 25,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-021",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Can't find odometer in dash",
+  "summary": "I can't find the odometer or trip mileage in the instrument cluster and the controls to access it are confusing and unintuitive. Many customers needed help or dealer assistance to locate the mileage display.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0224",
+   "EV-G60-US-FB-G60-1083",
+   "EV-G60-US-FB-G60-3461",
+   "EV-G60-US-FB-G60-3806"
+  ],
+  "mention_count": 24,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-022",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Stays planted and very responsive",
+  "summary": "Drivers say the car feels planted and very responsive. They enjoy the smooth, comfortable ride and sporty, confident handling that makes driving a joy.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0085",
+   "EV-G60-US-FB-G60-0211",
+   "EV-G60-US-FB-G60-2834",
+   "EV-G60-US-FB-G60-3298",
+   "EV-G60-US-FB-G60-3975"
+  ],
+  "mention_count": 24,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-023",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Too many menus and the screen gets dirty",
+  "summary": "The touchscreen feels cluttered and hard to navigate, with too many icons and submenus that make it difficult to find controls. It also smudges easily, attracts dust, can be hard to see in bright light, and sometimes responds slowly.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0914",
+   "EV-G60-US-FB-G60-2248",
+   "EV-G60-US-FB-G60-2945",
+   "EV-G60-US-FB-G60-2984"
+  ],
+  "mention_count": 24,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-011"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-024",
+  "kind": "delight",
+  "category": "driver_assistance",
+  "title": "Really love the highway assistant",
+  "summary": "Customers say the highway assistant makes highway driving and long commutes easier and more relaxing. They appreciate the hands-free and automated driving features as reliable, convenient, and a key reason they value the car.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0183",
+   "EV-G60-US-FB-G60-0442",
+   "EV-G60-US-FB-G60-1537",
+   "EV-G60-US-FB-G60-3561",
+   "EV-G60-US-FB-G60-3210"
+  ],
+  "mention_count": 23,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-025",
+  "kind": "complaint",
+  "category": "driving_experience",
+  "title": "Can't permanently turn off auto start stop",
+  "summary": "The engine shuts off at every stop and many customers find it irritating and inconvenient. There is no obvious off button, so drivers have to dig through menus or use sport mode each time, and some report the restart feels harsh and jolting.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0623",
+   "EV-G60-US-FB-G60-0776",
+   "EV-G60-US-FB-G60-2392",
+   "EV-G60-US-FB-G60-2985"
+  ],
+  "mention_count": 22,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-026",
+  "kind": "delight",
+  "category": "infotainment_digital",
+  "title": "Really happy with the infotainment interface and usability",
+  "summary": "Customers say the infotainment interface is enjoyable, intuitive, and responsive. They appreciate the clear layout, customizable shortcuts, and balance between digital and physical controls, and some mentioned it was straightforward to learn and use.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-1116",
+   "EV-G60-US-FB-G60-1763",
+   "EV-G60-US-FB-G60-1994",
+   "EV-G60-US-FB-G60-3362",
+   "EV-G60-US-FB-G60-3628"
+  ],
+  "mention_count": 21,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-028",
+   "SIG-G60-US-032"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-027",
+  "kind": "complaint",
+  "category": "range_charging",
+  "title": "Charging is too slow and inconsistent",
+  "summary": "Customers report that charging is too slow and does not always reach expected speeds. They also experience inconsistent scheduled charging and find guidance about recommended charge limits unclear when they need extra range.",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-3697",
+   "EV-G60-US-FB-G60-3962",
+   "EV-G60-US-FB-G60-0444",
+   "EV-G60-US-FB-G60-0126"
+  ],
+  "mention_count": 20,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-028",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Too many menus and touchscreens",
+  "summary": "Customers say the shift to touchscreen controls and lots of menus makes the system hard to use and distracting while driving. They find the interface clunky and unintuitive, requiring many taps and a noticeable learning curve to access basic functions. Study: Menu structure of infotainment system: 13 % dissatisfied, 36 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0397",
+   "EV-G60-US-FB-G60-2781",
+   "EV-G60-US-FB-G60-2883",
+   "EV-G60-US-FB-G60-0248",
+   "EV-G60-US-FB-G60-3107",
+   "EV-G60-US-ST-96"
+  ],
+  "mention_count": 18,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-026"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-029",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Wireless charger barely charges and won't fit phones",
+  "summary": "Customers say the in-car wireless charging pad often charges slowly or inconsistently and sometimes does not charge at all. They also say the pad is poorly sized or positioned so phones do not fit or sit flat, requiring wiggling or a cable, and some report buzzing, a nonworking passenger pad, or the tray turning itself back on. Study: Phone charging: 10 % dissatisfied, 56 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-3156",
+   "EV-G60-US-FB-G60-3471",
+   "EV-G60-US-FB-G60-0359",
+   "EV-G60-US-FB-G60-3125",
+   "EV-G60-US-FB-G60-1785",
+   "EV-G60-US-ST-92"
+  ],
+  "mention_count": 17,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-030",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Hidden vents are hard to find and adjust",
+  "summary": "Customers say the air vents and controls are hidden, hard to find, and difficult to aim. The touchscreen-only layout and lack of physical knobs make adjusting fan and temperature slow, confusing, and distracting while driving. Study: Operation of heater/ AC controls: 15 % dissatisfied, 29 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0740",
+   "EV-G60-US-FB-G60-1594",
+   "EV-G60-US-FB-G60-2989",
+   "EV-G60-US-FB-G60-1157",
+   "EV-G60-US-FB-G60-0782",
+   "EV-G60-US-ST-48"
+  ],
+  "mention_count": 15,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-031",
+  "kind": "unmet_need",
+  "category": "interior",
+  "title": "Interior design: unmet_need",
+  "summary": "14 customer comments about 'Interior design' (unmet need).",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0210",
+   "EV-G60-US-FB-G60-0245",
+   "EV-G60-US-FB-G60-0435",
+   "EV-G60-US-FB-G60-0638",
+   "EV-G60-US-FB-G60-0866",
+   "EV-G60-US-FB-G60-1300",
+   "EV-G60-US-FB-G60-1589",
+   "EV-G60-US-FB-G60-1921"
+  ],
+  "mention_count": 14,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-005"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-032",
+  "kind": "unmet_need",
+  "category": "infotainment_digital",
+  "title": "Operating concept, operating system: unmet_need",
+  "summary": "14 customer comments about 'Operating concept, operating system' (unmet need).",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0518",
+   "EV-G60-US-FB-G60-1034",
+   "EV-G60-US-FB-G60-1430",
+   "EV-G60-US-FB-G60-1716",
+   "EV-G60-US-FB-G60-2579",
+   "EV-G60-US-FB-G60-2659",
+   "EV-G60-US-FB-G60-2837",
+   "EV-G60-US-FB-G60-2868"
+  ],
+  "mention_count": 14,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-026"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-033",
+  "kind": "unmet_need",
+  "category": "exterior",
+  "title": "Exterior design: unmet_need",
+  "summary": "13 customer comments about 'Exterior design' (unmet need).",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0048",
+   "EV-G60-US-FB-G60-1056",
+   "EV-G60-US-FB-G60-1068",
+   "EV-G60-US-FB-G60-1304",
+   "EV-G60-US-FB-G60-1353",
+   "EV-G60-US-FB-G60-1450",
+   "EV-G60-US-FB-G60-1635",
+   "EV-G60-US-FB-G60-2023"
+  ],
+  "mention_count": 13,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-003"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-034",
+  "kind": "unmet_need",
+  "category": "driving_experience",
+  "title": "My Modes / driving experience: unmet_need",
+  "summary": "13 customer comments about 'My Modes / driving experience' (unmet need).",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-1258",
+   "EV-G60-US-FB-G60-1578",
+   "EV-G60-US-FB-G60-2312",
+   "EV-G60-US-FB-G60-2569",
+   "EV-G60-US-FB-G60-2774",
+   "EV-G60-US-FB-G60-3505",
+   "EV-G60-US-FB-G60-0631",
+   "EV-G60-US-FB-G60-0702"
+  ],
+  "mention_count": 13,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-017"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-035",
+  "kind": "unmet_need",
+  "category": "interior",
+  "title": "Ambient light: unmet_need",
+  "summary": "12 customer comments about 'Ambient light' (unmet need).",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0737",
+   "EV-G60-US-FB-G60-0800",
+   "EV-G60-US-FB-G60-0896",
+   "EV-G60-US-FB-G60-1778",
+   "EV-G60-US-FB-G60-3381",
+   "EV-G60-US-FB-G60-3560",
+   "EV-G60-US-FB-G60-3609",
+   "EV-G60-US-FB-G60-3776"
+  ],
+  "mention_count": 12,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-036",
+  "kind": "unmet_need",
+  "category": "driving_experience",
+  "title": "Drivetrain: unmet_need",
+  "summary": "12 customer comments about 'Drivetrain' (unmet need).",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-1379",
+   "EV-G60-US-FB-G60-1483",
+   "EV-G60-US-FB-G60-1775",
+   "EV-G60-US-FB-G60-1916",
+   "EV-G60-US-FB-G60-3540",
+   "EV-G60-US-FB-G60-3655",
+   "EV-G60-US-FB-G60-1225",
+   "EV-G60-US-FB-G60-1833"
+  ],
+  "mention_count": 12,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-001"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-037",
+  "kind": "unmet_need",
+  "category": "exterior",
+  "title": "Panorama glass roof: unmet_need",
+  "summary": "12 customer comments about 'Panorama glass roof' (unmet need).",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0010",
+   "EV-G60-US-FB-G60-0230",
+   "EV-G60-US-FB-G60-0251",
+   "EV-G60-US-FB-G60-0510",
+   "EV-G60-US-FB-G60-0992",
+   "EV-G60-US-FB-G60-1720",
+   "EV-G60-US-FB-G60-2072",
+   "EV-G60-US-FB-G60-2461"
+  ],
+  "mention_count": 12,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-038",
+  "kind": "unmet_need",
+  "category": "comfort_space",
+  "title": "Seats: unmet_need",
+  "summary": "12 customer comments about 'Seats' (unmet need).",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0258",
+   "EV-G60-US-FB-G60-0366",
+   "EV-G60-US-FB-G60-0706",
+   "EV-G60-US-FB-G60-0722",
+   "EV-G60-US-FB-G60-0817",
+   "EV-G60-US-FB-G60-2041",
+   "EV-G60-US-FB-G60-3999",
+   "EV-G60-US-FB-G60-0828"
+  ],
+  "mention_count": 12,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-007"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-039",
+  "kind": "unmet_need",
+  "category": "driving_experience",
+  "title": "Automatic engine start-stop function (MSA): unmet_need",
+  "summary": "11 customer comments about 'Automatic engine start-stop function (MSA)' (unmet need).",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0059",
+   "EV-G60-US-FB-G60-0654",
+   "EV-G60-US-FB-G60-0878",
+   "EV-G60-US-FB-G60-1628",
+   "EV-G60-US-FB-G60-2010",
+   "EV-G60-US-FB-G60-2345",
+   "EV-G60-US-FB-G60-0330",
+   "EV-G60-US-FB-G60-1626"
+  ],
+  "mention_count": 11,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-040",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Storage compartments: complaint",
+  "summary": "10 customer comments about 'Storage compartments' (complaint). Study: Interior storage: 10 % dissatisfied, 39 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0696",
+   "EV-G60-US-FB-G60-1654",
+   "EV-G60-US-FB-G60-2152",
+   "EV-G60-US-FB-G60-2324",
+   "EV-G60-US-FB-G60-2803",
+   "EV-G60-US-FB-G60-3416",
+   "EV-G60-US-FB-G60-3630",
+   "EV-G60-US-FB-G60-0483",
+   "EV-G60-US-ST-35"
+  ],
+  "mention_count": 10,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-041",
+  "kind": "unmet_need",
+  "category": "comfort_space",
+  "title": "Comfort Access: unmet_need",
+  "summary": "9 customer comments about 'Comfort Access' (unmet need).",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-1295",
+   "EV-G60-US-FB-G60-2563",
+   "EV-G60-US-FB-G60-3331",
+   "EV-G60-US-FB-G60-3456",
+   "EV-G60-US-FB-G60-3908",
+   "EV-G60-US-FB-G60-3911",
+   "EV-G60-US-FB-G60-3945",
+   "EV-G60-US-FB-G60-0739"
+  ],
+  "mention_count": 9,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-042",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Voice control / speech recognition: complaint",
+  "summary": "8 customer comments about 'Voice control / speech recognition' (complaint). Study: Performance of voice recognition: 16 % dissatisfied, 38 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0428",
+   "EV-G60-US-FB-G60-0736",
+   "EV-G60-US-FB-G60-0904",
+   "EV-G60-US-FB-G60-1551",
+   "EV-G60-US-FB-G60-1790",
+   "EV-G60-US-FB-G60-2367",
+   "EV-G60-US-FB-G60-2393",
+   "EV-G60-US-ST-98"
+  ],
+  "mention_count": 8,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-043",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "WiFi hotspot: complaint",
+  "summary": "7 customer comments about 'WiFi hotspot' (complaint). Study: WiFi hotspot in vehicle: 13 % dissatisfied, 38 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G60-US-FB-G60-0115",
+   "EV-G60-US-FB-G60-1020",
+   "EV-G60-US-FB-G60-1714",
+   "EV-G60-US-FB-G60-2634",
+   "EV-G60-US-FB-G60-2825",
+   "EV-G60-US-FB-G60-2849",
+   "EV-G60-US-ST-89"
+  ],
+  "mention_count": 7,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-044",
+  "kind": "complaint",
+  "category": "exterior",
+  "title": "If applicable: Flat tire preparedness (spare, run flat, etc.): complaint",
+  "summary": "Study: If applicable: Flat tire preparedness (spare, run flat, etc.): 18 % dissatisfied, 35 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G60-US-ST-101"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-045",
+  "kind": "complaint",
+  "category": "driving_experience",
+  "title": "Off-Road capability: complaint",
+  "summary": "Study: Off-Road capability: 18 % dissatisfied, 17 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G60-US-ST-13"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": []
+ }
+]

@@ -1,0 +1,172 @@
+{
+  "drafts": [
+    {
+      "title": "Operate frequent functions without looking at the central display",
+      "description": "Customers can perform the most-used vehicle functions (volume, climate temperature, fan speed, seat heating, answer/end phone call, quick navigation start) using dedicated physical controls or steering-wheel controls so they do not need to look at the central curved display while driving.",
+      "acceptance_criterion": "In a closed-course driving usability test at ~35 mph, drivers complete each of the six tasks without looking at the central display in >=90% of attempts and median glance duration toward the display per task <=0.5 seconds.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-001",
+        "SIG-G60-US-003"
+      ],
+      "assumptions": [
+        "A clear list of the top six user functions can be derived from usage telemetry and customer research.",
+        "There is physical space on the steering wheel/center area for dedicated controls without compromising safety or ergonomics."
+      ],
+      "uncertainties": [
+        "Some customers will still prefer touch-only interactions for aesthetic reasons (conflict with praise for the large display).",
+        "Exact placement and tactile design that satisfy all user sizes/hand positions may require multiple iterations."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Retain the large curved display as a distinctive purchase driver",
+      "description": "Customers experience a high-quality panoramic curved display that remains a clear visual and brand differentiator and contributes positively to purchase intent.",
+      "acceptance_criterion": "In concept tests with prospective buyers, >=80% rate the vehicle's display as a purchase driver (score >=4 on a 5-point scale) and >=85% rate the display's visual quality >=4/5.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-002"
+      ],
+      "assumptions": [
+        "Display manufacturing and integration costs remain feasible for the successor vehicle.",
+        "Display hardware and calibration can deliver perceived visual quality comparable or improved vs the current G60."
+      ],
+      "uncertainties": [
+        "Some buyers’ preference for tactile controls may conflict with a display-centric interior; this creates a design trade-off with physical controls."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Provide range estimates that match real-world consumption, including winter conditions",
+      "description": "Customers see a remaining-range prediction that closely matches what they will actually achieve on typical trips, reducing surprise especially in cold weather.",
+      "acceptance_criterion": "Across mixed city/highway validation drives including ambient temperatures down to -10°C (14°F), predicted remaining range differs from measured remaining range at trip end by no more than ±7% in >=90% of test runs.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-004"
+      ],
+      "assumptions": [
+        "Vehicle will have ambient temperature sensors, cabin HVAC usage telemetry, and access to recent driving-history data to inform predictions.",
+        "Models for predicting consumption can be trained on representative fleets and updated over time."
+      ],
+      "uncertainties": [
+        "Extremely atypical driving behavior or unmodeled accessory use may still cause deviations beyond ±7%.",
+        "Battery aging profiles vary by user and may require ongoing recalibration to maintain accuracy."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make public chargers easy to find and assess before arrival",
+      "description": "Customers can locate nearby public chargers and see real-time availability and recent condition information so they can choose a usable station and avoid wasting time.",
+      "acceptance_criterion": "In target US metro regions the in-vehicle system displays location, reported real-time availability (occupied/free) and a recent-condition score for >=90% of mapped public chargers; in a field trial this reduces average time from 'need to charge' to 'charging started' by >=25% compared with current baseline.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-005"
+      ],
+      "assumptions": [
+        "Data partnerships with major charger operators and crowd-sourced user reports are available for target regions.",
+        "Map and backend latency can be kept low enough to present timely availability information."
+      ],
+      "uncertainties": [
+        "Third-party operator data quality and voluntary crowd reports may be incomplete or delayed in some areas.",
+        "Coverage in rural regions may remain limited and not meet the 90% target."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Provide a usable, lockable front trunk (frunk) for everyday items",
+      "description": "Customers have additional secure front-luggage space for groceries, bags, and charging cables comparable to competitor frunks.",
+      "acceptance_criterion": "Deliver at least 60 liters of usable, lockable front storage with a flat or well-shaped load area; in usability tests 90% of participants can store and retrieve two standard grocery bags and a charging cable without interference.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-006"
+      ],
+      "assumptions": [
+        "Vehicle packaging for the successor can reallocate space up front (battery, crash structures, HVAC) to accommodate a frunk.",
+        "Locking and sealing can meet customer expectations for security and weather protection."
+      ],
+      "uncertainties": [
+        "Packaging trade-offs with crash performance, pedestrian safety and HVAC components may constrain achievable volume.",
+        "Actual usable volume may differ from raw geometric volume once ducts/structural elements are considered."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Ensure hands-free tailgate foot-gesture works reliably across users and conditions",
+      "description": "Customers can use a foot gesture to open the rear trunk and expect it to work when intended and to rarely trigger accidentally.",
+      "acceptance_criterion": "In tests across common footwear types and wet/dry conditions, foot-gesture trunk opening succeeds on the first attempt in >=95% of trials and false-trigger rate is <=0.1% (<=1 per 1000 passes).",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-007"
+      ],
+      "assumptions": [
+        "Sensors (radar/ultrasonic/optical) can be positioned and tuned to detect intent reliably.",
+        "Software filtering can distinguish deliberate gestures from incidental leg movements and environmental noise."
+      ],
+      "uncertainties": [
+        "Ice, heavy mud, or extreme debris may degrade sensor performance and reduce success rates.",
+        "Some footwear or mobility aids may require alternate access methods."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Preserve or improve the current level of ride comfort",
+      "description": "Customers experience the successor 5er as at least as comfortable as today's G60 across representative road surfaces and driving situations.",
+      "acceptance_criterion": "In blinded occupant evaluations across representative road profiles, the successor's mean comfort rating is not lower than the G60 baseline by more than 0.1 on a 5-point scale, and at least 85% of participants rate ride comfort as equal or better than the G60.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-008"
+      ],
+      "assumptions": [
+        "A comparable test protocol and participant pool to prior G60 comfort testing is available.",
+        "Chassis and damping tuning resources are prioritized during development."
+      ],
+      "uncertainties": [
+        "Packaging changes, increased vehicle mass or different suspension architecture in the successor could make maintaining exact comfort levels more challenging.",
+        "Perceptions of comfort vary across demographic groups and must be represented in the sample."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Communicate range uncertainty and main influencing factors to build trust",
+      "description": "Customers see the predicted remaining range plus an explicit confidence band and the primary factors (e.g., outside temperature, HVAC usage, route speed) that most influence the current estimate, so they understand why range may change.",
+      "acceptance_criterion": "The range display presents a numeric estimate with a 90% confidence interval and 2–3 visible influencing factors; in a user study trust in the range information increases by >=20% compared with the current single-number display.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-004"
+      ],
+      "assumptions": [
+        "Prediction models can output uncertainty estimates (confidence intervals) and identify dominant input factors.",
+        "The UI can present this information succinctly without overwhelming the driver."
+      ],
+      "uncertainties": [
+        "Some users may find confidence intervals confusing or interpret them pessimistically.",
+        "Generating meaningful confidence bands requires sufficient historical/telemetry data."
+      ],
+      "effort": "M",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}

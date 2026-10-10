@@ -1,0 +1,84 @@
+{
+  "claims": [
+    {
+      "text": "The EU Regulation on circularity requirements for vehicle design (in force 13 August 2026) will apply from 1 September 2028 and mandates a minimum 15% recycled plastic content in new vehicles from 2032, rising to 25% from 2036. ",
+      "url": "https://environment.ec.europa.eu/topics/waste-and-recycling/end-life-vehicles_en?prefLang=lt",
+      "publisher": "European Commission – Directorate-General for Environment",
+      "published": "13 August 2026",
+      "stance": "supports",
+      "about": "EU circularity regulation – recycled plastic targets and timeline"
+    },
+    {
+      "text": "That same EU Regulation explicitly requires ‘design for circularity’ (facilitating dismantling/repair/reuse/recycling), digital documentation of material composition and defines implementation/treatment milestones (treatment requirements start in Sept 2029).",
+      "url": "https://environment.ec.europa.eu/topics/waste-and-recycling/end-life-vehicles_en?prefLang=lt",
+      "publisher": "European Commission – Directorate-General for Environment",
+      "published": "13 August 2026",
+      "stance": "supports",
+      "about": "design for disassembly, digital documentation and treatment timeline"
+    },
+    {
+      "text": "EV‑dedicated platforms (example: Hyundai’s E‑GMP) provide flat floors, allow longer wheelbases and free up packaging volume (engine/drive‑train space), enabling significantly more usable cabin space and new interior space concepts in compact/premium cars. ",
+      "url": "https://www.hyundaimotorgroup.com/en/story/CONT0000000000089071",
+      "publisher": "Hyundai Motor Group",
+      "published": "2020-12-02",
+      "stance": "supports",
+      "about": "EV platforms enabling flat-floor and larger cabin space"
+    },
+    {
+      "text": "The next‑generation BMW 1 Series is expected to include an EV variant due in 2028 using BMW Neue Klasse technology; press coverage states the electric 1‑series will sit on EV architecture with a longer wheelbase and a projected increase in rear legroom and boot practicality. ",
+      "url": "https://www.autoexpress.co.uk/bmw/1-series/366633/new-bmw-1-series-set-arrive-2028-and-return-rear-wheel-drive",
+      "publisher": "Auto Express",
+      "published": "2026-09-30",
+      "stance": "supports",
+      "about": "BMW 1 Series (2028) — EV platform, wheelbase and interior practicality"
+    },
+    {
+      "text": "Volvo publicly committed (press release 23 Sep 2021) that its pure‑electric cars will be leather‑free and that it will replace leather with recycled and bio‑based materials (example material name: ‘Nordico’).",
+      "url": "https://www.volvocars.com/us/media/press-releases/CDBA5F31238A12BE/",
+      "publisher": "Volvo Cars – Press & Media",
+      "published": "2021-09-23",
+      "stance": "supports",
+      "about": "OEM commitments to leather‑free interiors (Volvo)"
+    },
+    {
+      "text": "BMW Group’s 'Sustainability through Innovation' (press kit 19 Sep 2022) presents vegan/vegan‑option interiors, increased recycled content goals and seat/material concepts designed for recyclability and lower CO2 footprint.",
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0403367EN/bmw-group-sustainability-through-innovation-2022",
+      "publisher": "BMW Group – PressClub",
+      "published": "2022-09-19",
+      "stance": "supports",
+      "about": "BMW sustainability commitments — vegan interiors and recycled content targets"
+    },
+    {
+      "text": "Europe‑funded R&I projects are developing bio‑based animal‑free leather alternatives for automotive interiors (example: the Fabulose project, project period 1 June 2025 – 30 November 2028, aims to develop roll‑to‑roll bio‑based leather alternatives for automotive upholstery).",
+      "url": "https://www.cbe.europa.eu/projects/fabulose",
+      "publisher": "Circular Bio‑based Europe Joint Undertaking (CBE JU) / project coordinator page",
+      "published": "Project period: 1 June 2025 – 30 November 2028",
+      "stance": "supports",
+      "about": "EU R&I projects developing bio‑based leather alternatives (Fabulose)"
+    },
+    {
+      "text": "Academic/industry reviews (example: 'Sustainable Materials for Automotive Interiors', published 25 Apr 2025 on Zenodo) identify increased adoption through 2030 of natural‑fibre composites, recycled plastics, bio‑based polymers, mycelium‑based materials and Piñatex‑type alternatives for automotive interiors, noting scalability and standardisation as remaining challenges. ",
+      "url": "https://zenodo.org/records/15278185",
+      "publisher": "Zenodo / Hendese Teknik Bilimler ve Mühendislik Dergisi (paper repository)",
+      "published": "2025-04-25",
+      "stance": "supports",
+      "about": "Trend of alternative sustainable interior materials (natural fibers, mycelium, bio‑polymers, recycled plastics)"
+    },
+    {
+      "text": "Standards and technical guidance to support design‑for‑disassembly and material circularity are already available (example: IEC TS 63428:2024 on embedding circularity in product design), signalling that OEMs and suppliers must change interior assembly, material choice and traceability practices by the 2028–2031 timeframe. ",
+      "url": "https://webstore.iec.ch/en/publication/70549",
+      "publisher": "IEC (International Electrotechnical Commission) – Technical Specification 63428",
+      "published": "2024",
+      "stance": "supports",
+      "about": "Standards and guidance for design for disassembly and circularity in product design"
+    },
+    {
+      "text": "BMW’s 'shy tech' and minimalist digital‑cockpit approach (demonstrated in the BMW iX press materials) — hiding controls until needed, integrated haptics and simplified surfaces — is an explicit premium interior design direction that OEM communications show will be applied across future models, including compact premium segments by 2028–2031. ",
+      "url": "https://www.press.bmwgroup.com/usa/article/detail/T0320510EN_US/the-new-bmw-ix-design?showMedia=photo",
+      "publisher": "BMW Group – PressClub (BMW iX design)",
+      "published": "2021-03",
+      "stance": "supports",
+      "about": "Minimalist 'shy tech' digital cockpit trend in premium interiors"
+    }
+  ]
+}

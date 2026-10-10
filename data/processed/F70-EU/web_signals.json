@@ -1,0 +1,177 @@
+[
+ {
+  "id": "SIG-F70-EU-WEB-01",
+  "kind": "competitor_advantage",
+  "category": "infotainment_digital",
+  "title": "Mercedes-Benz A-Class: Everything on the touch screen is distracting",
+  "summary": "Mercedes’ MBUX introduced a ‘zero layer’ home screen to surface major functions on the home page (intended to reduce menu dives), but reviewers note some shortcut buttons are small and fiddly.",
+  "evidence_ids": [
+   "EV-F70-EU-WEB-02"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-WEB-02",
+  "kind": "competitor_advantage",
+  "category": "infotainment_digital",
+  "title": "Audi A3 Sportback: Software is terrible and overly complicated",
+  "summary": "Top Gear’s A3 Sportback interior review (published 3 July 2025) describes Audi’s infotainment as “one of the more responsive and logical setups on the market” and notes Audi has added an app‑store style function plus smartphone integration (Apple CarPlay/Android Auto). ([topgear.com](https://www.topgear.com/car-reviews/audi/a3-sportback/interior))",
+  "evidence_ids": [
+   "EV-F70-EU-WEB-07"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-WEB-03",
+  "kind": "competitor_advantage",
+  "category": "driving_experience",
+  "title": "VW Golf: Engine underpowered and sluggish, transmission feels awful",
+  "summary": "Professional reviews describe the facelifted Volkswagen Golf (Mk8.5 / 2024–2025) as having ‘rounded’ driving manners and, with adaptive dampers, a comfortable ride — but note the ride can feel firmer and noisy on larger wheels or poor surfaces.  UK reviews (Auto Express) say the Mk8.5 Golf is a comfortable and pleasant place to be overall but that ride quality is compromised on poorer surfaces and that larger wheels increase road noise and harshness.  At the same time, German press testing of the Golf 1.5 eTSI notes software/hardware changes (e.g., starter-generator in mild-hybrid eTSI) that reduce some DSG ‘ruckle’/hesitation symptoms in those variants. ",
+  "evidence_ids": [
+   "EV-F70-EU-WEB-11",
+   "EV-F70-EU-WEB-12",
+   "EV-F70-EU-WEB-15",
+   "EV-F70-EU-WEB-16"
+  ],
+  "mention_count": 4,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-WEB-04",
+  "kind": "competitor_advantage",
+  "category": "comfort_space",
+  "title": "Volvo EX30: Seats not comfy and lack support",
+  "summary": "BMW reviews (Auto Express and others) describe the 1 Series’ front seats as supportive and comfortable for long journeys, with good adjustability; some sporty seat options are available as extras. Rear‑seat space comparison from published reviews: EX30 rear-seat legroom is repeatedly described as ‘tight’ for taller adults, while the BMW 1 Series is described as ‘reasonable’ but still somewhat cramped—overall the 1 Series generally offers more rear passenger room than the EX30 in reviewer tests.",
+  "evidence_ids": [
+   "EV-F70-EU-WEB-25",
+   "EV-F70-EU-WEB-26"
+  ],
+  "mention_count": 2,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-WEB-05",
+  "kind": "competitor_advantage",
+  "category": "infotainment_digital",
+  "title": "Mercedes-Benz A-Class: Fake engine sound and poor audio quality",
+  "summary": "The BMW 1 Series (F70) interior and tech package for 2024/2025 uses a curved dual‑display layout (roughly a 10.7\" central screen plus a 10.25\" instrument cluster in press/review coverage) and continues to offer BMW’s iDrive input (rotary/dial + shortcuts) as a primary physical control option.  BMW publishes and lists ‘Active Sound Design’ (and related functions such as XtraBoost in sport modes) in technical/specification materials for recent models — i.e. BMW also supplies synthesized/processed engine sound features routed into cabin audio on some models/modes. ",
+  "evidence_ids": [
+   "EV-F70-EU-WEB-29",
+   "EV-F70-EU-WEB-34"
+  ],
+  "mention_count": 2,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-WEB-06",
+  "kind": "competitor_advantage",
+  "category": "driving_experience",
+  "title": "Audi A3 Sportback: Gearbox feels jerky and sluggish",
+  "summary": "Top Gear’s 2025 review says the Audi A3 Sportback has sharp turn‑in, a pliant/neutral ride and a ‘fluid driving experience.’ Auto Express long‑term testing (Dec 2025) reports the A3 delivers comfort and refinement for daily driving. Auto Express also notes the A3’s automatic (S tronic) can feel jerky at low speeds, which makes stop‑start city driving less smooth than a conventional automatic. ",
+  "evidence_ids": [
+   "EV-F70-EU-WEB-38",
+   "EV-F70-EU-WEB-39",
+   "EV-F70-EU-WEB-40"
+  ],
+  "mention_count": 3,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-WEB-07",
+  "kind": "competitor_advantage",
+  "category": "interior",
+  "title": "Volvo EX30: Electronic dash is distracting and unreliable",
+  "summary": "Volvo presents the EX30 interior as a minimalist Scandinavian design that deliberately uses renewable and recycled materials (textiles, wool blends, recycled polyester, and bio-based synthetic leather options) and a combined driver/center touchscreen as the cockpit focus. The BMW 1 Series (F70) interior and tech package for 2024/2025 uses a curved dual‑display layout (roughly a 10.7\" central screen plus a 10.25\" instrument cluster in press/review coverage) and continues to offer BMW’s iDrive input (rotary/dial + shortcuts) as a primary physical control option. ",
+  "evidence_ids": [
+   "EV-F70-EU-WEB-51",
+   "EV-F70-EU-WEB-29"
+  ],
+  "mention_count": 2,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-WEB-08",
+  "kind": "trend",
+  "category": "range_charging",
+  "title": "Trend 2028-2031: range_charging",
+  "summary": "McKinsey (article, 17 December 2024) reports consumers expect midsize passenger EVs to achieve roughly 465 km real‑world driving range before recharging and documents recent increases in pack energy density (e.g., LFP pack densities rising toward ~140 Wh/kg for top sellers in 2023), implying continued range improvements through the late 2020s. Tesla’s public support pages state that select Tesla Supercharger sites are now open to non‑Tesla EVs in selected markets (via the Tesla app and NACS/NACS‑adapter support), showing increasing access to a large high‑power network for non‑Tesla vehicles in the EU and elsewhere.",
+  "evidence_ids": [
+   "EV-F70-EU-WEB-60",
+   "EV-F70-EU-WEB-62"
+  ],
+  "mention_count": 2,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-WEB-09",
+  "kind": "trend",
+  "category": "infotainment_digital",
+  "title": "Trend 2028-2031: infotainment_digital",
+  "summary": "Consulting and industry analyses (McKinsey, S&P Global) describe the shift to Software‑Defined Vehicles and centralized compute, enabling frequent OTA updates and personalization of HMI (touch + voice + selective physical controls), a capability expected to be used by OEMs between 2028–2031 to iterate operating concepts quickly.",
+  "evidence_ids": [
+   "EV-F70-EU-WEB-80"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-WEB-10",
+  "kind": "trend",
+  "category": "interior",
+  "title": "Trend 2028-2031: interior",
+  "summary": "The next‑generation BMW 1 Series is expected to include an EV variant due in 2028 using BMW Neue Klasse technology; press coverage states the electric 1‑series will sit on EV architecture with a longer wheelbase and a projected increase in rear legroom and boot practicality.  Volvo publicly committed (press release 23 Sep 2021) that its pure‑electric cars will be leather‑free and that it will replace leather with recycled and bio‑based materials (example material name: ‘Nordico’).",
+  "evidence_ids": [
+   "EV-F70-EU-WEB-84",
+   "EV-F70-EU-WEB-85"
+  ],
+  "mention_count": 2,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-WEB-11",
+  "kind": "trend",
+  "category": "driver_assistance",
+  "title": "Trend 2028-2031: driver_assistance",
+  "summary": "Mercedes‑Benz updated its DRIVE PILOT Level 3 system to permit conditional automated driving up to 95 km/h on German motorways and announced approval and a sales release in Germany (software update / rollout announced December 17, 2024 with sales start early 2025).",
+  "evidence_ids": [
+   "EV-F70-EU-WEB-93"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ }
+]

@@ -1,0 +1,15 @@
+{
+  "answer": "No — the provided evidence does not attribute the issue to older customers. Multiple customer complaints call out missing physical controls and distraction from touch-only UIs (SIG-G60-US-001; EV-G60-0001; EV-G60-0002; EV-G60-0003), and competitors are reintroducing physical buttons (SIG-G60-US-003; EV-G60-0006). None of the evidence includes age-specific data. EV-G60-0005 (9% unsatisfactory) suggests the problem may be limited in scope but does not identify age differences.",
+  "supporting_evidence_ids": [
+    "SIG-G60-US-001",
+    "EV-G60-0001",
+    "EV-G60-0002",
+    "EV-G60-0003",
+    "SIG-G60-US-003",
+    "EV-G60-0006"
+  ],
+  "counter_evidence_ids": [
+    "EV-G60-0005"
+  ],
+  "suggested_change": "Add an acceptance criterion requiring usability test and telemetry results to be reported by age cohort and demonstrate the same thresholds (>=90% task completion and median glance <=0.5s) are met across cohorts."
+}

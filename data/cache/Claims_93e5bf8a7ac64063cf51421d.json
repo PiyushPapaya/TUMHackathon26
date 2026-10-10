@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "text": "The BMW 1 Series (F70) is the fourth-generation BMW 1 Series (the model code used in reviews of the 2024–2026 small-hatch refresh).",
+      "url": "https://en.wikipedia.org/wiki/BMW_1_Series_(F70)",
+      "publisher": "Wikipedia",
+      "published": "2026-04-xx",
+      "stance": "neutral",
+      "about": "BMW 1 Series (F70)"
+    },
+    {
+      "text": "Top Gear’s 2025 review says the Audi A3 Sportback has sharp turn‑in, a pliant/neutral ride and a ‘fluid driving experience.’",
+      "url": "https://www.topgear.com/car-reviews/audi/a3-sportback/driving",
+      "publisher": "Top Gear",
+      "published": "2025-07-03",
+      "stance": "supports",
+      "about": "Audi A3 Sportback driving character (2025)"
+    },
+    {
+      "text": "Auto Express long‑term testing (Dec 2025) reports the A3 delivers comfort and refinement for daily driving.",
+      "url": "https://www.autoexpress.co.uk/audi/a3/366952/audi-a3-sportback-35-tfsi-long-term-test-premium-hatch-joy-live",
+      "publisher": "Auto Express",
+      "published": "2025-12-08",
+      "stance": "supports",
+      "about": "Audi A3 Sportback comfort/refinement"
+    },
+    {
+      "text": "Auto Express also notes the A3’s automatic (S tronic) can feel jerky at low speeds, which makes stop‑start city driving less smooth than a conventional automatic. ",
+      "url": "https://www.autoexpress.co.uk/audi/a3",
+      "publisher": "Auto Express",
+      "published": "2026-08-03 (page updated)",
+      "stance": "supports",
+      "about": "Audi A3 S tronic low‑speed jerkiness"
+    },
+    {
+      "text": "Carwow’s A3 coverage states the 7‑speed S tronic is ‘seamless on the move’ but ‘can be a bit jerky at manoeuvring speeds.’",
+      "url": "https://www.carwow.co.uk/audi/a3/2019",
+      "publisher": "Carwow",
+      "published": "(review page updated)",
+      "stance": "supports",
+      "about": "Audi A3 S tronic behaviour at low speeds"
+    },
+    {
+      "text": "Reliability/technical summaries and fault trackers cite recurring issues with the DQ200/dry‑clutch 7‑speed S‑tronic (clutch judder, mechatronic faults) that produce rough or jerky pulls from standstill on affected A3 examples. ",
+      "url": "https://faultfile.co.uk/cars/audi-a3",
+      "publisher": "Faultfile (specialist reliability site)",
+      "published": "(ongoing)",
+      "stance": "supports",
+      "about": "DQ200 / S tronic common faults causing jerky shifts"
+    },
+    {
+      "text": "Owner and enthusiast threads in Audi owner forums report customer experiences of jerky shifts on 35 TFSI / S‑tronic A3 Sportback models and note software/mechatronic updates sometimes improve but not always eliminate the symptom.",
+      "url": "https://www.audi-sport.net/xf/threads/447223/?amp=1",
+      "publisher": "Audi‑Sport.net (forum)",
+      "published": "2024–2026 (threads)",
+      "stance": "supports",
+      "about": "Customer reports of A3 gearbox jerking"
+    },
+    {
+      "text": "Major EU reviews of the BMW 1 Series (F70) describe it as more driver‑focused and engaging than many rivals, with composed, planted handling but a firmer suspension setup that some reviewers say is less cushioned than the A3 over poor surfaces. ",
+      "url": "https://www.cargurus.co.uk/research/BMW-1-Series-F40-2020-mg66",
+      "publisher": "CarGurus (review summary)",
+      "published": "(updated 2024–2026)",
+      "stance": "supports",
+      "about": "BMW 1 Series driving and ride character"
+    },
+    {
+      "text": "Overview summaries (Car Expert / other EU reviewers) say the 1 Series’ automatic gearbox generally selects appropriate gears smoothly in normal driving, while reviewers recommend the 1 Series if you prioritise sportier handling over the plushest ride. ",
+      "url": "https://thecarexpert.co.uk/page/27/?attachment_id=rlrgldyymaqfl%2F1000",
+      "publisher": "The Car Expert",
+      "published": "2025-03-01 (overview)",
+      "stance": "supports",
+      "about": "BMW 1 Series gearbox smoothness and sportier ride"
+    }
+  ]
+}

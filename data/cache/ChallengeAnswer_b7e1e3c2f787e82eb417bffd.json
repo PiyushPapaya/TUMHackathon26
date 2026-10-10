@@ -1,0 +1,22 @@
+{
+  "answer": "No — the available signals and customer feedback are all EU market items; there is no US data here, so you cannot conclude this is only a US issue.",
+  "supporting_evidence_ids": [
+    "SIG-F70-EU-022",
+    "SIG-F70-EU-025",
+    "EV-F70-EU-FB-F70-0377",
+    "EV-F70-EU-FB-F70-0942",
+    "EV-F70-EU-FB-F70-0961",
+    "EV-F70-EU-ST-29",
+    "EV-F70-EU-FB-F70-0278",
+    "EV-F70-EU-FB-F70-0955",
+    "EV-F70-EU-FB-F70-1231",
+    "EV-F70-EU-FB-F70-1236",
+    "EV-F70-EU-FB-F70-1535"
+  ],
+  "counter_evidence_ids": [
+    "EV-F70-EU-WEB-84",
+    "EV-F70-EU-WEB-85",
+    "EV-F70-EU-FB-F70-1039"
+  ],
+  "suggested_change": "Clarify market scope of the requirement and add a market‑specific validation step: apply the boot volume and tailgate reliability criteria per market, and if US data is missing require 12 months of US owner‑reported failure monitoring and VDA measurements before claiming issue locality."
+}

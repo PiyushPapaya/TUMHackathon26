@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "text": "Euro NCAP’s recent HMI and ‘Safe Driving’ protocols explicitly evaluate the availability and placement of physical controls and encourage designs that reduce driver distraction (including preferring physical buttons for commonly used functions).",
+      "url": "https://www.euroncap.com/on-road-driving/",
+      "publisher": "Euro NCAP",
+      "published": "2024-2026 (protocols and guidance updates)",
+      "stance": "supports",
+      "about": "Euro NCAP HMI assessment and driver distraction guidance."
+    },
+    {
+      "text": "The EU’s General Safety Regulation (and related technical support work) mandates Advanced Driver Distraction Warning (ADDW) measures being progressively introduced between July 2024 and January 2029, which pressures OEMs to limit visually demanding touchscreen interactions for safety reasons.",
+      "url": "https://single-market-economy.ec.europa.eu/document/download/cd243af9-c877-401e-9f69-d7d4ab6a90c6_en?filename=Fact+Sheet+General+Safety+regulations_July+2024.pdf&prefLang=hu",
+      "publisher": "European Commission (fact sheet)",
+      "published": "5 July 2024",
+      "stance": "supports",
+      "about": "EU General Safety Regulation and ADDW implementation timeline."
+    },
+    {
+      "text": "UNECE/GRSG working documents and proposals on advanced driver distraction and driver monitoring (2025–2026) show regulators are actively developing performance and HMI requirements that will constrain touchscreen complexity in the coming years.",
+      "url": "https://unece.org/sites/default/files/2025-09/ECE-TRANS-WP.29-GRSG-2025-51e_0.pdf",
+      "publisher": "UNECE (GRSG working document)",
+      "published": "2025",
+      "stance": "supports",
+      "about": "UNECE regulatory work on driver distraction and HMI requirements."
+    },
+    {
+      "text": "Industry reporting and analysis note a reversal from all-touchscreen cockpits toward hybrid designs that (re)introduce tactile physical controls for frequently used functions because of safety and consumer pushback.",
+      "url": "https://www.eetimes.com/poor-automotive-hmi-design-to-impact-euro-ncap-safety-rating/",
+      "publisher": "EE Times",
+      "published": "2025",
+      "stance": "supports",
+      "about": "Trend toward hybrid HMI (physical + touchscreen) driven by safety/consumer concerns."
+    },
+    {
+      "text": "BMW’s official materials for the Panoramic iDrive describe multimodal operation — touch, haptic feedback and voice — as the intended interaction approach for new BMW cockpits, showing OEM adoption of combined control modes.",
+      "url": "https://www.press.bmwgroup.com/usa/article/detail/T0447356EN_US/new-bmw-panoramic-idrive-revolutionizes-vehicle-operation",
+      "publisher": "BMW Group Press",
+      "published": "January 7, 2025",
+      "stance": "supports",
+      "about": "BMW Panoramic iDrive and multimodal control (touch, haptic, voice)."
+    },
+    {
+      "text": "Bosch documents and press material describe haptic touchscreen technologies (touch with perceivable button feedback) and promotion of multimodal in‑car operation (voice plus touch/haptics), indicating supplier readiness to deliver tactile + touchscreen solutions at scale.",
+      "url": "https://www.bosch-presse.de/pressportal/us/en/press-release-739.html",
+      "publisher": "Bosch Press Portal",
+      "published": "recent supplier materials (Bosch communications)",
+      "stance": "supports",
+      "about": "Bosch haptic touchscreen and multimodal HMI technologies."
+    },
+    {
+      "text": "Market research reports project that while touchscreen HMI will remain the primary interface, voice user interfaces are forecast to register the highest growth rate through the early 2030s—implying substantial voice adoption in 2028–2031 for premium compact cars.",
+      "url": "https://trendxinsights.com/syndicated-market-research-reports/automotive-hmi-market/",
+      "publisher": "TrendXInsights (market research)",
+      "published": "2026",
+      "stance": "supports",
+      "about": "HMI market forecasts showing high growth for voice UIs."
+    },
+    {
+      "text": "Consulting and industry analyses (McKinsey, S&P Global) describe the shift to Software‑Defined Vehicles and centralized compute, enabling frequent OTA updates and personalization of HMI (touch + voice + selective physical controls), a capability expected to be used by OEMs between 2028–2031 to iterate operating concepts quickly.",
+      "url": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/the-future-of-interior-in-automotive",
+      "publisher": "McKinsey & Company",
+      "published": "2021–2024 analyses (ongoing relevance)",
+      "stance": "supports",
+      "about": "SDV, OTA, and HMI personalization enabling rapid HMI evolution."
+    },
+    {
+      "text": "Consumer research summarized by S&P Global shows drivers value physical buttons for reducing distraction, a preference EU OEMs are likely to accommodate in premium compact models sold in Europe.",
+      "url": "https://www.spglobal.com/automotive-insights/en/blogs/2026/02/what-consumers-value-in-human-machine-interface-technologies",
+      "publisher": "S&P Global Mobility",
+      "published": "February 2026",
+      "stance": "supports",
+      "about": "Consumer preferences favoring physical buttons to reduce distraction."
+    }
+  ]
+}

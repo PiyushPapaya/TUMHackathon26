@@ -1,0 +1,347 @@
+{
+  "drafts": [
+    {
+      "title": "Keep the driving feel: preserve strong acceleration and smooth, responsive power delivery",
+      "description": "Customer experiences a consistently strong, smooth and satisfying acceleration with linear, predictable power delivery across drive modes so everyday driving feels powerful yet refined.",
+      "acceptance_criterion": "In mixed driving validation (city+highway with normal load) 95% of test drives report no perceptible surges, jerks, or delayed responses during acceleration and measured 0–60 mph time remains within ±10% of target benchmark for the model variant.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-001",
+        "SIG-G60-US-002",
+        "SIG-G60-US-012",
+        "SIG-G60-US-036"
+      ],
+      "assumptions": [
+        "Powertrain hardware in the successor will be refined but broadly similar in class to today's systems; software controls can substantially improve throttle mapping and blending.",
+        "Benchmark 0–60 mph targets will be set per variant by product team; ±10% allows for realistic tuning trade-offs."
+      ],
+      "uncertainties": [
+        "Actual achievable improvements depend on final powertrain architecture and constraints from emissions/efficiency or packaging.",
+        "Customer perception testing can be subjective; resolving edge cases (e.g., cold starts, transitions to ICE in PHEV) may require multiple iterations."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Maintain ride comfort and planted handling that feel both luxurious and sporty",
+      "description": "Customers experience a smooth, quiet, and comfortable ride for daily driving and long trips while retaining confident, sporty handling and responsiveness when desired.",
+      "acceptance_criterion": "In standardized ride and handling tests, subjective comfort ratings from a representative user panel reach at least 4 out of 5 for long‑distance comfort and handling stability; road noise (dB) and vibration metrics must not be worse than the current G60 baseline by more than 5%.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-002",
+        "SIG-G60-US-004",
+        "SIG-G60-US-022"
+      ],
+      "assumptions": [
+        "Chassis and NVH improvements are feasible within successor vehicle weight and cost targets.",
+        "A representative user panel and objective NVH test procedures will be used to compare to current model."
+      ],
+      "uncertainties": [
+        "Trade-offs between sportiness and ultimate comfort may require mode‑based tuning; some customers will prefer firmer or softer setups."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Driver seat: provide a higher and more adjustable seating range so shorter drivers have clear forward visibility",
+      "description": "Shorter drivers can raise the driver seat high enough and adjust seating geometry easily so they have an unobstructed, comfortable view over the hood and instrument/passenger bar without compromising support.",
+      "acceptance_criterion": "In an ergonomic validation with participants down to 152 cm (5th percentile female), 95% of participants achieve the required forward sightline over the hood and report a comfortable seating position in <=3 adjustments; repeated tests show consistent results across body types.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-010",
+        "SIG-G60-US-007",
+        "SIG-G60-US-038"
+      ],
+      "assumptions": [
+        "Seat mechanism adjustments can be extended within packaging limits of the successor model.",
+        "The sightline target will be defined by the ergonomics team based on typical hood geometry."
+      ],
+      "uncertainties": [
+        "Packaging or cost constraints could limit absolute travel; some extreme body shapes may still need additional adjustments."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make essential climate, odometer and common controls discoverable and operable quickly",
+      "description": "Customers can find and operate essential controls (climate fan/temperature, vent direction, seat heating, odometer/trip mileage and quick defog) without navigating deep menus or taking their eyes off the road.",
+      "acceptance_criterion": "In usability testing, 95% of participants can access and complete each essential task within 2 taps or voice command and in under 5 seconds while driving in a simulator; identified control locations/settings are reachable within 2 menu levels if not on the main view.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-023",
+        "SIG-G60-US-030",
+        "SIG-G60-US-021",
+        "SIG-G60-US-011"
+      ],
+      "assumptions": [
+        "A combination of UI changes, physical shortcuts, and improved voice commands will be used to meet timing goals.",
+        "Driver simulator tests adequately approximate in-vehicle performance."
+      ],
+      "uncertainties": [
+        "Some customers will still prefer physical knobs; balancing full digital design with quick access may require hybrid controls."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Large central display: keep the prominent long touchscreen but reduce distraction and smear",
+      "description": "Customers enjoy a visually striking long touchscreen that remains readable in bright light, smudges less, and does not require excessive menu navigation for frequent tasks.",
+      "acceptance_criterion": "In controlled light tests the display remains readable (legibility test score >=90% for common UI elements) under direct sunlight simulation; in a 30‑user fingerprint visibility test, 90% of users rate smudge visibility as low or very low after typical daily use.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-011",
+        "SIG-G60-US-023"
+      ],
+      "assumptions": [
+        "Improvements will come from UI design, anti-reflective treatments and oleophobic coatings that are durable for at least 24 months.",
+        "User perception tests accurately reflect real-world viewing conditions."
+      ],
+      "uncertainties": [
+        "Coating durability and trade-offs with touchscreen responsiveness may limit performance; extreme bright-light conditions can still reduce legibility."
+      ],
+      "effort": "M",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Apple CarPlay and phone connectivity: make wireless CarPlay reliable and seamless",
+      "description": "Customers can connect their phones via Apple CarPlay reliably and maintain a stable connection for the duration of typical drives without frequent re-pairing or audio dropouts.",
+      "acceptance_criterion": "In field tests across a representative set of phone models, a wireless CarPlay connection is established within 10 seconds on 95% of attempts and remains connected for at least 99% of the duration of 2‑hour test drives without user intervention.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-019",
+        "SIG-G60-US-026",
+        "SIG-G60-US-032"
+      ],
+      "assumptions": [
+        "Improvements will be achieved through software/firmware updates and stronger interoperability testing with phone vendors.",
+        "Representative phone set will include top 20 phone models in the target market."
+      ],
+      "uncertainties": [
+        "Ongoing changes to phone OS updates and third‑party app behavior may affect long‑term reliability."
+      ],
+      "effort": "M",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Wireless charging: phone fits reliably and charges without frequent repositioning",
+      "description": "Customers can place a common smartphone on the in‑car wireless charging surface and expect it to begin and continue charging without repositioning or intermittent stops.",
+      "acceptance_criterion": "In bench tests with the top 20 phone models by market share, 95% begin wireless charging within 5 seconds of placement and maintain continuous charging for 95% of a 60‑minute idle period without requiring repositioning; the pad accommodates phones up to 85 mm wide without edge lift.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-029",
+        "SIG-G60-US-040"
+      ],
+      "assumptions": [
+        "Qi wireless charging standards and phone form factors remain similar over the next 3–5 years.",
+        "Compatibility matrix will be maintained and tested against popular phone sizes and cases."
+      ],
+      "uncertainties": [
+        "Proprietary phone cases, MagSafe accessories or future phone designs could reduce compatibility.",
+        "Charging speed will vary by phone model; target focuses on reliability rather than absolute wattage."
+      ],
+      "effort": "M",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Hands‑free trunk: make touchless kick-to-open robust and predictable",
+      "description": "When customers use the touchless kick-to-open gesture with hands full, the trunk opens reliably on the first attempt and does not open unexpectedly.",
+      "acceptance_criterion": "In field testing across typical gait patterns and footwear, the kick-to-open action triggers trunk open within 1.5 seconds on the first valid attempt in at least 95% of trials and false‑positive openings occur in fewer than 0.5% of parked‑vehicle tests.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-008",
+        "SIG-G60-US-041"
+      ],
+      "assumptions": [
+        "Improved sensor algorithms and calibration can reduce false negatives/positives.",
+        "Testing includes varied user heights, footwear and motion speeds representative of owners."
+      ],
+      "uncertainties": [
+        "Extreme occlusions (e.g., obstructed sensors), heavy rain or frozen sensors could still cause failures."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Door unlock behavior: default to unlock all doors and make setting easy to change",
+      "description": "When customers approach with the key, all passenger doors unlock by default (configurable), and the setting to change this behavior is discoverable and reversible in under two taps.",
+      "acceptance_criterion": "Default unlock behavior unlocks all doors in 99% of proximity unlock events in field testing; changing the unlock setting is discoverable in the infotainment or phone app in ≤2 taps and persists across vehicle restarts for 100% of test cases.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-018",
+        "SIG-G60-US-041"
+      ],
+      "assumptions": [
+        "Comfort Access and key-proximity hardware remain functionally similar and settings persistence is feasible in software.",
+        "Default behavior can be set centrally by product policy."
+      ],
+      "uncertainties": [
+        "Some markets or fleet use cases may require single-door unlock as default; behavior should remain configurable."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Allow drivers to permanently disable auto start‑stop easily",
+      "description": "Customers can turn off the automatic engine start‑stop function and have that preference remembered so they are not forced to re-disable it on every drive.",
+      "acceptance_criterion": "A clearly labeled setting or physical control to disable start‑stop is discoverable in ≤3 taps and the off preference persists across vehicle restarts for 100% of tested vehicles; usability test shows 95% of participants can find and set it within 30 seconds.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-025",
+        "SIG-G60-US-039"
+      ],
+      "assumptions": [
+        "Software control over start‑stop logic and user preference memory is permitted by system architecture.",
+        "If regulations require start‑stop, the persistent user preference will operate within allowed constraints."
+      ],
+      "uncertainties": [
+        "Regulatory or emissions rules in certain markets might limit the ability to permanently disable start‑stop."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Brake quality: eliminate early squeal, grinding and excessive dust",
+      "description": "Customers experience brakes that stop smoothly without unpleasant squeal or grabbing and that do not create excessive visible brake dust shortly after ownership.",
+      "acceptance_criterion": "Quality monitoring shows fewer than 2% of vehicles report squeal/grinding or excessive dust complaints within the first 6 months; road tests under typical driving produce no squeal louder than 55 dBA during routine braking events.",
+      "category": "quality_perception",
+      "signal_ids": [
+        "SIG-G60-US-015"
+      ],
+      "assumptions": [
+        "Material selection, bedding-in procedures and calibration improvements can materially reduce noise and dust.",
+        "dBA threshold for perceptible squeal is set based on prior studies and will be validated in acoustic labs."
+      ],
+      "uncertainties": [
+        "Brake noise can be sensitive to environmental conditions, wheel/tire combinations and driver behavior; absolute elimination is unlikely."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Range display and real‑world range consistency: reduce surprise and anxiety",
+      "description": "Customers see a realistic and consistent range estimate that reflects real-world conditions so they can reliably plan commutes and trips without unexpected shortfalls.",
+      "acceptance_criterion": "In mixed real-world driving tests (including cold-weather runs), displayed remaining electric range error is within ±5% of measured real-world range for at least 90% of test drives; sudden range jumps (changes >5% within 5 minutes without driving condition change) occur in fewer than 1% of drives.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-009",
+        "SIG-G60-US-014",
+        "SIG-G60-US-027"
+      ],
+      "assumptions": [
+        "Successor vehicle will use improved range estimation algorithms leveraging more vehicle and environmental inputs.",
+        "Testing will include representative cold-weather scenarios and mixed urban/highway cycles."
+      ],
+      "uncertainties": [
+        "Extreme climatic variations and charging state histories can still cause discrepancies; educating customers about conditions may be needed."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Highway assistant: retain and improve reliability for relaxed highway driving",
+      "description": "Customers can rely on the highway assistant to reduce workload and provide smooth hands-free driving on supported highways with predictable handover behavior.",
+      "acceptance_criterion": "On eligible highway segments, the system can engage and maintain hands-free assisted driving for at least 95% of the time without unexpected disengagements; when handover is required, the system provides clear and timely alerts and driver takeover occurs safely within defined seconds in 99% of events.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SIG-G60-US-024",
+        "SIG-G60-US-017",
+        "SIG-G60-US-034"
+      ],
+      "assumptions": [
+        "Maps, sensors and software stacks will be enhanced to support broader coverage and higher reliability.",
+        "Driver monitoring and handover timing criteria will be defined by the assistance product team."
+      ],
+      "uncertainties": [
+        "Regulatory changes to hands-free driving may alter available functionality in some markets."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Provide stable in-vehicle connectivity: reliable WiFi hotspot for common use",
+      "description": "Customers can use the car's WiFi hotspot for typical passenger needs (streaming, navigation updates, basic browsing) with stable throughput in urban/suburban conditions.",
+      "acceptance_criterion": "In urban/suburban network tests, the vehicle hotspot sustains median downstream throughput ≥10 Mbps per active user and maintains a connection success rate of 98% across trips of up to 2 hours.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-043"
+      ],
+      "assumptions": [
+        "Carrier agreements and hardware modems equivalent to current generations will be available in the successor timeframe.",
+        "Throughput target supports common passenger needs but higher performance may require external tethering."
+      ],
+      "uncertainties": [
+        "Cellular network coverage and carrier throttling will significantly affect real-world performance in rural or congested areas."
+      ],
+      "effort": "M",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Voice control: improve recognition for common vehicle tasks",
+      "description": "Customers can use voice commands to perform common tasks (climate, navigation destination entry, phone calls, media) with high recognition accuracy so voice is a realistic alternative while driving.",
+      "acceptance_criterion": "In controlled and noisy in-vehicle tests, voice recognition succeeds (correct intent executed) on at least 90% of utterances for a predefined set of common tasks and handles natural phrasing for at least 80% of users in the test panel.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-042",
+        "SIG-G60-US-026"
+      ],
+      "assumptions": [
+        "Speech models can be updated over-the-air and local/noisy-environment robustness will improve with better microphones and models.",
+        "Common task set will be defined and localized per market."
+      ],
+      "uncertainties": [
+        "Accent, background noise and third‑party app behavior may reduce accuracy for some users."
+      ],
+      "effort": "M",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Out-of-scope (engineering spec): Specify wireless charging pad power and physical mounting details",
+      "description": "Engineering-level specification for wireless charger power output (watts), coil placement and tray dimensions to support fast charging and phone fit.",
+      "acceptance_criterion": "N/A — engineering specification to be defined by HW team (e.g., X W output, tray width Y mm).",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-029"
+      ],
+      "assumptions": [
+        "Customers asked for more reliable wireless charging and correct sizing; exact power and mechanical specs are an engineering decision."
+      ],
+      "uncertainties": [
+        "Specifying exact wattage or coil count is an engineering choice and may change with phone standards."
+      ],
+      "effort": "S",
+      "forward_looking": true,
+      "in_scope": false,
+      "scope_reason": "This draft is an engineering specification (power/output/physical dimensions) rather than a direct customer-facing outcome; engineering teams should convert customer outcome requirements into these specs."
+    }
+  ]
+}

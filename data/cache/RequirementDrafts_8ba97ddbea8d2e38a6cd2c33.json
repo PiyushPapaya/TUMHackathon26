@@ -1,0 +1,322 @@
+{
+  "drafts": [
+    {
+      "title": "Preserve and strengthen engaging drivetrain and handling character",
+      "description": "Customers experience lively, immediate acceleration and confident, precise handling that make daily driving and spirited driving feel engaging and controllable.",
+      "acceptance_criterion": "On a standardized handling test (skidpad) the vehicle should achieve a sustained lateral acceleration of at least 0.95 g and in straight-line acceleration achieve 0–60 mph in 5.5 seconds or less for the standard performance level; in a blinded user drive test >=85% of participants rate driving dynamics as 'engaging' (top-2 on 5-point scale).",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-001",
+        "SIG-G60-US-002",
+        "SIG-G60-US-004",
+        "SIG-G60-US-012",
+        "SIG-G60-US-022",
+        "SIG-G60-US-017",
+        "SIG-G60-US-036"
+      ],
+      "assumptions": [
+        "Current G60 baseline is approximately 0.90 g on the skidpad and ~5.8 s 0–60 mph for comparable trim; targets assume incremental improvement possible within 3–5 years.",
+        "Standardized test procedures and participant panels are consistent with internal BMW test methodology."
+      ],
+      "uncertainties": [
+        "Exact baseline values for all current variants may vary; electric vs hybrid variants will differ in mass and performance.",
+        "Customer perception of 'engaging' driving may shift with new competitors or EV driving characteristics."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": "Customer-facing driving dynamics and perceived engagement are in scope for successor vehicle requirements."
+    },
+    {
+      "title": "Maintain high ride comfort and spacious cabin impression",
+      "description": "Customers feel the ride is supple and comfortable across real-world road conditions and perceive the cabin as spacious and relaxing for driver and passengers.",
+      "acceptance_criterion": "In a 2-hour real-world comfort study with a representative panel, >=85% of participants rate overall ride comfort top-2 on a 5-point scale and >=85% rate rear-seat spatial impression top-2.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-006",
+        "SIG-G60-US-016",
+        "SIG-G60-US-005"
+      ],
+      "assumptions": [
+        "Test panel reflects target US customer demographics for the 5 Series.",
+        "Real-world test routes include a mix of urban, suburban and highway surfaces."
+      ],
+      "uncertainties": [
+        "Perceived comfort can be affected by seat tuning vs. suspension trade-offs and customer preferences across markets."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": "Keeping and refining perceived ride comfort and cabin space is a customer outcome for the successor vehicle."
+    },
+    {
+      "title": "Reduce seat-related complaints by improving adjustability and long-distance comfort",
+      "description": "Customers find the seats comfortable for long trips and able to be adjusted to their body shapes, reducing complaints about firmness, support or fit.",
+      "acceptance_criterion": "In a 3-hour long-drive study, seat-related complaints measured via standardized questionnaire must be reduced by at least 60% compared to the current G60 baseline and >=80% of participants rate seat comfort top-2 on a 5-point scale.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-007",
+        "SIG-G60-US-010",
+        "SIG-G60-US-038"
+      ],
+      "assumptions": [
+        "Current G60 seat complaint rate will be measured by the same questionnaire to create a valid baseline.",
+        "Improvements will come from changes in cushion geometry, support zones and adjustability rather than only materials."
+      ],
+      "uncertainties": [
+        "Some seat preferences are highly personal; reducing complaints by 60% may require multiple seat options or package choices."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": "Seat comfort and adjustability are direct customer-facing aspects that must be addressed in the successor."
+    },
+    {
+      "title": "Reliable hands-free trunk opening and dependable Comfort Access lock/unlock",
+      "description": "Customers can open the trunk with a foot gesture and lock/unlock the vehicle reliably with keyless Comfort Access without repeated failures or the need to use the key fob manually.",
+      "acceptance_criterion": "Foot-gesture trunk opening success rate >=95% over 200 varied real-world attempts (different footwear, lighting and approach angles) with false-trigger rate <=1%; Comfort Access lock/unlock failure rate <=1% over 1000 simulated approach/departure events.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-008",
+        "SIG-G60-US-041",
+        "SIG-G60-US-018"
+      ],
+      "assumptions": [
+        "Test attempts will include representative customer behaviors that caused complaints in current fleet.",
+        "Environmental conditions include rain, low light and covered/garage approaches."
+      ],
+      "uncertainties": [
+        "Certain edge cases (very cold conditions, heavy interference from other key fobs) may still cause rare failures.",
+        "Hardware placement constraints could affect gesture sensing performance."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": "Improving Comfort Access and trunk usability is a direct customer requirement for the next-generation vehicle."
+    },
+    {
+      "title": "Deliver a significantly improved electric driving range and practical DC charging experience",
+      "description": "Customers experience a usable electric range suitable for daily and extended driving and can recharge quickly in typical public DC charging scenarios so electric ownership is convenient.",
+      "acceptance_criterion": "For the BEV variant, EPA-equivalent single-charge electric range >=300 miles; in common public DC charging conditions (150 kW-class chargers) charge from 10% to 80% in 25 minutes or less; in owner-reported charging logs, range-related complaints decrease by at least 50% vs current G60 ownership data.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-009",
+        "SIG-G60-US-014",
+        "SIG-G60-US-027",
+        "SIG-G60-US-020"
+      ],
+      "assumptions": [
+        "Successor will offer BEV variants with battery and weight optimizations enabling ~300 mile range within 3–5 years.",
+        "Sufficient public DC chargers with 150 kW capability will be available on typical routes in target markets.",
+        "EPA-equivalent range is the primary customer-communicated metric in the US."
+      ],
+      "uncertainties": [
+        "Real-world range varies with temperature, towing, payload and user driving style; fleet-wide complaint reduction depends on educating customers about range expectations.",
+        "Public charger reliability and power availability remain outside vehicle control and can affect customer experience."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": "Electric range and perceived charging convenience are core customer outcomes for the successor vehicle."
+    },
+    {
+      "title": "Make public charging easy to find and use by integrating reliable charger status and routing",
+      "description": "Customers can plan trips with confidence because the vehicle suggests chargers that are likely to be available and routes that include working chargers without excessive detours or failed charge attempts.",
+      "acceptance_criterion": "Routing suggestions must prioritize chargers with historical or live uptime >=90% and offer alternatives such that the added detour time does not exceed 15 minutes for 90% of routed charging stops; successful public-charging session failures (unable to charge due to station issues) are reduced by >=80% in owner logs compared to current baseline.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-020",
+        "SIG-G60-US-027"
+      ],
+      "assumptions": [
+        "Access to live and historical third-party charger data is available via partnerships or reliable aggregator APIs.",
+        "Map and routing updates are delivered to the vehicle with sufficient frequency to reflect station status."
+      ],
+      "uncertainties": [
+        "Third‑party networks may not provide uniform uptime data; differences in regional coverage will affect performance.",
+        "Live data accuracy depends on third-party reporting and network connectivity."
+      ],
+      "effort": "M",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": "Customer-facing charging navigation and station reliability information is in scope to improve charging experience."
+    },
+    {
+      "title": "Keep the touchscreen and operating concept intuitive while reducing usability complaints",
+      "description": "Customers can operate the primary functions via the touchscreen and system menus intuitively without confusion, and overall touchscreen usability issues are reduced while preserving the positive aspects users like today.",
+      "acceptance_criterion": "In a representative usability study, touchscreen/menu dissatisfaction falls to <=5% and top-2 overall satisfaction with the operating concept reaches >=80%; average task completion time for common tasks (navigation destination entry, climate quick-adjust) is <12 seconds with <=2 errors.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-011",
+        "SIG-G60-US-023",
+        "SIG-G60-US-026",
+        "SIG-G60-US-028",
+        "SIG-G60-US-032"
+      ],
+      "assumptions": [
+        "Usability study methods and participant selection align with the referenced US study approach.",
+        "Improvements can be delivered through software UI changes, logical menu restructuring and selective physical controls for frequent tasks."
+      ],
+      "uncertainties": [
+        "Balancing advanced features with simplicity may require multiple UI modes or personalization to satisfy all user groups.",
+        "Software updates post-launch may be needed to tune real-world behavior."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": "Improving the infotainment operating concept and touchscreen usability is a product design objective for the next-generation vehicle."
+    },
+    {
+      "title": "Provide reliable wireless phone connectivity and dependable in-car wireless charging",
+      "description": "Customers can use wireless Apple CarPlay and other phone integrations reliably, and wireless charging consistently charges popular phone models without frequent dropouts.",
+      "acceptance_criterion": "Wireless CarPlay connects successfully on the first attempt >=98% across a test matrix of major phone models; wireless charging supports and actively charges >=95% of tested popular phone models (with common cases) such that phones maintain or increase state-of-charge during typical drives, and incidents of dropped CarPlay sessions are <=2% over 1000 connection-hours.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-019",
+        "SIG-G60-US-029"
+      ],
+      "assumptions": [
+        "Test matrix includes representative iOS and popular Android devices used by target customers in the US and common protective cases.",
+        "Vehicle OTA updates can address compatibility issues post-launch."
+      ],
+      "uncertainties": [
+        "Rapidly changing phone hardware and OS updates may create new incompatibilities after launch.",
+        "Magnetic phone mounts and aftermarket accessories could reduce charging reliability."
+      ],
+      "effort": "M",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": "Phone connectivity and reliable wireless charging are customer-facing features to be improved in the successor vehicle."
+    },
+    {
+      "title": "Improve instrument cluster clarity and reduce related usability complaints",
+      "description": "Drivers receive clear, relevant information from the instrument cluster without distraction or confusing transitions, improving perceived clarity and reducing instrument-cluster-related complaints.",
+      "acceptance_criterion": "In a driving study, instrument cluster legibility and non-distracting behavior must achieve top-2 rating by >=85% of participants and instrument-cluster-related complaints in owner feedback drop to <=3% of reported infotainment/cluster issues.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-021",
+        "SIG-G60-US-023"
+      ],
+      "assumptions": [
+        "Driver studies are conducted under representative lighting and traffic conditions.",
+        "Cluster information density and animation choices are tuned with human factors input."
+      ],
+      "uncertainties": [
+        "Some drivers prefer more information while others want minimal displays; personalization options may be required."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": "Instrument cluster usability is a direct customer-facing attribute to address in the next vehicle."
+    },
+    {
+      "title": "Make climate controls and quick adjustments intuitive and reachable",
+      "description": "Customers can change temperature, fan and defogging settings quickly without navigating deep menus or taking attention from the road.",
+      "acceptance_criterion": "In a timed usability test, users must be able to change cabin temperature by ±2°C and adjust fan level within 3 seconds and no more than 2 interactions in >=90% of attempts; climate-control-related dissatisfaction <=5% in post-test survey.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-030",
+        "SIG-G60-US-023",
+        "SIG-G60-US-026"
+      ],
+      "assumptions": [
+        "Common quick tasks are defined consistently for test participants (temperature change, fan speed, windshield defog).",
+        "Combination of physical and software-based quick controls will be evaluated as solutions."
+      ],
+      "uncertainties": [
+        "Different users may prefer different control modalities (touch vs tactile knobs); multiple valid solutions may be necessary."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": "Climate control usability is a customer-facing requirement appropriate for successor development."
+    },
+    {
+      "title": "Deliver predictable, confident braking feel and strong stopping performance",
+      "description": "Drivers experience a linear and predictable brake pedal feel and confident stopping performance across speeds and load conditions.",
+      "acceptance_criterion": "In objective brake testing, 100–0 km/h stopping distance must be <=38 meters under standard test conditions, and in driver feedback tests >=85% rate braking predictability top-2 on a 5-point scale.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-015"
+      ],
+      "assumptions": [
+        "Standard test conditions align with current BMW brake test protocols and representative tire selections.",
+        "Stopping-distance target balances NVH, regenerative braking characteristics and customer expectations."
+      ],
+      "uncertainties": [
+        "Braking feel is influenced by brake-by-wire and regenerative blending choices which may require calibration trade-offs.",
+        "Wet or icy conditions will affect absolute stopping distances; targets apply to dry standard test surfaces."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": "Braking performance and pedal feel are direct customer-experience outcomes to be retained or improved."
+    },
+    {
+      "title": "Improve interior storage usability to accommodate common items",
+      "description": "Customers have convenient, stable places to store everyday items (phones, tablets, water bottles) so they feel the cabin is practical.",
+      "acceptance_criterion": "The cabin must provide at least one enclosed compartment that fits a 12-inch tablet flat, two vertical 850 ml bottles in dedicated holders, and a wireless-phone area that secures devices during cornering; in a user study >=80% rate storage convenience top-2.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-040"
+      ],
+      "assumptions": [
+        "Typical water-bottle sizes among target customers are ~850 ml for large bottles; tablet sizes reflect common 11–13 inch devices.",
+        "Test includes dynamic stability checks to ensure items remain secure during normal driving maneuvers."
+      ],
+      "uncertainties": [
+        "New phone form factors and oversized cases could affect wireless-phone area fit; flexible design may be beneficial."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": "Improving interior storage is a pragmatic, customer-facing requirement for the successor vehicle."
+    },
+    {
+      "title": "Offer enhanced ambient lighting customization and a panoramic glass roof option",
+      "description": "Customers can personalize cabin ambiance with richer ambient lighting choices and can opt for a panoramic glass roof that increases daylight feeling while providing sun protection.",
+      "acceptance_criterion": "Ambient lighting must offer at least 10 distinct color palettes selectable by the user and personalization scenes; when the panoramic glass roof option is selected, >=80% of users in a daylight study must report improved spatial impression/top-2 on a 5-point scale while the glass and sunshade system limit cabin solar heating impact to a level comparable to a closed opaque roof in at least 70% of sunny-day tests.",
+      "category": "interior",
+      "signal_ids": [
+        "SIG-G60-US-035",
+        "SIG-G60-US-037",
+        "SIG-G60-US-033"
+      ],
+      "assumptions": [
+        "Color palettes and scenes are meaningful to customers and implemented in a way that avoids distracting transitions.",
+        "Panoramic roof option includes an effective sunshade (manual or automatic) and coatings to reduce solar heat gain."
+      ],
+      "uncertainties": [
+        "Exact thermal performance will depend on glazing technology availability and may affect cost and weight trade-offs.",
+        "Some customers may prefer a solid roof for thermal or acoustic reasons; offering as an option helps address this."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": "Ambient lighting and roof configuration are customer-facing feature choices for the successor vehicle."
+    },
+    {
+      "title": "Improve voice recognition accuracy and onboard hotspot reliability",
+      "description": "Customers can use natural-language voice commands reliably while driving, and the in-car WiFi hotspot provides stable connectivity for passengers.",
+      "acceptance_criterion": "Voice recognition success rate for natural-language driver commands in US English must be >=90% in real-road noise conditions across a representative command set; the vehicle WiFi hotspot must deliver at least 5 Mbps per connected device for 90% of measured trips in typical suburban/highway routes.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-042",
+        "SIG-G60-US-043",
+        "SIG-G60-US-028"
+      ],
+      "assumptions": [
+        "Voice models are localized for US English and tuned for in-cabin noise profiles; hotspot performance depends on available cellular networks.",
+        "Measured trips reflect typical customer usage patterns and carrier coverage in target markets."
+      ],
+      "uncertainties": [
+        "Cellular network variability and carrier policies could affect hotspot consistency; partnerships with carriers may mitigate this.",
+        "Voice recognition performance can degrade with accented speech or simultaneous multi-speaker scenarios."
+      ],
+      "effort": "M",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": "Improving voice control usability and hotspot reliability are direct customer experience improvements planned for the successor vehicle."
+    }
+  ]
+}

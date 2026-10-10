@@ -1,0 +1,1956 @@
+[
+ {
+  "id": "EV-F70-EU-WEB-01",
+  "source_type": "web",
+  "source_name": "Evo",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "The Mercedes A‑Class (W177) uses Mercedes’ MBUX layout with twin 10.25‑inch displays and can be controlled via the central touchscreen, touch‑sensitive steering controls, a centre‑console touchpad and voice commands.",
+  "url": "https://www.evo.co.uk/mercedes/a-class",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Evo",
+   "published": "16 Jul 2026",
+   "stance": "neutral",
+   "about": "Mercedes A‑Class controls and displays",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-003"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-02",
+  "source_type": "web",
+  "source_name": "Auto Express",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Mercedes’ MBUX introduced a ‘zero layer’ home screen to surface major functions on the home page (intended to reduce menu dives), but reviewers note some shortcut buttons are small and fiddly.",
+  "url": "https://www.autoexpress.co.uk/mercedes/e-class/366001/mercedes-infotainment-review-mbux-touchscreen-tech-tested-vs-rivals",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Auto Express",
+   "published": "27 Feb 2025",
+   "stance": "contradicts",
+   "about": "MBUX zero layer and distraction mitigation",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-003"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-03",
+  "source_type": "web",
+  "source_name": "The Business Times",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Reviewers of the BMW 1 Series F70 (2024/2025) report BMW removed the centre rotary iDrive controller and relocated climate and many other controls to the touchscreen, increasing driver reliance on the display.",
+  "url": "https://www.businesstimes.com.sg/lifestyle/motoring/2025-bmw-1-series-review-1-road?ai-allowed=1",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "The Business Times",
+   "published": "19 Oct 2024",
+   "stance": "supports",
+   "about": "BMW 1 Series (F70) control architecture",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-003"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-04",
+  "source_type": "web",
+  "source_name": "CompleteCar.ie",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "A CompleteCar review of the BMW 120 (F70) concluded that although BMW keeps temperature and seat‑heating controls visible on the screen, using the touchscreen for climate/audio is ‘still more distracting than a button or even a rotary dial.’",
+  "url": "https://www.completecar.ie/car-reviews/article/BMW/1_Series/120_(2025)/2418/13610/1970-BMW-120-(2025)-review.html",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "CompleteCar.ie",
+   "published": "25 Sep 2024",
+   "stance": "supports",
+   "about": "BMW touchscreen vs physical controls distraction",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-003"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-05",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz (Ireland) Owner Manuals",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Mercedes’ official owner/manual pages for the 2025 A‑Class describe operation of MBUX via touchscreen, touch control on the steering wheel and voice control, confirming multiple input methods are provided in EU/European market documentation.",
+  "url": "https://www.mercedes-benz.ie/services/manuals/a-class-hatchback-2025-04-w177-mbux/android-auto/android-auto-overview/",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mercedes‑Benz (Ireland) Owner Manuals",
+   "published": "April 2025",
+   "stance": "neutral",
+   "about": "Official MBUX operating methods (A‑Class owner manual)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-003"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-06",
+  "source_type": "web",
+  "source_name": "Audi UK (official)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "The Audi A3 Sportback’s cockpit uses a panoramic curved screen that combines an Audi virtual cockpit plus (11.9‑inch) with a 12.8‑inch MMI touch display (driver-oriented dual screens for instruments, navigation and vehicle functions). ([audi.co.uk](https://www.audi.co.uk/en/models/a3/a3-sportback/design-and-specification/))",
+  "url": "https://www.audi.co.uk/en/models/a3/a3-sportback/design-and-specification/",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Audi UK (official)",
+   "published": "n.d.",
+   "stance": "neutral",
+   "about": "Audi A3 Sportback infotainment / displays",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-004"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-07",
+  "source_type": "web",
+  "source_name": "Top Gear",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Top Gear’s A3 Sportback interior review (published 3 July 2025) describes Audi’s infotainment as “one of the more responsive and logical setups on the market” and notes Audi has added an app‑store style function plus smartphone integration (Apple CarPlay/Android Auto). ([topgear.com](https://www.topgear.com/car-reviews/audi/a3-sportback/interior))",
+  "url": "https://www.topgear.com/car-reviews/audi/a3-sportback/interior",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Top Gear",
+   "published": "03 Jul 2025",
+   "stance": "supports",
+   "about": "Audi A3 Sportback infotainment usability",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-004"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-08",
+  "source_type": "web",
+  "source_name": "Carwow",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Carwow’s BMW 1 Series (F70) review (2025/2026 pages) documents a 10.7‑inch driver display and a 10.3‑inch central infotainment screen but explicitly calls the system “crisp and clear but a little overcomplicated to navigate,” and warns the touchscreen climate controls are “irritating to use on the move.” ([carwow.co.uk](https://www.carwow.co.uk/bmw/1-series))",
+  "url": "https://www.carwow.co.uk/bmw/1-series",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Carwow",
+   "published": "2025 (page updated 2025/2026)",
+   "stance": "supports",
+   "about": "BMW 1 Series (F70) infotainment complexity and controls",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-004"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-09",
+  "source_type": "web",
+  "source_name": "Motor‑Talk (owner forum)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "There are real owner reports of software problems on BMW forums: for example a Motor‑Talk thread documents iDrive crashes, lost navigation/audio/phone contacts after updates and users discussing remote software upgrade versions (11/2025.24 → 11/2025.30), showing software instability has affected some BMW F70 owners. ([motor-talk.de](https://www.motor-talk.de/forum/remote-software-upgrade-11-2025-30-t8423229.html))",
+  "url": "https://www.motor-talk.de/forum/remote-software-upgrade-11-2025-30-t8423229.html",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Motor‑Talk (owner forum)",
+   "published": "thread started 27 Nov 2025 (posts through Dec 2025)",
+   "stance": "supports",
+   "about": "BMW F70 software update / user‑reported issues",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-004"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-10",
+  "source_type": "web",
+  "source_name": "Wikipedia (German)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "The BMW 1 Series ‘F70’ is BMW’s fourth-generation 1 Series (new-model code F70) introduced for the 2024/2025 model years in Europe. ",
+  "url": "https://de.wikipedia.org/wiki/BMW_F70",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Wikipedia (German)",
+   "published": "2025-??-??",
+   "stance": "supports",
+   "about": "BMW 1 Series F70",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-005"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-11",
+  "source_type": "web",
+  "source_name": "Autocar",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Professional reviews describe the facelifted Volkswagen Golf (Mk8.5 / 2024–2025) as having ‘rounded’ driving manners and, with adaptive dampers, a comfortable ride — but note the ride can feel firmer and noisy on larger wheels or poor surfaces. ",
+  "url": "https://www.autocar.co.uk/car-review/volkswagen/golf",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Autocar",
+   "published": "2024-??-??",
+   "stance": "supports",
+   "about": "Volkswagen Golf driving and ride comfort (Mk8.5)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-005"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-12",
+  "source_type": "web",
+  "source_name": "Auto Express",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "UK reviews (Auto Express) say the Mk8.5 Golf is a comfortable and pleasant place to be overall but that ride quality is compromised on poorer surfaces and that larger wheels increase road noise and harshness. ",
+  "url": "https://www.autoexpress.co.uk/volkswagen/golf/17094/volkswagen-golf",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Auto Express",
+   "published": "2024-??-??",
+   "stance": "supports",
+   "about": "Volkswagen Golf ride quality and noise",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-005"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-13",
+  "source_type": "web",
+  "source_name": "CarExpert",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Journalists and owners have reported that the Golf’s drivetrain character (small TSI engines plus DSG/dually systems) can feel less engaging or ‘dull’ in real-world use, with some owners describing sluggish or uninvolving acceleration in non-performance trims. ",
+  "url": "https://www.carexpert.com.au/car-reviews/2025-volkswagen-golf-style-review",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "CarExpert",
+   "published": "2025-??-??",
+   "stance": "supports",
+   "about": "Golf drivetrain engagement and acceleration feel",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-005"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-14",
+  "source_type": "web",
+  "source_name": "Carwow (DE)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "VW’s 1.5-litre petrol options for the Mk8/8.5 are offered in ~115 PS and ~150 PS states; the base 1.5 variants and their official 0–100 km/h performance (sub-10 s for stronger versions, slower for the lower-output units) help explain why some drivers find the base cars underpowered for spirited driving. ",
+  "url": "https://www.carwow.de/blog/volkswagen-golf-7-facelift",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Carwow (DE)",
+   "published": "2025-??-??",
+   "stance": "supports",
+   "about": "VW Golf engine options and performance",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-005"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-15",
+  "source_type": "web",
+  "source_name": "Auto Bild",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "At the same time, German press testing of the Golf 1.5 eTSI notes software/hardware changes (e.g., starter-generator in mild-hybrid eTSI) that reduce some DSG ‘ruckle’/hesitation symptoms in those variants. ",
+  "url": "https://www.autobild.de/artikel/vw-golf-8-facelift-1.5-etsi-test-26359801.html",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Auto Bild",
+   "published": "2024-??-??",
+   "stance": "supports",
+   "about": "Golf 1.5 eTSI transmission behaviour and DSG ruckling",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-005"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-16",
+  "source_type": "web",
+  "source_name": "Auto Express",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Mainstream European reviewers describe the BMW 1 Series (F70) as retaining a driver-focused character with generally better handling engagement than mainstream rivals, while advising that ride comfort depends strongly on trim and wheel/tire choice (standard Sport trim is more comfortable than optional M Sport or larger-wheel specifications). ",
+  "url": "https://www.autoexpress.co.uk/bmw/1-series",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Auto Express",
+   "published": "2025-??-??",
+   "stance": "supports",
+   "about": "BMW 1 Series F70 handling vs ride comfort",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-005"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-17",
+  "source_type": "web",
+  "source_name": "Carbuyer",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Several buyer’s guides and reviews (Carbuyer / CarGurus / CarUnited) state the F70 1 Series achieves an ‘excellent balance between sporty handling and ride comfort’ for many buyers, but they repeatedly caution that M Sport/large wheels or run-flat/performance tyres will make the ride noticeably firmer. ",
+  "url": "https://www.carbuyer.co.uk/bmw/1-series",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Carbuyer",
+   "published": "2025-03-19",
+   "stance": "supports",
+   "about": "BMW 1 Series ride/handling balance",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-005"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-18",
+  "source_type": "web",
+  "source_name": "CarGurus (UK)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "In drivetrain terms, the regular BMW 120 (F70) is offered with a ~170 hp petrol variant and uses a seven‑speed dual‑clutch automatic in most markets; that higher base output vs. the Golf’s lowest-output 115–150 hp options explains why some reviewers/owners find the BMW’s on-paper performance and overtake ability stronger than base Golfs. ",
+  "url": "https://www.cargurus.co.uk/research/BMW-1-Series-2024-mg690",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "CarGurus (UK)",
+   "published": "2025-??-??",
+   "stance": "supports",
+   "about": "BMW 1 Series powertrain and gearbox information",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-005"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-19",
+  "source_type": "web",
+  "source_name": "Reddit (owner reports)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Owner and forum reports collected since 2024‑2026 back the customer comment that some Golf trims feel ‘underpowered’ or ‘sluggish’ in everyday driving and that some drivers dislike the transmission/DSG character; those criticisms appear concentrated on lower-output Golf variants and certain gearbox calibrations rather than on all Golf powertrain options. ",
+  "url": "https://www.reddit.com/r/vwgolf/comments/1ocnt6o",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Reddit (owner reports)",
+   "published": "2025-10-21",
+   "stance": "supports",
+   "about": "Owner reports of Golf feeling dull/sluggish and transmission complaints",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-005"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-20",
+  "source_type": "web",
+  "source_name": "Recharged",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Volvo EX30 boot/cargo capacity (EU measurement): ~318 litres with rear seats up and ~904 litres with the rear seats folded; a small front trunk (frunk) of roughly 7 litres is also reported.",
+  "url": "https://recharged.com/articles/volvo-ex30-cargo-space-dimensions",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Recharged",
+   "published": "2025-03-??",
+   "stance": "supports",
+   "about": "Volvo EX30 cargo space",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-009"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-21",
+  "source_type": "web",
+  "source_name": "CompleteCar.ie",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Multiple European reviews report the EX30’s boot as about 318–400 litres with seats up and 904 litres seats down (example: CompleteCar.ie shows 318–400 L / 904 L).",
+  "url": "https://www.completecar.ie/car-reviews/article/Volvo/EX30/EX30_Extended_Range_%282024%29/2239/12846/2023-Volvo-EX30_Extended_Range_%282024%29-review.html",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "CompleteCar.ie",
+   "published": "2024-??-??",
+   "stance": "supports",
+   "about": "Volvo EX30 boot space (CompleteCar.ie)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-009"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-22",
+  "source_type": "web",
+  "source_name": "ex30forums.com",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Several owner posts and EX30-owner forums report front-seat firmness or a lack of lateral/leg support for some drivers (owners reporting they found the seats initially uncomfortable or lacking side support).",
+  "url": "https://www.ex30forums.com/viewtopic.php?sid=a804e4dbd357f50fbb5237444c8dc5c5&t=1072",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ex30forums.com",
+   "published": "2025-05-11 (forum thread)",
+   "stance": "supports",
+   "about": "Volvo EX30 owner seat comfort reports",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-009"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-23",
+  "source_type": "web",
+  "source_name": "Autocar (India)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Professional reviews are mixed but often positive about EX30 front seats: AutoCar and AutoTrader note the EX30’s front seats as “broad and comfy” or “very comfortable” in their road tests.",
+  "url": "https://www.autocarindia.com/car-reviews/2025-volvo-ex30-review-ex-marks-the-spot-436707",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autocar (India)",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Volvo EX30 front seat comfort (Autocar)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-009"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-24",
+  "source_type": "web",
+  "source_name": "BMW Group press release",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "BMW 1 Series (F70, 2024/2025 EU model) official/spec figures: standard luggage capacity 380 litres (some mild‑hybrid 120/120d versions 300 litres), expanding to 1,200 litres with rear seats folded.",
+  "url": "https://www.press.bmwgroup.com/global/article/attachment/T0296071EN/441775",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press release",
+   "published": "2024-06-05",
+   "stance": "supports",
+   "about": "BMW 1 Series (F70) boot capacity (BMW press) ",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-009"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-25",
+  "source_type": "web",
+  "source_name": "Auto Express",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "BMW reviews (Auto Express and others) describe the 1 Series’ front seats as supportive and comfortable for long journeys, with good adjustability; some sporty seat options are available as extras.",
+  "url": "https://www.autoexpress.co.uk/bmw/1-series/363332/new-bmw-1-series-revealed-2024-pictures",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Auto Express",
+   "published": "2024-06 (review/coverage)",
+   "stance": "supports",
+   "about": "BMW 1 Series front seat comfort (Auto Express)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-009"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-26",
+  "source_type": "web",
+  "source_name": "J.D. Power",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Rear‑seat space comparison from published reviews: EX30 rear-seat legroom is repeatedly described as ‘tight’ for taller adults, while the BMW 1 Series is described as ‘reasonable’ but still somewhat cramped—overall the 1 Series generally offers more rear passenger room than the EX30 in reviewer tests.",
+  "url": "https://www.jdpower.com/cars/expert-reviews/2025-volvo-ex30-review-driving-impressions",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "J.D. Power",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Volvo EX30 rear seat space (JD Power) ",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-009"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-27",
+  "source_type": "web",
+  "source_name": "RAC Drive",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Cabin storage/practicality: reviewers note the EX30 has useful small storage (front cubby, under‑floor boot storage, pockets) but smaller door bins and tighter rear passenger storage; the BMW 1 Series’ cabin storage is described as ‘average’ with a central armrest bin and cupholders—practical differences are small but the BMW’s larger boot makes it more practical for bulk luggage.",
+  "url": "https://www.rac.co.uk/drive/car-reviews/volvo/ex30/ex30/",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "RAC Drive",
+   "published": "2025-01-29",
+   "stance": "neutral",
+   "about": "Volvo EX30 storage and practicality (RAC) ",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-009"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-28",
+  "source_type": "web",
+  "source_name": "carwow",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Mercedes A‑Class in recent EU-spec reviews is offered with the MBUX infotainment that combines two linked driver + central displays and a strong emphasis on touchscreen and natural‑language “Hey Mercedes” voice control (less physical buttons on many trims).",
+  "url": "https://www.carwow.co.uk/editorial/best-cars/by-features/the-best-car-infotainment-systems",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "carwow",
+   "published": "2025-06-??",
+   "stance": "supports",
+   "about": "MBUX infotainment and controls in Mercedes A‑Class.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-014"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-29",
+  "source_type": "web",
+  "source_name": "Motor1",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "The BMW 1 Series (F70) interior and tech package for 2024/2025 uses a curved dual‑display layout (roughly a 10.7\" central screen plus a 10.25\" instrument cluster in press/review coverage) and continues to offer BMW’s iDrive input (rotary/dial + shortcuts) as a primary physical control option. ",
+  "url": "https://www.motor1.com/news/722118/bmw-1-series-f70-2024-facelift-revealed/",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Motor1",
+   "published": "2024-07-??",
+   "stance": "supports",
+   "about": "BMW 1 Series (F70) display and iDrive controls.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-014"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-30",
+  "source_type": "web",
+  "source_name": "CarsGuide",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Multiple reviewers and comparison write‑ups characterise Mercedes’ MBUX approach as more touch‑and‑voice centric while BMW’s iDrive approach keeps a physical rotary controller and shortcut keys that many reviewers describe as less distracting while driving. ",
+  "url": "https://www.carsguide.com.au/bmw/i-series/vs/mercedes-benz-a200",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "CarsGuide",
+   "published": "2025-??-??",
+   "stance": "supports",
+   "about": "Comparison of MBUX vs iDrive (controls and driver distraction).",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-014"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-31",
+  "source_type": "web",
+  "source_name": "WeltCar (vehicle export/COC data)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Mercedes factory option/equipment lists and vehicle documents include a coded item described as “engine sound via speakers” (often listed as code B63 / ‘Engine sound via speakers’ in COC/equipment sheets), i.e. simulated engine/exhaust audio routed through the vehicle’s speaker system. ",
+  "url": "https://api.weltcar.de/api/cars/mv4/export",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "WeltCar (vehicle export/COC data)",
+   "published": "2025-??-??",
+   "stance": "supports",
+   "about": "Mercedes equipment code B63 / engine sound via speakers.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-014"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-32",
+  "source_type": "web",
+  "source_name": "MBWorld forum",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Owner and enthusiast forum reports show Mercedes owners experiencing audible simulated engine sound through the cabin speakers that can be difficult to fully disable and can be amplified/altered by aftermarket audio amplifiers, i.e. real‑world complaints about the feature’s presence and manageability. ",
+  "url": "https://mbworld.org/forums/c63-c43-amg-w206/908558-engine-sound-via-speakers.html",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "MBWorld forum",
+   "published": "2025-02-16",
+   "stance": "supports",
+   "about": "User reports of engine sound via speakers in Mercedes and difficulty disabling it.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-014"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-33",
+  "source_type": "web",
+  "source_name": "DoubleClutch",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Road‑test and editorial reviews have described Mercedes’ injected/simulated engine notes as noticeable in some drives and in at least one test were described as having poor fidelity when toggled or when audio hardware glitches occurred (reviewers likened the transient sound quality to low‑bit AM‑radio‑like artifacts).",
+  "url": "https://doubleclutch.ca/article/2024-mercedes-amg-gt-63-4matic-coupe-review",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "DoubleClutch",
+   "published": "2024-??-??",
+   "stance": "supports",
+   "about": "Editorial note on poor fidelity of synthetic engine notes in Mercedes.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-014"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-34",
+  "source_type": "web",
+  "source_name": "BMW (official specification guide PDF)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "BMW publishes and lists ‘Active Sound Design’ (and related functions such as XtraBoost in sport modes) in technical/specification materials for recent models — i.e. BMW also supplies synthesized/processed engine sound features routed into cabin audio on some models/modes. ",
+  "url": "https://www.bmw.com/content/dam/bmw/marketAU/bmw_com/all-models/specification_guide_2021/August-updated/BMW_3_Series_Sedan_Specification_Guide-G20.pdf.asset.1632894960178.pdf",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "BMW (official specification guide PDF)",
+   "published": "2021-08 (example spec doc)",
+   "stance": "supports",
+   "about": "BMW Active Sound Design / XtraBoost feature in BMW documentation.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-014"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-35",
+  "source_type": "web",
+  "source_name": "BMWBlog",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Journalistic coverage and owner/community discussion (including BMW‑focused blogs) note both a trend toward ‘artificial engine sound’ features across premium brands and owner complaints that playing synthesized engine/exhaust audio through normal vehicle speakers can degrade perceived music/audio quality and feel artificial. ",
+  "url": "https://www.bmwblog.com/2025/04/28/bmw-sound-system-upgrades-a-whim-or-a-necessity/",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMWBlog",
+   "published": "2025-04-28",
+   "stance": "supports",
+   "about": "Discussion of artificial engine sound and perceived audio quality impact.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-014"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-36",
+  "source_type": "web",
+  "source_name": "AudiWorld forum",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Independent forum threads and longstanding community discussion across brands document recurring owner complaints about ‘fake engine sound’ and poor perceived audio fidelity when these synthetic sounds are used — the issue is not unique to one marque and appears regularly in owner feedback for Mercedes and BMW lines. ",
+  "url": "https://www.audiworld.com/forums/q5-sq5-mkii-discussion-218/does-2018-sq5-use-soundaktor-2943349/page3/",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "AudiWorld forum",
+   "published": "2019-03-20 (example thread)",
+   "stance": "supports",
+   "about": "Cross‑brand owner discussion of simulated engine/exhaust sound and quality.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-014"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-37",
+  "source_type": "web",
+  "source_name": "Wikipedia",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "The BMW 1 Series (F70) is the fourth-generation BMW 1 Series (the model code used in reviews of the 2024–2026 small-hatch refresh).",
+  "url": "https://en.wikipedia.org/wiki/BMW_1_Series_(F70)",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Wikipedia",
+   "published": "2026-04-xx",
+   "stance": "neutral",
+   "about": "BMW 1 Series (F70)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-016"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-38",
+  "source_type": "web",
+  "source_name": "Top Gear",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Top Gear’s 2025 review says the Audi A3 Sportback has sharp turn‑in, a pliant/neutral ride and a ‘fluid driving experience.’",
+  "url": "https://www.topgear.com/car-reviews/audi/a3-sportback/driving",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Top Gear",
+   "published": "2025-07-03",
+   "stance": "supports",
+   "about": "Audi A3 Sportback driving character (2025)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-016"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-39",
+  "source_type": "web",
+  "source_name": "Auto Express",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Auto Express long‑term testing (Dec 2025) reports the A3 delivers comfort and refinement for daily driving.",
+  "url": "https://www.autoexpress.co.uk/audi/a3/366952/audi-a3-sportback-35-tfsi-long-term-test-premium-hatch-joy-live",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Auto Express",
+   "published": "2025-12-08",
+   "stance": "supports",
+   "about": "Audi A3 Sportback comfort/refinement",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-016"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-40",
+  "source_type": "web",
+  "source_name": "Auto Express",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Auto Express also notes the A3’s automatic (S tronic) can feel jerky at low speeds, which makes stop‑start city driving less smooth than a conventional automatic. ",
+  "url": "https://www.autoexpress.co.uk/audi/a3",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Auto Express",
+   "published": "2026-08-03 (page updated)",
+   "stance": "supports",
+   "about": "Audi A3 S tronic low‑speed jerkiness",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-016"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-41",
+  "source_type": "web",
+  "source_name": "Carwow",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Carwow’s A3 coverage states the 7‑speed S tronic is ‘seamless on the move’ but ‘can be a bit jerky at manoeuvring speeds.’",
+  "url": "https://www.carwow.co.uk/audi/a3/2019",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Carwow",
+   "published": "(review page updated)",
+   "stance": "supports",
+   "about": "Audi A3 S tronic behaviour at low speeds",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-016"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-42",
+  "source_type": "web",
+  "source_name": "Faultfile (specialist reliability site)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Reliability/technical summaries and fault trackers cite recurring issues with the DQ200/dry‑clutch 7‑speed S‑tronic (clutch judder, mechatronic faults) that produce rough or jerky pulls from standstill on affected A3 examples. ",
+  "url": "https://faultfile.co.uk/cars/audi-a3",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Faultfile (specialist reliability site)",
+   "published": "(ongoing)",
+   "stance": "supports",
+   "about": "DQ200 / S tronic common faults causing jerky shifts",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-016"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-43",
+  "source_type": "web",
+  "source_name": "Audi‑Sport.net (forum)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Owner and enthusiast threads in Audi owner forums report customer experiences of jerky shifts on 35 TFSI / S‑tronic A3 Sportback models and note software/mechatronic updates sometimes improve but not always eliminate the symptom.",
+  "url": "https://www.audi-sport.net/xf/threads/447223/?amp=1",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Audi‑Sport.net (forum)",
+   "published": "2024–2026 (threads)",
+   "stance": "supports",
+   "about": "Customer reports of A3 gearbox jerking",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-016"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-44",
+  "source_type": "web",
+  "source_name": "CarGurus (review summary)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Major EU reviews of the BMW 1 Series (F70) describe it as more driver‑focused and engaging than many rivals, with composed, planted handling but a firmer suspension setup that some reviewers say is less cushioned than the A3 over poor surfaces. ",
+  "url": "https://www.cargurus.co.uk/research/BMW-1-Series-F40-2020-mg66",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "CarGurus (review summary)",
+   "published": "(updated 2024–2026)",
+   "stance": "supports",
+   "about": "BMW 1 Series driving and ride character",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-016"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-45",
+  "source_type": "web",
+  "source_name": "The Car Expert",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Overview summaries (Car Expert / other EU reviewers) say the 1 Series’ automatic gearbox generally selects appropriate gears smoothly in normal driving, while reviewers recommend the 1 Series if you prioritise sportier handling over the plushest ride. ",
+  "url": "https://thecarexpert.co.uk/page/27/?attachment_id=rlrgldyymaqfl%2F1000",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "The Car Expert",
+   "published": "2025-03-01 (overview)",
+   "stance": "supports",
+   "about": "BMW 1 Series gearbox smoothness and sportier ride",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-016"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-46",
+  "source_type": "web",
+  "source_name": "ADAC",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "BMW 1er (internal model code F70) is BMW’s fourth-generation 1 Series introduced for Europe from late 2024/2025 and the new generation features a noticeably bolder, more controversial exterior design compared with the previous model. ([adac.de](https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/bmw/bmw-1er/?utm_source=openai))",
+  "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/bmw/bmw-1er/",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ADAC",
+   "published": "2025-09-18",
+   "stance": "neutral",
+   "about": "BMW 1er (F70) exterior design",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-017"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-47",
+  "source_type": "web",
+  "source_name": "Volkswagen Newsroom",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Volkswagen’s Golf (MY25 / Mk8 facelift) received relatively modest exterior changes for the 2025 model year—tweaked front and rear bumpers, updated LED head- and tail-lights and the illuminated VW badge—rather than a full redesign. ([volkswagen-newsroom.com](https://www.volkswagen-newsroom.com/en/the-new-golf-world-premiere-18074/the-new-exterior-details-18076?utm_source=openai))",
+  "url": "https://www.volkswagen-newsroom.com/en/the-new-exterior-details-18076",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Volkswagen Newsroom",
+   "published": "",
+   "stance": "neutral",
+   "about": "VW Golf (2025) exterior updates",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-017"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-48",
+  "source_type": "web",
+  "source_name": "carwow",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Published comparisons and road‑test write-ups characterise the BMW F70’s styling as more aggressive/‘divisive’ while describing the Golf’s look as more conservative and only lightly revised in 2025—reviewers therefore portray the F70 as the more visually daring hatchback in the EU compact segment. ([carwow.co.uk](https://www.carwow.co.uk/blog/vw-golf-vs-bmw-1-series-0064?utm_source=openai))",
+  "url": "https://www.carwow.co.uk/blog/vw-golf-vs-bmw-1-series-0064",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "carwow",
+   "published": "2023-01-20",
+   "stance": "neutral",
+   "about": "Design comparison (Golf vs BMW 1 Series)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-017"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-49",
+  "source_type": "web",
+  "source_name": "Reddit (r/tires)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "There are multiple owner reports on public forums that specific tyre models fitted to compact cars (including Golf examples) can be perceived as noisy and to have inconsistent grip; example owner thread reporting Michelin CrossClimate II as “too loud” on a Golf. ([reddit.com](https://www.reddit.com/r/tires/comments/1r6aa38/is_the_michelin_crossclimate_2_actually_the_god/?utm_source=openai))",
+  "url": "https://www.reddit.com/r/tires/comments/1r6aa38/is_the_michelin_crossclimate_2_actually_the_god/",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Reddit (r/tires)",
+   "published": "",
+   "stance": "supports",
+   "about": "Owner reports of tyre noise/grip (example: Golf + CrossClimate II)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-017"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-50",
+  "source_type": "web",
+  "source_name": "Tyre Reviews",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Independent tyre tests and user‑review databases show significant variation between tyre models for cabin/road noise and wet/dry grip (some all‑season tyres score high for noise/rolling resistance while premium summer tyres score higher for grip), so OE tyre choice or aftermarket replacement materially affects perceived noise and grip. ([tyrereviews.com](https://www.tyrereviews.com/Tyre/Yokohama/BluEarth-4S-AW21_2.htm?utm_source=openai))",
+  "url": "https://www.tyrereviews.com/Tyre/Yokohama/BluEarth-4S-AW21_2.htm",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Tyre Reviews",
+   "published": "",
+   "stance": "supports",
+   "about": "Tyre lab tests and owner-review variability",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-017"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-51",
+  "source_type": "web",
+  "source_name": "Volvo Cars (official)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Volvo presents the EX30 interior as a minimalist Scandinavian design that deliberately uses renewable and recycled materials (textiles, wool blends, recycled polyester, and bio-based synthetic leather options) and a combined driver/center touchscreen as the cockpit focus.",
+  "url": "https://www.volvocars.com/us/cars/ex30-electric/interior-design/////",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Volvo Cars (official)",
+   "published": "n.d.",
+   "stance": "neutral",
+   "about": "Volvo EX30 interior materials and design",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-018"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-52",
+  "source_type": "web",
+  "source_name": "Carwow",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Carwow’s 2026 review says the EX30 “looks cool and upmarket” but finds “plenty of cheap materials” and warns that “controlling everything through the screen can be frustrating” and that the speedo being off to the side forces glances away from the road.",
+  "url": "https://www.carwow.co.uk/volvo/ex30",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Carwow",
+   "published": "2026-10-05",
+   "stance": "supports",
+   "about": "Volvo EX30 touchscreen usability / distracting",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-018"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-53",
+  "source_type": "web",
+  "source_name": "Autocar",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Autocar’s 2026 test of the EX30 reports that the car’s driver‑monitoring together with its centralised instrumentation are “the chief culprit” for distraction, saying testers often disabled driver monitoring to stop repeated warnings while looking at the single display.",
+  "url": "https://d2km96w3x5blkf.cloudfront.net/car-review/volvo/ex30",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autocar",
+   "published": "2026",
+   "stance": "supports",
+   "about": "Volvo EX30 instrument layout and distraction",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-018"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-54",
+  "source_type": "web",
+  "source_name": "BMWBLOG",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Contemporary reviews of the F70 note BMW’s curved display and removal of many physical controls (including the iDrive controller), and while reviewers often call the interface snappier they also flag missing tactile controls and small interaction quirks (e.g., no dedicated nav button), which can make operation less ‘no‑look’ and potentially more distracting for some drivers.",
+  "url": "https://www.bmwblog.com/2024/06/04/photo-comparison-2025-bmw-1-series-f70-vs-f40/",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMWBLOG",
+   "published": "2024-06-04",
+   "stance": "supports",
+   "about": "BMW 1 Series (F70) infotainment usability",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-F70-EU-018"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-55",
+  "source_type": "web",
+  "source_name": "EUR-Lex / European Union",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "EU Regulation (AFIR) (Regulation (EU) 2023/1804) mandates deployment and minimum fast-charging power on the TEN‑T network, including requirements that by 31 December 2027 on at least half of the TEN‑T comprehensive network each recharging pool provide at least 300 kW and include at least one 150 kW recharging point, with full coverage by 31 December 2030.",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R1804",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EUR-Lex / European Union",
+   "published": "13 September 2023",
+   "stance": "supports",
+   "about": "AFIR charger power targets (2027–2030)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-56",
+  "source_type": "web",
+  "source_name": "Council of the European Union (press release)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "The Council summary of AFIR states that from 2025 fast recharging stations of at least 150 kW must be available every 60 km along the TEN‑T core corridors and that recharging stations for heavy‑duty vehicles with minimum output 350 kW are required every 60 km on the TEN‑T core network (complete coverage by 2030).",
+  "url": "https://www.consilium.europa.eu/en/press/press-releases/2023/07/25/alternative-fuels-infrastructure-council-adopts-new-law-for-more-recharging-and-refuelling-stations-across-europe/pdf/",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Council of the European Union (press release)",
+   "published": "25 July 2023",
+   "stance": "supports",
+   "about": "AFIR spacing and minimum power requirements (2025–2030)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-57",
+  "source_type": "web",
+  "source_name": "IONITY (press release)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "IONITY announced (15 May 2025) it has secured financing to expand and upgrade its European ultra‑fast network, stating plans to grow to over 1,300 locations and ~13,000 charging points by 2030 and to deploy equipment capable of supporting up to 600 kW and 800 V vehicle architectures.",
+  "url": "https://www.ionity.eu/nl/ionity/persberichten/ionity-verzekert-recordfinanciering-om-kritieke-infrastructuur-uit-te-breiden-voor-europas-elektrische-toekomst",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "IONITY (press release)",
+   "published": "15 May 2025",
+   "stance": "supports",
+   "about": "IONITY network scale and high‑power charging (to 2030)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-58",
+  "source_type": "web",
+  "source_name": "Renault Group (press release)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Renault Group's strategic announcement (futuREady, 10 March 2026) states the company will move vehicles to an 800 V electric architecture from 2028 for certain platforms and targets ultra‑fast charging (as little as ~10 minutes) by 2030 depending on European network capacity.",
+  "url": "https://media.renaultgroup.com/renault-group-launches-futuready-opening-a-new-strategic-era/?lang=eng",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Renault Group (press release)",
+   "published": "10 March 2026",
+   "stance": "supports",
+   "about": "OEM adoption of 800 V architecture (from 2028) and 2030 fast‑charge targets",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-59",
+  "source_type": "web",
+  "source_name": "Fraunhofer ISI (roadmap / press)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Fraunhofer ISI's 'Lithium‑Ion Battery Roadmap – Industrialization Perspectives Toward 2030' (Dec 18, 2023) documents industry targets to increase fast‑charging capability (noting flagship vehicles aiming for 4C rates and charging times of ~10–20 minutes) and highlights 800 V system adoption as a system‑level approach to improve charging performance toward 2030.",
+  "url": "https://www.isi.fraunhofer.de/content/dam/isi/dokumente/cct/2023/Fraunhofer-ISI_LIB-Roadmap-2023.pdf",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Fraunhofer ISI (roadmap / press)",
+   "published": "18 December 2023",
+   "stance": "supports",
+   "about": "Battery roadmap: fast‑charging targets and 800 V adoption by 2030",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-60",
+  "source_type": "web",
+  "source_name": "McKinsey & Company",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "McKinsey (article, 17 December 2024) reports consumers expect midsize passenger EVs to achieve roughly 465 km real‑world driving range before recharging and documents recent increases in pack energy density (e.g., LFP pack densities rising toward ~140 Wh/kg for top sellers in 2023), implying continued range improvements through the late 2020s.",
+  "url": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/the-battery-chemistries-powering-the-future-of-electric-vehicles",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "McKinsey & Company",
+   "published": "17 December 2024",
+   "stance": "supports",
+   "about": "Consumer range expectations and battery energy‑density trends (to 2030)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-61",
+  "source_type": "web",
+  "source_name": "BloombergNEF (EVO 2024)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "BloombergNEF’s Electric Vehicle Outlook (2024) and related BNEF analysis project continued growth in battery pack energy density and assume average BEV range growth toward 2030 (BNEF scenarios underpin expectations for improved real‑world ranges by 2030 as pack densities rise).",
+  "url": "https://about.bnef.com/electric-vehicle-outlook/?linkId=233888430&tactic=732078",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BloombergNEF (EVO 2024)",
+   "published": "2024",
+   "stance": "supports",
+   "about": "BNEF projections for pack energy density and BEV range growth to 2030",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-62",
+  "source_type": "web",
+  "source_name": "Tesla, Inc. (support)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Tesla’s public support pages state that select Tesla Supercharger sites are now open to non‑Tesla EVs in selected markets (via the Tesla app and NACS/NACS‑adapter support), showing increasing access to a large high‑power network for non‑Tesla vehicles in the EU and elsewhere.",
+  "url": "https://www.tesla.com/en_ie/support/charging/supercharging-other-evs",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Tesla, Inc. (support)",
+   "published": "(page updated online; current content accessed 2026)",
+   "stance": "supports",
+   "about": "Tesla Supercharger access for non‑Tesla EVs (network access expansion)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-63",
+  "source_type": "web",
+  "source_name": "European Commission (delegated regulation / implementing documents)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "EU Commission delegated documents and implementation notes require a common European access point and expanded machine‑readable data for charging infrastructure (building on OCPI/roaming protocols) and set the Commission to establish a common access point by 31 December 2026 to improve interoperability and roaming across EU charging networks.",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=PI_COM:C(2025)1912",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "European Commission (delegated regulation / implementing documents)",
+   "published": "2025 (Commission implementing text)",
+   "stance": "supports",
+   "about": "EU digital access point and data requirements for charging interoperability (deadline 31 Dec 2026)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-64",
+  "source_type": "web",
+  "source_name": "Council of the European Union (document C(2022) 3823 final)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "UN Regulation No.156 requires manufacturers to implement a certified Software Update Management System (SUMS) and UN Regulation No.155 requires a Cyber Security Management System (CSMS); the EU delegated acts set transitional application dates for software-update/type-approval rules (new vehicle types from 7 July 2024 and all new vehicles from 7 July 2026).",
+  "url": "https://data.consilium.europa.eu/doc/document/ST-10559-2022-INIT/en/pdf",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Council of the European Union (document C(2022) 3823 final)",
+   "published": "22 June 2022",
+   "stance": "supports",
+   "about": "UN R155/R156; EU type-approval and software-update timelines",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-65",
+  "source_type": "web",
+  "source_name": "EUR-Lex / European Union",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "The EU Data Act (Regulation (EU) 2023/2854) gives users of connected products the right to access and share the data generated by those products (including vehicles) and became applicable on 12 September 2025. ",
+  "url": "https://eur-lex.europa.eu/legal-content/en/ALL/?uri=CELEX%3A32023R2854",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EUR-Lex / European Union",
+   "published": "13 December 2023",
+   "stance": "supports",
+   "about": "EU Data Act — in-vehicle data access",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-66",
+  "source_type": "web",
+  "source_name": "EUR-Lex / European Union",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "The EU Artificial Intelligence Act (Regulation (EU) 2024/1689) creates legally binding obligations for high‑risk AI systems embedded in products and sets a timeline of staged application and review milestones that extend through 2028–2031 (including transition and reporting deadlines listed up to 2 August 2031).",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=OJ%3AL_202401689",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EUR-Lex / European Union",
+   "published": "13 June 2024",
+   "stance": "supports",
+   "about": "EU AI Act — high‑risk AI requirements and timelines",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-67",
+  "source_type": "web",
+  "source_name": "BMW Group Press",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "BMW already delivers Remote Software Upgrades (over‑the‑air updates) and a 'Functions on Demand' ConnectedDrive Store that lets customers buy or trial vehicle functions and install them over the air (example: BMW Remote Software Upgrade announced 11 October 2022).",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0403765EN/free-over-the-air-upgrades-for-3-8-million-vehicles:-ten-highlights?language=en",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press",
+   "published": "11 October 2022",
+   "stance": "supports",
+   "about": "BMW Remote Software Upgrade; Functions on Demand; OTA features",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-68",
+  "source_type": "web",
+  "source_name": "BMW Group Press",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "The BMW Group has selected AWS as preferred cloud provider for its next‑generation automated‑driving development platform for the Neue Klasse and describes that cloud+partner approach as enabling faster development and delivery of ADAS and OTA features for Neue Klasse vehicles. ",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0436780EN?language=en",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press",
+   "published": "5 September 2023",
+   "stance": "supports",
+   "about": "BMW — AWS partnership for Neue Klasse ADAS and cloud development",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-69",
+  "source_type": "web",
+  "source_name": "Qualcomm Technologies, Inc. (press release)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Qualcomm and BMW jointly introduced the Snapdragon Ride Pilot automated‑driving solution in the BMW iX3 (a Neue Klasse production vehicle) and Qualcomm later announced a multi‑year role as BMW’s lead compute silicon provider, signalling BMW’s move to high‑performance, centralized compute and AI platforms that will underpin OTA‑delivered ADAS and in‑car services. ",
+  "url": "https://www.qualcomm.com/news/releases/2026/07/qualcomm-named-bmw-group-s-lead-compute-silicon-provider-for-dig",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Qualcomm Technologies, Inc. (press release)",
+   "published": "29 July 2026",
+   "stance": "supports",
+   "about": "Qualcomm‑BMW collaboration; Snapdragon Ride Pilot; centralized compute for Neue Klasse",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-70",
+  "source_type": "web",
+  "source_name": "IBM (Think / industry analysis)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Industry and technology consultancies and vendors forecast that software‑defined vehicle architectures, expanded over‑the‑air updates and 'feature‑on‑demand' / subscription business models will scale across OEM lineups through the late 2020s and into 2030 (shifting significant vehicle value toward software and recurring revenue).",
+  "url": "https://www.ibm.com/think/topics/software-defined-vehicle",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "IBM (Think / industry analysis)",
+   "published": "n.d. (web article)",
+   "stance": "supports",
+   "about": "SDV, OTA and feature‑on‑demand market trends",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-71",
+  "source_type": "web",
+  "source_name": "Berg Insight (OEM telematics report)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Telematics and industry market research shows accelerating adoption of embedded infotainment platforms, Android Automotive / OEM app‑store deployments and in‑car app ecosystems among European OEMs—enabling larger app marketplaces and third‑party services in EU cars across the 2028–2031 horizon. ",
+  "url": "https://media.berginsight.com/2024/09/26202310/bi-oemtelematics9-ps.pdf",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Berg Insight (OEM telematics report)",
+   "published": "2023–2024 (industry report)",
+   "stance": "supports",
+   "about": "Android Automotive / OEM app stores and in‑car app ecosystems (Europe)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-72",
+  "source_type": "web",
+  "source_name": "BMW Group Press (Oliver Zipse statement)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "BMW has stated that the Neue Klasse will begin production in 2025 and that the BMW brand transition to the Neue Klasse technology and new retail model in Europe will start from 2026, which implies the OEM’s software‑first architecture and OTA/Functions‑on‑Demand approach will be rolled through more model segments in the late 2020s (affecting compact/premium models over 2028–2031).",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0410925EN/statement-and-presentation-oliver-zipse-chairman-of-the-board-of-management-of-bmw-ag-bmw-group-annual-conference-2023?language=en",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press (Oliver Zipse statement)",
+   "published": "11 May 2023",
+   "stance": "supports",
+   "about": "BMW Neue Klasse roll‑out timetable and portfolio transition",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-73",
+  "source_type": "web",
+  "source_name": "Euro NCAP",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Euro NCAP’s recent HMI and ‘Safe Driving’ protocols explicitly evaluate the availability and placement of physical controls and encourage designs that reduce driver distraction (including preferring physical buttons for commonly used functions).",
+  "url": "https://www.euroncap.com/on-road-driving/",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Euro NCAP",
+   "published": "2024-2026 (protocols and guidance updates)",
+   "stance": "supports",
+   "about": "Euro NCAP HMI assessment and driver distraction guidance.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-74",
+  "source_type": "web",
+  "source_name": "European Commission (fact sheet)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "The EU’s General Safety Regulation (and related technical support work) mandates Advanced Driver Distraction Warning (ADDW) measures being progressively introduced between July 2024 and January 2029, which pressures OEMs to limit visually demanding touchscreen interactions for safety reasons.",
+  "url": "https://single-market-economy.ec.europa.eu/document/download/cd243af9-c877-401e-9f69-d7d4ab6a90c6_en?filename=Fact+Sheet+General+Safety+regulations_July+2024.pdf&prefLang=hu",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "European Commission (fact sheet)",
+   "published": "5 July 2024",
+   "stance": "supports",
+   "about": "EU General Safety Regulation and ADDW implementation timeline.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-75",
+  "source_type": "web",
+  "source_name": "UNECE (GRSG working document)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "UNECE/GRSG working documents and proposals on advanced driver distraction and driver monitoring (2025–2026) show regulators are actively developing performance and HMI requirements that will constrain touchscreen complexity in the coming years.",
+  "url": "https://unece.org/sites/default/files/2025-09/ECE-TRANS-WP.29-GRSG-2025-51e_0.pdf",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "UNECE (GRSG working document)",
+   "published": "2025",
+   "stance": "supports",
+   "about": "UNECE regulatory work on driver distraction and HMI requirements.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-76",
+  "source_type": "web",
+  "source_name": "EE Times",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Industry reporting and analysis note a reversal from all-touchscreen cockpits toward hybrid designs that (re)introduce tactile physical controls for frequently used functions because of safety and consumer pushback.",
+  "url": "https://www.eetimes.com/poor-automotive-hmi-design-to-impact-euro-ncap-safety-rating/",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EE Times",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Trend toward hybrid HMI (physical + touchscreen) driven by safety/consumer concerns.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-77",
+  "source_type": "web",
+  "source_name": "BMW Group Press",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "BMW’s official materials for the Panoramic iDrive describe multimodal operation — touch, haptic feedback and voice — as the intended interaction approach for new BMW cockpits, showing OEM adoption of combined control modes.",
+  "url": "https://www.press.bmwgroup.com/usa/article/detail/T0447356EN_US/new-bmw-panoramic-idrive-revolutionizes-vehicle-operation",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press",
+   "published": "January 7, 2025",
+   "stance": "supports",
+   "about": "BMW Panoramic iDrive and multimodal control (touch, haptic, voice).",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-78",
+  "source_type": "web",
+  "source_name": "Bosch Press Portal",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Bosch documents and press material describe haptic touchscreen technologies (touch with perceivable button feedback) and promotion of multimodal in‑car operation (voice plus touch/haptics), indicating supplier readiness to deliver tactile + touchscreen solutions at scale.",
+  "url": "https://www.bosch-presse.de/pressportal/us/en/press-release-739.html",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Bosch Press Portal",
+   "published": "recent supplier materials (Bosch communications)",
+   "stance": "supports",
+   "about": "Bosch haptic touchscreen and multimodal HMI technologies.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-79",
+  "source_type": "web",
+  "source_name": "TrendXInsights (market research)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Market research reports project that while touchscreen HMI will remain the primary interface, voice user interfaces are forecast to register the highest growth rate through the early 2030s—implying substantial voice adoption in 2028–2031 for premium compact cars.",
+  "url": "https://trendxinsights.com/syndicated-market-research-reports/automotive-hmi-market/",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "TrendXInsights (market research)",
+   "published": "2026",
+   "stance": "supports",
+   "about": "HMI market forecasts showing high growth for voice UIs.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-80",
+  "source_type": "web",
+  "source_name": "McKinsey & Company",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Consulting and industry analyses (McKinsey, S&P Global) describe the shift to Software‑Defined Vehicles and centralized compute, enabling frequent OTA updates and personalization of HMI (touch + voice + selective physical controls), a capability expected to be used by OEMs between 2028–2031 to iterate operating concepts quickly.",
+  "url": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/the-future-of-interior-in-automotive",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "McKinsey & Company",
+   "published": "2021–2024 analyses (ongoing relevance)",
+   "stance": "supports",
+   "about": "SDV, OTA, and HMI personalization enabling rapid HMI evolution.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-81",
+  "source_type": "web",
+  "source_name": "S&P Global Mobility",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Consumer research summarized by S&P Global shows drivers value physical buttons for reducing distraction, a preference EU OEMs are likely to accommodate in premium compact models sold in Europe.",
+  "url": "https://www.spglobal.com/automotive-insights/en/blogs/2026/02/what-consumers-value-in-human-machine-interface-technologies",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "S&P Global Mobility",
+   "published": "February 2026",
+   "stance": "supports",
+   "about": "Consumer preferences favoring physical buttons to reduce distraction.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-82",
+  "source_type": "web",
+  "source_name": "European Commission – Directorate-General for Environment",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "The EU Regulation on circularity requirements for vehicle design (in force 13 August 2026) will apply from 1 September 2028 and mandates a minimum 15% recycled plastic content in new vehicles from 2032, rising to 25% from 2036. ",
+  "url": "https://environment.ec.europa.eu/topics/waste-and-recycling/end-life-vehicles_en?prefLang=lt",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "European Commission – Directorate-General for Environment",
+   "published": "13 August 2026",
+   "stance": "supports",
+   "about": "EU circularity regulation – recycled plastic targets and timeline",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-83",
+  "source_type": "web",
+  "source_name": "Hyundai Motor Group",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "EV‑dedicated platforms (example: Hyundai’s E‑GMP) provide flat floors, allow longer wheelbases and free up packaging volume (engine/drive‑train space), enabling significantly more usable cabin space and new interior space concepts in compact/premium cars. ",
+  "url": "https://www.hyundaimotorgroup.com/en/story/CONT0000000000089071",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Hyundai Motor Group",
+   "published": "2020-12-02",
+   "stance": "supports",
+   "about": "EV platforms enabling flat-floor and larger cabin space",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-84",
+  "source_type": "web",
+  "source_name": "Auto Express",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "The next‑generation BMW 1 Series is expected to include an EV variant due in 2028 using BMW Neue Klasse technology; press coverage states the electric 1‑series will sit on EV architecture with a longer wheelbase and a projected increase in rear legroom and boot practicality. ",
+  "url": "https://www.autoexpress.co.uk/bmw/1-series/366633/new-bmw-1-series-set-arrive-2028-and-return-rear-wheel-drive",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Auto Express",
+   "published": "2026-09-30",
+   "stance": "supports",
+   "about": "BMW 1 Series (2028) — EV platform, wheelbase and interior practicality",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-85",
+  "source_type": "web",
+  "source_name": "Volvo Cars – Press & Media",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Volvo publicly committed (press release 23 Sep 2021) that its pure‑electric cars will be leather‑free and that it will replace leather with recycled and bio‑based materials (example material name: ‘Nordico’).",
+  "url": "https://www.volvocars.com/us/media/press-releases/CDBA5F31238A12BE/",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Volvo Cars – Press & Media",
+   "published": "2021-09-23",
+   "stance": "supports",
+   "about": "OEM commitments to leather‑free interiors (Volvo)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-86",
+  "source_type": "web",
+  "source_name": "BMW Group – PressClub",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "BMW Group’s 'Sustainability through Innovation' (press kit 19 Sep 2022) presents vegan/vegan‑option interiors, increased recycled content goals and seat/material concepts designed for recyclability and lower CO2 footprint.",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0403367EN/bmw-group-sustainability-through-innovation-2022",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group – PressClub",
+   "published": "2022-09-19",
+   "stance": "supports",
+   "about": "BMW sustainability commitments — vegan interiors and recycled content targets",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-87",
+  "source_type": "web",
+  "source_name": "Circular Bio‑based Europe Joint Undertaking (CBE JU) / project coordinator page",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Europe‑funded R&I projects are developing bio‑based animal‑free leather alternatives for automotive interiors (example: the Fabulose project, project period 1 June 2025 – 30 November 2028, aims to develop roll‑to‑roll bio‑based leather alternatives for automotive upholstery).",
+  "url": "https://www.cbe.europa.eu/projects/fabulose",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Circular Bio‑based Europe Joint Undertaking (CBE JU) / project coordinator page",
+   "published": "Project period: 1 June 2025 – 30 November 2028",
+   "stance": "supports",
+   "about": "EU R&I projects developing bio‑based leather alternatives (Fabulose)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-88",
+  "source_type": "web",
+  "source_name": "Zenodo / Hendese Teknik Bilimler ve Mühendislik Dergisi (paper repository)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Academic/industry reviews (example: 'Sustainable Materials for Automotive Interiors', published 25 Apr 2025 on Zenodo) identify increased adoption through 2030 of natural‑fibre composites, recycled plastics, bio‑based polymers, mycelium‑based materials and Piñatex‑type alternatives for automotive interiors, noting scalability and standardisation as remaining challenges. ",
+  "url": "https://zenodo.org/records/15278185",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Zenodo / Hendese Teknik Bilimler ve Mühendislik Dergisi (paper repository)",
+   "published": "2025-04-25",
+   "stance": "supports",
+   "about": "Trend of alternative sustainable interior materials (natural fibers, mycelium, bio‑polymers, recycled plastics)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-89",
+  "source_type": "web",
+  "source_name": "IEC (International Electrotechnical Commission) – Technical Specification 63428",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Standards and technical guidance to support design‑for‑disassembly and material circularity are already available (example: IEC TS 63428:2024 on embedding circularity in product design), signalling that OEMs and suppliers must change interior assembly, material choice and traceability practices by the 2028–2031 timeframe. ",
+  "url": "https://webstore.iec.ch/en/publication/70549",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "IEC (International Electrotechnical Commission) – Technical Specification 63428",
+   "published": "2024",
+   "stance": "supports",
+   "about": "Standards and guidance for design for disassembly and circularity in product design",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-90",
+  "source_type": "web",
+  "source_name": "BMW Group – PressClub (BMW iX design)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "BMW’s 'shy tech' and minimalist digital‑cockpit approach (demonstrated in the BMW iX press materials) — hiding controls until needed, integrated haptics and simplified surfaces — is an explicit premium interior design direction that OEM communications show will be applied across future models, including compact premium segments by 2028–2031. ",
+  "url": "https://www.press.bmwgroup.com/usa/article/detail/T0320510EN_US/the-new-bmw-ix-design?showMedia=photo",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group – PressClub (BMW iX design)",
+   "published": "2021-03",
+   "stance": "supports",
+   "about": "Minimalist 'shy tech' digital cockpit trend in premium interiors",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-91",
+  "source_type": "web",
+  "source_name": "UNECE (WP.29)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "UN Regulation No.157 (ALKS) provides a UNECE type-approval framework for Automated Lane Keeping Systems (classified as SAE Level 3) and has been amended to set test and approval procedures for ALKS on motorways.",
+  "url": "https://unece.org/sites/default/files/2024-07/R157am4e_1.pdf",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "UNECE (WP.29)",
+   "published": "March 2023",
+   "stance": "supports",
+   "about": "Regulation — ALKS / Level 3 type approval",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-92",
+  "source_type": "web",
+  "source_name": "BMW Group (press release)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "BMW announced the BMW Personal Pilot L3 (a Level 3 'highly automated' highway function) and the combination of its Highway Assistant (Level 2) with Personal Pilot L3; BMW stated rollout began in series production cars (initially in Germany) in 2024/2025 (example: BMW 7 Series).",
+  "url": "https://www.press.bmwgroup.com/global/article/attachment/T0443285EN/618657",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group (press release)",
+   "published": "25 June 2024",
+   "stance": "supports",
+   "about": "OEM product announcement — BMW Personal Pilot L3",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-93",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz Group",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Mercedes‑Benz updated its DRIVE PILOT Level 3 system to permit conditional automated driving up to 95 km/h on German motorways and announced approval and a sales release in Germany (software update / rollout announced December 17, 2024 with sales start early 2025).",
+  "url": "https://group.mercedes-benz.com/technology/autonomous-driving/driving/drive-pilot-95-kmh.html",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Mercedes‑Benz Group",
+   "published": "17 December 2024",
+   "stance": "supports",
+   "about": "OEM product update — Mercedes DRIVE PILOT (Level 3)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-94",
+  "source_type": "web",
+  "source_name": "Mobileye (blog)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Mobileye states it is purpose-building EyeQ™6 High, the SuperVision™ platform and related components (REM™, Driver Monitoring, mapping) to enable hands‑off Level 2+ experiences at scale across multiple vehicle programs and to feed higher‑level autonomy development.",
+  "url": "https://www.mobileye.com/blog/hands-off-driving-goes-mainstream-enabling-l2-at-scale/",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mobileye (blog)",
+   "published": "11 August 2026",
+   "stance": "supports",
+   "about": "Supplier roadmap — Mobileye SuperVision / L2+ scaling",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-95",
+  "source_type": "web",
+  "source_name": "Mobileye (investor news)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Mobileye announced (March 20, 2024) an intensified collaboration with the Volkswagen Group to bring Mobileye SuperVision/Chauffeur technologies into series production across premium brands (Audi, Bentley, Lamborghini, Porsche) and to work on Level 3 functions and advanced Level 2 capabilities.",
+  "url": "https://ir.mobileye.com/news-releases/news-release-details/automated-driving-volkswagen-group-intensifies-collaboration",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mobileye (investor news)",
+   "published": "20 March 2024",
+   "stance": "supports",
+   "about": "Supplier–OEM partnership — Mobileye & Volkswagen Group",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-96",
+  "source_type": "web",
+  "source_name": "International Energy Agency (IEA) — Global EV Outlook 2026",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "The IEA’s Global EV Outlook 2026 (Autonomous vehicles chapter) reports that Level 2+ (hands‑off) systems are becoming mainstream while Level 3 implementations remain rare; the report observes an industry shift toward more sophisticated Level 2+ features rather than broad Level 3 rollouts in personal vehicles.",
+  "url": "https://www.iea.org/reports/autonomous-vehicles",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "International Energy Agency (IEA) — Global EV Outlook 2026",
+   "published": "20 May 2026",
+   "stance": "supports",
+   "about": "Market & technology trend — L2+ vs L3 adoption",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-97",
+  "source_type": "web",
+  "source_name": "Robert Bosch GmbH (press portal)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Bosch public statements and product communications describe a vehicle computer platform, new AI‑enabled radar sensors and a software architecture intended to make partially and highly automated driving (Levels 2–3) suitable for volume production and to bring these functions into compact and midsized vehicle segments in the medium term.",
+  "url": "https://www.bosch-presse.de/pressportal/us/en/news/press-release/automated-mobility/",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Robert Bosch GmbH (press portal)",
+   "published": "6 December 2023",
+   "stance": "supports",
+   "about": "Supplier roadmap — Bosch ADAS / central computer and sensors",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-98",
+  "source_type": "web",
+  "source_name": "Valeo (Universal Registration Document 2022)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "Valeo’s 2022 registration/annual documents describe production LiDAR and ADAS products and state Valeo has contracts to supply LiDAR/ADAS hardware and software intended to enable Level 3 certification for upcoming vehicle platforms (Valeo cites contracts that support OEM Level 3 readiness).",
+  "url": "https://www.scribd.com/document/820102204/valeo-2022-urd-uk-1",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Valeo (Universal Registration Document 2022)",
+   "published": "2022",
+   "stance": "supports",
+   "about": "Supplier products — LiDAR and Level 3 enablement (Valeo)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-99",
+  "source_type": "web",
+  "source_name": "IAA Mobility / ZF reporting",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "ZF presented an \"AI Road Sense\" AI‑supported sensing/software capability at IAA/industry events and stated series production is planned (announced product roadmap items pointing to series readiness in the second half of the 2020s, e.g., production planned for 2028 in public coverage).",
+  "url": "https://www.iaa-mobility.com/en/newsroom/news/future-technology/mobility-trends-2026-las-vegas",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "IAA Mobility / ZF reporting",
+   "published": "2026",
+   "stance": "supports",
+   "about": "Supplier roadmap — ZF AI sensing / series production timing",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-F70-EU-WEB-100",
+  "source_type": "web",
+  "source_name": "EICT / L3Pilot consortium (project information)",
+  "derivative": "F70",
+  "market": "EU",
+  "text": "The EU multi‑OEM L3Pilot research programme (consortium including BMW, Mercedes, Valeo, ZF, Continental, TÜVs and research institutes) ran large‑scale tests of Level 3 functions on public roads across multiple EU countries (project duration and results demonstrate multi‑OEM Level 3 testing in Europe: July 2019–December 2023).",
+  "url": "https://www.eict.de/en/projects/",
+  "retrieved_at": "2026-10-10T18:53:48.253261Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EICT / L3Pilot consortium (project information)",
+   "published": "project period 2019–2023",
+   "stance": "supports",
+   "about": "EU multi‑OEM Level 3 testing (L3Pilot)",
+   "question_kind": "trend"
+  }
+ }
+]

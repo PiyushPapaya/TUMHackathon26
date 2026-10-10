@@ -1,0 +1,60 @@
+{
+  "claims": [
+    {
+      "text": "The Mercedes A‑Class (W177) uses Mercedes’ MBUX layout with twin 10.25‑inch displays and can be controlled via the central touchscreen, touch‑sensitive steering controls, a centre‑console touchpad and voice commands.",
+      "url": "https://www.evo.co.uk/mercedes/a-class",
+      "publisher": "Evo",
+      "published": "16 Jul 2026",
+      "stance": "neutral",
+      "about": "Mercedes A‑Class controls and displays"
+    },
+    {
+      "text": "Mercedes’ MBUX introduced a ‘zero layer’ home screen to surface major functions on the home page (intended to reduce menu dives), but reviewers note some shortcut buttons are small and fiddly.",
+      "url": "https://www.autoexpress.co.uk/mercedes/e-class/366001/mercedes-infotainment-review-mbux-touchscreen-tech-tested-vs-rivals",
+      "publisher": "Auto Express",
+      "published": "27 Feb 2025",
+      "stance": "contradicts",
+      "about": "MBUX zero layer and distraction mitigation"
+    },
+    {
+      "text": "Auto Express’ hands‑on touchscreen tests and reviewer comments for MBUX found testers sometimes ‘concentrat[ed] on the screen a bit more than was ideal’ and recorded longer distracted‑task times for some operations, indicating touchscreen interactions increase in‑drive distraction compared with tactile controls.",
+      "url": "https://www.autoexpress.co.uk/mercedes/e-class/366001/mercedes-infotainment-review-mbux-touchscreen-tech-tested-vs-rivals",
+      "publisher": "Auto Express",
+      "published": "27 Feb 2025",
+      "stance": "supports",
+      "about": "Touchscreen distraction measured for MBUX"
+    },
+    {
+      "text": "Reviewers of the BMW 1 Series F70 (2024/2025) report BMW removed the centre rotary iDrive controller and relocated climate and many other controls to the touchscreen, increasing driver reliance on the display.",
+      "url": "https://www.businesstimes.com.sg/lifestyle/motoring/2025-bmw-1-series-review-1-road?ai-allowed=1",
+      "publisher": "The Business Times",
+      "published": "19 Oct 2024",
+      "stance": "supports",
+      "about": "BMW 1 Series (F70) control architecture"
+    },
+    {
+      "text": "A CompleteCar review of the BMW 120 (F70) concluded that although BMW keeps temperature and seat‑heating controls visible on the screen, using the touchscreen for climate/audio is ‘still more distracting than a button or even a rotary dial.’",
+      "url": "https://www.completecar.ie/car-reviews/article/BMW/1_Series/120_(2025)/2418/13610/1970-BMW-120-(2025)-review.html",
+      "publisher": "CompleteCar.ie",
+      "published": "25 Sep 2024",
+      "stance": "supports",
+      "about": "BMW touchscreen vs physical controls distraction"
+    },
+    {
+      "text": "Evo’s A‑Class review reports Mercedes’ voice assistant is ‘among the best’ tested and that voice control is ‘as a means of distraction‑free control of infotainment, better than any touchscreen,’ offering a non‑touch mitigation for touchscreen distraction.",
+      "url": "https://www.evo.co.uk/mercedes/a-class",
+      "publisher": "Evo",
+      "published": "16 Jul 2026",
+      "stance": "contradicts",
+      "about": "Voice control as distraction mitigation in A‑Class"
+    },
+    {
+      "text": "Mercedes’ official owner/manual pages for the 2025 A‑Class describe operation of MBUX via touchscreen, touch control on the steering wheel and voice control, confirming multiple input methods are provided in EU/European market documentation.",
+      "url": "https://www.mercedes-benz.ie/services/manuals/a-class-hatchback-2025-04-w177-mbux/android-auto/android-auto-overview/",
+      "publisher": "Mercedes‑Benz (Ireland) Owner Manuals",
+      "published": "April 2025",
+      "stance": "neutral",
+      "about": "Official MBUX operating methods (A‑Class owner manual)"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "answer": "No — all supplied signals and feedback are US-specific, so you cannot conclude this is only a US issue (nor that it’s global) from the given evidence.",
+  "supporting_evidence_ids": [
+    "SIG-G60-US-001",
+    "SIG-G60-US-003",
+    "EV-G60-0001",
+    "EV-G60-0002",
+    "EV-G60-0003",
+    "EV-G60-0005",
+    "EV-G60-0006"
+  ],
+  "counter_evidence_ids": [],
+  "suggested_change": "Add a precondition: require cross-market validation (telemetry and targeted customer research in other target markets) that the same top-six functions and complaints exist before applying the 90% closed-course acceptance criterion; or scope the requirement to explicitly state it applies to markets with confirmed similar usage patterns."
+}

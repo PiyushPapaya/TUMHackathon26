@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "text": "EU Regulation (AFIR) (Regulation (EU) 2023/1804) mandates deployment and minimum fast-charging power on the TEN‑T network, including requirements that by 31 December 2027 on at least half of the TEN‑T comprehensive network each recharging pool provide at least 300 kW and include at least one 150 kW recharging point, with full coverage by 31 December 2030.",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R1804",
+      "publisher": "EUR-Lex / European Union",
+      "published": "13 September 2023",
+      "stance": "supports",
+      "about": "AFIR charger power targets (2027–2030)"
+    },
+    {
+      "text": "The Council summary of AFIR states that from 2025 fast recharging stations of at least 150 kW must be available every 60 km along the TEN‑T core corridors and that recharging stations for heavy‑duty vehicles with minimum output 350 kW are required every 60 km on the TEN‑T core network (complete coverage by 2030).",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2023/07/25/alternative-fuels-infrastructure-council-adopts-new-law-for-more-recharging-and-refuelling-stations-across-europe/pdf/",
+      "publisher": "Council of the European Union (press release)",
+      "published": "25 July 2023",
+      "stance": "supports",
+      "about": "AFIR spacing and minimum power requirements (2025–2030)"
+    },
+    {
+      "text": "IONITY announced (15 May 2025) it has secured financing to expand and upgrade its European ultra‑fast network, stating plans to grow to over 1,300 locations and ~13,000 charging points by 2030 and to deploy equipment capable of supporting up to 600 kW and 800 V vehicle architectures.",
+      "url": "https://www.ionity.eu/nl/ionity/persberichten/ionity-verzekert-recordfinanciering-om-kritieke-infrastructuur-uit-te-breiden-voor-europas-elektrische-toekomst",
+      "publisher": "IONITY (press release)",
+      "published": "15 May 2025",
+      "stance": "supports",
+      "about": "IONITY network scale and high‑power charging (to 2030)"
+    },
+    {
+      "text": "Renault Group's strategic announcement (futuREady, 10 March 2026) states the company will move vehicles to an 800 V electric architecture from 2028 for certain platforms and targets ultra‑fast charging (as little as ~10 minutes) by 2030 depending on European network capacity.",
+      "url": "https://media.renaultgroup.com/renault-group-launches-futuready-opening-a-new-strategic-era/?lang=eng",
+      "publisher": "Renault Group (press release)",
+      "published": "10 March 2026",
+      "stance": "supports",
+      "about": "OEM adoption of 800 V architecture (from 2028) and 2030 fast‑charge targets"
+    },
+    {
+      "text": "Fraunhofer ISI's 'Lithium‑Ion Battery Roadmap – Industrialization Perspectives Toward 2030' (Dec 18, 2023) documents industry targets to increase fast‑charging capability (noting flagship vehicles aiming for 4C rates and charging times of ~10–20 minutes) and highlights 800 V system adoption as a system‑level approach to improve charging performance toward 2030.",
+      "url": "https://www.isi.fraunhofer.de/content/dam/isi/dokumente/cct/2023/Fraunhofer-ISI_LIB-Roadmap-2023.pdf",
+      "publisher": "Fraunhofer ISI (roadmap / press)",
+      "published": "18 December 2023",
+      "stance": "supports",
+      "about": "Battery roadmap: fast‑charging targets and 800 V adoption by 2030"
+    },
+    {
+      "text": "McKinsey (article, 17 December 2024) reports consumers expect midsize passenger EVs to achieve roughly 465 km real‑world driving range before recharging and documents recent increases in pack energy density (e.g., LFP pack densities rising toward ~140 Wh/kg for top sellers in 2023), implying continued range improvements through the late 2020s.",
+      "url": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/the-battery-chemistries-powering-the-future-of-electric-vehicles",
+      "publisher": "McKinsey & Company",
+      "published": "17 December 2024",
+      "stance": "supports",
+      "about": "Consumer range expectations and battery energy‑density trends (to 2030)"
+    },
+    {
+      "text": "BloombergNEF’s Electric Vehicle Outlook (2024) and related BNEF analysis project continued growth in battery pack energy density and assume average BEV range growth toward 2030 (BNEF scenarios underpin expectations for improved real‑world ranges by 2030 as pack densities rise).",
+      "url": "https://about.bnef.com/electric-vehicle-outlook/?linkId=233888430&tactic=732078",
+      "publisher": "BloombergNEF (EVO 2024)",
+      "published": "2024",
+      "stance": "supports",
+      "about": "BNEF projections for pack energy density and BEV range growth to 2030"
+    },
+    {
+      "text": "Tesla’s public support pages state that select Tesla Supercharger sites are now open to non‑Tesla EVs in selected markets (via the Tesla app and NACS/NACS‑adapter support), showing increasing access to a large high‑power network for non‑Tesla vehicles in the EU and elsewhere.",
+      "url": "https://www.tesla.com/en_ie/support/charging/supercharging-other-evs",
+      "publisher": "Tesla, Inc. (support)",
+      "published": "(page updated online; current content accessed 2026)",
+      "stance": "supports",
+      "about": "Tesla Supercharger access for non‑Tesla EVs (network access expansion)"
+    },
+    {
+      "text": "EU Commission delegated documents and implementation notes require a common European access point and expanded machine‑readable data for charging infrastructure (building on OCPI/roaming protocols) and set the Commission to establish a common access point by 31 December 2026 to improve interoperability and roaming across EU charging networks.",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=PI_COM:C(2025)1912",
+      "publisher": "European Commission (delegated regulation / implementing documents)",
+      "published": "2025 (Commission implementing text)",
+      "stance": "supports",
+      "about": "EU digital access point and data requirements for charging interoperability (deadline 31 Dec 2026)"
+    }
+  ]
+}

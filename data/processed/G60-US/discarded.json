@@ -1,0 +1,24 @@
+[
+ {
+  "title": "Out-of-scope engineering spec: Support NACS port and 800V / high-peak DC charging acceptance targets",
+  "reason": "This is an engineering/hardware specification (port and voltage architecture) rather than a direct customer-experience requirement; it requires program-level technical feasibility decisions.",
+  "signal_ids": [
+   "SIG-G60-US-WEB-02",
+   "SIG-G60-US-WEB-08"
+  ]
+ },
+ {
+  "title": "Not covered: Can't permanently turn off auto start stop",
+  "reason": "The AI derived no requirement from this complaint (22 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G60-US-025"
+  ]
+ },
+ {
+  "title": "Not covered: Off-Road capability: complaint",
+  "reason": "The AI derived no requirement from this complaint (1 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G60-US-045"
+  ]
+ }
+]

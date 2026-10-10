@@ -1,0 +1,322 @@
+{
+  "drafts": [
+    {
+      "title": "Preserve and enhance overall driving enjoyment and confidence",
+      "description": "Customers experience a smooth, engaging and confidence-inspiring drive in everyday and long-distance use: balanced ride comfort, composed handling and intuitive driving aids that make the car feel solid and pleasurable to drive.",
+      "acceptance_criterion": "In a 100-driver multi-road test (urban, B-roads, motorway) the successor scores ≥8.0/10 for overall driving enjoyment and ≥8.0/10 for confidence/stability; long-distance comfort score (2-hour continuous drive) ≥8.0/10; vehicle lateral handling (slalom consistency) within 5% of the best-in-class benchmark used in current BMW segment tests.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-001",
+        "SIG-F70-EU-002",
+        "SIG-F70-EU-006",
+        "SIG-F70-EU-010",
+        "SIG-F70-EU-012",
+        "SIG-F70-EU-024"
+      ],
+      "assumptions": [
+        "Subjective scores come from a representative panel of 100 drivers in the EU; test methodology follows BMW customer-experience protocols.",
+        "Chassis and suspension development resources are available to maintain current BMW driving character."
+      ],
+      "uncertainties": [
+        "Customer panel preferences may vary by market and trim; objective benchmarks may shift over time."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Deliver punchy, consistent engine power and seamless transmission response",
+      "description": "Drivers feel immediate, linear throttle response and smooth, predictable gear changes with no hesitation, slipping or jerking across normal driving conditions and when accelerating or downshifting.",
+      "acceptance_criterion": "Base petrol trim 0–100 km/h ≤ 8.0 s; measured gearshift transient delay ≤ 0.25 s under typical acceleration; in a 1,000-gear-change durability fleet test <1% of shifts show a jerk event perceptible to drivers (rated ≥3/5 on jerk scale) and <0.5% of vehicles report transmission-related customer complaints in the first 12 months.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-005",
+        "SIG-F70-EU-016",
+        "SIG-F70-EU-021",
+        "SIG-F70-EU-044",
+        "SIG-F70-EU-037"
+      ],
+      "assumptions": [
+        "Performance target for base petrol is realistic for successor platforms in 3–5 years.",
+        "Durability fleet tests replicate customer usage patterns and detect common transmission issues."
+      ],
+      "uncertainties": [
+        "Electrified or alternative powertrain architectures may change the way acceleration and gearshift metrics are measured.",
+        "Exact 0–100 targets may need trim-level differentiation."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Brake behaviour must be progressive, predictable and tunable",
+      "description": "Drivers experience a brake pedal that responds linearly and predictably across light and heavy braking, with regenerative braking levels that are adjustable and do not cause sudden grabs or delayed engagement.",
+      "acceptance_criterion": "Pedal travel vs deceleration shows a linear relationship with correlation r ≥ 0.95 in standardized tests; regenerative braking can be set to at least three levels and users can select a smooth default; fleet durability test of 10,000 stops records <0.5% incidents of sudden 'grab' or unresponsive braking reported by test drivers.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-026"
+      ],
+      "assumptions": [
+        "Brake feel tuning will combine hydraulic and regenerative systems on electrified variants.",
+        "Standardized tests reflect customer perception of progressive braking."
+      ],
+      "uncertainties": [
+        "Precise quantification of 'grab' is subjective; acceptance uses a mix of objective measurement and driver panel scoring."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Maintain or improve ride comfort while preserving nimble handling",
+      "description": "Customers experience a comfortable, composed ride over rough surfaces without sacrificing the car's agility and steering feedback on twisty roads.",
+      "acceptance_criterion": "In the customer ride/handling benchmark (100 drivers) average ride comfort score ≥8.0/10 and steering/handling score ≥8.0/10; body acceleration RMS measured on defined road profiles is reduced by ≥10% versus the current model.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-031",
+        "SIG-F70-EU-035",
+        "SIG-F70-EU-038",
+        "SIG-F70-EU-001",
+        "SIG-F70-EU-006"
+      ],
+      "assumptions": [
+        "Objective vibration measurements are correlated to subjective comfort scores.",
+        "Chassis architecture allows simultaneous improvements in damping and agility."
+      ],
+      "uncertainties": [
+        "Trade-offs between sporty handling and softer ride may vary by customer; tuning may require multiple suspension options."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Seats must be supportive, comfortable for long trips and robust in quality",
+      "description": "Occupants experience seats that provide effective lumbar and lateral support for long drives, are easy to adjust, and remain free of squeaks, creasing and electrical faults over normal ownership periods.",
+      "acceptance_criterion": "2-hour endurance seating test average comfort score ≥8.0/10 (100-person panel); lumbar support with at least 4-way adjustability; manufacturing quality target: <0.5% seat-related faults (stitching, creaks, electric faults) in first 12 months across production sample.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-F70-EU-008",
+        "SIG-F70-EU-009",
+        "SIG-F70-EU-036",
+        "SIG-F70-EU-042",
+        "SIG-F70-EU-039"
+      ],
+      "assumptions": [
+        "Endurance and quality tests replicate typical owner usage for 3 years.",
+        "Adjustability is implemented in a way accessible to customers of different heights."
+      ],
+      "uncertainties": [
+        "Perception of comfort is subjective; targets combine objective durability data and subjective scoring."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Restore physical controls for core functions and ensure media/ audio basics work reliably",
+      "description": "Customers can adjust essential functions (climate, fan, temperature, audio volume/source) with dedicated physical buttons/knobs quickly and without looking, while still offering a large central display for secondary features; playing music from USB storage is supported and audio sound is natural unless the driver explicitly chooses synthetic augmentation.",
+      "acceptance_criterion": "Dedicated physical controls present for HVAC (driver & passenger), fan and audio volume/source; tests show these can be operated without visual attention in ≤1.5 s; at least one front USB port supports mass-storage playback and is labelled for media; by default no synthetic engine pops are played through speakers (user opt-in allowed); audio system user-satisfaction ≥8.0/10 in listening tests.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-003",
+        "SIG-F70-EU-028",
+        "SIG-F70-EU-015",
+        "SIG-F70-EU-011",
+        "SIG-F70-EU-029",
+        "SIG-F70-EU-014",
+        "SIG-F70-EU-030"
+      ],
+      "assumptions": [
+        "Physical controls are ergonomically integrated without cluttering the cabin.",
+        "Audio evaluations are performed with representative music tracks and in-vehicle listening tests."
+      ],
+      "uncertainties": [
+        "Some customers prefer touchscreen-only layouts; requirement aims to satisfy majority safety/usability concerns."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Infotainment and connected software must be reliable, intuitive and maintain feature availability",
+      "description": "Customers experience an infotainment system that is responsive, rarely crashes, keeps features available after updates and offers reliable connected services and dealer support if problems occur.",
+      "acceptance_criterion": "System crash/lockup rate <0.1 incidents per 1,000 vehicle-hours in pre-production validation and early fleet; post-update feature-regression incidents <0.5% across fleet during first 24 months; connected-services customer-satisfaction ≥8.0/10 (EU study benchmark).",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-004",
+        "SIG-F70-EU-011",
+        "SIG-F70-EU-020",
+        "SIG-F70-EU-034",
+        "SIG-F70-EU-018",
+        "SIG-F70-EU-045"
+      ],
+      "assumptions": [
+        "Improved QA processes and update procedures will be implemented to avoid regressions.",
+        "Connected services score target is comparable to other class leaders in the EU market."
+      ],
+      "uncertainties": [
+        "Third-party services and network dependencies may affect connected-services availability.",
+        "Exact numeric targets require agreement with software/OTA strategy."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Provide full sat‑nav functionality without forcing app registration and ensure reliable routing",
+      "description": "Drivers can use full navigation functionality out of the box without mandatory app registration or paid activation and navigation works reliably with clear routing and voice guidance.",
+      "acceptance_criterion": "All core navigation features available and usable without app registration; offline map routing available for EU countries and a 500 km route is calculated within ≤5 s on the vehicle hardware; voice guidance and turn-by-turn rerouting operate correctly in ≥99% of tested navigation scenarios.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-023"
+      ],
+      "assumptions": [
+        "Sufficient onboard map/data storage or hybrid offline-online approach will be provided.",
+        "Regulatory or commercial constraints do not mandate app-based features for certain services."
+      ],
+      "uncertainties": [
+        "Some advanced services (real-time traffic) may still require connectivity; objective is that core routing and guidance are available without app login."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Deliver usable boot space and reliable tailgate operation for everyday practicality",
+      "description": "Customers can load common luggage and groceries without compromise from hybrid packaging, and the tailgate opens/closes reliably with convenient internal controls.",
+      "acceptance_criterion": "Measured boot capacity ≥380 litres for non-electrified variants (VDA method) and ≥300 litres usable for electrified/hybrid variants; electric tailgate with internal close button included on at least mid trims; tailgate operation reliability ≥99% over 10,000 cycles in durability testing; common luggage-fit test passed in ≥95% of cases.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-F70-EU-022",
+        "SIG-F70-EU-025",
+        "SIG-F70-EU-042"
+      ],
+      "assumptions": [
+        "Packaging improvements and battery layout for hybrids will allow the stated usable volumes.",
+        "Electric tailgate hardware will be validated for durability in typical use."
+      ],
+      "uncertainties": [
+        "Exact boot volumes will vary with trim (spare wheel, sound systems); targets apply to standard configuration."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Keys and driver-profile features must feel premium and work reliably",
+      "description": "Customers experience high quality tactile keys and reliable digital-key features that remember driver settings and do not cause unexpected locking or alarm events.",
+      "acceptance_criterion": "Physical key build quality target: >95% positive tactile satisfaction in customer evaluation; digital-key and profile recall success ≥99% within 2 s of unlocking in bench and vehicle tests; incidents of unexpected re-locking or alarm triggering <0.5% in first 12 months fleet data.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-F70-EU-019"
+      ],
+      "assumptions": [
+        "Key hardware and software integration will be validated in pre-production and early fleet.",
+        "Metrics combine subjective evaluation and objective functional tests."
+      ],
+      "uncertainties": [
+        "Smartphone-based digital-key behavior depends on phone OS versions and user settings."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Improve exterior mirrors and visibility to remove blind spots and reduce night glare",
+      "description": "Drivers experience improved visibility from exterior mirrors with minimized blind spots and reduced interior reflection/glare at night so mirror use feels safe and reliable.",
+      "acceptance_criterion": "External mirror field-of-view meets or exceeds current class benchmark (ISO/Euro NCAP mirror visibility tests) and night-glare tests show no significant interior reflections that impair view in ≥95% of laboratory/night scenarios; all expected mirror functions (adjust, heat, folding) operate correctly in ≥99% of vehicles in QC testing.",
+      "category": "exterior",
+      "signal_ids": [
+        "SIG-F70-EU-027",
+        "SIG-F70-EU-041",
+        "SIG-F70-EU-032",
+        "SIG-F70-EU-033",
+        "SIG-F70-EU-007"
+      ],
+      "assumptions": [
+        "Mirror geometry and coatings can be optimized within existing packaging and regulatory constraints.",
+        "Lab night-glare tests replicate common cabin lighting conditions."
+      ],
+      "uncertainties": [
+        "Perception of blind spots varies by driver; objective tests reduce but may not eliminate every customer complaint."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Fit tyres that balance low noise, strong wet grip and robust durability",
+      "description": "Customers notice quieter tyres with confident grip in wet weather and acceptable durability for European conditions.",
+      "acceptance_criterion": "Selected OEM tyre specification yields exterior tyre noise ≤72 dB at 80 km/h (ISO test) and wet braking performance from 80 km/h to 0 km/h ≤32 m in standardized tests; tyre-related roadside incidents in first 12 months <1% of fleet.",
+      "category": "exterior",
+      "signal_ids": [
+        "SIG-F70-EU-017"
+      ],
+      "assumptions": [
+        "Targets are achievable with mainstream premium tyre suppliers and appropriate wheel/tire fitment per trim.",
+        "Durability testing reflects typical EU road conditions including potholes."
+      ],
+      "uncertainties": [
+        "Extreme road conditions and aftermarket tyre choices can affect noise and grip outcomes."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Improve exterior quality and lighting so the car looks premium and is usable at night",
+      "description": "Customers experience high-quality exterior fit & finish and lighting that provides good night visibility without causing nuisance glare or reflections.",
+      "acceptance_criterion": "Exterior build-quality complaints (paint, trim, panel-fit) reduced by ≥80% compared with the current model in early ownership feedback; headlamp performance meets or exceeds applicable UNECE standards and customer night-visibility score ≥8.0/10 in usability tests.",
+      "category": "exterior",
+      "signal_ids": [
+        "SIG-F70-EU-032",
+        "SIG-F70-EU-033",
+        "SIG-F70-EU-007"
+      ],
+      "assumptions": [
+        "Improved quality control and supplier processes will reduce visible defects.",
+        "Lighting improvements may require revised headlamp modules but will comply with regulations."
+      ],
+      "uncertainties": [
+        "Supplier variability and production ramps can temporarily affect early quality."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Offer competitive electric range for battery-electric variants",
+      "description": "When choosing a BEV variant, customers experience ranges that meet or exceed competitor expectations for mid-range and long-range buyers.",
+      "acceptance_criterion": "Mid-trim BEV WLTP range ≥350 km; long-range BEV WLTP range ≥500 km (where a long-range option is offered); real-world town/motorway mixed-cycle range within ±15% of WLTP for typical driving profiles.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-F70-EU-043"
+      ],
+      "assumptions": [
+        "Battery energy-density and vehicle efficiency trends continue to improve over the next 3–5 years enabling these ranges.",
+        "WLTP remains the standard reference for marketing-range comparisons in target markets."
+      ],
+      "uncertainties": [
+        "Actual range depends on driving style, options, climate and payload; targets represent reasonable mid-term expectations."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}

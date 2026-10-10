@@ -1,0 +1,84 @@
+{
+  "claims": [
+    {
+      "text": "Consumer Reports' 2025 road-test summary describes the Lucid Air’s ride as “very well composed,” saying it makes the Air feel “almost like it’s riding on air.”",
+      "url": "https://www.consumerreports.org/cars/lucid/air/2025/road-test-report/",
+      "publisher": "Consumer Reports",
+      "published": "2025",
+      "stance": "supports",
+      "about": "Lucid Air — ride comfort and driving experience"
+    },
+    {
+      "text": "MotorTrend’s 2025 road test of the Lucid Air calls its ride quality “exceptional,” noting it is “cushy and comfy without being sloppy.”",
+      "url": "https://www.motortrend.com/reviews/2025-lucid-air-pure-first-test",
+      "publisher": "MotorTrend",
+      "published": "2025",
+      "stance": "supports",
+      "about": "Lucid Air — ride comfort and driving experience"
+    },
+    {
+      "text": "Autocar’s testing (2025/2026 coverage) reports the Lucid Air’s secondary ride is “particularly impressive,” and that the car makes “quiet and quick progress in supreme comfort.”",
+      "url": "https://www.autocar.co.uk/car-review/lucid/air",
+      "publisher": "Autocar",
+      "published": "2025",
+      "stance": "supports",
+      "about": "Lucid Air — ride comfort and driving experience"
+    },
+    {
+      "text": "Autocar’s full review of the BMW 5 Series (G60) says ride comfort is strong in the new 5 Series and attributes much of that to the optional Adaptive Suspension Professional system.",
+      "url": "https://www.autocar.co.uk/car-review/bmw/5-series",
+      "publisher": "Autocar",
+      "published": "2024",
+      "stance": "supports",
+      "about": "BMW 5 Series (G60) — ride comfort and suspension options"
+    },
+    {
+      "text": "MotorTrend’s review of the G60-era 530i notes that choosing the M Sport / sport suspension tends to make the 5 Series’ ride firmer and more ‘busy’ over rough surfaces compared with the comfort-oriented set-up.",
+      "url": "https://www.motortrend.com/reviews/2024-bmw-530i-xdrive-awd-first-test-review",
+      "publisher": "MotorTrend",
+      "published": "2024",
+      "stance": "supports",
+      "about": "BMW 5 Series (G60) — effect of M Sport suspension on ride quality"
+    },
+    {
+      "text": "NHTSA Recall Campaign 22V-090 (Lucid Air, model year 2022) documents a front-strut snap-ring manufacturing issue that could cause front brake-line damage and a resulting loss of brake fluid; Lucid ordered inspections and free repairs for affected vehicles.",
+      "url": "https://static.nhtsa.gov/odi/rcl/2022/RCAK-22V090-3995.pdf",
+      "publisher": "National Highway Traffic Safety Administration (NHTSA)",
+      "published": "2022-02-22",
+      "stance": "supports",
+      "about": "Lucid Air — safety recall affecting front strut and potential brake-line damage"
+    },
+    {
+      "text": "Lucid’s Air Sapphire owner manual states the Sapphire’s carbon-ceramic brake system can exhibit squeal or groan noises in situations such as when brakes are cold or damp, and that carbon-ceramic brakes produce variable pedal feel with temperature.",
+      "url": "https://device.report/m/6f2ed6a794731f220318100ab2be6bbea63769c09db7d626d285f90ff15951d4",
+      "publisher": "Lucid Motors (Owner’s Manual)",
+      "published": "2024",
+      "stance": "supports",
+      "about": "Lucid Air Sapphire — carbon-ceramic brakes (noise and temperature-dependent feel)"
+    },
+    {
+      "text": "Brake/noise service pages and parts guides for 2022–2025 Lucid Air note owner reports of brake squeal, grinding noises, and that because the Air is very quiet, brake noises are more noticeable; these pages recommend inspection and note limited aftermarket parts availability.",
+      "url": "https://www.go-parts.com/garage/disc-brake-rotor-lucid-air-2022-2025",
+      "publisher": "Go-Parts (aftermarket/parts guide)",
+      "published": "2026",
+      "stance": "supports",
+      "about": "Lucid Air — owner-reported brake squeal, grinding and related service guidance"
+    },
+    {
+      "text": "NHTSA-aggregate tracking sites and vehicle-safety summary pages show multiple consumer complaints filed for Lucid Air model years 2022–2026 that list ‘service brakes’ or related brake/ABS faults among the reported issues (see summary page for 2025 Lucid Air complaints).",
+      "url": "https://carsafetyrecord.com/vehicle/2025-lucid-air/",
+      "publisher": "CarSafetyRecord (NHTSA-complaint summary)",
+      "published": "2026",
+      "stance": "supports",
+      "about": "Lucid Air — NHTSA consumer complaints including service-brakes entries"
+    },
+    {
+      "text": "Lucid owner and enthusiast forum / Reddit threads include multiple owner posts describing persistent brake squeal and occasional reports of grinding, heavy dust, or an overly grabby pedal feel on Lucid Air examples (owner anecdotes, not formal tests).",
+      "url": "https://www.reddit.com/r/LUCID/comments/1hly2h3/lucid_air_pure_rwd_vs_taycan_base_rwd/",
+      "publisher": "Reddit (r/LUCID)",
+      "published": "2024-12-25",
+      "stance": "supports",
+      "about": "Lucid Air — owner-reported brake squeal/grabby feel (anecdotal)"
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "drafts": [
+    {
+      "title": "Keep the engaging, comfortable driving character customers love",
+      "description": "Customers experience the successor 1 Series as smooth, composed and enjoyable to drive — retaining comfortable ride cushioning, confident handling and the solid build quality praised today.",
+      "acceptance_criterion": "In a representative user panel of 200 current 1 Series owners and new customers, at least 90% must rate overall driving enjoyment (ride, handling, perceived build quality) >= 8/10 in a standardized 2‑hour mixed route evaluation.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-001",
+        "SIG-F70-EU-002",
+        "SIG-F70-EU-006",
+        "SIG-F70-EU-010",
+        "SIG-F70-EU-024",
+        "SIG-F70-EU-036"
+      ],
+      "assumptions": [
+        "Current baseline enjoyment corresponds to an 8/10 mean score in historical owner surveys (used to set the target).",
+        "User panel tests are run on representative road surfaces and traffic conditions matching typical EU use."
+      ],
+      "uncertainties": [
+        "Perceived driving enjoyment can vary by trim/wheel size; final validation must ensure the target across the most common configurations."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Deliver clearly improved power and torque feel across the range",
+      "description": "Customers feel the car offers responsive, confident acceleration and torque delivery for everyday overtaking and motorway merging — no more feeling underpowered or vague throttle response.",
+      "acceptance_criterion": "In an independent customer driving test (N=100) covering urban and motorway use, >= 90% of participants must report 'adequate/strong' acceleration for overtaking and merging (>=8/10). Additionally, median 0–80 km/h response in real-world overtaking test should improve versus the current model by at least 10% for the comparable variant(s).",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-005",
+        "SIG-F70-EU-021",
+        "SIG-F70-EU-002"
+      ],
+      "assumptions": [
+        "Comparisons use the current model's mainstream petrol/diesel/hybrid variants; at least one higher‑torque variant will be offered where customers expect more punch.",
+        "Real-world 0–80 km/h timing is an acceptable proxy for perceived overtaking performance."
+      ],
+      "uncertainties": [
+        "Exact numeric improvement depends on final powertrain choices (ICE vs hybrid vs EV)."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Gearbox and transmission must feel consistently smooth and predictable",
+      "description": "Customers no longer experience jerky, slipping or delayed gear changes; shifts feel seamless and the gearbox behaves predictably in stop‑start city driving and during acceleration.",
+      "acceptance_criterion": "In a 50‑driver urban driving test and standardized shift assessment, >= 95% of drivers must rate gearshift smoothness >= 8/10 and measured occurrence of 'jerky' shifts must be <= 5% of all shifts recorded in the test protocol.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-016",
+        "SIG-F70-EU-044",
+        "SIG-F70-EU-024",
+        "SIG-F70-EU-001"
+      ],
+      "assumptions": [
+        "Test protocol defines 'jerky' shift with a repeatable subjective/accelerometer threshold.",
+        "Software calibrations and transmission hardware are within capability for successor timelines."
+      ],
+      "uncertainties": [
+        "Some legacy hardware limitations (e.g., low-cost DCT variants) may constrain achievable smoothness in entry trims."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Braking must feel progressive, predictable and offer adjustable regenerative behaviour",
+      "description": "Customers experience smooth, progressive brake pedal response with no sudden grabbing or delayed onset, and can adjust regenerative braking to their preference across clear settings.",
+      "acceptance_criterion": "In a 50‑driver structured evaluation, >= 95% must rate brake progression >= 8/10; regenerative braking must be user‑selectable with at least three distinct intensity settings and confirmed usable by 95% of drivers in a real‑world driving session.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-026"
+      ],
+      "assumptions": [
+        "Evaluation covers conventional friction braking and, where present, regenerative braking in hybrid/EV variants.",
+        "Pedal feel and software calibration will be tuned during vehicle development."
+      ],
+      "uncertainties": [
+        "Achievable regeneration feel may differ between mild‑hybrid, full‑hybrid and full‑EV drivetrains."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Improve ride damping and handling balance on poor surfaces without compromising comfort",
+      "description": "Customers experience better cushioning and controlled damping on rough roads while retaining the composed handling that makes the car enjoyable on local and motorway routes.",
+      "acceptance_criterion": "In a mixed‑surface test (including uneven urban surfaces), >= 90% of drivers must rate ride comfort >= 8/10 and handling confidence >= 8/10 versus the current model; vertical acceleration and comfort-related NVH metrics must show measurable reduction on the standardized bad‑road track.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-031",
+        "SIG-F70-EU-035",
+        "SIG-F70-EU-038",
+        "SIG-F70-EU-006"
+      ],
+      "assumptions": [
+        "Tests include common wheel/tire combinations that customers typically select (avoid oversized wheels in primary validation).",
+        "Adaptive damping or tuned passive dampers will be used depending on variant."
+      ],
+      "uncertainties": [
+        "Trade‑offs between sporty handling and comfort may require multiple suspension calibrations across trims."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Restore physical, easy‑to‑use controls for essential functions and make dual‑zone climate easy to operate",
+      "description": "Customers can adjust heating, ventilation, and core vehicle functions quickly and safely without diving into menus or staring at the touchscreen — physical buttons/knobs (or clearly accessible tactile shortcuts) are provided for core controls and dual‑zone climate control is available and usable without navigating deep menus.",
+      "acceptance_criterion": "Common climate and heating adjustments (set driver temperature, set passenger temperature, fan speed, seat heating on/off) must be achievable within 5 seconds without using the central touchscreen in a timed usability test by 95% of participants; dual‑zone control must be standard (or clearly available) and default sync off must be changeable in one tactile action.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-003",
+        "SIG-F70-EU-028",
+        "SIG-F70-EU-030",
+        "SIG-F70-EU-015"
+      ],
+      "assumptions": [
+        "Physical controls may be a mix of real buttons and dedicated tactile shortcuts tied to the HMI; the design will be validated in usability labs.",
+        "This requirement focuses on essential controls; some secondary functions may remain in touch menus."
+      ],
+      "uncertainties": [
+        "Exact control layout may vary by region and trim; usability targets must hold across common configurations."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Infotainment must be responsive, intuitive, robust and not force app registration for core features",
+      "description": "Customers experience a fast, logical and reliable infotainment system whose basic functions (navigation, phone, media, vehicle settings) work reliably, are straightforward to use and do not require mandatory app sign‑up or paid subscriptions for core route guidance or essential services.",
+      "acceptance_criterion": "System responsiveness: common screens and key actions must load/respond within 2 seconds in normal conditions; in a 200‑user usability study >= 90% must rate system intuitiveness >= 8/10; core navigation features must be available operationally without mandatory app registration and basic offline routing must be available out of the box.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-004",
+        "SIG-F70-EU-011",
+        "SIG-F70-EU-023",
+        "SIG-F70-EU-WEB-09",
+        "SIG-F70-EU-045"
+      ],
+      "assumptions": [
+        "OTA and software architectures will follow SDV trends, enabling updates while preserving core features; some connected services may remain optional extras.",
+        "Offline map capability uses preloaded regional map packages."
+      ],
+      "uncertainties": [
+        "Third‑party licensing (e.g., map providers) may affect some features and commercial models for connected services."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Support straightforward media playback and provide accessible data USB ports",
+      "description": "Customers can plug in a USB stick and play music or audio files directly; usable data USB ports are available up front and at the rear so residents and passengers can access media and charging simultaneously.",
+      "acceptance_criterion": "All production vehicles must be able to play common audio formats (MP3, AAC, WAV) from a USB stick in the front console; in factory validation 100% of tested units must play audio from USB and at least one front and one rear USB port supporting data and charging must be present in mainstream trims.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-029"
+      ],
+      "assumptions": [
+        "Format support will cover broadly used audio file types; test uses commonly formatted USB sticks.",
+        "Lower accessory trims will include at least one data‑capable front port."
+      ],
+      "uncertainties": [
+        "Future smartphone trends may reduce USB use; legacy support remains important for many customers."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "High‑quality audio and user control over synthetic engine/exhaust sounds",
+      "description": "Customers experience clean, high‑fidelity audio without distortion, and can disable or tune any synthetic engine/exhaust sounds routed through the cabin speakers so the sound matches their preference.",
+      "acceptance_criterion": "In an audio bench and in‑car listening tests >= 95% of participants must rate system audio clarity >= 8/10; synthetic engine sound can be disabled or adjusted (at least Off / Subtle / Sport) from the HMI in no more than three actions.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-014",
+        "SIG-F70-EU-040",
+        "SIG-F70-EU-WEB-05"
+      ],
+      "assumptions": [
+        "Objective acoustic testing (THD and SNR) will be used to guide tuning, but user perception is primary for acceptance.",
+        "Synthetic sound features remain optional and user‑configurable."
+      ],
+      "uncertainties": [
+        "Some sporty trim customers may prefer louder synthesized cues; calibration must balance preferences."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Instrument displays must be reliable and free of distracting reflections or crashes",
+      "description": "Customers experience a stable, readable digital instrument panel that does not crash or remove critical driving information, and that minimises reflections and glare that would distract at night or reduce visibility.",
+      "acceptance_criterion": "Display stability: in durability and stress tests the instrument display must not crash or lose critical driving functions in > 99.5% of test cycles; in a night driving usability test complaints about mirror reflections or display glare must be <= 1% of participants.",
+      "category": "interior",
+      "signal_ids": [
+        "SIG-F70-EU-018",
+        "SIG-F70-EU-015",
+        "SIG-F70-EU-WEB-07"
+      ],
+      "assumptions": [
+        "Hardware and anti‑reflective coatings will be specified to minimize internal reflections.",
+        "Software stability targets apply across common regional configurations."
+      ],
+      "uncertainties": [
+        "Extreme ambient lighting conditions and aftermarket films/accessories may still cause reflections."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Driver assistance features and settings must persist and remain reliable through updates",
+      "description": "Customers experience driver assistance and automated driving systems that remain functional and retain their settings after software updates; features do not disappear or degrade without clear communicated reasons and a supported fix path.",
+      "acceptance_criterion": "During staged OTA update trials across a pilot fleet (N>=1000 vehicle‑updates), >= 99% of vehicles must retain previously enabled driver assistance features and settings; customer‑reported loss or disappearance incidents must be <0.5% per year in early field fleet monitoring.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SIG-F70-EU-020",
+        "SIG-F70-EU-034",
+        "SIG-F70-EU-WEB-11",
+        "SIG-F70-EU-WEB-09"
+      ],
+      "assumptions": [
+        "The software architecture will support rollback/feature persistence mechanisms consistent with SDV trends.",
+        "Pilot fleets and telemetry will be used to validate OTA behaviour prior to wide rollout."
+      ],
+      "uncertainties": [
+        "Regulatory approvals for advanced assisted driving functions may vary by market and affect timelines and feature availability."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Seats must be supportive, adjustable and durable with high build quality",
+      "description": "Customers find the seats comfortable on long journeys, with good lumbar support and adjustability, and experience no common quality or safety faults (squeaks, creasing, electrical seat faults or belt issues).",
+      "acceptance_criterion": "In a 100‑participant 3‑hour comfort study >= 90% must rate seat comfort >= 8/10; durability validation must show zero functional electrical seat faults and zero seat belt failures in a 10,000‑hour system test batch and machining/assembly quality issues below 0.5% in production checks.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-F70-EU-008",
+        "SIG-F70-EU-009",
+        "SIG-F70-EU-036",
+        "SIG-F70-EU-013",
+        "SIG-F70-EU-WEB-04"
+      ],
+      "assumptions": [
+        "Ergonomic adjustments (multi‑way lumbar) will be available across common trims; production quality targets will be enforced.",
+        "Durability targets use accelerated life tests representative of typical use."
+      ],
+      "uncertainties": [
+        "Some specialist sporty seat options may emphasize lateral support over long‑journey softness; targets apply to mainline seats."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Boot must be practical, reliably operable and retain meaningful cargo capacity",
+      "description": "Customers can load everyday luggage easily, have an electrically operable tailgate (with internal shut button) that works reliably, and luggage space is not overly compromised by hybrid/electric components.",
+      "acceptance_criterion": "Boot volume for mainstream ICE/hybrid variants must be >= 380 L (VDA method); an electric tailgate with interior shut button must operate reliably with successful open/close in >= 99% of 500-cycle bench tests and reported owner tailgate failures must be <0.5% in the first 12 months.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-F70-EU-022",
+        "SIG-F70-EU-025",
+        "SIG-F70-EU-WEB-10"
+      ],
+      "assumptions": [
+        "VDA measurement method is used for comparability; packaging for EV variants will aim to preserve usable boot where possible.",
+        "Some plug‑in hybrid packaging constraints exist but should not reduce mainstream usability below the stated target."
+      ],
+      "uncertainties": [
+        "Exact achievable volume will be constrained by drivetrain packaging in EV/hybrid variants; some specialized trims may fall below the target."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "High‑quality keys and reliable digital key/driver profile persistence",
+      "description": "Customers experience keys that feel well made and are straightforward to use, and digital keys and driver preference profiles reliably unlock the car, seat/side‑mirror positions and settings persist across reboots and software updates.",
+      "acceptance_criterion": "Physical key subjective quality: >= 90% of a 100‑user panel rate key build/fit/finish >= 8/10; digital key reliability must achieve >= 99% successful unlocking/vehicle access in a 10,000‑attempt field test; driver profiles must persist after software updates and power cycles in >= 99% of cases in validation testing.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-F70-EU-019"
+      ],
+      "assumptions": [
+        "Digital key implementations use current smartphone standards and dealer support processes are in place to recover failed pairs.",
+        "Driver preference persistence is largely a software/telemetry validation exercise."
+      ],
+      "uncertainties": [
+        "Smartphone OS changes or manufacturer restrictions could affect digital key interoperability over time."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Exterior must keep the praised sporty/classy styling while improving durability, lighting and mirror visibility",
+      "description": "Customers continue to value the car's attractive exterior design, while common exterior issues (lighting faults, mirror glare/limited visibility, tyre noise and grip) are reduced so the car looks good and performs reliably in daily use.",
+      "acceptance_criterion": "Styling approval: >= 85% positive rating in customer styling panels; exterior lighting and mirror defects <0.5% in production quality checks; in night driving tests reflection/glare complaints <1% and exterior tyre rolling noise at 80 km/h must be <= 70 dB on the standard tyre specification while meeting EU wet‑grip class A/B for the factory fitment.",
+      "category": "exterior",
+      "signal_ids": [
+        "SIG-F70-EU-007",
+        "SIG-F70-EU-033",
+        "SIG-F70-EU-032",
+        "SIG-F70-EU-017",
+        "SIG-F70-EU-027",
+        "SIG-F70-EU-041"
+      ],
+      "assumptions": [
+        "Standard factory tyre choice will prioritize balanced NVH and wet grip for mainstream wheel sizes.",
+        "Mirror geometry and anti‑reflective coatings can mitigate interior reflection complaints."
+      ],
+      "uncertainties": [
+        "Aftermarket wheel/tyre choices by owners will affect NVH and grip; production targets apply to OEM fitment only."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Provide an EV variant with competitive real‑world range for 2028 buyers",
+      "description": "Customers considering an electric 1 Series get a variant whose real‑world driving range meets mainstream expectations for midsize EVs at the time, reducing range anxiety and making the car practical for daily and longer trips.",
+      "acceptance_criterion": "For the BEV variant, real‑world driving range must achieve at least 465 km in independent mixed‑route (urban/highway) tests representative of typical EU use (as documented by external test organization).",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-F70-EU-043",
+        "SIG-F70-EU-WEB-08",
+        "SIG-F70-EU-WEB-10"
+      ],
+      "assumptions": [
+        "This requirement is forward‑looking and assumes battery energy density and vehicle packaging improvements consistent with industry trends by 2028.",
+        "Test protocol reflects real‑world conditions (mixed speeds, typical climate control use)."
+      ],
+      "uncertainties": [
+        "Achievable range depends strongly on final cell technology, vehicle mass and aerodynamic choices; trade‑offs with cost and packaging will apply."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}

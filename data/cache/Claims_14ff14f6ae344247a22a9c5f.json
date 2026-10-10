@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "text": "The 2025 Audi A6 Sportback e-tron has EPA-rated ranges reported by Consumer Reports of 333 miles for the quattro (AWD) and up to 392 miles for the RWD variant; Consumer Reports also recorded a 70-mph highway test of 347 miles for an A6 e-tron which exceeded the EPA estimate. ([consumerreports.org](https://www.consumerreports.org/cars/audi/a6-e-tron/2025/road-test-report/?utm_source=openai))",
+      "url": "https://www.consumerreports.org/cars/audi/a6-e-tron/2025/road-test-report/",
+      "publisher": "Consumer Reports",
+      "published": "accessed 2026-10-10",
+      "stance": "supports",
+      "about": "Audi A6 e-tron EPA and real-world range"
+    },
+    {
+      "text": "Audi publishes the A6 e-tron with an 800‑volt architecture and a battery architecture offering a ~100 kWh gross pack (≈94.9 kWh net for the larger pack) and shows a maximum DC charging acceptance around 270 kW in Audi technical material. ([media.audi.com](https://media.audi.com/is/content/audi/microsites/audi-com/assets/downloads/events-and-presentations/investor-presentations/2024/audi-analyst-day-2024.pdf?utm_source=openai))",
+      "url": "https://media.audi.com/is/content/audi/country/nz/assets/specifications/2025/july/A6-e-tron-MY25-Specifications.pdf",
+      "publisher": "Audi (press / technical materials)",
+      "published": "accessed 2026-10-10",
+      "stance": "supports",
+      "about": "Audi A6 e-tron battery size and peak DC charge rate"
+    },
+    {
+      "text": "Audi USA states 2025 A6 e-tron owners receive one year of unlimited Electrify America DC fast‑charging credits for the original owner and the A6 e-tron supports battery preconditioning for faster DC charging. ([audiusa.com](https://www.audiusa.com/en/support/help/video-tutorials/models/a6/layer/?showPreferenceCenter=true&utm_source=openai))",
+      "url": "https://www.audiusa.com/en/ev-hub/faqs/",
+      "publisher": "Audi USA (EV Hub / FAQs)",
+      "published": "accessed 2026-10-10",
+      "stance": "supports",
+      "about": "Audi Electrify America charging credit & preconditioning"
+    },
+    {
+      "text": "BMW’s i5 (G60) eDrive40 family is built around an ≈81–84 kWh usable battery with EPA combined-range examples around ~295 miles for the eDrive40 on 19‑inch wheels (EPA range varies by wheel size and trim). ([recharged.com](https://recharged.com/articles/2025-bmw-i5-range-test?utm_source=openai))",
+      "url": "https://recharged.com/articles/2025-bmw-i5-range-test/",
+      "publisher": "Recharged (independent EV testing / analysis)",
+      "published": "accessed 2026-10-10",
+      "stance": "supports",
+      "about": "BMW i5 EPA range and usable battery"
+    },
+    {
+      "text": "BMW publishes the i5’s maximum DC charging acceptance as up to 205 kW (CCS), which is the i5’s published peak on-capability for public DC fast charging. ([bmwusa.com](https://www.bmwusa.com/vehicles/5-series/sedan/bmw-5-series-sedan-technical-data.html?utm_source=openai))",
+      "url": "https://www.bmwusa.com/vehicles/5-series/sedan/bmw-5-series-sedan-technical-data.html",
+      "publisher": "BMW USA (technical data)",
+      "published": "accessed 2026-10-10",
+      "stance": "supports",
+      "about": "BMW i5 peak DC charging power"
+    },
+    {
+      "text": "BMW offers complimentary Electrify America charging credits on certain 2025–2026 BMW EV models (example: '2 years or 1,000 kWh' for some MY2025 iX, i4 and i5 offers) and BMW has rolled out a Remote Software Upgrade and approved adapter path to allow eligible BMW EVs to use Tesla Supercharger (NACS) stations when the vehicle RSU and adapter are enabled. ([faq.bmwusa.com](https://faq.bmwusa.com/s/article/FAQ-How-to-use-complimentary-charging-session-with-Electrify-America-BMW-USA-Svcyd?utm_source=openai))",
+      "url": "https://faq.bmwusa.com/s/article/FAQ-How-to-use-complimentary-charging-session-with-Electrify-America-BMW-USA-Svcyd",
+      "publisher": "BMW USA (FAQ)",
+      "published": "accessed 2026-10-10",
+      "stance": "supports",
+      "about": "BMW complimentary charging and NACS/Supercharger access"
+    },
+    {
+      "text": "Both Audi A6 e-tron and BMW i5 initially use CCS1 in the U.S. but manufacturers (Audi/Porsche/VW group and BMW) made arrangements in 2025–2026 to provide manufacturer‑approved NACS (Tesla) adapter solutions or to ship future model years with native NACS ports so owners can access Tesla Supercharger stalls (implementation details and which model years are eligible vary by model). ([insideevs.com](https://insideevs.com/news/771548/porsche-audi-tesla-supercharger-access-us-official/?utm_source=openai))",
+      "url": "https://insideevs.com/news/771548/porsche-audi-tesla-supercharger-access-us-official/",
+      "publisher": "InsideEVs",
+      "published": "accessed 2026-10-10",
+      "stance": "supports",
+      "about": "NACS adapter / Supercharger access for Audi and BMW"
+    },
+    {
+      "text": "Major, well‑documented causes for a driver-perceived 'range feels limited and fluctuates' are ambient temperature, HVAC use (heating is especially costly), driving speed and style, tire/wheel selection, terrain, and the vehicle’s range‑prediction algorithm updating based on recent driving — these can change displayed range by 20–40% depending on conditions. ([chargecalcs.com](https://chargecalcs.com/range/ev-range?utm_source=openai))",
+      "url": "https://chargecalcs.com/range/ev-range",
+      "publisher": "ChargeCalcs (EV range analysis)",
+      "published": "accessed 2026-10-10",
+      "stance": "supports",
+      "about": "causes of EV range variation and fluctuations"
+    },
+    {
+      "text": "Practical implication from published tests and spec sheets: the Audi A6 e-tron’s larger high‑voltage pack and 800V-capable charging (≈270 kW peak) generally give longer EPA figures on certain trims and faster short-duration DC replenishment than the BMW i5’s ≈81 kWh usable pack and 205 kW peak; however, in everyday mixed driving the BMW i5 often meets or modestly exceeds its EPA numbers due to its efficiency, so real-world experience depends on trim (wheels), conditions and driving style. ([consumerreports.org](https://www.consumerreports.org/cars/audi/a6-e-tron/2025/road-test-report/?utm_source=openai))",
+      "url": "https://www.caranddriver.com/audi/a6-e-tron",
+      "publisher": "Car and Driver / Consumer Reports / BMW technical data (combined sources)",
+      "published": "accessed 2026-10-10",
+      "stance": "neutral",
+      "about": "practical comparison: A6 e-tron vs BMW i5 in range and charging"
+    }
+  ]
+}

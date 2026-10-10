@@ -1,0 +1,60 @@
+{
+  "claims": [
+    {
+      "text": "BMW's US technical specifications list the 530i sedan (G60 platform) trunk volume as 18.4 cubic feet (US-spec 530i figure).",
+      "url": "https://www.press.bmwgroup.com/usa/article/attachment/T0418778EN_US/624323",
+      "publisher": "BMW Group Press",
+      "published": "2024",
+      "stance": "supports",
+      "about": "BMW 5 Series (G60) cargo volume (US spec)"
+    },
+    {
+      "text": "Kelley Blue Book and other US reviewers report the Mercedes‑Benz E‑Class sedan's trunk at about 19.1 cubic feet (≈540 liters) for the non‑PHEV/mild‑hybrid sedan, making it one of the larger trunks in this segment. ",
+      "url": "https://www.kbb.com/mercedes-benz/e_class/2025/",
+      "publisher": "Kelley Blue Book (KBB)",
+      "published": "2025-01-30",
+      "stance": "supports",
+      "about": "Mercedes‑Benz E‑Class trunk volume (non‑PHEV) in US market"
+    },
+    {
+      "text": "Published specifications and data aggregators show that E‑Class plug‑in‑hybrid variants have a materially smaller boot (about 370 liters / roughly 13.1 cubic feet), while the mild‑hybrid/standard E‑Class offers the larger 540 L (≈19.1 cu ft) cargo space—i.e., cargo capacity depends strongly on powertrain. ",
+      "url": "https://www.thecarconnection.com/specifications/mercedes-benz_e-class_2025",
+      "publisher": "The Car Connection / Cars-by‑Spec (data)",
+      "published": "2025",
+      "stance": "supports",
+      "about": "Mercedes E‑Class cargo difference between PHEV and non‑PHEV models"
+    },
+    {
+      "text": "Multiple professional reviews note the new E‑Class emphasizes rear‑seat luxury and a pampering, quiet cabin (Mercedes is repeatedly described as more ‘business‑class’ for rear passengers), while the BMW 5‑Series emphasizes driver‑focused dynamics and still delivers comfortable front and rear seats—so the E‑Class leans more toward rear‑seat pampering and the 5‑Series toward driver engagement. ",
+      "url": "https://www.autocarindia.com/car-comparison-reviews-amp/mercedes-e-class-vs-bmw-5-series-comparison-433838",
+      "publisher": "Autocar India",
+      "published": "2024-12-13",
+      "stance": "supports",
+      "about": "Comparison: rear‑seat comfort and driving focus (E‑Class vs BMW 5 Series)"
+    },
+    {
+      "text": "U.S. reviews (MotorTrend, KBB) and long‑form road tests highlight the E‑Class’s quiet, cushioned ride and optional air suspension as key comfort strengths—MotorTrend named the redesigned E‑Class highly for refinement and comfort. ",
+      "url": "https://www.motortrend.com/cars/mercedes-benz/e-class/2024",
+      "publisher": "MotorTrend",
+      "published": "2024",
+      "stance": "supports",
+      "about": "Mercedes‑Benz E‑Class overall comfort and ride quality"
+    },
+    {
+      "text": "Car and Driver’s 2025 5‑Series review rates the BMW as a comfortable, upscale sedan that prioritizes a balance of comfort and sporty feel—plush seats front and rear and a composed ride—while noting the 5‑Series favors driver engagement relative to some rivals. ",
+      "url": "https://www.caranddriver.com/bmw/5-series-2025",
+      "publisher": "Car and Driver",
+      "published": "2025",
+      "stance": "supports",
+      "about": "BMW 5 Series (G60) comfort and driving character"
+    },
+    {
+      "text": "Independent technical/owner‑advice resources and owner reports document many G60 (2024–2026 5‑Series / i5) owners experiencing intermittent or unreliable hands‑free 'kick‑to‑open' trunk operation and related electronic/soft‑close trunk symptoms; these guides recommend checking latch sensors, wiring at the hinge, and TSBs. ",
+      "url": "https://www.go-parts.com/garage/trunk-lid-or-tailgate-bmw-530i-bmw-540i-bmw-i5-2024-2026",
+      "publisher": "Go‑Parts Garage",
+      "published": "2026-09-19",
+      "stance": "supports",
+      "about": "BMW G60 hands‑free trunk / kick‑to‑open reliability reports"
+    }
+  ]
+}

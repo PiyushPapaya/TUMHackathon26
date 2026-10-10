@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "text": "Tesla Model S (Tesla owners manual) lists cargo volumes: front trunk 3.1 cu ft, rear trunk 25.0 cu ft (rear seats up), 61.4 cu ft with the rear seats folded, and maximum total cargo volume 64.6 cu ft.",
+      "url": "https://www.tesla.com/ownersmanual/models/en_mo/GUID-91E5877F-3CD2-4B3B-B2B8-B5DB4A6C0A05.html",
+      "publisher": "Tesla (Owner's Manual)",
+      "published": "© Tesla 2026 (owners manual page)",
+      "stance": "supports",
+      "about": "Tesla Model S — cargo volume"
+    },
+    {
+      "text": "BMW’s US technical specifications for the G60 5 Series list trunk volume as 18.4 cu ft for the 530i / 530i xDrive (the BMW i5 electric variant is listed as 17.3 cu ft).",
+      "url": "https://www.press.bmwgroup.com/usa/article/attachment/T0418778EN_US/624323",
+      "publisher": "BMW Group Press (Technical Specifications PDF)",
+      "published": "May 24, 2023",
+      "stance": "supports",
+      "about": "BMW 5 Series (G60) — trunk volume"
+    },
+    {
+      "text": "Tesla Model S interior dimensions (per Tesla owner's manual): front legroom 42.4 in and rear legroom 35.5 in; front headroom 39.7 in and rear headroom 38.1 in.",
+      "url": "https://www.tesla.com/ownersmanual/models/en_mo/GUID-91E5877F-3CD2-4B3B-B2B8-B5DB4A6C0A05.html",
+      "publisher": "Tesla (Owner's Manual)",
+      "published": "© Tesla 2026 (owners manual page)",
+      "stance": "supports",
+      "about": "Tesla Model S — interior dimensions (legroom/headroom)"
+    },
+    {
+      "text": "BMW 5 Series (G60) interior dimensions (BMW technical specs): front legroom 41.3 in and rear legroom 37.0 in; front headroom 38.8 in and rear headroom 37.5 in.",
+      "url": "https://www.press.bmwgroup.com/usa/article/attachment/T0418778EN_US/624323",
+      "publisher": "BMW Group Press (Technical Specifications PDF)",
+      "published": "May 24, 2023",
+      "stance": "supports",
+      "about": "BMW 5 Series (G60) — interior dimensions (legroom/headroom)"
+    },
+    {
+      "text": "Comparison of those OEM dimensions: the Model S gives slightly more front legroom (42.4 in vs. BMW 41.3 in) but the BMW 5 Series provides more rear legroom (37.0 in vs. Model S 35.5 in). (Sources: Tesla owner's manual; BMW technical specifications PDF.)",
+      "url": "https://www.tesla.com/ownersmanual/models/en_mo/GUID-91E5877F-3CD2-4B3B-B2B8-B5DB4A6C0A05.html https://www.press.bmwgroup.com/usa/article/attachment/T0418778EN_US/624323",
+      "publisher": "Tesla (Owner's Manual) & BMW Group Press",
+      "published": "Tesla owners manual (2026) and BMW press (May 24, 2023)",
+      "stance": "supports",
+      "about": "Front/rear legroom comparison (Model S vs BMW G60)"
+    },
+    {
+      "text": "BMW's press materials state the new 5 Series seats were redesigned for a \"noticeable increase in comfort\" and the rear backrests fold 40:20:40 so the three elements can be folded individually or together to create additional cargo space for long items.",
+      "url": "https://www.press.bmwgroup.com/usa/article/detail/T0418778EN_US/the-all-new-2024-bmw-5-series?language=en_US",
+      "publisher": "BMW Group Press (news article)",
+      "published": "May 24, 2023",
+      "stance": "supports",
+      "about": "BMW 5 Series — seat redesign and 40:20:40 folding rear seat"
+    },
+    {
+      "text": "Tesla's official owner's manual documents power seat controls that allow moving the seat forward/back and adjusting the seat’s height and tilt angle up/down, and it also includes a driver-seat calibration procedure (useful if the seat range appears limited).",
+      "url": "https://www.tesla.com/ownersmanual/models/en_ae/Owners_Manual.pdf",
+      "publisher": "Tesla (Owner's Manual PDF)",
+      "published": "(owners manual PDF; see seat adjustment and calibration sections)",
+      "stance": "supports",
+      "about": "Tesla Model S — seat adjustment / calibration documented"
+    },
+    {
+      "text": "Some Model S owners report seat-height or seat-adjustment problems (examples of owner reports: a recent r/TeslaModelS thread describes the seat height being limited after an update or calibration).",
+      "url": "https://www.reddit.com/r/TeslaModelS/comments/1x1x2bq/seat_adjustment_issues/",
+      "publisher": "Reddit (r/TeslaModelS)",
+      "published": "(post showing \"22h ago\" on the Reddit page at time of crawl)",
+      "stance": "supports",
+      "about": "Customer reports — Model S seat height / adjustment issues"
+    },
+    {
+      "text": "Independent reviewer summary: reviewers note the Model S is very practical for cargo because of its hatchback/liftback design and generous folded-cargo volume, but several reviewers also describe the Model S rear-seat comfort as \"adequate but not class-leading\" versus German rivals (e.g., AutoEdgeView review).",
+      "url": "https://autoedgeview.com/ev-reviews/2024-tesla-model-s-range-charging-review",
+      "publisher": "AutoEdgeView (independent review)",
+      "published": "August 27, 2026 (article)",
+      "stance": "supports",
+      "about": "Model S — cargo practicality (hatch) and rear-seat comfort assessment"
+    }
+  ]
+}

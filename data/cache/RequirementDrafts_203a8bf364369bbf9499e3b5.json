@@ -1,0 +1,283 @@
+{
+  "drafts": [
+    {
+      "title": "Deliver consistent, linear and satisfying power delivery across drive modes",
+      "description": "Customers experience smooth, predictable acceleration and transition between power sources (EV/ICE) without abrupt surges, delays or jerky launches, preserving the strong, powerful feel they praise today.",
+      "acceptance_criterion": "In a standardized drive test (mixed city/highway, 50 starts/launches per vehicle across 50 test drivers), >=90% of drivers rate power delivery as 'smooth' or 'very smooth' and report no unexpected torque surges or jerks during launches or mode transitions. Objective telemetry shows >95% of launch events have longitudinal jerk below 0.5 m/s^3 threshold during the same test.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-001",
+        "SIG-G60-US-002",
+        "SIG-G60-US-004",
+        "SIG-G60-US-012",
+        "SIG-G60-US-036"
+      ],
+      "assumptions": [
+        "Standardized subjective rating scale and defined drive loop will be used for comparison to current G60 baseline.",
+        "Telemetry threshold (jerk <0.5 m/s^3) is a proxy for perceptible abruptness; exact value refined with NVH engineering during development."
+      ],
+      "uncertainties": [
+        "Variation between electrified and ICE powertrains may require different calibration approaches; some edge cases (extreme cold, low battery SOC) may still show deviations."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Keep ride comfort and sporty handling at least at today's level",
+      "description": "Drivers continue to experience the current balance of smooth, quiet ride and responsive, planted handling — the car should feel luxurious on long trips while remaining engaging on dynamic roads.",
+      "acceptance_criterion": "In ISO-standard subjective ride and handling evaluations comparing successor to the current G60, overall ride comfort and handling scores must be no worse than the current G60: >=90% of test participants rate comfort and handling as 'same' or 'better' than the baseline in combined long-distance and dynamic driving scenarios.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-002",
+        "SIG-G60-US-004",
+        "SIG-G60-US-022"
+      ],
+      "assumptions": [
+        "The current G60 baseline scores are available from previous NVH and subjective driving studies.",
+        "Test panel will include representative customer demographics (age, driving style)."
+      ],
+      "uncertainties": [
+        "Perception trades may vary with new chassis or heavier electrified powertrains; tuning may need iterative validation."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Eliminate brake squeal, excessive dust and grabby brake feel for a smooth, confidence‑inspiring brake experience",
+      "description": "Braking feels smooth and predictable without loud squeals or harsh grabby behavior; customers do not see excessive brake dust shortly after ownership.",
+      "acceptance_criterion": "Customer-reported occurrences of brake squeal or grinding within the first 3 months of ownership must be <=2% of fleet in a 10,000 vehicle field sample. In lab NVH and durability tests, audible brake squeal events above 35 dB(A) occur in <1% of standardized brake cycles and brake pedal modulation tests show <5% of stops with perceived grabby engagement (validated by driver panel).",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-015"
+      ],
+      "assumptions": [
+        "Field-sample percentages are measured from warranty/feedback tracking during the first 3 months of ownership across representative climates.",
+        "NVH thresholds (35 dB(A)) are proxies for customer-noticeable squeal; lab thresholds will be refined with acoustics team."
+      ],
+      "uncertainties": [
+        "Environmental factors (salt, humidity) and aftermarket wheel/pad combinations can affect outcomes; some residual noise risk remains in certain brake-pad/wheel combinations."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Enable shorter drivers to get a clear forward view and let all drivers tune seat comfort and bolster support",
+      "description": "Drivers of small stature can raise the seating position sufficiently for a clear view over the hood, and all drivers can easily adjust seat firmness and side bolsters to avoid pressure points while retaining lateral support during sporty driving.",
+      "acceptance_criterion": "In a vehicle visibility and comfort test panel (drivers from 5th percentile female ~152 cm to 95th percentile male ~188 cm), >=95% of drivers can achieve an unobstructed forward sightline over the hood edge per standard sightline test within 2 minutes. Additionally, >=90% of participants report acceptable lateral support and comfort after a 2‑hour mixed driving session when using available seat adjustment settings.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-007",
+        "SIG-G60-US-010",
+        "SIG-G60-US-038"
+      ],
+      "assumptions": [
+        "Anthropometric percentiles based on standard reference population for US customers.",
+        "Comfort ratings collected after real-world drive durations (2 hours) to capture long-term comfort."
+      ],
+      "uncertainties": [
+        "Achieving both high bolstering for sporty driving and low-pressure comfort for smaller occupants is a design trade; some compromise in extremes may be necessary."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Hands-free trunk opening works reliably across users and conditions",
+      "description": "When customers perform the hands-free kick-to-open gesture, the trunk opens predictably on the first attempt across lighting, clothing and load conditions so they are not left frustrated when carrying items.",
+      "acceptance_criterion": "In bench and real-world tests covering 2000 gesture trials across multiple users, national footwear types and environmental conditions (rain, snow, dark), first-attempt success rate >=98% and false-trigger rate <=0.5% per 1000 drive-by events.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-008",
+        "SIG-G60-US-041"
+      ],
+      "assumptions": [
+        "Real-world test matrix will include common shoe types and carrying postures observed in customer field reports.",
+        "Definition of 'first attempt' is a single natural leg-sweep within a 2 second window."
+      ],
+      "uncertainties": [
+        "Extreme occlusion (oversized cargo blocking sensors) or aftermarket rear guards may impair reliability; sensor degradation over time could affect long-term rates."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Default unlocking behavior is intuitive and easily configurable (all doors unlock)",
+      "description": "Approaching customers find all doors unlocked (not just the driver door) by default, and changing this behavior is obvious and quick from the vehicle settings so customers stop being surprised or inconvenienced.",
+      "acceptance_criterion": "Default out-of-box behavior unlocks all passenger doors for a paired key. 98% of new owners in a usability test can find and change door unlock behavior to 'driver only' or 'all doors' in <=30 seconds without dealer assistance.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-018"
+      ],
+      "assumptions": [
+        "Usability test participants are representative of new owners and use the supplied key/fob during the test.",
+        "Default behavior chosen based on majority preference from customer feedback."
+      ],
+      "uncertainties": [
+        "Regional security or fleet configurations may require alternate defaults; dealer delivery settings may change default behavior in some markets."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Streamline infotainment menus and shortcuts while preserving the large, attractive display",
+      "description": "Customers keep the large, long touchscreen they like but can find common functions quickly without deep menus; the system supports customizable shortcuts so frequently used features are one or two taps away and the interface is not distracting while driving.",
+      "acceptance_criterion": "In a driving-safe usability study, participants complete a set of 8 common tasks (climate adjust, audio source change, navigation entry, seat heating, phone call, trip odometer, drive mode change, quick setting) with a median task time <=5 seconds and an overall task error rate <5%. At least 85% of participants rate menu clarity and findability as 'good' or 'excellent'.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-011",
+        "SIG-G60-US-023",
+        "SIG-G60-US-026",
+        "SIG-G60-US-028",
+        "SIG-G60-US-032"
+      ],
+      "assumptions": [
+        "Task list reflects the most common functions reported by customers and study participants.",
+        "Usability tests are conducted with drivers in a driving simulator or on-road supervised test to reflect in‑car use."
+      ],
+      "uncertainties": [
+        "Adoption of new HMI paradigms by existing customers may require onboarding; balancing customizable shortcuts with discoverability for infrequent users may need iterative tuning."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make Apple CarPlay connection reliable and keep phone integration stable",
+      "description": "Customers can use Apple CarPlay without frequent disconnects, pairing issues, or media playback failures so they can rely on their phone apps while driving.",
+      "acceptance_criterion": "In interoperability tests across the top 30 iPhone models and common carrier/OS versions, wired and wireless CarPlay pairing success rate >=98% on first attempt and connection drop rate <=5% across typical 4‑hour usage scenarios. Media playback and phone audio continue uninterrupted for >=95% of trips in field trials.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-019"
+      ],
+      "assumptions": [
+        "Top 30 iPhone models include current and prior 3 generations; tests cover popular carrier network conditions and Bluetooth/Wi‑Fi scenarios.",
+        "Failures counted include inability to pair, unexpected disconnects, or inability to play media."
+      ],
+      "uncertainties": [
+        "Future iOS updates or handset manufacturer changes could alter behavior; some vendor-side incompatibilities may persist."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Phone placement and wireless charging: phones fit securely and charge reliably without repositioning",
+      "description": "Customers can place commonly owned phones into the cabin tray/charger and have them stay seated and charge reliably so they don't need to fidget or connect a cable while driving.",
+      "acceptance_criterion": "Using a test set of the top 30 phone models by US market share, >=95% of models remain stable in the dedicated tray/charging area without repositioning during a 10-minute simulated city drive and register successful charging (power handshake and battery increment) within 60 seconds of placement. Customer-reported charging failures in the first 3 months must be <=2% of fleet.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-029",
+        "SIG-G60-US-040"
+      ],
+      "assumptions": [
+        "Top-30 phone list reflects US market at time of testing and includes common case types.",
+        "'Successful charging' defined as device reporting charging state and measurable SOC increase in controlled bench test."
+      ],
+      "uncertainties": [
+        "Very large 'phablet' models or unusual aftermarket phone cases may still require adjustment; wireless charging performance can vary by phone OEM implementation."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Climate controls and vent adjustment are quick, visible and minimally distracting",
+      "description": "Customers can find and change climate functions (fan, temperature, vent direction) quickly while driving — vents are easy to find and aim so comfort adjustments do not require long menu dives or distracting searches.",
+      "acceptance_criterion": "In an in-vehicle driving usability study, participants locate and change fan speed and adjust vent direction/temperature in <=5 seconds on 95% of trials. Heat/AC common controls must be accessible within one physical control or a two‑tap shortcut from the main screen.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-030",
+        "SIG-G60-US-023"
+      ],
+      "assumptions": [
+        "Usability study includes scenarios under daylight and night conditions to reflect discoverability issues.",
+        "Shortcuts can be physical buttons or fixed software one-tap areas on main screen."
+      ],
+      "uncertainties": [
+        "Some advanced climate functions may remain in menus for safety or complexity reasons; balancing minimalist aesthetics with obvious controls may require design iterations."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Range estimates, charging speed feedback and charger availability guidance reduce anxiety on trips",
+      "description": "Customers see EV range estimates they can trust, receive accurate feedback on real charging speeds and get meaningful guidance to find compatible, available chargers en route so they do not have to over‑rely on gasoline or worry about unexpected range loss.",
+      "acceptance_criterion": "Displayed EV range must be within ±8% of observed real-world range in 80% of mixed driving tests (including cold-weather scenarios). Predicted charging session time and expected delivered energy must be within ±10% of measured values in 80% of public charging sessions in field tests. Navigation guidance must present compatible chargers along planned routes where empirical historical availability predicts >80% chance of an available and functioning stall at arrival time.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-009",
+        "SIG-G60-US-014",
+        "SIG-G60-US-020",
+        "SIG-G60-US-027"
+      ],
+      "assumptions": [
+        "Real-world range tests include mixed urban/highway cycles, payload, HVAC use and common cold-weather conditions for North America.",
+        "Historic charger availability is computed from aggregated network data; Electrify America and other networks provide telemetry to estimate availability."
+      ],
+      "uncertainties": [
+        "Public charger reliability and data availability from third-party networks vary by region; unexpected outages will affect guidance accuracy; infrastructure improvements are needed to fully meet targets."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Maintain and further improve highway assistant reliability and user trust",
+      "description": "Customers continue to value the highway assistant for relaxed, long-distance driving; the system remains reliable and minimizes unexpected disengagements.",
+      "acceptance_criterion": "On standardized multi-hour highway routes, the highway assistant completes routes with <1 unintended disengagement per 100 miles on average and yields >=90% driver satisfaction in long-route supervised evaluations. The system must demonstrably reduce driver workload (self-reported) on commutes of 60+ miles.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SIG-G60-US-024",
+        "SIG-G60-US-017",
+        "SIG-G60-US-034"
+      ],
+      "assumptions": [
+        "Driver satisfaction measured via validated surveys after supervised drives; disengagements recorded and classified as intended vs unintended.",
+        "Routes reflect typical US interstate conditions, including lane merges and moderate traffic."
+      ],
+      "uncertainties": [
+        "Regulatory or mapping changes may affect hands-free operational design; extreme weather may increase disengagements."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make odometer and trip mileage easy to find in the instrument cluster",
+      "description": "Customers can immediately find odometer and trip mileage information without dealer assistance or confusing controls.",
+      "acceptance_criterion": "95% of participants in first‑use tests find total odometer and trip mileage within <=5 seconds without assistance. Changing trip/reset and toggling views is achievable within 3 seconds in 95% of trials.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-021"
+      ],
+      "assumptions": [
+        "Usability participants are typical new owners; instrument cluster controls and voice commands are included in the test."
+      ],
+      "uncertainties": [
+        "Different user expectations for cluster layouts may require an onboarding cue at delivery to reinforce discoverability for some buyers."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}
