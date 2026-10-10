@@ -67,6 +67,11 @@ flowchart LR
 | API Linse/Memo | `src/backend/api/insights_routes.py` | `/lens`, `/matrix`, `/counterparts`, `/memo` | – |
 | Szenarien | `config/scenarios/*.json` | Fahrzeug × Markt, Dateien, Wettbewerber | – |
 | Shader-Hintergrund | `src/frontend/src/components/ShaderBackground.tsx` | Animierter WebGL-Verlauf hinter allen Cockpit-Seiten (fixed, `z-index` unter dem Inhalt) | nein |
+| Übersicht | `src/frontend/app/overview/page.tsx`, `src/components/OverviewPageClient.tsx` | Trichter Belege → Befunde → Anforderungen → freigegeben, Top-3-Vorschläge, Evidenzverteilung, Workflow-Schritte | nein |
+| Audit-Seite | `src/frontend/app/audit/page.tsx`, `src/components/AuditPageClient.tsx`, `AuditTrail.tsx` | zeigt Kettenprüfung (`verify()`) und Zeitstrahl aller Ereignisse, filterbar nach Szenario/Anforderung | nein |
+| PM-Entscheidung | `src/frontend/src/components/DecisionPanel.tsx` | Freigeben/Ablehnen/Bearbeiten/Challenge direkt auf der Detailseite, Begründungspflicht, zeigt KI-Antwort mit Beleg-IDs | ja (Challenge-Antwort) |
+
+
 
 ## Entscheidungen (Was + Warum + Verworfen)
 
@@ -95,6 +100,7 @@ flowchart LR
 | Prompt-Linse: LLM wählt nur Gewichte und Kategorien, nie IDs; Python rechnet die Top 5 auf Kopien; Übernehmen erst per `PUT /weights` | Kein Treffer und keine Quelle kann erfunden werden, Rang bleibt nachrechenbar, PM behält Kontrolle (Audit `AI_LENS_SUGGESTED` + `WEIGHTS_CHANGED`). Das LLM sieht keine BMW-Daten, darum darf der Demo-Cache ins Repo | LLM sortiert Anforderungen selbst (nicht reproduzierbar, IDs halluzinierbar); Linse ändert Gewichte sofort (PM verliert Kontrolle) |
 | Markt-Gegenstück per Kategorie + Titel-Jaccard ≥ 0,3, Memo in Python statt LLM | PM kann die Regel nachrechnen; jede Zahl im Memo stammt aus Store und `audit.verify()` | Embeddings (neue Abhängigkeit, nicht erklärbar), LLM-Memo (könnte Zahlen erfinden) |
 | Neues Fahrzeug/Markt = neue JSON in `config/scenarios/` | Brief: "adaptable to other BMW vehicles and markets" | Sonderlogik pro Modell |
+| Neue Cockpit-Seiten (Übersicht, Audit, Entscheidung) vom Lead übernommen, aber auf die lokalen Design-Tokens (`--background/--foreground/--surface/--accent/--table-background/--score-slider` in `globals.css`, Dark-Mode über `.dark`-Klasse, `ThemeToggle`) umgestellt statt der mitgelieferten festen Slate/Blau-Farben | Ein Farbsystem für die ganze App, Dark-Mode funktioniert auch auf den neuen Seiten, BMW-Blau bleibt einzige Akzentfarbe | Piyushs Farben unverändert lassen (zwei Stile nebeneinander, kein Dark-Mode auf den neuen Seiten) |
 
 ## Externe Dienste
 

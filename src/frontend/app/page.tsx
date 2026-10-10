@@ -17,6 +17,7 @@ import {
 } from "@/src/lib/api";
 import { categoryLabel, ConflictBadge, EvidenceBadge, StatusBadge } from "@/src/components/badges";
 import { ScoreBar } from "@/src/components/ScoreBar";
+import { ThemeToggle } from "@/src/components/ThemeToggle";
 
 const DEFAULT_SCENARIO_ID = "G60-US";
 const PM_ACTOR = "pm.demo";
@@ -57,10 +58,10 @@ function weightsFromRequirements(requirements: Requirement[]): Record<WeightKey,
 }
 
 function RankDelta({ oldRank, newRank }: { oldRank?: number; newRank: number }) {
-  if (!oldRank || oldRank === newRank) return <span className="text-xs text-slate-400">-</span>;
+  if (!oldRank || oldRank === newRank) return <span className="text-xs text-zinc-400 dark:text-zinc-500">-</span>;
   const movedUp = oldRank > newRank;
   return (
-    <span className={movedUp ? "text-xs font-semibold text-emerald-700" : "text-xs font-semibold text-rose-700"}>
+    <span className={movedUp ? "text-xs font-semibold text-emerald-700 dark:text-emerald-400" : "text-xs font-semibold text-rose-700 dark:text-rose-400"}>
       {movedUp ? "↑" : "↓"} {Math.abs(oldRank - newRank)}
     </span>
   );
@@ -155,30 +156,31 @@ export default function RequirementsPage() {
     <main className="min-h-screen px-4 py-6 sm:px-6 lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-6 xl:grid-cols-[1fr_360px]">
         <section className="min-w-0">
-          <header className="mb-5 rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+          <header className="mb-5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-surface p-5">
             <div className="flex flex-wrap items-start justify-between gap-4">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Signal2Spec</p>
-                <h1 className="mt-1 text-2xl font-semibold text-[#0b1f3a]">PM Cockpit</h1>
-                <p className="mt-1 max-w-2xl text-sm text-slate-600">
+                <p className="text-xs font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Signal2Spec</p>
+                <h1 className="mt-1 text-2xl font-semibold text-foreground">PM Cockpit</h1>
+                <p className="mt-1 max-w-2xl text-sm text-zinc-600 dark:text-zinc-400">
                   Decide what the AI proposes, why it proposes it, and how reliable the evidence is.
                 </p>
               </div>
               <nav className="flex flex-wrap gap-2">
-                <Link className="inline-flex min-h-11 items-center rounded-md border border-slate-300 bg-white px-4 text-sm font-semibold text-[#0b1f3a] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2" href="/overview">
+                <Link className="inline-flex min-h-11 items-center rounded-sm border border-zinc-300 dark:border-zinc-700 bg-surface px-4 text-sm font-semibold text-foreground hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background" href="/overview">
                   Overview
                 </Link>
-                <Link className="inline-flex min-h-11 items-center rounded-md border border-slate-300 bg-white px-4 text-sm font-semibold text-[#0b1f3a] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2" href="/audit">
+                <Link className="inline-flex min-h-11 items-center rounded-sm border border-zinc-300 dark:border-zinc-700 bg-surface px-4 text-sm font-semibold text-foreground hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background" href="/audit">
                   Audit trail
                 </Link>
-                <a className="inline-flex min-h-11 items-center rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2" href={getExportUrl(scenarioId)} target="_blank" rel="noopener noreferrer">
+                <a className="inline-flex min-h-11 items-center rounded-sm bg-accent px-4 text-sm font-semibold text-white hover:bg-accent-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background" href={getExportUrl(scenarioId)} target="_blank" rel="noopener noreferrer">
                   Export CSV
                 </a>
+                <ThemeToggle />
               </nav>
             </div>
 
             <div className="mt-5 flex flex-wrap items-center gap-3">
-              <label className="grid gap-1 text-sm font-semibold text-slate-700">
+              <label className="grid gap-1 text-sm font-semibold text-zinc-700 dark:text-zinc-300">
                 Scenario
                 <select
                   value={scenarioId}
@@ -187,7 +189,7 @@ export default function RequirementsPage() {
                     setError(null);
                     setScenarioId(event.target.value);
                   }}
-                  className="min-h-11 rounded-md border border-slate-300 bg-white px-3 font-normal text-[#0b1f3a] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
+                  className="min-h-11 rounded-sm border border-zinc-300 dark:border-zinc-700 bg-surface px-3 font-normal text-foreground focus:border-accent focus:outline-none"
                 >
                   {scenarios.map((scenario) => (
                     <option key={scenario.id} value={scenario.id}>
@@ -197,14 +199,14 @@ export default function RequirementsPage() {
                 </select>
               </label>
               {selectedScenario?.headline_numbers && (
-                <div className="grid grid-cols-3 gap-2 text-xs text-slate-600">
-                  <span className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2">
+                <div className="grid grid-cols-3 gap-2 text-xs text-zinc-600 dark:text-zinc-400">
+                  <span className="rounded-sm border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-3 py-2">
                     {selectedScenario.headline_numbers.evidence.toLocaleString("en-US")} customer voices
                   </span>
-                  <span className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2">
+                  <span className="rounded-sm border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-3 py-2">
                     {selectedScenario.headline_numbers.signals} findings
                   </span>
-                  <span className="rounded-md border border-slate-200 bg-slate-50 px-3 py-2">
+                  <span className="rounded-sm border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 px-3 py-2">
                     {selectedScenario.headline_numbers.requirements} requirements
                   </span>
                 </div>
@@ -213,20 +215,20 @@ export default function RequirementsPage() {
           </header>
 
           {error && (
-            <div className="mb-4 rounded-md border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-800">
+            <div className="mb-4 rounded-sm border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-800 dark:border-rose-800 dark:bg-rose-950 dark:text-rose-300">
               {error}
             </div>
           )}
 
-          <div className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
-            {loading && <p className="p-5 text-sm text-slate-500">Loading requirements...</p>}
+          <div className="overflow-hidden rounded-lg border border-zinc-200 dark:border-zinc-800 bg-surface">
+            {loading && <p className="p-5 text-sm text-zinc-500 dark:text-zinc-400">Loading requirements...</p>}
             {!loading && requirements.length === 0 && (
-              <p className="p-5 text-sm text-slate-500">No requirements for this scenario yet.</p>
+              <p className="p-5 text-sm text-zinc-500 dark:text-zinc-400">No requirements for this scenario yet.</p>
             )}
             {!loading && requirements.length > 0 && (
               <div className="overflow-x-auto">
                 <table className="w-full min-w-[900px] text-left text-sm">
-                  <thead className="border-b border-slate-200 bg-slate-50 text-xs uppercase tracking-wide text-slate-500">
+                  <thead className="border-b border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 text-xs uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
                     <tr>
                       <th className="px-4 py-3">Rank</th>
                       <th className="px-4 py-3">Title</th>
@@ -252,19 +254,19 @@ export default function RequirementsPage() {
                               router.push(`/requirements/${req.id}`);
                             }
                           }}
-                          className={`cursor-pointer border-b border-slate-100 transition last:border-0 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none ${
-                            highlightRanks && previousRanks[req.id] !== req.rank ? "bg-blue-50" : ""
+                          className={`cursor-pointer border-b border-zinc-100 dark:border-zinc-800 transition last:border-0 hover:bg-accent/5 dark:hover:bg-accent/10 focus:bg-accent/5 dark:focus:bg-accent/10 focus:outline-none ${
+                            highlightRanks && previousRanks[req.id] !== req.rank ? "bg-accent/5 dark:bg-accent/10" : ""
                           }`}
                         >
                           <td className="px-4 py-4">
                             <div className="flex items-center gap-2">
-                              <span className="font-semibold text-[#0b1f3a]">#{req.rank}</span>
+                              <span className="font-semibold text-foreground">#{req.rank}</span>
                               <RankDelta oldRank={previousRanks[req.id]} newRank={req.rank} />
                             </div>
                           </td>
                           <td className="max-w-sm px-4 py-4">
-                            <p className="font-semibold text-[#0b1f3a]">{req.title}</p>
-                            <p className="mt-1 line-clamp-2 text-xs text-slate-500">{req.description}</p>
+                            <p className="font-semibold text-foreground">{req.title}</p>
+                            <p className="mt-1 line-clamp-2 text-xs text-zinc-500 dark:text-zinc-400">{req.description}</p>
                           </td>
                           <td className="px-4 py-4">
                             <ScoreBar score={req.score} source={`${req.signal_ids.length} linked findings`} />
@@ -272,7 +274,7 @@ export default function RequirementsPage() {
                           <td className="px-4 py-4">
                             <EvidenceBadge level={req.evidence_level} reason={req.rationale} />
                           </td>
-                          <td className="px-4 py-4 text-slate-700">{categoryLabel(req.category)}</td>
+                          <td className="px-4 py-4 text-zinc-700 dark:text-zinc-300">{categoryLabel(req.category)}</td>
                           <td className="px-4 py-4">
                             <StatusBadge status={req.status} />
                           </td>
@@ -290,9 +292,9 @@ export default function RequirementsPage() {
         </section>
 
         <aside className="grid h-fit gap-4 xl:sticky xl:top-6">
-          <section className="rounded-lg border border-blue-200 bg-blue-50 p-5 shadow-sm">
-            <h2 className="text-sm font-semibold uppercase tracking-wide text-blue-900">Demo navigation</h2>
-            <ol className="mt-3 grid gap-2 text-sm text-blue-950">
+          <section className="rounded-lg border border-accent/30 dark:border-accent/40 bg-accent/5 dark:bg-accent/10 p-5">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-foreground">Demo navigation</h2>
+            <ol className="mt-3 grid gap-2 text-sm text-foreground">
               <li><span className="font-semibold">1.</span> Pick a scenario and scan the ranked list.</li>
               <li><span className="font-semibold">2.</span> Open a row to inspect evidence, assumptions, and score logic.</li>
               <li><span className="font-semibold">3.</span> Approve, reject, edit, or challenge with a rationale.</li>
@@ -300,17 +302,17 @@ export default function RequirementsPage() {
             </ol>
           </section>
 
-          <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">Weight controls</h2>
-          <p className="mt-2 text-sm text-slate-600">
+          <section className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-surface p-5">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Weight controls</h2>
+          <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
             Move sliders and press Apply weights. Empty rationale uses a demo rationale and still records WEIGHTS_CHANGED.
           </p>
           <div className="mt-4 grid gap-4">
             {(Object.keys(WEIGHT_LABELS) as WeightKey[]).map((key) => (
-              <label key={key} className="grid gap-2 text-sm font-semibold text-slate-700">
+              <label key={key} className="grid gap-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300">
                 <span className="flex items-center justify-between gap-3">
                   {WEIGHT_LABELS[key]}
-                  <span className="text-xs font-semibold text-slate-500">{weights[key].toFixed(2)}</span>
+                  <span className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">{weights[key].toFixed(2)}</span>
                 </span>
                 <input
                   type="range"
@@ -321,15 +323,15 @@ export default function RequirementsPage() {
                   onChange={(event) =>
                     setWeights((value) => ({ ...value, [key]: Number(event.target.value) }))
                   }
-                  className="h-2 accent-blue-600"
+                  className="h-2 accent-[var(--accent)]"
                 />
               </label>
             ))}
           </div>
-          <label className="mt-4 grid gap-1 text-sm font-semibold text-slate-700">
+          <label className="mt-4 grid gap-1 text-sm font-semibold text-zinc-700 dark:text-zinc-300">
             Rationale
             <textarea
-              className="min-h-24 rounded-md border border-slate-300 px-3 py-2 font-normal text-[#0b1f3a] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              className="min-h-24 rounded-sm border border-zinc-300 dark:border-zinc-700 px-3 py-2 font-normal text-foreground focus:border-accent focus:outline-none"
               placeholder="Why should the prioritization change?"
               value={rationale}
               onChange={(event) => setRationale(event.target.value)}
@@ -338,7 +340,7 @@ export default function RequirementsPage() {
           <button
             type="button"
             onClick={() => setRationale(DEMO_RATIONALE)}
-            className="mt-2 min-h-11 rounded-md border border-slate-300 bg-white px-3 text-sm font-semibold text-[#0b1f3a] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
+            className="mt-2 min-h-11 rounded-sm border border-zinc-300 dark:border-zinc-700 bg-surface px-3 text-sm font-semibold text-foreground hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           >
             Use demo rationale
           </button>
@@ -347,14 +349,14 @@ export default function RequirementsPage() {
               type="button"
               disabled={applying}
               onClick={() => applyWeights()}
-              className="min-h-11 rounded-md bg-blue-600 px-4 text-sm font-semibold text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 disabled:cursor-not-allowed disabled:bg-slate-300"
+              className="min-h-11 rounded-sm bg-accent px-4 text-sm font-semibold text-white hover:bg-accent-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:bg-zinc-300 dark:disabled:bg-zinc-700"
             >
               {applying ? "Applying..." : "Apply weights"}
             </button>
             <button
               type="button"
               onClick={resetWeights}
-              className="min-h-11 rounded-md border border-slate-300 bg-white px-4 text-sm font-semibold text-[#0b1f3a] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
+              className="min-h-11 rounded-sm border border-zinc-300 dark:border-zinc-700 bg-surface px-4 text-sm font-semibold text-foreground hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             >
               Reset to default
             </button>

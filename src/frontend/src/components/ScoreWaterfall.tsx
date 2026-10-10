@@ -56,14 +56,14 @@ export function scoreWithoutAssumptions(
 function FactorRow({ step }: { step: WaterfallStep }) {
   if (step.factor === "confidence") {
     return (
-      <div className="rounded-md border border-dashed border-slate-300 bg-slate-50 px-3 py-2">
+      <div className="rounded-sm border border-dashed border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-900 px-3 py-2">
         <div className="flex items-center justify-between gap-4 text-sm">
-          <span className="font-semibold text-[#0b1f3a]">{step.label}</span>
-          <span className={step.contribution < 0 ? "font-semibold text-amber-700" : "font-semibold text-slate-600"}>
+          <span className="font-semibold text-foreground">{step.label}</span>
+          <span className={step.contribution < 0 ? "font-semibold text-amber-700" : "font-semibold text-zinc-600 dark:text-zinc-400"}>
             {step.contribution.toFixed(1)} pts
           </span>
         </div>
-        <p className="mt-1 text-xs text-slate-600">{step.sentence}</p>
+        <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">{step.sentence}</p>
       </div>
     );
   }
@@ -73,20 +73,20 @@ function FactorRow({ step }: { step: WaterfallStep }) {
   return (
     <div className="py-2">
       <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 text-sm">
-        <span className="font-semibold text-[#0b1f3a]">{step.label}</span>
-        <span className="text-slate-600">
+        <span className="font-semibold text-foreground">{step.label}</span>
+        <span className="text-zinc-600 dark:text-zinc-400">
           +{step.contribution.toFixed(1)} pts
           {step.weight !== null && (
-            <span className="ml-1 text-xs text-slate-500">
+            <span className="ml-1 text-xs text-zinc-500 dark:text-zinc-400">
               ({step.value.toFixed(2)} x {step.weight.toFixed(2)} x 100)
             </span>
           )}
         </span>
       </div>
-      <div className="mt-2 h-2.5 w-full overflow-hidden rounded-full bg-slate-200">
-        <div className="h-full rounded-full bg-blue-600" style={{ width: `${width}%` }} />
+      <div className="mt-2 h-2.5 w-full overflow-hidden rounded-full bg-zinc-200 dark:bg-zinc-800">
+        <div className="h-full rounded-full bg-score-slider" style={{ width: `${width}%` }} />
       </div>
-      <p className="mt-1 text-xs text-slate-600">{step.sentence}</p>
+      <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">{step.sentence}</p>
     </div>
   );
 }
@@ -115,33 +115,33 @@ export function ScoreWaterfall({
   const scoreNoAssumptions = scoreWithoutAssumptions(scoreBreakdown, evidenceLevel);
 
   return (
-    <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+    <section className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-surface p-5">
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
             Score waterfall
           </h2>
-          <p className="mt-1 text-sm text-slate-600">
+          <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
             Each contribution shows value x weight x 100. Evidence confidence is applied last.
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-3">
-          <div className="rounded-md border border-slate-200 px-3 py-2 text-right">
-            <p className="text-[11px] uppercase tracking-wide text-slate-500">Final</p>
-            <p className="text-lg font-semibold text-[#0b1f3a]">{finalScore.toFixed(1)}</p>
+          <div className="rounded-sm border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-right">
+            <p className="text-[11px] uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Final</p>
+            <p className="text-lg font-semibold text-foreground">{finalScore.toFixed(1)}</p>
           </div>
-          <div className="rounded-md border border-dashed border-slate-300 px-3 py-2 text-right">
-            <p className="text-[11px] uppercase tracking-wide text-slate-500">No assumptions</p>
-            <p className="text-lg font-semibold text-[#0b1f3a]">{scoreNoAssumptions.toFixed(1)}</p>
+          <div className="rounded-sm border border-dashed border-zinc-300 dark:border-zinc-700 px-3 py-2 text-right">
+            <p className="text-[11px] uppercase tracking-wide text-zinc-500 dark:text-zinc-400">No assumptions</p>
+            <p className="text-lg font-semibold text-foreground">{scoreNoAssumptions.toFixed(1)}</p>
           </div>
         </div>
       </div>
 
       {onToggleIgnoreAssumptions && (
-        <label className="mt-4 flex min-h-11 items-center gap-3 rounded-md border border-dashed border-slate-300 px-3 py-2 text-sm text-slate-700">
+        <label className="mt-4 flex min-h-11 items-center gap-3 rounded-sm border border-dashed border-zinc-300 dark:border-zinc-700 px-3 py-2 text-sm text-zinc-700 dark:text-zinc-300">
           <input
             type="checkbox"
-            className="h-4 w-4 accent-blue-600"
+            className="h-4 w-4 accent-[var(--accent)]"
             checked={Boolean(ignoreAssumptions)}
             onChange={(event) => onToggleIgnoreAssumptions(event.target.checked)}
           />
@@ -149,22 +149,22 @@ export function ScoreWaterfall({
         </label>
       )}
 
-      <div className="mt-4 divide-y divide-slate-100">
+      <div className="mt-4 divide-y divide-zinc-100 dark:divide-zinc-800">
         {factorSteps.map((step) => (
           <FactorRow key={step.factor} step={step} />
         ))}
       </div>
 
-      <div className="mt-4 grid gap-2 border-t border-slate-200 pt-3">
+      <div className="mt-4 grid gap-2 border-t border-zinc-200 dark:border-zinc-800 pt-3">
         <div className="flex items-baseline justify-between text-sm">
-          <span className="text-slate-600">Subtotal before evidence confidence</span>
-          <span className="font-semibold text-[#0b1f3a]">{subtotal.toFixed(1)} pts</span>
+          <span className="text-zinc-600 dark:text-zinc-400">Subtotal before evidence confidence</span>
+          <span className="font-semibold text-foreground">{subtotal.toFixed(1)} pts</span>
         </div>
         {confidenceStep ? (
           <FactorRow step={confidenceStep} />
         ) : (
           <div className="flex items-baseline justify-between text-sm">
-            <span className="text-slate-600">
+            <span className="text-zinc-600 dark:text-zinc-400">
               Confidence adjustment from {EVIDENCE_LABEL[evidenceLevel]}
             </span>
             <span className="font-semibold text-amber-700">{calculatedDeduction.toFixed(1)} pts</span>
