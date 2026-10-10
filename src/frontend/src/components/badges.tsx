@@ -9,6 +9,8 @@ const EVIDENCE_STYLE: Record<EvidenceLevel, { label: string; className: string }
 
 export function EvidenceBadge({ level, reason }: { level: EvidenceLevel; reason?: string }) {
   const style = EVIDENCE_STYLE[level];
+  // Trend-Einträge ohne Anforderung haben keine Evidenzstufe: dann gar kein Badge statt Absturz.
+  if (!style) return null;
   return (
     <span
       title={reason}

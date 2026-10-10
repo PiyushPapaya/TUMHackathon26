@@ -104,7 +104,7 @@ export function useCockpit(initialScenarioId: string | null) {
     [signalById],
   );
 
-  async function applyWeights(nextWeights: Weights = weights) {
+  async function applyWeights(nextWeights: Weights = weights, why?: string) {
     if (applying) return;
     setApplying(true);
     setError(null);
@@ -113,7 +113,7 @@ export function useCockpit(initialScenarioId: string | null) {
       const reranked = await putWeights(scenarioId, {
         weights: nextWeights,
         actor: PM_ACTOR,
-        rationale: rationale.trim() || DEMO_RATIONALE,
+        rationale: (why ?? rationale).trim() || DEMO_RATIONALE,
       });
       setPreviousRanks(before);
       setRequirements(reranked);

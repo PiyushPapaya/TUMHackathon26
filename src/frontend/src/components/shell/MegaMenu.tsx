@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { getExportUrl, type Scenario } from "@/src/lib/api";
+import { getMemoUrl } from "@/src/lib/insights";
 import { scenarioLabel } from "./scenarioLabel";
 
 const HEAD = "mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--grey-500)]";
@@ -32,11 +33,15 @@ export function MegaMenu({
         <div>
           <p className={HEAD}>Explore</p>
           <Link className={LINK} href={`/cockpit?scenario=${scenarioId}`} onClick={onNavigate}>Ranked list</Link>
-          <Link className={LINK} href="/overview" onClick={onNavigate}>Overview and funnel</Link>
+          <Link className={LINK} href={`/overview?scenario=${scenarioId}`} onClick={onNavigate}>Overview and funnel</Link>
+          <Link className={LINK} href={`/insights?scenario=${scenarioId}`} onClick={onNavigate}>Insights and trends</Link>
+          <Link className={LINK} href="/portfolio" onClick={onNavigate}>Portfolio and markets</Link>
+          <Link className={LINK} href={`/evidence?scenario=${scenarioId}`} onClick={onNavigate}>Evidence browser</Link>
           <Link className={LINK} href="/audit" onClick={onNavigate}>Audit trail</Link>
         </div>
         <div>
           <p className={HEAD}>Quick actions</p>
+          <a className={LINK} href={getMemoUrl(scenarioId)} target="_blank" rel="noopener noreferrer">Decision memo</a>
           {(["csv", "json", "md"] as const).map((fmt) => (
             <a key={fmt} className={LINK} href={getExportUrl(scenarioId, fmt)} target="_blank" rel="noopener noreferrer">
               Export {fmt.toUpperCase()}

@@ -11,11 +11,16 @@ import { MegaMenu } from "./MegaMenu";
 import { DEFAULT_SCENARIO_ID, scenarioLabel } from "./scenarioLabel";
 
 const NAV = [
-  { href: "/cockpit", label: "Cockpit" },
   { href: "/overview", label: "Overview" },
+  { href: "/cockpit", label: "Cockpit" },
+  { href: "/insights", label: "Insights" },
+  { href: "/portfolio", label: "Portfolio" },
+  { href: "/evidence", label: "Evidence" },
   { href: "/audit", label: "Audit trail" },
-  { href: "/guide", label: "Guide" },
 ];
+
+// Seiten, die ein Szenario in ?scenario= verstehen. Das Szenario-Menü bleibt auf der Seite, statt ins Cockpit zu springen.
+const SCENARIO_PAGES = ["/cockpit", "/overview", "/insights", "/evidence"];
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -75,7 +80,7 @@ export function SiteHeader() {
         <div className="mx-auto flex h-[72px] max-w-[1400px] items-center justify-between gap-6 px-6 lg:px-10">
           <Link href="/" aria-label="Signal2Spec home"><Logo light={light} /></Link>
 
-          <nav className="hidden items-center gap-8 lg:flex" aria-label="Main">
+          <nav className="hidden items-center gap-6 xl:gap-8 lg:flex" aria-label="Main">
             {NAV.map((item) => {
               const active = pathname === item.href || pathname.startsWith(`${item.href}/`);
               return (
@@ -106,7 +111,7 @@ export function SiteHeader() {
               <select
                 aria-label="Scenario"
                 value={scenarioId}
-                onChange={(e) => router.push(`/cockpit?scenario=${e.target.value}`)}
+                onChange={(e) => router.push(`${SCENARIO_PAGES.includes(pathname) ? pathname : "/cockpit"}?scenario=${e.target.value}`)}
                 className={`hidden h-10 border bg-transparent px-3 text-sm md:block ${
                   light ? "border-white/60 text-white" : "border-[var(--hairline)] text-[var(--ink)]"
                 }`}

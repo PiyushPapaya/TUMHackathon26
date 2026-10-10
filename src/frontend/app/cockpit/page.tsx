@@ -6,6 +6,7 @@ import { useCockpit } from "@/src/components/cockpit/useCockpit";
 import { CockpitHero } from "@/src/components/cockpit/CockpitHero";
 import { RequirementsTable } from "@/src/components/cockpit/RequirementsTable";
 import { WeightControls } from "@/src/components/cockpit/WeightControls";
+import { LensPanel } from "@/src/components/cockpit/LensPanel";
 import { DemoSteps } from "@/src/components/cockpit/DemoSteps";
 
 function Cockpit() {
@@ -21,6 +22,12 @@ function Cockpit() {
           {c.error}
         </div>
       )}
+
+      <LensPanel
+        scenarioId={c.scenarioId}
+        applying={c.applying}
+        onApply={(weights, question) => c.applyWeights({ ...c.weights, ...weights }, question)}
+      />
 
       <div className="grid gap-10 xl:grid-cols-[1fr_360px]">
         <section className="min-w-0">

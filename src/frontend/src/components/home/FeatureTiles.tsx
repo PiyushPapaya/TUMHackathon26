@@ -8,6 +8,10 @@ const TILES: { icon: IconName; title: string; text: string; href: string; cta: s
   { icon: "evidence", title: "Evidence trail", text: "Click a row to see the voices, studies and sources behind it.", href: "/cockpit", cta: "See evidence" },
   { icon: "sliders", title: "What-if weights", text: "Change what matters and watch the ranking move.", href: "/cockpit", cta: "Try weights" },
   { icon: "audit", title: "Audit trail", text: "Who decided what, when and why. Nothing is overwritten.", href: "/audit", cta: "Open audit" },
+  { icon: "chat", title: "Ask in your words", text: "Describe a focus in plain language. The lens re-ranks, you decide.", href: "/cockpit", cta: "Ask now" },
+  { icon: "up", title: "Insights", text: "Evidence versus assumption, opportunities, 2030 trends and what we do not know.", href: "/insights", cta: "Explore insights" },
+  { icon: "list", title: "Portfolio", text: "Which topics hold across models and markets, which do not.", href: "/portfolio", cta: "Compare markets" },
+  { icon: "evidence", title: "Evidence browser", text: "Search every customer voice behind a proposal.", href: "/evidence", cta: "Browse evidence" },
 ];
 
 export function FeatureTiles() {

@@ -1,5 +1,6 @@
 import type { Scenario } from "@/src/lib/api";
 import { getExportUrl } from "@/src/lib/api";
+import { getMemoUrl } from "@/src/lib/insights";
 import { Button } from "@/src/components/ui/Button";
 import { Eyebrow, SectionHeading } from "@/src/components/ui/Typography";
 import { scenarioLabel } from "@/src/components/shell/scenarioLabel";
@@ -30,7 +31,10 @@ export function CockpitHero({ scenario, scenarioId }: { scenario?: Scenario; sce
           ))}
         </dl>
       </div>
-      <Button variant="outline" href={getExportUrl(scenarioId)} external>Export CSV</Button>
+      <div className="flex flex-wrap gap-3">
+        <Button variant="outline" href={getMemoUrl(scenarioId)} external>Decision memo</Button>
+        <Button variant="outline" href={getExportUrl(scenarioId)} external>Export CSV</Button>
+      </div>
     </header>
   );
 }

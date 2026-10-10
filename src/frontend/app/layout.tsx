@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${hanken.variable} antialiased`}>
-      <body className="min-h-screen">
+      <body className="min-h-screen" suppressHydrationWarning>
         <ShellFrame>{children}</ShellFrame>
       </body>
     </html>
