@@ -1,0 +1,703 @@
+{
+ "scenario": {
+  "id": "G60-US",
+  "derivative": "G60",
+  "model_name": "BMW 5er Limousine (G60)",
+  "market": "US",
+  "countries": [
+   "US"
+  ],
+  "competitors": [
+   "Mercedes-Benz E-Klasse",
+   "Audi A6 e-tron",
+   "Tesla Model S",
+   "Genesis G80"
+  ],
+  "successor_horizon": "2030"
+ },
+ "funnel": {
+  "evidence": 3610,
+  "signals": 8,
+  "requirements": 5,
+  "approved": 0,
+  "note": "Beispiel-Bundle (synthetische Zitate)"
+ },
+ "weights": {},
+ "evidence": [
+  {
+   "id": "EV-G60-0001",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle B",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[synthetisch] Kunde möchte den Lautstärkeregler wieder als Drehknopf.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Operating concept, operating system",
+    "feedback_type": "Wants"
+   }
+  },
+  {
+   "id": "EV-G60-0002",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[synthetisch] Ohne echte Knöpfe muss ich beim Fahren zu oft auf den Bildschirm schauen.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Touch screen, operation",
+    "feedback_type": "Difficult to Use"
+   }
+  },
+  {
+   "id": "EV-G60-0003",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle C",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[synthetisch] Klimabedienung über Touch ist umständlich.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Touch screen, operation",
+    "feedback_type": "Difficult to Use"
+   }
+  },
+  {
+   "id": "EV-G60-0004",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle B",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[synthetisch] Kunde lobt das große, klare Display.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Touch screen, operation",
+    "feedback_type": "Likes"
+   }
+  },
+  {
+   "id": "EV-G60-0005",
+   "source_type": "study",
+   "source_name": "US-Studie 2025",
+   "derivative": "G60",
+   "market": "US",
+   "text": "Intuitiveness of controls: 9 % bewerten mit Unsatisfactory oder schlechter (Beispielwert).",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "attribute": "Intuitiveness of controls"
+   }
+  },
+  {
+   "id": "EV-G60-0006",
+   "source_type": "web",
+   "source_name": "Wettbewerbs-Recherche",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[Beispiel] Testbericht: Wettbewerber bringt physische Tasten für Klima und Lautstärke zurück.",
+   "url": "https://example.com/test-bericht",
+   "retrieved_at": "2026-10-10T15:00:00Z",
+   "polarity": -1,
+   "meta": {}
+  },
+  {
+   "id": "EV-G60-0007",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle B",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[synthetisch] Reichweitenanzeige fällt im Winter stark ab, Kunde fühlt sich unsicher.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Electric Range",
+    "feedback_type": "Difficult to Use",
+    "engine": "BEVE"
+   }
+  },
+  {
+   "id": "EV-G60-0008",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[synthetisch] Auf langen Strecken weiß ich nie genau, ob die Reichweite reicht.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Electric Range",
+    "feedback_type": "Difficult to Use",
+    "engine": "BEVE"
+   }
+  },
+  {
+   "id": "EV-G60-0009",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle B",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[synthetisch] Öffentliche Ladesäulen sind schwer zu finden und funktionieren oft nicht.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Public charging / external providers",
+    "feedback_type": "Difficult to Use",
+    "engine": "BEVE"
+   }
+  },
+  {
+   "id": "EV-G60-0010",
+   "source_type": "web",
+   "source_name": "Markt-Recherche",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[Beispiel] Trend 2028+: Routenplanung mit Ladestopps und Säulenstatus wird Standard.",
+   "url": "https://example.com/trend",
+   "retrieved_at": "2026-10-10T15:00:00Z",
+   "polarity": 0,
+   "meta": {}
+  },
+  {
+   "id": "EV-G60-0011",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle B",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[synthetisch] Kunde wünscht einen Frunk wie beim Tesla der Ehefrau.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Body equipment, overall technology",
+    "feedback_type": "Wants",
+    "engine": "BEVE"
+   }
+  },
+  {
+   "id": "EV-G60-0012",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[synthetisch] Berührungslose Heckklappe reagiert oft erst beim dritten Versuch.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "non-contact trunk lid opening",
+    "feedback_type": "Difficult to Use"
+   }
+  },
+  {
+   "id": "EV-G60-0013",
+   "source_type": "study",
+   "source_name": "US-Studie 2025",
+   "derivative": "G60",
+   "market": "US",
+   "text": "Interior storage: unterdurchschnittlich im Vergleich zu anderen Attributen (Beispielwert).",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "attribute": "Interior storage"
+   }
+  },
+  {
+   "id": "EV-G60-0014",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle B",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[synthetisch] Kunde liebt das ruhige, komfortable Fahrgefühl.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Handling / Riding",
+    "feedback_type": "Likes"
+   }
+  }
+ ],
+ "signals": [
+  {
+   "id": "SIG-G60-US-001",
+   "kind": "complaint",
+   "category": "infotainment_digital",
+   "title": "Touch-only-Bedienung lenkt ab",
+   "summary": "Kunden vermissen physische Bedienelemente für häufige Funktionen.",
+   "evidence_ids": [
+    "EV-G60-0001",
+    "EV-G60-0002",
+    "EV-G60-0003",
+    "EV-G60-0005"
+   ],
+   "mention_count": 61,
+   "source_types": [
+    "feedback",
+    "study"
+   ],
+   "conflicts_with": [
+    "SIG-G60-US-002"
+   ]
+  },
+  {
+   "id": "SIG-G60-US-002",
+   "kind": "delight",
+   "category": "infotainment_digital",
+   "title": "Großes Display wird gelobt",
+   "summary": "Das Curved Display ist ein Kaufargument.",
+   "evidence_ids": [
+    "EV-G60-0004"
+   ],
+   "mention_count": 48,
+   "source_types": [
+    "feedback"
+   ],
+   "conflicts_with": [
+    "SIG-G60-US-001"
+   ]
+  },
+  {
+   "id": "SIG-G60-US-003",
+   "kind": "competitor_advantage",
+   "category": "infotainment_digital",
+   "title": "Wettbewerb kehrt zu Tasten zurück",
+   "summary": "Mehrere Wettbewerber führen physische Tasten wieder ein.",
+   "evidence_ids": [
+    "EV-G60-0006"
+   ],
+   "mention_count": 3,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "id": "SIG-G60-US-004",
+   "kind": "complaint",
+   "category": "range_charging",
+   "title": "Reichweite schwer einschätzbar",
+   "summary": "BEV-Kunden misstrauen der Reichweitenanzeige, besonders im Winter.",
+   "evidence_ids": [
+    "EV-G60-0007",
+    "EV-G60-0008"
+   ],
+   "mention_count": 38,
+   "source_types": [
+    "feedback"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "id": "SIG-G60-US-005",
+   "kind": "unmet_need",
+   "category": "range_charging",
+   "title": "Öffentliches Laden ist mühsam",
+   "summary": "Ladesäulen finden und deren Zustand kennen ist ein Schmerzpunkt.",
+   "evidence_ids": [
+    "EV-G60-0009",
+    "EV-G60-0010"
+   ],
+   "mention_count": 24,
+   "source_types": [
+    "feedback",
+    "web"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "id": "SIG-G60-US-006",
+   "kind": "unmet_need",
+   "category": "comfort_space",
+   "title": "Mehr Stauraum (Frunk)",
+   "summary": "Kunden vergleichen mit Tesla und wünschen zusätzlichen Stauraum vorne.",
+   "evidence_ids": [
+    "EV-G60-0011",
+    "EV-G60-0013"
+   ],
+   "mention_count": 14,
+   "source_types": [
+    "feedback",
+    "study"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "id": "SIG-G60-US-007",
+   "kind": "complaint",
+   "category": "comfort_space",
+   "title": "Berührungslose Heckklappe unzuverlässig",
+   "summary": "Die Fußgeste funktioniert nicht zuverlässig.",
+   "evidence_ids": [
+    "EV-G60-0012"
+   ],
+   "mention_count": 39,
+   "source_types": [
+    "feedback"
+   ],
+   "conflicts_with": []
+  },
+  {
+   "id": "SIG-G60-US-008",
+   "kind": "delight",
+   "category": "driving_experience",
+   "title": "Komfortables Fahrgefühl",
+   "summary": "Fahrkomfort ist eine Stärke, die erhalten bleiben muss.",
+   "evidence_ids": [
+    "EV-G60-0014"
+   ],
+   "mention_count": 120,
+   "source_types": [
+    "feedback"
+   ],
+   "conflicts_with": []
+  }
+ ],
+ "requirements": [
+  {
+   "id": "REQ-G60-US-001",
+   "title": "Physische Bedienelemente für Top-Funktionen",
+   "description": "Lautstärke, Klima-Temperatur und Defrost sind ohne Blick auf den Bildschirm bedienbar.",
+   "acceptance_criterion": "Jede der 3 Funktionen in <= 1 Handgriff ohne Menü erreichbar; im Probandentest >= 80 % blind bedienbar.",
+   "category": "infotainment_digital",
+   "signal_ids": [
+    "SIG-G60-US-001",
+    "SIG-G60-US-002",
+    "SIG-G60-US-003"
+   ],
+   "score": 0,
+   "rank": 1,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.8,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "61 Kommentare, davon 70 % Bedienprobleme"
+    },
+    "reach": {
+     "value": 0.7,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "US: 78.000 Fahrzeuge 2025, 80.000 in 2030"
+    },
+    "satisfaction_gap": {
+     "value": 0.6,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "9 % unzufrieden mit Intuitiveness of controls"
+    },
+    "competitive_pressure": {
+     "value": 0.7,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "3 Webquellen: Wettbewerb kehrt zu Tasten zurück"
+    },
+    "future_relevance": {
+     "value": 0.5,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "Trend unklar: Sprachsteuerung könnte Bedarf senken"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "Aufwand M"
+    }
+   },
+   "rationale": "Häufigster Bedien-Schmerzpunkt, bestätigt durch Studie und Wettbewerb.",
+   "evidence_level": "A",
+   "assumptions": [
+    "Sprachsteuerung ersetzt bis 2030 nicht alle Bedienhandlungen."
+   ],
+   "uncertainties": [
+    "Display-Fans (SIG-G60-US-002) könnten weniger Bildschirmfläche ablehnen."
+   ],
+   "offer_check": {
+    "status": "not_offered",
+    "note": "Optionsliste nennt keine physischen Klimatasten.",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1
+  },
+  {
+   "id": "REQ-G60-US-002",
+   "title": "Verlässliche Reichweitenprognose",
+   "description": "Das Fahrzeug zeigt eine Reichweite, auf die sich Kunden auch bei Kälte und auf der Autobahn verlassen können.",
+   "acceptance_criterion": "Abweichung Prognose vs. tatsächlich <= 5 % auf 100 km; Wetter und Topografie berücksichtigt.",
+   "category": "range_charging",
+   "signal_ids": [
+    "SIG-G60-US-004"
+   ],
+   "score": 0,
+   "rank": 2,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.7,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "38 BEV-Kommentare zu Electric Range"
+    },
+    "reach": {
+     "value": 0.5,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "BEV-Anteil wächst, Volumen 2030 steigt"
+    },
+    "satisfaction_gap": {
+     "value": 0.4,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "keine direkte Studienfrage"
+    },
+    "competitive_pressure": {
+     "value": 0.5,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "Wettbewerb wirbt mit präziser Prognose"
+    },
+    "future_relevance": {
+     "value": 0.8,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "BEV-Anteil steigt bis 2030 (Annahme)"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "Aufwand M"
+    }
+   },
+   "rationale": "Starker Schmerz bei BEV-Kunden, wichtig für einen elektrischen Nachfolger.",
+   "evidence_level": "B",
+   "assumptions": [
+    "BEV-Anteil im US-Markt steigt bis 2030."
+   ],
+   "uncertainties": [
+    "Nur eine Quellenart (Feedback)."
+   ],
+   "offer_check": {
+    "status": "unknown",
+    "note": "Optionsliste enthält keine Aussage zur Prognosegüte.",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1
+  },
+  {
+   "id": "REQ-G60-US-003",
+   "title": "Laden ohne Suchen",
+   "description": "Die Routenplanung zeigt Ladestopps mit aktuellem Säulenstatus.",
+   "acceptance_criterion": "Navigation plant Ladestopps automatisch; Säulenstatus höchstens 5 min alt; >= 90 % erfolgreiche Ladevorgänge am geplanten Stopp.",
+   "category": "range_charging",
+   "signal_ids": [
+    "SIG-G60-US-005"
+   ],
+   "score": 0,
+   "rank": 3,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.6,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "24 Kommentare zu Public charging"
+    },
+    "reach": {
+     "value": 0.5,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "betrifft BEV-Kunden in den USA"
+    },
+    "satisfaction_gap": {
+     "value": 0.3,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "keine Studienfrage"
+    },
+    "competitive_pressure": {
+     "value": 0.6,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "Wettbewerber bieten integrierte Ladeplanung"
+    },
+    "future_relevance": {
+     "value": 0.9,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "Trend: wird ab 2028 Standard"
+    },
+    "effort_inverse": {
+     "value": 0.2,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "Aufwand L (Partnerdaten nötig)"
+    }
+   },
+   "rationale": "Zukunftsrelevant und vom Wettbewerb gesetzt, aber hoher Aufwand.",
+   "evidence_level": "B",
+   "assumptions": [
+    "Ladesäulenbetreiber liefern Echtzeit-Status."
+   ],
+   "uncertainties": [
+    "Abhängig von externen Anbietern."
+   ],
+   "offer_check": {
+    "status": "optional",
+    "note": "Ladeplanung vorhanden, Säulenstatus unklar.",
+    "option_code": null
+   },
+   "effort": "L",
+   "status": "proposed",
+   "version": 1
+  },
+  {
+   "id": "REQ-G60-US-004",
+   "title": "Zuverlässige berührungslose Heckklappe",
+   "description": "Die Heckklappe öffnet per Fußgeste beim ersten Versuch.",
+   "acceptance_criterion": ">= 95 % Öffnung beim ersten Versuch in Alltagstests (Regen, Schuhe, Beladung).",
+   "category": "comfort_space",
+   "signal_ids": [
+    "SIG-G60-US-007"
+   ],
+   "score": 0,
+   "rank": 4,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.7,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "39 Kommentare zu non-contact trunk lid"
+    },
+    "reach": {
+     "value": 0.6,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "betrifft alle Antriebe"
+    },
+    "satisfaction_gap": {
+     "value": 0.5,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "Studie: Tailgate operations im Mittelfeld"
+    },
+    "competitive_pressure": {
+     "value": 0.2,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "kein Webbeleg"
+    },
+    "future_relevance": {
+     "value": 0.3,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "kein Trend"
+    },
+    "effort_inverse": {
+     "value": 1.0,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "Aufwand S"
+    }
+   },
+   "rationale": "Häufiger Ärger bei kleinem Aufwand: Quick Win.",
+   "evidence_level": "B",
+   "assumptions": [
+    "Keine."
+   ],
+   "uncertainties": [
+    "Teilweise Bedienfehler statt echter Schwäche?"
+   ],
+   "offer_check": {
+    "status": "optional",
+    "note": "Komfortzugang mit berührungsloser Heckklappe ist Sonderausstattung.",
+    "option_code": "322"
+   },
+   "effort": "S",
+   "status": "proposed",
+   "version": 1
+  },
+  {
+   "id": "REQ-G60-US-005",
+   "title": "Zusätzlicher Stauraum vorne (Frunk)",
+   "description": "BEV-Varianten bieten einen Frontkofferraum für Ladekabel und Einkäufe.",
+   "acceptance_criterion": "Frunk >= 50 l, die Kabeltasche passt hinein.",
+   "category": "comfort_space",
+   "signal_ids": [
+    "SIG-G60-US-006"
+   ],
+   "score": 0,
+   "rank": 5,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.4,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "14 Kommentare, oft Tesla-Vergleich"
+    },
+    "reach": {
+     "value": 0.4,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "nur BEV"
+    },
+    "satisfaction_gap": {
+     "value": 0.5,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "Interior storage unterdurchschnittlich"
+    },
+    "competitive_pressure": {
+     "value": 0.6,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "Tesla bietet Frunk"
+    },
+    "future_relevance": {
+     "value": 0.5,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "unklar"
+    },
+    "effort_inverse": {
+     "value": 0.2,
+     "weight": 0,
+     "contribution": 0,
+     "explanation": "Aufwand L"
+    }
+   },
+   "rationale": "Wiederkehrender Vergleich mit Tesla, aber wenige Nennungen.",
+   "evidence_level": "C",
+   "assumptions": [
+    "BEV-Plattform erlaubt Frontstauraum."
+   ],
+   "uncertainties": [
+    "Wenige Nennungen; Packaging unbekannt."
+   ],
+   "offer_check": {
+    "status": "not_offered",
+    "note": "Nicht in der Optionsliste.",
+    "option_code": null
+   },
+   "effort": "L",
+   "status": "proposed",
+   "version": 1
+  }
+ ]
+}

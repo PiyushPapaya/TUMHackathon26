@@ -124,7 +124,8 @@ def detect_frameworks(files: list[tuple[str, str]]) -> list[str]:
     req = contents.get("requirements.txt") or contents.get("requirements/base.txt")
     if req:
         low = req.lower()
-        found += [name for name, key in (("Django", "django"), ("Flask", "flask"), ("FastAPI", "fastapi")) if key in low]
+        known = (("Django", "django"), ("Flask", "flask"), ("FastAPI", "fastapi"))
+        found += [name for name, key in known if key in low]
     return list(dict.fromkeys(found))
 
 

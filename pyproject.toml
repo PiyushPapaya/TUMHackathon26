@@ -1,0 +1,14 @@
+# Nur Werkzeug-Einstellungen (kein Paket). Gilt für ruff und pytest.
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.lint.isort]
+# Unsere Backend-Module (Start mit --app-dir src/backend), damit Imports richtig sortiert werden.
+known-first-party = ["api", "core", "requirements_engine", "evidence_internal", "evidence_external", "pipeline", "main"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
