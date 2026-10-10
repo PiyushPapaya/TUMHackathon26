@@ -50,6 +50,14 @@ def read_stage(scenario_id: str, stage: str) -> list | dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def triangulated_internal(scenario_id: str) -> tuple[list[Signal], dict[str, list[str]]]:
+    """Interne Befunde mit angehängten Webbelegen. Nur im Speicher, signals.json bleibt Pfad-A-Rohergebnis."""
+    from evidence_external.triangulation import triangulate
+    internal = [Signal(**s) for s in read_stage(scenario_id, "signals")]
+    web = [Evidence(**e) for e in read_stage(scenario_id, "web_evidence")]
+    return triangulate(internal, web)
+
+
 def run_stage(stage: str, cfg: dict) -> None:
     sid = cfg["id"]
     scenario = Scenario(**cfg)
@@ -71,9 +79,11 @@ def run_stage(stage: str, cfg: dict) -> None:
         _write(sid, "web_signals", web_signals)
     elif stage == "requirements":  # Pfad C, KI schlägt vor, Formel priorisiert
         from requirements_engine.derive import derive_requirements
-        signals = [Signal(**s) for s in read_stage(sid, "signals") + read_stage(sid, "web_signals")]
+        internal, counter = triangulated_internal(sid)
+        signals = internal + [Signal(**s) for s in read_stage(sid, "web_signals")]
         evidence = [Evidence(**e) for e in read_stage(sid, "evidence") + read_stage(sid, "web_evidence")]
-        context = {**read_stage(sid, "context"), "option_list_path": str(RAW_DIR / cfg["data"]["option_list_file"])}
+        context = {**read_stage(sid, "context"), "option_list_path": str(RAW_DIR / cfg["data"]["option_list_file"]),
+                   "counter_evidence": counter}  # Webbelege, die interne Befunde widerlegen (für die Challenge)
         _write(sid, "requirements", derive_requirements(scenario, signals, evidence, context))
     elif stage == "bundle":  # Lead: alles zusammen für die App
         bundle_stage(cfg)
@@ -82,7 +92,8 @@ def run_stage(stage: str, cfg: dict) -> None:
 def bundle_stage(cfg: dict) -> None:
     sid = cfg["id"]
     evidence = read_stage(sid, "evidence") + read_stage(sid, "web_evidence")
-    signals = read_stage(sid, "signals") + read_stage(sid, "web_signals")
+    internal, _ = triangulated_internal(sid)  # sonst sähe die App "web" nur an den reinen Web-Befunden
+    signals = [s.model_dump(mode="json") for s in internal] + read_stage(sid, "web_signals")
     reqs = [Requirement(**r).model_dump(mode="json") for r in read_stage(sid, "requirements")]
     used = {e for s in signals for e in s["evidence_ids"]}  # nur zitierte Belege an die App geben
     bundle = {

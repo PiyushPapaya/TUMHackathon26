@@ -22,17 +22,13 @@ from __future__ import annotations
 from pathlib import Path
 
 from core.models import Evidence
+from evidence_internal.feedback import load_feedback
 
 
 def load_all_evidence(cfg: dict, raw_dir: Path) -> list[Evidence]:
     """Feedback + Studie des Szenarios als Belege.
 
-    TODO Pfad A (in dieser Reihenfolge, je mit Test in tests/pfad_a/):
-    1. load_feedback: nur Zeilen mit Country in cfg["countries"]; ID-Duplikate zusammenführen;
-       polarity aus Feedback Type (Likes=+1, Defect/Difficult to Use=-1, Wants=-1, leer=0).
-    2. load_study: pro Attribut ein Beleg mit Satz wie
-       "Rear interior roominess: 12 % negativ (I Hate It..Unsatisfactory), Top-2-Box 61 %".
-    3. Out-of-Scope markieren (meta["scope"]="out"): reine Defekte/Werkstattfälle sind
-       Qualität, keine Kundenanforderung -> behalten, aber kennzeichnen.
+    Stand: A1 fertig (Feedback). TODO A2: load_study ergänzen
+    (pro Attribut ein Beleg mit Satz, z. B. "Rear interior roominess: 14 % dissatisfied, 61 % top-2").
     """
-    raise NotImplementedError("Pfad A: load_all_evidence noch nicht gebaut (siehe docs/pfade/PFAD-A.md)")
+    return load_feedback(cfg, raw_dir)
