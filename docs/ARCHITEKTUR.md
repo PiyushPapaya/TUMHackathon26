@@ -25,12 +25,14 @@ flowchart LR
     W --> C
     C --> P[Score<br/>Formel in Python]
     P --> Q[requirements.json]
+    C --> DX[discarded.json<br/>Out-of-scope mit Grund]
   end
   Q --> BUN[Bundle G60-US.json]
+  DX --> BUN
   BUN --> API[FastAPI<br/>core/store.py]
   API <--> UI[PM-Cockpit<br/>Next.js]
   UI -- approve/reject/edit/challenge<br/>+ Begründung --> API
-  API --> AUD[(audit.db<br/>Hash-Kette)]
+  API --> AUD[(audit.db<br/>Hash-Kette<br/>inkl. REQUIREMENT_DISCARDED)]
 ```
 
 ## Komponenten
@@ -52,6 +54,9 @@ flowchart LR
 | Challenge | `src/backend/requirements_engine/challenge.py` | Antwort mit Belegen + Gegenbelegen | ja (Ziel) |
 | API | `src/backend/api/routes.py` | REST-Endpunkte, siehe `src/shared/API.md` | – |
 | Szenarien | `config/scenarios/*.json` | Fahrzeug × Markt, Dateien, Wettbewerber | – |
+| Werkbank | `src/frontend/app/studio/` | 5 Werkzeuge zum Prüfen der Liste: Duell, Konflikt-Arena, Annahmen-Schalter, Kundenstimmen, Entscheidungslauf | nein |
+| Werkbank-Rechnung | `src/frontend/src/studio/scoring.ts` | Score ohne Annahmen, Gewichte aus Duellen (gleiche Formel wie `scoring.py`) | nein |
+| Baukasten | `src/frontend/baukasten/*.json` | Texte, Farben, Feature-Schalter, angepinnte Zitate; Nicht-Coder ändern sie, `tests/test_baukasten.py` prüft sie | – |
 
 ## Entscheidungen (Was + Warum + Verworfen)
 
@@ -69,6 +74,10 @@ flowchart LR
 | CSV-Export entschärft Zellen, die mit `= + - @` beginnen | Texte stammen teils aus LLM/Web; Excel würde sie als Formel ausführen | ungeprüfter Export |
 | Webfragen und Quellen-Vertrauen per Regel (Python), nicht per LLM | Fragen sind reproduzierbar und cache-treffend; Vertrauen entscheidet, ob ein Beleg in einen Befund darf, und muss erklärbar sein | LLM erfindet Fragen / bewertet Quellen (schwankt je Lauf) |
 | Webbelege mit Vertrauen `low` bleiben sichtbar, kommen aber in keinen Befund; URLs mit `\`, `user@`, Leerzeichen oder Nicht-http-Schema gelten als `low` | Der PM soll sehen, was aussortiert wurde; Browser und `urlparse` lesen solche URLs verschieden (`evil.com\@caranddriver.com`), das ließe sich als Testmagazin tarnen | Low-Belege löschen / URLs nur mit `urlparse` prüfen |
+| Prüfpfad mit Sperre (`threading.Lock`) um die SQLite-Verbindung | FastAPI beantwortet Anfragen parallel; ohne Sperre lasen Threads halbe Zeilen (Absturz) und zwei Einträge konnten denselben Vorgänger-Hash bekommen (Kette ungültig ohne Fälschung). Test: `test_parallel_requests_keep_chain_valid` | eine Verbindung pro Anfrage (mehr Umbau), WAL-Modus allein (löst die Hash-Reihenfolge nicht) |
+| Duell-Modus leitet Gewichte aus Paarvergleichen ab, Übernahme nur mit Begründung über `PUT /weights` | PMs sagen sicherer "A ist wichtiger als B" als "Reichweite = 20 %"; die Übernahme steht im Prüfpfad | Gewichte direkt aus Duellen setzen, ohne Bestätigung (PM verliert Kontrolle) |
+| Annahmen-Schalter rechnet im Browser und speichert nichts | Was-wäre-wenn soll den Prüfpfad nicht füllen; Formel identisch zum Backend, darum gleiche Zahlen | Backend-Endpunkt pro Schalter (unnötige Vertragsänderung) |
+| Werkbank unter `/studio` als eigene Dateien, Baukasten als JSON | Das Cockpit (`/`, Detail, Audit) gehört Pfad D; neue Werkzeuge sollen keine Merge-Konflikte erzeugen. Texte und Farben als JSON, damit Nicht-Coder mitbauen | Werkzeuge in die Cockpit-Seiten einbauen (Konflikte mit Lasse), Texte im Code (nur für Coder änderbar) |
 | Neues Fahrzeug/Markt = neue JSON in `config/scenarios/` | Brief: "adaptable to other BMW vehicles and markets" | Sonderlogik pro Modell |
 
 ## Externe Dienste

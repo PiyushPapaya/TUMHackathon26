@@ -11,7 +11,7 @@ Die Kurzform steht in [CLAUDE.md](../CLAUDE.md). Hier die ausführliche Version 
 | **Aditya** | @AdiAvocado | Daten, Testfälle, Evaluation, Demo-Daten, Backup-Video | `tests/`, `demo/` | ✅ |
 | **Dennis** | @Di0n-0 | Partner-Kontakt & Anforderungen, Research, README-Texte (Entwurf) | `docs/research/`, `docs/wissen/` | ✅ |
 | **Fabian** | (folgt) | Pitch & Story, Slides, Design, Demo-Video-Schnitt | `docs/pitch/`, `design/` | ✅ |
-| **alle** | | eigener Steckbrief und eigener Arbeitsbereich | `team/<name>.md`, `workspace/<name>/` | ✅ |
+| **alle** | | eigener Steckbrief und eigener Arbeitsbereich | `team/<name>.md`, `werkstatt/<name>/` | ✅ |
 
 **Warum so streng?** Zwei Claude-Sessions, die dieselbe Datei ändern, erzeugen Merge-Konflikte. Die kosten Nicht-Codern leicht eine Stunde. Wenn jede Person nur in eigenen Ordnern schreibt, gibt es fast keine Konflikte.
 
@@ -23,7 +23,7 @@ Die Kurzform steht in [CLAUDE.md](../CLAUDE.md). Hier die ausführliche Version 
 
 `README.md`, `CLAUDE.md`, `requirements.txt`, `src/frontend/package.json` und Lockfiles (Lasse beantragt, Piyush entscheidet), `.github/`, `.claude/settings.json`, `.gitignore`, `.gitattributes`, `.env.example`, `src/shared/`.
 
-Für die README liefern Dennis (Texte) und Fabian (Bilder) ihre Entwürfe in `workspace/<name>/`; Piyush übernimmt sie.
+Für die README liefern Dennis (Texte) und Fabian (Bilder) ihre Entwürfe in `werkstatt/<name>/`; Piyush übernimmt sie.
 
 ## 2. Session-Start (macht Claude automatisch, Skill `sitzung-start`)
 
@@ -96,7 +96,7 @@ Piyush merged **zur vollen Stunde**: Sa 14:00-24:00, So 08:00, 09:00, 10:00, **1
 Ziel: einmal einen Merge-Konflikt erleben, bevor es ernst wird.
 
 1. Jede Person legt einen Branch `<name>/konflikt-uebung` an.
-2. Alle schreiben **gleichzeitig** in `workspace/uebung.md` in **Zeile 1** ihren Namen.
+2. Alle schreiben **gleichzeitig** in `werkstatt/uebung.md` in **Zeile 1** ihren Namen.
 3. Alle machen einen PR. Piyush merged den ersten. Bei den anderen meldet GitHub einen Konflikt.
 4. Claude zeigt den Konflikt, erklärt ihn und fragt, welche Version gelten soll (Lösung: alle Namen untereinander).
 5. Danach PRs schließen, nicht mergen. Die Datei löscht Piyush.

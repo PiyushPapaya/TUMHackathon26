@@ -35,7 +35,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - **Du als Partner-Kontakt:** die 3 Fragen aus [`LEAD.md`](LEAD.md) („Fragen an BMW“) dem Mentor stellen (vor Ort oder Discord), Antworten in den Team-Chat. Piyush trägt sie in `docs/CHALLENGE.md` ein.
 - **Fertig, wenn:** du die Formel ohne Zettel erklären kannst.
 
-### [ ] C2 · Anforderungen ableiten v1 (75 min, bis 17:10)
+### [x] C2 · Anforderungen ableiten v1 (75 min, bis 17:10)
 **Prompt:**
 > Ich baue Pfad C, Ticket C2. Das LLM formuliert nur die Anforderungen; die Priorität rechnen wir in Python, weil Modelle nicht reproduzierbar rechnen
 > und der PM jeden Punkt nachvollziehen muss. Verworfen: LLM vergibt den Score.
@@ -50,7 +50,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - **Subagent:** einer schreibt den Test mit dem Fake, du baust `derive.py`.
 - **Wenn es hakt:** Schema-Fehler vom LLM → Felder vereinfachen (Listen als `list[str]`), `effort` als Text und im Code prüfen.
 
-### [ ] C3 · Faktoren im Code (45 min, bis 18:00 → **M2 Durchstich 18:30**)
+### [x] C3 · Faktoren im Code (45 min, bis 18:00 → **M2 Durchstich 18:30**)
 **Prompt:**
 > Ticket C3. Lege `factors.py` an: pro Anforderung fünf Werte 0-1 plus je einen Erklärsatz auf Englisch, weil der PM im Wasserfall sehen soll, woher jeder Punkt kommt.
 > - `customer_pain`: Schwere nach Art der verknüpften Befunde (complaint 1,0 · unmet_need 0,7 · competitor_advantage 0,5 · delight 0,4 · trend 0,3), gewichtet mit Nennungen. Satz: „Mostly complaints (Defect / Difficult to use), 38 mentions“.
@@ -62,11 +62,11 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 > Tests: je Faktor ein Beispiel mit erwarteter Zahl; alles bleibt zwischen 0 und 1.
 - **Fertig, wenn:** echter Lauf auf Adityas `signals.json` (sobald da) liefert plausible Reihenfolge, Top 3 laut vorlesen: ergibt das Sinn? · `sync` · Piyush Bescheid.
 
-### [ ] C4 · Scope-Wächter prüfen (30 min, 19:30-20:00)
+### [x] C4 · Scope-Wächter prüfen (30 min, 19:30-20:00)
 - Prompt: „Ticket C4. Teste den Scope-Wächter mit 3 Out-of-scope-Befunden (Zulassung/Homologation, Bauteil-Spezifikation, Preis). Sie müssen im zweiten Rückgabewert von `derive_all` landen, mit Grund. Piyush schreibt sie als `REQUIREMENT_DISCARDED` in den Prüfpfad.“
 - **Fertig, wenn:** Test grün, Piyush hat `derive_all` in der Pipeline angeschlossen.
 
-### [ ] C5 · „Gibt es das schon?“ Optionsliste (60 min, 20:00-21:00)
+### [x] C5 · „Gibt es das schon?“ Optionsliste (60 min, 20:00-21:00)
 **Prompt:**
 > Ticket C5. Varianten und Pakete sind laut Brief in scope: Wünschen Kunden etwas, das es schon als Option gibt, ist die Antwort oft „ins Paket/Serie“, nicht „neu entwickeln“.
 > Zeig mir zuerst lokal 40 Zeilen Text von Seite 5 aus `data/raw/G60_OptionList.PDF` (pymupdf), damit wir das Format sehen. Dann `load_offer`: Code (3 Zeichen), Name, Status
@@ -76,7 +76,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - **Fertig, wenn:** z. B. berührungslose Heckklappe → `optional` mit Code · `sync`.
 - **Wenn es hakt:** Kürzung 3 (Status „unknown“ lassen).
 
-### [ ] C6 · Challenge-Antwort mit LLM (60 min, 21:00-22:00, **M3**)
+### [x] C6 · Challenge-Antwort mit LLM (60 min, 21:00-22:00, **M3**)
 **Prompt:**
 > Ticket C6. Die KI soll die Anforderung nicht blind verteidigen, sondern Belege **und** Gegenbelege nennen und ggf. eine Änderung vorschlagen, weil der PM entscheidet.
 > `answer_challenge` v2 in `challenge.py`: `ask_json` mit Schema `ChallengeAnswer` (answer, supporting_evidence_ids, counter_evidence_ids, suggested_change oder null),

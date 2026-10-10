@@ -17,6 +17,7 @@ from __future__ import annotations
 import hashlib
 import json
 import sqlite3
+import threading
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -53,6 +54,9 @@ class AuditLog:
         self._conn = sqlite3.connect(str(db_path), check_same_thread=False)
         self._conn.row_factory = sqlite3.Row
         self._conn.executescript(_SCHEMA)
+        # Eine Verbindung, viele Threads: FastAPI beantwortet Anfragen parallel. Ohne Sperre liest ein Thread
+        # halbe Zeilen, und zwei Einträge können denselben Vorgänger-Hash bekommen (Kette kaputt).
+        self._lock = threading.Lock()
 
     def append(
         self,
@@ -66,6 +70,10 @@ class AuditLog:
         """Hängt ein Ereignis an. Begründung ist Pflicht, weil der Brief sie verlangt."""
         if not rationale.strip():
             raise ValueError("Jedes Audit-Ereignis braucht eine Begründung (rationale).")
+        with self._lock:
+            return self._append_locked(event_type, scenario_id, actor, rationale, payload, requirement_id)
+
+    def _append_locked(self, event_type, scenario_id, actor, rationale, payload, requirement_id) -> AuditEvent:
         last = self._conn.execute("SELECT hash FROM audit_events ORDER BY seq DESC LIMIT 1").fetchone()
         prev_hash = last["hash"] if last else GENESIS_HASH
         fields = {
@@ -100,13 +108,15 @@ class AuditLog:
             query, params = query + " AND scenario_id = ?", [*params, scenario_id]
         if requirement_id:
             query, params = query + " AND requirement_id = ?", [*params, requirement_id]
-        rows = self._conn.execute(query + " ORDER BY seq", params).fetchall()
+        with self._lock:
+            rows = self._conn.execute(query + " ORDER BY seq", params).fetchall()
         return [self._row_to_event(r) for r in rows]
 
     def verify(self) -> dict:
         """Prüft die komplette Kette. Liefert die erste kaputte Stelle, falls manipuliert."""
         prev_hash = GENESIS_HASH
-        rows = self._conn.execute("SELECT * FROM audit_events ORDER BY seq").fetchall()
+        with self._lock:
+            rows = self._conn.execute("SELECT * FROM audit_events ORDER BY seq").fetchall()
         for row in rows:
             fields = {
                 "ts": row["ts"], "event_type": row["event_type"], "scenario_id": row["scenario_id"],

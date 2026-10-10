@@ -3,7 +3,7 @@
 - **GitHub:** @Di0n-0
 - **Rolle:** Partner-Kontakt & Anforderungen, Research, README-Texte (+ Python-Support im Backend)
 - **Zuständig für (schreiben):** `docs/research/`, `docs/wissen/`
-- **Eigener Arbeitsbereich:** `workspace/dennis/` (Notizen, Prompts, Experimente; landet nicht im Abgabe-Snapshot)
+- **Eigener Arbeitsbereich:** `werkstatt/dennis/` (Notizen, Prompts, Experimente; landet nicht im Abgabe-Snapshot)
 
 ## Unser Produkt in 2 Sätzen
 
@@ -20,6 +20,6 @@
 - [ ] Sa 11:00 Skill `challenge-intake` pro Partner
 - [ ] Sa 12:00 Deep Dive: Fragen aus `docs/wissen/SPONSOREN.md` stellen
 - [ ] Mentoren und Cherry-Office-Hours nutzen
-- [ ] README-Texte und Formularfelder vorformulieren (Entwurf in `workspace/dennis/`)
+- [ ] README-Texte und Formularfelder vorformulieren (Entwurf in `werkstatt/dennis/`)
 
 Zeitplan: [`docs/ZEITPLAN.md`](../docs/ZEITPLAN.md)

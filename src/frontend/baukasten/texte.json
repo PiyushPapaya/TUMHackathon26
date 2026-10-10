@@ -1,0 +1,33 @@
+{
+  "workbench": {
+    "title": "Workbench",
+    "intro": "Five ways to test the list before you sign it off. Each one changes how you see the evidence, none of them changes it behind your back."
+  },
+  "tools": {
+    "duel": {
+      "name": "Duel",
+      "short": "Pick the more important of two requirements, a few times in a row. We turn your choices into priority weights you can apply.",
+      "help": "Click the side that matters more. There is no wrong answer, we only learn what you value."
+    },
+    "arena": {
+      "name": "Conflict arena",
+      "short": "Where customers disagree, both sides stand next to each other with their own quotes.",
+      "help": "We never average a conflict away. Read both sides, then decide on the requirement."
+    },
+    "assumptions": {
+      "name": "Assumption switch",
+      "short": "Turn off the factors that are guesses about the future and see which requirements still hold up.",
+      "help": "Solid requirements keep their rank without assumptions. Those that drop rely on a bet about 2030."
+    },
+    "voices": {
+      "name": "Customer voices",
+      "short": "Every quote behind the list, with its ID, so you can read what people actually wrote.",
+      "help": "Team picks are pinned at the top. Every card shows which requirement it supports."
+    },
+    "swipe": {
+      "name": "Decision run",
+      "short": "Go through open requirements one by one. Approve or reject, always with a reason.",
+      "help": "Your reason is stored in the audit trail next to your name. Without a reason the buttons stay locked."
+    }
+  }
+}

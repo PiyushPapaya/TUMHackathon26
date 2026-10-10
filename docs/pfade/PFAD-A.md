@@ -19,6 +19,8 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - **Studie** `F70_G60_G68_G70_customer_studies.xlsx`, Blätter `CN_EU_2025` (76×6) und `US_2025` (929×4), beide **ohne Kopfzeile** lesen (`header=None`).
   - `US_2025`: **Blöcke à 9 Zeilen**: Attributname · `Sample total` · 7 Stufen `I Hate It, A Failure, Unsatisfactory, Satisfactory, Excellent, Delightful, I Love It` (Anteile 0-1).
     Modellnamen stehen nur in Zeile 0, Spalten 2-3: `"BMW 5 Series G60"`, `"BMW 7 Series G70 "` (**Leerzeichen am Ende → `strip()`**).
+    **103 Attribute** (nicht ~100); **2 Blöcke haben eine zusätzliche leere Zeile** nach `Sample total` (10 statt 9 Zeilen) → nach Label lesen, nicht nach festem Abstand.
+    Ergebnis A2: G60-US 103 Belege, G70-US 103, F70-EU 37.
   - `CN_EU_2025`: Zeile 1 = Land (`China` in Spalte 1, `EU` in Spalte 3; **nach rechts auffüllen**), Zeile 2 = Modell, danach Paare (Attributzeile, `Mean`-Zeile, Skala ~1-10).
     F70 EU = Spalte 3.
 - **Absatz** `sales_volumes.xlsx`, Blätter `F70`, `G60_G68`, `G70`; Kopf: `market, market_code, volume_2024, volume_2025, volume_2030`.
@@ -27,6 +29,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 ## Absprache mit Dennis (Pfad C braucht diese Felder, bitte genau so)
 
 - Feedback-Beleg `meta`: `vfc2`, `vfc3`, `feedback_type` (bei mehreren: `" | "`-getrennt), `labels` (`"vfc2/Typ | vfc2/Typ"`), `engine`, `source` (A-D), `scope` (`in`/`out`).
+- Polarität: leerer Feedback-Typ = 0, **außer Quelle D** = +1 (Frage „Was liebst du am meisten?“, BMW lässt den Typ leer). Dann steht `meta["polarity_basis"] = "source_d_praise"`. Quelle A/C ohne Typ bleiben 0 (mischen Lob und Beschwerden).
 - Studien-Beleg `meta`: `attribute`, `neg_share` (US: Hate+Failure+Unsatisfactory, als `"0.14"`), `top2` (Delightful+Love), `mean` (CN/EU).
 - Beleg-IDs: Feedback `EV-<szenario>-FB-<BMW-ID>`, Studie `EV-<szenario>-ST-<nn>`. Befund-IDs: `SIG-<szenario>-<nnn>`.
 
@@ -52,7 +55,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - **Subagent:** „Ein Subagent schreibt den Test aus diesen Regeln, während du `feedback.py` baust.“
 - **Wenn es hakt:** Zahl ≠ 3.610 → prüfen, ob `Country` Leerzeichen hat (`str.strip()`), ob IDs als Zahl/Text gemischt sind (`astype(str)`).
 
-### [ ] A2 · Studie einlesen (45 min, bis 17:00)
+### [x] A2 · Studie einlesen (45 min, bis 17:00)
 **Prompt:**
 > Ticket A2. Lege `src/backend/evidence_internal/study.py` an mit `parse_us_study(df, model_column)` und `parse_cn_eu_study(df, market, model_column)`
 > (beide rein, testbar) und `load_study(cfg, raw_dir)`. Format steht exakt im Abschnitt „Datenfakten“ von `docs/pfade/PFAD-A.md`
@@ -65,7 +68,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - **Subagent:** zwei Subagents parallel, je einer pro Studienformat (verschiedene Funktionen, gleiche Datei → nacheinander einfügen lassen).
 - **Wenn es hakt (nach 30 min):** CN/EU weglassen (nur US), F70-EU kommt in A8 dran.
 
-### [ ] A3 · Absatz-Kontext (20 min, bis 17:20)
+### [x] A3 · Absatz-Kontext (20 min, bis 17:20)
 **Prompt:**
 > Ticket A3. Implementiere `load_context` in `context.py` nach Vertrag: Blatt `cfg["data"]["sales_sheet"]`, Zeile mit `market_code == cfg["data"]["sales_market_code"]`.
 > `share_of_total_2030` = Volumen 2030 des Markts / Summe aller Märkte 2030. Test mit Mini-DataFrame.
@@ -75,7 +78,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - `sync`, dann Piyush im Chat: „A1-A3 auf main, bitte Stufe evidence laufen lassen.“
 - Du selbst: `python src/backend/pipeline.py --scenario G60-US --stage evidence` → `data/processed/G60-US/evidence.json` + `context.json`.
 
-### [ ] A5 · Befunde v1 ohne LLM (60 min, bis 18:30, **M2 Durchstich**)
+### [x] A5 · Befunde v1 ohne LLM (60 min, bis 18:30, **M2 Durchstich**)
 **Prompt:**
 > Ticket A5. Implementiere `extract_signals` in `signals.py`, **v1 ohne LLM**, weil die Taxonomie von BMW schon gute Gruppen liefert und das erklärbar ist.
 > 1) Lege `taxonomy.py` an: Mapping `vfc2 → Category` für alle `Vfc level2 Name`-Werte (gib mir zuerst lokal die Liste der eindeutigen Werte aus allen drei Feedback-Dateien;
@@ -89,6 +92,9 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 > Tests: jede zitierte `evidence_id` existiert; `mention_count >= len(evidence_ids)`; Kategorie gültig; Gruppe < 5 fällt weg.
 - **Fertig, wenn:** G60-US ergibt **20-45 Befunde** · ≥ 3 Befunde haben feedback **und** study · `pipeline.py --scenario G60-US --stage signals` läuft · `sync`, Piyush Bescheid geben.
 - **Subagent:** einer baut `taxonomy.py` (Mapping), du baust die Gruppierung.
+- **Ergebnis A5 (echte Daten):** je Szenario 45 Befunde (Obergrenze, größte zuerst, Untergrenze 5 Nennungen). G60-US: 6 mit Feedback + Studie, 10 Wünsche, 0 unbekannte IDs.
+  Entscheidungen: Obergrenze 45 statt Schwelle (bei ≥5 wären es 162); Gruppen mit 2 Quellenarten bleiben immer; reine Studien-Befunde max. 8; 10 Plätze für Wünsche;
+  Quelle D über den Bereich im Satz zugeordnet; „Body equipment“ bewusst ungemappt (Sammelbegriff).
 
 ### [ ] A6 · Befunde v2 mit LLM (90 min, 19:30-21:00)
 **Prompt:**

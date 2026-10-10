@@ -24,6 +24,11 @@ SEPARATOR = " | "  # Absprache mit Pfad C (PFAD-A.md, Abschnitt "Absprache mit D
 # Vorzeichen je Feedback-Typ. Wants zählt negativ: ein Wunsch ist ein Mangel im heutigen Auto.
 POLARITY = {"Likes": 1, "Defect": -1, "Difficult to Use": -1, "Wants": -1}
 
+# Quelle D beantwortet nur die Frage "Was liebst du am meisten?". BMW lässt den Typ dort leer
+# (Fehleinstufung), inhaltlich ist es Lob. Quelle A/C ohne Typ mischen Lob und Beschwerden und
+# bleiben deshalb neutral (für sie bräuchte es eine Stimmungsanalyse je Kommentar).
+PRAISE_ONLY_SOURCE = "D"
+
 
 def _clean(value: object) -> str:
     """NaN/None -> '', sonst getrimmter Text."""
@@ -62,6 +67,20 @@ def feedback_to_evidence(df: pd.DataFrame, cfg: dict) -> list[Evidence]:
         only_defects = all(t == "Defect" for t in types)
         scope = "out" if only_defects and source == "B" else "in"
 
+        polarity = _sign(sum(POLARITY.get(t, 0) for t in types))
+        meta = {
+            "vfc2": SEPARATOR.join(_unique(vfc2)),
+            "vfc3": SEPARATOR.join(_unique(vfc3)),
+            "feedback_type": SEPARATOR.join(_unique(types)),
+            "labels": SEPARATOR.join(labels),
+            "engine": _clean(group["Engine Type"].iloc[0]),
+            "source": source,
+            "scope": scope,
+        }
+        if source == PRAISE_ONLY_SOURCE and not any(types):  # nur bei ganz leerem Typ, echte Typen gewinnen
+            polarity = 1
+            meta["polarity_basis"] = "source_d_praise"  # für Review und UI: warum +1 trotz leerem Typ
+
         evidence.append(
             Evidence(
                 id=f"EV-{cfg['id']}-FB-{raw_id}",
@@ -70,16 +89,8 @@ def feedback_to_evidence(df: pd.DataFrame, cfg: dict) -> list[Evidence]:
                 derivative=cfg["derivative"],
                 market=cfg["market"],
                 text=text,
-                polarity=_sign(sum(POLARITY.get(t, 0) for t in types)),
-                meta={
-                    "vfc2": SEPARATOR.join(_unique(vfc2)),
-                    "vfc3": SEPARATOR.join(_unique(vfc3)),
-                    "feedback_type": SEPARATOR.join(_unique(types)),
-                    "labels": SEPARATOR.join(labels),
-                    "engine": _clean(group["Engine Type"].iloc[0]),
-                    "source": source,
-                    "scope": scope,
-                },
+                polarity=polarity,
+                meta=meta,
             )
         )
     return evidence

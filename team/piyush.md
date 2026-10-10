@@ -3,7 +3,7 @@
 - **GitHub:** @PiyushPapaya
 - **Rolle:** Lead, Captain, Backend, API-Vertrag; **einziger, der in `main` merged**
 - **Zuständig für (schreiben):** `src/backend/`, `src/shared/`, Root-Dateien, `.github/`, `.claude/`, `scripts/`, `README.md`, `CLAUDE.md`, `docs/ARCHITEKTUR.md`
-- **Eigener Arbeitsbereich:** `workspace/piyush/` (Notizen, Prompts, Experimente; landet nicht im Abgabe-Snapshot)
+- **Eigener Arbeitsbereich:** `werkstatt/piyush/` (Notizen, Prompts, Experimente; landet nicht im Abgabe-Snapshot)
 
 ## Unser Produkt in 2 Sätzen
 

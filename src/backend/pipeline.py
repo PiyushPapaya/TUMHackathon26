@@ -36,7 +36,10 @@ def load_config(scenario_id: str) -> dict:
 def _write(scenario_id: str, stage: str, items: list | dict) -> None:
     folder = OUT_DIR / scenario_id
     folder.mkdir(parents=True, exist_ok=True)
-    data = [i.model_dump(mode="json") for i in items] if isinstance(items, list) else items
+    # Listen enthalten Modelle (evidence, signals ...) oder fertige Dicts (discarded)
+    data = items
+    if isinstance(items, list):
+        data = [i.model_dump(mode="json") if hasattr(i, "model_dump") else i for i in items]
     (folder / f"{stage}.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"  -> {stage}.json ({len(data)} Einträge)")
 
@@ -78,13 +81,15 @@ def run_stage(stage: str, cfg: dict) -> None:
         _write(sid, "web_evidence", web_evidence)
         _write(sid, "web_signals", web_signals)
     elif stage == "requirements":  # Pfad C, KI schlägt vor, Formel priorisiert
-        from requirements_engine.derive import derive_requirements
+        from requirements_engine.derive import derive_all
         internal, counter = triangulated_internal(sid)
         signals = internal + [Signal(**s) for s in read_stage(sid, "web_signals")]
         evidence = [Evidence(**e) for e in read_stage(sid, "evidence") + read_stage(sid, "web_evidence")]
         context = {**read_stage(sid, "context"), "option_list_path": str(RAW_DIR / cfg["data"]["option_list_file"]),
                    "counter_evidence": counter}  # Webbelege, die interne Befunde widerlegen (für die Challenge)
-        _write(sid, "requirements", derive_requirements(scenario, signals, evidence, context))
+        requirements, discarded = derive_all(scenario, signals, evidence, context)
+        _write(sid, "requirements", requirements)
+        _write(sid, "discarded", discarded)  # Out-of-scope-Entwürfe: der PM soll sehen, was wir verworfen haben
     elif stage == "bundle":  # Lead: alles zusammen für die App
         bundle_stage(cfg)
 
@@ -96,10 +101,14 @@ def bundle_stage(cfg: dict) -> None:
     signals = [s.model_dump(mode="json") for s in internal] + read_stage(sid, "web_signals")
     reqs = [Requirement(**r).model_dump(mode="json") for r in read_stage(sid, "requirements")]
     used = {e for s in signals for e in s["evidence_ids"]}  # nur zitierte Belege an die App geben
+    # Ältere Läufe haben keine discarded.json; dann leer, statt auf die Beispieldatei zurückzufallen.
+    discarded_file = OUT_DIR / sid / "discarded.json"
+    discarded = json.loads(discarded_file.read_text(encoding="utf-8")) if discarded_file.exists() else []
     bundle = {
         "scenario": {k: v for k, v in cfg.items() if k != "data"},
         "funnel": {"evidence": len(evidence), "signals": len(signals), "requirements": len(reqs), "approved": 0},
         "weights": {}, "evidence": [e for e in evidence if e["id"] in used], "signals": signals, "requirements": reqs,
+        "discarded": discarded,
     }
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     (OUT_DIR / f"{sid}.json").write_text(json.dumps(bundle, ensure_ascii=False, indent=1), encoding="utf-8")
