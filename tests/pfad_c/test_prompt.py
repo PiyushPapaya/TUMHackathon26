@@ -45,3 +45,8 @@ def test_prompt_verlangt_abdeckung_aller_beschwerden():
     # Echter Fund: Nach einer Prompt-Änderung blieben 10 von 30 Beschwerden/Wünschen ohne Anforderung
     # (u. a. Start-Stopp, Spracherkennung). Jede Beschwerde muss in einer Anforderung vorkommen.
     assert "Cover EVERY complaint and unmet_need" in SYSTEM_PROMPT
+
+
+def test_prompt_haelt_die_zielzahl_aus_dem_ticket():
+    # Ticket C2 verlangt 8-15 Anforderungen. Mit "10-16" kamen beim 5er 16 heraus: zu viele für den PM.
+    assert "10-15 in-scope requirements" in SYSTEM_PROMPT

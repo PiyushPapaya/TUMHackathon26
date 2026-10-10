@@ -1,0 +1,47 @@
+{
+ "scenario_id": "G60-US",
+ "points": [
+  {
+   "attribute": "Intuitiveness of controls",
+   "category": "infotainment_digital",
+   "importance": 0.82,
+   "dissatisfaction": 0.09,
+   "quadrant": "Chance",
+   "evidence_id": "EV-G60-0005"
+  },
+  {
+   "attribute": "Interior storage",
+   "category": "comfort_space",
+   "importance": 0.41,
+   "dissatisfaction": 0.12,
+   "quadrant": "Beobachten",
+   "evidence_id": "EV-G60-0013"
+  },
+  {
+   "attribute": "Ride comfort",
+   "category": "driving_experience",
+   "importance": 0.77,
+   "dissatisfaction": 0.02,
+   "quadrant": "Stärke halten",
+   "evidence_id": "EV-G60-0014"
+  },
+  {
+   "attribute": "Exterior styling",
+   "category": "exterior",
+   "importance": 0.3,
+   "dissatisfaction": 0.01,
+   "quadrant": "Nebensache",
+   "evidence_id": null
+  }
+ ],
+ "quadrants": [
+  "Chance",
+  "Stärke halten",
+  "Beobachten",
+  "Nebensache"
+ ],
+ "thresholds": {
+  "importance": 0.5,
+  "dissatisfaction": 0.08
+ }
+}

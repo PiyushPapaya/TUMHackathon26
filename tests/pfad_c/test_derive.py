@@ -49,7 +49,8 @@ def test_entwurf_ohne_gueltigen_befund_wird_verworfen(monkeypatch):
     _fake_llm(monkeypatch, [_draft("Nur erfunden", ["SIG-ERFUNDEN"]), _draft("Echt", ["SIG-2"])])
     reqs, discarded = derive_all(SCENARIO, SIGNALS, [], {})
     assert [r.title for r in reqs] == ["Echt"]
-    assert discarded == []  # kein Scope-Problem, nur halluziniert
+    # kein Scope-Problem, nur halluziniert: Der Entwurf selbst taucht nirgends auf, nur SIG-1 als "nicht abgedeckt"
+    assert [d["signal_ids"] for d in discarded] == [["SIG-1"]]
 
 
 def test_out_of_scope_landet_im_zweiten_rueckgabewert(monkeypatch):

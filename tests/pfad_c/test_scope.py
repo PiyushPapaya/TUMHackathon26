@@ -35,12 +35,17 @@ def _drafts(*pairs: tuple[str, bool, str, str]) -> RequirementDrafts:
     ])
 
 
+def _scope_only(discarded: list[dict]) -> list[dict]:
+    """Nur die Scope-Entscheidungen der KI; nicht abgedeckte Befunde prüft test_not_covered.py."""
+    return [d for d in discarded if not d["title"].startswith("Not covered:")]
+
+
 @pytest.mark.parametrize(("title", "reason", "signal_id"), OUT_OF_SCOPE)
 def test_out_of_scope_wird_mit_grund_zurueckgegeben(monkeypatch, title, reason, signal_id):
     monkeypatch.setattr(derive, "ask_json", lambda *a, **k: _drafts((title, False, reason, signal_id)))
     reqs, discarded = derive_all(SCENARIO, SIGNALS, [], {})
     assert reqs == []
-    assert discarded == [{"title": title, "reason": reason, "signal_ids": [signal_id]}]
+    assert _scope_only(discarded) == [{"title": title, "reason": reason, "signal_ids": [signal_id]}]
 
 
 def test_gemischte_liste_trennt_sauber(monkeypatch):
@@ -52,7 +57,7 @@ def test_gemischte_liste_trennt_sauber(monkeypatch):
     monkeypatch.setattr(derive, "ask_json", lambda *a, **k: answer)
     reqs, discarded = derive_all(SCENARIO, SIGNALS, [], {})
     assert [r.title for r in reqs] == ["Rear seats with more knee room"]
-    assert {d["reason"] for d in discarded} == {"regulatory", "price / business case"}
+    assert {d["reason"] for d in _scope_only(discarded)} == {"regulatory", "price / business case"}
     assert reqs[0].rank == 1  # der Rang zählt nur, was im Scope blieb
 
 

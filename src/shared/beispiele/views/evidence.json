@@ -1,0 +1,61 @@
+{
+ "total": 5,
+ "page": 1,
+ "size": 3,
+ "items": [
+  {
+   "id": "EV-G60-0004",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle B",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[synthetisch] Kunde lobt das große, klare Display.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Touch screen, operation",
+    "feedback_type": "Likes",
+    "engine": "BEVE",
+    "country": "US",
+    "source_letter": "D"
+   }
+  },
+  {
+   "id": "EV-G60-0007",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle B",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[synthetisch] Reichweitenanzeige fällt im Winter stark ab, Kunde fühlt sich unsicher.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Electric Range",
+    "feedback_type": "Difficult to Use",
+    "engine": "BEVE",
+    "country": "US",
+    "source_letter": "A"
+   }
+  },
+  {
+   "id": "EV-G60-0008",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[synthetisch] Auf langen Strecken weiß ich nie genau, ob die Reichweite reicht.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Electric Range",
+    "feedback_type": "Difficult to Use",
+    "engine": "BEVE",
+    "country": "US",
+    "source_letter": "B"
+   }
+  }
+ ]
+}

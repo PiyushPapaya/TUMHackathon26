@@ -1,0 +1,14 @@
+[
+ {
+  "seq": 2,
+  "ts": "2026-10-10T19:14:46.752531Z",
+  "actor": {
+   "type": "ai",
+   "name": "pipeline"
+  },
+  "requirement_id": "REQ-G60-US-001",
+  "event_type": "REQUIREMENT_PROPOSED",
+  "sentence": "KI schlägt Anforderung vor",
+  "rationale": "Häufigster Bedien-Schmerzpunkt, bestätigt durch Studie und Wettbewerb."
+ }
+]

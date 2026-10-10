@@ -26,11 +26,11 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 
 ## Tickets
 
-### [ ] C0 · Setup (15 min, ab 15:15)
+### [x] C0 · Setup (15 min, ab 15:15)
 - `Ich bin Dennis, starte meine Sitzung.` · eigener OpenAI-Key in `.env` · `data/raw/` per USB.
 - **Fertig, wenn:** Tests grün, Entire „Enabled“.
 
-### [ ] C1 · Formel verstehen + BMW-Mentor (25 min, bis 15:55)
+### [x] C1 · Formel verstehen + BMW-Mentor (25 min, bis 15:55)
 - Prompt: „Ticket C1. Erklär mir `scoring.py` und `evidence_level.py` in 5 Sätzen mit einem Rechenbeispiel. Ich muss das der Jury erklären können.“
 - **Du als Partner-Kontakt:** die 3 Fragen aus [`LEAD.md`](LEAD.md) („Fragen an BMW“) dem Mentor stellen (vor Ort oder Discord), Antworten in den Team-Chat. Piyush trägt sie in `docs/CHALLENGE.md` ein.
 - **Fertig, wenn:** du die Formel ohne Zettel erklären kannst.

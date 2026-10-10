@@ -1,0 +1,75 @@
+{
+ "a": "G60-US",
+ "b": "G60-US",
+ "rows": [
+  {
+   "category": "infotainment_digital",
+   "a": {
+    "requirement_id": "REQ-G60-US-001",
+    "title": "Physische Bedienelemente für Top-Funktionen",
+    "rank": 1,
+    "score": 67.5,
+    "evidence_level": "A",
+    "level_label": "stark belegt"
+   },
+   "b": {
+    "requirement_id": "REQ-G60-US-001",
+    "title": "Physische Bedienelemente für Top-Funktionen",
+    "rank": 1,
+    "score": 67.5,
+    "evidence_level": "A",
+    "level_label": "stark belegt"
+   },
+   "rank_diff": 0,
+   "dissatisfaction_a": 0.09,
+   "dissatisfaction_b": 0.09,
+   "sentence": "infotainment_digital: in beiden Märkten Rang 1."
+  },
+  {
+   "category": "range_charging",
+   "a": {
+    "requirement_id": "REQ-G60-US-002",
+    "title": "Verlässliche Reichweitenprognose",
+    "rank": 2,
+    "score": 48.4,
+    "evidence_level": "B",
+    "level_label": "mittel belegt"
+   },
+   "b": {
+    "requirement_id": "REQ-G60-US-002",
+    "title": "Verlässliche Reichweitenprognose",
+    "rank": 2,
+    "score": 48.4,
+    "evidence_level": "B",
+    "level_label": "mittel belegt"
+   },
+   "rank_diff": 0,
+   "dissatisfaction_a": null,
+   "dissatisfaction_b": null,
+   "sentence": "range_charging: in beiden Märkten Rang 2."
+  },
+  {
+   "category": "comfort_space",
+   "a": {
+    "requirement_id": "REQ-G60-US-004",
+    "title": "Zuverlässige berührungslose Heckklappe",
+    "rank": 3,
+    "score": 47.2,
+    "evidence_level": "B",
+    "level_label": "mittel belegt"
+   },
+   "b": {
+    "requirement_id": "REQ-G60-US-004",
+    "title": "Zuverlässige berührungslose Heckklappe",
+    "rank": 3,
+    "score": 47.2,
+    "evidence_level": "B",
+    "level_label": "mittel belegt"
+   },
+   "rank_diff": 0,
+   "dissatisfaction_a": 0.12,
+   "dissatisfaction_b": 0.12,
+   "sentence": "comfort_space: in beiden Märkten Rang 3."
+  }
+ ]
+}

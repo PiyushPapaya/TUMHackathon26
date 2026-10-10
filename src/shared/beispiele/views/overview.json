@@ -1,0 +1,62 @@
+{
+ "scenario_id": "G60-US",
+ "funnel": {
+  "evidence": 3610,
+  "signals": 8,
+  "requirements": 5,
+  "approved": 0,
+  "note": "Beispiel-Bundle (synthetische Zitate)"
+ },
+ "top3": [
+  {
+   "id": "REQ-G60-US-001",
+   "title": "Physische Bedienelemente für Top-Funktionen",
+   "score": 67.5,
+   "rank": 1,
+   "evidence_level": "A",
+   "level_label": "stark belegt",
+   "badges": [
+    "robust",
+    "Konflikt"
+   ]
+  },
+  {
+   "id": "REQ-G60-US-002",
+   "title": "Verlässliche Reichweitenprognose",
+   "score": 48.4,
+   "rank": 2,
+   "evidence_level": "B",
+   "level_label": "mittel belegt",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-US-004",
+   "title": "Zuverlässige berührungslose Heckklappe",
+   "score": 47.2,
+   "rank": 3,
+   "evidence_level": "B",
+   "level_label": "mittel belegt",
+   "badges": []
+  }
+ ],
+ "level_distribution": {
+  "A": 1,
+  "B": 3,
+  "C": 0,
+  "D": 1
+ },
+ "warnings": [
+  "Beispiel-Bundle mit synthetischen Zitaten (echte Daten: data/processed/).",
+  "1 Themen ohne Kategorie (4 Kommentare), nicht in der Priorisierung."
+ ],
+ "source_mix": {
+  "feedback": 3610,
+  "study": 103,
+  "sales": 1,
+  "options": 1,
+  "web": 2,
+  "external": 0,
+  "badge": "reich"
+ },
+ "generated_at": null
+}
