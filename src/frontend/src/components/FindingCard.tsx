@@ -43,7 +43,7 @@ export function FindingCard({ signal, evidence }: { signal: Signal; evidence: Ev
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="rounded-lg border border-zinc-300 bg-white dark:border-zinc-700 dark:bg-zinc-900">
+    <div className="rounded-lg border border-zinc-300 bg-surface dark:border-zinc-700">
       <button
         type="button"
         onClick={() => setOpen((value) => !value)}

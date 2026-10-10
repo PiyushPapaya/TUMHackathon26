@@ -76,10 +76,10 @@ export default function RequirementsPage() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Top bar: volle Breite, Platz für weitere Elemente später. Halbtransparent, damit der Shader-Hintergrund durchscheint. */}
-      <header className="w-full border-b border-zinc-200 bg-white backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-950">
+      <header className="w-full border-b border-zinc-200 bg-surface backdrop-blur-sm dark:border-zinc-800">
         <div className="flex flex-wrap items-center justify-between gap-4 px-6 py-4">
           <div>
-            <h1 className="text-xl font-semibold text-[#0b1f3a] dark:text-zinc-100">Signal2Spec · PM Cockpit</h1>
+            <h1 className="text-xl font-semibold text-[#0b1f3a] dark:text-zinc-100">Spec Checker</h1>
             <p className="text-sm text-zinc-500 dark:text-zinc-400">Prioritized requirements for product decisions</p>
           </div>
           <div className="flex items-center gap-3">
@@ -89,7 +89,7 @@ export default function RequirementsPage() {
                 value={scenarioId}
                 onChange={(e) => setScenarioId(e.target.value)}
                 disabled={!scenarios}
-                className="rounded-md border border-zinc-300 bg-white px-3 py-1.5 text-sm text-[#0b1f3a] focus:border-blue-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100"
+                className="rounded-md border border-zinc-300 bg-surface px-3 py-1.5 text-sm text-[#0b1f3a] focus:border-blue-500 focus:outline-none dark:border-zinc-700 dark:text-zinc-100"
               >
                 {(scenarios ?? []).map((s) => (
                   <option key={s.id} value={s.id}>
@@ -113,7 +113,7 @@ export default function RequirementsPage() {
 
       {/* Mitte: Ergebnis-Fenster, 2cm Abstand zu Rand, Top-Bar und Prompt-Leiste */}
       <main className="m-[2cm] flex flex-1 flex-col">
-        <div className="flex-1 overflow-hidden rounded-lg border border-zinc-200 bg-white backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-950">
+        <div className="flex-1 overflow-hidden rounded-lg border border-zinc-200 bg-surface backdrop-blur-sm dark:border-zinc-800">
           <div className="h-full overflow-auto">
             {error && (
               <div className="m-4 rounded-md border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-800 dark:border-rose-800 dark:bg-rose-950 dark:text-rose-300">
@@ -177,7 +177,7 @@ export default function RequirementsPage() {
               if (e.key === "Enter") handlePromptSubmit();
             }}
             placeholder="Ask me your questions..."
-            className="flex-1 rounded-md border border-zinc-300 bg-white backdrop-blur-sm px-4 py-4 text-sm text-[#0b1f3a] focus:border-blue-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100"
+            className="flex-1 rounded-md border border-zinc-300 bg-surface backdrop-blur-sm px-4 py-4 text-sm text-[#0b1f3a] focus:border-blue-500 focus:outline-none dark:border-zinc-700 dark:text-zinc-100"
           />
           <button
             type="button"

@@ -53,7 +53,7 @@ export function RequirementDetailView({
       </section>
 
       <section className="mt-8 grid gap-6 md:grid-cols-2">
-        <div className="rounded-lg border border-zinc-300 bg-white p-4 dark:border-zinc-700 dark:bg-zinc-900">
+        <div className="rounded-lg border border-zinc-300 bg-surface p-4 dark:border-zinc-700">
           <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Evidence</h2>
           <div className="mt-3 space-y-3">
             {detail.signals.length === 0 && (
@@ -69,7 +69,7 @@ export function RequirementDetailView({
           </div>
         </div>
 
-        <div className="rounded-lg border-2 border-dashed border-zinc-300 bg-white p-4 dark:border-zinc-700 dark:bg-zinc-900">
+        <div className="rounded-lg border-2 border-dashed border-zinc-300 bg-surface p-4 dark:border-zinc-700">
           <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
             Assumptions &amp; uncertainties
           </h2>

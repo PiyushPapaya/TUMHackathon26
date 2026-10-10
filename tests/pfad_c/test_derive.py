@@ -6,7 +6,7 @@ entfernen, Out-of-scope aussortieren, IDs und Rang vergeben), nicht was die KI s
 
 from core.models import Category, EvidenceLevel, Scenario, Signal, SignalKind, SourceType
 from requirements_engine import derive
-from requirements_engine.derive import RequirementDraft, RequirementDrafts, derive_all, derive_requirements
+from requirements_engine.derive import RequirementDraft, RequirementDrafts, derive_all, derive_requirements, stable_key
 
 SCENARIO = Scenario(
     id="G60-US", derivative="G60", model_name="5 Series", market="US",
@@ -65,7 +65,7 @@ def test_out_of_scope_landet_im_zweiten_rueckgabewert(monkeypatch):
 def test_ids_rang_und_evidenzstufe(monkeypatch):
     _fake_llm(monkeypatch, [_draft("Schwach", ["SIG-2"]), _draft("Stark", ["SIG-1"])])
     reqs, _ = derive_all(SCENARIO, SIGNALS, [], {})
-    assert [r.id for r in reqs] == ["REQ-G60-US-002", "REQ-G60-US-001"]  # ID nach KI-Reihenfolge
+    assert [r.id for r in reqs] == [f"REQ-G60-US-{stable_key(['SIG-1'])}", f"REQ-G60-US-{stable_key(['SIG-2'])}"]
     assert [r.rank for r in reqs] == [1, 2]                              # Rang nach Score
     assert reqs[0].title == "Stark" and reqs[0].evidence_level == EvidenceLevel.A
     assert reqs[0].score > reqs[1].score
