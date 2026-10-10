@@ -31,3 +31,23 @@
 - **Verworfen:** Nur per Prompt trennen lassen (unwirksam); Konflikte im Code zusammenführen oder trennen (die KI soll formulieren, der Code macht sichtbar).
 - **Geprüft:** `tests/pfad_c/test_derive.py` (Widerspruch wird Unsicherheit, kein Duplikat, keine Zusatzzeile ohne Widerspruch), echter Lauf G60-US: 16 Anforderungen, 0 von 30 Beschwerden/Wünschen unbehandelt, 5 von 5 Anforderungen mit Widerspruch zeigen den Hinweis.
 - **Offen:** Die Konflikt-Erkennung von Pfad A ist grob (z. B. "Innenraum komfortabel" gegen "Heckklappe funktioniert nicht"). Aditya kann sie verfeinern.
+
+## C8 Qualität der Anforderungstexte: Vorher/Nachher (Dennis, mit Claude, Sa 10.10.)
+
+Geprüft wie ein BMW-PM: kundenorientiert, messbar, realistisch. Verbessert wurde der Prompt (nicht die Ausgabe von Hand), danach neu laufen lassen.
+
+| Messung | Erster Lauf (Beispiel-Befunde) | G60-US (echt, jetzt) | F70-EU (echt, jetzt) |
+|---|---|---|---|
+| Anforderungen | 8 | 16 | 14 |
+| Kriterium ohne Zahl/Testbedingung | 0 | 0 | 0 |
+| Platzhalter ("±X km") | 1 | 0 | 0 |
+| Erfundene Anforderung über den Befund hinaus | 1 | 0 gefunden | 0 gefunden |
+| Out-of-scope-Test (3 Fälle) | 2 von 3 | 3 von 3 | - |
+| Beschwerden/Wünsche ohne Anforderung | - | 0 von 30 | 1 von 32 |
+| Widersprüche sichtbar (Hinweis unter Unsicherheiten) | - | 5 von 5 | 5 von 5 |
+| Stufen A / B / C | 2/5/1 (alt) | 4 / 10 / 2 | 3 / 9 / 2 |
+| Befunde mehrfach zitiert | 1 | 1 | 7 |
+
+- **Übertragbarkeit belegt:** F70-EU lief mit derselben Pipeline, nur `config/scenarios/F70-EU.json` (1.433 Kommentare + 37 Studienwerte im Mittelwert-Format, EU = 73,7 % des 2030er-Volumens). Beispielsatz: "Heating/ventilation/air conditioning: mean 7.3 of 10".
+- **Bekannte Grenze:** Bei F70 zitieren 7 Befunde mehrere Anforderungen (Nennungen 1,37-fach aufgebläht, vor allem Lob-Themen im Mittelfeld). Nachgerechnet mit geteilten Nennungen: keine Stufe ändert sich, die Spitze bleibt. Darum Formel unverändert, als Grenze dokumentiert. Verworfen: Nennungen anteilig teilen (Mehraufwand ohne sichtbare Wirkung).
+- **Offen für Aditya/Piyush:** grobe Konflikt-Erkennung nach Kategorie; Webbelege fehlen lokal.

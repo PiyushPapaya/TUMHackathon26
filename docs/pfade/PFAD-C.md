@@ -90,7 +90,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - Prompt: „Ticket C7. Zeig mir die Verteilung A/B/C/D und die Nennungen pro Anforderung für G60-US. Passe die Schwellen in `evidence_level.py` so an, dass A wirklich stark ist (Richtwert: 2-4× A, mehrere B/C, Trends D). Begründe die Schwellen im Docstring mit den echten Zahlen.“
 - **Fertig, wenn:** Verteilung plausibel, Docstring begründet, Tests angepasst, `sync`. **Dann schlafen (Schicht 1, 23:30-03:30).**
 
-### [ ] C8 · Qualität der Anforderungstexte (60 min, ab 03:30)
+### [x] C8 · Qualität der Anforderungstexte (60 min, ab 03:30)
 - Prompt: „Ticket C8. Lies alle Anforderungen für G60-US und F70-EU kritisch wie ein BMW-PM: Ist jede kundenorientiert, messbar, realistisch? Verbessere den Prompt (nicht die Ausgabe von Hand), lass neu laufen, vergleiche vorher/nachher in einer Tabelle.“
 - **Achtung:** Neuer Prompt = neuer Cache-Eintrag. Danach Piyush bitten, das Bundle neu zu bauen.
 
