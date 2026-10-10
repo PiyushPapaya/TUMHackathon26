@@ -15,6 +15,8 @@ import json
 import os
 from pathlib import Path
 
+from pydantic import ValidationError
+
 from core.audit import AuditLog
 from core.models import Actor, ActorType, Evidence, Requirement, Scenario, Signal, Status
 from requirements_engine import scoring
@@ -90,8 +92,12 @@ class Store:
             bad = set(changes or {}) - allowed
             if bad or not changes:
                 raise ValueError(f"Bearbeitbar sind nur: {sorted(allowed)}")
-            req = req.model_copy(update=changes)
-            req.version += 1
+            # model_validate statt model_copy: prüft die neuen Werte (z. B. effort nur S/M/L),
+            # sonst landet ein ungültiger Zustand im Store und im Prüfpfad.
+            try:
+                req = Requirement.model_validate({**before, **changes, "version": req.version + 1})
+            except ValidationError as err:
+                raise ValueError(f"Ungültige Änderung: {err.errors()[0]['msg']}") from err
             state.requirements[req_id] = req
             if "effort" in changes:
                 self._rescore(state)

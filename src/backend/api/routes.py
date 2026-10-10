@@ -140,6 +140,13 @@ def audit_verify(request: Request) -> dict:
     return _store(request).audit.verify()
 
 
+def _csv_safe(value: object) -> str:
+    """Schutz vor Formel-Injection: Excel führt Zellen mit = + - @ als Formel aus.
+    Texte stammen teils aus LLM/Webquellen, daher mit ' entschärfen."""
+    text = str(value)
+    return "'" + text if text[:1] in ("=", "+", "-", "@", "\t", "\r") else text
+
+
 @router.get("/scenarios/{scenario_id}/export", response_class=PlainTextResponse)
 def export_csv(scenario_id: str, request: Request):
     """Die geforderte "strukturierte Anforderungsliste" als CSV (Excel-tauglich)."""
@@ -152,7 +159,8 @@ def export_csv(scenario_id: str, request: Request):
     writer.writerow(["id", "rank", "title", "description", "acceptance_criterion", "signals", "score",
                      "rationale", "evidence_level", "assumptions", "uncertainties", "status"])
     for r in reqs:
-        writer.writerow([r.id, r.rank, r.title, r.description, r.acceptance_criterion, ",".join(r.signal_ids),
-                         r.score, r.rationale, r.evidence_level.value, " | ".join(r.assumptions),
-                         " | ".join(r.uncertainties), r.status.value])
+        row = [r.id, r.rank, r.title, r.description, r.acceptance_criterion, ",".join(r.signal_ids),
+               r.score, r.rationale, r.evidence_level.value, " | ".join(r.assumptions),
+               " | ".join(r.uncertainties), r.status.value]
+        writer.writerow([_csv_safe(v) for v in row])
     return buf.getvalue()

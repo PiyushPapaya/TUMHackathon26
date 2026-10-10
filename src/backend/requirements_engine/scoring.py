@@ -12,6 +12,8 @@ statt sie zu verstecken: Der PM sieht sie, aber weiter unten.
 
 from __future__ import annotations
 
+import math
+
 from core.models import EvidenceLevel, ScoreFactor
 
 # Kundensicht + Geschäftssicht, wie auf der BMW-Folie "Prioritization: Customer / Business".
@@ -33,6 +35,9 @@ def normalize_weights(weights: dict[str, float]) -> dict[str, float]:
     unknown = set(weights) - set(DEFAULT_WEIGHTS)
     if unknown:
         raise ValueError(f"Unbekannte Faktoren: {sorted(unknown)}")
+    # Negative oder nicht-endliche Gewichte (NaN, inf) würden Scores still verfälschen.
+    if any(not math.isfinite(v) or v < 0 for v in weights.values()):
+        raise ValueError("Gewichte müssen endliche Zahlen >= 0 sein.")
     merged = {**DEFAULT_WEIGHTS, **weights}
     total = sum(merged.values())
     if total <= 0:

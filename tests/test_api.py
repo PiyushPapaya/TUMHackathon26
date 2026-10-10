@@ -72,3 +72,25 @@ def test_export_csv(client):
 def test_unknown_ids_give_404(client):
     assert client.get("/api/requirements/REQ-NOPE").status_code == 404
     assert client.get("/api/scenarios/X-Y/requirements").status_code == 404
+
+
+def test_edit_with_invalid_value_is_rejected_and_not_logged(client):
+    res = client.post(f"/api/requirements/{REQ}/decision",
+                      json={"action": "edit", "actor": "pm", "rationale": "x", "changes": {"effort": "XXL"}})
+    assert res.status_code == 422
+    history = client.get("/api/audit", params={"requirement_id": REQ}).json()
+    assert all(e["event_type"] != "PM_EDIT" for e in history)
+
+
+def test_negative_weights_are_rejected(client):
+    res = client.put("/api/scenarios/G60-US/weights",
+                     json={"weights": {"reach": -1.0}, "actor": "pm", "rationale": "Test negativ"})
+    assert res.status_code == 422
+
+
+def test_export_neutralizes_formulas(client):
+    client.post(f"/api/requirements/{REQ}/decision",
+                json={"action": "edit", "actor": "pm", "rationale": "Test Injection",
+                      "changes": {"title": "=HYPERLINK(\"http://boese.example\")"}})
+    csv_text = client.get("/api/scenarios/G60-US/export").text
+    assert "'=HYPERLINK" in csv_text and ";=HYPERLINK" not in csv_text
