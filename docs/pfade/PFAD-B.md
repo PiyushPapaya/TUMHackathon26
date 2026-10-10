@@ -58,6 +58,6 @@
 
 Prompt zum Kopieren für jede Karte: [`docs/UPGRADE_WELLE2.md`](../UPGRADE_WELLE2.md) §2.
 
-- [ ] **W-L5** · Web-Fragen aus Config: Horizont aus `successor_horizon`, G68-CN bis 8 Trendfragen (`questions.py`) · 01:30–02:00
-- [ ] **W-L6** · NHTSA-Beschwerden als zweite Kundenquelle für US (neue Datei `nhtsa.py`, Cache committen) · 02:00–03:00
-- [ ] *(kann)* **W-L10** · fueleconomy.gov-Connector (Reichweite Wettbewerber)
+- [x] **W-L5** · Web-Fragen aus Config: Horizont aus `successor_horizon`, G68-CN bis 8 Trendfragen (`questions.py`) · 01:30–02:00
+- [x] **W-L6** · NHTSA-Beschwerden als zweite Kundenquelle für US (neue Datei `nhtsa.py`, Cache committen) · 02:00–03:00
+- [x] *(kann)* **W-L10** · fueleconomy.gov-Connector (Reichweite Wettbewerber)

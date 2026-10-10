@@ -6,6 +6,17 @@
   "countries": ["US"],
   "competitors": ["Mercedes-Benz E-Class", "Audi A6 e-tron", "Tesla Model S", "Genesis G80", "Lucid Air"],
   "successor_horizon": "2030",
+  "fueleconomy": {
+    "model_year": 2025,
+    "vehicles": {
+      "BMW i5 eDrive40": ["BMW", "i5 eDrive40 Sedan (19 inch Wheels)"],
+      "BMW i5 M60 xDrive": ["BMW", "i5 M60 xDrive Sedan (19 inch Wheels)"],
+      "Tesla Model S": ["Tesla", "Model S"],
+      "Lucid Air Touring": ["Lucid", "Air Touring AWD with 19 inch wheels"],
+      "Mercedes-Benz EQE 350+": ["Mercedes-Benz", "EQE 350 Plus"],
+      "Genesis Electrified G80": ["Genesis", "Electrified G80"]
+    }
+  },
   "nhtsa": {
     "model_years": [2024, 2025],
     "bmw_models": ["530I", "540I", "I5"],

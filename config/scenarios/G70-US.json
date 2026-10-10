@@ -6,6 +6,16 @@
   "countries": ["US"],
   "competitors": ["Mercedes-Benz S-Class", "Mercedes-Benz EQS", "Audi A8", "Lucid Air", "Genesis G90"],
   "successor_horizon": "2030",
+  "fueleconomy": {
+    "model_year": 2025,
+    "vehicles": {
+      "BMW i7 eDrive50": ["BMW", "i7 eDrive50 Sedan (19 inch Wheels)"],
+      "BMW i7 M70 xDrive": ["BMW", "i7 M70 xDrive Sedan (20 inch Wheels)"],
+      "Mercedes-Benz EQS 450+": ["Mercedes-Benz", "EQS 450 Plus"],
+      "Lucid Air Touring": ["Lucid", "Air Touring AWD with 19 inch wheels"],
+      "Tesla Model S": ["Tesla", "Model S"]
+    }
+  },
   "nhtsa": {
     "model_years": [2024, 2025],
     "bmw_models": ["7 SERIES SEDAN", "I7 SEDAN"],
