@@ -29,9 +29,23 @@ MEDIUM_DOMAINS = (
 )
 
 
+def is_plain_web_url(url: str) -> bool:
+    """Nur eindeutige http(s)-URLs. Warum: urlparse und Browser lesen manche Tricks verschieden
+    ("https://evil.com\\@caranddriver.com": Browser -> evil.com, urlparse -> caranddriver.com).
+    Was mehrdeutig sein kann (Backslash, Leer-/Steuerzeichen, Userinfo, anderes Schema), gilt nicht."""
+    if any(ch == "\\" or ch.isspace() or not ch.isprintable() for ch in url):
+        return False
+    try:
+        parts = urlparse(url)
+        return parts.scheme in ("http", "https") and bool(parts.hostname) and "@" not in parts.netloc
+    except ValueError:
+        return False
+
+
 def _host(url: str) -> str:
-    host = (urlparse(url.strip()).hostname or "").lower()
-    return host.removeprefix("www.")
+    if not is_plain_web_url(url.strip()):
+        return ""
+    return (urlparse(url.strip()).hostname or "").lower().removeprefix("www.")
 
 
 def _matches(host: str, domains: tuple[str, ...]) -> bool:

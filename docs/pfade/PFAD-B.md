@@ -33,7 +33,7 @@
 > Fachpresse/Nachrichten = medium; Foren, Reddit, YouTube, unbekannt = low. Tests mit 6 URLs.
 - **Fertig, wenn:** 13 Fragen für G60-US · Trust-Test grün · `sync`.
 
-### [ ] B3 · `research()` v1 (45 min, 17:00-17:45)
+### [x] B3 · `research()` v1 (45 min, 17:00-17:45)
 **Prompt:**
 > Ticket B3. `research()` in `web_research.py`: alle Fragen → Claims → `Evidence(source_type="web", id="EV-<szenario>-WEB-<nn>", url, retrieved_at, source_name=publisher)` mit Meta (siehe Regeln in `docs/pfade/PFAD-B.md`).
 > Wettbewerbsfragen mit ≥ 1 Claim high/medium → `Signal(kind="competitor_advantage")`, Trendfragen → `Signal(kind="trend")`, IDs `SIG-<szenario>-WEB-<nn>`, Kategorie aus der Frage.

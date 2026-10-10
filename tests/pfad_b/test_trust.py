@@ -20,3 +20,18 @@ from evidence_external.trust import trust_for_url
 )
 def test_vertrauen_nach_domain(url, expected):
     assert trust_for_url(url) == expected
+
+
+@pytest.mark.parametrize(
+    "url",
+    [
+        "https://evil.com\\@caranddriver.com/x",  # Browser ruft evil.com auf, urlparse sieht caranddriver.com
+        "https://caranddriver.com@evil.com/",  # Userinfo: echter Host ist evil.com
+        "https://caranddriver.com\t.evil.com/",  # Steuerzeichen werden vom Browser entfernt
+        "javascript://caranddriver.com/%0aalert(1)",  # kein Web-Schema
+        "ftp://caranddriver.com/x",
+        "//caranddriver.com/x",  # ohne Schema
+    ],
+)
+def test_url_tricks_sind_nie_vertrauenswuerdig(url):
+    assert trust_for_url(url) == "low"
