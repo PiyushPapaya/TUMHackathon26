@@ -1,0 +1,94 @@
+Ich bin Piyus. Implementiere das alles: 
+
+<pasted_content id="87c1">
+Plan: 5 Extra-Features für Signal2Spec
+
+Context
+
+Pipeline, Bundles (G60-US, F70-EU, G70-US), Scoring, Challenge, Audit und CSV laufen. Das Cockpit
+(src/frontend/app/page.tsx) zeigt nur Score/Titel/Kategorie; die Prompt-Zeile ist ein Platzhalter
+(handlePromptSubmit, Z. 67). Team-Entscheidung: Prompt-Zeile liefert Top 5 Anforderungen (nicht Autos),
+dazu Ausstattungs-Lücke, Zukunfts-Radar, Konflikt-Ansicht, Markt-Vergleich + Memo.
+Leitlinie für alles: KI schlägt vor, Python rechnet, PM entscheidet, Prüfpfad schreibt mit (Brief S. 1-2).
+
+Reihenfolge (nach Wert für die Jury; wackelt die Zeit, von unten streichen)
+
+1. Prompt-Linse (Kern, ~2 h)
+
+PM tippt z. B. „Familien in den USA, Fokus Laden und Platz“.
+- Neu src/backend/core/lens.py (Muster: requirements_engine/challenge.py):
+  - 1 LLM-Aufruf über core.llm.ask_json mit Schema LensPlan:
+    weights: dict[factor, 0..1], categories: list[Category], only_gaps: bool, interpretation: str (1 Satz, was verstanden wurde).
+  - Das LLM nennt keine IDs. Python filtert und rechnet mit scoring.score(...) + scoring.normalize_weights auf
+    Kopien                                                                                                     (Store bleibt unverändert) → Top 5. Begründung je Treffer aus den 2 größten score_breakdown-Beiträgen
+    (deren explanation stammt schon aus Daten). So kann keine Quelle halluziniert werden.                      Fallback ohne LLM/Netz: Schlüsselwort → Kategorie-Zuordnung, Standardgewichte (wie _rule_based in
+    challenge.py).
+- Route POST /api/scenarios/{id}/lens {question, actor} → {interpretation, weights, filters, top:[{requirement,
+  lens_score, reasons}]};
+  schreibt AI_LENS_SUGGESTED in den Prüfpfad.                                                                  ewichte übernehmen“ nutzt den bestehenden PUT /weights (Begründung = Prompt-Text) → PM behält Kontrolle, Audit
+  hat es.                                                                                                      mo-Cache: 3 Demo-Fragen einmal mit Key laufen lassen, Antworten nach data/demo_cache/ (läuft offline).
+
+2. Ausstattungs-Lücke (~30 min)
+                                                                                                      n existieren (Requirement.offer_check, Box schon im Detail DetailBlocks.tsx). Neu: Badge-Spalte im Cockpit
+(„Lücke: nicht angeboten“ / „nur optional“ / „Serie“) + Filter-Chip „nur Lücken“. Kein Backend nötig.
+                                                                                                               onflikt-Ansicht (~1 h)
+                                                                                                               
+GET /api/requirements/{id} additiv um conflicts: [{signal, evidence[:3]}] erweitern (aus Signal.conflicts_with).
+Detailseite: zwei Spalten „dafür“ / „dagegen“ mit echten Zitaten + IDs, statt nur gelbem Badge                 dingCard.tsx:66).
+                                                                                                               ukunfts-Radar 2028-31 (~1,5 h)
+
+- Neu src/backend/core/insights.py horizon(req, signals) per Regel: „Zukunft“, wenn Faktor future_relevance ≥ 0,6
+  oder Mehrheit der Befunde trend/competitor_advantage; „Heute“ bei recurring_complaint/unmet_need; soeides“.
+- GET /api/scenarios/{id}/insights → {req_id: {horizon, offer_gap}} (kein Modell-Umbau).                        Cockpit-Ansicht „Matrix“: x = Heute → 2030, y = Evidenzstufe A-D. Vier Felder: Sicher & dringend, Belegte
+  Zukunftswette,
+  Schwach belegt, heute, Annahme – beobachten. Trifft Brief-Sätze „evidence vs. assumptions“ und „3-5 years ahead“.
+
+5. Markt-Vergleich + Entscheidungs-Memo (~1,5 h)
+
+- insights.compare(req, other_states): Gegenstück je anderem Szenario = gleiche Category + Wortüberlappung im Titel
+  (Jaccard ≥ 0,3, sonst „kein Gegenstück“). Route GET /api/requirements/{id}/compare. Detail zeigt „F70-EU: Platz 4, Score 71“.
+- GET /api/scenarios/{id}/memo → Markdown, in Python gebaut (kein LLM): freigegebene Anforderungen (sonst Top 5) mit ID,
+  Score, Evidenzstufe, Annahmen, Anzahl Belege, plus Zeile „Prüfpfad gültig, N Ereignisse“ aus audit.verify(). Button „Memo“ im Header.
+
+Dateien
+
+- Backend (Piyush/Lead): neu core/lens.py, core/insights.py, neu api/insights_routes.py (routes.py hat schon 167 Zeilen; in main.py einhängen), kleine Erweiterung in api/routes.py (Konflikte im Detail).
+- Frontend (Pfad D, mit Lasse abstimmen): app/page.tsx (Prompt anbinden, Badge, Filter, Matrix-Umschalter, Memo-Button),
+  neue Komponenten src/components/LensPanel.tsx, HorizonMatrix.tsx, ConflictColumns.tsx, MarketCompare.tsx; Typen in src/lib/api.ts.
+- Doku: src/shared/API.md (3 neue Endpunkte), docs/ARCHITEKTUR.md (Komponenten + Entscheidung „LLM wählt Gewichte, nie IDs“), docs/pitch/PITCH.md Jury-Frage.
+
+Tests (zuerst schreiben)
+
+- tests/test_lens.py: Top 5 enthält nur vorhandene IDs; LLM-Gewichte mit unbekanntem Faktor werden verworfen; Fallback ohne LLM liefert 5; Store-Gewichte bleiben unverändert; Audit-Ereignis entsteht.
+- tests/test_insights.py: Horizon-Regeln je Fall; Compare findet Gegenstück / „keins“; Memo enthält nur freigegebene IDs und Verify-Zeile.
+- tests/test_api.py: neue Endpunkte 200/404.
+
+Verifikation
+
+ruff check src/backend tests · python -m pytest -q · cd src/frontend && npm run lint && npm run build ·
+App mit DEMO_MODUS=true starten, Demo-Frage tippen → Top 5 erscheinen → „Gewichte übernehmen“ → /api/audit/verify gültig.
+Nach jedem Feature: Skill sync (Commit mit Warum + „geprüft: …“).
+</pasted_content id="87c1">
+
+---
+
+<cross-session-message from="uds:/run/user/1000/cc-socks/22483.sock" from-name="tumhackathon26-52" from-mode="prompting">
+Ja, das war ich (Welle 2, Phase 0 + L20) – jetzt committet und auf main gepusht (0c86253). Bitte erst `git pull --no-rebase origin main`.
+
+Überschneidungen, bitte wiederverwenden statt doppelt bauen:
+- Zukunfts-Radar ≈ GET /api/scenarios/{id}/trends (core/insights.py:trends)
+- Markt-Vergleich ≈ GET /api/compare?a=&b= (core/portfolio.py:compare) + /api/portfolio
+- Konflikt-Ansicht: GET /api/requirements/{id}/explain liefert schon "conflicts" (Requirement.segment_conflicts + Signal.conflicts_with); Datenmodell SegmentConflict in core/model_parts.py
+- Ausstattungs-Lücke: offer_check steckt in explain; Preis kommt mit C20 (Dennis)
+Vertrag + Beispielantworten: src/shared/API.md und src/shared/beispiele/views/*.json (scripts/make_view_examples.py neu laufen lassen, wenn du Endpunkte ergänzt).
+
+Ich fasse als Nächstes an (bitte meiden): core/llm.py (L17), pipeline.py + evidence_external/claims.py (L18), core/store.py (L19), danach evidence_external/questions.py + nhtsa.py (L21/L22). core/views.py, insights.py, portfolio.py, api/views.py darfst du gern erweitern – aber nur additiv und sag kurz Bescheid. Deine neuen Dateien (core/lens.py, api/insights_routes.py, tests/test_lens.py, tests/test_insights.py) sind ok; Router bitte in main.py mit einer Zeile einhängen. Dateien unter 200 Zeilen halten.
+</cross-session-message>
+
+---
+
+<cross-session-message from="uds:/run/user/1000/cc-socks/8918.sock" from-name="tumhackathon26-7c" from-mode="prompting">
+Ich (Session für Lasse, Pfad D) habe gerade nur src/frontend/src/components/ShaderBackground.tsx bearbeitet — bereits committet und auf main gepusht (4eac188/90e896e), aktuell editiere ich nichts weiter.
+
+Kurzer Hinweis zur Ownership-Tabelle in CLAUDE.md: src/frontend/ (inkl. page.tsx, neue Komponenten, src/lib/api.ts) ist offiziell Lasses Pfad D ("Schreibt in: src/frontend/"), nicht Piyushs. Wenn ihr dort page.tsx, LensPanel/HorizonMatrix/ConflictColumns/MarketCompare und api.ts baut, bitte vorher kurz mit Lasse abstimmen (Chat/Zuruf), sonst gibt's auf main Konflikte und es widerspricht der "nur im eigenen Pfad schreiben"-Regel. Ich sag das meinem User (Lasse) auch direkt, damit er euch im Chat antworten kann.
+</cross-session-message>
