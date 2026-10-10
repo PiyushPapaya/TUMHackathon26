@@ -1,0 +1,17 @@
+[
+ {
+  "id": "SIG-G60-US-003",
+  "kind": "competitor_advantage",
+  "category": "infotainment_digital",
+  "title": "Wettbewerb kehrt zu Tasten zurück",
+  "summary": "Mehrere Wettbewerber führen physische Tasten wieder ein.",
+  "evidence_ids": [
+   "EV-G60-0006"
+  ],
+  "mention_count": 3,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ }
+]

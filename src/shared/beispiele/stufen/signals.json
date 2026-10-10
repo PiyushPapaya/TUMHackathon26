@@ -1,0 +1,120 @@
+[
+ {
+  "id": "SIG-G60-US-001",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Touch-only-Bedienung lenkt ab",
+  "summary": "Kunden vermissen physische Bedienelemente für häufige Funktionen.",
+  "evidence_ids": [
+   "EV-G60-0001",
+   "EV-G60-0002",
+   "EV-G60-0003",
+   "EV-G60-0005"
+  ],
+  "mention_count": 61,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-002"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-002",
+  "kind": "delight",
+  "category": "infotainment_digital",
+  "title": "Großes Display wird gelobt",
+  "summary": "Das Curved Display ist ein Kaufargument.",
+  "evidence_ids": [
+   "EV-G60-0004"
+  ],
+  "mention_count": 48,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G60-US-001"
+  ]
+ },
+ {
+  "id": "SIG-G60-US-004",
+  "kind": "complaint",
+  "category": "range_charging",
+  "title": "Reichweite schwer einschätzbar",
+  "summary": "BEV-Kunden misstrauen der Reichweitenanzeige, besonders im Winter.",
+  "evidence_ids": [
+   "EV-G60-0007",
+   "EV-G60-0008"
+  ],
+  "mention_count": 38,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-005",
+  "kind": "unmet_need",
+  "category": "range_charging",
+  "title": "Öffentliches Laden ist mühsam",
+  "summary": "Ladesäulen finden und deren Zustand kennen ist ein Schmerzpunkt.",
+  "evidence_ids": [
+   "EV-G60-0009",
+   "EV-G60-0010"
+  ],
+  "mention_count": 24,
+  "source_types": [
+   "feedback",
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-006",
+  "kind": "unmet_need",
+  "category": "comfort_space",
+  "title": "Mehr Stauraum (Frunk)",
+  "summary": "Kunden vergleichen mit Tesla und wünschen zusätzlichen Stauraum vorne.",
+  "evidence_ids": [
+   "EV-G60-0011",
+   "EV-G60-0013"
+  ],
+  "mention_count": 14,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-007",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Berührungslose Heckklappe unzuverlässig",
+  "summary": "Die Fußgeste funktioniert nicht zuverlässig.",
+  "evidence_ids": [
+   "EV-G60-0012"
+  ],
+  "mention_count": 39,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-008",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Komfortables Fahrgefühl",
+  "summary": "Fahrkomfort ist eine Stärke, die erhalten bleiben muss.",
+  "evidence_ids": [
+   "EV-G60-0014"
+  ],
+  "mention_count": 120,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ }
+]

@@ -1,0 +1,334 @@
+[
+ {
+  "id": "REQ-G60-US-001",
+  "title": "Physische Bedienelemente für Top-Funktionen",
+  "description": "Lautstärke, Klima-Temperatur und Defrost sind ohne Blick auf den Bildschirm bedienbar.",
+  "acceptance_criterion": "Jede der 3 Funktionen in <= 1 Handgriff ohne Menü erreichbar; im Probandentest >= 80 % blind bedienbar.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G60-US-001",
+   "SIG-G60-US-002",
+   "SIG-G60-US-003"
+  ],
+  "score": 0,
+  "rank": 1,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.8,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "61 Kommentare, davon 70 % Bedienprobleme"
+   },
+   "reach": {
+    "value": 0.7,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "US: 78.000 Fahrzeuge 2025, 80.000 in 2030"
+   },
+   "satisfaction_gap": {
+    "value": 0.6,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "9 % unzufrieden mit Intuitiveness of controls"
+   },
+   "competitive_pressure": {
+    "value": 0.7,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "3 Webquellen: Wettbewerb kehrt zu Tasten zurück"
+   },
+   "future_relevance": {
+    "value": 0.5,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "Trend unklar: Sprachsteuerung könnte Bedarf senken"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "Aufwand M"
+   }
+  },
+  "rationale": "Häufigster Bedien-Schmerzpunkt, bestätigt durch Studie und Wettbewerb.",
+  "evidence_level": "A",
+  "assumptions": [
+   "Sprachsteuerung ersetzt bis 2030 nicht alle Bedienhandlungen."
+  ],
+  "uncertainties": [
+   "Display-Fans (SIG-G60-US-002) könnten weniger Bildschirmfläche ablehnen."
+  ],
+  "offer_check": {
+   "status": "not_offered",
+   "note": "Optionsliste nennt keine physischen Klimatasten.",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1
+ },
+ {
+  "id": "REQ-G60-US-002",
+  "title": "Verlässliche Reichweitenprognose",
+  "description": "Das Fahrzeug zeigt eine Reichweite, auf die sich Kunden auch bei Kälte und auf der Autobahn verlassen können.",
+  "acceptance_criterion": "Abweichung Prognose vs. tatsächlich <= 5 % auf 100 km; Wetter und Topografie berücksichtigt.",
+  "category": "range_charging",
+  "signal_ids": [
+   "SIG-G60-US-004"
+  ],
+  "score": 0,
+  "rank": 2,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.7,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "38 BEV-Kommentare zu Electric Range"
+   },
+   "reach": {
+    "value": 0.5,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "BEV-Anteil wächst, Volumen 2030 steigt"
+   },
+   "satisfaction_gap": {
+    "value": 0.4,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "keine direkte Studienfrage"
+   },
+   "competitive_pressure": {
+    "value": 0.5,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "Wettbewerb wirbt mit präziser Prognose"
+   },
+   "future_relevance": {
+    "value": 0.8,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "BEV-Anteil steigt bis 2030 (Annahme)"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "Aufwand M"
+   }
+  },
+  "rationale": "Starker Schmerz bei BEV-Kunden, wichtig für einen elektrischen Nachfolger.",
+  "evidence_level": "B",
+  "assumptions": [
+   "BEV-Anteil im US-Markt steigt bis 2030."
+  ],
+  "uncertainties": [
+   "Nur eine Quellenart (Feedback)."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Optionsliste enthält keine Aussage zur Prognosegüte.",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1
+ },
+ {
+  "id": "REQ-G60-US-003",
+  "title": "Laden ohne Suchen",
+  "description": "Die Routenplanung zeigt Ladestopps mit aktuellem Säulenstatus.",
+  "acceptance_criterion": "Navigation plant Ladestopps automatisch; Säulenstatus höchstens 5 min alt; >= 90 % erfolgreiche Ladevorgänge am geplanten Stopp.",
+  "category": "range_charging",
+  "signal_ids": [
+   "SIG-G60-US-005"
+  ],
+  "score": 0,
+  "rank": 3,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.6,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "24 Kommentare zu Public charging"
+   },
+   "reach": {
+    "value": 0.5,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "betrifft BEV-Kunden in den USA"
+   },
+   "satisfaction_gap": {
+    "value": 0.3,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "keine Studienfrage"
+   },
+   "competitive_pressure": {
+    "value": 0.6,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "Wettbewerber bieten integrierte Ladeplanung"
+   },
+   "future_relevance": {
+    "value": 0.9,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "Trend: wird ab 2028 Standard"
+   },
+   "effort_inverse": {
+    "value": 0.2,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "Aufwand L (Partnerdaten nötig)"
+   }
+  },
+  "rationale": "Zukunftsrelevant und vom Wettbewerb gesetzt, aber hoher Aufwand.",
+  "evidence_level": "B",
+  "assumptions": [
+   "Ladesäulenbetreiber liefern Echtzeit-Status."
+  ],
+  "uncertainties": [
+   "Abhängig von externen Anbietern."
+  ],
+  "offer_check": {
+   "status": "optional",
+   "note": "Ladeplanung vorhanden, Säulenstatus unklar.",
+   "option_code": null
+  },
+  "effort": "L",
+  "status": "proposed",
+  "version": 1
+ },
+ {
+  "id": "REQ-G60-US-004",
+  "title": "Zuverlässige berührungslose Heckklappe",
+  "description": "Die Heckklappe öffnet per Fußgeste beim ersten Versuch.",
+  "acceptance_criterion": ">= 95 % Öffnung beim ersten Versuch in Alltagstests (Regen, Schuhe, Beladung).",
+  "category": "comfort_space",
+  "signal_ids": [
+   "SIG-G60-US-007"
+  ],
+  "score": 0,
+  "rank": 4,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.7,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "39 Kommentare zu non-contact trunk lid"
+   },
+   "reach": {
+    "value": 0.6,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "betrifft alle Antriebe"
+   },
+   "satisfaction_gap": {
+    "value": 0.5,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "Studie: Tailgate operations im Mittelfeld"
+   },
+   "competitive_pressure": {
+    "value": 0.2,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "kein Webbeleg"
+   },
+   "future_relevance": {
+    "value": 0.3,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "kein Trend"
+   },
+   "effort_inverse": {
+    "value": 1.0,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "Aufwand S"
+   }
+  },
+  "rationale": "Häufiger Ärger bei kleinem Aufwand: Quick Win.",
+  "evidence_level": "B",
+  "assumptions": [
+   "Keine."
+  ],
+  "uncertainties": [
+   "Teilweise Bedienfehler statt echter Schwäche?"
+  ],
+  "offer_check": {
+   "status": "optional",
+   "note": "Komfortzugang mit berührungsloser Heckklappe ist Sonderausstattung.",
+   "option_code": "322"
+  },
+  "effort": "S",
+  "status": "proposed",
+  "version": 1
+ },
+ {
+  "id": "REQ-G60-US-005",
+  "title": "Zusätzlicher Stauraum vorne (Frunk)",
+  "description": "BEV-Varianten bieten einen Frontkofferraum für Ladekabel und Einkäufe.",
+  "acceptance_criterion": "Frunk >= 50 l, die Kabeltasche passt hinein.",
+  "category": "comfort_space",
+  "signal_ids": [
+   "SIG-G60-US-006"
+  ],
+  "score": 0,
+  "rank": 5,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.4,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "14 Kommentare, oft Tesla-Vergleich"
+   },
+   "reach": {
+    "value": 0.4,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "nur BEV"
+   },
+   "satisfaction_gap": {
+    "value": 0.5,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "Interior storage unterdurchschnittlich"
+   },
+   "competitive_pressure": {
+    "value": 0.6,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "Tesla bietet Frunk"
+   },
+   "future_relevance": {
+    "value": 0.5,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "unklar"
+   },
+   "effort_inverse": {
+    "value": 0.2,
+    "weight": 0,
+    "contribution": 0,
+    "explanation": "Aufwand L"
+   }
+  },
+  "rationale": "Wiederkehrender Vergleich mit Tesla, aber wenige Nennungen.",
+  "evidence_level": "C",
+  "assumptions": [
+   "BEV-Plattform erlaubt Frontstauraum."
+  ],
+  "uncertainties": [
+   "Wenige Nennungen; Packaging unbekannt."
+  ],
+  "offer_check": {
+   "status": "not_offered",
+   "note": "Nicht in der Optionsliste.",
+   "option_code": null
+  },
+  "effort": "L",
+  "status": "proposed",
+  "version": 1
+ }
+]
