@@ -1,0 +1,58 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4JWGMH4KSS5YCEPHWTDR3M3",
+  "session_id": "ef1a4e66-6632-432b-bbc0-7986314c4931",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T12:27:34.2819358Z",
+  "branch": "piyush/neustart",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-opus-5-5",
+  "turn_id": "a33dc1d1dabf",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 34,
+    "cache_creation_tokens": 62806,
+    "cache_read_tokens": 1397368,
+    "output_tokens": 4728,
+    "api_call_count": 17
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T12:27:34.2127045Z",
+    "agent_lines": 13,
+    "agent_removed": 0,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 13,
+    "total_lines_changed": 13,
+    "agent_percentage": 100,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 1517,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "requirements.txt": 14,
+        "src/backend/api/routes.py": 155,
+        "src/backend/core/audit.py": 130,
+        "src/backend/core/llm.py": 52,
+        "src/backend/core/models.py": 171,
+        "src/backend/core/store.py": 124,
+        "src/backend/main.py": 48,
+        "src/backend/requirements_engine/challenge.py": 30,
+        "src/backend/requirements_engine/evidence_level.py": 25,
+        "src/backend/requirements_engine/scoring.py": 65,
+        "src/shared/beispiele/bundle_G60-US.json": 703
+      }
+    }
+  ]
+}

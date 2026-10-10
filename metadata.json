@@ -3,8 +3,11 @@
   "checkpoint_id": "01M4JWGMH4KSS5YCEPHWTDR3M3",
   "strategy": "manual-commit",
   "branch": "piyush/neustart",
-  "checkpoints_count": 3,
-  "files_touched": null,
+  "checkpoints_count": 4,
+  "files_touched": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
   "sessions": [
     {
       "metadata": "/0/metadata.json",
@@ -12,13 +15,20 @@
       "compact_transcript": "/0/transcript.jsonl",
       "content_hash": "/0/content_hash.txt",
       "prompt": "/0/prompt.txt"
+    },
+    {
+      "metadata": "/1/metadata.json",
+      "transcript": "/1/full.jsonl",
+      "compact_transcript": "/1/transcript.jsonl",
+      "content_hash": "/1/content_hash.txt",
+      "prompt": "/1/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 98,
-    "cache_creation_tokens": 191899,
-    "cache_read_tokens": 6977655,
-    "output_tokens": 75873,
-    "api_call_count": 49
+    "input_tokens": 132,
+    "cache_creation_tokens": 254705,
+    "cache_read_tokens": 8375023,
+    "output_tokens": 80601,
+    "api_call_count": 66
   }
 }
