@@ -84,3 +84,29 @@ def test_text_unveraendert_nur_strip_und_quelle_als_buchstabe():
 def test_zeile_ohne_text_wird_uebersprungen():
     df = _df(_row(1, text=None), _row(2, text="   "), _row(3, text="ok"))
     assert [e.id for e in feedback_to_evidence(df, CFG)] == ["EV-G60-US-FB-3"]
+
+
+def test_quelle_d_ohne_typ_ist_lob_denn_die_frage_lautet_was_liebst_du_am_meisten():
+    # Quelle D stellt nur die Frage "Was liebst du am meisten?"; BMW lässt den Typ leer, es ist trotzdem Lob.
+    df = _df(_row(10, feedback_type=None, source="Source D", text="Smooth ride. That is the one thing I love most."))
+    ev = feedback_to_evidence(df, CFG)[0]
+
+    assert ev.polarity == 1
+    assert ev.meta["polarity_basis"] == "source_d_praise"  # nachvollziehbar, warum +1 trotz leerem Typ
+
+
+def test_quelle_a_und_c_ohne_typ_bleiben_neutral_weil_sie_auch_beschwerden_enthalten():
+    df = _df(
+        _row(11, feedback_type=None, source="Source A", text="Parking brake will not release."),
+        _row(12, feedback_type=None, source="Source C", text="Mixed comment."),
+    )
+    for ev in feedback_to_evidence(df, CFG):
+        assert ev.polarity == 0
+        assert "polarity_basis" not in ev.meta
+
+
+def test_quelle_d_mit_echtem_typ_behaelt_den_typ_der_regel_greift_nur_bei_leerem_typ():
+    df = _df(_row(13, feedback_type="Defect", source="Source D", text="x"))
+    ev = feedback_to_evidence(df, CFG)[0]
+    assert ev.polarity == -1
+    assert "polarity_basis" not in ev.meta
