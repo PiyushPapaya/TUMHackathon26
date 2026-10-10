@@ -1,0 +1,1 @@
+Please edit the text in the demo navigation box to always use the dark theme regardless of the color mode
