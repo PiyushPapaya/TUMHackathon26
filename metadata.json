@@ -3,7 +3,7 @@
   "checkpoint_id": "01M4KM3MSYA9TT3A42EY1B42B9",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 1,
+  "checkpoints_count": 2,
   "files_touched": [
     "src/backend/core/replay.py",
     "src/backend/core/store.py",
@@ -16,13 +16,20 @@
       "compact_transcript": "/0/transcript.jsonl",
       "content_hash": "/0/content_hash.txt",
       "prompt": ""
+    },
+    {
+      "metadata": "/1/metadata.json",
+      "transcript": "/1/full.jsonl",
+      "compact_transcript": "/1/transcript.jsonl",
+      "content_hash": "/1/content_hash.txt",
+      "prompt": "/1/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 12,
-    "cache_creation_tokens": 7227,
-    "cache_read_tokens": 1129419,
-    "output_tokens": 5184,
-    "api_call_count": 6
+    "input_tokens": 64,
+    "cache_creation_tokens": 100782,
+    "cache_read_tokens": 3412253,
+    "output_tokens": 27160,
+    "api_call_count": 32
   }
 }
