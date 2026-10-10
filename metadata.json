@@ -1,0 +1,51 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KKX21G532D4TZ12CXHQ1GD",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "scripts/make_view_examples.py",
+    "src/backend/api/routes.py",
+    "src/backend/api/views.py",
+    "src/backend/core/insights.py",
+    "src/backend/core/portfolio.py",
+    "src/backend/core/store.py",
+    "src/backend/core/views.py",
+    "src/backend/main.py",
+    "src/backend/pipeline.py",
+    "src/shared/API.md",
+    "src/shared/beispiele/bundle_G60-US.json",
+    "src/shared/beispiele/views/audit_timeline.json",
+    "src/shared/beispiele/views/compare.json",
+    "src/shared/beispiele/views/evidence.json",
+    "src/shared/beispiele/views/explain.json",
+    "src/shared/beispiele/views/gaps.json",
+    "src/shared/beispiele/views/health.json",
+    "src/shared/beispiele/views/opportunities.json",
+    "src/shared/beispiele/views/overview.json",
+    "src/shared/beispiele/views/portfolio.json",
+    "src/shared/beispiele/views/scenarios.json",
+    "src/shared/beispiele/views/trends.json",
+    "src/shared/beispiele/views/whatif.json",
+    "tests/test_api.py",
+    "tests/test_pipeline.py",
+    "tests/test_views.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": ""
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 38,
+    "cache_creation_tokens": 42247,
+    "cache_read_tokens": 2733232,
+    "output_tokens": 32558,
+    "api_call_count": 19
+  }
+}
