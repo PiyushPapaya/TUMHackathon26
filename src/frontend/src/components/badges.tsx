@@ -1,40 +1,18 @@
-/**
- * Kleine, wiederverwendbare Badges nach den Design-Regeln aus docs/pfade/PFAD-D.md:
- * Evidenzstufe mit Klartext + Tooltip, Status, Konflikt. Eine Datei, weil Liste
- * (D2) und Detailseite (D3) dieselben Badges brauchen.
- */
 import type { EvidenceLevel, RequirementStatus, SourceType } from "@/src/lib/api";
 
 const EVIDENCE_STYLE: Record<EvidenceLevel, { label: string; className: string }> = {
-  A: {
-    label: "A · strong",
-    className:
-      "bg-emerald-100 text-emerald-800 border-emerald-300 dark:bg-emerald-950 dark:text-emerald-300 dark:border-emerald-800",
-  },
-  B: {
-    label: "B · medium",
-    className:
-      "bg-blue-100 text-blue-800 border-blue-300 dark:bg-blue-950 dark:text-blue-300 dark:border-blue-800",
-  },
-  C: {
-    label: "C · weak",
-    className:
-      "bg-amber-100 text-amber-800 border-amber-300 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-800",
-  },
-  D: {
-    label: "D · assumption",
-    className:
-      "bg-zinc-100 text-zinc-600 border-zinc-300 dark:bg-zinc-800 dark:text-zinc-400 dark:border-zinc-700",
-  },
+  A: { label: "A · strong", className: "border-emerald-300 bg-emerald-50 text-emerald-800" },
+  B: { label: "B · medium", className: "border-blue-300 bg-blue-50 text-blue-800" },
+  C: { label: "C · weak", className: "border-amber-300 bg-amber-50 text-amber-800" },
+  D: { label: "D · assumption", className: "border-slate-300 bg-slate-50 text-slate-700" },
 };
 
-/** `reason` ist der Begründungssatz (Requirement.rationale), damit die Zahl eine Herkunft hat. */
 export function EvidenceBadge({ level, reason }: { level: EvidenceLevel; reason?: string }) {
   const style = EVIDENCE_STYLE[level];
   return (
     <span
       title={reason}
-      className={`inline-flex items-center rounded-full border px-2 py-0.5 text-xs font-medium ${style.className}`}
+      className={`inline-flex min-h-7 items-center rounded-full border px-3 text-xs font-semibold ${style.className}`}
     >
       {style.label}
     </span>
@@ -42,46 +20,44 @@ export function EvidenceBadge({ level, reason }: { level: EvidenceLevel; reason?
 }
 
 const STATUS_STYLE: Record<RequirementStatus, { label: string; className: string }> = {
-  proposed: {
-    label: "Proposed",
-    className: "bg-zinc-100 text-zinc-700 border-zinc-300 dark:bg-zinc-800 dark:text-zinc-300 dark:border-zinc-700",
-  },
-  challenged: {
-    label: "Challenged",
-    className:
-      "bg-amber-100 text-amber-800 border-amber-300 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-800",
-  },
-  approved: {
-    label: "Approved",
-    className:
-      "bg-emerald-100 text-emerald-800 border-emerald-300 dark:bg-emerald-950 dark:text-emerald-300 dark:border-emerald-800",
-  },
-  rejected: {
-    label: "Rejected",
-    className: "bg-rose-100 text-rose-800 border-rose-300 dark:bg-rose-950 dark:text-rose-300 dark:border-rose-800",
-  },
+  proposed: { label: "Proposed", className: "border-slate-300 bg-slate-50 text-slate-700" },
+  challenged: { label: "Challenged", className: "border-amber-300 bg-amber-50 text-amber-800" },
+  approved: { label: "Approved", className: "border-emerald-300 bg-emerald-50 text-emerald-800" },
+  rejected: { label: "Rejected", className: "border-rose-300 bg-rose-50 text-rose-800" },
 };
 
 export function StatusBadge({ status }: { status: RequirementStatus }) {
   const style = STATUS_STYLE[status];
   return (
     <span
-      className={`inline-flex items-center rounded-full border px-2 py-0.5 text-xs font-medium ${style.className}`}
+      className={`inline-flex min-h-7 items-center rounded-full border px-3 text-xs font-semibold ${style.className}`}
     >
       {style.label}
     </span>
   );
 }
 
-/** Gelbes Badge, falls ein verknüpfter Befund `conflicts_with` hat (Design-Regel PFAD-D). */
-export function ConflictBadge({ conflictingTitles }: { conflictingTitles: string[] }) {
+export function ConflictBadge({
+  conflictingTitles,
+  href,
+}: {
+  conflictingTitles: string[];
+  href?: string;
+}) {
   if (conflictingTitles.length === 0) return null;
+  const label = "Conflicting evidence";
+  const className =
+    "inline-flex min-h-7 items-center rounded-full border border-yellow-300 bg-yellow-50 px-3 text-xs font-semibold text-yellow-800";
+  if (href) {
+    return (
+      <a className={`${className} hover:bg-yellow-100`} href={href} title={conflictingTitles.join(", ")}>
+        {label}
+      </a>
+    );
+  }
   return (
-    <span
-      title={`Conflicting evidence: ${conflictingTitles.join(", ")}`}
-      className="inline-flex items-center gap-1 rounded-full border border-yellow-300 bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-800 dark:border-yellow-800 dark:bg-yellow-950 dark:text-yellow-300"
-    >
-      ⚠ Conflicting evidence
+    <span className={className} title={conflictingTitles.join(", ")}>
+      {label}
     </span>
   );
 }
@@ -89,59 +65,63 @@ export function ConflictBadge({ conflictingTitles }: { conflictingTitles: string
 const CATEGORY_LABELS: Record<string, string> = {
   exterior: "Exterior",
   interior: "Interior",
-  comfort_space: "Comfort & space",
-  infotainment_digital: "Infotainment & digital",
+  comfort_space: "Comfort and space",
+  infotainment_digital: "Infotainment and digital",
   driving_experience: "Driving experience",
-  range_charging: "Range & charging",
+  range_charging: "Range and charging",
   driver_assistance: "Driver assistance",
   quality_perception: "Quality perception",
-  variants_packages: "Variants & packages",
+  variants_packages: "Variants and packages",
 };
 
 export function categoryLabel(category: string): string {
-  return CATEGORY_LABELS[category] ?? category;
+  return CATEGORY_LABELS[category] ?? category.replaceAll("_", " ");
 }
 
-/**
- * Vertrauensstufe pro Beleg, abgeleitet aus den Regeln in
- * requirements_engine/evidence_level.py (BMW_SOURCES zählen mehr als Web, Web bestätigt nur,
- * Absatz/Optionsliste sind Kontext, kein Kundenbeleg). Keine neue Regel, nur die bestehende
- * für den Detailbildschirm sichtbar gemacht.
- */
 const SOURCE_TRUST: Record<SourceType, { label: string; hint: string; className: string }> = {
   feedback: {
-    label: "BMW customer data",
+    label: "Feedback A-D",
     hint: "Direct customer feedback; counts toward the evidence level.",
-    className: "bg-emerald-50 text-emerald-700 border-emerald-300 dark:bg-emerald-950 dark:text-emerald-300 dark:border-emerald-800",
+    className: "border-emerald-300 bg-emerald-50 text-emerald-800",
+  },
+  feedback_external: {
+    label: "External feedback",
+    hint: "External customer voice; useful as confirmation.",
+    className: "border-blue-300 bg-blue-50 text-blue-800",
   },
   study: {
-    label: "BMW customer data",
+    label: "Study",
     hint: "BMW customer study; counts toward the evidence level.",
-    className: "bg-emerald-50 text-emerald-700 border-emerald-300 dark:bg-emerald-950 dark:text-emerald-300 dark:border-emerald-800",
+    className: "border-emerald-300 bg-emerald-50 text-emerald-800",
   },
   web: {
-    label: "External · confirms only",
-    hint: "Web source. Can confirm a finding but never carries it alone.",
-    className: "bg-amber-50 text-amber-700 border-amber-300 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-800",
+    label: "Web source",
+    hint: "External web source with visible URL and trust metadata.",
+    className: "border-amber-300 bg-amber-50 text-amber-800",
+  },
+  external_stat: {
+    label: "External statistic",
+    hint: "External statistic; confirms context.",
+    className: "border-amber-300 bg-amber-50 text-amber-800",
   },
   sales: {
-    label: "Context data",
-    hint: "Sales volume, not direct customer feedback.",
-    className: "bg-zinc-50 text-zinc-600 border-zinc-300 dark:bg-zinc-800 dark:text-zinc-400 dark:border-zinc-700",
+    label: "Sales context",
+    hint: "Volume context, not direct customer evidence.",
+    className: "border-slate-300 bg-slate-50 text-slate-700",
   },
   option_list: {
-    label: "Context data",
-    hint: "Today's options list, not direct customer feedback.",
-    className: "bg-zinc-50 text-zinc-600 border-zinc-300 dark:bg-zinc-800 dark:text-zinc-400 dark:border-zinc-700",
+    label: "Offer context",
+    hint: "Current offer or option list, not direct customer evidence.",
+    className: "border-slate-300 bg-slate-50 text-slate-700",
   },
 };
 
 export function SourceTrustBadge({ sourceType }: { sourceType: SourceType }) {
-  const style = SOURCE_TRUST[sourceType];
+  const style = SOURCE_TRUST[sourceType] ?? SOURCE_TRUST.web;
   return (
     <span
       title={style.hint}
-      className={`inline-flex items-center rounded-full border px-2 py-0.5 text-xs font-medium ${style.className}`}
+      className={`inline-flex min-h-6 items-center rounded-full border px-2 text-[11px] font-semibold ${style.className}`}
     >
       {style.label}
     </span>

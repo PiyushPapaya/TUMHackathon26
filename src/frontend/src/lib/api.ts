@@ -1,16 +1,13 @@
-/**
- * Eine Datei für alle API-Typen und -Aufrufe, weil jede Seite dieselben Typen braucht
- * und sich bei Vertragsänderungen (src/shared/API.md) nur diese Datei ändern soll.
- * Quelle der Wahrheit: src/backend/core/models.py + src/backend/api/routes.py.
- */
-
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
-// ---------------------------------------------------------------------------
-// Typen (gespiegelt aus core/models.py)
-// ---------------------------------------------------------------------------
-
-export type SourceType = "feedback" | "study" | "sales" | "option_list" | "web";
+export type SourceType =
+  | "feedback"
+  | "study"
+  | "sales"
+  | "option_list"
+  | "web"
+  | "external_stat"
+  | "feedback_external";
 
 export type Category =
   | "exterior"
@@ -31,11 +28,8 @@ export type SignalKind =
   | "trend";
 
 export type EvidenceLevel = "A" | "B" | "C" | "D";
-
 export type RequirementStatus = "proposed" | "challenged" | "approved" | "rejected";
-
 export type Effort = "S" | "M" | "L";
-
 export type ActorType = "ai" | "human" | "system";
 
 export interface Actor {
@@ -47,13 +41,19 @@ export interface Evidence {
   id: string;
   source_type: SourceType;
   source_name: string;
-  derivative: string;
-  market: string;
+  derivative?: string;
+  market?: string;
   text: string;
   url: string | null;
   retrieved_at: string | null;
   polarity: -1 | 0 | 1;
-  meta: Record<string, string>;
+  meta: Record<string, string | number | boolean | null | undefined>;
+}
+
+export interface StudyLink {
+  attribute: string;
+  importance: number;
+  dissatisfaction: number;
 }
 
 export interface Signal {
@@ -66,6 +66,8 @@ export interface Signal {
   mention_count: number;
   source_types: SourceType[];
   conflicts_with: string[];
+  segments?: Record<string, Record<string, number>>;
+  study_link?: StudyLink | null;
 }
 
 export interface ScoreFactor {
@@ -78,9 +80,35 @@ export interface ScoreFactor {
 export type OfferCheckStatus = "not_offered" | "optional" | "standard" | "unknown";
 
 export interface OfferCheck {
-  status: OfferCheckStatus;
+  status: OfferCheckStatus | string;
   note: string;
   option_code: string | null;
+}
+
+export interface Robustness {
+  rank_min: number;
+  rank_max: number;
+  top3_share: number;
+  runs: number;
+}
+
+export interface SegmentConflict {
+  dimension: string;
+  segment_a?: string;
+  segment_b?: string;
+  statement: string;
+  a_count?: number;
+  b_count?: number;
+  evidence_ids?: string[];
+  signal_ids?: string[];
+}
+
+export interface BusinessContext {
+  volume_2025: number | null;
+  volume_2030: number | null;
+  growth_pct: number | null;
+  market_share: number | null;
+  note: string;
 }
 
 export interface Requirement {
@@ -101,6 +129,12 @@ export interface Requirement {
   effort: Effort;
   status: RequirementStatus;
   version: number;
+  horizon?: "today" | "next_gen";
+  robustness?: Robustness | null;
+  segment_conflicts?: SegmentConflict[];
+  business?: BusinessContext | null;
+  stable_key?: string;
+  badges?: string[];
 }
 
 export interface AuditEvent {
@@ -116,6 +150,26 @@ export interface AuditEvent {
   hash: string;
 }
 
+export interface AuditTimelineEvent {
+  seq: number;
+  ts: string;
+  actor: Actor;
+  requirement_id: string | null;
+  event_type: string;
+  sentence: string;
+  rationale: string;
+}
+
+export interface DataCoverage {
+  feedback: number;
+  study: number;
+  sales: number;
+  options: number;
+  web: number;
+  external: number;
+  badge: string;
+}
+
 export interface Scenario {
   id: string;
   derivative: string;
@@ -124,6 +178,15 @@ export interface Scenario {
   countries: string[];
   competitors: string[];
   successor_horizon: string;
+  data_coverage?: DataCoverage;
+  badge?: string;
+  warnings?: string[];
+  headline_numbers?: {
+    evidence: number;
+    signals: number;
+    requirements: number;
+    top_title: string | null;
+  };
 }
 
 export interface Funnel {
@@ -131,8 +194,26 @@ export interface Funnel {
   signals: number;
   requirements: number;
   approved: number;
-  /** Nur vorhanden, wenn das Beispiel-Bundle geladen wurde (statt echter Pipeline-Daten). */
   note?: string;
+  generated_at?: string | null;
+}
+
+export interface OverviewView {
+  scenario_id: string;
+  funnel: Funnel;
+  top3: Array<{
+    id: string;
+    title: string;
+    score: number;
+    rank: number;
+    evidence_level: EvidenceLevel;
+    level_label?: string;
+    badges?: string[];
+  }>;
+  level_distribution: Record<EvidenceLevel, number>;
+  warnings: string[];
+  source_mix: DataCoverage;
+  generated_at: string | null;
 }
 
 export interface RequirementDetail {
@@ -142,9 +223,35 @@ export interface RequirementDetail {
   history: AuditEvent[];
 }
 
+export interface WaterfallStep {
+  factor: string;
+  label: string;
+  value: number;
+  weight: number | null;
+  contribution: number;
+  sentence: string;
+}
+
+export interface ExplainView extends RequirementDetail {
+  level_label?: string;
+  waterfall?: WaterfallStep[];
+  quotes?: Array<Record<string, unknown>>;
+  segments?: Record<string, Record<string, number>>;
+  conflicts?: SegmentConflict[];
+  web_sources?: Array<{
+    id: string;
+    publisher: string;
+    url: string | null;
+    text: string;
+    trust: string;
+  }>;
+  study?: StudyLink[];
+  robustness_sentence?: string | null;
+  business?: BusinessContext | null;
+}
+
 export type DecisionAction = "approve" | "reject" | "edit" | "challenge";
 
-/** Nur diese Felder darf "edit" ändern (siehe API.md). */
 export interface RequirementEditableChanges {
   title?: string;
   description?: string;
@@ -174,20 +281,31 @@ export interface DecisionResult {
   ai_answer: AiAnswer | null;
 }
 
+export type WeightKey =
+  | "customer_pain"
+  | "reach"
+  | "satisfaction_gap"
+  | "competitive_pressure"
+  | "future_relevance"
+  | "effort_inverse";
+
+export type Weights = Partial<Record<WeightKey, number>>;
+
 export interface WeightsInput {
-  weights: Partial<
-    Record<
-      | "customer_pain"
-      | "reach"
-      | "satisfaction_gap"
-      | "competitive_pressure"
-      | "future_relevance"
-      | "effort_inverse",
-      number
-    >
-  >;
+  weights: Weights;
   actor: string;
   rationale: string;
+}
+
+export interface WhatIfRank {
+  id: string;
+  title: string;
+  evidence_level: EvidenceLevel;
+  old_rank: number;
+  new_rank: number;
+  rank_change: number;
+  old_score: number;
+  new_score: number;
 }
 
 export interface AuditVerifyResult {
@@ -196,19 +314,11 @@ export interface AuditVerifyResult {
   checked: number;
 }
 
-// ---------------------------------------------------------------------------
-// Hilfsfunktion: fetch mit lesbarer Fehlermeldung
-// ---------------------------------------------------------------------------
-
-/**
- * Wirft eine lesbare Meldung statt eines rohen Response-Objekts, damit die UI
- * direkt `error.message` anzeigen kann ("Backend not reachable – start uvicorn").
- */
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   let response: Response;
   try {
     response = await fetch(`${BASE_URL}${path}`, {
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", ...(init?.headers ?? {}) },
       ...init,
     });
   } catch {
@@ -226,16 +336,16 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
   return response.json() as Promise<T>;
 }
 
-// ---------------------------------------------------------------------------
-// Eine fetch-Funktion pro Endpunkt (src/shared/API.md)
-// ---------------------------------------------------------------------------
-
 export function getScenarios(): Promise<Scenario[]> {
   return request<Scenario[]>("/api/scenarios");
 }
 
 export function getFunnel(scenarioId: string): Promise<Funnel> {
   return request<Funnel>(`/api/scenarios/${encodeURIComponent(scenarioId)}/funnel`);
+}
+
+export function getOverview(scenarioId: string): Promise<OverviewView> {
+  return request<OverviewView>(`/api/scenarios/${encodeURIComponent(scenarioId)}/overview`);
 }
 
 export function getSignals(scenarioId: string): Promise<Signal[]> {
@@ -248,6 +358,10 @@ export function getRequirements(scenarioId: string): Promise<Requirement[]> {
 
 export function getRequirementDetail(reqId: string): Promise<RequirementDetail> {
   return request<RequirementDetail>(`/api/requirements/${encodeURIComponent(reqId)}`);
+}
+
+export function getRequirementExplain(reqId: string): Promise<ExplainView> {
+  return request<ExplainView>(`/api/requirements/${encodeURIComponent(reqId)}/explain`);
 }
 
 export function postDecision(reqId: string, input: DecisionInput): Promise<DecisionResult> {
@@ -264,6 +378,13 @@ export function putWeights(scenarioId: string, input: WeightsInput): Promise<Req
   });
 }
 
+export function postWhatIf(scenarioId: string, weights: Weights): Promise<WhatIfRank[]> {
+  return request<WhatIfRank[]>(`/api/scenarios/${encodeURIComponent(scenarioId)}/whatif`, {
+    method: "POST",
+    body: JSON.stringify({ weights }),
+  });
+}
+
 export function getAudit(filter?: {
   scenarioId?: string;
   requirementId?: string;
@@ -275,11 +396,21 @@ export function getAudit(filter?: {
   return request<AuditEvent[]>(`/api/audit${query ? `?${query}` : ""}`);
 }
 
+export function getAuditTimeline(filter?: {
+  scenarioId?: string;
+  requirementId?: string;
+}): Promise<AuditTimelineEvent[]> {
+  const params = new URLSearchParams();
+  if (filter?.scenarioId) params.set("scenario_id", filter.scenarioId);
+  if (filter?.requirementId) params.set("requirement_id", filter.requirementId);
+  const query = params.toString();
+  return request<AuditTimelineEvent[]>(`/api/audit/timeline${query ? `?${query}` : ""}`);
+}
+
 export function getAuditVerify(): Promise<AuditVerifyResult> {
   return request<AuditVerifyResult>("/api/audit/verify");
 }
 
-/** Kein fetch, da der Browser den CSV-Download selbst über den Link auslöst. */
-export function getExportUrl(scenarioId: string): string {
-  return `${BASE_URL}/api/scenarios/${encodeURIComponent(scenarioId)}/export`;
+export function getExportUrl(scenarioId: string, format: "csv" | "json" | "md" = "csv"): string {
+  return `${BASE_URL}/api/scenarios/${encodeURIComponent(scenarioId)}/export?format=${format}`;
 }
