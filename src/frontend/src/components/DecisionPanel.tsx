@@ -121,7 +121,7 @@ export function DecisionPanel({
             PM decision
           </h2>
           <p className="mt-1 text-sm text-slate-600">
-            Actor: <span className="font-semibold text-[#0b1f3a]">{PM_ACTOR}</span>. A rationale is required.
+            Actor: <span className="font-semibold text-[#262626]">{PM_ACTOR}</span>. A rationale is required.
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -147,7 +147,7 @@ export function DecisionPanel({
           <label className="grid gap-1 text-sm font-semibold text-slate-700">
             Title
             <input
-              className="min-h-11 rounded-md border border-slate-300 px-3 font-normal text-[#0b1f3a] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              className="min-h-11 rounded-md border border-slate-300 px-3 font-normal text-[#262626] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
               value={draft.title}
               onChange={(event) => setDraft((value) => ({ ...value, title: event.target.value }))}
             />
@@ -155,7 +155,7 @@ export function DecisionPanel({
           <label className="grid gap-1 text-sm font-semibold text-slate-700">
             Description
             <textarea
-              className="min-h-24 rounded-md border border-slate-300 px-3 py-2 font-normal text-[#0b1f3a] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              className="min-h-24 rounded-md border border-slate-300 px-3 py-2 font-normal text-[#262626] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
               value={draft.description}
               onChange={(event) => setDraft((value) => ({ ...value, description: event.target.value }))}
             />
@@ -163,7 +163,7 @@ export function DecisionPanel({
           <label className="grid gap-1 text-sm font-semibold text-slate-700">
             Acceptance criterion
             <textarea
-              className="min-h-20 rounded-md border border-slate-300 px-3 py-2 font-normal text-[#0b1f3a] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              className="min-h-20 rounded-md border border-slate-300 px-3 py-2 font-normal text-[#262626] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
               value={draft.acceptance_criterion}
               onChange={(event) =>
                 setDraft((value) => ({ ...value, acceptance_criterion: event.target.value }))
@@ -173,7 +173,7 @@ export function DecisionPanel({
           <label className="grid gap-1 text-sm font-semibold text-slate-700 sm:max-w-40">
             Effort
             <select
-              className="min-h-11 rounded-md border border-slate-300 px-3 font-normal text-[#0b1f3a] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              className="min-h-11 rounded-md border border-slate-300 px-3 font-normal text-[#262626] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
               value={draft.effort}
               onChange={(event) =>
                 setDraft((value) => ({ ...value, effort: event.target.value as Effort }))
@@ -204,7 +204,7 @@ export function DecisionPanel({
           <label className="grid gap-1 text-sm font-semibold text-slate-700">
             Challenge question
             <textarea
-              className="min-h-20 rounded-md border border-slate-300 px-3 py-2 font-normal text-[#0b1f3a] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              className="min-h-20 rounded-md border border-slate-300 px-3 py-2 font-normal text-[#262626] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
               value={question}
               onChange={(event) => setQuestion(event.target.value)}
             />
@@ -216,7 +216,7 @@ export function DecisionPanel({
         Rationale
         <textarea
           required
-          className="min-h-24 rounded-md border border-slate-300 px-3 py-2 font-normal text-[#0b1f3a] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
+          className="min-h-24 rounded-md border border-slate-300 px-3 py-2 font-normal text-[#262626] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
           placeholder="Why is this decision justified?"
           value={rationale}
           onChange={(event) => setRationale(event.target.value)}

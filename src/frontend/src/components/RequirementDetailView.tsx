@@ -36,7 +36,7 @@ export function RequirementDetailView({
     <div className="grid gap-8">
       <header className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
         <div className="flex flex-wrap items-center gap-3">
-          <h1 className="max-w-4xl text-2xl font-semibold leading-tight text-[#0b1f3a]">
+          <h1 className="max-w-4xl text-2xl font-semibold leading-tight text-[#262626]">
             {requirement.title}
           </h1>
           <StatusBadge status={requirement.status} />
@@ -52,13 +52,13 @@ export function RequirementDetailView({
       <section className="grid gap-4 lg:grid-cols-[1.4fr_0.8fr]">
         <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">Description</h2>
-          <p className="mt-2 text-[#0b1f3a]">{requirement.description}</p>
+          <p className="mt-2 text-[#262626]">{requirement.description}</p>
         </div>
         <div className="rounded-lg border border-blue-200 bg-blue-50 p-5">
           <p className="text-xs font-semibold uppercase tracking-wide text-blue-800">
             Acceptance criterion
           </p>
-          <p className="mt-2 font-semibold text-[#0b1f3a]">{requirement.acceptance_criterion}</p>
+          <p className="mt-2 font-semibold text-[#262626]">{requirement.acceptance_criterion}</p>
         </div>
       </section>
 
@@ -138,7 +138,7 @@ export function RequirementDetailView({
             {detail.web_sources.map((source) => (
               <article key={source.id} id={`evidence-${source.id}`} className="rounded-md border border-slate-200 bg-slate-50 p-3 text-sm">
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="font-semibold text-[#0b1f3a]">{source.publisher}</span>
+                  <span className="font-semibold text-[#262626]">{source.publisher}</span>
                   <span className="rounded-full border border-slate-300 px-2 py-0.5 text-xs font-semibold text-slate-600">
                     trust: {source.trust}
                   </span>

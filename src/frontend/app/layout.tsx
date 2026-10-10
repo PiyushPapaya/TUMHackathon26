@@ -1,21 +1,31 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
+import { ShellFrame } from "@/src/components/shell/ShellFrame";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// BMW Type Next ist proprietär, Hanken Grotesk ist die freie, ähnlich geometrische Alternative.
+const hanken = Hanken_Grotesk({
+  variable: "--font-hanken",
   subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Signal2Spec PM Cockpit",
-  description: "Evidence-backed product requirement cockpit for PM decisions.",
+  title: "Signal2Spec",
+  description: "From customer voice to the next BMW. Evidence-backed product requirements for PM decisions.",
+  openGraph: {
+    title: "Signal2Spec",
+    description: "From customer voice to the next BMW.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${geistSans.variable} h-full antialiased`}>
-      <body className="min-h-full">{children}</body>
+    <html lang="en" className={`${hanken.variable} antialiased`}>
+      <body className="min-h-screen">
+        <ShellFrame>{children}</ShellFrame>
+      </body>
     </html>
   );
 }

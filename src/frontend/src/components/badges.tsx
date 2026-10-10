@@ -12,7 +12,7 @@ export function EvidenceBadge({ level, reason }: { level: EvidenceLevel; reason?
   return (
     <span
       title={reason}
-      className={`inline-flex min-h-7 items-center rounded-full border px-3 text-xs font-semibold ${style.className}`}
+      className={`inline-flex min-h-7 items-center rounded-none border px-3 text-xs font-semibold ${style.className}`}
     >
       {style.label}
     </span>
@@ -30,7 +30,7 @@ export function StatusBadge({ status }: { status: RequirementStatus }) {
   const style = STATUS_STYLE[status];
   return (
     <span
-      className={`inline-flex min-h-7 items-center rounded-full border px-3 text-xs font-semibold ${style.className}`}
+      className={`inline-flex min-h-7 items-center rounded-none border px-3 text-xs font-semibold ${style.className}`}
     >
       {style.label}
     </span>
@@ -47,7 +47,7 @@ export function ConflictBadge({
   if (conflictingTitles.length === 0) return null;
   const label = "Conflicting evidence";
   const className =
-    "inline-flex min-h-7 items-center rounded-full border border-yellow-300 bg-yellow-50 px-3 text-xs font-semibold text-yellow-800";
+    "inline-flex min-h-7 items-center rounded-none border border-yellow-300 bg-yellow-50 px-3 text-xs font-semibold text-yellow-800";
   if (href) {
     return (
       <a className={`${className} hover:bg-yellow-100`} href={href} title={conflictingTitles.join(", ")}>
@@ -121,7 +121,7 @@ export function SourceTrustBadge({ sourceType }: { sourceType: SourceType }) {
   return (
     <span
       title={style.hint}
-      className={`inline-flex min-h-6 items-center rounded-full border px-2 text-[11px] font-semibold ${style.className}`}
+      className={`inline-flex min-h-6 items-center rounded-none border px-2 text-[11px] font-semibold ${style.className}`}
     >
       {style.label}
     </span>

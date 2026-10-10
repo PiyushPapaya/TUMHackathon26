@@ -1,14 +1,61 @@
 @import "tailwindcss";
 
+/* BMW-nahe Design-Tokens. Warum als CSS-Variablen: ein Ort für die Farben,
+   Komponenten und die Tailwind-Klassen der Unterseiten ziehen alle daraus. */
 :root {
-  --background: #f6f8fb;
-  --foreground: #0b1f3a;
+  --blue: #1c69d4;
+  --blue-hover: #0653b6;
+  --ink: #262626;
+  --black: #0a0a0b;
+  --grey-100: #f6f6f6;
+  --grey-500: #6b6b6b;
+  --hairline: #e6e6e6;
+  --m-light: #81c4ff;
+  --m-dark: #16588e;
+  --m-red: #e22718;
+  --background: #ffffff;
+  --foreground: var(--ink);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-hanken), system-ui, sans-serif;
+}
+
+/* Die Unterseiten (Overview, Audit, Detail) nutzen noch Tailwind-Klassen
+   wie slate/blue/rounded/shadow. Statt 40 Dateien umzuschreiben, biegen wir
+   die Tailwind-Skalen auf die BMW-Sprache um: neutrales Grau, BMW-Blau,
+   0 px Radius, keine Schatten. */
+@theme {
+  --color-slate-50: #f6f6f6;
+  --color-slate-100: #f0f0f0;
+  --color-slate-200: #e6e6e6;
+  --color-slate-300: #cfcfcf;
+  --color-slate-400: #9a9a9a;
+  --color-slate-500: #6b6b6b;
+  --color-slate-600: #4d4d4d;
+  --color-slate-700: #333333;
+  --color-slate-800: #262626;
+  --color-slate-900: #0a0a0b;
+  --color-blue-50: #eef4fc;
+  --color-blue-100: #dce8f9;
+  --color-blue-200: #bcd3f2;
+  --color-blue-300: #8fb4e8;
+  --color-blue-600: #1c69d4;
+  --color-blue-700: #0653b6;
+  --color-blue-800: #0a4496;
+  --color-blue-900: #0a2f66;
+  --radius-xs: 0;
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --radius-2xl: 0;
+  --shadow-xs: none;
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
 }
 
 * {
@@ -20,11 +67,9 @@ html {
 }
 
 body {
-  background:
-    linear-gradient(180deg, rgba(11, 31, 58, 0.04), rgba(11, 31, 58, 0) 280px),
-    var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--ink);
+  font-family: var(--font-hanken), system-ui, sans-serif;
 }
 
 button,
@@ -35,8 +80,49 @@ textarea {
   touch-action: manipulation;
 }
 
+/* Sichtbarer Fokusring für Tastatur-Nutzer (A11y), überall gleich. */
+:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
 ::selection {
-  background: rgba(37, 99, 235, 0.18);
+  background: rgba(28, 105, 212, 0.2);
+}
+
+/* Regler im BMW-Stil: Hairline-Schiene, quadratischer Griff. */
+input[type="range"].bmw-range {
+  appearance: none;
+  height: 20px;
+  background: transparent;
+  width: 100%;
+}
+input[type="range"].bmw-range::-webkit-slider-runnable-track {
+  height: 1px;
+  background: #b5b5b5;
+}
+input[type="range"].bmw-range::-moz-range-track {
+  height: 1px;
+  background: #b5b5b5;
+}
+input[type="range"].bmw-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+  background: var(--ink);
+  border: 0;
+  border-radius: 0;
+}
+input[type="range"].bmw-range::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: var(--ink);
+  border: 0;
+  border-radius: 0;
+}
+input[type="range"].bmw-range:hover::-webkit-slider-thumb {
+  background: var(--blue);
 }
 
 @keyframes funnel-enter {
@@ -49,9 +135,19 @@ textarea {
     transform: translateY(0);
   }
 }
-
 .animate-funnel {
   animation: funnel-enter 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Signal-Linien in der Fallback-Szene (ohne Auto-Frames). */
+@keyframes signal-flow {
+  to {
+    stroke-dashoffset: -200;
+  }
+}
+.signal-line {
+  stroke-dasharray: 8 12;
+  animation: signal-flow 6s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

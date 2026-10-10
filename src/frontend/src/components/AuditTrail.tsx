@@ -96,7 +96,7 @@ export function AuditTrail({
           >
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
-                <p className="text-sm font-semibold text-[#0b1f3a]">{item.sentence}</p>
+                <p className="text-sm font-semibold text-[#262626]">{item.sentence}</p>
                 <p className="mt-1 text-xs text-slate-500">
                   #{item.seq} · {formatTime(item.ts)} · {ACTOR_LABEL[item.actor.type] ?? item.actor.type}:{" "}
                   {item.actor.name}

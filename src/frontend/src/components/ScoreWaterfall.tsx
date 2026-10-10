@@ -58,7 +58,7 @@ function FactorRow({ step }: { step: WaterfallStep }) {
     return (
       <div className="rounded-md border border-dashed border-slate-300 bg-slate-50 px-3 py-2">
         <div className="flex items-center justify-between gap-4 text-sm">
-          <span className="font-semibold text-[#0b1f3a]">{step.label}</span>
+          <span className="font-semibold text-[#262626]">{step.label}</span>
           <span className={step.contribution < 0 ? "font-semibold text-amber-700" : "font-semibold text-slate-600"}>
             {step.contribution.toFixed(1)} pts
           </span>
@@ -73,7 +73,7 @@ function FactorRow({ step }: { step: WaterfallStep }) {
   return (
     <div className="py-2">
       <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 text-sm">
-        <span className="font-semibold text-[#0b1f3a]">{step.label}</span>
+        <span className="font-semibold text-[#262626]">{step.label}</span>
         <span className="text-slate-600">
           +{step.contribution.toFixed(1)} pts
           {step.weight !== null && (
@@ -128,11 +128,11 @@ export function ScoreWaterfall({
         <div className="flex flex-wrap items-center gap-3">
           <div className="rounded-md border border-slate-200 px-3 py-2 text-right">
             <p className="text-[11px] uppercase tracking-wide text-slate-500">Final</p>
-            <p className="text-lg font-semibold text-[#0b1f3a]">{finalScore.toFixed(1)}</p>
+            <p className="text-lg font-semibold text-[#262626]">{finalScore.toFixed(1)}</p>
           </div>
           <div className="rounded-md border border-dashed border-slate-300 px-3 py-2 text-right">
             <p className="text-[11px] uppercase tracking-wide text-slate-500">No assumptions</p>
-            <p className="text-lg font-semibold text-[#0b1f3a]">{scoreNoAssumptions.toFixed(1)}</p>
+            <p className="text-lg font-semibold text-[#262626]">{scoreNoAssumptions.toFixed(1)}</p>
           </div>
         </div>
       </div>
@@ -158,7 +158,7 @@ export function ScoreWaterfall({
       <div className="mt-4 grid gap-2 border-t border-slate-200 pt-3">
         <div className="flex items-baseline justify-between text-sm">
           <span className="text-slate-600">Subtotal before evidence confidence</span>
-          <span className="font-semibold text-[#0b1f3a]">{subtotal.toFixed(1)} pts</span>
+          <span className="font-semibold text-[#262626]">{subtotal.toFixed(1)} pts</span>
         </div>
         {confidenceStep ? (
           <FactorRow step={confidenceStep} />

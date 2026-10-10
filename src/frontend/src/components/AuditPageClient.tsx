@@ -27,16 +27,16 @@ export function AuditPageClient() {
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
               <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Decision audit</p>
-              <h1 className="mt-1 text-2xl font-semibold text-[#0b1f3a]">Audit trail</h1>
+              <h1 className="mt-1 text-2xl font-semibold text-[#262626]">Audit trail</h1>
               <p className="mt-1 max-w-2xl text-sm text-slate-600">
                 Every AI, system, and PM action is listed with rationale and payload.
               </p>
             </div>
             <nav className="flex flex-wrap gap-2">
-              <Link className="inline-flex min-h-11 items-center rounded-md border border-slate-300 bg-white px-4 text-sm font-semibold text-[#0b1f3a] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2" href="/overview">
+              <Link className="inline-flex min-h-11 items-center rounded-md border border-slate-300 bg-white px-4 text-sm font-semibold text-[#262626] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2" href="/overview">
                 Overview
               </Link>
-              <Link className="inline-flex min-h-11 items-center rounded-md border border-slate-300 bg-white px-4 text-sm font-semibold text-[#0b1f3a] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2" href="/">
+              <Link className="inline-flex min-h-11 items-center rounded-md border border-slate-300 bg-white px-4 text-sm font-semibold text-[#262626] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2" href="/cockpit">
                 Requirements
               </Link>
             </nav>
@@ -61,7 +61,7 @@ export function AuditPageClient() {
               <select
                 value={scenarioId}
                 onChange={(event) => setScenarioId(event.target.value)}
-                className="min-h-11 rounded-md border border-slate-300 bg-white px-3 font-normal text-[#0b1f3a] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
+                className="min-h-11 rounded-md border border-slate-300 bg-white px-3 font-normal text-[#262626] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
               >
                 <option value="">All scenarios</option>
                 {scenarios.map((scenario) => (

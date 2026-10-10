@@ -56,7 +56,7 @@ export function FindingCard({ signal, evidence }: { signal: Signal; evidence: Ev
         className="flex min-h-14 w-full items-center justify-between gap-3 px-4 py-3 text-left transition hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
       >
         <div>
-          <p className="font-semibold text-[#0b1f3a]">{signal.title}</p>
+          <p className="font-semibold text-[#262626]">{signal.title}</p>
           <p className="text-xs text-slate-500">
             {KIND_LABELS[signal.kind] ?? signal.kind} · {signal.mention_count} mentions from linked findings
           </p>

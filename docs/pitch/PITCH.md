@@ -24,7 +24,7 @@
 3. Konflikt-Badge: "Display wird gelobt" → zeigt, dass wir Widersprüche nicht wegmitteln.
 4. **Hinterfragen:** "Ist das nur eine Gewohnheitsfrage älterer Kunden?" → KI antwortet mit Belegen + Gegenbelegen.
 5. **Bearbeiten** des Akzeptanzkriteriums → **Freigeben** mit Begründung.
-6. Regler "Zukunft" hoch ("Nachfolger kommt 2030") → Liste rankt neu.
+6. Regler "Zukunft" hoch ("Nachfolger kommt 2030") → **Apply**: Zeilen gleiten animiert auf neue Plätze, ▲/▼ zeigen die Rangänderung, Toast „WEIGHTS_CHANGED recorded“ (bester Demo-Moment). Einstieg vorher über die Startseite `/` (Scroll-Story) und „Open cockpit“.
 7. Prüfpfad: alle Schritte mit wer/wann/warum, Badge "Kette gültig ✓". Export CSV.
 
 ## Jury-Fragen (jede Person kann jede beantworten)

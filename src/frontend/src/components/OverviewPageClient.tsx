@@ -22,7 +22,7 @@ function FunnelStep({ label, value, max }: { label: string; value: number; max: 
   return (
     <div className="mx-auto grid w-full max-w-3xl gap-2" style={{ width: `${width}%` }}>
       <div className="animate-funnel rounded-lg border border-blue-200 bg-blue-50 px-5 py-4 text-center shadow-sm">
-        <p className="text-3xl font-semibold text-[#0b1f3a]">{value.toLocaleString("en-US")}</p>
+        <p className="text-3xl font-semibold text-[#262626]">{value.toLocaleString("en-US")}</p>
         <p className="mt-1 text-sm font-semibold uppercase tracking-wide text-blue-800">{label}</p>
       </div>
     </div>
@@ -77,16 +77,16 @@ export function OverviewPageClient() {
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
               <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Demo start</p>
-              <h1 className="mt-1 text-2xl font-semibold text-[#0b1f3a]">Evidence-to-decision overview</h1>
+              <h1 className="mt-1 text-2xl font-semibold text-[#262626]">Evidence-to-decision overview</h1>
               <p className="mt-1 max-w-2xl text-sm text-slate-600">
                 One funnel from customer voices to PM-approved requirements, with AI and human responsibility separated.
               </p>
             </div>
             <nav className="flex flex-wrap gap-2">
-              <Link className="inline-flex min-h-11 items-center rounded-md border border-slate-300 bg-white px-4 text-sm font-semibold text-[#0b1f3a] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2" href="/">
+              <Link className="inline-flex min-h-11 items-center rounded-md border border-slate-300 bg-white px-4 text-sm font-semibold text-[#262626] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2" href="/cockpit">
                 Requirements
               </Link>
-              <Link className="inline-flex min-h-11 items-center rounded-md border border-slate-300 bg-white px-4 text-sm font-semibold text-[#0b1f3a] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2" href="/audit">
+              <Link className="inline-flex min-h-11 items-center rounded-md border border-slate-300 bg-white px-4 text-sm font-semibold text-[#262626] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2" href="/audit">
                 Audit trail
               </Link>
             </nav>
@@ -100,7 +100,7 @@ export function OverviewPageClient() {
                 setError(null);
                 setScenarioId(event.target.value);
               }}
-              className="min-h-11 rounded-md border border-slate-300 bg-white px-3 font-normal text-[#0b1f3a] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              className="min-h-11 rounded-md border border-slate-300 bg-white px-3 font-normal text-[#262626] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"
             >
               {scenarios.map((scenario) => (
                 <option key={scenario.id} value={scenario.id}>
@@ -147,10 +147,10 @@ export function OverviewPageClient() {
                       className="rounded-md border border-slate-200 bg-slate-50 p-3 hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
                     >
                       <div className="flex items-center justify-between gap-3">
-                        <span className="text-sm font-semibold text-[#0b1f3a]">#{item.rank}</span>
+                        <span className="text-sm font-semibold text-[#262626]">#{item.rank}</span>
                         <EvidenceBadge level={item.evidence_level} reason={item.level_label} />
                       </div>
-                      <p className="mt-2 text-sm font-semibold text-[#0b1f3a]">{item.title}</p>
+                      <p className="mt-2 text-sm font-semibold text-[#262626]">{item.title}</p>
                       <p className="mt-1 text-xs text-slate-500">Score {item.score.toFixed(1)}</p>
                     </Link>
                   ))}
@@ -162,7 +162,7 @@ export function OverviewPageClient() {
                   {(["A", "B", "C", "D"] as const).map((level) => (
                     <div key={level} className="rounded-md border border-slate-200 bg-slate-50 p-3">
                       <EvidenceBadge level={level} reason="Distribution across current requirements" />
-                      <p className="mt-2 text-xl font-semibold text-[#0b1f3a]">{overview.level_distribution[level]}</p>
+                      <p className="mt-2 text-xl font-semibold text-[#262626]">{overview.level_distribution[level]}</p>
                     </div>
                   ))}
                 </div>
@@ -175,7 +175,7 @@ export function OverviewPageClient() {
                 {WORKFLOW.map((step, index) => (
                   <article key={step.stage} className="rounded-lg border border-slate-200 bg-slate-50 p-4">
                     <p className="text-xs font-semibold text-slate-500">0{index + 1}</p>
-                    <h3 className="mt-2 font-semibold text-[#0b1f3a]">{step.stage}</h3>
+                    <h3 className="mt-2 font-semibold text-[#262626]">{step.stage}</h3>
                     <p className="mt-2 rounded-full border border-slate-300 bg-white px-2 py-1 text-xs font-semibold text-slate-700">
                       {step.mode}
                     </p>

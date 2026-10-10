@@ -70,6 +70,11 @@ flowchart LR
 | Übersicht | `src/frontend/app/overview/page.tsx`, `src/components/OverviewPageClient.tsx` | Trichter Belege → Befunde → Anforderungen → freigegeben, Top-3-Vorschläge, Evidenzverteilung, Workflow-Schritte | nein |
 | Audit-Seite | `src/frontend/app/audit/page.tsx`, `src/components/AuditPageClient.tsx`, `AuditTrail.tsx` | zeigt Kettenprüfung (`verify()`) und Zeitstrahl aller Ereignisse, filterbar nach Szenario/Anforderung | nein |
 | PM-Entscheidung | `src/frontend/src/components/DecisionPanel.tsx` | Freigeben/Ablehnen/Bearbeiten/Challenge direkt auf der Detailseite, Begründungspflicht, zeigt KI-Antwort mit Beleg-IDs | ja (Challenge-Antwort) |
+| Startseite | `src/frontend/app/page.tsx`, `src/components/home/*` | Scroll-Story: Hero, gepinnte Auto-Szene (Canvas-Frames, Fallback mit Signallinien), vier Kapitel mit echten Zahlen (`useHomeData`: Funnel + Evidenzstufen aus dem Backend), Kacheln, Szenario-Sektionen, Split. GSAP + Lenis nur hier, per dynamic import | nein |
+| Hülle | `src/components/shell/*` (`SiteHeader`, `MegaMenu`, `SiteFooter`, `ChatButton`) | Header mit Mega-Menü (Szenarien live aus `getScenarios`), Szenario im URL-Parameter `?scenario=`, Footer mit KI-Hinweis, Guide als Seitenleiste (`?embed=1`) | nein |
+| Cockpit | `src/frontend/app/cockpit/page.tsx`, `src/components/cockpit/*` | `useCockpit` (State + API, Logik unverändert), `RequirementsTable` mit FLIP-Animation bei Rangwechsel, `WeightControls`, `CockpitHero`, `DemoSteps` | nein |
+| UI-Bausteine | `src/frontend/src/components/ui/*` | Button, Typography, HairlineCard, MStripe, Reveal, Icon, Logo statt kopierter Tailwind-Ketten | nein |
+| Medien | `scripts/make_frames.sh`, `visuals/flow-prompts.md`, `app/media-manifest/route.ts` | Flow-Video → WebP-Frames + Manifest; fehlende Medien lösen keinen 404 aus | nein |
 
 
 
@@ -101,6 +106,10 @@ flowchart LR
 | Markt-Gegenstück per Kategorie + Titel-Jaccard ≥ 0,3, Memo in Python statt LLM | PM kann die Regel nachrechnen; jede Zahl im Memo stammt aus Store und `audit.verify()` | Embeddings (neue Abhängigkeit, nicht erklärbar), LLM-Memo (könnte Zahlen erfinden) |
 | Neues Fahrzeug/Markt = neue JSON in `config/scenarios/` | Brief: "adaptable to other BMW vehicles and markets" | Sonderlogik pro Modell |
 | Neue Cockpit-Seiten (Übersicht, Audit, Entscheidung) vom Lead übernommen, aber auf die lokalen Design-Tokens (`--background/--foreground/--surface/--accent/--table-background/--score-slider` in `globals.css`, Dark-Mode über `.dark`-Klasse, `ThemeToggle`) umgestellt statt der mitgelieferten festen Slate/Blau-Farben | Ein Farbsystem für die ganze App, Dark-Mode funktioniert auch auf den neuen Seiten, BMW-Blau bleibt einzige Akzentfarbe | Piyushs Farben unverändert lassen (zwei Stile nebeneinander, kein Dark-Mode auf den neuen Seiten) |
+| Frontend im BMW-Look (hell, 0 px Radius, Hairlines, dreifarbiger Streifen, Hanken Grotesk); Tailwind-Skalen slate/blue/radius/shadow in `globals.css` auf die BMW-Tokens umgebogen. Ersetzt den Dark-Mode-Entwurf darüber | Unterseiten sehen ohne 40 Datei-Umbauten einheitlich aus; Fotografie und Weißraum statt Dekoration; eigenes Logo, keine BMW-Assets | Standard-Dashboard in Slate/Blau; BMW Type Next (proprietär) |
+| Auto-Bewegung als Canvas-Frame-Folge (Manifest, progressives Laden, Fallback ohne Assets) statt `<video>` | Scrubbing per Video ruckelt; Frames sind exakt und lassen sich auf dem Handy ausdünnen; ohne Material bricht die Seite nicht | `<video>.currentTime`, Three.js-Modell |
+| GSAP (ScrollTrigger) + Lenis nur auf der Startseite, per dynamic import | Das Cockpit bleibt leicht und scrollt nativ; `prefers-reduced-motion` schaltet Pinning und Lenis ab | Global laden, CSS-only Scroll-Animation (kein Pinning) |
+| Szenario im URL-Parameter `?scenario=` | Header, Mega-Menü, Cockpit und Deep-Links teilen einen Zustand ohne Context-Bibliothek | globaler State / localStorage |
 
 ## Externe Dienste
 
