@@ -1,0 +1,96 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KARXCW8RBBY2G76GY5VW53",
+  "session_id": "b95f1a7e-51dd-45bd-84de-2c7f1ef3469f",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T16:36:43.2820935Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5-5",
+  "turn_id": "3bc81b628e1d",
+  "checkpoint_transcript_start": 679,
+  "transcript_lines_at_start": 679,
+  "compact_transcript_start": 73,
+  "token_usage": {
+    "input_tokens": 102,
+    "cache_creation_tokens": 387260,
+    "cache_read_tokens": 18324595,
+    "output_tokens": 61301,
+    "api_call_count": 51
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "claude-skill-toolu_01LA4TwMdZDUKxb4rf8sr5gF",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "frontend-design:frontend-design"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "3bc81b628e1d",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 730,
+        "end": 731,
+        "entry_ids": [
+          "9d568547-a4ab-4d1f-b4d1-ed4306b8bfc7"
+        ],
+        "tool_use_id": "toolu_01LA4TwMdZDUKxb4rf8sr5gF"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_01LA4TwMdZDUKxb4rf8sr5gF"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: frontend-design:frontend-design",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "session_metrics": {
+    "turn_count": 3
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 1393,
+      "user_lines_removed": 175,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "src/backend/core/audit.py": 140,
+        "src/frontend/app/studio/arena/page.tsx": 109,
+        "src/frontend/app/studio/assumptions/page.tsx": 111,
+        "src/frontend/app/studio/duel/page.tsx": 130,
+        "src/frontend/app/studio/layout.tsx": 41,
+        "src/frontend/app/studio/page.tsx": 51,
+        "src/frontend/app/studio/studio.css": 36,
+        "src/frontend/app/studio/swipe/page.tsx": 108,
+        "src/frontend/app/studio/voices/page.tsx": 71,
+        "src/frontend/baukasten/README.md": 50,
+        "src/frontend/baukasten/duell.json": 4,
+        "src/frontend/baukasten/farben.json": 8,
+        "src/frontend/baukasten/features.json": 7,
+        "src/frontend/baukasten/stimmen.json": 8,
+        "src/frontend/baukasten/texte.json": 33,
+        "src/frontend/src/studio/StudioData.tsx": 106,
+        "src/frontend/src/studio/StudioNav.tsx": 65,
+        "src/frontend/src/studio/ToolFrame.tsx": 55,
+        "src/frontend/src/studio/scoring.ts": 79,
+        "src/frontend/src/studio/ui.tsx": 120,
+        "tests/test_audit.py": 61
+      },
+      "user_removed_per_file": {
+        "src/backend/core/audit.py": 130,
+        "tests/test_audit.py": 45
+      }
+    }
+  ]
+}
