@@ -37,6 +37,7 @@ from requirements_engine import evidence_level, scoring
 from requirements_engine.derive_checks import conflict_notes, make_ids_unique, not_covered, stable_key
 from requirements_engine.factors import compute_factors, rationale_from
 from requirements_engine.offer_check import check, load_offer
+from requirements_engine.robustness import compute_robustness
 
 SYSTEM_PROMPT = """You are a product analyst for BMW. You turn customer findings (signals) into
 requirements for the successor vehicle, 3-5 years ahead. Write ALL text in English.
@@ -134,6 +135,9 @@ def derive_all(
     requirements.sort(key=lambda r: -r.score)  # stabil: gleiche Punkte behalten KI-Reihenfolge
     for rank, req in enumerate(requirements, start=1):
         req.rank = rank
+    robustness = compute_robustness(requirements)  # erst nach dem Rang: die Spanne muss den echten Rang enthalten
+    for req in requirements:
+        req.robustness = robustness[req.id]
     return requirements, discarded
 
 

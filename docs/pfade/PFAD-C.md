@@ -111,7 +111,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 Prompt zum Kopieren für jede Karte: [`docs/UPGRADE_WELLE2.md`](../UPGRADE_WELLE2.md) §4. Ablauf pro Karte: Test → Code → Fertig-Befehl → `sync`.
 
 - [x] **W-C1** · Stabile IDs aus Hash der `signal_ids` (`derive.py`) · 21:00–21:45 · **nie streichen**
-- [ ] **W-C2** · Rang-Robustheit: 500 Gewichtungen, `rank_min/max`, `top3_share` (neue Datei `robustness.py`) · 22:00–23:00 · **nie streichen**
+- [x] **W-C2** · Rang-Robustheit: 500 Gewichtungen, `rank_min/max`, `top3_share` (neue Datei `robustness.py`) · 22:00–23:00 · **nie streichen**
 - [ ] **W-C3** · Zukunftswetten mit Stufe D, nur mit `assumptions` · 23:00–00:30 · **nie streichen**
 - [ ] **W-C4** · What-if als reine Funktion, baut auf `score_without()` auf (neue Datei `whatif.py`) · 00:30–01:00
 - [ ] **W-C5** · 15–25 Anforderungen in allen Szenarien (Ableitung pro Kategorie-Block) · 01:00–02:00
