@@ -80,3 +80,35 @@ def test_ungueltiger_aufwand_wird_mittel(monkeypatch):
 def test_derive_requirements_gibt_nur_die_liste_zurueck(monkeypatch):
     _fake_llm(monkeypatch, [_draft("X", ["SIG-1"])])
     assert [r.title for r in derive_requirements(SCENARIO, SIGNALS, [], {})] == ["X"]
+
+
+def test_optionsliste_wird_pro_anforderung_abgeglichen(monkeypatch, tmp_path):
+    from core.models import OfferCheck
+
+    pdf = tmp_path / "liste.pdf"
+    pdf.write_bytes(b"%PDF")  # Inhalt egal: load_offer ist ersetzt, nur der Pfad muss existieren
+    _fake_llm(monkeypatch, [_draft("Hands-free tailgate", ["SIG-1"])])
+    monkeypatch.setattr(derive, "load_offer", lambda path: [{"name": "TRAVEL PAKET", "code": "7LK"}])
+    monkeypatch.setattr(derive, "check", lambda title, offer: OfferCheck(status="optional", option_code="7LK"))
+    reqs, _ = derive_all(SCENARIO, SIGNALS, [], {"option_list_path": str(pdf)})
+    assert (reqs[0].offer_check.status, reqs[0].offer_check.option_code) == ("optional", "7LK")
+
+
+def test_ohne_optionsliste_bleibt_unknown_und_nichts_stuerzt_ab(monkeypatch, tmp_path):
+    _fake_llm(monkeypatch, [_draft("X", ["SIG-1"])])
+    for context in ({}, {"option_list_path": str(tmp_path / "gibt-es-nicht.pdf")}):
+        reqs, _ = derive_all(SCENARIO, SIGNALS, [], context)
+        assert reqs[0].offer_check.status == "unknown"
+
+
+def test_kaputte_optionsliste_stoppt_die_pipeline_nicht(monkeypatch, tmp_path):
+    pdf = tmp_path / "kaputt.pdf"
+    pdf.write_bytes(b"kein pdf")
+    _fake_llm(monkeypatch, [_draft("X", ["SIG-1"])])
+
+    def boom(path):
+        raise ValueError("kein PDF")
+
+    monkeypatch.setattr(derive, "load_offer", boom)
+    reqs, _ = derive_all(SCENARIO, SIGNALS, [], {"option_list_path": str(pdf)})
+    assert reqs[0].offer_check.status == "unknown"

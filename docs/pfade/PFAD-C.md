@@ -66,7 +66,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - Prompt: „Ticket C4. Teste den Scope-Wächter mit 3 Out-of-scope-Befunden (Zulassung/Homologation, Bauteil-Spezifikation, Preis). Sie müssen im zweiten Rückgabewert von `derive_all` landen, mit Grund. Piyush schreibt sie als `REQUIREMENT_DISCARDED` in den Prüfpfad.“
 - **Fertig, wenn:** Test grün, Piyush hat `derive_all` in der Pipeline angeschlossen.
 
-### [ ] C5 · „Gibt es das schon?“ Optionsliste (60 min, 20:00-21:00)
+### [x] C5 · „Gibt es das schon?“ Optionsliste (60 min, 20:00-21:00)
 **Prompt:**
 > Ticket C5. Varianten und Pakete sind laut Brief in scope: Wünschen Kunden etwas, das es schon als Option gibt, ist die Antwort oft „ins Paket/Serie“, nicht „neu entwickeln“.
 > Zeig mir zuerst lokal 40 Zeilen Text von Seite 5 aus `data/raw/G60_OptionList.PDF` (pymupdf), damit wir das Format sehen. Dann `load_offer`: Code (3 Zeichen), Name, Status

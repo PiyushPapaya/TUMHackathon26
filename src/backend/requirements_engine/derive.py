@@ -20,6 +20,7 @@ Regeln für den Prompt:
 from __future__ import annotations
 
 import json
+from pathlib import Path
 
 from pydantic import BaseModel
 
@@ -34,6 +35,7 @@ from core.models import (
 )
 from requirements_engine import evidence_level, scoring
 from requirements_engine.factors import compute_factors, rationale_from
+from requirements_engine.offer_check import check, load_offer
 
 SYSTEM_PROMPT = """You are a product analyst for BMW. You turn customer findings (signals) into
 requirements for the successor vehicle, 3-5 years ahead. Write ALL text in English.
@@ -119,10 +121,25 @@ def derive_all(
     requirements = [
         _build(scenario, d, linked, n, by_id, max_mentions, context) for n, (d, linked) in enumerate(kept, start=1)
     ]
+    offer = _load_offer(context)
+    if offer:  # "Gibt es das schon?": pro Anforderung ein KI-Abgleich gegen die Optionsliste
+        for req in requirements:
+            req.offer_check = check(req.title, offer)
     requirements.sort(key=lambda r: -r.score)  # stabil: gleiche Punkte behalten KI-Reihenfolge
     for rank, req in enumerate(requirements, start=1):
         req.rank = rank
     return requirements, discarded
+
+
+def _load_offer(context: dict) -> list[dict]:
+    """Optionsliste lesen; fehlt oder kaputt, läuft die Pipeline ohne Abgleich weiter (Status unknown)."""
+    path = context.get("option_list_path")
+    if not path or not Path(path).exists():
+        return []
+    try:
+        return load_offer(Path(path))
+    except Exception:
+        return []
 
 
 def _build(
