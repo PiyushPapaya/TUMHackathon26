@@ -19,7 +19,8 @@ export function MediaImage({ src, alt, priority, className = "" }: { src: string
       fill
       priority={priority}
       sizes="100vw"
-      className={`object-cover ${className}`}
+      className={`object-cover ${className}`.trim()}
+      suppressHydrationWarning
       onError={() => setFailed(true)}
     />
   );

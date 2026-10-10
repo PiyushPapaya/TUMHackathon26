@@ -32,9 +32,14 @@ export function CarScene({ chapters, onFramesStatus }: { chapters: Chapter[]; on
   const chapterRefs = useRef<(HTMLDivElement | null)[]>([]);
   const figureRefs = useRef<(HTMLElement | null)[][]>([]);
   const chaptersRef = useRef(chapters);
+  const updateRef = useRef<((p: number) => void) | null>(null);
+  const progressRef = useRef(0);
 
+  // Kommen die Backend-Zahlen erst nach dem Scroll-Setup an, zeichnen wir die Kapitel mit dem aktuellen Fortschritt neu.
+  // Sonst blieben die Zähler bei "–", bis der Nutzer das nächste Mal scrollt.
   useEffect(() => {
     chaptersRef.current = chapters;
+    updateRef.current?.(progressRef.current);
   }, [chapters]);
   useEffect(() => {
     onFramesStatus(status, progress);
@@ -71,6 +76,7 @@ export function CarScene({ chapters, onFramesStatus }: { chapters: Chapter[]; on
     }
 
     function update(p: number) {
+      progressRef.current = p;
       draw(p);
       if (barRef.current) barRef.current.style.width = `${p * 100}%`;
       const route = routeRef.current;
@@ -109,12 +115,14 @@ export function CarScene({ chapters, onFramesStatus }: { chapters: Chapter[]; on
         onUpdate: (self) => update(self.progress),
       });
       trigger = st;
+      updateRef.current = update;
       update(st.progress);
     });
 
     return () => {
       cancelled = true;
       trigger?.kill();
+      updateRef.current = null;
       releaseScrollEngine();
     };
   }, [reduced, manifest, frames, status]);
