@@ -1,0 +1,44 @@
+{
+  "claims": [
+    {
+      "text": "Official Mercedes documentation: the new E‑Class uses MBUX touchscreen displays and touch‑sensitive \"Touch Control Buttons\" on the steering wheel (capacitive detection) and a widescreen cockpit — i.e., Mercedes describes the E‑Class controls as primarily touch/capacitive. ([media.mbusa.com](https://media.mbusa.com/news/the-new-e-class-intelligence-that-excites))",
+      "url": "https://media.mbusa.com/news/the-new-e-class-intelligence-that-excites",
+      "publisher": "Mercedes‑Benz Media Newsroom USA",
+      "published": "March 3, 2020",
+      "stance": "supports",
+      "about": "Mercedes E‑Class control approach (touch/capacitive)"
+    },
+    {
+      "text": "Edmunds (first‑drive) reports the new E‑Class \"got rid of almost all the physical controls in the cabin,\" leaving a central touchscreen (MBUX) and a single slim strip of touch‑sensitive buttons under the display. ([edmunds.com](https://www.edmunds.com/car-news/2024-mercedes-benz-e-class-first-drive.html?msockid=23e96163d4b66c9525957724d5206d47))",
+      "url": "https://www.edmunds.com/car-news/2024-mercedes-benz-e-class-first-drive.html",
+      "publisher": "Edmunds",
+      "published": "2024 (first‑drive / review)",
+      "stance": "supports",
+      "about": "E‑Class removal of physical controls; touchscreen focus"
+    },
+    {
+      "text": "TopGear's E‑Class interior review criticizes Mercedes' move away from tactile controls: \"the last surviving buttons have been deleted in favour of haptic steering wheel touchpads, which ... are beyond frustrating.\" ([topgear.com](https://www.topgear.com/car-reviews/mercedes-benz/e-class/interior))",
+      "url": "https://www.topgear.com/car-reviews/mercedes-benz/e-class/interior",
+      "publisher": "TopGear",
+      "published": "May 13, 2025",
+      "stance": "supports",
+      "about": "Reviewer critique of E‑Class touch‑centric controls"
+    },
+    {
+      "text": "Cars.com summary for the Audi A6 e‑tron: the cabin is highly digitized — \"no real physical controls outside of a volume knob, start button and short rocking shifter\" — with most functions accessed via the infotainment screens. ([cars.com](https://www.cars.com/articles/2026-audi-a6-s6-sportback-e-tron-review-electric-maturity-512401/))",
+      "url": "https://www.cars.com/articles/2026-audi-a6-s6-sportback-e-tron-review-electric-maturity-512401/",
+      "publisher": "Cars.com",
+      "published": "",
+      "stance": "supports",
+      "about": "Audi A6 e‑tron minimal physical controls; screen‑centric interface"
+    },
+    {
+      "text": "Road & Track's A6 e‑tron review: Audi swaps many traditional controls for sweeping digital displays and screens; reviewers found the system logical and generally easy to operate despite the many touch panels. ([roadandtrack.com](https://www.roadandtrack.com/reviews/a65613518/year-make-model-tested-1727778965-1754482231/))",
+      "url": "https://www.roadandtrack.com/reviews/a65613518/year-make-model-tested-1727778965-1754482231/",
+      "publisher": "Road & Track",
+      "published": "Aug 18, 2025",
+      "stance": "supports",
+      "about": "Reviewer view that Audi's digital interface is polished and usable"
+    }
+  ]
+}

@@ -15,7 +15,7 @@
 
 ## Tickets
 
-### [ ] B1 · Websuche-Probe (30 min, 15:30-16:00)
+### [x] B1 · Websuche-Probe (30 min, 15:30-16:00)
 **Prompt:**
 > Ich baue Pfad B, Ticket B1. Wir nutzen die OpenAI-Websuche über `core.llm.ask_json(..., tools=[{"type": "web_search"}])` statt eigenem Scraping,
 > weil sie Quellen-URLs mitliefert und in 24 h kein Scraper robust wird. Verworfen: Testmagazine scrapen (Paywalls, fragil).
