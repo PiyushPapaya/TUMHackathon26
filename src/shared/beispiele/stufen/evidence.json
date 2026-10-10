@@ -1,0 +1,184 @@
+[
+ {
+  "id": "EV-G60-0001",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle B",
+  "derivative": "G60",
+  "market": "US",
+  "text": "[synthetisch] Kunde möchte den Lautstärkeregler wieder als Drehknopf.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Operating concept, operating system",
+   "feedback_type": "Wants"
+  }
+ },
+ {
+  "id": "EV-G60-0002",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "US",
+  "text": "[synthetisch] Ohne echte Knöpfe muss ich beim Fahren zu oft auf den Bildschirm schauen.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Touch screen, operation",
+   "feedback_type": "Difficult to Use"
+  }
+ },
+ {
+  "id": "EV-G60-0003",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle C",
+  "derivative": "G60",
+  "market": "US",
+  "text": "[synthetisch] Klimabedienung über Touch ist umständlich.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Touch screen, operation",
+   "feedback_type": "Difficult to Use"
+  }
+ },
+ {
+  "id": "EV-G60-0004",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle B",
+  "derivative": "G60",
+  "market": "US",
+  "text": "[synthetisch] Kunde lobt das große, klare Display.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Touch screen, operation",
+   "feedback_type": "Likes"
+  }
+ },
+ {
+  "id": "EV-G60-0005",
+  "source_type": "study",
+  "source_name": "US-Studie 2025",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Intuitiveness of controls: 9 % bewerten mit Unsatisfactory oder schlechter (Beispielwert).",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "attribute": "Intuitiveness of controls"
+  }
+ },
+ {
+  "id": "EV-G60-0007",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle B",
+  "derivative": "G60",
+  "market": "US",
+  "text": "[synthetisch] Reichweitenanzeige fällt im Winter stark ab, Kunde fühlt sich unsicher.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Electric Range",
+   "feedback_type": "Difficult to Use",
+   "engine": "BEVE"
+  }
+ },
+ {
+  "id": "EV-G60-0008",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "US",
+  "text": "[synthetisch] Auf langen Strecken weiß ich nie genau, ob die Reichweite reicht.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Electric Range",
+   "feedback_type": "Difficult to Use",
+   "engine": "BEVE"
+  }
+ },
+ {
+  "id": "EV-G60-0009",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle B",
+  "derivative": "G60",
+  "market": "US",
+  "text": "[synthetisch] Öffentliche Ladesäulen sind schwer zu finden und funktionieren oft nicht.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Public charging / external providers",
+   "feedback_type": "Difficult to Use",
+   "engine": "BEVE"
+  }
+ },
+ {
+  "id": "EV-G60-0011",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle B",
+  "derivative": "G60",
+  "market": "US",
+  "text": "[synthetisch] Kunde wünscht einen Frunk wie beim Tesla der Ehefrau.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Body equipment, overall technology",
+   "feedback_type": "Wants",
+   "engine": "BEVE"
+  }
+ },
+ {
+  "id": "EV-G60-0012",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "US",
+  "text": "[synthetisch] Berührungslose Heckklappe reagiert oft erst beim dritten Versuch.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "non-contact trunk lid opening",
+   "feedback_type": "Difficult to Use"
+  }
+ },
+ {
+  "id": "EV-G60-0013",
+  "source_type": "study",
+  "source_name": "US-Studie 2025",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Interior storage: unterdurchschnittlich im Vergleich zu anderen Attributen (Beispielwert).",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "attribute": "Interior storage"
+  }
+ },
+ {
+  "id": "EV-G60-0014",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle B",
+  "derivative": "G60",
+  "market": "US",
+  "text": "[synthetisch] Kunde liebt das ruhige, komfortable Fahrgefühl.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Handling / Riding",
+   "feedback_type": "Likes"
+  }
+ }
+]

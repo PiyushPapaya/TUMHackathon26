@@ -5,7 +5,7 @@ description: Führt das Abgabe-Runbook Schritt für Schritt aus und blockiert be
 
 # Abgabe
 
-Grundlage: `docs/ABGABE.md`. Bewertet wird **der Commit oben auf `main` beim Klick auf Submit**; ohne Entire-Checkpoints wird abgelehnt (`docs/wissen/EHL-BEWERTUNG.md` §2, §7).
+Grundlage: `docs/ABGABE.md`. Bewertet wird **der Commit oben auf `main` beim Klick auf Submit**; ohne Entire-Checkpoints wird abgelehnt (`docs/hilfe/EHL-BEWERTUNG.md` §2, §7).
 
 **Regel: Jeder ❌ blockiert.** Nicht weitergehen, bis er behoben oder von Piyush ausdrücklich akzeptiert ist. Nichts Destruktives am Repo.
 
@@ -25,7 +25,7 @@ Grundlage: `docs/ABGABE.md`. Bewertet wird **der Commit oben auf `main` beim Kli
    9. Live-URL und Backup-Video öffnen
    10. Pitch-Deck-PDF vorhanden
 4. **Formular** (Piyush, ehl.gg): Texte aus `docs/ABGABE.md` (Projektname, Kurzbeschreibung mit Zahl, Repo-URL `https://github.com/PiyushPapaya/TUMHackathon26`, Deck, Demo, Tech-Tags). „Verify“ → grün → **Submit**.
-5. **Nachweis:** `git rev-parse origin/main` + Uhrzeit + Screenshot in `workspace/piyush/`.
+5. **Nachweis:** `git rev-parse origin/main` + Uhrzeit + Screenshot lokal in `data/notizen/`.
 6. **Nach jedem weiteren Merge bis 12:00:** „Update Submission“ klicken.
 
 ## Ausgabe

@@ -11,8 +11,8 @@ Delegiere die Bewertung an den read-only Subagent `ehl-reviewer` (`.claude/agent
 
 1. **Budget-Simulation:** `python scripts/ehl_budget.py` (Zipball-Modus, wie bei der echten Abgabe). Notieren: Anteil `src/`, Doku-Anteil, wo das Budget endet, erkannte Frameworks, Flags.
 2. **Bewertungsgrundlage:** genau die Dateien, die das Skript als „gelesen“ ausgibt (README und Manifeste zuerst, kleinste zuerst, Kappung nach 200 Zeilen). Dateien außerhalb des Budgets existieren für den Reviewer nicht.
-3. **Challenge-Kontext:** `docs/research/CHALLENGE.md` (Brief-Zitate und Kriterien), den echte Reviewer auch bekommen.
-4. **Rubriken anwenden** mit den **exakten JSON-Formen** aus `tum-ai/ehl` `lib/code-review/prompts.ts` (dokumentiert in `docs/wissen/EHL-BEWERTUNG.md` §5):
+3. **Challenge-Kontext:** `docs/CHALLENGE.md` (Brief-Zitate und Kriterien), den echte Reviewer auch bekommen.
+4. **Rubriken anwenden** mit den **exakten JSON-Formen** aus `tum-ai/ehl` `lib/code-review/prompts.ts` (dokumentiert in `docs/hilfe/EHL-BEWERTUNG.md` §5):
    - A `{project_summary, tech_stack[], tech_stack_reasoning, architecture_pattern, key_dependencies[]}`
    - B `{readability, structure, error_handling, best_practices, overall_code_quality}` je `{score 1-10, rationale}`; 5 = ok, 7+ = beeindruckend, ≤3 = deutliche Probleme
    - C `{highlights[2-5]: {description, file, line, why_notable}, concerns[2-5]: {description, file, severity, explanation}, would_it_run: {verdict yes|probably|unlikely|no, reasoning}}`
@@ -26,4 +26,4 @@ Delegiere die Bewertung an den read-only Subagent `ehl-reviewer` (`.claude/agent
 2. Report Card als JSON (Koordinator-Form) + die drei Sätze Executive Summary.
 3. **Fix-Liste**, priorisiert nach Wirkung pro Minute (max. 8): `[Priorität] Problem → konkrete Änderung → Datei → Owner`.
    Typische Top-Fixes: README-Zahl fehlt; Quickstart nicht getestet; Alignment-Map fehlt; großer Code-Block > 200 Zeilen; fehlende Fehlerbehandlung beim LLM-Aufruf; keine Tests.
-4. Ergebnis als `workspace/<name>/selbstreview-<uhrzeit>.md` speichern (nicht im Snapshot).
+4. Ergebnis lokal als `data/notizen/selbstreview-<uhrzeit>.md` speichern (nicht im Git).

@@ -8,7 +8,7 @@
 
 ## Wie verifiziert
 
-<!-- Konkret: Befehl + Ergebnis. z. B. "pytest: 12 passed", "lokal gestartet, Upload mit demo/beispiel.pdf klappt" -->
+<!-- Konkret: Befehl + Ergebnis. z. B. "pytest: 12 passed", "lokal gestartet, Pipeline G60-US läuft, Detailseite zeigt Belege" -->
 
 ## Screenshots
 
@@ -20,11 +20,11 @@
 
 ## Checkliste
 
-- [ ] Nur Dateien in meinem Zuständigkeitsbereich bzw. `workspace/<name>/` geändert
+- [ ] Nur Dateien in meinem Pfad geändert (Tabelle in `CLAUDE.md`)
 - [ ] `git merge origin/main` gemacht, keine Konflikte
 - [ ] Checks lokal grün (Lint, Tests, App startet)
 - [ ] Keine Secrets, keine `.env` (`python scripts/secret_scan.py`)
 - [ ] Neue Dependencies: keine / beantragt: <!-- welche, warum, Alternative -->
 - [ ] `docs/ARCHITEKTUR.md` aktualisiert (bei Code)
-- [ ] `docs/pitch/JURY-FAQ.md` ergänzt (bei neuer Designentscheidung)
+- [ ] `docs/ARCHITEKTUR.md` (Entscheidungen) ergänzt, falls neue Designentscheidung
 - [ ] Commit-Nachrichten auf Deutsch mit „Warum“

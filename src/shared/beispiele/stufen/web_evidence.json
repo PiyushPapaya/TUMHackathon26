@@ -1,0 +1,26 @@
+[
+ {
+  "id": "EV-G60-0006",
+  "source_type": "web",
+  "source_name": "Wettbewerbs-Recherche",
+  "derivative": "G60",
+  "market": "US",
+  "text": "[Beispiel] Testbericht: Wettbewerber bringt physische Tasten für Klima und Lautstärke zurück.",
+  "url": "https://example.com/test-bericht",
+  "retrieved_at": "2026-10-10T15:00:00Z",
+  "polarity": -1,
+  "meta": {}
+ },
+ {
+  "id": "EV-G60-0010",
+  "source_type": "web",
+  "source_name": "Markt-Recherche",
+  "derivative": "G60",
+  "market": "US",
+  "text": "[Beispiel] Trend 2028+: Routenplanung mit Ladestopps und Säulenstatus wird Standard.",
+  "url": "https://example.com/trend",
+  "retrieved_at": "2026-10-10T15:00:00Z",
+  "polarity": 0,
+  "meta": {}
+ }
+]

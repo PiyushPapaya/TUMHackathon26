@@ -1,0 +1,18 @@
+{
+  "id": "F70-EU",
+  "derivative": "F70",
+  "model_name": "BMW 1er (F70)",
+  "market": "EU",
+  "countries": ["GB", "SE", "FR", "DK", "FI", "NO", "ES", "DE", "IT", "NL", "LV"],
+  "competitors": ["Mercedes-Benz A-Class", "Audi A3 Sportback", "VW Golf", "Volvo EX30"],
+  "successor_horizon": "2031",
+  "data": {
+    "feedback_file": "F70_feedback_hackathon.xlsx",
+    "study_file": "F70_G60_G68_G70_customer_studies.xlsx",
+    "study_sheet": "CN_EU_2025",
+    "study_column": "BMW 1 Series F70",
+    "sales_sheet": "F70",
+    "sales_market_code": "EU",
+    "option_list_file": "F70_OptionList.PDF"
+  }
+}

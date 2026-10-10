@@ -1,66 +1,49 @@
-# Zeitplan Sa 09:00 bis So 12:00 (pro Rolle)
+# Zeitplan Sa 14:45 bis So 12:00 (pro Pfad)
 
-Rollen: **P** = Piyush (Lead, Backend, Merges) · **L** = Lasse (Frontend) · **A** = Aditya (Daten, Tests, Demo) · **D** = Dennis (Partner-Kontakt, Research, README-Texte) · **F** = Fabian (Pitch, Slides, Design, Video)
-
-**Harte Meilensteine** (fett) werden nicht verschoben, sondern der Umfang wird gekürzt.
+**L** = Lead (Piyush) · **A** = Interne Evidenz · **B** = Externe Evidenz + Qualitätsbeweis · **C** = Anforderungen + Priorisierung · **D** = PM-Cockpit
+Details pro Pfad: `docs/pfade/`. **Fett** = harter Meilenstein: wackelt er, wird gekürzt (`docs/PLAN.md` §9), nicht verlängert.
 
 ## Samstag
 
-| Zeit | Programm | P | L | A | D | F |
-|---|---|---|---|---|---|---|
-| 09:00 | Check-in (**alle**, sonst keine Challenge-Wahl) | Check-in, Laptop: `git pull`, `entire status` | dto. | dto. | dto. | dto. |
-| 10:00 | Kick-off + Reveal | mitschreiben | mitschreiben | Daten-Hinweise notieren | **Briefs wörtlich mitschreiben** → `CHALLENGE.md` | Story-Ideen notieren |
-| 11:00 | Entire-Onboarding | **hingehen** | Setup prüfen | Setup prüfen | Skill `challenge-intake` pro Partner | Skill `challenge-intake` mitlesen |
-| 11:30 | Ideen-Scoring (30 min) | moderiert, entscheidet Stack-Schnitt | Machbarkeit Frontend | Messbarkeit: welche Zahl? | Scores eintragen | Demo-Fähigkeit bewerten |
-| 12:00 | Deep Dives (parallel) | Favorit-Partner | Favorit-Partner | 2. Partner | **Fragen stellen** (aus SPONSOREN.md) | 3. Partner |
-| **13:00** | **Idee fix + Challenge auf ehl.gg gewählt** | **wählt auf ehl.gg** | | | `CHALLENGE.md` final | One-Liner Entwurf |
-| 13:30 | Hacking-Start | Backend-Gerüst (STACK.md) | Frontend-Gerüst | Testset/Daten sichten, 20 Fälle labeln | README-Problem/Lösung | Pitch-Gerüst, Logo |
-| **14:00** | **API-Vertrag steht** (`src/shared/API.md` + Beispiel-JSON) | schreibt + merged | baut gegen Mocks | Testfälle als JSON | | Wireframe/Design |
-| 15:00 | Talk: OpenAI Codex | (optional) | | | hingehen, Notizen | |
-| 16:00 | Fireside Chat Atira | | | | hingehen (wenn Atira gewählt: Pflicht) | hingehen |
-| 16:00-18:00 | Bauen | LLM-Pipeline | Kernseiten | Eval-Skript (Baseline) | Mentoren/Cherry Office Hours | Slides 1-5 |
-| **18:00** | **Erster End-to-End-Durchstich** (UI → API → LLM → UI, hässlich ok) | | | erste Zahl gegen Baseline | Zahl in README | Demo-Ablauf skizzieren |
-| 19:00 | Dinner (**gemeinsam, 20 min Stand-up**: was läuft, was kürzen?) | | | | | |
-| 19:30-22:00 | Bauen | Robustheit, Fehlerfälle | UX der Demo-Strecke | Tests + Demo-Daten | Jury-FAQ | Slides + Story |
-| **22:00** | **MVP läuft** (auf main, deployt), **erste Abgabe auf ehl.gg** (Sicherheitsnetz) | merged + submit | | Selbstreview-Skill | | |
+| Zeit | L | A | B | C | D |
+|---|---|---|---|---|---|
+| 14:45 | Kick-off: Idee, Pfade verteilen | Pfad wählen, Setup | dto. | dto. | dto. |
+| 15:00 | PR `neustart` mergen, CODEOWNERS | `load_feedback` + Test | Websuche-Probe, `Claims`-Schema | Formel lesen, `derive.py` v1 (Beispiel-Befunde) | Next.js-Gerüst, `api.ts` |
+| 16:00 | Mentor-Fragen, Merge | `load_study`, `load_context` | Fragen-Generator, `trust.py` | Faktoren im Code | Seite 1 Liste |
+| **17:00** | Stufe `evidence` echt laufen lassen | **PR: echte Belege** | `research()` v1 | Score auf echten Belegen | Seite 2 Detail |
+| **18:00** | **Durchstich**: Pipeline → Bundle → UI zeigt echte Liste | Befunde v1 ohne LLM | **5+ Webbelege mit URL** | **`requirements.json` echt** | **Liste → Detail mit Wasserfall** |
+| 19:00 | Dinner + Stand-up (je 1 min, Kürzungen?) | | | | |
+| 19:30 | Merge, Audit-Ereignisse Pipeline | Befunde v2 mit LLM | Triangulation | Scope-Wächter, Offer-Check | Entscheiden + Prüfpfad |
+| 21:00 | Merge, `selbstreview` vorbereiten | Konflikte | Triangulation fertig | Challenge mit LLM | Gewichte-Regler |
+| **22:00** | **MVP auf main + 1. Abgabe ehl.gg** | PR | PR | PR | PR |
 
-## Nacht (Schlafschichten, je 4 h)
+## Nacht (Schlaf in zwei Schichten, je ~4 h)
 
-| Schicht | Schläft | Wach (Aufgabe) |
+| Schicht | Schläft | Wach und macht |
 |---|---|---|
-| 23:00-03:00 | **D, F** | P (Backend), L (Frontend), A (Eval) |
-| 03:00-07:00 | **P, L, A** | D (README, Jury-FAQ), F (Slides, Video-Skript) |
+| 23:00-03:00 | **B, D** | L Integration + Deck-Rahmen · A Szenarien F70-EU/G70-US · C Kalibrierung Evidenzstufen |
+| 03:00-07:00 | **L, A, C** | B Eval-Set labeln + `run_eval.py` · D UI-Politur + Trichter-Seite |
 
-Regel nachts: Nur kleine, getestete PRs. Piyush merged vor dem Schlafen alles Grüne. Nichts Neues anfangen nach 02:00.
+Regel nachts: nur kleine, getestete PRs; nach 02:00 nichts Neues anfangen. L merged vor dem Schlafen alles Grüne.
 
 ## Sonntag
 
-| Zeit | P | L | A | D | F |
+| Zeit | L | A | B | C | D |
 |---|---|---|---|---|---|
-| 07:00 | Merge-Runde, Deploy prüfen | Bugs aus Nacht | Eval final (Zahl + Konfidenz/Spanne) | README final | Slides final |
-| **08:00** | **Feature-Freeze**: nur noch Bugs, Texte, Demo | | | | |
-| 08:00 | Frühstück + Stand-up | | | | |
-| 08:30-10:00 | Skill `demo-check` (Fresh Clone) | UI-Politur der Demo-Strecke | **Backup-Video aufnehmen** (2 min) | Skill `selbstreview`, Fixes priorisieren | Video schneiden + hochladen |
-| **10:00** | **Pitch-Probe mit Stoppuhr** (Skill `pitch-prep`), alle 5 beantworten je 2 Jury-Fragen | | | | |
-| **10:30** | **Code-Freeze** → Skill `abgabe` (Runbook [ABGABE.md](ABGABE.md)) | | | | |
-| **11:30** | **Abgegeben** (30 min Puffer) | | | | |
-| 12:00 | Deadline (hart) · danach Pitches 12:00-14:30, 6 min/Team | | | | |
-| 14:30 | Finalisten · 16:30 Preisverleihung | | | | |
+| 07:00 | Merge-Runde, Pipeline alle Szenarien | Bugs | **Eval-Zahl in `REPORT.md`** | Bugs | Bugs |
+| **08:00** | **Feature-Freeze** + Frühstück-Stand-up | | | | |
+| 08:30 | Skill `demo-check` (Fresh Clone) | Pitch-Folie A | Pitch-Folie B, Zahl in README | Pitch-Folie C | Demo-Strecke 3× + **Backup-Video** |
+| 09:30 | Deck zusammenbauen | Jury-Fragen üben | dto. | dto. | dto. |
+| **10:00** | **Pitch-Probe mit Stoppuhr** (Skill `pitch-prep`), jede Person beantwortet 2 Jury-Fragen | | | | |
+| **10:30** | **Code-Freeze** → Skill `abgabe` | | | | |
+| **11:30** | **Abgegeben** (30 min Puffer vor 12:00) | | | | |
 
-## Merge-Fenster (Piyush ist der einzige Merger)
+## Merge-Fenster (nur der Lead merged)
 
-| Tag | Fenster |
-|---|---|
-| Sa | **jede volle Stunde 14:00-24:00** (14, 15, … 23, 24 Uhr) |
-| Nacht | nur nach Absprache (Vertretungsmodus, `docs/ABGABE.md` Notfall B) |
-| So | **08:00, 09:00, 10:00, 10:30 (letzter Merge = Code-Freeze)** |
+Sa jede volle Stunde 15:00-24:00 · So 07:00, 08:00, 09:00, 10:00, 10:30 (letzter = Code-Freeze).
+Zum Fenster ist der PR grün (CI `checks`) und aktuell mit main (`git fetch origin && git merge origin/main`).
 
-- Zum Fenster muss der PR **grün** sein (CI `checks`) und **aktuell mit main** (`git merge origin/main`, kein Rebase).
-- PRs, die das Fenster verpassen oder rot sind, warten aufs nächste. Kein Hinterherrufen.
-- Warum: Ein Merger für 5 Leute wird sonst zum Engpass und muss ständig den Kontext wechseln. Feste Takte machen Merges planbar.
+## Timeboxing
 
-## Timeboxing-Regeln
-
-- Jede Aufgabe bekommt eine Zeitbox. **Nach 45 min festgefahren → Piyush/Team fragen**, nicht weiterbohren.
-- Wenn ein harter Meilenstein wackelt: **Umfang kürzen**, nicht Zeit verlängern. Kürzungsreihenfolge steht in `CHALLENGE.md` (Nice-to-have zuerst).
-- Stündlich: committen + pushen (Entire-Checkpoints!) + kleiner PR.
+- Jede Aufgabe hat die Zeitbox aus der Pfad-Datei. **45 min ohne Fortschritt → Lead fragen.**
+- Stündlich committen + pushen (Entire-Checkpoints!) + kleiner PR.

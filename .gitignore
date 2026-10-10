@@ -5,6 +5,12 @@
 *.pem
 *.key
 
+# ─── BMW-Daten (vertraulich, Repo ist ÖFFENTLICH) ────────────────────────
+# Rohdaten, Pipeline-Ergebnisse (enthalten Kundenzitate), LLM-Cache, Audit-DB
+# bleiben lokal. Verteilung im Team per USB/Drive, siehe data/README.md.
+data/*
+!data/README.md
+
 # ─── Lokale Einstellungen von Claude Code und Entire ─────────────────────
 .claude/settings.local.json
 .entire/settings.local.json
