@@ -1,0 +1,65 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4K1J9QMM4XRMB8D9KCFC7FB",
+  "session_id": "99c5f643-ecf5-4efc-8727-edd867cb242f",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T13:55:49.1307683Z",
+  "branch": "main",
+  "checkpoints_count": 2,
+  "files_touched": [
+    ".gitignore",
+    "data/demo_cache/Claims_374b90c74433c6177a87c3ec.json",
+    "docs/ARCHITEKTUR.md",
+    "src/backend/core/llm.py",
+    "tests/test_llm.py"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5-5",
+  "turn_id": "ba7284e45d6a",
+  "checkpoint_transcript_start": 113,
+  "transcript_lines_at_start": 113,
+  "compact_transcript_start": 19,
+  "token_usage": {
+    "input_tokens": 10,
+    "cache_creation_tokens": 10460,
+    "cache_read_tokens": 475702,
+    "output_tokens": 3920,
+    "api_call_count": 5
+  },
+  "session_metrics": {
+    "turn_count": 3
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T13:55:49.0799463Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 192,
+    "total_committed": 0,
+    "total_lines_changed": 192,
+    "agent_percentage": 0,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 298,
+      "user_lines_removed": 192,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".gitignore": 60,
+        "data/demo_cache/Claims_374b90c74433c6177a87c3ec.json": 44,
+        "docs/ARCHITEKTUR.md": 84,
+        "src/backend/core/llm.py": 66,
+        "tests/test_llm.py": 44
+      },
+      "user_removed_per_file": {
+        ".gitignore": 56,
+        "docs/ARCHITEKTUR.md": 84,
+        "src/backend/core/llm.py": 52
+      }
+    }
+  ]
+}

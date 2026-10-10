@@ -1,0 +1,30 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4K1J9QMM4XRMB8D9KCFC7FB",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 2,
+  "files_touched": [
+    ".gitignore",
+    "data/demo_cache/Claims_374b90c74433c6177a87c3ec.json",
+    "docs/ARCHITEKTUR.md",
+    "src/backend/core/llm.py",
+    "tests/test_llm.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 10,
+    "cache_creation_tokens": 10460,
+    "cache_read_tokens": 475702,
+    "output_tokens": 3920,
+    "api_call_count": 5
+  }
+}
