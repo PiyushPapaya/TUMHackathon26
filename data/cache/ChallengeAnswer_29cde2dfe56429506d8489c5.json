@@ -1,0 +1,22 @@
+{
+  "answer": "Multiple customer signals report reduced boot volume caused by hybrid batteries, missing/electric tailgates or internal shut buttons, lack of luggage fittings, and unreliable tailgate operation — directly opposing the requirement’s usability and reliability targets. No bench‑test results are provided to show the 99%/500‑cycle target is achievable; owner reports of failures imply real‑world experience may not meet the <0.5% 12‑month target. The EV architecture press coverage is supportive but prospective and does not refute current complaints.",
+  "supporting_evidence_ids": [
+    "EV-F70-EU-FB-F70-1039",
+    "EV-F70-EU-WEB-84",
+    "SIG-F70-EU-WEB-10"
+  ],
+  "counter_evidence_ids": [
+    "SIG-F70-EU-022",
+    "SIG-F70-EU-025",
+    "EV-F70-EU-FB-F70-0377",
+    "EV-F70-EU-FB-F70-0942",
+    "EV-F70-EU-FB-F70-1535",
+    "EV-F70-EU-FB-F70-0961",
+    "EV-F70-EU-FB-F70-1236",
+    "EV-F70-EU-FB-F70-0278",
+    "EV-F70-EU-FB-F70-0955",
+    "EV-F70-EU-ST-29",
+    "EV-F70-EU-FB-F70-1231"
+  ],
+  "suggested_change": "Make an interior shut button and luggage tie‑downs mandatory; require pre‑launch bench tests plus early field pilot validation of tailgate reliability before sign‑off (or allow a relaxed initial owner‑failure threshold until field data confirm <0.5%)."
+}

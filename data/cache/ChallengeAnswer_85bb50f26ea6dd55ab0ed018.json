@@ -1,0 +1,18 @@
+{
+  "answer": "Unclear. The evidence shows widespread connectivity, charging, Wi‑Fi and voice complaints and nontrivial study dissatisfaction (supporting IDs below), but none of the signals, feedback or studies include customer age or demographics, so we cannot determine whether this is primarily an older‑customer habit.",
+  "supporting_evidence_ids": [
+    "SIG-G60-US-019",
+    "SIG-G60-US-029",
+    "SIG-G60-US-043",
+    "SIG-G60-US-042",
+    "EV-G60-US-ST-92",
+    "EV-G60-US-ST-89",
+    "EV-G60-US-ST-98",
+    "EV-G60-US-FB-G60-1756",
+    "EV-G60-US-FB-G60-3156",
+    "EV-G60-US-FB-G60-0115",
+    "EV-G60-US-FB-G60-0736"
+  ],
+  "counter_evidence_ids": [],
+  "suggested_change": "Add an acceptance/data requirement to capture customer age in real‑world tests and report metrics by age cohorts (e.g., <35, 35–55, >55); require targets be met per cohort or justify deviations."
+}

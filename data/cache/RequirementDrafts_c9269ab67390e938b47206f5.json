@@ -1,0 +1,135 @@
+{
+  "drafts": [
+    {
+      "title": "Keep the large curved display as a visible premium feature while restoring tactile quick-controls for frequent functions",
+      "description": "Customers keep the large curved display they praise, but can operate the most common functions (volume, track skip, temperature up/down, seat heating, and defog) without looking at the screen. The vehicle combines the display’s visual appeal with physical or tactile controls and steering-wheel shortcuts so frequent tasks are fast and glance-free.",
+      "acceptance_criterion": "In a usability test with N≥30 participants, the top-5 frequent functions (volume, track skip, temperature ±2°C, seat heating on/off, front defog) can be performed without looking at the central screen in ≤3 seconds in ≥95% of attempts. In the same test, ≥70% of participants cite the curved display as an important purchase factor.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-001",
+        "SIG-G60-US-002",
+        "SIG-G60-US-003"
+      ],
+      "assumptions": [
+        "The identification of 'top-5 functions' is based on current usage telemetry and customer feedback in the US market.",
+        "Physical/tactile controls can be integrated without compromising safety, ergonomic reach, or major interior packaging changes.",
+        "Voice and steering-wheel controls remain available and can complement tactile controls."
+      ],
+      "uncertainties": [
+        "Exact preferred list of 'top' functions may shift over time or differ between buyer segments.",
+        "Some customers may still prefer full touch control for secondary functions—balancing scope of tactile controls vs. screen space is subjective."
+      ],
+      "effort": "M",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Present a range estimate customers can trust in real-world conditions (including winter)",
+      "description": "Drivers receive a remaining-range estimate that reflects real-world energy use and weather effects so they can confidently decide whether they need to charge before a trip.",
+      "acceptance_criterion": "Across a set of standardized US test drives (including cold-weather conditions between -10°C and +5°C and mixed driving) the predicted remaining range error is within ±8 miles or ±10% (whichever is larger) compared to observed usable range over 50-mile verification routes in ≥90% of runs.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-004"
+      ],
+      "assumptions": [
+        "The vehicle can collect short-term historical consumption and ambient temperature to inform predictions.",
+        "Access to route and elevation data and typical driving-behavior models is available for prediction refinement.",
+        "Customers accept a brief initial learning period where the system improves from early driving data."
+      ],
+      "uncertainties": [
+        "Extreme driving styles or accessory loads (towing, heavy cargo) may still cause larger deviations.",
+        "Regulatory limits or sensor accuracy in extreme cold could affect prediction performance."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Help drivers find chargers and know their real-time condition before arrival",
+      "description": "When planning a trip or searching en route, drivers see which public chargers are nearby, whether they are currently operational, and how recently their status was confirmed, so charging stops are predictable and less stressful.",
+      "acceptance_criterion": "In field trials across multiple US metros, chargers shown as “operational” are actually available and usable on arrival within 15 minutes in ≥85% of sampled visits. For listed chargers, a most-recent-status timestamp is displayed; ≥80% of chargers in the dataset report a status update timestamp within the last 30 minutes.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-005"
+      ],
+      "assumptions": [
+        "Partnerships or data feeds from major charging networks and crowd-sourced user reports are available to provide real-time status.",
+        "The vehicle UI can surface both operator-reported status and recent crowd-sourced confirmations.",
+        "Privacy- and network-related constraints allow status freshness sufficient for the acceptance targets."
+      ],
+      "uncertainties": [
+        "Some third-party chargers may not provide timely status updates; coverage will vary by region and network.",
+        "Crowd-sourced reports may be biased (e.g., more reports for popular sites) and require moderation to avoid false positives/negatives."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Provide usable front storage that fits everyday carry items",
+      "description": "Customers get additional front-area storage suitable for daily needs (e.g., a carry-on suitcase, charging cables, or grocery bags) so they feel the BEV provides comparable utility to competitors.",
+      "acceptance_criterion": "The front storage compartment accommodates at least one standard airline carry-on bag (22 x 14 x 9 inches) plus two grocery bags simultaneously, secured for transport and accessible without relocating major interior items, verified in physical packaging tests.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-006"
+      ],
+      "assumptions": [
+        "Packaging and crash-safety constraints allow creation of a usable front storage volume without unacceptable trade-offs to HVAC or crash structures.",
+        "Typical customer items include carry-on suitcases, charging cables, and grocery bags as testable proxies."
+      ],
+      "uncertainties": [
+        "Achieving the stated usable volume may require trade-offs with other under-hood packaging or HVAC components.",
+        "Different markets may have different expectations for what 'usable' front storage should hold."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Hands-free tailgate that works reliably when customers need it",
+      "description": "The hands-free (kick) tailgate opens consistently when customers attempt it so they can access the trunk without fumbling with keys or buttons.",
+      "acceptance_criterion": "Under a standardized test matrix (varied footwear, standing positions, luggage present, wet conditions, lighting), the hands-free tailgate gesture successfully triggers open or close within 2 seconds in ≥90% of attempts from a distance of 0.5–1.2 meters and with the vehicle locked/unlocked as appropriate.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-007"
+      ],
+      "assumptions": [
+        "Sensor placement and detection algorithms can be improved to reduce false negatives without creating safety or nuisance openings.",
+        "Typical customer use cases (carrying grocery bags, stroller, etc.) are captured in the test matrix."
+      ],
+      "uncertainties": [
+        "Some edge cases (unusual footwear, heavy snowfall on sensors) may still reduce detection reliability.",
+        "Regulatory or warranty constraints may limit sensor power or placement choices in some markets."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Keep ride comfort at least as good as today",
+      "description": "The successor delivers the same comfortable driving and ride impression customers praise today so current G60 owners’ primary strength is preserved.",
+      "acceptance_criterion": "In a blinded comparative user study with at least 30 representative drivers on a standardized combination of urban and highway routes, ≥70% of participants rate the successor’s overall ride comfort as equal or better than the current G60 baseline.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-008"
+      ],
+      "assumptions": [
+        "The current G60 baseline ride comfort measurement is available from previous customer studies as the comparison anchor.",
+        "The test route and participant panel reflect typical US driving conditions and customer demographics."
+      ],
+      "uncertainties": [
+        "Perceptions of comfort vary by individual; chassis layout or weight changes for electrification could change feel in ways some customers prefer and others do not.",
+        "Trade-offs between comfort and other attributes (sport handling, packaging) may be required."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}

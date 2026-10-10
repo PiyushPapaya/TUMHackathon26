@@ -1,0 +1,940 @@
+[
+ {
+  "id": "SIG-F70-EU-001",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "A delight to drive",
+  "summary": "Customers say the car is smooth, comfortable and genuinely enjoyable to drive, with strong performance and confident handling. They also find the tech and driver aids intuitive and helpful, and some praise connected features like the app and heated controls.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0246",
+   "EV-F70-EU-FB-F70-0323",
+   "EV-F70-EU-FB-F70-0252",
+   "EV-F70-EU-FB-F70-0332",
+   "EV-F70-EU-FB-F70-0334"
+  ],
+  "mention_count": 398,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-005",
+   "SIG-F70-EU-016"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-002",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Really enjoyable to drive with strong performance",
+  "summary": "Customers consistently say the car is smooth, responsive and fun to drive, delivering strong acceleration and good fuel economy. Many also praise the comfortable, high quality cabin and seats.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0028",
+   "EV-F70-EU-FB-F70-0033",
+   "EV-F70-EU-FB-F70-0108",
+   "EV-F70-EU-FB-F70-0427",
+   "EV-F70-EU-FB-F70-0421"
+  ],
+  "mention_count": 223,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-005",
+   "SIG-F70-EU-021"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-003",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Everything on the touch screen is distracting",
+  "summary": "Customers report that too many essential controls are only available through the touchscreen with no physical buttons or dial. They say the interface is fiddly, slow or unreliable and can be distracting or risky to use while driving.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0088",
+   "EV-F70-EU-FB-F70-0141",
+   "EV-F70-EU-FB-F70-0027",
+   "EV-F70-EU-FB-F70-1160",
+   "EV-F70-EU-FB-F70-1541"
+  ],
+  "mention_count": 96,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-015",
+   "SIG-F70-EU-011"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-004",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Software is terrible and overly complicated",
+  "summary": "The infotainment and tech feel glitchy, unintuitive and needlessly complex, with too many touchscreen controls and fewer physical buttons. Problems often remain after updates or dealer visits, causing safety worries and constant frustration in daily use.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0047",
+   "EV-F70-EU-FB-F70-0628",
+   "EV-F70-EU-FB-F70-1160",
+   "EV-F70-EU-FB-F70-1400",
+   "EV-F70-EU-FB-F70-1999"
+  ],
+  "mention_count": 82,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-011"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-005",
+  "kind": "complaint",
+  "category": "driving_experience",
+  "title": "Engine underpowered and sluggish, transmission feels awful",
+  "summary": "Drivers report the drivetrain feels weak or inconsistent. Engines can feel underpowered or delayed on throttle, gearboxes are jerky or slip, and some cars lack all‑wheel drive or show torque steer.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0311",
+   "EV-F70-EU-FB-F70-0336",
+   "EV-F70-EU-FB-F70-0216",
+   "EV-F70-EU-FB-F70-0794",
+   "EV-F70-EU-FB-F70-1207"
+  ],
+  "mention_count": 60,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-002",
+   "SIG-F70-EU-001"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-006",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Lovely to drive and handles really well",
+  "summary": "Customers say the car is enjoyable and confident to drive, with a smooth, comfortable ride and sharp, composed handling. Many mention it feels solid and nimble on local roads and motorways, making everyday driving and longer trips pleasant.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0113",
+   "EV-F70-EU-FB-F70-0490",
+   "EV-F70-EU-FB-F70-0888",
+   "EV-F70-EU-FB-F70-1801",
+   "EV-F70-EU-FB-F70-1293"
+  ],
+  "mention_count": 60,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-021"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-007",
+  "kind": "delight",
+  "category": "exterior",
+  "title": "Love how the car looks",
+  "summary": "Customers frequently praise the car's exterior styling, saying the design and colours are attractive, sporty and classy. Many say it turns heads and matches the car's solid build and interior quality.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0247",
+   "EV-F70-EU-FB-F70-0815",
+   "EV-F70-EU-FB-F70-1959",
+   "EV-F70-EU-FB-F70-1552",
+   "EV-F70-EU-FB-F70-1417"
+  ],
+  "mention_count": 42,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-033"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-008",
+  "kind": "delight",
+  "category": "comfort_space",
+  "title": "Seats are comfortable and make driving enjoyable",
+  "summary": "Customers say the seats are comfortable, supportive, and easy to adjust. They report that the seating comfort makes driving and longer journeys more pleasant.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0427",
+   "EV-F70-EU-FB-F70-0652",
+   "EV-F70-EU-FB-F70-0959",
+   "EV-F70-EU-FB-F70-1531",
+   "EV-F70-EU-FB-F70-1109"
+  ],
+  "mention_count": 41,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-009"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-009",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Seats not comfy and lack support",
+  "summary": "Customers say the seats are uncomfortable and don’t give proper support, leaving them with lower back pain and an awkward seating position. They also report quality and safety problems such as poor stitching or creasing, squeaks or electric seat faults, and seat belts not working.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0031",
+   "EV-F70-EU-FB-F70-0977",
+   "EV-F70-EU-FB-F70-0462",
+   "EV-F70-EU-FB-F70-0481"
+  ],
+  "mention_count": 36,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-008",
+   "SIG-F70-EU-036"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-010",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Really lovely car comfy and nice to drive",
+  "summary": "Customers say the car is really enjoyable to drive and very comfortable. They feel it has a quality build, is economical to run, and features like the gearbox and drive modes add to the driving pleasure.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0397",
+   "EV-F70-EU-FB-F70-1332",
+   "EV-F70-EU-FB-F70-0617",
+   "EV-F70-EU-FB-F70-0506",
+   "EV-F70-EU-FB-F70-0066"
+  ],
+  "mention_count": 25,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-037"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-011",
+  "kind": "delight",
+  "category": "infotainment_digital",
+  "title": "Infotainment works flawlessly and is excellent",
+  "summary": "Customers say the car’s tech and infotainment are a real highlight, with responsive touchscreens, reliable operation and great audio. They enjoy using the system and find the electronic equipment well executed and satisfying to use.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0606",
+   "EV-F70-EU-FB-F70-0818",
+   "EV-F70-EU-FB-F70-1181",
+   "EV-F70-EU-FB-F70-1083"
+  ],
+  "mention_count": 24,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-004",
+   "SIG-F70-EU-003"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-012",
+  "kind": "delight",
+  "category": "driver_assistance",
+  "title": "Feels safe, solid and comfortable to drive",
+  "summary": "Customers consistently say the car makes them feel safe and confident on the road, with a solid, stable and enjoyable driving experience. Many mention comfort and helpful safety tech such as sensors, cameras and mirror warnings that reduce stress when parking and in traffic.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0850",
+   "EV-F70-EU-FB-F70-1721",
+   "EV-F70-EU-FB-F70-0982",
+   "EV-F70-EU-FB-F70-0042",
+   "EV-F70-EU-FB-F70-1406"
+  ],
+  "mention_count": 21,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-013",
+  "kind": "delight",
+  "category": "interior",
+  "title": "Modern interior looks and feels high quality",
+  "summary": "Customers praise the modern, stylish cabin and high-quality materials, saying the interior looks amazing and feels solidly built. They also highlight updated tech and screens and feel the cabin is a clear improvement over the earlier model.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0056",
+   "EV-F70-EU-FB-F70-0297",
+   "EV-F70-EU-FB-F70-1021",
+   "EV-F70-EU-FB-F70-2093",
+   "EV-F70-EU-FB-F70-1848"
+  ],
+  "mention_count": 19,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-014",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Fake engine sound and poor audio quality",
+  "summary": "Customers say the engine and exhaust noise feels artificial or too quiet, with fake pops coming through the speakers instead of a natural sporty note. They also report disappointing audio performance, including buzzing, distortion and generally unclean sound from the system.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-1578",
+   "EV-F70-EU-FB-F70-1656",
+   "EV-F70-EU-FB-F70-1587",
+   "EV-F70-EU-FB-F70-2031",
+   "EV-F70-EU-FB-F70-2106"
+  ],
+  "mention_count": 18,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-015",
+  "kind": "delight",
+  "category": "infotainment_digital",
+  "title": "Big curved touch display shows all the info",
+  "summary": "Customers say the large, curved touchscreen displays the information they want, offers smooth connectivity, and has a helpful layout and features. Many describe it as excellent or straightforward to use once they get used to it.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0122",
+   "EV-F70-EU-FB-F70-1510",
+   "EV-F70-EU-FB-F70-0928",
+   "EV-F70-EU-FB-F70-0711",
+   "EV-F70-EU-FB-F70-1808"
+  ],
+  "mention_count": 18,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-003",
+   "SIG-F70-EU-028"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-016",
+  "kind": "complaint",
+  "category": "driving_experience",
+  "title": "Gearbox feels jerky and sluggish",
+  "summary": "Drivers report the gearbox is jerky and slow to engage, with hopping, slipping or lurching when pulling away and rough or delayed downshifts. It can make loud juddering noises and often feels unsure which gear to select, leaving owners frustrated and comparing it unfavorably to their earlier BMWs.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0336",
+   "EV-F70-EU-FB-F70-0413",
+   "EV-F70-EU-FB-F70-0578",
+   "EV-F70-EU-FB-F70-1817",
+   "EV-F70-EU-FB-F70-1173"
+  ],
+  "mention_count": 18,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-024",
+   "SIG-F70-EU-001"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-017",
+  "kind": "complaint",
+  "category": "exterior",
+  "title": "Tyres are noisy and have poor grip",
+  "summary": "Tyres whistle or are noisier than expected and they lack grip, causing wheel spin in bad weather. People also report punctures and difficulty getting replacement tyres, and damage from potholes even when the tyre didn’t blow.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0791",
+   "EV-F70-EU-FB-F70-0644",
+   "EV-F70-EU-FB-F70-2008",
+   "EV-F70-EU-FB-F70-1159",
+   "EV-F70-EU-FB-F70-1052"
+  ],
+  "mention_count": 18,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-018",
+  "kind": "complaint",
+  "category": "interior",
+  "title": "Electronic dash is distracting and unreliable",
+  "summary": "The electronic instrument panel causes distracting reflections in the outer mirrors, is difficult to operate safely while driving, and in some cases has failed or crashed, removing key functions. Customers find controls and displays unreliable and frustrating to use on the move.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-1966",
+   "EV-F70-EU-FB-F70-2009",
+   "EV-F70-EU-FB-F70-1846",
+   "EV-F70-EU-FB-F70-0880",
+   "EV-F70-EU-FB-F70-0314"
+  ],
+  "mention_count": 16,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-019",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Keys feel low quality and unreliable",
+  "summary": "The key feels low quality and awkward to use, with a slippery casing and side-mounted buttons. Digital keys and key-linked functions are unreliable, the car often forgets driver preferences, and the locking system can behave unpredictably including locking after unlocking and triggering alarms.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-1460",
+   "EV-F70-EU-FB-F70-0391",
+   "EV-F70-EU-FB-F70-0530",
+   "EV-F70-EU-FB-F70-2070",
+   "EV-F70-EU-FB-F70-1889"
+  ],
+  "mention_count": 16,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-020",
+  "kind": "complaint",
+  "category": "driver_assistance",
+  "title": "Features disappeared and driver aids stopped working",
+  "summary": "Customers say driver assistance and tech functions stop working or disappear after updates or over time. They also report software freezes, unreliable controls, and poor support from dealers when seeking fixes.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-1221",
+   "EV-F70-EU-FB-F70-0697",
+   "EV-F70-EU-FB-F70-1191",
+   "EV-F70-EU-FB-F70-2113",
+   "EV-F70-EU-FB-F70-1889"
+  ],
+  "mention_count": 15,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-034"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-021",
+  "kind": "unmet_need",
+  "category": "driving_experience",
+  "title": "Lack of engine power and poor torque delivery",
+  "summary": "Customers say the car feels underpowered and lacks punch, leaving them wishing they had chosen a larger engine or different model. Several drivers also report poor torque delivery and torque steer that make the driving feel less engaging.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-1431",
+   "EV-F70-EU-FB-F70-1462",
+   "EV-F70-EU-FB-F70-1523",
+   "EV-F70-EU-FB-F70-1856",
+   "EV-F70-EU-FB-F70-1343"
+  ],
+  "mention_count": 15,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-002",
+   "SIG-F70-EU-006"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-022",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Boot is too small and cramped",
+  "summary": "Customers say the boot is too small and feels cramped, often reduced further by the hybrid battery so everyday items no longer fit. Some also report the tailgate is manual or lacks electric opening and the boot has no practical fittings like luggage tie‑downs, making loading and securing luggage difficult. Study: Luggage capacity: mean 7.1 (EU study 2025).",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0377",
+   "EV-F70-EU-FB-F70-0942",
+   "EV-F70-EU-FB-F70-1535",
+   "EV-F70-EU-FB-F70-0961",
+   "EV-F70-EU-ST-29"
+  ],
+  "mention_count": 15,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-023",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Sat nav is unreliable and tied to the app",
+  "summary": "The sat nav often loses features or goes back to a basic system, and customers feel forced to use or register the BMW app or pay extra to get full functionality. It also gives poor or risky routing, drops speech and voice functions, and can be hard to set up or get working with phones.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0128",
+   "EV-F70-EU-FB-F70-0476",
+   "EV-F70-EU-FB-F70-0022",
+   "EV-F70-EU-FB-F70-0188",
+   "EV-F70-EU-FB-F70-1833"
+  ],
+  "mention_count": 15,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-024",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Automatic gearbox is smooth and seamless",
+  "summary": "Owners consistently praise the automatic gearbox for smooth, effortless shifts and quick responses, making the car pleasant and easy to drive. Many say it feels spot on compared with their previous cars and adds to an overall enjoyable driving experience.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0753",
+   "EV-F70-EU-FB-F70-1181",
+   "EV-F70-EU-FB-F70-1925",
+   "EV-F70-EU-FB-F70-0475",
+   "EV-F70-EU-FB-F70-0359"
+  ],
+  "mention_count": 15,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-016"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-025",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Boot lid won't open or close reliably",
+  "summary": "Customers say the boot lid is unreliable: it often will not open or close with the key or keyless system, can be hard to shut, and sometimes closes by itself. Many owners also miss a simple internal button to shut the boot.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-1039",
+   "EV-F70-EU-FB-F70-1236",
+   "EV-F70-EU-FB-F70-0278",
+   "EV-F70-EU-FB-F70-0955",
+   "EV-F70-EU-FB-F70-1231"
+  ],
+  "mention_count": 15,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-026",
+  "kind": "complaint",
+  "category": "driving_experience",
+  "title": "Brakes feel unprogressive and jerky",
+  "summary": "Brakes either do nothing or grab suddenly, making stopping feel unprogressive, delayed, or jerky. Owners also report harsh, unadjustable regenerative braking, sudden hard brake application without warning, and early rusting of brake discs.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0031",
+   "EV-F70-EU-FB-F70-0110",
+   "EV-F70-EU-FB-F70-1457",
+   "EV-F70-EU-FB-F70-0720",
+   "EV-F70-EU-FB-F70-1638"
+  ],
+  "mention_count": 14,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-027",
+  "kind": "complaint",
+  "category": "exterior",
+  "title": "mirrors create blind spots and reflect light",
+  "summary": "Customers report exterior mirrors reduce visibility by creating blind spots and reflecting interior lights at night. They also say expected mirror functions are missing or not working, and that support to fix these issues has been lacking.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0196",
+   "EV-F70-EU-FB-F70-1454",
+   "EV-F70-EU-FB-F70-2032",
+   "EV-F70-EU-FB-F70-0764",
+   "EV-F70-EU-FB-F70-1092"
+  ],
+  "mention_count": 13,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-028",
+  "kind": "unmet_need",
+  "category": "infotainment_digital",
+  "title": "Bring back physical buttons for heating and climate",
+  "summary": "Customers want real buttons and knobs for basic controls like heating and air con instead of having everything buried in the touchscreen. They find the screen menus confusing and distracting, and voice control often fails, making adjustments awkward or unsafe while driving.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0112",
+   "EV-F70-EU-FB-F70-0520",
+   "EV-F70-EU-FB-F70-1089",
+   "EV-F70-EU-FB-F70-0739",
+   "EV-F70-EU-FB-F70-0906"
+  ],
+  "mention_count": 13,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-015"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-029",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Can't play music from USB stick",
+  "summary": "Customers complain they cannot play music from USB sticks and that there are no usable USB ports for playback. Many report the USB connection only serves as a phone charger or that rear USB ports are missing.",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0699",
+   "EV-F70-EU-FB-F70-1274",
+   "EV-F70-EU-FB-F70-1369",
+   "EV-F70-EU-FB-F70-1545",
+   "EV-F70-EU-FB-F70-0626"
+  ],
+  "mention_count": 13,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-030",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Climate control is too basic and always synced",
+  "summary": "Customers are frustrated that driver and passenger temperatures are locked together or that separate climate control is an optional extra with no clear sync-off control. They also report the air conditioning is weak and noisy and dislike climate controls being moved to the touchscreen instead of physical buttons. Study: Heating/ ventilation/ air conditioning: mean 7.3 (EU study 2025).",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0994",
+   "EV-F70-EU-FB-F70-1714",
+   "EV-F70-EU-FB-F70-0842",
+   "EV-F70-EU-FB-F70-1985",
+   "EV-F70-EU-FB-F70-1560",
+   "EV-F70-EU-ST-32"
+  ],
+  "mention_count": 13,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-031",
+  "kind": "complaint",
+  "category": "driving_experience",
+  "title": "Cushioning / damping vehicle: complaint",
+  "summary": "12 customer comments about 'Cushioning / damping vehicle' (complaint).",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0057",
+   "EV-F70-EU-FB-F70-0318",
+   "EV-F70-EU-FB-F70-1515",
+   "EV-F70-EU-FB-F70-1997",
+   "EV-F70-EU-FB-F70-0268",
+   "EV-F70-EU-FB-F70-0444",
+   "EV-F70-EU-FB-F70-0502",
+   "EV-F70-EU-FB-F70-1052"
+  ],
+  "mention_count": 12,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-032",
+  "kind": "complaint",
+  "category": "exterior",
+  "title": "Exterior lighting: complaint",
+  "summary": "12 customer comments about 'Exterior lighting' (complaint).",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0537",
+   "EV-F70-EU-FB-F70-0821",
+   "EV-F70-EU-FB-F70-0988",
+   "EV-F70-EU-FB-F70-1049",
+   "EV-F70-EU-FB-F70-1405",
+   "EV-F70-EU-FB-F70-1708",
+   "EV-F70-EU-FB-F70-0078",
+   "EV-F70-EU-FB-F70-0278"
+  ],
+  "mention_count": 12,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-033",
+  "kind": "complaint",
+  "category": "exterior",
+  "title": "Exterior: complaint",
+  "summary": "12 customer comments about 'Exterior' (complaint).",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0602",
+   "EV-F70-EU-FB-F70-0960",
+   "EV-F70-EU-FB-F70-1163",
+   "EV-F70-EU-FB-F70-1327",
+   "EV-F70-EU-FB-F70-0102",
+   "EV-F70-EU-FB-F70-0788",
+   "EV-F70-EU-FB-F70-0801",
+   "EV-F70-EU-FB-F70-0961"
+  ],
+  "mention_count": 12,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-007"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-034",
+  "kind": "delight",
+  "category": "driver_assistance",
+  "title": "Driver assistance, automated driving, overall technology: delight",
+  "summary": "11 customer comments about 'Driver assistance, automated driving, overall technology' (delight).",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0149",
+   "EV-F70-EU-FB-F70-0327",
+   "EV-F70-EU-FB-F70-0410",
+   "EV-F70-EU-FB-F70-0943",
+   "EV-F70-EU-FB-F70-1016",
+   "EV-F70-EU-FB-F70-1117",
+   "EV-F70-EU-FB-F70-1402",
+   "EV-F70-EU-FB-F70-1520"
+  ],
+  "mention_count": 11,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-020"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-035",
+  "kind": "unmet_need",
+  "category": "driving_experience",
+  "title": "Cushioning / damping vehicle: unmet_need",
+  "summary": "10 customer comments about 'Cushioning / damping vehicle' (unmet need).",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0124",
+   "EV-F70-EU-FB-F70-0529",
+   "EV-F70-EU-FB-F70-0786",
+   "EV-F70-EU-FB-F70-1130",
+   "EV-F70-EU-FB-F70-2059",
+   "EV-F70-EU-FB-F70-0396",
+   "EV-F70-EU-FB-F70-0502",
+   "EV-F70-EU-FB-F70-0865"
+  ],
+  "mention_count": 10,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-036",
+  "kind": "delight",
+  "category": "comfort_space",
+  "title": "Interior comfort: delight",
+  "summary": "10 customer comments about 'Interior comfort' (delight).",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0179",
+   "EV-F70-EU-FB-F70-1090",
+   "EV-F70-EU-FB-F70-1174",
+   "EV-F70-EU-FB-F70-1596",
+   "EV-F70-EU-FB-F70-1678",
+   "EV-F70-EU-FB-F70-0101",
+   "EV-F70-EU-FB-F70-0506",
+   "EV-F70-EU-FB-F70-1088"
+  ],
+  "mention_count": 10,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-009"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-037",
+  "kind": "complaint",
+  "category": "driving_experience",
+  "title": "My Modes / driving experience: complaint",
+  "summary": "10 customer comments about 'My Modes / driving experience' (complaint).",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0608",
+   "EV-F70-EU-FB-F70-0101",
+   "EV-F70-EU-FB-F70-0182",
+   "EV-F70-EU-FB-F70-0904",
+   "EV-F70-EU-FB-F70-0972",
+   "EV-F70-EU-FB-F70-1392",
+   "EV-F70-EU-FB-F70-1584",
+   "EV-F70-EU-FB-F70-2050"
+  ],
+  "mention_count": 10,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-F70-EU-010"
+  ]
+ },
+ {
+  "id": "SIG-F70-EU-038",
+  "kind": "unmet_need",
+  "category": "driving_experience",
+  "title": "Handling / Riding: unmet_need",
+  "summary": "9 customer comments about 'Handling / Riding' (unmet need).",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0522",
+   "EV-F70-EU-FB-F70-0601",
+   "EV-F70-EU-FB-F70-1288",
+   "EV-F70-EU-FB-F70-1405",
+   "EV-F70-EU-FB-F70-0305",
+   "EV-F70-EU-FB-F70-0488",
+   "EV-F70-EU-FB-F70-1199",
+   "EV-F70-EU-FB-F70-1559"
+  ],
+  "mention_count": 9,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-039",
+  "kind": "unmet_need",
+  "category": "comfort_space",
+  "title": "Vehicle, access and exit: unmet_need",
+  "summary": "8 customer comments about 'Vehicle, access and exit' (unmet need).",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0863",
+   "EV-F70-EU-FB-F70-1591",
+   "EV-F70-EU-FB-F70-0155",
+   "EV-F70-EU-FB-F70-0290",
+   "EV-F70-EU-FB-F70-0431",
+   "EV-F70-EU-FB-F70-0493",
+   "EV-F70-EU-FB-F70-0764",
+   "EV-F70-EU-FB-F70-1411"
+  ],
+  "mention_count": 8,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-040",
+  "kind": "unmet_need",
+  "category": "driving_experience",
+  "title": "Engine acoustics / engine sound: unmet_need",
+  "summary": "7 customer comments about 'Engine acoustics / engine sound' (unmet need).",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-1578",
+   "EV-F70-EU-FB-F70-2111",
+   "EV-F70-EU-FB-F70-0283",
+   "EV-F70-EU-FB-F70-0769",
+   "EV-F70-EU-FB-F70-1409",
+   "EV-F70-EU-FB-F70-1462",
+   "EV-F70-EU-FB-F70-2020"
+  ],
+  "mention_count": 7,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-041",
+  "kind": "unmet_need",
+  "category": "exterior",
+  "title": "Exterior rearview mirror: unmet_need",
+  "summary": "7 customer comments about 'Exterior rearview mirror' (unmet need).",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-1502",
+   "EV-F70-EU-FB-F70-1966",
+   "EV-F70-EU-FB-F70-0161",
+   "EV-F70-EU-FB-F70-0373",
+   "EV-F70-EU-FB-F70-0466",
+   "EV-F70-EU-FB-F70-0572",
+   "EV-F70-EU-FB-F70-1523"
+  ],
+  "mention_count": 7,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-042",
+  "kind": "unmet_need",
+  "category": "comfort_space",
+  "title": "Space / spatial impression: unmet_need",
+  "summary": "7 customer comments about 'Space / spatial impression' (unmet need).",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0501",
+   "EV-F70-EU-FB-F70-0663",
+   "EV-F70-EU-FB-F70-1147",
+   "EV-F70-EU-FB-F70-1642",
+   "EV-F70-EU-FB-F70-1972",
+   "EV-F70-EU-FB-F70-2100",
+   "EV-F70-EU-FB-F70-1726"
+  ],
+  "mention_count": 7,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-043",
+  "kind": "unmet_need",
+  "category": "range_charging",
+  "title": "Electric Range: unmet_need",
+  "summary": "6 customer comments about 'Electric Range' (unmet need).",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-1125",
+   "EV-F70-EU-FB-F70-0046",
+   "EV-F70-EU-FB-F70-0152",
+   "EV-F70-EU-FB-F70-0364",
+   "EV-F70-EU-FB-F70-0706",
+   "EV-F70-EU-FB-F70-1076"
+  ],
+  "mention_count": 6,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-044",
+  "kind": "unmet_need",
+  "category": "driving_experience",
+  "title": "Transmission: unmet_need",
+  "summary": "6 customer comments about 'Transmission' (unmet need).",
+  "evidence_ids": [
+   "EV-F70-EU-FB-F70-0142",
+   "EV-F70-EU-FB-F70-0573",
+   "EV-F70-EU-FB-F70-0965",
+   "EV-F70-EU-FB-F70-1388",
+   "EV-F70-EU-FB-F70-1974",
+   "EV-F70-EU-FB-F70-2020"
+  ],
+  "mention_count": 6,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-F70-EU-045",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Connected services: complaint",
+  "summary": "Study: Connected services: mean 7.4 (EU study 2025).",
+  "evidence_ids": [
+   "EV-F70-EU-ST-36"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": []
+ }
+]

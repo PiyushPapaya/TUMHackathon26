@@ -192,5 +192,6 @@ class Scenario(BaseModel):
     successor_horizon: str = "2030"
     extra_trend_topics: list[tuple[str, str]] = []  # (Kategorie, englisches Thema) nur für diesen Markt
     nhtsa: dict = {}  # nur US: {"model_years", "bmw_models", "competitors": {Name: [make, [modelle]]}}
+    fueleconomy: dict = {}  # nur US: {"model_year", "vehicles": {Anzeigename: [make, exakter EPA-Modellname]}}
     data_coverage: DataCoverage = Field(default_factory=DataCoverage)
     warnings: list[str] = []       # z. B. "Nur 19 Kommentare", "3 unbekannte Themen"

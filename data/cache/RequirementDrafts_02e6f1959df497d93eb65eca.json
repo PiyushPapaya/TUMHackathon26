@@ -1,0 +1,171 @@
+{
+  "drafts": [
+    {
+      "title": "Provide physical one‑touch controls for the most frequent functions",
+      "description": "Customers can operate the most commonly used functions (volume, quick climate adjustments, and media playback) using dedicated tactile, one‑touch controls without looking at the central display.",
+      "acceptance_criterion": "In a usability test, participants must be able to complete the three target actions (volume up/down, temperature +/-2°C, play/pause) using the physical controls within 3 seconds and without glancing at the central display in at least 90% of attempts.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-001",
+        "SIG-G60-US-003"
+      ],
+      "assumptions": [
+        "Physical controls can be integrated into the cabin layout without causing ergonomics regressions.",
+        "Customers will prefer a mix of tactile and touchscreen controls for frequent tasks."
+      ],
+      "uncertainties": [
+        "Exact number and placement of physical controls that balance aesthetics and usability.",
+        "Potential differences in preference across customer age groups."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Retain and optimize the large, curved information display as a selling point",
+      "description": "Customers experience a large, easily readable curved display that improves perceived modernity and helps with overview of vehicle status and media/navigation.",
+      "acceptance_criterion": "At least 80% of participants in a perception study rate the display's legibility and helpfulness as 4/5 or higher when completing common tasks (navigation glance, media selection, range check).",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-002"
+      ],
+      "assumptions": [
+        "Large-format displays continue to be perceived as a premium differentiator in 3–5 years."
+      ],
+      "uncertainties": [
+        "How future UI styles or ambient lighting conditions affect perceived benefit."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make remaining range trustworthy and transparent, especially in winter",
+      "description": "Customers receive remaining range predictions they trust because the system explains uncertainty and matches real driving experience even under cold weather conditions.",
+      "acceptance_criterion": "In winter test cycles, the predicted remaining range must deviate by no more than 10% from measured real‑world range in at least 90% of test runs; the UI must surface an uncertainty range (±X km) or confidence level for every prediction.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-004"
+      ],
+      "assumptions": [
+        "Improved algorithms and richer vehicle/sensor/temperature data will be available to the vehicle within 3–5 years.",
+        "Access to historic and live energy consumption patterns is feasible while respecting privacy rules."
+      ],
+      "uncertainties": [
+        "Magnitude of improvement achievable from prediction models vs. hardware limitations (battery thermal behavior).",
+        "Variability of accuracy across extreme climates and driver behaviors."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Help customers find and evaluate public chargers (availability and condition) from the car",
+      "description": "When planning a trip or searching nearby, customers see charger locations plus current availability status and basic condition information so they can choose reliable chargers with confidence.",
+      "acceptance_criterion": "For searches within the primary market, the system must display availability/status and at least one condition attribute (e.g., working/unknown/out of service) for at least 90% of publicly listed chargers; for route planning, recommended chargers lead to successful charging sessions in at least 85% of tested routes.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-005"
+      ],
+      "assumptions": [
+        "Data sharing between operators and vehicle platforms will improve and roaming/aggregation services will be available.",
+        "Real‑time or near‑real‑time status feeds will be accessible for a significant portion of chargers."
+      ],
+      "uncertainties": [
+        "Coverage and quality of third‑party charging data vary by region and operator.",
+        "Legal or commercial restrictions could limit availability of station status data."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Provide a usable front storage compartment (frunk) with meaningful capacity",
+      "description": "Customers have a dedicated front storage area that noticeably increases usable luggage space compared with the current cabin, allowing easy carriage of everyday items.",
+      "acceptance_criterion": "A dedicated front storage compartment with at least 70 liters of usable volume and the ability to stow two standard carry‑on sized bags (measured in a standard packing test) must be available in at least one successor configuration.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-006"
+      ],
+      "assumptions": [
+        "Vehicle architecture and packaging choices will allow reconfiguration of front space without impairing crash, HVAC, or other systems.",
+        "Customers value additional front storage even if it affects some other trunk/layout tradeoffs."
+      ],
+      "uncertainties": [
+        "Exact usable volume achievable given packaging constraints (electric components, HVAC).",
+        "Impact on front passenger ergonomics and HVAC performance."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Ensure hands‑free tailgate gesture is reliable and predictable",
+      "description": "Customers using the foot gesture to open the trunk experience reliable opening when intended and minimal accidental openings.",
+      "acceptance_criterion": "The hands‑free tailgate opens in response to a defined foot gesture within 0.5 m in at least 95% of valid gestures during trials, and false positive openings occur in less than 2% of parking events.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-007"
+      ],
+      "assumptions": [
+        "Improved sensor algorithms and calibration can reduce false positives and increase sensitivity.",
+        "Physical placement and ground clearance of the rear bumper will support a reliable detection zone."
+      ],
+      "uncertainties": [
+        "Performance variance across footwear types, luggage handling, and snow/mud conditions.",
+        "Potential need for user education or adaptive sensitivity settings."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Keep and protect the high level of ride comfort customers value today",
+      "description": "Customers experience the same or better ride comfort on real roads, retaining the current car’s comfortable behavior across typical urban, highway and rough road scenarios.",
+      "acceptance_criterion": "In controlled route comparisons, at least 90% of participants must rate the successor’s ride comfort as equal or better than the current baseline (score ≥4/5) across urban, highway and poor‑surface segments.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-008"
+      ],
+      "assumptions": [
+        "Chassis and suspension choices for successor vehicles will allow maintaining or improving current comfort characteristics.",
+        "Customer perception tests remain a valid measure of comfort across model generations."
+      ],
+      "uncertainties": [
+        "Trade‑offs between comfort and sportiness for different market variants.",
+        "Impact of increased vehicle weight (electrification) on perceived comfort."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Provide robust degraded/offline charging and navigation fallback",
+      "description": "When live charger status or connectivity is unavailable, customers still receive useful charger suggestions and range estimates so they can continue a trip with minimal disruption.",
+      "acceptance_criterion": "If live charging data are unavailable, the system must still present plausible charger locations within 5 km of the vehicle’s planned route and provide an estimated energy impact that deviates less than 15% from actual consumption in 90% of tested degraded scenarios.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-005"
+      ],
+      "assumptions": [
+        "Local map and historical charger datasets can be stored and updated periodically on the vehicle.",
+        "On‑board models can produce usable estimates without live operator feeds."
+      ],
+      "uncertainties": [
+        "Performance limits in regions with sparse charger infrastructure or frequently changing station availability.",
+        "How long cached data remains valid without connectivity."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}

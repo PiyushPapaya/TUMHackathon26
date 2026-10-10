@@ -1,0 +1,60 @@
+{
+  "claims": [
+    {
+      "text": "BMW’s official U.S. technical specifications list the BMW 5 Series (G60) trunk (cargo) volume as 18.4 cu ft for the 530i (G60) configuration shown in the BMW press technical PDF.",
+      "url": "https://www.press.bmwgroup.com/usa/article/attachment/T0418778EN_US/624323",
+      "publisher": "BMW Group Press (USA)",
+      "published": "2024",
+      "stance": "supports",
+      "about": "BMW 5 Series (G60) trunk / cargo capacity"
+    },
+    {
+      "text": "U.S.-market listing sites and spec aggregators report the 2025 Mercedes‑Benz E‑Class (U.S. specs) cargo capacity as 12.7 cu ft (cargo, all seats in place).",
+      "url": "https://www.edmunds.com/mercedes-benz/e-class/2025/features-specs/?msockid=1ff0884767a9689310db9ebd660d694a",
+      "publisher": "Edmunds",
+      "published": "2025",
+      "stance": "supports",
+      "about": "Mercedes‑Benz E‑Class (2025) trunk / cargo capacity (U.S. spec)"
+    },
+    {
+      "text": "Some press/reviews and European-spec sources report the W214 E‑Class trunk as ~540 L (~19.0 cu ft); Autoblog’s luggage test (Apr 1, 2024) noted Mercedes’ 19‑cu‑ft spec likely counts underfloor volumes and warned the on‑paper number can be misleading for real luggage packing.",
+      "url": "https://www.autoblog.com/features/mercedes-e-class-luggage-test",
+      "publisher": "Autoblog",
+      "published": "April 1, 2024",
+      "stance": "supports",
+      "about": "Discrepancy in reported E‑Class trunk volume (measurement / usable volume)"
+    },
+    {
+      "text": "A summary review focused on U.S. market operation describes the W214 E‑Class as positioned around \"quiet luxury,\" emphasizing refinement, noise isolation and comfort as core strengths for U.S. buyers (DriveSense, May 19, 2026 review).",
+      "url": "https://drive-sense.com/post/366-2026-mercedes-benz-e-class-review-the-new-benchmark-for-quiet-luxury",
+      "publisher": "DriveSense",
+      "published": "May 19, 2026",
+      "stance": "supports",
+      "about": "Mercedes‑Benz E‑Class (W214) ride and cabin comfort (U.S. market)"
+    },
+    {
+      "text": "A direct comparison review (Autocar India, Dec 13, 2024) reported that in back‑to‑back testing the BMW 5 Series (LWB/G60) rode with a softer edge over bumps and admitted less road/tyre noise than the E‑Class in that comparison—i.e., reviewers found the 5 Series’ ride to be slightly more absorbent/refined in that test.",
+      "url": "https://www.autocarindia.com/car-comparison-reviews-amp/mercedes-e-class-vs-bmw-5-series-comparison-433838",
+      "publisher": "Autocar India",
+      "published": "December 13, 2024",
+      "stance": "supports",
+      "about": "BMW 5 Series (G60) ride comfort vs Mercedes E‑Class (comparison review)"
+    },
+    {
+      "text": "Manufacturers commonly provide a personalization option named ‘Passive Door Unlock’ / ‘Auto Door Unlock’ (choices include Off, Driver Door or All Doors); OEM service bulletins (example TSBs) instruct dealers to set Passive/Auto Door Unlock to “All Doors” or use the key‑fob override when customers report only the driver door is unlocking — changing that setting resolves cases where only the driver door unlocks.",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019846-0001.pdf",
+      "publisher": "NHTSA static TSB (PIT6401) / GM bulletin repository",
+      "published": "June 2025",
+      "stance": "supports",
+      "about": "Passive/Auto Door Unlock setting can cause only-driver‑door unlocking (example TSB)"
+    },
+    {
+      "text": "An E‑Class operator’s manual excerpt (manufacturer manual circulated online) explicitly notes the vehicle’s key/unlock function can be set so that unlocking only opens the driver’s door (i.e., a vehicle personalization option controls whether only the driver door or all doors unlock).",
+      "url": "https://www.scribd.com/document/854183327/mercedes-e-class-sedan-2025-january-w214-mbux-operators-manual-1",
+      "publisher": "Mercedes‑Benz operator’s manual (circulated on Scribd)",
+      "published": "2025",
+      "stance": "supports",
+      "about": "Mercedes‑Benz E‑Class owner/operator manual — key/unlock personalization (driver‑door only option)"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "claims": [
+    {
+      "text": "UN Regulation No.157 (ALKS) provides a UNECE type-approval framework for Automated Lane Keeping Systems (classified as SAE Level 3) and has been amended to set test and approval procedures for ALKS on motorways.",
+      "url": "https://unece.org/sites/default/files/2024-07/R157am4e_1.pdf",
+      "publisher": "UNECE (WP.29)",
+      "published": "March 2023",
+      "stance": "supports",
+      "about": "Regulation — ALKS / Level 3 type approval"
+    },
+    {
+      "text": "BMW announced the BMW Personal Pilot L3 (a Level 3 'highly automated' highway function) and the combination of its Highway Assistant (Level 2) with Personal Pilot L3; BMW stated rollout began in series production cars (initially in Germany) in 2024/2025 (example: BMW 7 Series).",
+      "url": "https://www.press.bmwgroup.com/global/article/attachment/T0443285EN/618657",
+      "publisher": "BMW Group (press release)",
+      "published": "25 June 2024",
+      "stance": "supports",
+      "about": "OEM product announcement — BMW Personal Pilot L3"
+    },
+    {
+      "text": "Mercedes‑Benz updated its DRIVE PILOT Level 3 system to permit conditional automated driving up to 95 km/h on German motorways and announced approval and a sales release in Germany (software update / rollout announced December 17, 2024 with sales start early 2025).",
+      "url": "https://group.mercedes-benz.com/technology/autonomous-driving/driving/drive-pilot-95-kmh.html",
+      "publisher": "Mercedes‑Benz Group",
+      "published": "17 December 2024",
+      "stance": "supports",
+      "about": "OEM product update — Mercedes DRIVE PILOT (Level 3)"
+    },
+    {
+      "text": "Mobileye states it is purpose-building EyeQ™6 High, the SuperVision™ platform and related components (REM™, Driver Monitoring, mapping) to enable hands‑off Level 2+ experiences at scale across multiple vehicle programs and to feed higher‑level autonomy development.",
+      "url": "https://www.mobileye.com/blog/hands-off-driving-goes-mainstream-enabling-l2-at-scale/",
+      "publisher": "Mobileye (blog)",
+      "published": "11 August 2026",
+      "stance": "supports",
+      "about": "Supplier roadmap — Mobileye SuperVision / L2+ scaling"
+    },
+    {
+      "text": "Mobileye announced (March 20, 2024) an intensified collaboration with the Volkswagen Group to bring Mobileye SuperVision/Chauffeur technologies into series production across premium brands (Audi, Bentley, Lamborghini, Porsche) and to work on Level 3 functions and advanced Level 2 capabilities.",
+      "url": "https://ir.mobileye.com/news-releases/news-release-details/automated-driving-volkswagen-group-intensifies-collaboration",
+      "publisher": "Mobileye (investor news)",
+      "published": "20 March 2024",
+      "stance": "supports",
+      "about": "Supplier–OEM partnership — Mobileye & Volkswagen Group"
+    },
+    {
+      "text": "The IEA’s Global EV Outlook 2026 (Autonomous vehicles chapter) reports that Level 2+ (hands‑off) systems are becoming mainstream while Level 3 implementations remain rare; the report observes an industry shift toward more sophisticated Level 2+ features rather than broad Level 3 rollouts in personal vehicles.",
+      "url": "https://www.iea.org/reports/autonomous-vehicles",
+      "publisher": "International Energy Agency (IEA) — Global EV Outlook 2026",
+      "published": "20 May 2026",
+      "stance": "supports",
+      "about": "Market & technology trend — L2+ vs L3 adoption"
+    },
+    {
+      "text": "Bosch public statements and product communications describe a vehicle computer platform, new AI‑enabled radar sensors and a software architecture intended to make partially and highly automated driving (Levels 2–3) suitable for volume production and to bring these functions into compact and midsized vehicle segments in the medium term.",
+      "url": "https://www.bosch-presse.de/pressportal/us/en/news/press-release/automated-mobility/",
+      "publisher": "Robert Bosch GmbH (press portal)",
+      "published": "6 December 2023",
+      "stance": "supports",
+      "about": "Supplier roadmap — Bosch ADAS / central computer and sensors"
+    },
+    {
+      "text": "Valeo’s 2022 registration/annual documents describe production LiDAR and ADAS products and state Valeo has contracts to supply LiDAR/ADAS hardware and software intended to enable Level 3 certification for upcoming vehicle platforms (Valeo cites contracts that support OEM Level 3 readiness).",
+      "url": "https://www.scribd.com/document/820102204/valeo-2022-urd-uk-1",
+      "publisher": "Valeo (Universal Registration Document 2022)",
+      "published": "2022",
+      "stance": "supports",
+      "about": "Supplier products — LiDAR and Level 3 enablement (Valeo)"
+    },
+    {
+      "text": "ZF presented an \"AI Road Sense\" AI‑supported sensing/software capability at IAA/industry events and stated series production is planned (announced product roadmap items pointing to series readiness in the second half of the 2020s, e.g., production planned for 2028 in public coverage).",
+      "url": "https://www.iaa-mobility.com/en/newsroom/news/future-technology/mobility-trends-2026-las-vegas",
+      "publisher": "IAA Mobility / ZF reporting",
+      "published": "2026",
+      "stance": "supports",
+      "about": "Supplier roadmap — ZF AI sensing / series production timing"
+    },
+    {
+      "text": "The EU multi‑OEM L3Pilot research programme (consortium including BMW, Mercedes, Valeo, ZF, Continental, TÜVs and research institutes) ran large‑scale tests of Level 3 functions on public roads across multiple EU countries (project duration and results demonstrate multi‑OEM Level 3 testing in Europe: July 2019–December 2023).",
+      "url": "https://www.eict.de/en/projects/",
+      "publisher": "EICT / L3Pilot consortium (project information)",
+      "published": "project period 2019–2023",
+      "stance": "supports",
+      "about": "EU multi‑OEM Level 3 testing (L3Pilot)"
+    }
+  ]
+}

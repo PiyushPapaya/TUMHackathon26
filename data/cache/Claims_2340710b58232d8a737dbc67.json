@@ -1,0 +1,52 @@
+{
+  "claims": [
+    {
+      "text": "Multiple professional reviews of the 2025 Genesis G80 describe it as comfort‑biased with a plush, isolated ride and composed handling rather than a sport‑tuned chassis.",
+      "url": "https://www.consumerreports.org/cars/genesis/g80/2025/road-test-report/",
+      "publisher": "Consumer Reports",
+      "published": "accessed 2026-10-10",
+      "stance": "supports",
+      "about": "2025 Genesis G80 ride comfort and driving character"
+    },
+    {
+      "text": "Edmunds’ 2025 G80 coverage reports a “cushy ride” and a smooth transmission in normal driving but notes the V6 G80 isn’t as quick as some competitors — i.e., reviewers find it refined for comfort but not the sharpest in power delivery/performance compared with rivals.",
+      "url": "https://www.edmunds.com/genesis/g80/2025/?msockid=25dc05406640698f267e13e76739684e",
+      "publisher": "Edmunds",
+      "published": "accessed 2026-10-10",
+      "stance": "supports",
+      "about": "2025 Genesis G80 power delivery and refinement (professional reviews)"
+    },
+    {
+      "text": "Major reviews of the BMW 5‑Series (G60) characterize it as more driver‑focused and subtly athletic — sharper handling and a firmer (but still refined) ride compared with comfort‑biased rivals such as the Genesis G80.",
+      "url": "https://www.caranddriver.com/bmw/5-series-2024",
+      "publisher": "Car and Driver",
+      "published": "accessed 2026-10-10",
+      "stance": "supports",
+      "about": "BMW 5 Series (G60) driving character vs Genesis G80"
+    },
+    {
+      "text": "Owner reports and dealer/owner‑forum threads document ‘jerky’ or ‘harsh’ shifts, hesitation, and inconsistent acceleration on recent Genesis models (including G80/G70/GV70); dealers and technical service bulletins (TSBs) have recommended solenoid/TCM procedures or part replacements to address harsh/erratic shifts.",
+      "url": "https://genesisowners.com/genesis-forum/threads/jerky-auto-transmission-hard-downshifts-while-braking.31758/",
+      "publisher": "Genesis Owners forum (genesisowners.com)",
+      "published": "accessed 2026-10-10",
+      "stance": "supports",
+      "about": "Owner-reported jerky shifts and related TSB actions for Genesis models"
+    },
+    {
+      "text": "Hyundai/Genesis issued service bulletins and NHTSA documentation describing transmission solenoid and control‑module issues (TSBs) that can cause shift flare, harsh shifts or hesitation; those factory service actions are consistent with owners’ reports of uneven/jerky power delivery.",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10199103-0001.pdf",
+      "publisher": "NHTSA (Technical Service Bulletin PDF)",
+      "published": "June 2021 (TSB document)",
+      "stance": "supports",
+      "about": "TSBs linking transmission solenoids/TCM issues to harsh shifts on Genesis models"
+    },
+    {
+      "text": "NHTSA opened a recall campaign (example: Campaign 24V205/Gen­esis recall 020G for certain 2024 GV70 vehicles) for transmission‑harness water intrusion that can short the transmission control wiring — a defect that can lead to unintended transmission behavior and which is cited in aftermarket/repair writeups about A8LR1/A8TR1 transmission problems affecting Genesis vehicles.",
+      "url": "https://static.nhtsa.gov/odi/rcl/2024/RCAK-24V205-7941.pdf",
+      "publisher": "NHTSA (recall document)",
+      "published": "March 21, 2024",
+      "stance": "supports",
+      "about": "Recall / harness water intrusion affecting Genesis transmission behavior (example GV70)"
+    }
+  ]
+}

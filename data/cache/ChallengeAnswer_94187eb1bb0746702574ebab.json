@@ -1,0 +1,18 @@
+{
+  "answer": "No — the provided evidence documents multiple US complaints and US studies showing problems, but contains no non‑US data. You cannot determine whether the issues are limited to the US from this dataset alone.",
+  "supporting_evidence_ids": [
+    "SIG-G60-US-019",
+    "SIG-G60-US-029",
+    "SIG-G60-US-043",
+    "SIG-G60-US-042",
+    "EV-G60-US-FB-G60-1756",
+    "EV-G60-US-FB-G60-1591",
+    "EV-G60-US-FB-G60-3156",
+    "EV-G60-US-FB-G60-3125",
+    "EV-G60-US-ST-92",
+    "EV-G60-US-ST-89",
+    "EV-G60-US-ST-98"
+  ],
+  "counter_evidence_ids": [],
+  "suggested_change": "Specify market scope in the acceptance criterion (e.g., require validation per target market) or add a criterion requiring representative non‑US testing before assuming issues are global or US‑only."
+}

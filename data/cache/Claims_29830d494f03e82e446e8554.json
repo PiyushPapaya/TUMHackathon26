@@ -1,0 +1,84 @@
+{
+  "claims": [
+    {
+      "text": "Tesla Model S (2025 model-year) delivers the longest EPA-rated range in this comparison — roughly 402–410 miles for the Long‑Range/standard variants and about 348 miles for the Plaid, per published model specs and reviews.",
+      "url": "https://www.motortrend.com/cars/tesla/model-s",
+      "publisher": "MotorTrend",
+      "published": "2025-??-??",
+      "stance": "supports",
+      "about": "Tesla Model S range (2025)"
+    },
+    {
+      "text": "BMW 5 Series electric variant (the BMW i5, G60 family) has EPA combined ranges around ~248–295 miles depending on trim and wheel size (i5 eDrive40 ≈ 295 mi on 19\" wheels is a representative top number for 2025 models).",
+      "url": "https://recharged.com/articles/2025-bmw-i5-range-test/",
+      "publisher": "Recharged",
+      "published": "2025",
+      "stance": "supports",
+      "about": "BMW i5 (G60) EPA range and variants"
+    },
+    {
+      "text": "Tesla’s vehicles (including Model S) use Tesla’s NACS connector on North American cars and can charge at Tesla Superchargers up to ~250 kW (V3/V4 peak as vehicle‑limited), which gives the Model S very fast DC‑charging capability on Tesla’s network.",
+      "url": "https://www.motortrend.com/cars/tesla/model-s",
+      "publisher": "MotorTrend",
+      "published": "2025-??-??",
+      "stance": "supports",
+      "about": "Tesla Model S charging power & NACS"
+    },
+    {
+      "text": "Most BMW i5 cars sold early in 2025 shipped with CCS1 (the industry-standard DC‑fast connector for most non‑Tesla EVs), and those i5 cars peak at roughly ~200–205 kW DC charge power with typical 10–80% sessions around ~25–32 minutes under ideal conditions.",
+      "url": "https://recharged.com/articles/bmw-i5-charging-speed-test",
+      "publisher": "Recharged",
+      "published": "2025",
+      "stance": "supports",
+      "about": "BMW i5 charging speed (CCS)"
+    },
+    {
+      "text": "Tesla’s Supercharger network remains one of the largest and most reliable DC fast‑charging networks in the U.S.; independent aggregators and sector reports show tens of thousands of DC stalls across public networks, and Tesla historically has had a high charger‑per‑station count and strong reliability metrics compared with many public networks.",
+      "url": "https://evchargingstations.com/chargingnews/largest-dc-fast-charging-networks-jan-2026/",
+      "publisher": "EVChargingStations (industry report)",
+      "published": "2026-01-01",
+      "stance": "supports",
+      "about": "Size and reliability of Supercharger / DC fast networks in US"
+    },
+    {
+      "text": "Tesla Supercharger access for non‑Tesla cars is not automatically universal — manufacturers and Tesla must enable software handshakes or provide adapters; some non‑Tesla models with native NACS ports (or with a validated NACS adapter) can plug directly at many open Supercharger stalls, but legacy CCS cars often need an adapter or to find a 'Magic Dock' stall.",
+      "url": "https://www.consumerreports.org/cars/hybrids-evs/tesla-superchargers-open-to-other-evs-what-to-know-a9262067544",
+      "publisher": "Consumer Reports",
+      "published": "2026-??-??",
+      "stance": "supports",
+      "about": "Non‑Tesla access to Superchargers and adapter/authorization requirements"
+    },
+    {
+      "text": "Not all Supercharger stalls are suitable for non‑Tesla cars — 'Magic Dock' (built‑in CCS adapter) stalls and V4 stalls with longer cables are limited in number; arriving at a Supercharger that is not marked 'open to other EVs' or that lacks the appropriate adapter can leave a CCS‑only BMW unable to charge there.",
+      "url": "https://axis-intelligence.com/tesla-supercharger-non-tesla-owners-guide/",
+      "publisher": "Axis Intelligence",
+      "published": "2026-??-??",
+      "stance": "supports",
+      "about": "Magic Dock availability and marked ‘open to other EVs’ limitations"
+    },
+    {
+      "text": "BMW’s public guidance (BMW regional pages and dealer materials) indicates BMW is supporting access to Tesla’s NACS/Supercharger ecosystem for compatible i5/iX/i4 vehicles via approved adapters and software updates for certain production dates — but the timing/availability depends on model year and production build date, so some 2025 i5 units will need an adapter or a software 'RSU' before Supercharger use.",
+      "url": "https://www.bmw.ca/en/electric-cars/tesla-nacs-charging.html",
+      "publisher": "BMW (regional site)",
+      "published": "2026-??-??",
+      "stance": "supports",
+      "about": "BMW guidance on NACS/Supercharger compatibility and adapter/RSU requirement"
+    },
+    {
+      "text": "Practical consequence for US customers in 2025/2026: a Tesla Model S owner typically has direct, wide access to Tesla Superchargers (no adapter), higher EPA range (fewer stops), and very fast charging at Tesla sites; a BMW 5er (i5/G60) owner has competitive real‑world range and good CCS fast‑charging options on public CCS networks but may encounter 'hard to find compatible stations' at Tesla Superchargers until their car has a native NACS port or BMW‑approved adapter + software activation — so route planning and checking station 'open to other EVs' status matters.",
+      "url": "https://www.motortrend.com/cars/tesla/model-s",
+      "publisher": "MotorTrend",
+      "published": "2025-??-??",
+      "stance": "neutral",
+      "about": "Practical user impact and route‑planning differences (Tesla Model S vs BMW i5)"
+    },
+    {
+      "text": "If customers report 'Hard to find compatible charging stations' for BMW 5er (G60) cars, the verifiable causes are (a) the physical connector mismatch (CCS vs Tesla NACS) at many Tesla Superchargers, (b) limited Magic Dock / built‑in CCS adapter stalls, and (c) manufacturer-specific software/whitelisting needed for non‑Tesla billing/authentication — verify your model’s production date, whether BMW provided a NACS/CCS adapter, and use PlugShare/Tesla app filters to confirm 'open' Supercharger sites before travel.",
+      "url": "https://www.consumerreports.org/cars/hybrids-evs/tesla-superchargers-open-to-other-evs-what-to-know-a9262067544",
+      "publisher": "Consumer Reports",
+      "published": "2026-??-??",
+      "stance": "supports",
+      "about": "Reasons why drivers report difficulty finding compatible Supercharger stalls"
+    }
+  ]
+}

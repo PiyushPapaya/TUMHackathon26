@@ -1,0 +1,174 @@
+{
+  "drafts": [
+    {
+      "title": "Headlight beam pattern meets US customer expectations for safe, non-glare illumination",
+      "description": "When driving at night in the US, customers experience a well-defined, consistent beam pattern that illuminates the road without causing noticeable glare to oncoming drivers.",
+      "acceptance_criterion": "Beam pattern verified on US test course and in on-road validation; passes OEM internal US-beam acceptance tests for cut-off sharpness and lateral spread in 100% of test runs (as measured by photometric mapping and on-road glare surveys).",
+      "category": "exterior",
+      "signal_ids": [
+        "SIG-1"
+      ],
+      "assumptions": [
+        "Formal homologation actions and regulatory compliance activities will be handled by the legal/engineering teams (this draft focuses on customer experience).",
+        "OEM internal photometric tests can be defined to represent customer perception of glare and road illumination."
+      ],
+      "uncertainties": [
+        "Regulatory test outcomes and interpretations are outside product-team control and may require engineering changes.",
+        "Customer perception of 'glare' is partly subjective and may vary by testing environment."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": false,
+      "scope_reason": "Headlight homologation and regulatory compliance are legal/engineering matters (out of scope for successor customer-facing requirement generation)."
+    },
+    {
+      "title": "Volume control with fine-grained, tactile adjustments",
+      "description": "Customers can adjust audio volume using a tactile control that provides smoothly graduated, small audible increments so they do not overshoot desired level and can make precise changes without relying on the touchscreen.",
+      "acceptance_criterion": "Control provides at least 4096 distinct volume increments and the smallest audible step equals ≤0.5 dB change; 95% of drivers in a simulated drive can change volume up or down one comfortable level within 2.5 seconds without looking.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-2",
+        "SIG-5"
+      ],
+      "assumptions": [
+        "A high-resolution user control is feasible within the vehicle's electrical/ECU architecture for the successor vehicle.",
+        "Human-perceived loudness mapping will be tuned so the smallest step is ≤0.5 dB in common listening ranges.",
+        "If the vehicle electrical architecture evolves (e.g., higher-voltage domains), appropriate interfaces will be available to maintain control fidelity."
+      ],
+      "uncertainties": [
+        "Integration constraints with audio system and underlying architectures may limit delivered step count or step size.",
+        "Some users may still prefer touchscreen or voice control for fine adjustments; usage patterns may vary."
+      ],
+      "effort": "M",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Dedicated physical controls for frequently used functions",
+      "description": "Customers can operate the most frequently used functions (at a minimum: volume, temperature, fan speed, and defog/defrost) using distinct physical, tactile controls so they can make adjustments with minimal distraction.",
+      "acceptance_criterion": "At least 4 frequently used functions are operable via dedicated tactile controls; in a driving simulator study, 95% of drivers complete each function within 3 seconds and with no more than one glance away from the road.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-5"
+      ],
+      "assumptions": [
+        "The set of 'most frequently used functions' can be defined from telemetry and customer research and will include audio and climate basics.",
+        "Physical controls will be placed for ergonomic reach by typical driver seating positions."
+      ],
+      "uncertainties": [
+        "Exact placement and size of physical controls may conflict with aesthetic or packaging constraints.",
+        "Differences in customer preferences across markets could change which functions are considered 'frequently used.'"
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Touchscreen and control interaction designed to minimize driver distraction",
+      "description": "Customers can perform common tasks that remain on the touchscreen (navigation destination entry alternatives, media selection) with reduced visual demand via improved haptics, adaptive menus, and shortcuts so touch use is less distracting.",
+      "acceptance_criterion": "For designated common touchscreen tasks, average driver glance time to the screen is reduced by ≥40% versus current model baseline in a driving-simulator test; 90% of drivers complete tasks within target time limits without exceeding two glances.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-5"
+      ],
+      "assumptions": [
+        "Haptic feedback and adaptive menu strategies can be implemented within successor infotainment software cycles.",
+        "Baseline distraction metrics are available from current-model testing for comparison."
+      ],
+      "uncertainties": [
+        "Effectiveness of haptics and adaptive menus depends on tuning and real-world acceptance; may require multiple iterations.",
+        "Driver training and habit change can affect measured outcomes."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Improved rear knee clearance for tall rear-seat passengers",
+      "description": "Rear-seat passengers who are 1.85 m tall can sit with comfortable knee space without feeling cramped when the front seats are in a typical comfort position.",
+      "acceptance_criterion": "Rear knee clearance for a 1.85 m rear passenger is ≥100 mm when front seats are set to the 50th-percentile fore/aft and seatback positions (measured per OEM seating rig protocol).",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-4"
+      ],
+      "assumptions": [
+        "Existing vehicle architecture allows incremental packaging changes (seat design, cushion geometry, front-seat rail position) to gain additional knee room.",
+        "The 50th-percentile front seat position represents a realistic customer setup for measurement."
+      ],
+      "uncertainties": [
+        "Gains in knee clearance may impact trunk volume, crash structure packaging, or front-seat space; trade-offs must be validated.",
+        "Perception of comfort also depends on cushion shape and seatback angle, not just raw clearance."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Rear comfort seating configuration to increase legroom for tall occupants",
+      "description": "Customers can select a seating configuration (either via seat hardware or seat presets) that increases rear knee room for taller passengers without requiring the driver to manually reposition their preferred settings.",
+      "acceptance_criterion": "An available seating configuration increases measured rear knee clearance by ≥30 mm for a 1.85 m rear passenger versus the default configuration; change can be enacted by driver or via a preset in ≤10 seconds.",
+      "category": "interior",
+      "signal_ids": [
+        "SIG-4"
+      ],
+      "assumptions": [
+        "Seat hardware and software presets can be integrated to offer a 'rear comfort' mode within the successor vehicle timeline.",
+        "Presets will be designed to maintain acceptable driver ergonomics when applied."
+      ],
+      "uncertainties": [
+        "Mechanisms to increase knee room may affect front-seat occupant comfort or driver visibility and must be validated.",
+        "Customer understanding and use of a 'rear comfort' preset may require clear labeling and education."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Clearer, modular variant and package structure to improve perceived value",
+      "description": "Customers can easily understand and choose trims and packages so they feel they only pay for features they want and can see the value of each package.",
+      "acceptance_criterion": "Product configurator presents modular packages with clear feature lists and independent toggles for at least 8 major options; in user testing, 90% of participants correctly identify the difference between base and next trim and report improved clarity versus current configurator.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SIG-3"
+      ],
+      "assumptions": [
+        "Product, marketing, and sales alignment will provide the data to populate a clearer configurator and package definitions.",
+        "Customers equate configuration clarity with perceived value even when price is not modified."
+      ],
+      "uncertainties": [
+        "Exact package definitions that balance customer desire and production complexity may require several market tests.",
+        "Some customers will still prefer dealer negotiation or incentives over configurator clarity."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Customer concern about base price and requested price reduction",
+      "description": "Customers express that the current base price feels too high and explicitly request a lower base price (e.g., US$5,000 reduction) or clearer overall business case.",
+      "acceptance_criterion": "Stakeholder review documents a targeted base-price change (example target: US$5,000 reduction) or equivalent incentive strategy agreed by finance/management and implemented (this is a business decision).",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SIG-3"
+      ],
+      "assumptions": [
+        "Price and incentives are determined by commercial/finance teams, not by product-experience requirements.",
+        "The numeric request (US$5,000) is a customer signal and may not represent a feasible production/business target without trade-offs."
+      ],
+      "uncertainties": [
+        "Budgetary, supply-chain, and strategic constraints will determine whether a price reduction is feasible.",
+        "Customer sentiment may change if feature content or incentives are adjusted instead of base price."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": false,
+      "scope_reason": "Pricing and business-case decisions (base price reductions or incentive strategies) are commercial decisions and outside the scope of product requirements for the successor vehicle."
+    }
+  ]
+}

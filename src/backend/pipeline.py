@@ -85,8 +85,10 @@ def run_stage(stage: str, cfg: dict) -> None:
         _write(sid, "web_evidence", web_evidence)
         _write(sid, "web_signals", web_signals)
     elif stage == "external":  # Pfad B, ohne LLM: Behördendaten (NHTSA, nur US-Szenarien mit "nhtsa")
+        from evidence_external import fueleconomy
         from evidence_external.nhtsa import collect
         external_evidence, external_signals = collect(scenario)
+        external_evidence += fueleconomy.collect(scenario)  # EPA-Reichweite der Wettbewerber (W-L10)
         _write(sid, "external_evidence", external_evidence)
         _write(sid, "external_signals", external_signals)
     elif stage == "requirements":  # Pfad C, KI schlägt vor, Formel priorisiert

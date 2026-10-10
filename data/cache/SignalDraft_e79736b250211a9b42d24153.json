@@ -1,0 +1,11 @@
+{
+  "title": "Only the driver door unlocks",
+  "summary": "The car often only unlocks the driver door when approaching or using the key, leaving rear doors locked or failing to open. Customers find this behavior confusing, hard to change because the setting is not obvious, and sometimes the auto-lock can act unexpectedly.",
+  "representative_ids": [
+    "EV-G60-US-FB-G60-0309",
+    "EV-G60-US-FB-G60-1039",
+    "EV-G60-US-FB-G60-2925",
+    "EV-G60-US-FB-G60-2910",
+    "EV-G60-US-FB-G60-3434"
+  ]
+}

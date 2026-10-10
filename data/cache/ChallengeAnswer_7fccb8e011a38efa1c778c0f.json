@@ -1,0 +1,41 @@
+{
+  "answer": "Partly. Multiple customer complaints and study scores document unreliable CarPlay, wireless charging, hotspot and voice recognition today (SIG-G60-US-019, SIG-G60-US-029, SIG-G60-US-043, SIG-G60-US-042; EV-G60-US-ST-92 / EV-G60-US-ST-89 / EV-G60-US-ST-98 and many feedback items). The strict numeric targets conflict with the requirement’s stated uncertainties (phone/case diversity; cellular variability) and reports of slow/failing connections, misfit/slow chargers, hotspot slowness and voice misrecognition. Keep the goal but relax or condition targets to reflect external dependencies.",
+  "supporting_evidence_ids": [
+    "SIG-G60-US-019",
+    "SIG-G60-US-029",
+    "SIG-G60-US-043",
+    "SIG-G60-US-042",
+    "EV-G60-US-FB-G60-1756",
+    "EV-G60-US-FB-G60-1591",
+    "EV-G60-US-FB-G60-2221",
+    "EV-G60-US-FB-G60-1030",
+    "EV-G60-US-FB-G60-3163",
+    "EV-G60-US-FB-G60-3156",
+    "EV-G60-US-FB-G60-3471",
+    "EV-G60-US-FB-G60-0359",
+    "EV-G60-US-FB-G60-3125",
+    "EV-G60-US-FB-G60-1785",
+    "EV-G60-US-FB-G60-0115",
+    "EV-G60-US-FB-G60-1020",
+    "EV-G60-US-FB-G60-1714",
+    "EV-G60-US-FB-G60-2634",
+    "EV-G60-US-FB-G60-2825",
+    "EV-G60-US-FB-G60-2849",
+    "EV-G60-US-FB-G60-0428",
+    "EV-G60-US-FB-G60-0736",
+    "EV-G60-US-FB-G60-0904",
+    "EV-G60-US-FB-G60-1551",
+    "EV-G60-US-FB-G60-1790",
+    "EV-G60-US-FB-G60-2367",
+    "EV-G60-US-FB-G60-2393",
+    "EV-G60-US-ST-92",
+    "EV-G60-US-ST-89",
+    "EV-G60-US-ST-98"
+  ],
+  "counter_evidence_ids": [
+    "EV-G60-US-WEB-43",
+    "EV-G60-US-WEB-44",
+    "EV-G60-US-WEB-46"
+  ],
+  "suggested_change": "Relax targets and add conditional exceptions: (a) CarPlay/AA: ≥90% within 15s in tested real-world pairings, with OS/version exclusions; (b) wireless pad: ≥90% phone+case combos at ≥7.5W and publish supported sizes/case-thickness; (c) Wi‑Fi: ≥85% of 30‑min sessions in suburban tests with a defined minimum cellular signal level; (d) voice: 85% of 100 common commands with cloud-fallback — revisit as ecosystem stability improves."
+}

@@ -1,0 +1,18 @@
+{
+  "answer": "Unclear. All cited signals, feedback and study data are US-only, so the evidence cannot determine whether these connectivity/charging/voice issues occur outside the US or are regional. You need equivalent non-US market data before generalizing; alternatively make the acceptance criteria explicitly US-scoped.",
+  "supporting_evidence_ids": [
+    "SIG-G60-US-019",
+    "SIG-G60-US-029",
+    "SIG-G60-US-043",
+    "SIG-G60-US-042",
+    "EV-G60-US-ST-92",
+    "EV-G60-US-ST-89",
+    "EV-G60-US-ST-98",
+    "EV-G60-US-FB-G60-1756",
+    "EV-G60-US-FB-G60-3156",
+    "EV-G60-US-FB-G60-0115",
+    "EV-G60-US-FB-G60-0736"
+  ],
+  "counter_evidence_ids": [],
+  "suggested_change": "Require multi-market validation: add a criterion that the connectivity/charging/Wi‑Fi/voice acceptance tests must be repeated and meet targets in each target market (e.g., US, EU, APAC) before rolling requirement global; or explicitly state the requirement applies only to the US."
+}

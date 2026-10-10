@@ -1,0 +1,84 @@
+{
+  "claims": [
+    {
+      "text": "Audi A6 e-tron: the production interior uses a slim curved ‘MMI panoramic display’ consisting of an 11.9‑inch digital driver display and a 14.5‑inch center MMI touchscreen, with an optional 10.9‑inch passenger touchscreen available.",
+      "url": "https://www.audi.com/en/the-audi-a6-e-tron-the-new-electric-avant-garde-16391/displays-and-operating-concept-16398",
+      "publisher": "Audi (official)",
+      "published": "2024-12-03",
+      "stance": "supports",
+      "about": "Audi A6 e-tron displays and specs"
+    },
+    {
+      "text": "Reviewers report Audi’s A6 e‑tron shifts many secondary controls (climate, some drive settings) to capacitive touch and touchscreen surfaces with relatively few physical knobs or buttons.",
+      "url": "https://www.caranddriver.com/reviews/a62986357/2025-audi-a6-e-tron-drive/",
+      "publisher": "Car and Driver",
+      "published": "2025-09-18",
+      "stance": "supports",
+      "about": "Audi A6 e-tron controls and review"
+    },
+    {
+      "text": "Consumer Reports’ road‑test similarly describes the A6 e‑tron’s dual large screens and notes the interface ‘mostly uses capacitive‑touch controls, with few physical knobs or buttons.’",
+      "url": "https://www.consumerreports.org/cars/audi/a6-e-tron/2025/road-test-report/",
+      "publisher": "Consumer Reports",
+      "published": "2025",
+      "stance": "supports",
+      "about": "Audi A6 e-tron infotainment evaluation"
+    },
+    {
+      "text": "Multiple reviews found the A6 e‑tron’s voice assistant and touch‑first interface sometimes frustrating or unreliable compared with conventional physical controls.",
+      "url": "https://arstechnica.com/cars/2025/07/audis-midsize-sedan-goes-electric-the-2025-a6-and-s6-sportback-driven/",
+      "publisher": "Ars Technica",
+      "published": "2025-07",
+      "stance": "supports",
+      "about": "Audi A6 e-tron voice and touchscreen usability"
+    },
+    {
+      "text": "BMW 5 Series (G60): BMW’s new ‘curved’ cockpit pairs a 12.3‑inch digital instrument display with a 14.9‑inch center touchscreen running BMW Operating System (iDrive) 8 / 8.5 (market/trim dependent).",
+      "url": "https://www.motortrend.com/features/new-bmw-cars-lineup-updates-changes/",
+      "publisher": "MotorTrend",
+      "published": "2024-12-18",
+      "stance": "supports",
+      "about": "BMW 5 Series G60 display and OS (iDrive)"
+    },
+    {
+      "text": "BMW retains the iDrive rotary/rotary+touch interaction (QuickSelect and physical shortcut buttons) alongside the touchscreen, so users can still operate many functions via the controller rather than only by touching the screen.",
+      "url": "https://www.press.bmwgroup.com/deutschland/article/detail/T0416261DE/die-neue-bmw-5er-limousine?language=de",
+      "publisher": "BMW (press release)",
+      "published": "2023-05-24",
+      "stance": "supports",
+      "about": "BMW 5 Series controls (iDrive / QuickSelect)"
+    },
+    {
+      "text": "Owners and forum reports indicate wireless Apple CarPlay connectivity (audio drops, missing track info, controls unresponsive, or intermittent reconnect failures) has been frequently reported on recent BMW vehicles including 5‑Series/i5/iX lines—users cite software/OS updates and dealer patches as common remediation steps.",
+      "url": "https://www.reddit.com/r/BMW/comments/1t19gek/apple_carplay_connectivity_issues_still_happening/",
+      "publisher": "Reddit (BMW subreddit)",
+      "published": "2026-05-01",
+      "stance": "supports",
+      "about": "User reports of BMW wireless Apple CarPlay problems"
+    },
+    {
+      "text": "Independent troubleshooting guides and press coverage collecting owner complaints list wireless CarPlay instability on BMWs as a recurring, widely reported problem (causes reported as iDrive software, iOS versions, Bluetooth/Wi‑Fi pairing or interference).",
+      "url": "https://motorys.com/blogs/news/bmw-wireless-carplay-keeps-disconnecting-stuck-on-connecting-or-cutting-out-proven-fixes-for-2026",
+      "publisher": "Motorys (tech/repair site)",
+      "published": "2026",
+      "stance": "supports",
+      "about": "BMW Apple CarPlay troubleshooting and owner-reported causes"
+    },
+    {
+      "text": "Audi A6 e‑tron owner forums and threads document software and connectivity issues (including intermittent wireless CarPlay problems, audio failures, GPS/module faults and other MMI software bugs) reported by early owners since launch.",
+      "url": "https://www.audiworld.com/forums/audi-a6-e-tron-247/crapp-software-car-app-a6-e-tron-2025-a-3084447/",
+      "publisher": "AudiWorld forum",
+      "published": "2025",
+      "stance": "supports",
+      "about": "Audi A6 e-tron owner-reported software/connectivity issues"
+    },
+    {
+      "text": "Summary (practical comparison): both cars use large curved digital displays and lean heavily on touchscreen interfaces; Audi’s A6 e‑tron emphasizes capacitive touchscreen controls (and offers an optional passenger screen) but has had multiple owner/review reports of software/connectivity bugs, while BMW’s G60 keeps an iDrive controller and physical shortcuts (giving an alternate, non‑touch control path) but has frequent owner reports of wireless Apple CarPlay instability across BMW models in 2025–2026.",
+      "url": "https://www.caranddriver.com/reviews/a62986357/2025-audi-a6-e-tron-drive/, https://www.motortrend.com/features/new-bmw-cars-lineup-updates-changes/, https://www.reddit.com/r/BMW/comments/1t19gek/apple_carplay_connectivity_issues_still_happening/",
+      "publisher": "Car and Driver; MotorTrend; Reddit",
+      "published": "2025–2026",
+      "stance": "neutral",
+      "about": "Comparison of Audi A6 e-tron vs BMW 5 Series (G60) infotainment, displays and controls"
+    }
+  ]
+}

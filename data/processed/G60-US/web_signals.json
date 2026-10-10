@@ -1,0 +1,172 @@
+[
+ {
+  "id": "SIG-G60-US-WEB-01",
+  "kind": "competitor_advantage",
+  "category": "comfort_space",
+  "title": "Mercedes-Benz E-Class: Hands free trunk doesn't work consistently",
+  "summary": "U.S. reviews (MotorTrend, KBB) and long‑form road tests highlight the E‑Class’s quiet, cushioned ride and optional air suspension as key comfort strengths—MotorTrend named the redesigned E‑Class highly for refinement and comfort.  Car and Driver’s 2025 5‑Series review rates the BMW as a comfortable, upscale sedan that prioritizes a balance of comfort and sporty feel—plush seats front and rear and a composed ride—while noting the 5‑Series favors driver engagement relative to some rivals. ",
+  "evidence_ids": [
+   "EV-G60-US-WEB-05",
+   "EV-G60-US-WEB-06"
+  ],
+  "mention_count": 2,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-WEB-02",
+  "kind": "competitor_advantage",
+  "category": "range_charging",
+  "title": "Audi A6 e-tron: Range feels limited and fluctuates",
+  "summary": "The 2025 Audi A6 Sportback e-tron has EPA-rated ranges reported by Consumer Reports of 333 miles for the quattro (AWD) and up to 392 miles for the RWD variant; Consumer Reports also recorded a 70-mph highway test of 347 miles for an A6 e-tron which exceeded the EPA estimate. ([consumerreports.org](https://www.consumerreports.org/cars/audi/a6-e-tron/2025/road-test-report/?utm_source=openai)) Audi publishes the A6 e-tron with an 800‑volt architecture and a battery architecture offering a ~100 kWh gross pack (≈94.9 kWh net for the larger pack) and shows a maximum DC charging acceptance around 270 kW in Audi technical material. ([media.audi.com](https://media.audi.com/is/content/audi/microsites/audi-com/assets/downloads/events-and-presentations/investor-presentations/2024/audi-analyst-day-2024.pdf?utm_source=openai)) Audi USA states 2025 A6 e-tron owners receive one year of unlimited Electrify America DC fast‑charging credits for the original owner and the A6 e-tron supports battery preconditioning for faster DC charging. ([audiusa.com](https://www.audiusa.com/en/support/help/video-tutorials/models/a6/layer/?showPreferenceCenter=true&utm_source=openai))",
+  "evidence_ids": [
+   "EV-G60-US-WEB-08",
+   "EV-G60-US-WEB-09",
+   "EV-G60-US-WEB-10",
+   "EV-G60-US-WEB-12",
+   "EV-G60-US-WEB-13",
+   "EV-G60-US-WEB-14",
+   "EV-G60-US-WEB-16"
+  ],
+  "mention_count": 7,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-WEB-03",
+  "kind": "competitor_advantage",
+  "category": "comfort_space",
+  "title": "Tesla Model S: Seat height doesn't go high enough",
+  "summary": "Tesla Model S (Tesla owners manual) lists cargo volumes: front trunk 3.1 cu ft, rear trunk 25.0 cu ft (rear seats up), 61.4 cu ft with the rear seats folded, and maximum total cargo volume 64.6 cu ft. Tesla's official owner's manual documents power seat controls that allow moving the seat forward/back and adjusting the seat’s height and tilt angle up/down, and it also includes a driver-seat calibration procedure (useful if the seat range appears limited).",
+  "evidence_ids": [
+   "EV-G60-US-WEB-17",
+   "EV-G60-US-WEB-19"
+  ],
+  "mention_count": 2,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-WEB-04",
+  "kind": "competitor_advantage",
+  "category": "driving_experience",
+  "title": "Genesis G80: Power delivery is weak, jerky, or inconsistent",
+  "summary": "Multiple professional reviews of the 2025 Genesis G80 describe it as comfort‑biased with a plush, isolated ride and composed handling rather than a sport‑tuned chassis. Edmunds’ 2025 G80 coverage reports a “cushy ride” and a smooth transmission in normal driving but notes the V6 G80 isn’t as quick as some competitors — i.e., reviewers find it refined for comfort but not the sharpest in power delivery/performance compared with rivals. Major reviews of the BMW 5‑Series (G60) characterize it as more driver‑focused and subtly athletic — sharper handling and a firmer (but still refined) ride compared with comfort‑biased rivals such as the Genesis G80.",
+  "evidence_ids": [
+   "EV-G60-US-WEB-22",
+   "EV-G60-US-WEB-23",
+   "EV-G60-US-WEB-24"
+  ],
+  "mention_count": 3,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-WEB-05",
+  "kind": "competitor_advantage",
+  "category": "driving_experience",
+  "title": "Lucid Air: Brakes squeal, grind, have heavy dust and feel grabby",
+  "summary": "Consumer Reports' 2025 road-test summary describes the Lucid Air’s ride as “very well composed,” saying it makes the Air feel “almost like it’s riding on air.” MotorTrend’s 2025 road test of the Lucid Air calls its ride quality “exceptional,” noting it is “cushy and comfy without being sloppy.” Autocar’s testing (2025/2026 coverage) reports the Lucid Air’s secondary ride is “particularly impressive,” and that the car makes “quiet and quick progress in supreme comfort.”",
+  "evidence_ids": [
+   "EV-G60-US-WEB-28",
+   "EV-G60-US-WEB-29",
+   "EV-G60-US-WEB-30",
+   "EV-G60-US-WEB-31",
+   "EV-G60-US-WEB-32"
+  ],
+  "mention_count": 5,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-WEB-06",
+  "kind": "competitor_advantage",
+  "category": "comfort_space",
+  "title": "Mercedes-Benz E-Class: Only the driver door unlocks",
+  "summary": "U.S.-market listing sites and spec aggregators report the 2025 Mercedes‑Benz E‑Class (U.S. specs) cargo capacity as 12.7 cu ft (cargo, all seats in place). Some press/reviews and European-spec sources report the W214 E‑Class trunk as ~540 L (~19.0 cu ft); Autoblog’s luggage test (Apr 1, 2024) noted Mercedes’ 19‑cu‑ft spec likely counts underfloor volumes and warned the on‑paper number can be misleading for real luggage packing.",
+  "evidence_ids": [
+   "EV-G60-US-WEB-38",
+   "EV-G60-US-WEB-39"
+  ],
+  "mention_count": 2,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-WEB-07",
+  "kind": "competitor_advantage",
+  "category": "infotainment_digital",
+  "title": "Audi A6 e-tron: Apple CarPlay is glitchy and unreliable",
+  "summary": "Audi A6 e-tron: the production interior uses a slim curved ‘MMI panoramic display’ consisting of an 11.9‑inch digital driver display and a 14.5‑inch center MMI touchscreen, with an optional 10.9‑inch passenger touchscreen available. Reviewers report Audi’s A6 e‑tron shifts many secondary controls (climate, some drive settings) to capacitive touch and touchscreen surfaces with relatively few physical knobs or buttons. The 2025 Audi A6 Sportback e-tron has EPA-rated ranges reported by Consumer Reports of 333 miles for the quattro (AWD) and up to 392 miles for the RWD variant; Consumer Reports also recorded a 70-mph highway test of 347 miles for an A6 e-tron which exceeded the EPA estimate. ([consumerreports.org](https://www.consumerreports.org/cars/audi/a6-e-tron/2025/road-test-report/?utm_source=openai))",
+  "evidence_ids": [
+   "EV-G60-US-WEB-43",
+   "EV-G60-US-WEB-44",
+   "EV-G60-US-WEB-08",
+   "EV-G60-US-WEB-46"
+  ],
+  "mention_count": 4,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-WEB-08",
+  "kind": "competitor_advantage",
+  "category": "range_charging",
+  "title": "Tesla Model S: Hard to find compatible charging stations",
+  "summary": "Tesla Model S (2025 model-year) delivers the longest EPA-rated range in this comparison — roughly 402–410 miles for the Long‑Range/standard variants and about 348 miles for the Plaid, per published model specs and reviews. Tesla Supercharger access for non‑Tesla cars is not automatically universal — manufacturers and Tesla must enable software handshakes or provide adapters; some non‑Tesla models with native NACS ports (or with a validated NACS adapter) can plug directly at many open Supercharger stalls, but legacy CCS cars often need an adapter or to find a 'Magic Dock' stall.",
+  "evidence_ids": [
+   "EV-G60-US-WEB-51",
+   "EV-G60-US-WEB-54"
+  ],
+  "mention_count": 2,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-WEB-09",
+  "kind": "trend",
+  "category": "interior",
+  "title": "Trend 2028-2031: interior",
+  "summary": "Consulting research argues that software‑defined cockpits, larger integrated displays, advanced HMI and wellness features (air quality, climate personalization, biometric monitoring) will become key premium differentiators and increasingly standard in luxury/mid‑luxury cabins through 2030.",
+  "evidence_ids": [
+   "EV-G60-US-WEB-86"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ },
+ {
+  "id": "SIG-G60-US-WEB-10",
+  "kind": "trend",
+  "category": "driver_assistance",
+  "title": "Trend 2028-2031: driver_assistance",
+  "summary": "Mercedes‑Benz initially certified and marketed DRIVE PILOT (SAE Level‑3 conditional automation) for select 2024 S‑Class and EQS models in limited U.S. jurisdictions, but media reporting in 2026–2027 documents that Mercedes has paused/contractually reset broader U.S. expansion of DRIVE PILOT citing supplier (LiDAR) and cost/scope issues. Reporting from multiple outlets in 2026–2027 indicates Mercedes has paused the broader U.S. rollout of DRIVE PILOT because of supplier/LiDAR contract problems and high cost/usability considerations.",
+  "evidence_ids": [
+   "EV-G60-US-WEB-94",
+   "EV-G60-US-WEB-95"
+  ],
+  "mention_count": 2,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": []
+ }
+]

@@ -1,0 +1,404 @@
+{
+  "drafts": [
+    {
+      "title": "Keep the car's strong, smooth and responsive driving feel",
+      "description": "When accelerating and changing speed the car should feel powerful, linear and refined — delivering strong uptake without jerks or surges and retaining the sporty yet comfortable handling customers enjoy.",
+      "acceptance_criterion": "Standard electric / plug‑in hybrid variants achieve 0–60 mph ≤ 5.5 s in a manufacturer test and show no acceleration 'jerk' spikes exceeding 0.5 m/s^3 during 0–60 mph and 30–70 mph overtaking runs in vehicle dynamics tests.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-001",
+        "SIG-G60-US-002",
+        "SIG-G60-US-004",
+        "SIG-G60-US-017",
+        "SIG-G60-US-022",
+        "SIG-G60-US-036"
+      ],
+      "assumptions": [
+        "Successor vehicle will continue to offer electric and plug‑in hybrid powertrains similar in power to current G60 variants.",
+        "Vehicle dynamics test lab and standardized drive routes are available to measure 0–60 times and jerk metrics."
+      ],
+      "uncertainties": [
+        "Exact performance targets may change depending on final powertrain mix and regulatory constraints.",
+        "Customer perception of 'strong' may vary across markets and driving styles."
+      ],
+      "effort": "M",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Preserve and improve the interior's luxurious look and comfort",
+      "description": "The cabin should feel and look noticeably luxurious, with high‑quality materials and a layout that customers describe as upscale, refined and easy to live with over long trips.",
+      "acceptance_criterion": "In a 100‑person blinded customer study representing target US buyers, average ratings are ≥8.0/10 for (a) overall interior design and (b) perceived cabin comfort; at least 85% of participants rate the interior as 'more comfortable' than their previous vehicle.",
+      "category": "interior",
+      "signal_ids": [
+        "SIG-G60-US-005",
+        "SIG-G60-US-006",
+        "SIG-G60-US-016",
+        "SIG-G60-US-031",
+        "SIG-G60-US-035"
+      ],
+      "assumptions": [
+        "A representative user study with at least 100 participants will be run during validation.",
+        "Materials and fit/finish achievable within successor program budget."
+      ],
+      "uncertainties": [
+        "Design tastes evolve; what is considered 'luxurious' may shift over the 3–5 year horizon.",
+        "Study results depend on sample composition (age, prior cars)."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Seats that fit a wide range of body sizes and provide comfortable support",
+      "description": "Seats must be comfortable for long trips, offer supportive bolstering that works for both larger and smaller occupants, and provide adjustment range (including height and leg extension) so shorter drivers can get a clear forward view.",
+      "acceptance_criterion": "Driver seat offers total vertical travel ≥180 mm and a leg‑extension feature; in user testing 95% of drivers (including 5th‑percentile female participants) can establish a forward sightline over the hood and report seat comfort ≥8/10 after a 2‑hour drive.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-007",
+        "SIG-G60-US-010",
+        "SIG-G60-US-038"
+      ],
+      "assumptions": [
+        "Current seat packaging can be modified to increase vertical travel within vehicle packaging limits.",
+        "Eye‑point and hood geometry analysis is available to validate sightline targets."
+      ],
+      "uncertainties": [
+        "Exact vertical travel required depends on final hood styling and instrument/passenger bar geometry.",
+        "Tradeoffs may be required between seat contour/bolster firmness and packaging."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Reliable hands‑free trunk operation that works first time",
+      "description": "When customers use the touchless kick‑to‑open function it should open reliably on the first try, with predictable behavior and minimal lag so users with full hands can trust it.",
+      "acceptance_criterion": "Hands‑free trunk opens on the first valid kick gesture in ≥95% of trials across a representative sample of users, with activation latency ≤1.5 seconds and no unintended random openings in 99% of parked vehicle hours tested.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-008",
+        "SIG-G60-US-041"
+      ],
+      "assumptions": [
+        "Improved sensor/algorithm tuning and detection zone definition are feasible for the successor vehicle.",
+        "User tests will include a representative variety of footwear and carry positions."
+      ],
+      "uncertainties": [
+        "Environmental factors (mud, snow, tight parking) may affect detection performance in the field.",
+        "False positive openings could be impacted by third‑party accessories."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Accurate and stable EV range estimates customers can trust",
+      "description": "The displayed electric range should match real‑world experience and remain stable during normal driving so customers do not experience anxiety about unexpectedly losing range.",
+      "acceptance_criterion": "Displayed EV range prediction stays within ±8% of measured real‑world range over standardized mixed city/highway routes and across common temperature conditions; range estimate fluctuations are ≤±5 miles over 10 minutes of steady driving in 95% of trials.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-009",
+        "SIG-G60-US-014",
+        "SIG-G60-US-027"
+      ],
+      "assumptions": [
+        "Improved vehicle energy modeling and environmental sensor inputs are available in successor software.",
+        "Validation routes and environmental conditions (including low temperature) will be included in testing."
+      ],
+      "uncertainties": [
+        "Extreme driving behavior or very cold temperatures will still produce larger deviations.",
+        "Estimators rely on accurate tire pressure, load and accessory usage data that must be measured or inferred."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "In‑car charger finder that shows compatibility and live availability",
+      "description": "When planning a trip or searching for a charger the vehicle should show chargers compatible with the car and indicate likely availability so drivers can plan stops with confidence.",
+      "acceptance_criterion": "In‑vehicle charger search returns compatible stations, live availability (occupied/out‑of‑service) and a recommended option; in a test dataset it selects an available compatible charger and provides routing guidance in ≥90% of trips where a public charger is required.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-020"
+      ],
+      "assumptions": [
+        "Access to networked charger status APIs and partnerships (or aggregators) is available.",
+        "Map and backend data are updated frequently enough for 'live' status to be meaningful."
+      ],
+      "uncertainties": [
+        "Coverage and accuracy depend on third‑party charger network participation.",
+        "Blocked or privately reserved stalls may still appear available in some areas."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Deliver usable charging performance for real trips",
+      "description": "Charging at public DC fast chargers should allow practical trip planning — reaching a useful state of charge quickly so drivers can continue their trip without long waits.",
+      "acceptance_criterion": "When connected to public DC chargers that advertise ≥150 kW and are functioning properly, the vehicle charges to 80% state‑of‑charge in ≤30 minutes under typical ambient temperatures in ≥80% of test sessions.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-027",
+        "SIG-G60-US-020"
+      ],
+      "assumptions": [
+        "Public chargers of sufficient capability are available in the tested regions and report accurate power.",
+        "Battery thermal management enables sustained high‑power charging for the successor battery chemistry."
+      ],
+      "uncertainties": [
+        "Actual achieved power depends on charger condition, grid constraints and battery state of health.",
+        "Final charging curve will depend on battery chemistry and pack thermal limits."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Keep the large touchscreen and infotainment strengths while reducing clutter and improving essential access",
+      "description": "Retain the appealing large, long display and responsive interface customers like, but simplify access to common functions (volume, navigation, climate, trip odometer) so drivers are not distracted and can find basic info quickly.",
+      "acceptance_criterion": "Basic driving‑related functions (volume, map/navigation start, odometer/trip, quick climate adjustments) are reachable within 2 taps or via a dedicated physical shortcut; Apple CarPlay pairs reliably with a first‑time connect success rate ≥98% and reconnects automatically on subsequent visits ≥99%. Odometer/trip mileage is visible by default or via a one‑press control.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-011",
+        "SIG-G60-US-023",
+        "SIG-G60-US-028",
+        "SIG-G60-US-019",
+        "SIG-G60-US-021",
+        "SIG-G60-US-026",
+        "SIG-G60-US-032"
+      ],
+      "assumptions": [
+        "Software and HMI changes can add physical shortcuts or persistent soft keys for the most common tasks.",
+        "Integration with Apple CarPlay will be maintained and tested across major phone OS versions."
+      ],
+      "uncertainties": [
+        "Third‑party phone OS changes may affect CarPlay behavior between development and production.",
+        "Driver expectations for 'minimal taps' vary by age and prior vehicle experience."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Wireless phone charging that reliably holds and charges typical phones without constant repositioning",
+      "description": "The in‑car wireless charging area should accept most modern phones, keep them stable while driving and charge consistently so customers don't have to plug in a cable for everyday use.",
+      "acceptance_criterion": "In a compatibility test with a representative set of popular phones, ≥95% of devices begin charging without repositioning; the pad maintains charging throughout normal vehicle maneuvers and delivers ≥5 W charge rate to those phones in 95% of trials.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-029"
+      ],
+      "assumptions": [
+        "Representative phone set will include current top models across major vendors and sizes.",
+        "Charging behavior is measured with phones at normal states of charge and with typical cases."
+      ],
+      "uncertainties": [
+        "Very large phones or unusual cases may still require manual placement or a cable.",
+        "EMI, metallic cases, or accessories can degrade wireless charging performance."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make HVAC primary controls and vents obvious and usable without deep menus",
+      "description": "Customers must be able to change temperature, fan speed, defrost and vent direction quickly without navigating multiple menus or taking long glances at the screen; vents should be visible and easy to aim.",
+      "acceptance_criterion": "Drivers can perform the 4 core HVAC operations (temp up/down, fan speed, defrost, vent direction) within 2 seconds and in ≤2 interactions in 90% of driving simulator trials; vents are physically adjustable and visible from the driver's seating position.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-030"
+      ],
+      "assumptions": [
+        "A mix of physical controls and dedicated quick‑access soft keys will be used for the successor HMI.",
+        "Validation testing will include distracted driving scenarios to measure glance and interaction time."
+      ],
+      "uncertainties": [
+        "Balancing minimalist aesthetics with visible controls may require compromises in center stack layout.",
+        "Some owners may still prefer full touchscreen control for aesthetic reasons."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Default approach unlock opens all passenger doors unless the user chooses otherwise",
+      "description": "When the owner approaches the car with the key, all door handles should unlock by default so people riding in back are not left locked out or confused.",
+      "acceptance_criterion": "With Comfort Access enabled and the key in proximity, all exterior door handles unlock in ≥95% of approach trials; the behavior can be changed by the user in a clearly labeled setting.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-018"
+      ],
+      "assumptions": [
+        "Comfort Access hardware supports unlocking multiple doors on approach.",
+        "A simple, discoverable UI setting can be provided to change default behavior."
+      ],
+      "uncertainties": [
+        "Security or insurance considerations in some markets might require different defaults.",
+        "Some users may prefer single‑door unlock and need education on the setting."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Brakes that feel smooth, non‑grabby and quiet early in ownership",
+      "description": "Braking should be predictable and modulation‑friendly without early squeal, excessive dust or grabby behavior that makes stops feel rough or unpleasant.",
+      "acceptance_criterion": "During first‑year ownership complaint rate for brake noise/grinding is <1% in owner feedback; in deceleration tests between 0.2–0.6 g the brake pedal modulation produces peak jerk ≤0.6 m/s^3 and subjective noise rating ≤2/10.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-015"
+      ],
+      "assumptions": [
+        "Brake hardware options and pad material choices are adjustable in the successor program.",
+        "Initial pad bedding and factory tolerances will be controlled to reduce early noise and dust."
+      ],
+      "uncertainties": [
+        "Brake dust is influenced by wheel and pad finish as well as driving style; some dust is unavoidable.",
+        "Environmental factors (road salt) can increase squeal complaints in some regions."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Allow drivers to permanently disable engine start‑stop if they choose",
+      "description": "Drivers must be able to turn off automatic engine start‑stop and have that preference persist across ignition cycles so they do not need to reapply it each drive.",
+      "acceptance_criterion": "A single, discoverable user setting exists that disables start‑stop persistently; after setting it, start‑stop remains disabled across ignition cycles in 99% of validation tests.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-025",
+        "SIG-G60-US-039"
+      ],
+      "assumptions": [
+        "Regulatory or emissions requirements in the target market allow user‑persistent disable or a suitable manufacturer setting.",
+        "UI changes can persist user preferences across updates and resets."
+      ],
+      "uncertainties": [
+        "In some jurisdictions regulations may limit the ability to disable start‑stop permanently.",
+        "Dealership or service resets could unintentionally revert the setting if not designed robustly."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Reliable voice control in everyday cabin conditions",
+      "description": "Voice recognition should work well for common vehicle commands even with road and wind noise so customers actually use it and trust it.",
+      "acceptance_criterion": "In tests with background cabin noise representative of highway driving, core voice commands (navigation start, call contact, climate set, media play) are correctly recognized and executed ≥90% of the time.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-042"
+      ],
+      "assumptions": [
+        "Microphone array and on‑board processing will be improved for successor model.",
+        "The evaluation set will reflect realistic accents and phrasing used by US customers."
+      ],
+      "uncertainties": [
+        "Accuracy depends on phone OS, user diction, and ambient noise levels.",
+        "Third‑party voice backend changes could affect performance after release."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Robust in‑car Wi‑Fi hotspot performance",
+      "description": "The vehicle hotspot should provide a stable connection suitable for streaming and multiple devices during typical trips.",
+      "acceptance_criterion": "During a 1‑hour real‑world drive with 3–4 devices connected, average aggregate throughput is ≥20 Mbps and connection drop rate is <2%.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-043"
+      ],
+      "assumptions": [
+        "Cellular modem quality and carrier data plans are provisioned for the vehicle.",
+        "Testing will be performed in regions with reasonable cellular coverage."
+      ],
+      "uncertainties": [
+        "Performance depends on local carrier coverage and congestion; some locations will not meet targets.",
+        "Data plan and carrier agreements are outside vehicle engineering scope."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Provide convenient and useful interior storage",
+      "description": "Customers should have accessible storage for everyday items (phones, wallets, beverages, small bags) that is easy to reach and use.",
+      "acceptance_criterion": "Central storage areas provide ≥10 L of readily accessible small‑item volume; the central console fits two 1 L bottles side‑by‑side plus a phone and wallet without obstructing controls.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-040"
+      ],
+      "assumptions": [
+        "Interior packaging changes can reallocate volume to increase accessible storage.",
+        "Measurement uses standardized test bottles and devices."
+      ],
+      "uncertainties": [
+        "Balancing storage with other features (armrest, HVAC ducts) may require tradeoffs.",
+        "Customers' expectations for 'enough' storage vary by lifestyle."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Specify wireless charging power / compatibility (engineering spec) — OUT OF SCOPE",
+      "description": "Engineering specification for the wireless charging pad (power and compatibility) requested by product teams.",
+      "acceptance_criterion": "Support Qi charging at up to 15 W and accommodate phones up to 85 mm wide in the charging area (engineering validation).",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-029"
+      ],
+      "assumptions": [
+        "Hardware and thermal constraints allow 15 W wireless charging in the vehicle environment.",
+        "Phone manufacturers maintain Qi compatibility."
+      ],
+      "uncertainties": [
+        "Some phone cases or metal attachments will still block charging.",
+        "Higher power may increase thermal management needs in the console area."
+      ],
+      "effort": "M",
+      "forward_looking": true,
+      "in_scope": false,
+      "scope_reason": "This draft is an engineering/component specification (charger power/physical sizing) rather than a direct customer experience requirement."
+    },
+    {
+      "title": "Specify DC charging peak power target (engineering spec) — OUT OF SCOPE",
+      "description": "Engineering target for maximum DC charge acceptance to meet customer expectations for charging speed.",
+      "acceptance_criterion": "Vehicle battery and on‑board systems accept and sustain ≥150 kW peak charge power when connected to compatible public DC fast chargers under validated thermal conditions.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-027"
+      ],
+      "assumptions": [
+        "Battery chemistry and cooling systems can be engineered to accept 150 kW safely in the successor program.",
+        "Public chargers of this capability are sufficiently common in target markets."
+      ],
+      "uncertainties": [
+        "Sustained peak power depends on battery SOC, temperature and charger behavior.",
+        "Regulatory or warranty constraints may limit peak power targets."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": false,
+      "scope_reason": "This is a technical power/charging capability target (kW) rather than a customer‑facing outcome and is therefore out of scope per requirements rules."
+    }
+  ]
+}

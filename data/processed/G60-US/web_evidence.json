@@ -1,0 +1,1920 @@
+[
+ {
+  "id": "EV-G60-US-WEB-01",
+  "source_type": "web",
+  "source_name": "BMW Group Press",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW's US technical specifications list the 530i sedan (G60 platform) trunk volume as 18.4 cubic feet (US-spec 530i figure).",
+  "url": "https://www.press.bmwgroup.com/usa/article/attachment/T0418778EN_US/624323",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press",
+   "published": "2024",
+   "stance": "supports",
+   "about": "BMW 5 Series (G60) cargo volume (US spec)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-008"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-02",
+  "source_type": "web",
+  "source_name": "Kelley Blue Book (KBB)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Kelley Blue Book and other US reviewers report the Mercedes‑Benz E‑Class sedan's trunk at about 19.1 cubic feet (≈540 liters) for the non‑PHEV/mild‑hybrid sedan, making it one of the larger trunks in this segment. ",
+  "url": "https://www.kbb.com/mercedes-benz/e_class/2025/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Kelley Blue Book (KBB)",
+   "published": "2025-01-30",
+   "stance": "supports",
+   "about": "Mercedes‑Benz E‑Class trunk volume (non‑PHEV) in US market",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-008"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-03",
+  "source_type": "web",
+  "source_name": "The Car Connection / Cars-by‑Spec (data)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Published specifications and data aggregators show that E‑Class plug‑in‑hybrid variants have a materially smaller boot (about 370 liters / roughly 13.1 cubic feet), while the mild‑hybrid/standard E‑Class offers the larger 540 L (≈19.1 cu ft) cargo space—i.e., cargo capacity depends strongly on powertrain. ",
+  "url": "https://www.thecarconnection.com/specifications/mercedes-benz_e-class_2025",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "The Car Connection / Cars-by‑Spec (data)",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Mercedes E‑Class cargo difference between PHEV and non‑PHEV models",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-008"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-04",
+  "source_type": "web",
+  "source_name": "Autocar India",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Multiple professional reviews note the new E‑Class emphasizes rear‑seat luxury and a pampering, quiet cabin (Mercedes is repeatedly described as more ‘business‑class’ for rear passengers), while the BMW 5‑Series emphasizes driver‑focused dynamics and still delivers comfortable front and rear seats—so the E‑Class leans more toward rear‑seat pampering and the 5‑Series toward driver engagement. ",
+  "url": "https://www.autocarindia.com/car-comparison-reviews-amp/mercedes-e-class-vs-bmw-5-series-comparison-433838",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autocar India",
+   "published": "2024-12-13",
+   "stance": "supports",
+   "about": "Comparison: rear‑seat comfort and driving focus (E‑Class vs BMW 5 Series)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-008"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-05",
+  "source_type": "web",
+  "source_name": "MotorTrend",
+  "derivative": "G60",
+  "market": "US",
+  "text": "U.S. reviews (MotorTrend, KBB) and long‑form road tests highlight the E‑Class’s quiet, cushioned ride and optional air suspension as key comfort strengths—MotorTrend named the redesigned E‑Class highly for refinement and comfort. ",
+  "url": "https://www.motortrend.com/cars/mercedes-benz/e-class/2024",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "MotorTrend",
+   "published": "2024",
+   "stance": "supports",
+   "about": "Mercedes‑Benz E‑Class overall comfort and ride quality",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-008"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-06",
+  "source_type": "web",
+  "source_name": "Car and Driver",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Car and Driver’s 2025 5‑Series review rates the BMW as a comfortable, upscale sedan that prioritizes a balance of comfort and sporty feel—plush seats front and rear and a composed ride—while noting the 5‑Series favors driver engagement relative to some rivals. ",
+  "url": "https://www.caranddriver.com/bmw/5-series-2025",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Car and Driver",
+   "published": "2025",
+   "stance": "supports",
+   "about": "BMW 5 Series (G60) comfort and driving character",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-008"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-07",
+  "source_type": "web",
+  "source_name": "Go‑Parts Garage",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Independent technical/owner‑advice resources and owner reports document many G60 (2024–2026 5‑Series / i5) owners experiencing intermittent or unreliable hands‑free 'kick‑to‑open' trunk operation and related electronic/soft‑close trunk symptoms; these guides recommend checking latch sensors, wiring at the hinge, and TSBs. ",
+  "url": "https://www.go-parts.com/garage/trunk-lid-or-tailgate-bmw-530i-bmw-540i-bmw-i5-2024-2026",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Go‑Parts Garage",
+   "published": "2026-09-19",
+   "stance": "supports",
+   "about": "BMW G60 hands‑free trunk / kick‑to‑open reliability reports",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-008"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-08",
+  "source_type": "web",
+  "source_name": "Consumer Reports",
+  "derivative": "G60",
+  "market": "US",
+  "text": "The 2025 Audi A6 Sportback e-tron has EPA-rated ranges reported by Consumer Reports of 333 miles for the quattro (AWD) and up to 392 miles for the RWD variant; Consumer Reports also recorded a 70-mph highway test of 347 miles for an A6 e-tron which exceeded the EPA estimate. ([consumerreports.org](https://www.consumerreports.org/cars/audi/a6-e-tron/2025/road-test-report/?utm_source=openai))",
+  "url": "https://www.consumerreports.org/cars/audi/a6-e-tron/2025/road-test-report/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Consumer Reports",
+   "published": "accessed 2026-10-10",
+   "stance": "supports",
+   "about": "Audi A6 e-tron EPA and real-world range",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-009"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-09",
+  "source_type": "web",
+  "source_name": "Audi (press / technical materials)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Audi publishes the A6 e-tron with an 800‑volt architecture and a battery architecture offering a ~100 kWh gross pack (≈94.9 kWh net for the larger pack) and shows a maximum DC charging acceptance around 270 kW in Audi technical material. ([media.audi.com](https://media.audi.com/is/content/audi/microsites/audi-com/assets/downloads/events-and-presentations/investor-presentations/2024/audi-analyst-day-2024.pdf?utm_source=openai))",
+  "url": "https://media.audi.com/is/content/audi/country/nz/assets/specifications/2025/july/A6-e-tron-MY25-Specifications.pdf",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Audi (press / technical materials)",
+   "published": "accessed 2026-10-10",
+   "stance": "supports",
+   "about": "Audi A6 e-tron battery size and peak DC charge rate",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-009"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-10",
+  "source_type": "web",
+  "source_name": "Audi USA (EV Hub / FAQs)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Audi USA states 2025 A6 e-tron owners receive one year of unlimited Electrify America DC fast‑charging credits for the original owner and the A6 e-tron supports battery preconditioning for faster DC charging. ([audiusa.com](https://www.audiusa.com/en/support/help/video-tutorials/models/a6/layer/?showPreferenceCenter=true&utm_source=openai))",
+  "url": "https://www.audiusa.com/en/ev-hub/faqs/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Audi USA (EV Hub / FAQs)",
+   "published": "accessed 2026-10-10",
+   "stance": "supports",
+   "about": "Audi Electrify America charging credit & preconditioning",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-009"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-11",
+  "source_type": "web",
+  "source_name": "Recharged (independent EV testing / analysis)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW’s i5 (G60) eDrive40 family is built around an ≈81–84 kWh usable battery with EPA combined-range examples around ~295 miles for the eDrive40 on 19‑inch wheels (EPA range varies by wheel size and trim). ([recharged.com](https://recharged.com/articles/2025-bmw-i5-range-test?utm_source=openai))",
+  "url": "https://recharged.com/articles/2025-bmw-i5-range-test/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Recharged (independent EV testing / analysis)",
+   "published": "accessed 2026-10-10",
+   "stance": "supports",
+   "about": "BMW i5 EPA range and usable battery",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-009"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-12",
+  "source_type": "web",
+  "source_name": "BMW USA (technical data)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW publishes the i5’s maximum DC charging acceptance as up to 205 kW (CCS), which is the i5’s published peak on-capability for public DC fast charging. ([bmwusa.com](https://www.bmwusa.com/vehicles/5-series/sedan/bmw-5-series-sedan-technical-data.html?utm_source=openai))",
+  "url": "https://www.bmwusa.com/vehicles/5-series/sedan/bmw-5-series-sedan-technical-data.html",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "BMW USA (technical data)",
+   "published": "accessed 2026-10-10",
+   "stance": "supports",
+   "about": "BMW i5 peak DC charging power",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-009"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-13",
+  "source_type": "web",
+  "source_name": "BMW USA (FAQ)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW offers complimentary Electrify America charging credits on certain 2025–2026 BMW EV models (example: '2 years or 1,000 kWh' for some MY2025 iX, i4 and i5 offers) and BMW has rolled out a Remote Software Upgrade and approved adapter path to allow eligible BMW EVs to use Tesla Supercharger (NACS) stations when the vehicle RSU and adapter are enabled. ([faq.bmwusa.com](https://faq.bmwusa.com/s/article/FAQ-How-to-use-complimentary-charging-session-with-Electrify-America-BMW-USA-Svcyd?utm_source=openai))",
+  "url": "https://faq.bmwusa.com/s/article/FAQ-How-to-use-complimentary-charging-session-with-Electrify-America-BMW-USA-Svcyd",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "BMW USA (FAQ)",
+   "published": "accessed 2026-10-10",
+   "stance": "supports",
+   "about": "BMW complimentary charging and NACS/Supercharger access",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-009"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-14",
+  "source_type": "web",
+  "source_name": "InsideEVs",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Both Audi A6 e-tron and BMW i5 initially use CCS1 in the U.S. but manufacturers (Audi/Porsche/VW group and BMW) made arrangements in 2025–2026 to provide manufacturer‑approved NACS (Tesla) adapter solutions or to ship future model years with native NACS ports so owners can access Tesla Supercharger stalls (implementation details and which model years are eligible vary by model). ([insideevs.com](https://insideevs.com/news/771548/porsche-audi-tesla-supercharger-access-us-official/?utm_source=openai))",
+  "url": "https://insideevs.com/news/771548/porsche-audi-tesla-supercharger-access-us-official/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "InsideEVs",
+   "published": "accessed 2026-10-10",
+   "stance": "supports",
+   "about": "NACS adapter / Supercharger access for Audi and BMW",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-009"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-15",
+  "source_type": "web",
+  "source_name": "ChargeCalcs (EV range analysis)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Major, well‑documented causes for a driver-perceived 'range feels limited and fluctuates' are ambient temperature, HVAC use (heating is especially costly), driving speed and style, tire/wheel selection, terrain, and the vehicle’s range‑prediction algorithm updating based on recent driving — these can change displayed range by 20–40% depending on conditions. ([chargecalcs.com](https://chargecalcs.com/range/ev-range?utm_source=openai))",
+  "url": "https://chargecalcs.com/range/ev-range",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ChargeCalcs (EV range analysis)",
+   "published": "accessed 2026-10-10",
+   "stance": "supports",
+   "about": "causes of EV range variation and fluctuations",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-009"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-16",
+  "source_type": "web",
+  "source_name": "Car and Driver / Consumer Reports / BMW technical data (combined sources)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Practical implication from published tests and spec sheets: the Audi A6 e-tron’s larger high‑voltage pack and 800V-capable charging (≈270 kW peak) generally give longer EPA figures on certain trims and faster short-duration DC replenishment than the BMW i5’s ≈81 kWh usable pack and 205 kW peak; however, in everyday mixed driving the BMW i5 often meets or modestly exceeds its EPA numbers due to its efficiency, so real-world experience depends on trim (wheels), conditions and driving style. ([consumerreports.org](https://www.consumerreports.org/cars/audi/a6-e-tron/2025/road-test-report/?utm_source=openai))",
+  "url": "https://www.caranddriver.com/audi/a6-e-tron",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Car and Driver / Consumer Reports / BMW technical data (combined sources)",
+   "published": "accessed 2026-10-10",
+   "stance": "neutral",
+   "about": "practical comparison: A6 e-tron vs BMW i5 in range and charging",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-009"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-17",
+  "source_type": "web",
+  "source_name": "Tesla (Owner's Manual)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Tesla Model S (Tesla owners manual) lists cargo volumes: front trunk 3.1 cu ft, rear trunk 25.0 cu ft (rear seats up), 61.4 cu ft with the rear seats folded, and maximum total cargo volume 64.6 cu ft.",
+  "url": "https://www.tesla.com/ownersmanual/models/en_mo/GUID-91E5877F-3CD2-4B3B-B2B8-B5DB4A6C0A05.html",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Tesla (Owner's Manual)",
+   "published": "© Tesla 2026 (owners manual page)",
+   "stance": "supports",
+   "about": "Tesla Model S — cargo volume",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-010"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-18",
+  "source_type": "web",
+  "source_name": "BMW Group Press (news article)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW's press materials state the new 5 Series seats were redesigned for a \"noticeable increase in comfort\" and the rear backrests fold 40:20:40 so the three elements can be folded individually or together to create additional cargo space for long items.",
+  "url": "https://www.press.bmwgroup.com/usa/article/detail/T0418778EN_US/the-all-new-2024-bmw-5-series?language=en_US",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press (news article)",
+   "published": "May 24, 2023",
+   "stance": "supports",
+   "about": "BMW 5 Series — seat redesign and 40:20:40 folding rear seat",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-010"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-19",
+  "source_type": "web",
+  "source_name": "Tesla (Owner's Manual PDF)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Tesla's official owner's manual documents power seat controls that allow moving the seat forward/back and adjusting the seat’s height and tilt angle up/down, and it also includes a driver-seat calibration procedure (useful if the seat range appears limited).",
+  "url": "https://www.tesla.com/ownersmanual/models/en_ae/Owners_Manual.pdf",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Tesla (Owner's Manual PDF)",
+   "published": "(owners manual PDF; see seat adjustment and calibration sections)",
+   "stance": "supports",
+   "about": "Tesla Model S — seat adjustment / calibration documented",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-010"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-20",
+  "source_type": "web",
+  "source_name": "Reddit (r/TeslaModelS)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Some Model S owners report seat-height or seat-adjustment problems (examples of owner reports: a recent r/TeslaModelS thread describes the seat height being limited after an update or calibration).",
+  "url": "https://www.reddit.com/r/TeslaModelS/comments/1x1x2bq/seat_adjustment_issues/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Reddit (r/TeslaModelS)",
+   "published": "(post showing \"22h ago\" on the Reddit page at time of crawl)",
+   "stance": "supports",
+   "about": "Customer reports — Model S seat height / adjustment issues",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-010"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-21",
+  "source_type": "web",
+  "source_name": "AutoEdgeView (independent review)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Independent reviewer summary: reviewers note the Model S is very practical for cargo because of its hatchback/liftback design and generous folded-cargo volume, but several reviewers also describe the Model S rear-seat comfort as \"adequate but not class-leading\" versus German rivals (e.g., AutoEdgeView review).",
+  "url": "https://autoedgeview.com/ev-reviews/2024-tesla-model-s-range-charging-review",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "AutoEdgeView (independent review)",
+   "published": "August 27, 2026 (article)",
+   "stance": "supports",
+   "about": "Model S — cargo practicality (hatch) and rear-seat comfort assessment",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-010"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-22",
+  "source_type": "web",
+  "source_name": "Consumer Reports",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Multiple professional reviews of the 2025 Genesis G80 describe it as comfort‑biased with a plush, isolated ride and composed handling rather than a sport‑tuned chassis.",
+  "url": "https://www.consumerreports.org/cars/genesis/g80/2025/road-test-report/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Consumer Reports",
+   "published": "accessed 2026-10-10",
+   "stance": "supports",
+   "about": "2025 Genesis G80 ride comfort and driving character",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-012"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-23",
+  "source_type": "web",
+  "source_name": "Edmunds",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Edmunds’ 2025 G80 coverage reports a “cushy ride” and a smooth transmission in normal driving but notes the V6 G80 isn’t as quick as some competitors — i.e., reviewers find it refined for comfort but not the sharpest in power delivery/performance compared with rivals.",
+  "url": "https://www.edmunds.com/genesis/g80/2025/?msockid=25dc05406640698f267e13e76739684e",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Edmunds",
+   "published": "accessed 2026-10-10",
+   "stance": "supports",
+   "about": "2025 Genesis G80 power delivery and refinement (professional reviews)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-012"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-24",
+  "source_type": "web",
+  "source_name": "Car and Driver",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Major reviews of the BMW 5‑Series (G60) characterize it as more driver‑focused and subtly athletic — sharper handling and a firmer (but still refined) ride compared with comfort‑biased rivals such as the Genesis G80.",
+  "url": "https://www.caranddriver.com/bmw/5-series-2024",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Car and Driver",
+   "published": "accessed 2026-10-10",
+   "stance": "supports",
+   "about": "BMW 5 Series (G60) driving character vs Genesis G80",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-012"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-25",
+  "source_type": "web",
+  "source_name": "Genesis Owners forum (genesisowners.com)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Owner reports and dealer/owner‑forum threads document ‘jerky’ or ‘harsh’ shifts, hesitation, and inconsistent acceleration on recent Genesis models (including G80/G70/GV70); dealers and technical service bulletins (TSBs) have recommended solenoid/TCM procedures or part replacements to address harsh/erratic shifts.",
+  "url": "https://genesisowners.com/genesis-forum/threads/jerky-auto-transmission-hard-downshifts-while-braking.31758/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Genesis Owners forum (genesisowners.com)",
+   "published": "accessed 2026-10-10",
+   "stance": "supports",
+   "about": "Owner-reported jerky shifts and related TSB actions for Genesis models",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-012"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-26",
+  "source_type": "web",
+  "source_name": "NHTSA (Technical Service Bulletin PDF)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Hyundai/Genesis issued service bulletins and NHTSA documentation describing transmission solenoid and control‑module issues (TSBs) that can cause shift flare, harsh shifts or hesitation; those factory service actions are consistent with owners’ reports of uneven/jerky power delivery.",
+  "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10199103-0001.pdf",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "NHTSA (Technical Service Bulletin PDF)",
+   "published": "June 2021 (TSB document)",
+   "stance": "supports",
+   "about": "TSBs linking transmission solenoids/TCM issues to harsh shifts on Genesis models",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-012"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-27",
+  "source_type": "web",
+  "source_name": "NHTSA (recall document)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "NHTSA opened a recall campaign (example: Campaign 24V205/Gen­esis recall 020G for certain 2024 GV70 vehicles) for transmission‑harness water intrusion that can short the transmission control wiring — a defect that can lead to unintended transmission behavior and which is cited in aftermarket/repair writeups about A8LR1/A8TR1 transmission problems affecting Genesis vehicles.",
+  "url": "https://static.nhtsa.gov/odi/rcl/2024/RCAK-24V205-7941.pdf",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "NHTSA (recall document)",
+   "published": "March 21, 2024",
+   "stance": "supports",
+   "about": "Recall / harness water intrusion affecting Genesis transmission behavior (example GV70)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-012"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-28",
+  "source_type": "web",
+  "source_name": "Consumer Reports",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Consumer Reports' 2025 road-test summary describes the Lucid Air’s ride as “very well composed,” saying it makes the Air feel “almost like it’s riding on air.”",
+  "url": "https://www.consumerreports.org/cars/lucid/air/2025/road-test-report/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Consumer Reports",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Lucid Air — ride comfort and driving experience",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-015"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-29",
+  "source_type": "web",
+  "source_name": "MotorTrend",
+  "derivative": "G60",
+  "market": "US",
+  "text": "MotorTrend’s 2025 road test of the Lucid Air calls its ride quality “exceptional,” noting it is “cushy and comfy without being sloppy.”",
+  "url": "https://www.motortrend.com/reviews/2025-lucid-air-pure-first-test",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "MotorTrend",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Lucid Air — ride comfort and driving experience",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-015"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-30",
+  "source_type": "web",
+  "source_name": "Autocar",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Autocar’s testing (2025/2026 coverage) reports the Lucid Air’s secondary ride is “particularly impressive,” and that the car makes “quiet and quick progress in supreme comfort.”",
+  "url": "https://www.autocar.co.uk/car-review/lucid/air",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Autocar",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Lucid Air — ride comfort and driving experience",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-015"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-31",
+  "source_type": "web",
+  "source_name": "Autocar",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Autocar’s full review of the BMW 5 Series (G60) says ride comfort is strong in the new 5 Series and attributes much of that to the optional Adaptive Suspension Professional system.",
+  "url": "https://www.autocar.co.uk/car-review/bmw/5-series",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Autocar",
+   "published": "2024",
+   "stance": "supports",
+   "about": "BMW 5 Series (G60) — ride comfort and suspension options",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-015"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-32",
+  "source_type": "web",
+  "source_name": "MotorTrend",
+  "derivative": "G60",
+  "market": "US",
+  "text": "MotorTrend’s review of the G60-era 530i notes that choosing the M Sport / sport suspension tends to make the 5 Series’ ride firmer and more ‘busy’ over rough surfaces compared with the comfort-oriented set-up.",
+  "url": "https://www.motortrend.com/reviews/2024-bmw-530i-xdrive-awd-first-test-review",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "MotorTrend",
+   "published": "2024",
+   "stance": "supports",
+   "about": "BMW 5 Series (G60) — effect of M Sport suspension on ride quality",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-015"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-33",
+  "source_type": "web",
+  "source_name": "National Highway Traffic Safety Administration (NHTSA)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "NHTSA Recall Campaign 22V-090 (Lucid Air, model year 2022) documents a front-strut snap-ring manufacturing issue that could cause front brake-line damage and a resulting loss of brake fluid; Lucid ordered inspections and free repairs for affected vehicles.",
+  "url": "https://static.nhtsa.gov/odi/rcl/2022/RCAK-22V090-3995.pdf",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "National Highway Traffic Safety Administration (NHTSA)",
+   "published": "2022-02-22",
+   "stance": "supports",
+   "about": "Lucid Air — safety recall affecting front strut and potential brake-line damage",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-015"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-34",
+  "source_type": "web",
+  "source_name": "Lucid Motors (Owner’s Manual)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Lucid’s Air Sapphire owner manual states the Sapphire’s carbon-ceramic brake system can exhibit squeal or groan noises in situations such as when brakes are cold or damp, and that carbon-ceramic brakes produce variable pedal feel with temperature.",
+  "url": "https://device.report/m/6f2ed6a794731f220318100ab2be6bbea63769c09db7d626d285f90ff15951d4",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Lucid Motors (Owner’s Manual)",
+   "published": "2024",
+   "stance": "supports",
+   "about": "Lucid Air Sapphire — carbon-ceramic brakes (noise and temperature-dependent feel)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-015"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-35",
+  "source_type": "web",
+  "source_name": "Go-Parts (aftermarket/parts guide)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Brake/noise service pages and parts guides for 2022–2025 Lucid Air note owner reports of brake squeal, grinding noises, and that because the Air is very quiet, brake noises are more noticeable; these pages recommend inspection and note limited aftermarket parts availability.",
+  "url": "https://www.go-parts.com/garage/disc-brake-rotor-lucid-air-2022-2025",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Go-Parts (aftermarket/parts guide)",
+   "published": "2026",
+   "stance": "supports",
+   "about": "Lucid Air — owner-reported brake squeal, grinding and related service guidance",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-015"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-36",
+  "source_type": "web",
+  "source_name": "CarSafetyRecord (NHTSA-complaint summary)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "NHTSA-aggregate tracking sites and vehicle-safety summary pages show multiple consumer complaints filed for Lucid Air model years 2022–2026 that list ‘service brakes’ or related brake/ABS faults among the reported issues (see summary page for 2025 Lucid Air complaints).",
+  "url": "https://carsafetyrecord.com/vehicle/2025-lucid-air/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "CarSafetyRecord (NHTSA-complaint summary)",
+   "published": "2026",
+   "stance": "supports",
+   "about": "Lucid Air — NHTSA consumer complaints including service-brakes entries",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-015"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-37",
+  "source_type": "web",
+  "source_name": "Reddit (r/LUCID)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Lucid owner and enthusiast forum / Reddit threads include multiple owner posts describing persistent brake squeal and occasional reports of grinding, heavy dust, or an overly grabby pedal feel on Lucid Air examples (owner anecdotes, not formal tests).",
+  "url": "https://www.reddit.com/r/LUCID/comments/1hly2h3/lucid_air_pure_rwd_vs_taycan_base_rwd/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Reddit (r/LUCID)",
+   "published": "2024-12-25",
+   "stance": "supports",
+   "about": "Lucid Air — owner-reported brake squeal/grabby feel (anecdotal)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-015"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-38",
+  "source_type": "web",
+  "source_name": "Edmunds",
+  "derivative": "G60",
+  "market": "US",
+  "text": "U.S.-market listing sites and spec aggregators report the 2025 Mercedes‑Benz E‑Class (U.S. specs) cargo capacity as 12.7 cu ft (cargo, all seats in place).",
+  "url": "https://www.edmunds.com/mercedes-benz/e-class/2025/features-specs/?msockid=1ff0884767a9689310db9ebd660d694a",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Edmunds",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Mercedes‑Benz E‑Class (2025) trunk / cargo capacity (U.S. spec)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-018"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-39",
+  "source_type": "web",
+  "source_name": "Autoblog",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Some press/reviews and European-spec sources report the W214 E‑Class trunk as ~540 L (~19.0 cu ft); Autoblog’s luggage test (Apr 1, 2024) noted Mercedes’ 19‑cu‑ft spec likely counts underfloor volumes and warned the on‑paper number can be misleading for real luggage packing.",
+  "url": "https://www.autoblog.com/features/mercedes-e-class-luggage-test",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Autoblog",
+   "published": "April 1, 2024",
+   "stance": "supports",
+   "about": "Discrepancy in reported E‑Class trunk volume (measurement / usable volume)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-018"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-40",
+  "source_type": "web",
+  "source_name": "DriveSense",
+  "derivative": "G60",
+  "market": "US",
+  "text": "A summary review focused on U.S. market operation describes the W214 E‑Class as positioned around \"quiet luxury,\" emphasizing refinement, noise isolation and comfort as core strengths for U.S. buyers (DriveSense, May 19, 2026 review).",
+  "url": "https://drive-sense.com/post/366-2026-mercedes-benz-e-class-review-the-new-benchmark-for-quiet-luxury",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "DriveSense",
+   "published": "May 19, 2026",
+   "stance": "supports",
+   "about": "Mercedes‑Benz E‑Class (W214) ride and cabin comfort (U.S. market)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-018"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-41",
+  "source_type": "web",
+  "source_name": "NHTSA static TSB (PIT6401) / GM bulletin repository",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Manufacturers commonly provide a personalization option named ‘Passive Door Unlock’ / ‘Auto Door Unlock’ (choices include Off, Driver Door or All Doors); OEM service bulletins (example TSBs) instruct dealers to set Passive/Auto Door Unlock to “All Doors” or use the key‑fob override when customers report only the driver door is unlocking — changing that setting resolves cases where only the driver door unlocks.",
+  "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019846-0001.pdf",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "NHTSA static TSB (PIT6401) / GM bulletin repository",
+   "published": "June 2025",
+   "stance": "supports",
+   "about": "Passive/Auto Door Unlock setting can cause only-driver‑door unlocking (example TSB)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-018"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-42",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz operator’s manual (circulated on Scribd)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "An E‑Class operator’s manual excerpt (manufacturer manual circulated online) explicitly notes the vehicle’s key/unlock function can be set so that unlocking only opens the driver’s door (i.e., a vehicle personalization option controls whether only the driver door or all doors unlock).",
+  "url": "https://www.scribd.com/document/854183327/mercedes-e-class-sedan-2025-january-w214-mbux-operators-manual-1",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mercedes‑Benz operator’s manual (circulated on Scribd)",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Mercedes‑Benz E‑Class owner/operator manual — key/unlock personalization (driver‑door only option)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-018"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-43",
+  "source_type": "web",
+  "source_name": "Audi (official)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Audi A6 e-tron: the production interior uses a slim curved ‘MMI panoramic display’ consisting of an 11.9‑inch digital driver display and a 14.5‑inch center MMI touchscreen, with an optional 10.9‑inch passenger touchscreen available.",
+  "url": "https://www.audi.com/en/the-audi-a6-e-tron-the-new-electric-avant-garde-16391/displays-and-operating-concept-16398",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Audi (official)",
+   "published": "2024-12-03",
+   "stance": "supports",
+   "about": "Audi A6 e-tron displays and specs",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-019"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-44",
+  "source_type": "web",
+  "source_name": "Car and Driver",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Reviewers report Audi’s A6 e‑tron shifts many secondary controls (climate, some drive settings) to capacitive touch and touchscreen surfaces with relatively few physical knobs or buttons.",
+  "url": "https://www.caranddriver.com/reviews/a62986357/2025-audi-a6-e-tron-drive/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Car and Driver",
+   "published": "2025-09-18",
+   "stance": "supports",
+   "about": "Audi A6 e-tron controls and review",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-019"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-45",
+  "source_type": "web",
+  "source_name": "Ars Technica",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Multiple reviews found the A6 e‑tron’s voice assistant and touch‑first interface sometimes frustrating or unreliable compared with conventional physical controls.",
+  "url": "https://arstechnica.com/cars/2025/07/audis-midsize-sedan-goes-electric-the-2025-a6-and-s6-sportback-driven/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Ars Technica",
+   "published": "2025-07",
+   "stance": "supports",
+   "about": "Audi A6 e-tron voice and touchscreen usability",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-019"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-46",
+  "source_type": "web",
+  "source_name": "MotorTrend",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW 5 Series (G60): BMW’s new ‘curved’ cockpit pairs a 12.3‑inch digital instrument display with a 14.9‑inch center touchscreen running BMW Operating System (iDrive) 8 / 8.5 (market/trim dependent).",
+  "url": "https://www.motortrend.com/features/new-bmw-cars-lineup-updates-changes/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "MotorTrend",
+   "published": "2024-12-18",
+   "stance": "supports",
+   "about": "BMW 5 Series G60 display and OS (iDrive)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-019"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-47",
+  "source_type": "web",
+  "source_name": "BMW (press release)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW retains the iDrive rotary/rotary+touch interaction (QuickSelect and physical shortcut buttons) alongside the touchscreen, so users can still operate many functions via the controller rather than only by touching the screen.",
+  "url": "https://www.press.bmwgroup.com/deutschland/article/detail/T0416261DE/die-neue-bmw-5er-limousine?language=de",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW (press release)",
+   "published": "2023-05-24",
+   "stance": "supports",
+   "about": "BMW 5 Series controls (iDrive / QuickSelect)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-019"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-48",
+  "source_type": "web",
+  "source_name": "Reddit (BMW subreddit)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Owners and forum reports indicate wireless Apple CarPlay connectivity (audio drops, missing track info, controls unresponsive, or intermittent reconnect failures) has been frequently reported on recent BMW vehicles including 5‑Series/i5/iX lines—users cite software/OS updates and dealer patches as common remediation steps.",
+  "url": "https://www.reddit.com/r/BMW/comments/1t19gek/apple_carplay_connectivity_issues_still_happening/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Reddit (BMW subreddit)",
+   "published": "2026-05-01",
+   "stance": "supports",
+   "about": "User reports of BMW wireless Apple CarPlay problems",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-019"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-49",
+  "source_type": "web",
+  "source_name": "Motorys (tech/repair site)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Independent troubleshooting guides and press coverage collecting owner complaints list wireless CarPlay instability on BMWs as a recurring, widely reported problem (causes reported as iDrive software, iOS versions, Bluetooth/Wi‑Fi pairing or interference).",
+  "url": "https://motorys.com/blogs/news/bmw-wireless-carplay-keeps-disconnecting-stuck-on-connecting-or-cutting-out-proven-fixes-for-2026",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Motorys (tech/repair site)",
+   "published": "2026",
+   "stance": "supports",
+   "about": "BMW Apple CarPlay troubleshooting and owner-reported causes",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-019"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-50",
+  "source_type": "web",
+  "source_name": "AudiWorld forum",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Audi A6 e‑tron owner forums and threads document software and connectivity issues (including intermittent wireless CarPlay problems, audio failures, GPS/module faults and other MMI software bugs) reported by early owners since launch.",
+  "url": "https://www.audiworld.com/forums/audi-a6-e-tron-247/crapp-software-car-app-a6-e-tron-2025-a-3084447/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "AudiWorld forum",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Audi A6 e-tron owner-reported software/connectivity issues",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-019"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-51",
+  "source_type": "web",
+  "source_name": "MotorTrend",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Tesla Model S (2025 model-year) delivers the longest EPA-rated range in this comparison — roughly 402–410 miles for the Long‑Range/standard variants and about 348 miles for the Plaid, per published model specs and reviews.",
+  "url": "https://www.motortrend.com/cars/tesla/model-s",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "MotorTrend",
+   "published": "2025-??-??",
+   "stance": "supports",
+   "about": "Tesla Model S range (2025)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-020"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-52",
+  "source_type": "web",
+  "source_name": "Recharged",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Most BMW i5 cars sold early in 2025 shipped with CCS1 (the industry-standard DC‑fast connector for most non‑Tesla EVs), and those i5 cars peak at roughly ~200–205 kW DC charge power with typical 10–80% sessions around ~25–32 minutes under ideal conditions.",
+  "url": "https://recharged.com/articles/bmw-i5-charging-speed-test",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Recharged",
+   "published": "2025",
+   "stance": "supports",
+   "about": "BMW i5 charging speed (CCS)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-020"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-53",
+  "source_type": "web",
+  "source_name": "EVChargingStations (industry report)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Tesla’s Supercharger network remains one of the largest and most reliable DC fast‑charging networks in the U.S.; independent aggregators and sector reports show tens of thousands of DC stalls across public networks, and Tesla historically has had a high charger‑per‑station count and strong reliability metrics compared with many public networks.",
+  "url": "https://evchargingstations.com/chargingnews/largest-dc-fast-charging-networks-jan-2026/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EVChargingStations (industry report)",
+   "published": "2026-01-01",
+   "stance": "supports",
+   "about": "Size and reliability of Supercharger / DC fast networks in US",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-020"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-54",
+  "source_type": "web",
+  "source_name": "Consumer Reports",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Tesla Supercharger access for non‑Tesla cars is not automatically universal — manufacturers and Tesla must enable software handshakes or provide adapters; some non‑Tesla models with native NACS ports (or with a validated NACS adapter) can plug directly at many open Supercharger stalls, but legacy CCS cars often need an adapter or to find a 'Magic Dock' stall.",
+  "url": "https://www.consumerreports.org/cars/hybrids-evs/tesla-superchargers-open-to-other-evs-what-to-know-a9262067544",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Consumer Reports",
+   "published": "2026-??-??",
+   "stance": "supports",
+   "about": "Non‑Tesla access to Superchargers and adapter/authorization requirements",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-020"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-55",
+  "source_type": "web",
+  "source_name": "Axis Intelligence",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Not all Supercharger stalls are suitable for non‑Tesla cars — 'Magic Dock' (built‑in CCS adapter) stalls and V4 stalls with longer cables are limited in number; arriving at a Supercharger that is not marked 'open to other EVs' or that lacks the appropriate adapter can leave a CCS‑only BMW unable to charge there.",
+  "url": "https://axis-intelligence.com/tesla-supercharger-non-tesla-owners-guide/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Axis Intelligence",
+   "published": "2026-??-??",
+   "stance": "supports",
+   "about": "Magic Dock availability and marked ‘open to other EVs’ limitations",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-020"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-56",
+  "source_type": "web",
+  "source_name": "BMW (regional site)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW’s public guidance (BMW regional pages and dealer materials) indicates BMW is supporting access to Tesla’s NACS/Supercharger ecosystem for compatible i5/iX/i4 vehicles via approved adapters and software updates for certain production dates — but the timing/availability depends on model year and production build date, so some 2025 i5 units will need an adapter or a software 'RSU' before Supercharger use.",
+  "url": "https://www.bmw.ca/en/electric-cars/tesla-nacs-charging.html",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW (regional site)",
+   "published": "2026-??-??",
+   "stance": "supports",
+   "about": "BMW guidance on NACS/Supercharger compatibility and adapter/RSU requirement",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-US-020"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-57",
+  "source_type": "web",
+  "source_name": "BMW Group Press",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW states its Neue Klasse (Gen6) uses an 800‑volt electrical architecture and that Gen6 high‑voltage batteries will provide about 30% faster charging and up to 30% greater WLTP range versus the previous generation.",
+  "url": "https://www.press.bmwgroup.com/usa/article/detail/T0448170EN_US/bmw-reveals-revolutionary-electric-drive-concept-with-800v-technology-for-the-neue-klasse",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press",
+   "published": "2025-02-20",
+   "stance": "supports",
+   "about": "charging speed and real-world range",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-58",
+  "source_type": "web",
+  "source_name": "BMW Media Information (published via device.report)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW’s March 2025 media information for the BMW i5 (G60) shows that the G60 uses a 400‑volt battery architecture and a maximum DC fast‑charging power of 205 kW (10–80% in ~30 minutes), providing a 2025 technical baseline for the 5‑series‑segment sedan.",
+  "url": "https://device.report/m/1a13ef0c32b8394f30ebe169aceac900603feffeae91404c1edb9e3666ea36ae",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Media Information (published via device.report)",
+   "published": "03/2025",
+   "stance": "neutral",
+   "about": "baseline charging speed for BMW 5er (G60)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-59",
+  "source_type": "web",
+  "source_name": "International Energy Agency (IEA)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "IEA’s Global EV Outlook 2026 notes the industry trend toward higher‑voltage architectures and faster charging: in 2025 about 160 BEV models supported >150 kW charging, only ~50 supported >250 kW, and the report explains that higher‑voltage systems (e.g., 800V) reduce charging time — supporting the expectation more premium models will support faster charging through 2028–2031.",
+  "url": "https://www.iea.org/reports/global-ev-outlook-2026",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "International Energy Agency (IEA)",
+   "published": "2026-05-20",
+   "stance": "supports",
+   "about": "charging speed trend / 800V adoption",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-60",
+  "source_type": "web",
+  "source_name": "U.S. Joint Office of Energy and Transportation",
+  "derivative": "G60",
+  "market": "US",
+  "text": "The Joint Office of Energy and Transportation documents that SAE published a J3400 Technical Information Report in December 2023 and that most vehicle manufacturers announced plans to adopt the J3400/NACS connector beginning as early as 2025, which enables broader cross‑network connector compatibility in North America.",
+  "url": "https://driveelectric.gov/charging-connector",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "U.S. Joint Office of Energy and Transportation",
+   "published": "SAE TIR Dec 2023; page accessed 2026-10-10",
+   "stance": "supports",
+   "about": "charging network access / connector standardization (NACS/J3400)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-61",
+  "source_type": "web",
+  "source_name": "General Motors News",
+  "derivative": "G60",
+  "market": "US",
+  "text": "General Motors says it expects all GM EVs to ship with a native NACS charging port by the 2027 model year, a step that increases mainstream non‑Tesla access to Tesla Superchargers in the US from 2027 onward.",
+  "url": "https://news.gm.com/home.detail.html/Pages/topic/us/en/2026/aug/0813-electric-vehicle-nacs-charging.html",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "General Motors News",
+   "published": "page accessed 2026-10-10 (GM position: transition to native NACS by 2027)",
+   "stance": "supports",
+   "about": "charging network access (NACS / Supercharger access)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-62",
+  "source_type": "web",
+  "source_name": "EVgo, Inc. (SEC filing / 10‑K)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "EVgo’s SEC filing and investor materials state the company is building out GM‑funded fast‑charger stalls (2,850 stalls to be installed by June 30, 2028) and reported pilots/rollouts of NACS/J3400 connectors and plans for higher‑power (350 kW and higher) stalls as part of its network expansion.",
+  "url": "https://www.sec.gov/Archives/edgar/data/1821159/000110465926024827/evgo-20251231x10k.htm",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EVgo, Inc. (SEC filing / 10‑K)",
+   "published": "2025-12-31",
+   "stance": "supports",
+   "about": "charging network expansion and high‑power chargers through 2028",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-63",
+  "source_type": "web",
+  "source_name": "U.S. Department of Transportation (NEVI program summary)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "The NEVI Formula Program (Bipartisan Infrastructure Law) and related federal guidance aimed to help fund a nationwide public fast‑charging build‑out (the broader goal tied to ~500,000 public chargers by 2030), but FHWA/NEVI guidance was revised in August 2025 to give states more flexibility on spacing (the earlier ‘every 50 miles’ shorthand is therefore not a fixed mandate for all states going forward).",
+  "url": "https://www.transportation.gov/rural/ev/toolkit/ev-infrastructure-funding-and-financing/federal-funding-programs",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "U.S. Department of Transportation (NEVI program summary)",
+   "published": "page accessed 2026-10-10 (NEVI program established under IIJA/BIL; guidance updated Aug 2025)",
+   "stance": "supports",
+   "about": "charging network expansion and policy (NEVI) toward 2030",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-64",
+  "source_type": "web",
+  "source_name": "BMW Group (customer.bmwgroup.com)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW’s Remote Software Upgrade policy (updated September 23, 2025) states that starting with BMW Operating System 8.5, software installations can be started remotely via the My BMW App (i.e., OTA installation initiation from the companion app).",
+  "url": "https://customer.bmwgroup.com/pm2/pm-document-service/api/v1link/documents/policyName/BMW_CONNECTED_DRIVE_TAC/GB/PDF?KeyId=f195e93a-6bbd-46f3-b762-6cf0bea480b0&language=en",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group (customer.bmwgroup.com)",
+   "published": "2025-09-23",
+   "stance": "supports",
+   "about": "BMW Remote Software Upgrade / My BMW App OTA installation",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-65",
+  "source_type": "web",
+  "source_name": "BMW Group Management Report",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW Group’s 2025 Management Report describes the company’s software-defined vehicle strategy that increases personalization, regular over‑the‑air updates and seamless My BMW app integration using 5G and cloud services. ",
+  "url": "https://www.bmwgroup.com/en/report/2025/downloads/BMW-Group-Management-Report-2025-en.pdf",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Management Report",
+   "published": "2025",
+   "stance": "supports",
+   "about": "BMW software-defined vehicle strategy / OTA and 5G",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-66",
+  "source_type": "web",
+  "source_name": "BMW Group (Connected Car)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW’s online Connected Car overview states BMW offers features including OTA updates, a broad app ecosystem (digital premium subscriptions) and, in vehicles with the newest OS versions, entertainment apps such as AirConsole; it also reports millions of vehicles are remote‑software‑upgrade capable (BMW cited 7.4M vehicles as of 2024).",
+  "url": "https://www.bmwgroup-werke.com/content/grpw/websites/bmwgroup_com/en/innovation/connected-car.html",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group (Connected Car)",
+   "published": "2024",
+   "stance": "supports",
+   "about": "BMW Connected Car features / AirConsole / OTA-capable fleet size",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-67",
+  "source_type": "web",
+  "source_name": "BMW Group Press",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW corporate communications has reported (in press materials) that BMW can deliver over‑the‑air updates to millions of vehicles worldwide (BMW has publicly stated figures in its press materials indicating multi‑million OTA-capable fleet size).",
+  "url": "https://www.press.bmwgroup.com/global/article/attachment/T0445455EN/623038",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press",
+   "published": "(press material; BMW corporate communications)",
+   "stance": "supports",
+   "about": "Scale of BMW OTA capability worldwide",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-68",
+  "source_type": "web",
+  "source_name": "Oliver Wyman",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Industry analysts project that premium infotainment and in‑vehicle digital aftersales will grow substantially by 2030 (Oliver Wyman projects an infotainment-enabled aftermarket approaching ~$14 billion by 2030), supporting expectations of increased on‑demand/subscription apps and OTA feature monetization in premium segments between 2028–2031.",
+  "url": "https://www.oliverwyman.com/our-expertise/insights/2025/dec/infotainment-turns-car-dashboard-into-new-revenue.html",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Oliver Wyman",
+   "published": "2025-12",
+   "stance": "supports",
+   "about": "Infotainment market growth / FoD and subscription monetization by 2030",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-69",
+  "source_type": "web",
+  "source_name": "Frost & Sullivan / Frost",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Market research and consultancy reports (Frost & Sullivan, Frost) indicate OEMs and US consumers are moving toward feature‑on‑demand (FoD) and OTA activation as a mainstream monetization and engagement channel — a trend expected to accelerate in the late 2020s for premium vehicle segments. ",
+  "url": "https://www.frost.com/growth-opportunity-news/mobility-automotive-transportation/safety-connectivity/heres-what-us-car-buyers-want-oems-to-know-the-data-that-fuels-long-term-growth-and-competitive-advantage-mob14_tg09_pg5g_aug26_cim-ps/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Frost & Sullivan / Frost",
+   "published": "2026",
+   "stance": "supports",
+   "about": "FoD adoption and OTA engagement (US premium buyers) trend",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-70",
+  "source_type": "web",
+  "source_name": "ABI Research",
+  "derivative": "G60",
+  "market": "US",
+  "text": "ABI Research forecasts that digital cockpit domain controller computing power and graphics/AI processing will roughly double by 2030, which supports expectations that premium cars (BMW 5‑class segment) will enable richer apps (AR navigation, gaming, video streaming, local AI features) via OTA-capable centralized compute platforms between 2028–2031.",
+  "url": "https://www.abiresearch.com/press/automotive-digital-cockpit-domain-controller-power-expected-to-double-by-2030",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ABI Research",
+   "published": "(report/press release) 2024–2025",
+   "stance": "supports",
+   "about": "Domain controller compute growth by 2030 enabling richer in‑car apps",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-71",
+  "source_type": "web",
+  "source_name": "PwC",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Consulting firms and industry advisories (PwC, BCG/HCLTech analyses) highlight that OEMs are adopting software‑centric operating models and SaaS / FoD business models and recommend regular OTA release cadences — indicating that premium OEMs (including BMW) are expected to expand OTA feature delivery and paid app/subscription offerings through 2028–2031.",
+  "url": "https://www.pwc.com/us/en/industries/industrial-products/library/automotive-software-trends.html",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "PwC",
+   "published": "2023-03-08",
+   "stance": "supports",
+   "about": "OEM software-centric models / SaaS and FoD / OTA cadence recommendations",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-72",
+  "source_type": "web",
+  "source_name": "Stellantis (press release)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Examples from major OEM disclosures show OEMs planning frequent OTA cadences and FoD monetization (e.g., Stellantis stated it intends quarterly releases and €20bn software-enabled revenue ambition by 2030), illustrating an industry precedent likely to influence premium OEM practices in the US 2028–2031 timeframe.",
+  "url": "https://www.stellantis.com/en/news/press-releases/2021/december/stellantis-targets-20-billion-in-incremental-annual-revenues-by-2030-driven-by-software-enabled-vehicles",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Stellantis (press release)",
+   "published": "2021-12-07",
+   "stance": "supports",
+   "about": "Industry precedent for frequent OTA cadence and FoD monetization",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-73",
+  "source_type": "web",
+  "source_name": "NHTSA (U.S. Department of Transportation)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "US regulators and safety agencies are actively updating guidance and research on vehicle cybersecurity, OTA update security and automated driving standards (NHTSA’s vehicle cybersecurity research and recent Automated Vehicle and safety updates), which will shape how OEMs deploy OTA, ADAS updates and safety‑critical software changes in the US between 2028–2031.",
+  "url": "https://www.nhtsa.gov/research/vehicle-cybersecurity",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "NHTSA (U.S. Department of Transportation)",
+   "published": "(ongoing; page updated 2024–2026)",
+   "stance": "supports",
+   "about": "Regulatory influence on OTA/cybersecurity and ADAS updates in US",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-74",
+  "source_type": "web",
+  "source_name": "Federal Communications Commission (FCC) public notice",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Federal rulemaking and agency actions affecting radio/firmware permissive‑change waivers (FCC notices extending certain waivers through January 1, 2029) and congressional proposals about connected‑vehicle software further indicate an active regulatory environment that will affect how OEMs perform OTA software and firmware changes in the US 2028–2031 period.",
+  "url": "https://docs.fcc.gov/public/attachments/DOC-422746A1.pdf",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Federal Communications Commission (FCC) public notice",
+   "published": "2026-05-08",
+   "stance": "supports",
+   "about": "FCC waiver extension affecting software/firmware permissive changes through 2029",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-75",
+  "source_type": "web",
+  "source_name": "BMWBLOG",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Model‑cycle reporting and enthusiast coverage indicate a BMW 5 Series (G60) mid‑cycle update / LCI is expected in the 2027–2028 timeframe with interior/infotainment refinements reported by specialist outlets — implying that BMW is likely to roll software/UI updates for the G60 family during the 2028–2031 period as part of regular lifecycle updates.",
+  "url": "https://www.bmwblog.com/2026/08/31/028-bmw-5-series-facelift-whats-changing/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMWBLOG",
+   "published": "2026-08-31",
+   "stance": "supports",
+   "about": "BMW 5 Series (G60) mid‑cycle update / likely infotainment/software updates",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-76",
+  "source_type": "web",
+  "source_name": "BMW Group",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW has introduced the BMW Panoramic iDrive (BMW Operating System X) that centers the cockpit on large driver‑oriented displays, touchscreen interaction and an enhanced natural‑language assistant (including an integrated large‑language model), signalling BMW’s production strategy toward touchscreen + voice HMI for future models that will shape the 5‑Series segment between 2028 and 2031. ([bmwgroup.com](https://www.bmwgroup.com/en/news/general/2025/newidrive.html))",
+  "url": "https://www.bmwgroup.com/en/news/general/2025/newidrive.html",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group",
+   "published": "2025-01-07",
+   "stance": "supports",
+   "about": "BMW Panoramic iDrive / touchscreen and voice trend (2028–2031) for premium BMW 5‑Series segment in US market",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-77",
+  "source_type": "web",
+  "source_name": "BMW Group (BMW Group Report 2024)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW’s own 2024 Group Report states the multifunctional steering wheel is the primary physical control and provides active haptic feedback, indicating OEM strategy to retain tactile steering‑wheel controls even as many functions move to touchscreens. ([bmwgroup.com](https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/ir/downloads/en/2025/hv/BMWGroup_Report2024.pdf?utm_source=openai))",
+  "url": "https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/ir/downloads/en/2025/hv/BMWGroup_Report2024.pdf",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group (BMW Group Report 2024)",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Retention of physical/haptic steering‑wheel controls while shifting other functions to touchscreen (2028–2031)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-78",
+  "source_type": "web",
+  "source_name": "Counterpoint Research",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Market research shows center infotainment displays grew larger in 2025 (Counterpoint: CID area +19% in 2025) and reports that 15–20\" center displays are increasingly used in passenger vehicles — a continuing trend that points to larger, more capable touchscreens in premium sedans through 2028–2031. ([counterpointresearch.com](https://counterpointresearch.com/en/insights/automotive-cids-total-area-increased-19-percent-in-2025-driven-by-larger-display-sizes))",
+  "url": "https://counterpointresearch.com/en/insights/automotive-cids-total-area-increased-19-percent-in-2025-driven-by-larger-display-sizes",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Counterpoint Research",
+   "published": "2026-05-18",
+   "stance": "supports",
+   "about": "Growth of large central touchscreens in premium vehicles (2028–2031)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-79",
+  "source_type": "web",
+  "source_name": "S&P Global / AutoTech Insight",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Industry forecasting (S&P Global / AutoTech Insight) projects that vehicles with integrated GenAI chatbots and advanced voice assistants will scale materially (S&P projects ~28 million light vehicles with automotive GenAI chatbots by 2031), implying rapid growth in voice/AI HMI in premium cars between 2028 and 2031. ([autotechinsight.spglobal.com](https://autotechinsight.spglobal.com/main/news/proc/download?id=5285645&utm_source=openai))",
+  "url": "https://autotechinsight.spglobal.com/main/news/proc/download?id=5285645",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "S&P Global / AutoTech Insight",
+   "published": "2026",
+   "stance": "supports",
+   "about": "Increase of GenAI/voice assistant adoption in premium vehicles (2028–2031)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-80",
+  "source_type": "web",
+  "source_name": "Euro NCAP (protocol) / EU implementing regulations",
+  "derivative": "G60",
+  "market": "US",
+  "text": "European safety assessment rules and protocols (Euro NCAP’s 2025 driver‑engagement / general vehicle controls protocols and related EU regulatory moves) now reward or require direct physical inputs for key functions (so-called 'direct physical input' / physical controls), driving manufacturers to reintroduce physical knobs/buttons for safety‑critical or frequently adjusted functions — a design pressure that OEMs have begun to react to and that will influence premium model HMI choices through 2028–2031. ([euroncap.com](https://www.euroncap.com/media/88141/euro-ncap-cv-protocol-safe-driving-driver-engagement-v10.pdf?utm_source=openai))",
+  "url": "https://www.euroncap.com/media/88141/euro-ncap-cv-protocol-safe-driving-driver-engagement-v10.pdf",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Euro NCAP (protocol) / EU implementing regulations",
+   "published": "2025-05 / 2026",
+   "stance": "supports",
+   "about": "Regulatory and safety‑assessment pressure to reintroduce physical controls (2028–2031)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-81",
+  "source_type": "web",
+  "source_name": "U.S. Department of Transportation / NHTSA",
+  "derivative": "G60",
+  "market": "US",
+  "text": "U.S. regulators have taken a different posture so far: NHTSA is funding and publishing research and draft distraction guidance that focuses on measuring and mitigating visual‑manual distraction (including study of touchscreens and voice interfaces) rather than imposing an EU‑style direct‑physical‑input mandate — meaning U.S. premium models (BMW 5‑Series segment) may keep touchscreen‑forward layouts but will face voluntary safety pressure and market/regulatory cross‑influence from Europe through 2028–2031. ([transportation.gov](https://www.transportation.gov/sites/dot.gov/files/2024-08/AMRP%20FY2024-2025%20NHTSA.pdf))",
+  "url": "https://www.transportation.gov/sites/dot.gov/files/2024-08/AMRP%20FY2024-2025%20NHTSA.pdf",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "U.S. Department of Transportation / NHTSA",
+   "published": "2024",
+   "stance": "supports",
+   "about": "U.S. regulator (NHTSA) research focus vs. EU mandated physical‑control rules (implication for 2028–2031)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-82",
+  "source_type": "web",
+  "source_name": "BMW Group Press",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW announced it plans to offer vehicles with completely vegan interiors (first launch announced for 2023) and reported targets to increase use of recycled and secondary materials (for example thermoplastics containing around 30% recycled fishing-net material in NEUE KLASSE trim and a target of thermoplastics with ~40% recycled content by 2030).",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0403367EN/bmw-group-sustainability-through-innovation-2022",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press",
+   "published": "2022-09-19",
+   "stance": "supports",
+   "about": "BMW sustainability / vegan interiors / recycled content targets",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-83",
+  "source_type": "web",
+  "source_name": "TrendVault Research",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Market research projects rapid growth in plant‑based (vegan) leather for automotive interiors (forecast CAGR ~12.4% in TrendVault’s study through 2033) and identifies North America (including the U.S.) and premium OEM demand as major adoption drivers for 2028–2031.",
+  "url": "https://www.trendvaultresearch.com/report/plant-based-vegan-leather-for-automotive-interior-72719",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "TrendVault Research",
+   "published": "2025-12-19 (updated 2026-06-08)",
+   "stance": "supports",
+   "about": "plant‑based / vegan leather market growth and premium adoption",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-84",
+  "source_type": "web",
+  "source_name": "Messe Frankfurt / F&S (Green Materials in Automotive)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Industry analysis (July 2025) reports that recycled plastics, natural‑fiber composites (flax, hemp, kenaf) and bio‑based foams are moving from concept into production for dashboards, door panels and seat reinforcements—enabling weight reduction and wider use in premium cabins during the late‑2020s and into 2030–2031.",
+  "url": "https://automotive.messefrankfurt.com/content/dam/messefrankfurt-redaktion/automotive/documents/exl/green-materials-in-automotive-july.pdf",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Messe Frankfurt / F&S (Green Materials in Automotive)",
+   "published": "2025-07",
+   "stance": "supports",
+   "about": "natural‑fiber composites / recycled plastics / bio‑foams in interiors",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-85",
+  "source_type": "web",
+  "source_name": "Knowledge Sourcing (Autonomous Vehicle Modular Interior Market)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Market forecasts for modular or autonomous‑ready interiors show rapid expansion through 2031 (modular‑interior market forecast to ~USD 9.55B by 2031), indicating that plug‑and‑play modules, long rails and reconfigurable seating/center‑console systems will become commercially important for premium EV/automated models by 2028–2031.",
+  "url": "https://www.knowledge-sourcing.com/report/autonomous-vehicle-modular-interior-market",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Knowledge Sourcing (Autonomous Vehicle Modular Interior Market)",
+   "published": "2026",
+   "stance": "supports",
+   "about": "modular / reconfigurable interior space concepts",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-86",
+  "source_type": "web",
+  "source_name": "McKinsey & Company",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Consulting research argues that software‑defined cockpits, larger integrated displays, advanced HMI and wellness features (air quality, climate personalization, biometric monitoring) will become key premium differentiators and increasingly standard in luxury/mid‑luxury cabins through 2030.",
+  "url": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/the-future-of-interior-in-automotive",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "McKinsey & Company",
+   "published": "2021-11-12",
+   "stance": "supports",
+   "about": "digital HMI / software‑defined cockpit / wellness features",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-87",
+  "source_type": "web",
+  "source_name": "Grand View Research",
+  "derivative": "G60",
+  "market": "US",
+  "text": "A December 2024 market report projects the global automotive interior materials market to grow to about USD 79.7 billion by 2030 and explicitly calls out increasing OEM adoption of recycled textiles, synthetic/plant‑based leathers and lightweight composites—trends that will shape premium interiors in the U.S. between 2028–2031.",
+  "url": "https://www.grandviewresearch.com/industry-analysis/automotive-interior-materials-market",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Grand View Research",
+   "published": "2024-12",
+   "stance": "supports",
+   "about": "market growth and adoption of recycled / bio‑based interior materials",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-88",
+  "source_type": "web",
+  "source_name": "Car Design News (CMF Survey 2025)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Industry surveys and CMF (colour, material, finish) research show premium marques prioritizing sustainable CMF (recycled textiles, low‑VOC coatings, natural trims) and antimicrobial/health‑oriented materials—trends that OEMs expect to package as premium features in North America between 2028 and 2031. ",
+  "url": "https://www.cardesignnews.com/files/2025/07/01/cdncmfsurvey2025reportweb_510456.pdf",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Car Design News (CMF Survey 2025)",
+   "published": "2025-07",
+   "stance": "supports",
+   "about": "CMF / sustainable materials / wellness trends in premium cabins",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-89",
+  "source_type": "web",
+  "source_name": "Mobileye (IR)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Mobileye has stated that its Chauffeur product (an eyes‑off / higher‑automation offering) is targeted for start‑of‑production with OEM partners around 2027–first half 2028 and will be commercially deployed thereafter.",
+  "url": "https://ir.mobileye.com/static-files/fa8194a1-dac3-4f16-aac8-78445d6e0f21",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mobileye (IR)",
+   "published": "2025-04-24",
+   "stance": "supports",
+   "about": "Mobileye Chauffeur launch timing",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-90",
+  "source_type": "web",
+  "source_name": "StockAnalysis (Mobileye conference reporting)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Mobileye has also announced that its SuperVision Level‑2+/hands‑off product is in SOP pipelines (example: a Porsche program) with volume starts planned in 2027 and broader ramp thereafter.",
+  "url": "https://stockanalysis.com/stocks/mbly/transcripts/730357-canaccord-genuity-s-46th-annual-growth-conference/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "StockAnalysis (Mobileye conference reporting)",
+   "published": "2026",
+   "stance": "supports",
+   "about": "Mobileye SuperVision SOP 2027",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-91",
+  "source_type": "web",
+  "source_name": "WardsAuto",
+  "derivative": "G60",
+  "market": "US",
+  "text": "General Motors has publicly announced a plan to introduce an upgraded Super Cruise (described as an eyes‑off / hands‑off capability consistent with SAE Level‑3 scope) on the Cadillac Escalade IQ in 2028 and to expand the capability to other models thereafter.",
+  "url": "https://www.wardsauto.com/news/gm-ai-plans-debut-eyes-off-driving-super-cruise-cadillac-esclade-iq/803665/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "WardsAuto",
+   "published": "2025",
+   "stance": "supports",
+   "about": "GM Super Cruise eyes‑off 2028",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-92",
+  "source_type": "web",
+  "source_name": "Qualcomm (press release)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Qualcomm and BMW publicly unveiled the Snapdragon Ride Pilot (a centralized high‑performance AD platform supporting Level‑2+ and NOA/hands‑free highway functions) in September 2025 and deployed it in the BMW iX3 as the first production application.",
+  "url": "https://www.qualcomm.com/news/releases/2025/09/qualcomm-and-bmw-group-unveil-groundbreaking-automated-driving-s",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Qualcomm (press release)",
+   "published": "2025-09-05",
+   "stance": "supports",
+   "about": "Qualcomm+BWM Snapdragon Ride Pilot debut",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-93",
+  "source_type": "web",
+  "source_name": "Innoviz (SEC filing)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "BMW’s supplier ecosystem for higher‑automation programs includes a planned manufacturing path for LiDAR: Innoviz disclosed an agreement with Magna to manufacture InnovizOne lidar for a BMW program (documented in Innoviz SEC filings).",
+  "url": "https://ir.innoviz.tech/sec-filings/all-sec-filings/content/0001178913-26-000724/zk2634434.htm",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Innoviz (SEC filing)",
+   "published": "2026",
+   "stance": "supports",
+   "about": "Innoviz manufacturing for BMW program",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-94",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz Group (corporate page)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Mercedes‑Benz initially certified and marketed DRIVE PILOT (SAE Level‑3 conditional automation) for select 2024 S‑Class and EQS models in limited U.S. jurisdictions, but media reporting in 2026–2027 documents that Mercedes has paused/contractually reset broader U.S. expansion of DRIVE PILOT citing supplier (LiDAR) and cost/scope issues.",
+  "url": "https://group.mercedes-benz.com/technology/autonomous-driving/driving/drive-pilot-nevada.html",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Mercedes‑Benz Group (corporate page)",
+   "published": "2023",
+   "stance": "neutral",
+   "about": "Mercedes Drive Pilot initial US certification",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-95",
+  "source_type": "web",
+  "source_name": "InsideEVs",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Reporting from multiple outlets in 2026–2027 indicates Mercedes has paused the broader U.S. rollout of DRIVE PILOT because of supplier/LiDAR contract problems and high cost/usability considerations.",
+  "url": "https://insideevs.com/news/784404/mercedes-level-3-drive-pilot-canceled/",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "InsideEVs",
+   "published": "2026",
+   "stance": "supports",
+   "about": "Mercedes Drive Pilot pause reporting",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-96",
+  "source_type": "web",
+  "source_name": "NHTSA (Automated Driving Systems guidance)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "U.S. federal oversight and rulemaking activity on automated driving increased after 2023 (NHTSA’s AV‑STEP proposal and subsequent reports) and NHTSA has published guidance and rulemaking agendas addressing ADS transparency, performance, and evaluation—creating a clearer regulatory environment that OEMs reference when timing higher‑automation launches.",
+  "url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/automated-driving-systems-2.0-voluntary-guidance.pdf",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "NHTSA (Automated Driving Systems guidance)",
+   "published": "2024",
+   "stance": "supports",
+   "about": "NHTSA AV guidance and regulatory activity",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-97",
+  "source_type": "web",
+  "source_name": "Investing.com (coverage of Mobileye presentation)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Mobileye has publicly set expectations that Surround ADAS and higher‑value AD features will ramp after 2028, with volume growth accelerating through 2029–2033 as OEMs adopt full‑surround sensor suites and higher AD capability tiers.",
+  "url": "https://www.investing.com/news/transcripts/mobileye-at-canaccord-growth-conference-eyeing-highervalue-products-93CH-4855627",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Investing.com (coverage of Mobileye presentation)",
+   "published": "2026",
+   "stance": "supports",
+   "about": "Mobileye expectation for Surround ADAS ramp after 2028",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-US-WEB-98",
+  "source_type": "web",
+  "source_name": "Mobileye (earnings call / investor materials)",
+  "derivative": "G60",
+  "market": "US",
+  "text": "Mobileye and other AD suppliers (and some OEMs) explicitly describe over‑the‑air (OTA) upgrades and subscription/feature monetization as part of their commercialization plans for advanced ADAS/Chauffeur‑class features.",
+  "url": "https://ir.mobileye.com/static-files/3b03d5a3-38ee-4817-9b15-2eba712ebc14",
+  "retrieved_at": "2026-10-10T18:46:47.294121Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mobileye (earnings call / investor materials)",
+   "published": "2025",
+   "stance": "supports",
+   "about": "OTA and monetization plans for AD features",
+   "question_kind": "trend"
+  }
+ }
+]

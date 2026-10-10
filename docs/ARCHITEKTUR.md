@@ -48,6 +48,7 @@ flowchart LR
 | Ansichten | `src/backend/core/views.py`, `portfolio.py`, `insights.py` | fertige Antworten pro Bildschirm: Übersicht, Score-Wasserfall, Was-wäre-wenn, Portfolio-Matrix, Markt-Vergleich, Chancen-Karte, Trendradar, „Was wir nicht wissen“ | nein |
 | Replay | `src/backend/core/replay.py` | spielt PM-Entscheidungen und Gewichte beim Start aus `audit.db` neu ab | nein |
 | NHTSA | `src/backend/evidence_external/nhtsa.py` | US-Behördenbeschwerden als zweite Kundenquelle + Wettbewerbs-Statistik, Cache in `data/external_cache/` | nein |
+| EPA-Reichweite | `src/backend/evidence_external/fueleconomy.py` | amtliche Reichweite und Verbrauch von BMW und Wettbewerbern (nur US), ein Beleg je Fahrzeug, Cache in `data/external_cache/fueleconomy/` | nein |
 | Prüfpfad | `src/backend/core/audit.py` | append-only Ereignisse, SHA-256-Kette, `verify()` | – |
 | Store | `src/backend/core/store.py` | Zustand pro Szenario, PM-Aktionen, Neuberechnung | – |
 | LLM-Zugang | `src/backend/core/llm.py` | OpenAI Responses API, JSON-Schema, Cache, Demo-Modus | ja |
@@ -101,6 +102,7 @@ flowchart LR
 | OpenAI Responses API (`OPENAI_MODEL`) | Befunde zusammenfassen, Anforderungen formulieren, Challenge | Cache in `data/cache/` (lokal), geprüfte Webantworten in `data/demo_cache/` (im Repo), `DEMO_MODUS=true` |
 | OpenAI Websuche-Tool | externe Belege mit URL | `data/demo_cache/` (Demo läuft ohne Netz) |
 | NHTSA Complaints API (`api.nhtsa.gov`, ohne Key, gemeinfrei) | US-Kundenbeschwerden BMW + Wettbewerber | `data/external_cache/nhtsa/` (im Repo) |
+| fueleconomy.gov Web Services (`fueleconomy.gov/ws/rest`, ohne Key, EPA) | EPA-Reichweite der Wettbewerber (Prüfstandswert, Ausstattung aus Config) | `data/external_cache/fueleconomy/` (im Repo) |
 
 ## Starten
 

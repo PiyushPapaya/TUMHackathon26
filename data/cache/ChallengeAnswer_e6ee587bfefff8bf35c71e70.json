@@ -1,0 +1,21 @@
+{
+  "answer": "Partly. Multiple customer complaints and a low study score (mean 7.1) show the current boot size, hybrid battery intrusion and tailgate reliability are real problems that justify the requirement. However press coverage predicts the next‑gen EV architecture will increase boot practicality, and some owners already report acceptable trunk space—so future packaging may reduce urgency or require separate targets by powertrain.",
+  "supporting_evidence_ids": [
+    "SIG-F70-EU-022",
+    "SIG-F70-EU-025",
+    "EV-F70-EU-FB-F70-0942",
+    "EV-F70-EU-FB-F70-0961",
+    "EV-F70-EU-FB-F70-1535",
+    "EV-F70-EU-FB-F70-1236",
+    "EV-F70-EU-FB-F70-0278",
+    "EV-F70-EU-FB-F70-1231",
+    "EV-F70-EU-ST-29",
+    "EV-F70-EU-FB-F70-0377",
+    "EV-F70-EU-FB-F70-0955"
+  ],
+  "counter_evidence_ids": [
+    "EV-F70-EU-WEB-84",
+    "EV-F70-EU-FB-F70-1039"
+  ],
+  "suggested_change": "Keep the reliability and interior-shut-button requirements, but add an explicit exception/alternative target for PHEV/packaged EV variants: allow documented packaging-based deviations from 380 L with a required mitigation plan (minimise loss, preserve usable luggage function) and retain the tailgate reliability acceptance criteria."
+}

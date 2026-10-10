@@ -1,0 +1,346 @@
+{
+  "drafts": [
+    {
+      "title": "Deliver consistently strong, smooth and predictable acceleration",
+      "description": "When accelerating the car must feel powerful, immediate and smooth across all drive modes: no unexpected surges, drops or jerky transitions when the driver demands power. Acceleration should feel linear and confidence‑inspiring for everyday and spirited driving.",
+      "acceptance_criterion": "In a standardized 0–60 mph acceleration test the vehicle reaches 60 mph within 4.5 s for performance‑trim variants and within 7.5 s for base electrified variants; in mode switches and source transitions (electric↔engine) torque interruptions causing a perceptible jerk occur in fewer than 2% of repeats in lab tests and measured transient vehicle longitudinal jerk stays below 0.15 g during launch and transitions.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-001",
+        "SIG-G60-US-012",
+        "SIG-G60-US-036"
+      ],
+      "assumptions": [
+        "Successor vehicle will continue to use hybrid/electric powertrains and improved powertrain control software will be available within 3–5 years.",
+        "Performance targets differentiate by trim (performance vs base) and are achievable with reasonable drivetrain tuning rather than large hardware changes."
+      ],
+      "uncertainties": [
+        "Exact acceleration numbers depend on final vehicle mass and chosen motor/powertrain configurations.",
+        "Achieving low jerk during mode transitions may require software and calibration improvements across multiple components."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Brake feel and noise must be refined — quiet, non‑grabby, low dust",
+      "description": "Braking should feel smooth and controlled, without harsh or grabby engagement, loud squeal/grind noises, or excessive visible brake dust that reduce perceived quality and enjoyment.",
+      "acceptance_criterion": "In a fleet durability and use simulation (100 repeated stops from 30–0 mph) no more than 2% of stops produce an audible squeal >60 dBA; stopping distance variability must be within ±0.5 ft and peak deceleration jerk shall not exceed 0.20 g; wheel surface brake dust residue measured after 100 cycles shall be below 150 mg per wheel.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-015",
+        "SIG-G60-US-002",
+        "SIG-G60-US-004",
+        "SIG-G60-US-022"
+      ],
+      "assumptions": [
+        "Improvements can be achieved by material selection, pad/rotor pairing and calibration rather than wholesale architecture changes.",
+        "Fleet testing protocols are a valid proxy for real‑world owner experience."
+      ],
+      "uncertainties": [
+        "Brake dust and noise performance varies with regional climate and driving style; laboratory thresholds approximate real use."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Reliable hands‑free trunk and consistent Comfort Access behavior",
+      "description": "Hands‑free trunk opening and general Comfort Access must work reliably for customers with full hands: a single natural kick gesture should open the trunk predictably, and Comfort Access features (approach/unlock) should behave consistently and be configurable.",
+      "acceptance_criterion": "Touchless trunk opens on the intended kick gesture in at least 95% of valid user trials (diverse users, clothing, and luggage positions) with an open delay under 1.0 s; false triggers occur in <1% of trials; Comfort Access approach unlock actions are configurable and in default mode unlock all doors on approach in 95% of tests.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-008",
+        "SIG-G60-US-041"
+      ],
+      "assumptions": [
+        "Improved sensor algorithms and clearer default settings can dramatically reduce false negatives/positives within the successor timeframe.",
+        "Users will value a simple on/off and sensitivity setting for touchless trunk behavior."
+      ],
+      "uncertainties": [
+        "Extreme environmental conditions (heavy rain, mud, snow) may still degrade sensor reliability."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Seating must accommodate a wider range of body sizes and preferences",
+      "description": "Seats should be adjustable and comfortable for very short to tall drivers, with clear forward visibility, adjustable bolstering and multi‑level firmness so occupants of all sizes feel supported and can see safely over the hood.",
+      "acceptance_criterion": "Driver seating range and adjustment allows drivers at the 5th percentile female US stature to achieve a safe forward view and required sightlines in at least 95% of user tests; seat height adjustment range supports at least 80 mm (3.1 in) of additional upward travel compared with current baseline; bolsters and firmness must be user‑adjustable across at least three levels and be rated satisfactory by 90% of participants in comfort testing.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-010",
+        "SIG-G60-US-007",
+        "SIG-G60-US-038",
+        "SIG-G60-US-006"
+      ],
+      "assumptions": [
+        "Seat mechanical packaging can be adapted in the successor model to increase vertical travel without compromising crash or seat‑belt geometry.",
+        "Customers will prefer electronic memory for individualized comfort settings."
+      ],
+      "uncertainties": [
+        "Exact travel range achievable depends on final seat base, airbag and belt anchorage locations."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "All‑door unlocking on approach should be intuitive and user‑configurable",
+      "description": "When a driver uses the key or approaches the vehicle the expected behavior is clear and easy to change: customers who want all doors to unlock should have that as the default or a one‑tap setting.",
+      "acceptance_criterion": "Default approach unlock behavior opens all doors in 95% of approach tests; the unlock behavior can be changed and found by users within two taps or a single voice command during an in‑car configuration test; 95% of users identify and change the setting without dealer assistance in usability testing.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-018"
+      ],
+      "assumptions": [
+        "A clear default and simple settings path will address most owner confusion without hardware changes.",
+        "Voice and quick‑access settings will remain available in the successor UI."
+      ],
+      "uncertainties": [
+        "Some regional security preferences may require different defaults."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Infotainment must balance a large, attractive display with simple, fast access to core controls",
+      "description": "Keep the large, long touchscreen that customers value while reducing menu depth, restoring physical or tactile quick controls for frequently used functions (climate, volume, defrost) and reducing smudging/readability issues so essential controls are reachable and safe while driving.",
+      "acceptance_criterion": "Primary climate and media functions reachable in ≤2 interactions and ≤1.5 s in a standardized in‑vehicle driving task; UI satisfaction (top‑2 box) ≥80% in representative user study; touchscreen reflectance and smudge testing shows no worse than current premium benchmarks (readable in bright sun without additional gestures), and physical quick controls present for volume, fan, temperature and defrost.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-011",
+        "SIG-G60-US-023",
+        "SIG-G60-US-028",
+        "SIG-G60-US-032",
+        "SIG-G60-US-026",
+        "SIG-G60-US-030"
+      ],
+      "assumptions": [
+        "A mixed control approach (touch + physical quick controls) is feasible for the next generation interior.",
+        "UI simplification and improved information architecture will significantly reduce user frustration."
+      ],
+      "uncertainties": [
+        "Some users will still prefer fully touch‑centric interfaces; achieving universal satisfaction is unlikely."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Reliable in‑car smartphone connectivity and effective wireless charging",
+      "description": "Apple CarPlay and in‑car smartphone features must connect and remain reliable, and the wireless charging area should charge quickly and accommodate most modern phones without repositioning.",
+      "acceptance_criterion": "Apple CarPlay pairs and establishes a usable connection within 5 s in ≥95% of pairing attempts and remains connected for ≥99% of 30‑minute drives; wireless charging pad delivers at least 7.5 W to compatible phones in ≥95% of correct placements and accommodates phones up to 6.7 inches without requiring users to reposition the phone.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-019",
+        "SIG-G60-US-029"
+      ],
+      "assumptions": [
+        "OS and phone ecosystem compatibility will continue to allow reliable wireless CarPlay and Qi charging improvements in the next 3–5 years.",
+        "Hardware placement and pad sizing can be optimized in the successor interior packaging."
+      ],
+      "uncertainties": [
+        "Some third‑party phone cases or nonstandard devices may still degrade performance."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Accurate remaining range, faster and more transparent charging guidance, and better charger availability info",
+      "description": "Range display should feel trustworthy and stable; charging should reach expected speeds when using public chargers; the navigation/vehicle system must clearly list compatible chargers, real‑time availability, and estimated charge times so customers can plan trips with confidence.",
+      "acceptance_criterion": "Range estimation error ≤5% across validated mixed‑use and cold‑temperature tests; when connected to a public DC fast charger the vehicle achieves ≥80% of the charger’s advertised power within 90 s (when within vehicle battery acceptance limits); built‑in charger locator shows compatibility and real‑time availability with ≥95% correctness in live testing.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-009",
+        "SIG-G60-US-020",
+        "SIG-G60-US-027",
+        "SIG-G60-US-014"
+      ],
+      "assumptions": [
+        "Improved telematics, charge‑station data partnerships and vehicle charging logic are achievable within the successor cycle.",
+        "Customers expect consistent estimates and guidance even in colder climates."
+      ],
+      "uncertainties": [
+        "Public charger network reliability remains outside BMW control and may limit absolute availability improvements."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Allow easy persistent control over automatic engine start/stop",
+      "description": "Drivers must be able to disable automatic engine start/stop (MSA) permanently or persistently if they choose, and restarts must be smooth and imperceptible.",
+      "acceptance_criterion": "A user setting to disable MSA is available and persists across ignition cycles and vehicle restarts; the setting is reachable within two interactions or via a single physical button and 95% of test users can set it without dealer help; restarts generate NVH levels and torque transients within thresholds comparable to baseline quiet operation (no perceptible harsh restart).",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-025",
+        "SIG-G60-US-039"
+      ],
+      "assumptions": [
+        "User preference persistence is primarily a software/UX change rather than a hardware constraint."
+      ],
+      "uncertainties": [
+        "Some markets or regulations may restrict full disablement; local rules could affect behavior."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make odometer and trip information obvious and easy to access",
+      "description": "Odometer and trip mileage must be visible or reachable quickly in the instrument cluster so drivers can find mileage without dealer help.",
+      "acceptance_criterion": "Odometer and trip mileage are visible either in the default instrument cluster view or reachable within two button presses; in usability testing 95% of users locate the odometer/trip without dealer assistance.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-021"
+      ],
+      "assumptions": [
+        "Instrument cluster UI can be reorganized without major hardware changes."
+      ],
+      "uncertainties": [
+        "Different regional instrument cluster regulations or packaging may require alternate layouts."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Improve voice recognition and in‑car connectivity reliability",
+      "description": "Voice control must understand common driver commands reliably in realistic cabin noise and maintain a dependable in‑car Wi‑Fi hotspot for passenger use.",
+      "acceptance_criterion": "Voice recognition command accuracy ≥90% in standardized noisy cabin tests (typical road and cabin noise); Wi‑Fi hotspot sustains ≥5 Mbps per connected device for 95% of urban driving sessions in test fleets.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-042",
+        "SIG-G60-US-043"
+      ],
+      "assumptions": [
+        "Improvements rely on better speech models, on‑device processing and stronger carrier/backhaul connectivity options available within 3–5 years."
+      ],
+      "uncertainties": [
+        "Network carrier quality and coverage vary by region and will affect hotspot performance."
+      ],
+      "effort": "M",
+      "forward_looking": true,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Provide useful, well‑sized storage that fits modern needs",
+      "description": "Interior storage must be practical and large enough to store modern items (phones, wallets, chargers, water bottles) securely and accessibly during everyday use.",
+      "acceptance_criterion": "Center console usable internal volume ≥12 liters; multifunction phone tray sized for phones up to 6.7 in and two stable cupholders that secure 16 oz containers during normal maneuvers; 90% of test participants rate storage as meeting daily needs in usability testing.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-040",
+        "SIG-G60-US-029"
+      ],
+      "assumptions": [
+        "Packaging adjustments can increase usable storage without significant cost increases.",
+        "Customers value secure, convenient storage over purely aesthetic solutions."
+      ],
+      "uncertainties": [
+        "Tradeoffs between storage volume and other interior features may be required."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Offer richer, customizable ambient lighting and updated interior/exterior styling options",
+      "description": "Customers want more expressive interior ambient lighting and additional interior/exterior design choices (colors, trims, panoramic roof options) so the car feels more premium and personalized.",
+      "acceptance_criterion": "Ambient lighting supports at least 10 distinct scenes and 20 color hues adjustable across at least three cabin zones; panoramic glass roof option available with motorized shade and anti‑glare coating; in styling preference testing at least 75% of participants rate the updated interior/exterior options as an improvement over the current model.",
+      "category": "interior",
+      "signal_ids": [
+        "SIG-G60-US-031",
+        "SIG-G60-US-033",
+        "SIG-G60-US-035",
+        "SIG-G60-US-037"
+      ],
+      "assumptions": [
+        "Customers will accept modest incremental cost for additional customization and panoramic glass roof options.",
+        "Manufacturing can support more trim/color variants in successor cycles."
+      ],
+      "uncertainties": [
+        "Exact palette and number of options should be validated with market research to avoid overcomplexity."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make My Modes easy to configure, recall and persist",
+      "description": "My Modes and driving personalization should be easy to set up, recall quickly while driving and persist across drives so customers enjoy tailored handling, displays and comfort settings without repeated reconfiguration.",
+      "acceptance_criterion": "Customers can create, name and recall a My Mode within three interactions; mode settings persist across ignition cycles and across vehicle profiles; in usability testing 90% of participants can create and recall a saved My Mode without assistance.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-017",
+        "SIG-G60-US-034"
+      ],
+      "assumptions": [
+        "Data storage and software architecture in the successor vehicle will support persistent user profiles and quick access shortcuts."
+      ],
+      "uncertainties": [
+        "Complex interactions between different systems (chassis, climate, lighting) may require coordination across teams to ensure persistence."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Provide clear flat‑tire preparedness and accessible mobility solution",
+      "description": "Customers should feel prepared for a flat tire: the vehicle must provide a clear, accessible mobility solution (spare tire or inflator/mobility kit) and a visible storage location with simple instructions.",
+      "acceptance_criterion": "Vehicle includes either a compact spare or a mobility inflator/sealant kit stored in a clearly marked compartment; instructions visible in the vehicle and online; in a customer survey 90% of participants state they understand how to address a flat with the provided solution.",
+      "category": "exterior",
+      "signal_ids": [
+        "SIG-G60-US-044"
+      ],
+      "assumptions": [
+        "Providing a mobility kit or spare is feasible within packaging and weight targets for the successor model.",
+        "Clear communication reduces customer dissatisfaction even if full‑size spare is not provided."
+      ],
+      "uncertainties": [
+        "Different markets have different expectations regarding spares vs run‑flat tires."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Clearly state vehicle off‑road limitations and offer a mild 'rough‑road' option",
+      "description": "Be explicit about the car’s intended on‑road use and offer an optional convenience package for customers who want occasional use on rough roads (protective underbody elements and increased ride comfort for rough surfaces), so expectations match capability.",
+      "acceptance_criterion": "Owner materials and configurator clearly state intended on‑road capability and limitations; an optional rough‑road package is offered that provides verified mild‑off‑pavement protection and improved ride calibration for uneven roads; in owner surveys 85% of respondents in regions with rough roads consider the package acceptable for their needs.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-045"
+      ],
+      "assumptions": [
+        "A mild off‑road package (not full off‑road capability) can be offered without major platform changes.",
+        "Many customers want clearer marketing and configuration info rather than a fully off‑road vehicle."
+      ],
+      "uncertainties": [
+        "The exact scope of the optional package and pricing must be validated against demand."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}

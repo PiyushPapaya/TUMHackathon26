@@ -1,0 +1,52 @@
+{
+  "claims": [
+    {
+      "text": "The Audi A3 Sportback’s cockpit uses a panoramic curved screen that combines an Audi virtual cockpit plus (11.9‑inch) with a 12.8‑inch MMI touch display (driver-oriented dual screens for instruments, navigation and vehicle functions). ([audi.co.uk](https://www.audi.co.uk/en/models/a3/a3-sportback/design-and-specification/))",
+      "url": "https://www.audi.co.uk/en/models/a3/a3-sportback/design-and-specification/",
+      "publisher": "Audi UK (official)",
+      "published": "n.d.",
+      "stance": "neutral",
+      "about": "Audi A3 Sportback infotainment / displays"
+    },
+    {
+      "text": "Top Gear’s A3 Sportback interior review (published 3 July 2025) describes Audi’s infotainment as “one of the more responsive and logical setups on the market” and notes Audi has added an app‑store style function plus smartphone integration (Apple CarPlay/Android Auto). ([topgear.com](https://www.topgear.com/car-reviews/audi/a3-sportback/interior))",
+      "url": "https://www.topgear.com/car-reviews/audi/a3-sportback/interior",
+      "publisher": "Top Gear",
+      "published": "03 Jul 2025",
+      "stance": "supports",
+      "about": "Audi A3 Sportback infotainment usability"
+    },
+    {
+      "text": "Carwow’s BMW 1 Series (F70) review (2025/2026 pages) documents a 10.7‑inch driver display and a 10.3‑inch central infotainment screen but explicitly calls the system “crisp and clear but a little overcomplicated to navigate,” and warns the touchscreen climate controls are “irritating to use on the move.” ([carwow.co.uk](https://www.carwow.co.uk/bmw/1-series))",
+      "url": "https://www.carwow.co.uk/bmw/1-series",
+      "publisher": "Carwow",
+      "published": "2025 (page updated 2025/2026)",
+      "stance": "supports",
+      "about": "BMW 1 Series (F70) infotainment complexity and controls"
+    },
+    {
+      "text": "Carwow and other mainstream reviewers note BMW’s newer F70 interior replaces many physical buttons (and the older rotary iDrive controller) with touchscreen menus/curved displays; reviewers say this makes some common controls harder to reach while driving (i.e., increased menu depth and fewer physical shortcuts). ([carwow.co.uk](https://www.carwow.co.uk/bmw/1-series))",
+      "url": "https://www.carwow.co.uk/bmw/1-series",
+      "publisher": "Carwow; Top Gear (review coverage)",
+      "published": "2025",
+      "stance": "supports",
+      "about": "BMW F70 removal of physical controls / impact on usability"
+    },
+    {
+      "text": "There are real owner reports of software problems on BMW forums: for example a Motor‑Talk thread documents iDrive crashes, lost navigation/audio/phone contacts after updates and users discussing remote software upgrade versions (11/2025.24 → 11/2025.30), showing software instability has affected some BMW F70 owners. ([motor-talk.de](https://www.motor-talk.de/forum/remote-software-upgrade-11-2025-30-t8423229.html))",
+      "url": "https://www.motor-talk.de/forum/remote-software-upgrade-11-2025-30-t8423229.html",
+      "publisher": "Motor‑Talk (owner forum)",
+      "published": "thread started 27 Nov 2025 (posts through Dec 2025)",
+      "stance": "supports",
+      "about": "BMW F70 software update / user‑reported issues"
+    },
+    {
+      "text": "Reviews and Audi’s product pages indicate the A3’s dual‑screen layout and MMI software are generally praised for responsiveness and driver focus, though reviewers still flagged some minor annoyances (e.g., sat‑nav imagery choices and multi‑click settings like the speed‑limit chime). Overall the A3 is presented as more straightforward in reviewers’ usage tests than the BMW 1 Series. ([audi.co.uk](https://www.audi.co.uk/en/models/a3/a3-sportback/design-and-specification/))",
+      "url": "https://www.topgear.com/car-reviews/audi/a3-sportback/interior",
+      "publisher": "Top Gear; Audi UK",
+      "published": "Top Gear review 03 Jul 2025; Audi product page (current)",
+      "stance": "supports",
+      "about": "Comparison: Audi A3 Sportback vs BMW 1 Series infotainment usability"
+    }
+  ]
+}

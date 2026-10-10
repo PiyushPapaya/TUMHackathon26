@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "text": "Mercedes A‑Class in recent EU-spec reviews is offered with the MBUX infotainment that combines two linked driver + central displays and a strong emphasis on touchscreen and natural‑language “Hey Mercedes” voice control (less physical buttons on many trims).",
+      "url": "https://www.carwow.co.uk/editorial/best-cars/by-features/the-best-car-infotainment-systems",
+      "publisher": "carwow",
+      "published": "2025-06-??",
+      "stance": "supports",
+      "about": "MBUX infotainment and controls in Mercedes A‑Class."
+    },
+    {
+      "text": "The BMW 1 Series (F70) interior and tech package for 2024/2025 uses a curved dual‑display layout (roughly a 10.7\" central screen plus a 10.25\" instrument cluster in press/review coverage) and continues to offer BMW’s iDrive input (rotary/dial + shortcuts) as a primary physical control option. ",
+      "url": "https://www.motor1.com/news/722118/bmw-1-series-f70-2024-facelift-revealed/",
+      "publisher": "Motor1",
+      "published": "2024-07-??",
+      "stance": "supports",
+      "about": "BMW 1 Series (F70) display and iDrive controls."
+    },
+    {
+      "text": "Multiple reviewers and comparison write‑ups characterise Mercedes’ MBUX approach as more touch‑and‑voice centric while BMW’s iDrive approach keeps a physical rotary controller and shortcut keys that many reviewers describe as less distracting while driving. ",
+      "url": "https://www.carsguide.com.au/bmw/i-series/vs/mercedes-benz-a200",
+      "publisher": "CarsGuide",
+      "published": "2025-??-??",
+      "stance": "supports",
+      "about": "Comparison of MBUX vs iDrive (controls and driver distraction)."
+    },
+    {
+      "text": "Mercedes factory option/equipment lists and vehicle documents include a coded item described as “engine sound via speakers” (often listed as code B63 / ‘Engine sound via speakers’ in COC/equipment sheets), i.e. simulated engine/exhaust audio routed through the vehicle’s speaker system. ",
+      "url": "https://api.weltcar.de/api/cars/mv4/export",
+      "publisher": "WeltCar (vehicle export/COC data)",
+      "published": "2025-??-??",
+      "stance": "supports",
+      "about": "Mercedes equipment code B63 / engine sound via speakers."
+    },
+    {
+      "text": "Owner and enthusiast forum reports show Mercedes owners experiencing audible simulated engine sound through the cabin speakers that can be difficult to fully disable and can be amplified/altered by aftermarket audio amplifiers, i.e. real‑world complaints about the feature’s presence and manageability. ",
+      "url": "https://mbworld.org/forums/c63-c43-amg-w206/908558-engine-sound-via-speakers.html",
+      "publisher": "MBWorld forum",
+      "published": "2025-02-16",
+      "stance": "supports",
+      "about": "User reports of engine sound via speakers in Mercedes and difficulty disabling it."
+    },
+    {
+      "text": "Road‑test and editorial reviews have described Mercedes’ injected/simulated engine notes as noticeable in some drives and in at least one test were described as having poor fidelity when toggled or when audio hardware glitches occurred (reviewers likened the transient sound quality to low‑bit AM‑radio‑like artifacts).",
+      "url": "https://doubleclutch.ca/article/2024-mercedes-amg-gt-63-4matic-coupe-review",
+      "publisher": "DoubleClutch",
+      "published": "2024-??-??",
+      "stance": "supports",
+      "about": "Editorial note on poor fidelity of synthetic engine notes in Mercedes."
+    },
+    {
+      "text": "BMW publishes and lists ‘Active Sound Design’ (and related functions such as XtraBoost in sport modes) in technical/specification materials for recent models — i.e. BMW also supplies synthesized/processed engine sound features routed into cabin audio on some models/modes. ",
+      "url": "https://www.bmw.com/content/dam/bmw/marketAU/bmw_com/all-models/specification_guide_2021/August-updated/BMW_3_Series_Sedan_Specification_Guide-G20.pdf.asset.1632894960178.pdf",
+      "publisher": "BMW (official specification guide PDF)",
+      "published": "2021-08 (example spec doc)",
+      "stance": "supports",
+      "about": "BMW Active Sound Design / XtraBoost feature in BMW documentation."
+    },
+    {
+      "text": "Journalistic coverage and owner/community discussion (including BMW‑focused blogs) note both a trend toward ‘artificial engine sound’ features across premium brands and owner complaints that playing synthesized engine/exhaust audio through normal vehicle speakers can degrade perceived music/audio quality and feel artificial. ",
+      "url": "https://www.bmwblog.com/2025/04/28/bmw-sound-system-upgrades-a-whim-or-a-necessity/",
+      "publisher": "BMWBlog",
+      "published": "2025-04-28",
+      "stance": "supports",
+      "about": "Discussion of artificial engine sound and perceived audio quality impact."
+    },
+    {
+      "text": "Independent forum threads and longstanding community discussion across brands document recurring owner complaints about ‘fake engine sound’ and poor perceived audio fidelity when these synthetic sounds are used — the issue is not unique to one marque and appears regularly in owner feedback for Mercedes and BMW lines. ",
+      "url": "https://www.audiworld.com/forums/q5-sq5-mkii-discussion-218/does-2018-sq5-use-soundaktor-2943349/page3/",
+      "publisher": "AudiWorld forum",
+      "published": "2019-03-20 (example thread)",
+      "stance": "supports",
+      "about": "Cross‑brand owner discussion of simulated engine/exhaust sound and quality."
+    }
+  ]
+}

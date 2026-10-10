@@ -1,0 +1,11 @@
+{
+  "title": "Hands free trunk doesn't work consistently",
+  "summary": "Customers report the touchless kick-to-open trunk often fails or only activates after repeated tries, and sometimes opens randomly or with a lag. They find the required motion too picky and frustrating when their hands are full.",
+  "representative_ids": [
+    "EV-G60-US-FB-G60-0835",
+    "EV-G60-US-FB-G60-3337",
+    "EV-G60-US-FB-G60-1403",
+    "EV-G60-US-FB-G60-3214",
+    "EV-G60-US-FB-G60-3264"
+  ]
+}
