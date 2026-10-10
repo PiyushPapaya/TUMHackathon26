@@ -6,6 +6,7 @@ Warum Websuche statt Scraping: Sie liefert Quellen-URLs mit, und in 24 h wird ke
 
 from __future__ import annotations
 
+import sys
 from typing import Literal
 
 from pydantic import BaseModel
@@ -38,6 +39,16 @@ def has_real_url(claim: Claim) -> bool:
     return is_plain_web_url(claim.url.strip())
 
 
+# Fragen, deren Websuche scheiterte; pipeline.py zeigt sie in der Zusammenfassung (nichts still verschlucken).
+FAILED_QUESTIONS: list[str] = []
+
+
 def ask_claims(question: str) -> list[Claim]:
-    result = ask_json(system=SYSTEM, user=question, schema=Claims, tools=[{"type": "web_search"}])
+    """Eine gescheiterte Frage (Netz, fehlender Demo-Cache) kostet nur diese Frage, nicht die ganze Webstufe."""
+    try:
+        result = ask_json(system=SYSTEM, user=question, schema=Claims, tools=[{"type": "web_search"}])
+    except Exception as err:
+        FAILED_QUESTIONS.append(question)
+        print(f"  ! Webfrage übersprungen ({type(err).__name__}): {question[:80]}", file=sys.stderr)
+        return []
     return [claim for claim in result.claims if has_real_url(claim)]
