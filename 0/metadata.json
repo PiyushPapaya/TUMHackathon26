@@ -1,0 +1,47 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KP5WHGD11RCK6MA16XCBE5",
+  "session_id": "2540f4ee-103f-4cff-bcb1-5a84f948ec4c",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T19:56:01.6797418Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "src/backend/core/models.py",
+    "src/backend/evidence_external/fueleconomy.py",
+    "src/backend/pipeline.py",
+    "tests/pfad_b/test_fueleconomy.py"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5-5",
+  "turn_id": "77576b27258f",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 36,
+    "cache_creation_tokens": 55467,
+    "cache_read_tokens": 1497445,
+    "output_tokens": 12850,
+    "api_call_count": 18
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T19:56:01.6378179Z",
+    "agent_lines": 150,
+    "agent_removed": 0,
+    "human_added": 1116,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 1266,
+    "total_lines_changed": 1269,
+    "agent_percentage": 11.82033096926714,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    }
+  ]
+}
