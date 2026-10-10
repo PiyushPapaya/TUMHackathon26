@@ -69,6 +69,6 @@ Prompt zum Kopieren für jede Karte: [`docs/UPGRADE_WELLE2.md`](../UPGRADE_WELLE
 - [ ] **W-L3** · PM-Entscheidungen überleben Neustart (Audit-Events neu abspielen) · 23:15–23:45 · **nie streichen**
 - [ ] **W-L4** · View-Endpunkte fürs Frontend (overview, explain, whatif, portfolio, compare, evidence, gaps, export) · 23:45–01:30 · **nie streichen**
 - [ ] **W-L7** · Nachtlauf alle 6 Szenarien + Demo-Cache committen · 04:00–06:00 · **nie streichen**
-- [ ] **W-L8** · `scripts/check_bundles.py` · 03:00–03:30
+- [x] **W-L8** · `scripts/check_bundles.py` · 03:00–03:30
 - [ ] **W-L9** · Doku: ARCHITEKTUR, data/README, README „neues Auto in 2 Schritten“ · 06:00–07:30
 - [ ] *(kann)* **W-L11** `POST /ask` · **W-L12** `scripts/new_scenario.py`
