@@ -78,7 +78,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - `sync`, dann Piyush im Chat: „A1-A3 auf main, bitte Stufe evidence laufen lassen.“
 - Du selbst: `python src/backend/pipeline.py --scenario G60-US --stage evidence` → `data/processed/G60-US/evidence.json` + `context.json`.
 
-### [ ] A5 · Befunde v1 ohne LLM (60 min, bis 18:30, **M2 Durchstich**)
+### [x] A5 · Befunde v1 ohne LLM (60 min, bis 18:30, **M2 Durchstich**)
 **Prompt:**
 > Ticket A5. Implementiere `extract_signals` in `signals.py`, **v1 ohne LLM**, weil die Taxonomie von BMW schon gute Gruppen liefert und das erklärbar ist.
 > 1) Lege `taxonomy.py` an: Mapping `vfc2 → Category` für alle `Vfc level2 Name`-Werte (gib mir zuerst lokal die Liste der eindeutigen Werte aus allen drei Feedback-Dateien;
@@ -92,6 +92,9 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 > Tests: jede zitierte `evidence_id` existiert; `mention_count >= len(evidence_ids)`; Kategorie gültig; Gruppe < 5 fällt weg.
 - **Fertig, wenn:** G60-US ergibt **20-45 Befunde** · ≥ 3 Befunde haben feedback **und** study · `pipeline.py --scenario G60-US --stage signals` läuft · `sync`, Piyush Bescheid geben.
 - **Subagent:** einer baut `taxonomy.py` (Mapping), du baust die Gruppierung.
+- **Ergebnis A5 (echte Daten):** je Szenario 45 Befunde (Obergrenze, größte zuerst, Untergrenze 5 Nennungen). G60-US: 6 mit Feedback + Studie, 10 Wünsche, 0 unbekannte IDs.
+  Entscheidungen: Obergrenze 45 statt Schwelle (bei ≥5 wären es 162); Gruppen mit 2 Quellenarten bleiben immer; reine Studien-Befunde max. 8; 10 Plätze für Wünsche;
+  Quelle D über den Bereich im Satz zugeordnet; „Body equipment“ bewusst ungemappt (Sammelbegriff).
 
 ### [ ] A6 · Befunde v2 mit LLM (90 min, 19:30-21:00)
 **Prompt:**
