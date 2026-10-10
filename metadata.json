@@ -1,0 +1,41 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4JWVF74D1X0038TCTNN3986",
+  "strategy": "manual-commit",
+  "branch": "piyush/neustart",
+  "checkpoints_count": 3,
+  "files_touched": [
+    "pyproject.toml",
+    "requirements.txt",
+    "scripts/ehl_budget.py",
+    "src/backend/api/routes.py",
+    "src/backend/core/audit.py",
+    "src/backend/core/llm.py",
+    "src/backend/core/models.py",
+    "src/backend/core/store.py",
+    "src/backend/main.py",
+    "src/backend/requirements_engine/challenge.py",
+    "src/backend/requirements_engine/evidence_level.py",
+    "src/backend/requirements_engine/scoring.py",
+    "tests/conftest.py",
+    "tests/test_api.py",
+    "tests/test_audit.py",
+    "tests/test_scoring.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 130,
+    "cache_creation_tokens": 240533,
+    "cache_read_tokens": 10924624,
+    "output_tokens": 114042,
+    "api_call_count": 65
+  }
+}

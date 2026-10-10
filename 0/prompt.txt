@@ -1,0 +1,112 @@
+how is the reoo cuurentyl lokking
+
+---
+
+an wkcher github repo ist es gebunden
+
+---
+
+is entire enbaled
+
+---
+
+alirght das ist das prjket. entire fast alles von der rpeo und baue die repo von bull auf, basreidd auf der auafgeb udn datenseiuts etc. erstelle mir auch eien rodamp und plan mit vollen und alles sodass wirfut picthes, einziegrateige und gut funktioneer idee ahben udn auf jeden fall gwiennen, gebe alle mir steps rodamps. und teiel den roadkmpa zischen 4 leute bszw 4 verscehide pfade wo jedere an den pafd arebeietn aknn sodas wir alle 4 paarel arebieetn können. es soll ein gut gebadc eherer plan seit, baue de rpo von jull auf, eteioel keien einziegarteieg rollen azsßer micha ls lead und palnnes alles genauer. heier sind all die uafgeb und rollen: 
+
+<pasted_content id="90a0">
+ich macegh bei der hackathon challge bei BMV mit: Your mission
+
+Build an AI-powered application that ingests heterogeneous data, derives customer requirements for a vehicle, prioritizes them, and puts a product manager in the loop at the decisions that matter.
+
+Your app should be able to:
+• Ingest the provided data and enrich it with structured knowledge from the web.
+• Extract signals such as recurring complaints, unmet needs, competitor advantages and market trends, each linked to its sources.
+• Derive requirements from those findings: clear, actionable, customer-facing and realistic.
+• Prioritize them with a logic you define and can explain.
+• Involve the PM to approve, reject, edit or challenge requirements and their rationale and evidence behind them. 
+• Record everything in an audit trail (is a complete, chronological record of all actions, changes, and access events within a system or data environment).
+
+About the Scope
+In scope:
+• Customer requirements on the product: features, equipment, comfort, space, usability, infotainment and digital services, design and quality perception, driving experience, range and charging as experienced by the customer, variant and package offering, etc.
+
+Out of scope:
+• Regulatory and homologation requirements (e.g.: safety, emissions, type approval)
+• Technical and engineering requirements (e.g.: component specs, architecture, supplier topics)
+• Pricing, business case and cost calculation (you may use cost or effort as a rough prioritization factor)
+2. Make it yours!
+Demonstrate your application at least for one derivative in onbe market but avoid designing it as a one-off: it should be adaptable to other BMW vehicles and markets. The remaining datasets and scenarios are available for optional testing. 
+We know the challenge is broad. Focus on the parts where your team can make the strongest contribution. You might go deep on web research and turn external information into usable evidence, or on integrating and interpreting the provided BMW data. You do not need to develop every capability to the same depth. Be creative, but show how your chosen focus connects to the overall path from evidence to a PM decision.
+3. 
+4. Expected Deliverables
+   * A concept and demonstrable prototype of an AI-powered product requirements application that processes heterogeneous inputs, derives product requirements, supports prioritization, and integrates human review.
+   * A structured sample list of derived product requirements. Each requirement should include a unique identifier, a clear and actionable description, its linked findings and sources, a priority or score, the applied prioritization rationale, an evidence level, the key future-facing assumptions and uncertainties and its current decision status.
+   * A clearly defined end-to-end workflow showing how inputs are processed into proposed and prioritized requirements, which activities the AI performs autonomously, and where human review is mandatory.
+   * A demonstrable audit trail that makes each requirement traceable from its underlying findings and sources through consolidation, scoring, prioritization, and human decision-making. It should record relevant changes to requirement content, scores, priorities, evidence, and status, including who or what initiated each change, when it occurred, and the documented rationale.
+
+Important: Teams are free to choose their technical approach, architecture, prioritization logic, and user experience. The deliverables describe the capabilities and outcomes that should be demonstrated, not a prescribed solution design. Deliverables may be presented as one integrated solution or as a combination of connected concepts, prototypes, models, and visualizations.. this is all teh mtareial. read and unerzdna it fisrt
+</pasted_content id="90a0">
+
+[Image #2] [Image #3]
+
+<pasted_content id="90a0">
+C:\Users\anil1\Downloads\sales_volumes.xlsx
+C:\Users\anil1\Downloads\G70_OptionList.PDF
+C:\Users\anil1\Downloads\G60_OptionList.PDF
+C:\Users\anil1\Downloads\G70_feedback_hackathon.xlsx
+C:\Users\anil1\Downloads\G60_feedback_hackathon.xlsx
+C:\Users\anil1\Downloads\F70_OptionList.PDF
+C:\Users\anil1\Downloads\F70_G60_G68_G70_customer_studies.xlsx
+C:\Users\anil1\Downloads\F70_feedback_hackathon.xlsx
+C:\Users\anil1\Downloads\AI-BMV.pdf
+C:\Users\anil1\Downloads\BMW_Hackathon_Briefing_Short.pdf
+</pasted_content id="90a0">
+
+
+<pasted_content id="90a0">
+ich macegh bei der hackathon challge bei BMV mit: Your mission
+
+Build an AI-powered application that ingests heterogeneous data, derives customer requirements for a vehicle, prioritizes them, and puts a product manager in the loop at the decisions that matter.
+
+Your app should be able to:
+• Ingest the provided data and enrich it with structured knowledge from the web.
+• Extract signals such as recurring complaints, unmet needs, competitor advantages and market trends, each linked to its sources.
+• Derive requirements from those findings: clear, actionable, customer-facing and realistic.
+• Prioritize them with a logic you define and can explain.
+• Involve the PM to approve, reject, edit or challenge requirements and their rationale and evidence behind them. 
+• Record everything in an audit trail (is a complete, chronological record of all actions, changes, and access events within a system or data environment).
+
+About the Scope
+In scope:
+• Customer requirements on the product: features, equipment, comfort, space, usability, infotainment and digital services, design and quality perception, driving experience, range and charging as experienced by the customer, variant and package offering, etc.
+
+Out of scope:
+• Regulatory and homologation requirements (e.g.: safety, emissions, type approval)
+• Technical and engineering requirements (e.g.: component specs, architecture, supplier topics)
+• Pricing, business case and cost calculation (you may use cost or effort as a rough prioritization factor)
+2. Make it yours!
+Demonstrate your application at least for one derivative in onbe market but avoid designing it as a one-off: it should be adaptable to other BMW vehicles and markets. The remaining datasets and scenarios are available for optional testing. 
+We know the challenge is broad. Focus on the parts where your team can make the strongest contribution. You might go deep on web research and turn external information into usable evidence, or on integrating and interpreting the provided BMW data. You do not need to develop every capability to the same depth. Be creative, but show how your chosen focus connects to the overall path from evidence to a PM decision.
+3. 
+4. Expected Deliverables
+   * A concept and demonstrable prototype of an AI-powered product requirements application that processes heterogeneous inputs, derives product requirements, supports prioritization, and integrates human review.
+   * A structured sample list of derived product requirements. Each requirement should include a unique identifier, a clear and actionable description, its linked findings and sources, a priority or score, the applied prioritization rationale, an evidence level, the key future-facing assumptions and uncertainties and its current decision status.
+   * A clearly defined end-to-end workflow showing how inputs are processed into proposed and prioritized requirements, which activities the AI performs autonomously, and where human review is mandatory.
+   * A demonstrable audit trail that makes each requirement traceable from its underlying findings and sources through consolidation, scoring, prioritization, and human decision-making. It should record relevant changes to requirement content, scores, priorities, evidence, and status, including who or what initiated each change, when it occurred, and the documented rationale.
+
+Important: Teams are free to choose their technical approach, architecture, prioritization logic, and user experience. The deliverables describe the capabilities and outcomes that should be demonstrated, not a prescribed solution design. Deliverables may be presented as one integrated solution or as a combination of connected concepts, prototypes, models, and visualizations.. this is all teh mtareial. read and unerzdna it fisrt
+</pasted_content id="90a0">
+
+[Image #6] [Image #7]
+
+<pasted_content id="90a0">
+C:\Users\anil1\Downloads\sales_volumes.xlsx
+C:\Users\anil1\Downloads\G70_OptionList.PDF
+C:\Users\anil1\Downloads\G60_OptionList.PDF
+C:\Users\anil1\Downloads\G70_feedback_hackathon.xlsx
+C:\Users\anil1\Downloads\G60_feedback_hackathon.xlsx
+C:\Users\anil1\Downloads\F70_OptionList.PDF
+C:\Users\anil1\Downloads\F70_G60_G68_G70_customer_studies.xlsx
+C:\Users\anil1\Downloads\F70_feedback_hackathon.xlsx
+C:\Users\anil1\Downloads\AI-BMV.pdf
+C:\Users\anil1\Downloads\BMW_Hackathon_Briefing_Short.pdf
+</pasted_content id="90a0">
