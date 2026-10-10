@@ -94,3 +94,12 @@ def test_prompt_enthaelt_hoechstens_30_belege_und_beide_seiten(monkeypatch):
     answer_challenge(REQ, "q", SIGNALS, many)
     assert sum(1 for e in many if e.id in seen["user"]) == 30
     assert "EV-P00" in seen["user"]  # die wenigen Gegenstimmen dürfen nicht untergehen
+
+
+def test_prompt_zaehlt_beschwerden_nie_als_gegenbeleg():
+    # Echter Fund (Sa 21:30): Auf "What speaks against it?" nannte die KI 25 Beschwerden als Gegenbelege,
+    # weil sie "widerspricht dem Zielwert" las. Beschwerden stützen die Anforderung; der Prompt muss das sagen.
+    from requirements_engine.challenge import SYSTEM_PROMPT
+
+    assert "Never list a complaint as counter-evidence" in SYSTEM_PROMPT
+    assert "verdict" in SYSTEM_PROMPT

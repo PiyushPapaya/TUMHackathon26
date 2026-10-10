@@ -51,7 +51,9 @@ def test_keine_befunde_ruft_die_ki_gar_nicht_erst_auf(monkeypatch):
 
 def test_ki_liefert_leere_liste(monkeypatch):
     _fake(monkeypatch, [])
-    assert derive_all(SCENARIO, [_signal()], [], {}) == ([], [])
+    reqs, discarded = derive_all(SCENARIO, [_signal()], [], {})
+    assert reqs == []
+    assert [d["title"].startswith("Not covered:") for d in discarded] == [True]  # nichts geht still verloren
 
 
 def test_befund_ohne_belege_fuehrt_nicht_zum_absturz(monkeypatch):
