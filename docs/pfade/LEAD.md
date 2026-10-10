@@ -17,9 +17,9 @@ Pipeline mit Stufendateien + Beispiel-Fallback, 3 Szenario-Configs, Startversion
 | 15:15 | [x] **L0 Kick-off (15 min):** Idee in 3 Sätzen, ROADMAP §1 vorlesen, Arbeitsbücher verteilen, USB-Stick mit `data/raw/` rumgeben, Team-Chat für Blocker | alle 4 kennen ihr erstes Ticket |
 | 15:30 | [x] **L1 Setup-Runde (15 min):** reihum M0 abhaken (Tests, Entire, `.env` mit eigenem Key). Eigene `.env` anlegen (fehlt noch!) | M0 für alle ✓ |
 | 15:30 | B1, B2, B3 (Web) | siehe PFAD-B |
-| 17:30 | [ ] **L2 M1:** `pipeline.py --scenario G60-US --stage evidence` mit Adityas Code | ~3.700 Belege |
+| 17:30 | [x] **L2 M1:** `pipeline.py --scenario G60-US --stage evidence` mit Adityas Code | ~3.700 Belege |
 | 17:45 | [x] **L3 Pipeline an `derive_all` anschließen:** Stufe requirements nutzt `derive_all` (Dennis, C2), schreibt `discarded.json`; Bundle-Stufe schreibt verworfene als Audit `REQUIREMENT_DISCARDED` | Test in `tests/test_pipeline.py` |
-| **18:30** | [ ] **L4 Durchstich:** alle Stufen, Bundle, Backend neu starten, mit allen 4 auf Lasses Bildschirm schauen | echte Liste + Detail im UI |
+| **18:30** | [x] **L4 Durchstich:** alle Stufen, Bundle, Backend neu starten, mit allen 4 auf Lasses Bildschirm schauen | echte Liste + Detail im UI |
 | 19:00 | Stand-up beim Essen (ROADMAP §3) | Kürzungen entschieden |
 | 19:30 | B4 Triangulation | siehe PFAD-B |
 | 20:30 | [ ] **L5 Audit-Ereignisse der Pipeline:** `EVIDENCE_INGESTED`, `SIGNALS_EXTRACTED`, `REQUIREMENT_PROPOSED` (Akteur KI/System, Modell, Anzahl) beim Bundle-Laden | `/audit` zeigt die KI-Schritte |

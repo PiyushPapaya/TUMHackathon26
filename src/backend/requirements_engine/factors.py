@@ -7,6 +7,7 @@ Fehlen Daten (keine Studie, kein Vertrauenswert), zählt der Faktor 0 und der Sa
 
 from __future__ import annotations
 
+import math
 from collections import Counter
 
 from core.models import Evidence, ScoreFactor, Signal, SignalKind
@@ -49,11 +50,14 @@ def _customer_pain(signals: list[Signal], by_id: dict[str, Evidence]) -> tuple[f
 
 
 def _reach(mentions: int, max_mentions: int, context: dict) -> tuple[float, str]:
-    value = mentions / max_mentions if max_mentions else 0.0
+    # Wurzel statt linear (Entscheidung Sa 10.10.): Auf den echten Daten reichen die Nennungen von 7 bis 581,
+    # linear bekäme fast jede Anforderung unter 0,3 und reach wäre wirkungslos. Doppelt so viele Kunden
+    # heißt nicht doppelt so wichtig.
+    value = math.sqrt(min(mentions / max_mentions, 1.0)) if max_mentions else 0.0
     sales = context.get("sales", {})
     share = sales.get("share_of_total_2030")
     market = f"; {sales.get('market', '?')} = {share * 100:.0f} % of 2030 volume" if share is not None else ""
-    return min(value, 1.0), f"{mentions} of at most {max_mentions} mentions{market}"
+    return value, f"{mentions} of at most {max_mentions} mentions (square root scale){market}"
 
 
 def _satisfaction_gap(signals: list[Signal], by_id: dict[str, Evidence]) -> tuple[float, str]:
