@@ -11,7 +11,7 @@ Grundlage: `docs/ABGABE.md`. Bewertet wird **der Commit oben auf `main` beim Kli
 
 ## Schritte
 
-1. **Code-Freeze ansagen** (So 10:30). Offene PRs auflisten: `gh pr list --state open`. Grüne PRs merged Piyush, der Rest bleibt zu.
+1. **Code-Freeze ansagen** (So 10:30). Alle pushen ihren letzten getesteten Stand auf main (Skill `sync`), danach pusht niemand mehr außer für Fixes aus `docs/ABGABE.md`.
 2. **Lokal auf main:** `git switch main && git pull`.
 3. **Checks aus `docs/ABGABE.md` der Reihe nach**, jeweils Befehl + Ergebnis + ✅/❌:
    1. `python scripts/secret_scan.py --historie`
@@ -21,7 +21,7 @@ Grundlage: `docs/ABGABE.md`. Bewertet wird **der Commit oben auf `main` beim Kli
    5. README: keine `[PLATZHALTER]`, Zahl oben, Demo- und Video-Link (`grep -n "\[[A-ZÄÖÜ-]*\]" README.md`)
    6. `python scripts/ehl_budget.py`: `src/` wird gelesen, Doku < 25 %
    7. `git ls-remote origin 'refs/entire/checkpoints/*'` → Anzahl > 0
-   8. Checkpoints von allen: `git log origin/main --format='%an %(trailers:key=Entire-Checkpoint,valueonly)'`. Wer fehlt, committet aus seiner Claude-Session eine kleine Änderung (z. B. eigener Workspace), PR, Piyush merged.
+   8. Checkpoints von allen: `git log origin/main --format='%an %(trailers:key=Entire-Checkpoint,valueonly)'`. Wer fehlt, committet aus seiner Claude-Session eine kleine Änderung im eigenen Pfad und pusht auf main.
    9. Live-URL und Backup-Video öffnen
    10. Pitch-Deck-PDF vorhanden
 4. **Formular** (Piyush, ehl.gg): Texte aus `docs/ABGABE.md` (Projektname, Kurzbeschreibung mit Zahl, Repo-URL `https://github.com/PiyushPapaya/TUMHackathon26`, Deck, Demo, Tech-Tags). „Verify“ → grün → **Submit**.

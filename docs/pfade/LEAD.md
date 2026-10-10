@@ -3,7 +3,7 @@
 **Ziel:** Alle vier Pfade sind nie blockiert. Um 18:00 / 22:00 / 08:00 läuft auf `main` ein Stand, der die Demo trägt.
 **Du schreibst in:** `src/backend/core/`, `api/`, `main.py`, `pipeline.py`, `src/shared/`, `config/`, Root-Dateien, `docs/`.
 
-## Schon fertig (Sa 15:00, Branch `piyush/neustart`)
+## Schon fertig (Sa 15:00, auf main)
 
 - Datenmodell `core/models.py`, Prüfpfad mit Hash-Kette `core/audit.py`, Store mit PM-Aktionen `core/store.py`
 - API (`api/routes.py`): Szenarien, Trichter, Befunde, Anforderungen, Detail, Entscheidung, Gewichte, Prüfpfad, Verify, CSV-Export
@@ -15,7 +15,7 @@
 | Zeit | Aufgabe |
 |---|---|
 | 14:45 | Kick-off (15 min): Idee in 3 Sätzen, Pfade verteilen, Setup-Check reihum |
-| jede volle Stunde | **Merge-Fenster**: grüne PRs mergen, danach `pipeline.py --scenario G60-US` mit dem, was da ist |
+| jede volle Stunde | `git pull`, CI auf main prüfen (rot → Verursacher anpingen), dann `pipeline.py --scenario G60-US` mit dem, was da ist |
 | 16:00 | Kontakt BMW-Mentor: 3 Fragen (unten), Antworten in `docs/CHALLENGE.md` |
 | **18:00** | Durchstich: Pipeline mit echten Belegen → Bundle → UI zeigt echte Liste |
 | 19:00 | Stand-up beim Dinner (je 1 min: fertig / blockiert / nächster Schritt), Kürzungsliste prüfen |

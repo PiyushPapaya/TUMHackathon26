@@ -12,7 +12,7 @@
 ## So 10:30 Code-Freeze
 
 - [ ] Ansage im Team: **ab jetzt keine neuen Features**, nur Fixes aus dieser Liste
-- [ ] Alle offenen, grünen PRs gemerged (Piyush); alle anderen bleiben zu
+- [ ] Alle haben ihren letzten getesteten Stand auf main gepusht; CI auf main grün
 
 ## So 10:30-11:15 Checks (Piyush + Aditya)
 
@@ -80,23 +80,7 @@ git push -u origin piyush/wissen-auslagern && gh pr create --base main --fill
 
 Ergebnis im Test: Archiv enthält alle 10 Wissensdateien, `main` danach keine; Fallback-Budget Doku 28 %. Danach mergen (Bypass) und „Update Submission“.
 
-## Notfall B: Piyush fällt aus (Vertretung durch Lasse)
+## Notfall B: Piyush fällt aus
 
-**Warum vorher nötig:** Nur Piyush ist Admin. Fällt er unerreichbar aus, kann **niemand** die Regeln ändern. Persönliche Repos kennen keinen zweiten Admin und keine Bypass-Liste für Personen. Deshalb schaltet Piyush den Vertretungsmodus **vor** seiner Schlafschicht oder einer längeren Abwesenheit selbst an. Im Vertretungsmodus kann jedes Teammitglied einen PR mergen, sobald die CI grün ist. Absprache: **nur Lasse merged**.
-
-Vertretung **an** (nur Piyush, nicht vorab ausführen):
-
-```bash
-gh api -X PUT repos/PiyushPapaya/TUMHackathon26/rulesets/24814533 --input - <<'EOF'
-{"name":"main-nur-piyush-merged","target":"branch","enforcement":"active",
- "conditions":{"ref_name":{"include":["~DEFAULT_BRANCH"],"exclude":[]}},
- "bypass_actors":[{"actor_id":5,"actor_type":"RepositoryRole","bypass_mode":"always"}],
- "rules":[{"type":"deletion"},{"type":"non_fast_forward"},
-  {"type":"pull_request","parameters":{"required_approving_review_count":0,"dismiss_stale_reviews_on_push":true,"require_code_owner_review":false,"require_last_push_approval":false,"required_review_thread_resolution":false,"allowed_merge_methods":["merge"]}},
-  {"type":"required_status_checks","parameters":{"strict_required_status_checks_policy":false,"do_not_enforce_on_create":false,"required_status_checks":[{"context":"checks","integration_id":15368}]}}]}
-EOF
-```
-
-Vertretung **aus** (zurück zum Normalzustand): derselbe Befehl, aber zusätzlich `{"type":"update","parameters":{"update_allows_fetch_and_merge":false}}` in `rules` und im `pull_request`-Teil `"required_approving_review_count":1,"require_code_owner_review":true`.
-
-Prüfen: `gh api repos/PiyushPapaya/TUMHackathon26/rules/branches/main --jq '[.[].type]'`. Normal: `update` ist enthalten, im Vertretungsmodus fehlt er.
+Seit Sa 10.10. pushen alle direkt auf main (Ruleset `main-schutz-nur-unfaelle` verbietet nur Löschen und Force-Push von main).
+Es gibt also nichts freizuschalten: Fällt Piyush aus, übernimmt **Lasse** die Abgabe auf ehl.gg (Captain-Zugang vorher klären) und führt den Skill `abgabe` aus.

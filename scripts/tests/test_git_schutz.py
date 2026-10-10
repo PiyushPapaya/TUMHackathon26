@@ -19,15 +19,16 @@ MUST_BLOCK = [
     'git commit -m "msg" --no-verify',  # Flag NACH der Nachricht
     "git branch -D lasse/x",
     "git push origin --delete lasse/x",
-    "git push origin main",
-    "git push origin HEAD:main",
-    "git push origin lasse/x:main",
     "git rebase main",
+    "git pull --rebase origin main",
     'git push "--force"',              # Flag in Anführungszeichen
-    "git push origin 'main'",          # Ziel in Anführungszeichen
     'git commit -m "x" && git push -f',
 ]
 MUST_PASS = [
+    # Seit Sa 10.10. pushen alle direkt auf main (kein Branch/PR):
+    "git push origin main",
+    "git pull --no-rebase origin main && git push origin main",
+    "git push origin 'main'",
     "git push -u origin lasse/login",
     "git push && git switch main",
     "git switch main && git pull",

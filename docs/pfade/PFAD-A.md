@@ -22,7 +22,7 @@
 | 1 | 45 min | `load_feedback` in `loaders.py`: Länder filtern, Duplikat-IDs zu einem Beleg zusammenführen, Labels in `meta`, Polarität | Test: 3 Zeilen gleicher ID → 1 Beleg mit 3 Labels; G60-US ergibt 3.610 Belege |
 | 2 | 45 min | `load_study`: US-Blöcke + CN/EU-Mean → je Attribut ein Beleg mit Satz und Kennzahl (Negativanteil, Top-2-Box) | Test mit Mini-DataFrame; "Rear interior roominess" taucht auf |
 | 3 | 20 min | `load_context` (Absatz) | `share_of_total_2030` für G60-US ≈ 0,25 |
-| 4 | — | **Commit + PR** → Lead lässt Stufe `evidence` laufen (**Sa 17:00**) | `evidence.json` real |
+| 4 | — | **Push auf main** → Lead lässt Stufe `evidence` laufen (**Sa 17:00**) | `evidence.json` real |
 | 5 | 60 min | `extract_signals` v1 **ohne LLM**: Gruppen nach `vfc2 × Feedback Type`, Anzahl, Polarität, 3-5 Beispiel-IDs, Kategorie per Mapping-Tabelle | 20-40 Befunde für G60-US (**Sa 18:00**) |
 | 6 | 90 min | v2 **mit LLM** (`core.llm.ask_json`): pro Gruppe Titel/Zusammenfassung/Art; "no_class_found" zuordnen; Studienwerte anhängen | Test: jede `evidence_id` existiert; ≥ 1 Befund mit 2 Quellenarten |
 | 7 | 45 min | Konflikte: gleiches Thema, gegensätzliche Polarität → `conflicts_with` | Display-Lob ↔ Touch-Kritik wird erkannt (**Sa 22:00**) |

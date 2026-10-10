@@ -1,5 +1,5 @@
 # Wer muss Änderungen freigeben? Die LETZTE passende Zeile gilt.
-# Piyush (Lead) reviewt und merged alles (Ruleset "main-nur-piyush-merged").
+# Seit Sa 10.10. pushen alle direkt auf main; diese Datei ist nur noch eine Übersicht, wer welchen Ordner verantwortet.
 # Die Pfad-Zuordnung (wer welchen Pfad baut) steht in docs/PLAN.md, Abschnitt "Wer nimmt welchen Pfad".
 # Nach der Wahl am Samstag trägt Piyush hier pro Ordner die zweite Person ein (GitHub-Name).
 

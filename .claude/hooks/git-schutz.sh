@@ -1,15 +1,15 @@
 #!/bin/sh
 # Sicherheitsnetz: blockiert gefährliche Git-Befehle, BEVOR Claude Code sie ausführt.
 # Warum: 4 von 5 Teammitgliedern programmieren nicht. Ein versehentliches
-# `git push --force` oder ein Commit auf main kann die Arbeit anderer zerstören.
+# `git push --force` oder `reset --hard` kann die Arbeit anderer zerstören.
 # Claude Code ruft das Skript vor jedem Bash/PowerShell-Befehl auf und gibt den
 # Befehl als JSON auf stdin. Exit-Code 2 = blockieren, die Meldung sieht Claude.
 # Bewusst nur POSIX-sh + sed -E (kein jq, kein Python), damit es auf Windows (Git Bash) und Mac läuft.
 #
 # WICHTIG: Das ist ein Komfort-Netz gegen VERSEHEN, keine Sicherheitsgrenze. Ein Muster-Filter
 # lässt sich mit Absicht immer umgehen (Aliase, Variablen …). Die echte Durchsetzung macht GitHub
-# serverseitig: Ruleset "main-nur-piyush-merged" (kein Push/Merge auf main außer Piyush,
-# kein force-push, kein Löschen von main).
+# serverseitig: Ruleset "main-schutz-nur-unfaelle" (kein force-push, kein Löschen von main).
+# Seit Sa 10.10. pushen alle direkt auf main (kein Branch/PR); das ist hier darum erlaubt.
 
 raw=$(cat)
 
@@ -52,18 +52,9 @@ has "git${S}branch${S}[[:space:]]-D([[:space:]]|\$)" \
   && block "branch -D löscht einen Branch ohne Rückfrage."
 has "git${S}push${S}(--delete|[[:space:]]:[^[:space:]]+)" \
   && block "Branches auf GitHub löschen ist verboten (passiert automatisch nach dem Merge)."
-has "git${S}push${S}([[:space:]]|:)(HEAD:)?(refs/heads/)?main([[:space:]]|\$)" \
-  && block "Direkt auf main pushen ist verboten. Nur über Pull Request, Piyush merged."
-if has "git${S}rebase" && ! has "git${S}rebase${S}--(abort|continue)"; then
+# "rebase" als Befehl oder "--rebase" als Option; "--no-rebase" (unser sicherer Pull) bleibt erlaubt.
+if { has "git${S}[[:space:]]rebase" || has "git${S}[[:space:]]--rebase"; } && ! has "git${S}rebase${S}--(abort|continue)"; then
   block "Rebase schreibt Geschichte um. Wir holen main per 'git merge origin/main' herein."
-fi
-
-# Commit oder Merge, während man auf main steht? (z. B. nach 'git switch main' vergessen zu wechseln)
-if has "git${S}(commit|merge|cherry-pick)"; then
-  branch=$(git branch --show-current 2>/dev/null)
-  if [ "$branch" = "main" ]; then
-    block "Du stehst auf main. Erst eigenen Branch anlegen: git switch -c <vorname>/<thema>"
-  fi
 fi
 
 exit 0

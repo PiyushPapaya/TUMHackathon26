@@ -97,7 +97,7 @@ Erster Satz an Claude:
 
 > Starte meine Sitzung. Ich bin <dein Vorname>.
 
-Claude führt dann den Skill `sitzung-start` aus: neuester Stand, eigener Branch, deine Aufgaben.
+Claude führt dann den Skill `sitzung-start` aus: neuester Stand von main, dein Pfad, deine Aufgaben.
 
 ## 9. Discord
 
@@ -117,5 +117,5 @@ https://discord.gg/4UDNd5TAg beitreten. Dort kommen Ankündigungen der Orga.
 | `git commit` hängt ewig | Entire wartet auf „Link this commit?“ | `.entire/settings.json` muss `"commit_linking": "always"` enthalten (ist im Repo); `git pull`; sonst `entire doctor` |
 | `push` zeigt keine `[entire] Pushing … checkpoint` | keine Session aktiv beim Commit / Hooks fehlen | `entire status`; `entire enable --agent claude-code --force` |
 | „BLOCKIERT durch .claude/hooks/git-schutz.sh“ | gefährlicher Git-Befehl | Absicht! Claude erklärt den sicheren Weg |
-| PR: „Merging is blocked“ | Ruleset: nur Piyush merged | Normal. Piyush anpingen |
+| Push abgelehnt: „fetch first“ | Jemand war schneller | `git pull --no-rebase origin main`, Tests, nochmal `git push origin main` |
 | `npm install` scheitert hinter Firmen-Proxy | Netzwerk | Handy-Hotspot oder Event-WLAN |

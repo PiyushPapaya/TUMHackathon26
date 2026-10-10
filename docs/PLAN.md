@@ -67,12 +67,12 @@ C denkt in Produkt-Logik und formuliert gut. D hat Spaß an UI und arbeitet gern
 
 ## 6. Wer nimmt welchen Pfad (Sa 14:45, in 5 Minuten entscheiden)
 
-| Pfad | Name | GitHub | Branch-Präfix |
-|---|---|---|---|
-| A | | | `<name>/pfad-a-…` |
-| B | | | `<name>/pfad-b-…` |
-| C | | | `<name>/pfad-c-…` |
-| D | | | `<name>/pfad-d-…` |
+| Pfad | Name | GitHub |
+|---|---|---|
+| A | | |
+| B | | |
+| C | | |
+| D | | |
 
 Danach trägt der Lead die GitHub-Namen in `.github/CODEOWNERS` ein.
 
@@ -80,7 +80,7 @@ Danach trägt der Lead die GitHub-Namen in `.github/CODEOWNERS` ein.
 
 | Phase | Bis | Ergebnis (prüfbar) |
 |---|---|---|
-| 0 Start | Sa 15:00 | Pfade verteilt, jeder: venv, `.env`, Entire, Branch, Backend läuft lokal mit Beispiel |
+| 0 Start | Sa 15:00 | Pfade verteilt, jeder: venv, `.env`, Entire, Backend läuft lokal mit Beispiel |
 | 1 Durchstich | **Sa 18:00** | Pipeline läuft für G60-US mit **echten** Belegen (A) und erster Anforderungsliste (C); UI zeigt Liste + Detail (D); 5 Webbelege mit URL (B) |
 | 2 MVP | **Sa 22:00** | Befunde per LLM, Konflikte, Challenge-Antwort, Gewichte-Regler, Prüfpfad-Ansicht; **erste Abgabe auf ehl.gg** |
 | 3 Tiefe | So 07:00 | Zweites Szenario F70-EU läuft; Eval-Zahl steht; Triangulation Web ↔ intern; UI-Politur |
@@ -89,12 +89,12 @@ Danach trägt der Lead die GitHub-Namen in `.github/CODEOWNERS` ein.
 
 ## 8. Integrationsregeln
 
-1. **Verträge** sind `src/backend/core/models.py` (Code) und `src/shared/API.md` (für Menschen). Änderung nur per Lead-PR.
+1. **Verträge** sind `src/backend/core/models.py` (Code) und `src/shared/API.md` (für Menschen). Änderung nur durch den Lead.
 2. Jede Pfad-Funktion hat eine feste Signatur (steht im Kopf der Datei). **Innen frei, außen fix.**
 3. Jede Stufe ist einzeln startbar: `python src/backend/pipeline.py --scenario G60-US --stage signals`.
 4. **LLM nur über `core/llm.py`** (Cache + Demo-Modus). Kein eigener OpenAI-Client in den Pfaden.
 5. **Jedes LLM-Ergebnis zitiert IDs aus der Eingabe**; Tests prüfen, dass jede zitierte ID existiert (Halluzinationsschutz).
-6. Merge-Fenster: jede volle Stunde. PR klein, grün, mit "Wie geprüft".
+6. **Alle pushen direkt auf main**, automatisch nach jedem getesteten Schritt (Skill `sync`): klein, grün, "geprüft: …" in der Commit-Nachricht. Nur im eigenen Ordner, dann gibt es keine Konflikte.
 
 ## 9. Kürzungsliste (von oben nach unten streichen, wenn es eng wird)
 

@@ -7,7 +7,7 @@ Repo des 5-köpfigen Teams für das **TUM.ai × EHL Grand Finale** (10.-11.10.20
 ## Start jeder Session → Skill `sitzung-start`
 
 1. Name und **Pfad** klären (Tabelle in `docs/PLAN.md` §6), dann `docs/pfade/PFAD-<X>.md` lesen (Ziel, Ordner, Schritte).
-2. `git switch main && git pull`, dann eigener Branch `<name>/pfad-<x>-<thema>` (`git switch -c …`).
+2. `git switch main && git pull --no-rebase origin main`. **Alle arbeiten direkt auf `main`** (keine Branches, keine PRs).
 3. `docs/PLAN.md`, `docs/ARCHITEKTUR.md`, `docs/CHALLENGE.md` überfliegen; Uhrzeit gegen `docs/ZEITPLAN.md` halten.
 4. `entire status` prüfen (muss „Enabled“ zeigen). Sonst: `entire enable --agent claude-code`.
 
@@ -17,13 +17,13 @@ Piyush ist Lead. Die anderen vier verteilen die Pfade A-D am Samstag unter sich 
 
 | Pfad | Schreibt in | Liefert |
 |---|---|---|
-| **Lead** (Piyush, @PiyushPapaya, **merged als Einziger**) | `src/backend/core/`, `src/backend/api/`, `main.py`, `pipeline.py`, `src/shared/`, `config/`, `docs/`, Root-Dateien, `.github/`, `.claude/`, `scripts/` | Verträge, Integration, Deck, Abgabe |
+| **Lead** (Piyush, @PiyushPapaya) | `src/backend/core/`, `src/backend/api/`, `main.py`, `pipeline.py`, `src/shared/`, `config/`, `docs/`, Root-Dateien, `.github/`, `.claude/`, `scripts/` | Verträge, Integration, Deck, Abgabe |
 | **A** Interne Evidenz | `src/backend/evidence_internal/`, `tests/pfad_a/` | `evidence.json`, `context.json`, `signals.json` |
 | **B** Externe Evidenz + Qualitätsbeweis | `src/backend/evidence_external/`, `tests/pfad_b/`, `tests/eval/` | `web_*.json`, Eval-Zahl |
 | **C** Anforderungen + Priorisierung | `src/backend/requirements_engine/`, `tests/pfad_c/` | `requirements.json` |
 | **D** PM-Cockpit | `src/frontend/` | die Oberfläche |
 
-- **Nur im eigenen Pfad schreiben.** Fremde Ordner, `src/backend/core/` und `src/shared/` nur lesen. Bedarf dort: erklären und dem Lead als PR-Kommentar schicken.
+- **Nur im eigenen Pfad schreiben.** Fremde Ordner, `src/backend/core/` und `src/shared/` nur lesen. Bedarf dort: erklären und dem Lead Bescheid geben (Chat/Zuruf).
 - **Schnittstellen sind fix:** Die Signatur im Kopf jeder Pfad-Datei nicht ändern. Innen ist alles frei.
 - **Geteilte Dateien nur Piyush:** README, CLAUDE.md, `requirements.txt`, `pyproject.toml`, `package.json`/Lockfiles, CI, `.claude/settings.json`, `.gitignore`, `.gitattributes`, `.env.example`, `src/shared/`, `config/`.
 - **LLM nur über `core/llm.py`** (Cache, Demo-Modus, JSON-Schema). Jedes LLM-Ergebnis darf nur IDs aus der Eingabe zitieren, und ein Test prüft das.
@@ -34,7 +34,7 @@ Piyush ist Lead. Die anderen vier verteilen die Pfade A-D am Samstag unter sich 
 | Situation | Skill |
 |---|---|
 | Session beginnt, „Was soll ich tun?“ | `sitzung-start` |
-| Arbeit speichern, main holen, PR erstellen (alle 1-2 h) | `sync-und-pr` |
+| Schritt fertig + getestet → automatisch committen und auf main pushen | `sync` |
 | „Wie würde die Jury-KI uns bewerten?“ (ab Sa 18:00 alle paar Stunden) | `selbstreview` |
 | „Läuft das bei Fremden?“, vor jeder Abgabe | `demo-check` |
 | Pitch schärfen, Probe, Jury-Fragen üben | `pitch-prep` |
@@ -42,38 +42,40 @@ Piyush ist Lead. Die anderen vier verteilen die Pfade A-D am Samstag unter sich 
 
 ## Git-Regeln (strikt)
 
-- **Nie direkt auf `main` committen, pushen oder mergen.** GitHub-Ruleset `main-nur-piyush-merged`: PR + Code-Owner-Review + grüne CI (`checks`), **nur Piyush kann mergen**. Nur Merge-Commits (kein Squash), damit die Entire-Trailer erhalten bleiben.
+- **Alle pushen direkt auf `main`.** Keine Branches, keine PRs, kein Review. GitHub-Ruleset `main-schutz-nur-unfaelle` verbietet nur Löschen von main und Force-Push.
+- **Claude committet und pusht AUTOMATISCH** (Skill `sync`), ohne zu fragen: nach jedem fertigen, getesteten Schritt, spätestens alle 30-45 Minuten. Nie pushen, wenn Tests oder Lint rot sind.
+- Ablauf immer: prüfen → `git add <dateien>` → commit → `git pull --no-rebase origin main` → Tests → `git push origin main`.
+- Weil alle auf main arbeiten: **nur im eigenen Pfad-Ordner ändern**, dann gibt es fast nie Konflikte. CI läuft nach jedem Push; rot → wer es kaputt gemacht hat, repariert sofort.
 - Kleine Commits, **ein logischer Schritt pro Commit**, Nachricht auf Deutsch mit „Warum“: `Upload auf 10 MB begrenzt, weil größere PDFs das Backend blockieren`.
 - `git add <dateien>` gezielt, nicht blind `git add .`.
-- main hereinholen mit `git fetch origin && git merge origin/main` (**kein Rebase**).
-- PR: `gh pr create --base main` mit Vorlage, Reviewer `PiyushPapaya`. **Nie selbst mergen.**
+- main hereinholen mit `git pull --no-rebase origin main` (**kein Rebase**).
 - **Merge-Konflikte:** nicht raten, nicht wegräumen. Konflikt zeigen, beide Versionen einfach erklären, fragen. Fremder Code oder Zweifel: „Hol Piyush.“
-- **Verboten:** `push --force`, `reset --hard`, `clean -f`, `rebase`, `--no-verify`, Branches/Dateien anderer löschen. `.claude/hooks/git-schutz.sh` blockiert das (Komfort-Netz; die echte Sperre ist das Ruleset).
+- **Verboten:** `push --force`, `reset --hard`, `clean -f`, `rebase`, `--no-verify`, Dateien anderer löschen. `.claude/hooks/git-schutz.sh` blockiert das (Komfort-Netz; Force-Push sperrt zusätzlich das Ruleset).
 - Committen, **während die Claude-Session läuft**, und regelmäßig pushen: Nur so entstehen Entire-Checkpoints mit Prompts (Pflicht für die Abgabe). `.entire/settings.json` hat `commit_linking: always`, sonst hängt der Commit an einer Rückfrage.
 
 ## Ownership-Sprache (wird bewertet!)
 
-Entire zeichnet unsere Prompts auf. Der EHL-Session-Reviewer gibt 35 % auf eigene, begründete Entscheidungen und bewertet einen praktisch zufälligen Checkpoint. Also gilt das in **jeder** Session, in Prompts, Commits und PRs:
+Entire zeichnet unsere Prompts auf. Der EHL-Session-Reviewer gibt 35 % auf eigene, begründete Entscheidungen und bewertet einen praktisch zufälligen Checkpoint. Also gilt das in **jeder** Session, in Prompts und Commits:
 
 - **Formel:** Was + Warum + Was verworfen + Wie prüfen.
 - Gut: „Wir rechnen Gesamtkosten in Python statt im LLM, weil Modelle sich bei Summen verrechnen. Prüf mit `tests/test_scoring.py`.“
 - Schlecht: „Mach das mal.“ / „Die KI hat das gebaut.“
-- Wenn die Person nur „mach X“ sagt: kurz nach dem Warum fragen und es in Commit und PR übernehmen.
+- Wenn die Person nur „mach X“ sagt: kurz nach dem Warum fragen und es in den Commit übernehmen.
 
 ## Verständnis für die Jury
 
 Jede Person muss das Produkt erklären können, und eine KI-Review liest Code und README.
 
 - Lesbarer Code: sprechende Namen, kurze Kommentare, die das **WARUM** erklären. Dateien unter ~200 Zeilen halten (der Reviewer kappt danach).
-- Bei jedem PR mit Code: `docs/ARCHITEKTUR.md` aktualisieren (Komponenten, Datenfluss, externe APIs, Entscheidungen), einfach formuliert.
+- Bei jeder Code-Änderung an Komponenten/Datenfluss: `docs/ARCHITEKTUR.md` aktualisieren (Komponenten, Datenfluss, externe APIs, Entscheidungen), einfach formuliert.
 - Neue Designentscheidung → Zeile in `docs/ARCHITEKTUR.md` (Entscheidungen) + ggf. Jury-Frage in `docs/pitch/PITCH.md`.
 - „Erklär mir X“: erst 2 Sätze Prinzip, dann der Ablauf, dann die Stelle im Code (`datei:zeile`).
 
 ## Verifikationspflicht
 
-Nichts ist „fertig“ ohne Beweis. Vor „fertig“ bzw. vor jedem PR (nur was existiert):
+Nichts ist „fertig“ ohne Beweis. Vor „fertig“ bzw. vor jedem Push (nur was existiert):
 `ruff check src/backend tests` · `python -m pytest -q` · `cd src/frontend && npm run lint && npm run build` · App startet und der Kernflow klappt.
-Ergebnis (Befehl + Ausgabe) gehört in den PR unter „Wie verifiziert“. Behauptungen über BMW-Daten nur mit Zahl aus dem Code oder `docs/CHALLENGE.md`.
+Ergebnis (Befehl + Ausgabe) gehört in die Commit-Nachricht („geprüft: …“). Behauptungen über BMW-Daten nur mit Zahl aus dem Code oder `docs/CHALLENGE.md`.
 
 ## Timeboxing
 
@@ -90,8 +92,8 @@ Ergebnis (Befehl + Ausgabe) gehört in den PR unter „Wie verifiziert“. Behau
 ## Sicherheit
 
 - **Keine API-Keys oder Passwörter committen.** Repo ist öffentlich. Secrets nur in `.env` (in `.gitignore`), Vorlage `.env.example`. Jede Person nutzt ihren eigenen OpenAI-Key.
-- Vor jedem PR: `python scripts/secret_scan.py`. Geleakt → Key sofort widerrufen, Piyush holen.
-- **Keine neuen Dependencies ohne Rückfrage**; im PR begründen.
+- Vor jedem Push: `python scripts/secret_scan.py`. Geleakt → Key sofort widerrufen, Piyush holen.
+- **Keine neuen Dependencies ohne Rückfrage**; im Commit begründen.
 - `NEXT_PUBLIC_*`-Variablen landen im Browser: nie Keys dort.
 
 ## Wissen
