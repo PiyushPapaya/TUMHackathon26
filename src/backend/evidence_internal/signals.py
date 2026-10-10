@@ -148,14 +148,14 @@ def _select(drafts: list[dict]) -> list[dict]:
     return chosen[:MAX_SIGNALS]
 
 
-def extract_signals(scenario: Scenario, evidence: list[Evidence], use_llm: bool = True) -> list[Signal]:
-    """v1 (Regeln) und danach v2 (LLM formuliert). use_llm=False = reines v1; bei LLM-Fehler bleibt v1 ebenfalls."""
+def _build(scenario: Scenario, evidence: list[Evidence]) -> tuple[list[Signal], list[dict]]:
+    """v1: Befunde plus die Entwürfe dahinter (mit allen Mitgliedern je Gruppe)."""
     by_id = {e.id: e for e in evidence}
     members, category_of = _group_feedback(evidence)
     feedback = [
         {"name": name, "kind": kind, "category": category_of[name], "mentions": len(ids),
          "quotes": _quotes(ids, by_id), "title": f"{name}: {kind.value}", "severity": 0.0,
-         "members": _quotes(ids, by_id, MAX_COMMENTS)}
+         "members": _quotes(ids, by_id, MAX_COMMENTS), "ids": sorted(ids)}
         for (name, kind), ids in members.items()
         if len(ids) >= MIN_MENTIONS
     ]  # fmt: skip
@@ -177,6 +177,18 @@ def extract_signals(scenario: Scenario, evidence: list[Evidence], use_llm: bool 
             mention_count=max(d["mentions"], len(study_ids)),
             source_types=source_types,
         ))  # fmt: skip
+    return signals, drafts
+
+
+def signal_groups(scenario: Scenario, evidence: list[Evidence]) -> dict[str, list[str]]:
+    """Befund-ID -> alle Kommentare der Gruppe (nicht nur die Zitate). Für die Abdeckung in tests/eval."""
+    signals, drafts = _build(scenario, evidence)
+    return {s.id: d.get("ids", []) for s, d in zip(signals, drafts, strict=True)}
+
+
+def extract_signals(scenario: Scenario, evidence: list[Evidence], use_llm: bool = True) -> list[Signal]:
+    """v1 (Regeln) und danach v2 (LLM formuliert). use_llm=False = reines v1; bei LLM-Fehler bleibt v1 ebenfalls."""
+    signals, drafts = _build(scenario, evidence)
     signals = link_conflicts(signals)  # vor der LLM-Stufe: nutzt die v1-Titel (Thema: Art)
     if use_llm:
         signals = refine_signals(signals, [d.get("members", []) for d in drafts], evidence)
