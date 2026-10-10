@@ -1,0 +1,92 @@
+{
+  "claims": [
+    {
+      "text": "Mobileye has stated that its Chauffeur product (an eyes‑off / higher‑automation offering) is targeted for start‑of‑production with OEM partners around 2027–first half 2028 and will be commercially deployed thereafter.",
+      "url": "https://ir.mobileye.com/static-files/fa8194a1-dac3-4f16-aac8-78445d6e0f21",
+      "publisher": "Mobileye (IR)",
+      "published": "2025-04-24",
+      "stance": "supports",
+      "about": "Mobileye Chauffeur launch timing"
+    },
+    {
+      "text": "Mobileye has also announced that its SuperVision Level‑2+/hands‑off product is in SOP pipelines (example: a Porsche program) with volume starts planned in 2027 and broader ramp thereafter.",
+      "url": "https://stockanalysis.com/stocks/mbly/transcripts/730357-canaccord-genuity-s-46th-annual-growth-conference/",
+      "publisher": "StockAnalysis (Mobileye conference reporting)",
+      "published": "2026",
+      "stance": "supports",
+      "about": "Mobileye SuperVision SOP 2027"
+    },
+    {
+      "text": "General Motors has publicly announced a plan to introduce an upgraded Super Cruise (described as an eyes‑off / hands‑off capability consistent with SAE Level‑3 scope) on the Cadillac Escalade IQ in 2028 and to expand the capability to other models thereafter.",
+      "url": "https://www.wardsauto.com/news/gm-ai-plans-debut-eyes-off-driving-super-cruise-cadillac-esclade-iq/803665/",
+      "publisher": "WardsAuto",
+      "published": "2025",
+      "stance": "supports",
+      "about": "GM Super Cruise eyes‑off 2028"
+    },
+    {
+      "text": "Qualcomm and BMW publicly unveiled the Snapdragon Ride Pilot (a centralized high‑performance AD platform supporting Level‑2+ and NOA/hands‑free highway functions) in September 2025 and deployed it in the BMW iX3 as the first production application.",
+      "url": "https://www.qualcomm.com/news/releases/2025/09/qualcomm-and-bmw-group-unveil-groundbreaking-automated-driving-s",
+      "publisher": "Qualcomm (press release)",
+      "published": "2025-09-05",
+      "stance": "supports",
+      "about": "Qualcomm+BWM Snapdragon Ride Pilot debut"
+    },
+    {
+      "text": "BMW’s supplier ecosystem for higher‑automation programs includes a planned manufacturing path for LiDAR: Innoviz disclosed an agreement with Magna to manufacture InnovizOne lidar for a BMW program (documented in Innoviz SEC filings).",
+      "url": "https://ir.innoviz.tech/sec-filings/all-sec-filings/content/0001178913-26-000724/zk2634434.htm",
+      "publisher": "Innoviz (SEC filing)",
+      "published": "2026",
+      "stance": "supports",
+      "about": "Innoviz manufacturing for BMW program"
+    },
+    {
+      "text": "Mercedes‑Benz initially certified and marketed DRIVE PILOT (SAE Level‑3 conditional automation) for select 2024 S‑Class and EQS models in limited U.S. jurisdictions, but media reporting in 2026–2027 documents that Mercedes has paused/contractually reset broader U.S. expansion of DRIVE PILOT citing supplier (LiDAR) and cost/scope issues.",
+      "url": "https://group.mercedes-benz.com/technology/autonomous-driving/driving/drive-pilot-nevada.html",
+      "publisher": "Mercedes‑Benz Group (corporate page)",
+      "published": "2023",
+      "stance": "neutral",
+      "about": "Mercedes Drive Pilot initial US certification"
+    },
+    {
+      "text": "Reporting from multiple outlets in 2026–2027 indicates Mercedes has paused the broader U.S. rollout of DRIVE PILOT because of supplier/LiDAR contract problems and high cost/usability considerations.",
+      "url": "https://insideevs.com/news/784404/mercedes-level-3-drive-pilot-canceled/",
+      "publisher": "InsideEVs",
+      "published": "2026",
+      "stance": "supports",
+      "about": "Mercedes Drive Pilot pause reporting"
+    },
+    {
+      "text": "U.S. federal oversight and rulemaking activity on automated driving increased after 2023 (NHTSA’s AV‑STEP proposal and subsequent reports) and NHTSA has published guidance and rulemaking agendas addressing ADS transparency, performance, and evaluation—creating a clearer regulatory environment that OEMs reference when timing higher‑automation launches.",
+      "url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/automated-driving-systems-2.0-voluntary-guidance.pdf",
+      "publisher": "NHTSA (Automated Driving Systems guidance)",
+      "published": "2024",
+      "stance": "supports",
+      "about": "NHTSA AV guidance and regulatory activity"
+    },
+    {
+      "text": "OEMs and suppliers have stated a near‑term industry trend (2026–2030 planning) toward centralized high‑performance vehicle compute, sensor redundancy (multi‑camera + radar + increasing LiDAR in premium programs), and OTA‑deliverable AD feature upgrades for premium models—cited in Qualcomm’s BMW program briefing and GM program statements.",
+      "url": "https://www.qualcomm.com/news/releases/2025/09/qualcomm-and-bmw-group-unveil-groundbreaking-automated-driving-s",
+      "publisher": "Qualcomm (press release)",
+      "published": "2025-09-05",
+      "stance": "supports",
+      "about": "centralized compute, sensor redundancy, OTA trend"
+    },
+    {
+      "text": "Mobileye has publicly set expectations that Surround ADAS and higher‑value AD features will ramp after 2028, with volume growth accelerating through 2029–2033 as OEMs adopt full‑surround sensor suites and higher AD capability tiers.",
+      "url": "https://www.investing.com/news/transcripts/mobileye-at-canaccord-growth-conference-eyeing-highervalue-products-93CH-4855627",
+      "publisher": "Investing.com (coverage of Mobileye presentation)",
+      "published": "2026",
+      "stance": "supports",
+      "about": "Mobileye expectation for Surround ADAS ramp after 2028"
+    },
+    {
+      "text": "Mobileye and other AD suppliers (and some OEMs) explicitly describe over‑the‑air (OTA) upgrades and subscription/feature monetization as part of their commercialization plans for advanced ADAS/Chauffeur‑class features.",
+      "url": "https://ir.mobileye.com/static-files/3b03d5a3-38ee-4817-9b15-2eba712ebc14",
+      "publisher": "Mobileye (earnings call / investor materials)",
+      "published": "2025",
+      "stance": "supports",
+      "about": "OTA and monetization plans for AD features"
+    }
+  ]
+}

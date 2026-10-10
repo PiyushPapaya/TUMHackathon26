@@ -1,0 +1,68 @@
+{
+  "claims": [
+    {
+      "text": "Edmunds (first-drive, Dec 2, 2024) reports the Audi A6 e‑tron delivers a “dead‑silent cabin” and that its optional air suspension “soaks up bumps like a dang sponge,” i.e., very high subjective comfort and refinement on road tests.",
+      "url": "https://www.edmunds.com/car-news/2025-audi-a6-s6-e-tron-first-drive.html?msockid=17b52431c0f263940f8a3283c1156246",
+      "publisher": "Edmunds",
+      "published": "2024-12-02",
+      "stance": "supports",
+      "about": "Audi A6 e-tron comfort"
+    },
+    {
+      "text": "Car and Driver’s 2024 reviews of the BMW i5 (G60) describe the i5 as having refined road manners and a polished, comfortable cabin—i.e., the i5 is also rated highly for comfort and NVH on test drives.",
+      "url": "https://www.caranddriver.com/bmw/i5-2024",
+      "publisher": "Car and Driver",
+      "published": "2024",
+      "stance": "supports",
+      "about": "BMW i5 (G60) comfort"
+    },
+    {
+      "text": "Edmunds’ dedicated cargo test of the A6 Sportback e‑tron (Nov 29, 2025) measured usable hatchback cargo behind the rear seats at 25.9 cubic feet (Sportback/liftback body gives substantially more usable volume than a conventional sedan trunk).",
+      "url": "https://www.edmunds.com/car-news/audi-a6-sportback-e-tron-cargo-test.html",
+      "publisher": "Edmunds",
+      "published": "2025-11-29",
+      "stance": "supports",
+      "about": "Audi A6 e-tron cargo capacity (Sportback)"
+    },
+    {
+      "text": "Multiple technical/specification sources and press reviews report the A6 e‑tron includes a small front trunk (frunk) suitable for a charge cord or small bag (roughly ~1.0 cu ft / ‘a little 1‑cubic‑foot front trunk’ in road tests/reviews).",
+      "url": "https://www.autoweb.com/2025-audi-a6-e-tron-road-test-and-review",
+      "publisher": "Autoweb",
+      "published": "2025",
+      "stance": "supports",
+      "about": "Audi A6 e-tron frunk size"
+    },
+    {
+      "text": "BMW’s published/press specifications and U.S. reviews list the BMW i5 (G60) sedan’s rear trunk at about 17.3 cubic feet; reviewers also note the i5 does not provide a usable frunk, so all cargo is carried in the rear trunk and fold‑down seats.",
+      "url": "https://www.cars.com/research/bmw-540-2024/",
+      "publisher": "Cars.com",
+      "published": "2024",
+      "stance": "supports",
+      "about": "BMW i5 (G60) cargo capacity / no frunk"
+    },
+    {
+      "text": "Comparing the two in U.S. reviews/specs (2025–2026): the A6 e‑tron Sportback’s hatchback layout yields materially more usable cargo room and flexibility than the BMW i5 sedan (EDMUNDS cargo test 25.9 cu ft vs BMW published 17.3 cu ft), while both cars are widely praised for cabin refinement—Audi emphasizing ultra‑quiet ride and its air suspension, BMW emphasizing traditional 5‑Series refinement and ride/handling balance.",
+      "url": "https://www.edmunds.com/car-news/audi-a6-sportback-e-tron-cargo-test.html",
+      "publisher": "Edmunds; Cars.com",
+      "published": "2025-11-29 / 2024",
+      "stance": "supports",
+      "about": "Audi A6 e-tron vs BMW i5 cargo & comfort comparison"
+    },
+    {
+      "text": "Owner/vehicle‑data aggregation and NHTSA‑linked complaint summaries show owner reports and manufacturer technical bulletins for Audi models referencing electric/power tailgate issues (multiple technical service bulletins about electric tailgate/workshop procedures and at least owner complaints filed for 2025 A6 vehicles mentioning repeated power trunk/liftgate failures), i.e., there is documented evidence of some owners reporting unreliable power / liftgate behavior.",
+      "url": "https://roadvitals.com/audi/a6/2025",
+      "publisher": "RoadVitals (aggregated NHTSA/owner complaints)",
+      "published": "accessed 2026",
+      "stance": "supports",
+      "about": "Owner complaints / TSBs re: Audi power tailgate"
+    },
+    {
+      "text": "A specific owner‑complaint aggregation page (VINveil / NHTSA complaint content) includes a 2025 A6 e‑tron owner report stating the power trunk/liftgate “has failed repeatedly with a recurring dash warning light” and that repairs did not permanently fix it—supporting the German phrasing “Berührungslose Heckklappe unzuverlässig” (hands‑free tailgate unreliable) as an owner‑reported issue in some U.S. cases.",
+      "url": "https://vinveil.com/RC/overview/audi/a6/2025/",
+      "publisher": "VINveil (complaint aggregation from NHTSA/manufacturer communications)",
+      "published": "accessed 2026",
+      "stance": "supports",
+      "about": "Specific owner complaint re: A6 e-tron liftgate reliability"
+    }
+  ]
+}

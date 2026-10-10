@@ -1,0 +1,52 @@
+{
+  "claims": [
+    {
+      "text": "BMW has introduced the BMW Panoramic iDrive (BMW Operating System X) that centers the cockpit on large driver‑oriented displays, touchscreen interaction and an enhanced natural‑language assistant (including an integrated large‑language model), signalling BMW’s production strategy toward touchscreen + voice HMI for future models that will shape the 5‑Series segment between 2028 and 2031. ([bmwgroup.com](https://www.bmwgroup.com/en/news/general/2025/newidrive.html))",
+      "url": "https://www.bmwgroup.com/en/news/general/2025/newidrive.html",
+      "publisher": "BMW Group",
+      "published": "2025-01-07",
+      "stance": "supports",
+      "about": "BMW Panoramic iDrive / touchscreen and voice trend (2028–2031) for premium BMW 5‑Series segment in US market"
+    },
+    {
+      "text": "BMW’s own 2024 Group Report states the multifunctional steering wheel is the primary physical control and provides active haptic feedback, indicating OEM strategy to retain tactile steering‑wheel controls even as many functions move to touchscreens. ([bmwgroup.com](https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/ir/downloads/en/2025/hv/BMWGroup_Report2024.pdf?utm_source=openai))",
+      "url": "https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/ir/downloads/en/2025/hv/BMWGroup_Report2024.pdf",
+      "publisher": "BMW Group (BMW Group Report 2024)",
+      "published": "2025",
+      "stance": "supports",
+      "about": "Retention of physical/haptic steering‑wheel controls while shifting other functions to touchscreen (2028–2031)"
+    },
+    {
+      "text": "Market research shows center infotainment displays grew larger in 2025 (Counterpoint: CID area +19% in 2025) and reports that 15–20\" center displays are increasingly used in passenger vehicles — a continuing trend that points to larger, more capable touchscreens in premium sedans through 2028–2031. ([counterpointresearch.com](https://counterpointresearch.com/en/insights/automotive-cids-total-area-increased-19-percent-in-2025-driven-by-larger-display-sizes))",
+      "url": "https://counterpointresearch.com/en/insights/automotive-cids-total-area-increased-19-percent-in-2025-driven-by-larger-display-sizes",
+      "publisher": "Counterpoint Research",
+      "published": "2026-05-18",
+      "stance": "supports",
+      "about": "Growth of large central touchscreens in premium vehicles (2028–2031)"
+    },
+    {
+      "text": "Industry forecasting (S&P Global / AutoTech Insight) projects that vehicles with integrated GenAI chatbots and advanced voice assistants will scale materially (S&P projects ~28 million light vehicles with automotive GenAI chatbots by 2031), implying rapid growth in voice/AI HMI in premium cars between 2028 and 2031. ([autotechinsight.spglobal.com](https://autotechinsight.spglobal.com/main/news/proc/download?id=5285645&utm_source=openai))",
+      "url": "https://autotechinsight.spglobal.com/main/news/proc/download?id=5285645",
+      "publisher": "S&P Global / AutoTech Insight",
+      "published": "2026",
+      "stance": "supports",
+      "about": "Increase of GenAI/voice assistant adoption in premium vehicles (2028–2031)"
+    },
+    {
+      "text": "European safety assessment rules and protocols (Euro NCAP’s 2025 driver‑engagement / general vehicle controls protocols and related EU regulatory moves) now reward or require direct physical inputs for key functions (so-called 'direct physical input' / physical controls), driving manufacturers to reintroduce physical knobs/buttons for safety‑critical or frequently adjusted functions — a design pressure that OEMs have begun to react to and that will influence premium model HMI choices through 2028–2031. ([euroncap.com](https://www.euroncap.com/media/88141/euro-ncap-cv-protocol-safe-driving-driver-engagement-v10.pdf?utm_source=openai))",
+      "url": "https://www.euroncap.com/media/88141/euro-ncap-cv-protocol-safe-driving-driver-engagement-v10.pdf",
+      "publisher": "Euro NCAP (protocol) / EU implementing regulations",
+      "published": "2025-05 / 2026",
+      "stance": "supports",
+      "about": "Regulatory and safety‑assessment pressure to reintroduce physical controls (2028–2031)"
+    },
+    {
+      "text": "U.S. regulators have taken a different posture so far: NHTSA is funding and publishing research and draft distraction guidance that focuses on measuring and mitigating visual‑manual distraction (including study of touchscreens and voice interfaces) rather than imposing an EU‑style direct‑physical‑input mandate — meaning U.S. premium models (BMW 5‑Series segment) may keep touchscreen‑forward layouts but will face voluntary safety pressure and market/regulatory cross‑influence from Europe through 2028–2031. ([transportation.gov](https://www.transportation.gov/sites/dot.gov/files/2024-08/AMRP%20FY2024-2025%20NHTSA.pdf))",
+      "url": "https://www.transportation.gov/sites/dot.gov/files/2024-08/AMRP%20FY2024-2025%20NHTSA.pdf",
+      "publisher": "U.S. Department of Transportation / NHTSA",
+      "published": "2024",
+      "stance": "supports",
+      "about": "U.S. regulator (NHTSA) research focus vs. EU mandated physical‑control rules (implication for 2028–2031)"
+    }
+  ]
+}

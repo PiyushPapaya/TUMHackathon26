@@ -32,7 +32,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 
 ## Tickets
 
-### [ ] A0 · Setup (15 min, ab 15:15)
+### [x] A0 · Setup (15 min, ab 15:15)
 - `Ich bin Aditya, starte meine Sitzung.` → Skill prüft venv, `.env` (eigener OpenAI-Key), Entire, Tests.
 - BMW-Dateien per USB von Piyush nach `data/raw/` kopieren (nie committen, `data/` ist gitignored).
 - **Fertig, wenn:** `python -m pytest -q` grün, `entire status` = Enabled, `ls data/raw` zeigt 9 Dateien.

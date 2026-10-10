@@ -1,0 +1,52 @@
+{
+  "claims": [
+    {
+      "text": "Lucid Motors’ technical specifications list the Lucid Air’s front trunk (frunk) as 10.0 cu ft, the rear trunk as 22.1 cu ft, and total cargo volume (frunk + trunk) as 32.1 cu ft.",
+      "url": "https://lucidmotors.com/media/document/lucid-air-touring-technical-specs-2024.pdf",
+      "publisher": "Lucid Motors (technical specifications PDF)",
+      "published": "2024",
+      "stance": "supports",
+      "about": "Lucid Air cargo/storage (frunk + trunk)"
+    },
+    {
+      "text": "Car and Driver’s specifications for the BMW 5‑Series (G60) list trunk volume for the sedan at 18.4 cubic feet.",
+      "url": "https://www.caranddriver.com/bmw/5-series-2025",
+      "publisher": "Car and Driver",
+      "published": "2024/2025 (2025 model page)",
+      "stance": "neutral",
+      "about": "BMW 5‑Series (G60) trunk volume"
+    },
+    {
+      "text": "Lucid’s spec sheet lists the Air’s interior dimensions as front legroom 45.4 in, rear legroom 37.6 in, and passenger volume 100.7 cu ft.",
+      "url": "https://lucidmotors.com/media/document/lucid-air-touring-technical-specs-2024.pdf",
+      "publisher": "Lucid Motors (technical specifications PDF)",
+      "published": "2024",
+      "stance": "supports",
+      "about": "Lucid Air interior dimensions / comfort"
+    },
+    {
+      "text": "Car and Driver’s published specifications for the BMW 5‑Series (G60) list front legroom 41.3 in, rear legroom 37.0 in, and passenger volume split front/rear 55/46 cu ft.",
+      "url": "https://www.caranddriver.com/bmw/5-series-2025",
+      "publisher": "Car and Driver",
+      "published": "2024/2025 (2025 model page)",
+      "stance": "neutral",
+      "about": "BMW 5‑Series (G60) interior dimensions / comfort"
+    },
+    {
+      "text": "Practical reviews and luggage tests note the Lucid Air’s combined cargo capacity is large for a sedan but that its rear trunk has a relatively low vertical clearance and a conventional sedan-style opening (limiting tall/bulky items), with the frunk often cited as helpful to carry additional bags or bulky items (Autoblog luggage test / practicality coverage).",
+      "url": "https://www.autoblog.com/features/lucid-air-luggage-test",
+      "publisher": "Autoblog",
+      "published": "2024/2025",
+      "stance": "neutral",
+      "about": "Lucid Air cargo usability and trunk/frunk trade-offs"
+    },
+    {
+      "text": "Multiple owner posts on the r/LUCID forum report that the Air’s frunk is noticeably large in real‑world use and that owners commonly use the frunk plus the recessed subfloor in the trunk to carry bulky or many items (example owner thread with measurements and user reports).",
+      "url": "https://www.reddit.com/r/LUCID/comments/1f7zrf6/any_hockey_players_or_parents_in_here/",
+      "publisher": "Reddit (r/LUCID owner reports)",
+      "published": "community posts (2024–2025 timeframe)",
+      "stance": "supports",
+      "about": "Owner reports on Lucid Air frunk and real-world cargo use"
+    }
+  ]
+}

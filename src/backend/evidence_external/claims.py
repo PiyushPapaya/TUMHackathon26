@@ -11,6 +11,7 @@ from typing import Literal
 from pydantic import BaseModel
 
 from core.llm import ask_json
+from evidence_external.trust import is_plain_web_url
 
 SYSTEM = (
     "Du bist Recherche-Assistent für Automobil-Produktentscheidungen. Nutze die Websuche und liefere "
@@ -33,8 +34,8 @@ class Claims(BaseModel):
 
 
 def has_real_url(claim: Claim) -> bool:
-    """Kein Webbeleg ohne URL: nur http(s) zählt, sonst wäre die Quelle nicht prüfbar."""
-    return claim.url.strip().lower().startswith(("http://", "https://"))
+    """Kein Webbeleg ohne URL: nur eindeutige http(s)-URLs zählen, sonst wäre die Quelle nicht prüfbar."""
+    return is_plain_web_url(claim.url.strip())
 
 
 def ask_claims(question: str) -> list[Claim]:

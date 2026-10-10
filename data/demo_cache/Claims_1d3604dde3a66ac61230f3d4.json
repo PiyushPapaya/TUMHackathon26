@@ -1,0 +1,84 @@
+{
+  "claims": [
+    {
+      "text": "Tesla's Model S Long Range is advertised with an EPA-estimated range of about 410 miles on Tesla's official Model S page (US specs shown on Tesla.com as of 2026).",
+      "url": "https://www.tesla.com/models?source=homepage",
+      "publisher": "Tesla (tesla.com)",
+      "published": "n.d.",
+      "stance": "supports",
+      "about": "Tesla Model S EPA range"
+    },
+    {
+      "text": "BMW reports the i5 eDrive40 EPA-rated range in the U.S. as roughly 270–295 miles depending on wheel/trim, and BMW USA's EV FAQ lists i5 eDrive40 range in that window. ",
+      "url": "https://faq.bmwusa.com/s/article/How-far-can-I-go-on-a-single-charge-with-the-BMW-all-electric-models-JskyW",
+      "publisher": "BMW USA (bmwusa.com)",
+      "published": "n.d.",
+      "stance": "supports",
+      "about": "BMW i5 EPA range"
+    },
+    {
+      "text": "Independent road tests show the BMW i5 commonly meets or exceeds its EPA rating in real‑world highway tests (MotorTrend reported the eDrive40 at ~270 EPA and verified ~268 miles at steady 70 mph; Edmunds long‑term testing also reported i5 variants beating EPA figures).",
+      "url": "https://www.motortrend.com/reviews/2025-bmw-i5-edrive40-first-test-review",
+      "publisher": "MotorTrend (motortrend.com)",
+      "published": "2024/2025",
+      "stance": "supports",
+      "about": "BMW i5 real-world vs EPA"
+    },
+    {
+      "text": "Tesla’s in‑car range display and rating are explicitly based on EPA‑derived consumption calculations and Tesla has modified its rated-range algorithm (e.g., to the EPA 5‑cycle test) by software updates, which changes the displayed 'Rated Range' without changing the battery — meaning the on‑screen prediction can change after updates.",
+      "url": "https://www.tesla.com/sites/default/files/blog_attachments/software_update_1.19.11.pdf",
+      "publisher": "Tesla (tesla.com)",
+      "published": "n.d.",
+      "stance": "supports",
+      "about": "Tesla range display and software changes"
+    },
+    {
+      "text": "Peak DC charging: BMW lists maximum DC charging power for the i5 at about 205 kW (BMW technical/vehicle data shows 'Maximum charging power DC in kW | 205').",
+      "url": "https://www.bmwusa.com/vehicles/5-series/sedan/bmw-5-series-sedan-technical-data.html",
+      "publisher": "BMW USA (bmwusa.com)",
+      "published": "n.d.",
+      "stance": "supports",
+      "about": "BMW i5 DC charging power"
+    },
+    {
+      "text": "Tesla Supercharger peak speeds for Model S are listed by Tesla Support (V4 hardware up to ~250 kW for Model S/Model 3/Model X/Model Y; Tesla’s Superchargers also advertise 'range added in 15 minutes' guidance on the model pages).",
+      "url": "https://www.tesla.com/support/charging/supercharging",
+      "publisher": "Tesla Support (tesla.com)",
+      "published": "n.d.",
+      "stance": "supports",
+      "about": "Tesla Supercharger charge power/model guidance"
+    },
+    {
+      "text": "Charging infrastructure: U.S. public-data aggregators and government datasets list thousands of Tesla Supercharger sites and tens of thousands of Supercharger connectors in the U.S.; for example, ChargeCensus and the U.S. DOE/AFDC tracker show multiple thousand Tesla Supercharger stations/sites in the U.S. (datasets updated through 2026).",
+      "url": "https://afdc.energy.gov/stations/charging-networks",
+      "publisher": "U.S. Department of Energy / AFDC (afdc.energy.gov)",
+      "published": "2026-09-15 (dataset update)",
+      "stance": "supports",
+      "about": "Tesla Supercharger network size (US)"
+    },
+    {
+      "text": "Non‑Tesla public fast charging accessible to BMW owners: BMW U.S. offers complimentary Electrify America charging programs for many 2025–2026 BMW i models (e.g., '2 years or 1,000 kWh' programs on certain model years) and BMW has arrangements to support Plug & Charge on Electrify America stations. ",
+      "url": "https://faq.bmwusa.com/s/article/FAQ-How-to-use-complimentary-charging-session-with-Electrify-America-BMW-USA-Svcyd",
+      "publisher": "BMW USA / Electrify America (bmwusa.com / electrifyamerica.com)",
+      "published": "n.d.",
+      "stance": "supports",
+      "about": "BMW Electrify America complimentary charging"
+    },
+    {
+      "text": "BMW announced that new BMW models sold with factory equipment will include the North American Charging Standard (NACS) connector starting in late 2025 (enabling native access to Tesla's NACS network on new cars), and existing CCS vehicles can use adapters to access NACS chargers. ",
+      "url": "https://faq.bmwusa.com/s/article/FAQ-NACS-charging-BMW-USA-nuG0H?language=en_US",
+      "publisher": "BMW USA (bmwusa.com)",
+      "published": "2025",
+      "stance": "supports",
+      "about": "BMW NACS adoption / Tesla NACS access"
+    },
+    {
+      "text": "Reason 'Reichweite schwer einschätzbar' (range hard to estimate): federal/EPA guidance and multiple test reports note that EPA label range is a laboratory-based estimate and real-world range commonly varies with speed, temperature, wheel/tire choice, payload and driving style — real-world deviations of ~10–30% (or more in cold weather/highway conditions) are common, which explains why customers report range being hard to estimate. ",
+      "url": "https://evdecoded.com/blog/epa-range-vs-real-world-range",
+      "publisher": "EV Decoded (evdecoded.com)",
+      "published": "2026-07-01",
+      "stance": "supports",
+      "about": "Factors causing variance between EPA and real-world EV range"
+    }
+  ]
+}
