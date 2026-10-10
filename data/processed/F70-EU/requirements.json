@@ -22,7 +22,7 @@
     "value": 0.202,
     "weight": 0.2,
     "contribution": 4.0,
-    "explanation": "30 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "30 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.643,
@@ -37,10 +37,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.6,
@@ -75,7 +75,13 @@
    "runs": 500
   },
   "segment_conflicts": [],
-  "business": null,
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
   "stable_key": "cc3dce",
   "badges": []
  },
@@ -102,7 +108,7 @@
     "value": 0.147,
     "weight": 0.2,
     "contribution": 2.9,
-    "explanation": "16 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "16 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.547,
@@ -117,10 +123,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.6,
@@ -155,7 +161,13 @@
    "runs": 500
   },
   "segment_conflicts": [],
-  "business": null,
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
   "stable_key": "e5c858",
   "badges": []
  },
@@ -182,7 +194,7 @@
     "value": 0.198,
     "weight": 0.2,
     "contribution": 4.0,
-    "explanation": "29 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "29 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.567,
@@ -197,10 +209,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.2,
@@ -235,7 +247,13 @@
    "runs": 500
   },
   "segment_conflicts": [],
-  "business": null,
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
   "stable_key": "b81746",
   "badges": []
  },
@@ -262,7 +280,7 @@
     "value": 0.165,
     "weight": 0.2,
     "contribution": 3.3,
-    "explanation": "20 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "20 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -277,10 +295,10 @@
     "explanation": "competitor advantage backed by a high-trust web source"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.6,
@@ -315,7 +333,13 @@
    "runs": 500
   },
   "segment_conflicts": [],
-  "business": null,
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
   "stable_key": "62b83e",
   "badges": []
  },
@@ -347,7 +371,7 @@
     "value": 0.565,
     "weight": 0.2,
     "contribution": 11.3,
-    "explanation": "235 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "235 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -362,10 +386,10 @@
     "explanation": "competitor advantage backed by a medium-trust web source"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.2,
@@ -408,7 +432,13 @@
    "runs": 500
   },
   "segment_conflicts": [],
-  "business": null,
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
   "stable_key": "ac8429",
   "badges": []
  },
@@ -441,7 +471,7 @@
     "value": 1.0,
     "weight": 0.2,
     "contribution": 20.0,
-    "explanation": "737 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "737 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -456,10 +486,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.2,
@@ -501,7 +531,13 @@
    "runs": 500
   },
   "segment_conflicts": [],
-  "business": null,
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
   "stable_key": "205944",
   "badges": []
  },
@@ -527,7 +563,7 @@
     "value": 0.147,
     "weight": 0.2,
     "contribution": 2.9,
-    "explanation": "16 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "16 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -542,10 +578,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.6,
@@ -580,7 +616,13 @@
    "runs": 500
   },
   "segment_conflicts": [],
-  "business": null,
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
   "stable_key": "87a880",
   "badges": []
  },
@@ -611,7 +653,7 @@
     "value": 0.835,
     "weight": 0.2,
     "contribution": 16.7,
-    "explanation": "514 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "514 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -626,10 +668,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.6,
@@ -664,7 +706,13 @@
    "runs": 500
   },
   "segment_conflicts": [],
-  "business": null,
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
   "stable_key": "c9d274",
   "badges": []
  },
@@ -690,7 +738,7 @@
     "value": 0.133,
     "weight": 0.2,
     "contribution": 2.7,
-    "explanation": "13 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "13 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -705,10 +753,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 1.0,
@@ -743,7 +791,13 @@
    "runs": 500
   },
   "segment_conflicts": [],
-  "business": null,
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
   "stable_key": "d1ea65",
   "badges": []
  },
@@ -774,7 +828,7 @@
     "value": 0.405,
     "weight": 0.2,
     "contribution": 8.1,
-    "explanation": "121 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "121 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -789,10 +843,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.6,
@@ -829,7 +883,13 @@
    "runs": 500
   },
   "segment_conflicts": [],
-  "business": null,
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
   "stable_key": "81758e",
   "badges": []
  },
@@ -860,7 +920,7 @@
     "value": 0.376,
     "weight": 0.2,
     "contribution": 7.5,
-    "explanation": "104 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "104 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -875,10 +935,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.2,
@@ -914,7 +974,13 @@
    "runs": 500
   },
   "segment_conflicts": [],
-  "business": null,
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
   "stable_key": "08473b",
   "badges": []
  },
@@ -940,7 +1006,7 @@
     "value": 0.138,
     "weight": 0.2,
     "contribution": 2.8,
-    "explanation": "14 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "14 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -955,10 +1021,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.6,
@@ -993,7 +1059,13 @@
    "runs": 500
   },
   "segment_conflicts": [],
-  "business": null,
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
   "stable_key": "968ff1",
   "badges": []
  },
@@ -1021,7 +1093,7 @@
     "value": 0.253,
     "weight": 0.2,
     "contribution": 5.1,
-    "explanation": "47 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "47 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -1036,10 +1108,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.2,
@@ -1075,7 +1147,13 @@
    "runs": 500
   },
   "segment_conflicts": [],
-  "business": null,
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
   "stable_key": "7de7a7",
   "badges": []
  },
@@ -1102,7 +1180,7 @@
     "value": 0.052,
     "weight": 0.2,
     "contribution": 1.0,
-    "explanation": "2 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "2 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -1120,7 +1198,7 @@
     "value": 1.0,
     "weight": 0.1,
     "contribution": 10.0,
-    "explanation": "linked to a 3-5 year trend (assumption)"
+    "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.2,
@@ -1159,7 +1237,13 @@
    "runs": 500
   },
   "segment_conflicts": [],
-  "business": null,
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
   "stable_key": "b0f407",
   "badges": [
    "Zukunftswette",
@@ -1189,7 +1273,7 @@
     "value": 0.104,
     "weight": 0.2,
     "contribution": 2.1,
-    "explanation": "8 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "8 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -1207,7 +1291,7 @@
     "value": 1.0,
     "weight": 0.1,
     "contribution": 10.0,
-    "explanation": "linked to a 3-5 year trend (assumption)"
+    "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.2,
@@ -1243,7 +1327,13 @@
    "runs": 500
   },
   "segment_conflicts": [],
-  "business": null,
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
   "stable_key": "97aa14",
   "badges": [
    "Zukunftswette",
@@ -1272,7 +1362,7 @@
     "value": 0.052,
     "weight": 0.2,
     "contribution": 1.0,
-    "explanation": "2 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "2 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -1290,7 +1380,7 @@
     "value": 1.0,
     "weight": 0.1,
     "contribution": 10.0,
-    "explanation": "linked to a 3-5 year trend (assumption)"
+    "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.2,
@@ -1329,7 +1419,13 @@
    "runs": 500
   },
   "segment_conflicts": [],
-  "business": null,
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
   "stable_key": "512a36",
   "badges": [
    "Zukunftswette",
@@ -1358,7 +1454,7 @@
     "value": 0.037,
     "weight": 0.2,
     "contribution": 0.7,
-    "explanation": "1 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "1 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -1376,7 +1472,7 @@
     "value": 1.0,
     "weight": 0.1,
     "contribution": 10.0,
-    "explanation": "linked to a 3-5 year trend (assumption)"
+    "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.2,
@@ -1412,7 +1508,13 @@
    "runs": 500
   },
   "segment_conflicts": [],
-  "business": null,
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
   "stable_key": "63d37b",
   "badges": [
    "Zukunftswette",

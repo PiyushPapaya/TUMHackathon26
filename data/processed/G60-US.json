@@ -97,7 +97,7 @@
   "signals": 55,
   "requirements": 21,
   "approved": 0,
-  "generated_at": "2026-10-10T20:32:54+00:00"
+  "generated_at": "2026-10-10T20:40:28+00:00"
  },
  "weights": {},
  "evidence": [
@@ -6950,7 +6950,7 @@
      "value": 0.16,
      "weight": 0.2,
      "contribution": 3.2,
-     "explanation": "15 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "15 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.6,
@@ -6965,10 +6965,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -7003,7 +7003,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "47478c",
    "badges": []
   },
@@ -7029,7 +7035,7 @@
      "value": 0.17,
      "weight": 0.2,
      "contribution": 3.4,
-     "explanation": "17 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "17 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.4,
@@ -7044,10 +7050,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -7082,7 +7088,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "8ca18e",
    "badges": []
   },
@@ -7112,7 +7124,7 @@
      "value": 0.437,
      "weight": 0.2,
      "contribution": 8.7,
-     "explanation": "112 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "112 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.52,
@@ -7127,10 +7139,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -7167,11 +7179,17 @@
    "robustness": {
     "rank_min": 2,
     "rank_max": 6,
-    "top3_share": 0.562,
+    "top3_share": 0.564,
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "bc1679",
    "badges": []
   },
@@ -7198,7 +7216,7 @@
      "value": 0.233,
      "weight": 0.2,
      "contribution": 4.7,
-     "explanation": "32 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "32 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -7213,10 +7231,10 @@
      "explanation": "competitor advantage backed by a high-trust web source"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -7250,7 +7268,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "47878d",
    "badges": []
   },
@@ -7276,7 +7300,7 @@
      "value": 0.117,
      "weight": 0.2,
      "contribution": 2.3,
-     "explanation": "8 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "8 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.64,
@@ -7291,10 +7315,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -7325,11 +7349,17 @@
    "robustness": {
     "rank_min": 3,
     "rank_max": 6,
-    "top3_share": 0.022,
+    "top3_share": 0.02,
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "50b599",
    "badges": []
   },
@@ -7358,7 +7388,7 @@
      "value": 0.303,
      "weight": 0.2,
      "contribution": 6.1,
-     "explanation": "54 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "54 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -7373,10 +7403,10 @@
      "explanation": "competitor advantage backed by a high-trust web source"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.2,
@@ -7410,7 +7440,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "1f37f8",
    "badges": []
   },
@@ -7436,7 +7472,7 @@
      "value": 0.109,
      "weight": 0.2,
      "contribution": 2.2,
-     "explanation": "7 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "7 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.52,
@@ -7451,10 +7487,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -7489,7 +7525,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "5ef155",
    "badges": []
   },
@@ -7515,7 +7557,7 @@
      "value": 0.041,
      "weight": 0.2,
      "contribution": 0.8,
-     "explanation": "1 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "1 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.72,
@@ -7530,10 +7572,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 1.0,
@@ -7567,7 +7609,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "4bd62a",
    "badges": []
   },
@@ -7593,7 +7641,7 @@
      "value": 0.041,
      "weight": 0.2,
      "contribution": 0.8,
-     "explanation": "1 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "1 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.72,
@@ -7608,10 +7656,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 1.0,
@@ -7646,7 +7694,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "c2d5c9",
    "badges": []
   },
@@ -7672,7 +7726,7 @@
      "value": 0.202,
      "weight": 0.2,
      "contribution": 4.0,
-     "explanation": "24 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "24 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -7687,10 +7741,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 1.0,
@@ -7724,7 +7778,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "06010e",
    "badges": []
   },
@@ -7752,7 +7812,7 @@
      "value": 0.34,
      "weight": 0.2,
      "contribution": 6.8,
-     "explanation": "68 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "68 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.4,
@@ -7767,10 +7827,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -7804,7 +7864,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "2830a1",
    "badges": []
   },
@@ -7831,7 +7897,7 @@
      "value": 0.237,
      "weight": 0.2,
      "contribution": 4.7,
-     "explanation": "33 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "33 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -7846,10 +7912,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 1.0,
@@ -7883,7 +7949,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "244ff6",
    "badges": []
   },
@@ -7911,7 +7983,7 @@
      "value": 0.357,
      "weight": 0.2,
      "contribution": 7.1,
-     "explanation": "75 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "75 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -7926,10 +7998,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -7964,7 +8036,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "13b22b",
    "badges": []
   },
@@ -7990,7 +8068,7 @@
      "value": 0.206,
      "weight": 0.2,
      "contribution": 4.1,
-     "explanation": "25 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "25 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -8005,10 +8083,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -8043,7 +8121,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "b96373",
    "badges": []
   },
@@ -8074,7 +8158,7 @@
      "value": 1.0,
      "weight": 0.2,
      "contribution": 20.0,
-     "explanation": "587 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "587 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -8089,10 +8173,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.2,
@@ -8129,7 +8213,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "09a701",
    "badges": []
   },
@@ -8156,7 +8246,7 @@
      "value": 0.335,
      "weight": 0.2,
      "contribution": 6.7,
-     "explanation": "66 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "66 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -8171,10 +8261,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -8209,7 +8299,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "6704d5",
    "badges": []
   },
@@ -8240,7 +8336,7 @@
      "value": 0.666,
      "weight": 0.2,
      "contribution": 13.3,
-     "explanation": "260 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "260 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -8255,10 +8351,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -8296,7 +8392,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "b7f842",
    "badges": []
   },
@@ -8325,7 +8427,7 @@
      "value": 0.483,
      "weight": 0.2,
      "contribution": 9.7,
-     "explanation": "137 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "137 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -8340,10 +8442,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -8382,7 +8484,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "5ae055",
    "badges": []
   },
@@ -8409,7 +8517,7 @@
      "value": 0.258,
      "weight": 0.2,
      "contribution": 5.2,
-     "explanation": "39 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "39 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -8424,10 +8532,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -8462,7 +8570,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "780e0c",
    "badges": []
   },
@@ -8488,7 +8602,7 @@
      "value": 0.058,
      "weight": 0.2,
      "contribution": 1.2,
-     "explanation": "2 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "2 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -8506,7 +8620,7 @@
      "value": 1.0,
      "weight": 0.1,
      "contribution": 10.0,
-     "explanation": "linked to a 3-5 year trend (assumption)"
+     "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.2,
@@ -8544,7 +8658,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "1ba704",
    "badges": [
     "Zukunftswette",
@@ -8573,7 +8693,7 @@
      "value": 0.041,
      "weight": 0.2,
      "contribution": 0.8,
-     "explanation": "1 of at most 587 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "1 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -8591,7 +8711,7 @@
      "value": 1.0,
      "weight": 0.1,
      "contribution": 10.0,
-     "explanation": "linked to a 3-5 year trend (assumption)"
+     "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.2,
@@ -8630,7 +8750,13 @@
     "runs": 500
    },
    "segment_conflicts": [],
-   "business": null,
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
    "stable_key": "67ffe2",
    "badges": [
     "Zukunftswette",

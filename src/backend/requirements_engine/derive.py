@@ -33,6 +33,7 @@ from core.models import (
 )
 from requirements_engine import evidence_level, scoring
 from requirements_engine.blocks import merge_overlapping, separate_bets, split_into_blocks
+from requirements_engine.business import business_context
 from requirements_engine.derive_checks import (
     badges_for,
     conflict_notes,
@@ -139,6 +140,7 @@ def _build(
         uncertainties=[*conflict_notes(linked), *draft.uncertainties],
         offer_check=OfferCheck(status="unknown", note="Option list not checked yet (C5)."),
         effort=effort, horizon=draft.horizon, badges=badges_for(draft.horizon, level.value),
+        business=business_context(context.get("sales", {})),
     )
 
 
