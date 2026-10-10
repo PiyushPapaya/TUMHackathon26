@@ -1,0 +1,2 @@
+mache die auch fertig: - Das Backend lädt die .env nicht selbst. Ich habe sie für den Aufruf per Shell geladen. Für pipeline.py in B3 sollten wir klären, ob python-dotenv dazukommt. Das wäre eine neue Dependency und braucht deine Freigabe.
+- Der Aufruf liegt im Cache. Die Demo kann diese Frage also auch offline beantworten.
