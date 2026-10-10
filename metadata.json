@@ -3,7 +3,7 @@
   "checkpoint_id": "01M4M0JNGGKFQ4KAY10WBY91YG",
   "strategy": "manual-commit",
   "branch": "jolesCrazyFrontend",
-  "checkpoints_count": 2,
+  "checkpoints_count": 3,
   "files_touched": [
     "src/frontend/app/page.tsx",
     "src/frontend/src/components/AuditPageClient.tsx",
@@ -23,13 +23,20 @@
       "compact_transcript": "/1/transcript.jsonl",
       "content_hash": "/1/content_hash.txt",
       "prompt": "/1/prompt.txt"
+    },
+    {
+      "metadata": "/2/metadata.json",
+      "transcript": "/2/full.jsonl",
+      "compact_transcript": "/2/transcript.jsonl",
+      "content_hash": "/2/content_hash.txt",
+      "prompt": "/2/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 28,
-    "cache_creation_tokens": 108501,
-    "cache_read_tokens": 1036177,
-    "output_tokens": 17830,
-    "api_call_count": 14
+    "input_tokens": 52,
+    "cache_creation_tokens": 141159,
+    "cache_read_tokens": 1800183,
+    "output_tokens": 22810,
+    "api_call_count": 26
   }
 }
