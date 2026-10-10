@@ -26,6 +26,8 @@ Piyush ist Lead. Jeder Pfad baut Code, Tests und liefert Inhalt für 1 Pitch-Fol
 
 Jede Person darf zusätzlich in ihrem eigenen Arbeitsbuch die Haken `[ ]` → `[x]` setzen.
 
+**Team-Ordner (Einstieg: `START_HIER.md`):** `entscheidungen/` (Entscheidungskarten E01-E08 + `LOG.md`, hier trägt das Team Entscheidung und Warum ein), `missionen/` (eine Bauaufgabe pro Person), `werkstatt/<name>/` (eigener Platz, nur diese Person schreibt dort; ersetzt `workspace/`), `visuals/` (Bilder, Skripte `scripts/make_diagrams.py` und `scripts/make_visuals.py`), `outputs/` (Exporte), `archiv/` (Altes, nie löschen). Docs sind jetzt nummeriert: `docs/01_projekt.md` bis `07_pitch.md` (Index: `docs/README.md`). Alle diese Ordner stehen in `.gitattributes` als `export-ignore`, damit die Jury-KI ihr Budget für Code behält.
+
 - **Nur im eigenen Pfad schreiben.** Fremde Ordner, `src/backend/core/` und `src/shared/` nur lesen. Bedarf dort: erklären und dem Lead Bescheid geben (Chat/Zuruf).
 - **Schnittstellen sind fix:** Die Signatur im Kopf jeder Pfad-Datei nicht ändern. Innen ist alles frei.
 - **Geteilte Dateien nur Piyush:** README, CLAUDE.md, `requirements.txt`, `pyproject.toml`, `package.json`/Lockfiles, CI, `.claude/settings.json`, `.gitignore`, `.gitattributes`, `.env.example`, `src/shared/`, `config/`.
