@@ -46,3 +46,7 @@ app/layout.tsx (29:5) @ RootLayout
   31 |       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
   32 |     >
 </pasted_content id="5849">
+
+---
+
+Please change the table so it doesnt expand with the amount of entries and i can scroll in the window through all entries
