@@ -25,7 +25,7 @@
 - **Fertig, wenn:** Test grün · echte Frage liefert ≥ 3 Claims mit echter URL.
 - **Wenn es hakt:** Websuche + Schema zusammen geht nicht → zweistufig: erst Websuche als Freitext, dann `ask_json` ohne Tools, das den Text ins Schema bringt; URLs nur übernehmen, wenn sie wörtlich im Freitext vorkamen.
 
-### [ ] B2 · Fragen + Vertrauen (60 min, 16:00-17:00)
+### [x] B2 · Fragen + Vertrauen (60 min, 16:00-17:00)
 **Prompt:**
 > Ticket B2. (1) `questions.py`: aus den Top-8-Befunden der Art complaint/unmet_need (bis zur echten Datei: `src/shared/beispiele/stufen/signals.json`)
 > und `scenario.competitors` je eine Wettbewerbsfrage; dazu 5 feste Trendfragen für 2028-2031 im Segment und Markt des Szenarios (Laden/Reichweite, Software/Apps, Bedienung, Innenraum, Assistenz).
