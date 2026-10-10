@@ -35,7 +35,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - **Du als Partner-Kontakt:** die 3 Fragen aus [`LEAD.md`](LEAD.md) („Fragen an BMW“) dem Mentor stellen (vor Ort oder Discord), Antworten in den Team-Chat. Piyush trägt sie in `docs/CHALLENGE.md` ein.
 - **Fertig, wenn:** du die Formel ohne Zettel erklären kannst.
 
-### [ ] C2 · Anforderungen ableiten v1 (75 min, bis 17:10)
+### [x] C2 · Anforderungen ableiten v1 (75 min, bis 17:10)
 **Prompt:**
 > Ich baue Pfad C, Ticket C2. Das LLM formuliert nur die Anforderungen; die Priorität rechnen wir in Python, weil Modelle nicht reproduzierbar rechnen
 > und der PM jeden Punkt nachvollziehen muss. Verworfen: LLM vergibt den Score.
