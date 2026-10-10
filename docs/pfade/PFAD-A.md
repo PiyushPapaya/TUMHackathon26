@@ -96,7 +96,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
   Entscheidungen: Obergrenze 45 statt Schwelle (bei ≥5 wären es 162); Gruppen mit 2 Quellenarten bleiben immer; reine Studien-Befunde max. 8; 10 Plätze für Wünsche;
   Quelle D über den Bereich im Satz zugeordnet; „Body equipment“ bewusst ungemappt (Sammelbegriff).
 
-### [ ] A6 · Befunde v2 mit LLM (90 min, 19:30-21:00)
+### [x] A6 · Befunde v2 mit LLM (90 min, 19:30-21:00)
 **Prompt:**
 > Ticket A6. Wir lassen das LLM nur **formulieren und auswählen**, nicht gruppieren, weil die Gruppen aus v1 nachvollziehbar sind.
 > Für die Top-30-Gruppen: `core.llm.ask_json` mit Schema `SignalDraft` (title, summary in Kundensprache auf Englisch, kind, representative_ids 3-5).
@@ -105,8 +105,9 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 > Test mit einem Fake für `ask_json` (monkeypatch), der eine erfundene ID zurückgibt → muss rausgefiltert werden.
 - **Fertig, wenn:** Test grün · echter Lauf G60-US: Titel lesen sich wie Kundenaussagen · zweiter Lauf ist sofort fertig (Cache) · `sync`.
 - **Wenn es hakt:** Kürzung 5 in der ROADMAP (v1-Titel bleiben). Kosten: ~30 Aufrufe, wenige Cent.
-- **Stand:** Code + Tests fertig (`signals_llm.py`, `extract_signals(..., use_llm=True)`). **Echter Lauf offen:** `.env` hat keinen `OPENAI_API_KEY`;
-  ohne Key bleibt v1 und es erscheint eine Warnung. Danach `pipeline.py --scenario G60-US --stage signals` zweimal laufen lassen (zweiter Lauf = Cache).
+- **Ergebnis A6 (echter Lauf, 10.10. abends):** G60-US, G70-US, F70-EU je 30 von 45 Befunden mit LLM-Titel (die 15 kleinsten behalten absichtlich den v1-Titel).
+  0 unbekannte IDs, 0 Zitate aus fremder Gruppe, keine Zahl in LLM-Titeln. Lauf 1 G60-US 197 s, Lauf 2 0,6 s (Cache). Ohne Key bleibt v1 mit Warnung.
+  Beispiel: v1 „Seats: complaint“ → v2 „Seats are uncomfortable and don't adjust for me“.
   Entscheidungen: Gruppen und `kind` bleiben aus v1 (nicht im Schema); Titel/Zusammenfassung mit Zahlen werden abgelehnt (Zahlen nur aus dem Code); Zitate nur aus der eigenen Gruppe.
 
 ### [x] A7 · Konflikte (45 min, bis 22:00, **M3**)
