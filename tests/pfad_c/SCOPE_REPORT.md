@@ -1,16 +1,16 @@
-# Scope-Wächter: Messung (W-C12) (Basis, nur Prompt)
+# Scope-Wächter: Messung (W-C12) (mit schärferem Prompt und Code-Wächter)
 
 Erzeugt mit `python tests/pfad_c/scope_eval.py [Läufe]`. 48 erfundene Befunde (`scope_cases.py`), keine BMW-Daten.
 8 unabhängige Läufe der echten Ableitung (anderer Szenarioname = neuer Aufruf an die KI). Zahlen je Lauf, durch Schrägstrich getrennt.
 
 | Klasse | Fälle | erkannt (verworfen) | durchgerutscht |
 |---|---|---|---|
-| Regulatorik / Zulassung | 9 | 7 / 9 / 9 / 9 / 7 / 6 / 7 / 9 | 2 / 0 / 0 / 0 / 2 / 3 / 2 / 0 |
-| Engineering-Spezifikation | 9 | 9 / 9 / 9 / 9 / 9 / 9 / 9 / 9 | 0 / 0 / 0 / 0 / 0 / 0 / 0 / 0 |
-| Preis / Business-Case | 10 | 2 / 10 / 9 / 9 / 2 / 9 / 10 / 9 | 8 / 0 / 1 / 1 / 8 / 1 / 0 / 1 |
+| Regulatorik / Zulassung | 9 | 8 / 8 / 9 / 9 / 9 / 9 / 8 / 9 | 1 / 1 / 0 / 0 / 0 / 0 / 1 / 0 |
+| Engineering-Spezifikation | 9 | 9 / 9 / 9 / 9 / 9 / 9 / 9 / 8 | 0 / 0 / 0 / 0 / 0 / 0 / 0 / 1 |
+| Preis / Business-Case | 10 | 8 / 10 / 9 / 10 / 8 / 9 / 8 / 9 | 2 / 0 / 1 / 0 / 2 / 1 / 2 / 1 |
 
-**Out-of-scope gesamt (28 Fälle):** erkannt 18 / 28 / 27 / 27 / 18 / 24 / 26 / 27, durchgerutscht 10 / 0 / 1 / 1 / 10 / 4 / 2 / 1.
-**Gegenprobe (20 normale Kundenwünsche):** zu Unrecht verworfen 1 / 0 / 0 / 0 / 0 / 0 / 0 / 0.
+**Out-of-scope gesamt (28 Fälle):** erkannt 25 / 27 / 27 / 28 / 26 / 27 / 25 / 26, durchgerutscht 3 / 1 / 1 / 0 / 2 / 1 / 3 / 2.
+**Gegenprobe (20 normale Kundenwünsche):** zu Unrecht verworfen 0 / 0 / 0 / 0 / 0 / 0 / 0 / 0.
 
 ## Grenzen
 - 48 Fälle, von uns formuliert: Größenordnung, kein Konfidenzintervall.

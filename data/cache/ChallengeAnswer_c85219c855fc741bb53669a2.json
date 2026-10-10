@@ -1,0 +1,24 @@
+{
+  "answer": "Unclear. All provided signals and study data are explicitly US market items, so the evidence demonstrates a clear US problem but contains no non‑US data to prove it’s exclusive to the US. We cannot conclude it’s “only” a US issue without testing other markets; it may well be broader.",
+  "supporting_evidence_ids": [
+    "SIG-G60-US-030",
+    "SIG-G60-US-040",
+    "EV-G60-US-FB-G60-0740",
+    "EV-G60-US-FB-G60-1594",
+    "EV-G60-US-FB-G60-2989",
+    "EV-G60-US-FB-G60-1157",
+    "EV-G60-US-FB-G60-0782",
+    "EV-G60-US-ST-48",
+    "EV-G60-US-FB-G60-0696",
+    "EV-G60-US-FB-G60-1654",
+    "EV-G60-US-FB-G60-2152",
+    "EV-G60-US-FB-G60-2324",
+    "EV-G60-US-FB-G60-2803",
+    "EV-G60-US-FB-G60-3416",
+    "EV-G60-US-FB-G60-3630",
+    "EV-G60-US-FB-G60-0483",
+    "EV-G60-US-ST-35"
+  ],
+  "counter_evidence_ids": [],
+  "suggested_change": "Clarify scope: modify assumptions/acceptance to require repeating the driving usability and storage evaluations in additional target markets (e.g., EU, CN) or state the requirement applies to ‘target market(s) under test’ rather than assuming US-only."
+}

@@ -1,0 +1,192 @@
+{
+  "drafts": [
+    {
+      "title": "Voice assistant understands common driving commands reliably",
+      "description": "When driving, the voice assistant recognizes and executes common, simple driver commands (navigation destinations, climate intents, media control, phone calls) without repeating or requiring multiple attempts.",
+      "acceptance_criterion": "In a standardized test with in-cabin background noise up to 70 dB(A), the system correctly understands and executes at least 95% of a 100-item set of common driving commands within 3 seconds.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N01"
+      ],
+      "assumptions": [
+        "Test uses a representative 100-command list derived from logged customer requests and dealer scripts.",
+        "Cloud assistance may be allowed for initial deployment; offline fallback assumed for occasional loss of connectivity."
+      ],
+      "uncertainties": [
+        "Performance may vary with non-native accents and rare commands not in the test set.",
+        "Ambient cabin noise levels in extreme conditions (>70 dB(A)) may reduce recognition rates."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Wireless charging works reliably for compatible phones",
+      "description": "When a compatible phone is placed on the vehicle wireless charging pad as instructed, it continuously charges without unexpected dropouts or repeated re-centering prompts.",
+      "acceptance_criterion": "Across a representative set of three major phone form factors, at least 95% of charging sessions maintain continuous charging for a two-hour continuous drive test with no interruption reported by the phone and no driver intervention.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N04"
+      ],
+      "assumptions": [
+        "Phones tested are Qi-compatible and have up-to-date firmware.",
+        "Charging pad is used as instructed (phone placed centrally, no heavy cases unless specified)."
+      ],
+      "uncertainties": [
+        "Third-party phone cases, metal attachments, or damaged phone coils may still cause failures.",
+        "Wireless charging behavior can vary across phone OS updates."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Head-up display and center screen remain readable in bright sunlight",
+      "description": "Drivers can read critical HUD information and primary center-screen content quickly even under direct bright sunlight and common sun angles.",
+      "acceptance_criterion": "In a usability test with 20 participants under direct sunlight conditions (ambient illuminance ≥80,000 lux / typical bright sun), at least 90% of participants can correctly read the HUD speed readout and identify main center-screen icons within 2 seconds.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N08",
+        "SCOPE-N19"
+      ],
+      "assumptions": [
+        "Test uses standardized bright-sunlight test rig and representative screen/HUD brightness settings.",
+        "Participants represent a range of driver heights and eyeglass/no-eyeglass conditions."
+      ],
+      "uncertainties": [
+        "Extreme glare from aftermarket windshield films or damaged windshields may still reduce legibility.",
+        "Perception varies with driver eyesight; accessibility adjustments may be required."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Tactile physical controls for temperature and fan speed operable without looking",
+      "description": "Drivers can change cabin temperature and fan speed by feel using tactile physical controls, without needing to look at the controls or screen.",
+      "acceptance_criterion": "In a blind-touch usability test with 20 participants, at least 90% can change cabin temperature by ±2°C and increase or decrease fan speed by one level within 2 seconds solely by touch.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N13"
+      ],
+      "assumptions": [
+        "Controls are ergonomically placed within the driver's natural reach zone.",
+        "Tactile differences (shape/texture) are used to distinguish temperature vs. fan controls."
+      ],
+      "uncertainties": [
+        "Drivers with reduced tactile sensitivity or wearing thick gloves may have reduced success rates.",
+        "Integration with heater/AC modes may require clear tactile affordances."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Heated steering wheel included in the cold-weather package",
+      "description": "When customers select the vehicle cold-weather package, the heated steering wheel is included as part of that package rather than offered only as a separate costly standalone option.",
+      "acceptance_criterion": "For all configurations where the cold-weather (winter) package is selected, the heated steering wheel is included 100% of the time in the package contents.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-N20"
+      ],
+      "assumptions": [
+        "Package contents are consistent across trims in the target market at launch.",
+        "Market-specific regulatory or supplier constraints do not prevent inclusion."
+      ],
+      "uncertainties": [
+        "Regional variations in supplier availability could necessitate temporary exceptions.",
+        "Dealer-level bundling practices may vary unless centrally enforced."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Driver profile: view, export and delete personal data from the vehicle",
+      "description": "Drivers can manage personal profile data directly in the vehicle: view what data is stored, export a copy, and permanently delete their profile and associated personal data without requiring a dealer visit.",
+      "acceptance_criterion": "From the driver profile UI, a user can (1) view a list of stored personal data types, (2) export an archived copy to a connected device within 5 minutes, and (3) permanently delete the profile so that vehicle-local personal data is removed within 24 hours; the UI shows a clear confirmation and a timestamp of completion.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-R08"
+      ],
+      "assumptions": [
+        "Cloud-stored profile data deletion may require up to 24 hours to propagate and may depend on backend APIs and connectivity.",
+        "Export requires a connected device (USB or paired phone) and sufficient free space."
+      ],
+      "uncertainties": [
+        "Deletion semantics for anonymized telemetry vs. identifiable profile data may require legal definitions.",
+        "Some OEM cloud backups or third-party services may retain copies beyond vehicle-local deletion."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Request for China CCC certification (out of scope)",
+      "description": "Customers asked that the infotainment system passes CCC certification for the Chinese market.",
+      "acceptance_criterion": "This item is a regulatory certification request and is out of scope for product feature requirements.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-R05"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulatory/certification request (homologation) — implementation is governed by compliance process, not a customer-facing product requirement."
+    },
+    {
+      "title": "Request for specific cockpit chip (Snapdragon 8295) (out of scope)",
+      "description": "Customers requested that the cockpit computer uses the Snapdragon 8295 chip.",
+      "acceptance_criterion": "This is a request for a specific engineering component and is out of scope for customer-facing requirements.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-E04"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Engineering specification — requests for specific chips/components are handled in engineering requirements, not as customer-facing outcomes."
+    },
+    {
+      "title": "Requests related to base price, lease, subscriptions and discounts (out of scope)",
+      "description": "Customers requested lower base price, cheaper lease, free packages, package discounts, lower dealer margin, subscription prices, financing offers, or complained about option pricing.",
+      "acceptance_criterion": "These items concern pricing, financing and dealer margin and are out of scope for product feature requirements.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-P01",
+        "SCOPE-P02",
+        "SCOPE-P03",
+        "SCOPE-P04",
+        "SCOPE-P06",
+        "SCOPE-P08",
+        "SCOPE-P09",
+        "SCOPE-P10"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Pricing, financing and dealer margin requests — business/price topics are out of scope for vehicle feature requirements."
+    }
+  ]
+}

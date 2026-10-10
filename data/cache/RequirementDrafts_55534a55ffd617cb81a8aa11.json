@@ -1,0 +1,187 @@
+{
+  "drafts": [
+    {
+      "title": "Voice commands work reliably while driving",
+      "description": "When driving, simple voice commands (navigation, phone, media, climate shortcuts) are recognized and executed without repeated attempts so the driver can keep eyes on the road.",
+      "acceptance_criterion": "In a driving test (urban and highway noise, speeds up to 65 mph) the system correctly recognizes and executes 95% of a representative set of 100 simple driver voice commands on first attempt across 10 different drivers.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N01"
+      ],
+      "assumptions": [
+        "Microphones and in-cabin noise cancellation comparable to today's premium cars or improved; vehicle can run updated speech models.",
+        "Tests include common accents and typical cabin noise (windows up/down, HVAC, music at normal background levels)."
+      ],
+      "uncertainties": [
+        "Performance may vary with unusual accents, severe road/wind noise, or non-standard third-party voice shortcuts.",
+        "Some improvement may depend on cloud services; offline performance could be lower."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Phone wireless charging is reliable for everyday use",
+      "description": "Placing a phone on the charging pad starts and maintains charging without frequent drops so drivers can rely on the pad during trips.",
+      "acceptance_criterion": "Across the top 20 phone models sold in the US (including common case types), at least 95% of placement attempts begin charging within 5 seconds and the pad maintains charging for the duration of a typical 60‑minute drive in 95% of sessions.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N04"
+      ],
+      "assumptions": [
+        "Phones adhere to mainstream Qi charging standards or equivalent; extremely thick metal cases and incompatible aftermarket accessories are excluded from the 20 test phones.",
+        "Placement guidance (visual/tactile) is present to help drivers align phones."
+      ],
+      "uncertainties": [
+        "Third-party magnetic mounts, heavy metal or very thick cases, and non‑Qi proprietary chargers may still reduce reliability.",
+        "Wireless charging behaviour for phones introduced after launch may differ and require validation."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Driver displays (HUD and center screen) remain readable in bright sunlight",
+      "description": "Critical driving information on the head‑up display and primary center screen (speed, navigation guidance, active media info) remains legible with minimal glare so drivers do not miss information in bright daylight.",
+      "acceptance_criterion": "In a daylight usability test with direct sunlight conditions ≥80,000 lux, 90% of participants can read speed and primary navigation cues on the HUD within a 1.5‑second glance and read navigation/media content on the center screen within 2 seconds.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N08",
+        "SCOPE-N19"
+      ],
+      "assumptions": [
+        "Usability tests use representative driver seating positions and typical sunglasses; measurement of lux is taken at the display surface.",
+        "Improvements can include display brightness/contrast, anti‑glare coatings, and UI contrast adjustments."
+      ],
+      "uncertainties": [
+        "Extreme viewing angles or aftermarket screen protectors may still impair readability.",
+        "Very unusual sun angles or reflections from external surfaces can create edge cases not covered by the test."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Climate controls can be adjusted by feel without looking",
+      "description": "Drivers can change temperature and fan speed by feel so adjustments can be made without taking eyes off the road.",
+      "acceptance_criterion": "In a blind‑operation usability test, drivers set temperature to within ±1°C of a target value and select one of three fan speed levels within 3 seconds in 90% of attempts while seated in the driving position without looking.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N13"
+      ],
+      "assumptions": [
+        "Physical controls have distinct shapes/tactile feedback and logical placement ergonomics consistent across trims.",
+        "Tests include both left- and right-hand drive positions where applicable."
+      ],
+      "uncertainties": [
+        "Some advanced multi‑zone or highly compact control layouts could make blind operation harder; packaging constraints may limit button size/location.",
+        "Users with reduced tactile sensitivity may perform worse."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Heated steering wheel included in the Cold Weather package",
+      "description": "Customers who select the Cold Weather package receive a heated steering wheel as part of that package so they don’t need to buy it separately.",
+      "acceptance_criterion": "In the US market configuration, the Cold Weather / Winter package includes a heated steering wheel as a standard feature in all trim levels where the package is offered.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-N20"
+      ],
+      "assumptions": [
+        "Inclusion applies to factory-installed Cold Weather package offerings; dealer-installed accessories are out of scope.",
+        "Regional packaging names may vary but the feature will be included in the package marketed for cold climates."
+      ],
+      "uncertainties": [
+        "Regional regulatory or hardware variants might require minor exceptions; global packaging alignment may lag behind the US market.",
+        "If the vehicle architecture changes, additional hardware integration cost could affect early availability."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Multiple customer requests on pricing, financing and subscription terms (out of scope for technical product requirements)",
+      "description": "Customers requested lower base price, cheaper lease, packages included at no charge, discounts on specific packages, lower dealer margins, specific subscription price points (e.g., $15/month for heated seats), and 0% financing offers. These are business/pricing requests and not technical product requirements.",
+      "acceptance_criterion": "This request is routed to commercial/finance/pricing teams for policy decisions; product engineering will not define vehicle features based on target MSRP, lease rates, discounts, dealer margins, subscription price points, or financing terms.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-P01",
+        "SCOPE-P02",
+        "SCOPE-P03",
+        "SCOPE-P04",
+        "SCOPE-P06",
+        "SCOPE-P08",
+        "SCOPE-P09",
+        "SCOPE-P10"
+      ],
+      "assumptions": [
+        "Pricing, lease rates, subscription fees and dealer margins are commercial decisions outside the scope of product engineering requirements.",
+        "If package contents are requested without price implications, those requests should be split into a separate in‑scope requirement (e.g., include a feature in a package)."
+      ],
+      "uncertainties": [
+        "Customer willingness to accept alternatives (e.g., feature moved between packages) is unknown and should be validated by commercial teams."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Pricing, financing and subscription fee targets are commercial decisions and out of scope for product requirements."
+    },
+    {
+      "title": "Regulatory and data‑protection certification requests (out of scope for product feature requirements)",
+      "description": "Customers asked that the infotainment system pass China CCC certification and that the driver profile satisfy GDPR requirements for data storage. Certification and legal compliance are handled by regulatory and compliance teams rather than product feature requirements.",
+      "acceptance_criterion": "This request is handled by the regulatory/compliance organization; product teams will supply required artefacts but the certification decisions and legal compliance mappings are out of scope of feature requirements.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-R05",
+        "SCOPE-R08"
+      ],
+      "assumptions": [
+        "Certification and legal compliance tasks require cross‑functional work (legal, compliance, engineering) and may depend on region‑specific implementations.",
+        "Product features may need adaptation to satisfy specific certification/regulatory constraints; those adaptations should be coordinated with compliance teams."
+      ],
+      "uncertainties": [
+        "The exact technical changes required for certification (if any) are unknown until compliance review completes.",
+        "Timing and regulatory interpretations can change between launch planning and certification completion."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulatory certification and legal data‑protection compliance are activities for compliance/regulatory teams, not product feature requirements."
+    },
+    {
+      "title": "Request for a specific cockpit chip (engineering specification — out of scope)",
+      "description": "Customers requested the cockpit computer use the Snapdragon 8295 chip. Requests for a particular chipset are engineering specifications and not a customer‑facing product requirement.",
+      "acceptance_criterion": "Decision on specific SoC/chipset is an engineering/architecture choice; product requirements should specify the customer outcome (performance, responsiveness) rather than a specific chip.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-E04"
+      ],
+      "assumptions": [
+        "Customer intent is improved perceived performance and responsiveness; the engineering team will select hardware that meets those performance outcomes.",
+        "Different regions or suppliers may require alternate components that achieve equivalent customer outcomes."
+      ],
+      "uncertainties": [
+        "Hardware availability, supplier contracts and roadmap alignment may affect chipset selection at launch."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Specifying a particular chipset is an engineering specification; product requirements should focus on customer outcomes (e.g., responsiveness, multitasking)."
+    }
+  ]
+}
