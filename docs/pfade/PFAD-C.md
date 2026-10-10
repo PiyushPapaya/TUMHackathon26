@@ -94,7 +94,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - Prompt: „Ticket C8. Lies alle Anforderungen für G60-US und F70-EU kritisch wie ein BMW-PM: Ist jede kundenorientiert, messbar, realistisch? Verbessere den Prompt (nicht die Ausgabe von Hand), lass neu laufen, vergleiche vorher/nachher in einer Tabelle.“
 - **Achtung:** Neuer Prompt = neuer Cache-Eintrag. Danach Piyush bitten, das Bundle neu zu bauen.
 
-### [ ] C9 · Randfälle testen (45 min, bis 05:30)
+### [x] C9 · Randfälle testen (45 min, bis 05:30)
 - Prompt: „Ticket C9. Ergänze Tests in `tests/pfad_c/` für Randfälle: keine Befunde, Befund ohne Belege, alle Gewichte 0 außer einem, Anforderung ohne Studienbeleg, LLM liefert leere Liste. Nichts darf abstürzen.“
 
 ### [ ] C10 · Was-wäre-wenn erklären (30 min, bis 06:00)

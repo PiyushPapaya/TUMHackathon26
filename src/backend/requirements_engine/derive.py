@@ -103,6 +103,8 @@ def derive_all(
     scenario: Scenario, signals: list[Signal], evidence: list[Evidence], context: dict
 ) -> tuple[list[Requirement], list[dict]]:
     """Liefert (Anforderungen nach Rang, verworfene Out-of-scope-Entwürfe mit Grund)."""
+    if not signals:  # nichts zu bündeln: die KI nicht fragen (kostet Geld und könnte Themen erfinden)
+        return [], []
     known = {s.id: s for s in signals}
     answer = ask_json(SYSTEM_PROMPT, f"Scenario: {scenario.model_name} ({scenario.market})\n"
                       f"Signals:\n{_compact(signals)}", RequirementDrafts)
