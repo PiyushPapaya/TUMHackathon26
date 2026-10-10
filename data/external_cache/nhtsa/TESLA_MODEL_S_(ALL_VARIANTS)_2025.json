@@ -1,0 +1,138 @@
+{
+ "count": 6,
+ "message": "Results returned successfully",
+ "results": [
+  {
+   "odiNumber": 11718413,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "07/06/2025",
+   "dateComplaintFiled": "02/17/2026",
+   "vin": "5YJSA1E64SF",
+   "components": "POWER TRAIN",
+   "summary": "The power train of my 2025 Tesla Model S failed.  As a result, the car had several systems alert on my console that they were \"unavailable\" or \"degraded\", and in addition to the alerts I experienced their loss or degradation in real time.  This included braking, steering, stability control, and traction control.  Normally you don't have to hold the brake pedal down at a stop light on this electric vehicle, but when the failure occurred my car was rolling backwards at the stop light and so I had to hold down the brake.  Also, steering was noticeably degraded and not stable.  The car was also exhibiting behavior similar to a stuck accelerator whereby even with my foot off the accelerator the car would not slow up.  Tesla had to tow my car to their nearest Tesla service center, and they replaced the front body controller and the battery controller which took three days.  There were no warnings whatsoever or anything relating to the power train that were peculiar prior to this incident.  It occurred all of a sudden after getting into my car and putting it in reverse to back out of a parking spot.  I was then bombarded with several alert messages as mentioned above and drove only about half a mile until I pulled into a parking lot and called Tesla for roadside assistance as the car was obviously not safe to drive.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11718423,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/07/2026",
+   "dateComplaintFiled": "02/17/2026",
+   "vin": "5YJSA1E64SF",
+   "components": "POWER TRAIN",
+   "summary": "The power train of my 2025 Model S failed similar to failure of 7-6-25 which I previously reported to NHTSA (complaint #11718413) and Tesla.  Upon getting into my car on 2-7-26 and putting it in reverse, several alert messages displayed including \"stability control disabled, traction control disabled, and emergency braking unavailable\".  I drove 1/4 mile to a safe area to call Tesla roadside assist, since my steering was noticeably degraded in real time and the car was not safe to drive.  The car was towed to the nearest Tesla service center.  Tesla made statements on their service report attached here, that this is a \"known characteristic of the vehicle\" and that if it happens again I should, \"exit the car, let the car go to sleep and then once the vehicle is awakened the alert will not be present and it will operate normally\".  That is not a valid solution, and even though they told me they found nothing wrong when they looked at the car two days later on 2-9-26, I had walked away from the car for more than an hour on 2-7-26 when this happened and the alerts were still there.  The tow truck driver who arrived three hours later also saw them and noticed the degraded steering when he drove it.  Tesla's solution stated on their service report is not valid or safe.  This issue has happened twice in seven months on this car of mine and it needs serious engineering attention.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11713304,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "01/01/2016",
+   "dateComplaintFiled": "01/26/2026",
+   "vin": "5YJSA1E59SF",
+   "components": "STEERING",
+   "summary": "The turning signal button on the steering wheel doesn't respond intermittently. It's a safety hazard to not engage a turning signal when making a turn.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11704875,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "12/07/2025",
+   "dateComplaintFiled": "12/13/2025",
+   "vin": "5YJSA1E67SF",
+   "components": "SUSPENSION,WHEELS",
+   "summary": "I experienced excessive rear tire wear on both rear tires inner side The tire ended up blowing out on the rear passenger tire",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11689981,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/14/2025",
+   "dateComplaintFiled": "09/26/2025",
+   "vin": "5YJSA1E61SF",
+   "components": "SUSPENSION",
+   "summary": "TIRES WEAR EXCESSIVLY DUE TO INCORECT FACTORY AND NON-ADJUSTABLE CAMBER SETTINGS CAUSING EXTREME SAFTEY CONCERNS/BLOWOUTS, WHICH ARE NOT VISIBLE WITHOUT REMOVAL OF TIRE OR LIFTING OF VEHICLE BY AVERAGE MOTORIST. MY VEHICLE EXPERIENCED THIS WITHIN FIRST 10,000 MILES ON NEW CAR WITH NEW TIRES. FOURTUNEATLY A FLAT LED TO FURTHER INSPECTION AND REPLACEMENT BEFORE INCCURING TRAGIC OR ADVERSE CONSEQUENCES.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11675799,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "07/24/2025",
+   "dateComplaintFiled": "07/24/2025",
+   "vin": "5YJSA1E53SF",
+   "components": "VISIBILITY/WIPER",
+   "summary": "Tesla’s automatic wipers are unreliable. This vehicle lacks a dedicated rain sensor and instead uses the forward-facing camera and neural net to detect moisture. In light rain, the system often fails to activate. More critically, it frequently triggers false wipes during dry conditions—sometimes multiple times per day.  Each dry swipe smears debris (e.g., bugs, sap), reducing visibility and risking permanent windshield scratches. This directly compromises driver safety and optics for the FSD/autopilot system.  Tesla has acknowledged the issue but suggests turning off automatic wipers. However, this isn’t possible when FSD or Autopilot is active—they re-enable automatically.  Proposed solution: If a wipe is triggered, the system should first activate the windshield washer. This would prevent dry swipes and maintain camera and driver visibility.  The current logic is overly aggressive and lacks basic safeguards. Tesla must revise this behavior—both for user safety and hardware longevity.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  }
+ ]
+}

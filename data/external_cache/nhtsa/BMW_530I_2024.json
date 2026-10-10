@@ -1,0 +1,292 @@
+{
+ "count": 13,
+ "message": "Results returned successfully",
+ "results": [
+  {
+   "odiNumber": 11734926,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "04/15/2026",
+   "dateComplaintFiled": "04/30/2026",
+   "vin": "WBA43FJ06RC",
+   "components": "VEHICLE SPEED CONTROL,FORWARD COLLISION AVOIDANCE",
+   "summary": "Concern:  The 2024 BMW 530i is equipped with \"Dynamic Cruise Control\" and a \"Speed Limit Assistant.\" The system is designed to automatically adopt posted speed limits and adjust the cruise control set speed. However, because this specific trim lacks a radar-based distance-monitoring sensor (Active Cruise Control), the vehicle initiates aggressive, unintended acceleration toward slower-moving traffic or stopped obstacles whenever it detects a higher speed limit sign.  Safety Risk: While the vehicle is using its cameras to \"see\" and adopt an external speed command, it remains \"blind\" to the actual traffic directly in its path. This creates a high risk of rear-end collisions, as the car will prioritize reaching the new speed limit even if it means accelerating directly into the bumper of a lead vehicle.  Proposed Solution: A \"Dynamic\" cruise control system that has the authority to control acceleration based on external data MUST also have the authority to maintain a safe following distance. I propose that BMW should be required to include distance-monitoring features in all cruise control systems that utilize automated speed adoption. If the hardware for distance-keeping is not present, the car should not be permitted to automatically increase speed based on roadside signs.  Inspection Status: The vehicle is available for inspection. No warning lamps appeared prior to these incidents, as the system is operating exactly as programmed by the manufacturer, which highlights a fundamental logic and design failure.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "530I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11716484,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": true,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "01/23/2026",
+   "dateComplaintFiled": "02/07/2026",
+   "vin": "WBA53FJ00RC",
+   "components": "UNKNOWN OR OTHER,SERVICE BRAKES,FUEL/PROPULSION SYSTEM",
+   "summary": "I had stopped uphill, with my foot on the brake, heading East on the left lane of Pomona Road, at the approach to the Traffic Light Junction with Route 45, around 3.50 PM on Friday 1/23/2026. There were about 5-6 cars also stopped, ahead of me,  at the Red Traffic Light and several cars behind me, when I heard my car engine rev up loudly. I kept applying the brake. I could hear my car tires spinning with a smell of burning rubber from the tires as they spun on the road, as my car lurched forward,  and hit the rear of the stopped car ~ 5-7 feet ahead of me.   I felt that I had no control of my car and turned the engine off after the collision.  I called 911 twice at 3.55 PM and 4.12 PM and waited as advised, for the Police Officer who arrived about 30 mins later. I filed the report and the officer was able to retrieve my auto license plate which had fallen off from the road where I could clearly see the tire marks on the asphalt from the spinning tires at the time of the accident.   The only message I recall receiving on the display was one that informed  me that I had experienced a crash after the collision.   I had never experienced this problem before.  Later ,after the Police Officer had arrived and documented the accident, I was able to drive the car home. The burning smell from the tires persisted for some time.  The next day I called the BMW dealer in the AM, and with great trepidation, drove the car to the BMW dealership. I explained to the Service Advisor on duty on the Saturday, what exactly had transpired during the accident.  I also explained this later to the BMW Body Shop manager when I spoke with him.  I requested a full inspection and investigation by BMW. I personally do not feel safe driving the car again after this most unnerving and frightening episode.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "530I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11715870,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/04/2026",
+   "dateComplaintFiled": "02/05/2026",
+   "vin": "WBA53FJ04RC",
+   "components": "UNKNOWN OR OTHER",
+   "summary": "The center console screen has a default screen that in part includes interior fan speed temperature. To adjust the fan speed and other A/C settings, the driver has to click press a small button at the bottom of the screen to open a new window. This is very dangerous because it requires the driver to take their eyes off the road. The car should have physical buttons for the fan speed. Since it doesn't have physical buttons for the fan speed, the car should have permanent fan speed buttons at the bottom of the screen at all times.   The bottom of the screen should include permanent buttons for air temperature, A/C on/off, and fan speed. BMW can easily do this with a software update.   The car does include the ability to make these changes through voice commands, but the voice commands do not always work.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "530I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11698655,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "11/10/2025",
+   "dateComplaintFiled": "11/10/2025",
+   "vin": "WBA53FJ07RC",
+   "components": "ELECTRICAL SYSTEM",
+   "summary": "Booked the appointment with BMW of Portland for November, 10,2025 For 9 o'clock AM. Arrived at dealership, checked in and left vehicle. I was called about 45 minutes later and informed that they would not be able to preform the recall repair on my car due to parts that were needed and associated with the recall , asked me to pay for it which I refused since it is part of the recall repair. I have never come across a vehicle recall where parts were not covered with the recall. I find this very strange, please investigate.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "530I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11653127,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/12/2024",
+   "dateComplaintFiled": "04/07/2025",
+   "vin": "WBA53FJ00RC",
+   "components": "SERVICE BRAKES, HYDRAULIC,ELECTRONIC STABILITY CONTROL (ESC)",
+   "summary": "The contact owns a 2024 BMW 530I. The contact received notification of NHTSA Campaign Number: 24V104000 (Electronic Stability Control (ESC), Service Brakes, Hydraulic); however, the part to do the recall repair was unavailable. The contact stated that the manufacturer had exceeded a reasonable amount of time for the recall repair. The manufacturer was not made aware of the issue. The contact had not experienced a failure. Parts distribution disconnect.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "530I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11650048,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "06/04/2024",
+   "dateComplaintFiled": "03/24/2025",
+   "vin": "WBA43FJ00RC",
+   "components": "STEERING,VEHICLE SPEED CONTROL,SERVICE BRAKES",
+   "summary": "Brakes did not work properly, brakes were hard and vehicle was not stopping, the vehicle was difficult to control because steering wheel was very hard too. This incident caused the vehicle to take a significant distance to stop and almost cause a crash with the vehicle in front. The incident was reported to dealer, dealer representative said there was a recall on the IBS and requested vehicle to be taken to dealership to replace defective part of the IBS. This recall was never notified to us (customers) by the manufacturer nor by the dealer. No warning messages or symptoms were presented before the brakes failure. Defective part was replaced by dealer at not cost to the us (customers).",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "530I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11650140,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "03/24/2025",
+   "dateComplaintFiled": "03/24/2025",
+   "vin": "WBA43FJ04RC",
+   "components": "SERVICE BRAKES",
+   "summary": "The dealer I bought the car from, BMW of Nashville (Brentwood) said they don't have parts to replace the faulty integrated brake module and refused to put me on a list to contact me when the parts come in.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "530I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11644735,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/12/2024",
+   "dateComplaintFiled": "02/25/2025",
+   "vin": "WBA43FJ08RC",
+   "components": "SERVICE BRAKES, HYDRAULIC,ELECTRONIC STABILITY CONTROL (ESC)",
+   "summary": "The contact owns a 2024 BMW 530I. The contact received notification of NHTSA Campaign Number: 24V104000 (Electronic Stability Control (ESC), Service Brakes, Hydraulic); however, the part to do the recall repair was unavailable. The contact stated that the manufacturer had exceeded a reasonable amount of time for the recall repair. The manufacturer was made aware of the issue. The contact had not experienced a failure. VIN tool confirms parts not available.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "530I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11626816,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/12/2024",
+   "dateComplaintFiled": "11/22/2024",
+   "vin": "WBA43FJ0XRC",
+   "components": "SERVICE BRAKES, HYDRAULIC,ELECTRONIC STABILITY CONTROL (ESC)",
+   "summary": "The contact owns a 2024 BMW 530I. The contact received notification of NHTSA Campaign Number: 24V104000 (Electronic Stability Control (ESC), Service Brakes, Hydraulic); however, the part to do the recall repair was unavailable. The contact stated that the manufacturer had exceeded a reasonable amount of time for the recall repair. The manufacturer was made aware of the issue. The contact had not experienced a failure. VIN tool confirms parts not available.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "530I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11622477,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/27/2024",
+   "dateComplaintFiled": "10/29/2024",
+   "vin": "WBA43FJ08RC",
+   "components": "SERVICE BRAKES, HYDRAULIC,ELECTRONIC STABILITY CONTROL (ESC)",
+   "summary": "The contact owns a 2024 BMW 530I. The contact received notification of NHTSA Campaign Number: 24V104000 (Electronic Stability Control (ESC), Service Brakes, Hydraulic); however, the part to do the recall repair was not yet available. The local dealer was made aware of the issue and confirmed that parts were not yet available. The contact stated that the manufacturer had exceeded a reasonable amount of time for the recall repair. The manufacturer was made aware of the issue. The contact had not experienced a failure. VIN tool confirms parts not available.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "530I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11622507,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/12/2024",
+   "dateComplaintFiled": "10/29/2024",
+   "vin": "WBA43FJ05RC",
+   "components": "SERVICE BRAKES, HYDRAULIC,ELECTRONIC STABILITY CONTROL (ESC)",
+   "summary": "The contact owns a 2024 BMW 530I. The contact received notification of NHTSA Campaign Number: 24V104000 (Electronic Stability Control (ESC), Service Brakes, Hydraulic); however, the part to do the recall repair was not yet available. The local dealer was contacted. The contact called two other local dealers, BMW of Fort Lauderdale (1441 S Federal Hwy., Fort Lauderdale, FL 33316) and BMW of Pembroke Pines (14800 Sheridan St., Pembroke Pines, FL 33331) and was informed that parts were not yet available. The vehicle was not diagnosed or repaired. The contact stated that the manufacturer had exceeded a reasonable amount of time for the recall repair. The manufacturer was made aware of the issue. The contact had not experienced a failure. VIN tool confirms parts not available.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "530I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11620205,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": true,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "08/02/2023",
+   "dateComplaintFiled": "10/16/2024",
+   "vin": "WBA43FJ03RC",
+   "components": "SERVICE BRAKES, HYDRAULIC,ELECTRONIC STABILITY CONTROL (ESC)",
+   "summary": "The contact owns a 2024 BMW 530i. The contact received notification of NHTSA Campaign Number: 24V104000 (Electronic Stability Control ESC, Service Brakes, Hydraulic) however, the part to do the repair was unavailable. The contact stated that the manufacturer exceeded a reasonable amount of time for the recall repair. The manufacturer was not made aware of the issue. The contact was driving at approximately 10 MPH and slowing to park her vehicle. The contact stated that she had depressed the brake pedal, however the vehicle was not stopping. The contact continued forward and she swerved to avoid crashing into a wall and stopped the vehicle on top of bushes. The vehicle was not damaged. The contact had the vehicle towed to a dealer who diagnosed the vehicle and determined that the brake system was operating correctly. The vehicle was not repaired. The contact stated that the loss of braking power had occurred prior to her receiving the recall notice. The contact stated that she called the dealer and was advised that parts were not available. The failure mileage was approximately 3,600. VIN tool confirms parts not available.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "530I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11607948,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": true,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "08/08/2024",
+   "dateComplaintFiled": "08/12/2024",
+   "vin": "WBA53FJ02RC",
+   "components": "UNKNOWN OR OTHER,SERVICE BRAKES,FORWARD COLLISION AVOIDANCE",
+   "summary": "I am a [XXX]  physician who has been driving for about 30 years.  Purchased this vehicle as a CPO with VIN as identified above. It is a 2024 BMW 530i X-drive from Faulkner BMW in Lancaster, PA. It was delivered on July 25, 2024. I have only put approximately 200 miles on in it since delivery.  On Thursday, [XXX] there was catastrophic failure of the vehicle.  At around [XXX] I was driving North on [XXX] about to make a right turn onto [XXX]  for work at the Hospital System where I am employed.   The traffic light was red and I was going about 5 miles an hour and attempted to brake the car.  There was an 18 wheeler truck about 10 to 15 feet ahead of me.  My car instead of braking underwent unintended acceleration.  Despite my efforts to slam on the brake, the car was accelerating.  None of the safety features including automatic emergency breaking were activated.  Unfortunately I collided with the 18 wheeler.  This was fortunate in some regards as I could have potentially struck a pedestrian or a motorcycle and have had a potentially fatal event.  Please note that additionally my airbag did not deploy.  The BMW dealership was contacted.  They dropped off a loaner vehicle and picked up my vehicle in a flat bed for investigation.  I was informed to contact BMW of North America which I did.  Interestingly enough, there were no safety recalls on this vehicle on [XXX].  The car is at the BMW dealership in Lancaster PA for their internal inspection.  I am being informed that the engineers are looking at the vehicle to find out what transpired.  Interestingly enough, I did receive a phone call from the service manager advising me on August 9 that there was a safety recall as a relates to the brakes. As I review the NHTSA site, there is now a recall on my actual vehicle's braking system.  I did a review of unintended acceleration and found multiple complaints. BMW is looking into this although into this, but external agency would be ideal.    INFORMATION REDACTED PURSUANT TO THE FREEDOM OF INFORMATION ACT (FOIA), 5 U.S.C. 552(B)(6)",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "530I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  }
+ ]
+}

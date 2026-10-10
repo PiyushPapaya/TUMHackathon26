@@ -1,0 +1,50 @@
+{
+ "count": 2,
+ "message": "Results returned successfully",
+ "results": [
+  {
+   "odiNumber": 11612115,
+   "manufacturer": "Hyundai Motor America",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "06/28/2024",
+   "dateComplaintFiled": "09/02/2024",
+   "vin": "KMTGE4S17RU",
+   "components": "UNKNOWN OR OTHER",
+   "summary": "type 2 charging not working genesis has a safety recall to fix it i called to make an appointment first they told me that the location near my house doesn't take new costumers in the end they made me an appointment to a dealer in new jersey far from my house but one day i get a voicemail that my appointment is canceled so i called up genesis to make a new appointment i called a few times but i cant seem to make an appointment i get transferred i told that all locations in my area doesn't have appointments for weeks or month's so basically i cant charge my car at home",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "GENESIS",
+     "productModel": "G80 ELECTRIFIED",
+     "manufacturer": "Hyundai Motor America"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11530817,
+   "manufacturer": "Hyundai Motor America",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "04/03/2023",
+   "dateComplaintFiled": "07/07/2023",
+   "vin": "KMTGE4S13PU",
+   "components": "SERVICE BRAKES",
+   "summary": "This is the same issue with the 2023 Electrified G80 Sedan and other Hyundai Group electric vehicles.  When using the car in \"i-Pedal\" (one-pedal driving) mode — the highest brake regen setting — the car can come to a complete stop whenever I lift my foot off the accelerator pedal, without touching the brake. While in this mode, when I fully lift my foot off the accelerator, the rear brake lights illuminate as expected, however, I often slowly reduce pressure on the accelerator pedal to come gently to a stop. I've noticed that it's possible (and often the case) that I can decelerate to a full stop without the brake lights illuminating until I fully release the brake pedal (at the very last moment before I stop). This means that I can be slowing down at a pretty significant rate without any indication to the drivers behind. Conversely, when using the automatic cruise control (that keeps the car a set distance from car ahead), the brake lights seem overly active and flash on and off quite frequently, especially when going down hills (even if there is no deceleration and the car seems to be coasting). Both of these anomalies seem to aggravate other drivers following the car for different reasons, since the vehicle's intent isn't being properly communicated. The lack of expected brake lights when decelerating gently via i-Pedal mode seems potentially dangerous. I would recommend that Hyundai tune their software so that the brake lights illuminate automatically past a set threshold of deceleration/regen braking (above what would be expected if the car were simply coasting), but not requiring the driver to fully lift off the pedal, since at that point, the rate of deceleration is already uncomfortably high for typical driving.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "GENESIS",
+     "productModel": "G80 ELECTRIFIED",
+     "manufacturer": "Hyundai Motor America"
+    }
+   ]
+  }
+ ]
+}

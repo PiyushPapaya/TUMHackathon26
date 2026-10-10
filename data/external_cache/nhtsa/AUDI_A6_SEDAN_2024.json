@@ -1,0 +1,72 @@
+{
+ "count": 3,
+ "message": "Results returned successfully",
+ "results": [
+  {
+   "odiNumber": 11765975,
+   "manufacturer": "Volkswagen Group of America, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "11/22/2024",
+   "dateComplaintFiled": "09/21/2026",
+   "vin": "WAUL2BF25RN",
+   "components": "SERVICE BRAKES",
+   "summary": "The brake vacuum is leaking and it makes the brake hard when the car is off, as soon as I start the car after pushing the brake hard enough, the brake pedal returns to its normal state. I am concerned that if something happens to the break while I am driving, this is very risky. I went to the dealer four times and they are always telling me that the car is normal but before it didn’t have this problem. So the problem is not confirmed by the dealer.  Also I have another Audi a6 same model that doesn’t have this problem.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "AUDI",
+     "productModel": "A6",
+     "manufacturer": "Volkswagen Group of America, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11763421,
+   "manufacturer": "Volkswagen Group of America, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "12/10/2025",
+   "dateComplaintFiled": "09/10/2026",
+   "vin": "WAUD3BF21RN",
+   "components": "FORWARD COLLISION AVOIDANCE",
+   "summary": "The contact owns a 2024 Audi A6. The contact stated that while driving at various speeds, the vehicle had experienced phantom braking, causing the vehicle to violently and abruptly stop in the middle of the road. The contact stated that the failure had occurred on several occasions, including while making a left turn in the middle of an intersection, and once while making a left-hand turn into the driveway. Additionally, on one occasion, the failure occurred and almost caused a second vehicle to crash into the rear of the vehicle. The vehicle was taken to the local dealer on several occasions, but the cause of the failure was not yet determined. The vehicle was not repaired. The manufacturer was notified of the failure. The failure mileage was 36,000.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "AUDI",
+     "productModel": "A6",
+     "manufacturer": "Volkswagen Group of America, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11757732,
+   "manufacturer": "Volkswagen Group of America, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "08/15/2026",
+   "dateComplaintFiled": "08/18/2026",
+   "vin": "WAUE3BF20RN",
+   "components": "POWER TRAIN",
+   "summary": "The contact owns a 2024 Audi A6. The contact stated that while driving at an undisclosed speed, the vehicle suddenly came to an abrupt stop. The contact stated that everything turned off except for the instrument panel, which displayed an accident warning light. The vehicle was not in a crash, but all the features became inoperable. The vehicle was able to be restarted and driven. The dealer was notified of the failure and acknowledge the failure. The vehicle was not repaired. The manufacturer was not notified of the failure. The failure mileage was 34,034.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "AUDI",
+     "productModel": "A6",
+     "manufacturer": "Volkswagen Group of America, Inc."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,336 @@
+{
+ "count": 15,
+ "message": "Results returned successfully",
+ "results": [
+  {
+   "odiNumber": 11704466,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "12/08/2025",
+   "dateComplaintFiled": "12/11/2025",
+   "vin": "WBY43EJ00RC",
+   "components": "SUSPENSION,UNKNOWN OR OTHER",
+   "summary": "[XXX]   Problem: Multiple tire blowouts causing safety hazards and air-suspension damage    Complaint Summary:  My 2024 BMW i7 has experienced multiple tire blowouts, including the most recent , two within days of each other (12/8/2025 and 12/10/2025). On 12/8/2025, BMW replaced the right rear tire and advised me that the vehicle was safe to drive. Two days later, the left rear tire suffered the same sudden failure, requiring another tow. These failures occurred during normal driving and immediately after BMW dealership inspection and clearance.  In addition to these recent events, earlier blowouts on this vehicle have already caused damage to the air-suspension system, requiring repairs. This indicates the issue is not normal tire wear but a recurring safety defect involving the vehicle’s weight, load distribution, tire load rating, or compatibility with the i7’s unusually high curb weight.  The repeated failures and resulting suspension damage raise concerns about a broader defect in the design, load-bearing capability, or inspection procedures for this model. This vehicle is unsafe to operate, and the recurring blowouts place my family and other motorists at risk.  I am requesting that NHTSA investigate whether the BMW i7 has a systemic safety issue related to tire integrity, load capacity, or suspension stress under normal driving conditions.  INFORMATION REDACTED PURSUANT TO THE FREEDOM OF INFORMATION ACT (FOIA), 5 U.S.C. 552(B)(6)",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "I7",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11700879,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "11/11/2025",
+   "dateComplaintFiled": "11/21/2025",
+   "vin": "wby53ej0xrc",
+   "components": "UNKNOWN OR OTHER",
+   "summary": "My knee has accidentally opened the driver door during travel which has caused the door to open unintentionally and brings the car to a stop in traffic.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "I7",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11685765,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/07/2025",
+   "dateComplaintFiled": "09/08/2025",
+   "vin": "WBY43EJ04RC",
+   "components": "ELECTRICAL SYSTEM,SERVICE BRAKES,FORWARD COLLISION AVOIDANCE",
+   "summary": "Yesterday again my 2024 I7 x50 bmw suddenly engaged its auto brakes. I have been in communication with different dealers trying to repair this problem as it almost cause another accident. Luckily there was no cars behind me and there was no cars ahead of me. The cars door also would not close. I have video evidence of this",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "I7",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11684707,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/02/2025",
+   "dateComplaintFiled": "09/03/2025",
+   "vin": "WBY43EJ04RC",
+   "components": "STEERING,ELECTRICAL SYSTEM,VISIBILITY/WIPER",
+   "summary": "This is the 4th time I am having issues with this car. Major safety issues. Yesterday during during on the 405 freeway. It suddenly started to rain, the wiper malfunction while in traffic and pouring rain. A week before this incident, the steering of the car kept moving suddenly out of my line. This time my son was in the car. These dealerships do not really care to even look at it, they drive the car for 2 miles and return it with a no problem found issue. Enough is Enough. The last time it was taking to the dealership after the automatic brakes would engage suddenly, they advise me that car was taken to a mechanic which is ridiculous. I am not in communication with BMW head quarters and they keep telling me to wait for a decision. This is not a waiting decision.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "I7",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11682433,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "08/21/2025",
+   "dateComplaintFiled": "08/22/2025",
+   "vin": "WBY43EJ04RC",
+   "components": "ELECTRICAL SYSTEM,SERVICE BRAKES,FORWARD COLLISION AVOIDANCE",
+   "summary": "This is has been continuous, yesterday my car braked on the freeway. Suddenly with no obstruction. The car behind me almost crashed into me and it would’ve been a very tragic event. I took it to the dealership and they don’t do anything, all they do is give it back to me. Yesterday also has loss of power too. I have alerted them many times, they keep saying to take it in but they don’t do anything and I don’t feel with this car. Please let BMW know because if something happens they will be heard responsible",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "I7",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11681797,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": true,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "08/15/2025",
+   "dateComplaintFiled": "08/20/2025",
+   "vin": "WBY43EJ06RC",
+   "components": "ELECTRICAL SYSTEM,BACK OVER PREVENTION,FORWARD COLLISION AVOIDANCE",
+   "summary": "On August 15, 2025 at approximately 6:30pm our 2024 BMW i7 eDrive50 with the Active Park Distance Control package accelerated in reverse when parking assistance was initiated to back out of a parking space at a small business facility, causing the vehicle to strike a tree. The cronology of the incident is as follows: 1. While the driver had his foot on the brake, he touched the assisted parking icon on the dashboard display to enable the automatic backup system. 2. The driver then lifted his foot from the brake and the vehicle accelerated in reverse despite the driver NOT having his foot on the gas pedal. 3. The backup camera did not engage or show the backup view when the car was moving quickly in reverse. 4. The driver slammed on the brake just as the vehicle struck a tree with the rear right bumper and panel. In summary, the automated parking space back up feature malfunctioned by accelerating in reverse while the driver's foot was not on the gas pedal. Simultaneously, the back up camera did not engage to show the rear view while the vehicle was moving in reverse. This malfunction created a safety risk that could have put other vehicles, people or property at risk of damage or injury, beyond the estimated $8,000-$10,000 damage sustained by this BMW i7. A certified BMW collision repair facility has inspected this vehicle and are awaiting inspection from BMW customer support. The collision repair facility was not able to find a video of the incident in the vehicle camera history files or in any alerts. The driver has not attempted to reproduce the malfunction. The vehicle is awaiting inspection from BMW customer support.  There were no warning lamps or messages displayed during or after the accident.  BMW customer support has been contacted.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "I7",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11675784,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "07/22/2025",
+   "dateComplaintFiled": "07/24/2025",
+   "vin": "WBY43EJ04RC",
+   "components": "ELECTRICAL SYSTEM,SERVICE BRAKES,FORWARD COLLISION AVOIDANCE",
+   "summary": "This is the 5th time my cat suddenly brakes in the middle of traffic with no obstruction. I keep taking it to the dealership and they drive it for 1 mile and give it back. I am fed up and I have my family in the car. Last time I took it, they said something the car doesn’t recognize a driver   This is a electric car.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "I7",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11666432,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "06/09/2025",
+   "dateComplaintFiled": "06/11/2025",
+   "vin": "WBY43EJ04RC",
+   "components": "ELECTRICAL SYSTEM,UNKNOWN OR OTHER,SERVICE BRAKES",
+   "summary": "I have now experienced multiple instances where the vehicle suddenly brakes on its own while driving at normal speeds, without any obstruction or hazard ahead. This is not only unacceptable — it's extremely dangerous, putting both myself and other drivers at risk of serious injury. Despite bringing the vehicle in twice to the dealership, the issue persists. I continue to receive dashboard malfunction alerts, and the automatic braking problem has not been resolved. Each time, I am left without a vehicle, impacting my ability to work. I did not purchase a $100k+ vehicle to live in fear of sudden, unpredictable, and life-threatening malfunctions. Today, while driving, the vehicle completely shut off in motion, creating a highly dangerous situation. This follows multiple previous incidents where the car automatically braked without cause and displayed repeated malfunction notifications on the dashboard. I have brought the car to the dealership twice, and yet the problem persists. This is not only unacceptable — it's an imminent risk to my safety and the safety of others on the road. The fact that a brand-new luxury vehicle with this price tag continues to experience such serious failures is beyond frustrating — it is life-threatening.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "I7",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11658955,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/05/2025",
+   "dateComplaintFiled": "05/05/2025",
+   "vin": "WBY43EJ04RC",
+   "components": "SERVICE BRAKES,FORWARD COLLISION AVOIDANCE",
+   "summary": "This is the 3rd time my car suddenly engages automatic brakes without any obstruction ahead of me and around me. I took it to the dealership about this issue 2 times.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "I7",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11630137,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "11/09/2024",
+   "dateComplaintFiled": "12/11/2024",
+   "vin": "WBY43EJ0XRC",
+   "components": "SUSPENSION",
+   "summary": "On November 9, 2024 while driving the vehicle in light traffic on the 405 southbound between the 101 and the 10 freeways, the right front of the vehicle made a cluck noise. There were no obsticales on the freeway and no other vehicle was involved. Shorthly thereafter, the vehicle made another loud clunk noise from the right front of the vehicle. I exited the 405 freeway and turned right. Within a mile, the right front suspension totally collapsed causing the car to careen left. On the street I was on, there is a center median with a curb. the car rode the curb for several feet and the left front end of the vehicles suspension collapsed. The car came to a halt and was towed to the BMW dealer where I leased the car. The car computer said chassis function restricted. Fortunately there were no other vehicles involved since the car was no longer drivable after the catastrophic suspensinon collapse.   It should also be noted that for the first 3 months after leasing this vehicle, the computer did not recognize the keys or fobs (being locked out of the car consistently) and after numberous attempts to fix the matter, BMW had the vehicle for over 6 weeks. It is evident that the i7 EDrive 50 has serious safety issues that may be related to its computer system.  These two issues should be looked at.  Had the suspension collapsed on the freeway the car most likely would have been in a serious collision.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "I7",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11626164,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/10/2024",
+   "dateComplaintFiled": "11/19/2024",
+   "vin": "WBY43EJ01RC",
+   "components": "SERVICE BRAKES, HYDRAULIC,ELECTRONIC STABILITY CONTROL (ESC)",
+   "summary": "The contact owns a 2024 BMW I7. The contact stated while driving approximately 45 MPH, the \"Inability to Drive\" message was displayed on the instrument panel and the vehicle suddenly lost motive power. The contact received notification of NHTSA Campaign Number: 24V104000 (Electronic Stability Control (ESC), Service Brakes, Hydraulic); however, the part to do the recall repair was unavailable. The contact stated that the manufacturer had exceeded a reasonable amount of time for the recall repair. The manufacturer was not made aware of the failure. The failure mileage was approximately 7,500. VIN tool confirms parts not available.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "I7",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11622741,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "08/01/2024",
+   "dateComplaintFiled": "10/30/2024",
+   "vin": "WBY43EJ05RC",
+   "components": "SERVICE BRAKES, HYDRAULIC,ELECTRONIC STABILITY CONTROL (ESC)",
+   "summary": "The contact owns a 2024 BMW I7. The contact stated that the vehicle failed to respond when the brake pedal was depressed. The contact stated that the brakes were occasionally inoperable. The contact had been driving 25 MPH due to concerns about the brakes failing with his children inside the vehicle. The contact received notification of NHTSA Campaign Number: 24V104000 (ELECTRONIC STABILITY CONTROL (ESC), SERVICE BRAKES, HYDRAULIC); however, the part to do the recall repair was not yet available. The local dealer was not contacted. The contact stated that the manufacturer had exceeded a reasonable amount of time for the recall repair. The manufacturer was not made aware of the issue. The failure mileage was approximately 2,000. VIN tool confirms parts not available.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "I7",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11578380,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "03/15/2024",
+   "dateComplaintFiled": "03/20/2024",
+   "vin": "WBY43EJ08RC",
+   "components": "SUSPENSION",
+   "summary": "Last week while driving,  one of the front corners  level suddenly went down in the middle of the road. Car was towed to the dealership. After it was inspected by BMW dealership I was informed that there is a suspension damage and one tire rim damage \" due to impact\" and either the car  hit something or had pothole incident. I did not run or hit any object and did not drive over major potholes. So the estimate for repair of the right front air spring strut, graphed alignment and right front rim replacement was for 8200$.  The car is 3 months old and top tier BMW 7 series. I used to drive 540 just before I got this new 7 series, and i had it for almost 5 years , had been through different potholes, different quality roads, had multiple issues with run flat tires but never had an issue with the suspension. Should I question the quality of the car and parts being used?",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "I7",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11565724,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "12/15/2023",
+   "dateComplaintFiled": "01/16/2024",
+   "vin": "WBY53EJ02RC",
+   "components": "ELECTRICAL SYSTEM",
+   "summary": "The contact owns a 2024 BMW I7. The contact stated that the vehicle had a button on the door armrest that opened the door automatically while driving. The dealer was notified and the vehicle was updated to allow the door to open at 3 MPH or lower speeds. The manufacturer was notified of the failure.  The failure mileage was unknown.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "I7",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11563276,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "06/01/2023",
+   "dateComplaintFiled": "01/03/2024",
+   "vin": "WBY53EJ02RC",
+   "components": "LATCHES/LOCKS/LINKAGES",
+   "summary": "The contact owns a 2024 BMW I7. The contact stated while reversing at approximately 5 MPH, the driver's side door opened automatically after the contact’s knee struck the door button. There were no warning lights illuminated. The contact called the local dealer, but the vehicle was not diagnosed or repaired. The manufacturer was contacted but provided no assistance. The failure mileage was approximately 1,200.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "I7",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  }
+ ]
+}

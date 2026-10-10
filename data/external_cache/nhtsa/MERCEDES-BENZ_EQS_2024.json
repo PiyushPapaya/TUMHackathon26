@@ -1,0 +1,292 @@
+{
+ "count": 13,
+ "message": "Results returned successfully",
+ "results": [
+  {
+   "odiNumber": 11756434,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "05/09/2025",
+   "dateComplaintFiled": "08/12/2026",
+   "vin": "W1KCG2DB2RA",
+   "components": "WHEELS",
+   "summary": "At vehicle mileage 11,308 with original tires and traveling at highway speed of approximately 70 miles per hour on an interstate highway, the right rear tire suffered a catastrophic, sudden blowout. The loss of control placed the vehicle and its occupants in immediate danger of collision with surrounding highway traffic. The vehicle was towed to Mercedes-Benz of Hilton Head where both rear tires were found to have worn excessively on the inside of the tire due to excessive negative camber built into the factory suspension geometry.  Ten days after the blowout, we presented the vehicle to Mercedes-Benz of Asheville for follow-up inspection. The service department informed us that the replacement tires installed at Hilton Head, while of the correct size, were “non-matching of front stock tire” in that they were not run-flat or noise-canceling and we purchased a second set of replacement tires at the factory-specified grade. The underlying cause of the original failure—the rear suspension geometry—was not examined, corrected, or documented at this visit.  At vehicle mileage 16,502 and prior to a long-distance road trip, we specifically presented the vehicle to Mercedes-Benz of Asheville to request a dedicated safety inspection of the tires, wheel alignment, and brakes. The service department examined the vehicle and explicitly informed us that the alignment was good and the tires were safe for travel. Approximately 2,864 miles into travel following that clearance, the right rear passenger tire again suffered a catastrophic blowout. Both rear tires again were found to be excessively worn on the inside edge.  The evidence is no longer circumstantial. The 2024 EQS 450+ is manufactured with rear wheels carrying a significant degree of intentional negative camber—the tops of the rear wheels are angled measurably inward at the factory.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-BENZ",
+     "productModel": "EQS 450+",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11743069,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "06/07/2026",
+   "dateComplaintFiled": "06/09/2026",
+   "vin": "w1kcg2db4ra",
+   "components": "STEERING,ELECTRICAL SYSTEM,SERVICE BRAKES",
+   "summary": "we list the car on 2024 in the same year, EQS450+ 2024 model from S.M Dealer. In a few months after drove the car , I notice about the break having the problem, I took the car to S.M repair center,. Then again, a few months after the same problem, then Mr. Antonio Aranda, the service advisor, has indicated that the car break has been ok and there is no issue. We took the care gain, we had the same problem, and we have told by the same person that there are 2 recalls for this car, I asked why they didn't tell me about the recall, and got no respond.   For the 3rd time I took the car to them with the new problem as a very loud explosion sound and a big spark when I was driving on the freeway, witch it call pyrofuse activatin high voltage pyrotechnic disconnect. It basically computer battery electrical failure. When we told Mr. Antonio about he went under the car and took a picture and then showed us a whole and told us because we drove over a bump on the road without testing the car ( study show the whole created by the explosion ), I told him about 6 time that there is no bump in the road we take, and 1 time after we find out on that report. again, I made appointment to Beverly Hills MB last week because the car suddenly pulled to the right lain and almost hitting the car on the right lain While when I was waiting for my appointment then this Catastrophic situation happened to me, I was exiting from [XXX] that going home, after a few minutes my car has Jolted toward the front with the strongest way and locked up the car and stopped, which is Phantom Braking Emergency break malfunction, also called Catastrophic Uncommented Deceleration. i have to mention the car has been drove for 14000 miles since 2024 duo to the dangerous matters  I was 4 mints away from my grave only because of the MB dishonesty and lie.  This case is clearly [XXX] case, and I need immediate respond and you must send a copy to the corporation, I am not able to risk  INFORMATION REDACTED PURSUANT TO THE FREEDOM OF INFORMATION ACT (FOIA), 5 U.S.C. 552(B)(6)",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-BENZ",
+     "productModel": "EQS 450+",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11737017,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 1,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "04/24/2026",
+   "dateComplaintFiled": "05/11/2026",
+   "vin": "4JGDM2EB6RA",
+   "components": "AIR BAGS,STRUCTURE,SERVICE BRAKES",
+   "summary": "I am submitting this report regarding a serious and potentially fatal unintended vehicle acceleration incident that occurred immediately after my vehicle was returned from repair.  I originally brought the vehicle to the dealership’s body shop following a collision. The repairs included the replacement and repair of cracked grille covers, sensors, rear damage, and the rear camera system. The vehicle remained at the repair facility for approximately one month during the repair process.  After finally picking up the vehicle, I drove and tested it for many miles without noticing any obvious issues. I then parked in front of a shopping center. The vehicle was fully stopped, and I shifted the transmission into PARK. After engaging PARK, I removed my foot from the brake pedal. At that exact moment, the vehicle suddenly and violently lunged forward on its own without any warning or driver input. The vehicle accelerated into a concrete pillar located less than two feet in front of the parking space.  The impact was severe enough to deploy two airbags and caused a very loud, explosive sound inside the vehicle. The force of the collision shocked the interior seats and coverings, and I was left disoriented and briefly unconscious. This incident could easily have resulted in a fatality if a pedestrian or another person had been standing in front of the vehicle at the time of the unintended acceleration. I am requesting a full investigation into the cause of this sudden forward movement after the vehicle had already been stopped and shifted into PARK, especially considering the recent repair work involving sensors and collision-related components. This was an extremely dangerous incident and raises serious concerns about vehicle safety and possible malfunction before or after repair.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-BENZ",
+     "productModel": "EQS 450 4MATIC",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11736672,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "01/30/2026",
+   "dateComplaintFiled": "05/08/2026",
+   "vin": "W1K6X7GB8RA",
+   "components": "UNKNOWN OR OTHER",
+   "summary": "2024 Mercedes-Maybach S 580 4MATIC, VIN [XXX] , sold to me on 01/21/2026 by Peoria Motor Company LLC d/b/a Mercedes-Benz of [XXX]  for $144,995, financed by Mercedes-Benz Financial Services. The dealer's Certified Pre-Owned Inspection Report is dated 01/28/2026 — seven days AFTER contract and one day AFTER the vehicle was shipped to me in California — meaning no valid CPO inspection existed at sale. The dealer's own Service Invoice XXX dated 01/06/2026 shows Line G \"rear bumper damage — Recommended NOT Performed,\" confirming the dealer knew of unrepaired damage and sold the vehicle anyway. Independent iCrash report #XXX documents $15,140.03 in prior collision damage across 58 line items not disclosed at sale. Odometer disclosures are inconsistent across documents (25,541 / 25,534 / 25,535-in / 25,541-out). The Maybach hood ornament shown in the listing was replaced with a standard three-pointed star at delivery (iCrash lines 18 and 45). Vehicle was delivered to a Rocklin, California parking lot at 10:57 PM. After-sal [XXX]  by the seller to a Mazda dealership \"after 5 PM.\" A formal demand was sent April 16, 2026; manufacturer's reply on April 21, 2026 addressed only Lemon Law and ignored the disclosure violations. A Final Notice was issued May 8, 2026. I am filing concurrent complaints with FTC, CFPB, California Attorney General, California DMV, California Bureau of Automotive Repair, Arizona Attorney General, and Arizona MVD Dealer Fraud Investigations. A signed Consumer Complaint sworn under penalty of perjury is available on request INFORMATION REDACTED PURSUANT TO THE FREEDOM OF INFORMATION ACT (FOIA), 5 U.S.C. 552(B)(6)",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-BENZ",
+     "productModel": "EQS SUV 580 4MATIC",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11730842,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": true,
+   "numberOfInjuries": 4,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "04/11/2026",
+   "dateComplaintFiled": "04/13/2026",
+   "vin": "4JGDM2DB1RA",
+   "components": "POWER TRAIN,ELECTRICAL SYSTEM,FUEL/PROPULSION SYSTEM",
+   "summary": "On [XXX] at approximately [XXX] PDT, a 2024 Mercedes-Benz EQS SUV 450+ caught fire at an intersection in Irvine, California. The vehicle was being driven normally. It was NOT charging. It was NOT in a collision. It was stopped at the intersection when the fire began. There was no warning.  Four occupants were inside: the driver (age [XXX] ), two minor children (ages [XXX]  and [XXX] ), and one elderly passenger (age [XXX] ). All four escaped, but narrowly — the rear child safety locks barely released in time for the children to exit. The vehicle sustained catastrophic cabin burn-through and is a total loss.  Smoke and flames appeared to originate from beneath the vehicle, consistent with a thermal event in the under-floor high-voltage lithium-ion battery pack, pending expert investigation.  This vehicle is within the population of NHTSA Recall 24V-372 (Mercedes-Benz battery management system software defect, 14,912 2023-2025 EQE/EQS units, including 551 units of the 2024 EQS SUV 450+). Mercedes documented in its Part 573 report that it received field reports of this defect in October 2023 and waited approximately seven months before filing the recall.  Mercedes acknowledged fire risk in the EQS platform in NHTSA Recall 24V-115, stating \"a risk of fire cannot be ruled out.\" In February 2026, Recall 26V-073 ordered full battery replacement in EQB vehicles after Mercedes admitted prior software remedies were failed remedies. On [XXX], a Mercedes EQE caught fire spontaneously in a parking garage in Incheon, South Korea while parked and not charging, damaging 140 vehicles.  The fire in this vehicle occurred at zero mph with two young children and an elderly grandmother trapped behind child-locked rear doors. The fire department and police responded. The vehicle is preserved pending expert inspection.  I request NHTSA ODI open a formal investigation into spontaneous battery fire risk in the Mercedes EQ platform. INFORMATION REDACTED PURSUANT TO THE FREEDOM OF INFORMATION ACT (FOIA), 5 U.S.C. 552(B)(6)",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-BENZ",
+     "productModel": "EQS 450+",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11724493,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 1,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/28/2026",
+   "dateComplaintFiled": "03/15/2026",
+   "vin": "4jgdm2dbxra",
+   "components": "STRUCTURE",
+   "summary": "Trunk opening and closing without warning. First incident occurred when sunroof was open and wouldn't close. Trunk would randomly open even when the car was parked and locked. Trunk opened when car was off and parked and pinned my 5 year old son between the trunk and our garage door. Trunk closed without warning and almost decapitated my husband and son Additionally, the door handles on the exterior of the car are constantly closing on our hands, pinching fingers and hands.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-BENZ",
+     "productModel": "EQS 450+",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11721984,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "06/09/2025",
+   "dateComplaintFiled": "03/04/2026",
+   "vin": "4JGDM2EB5RA",
+   "components": "ELECTRICAL SYSTEM",
+   "summary": "Signs of arcing on high voltage charge port.  The issue was first identified and reported to an authorized Mercedes-Benz dealership (Pleasanton, CA) at approximately 41,000 miles. Despite the safety implications, the dealership chose not to perform a repair has denied warranty coverage, claiming Electrify America charging station for the caused.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-BENZ",
+     "productModel": "EQS 450 4MATIC",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11700001,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "11/17/2025",
+   "dateComplaintFiled": "11/18/2025",
+   "vin": "4JGDM2EB8RA",
+   "components": "STEERING,LANE DEPARTURE,FORWARD COLLISION AVOIDANCE",
+   "summary": "While driving, the vehicle’s lane keeping system applied an unintended and aggressive steering input during a lane change. I was merging left when the system suddenly forced the steering sharply to the right without driver command. This was not a gentle correction—it was a strong, unexpected movement that could have caused a collision if another vehicle was nearby.  In addition, the vehicle has ongoing intermittent ADAS malfunctions, including false forward-collision warnings, proximity sensors activating with no obstacles present, and Park Assist activating while the vehicle is moving on normal roads. I’ve also received messages such as “camera obstructed/visibility blocked” and “content unavailable in current vehicle position,” with ADAS features disabling themselves temporarily.  These issues have occurred multiple times and continue to reappear even after several repair attempts by the dealer. Because the defects happen randomly and cannot be reliably reproduced, the vehicle feels unsafe to operate and unpredictable. The steering, sensors, and driver-assist systems do not appear to function correctly or consistently.  The vehicle is available for inspection.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-BENZ",
+     "productModel": "EQS 450 4MATIC",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11668604,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "06/08/2025",
+   "dateComplaintFiled": "06/23/2025",
+   "vin": "W1KCG2EB8RA",
+   "components": "FORWARD COLLISION AVOIDANCE,LANE DEPARTURE",
+   "summary": "The EQS450's delivery was taken from the sonic walnut creek CA dealer on [XXX],  the vehicle has ACC and brake assists malfunctioning issues. Phantom braking issues. On [XXX], I was traveling on Interstate at 70-75 mph with no nearby vehicles when the car suddenly braked as if there was a pending collision. It was very scary, it was so violent I thought I had hit something in the road, but it was a clear, dry, sunny day with no road hazards, obstacles or anything else that would have caused it. My wife’s head whipped back and forth, resulting in an enduring headache for her through the rest of the evening. MB Naperville serviced vehicles twice in the past three months , updated software often and again in the next three days, we experienced a sudden and hard stop while driving around 65 mph up a hill. It was a violent and sudden jolting stop. We feel hazardous  and untrustworthy to drive the EQS450. MBUSA Case #[XXX] (6/18th) ,CASE [XXX] (6/19th - Opened by Mercedes Benz Naperville IL dealer). Appreciate your help, and options available.  INFORMATION REDACTED PURSUANT TO THE FREEDOM OF INFORMATION ACT (FOIA), 5 U.S.C. 552(B)(6)",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-BENZ",
+     "productModel": "EQS 450+",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11668659,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "06/22/2025",
+   "dateComplaintFiled": "06/23/2025",
+   "vin": "4JGDM2EB8RA",
+   "components": "STRUCTURE",
+   "summary": "Sunroof glass spontaneously shattered while driving. No rocks or other vehicles were around",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-BENZ",
+     "productModel": "EQS SUV 450 4MATIC",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11644135,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/20/2025",
+   "dateComplaintFiled": "02/21/2025",
+   "vin": "4JGDM2EB9RA",
+   "components": "UNKNOWN OR OTHER",
+   "summary": "Driving approx 45mph on a highway without any cars nearby. Sunroof spontaneously exploded. All of the sunroof glass instantly demolished without anything hitting it.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-BENZ",
+     "productModel": "EQS SUV 450 4MATIC",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11643997,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 2,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/14/2025",
+   "dateComplaintFiled": "02/20/2025",
+   "vin": "4JGDX5FB2RA",
+   "components": "STRUCTURE",
+   "summary": "Panoramic Sunroof imploded and sent shattered glass shards in to the car while driving at normal speed.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-MAYBACH",
+     "productModel": "EQS SUV 680 4MATIC",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11629950,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/16/2024",
+   "dateComplaintFiled": "12/10/2024",
+   "vin": "W1KCG4EB6RA",
+   "components": "SERVICE BRAKES,FORWARD COLLISION AVOIDANCE",
+   "summary": "My Mercedes EQS 580 Sedan has had numerous \"phantom\" braking issues since purchase on [XXX]. While driving on Interstate the vehicle has hard braked multiple times like it was sensing an imminent collision though no collision was imminent. This puts the lives of other motorists and myself in danger. In addition to Interstate driving, the \"phantom\" braking has occurred several times when leaving a 4way stop. It again appears to sense an imminent collision when none does not exist. i have reached out to the Mercedes Benz Corporate USA offices several times. I was told a resolution to my request to terminate my lease due to safety concerns would be reached 6-8 weeks after September 26, 2024. It is now 10 weeks and 4 days after September 26 and they have still not responded to my multiple communications.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-BENZ",
+     "productModel": "EQS 580",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  }
+ ]
+}

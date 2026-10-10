@@ -1,4 +1,4 @@
-"""Pipeline: Rohdaten -> Belege -> Befunde -> Webbelege -> Anforderungen (Owner: Lead).
+"""Pipeline: Rohdaten -> Belege -> Befunde -> Webbelege + Behördendaten -> Anforderungen (Owner: Lead).
 
 Jede Stufe schreibt eine JSON-Datei nach data/processed/<szenario>/. Warum:
 - Die 4 Pfade arbeiten parallel. Pfad C muss nicht auf Pfad A warten, sondern nimmt
@@ -30,7 +30,7 @@ ROOT = Path(__file__).resolve().parents[2]
 RAW_DIR = ROOT / "data" / "raw"
 OUT_DIR = ROOT / "data" / "processed"
 STAGE_EXAMPLES = ROOT / "src" / "shared" / "beispiele" / "stufen"
-STAGES = ["evidence", "signals", "web", "requirements", "bundle"]
+STAGES = ["evidence", "signals", "web", "external", "requirements", "bundle"]
 
 
 def load_config(scenario_id: str) -> dict:
@@ -84,11 +84,17 @@ def run_stage(stage: str, cfg: dict) -> None:
         web_evidence, web_signals = research(scenario, signals)
         _write(sid, "web_evidence", web_evidence)
         _write(sid, "web_signals", web_signals)
+    elif stage == "external":  # Pfad B, ohne LLM: Behördendaten (NHTSA, nur US-Szenarien mit "nhtsa")
+        from evidence_external.nhtsa import collect
+        external_evidence, external_signals = collect(scenario)
+        _write(sid, "external_evidence", external_evidence)
+        _write(sid, "external_signals", external_signals)
     elif stage == "requirements":  # Pfad C, KI schlägt vor, Formel priorisiert
         from requirements_engine.derive import derive_all
         internal, counter = triangulated_internal(sid)
-        signals = internal + [Signal(**s) for s in read_stage(sid, "web_signals")]
-        evidence = [Evidence(**e) for e in read_stage(sid, "evidence") + read_stage(sid, "web_evidence")]
+        signals = internal + [Signal(**s) for s in read_stage(sid, "web_signals") + read_stage(sid, "external_signals")]
+        evidence = [Evidence(**e) for e in read_stage(sid, "evidence") + read_stage(sid, "web_evidence")
+                    + read_stage(sid, "external_evidence")]
         option_file = cfg["data"].get("option_list_file")  # None bei Kaltstart-Märkten (G68-CN)
         option_path = str(RAW_DIR / option_file) if option_file else None
         context = {**read_stage(sid, "context"), "option_list_path": option_path,
@@ -117,9 +123,10 @@ def data_coverage(evidence: list[dict]) -> dict:
 
 def bundle_stage(cfg: dict) -> None:
     sid = cfg["id"]
-    evidence = read_stage(sid, "evidence") + read_stage(sid, "web_evidence")
+    evidence = read_stage(sid, "evidence") + read_stage(sid, "web_evidence") + read_stage(sid, "external_evidence")
     internal, _ = triangulated_internal(sid)  # sonst sähe die App "web" nur an den reinen Web-Befunden
     signals = [s.model_dump(mode="json") for s in internal] + read_stage(sid, "web_signals")
+    signals += read_stage(sid, "external_signals")
     reqs = [Requirement(**r).model_dump(mode="json") for r in read_stage(sid, "requirements")]
     used = {e for s in signals for e in s["evidence_ids"]}  # nur zitierte Belege an die App geben
     context = _real_stage(sid, "context", {})  # Absatz, unbekannte Themen (A15), Chancen-Karte (A17)

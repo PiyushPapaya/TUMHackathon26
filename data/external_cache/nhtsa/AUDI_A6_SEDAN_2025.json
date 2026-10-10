@@ -1,0 +1,138 @@
+{
+ "count": 6,
+ "message": "Results returned successfully",
+ "results": [
+  {
+   "odiNumber": 11764670,
+   "manufacturer": "Volkswagen Group of America, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "08/17/2026",
+   "dateComplaintFiled": "09/16/2026",
+   "vin": "WAU3DAGH8SA",
+   "components": "FUEL/PROPULSION SYSTEM",
+   "summary": "I am the lessee of a 2025 Audi A6 e-tron, VIN [XXX], leased new from McGrath Audi in XXX. The vehicle has been defective continuously since delivery and is currently inoperable.  Current defect. After Audi applied software update campaign KT2, the vehicle will no longer accept a charge from any source. It will not charge on Level 1 at home, will not charge on my Level 2 home charger, and will not charge at Electrify America DC fast chargers. All three worked before the update. Because this is a battery electric vehicle, a vehicle that cannot charge cannot be driven. Audi has not provided a fix, a workaround, or a date by which a fix will exist. The defect was introduced by Audi's own software and is not attributable to my charging equipment, my electrical service, or my usage.  Prior defects. The power trunk/liftgate has failed repeatedly with a recurring dash warning light. It has been presented for this same defect on [X] separate occasions and has never been permanently repaired. It failed again after the most recent repair. I reported this in writing to Audi Customer Care on XXX and again on XXX. [Add any other defects and dates.]  Days out of service. The vehicle has been out of service for warranty repair for approximately [X] cumulative business days in thirteen months of a lease. A dated log of every visit, with repair order numbers, is attached.  Prior attempts to resolve. I escalated in writing to Audi Customer Care on XXX and XXX, requesting either a permanent repair or a replacement vehicle. Multiple tickets were opened with both McGrath Audi and Audi Customer Care. None produced a permanent repair. I most recently escalated on [Since XXX], requesting repurchase and a manufacturer-paid loaner. [State Audi's response, or \"Audi did not respond substantively.\"]  Effect on me. This is my only vehicle and I depend on it for work. I have made every lease payment on time  INFORMATION REDACTED PURSUANT TO THE FREEDOM OF INFORMATION ACT (FOIA), 5 U.S.C. 552(B)(6)",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "AUDI",
+     "productModel": "A6",
+     "manufacturer": "Volkswagen Group of America, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11749161,
+   "manufacturer": "Volkswagen Group of America, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "07/08/2026",
+   "dateComplaintFiled": "07/08/2026",
+   "vin": "WAUD3BF21SN",
+   "components": "LATCHES/LOCKS/LINKAGES",
+   "summary": "The contact owns a 2025 Audi A6. The contact stated that while parked, the vehicle locked independently, trapping the driver and passengers inside. The failure occurred repeatedly; during the first two occurrences, unknown warning lights illuminated. The vehicle was taken to the dealer, where a locking mechanism failure was diagnosed, and the vehicle was repaired; however, the failure persisted. The manufacturer was made aware of the failure. The contact stated that the vehicle was waiting to be towed to the dealer due to the same failure. The failure mileage was approximately 7,017.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "AUDI",
+     "productModel": "A6",
+     "manufacturer": "Volkswagen Group of America, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11732071,
+   "manufacturer": "Volkswagen Group of America, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "04/16/2026",
+   "dateComplaintFiled": "04/18/2026",
+   "vin": "WAU3CAGH5SA",
+   "components": "FORWARD COLLISION AVOIDANCE",
+   "summary": "On 04/16/2026 at 10:19 my car became unsafe to drive and I had multiple safety errors including: Active front assist unavailable  Adaptive cruise assist unavailable  Emergency assist unavailable  Traffic sign recognition unavailable  Adaptive light malfunction High beam assistant malfunction",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "AUDI",
+     "productModel": "A6",
+     "manufacturer": "Volkswagen Group of America, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11727126,
+   "manufacturer": "Volkswagen Group of America, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "08/05/2025",
+   "dateComplaintFiled": "03/25/2026",
+   "vin": "WAU3CAGH5SA",
+   "components": "STRUCTURE,FORWARD COLLISION AVOIDANCE,LANE DEPARTURE",
+   "summary": "The passenger doors fail to open from the outside. The only way to access them is through the driver's door and to use the inside door handles. The dealer is aware of the issue and it was caused by a software update and Audi/VW have no confirmed fix for it.  The cruise control does not always operate and gives an erroneous error stating \"door open.\" The dealer has confirmed this error and states there is no repair available. The issue was caused by a software update and Audi has no confirmed fix at the moment.  The trunk will not always latch. When closing the trunk goes to the first latch but then fails to fully close. The dealer has made multiple repair attempts and the issue still exists.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "AUDI",
+     "productModel": "A6",
+     "manufacturer": "Volkswagen Group of America, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11714296,
+   "manufacturer": "Volkswagen Group of America, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "01/13/2026",
+   "dateComplaintFiled": "01/29/2026",
+   "vin": "WAU2CAGH9SA",
+   "components": "ELECTRICAL SYSTEM",
+   "summary": "The car started with charging issues, Audi said they performed an update that was supposed to fix the problems however they did not complete the update like stated. . The car on 2 occasions while driving MMI screen went blank almost caused me to crash. There was no indication or warnings I took it in again where it’s still at. . The vehicle has been in service several times without being repaired. The charging issue has been on going and does not allow charging or disconnects. on several occasions the car driver assist like lane change braking have gone off without warning.even after saving my preference due to it not saving preference. I have called their support we have tried reinstalling the app. I have been told each time at the Audi service it’s something different. Currently where it’s being serviced again it’s now the charging port. And the battery gets to hot and the previous Audi service didn’t complete the update.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "AUDI",
+     "productModel": "A6",
+     "manufacturer": "Volkswagen Group of America, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11690751,
+   "manufacturer": "Volkswagen Group of America, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/26/2025",
+   "dateComplaintFiled": "10/01/2025",
+   "vin": "WAU2CAGH4SA",
+   "components": "ELECTRICAL SYSTEM,AIR BAGS,STRUCTURE",
+   "summary": "While driving slowly through a shopping mall parking lot with my wife and [XXX]  son onboard, the vehicle suddenly malfunctioned. The central locking system cycled repeatedly, and a warning briefly appeared mentioning a steering/light malfunction. Immediately afterward, the emergency release cables for all four doors deployed externally as if the car had been in a crash, even though no collision occurred. At the Audi dealership (Audi Sugar Land, TX), technicians confirmed by diagnostic scan that: The ABS control module stored a fault for “invalid data.” That invalid data was relayed to the airbag module, which falsely triggered a “crash response active” condition. All four door modules stored crash response faults and deployed the emergency release cables. The issue was confirmed, faults were cleared, but no parts were replaced. This false crash response put my family at risk because it activated emergency safety mechanisms without cause. My concern is that if invalid data can trigger a false crash event, it could also trigger other systems, such as airbags, leading to potential injury. The incident occurred with approximately 1,100 miles on the vehicle, one week after purchase, and immediately following the first 100% charge. The dealer documented the event and consulted Audi Technical Assistance, who authorized release of the vehicle after clearing the codes. This is a serious safety defect because critical systems activated without a real crash, creating unnecessary risk for occupants. The vehicle is available for inspection upon request. INFORMATION REDACTED PURSUANT TO THE FREEDOM OF INFORMATION ACT (FOIA), 5 U.S.C. 552(B)(6)",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "AUDI",
+     "productModel": "A6",
+     "manufacturer": "Volkswagen Group of America, Inc."
+    }
+   ]
+  }
+ ]
+}

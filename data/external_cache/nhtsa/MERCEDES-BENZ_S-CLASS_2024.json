@@ -1,0 +1,146 @@
+{
+ "count": 6,
+ "message": "Results returned successfully",
+ "results": [
+  {
+   "odiNumber": 11737040,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "05/01/2026",
+   "dateComplaintFiled": "05/11/2026",
+   "vin": "W1K6G6KB4RA",
+   "components": "ELECTRICAL SYSTEM,VEHICLE SPEED CONTROL,UNKNOWN OR OTHER",
+   "summary": "The control unit in my 2024 Mercedes 2580e triggers an increased number of system resets as part of fallback behavior. The increased number of resets resulted in the digital instrument cluster's display temporarily cutting out, and I had an entirely blank cluster. It came back on only after I stopped the vehicle, locked it, and waited approximately one hour to restart the car.  A recall was just issued for 144,000 AMG GT, C-class, E-class, SL-class, CLE-class, and GLC-class vehicles but NOT for the S Class. I have experienced twice that type of digital instrument cluster failure but my class of vehicle was not included. It should however given that it is the same type of instrument cluster as on the recalled vehicles.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-BENZ",
+     "productModel": "S 580 E",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11735535,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "05/04/2026",
+   "dateComplaintFiled": "05/04/2026",
+   "vin": "W1K6G7GBXRA",
+   "components": "TIRES",
+   "summary": "255/35R21 Unknown Bump on tire causing it to run flat.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-BENZ",
+     "productModel": "S 580",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    },
+    {
+     "type": "Tire",
+     "productYear": "9999",
+     "productMake": "PIRELLI",
+     "productModel": "TIRE",
+     "size": null,
+     "manufacturer": "Pirelli Tire, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11719416,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/09/2026",
+   "dateComplaintFiled": "02/20/2026",
+   "vin": "W1K6G7GB9RA",
+   "components": "POWER TRAIN,ELECTRICAL SYSTEM,VEHICLE SPEED CONTROL",
+   "summary": "I am reporting a recurring transmission/drivability issue with my 2024 Mercedes-Benz S580. The vehicle has been experiencing a harsh, abnormal shift between approximately 3rd and 4th gear at around 25–35 mph during normal acceleration. The shift feels like a sudden jerk or hesitation and does not feel consistent with normal operation.  The vehicle has been taken to an authorized Mercedes-Benz dealership multiple times for this issue. On a recent visit (February 9, 2026), a drive technician rode along and personally experienced the harsh shifting during a test drive. The dealership later confirmed in writing that the harsh shift was duplicated and documented on the repair order.  Despite prior service visits, the problem continues to occur intermittently. It has happened again after the most recent service.  In addition to the shifting concern, the vehicle has previously experienced power-related issues and steering/driver-assist warnings. There are not always warning lights before the harsh shift occurs.  The vehicle remains available for inspection. Because the shifting happens during normal acceleration at city speeds, it feels unpredictable and concerning from a safety standpoint.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-BENZ",
+     "productModel": "S 580",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11694946,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/15/2025",
+   "dateComplaintFiled": "10/22/2025",
+   "vin": "W1K6G7GB9RA",
+   "components": "SUSPENSION,POWER TRAIN,WHEELS",
+   "summary": "While driving my 2024 Mercedes-Benz S580, I have experienced multiple serious safety issues affecting both the power train and the wheels/tires.  1.Power Train / Transmission Failure: On two separate occasions at freeway speeds, the vehicle suddenly lost all power and came to a complete stop in the middle of the lane. I could not accelerate, steer to safety, or coast to the shoulder. The car was completely unresponsive while traffic was passing at high speed around me. I repeatedly turned the car off and back on, but it would not move for several minutes. This was extremely dangerous and created a serious risk of a rear-end collision.  •The issue has been inspected and documented by Fletcher Jones Motorcars (authorized Mercedes-Benz dealer) but has not been permanently resolved.  •No warning lights or messages appeared before the loss of power.  •The vehicle remains available for inspection.   2.Wheels / Tires / Suspension Defect: The factory 21-inch AMG V-multispoke wheels with Pirelli MO-spec tires have experienced repeated blowouts and rapid pressure loss—approximately 6 incidents over the past 18 months of me owning this car. These occurred during normal driving and required multiple replacements at Mercedes-Benz dealerships and an independent repair shop.  •The problem has been confirmed by Fletcher Jones Motorcars and Doza Garage (independent service center).  •The vehicle is available for inspection.  •Warning messages such as “Check Tires” and “Tire Malfunction” appeared after pressure loss was already occurring, not beforehand.  •Mercedes-Benz has not identified or provided a permanent remedy.  Both defects pose severe safety risks to occupants and other drivers. The transmission failures caused complete power loss in live freeway traffic, and the repeated tire malfunctions continue despite multiple replacements. The vehicle remains unsafe to operate, and all related records are available upon request.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-BENZ",
+     "productModel": "S 580",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11663143,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "05/16/2025",
+   "dateComplaintFiled": "05/27/2025",
+   "vin": "W1K6G6KB9RA",
+   "components": "VISIBILITY",
+   "summary": "The contact owns a 2024 Mercedes-Benz S 580-E. The contact stated that while driving 80 MPH, there was an explosive sound coming from the vehicle. There was no warning light illuminated. The contact drove to the nearest dealer where it was discovered that the sunroof had exploded without impact. The dealer provided an estimate for the repair. The vehicle was not repaired. The manufacturer was not notified of the failure. The failure mileage was approximately 29,000.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-BENZ",
+     "productModel": "S 580 E",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11623299,
+   "manufacturer": "Mercedes-Benz USA, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/09/2024",
+   "dateComplaintFiled": "11/02/2024",
+   "vin": "W1K6X7KB6RA",
+   "components": "UNKNOWN OR OTHER,FUEL/PROPULSION SYSTEM,FORWARD COLLISION AVOIDANCE",
+   "summary": "I was peed for theses cars and the never giving the car and not giving my money back and also I have the contract with him",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "MERCEDES-MAYBACH",
+     "productModel": "S 680",
+     "manufacturer": "Mercedes-Benz USA, LLC"
+    }
+   ]
+  }
+ ]
+}

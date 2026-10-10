@@ -14,6 +14,8 @@ data/*
 !data/raw/
 # Geprüfte Webantworten für die Offline-Demo (keine BMW-Daten); der volle Cache data/cache/ bleibt lokal
 !data/demo_cache/
+# Öffentliche Behördendaten (NHTSA, gemeinfrei) für die Offline-Demo; keine BMW-Daten
+!data/external_cache/
 
 # ─── Lokale Einstellungen von Claude Code und Entire ─────────────────────
 .claude/settings.local.json

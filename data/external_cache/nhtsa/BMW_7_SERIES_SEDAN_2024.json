@@ -1,0 +1,182 @@
+{
+ "count": 8,
+ "message": "Results returned successfully",
+ "results": [
+  {
+   "odiNumber": 11699171,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/24/2025",
+   "dateComplaintFiled": "11/13/2025",
+   "vin": "WBA43EH05RC",
+   "components": "POWER TRAIN,ELECTRICAL SYSTEM",
+   "summary": "The contact owns a 2024 BMW 750E. The contact stated while driving at an undisclosed speed, the high-voltage system warning light illuminated. The contact continued to drive the vehicle a short distance, and then the drive train warning light illuminated. The contact stated that the warning instructed the contact to contact the local service center. The vehicle was driven to the residence. The dealer was contacted, and the contact was informed that the vehicle was safe to drive. The contact stated that approximately three days later, while driving at an undisclosed speed with the cruise control feature enabled, the unattended driver warning light illuminated. The message indicated that 911 was being called, and the engine seized. The contact stated that the engine seized in the middle of the street. The contact stated that after waiting for several minutes, the vehicle was started and the vehicle was driven to a safe location. The vehicle was taken to the dealer; however, the failure was not duplicated. The contact was informed that the error messages were displayed due to the way the contact was driving. The manufacturer was made aware of the failure. The failure mileage was approximately 13,100.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "750E",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11661019,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "05/10/2025",
+   "dateComplaintFiled": "05/14/2025",
+   "vin": "WBA33EH06RC",
+   "components": "UNKNOWN OR OTHER",
+   "summary": "My car is about 1.5 yers old, bmw 740i.  I have been towed back to the dealer twice now for the same issue.i live in Illinois and work in Milwaukee, Wisconsin, so I drive on the expressway a lot.  I received the following message on my display while driving at 75-80 mph.  The message is “ inability to drive.”  I have received this 3 times.  When it occurs the steering is more difficult and, I am told starts to shut down major systems,  so needlessly to say quite unnerving and I had difficulty getting onto the shoulder.  The first occurrence was last year in October (2024).  I was afraid to drive the car when everyone else was travelling at high speeds.  So had it towed to dealer.  The dealer did not seem to understand this message and why it happened, and even what would happen.  They did a software upgrade and told me it was fixed. On [XXX] it happened again, same message although different look with the software upgrade, and had to be towed.  I don’t trust the car since no one can tell me why this is happening and what it does.  The dealer said they are not familiar with it.  I told them we have read online that others have had this happen, but no recalls or information.  If this message is in the software there has to be a data dictionary that explains, 1) what triggers it, 2) why, 3) what does it do, and 4) can it be disabled.  No one seems to know, and it is putting me at risk of an accident, that no one understands.  I am afraid to drive the car.  If I am in an accident because of this bmw should libel.  Please help!  INFORMATION REDACTED PURSUANT TO THE FREEDOM OF INFORMATION ACT (FOIA), 5 U.S.C. 552(B)(6)",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "740I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11652967,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "04/05/2025",
+   "dateComplaintFiled": "04/05/2025",
+   "vin": "WBA33EJ02RC",
+   "components": "SERVICE BRAKES",
+   "summary": "There is an open recall on my 2024 BMW 760i and BMW has NO FIX over a year now and the NHTSA is doing nothing to pressure BMW to fix this critical issue. This is unacceptable as it puts all of us as risk and the NHTSA has to take this issue serioulsy, I am unable to sell this vehicle or get a new insurance and you folks have put no pressure on BMW to fix this. Please CC the head of the NHTSA and start putting pressure on BMW to solve this.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "760I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11634634,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "01/01/2025",
+   "dateComplaintFiled": "01/07/2025",
+   "vin": "WBA23EH00RC",
+   "components": "EXTERIOR LIGHTING,SERVICE BRAKES",
+   "summary": "Car seems to be having issues with its brake function, especially in traffic or when coming to a complete stop from a distance. Also I am in fear that the issue will emerge while I am driving and I will not use the car with my 10 month old daughter.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "740I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11625939,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "11/18/2024",
+   "dateComplaintFiled": "11/18/2024",
+   "vin": "WBA33EJ02RC",
+   "components": "SERVICE BRAKES,FORWARD COLLISION AVOIDANCE",
+   "summary": "BMW issued a recall for several series including the BMW 760i x drive citing missing parts to the braking system which could cause the emergency braking and brakes to fail.  The recall was issued 10 months ago.  This was before I purchased the car.  I did not receive a recall notice until a month ago.  They did not disclose the recall at the time of the sale of the vehicle.  I drove the car for 5 months before being notified.  Before I received the recall notice I noticed some issues with the braking taking longer to stop. I then received the recall and contacted the dealer to fix the recall.  They said they had not received authorization to fix the recall from BMW.  I have not driven the car for fear of the brakes failing for over a month since I received the recall notice.  This is a $146,000 car.  The dealer said they have not been authorized by BMW to fix the recall.  How do you issue a recall on expensive cars and expect people to continue to pay for a car they can't drive?",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "760I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11620411,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/15/2024",
+   "dateComplaintFiled": "10/17/2024",
+   "vin": "WBA23EH04RC",
+   "components": "ELECTRONIC STABILITY CONTROL (ESC)",
+   "summary": "The contact owns a 2024 BMW 740i. The contact received a notification of NHTSA Campaign Number: 24V104000 (ELECTRONIC STABILITY CONTROL (ESC), SERVICE BRAKES, HYDRAULIC) however, the part to do the recall repair was not yet available. The local dealer was contacted. The contact stated that the manufacturer had exceeded a reasonable amount of time for the recall repair. The manufacturer was made aware of the issue. The contact had not experienced a failure. VIN tool confirms parts not available.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "740I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11620097,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/28/2024",
+   "dateComplaintFiled": "10/16/2024",
+   "vin": "WBA33EJ02RC",
+   "components": "SERVICE BRAKES",
+   "summary": "Multiple Brake system failures rendering the vehicle unsafe and undriveable.  Been in the dealer 3 times and not resolved.  Qualifies as a Lemon vehicle.  Car is not safe for my family and others on the road.  Car was from BMW Sterling in Virginia.  100 miles on the clock - new vehicle lease.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "760I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11562802,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": true,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "12/31/2023",
+   "dateComplaintFiled": "12/31/2023",
+   "vin": "WBA43EH02RC",
+   "components": "AIR BAGS",
+   "summary": "When I brushes a car, the dealer said Car has a recall for safety issue for airbags and will fix someone hit the front light with a low speed 20 mph on the street the old airbag open in the car for no reason to do this",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "750E",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  }
+ ]
+}

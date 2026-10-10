@@ -1,0 +1,842 @@
+{
+ "count": 38,
+ "message": "Results returned successfully",
+ "results": [
+  {
+   "odiNumber": 11732580,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "03/12/2026",
+   "dateComplaintFiled": "04/20/2026",
+   "vin": "5YJSA1E6XRF",
+   "components": "SUSPENSION,WHEELS,UNKNOWN OR OTHER",
+   "summary": "2024 Tesla Model S. Repeated rear tire and rear wheel failures with abnormal wear and possible rear alignment or suspension-related defect. Tesla service history shows repeated rear tire replacements beginning at about 5,165 miles, a later four-wheel alignment, a right rear tire replacement for uneven tire wear under the basic vehicle warranty at about 21,594 miles, a documented bent left rear wheel at about 27,047 miles, a left rear wheel replacement due to crack after a low-pressure/PULL OVER SAFELY alert at about 30,489 miles, and then a right rear tire blowout at about 38,358 miles. In the same March 12, 2026 service record, Tesla also noted inner sidewall damage on the opposite rear tire. Concern is an unresolved recurring rear tire, wheel, alignment, or suspension defect creating blowout risk and unsafe operation. Tesla has replaced tires and wheels but has not identified or corrected the root cause.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11709357,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "12/07/2025",
+   "dateComplaintFiled": "01/07/2026",
+   "vin": "5YJSA1E6XRF",
+   "components": "ELECTRICAL SYSTEM",
+   "summary": "The contact owns a 2024 Tesla Model S. The contact stated that after an update was performed over the air (OTA), the scroll option changed, and the contact was unable to control the speed of the vehicle. There was no longer a maximum speed limit. The local dealer was not contacted. The vehicle was not diagnosed or repaired. The manufacturer was not contacted. The failure mileage was approximately 5,000.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11691293,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/03/2025",
+   "dateComplaintFiled": "10/03/2025",
+   "vin": "5YJSA1E56RF",
+   "components": "LATCHES/LOCKS/LINKAGES",
+   "summary": "The design of the emergency opening (No power to normal opening system) of the rear passenger doors is flawed, unsafe and should never have been approved for production. This rear door emergency opening requires an occupant to reach below the seat, remove carpet and pull a manual release cable. During a fire with smoke in the passenger compartment, an occupant may not be able to visually locate the release cable, and has a much higher chance of becoming incapacitated and dying from smoke inhalation, as demonstrated in a Tesla Cybertruck accident with multiple smoke inhalation deaths in California Thanksgiving 2024. Another potential scenario is a frontal impact causing a front seat to move rearward, reducing the floorboard space between the front seat and access to the carpet and release cable. This system needs to be redesigned for this vehicle. If I had known about this system prior to purchase, it would have negatively impacted my buying decision.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11687621,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/16/2025",
+   "dateComplaintFiled": "09/16/2025",
+   "vin": "5YJSA1E56RF",
+   "components": "STEERING,LANE DEPARTURE",
+   "summary": "Sometimes while making ordinary and safe traffic maneuvers the Lane Departure Warning system sometimes emits a very loud, distracting, and startling emergency chime.  In particular it does this while turning into parking garages or driveways, which are already high-workload moments with high likelihood of nearby pedestrians and other vulnerable road users.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11676291,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "07/25/2025",
+   "dateComplaintFiled": "07/25/2025",
+   "vin": "5YJSA1E51RF",
+   "components": "AIR BAGS,SEAT BELTS",
+   "summary": "My car is displaying a message that the \"Front left safety restraint issue\". Airbags are off. brought the car in for service, they said they fixed some low voltage pin. Less than a week later the message appeared again. Tesla did not take this issue seriously -- I'm driving around with no airbags? The next available appointment is a month out for Tesla.   I've uploaded my Tesla invoice where they fixed it and a photo from today when the message is back again.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11647092,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "03/07/2025",
+   "dateComplaintFiled": "03/08/2025",
+   "vin": "5YJSA1E54RF",
+   "components": "ELECTRICAL SYSTEM,UNKNOWN OR OTHER",
+   "summary": "Today while driving the screen behind the driver steering wheel suddenly shut off and went black. I was unable to see if I am in Drive or reverse or what my speed is.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11645936,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "03/02/2025",
+   "dateComplaintFiled": "03/03/2025",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER,LANE DEPARTURE",
+   "summary": "While FSD was engaged. It made a sudden aggressive, swerving maneuver with no warning towards the cars next to us, sounded alarms, and then forcefully disengaged nearly causing an accident",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11646100,
+   "manufacturer": "Tesla, Inc.",
+   "crash": true,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "04/13/2024",
+   "dateComplaintFiled": "03/03/2025",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER",
+   "summary": "When parked behind another parallel parked car with no one behind me, it Auto shifted into drive instead of reverse which caused me to collide into the parked car infront of me.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11645730,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "03/01/2025",
+   "dateComplaintFiled": "03/01/2025",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER,FORWARD COLLISION AVOIDANCE",
+   "summary": "Speed offset is set to 10% but it keeps setting the max speed 40% higher, and then furthermore exceeds this max speed",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11644996,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/25/2025",
+   "dateComplaintFiled": "02/26/2025",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER",
+   "summary": "When driving it randomly displayed a message that it’s turning AC on automatically to “prevent fogging” which created fogging and reduced visibility to zero.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11644993,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/22/2025",
+   "dateComplaintFiled": "02/26/2025",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER,LANE DEPARTURE",
+   "summary": "When turning right from [XXX]  onto [XXX]  using my blinker, it sounded three beeps and jerked the wheel left towards the pedestrians in the crosswalk and the turning cars coming from [XXX]  onto [XXX]. I was allegedly driving manually, but the car decided to override my input autonomously. INFORMATION REDACTED PURSUANT TO THE FREEDOM OF INFORMATION ACT (FOIA), 5 U.S.C. 552(B)(6)",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11644086,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/21/2025",
+   "dateComplaintFiled": "02/21/2025",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER",
+   "summary": "It randomly turned the AC on automatically “to prevent fogging” which actually caused fogging and panic",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11642295,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 1,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/12/2025",
+   "dateComplaintFiled": "02/12/2025",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER,ELECTRICAL SYSTEM",
+   "summary": "I was using summon to pull my car forward out of the parking spot and when I let go of the button the car continue driving forward indefinitely until I chased it down and touch the door handle",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11642298,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/11/2025",
+   "dateComplaintFiled": "02/12/2025",
+   "vin": "5YJSA1E54RF",
+   "components": "ELECTRICAL SYSTEM",
+   "summary": "After updating to FSD 13.2.7 yesterday the vehicle turns left at a particular intersection and then drives on the left side of the road the wrong side of the road. Issue has been present for several versions and has been reported repeatedly.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11640433,
+   "manufacturer": "Tesla, Inc.",
+   "crash": true,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/02/2025",
+   "dateComplaintFiled": "02/03/2025",
+   "vin": "5YJSA1E55RF",
+   "components": "ELECTRICAL SYSTEM",
+   "summary": "The contact owns a 2024 Tesla Model S. The contact stated that while making a right turn, in self-driving mode, the vehicle began accelerating inadvertently and crashed into the front driver area of the other vehicle. No warning lights illuminated. There were no injuries and medical attention was not needed. A police report was not filed. The vehicle was not diagnosed or repaired. The manufacturer was notified of the failure. The failure mileage was approximately 2,000.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11636970,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "01/19/2025",
+   "dateComplaintFiled": "01/19/2025",
+   "vin": "5YJSA1E54RF",
+   "components": "FORWARD COLLISION AVOIDANCE,LANE DEPARTURE,ELECTRICAL SYSTEM",
+   "summary": "“Full self driving” was sitting at a red light at 5:07 PM and observed a light a block ahead of us turn green and accelerated through the red light with no warning or time to react",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11629236,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "12/06/2024",
+   "dateComplaintFiled": "12/06/2024",
+   "vin": "5YJSA1E54RF",
+   "components": "LANE DEPARTURE",
+   "summary": "10:12am 12/6/2024 autopilot randomly and suddenly starts jerking wheel back amd forth erratically and swerves all iver road onto wrong side of road. When i grab wheel to disengage it sounds alarms and alleges im departing my lane and activates lane departure/ assist despite the fact i have lane departure assist disabled",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11626018,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "11/18/2024",
+   "dateComplaintFiled": "11/18/2024",
+   "vin": "5YJSA1E54RF",
+   "components": "LANE DEPARTURE",
+   "summary": "3:17pm nov 18 2024 - I was driving manually and pulled into my driveway and subsequently my garage. I had the blinker on. As I went to turn into the garage, I heard three beeps and no message was displayed on the screen. The vehicle also jerked the steering wheel towards the wall. I have all lane departure warnings, and assistance settings turned off.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11625689,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "11/16/2024",
+   "dateComplaintFiled": "11/16/2024",
+   "vin": "5YJSA1E54RF",
+   "components": "LANE DEPARTURE",
+   "summary": "10:33am driving manually very safely blinker on 5mph to turn into driveway. As i turn, sounds 3 beeps and displays “vehicle departing lane” on screen.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11625246,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "11/14/2024",
+   "dateComplaintFiled": "11/14/2024",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER",
+   "summary": "When shifting from drive to reverse and beginning to reverse it, the car slammed on the brakes and shifted itself into park.  The manual states it should only happen when you unbuckle your seat belt, or open the door while in Drive or Neutral. [XXX]   INFORMATION REDACTED PURSUANT TO THE FREEDOM OF INFORMATION ACT (FOIA), 5 U.S.C. 552(B)(6)",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11623017,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/31/2024",
+   "dateComplaintFiled": "10/31/2024",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER,LANE DEPARTURE",
+   "summary": "Oct 31 4:03pm blinker on turning into gus’ parking garage off noriega  I have lane departure disabled, am manually driving under 15mph, and use proper blinker but this “safety feature” causes it to “jerk” the wheel and display warnings to the detriment of safety.  This affects the entire fleet and was never an issue before around 2022-2023.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11623018,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/31/2024",
+   "dateComplaintFiled": "10/31/2024",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER,LANE DEPARTURE",
+   "summary": "Oct 31 9:48am my blinker on taking on ramp to highway and it jerks wheel forcing me straight   I have lane departure disabled, am manually driving under 15mph, and use proper blinker but this “safety feature” causes it to “jerk” the wheel and display warnings to the detriment of safety.  This affects the entire fleet and was never an issue before around 2022-2023.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11623020,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/09/2024",
+   "dateComplaintFiled": "10/31/2024",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER,LANE DEPARTURE",
+   "summary": "I have lane departure disabled, am manually driving under 15mph, and use proper blinker but this “safety feature” causes it to “jerk” the wheel and display warnings to the detriment of safety.  This affects the entire fleet and was never an issue before around 2022-2023.  Oct 9th - 3:48pm blinker on turning into supercharger on geary blvd  Oct 4:09pm changing lanes with blinker on,  4:10pm left turn at intersection with blinker on",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11623022,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/05/2024",
+   "dateComplaintFiled": "10/31/2024",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER,LANE DEPARTURE",
+   "summary": "Oct 5th - blinker is on turning into driveway at 1mph and got the alarms / wheel jerking  I have lane departure disabled, am manually driving under 15mph, and use proper blinker but this “safety feature” causes it to “jerk” the wheel and display warnings to the detriment of safety.  This affects the entire fleet and was never an issue before around 2022-2023.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11623023,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/29/2024",
+   "dateComplaintFiled": "10/31/2024",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER,LANE DEPARTURE",
+   "summary": "Sept 29th 12:35pm passing truck double parked jerked wheel back towards truck  I have lane departure disabled, am manually driving under 15mph, and use proper blinker but this “safety feature” causes it to “jerk” the wheel and display warnings to the detriment of safety.  This affects the entire fleet and was never an issue before around 2022-2023.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11623024,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/27/2024",
+   "dateComplaintFiled": "10/31/2024",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER,LANE DEPARTURE",
+   "summary": "Sept 27th   8:59am turning into serramonte center, blinker was on, sounds alarms and jerks wheel  6:53 pm into garage my garage jerked wheel swerved towards wall   I have lane departure disabled, am manually driving under 15mph, and use proper blinker but this “safety feature” causes it to “jerk” the wheel and display warnings to the detriment of safety.  This affects the entire fleet and was never an issue before around 2022-2023.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11623026,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/26/2024",
+   "dateComplaintFiled": "10/31/2024",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER,LANE DEPARTURE",
+   "summary": "Sept 26 1:38pm pulling in garage it swerved wheel towards wall and sounded alarms  I have lane departure disabled, am manually driving under 15mph, and use proper blinker but this “safety feature” causes it to “jerk” the wheel and display warnings to the detriment of safety.  This affects the entire fleet and was never an issue before around 2022-2023.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11623027,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/25/2024",
+   "dateComplaintFiled": "10/31/2024",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER,LANE DEPARTURE",
+   "summary": "Sept 25  2:14pm pulling into garage and it swerved towards wall and sounded alarms  7:04pm turning into stonestown shopping center right from stop sign, alarms and jerking wheel force to go straight. Blinker was on.   I have lane departure disabled, am manually driving under 15mph, and use proper blinker but this “safety feature” causes it to “jerk” the wheel and display warnings to the detriment of safety.  This affects the entire fleet and was never an issue before around 2022-2023.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11623035,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/31/2024",
+   "dateComplaintFiled": "10/31/2024",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER,LANE DEPARTURE",
+   "summary": "7:38pm pulling into garage it jerked wheel right towards wall/edge of garage door assembly and sounded audible alarms (was driving manually and lane departure settings are allegedly disabled)",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11623019,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/25/2024",
+   "dateComplaintFiled": "10/31/2024",
+   "vin": "5YJSA1E54RF",
+   "components": "UNKNOWN OR OTHER,LANE DEPARTURE",
+   "summary": "Oct 25 3:15pm blinker is on for right turn but vehicle jerks wheel left forcing me straight and sounds alarms  I have lane departure disabled, am manually driving under 15mph, and use proper blinker but this “safety feature” causes it to “jerk” the wheel and display warnings to the detriment of safety.  This affects the entire fleet and was never an issue before around 2022-2023.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11616484,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/25/2024",
+   "dateComplaintFiled": "09/25/2024",
+   "vin": "5YJSA1E54RF",
+   "components": "STEERING,LANE DEPARTURE",
+   "summary": "Driving into my garage the vehicle is swerving the wheel and sounding alarms that I am “departing a lane” even though I do not have a lane departure Alerts or assistance enabled. Unlike Tesla response to my reports, this is when I am driving manually auto pilot is not engaged like they keep asserting",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11612498,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/03/2024",
+   "dateComplaintFiled": "09/04/2024",
+   "vin": "5YJSA1E66RF",
+   "components": "SUSPENSION",
+   "summary": "-The front suspension half shafts or CV joints produce a known vibration through the accelerator pedal, steering wheel at 25-40 mph during cold starts for the first 3-5 minutes of driving.  This is a factory new vehicle. The problem is regularly addressed on Tesla owner forums, noting it is present in all new Tesla Model S vehicles 2019 through 2024. -CV joint vibration is typically caused my misalignment that can ultimately lead to premature wear and failures in the suspension system and potentially the vehicle pulling to one side unexpectedly, potentially wobbling, and ultimately leading to a failure resulting in a potential impact with another object/vehicle. -Tesla Dealership acknowledged that the vibration concern is coming from the CV half shafts but did not have a solution and described the condition as a known issue that is just \"inherent to high performance vehicles.\"  In the past, TSBs were posted guiding users to lower the vehicle to reduce the misalignment, but it ultimately did not solve the problem. However, the TSB highlights/indicates that Tesla is aware of CV misalignment, which causes vibration.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11605696,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "07/31/2024",
+   "dateComplaintFiled": "07/31/2024",
+   "vin": "5YJSA1E57RF",
+   "components": "STEERING",
+   "summary": "Problem: turn signal based on buttons on the wheel (Tesla removed the stalks) After three months of ownership, I still can't signal in case of emergency, when a fast lane change is required, or when exiting from parking with the wheel turned. Issues: 1. I Can't find the buttons when the wheel is turned (buttons rotate with the wheel) 2. The buttons are located below the hand and not above it, so I need to search for them. I practically need to take my eyes off the road to find the buttons because they have no unique touch and feel. It does not work for emergencies and fast lane changes. 3. The pressure required is not unified.  Extreme pressure is required toward the edges of the button and other is no feeling where the edges are.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11596842,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "06/18/2024",
+   "dateComplaintFiled": "06/26/2024",
+   "vin": "5YJSA1E58RF",
+   "components": "ELECTRICAL SYSTEM,UNKNOWN OR OTHER,LATCHES/LOCKS/LINKAGES",
+   "summary": "My Tesla was parked unlocked in my garage.  I came out to drive it and all the doors were locked and would not open with my key card.  It also would not unlock with my cell phone app.  Tesla customer service also could not remotely unlock it.  The vehicle had to be towed to a Tesla Service Center where they forced open the window to gain access.  They stated the car needed a new control panel.    I have read where Teslas have locked up with children in the car and parent could not gain access to the car.  These situations need to be looked into since the Teslas locking up are not isolated incidences.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11591841,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "05/31/2024",
+   "dateComplaintFiled": "05/31/2024",
+   "vin": "5YJSA1E50RF",
+   "components": "VISIBILITY/WIPER",
+   "summary": "Windshield with distortions causing driving distractions and headaches.  I am on my third windshield with the same problem.  This seems to be a widespread issue in reviewing online forums.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11590545,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "05/24/2024",
+   "dateComplaintFiled": "05/24/2024",
+   "vin": "5YJSA1E54RF",
+   "components": "STEERING,UNKNOWN OR OTHER,LANE DEPARTURE",
+   "summary": "I have lane departure, avoidance in lane departure assist both turned off in the settings. Despite this, The alarms are constantly going off (Even when I am not departing a lane). It even overrides my steering inputs incorrectly! 8:28am 5/24/2024 for example, I am pulling into my garage and it’s yanking the steering wheel trying to crash me into the wall. I immediately verified the settings are all still turned off. I have an open service ticket with Tesla where I am supplying them dates and times every time it happens and no one is responding. Previously had them replaced the whole vehicle (lemon law), and it still happening.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11589894,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "05/20/2024",
+   "dateComplaintFiled": "05/21/2024",
+   "vin": "5YJSA1E57RF",
+   "components": "UNKNOWN OR OTHER",
+   "summary": "Car lacks a turn signal stalk. The turn signal buttons on the steering wheel move with the wheel, making it almost impossible to figure out where to press when the wheel is turned, without taking your eyes off the road. It's not a good idea to take your eyes off the road while turning. This makes signalling while exiting a round-a-bout essentially impossible.   In addition, even when going straight, it is easy to press the wrong button & signal left when you intend to turn right and vice versa, unless you look at the buttons. I don't think it is a good idea to keep looking away from the road for this purpose. I thought I'd get used to this & be able to operate them easily after a few thousand miles. So far, after 2,000 miles I still press the wrong button occasionally. This is not safe. This is a distraction.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11587563,
+   "manufacturer": "Tesla, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "03/28/2024",
+   "dateComplaintFiled": "05/07/2024",
+   "vin": "5YJSA1E56RF",
+   "components": "VISIBILITY/WIPER",
+   "summary": "My new car has severe distortion of the windshield and the tailgate glass which could make driving the car unsafe by distorting the lane markings, cars and streets, and/or by inducing dizziness. I took the car to Tesla service and was told that the issue is within specifications and that all other similar Teslas have the same glass issue and replacing the glass would not help the issue.   It seems that the glass supplier that Tesla is using has a poor manufacturing quality. The company does not seem to care. I hope you can investigate the issue and request that Tesla address the defective glass with the current supplier or switch to a better quality supplier.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "TESLA",
+     "productModel": "MODEL S",
+     "manufacturer": "Tesla, Inc."
+    }
+   ]
+  }
+ ]
+}

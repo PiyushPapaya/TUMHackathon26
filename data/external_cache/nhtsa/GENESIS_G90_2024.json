@@ -1,0 +1,72 @@
+{
+ "count": 3,
+ "message": "Results returned successfully",
+ "results": [
+  {
+   "odiNumber": 11753895,
+   "manufacturer": "Hyundai Motor America",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "03/27/2026",
+   "dateComplaintFiled": "07/30/2026",
+   "vin": "KMTFC4SD2RU",
+   "components": "UNKNOWN OR OTHER",
+   "summary": "I purchased this vehicle brand new in September 2024. Since the time of purchase, it has experienced numerous software-related issues that have affected the reliability and functionality of multiple systems.  Wi-Fi Connectivity  The in-vehicle Wi-Fi was inoperable for approximately 90 days (September 2024 through December 2024). The Wi-Fi issue returned in March 2026 and remains unresolved.  Calendar Synchronization  Calendar synchronization has never functioned properly since the vehicle was purchased and remains an ongoing issue.  Navigation and Weather Services Failures with the navigation and weather systems began to cascade into other software functions, causing additional features to malfunction, including:  Voice commands Delayed or unresponsive app commands Driver assistance features SOS functionality  The navigation, weather, and the related issues listed above have since been resolved. However, the Wi-Fi connectivity and calendar synchronization issues continue to persist.  Overall, the vehicle has experienced multiple software problems.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "GENESIS",
+     "productModel": "G90",
+     "manufacturer": "Hyundai Motor America"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11732542,
+   "manufacturer": "Hyundai Motor America",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "04/19/2026",
+   "dateComplaintFiled": "04/20/2026",
+   "vin": "KMTFB4SD1RU",
+   "components": "ELECTRICAL SYSTEM,SERVICE BRAKES,ENGINE",
+   "summary": "I own a 2024 Genesis G90 with two active NHTSA recalls: 25V474 and 25V833. On April 19, 2026, the vehicle suffered a total electrical failure: “Check brake system” warning Engine would not start Electronic door handles failed; occupants trapped inside for over 20 minutes Turn signals operate abnormally The dealer previously repaired only by reset (no recall fix). This is a life-threatening safety defect affecting brakes, electrical system, and egress. Please open an investigation and enforce recall repairs. I am pursuing Lemon Law relief.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "GENESIS",
+     "productModel": "G90",
+     "manufacturer": "Hyundai Motor America"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11661048,
+   "manufacturer": "Hyundai Motor America",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/09/2023",
+   "dateComplaintFiled": "05/14/2025",
+   "vin": "KMTFC4SD3RU",
+   "components": "FORWARD COLLISION AVOIDANCE,LANE DEPARTURE",
+   "summary": "I purchased a new 2024 Genesis g90 vehicle from Key Genesis in Jacksonville Florida. I live in Navarre Florida near Pensacola so I took the vehicle into the Pensacola dealership for service. For almost a years time I have been notifying the dealership of a serious safety issue wirh the vehicle. There is a condition where the vehicle slams on the brakes on the highway for no apparent reason. The vehicle slams on the brakes at highway speeds while straddling two lanes. A vehicle in either lane being me could easily crash into the rear of my car when it does this. It took the dealership and Genesis corporate almost 8 months to confirm the problem, even though I had videos of the event happening. They wouldn't accept my video evidence. Consequently, they finally verified the problem and have been trying to fix it for months. They have no idea why it is doing this or how to fix it. But they have deemed the vehicle to be unsafe to drive and will not give it back to me. I have asked them to replace it with a new vehicle but they have refused. I went through the Lemon Law option and all they would offer me was to repurchase it for $23,000 less than what I have into it. They offered to pay me $9,000 and to keep the car but they have no idea what's wrong or how long it will take to fix it. So that offer is meaningless. I would like some help to try to get them to replace it with a new vehicle.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "GENESIS",
+     "productModel": "G90",
+     "manufacturer": "Hyundai Motor America"
+    }
+   ]
+  }
+ ]
+}

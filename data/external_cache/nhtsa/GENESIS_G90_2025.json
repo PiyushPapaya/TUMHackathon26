@@ -1,0 +1,50 @@
+{
+ "count": 2,
+ "message": "Results returned successfully",
+ "results": [
+  {
+   "odiNumber": 11714071,
+   "manufacturer": "Hyundai Motor America",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "01/28/2026",
+   "dateComplaintFiled": "01/28/2026",
+   "vin": " KMTFC4SD5S",
+   "components": "UNKNOWN OR OTHER",
+   "summary": "Inattentive driver alert activates randomly and without cause.  Seems to happen when wearing sunglasses, regardless of drivers actual state of alertness.  genesis has removed the ability to disable this feature starting with the 2025 models year, which poses a safely issue due to repeated audio and visual warnings while driving.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "GENESIS",
+     "productModel": "G90",
+     "manufacturer": "Hyundai Motor America"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11650712,
+   "manufacturer": "Hyundai Motor America",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "01/08/2025",
+   "dateComplaintFiled": "03/26/2025",
+   "vin": "KMTFC4SD4SU",
+   "components": "ELECTRICAL SYSTEM,WHEELS",
+   "summary": "Since purchased as a new vehicle from dealer, the TPMS ( Tire Pressure Monitoring System ) menu has been absent from my dash as an option to choose so that I can monitor the tire pressures.  The menu widget that contains the TPMS also contains other options that are suppose to be available, but also do not show and are unavailable to the driver.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "GENESIS",
+     "productModel": "G90",
+     "manufacturer": "Hyundai Motor America"
+    }
+   ]
+  }
+ ]
+}

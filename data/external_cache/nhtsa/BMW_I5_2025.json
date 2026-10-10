@@ -1,0 +1,182 @@
+{
+ "count": 8,
+ "message": "Results returned successfully",
+ "results": [
+  {
+   "odiNumber": 11762662,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 1,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "08/20/2026",
+   "dateComplaintFiled": "09/08/2026",
+   "vin": "WBY33FK00SC",
+   "components": "ELECTRICAL SYSTEM,FORWARD COLLISION AVOIDANCE",
+   "summary": "-The automatic emergency braking system and the forward collision warning system did not work. -The car is at the dealership where an SPI is being conducted. -While there was no serious injury, had a pedestrian been in front of me they would have been killed. -The manufacturer was notified the day of the accident. Within two days I received a call back from a case manager who said that BMW was taking my concerns very seriously. Two days after the first call, BMW called me and said they wanted to conduct an SPI on my vehicle. -My insurance company is aware that BMW has been contacted. -The car should have stopped itself. A red warning light should have gone off. It did not.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "BMW",
+     "productModel": "I5",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11761269,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "07/28/2026",
+   "dateComplaintFiled": "09/01/2026",
+   "vin": "WBY13HG07SC",
+   "components": "UNKNOWN OR OTHER",
+   "summary": "was driving down the highway in heavy traffic going 70 mph and Sunroof exploded.   Glass rained down on me while driving.   The glass was actually risen like it had exploded upward, which is why I do not think a rock or anything else hit my vehicle.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "BMW",
+     "productModel": "I5",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11733770,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "04/25/2026",
+   "dateComplaintFiled": "04/25/2026",
+   "vin": "WBY13HG06SC",
+   "components": "ELECTRICAL SYSTEM,UNKNOWN OR OTHER",
+   "summary": "The dealer is refusing to remedy the recall campaign No.26V-09 stating that we need to wait for service to be due to address it. NHTSA letter says otherwise.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "BMW",
+     "productModel": "I5",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11729663,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": true,
+   "fire": false,
+   "numberOfInjuries": 1,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "01/28/2026",
+   "dateComplaintFiled": "04/07/2026",
+   "vin": "WBY13HG08SC",
+   "components": "SERVICE BRAKES",
+   "summary": "The contact owns a 2025 BMW I5. The contact stated that while driving at 6 MPH before dawn, the brakes became inoperable while making a left turn and a right U-turn around a van. The brake pedal was depressed to the floorboard, went up the curb, made a quick right turn to avoid a major crash, and eventually crashed into a hedge and a sign. The driver shifted to neutral, and the vehicle rolled to the second street. No warning lights illuminated. The contact sustained an injury to his shoulder, and medical attention was provided. A police report was filed. There was no fire or airbag deployment. The contact called 911. The police department went to the scene. The contact made a video of the incident. The brakes were previously replaced. The vehicle was taken to the local dealer, but was not diagnosed or repaired. The vehicle was towed to a body shop. The manufacturer was contacted, and a regional investigator was assigned. The failure mileage was approximately 16,000.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "BMW",
+     "productModel": "I5",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11729328,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "04/04/2026",
+   "dateComplaintFiled": "04/06/2026",
+   "vin": "WBY13HG00SC",
+   "components": "POWER TRAIN,FORWARD COLLISION AVOIDANCE",
+   "summary": "Vehicle History & Initial Defect: I took delivery of a used 2025 BMW i5 in November 2025 (1025 mi). Upon delivery, the vehicle immediately displayed a persistent \"Acoustic Pedestrian Warning\" failure. This was a direct violation of FMVSS No. 141 (Minimum Sound Requirements for Hybrid and EV). Despite dealer assurances that a software update would resolve the issue, the failure persisted through multiple repair attempts in late 2025 and early 2026. Critical System Failures (Jan-Apr 2026): On January 18, 2026, the vehicle experienced a catastrophic drivetrain failure while in motion, displaying the messages: \"Stop. Apply parking brake. Drivetrain malfunction. You cannot continue driving\" and \"Stop carefully now. Faults. Do not continue driving.\" The vehicle was rendered inoperable. Subsequently, the vehicle has been subject to five (5) total repair attempts for these and related electronic faults, including \"Phantom Warnings\" of the hood and trunk being open while traveling at highway speeds. Unintended Emergency Braking Event (April 4, 2026): Within 48 hours of a 31-day repair stay (where the manufacturer insisted the vehicle was safe), the Driver Assistance Professional Package (DAPP) failed. While driving on a high-speed highway, the system prompted me to place my hands on the steering wheel. I complied immediately, yet the vehicle failed to recognize human intervention. The car then initiated a sudden, unintended emergency braking maneuver in active traffic. There was a significant lag before the system relinquished control, nearly resulting an accident. Manufacturer Negligence: Despite these life-threatening failures and the vehicle meeting the 30-day out-of-service threshold under California law, BMW North America has formally denied a repurchase on 3Apr26. They have failed to warn of continued safety risks and persist in claiming the vehicle is repaired despite repeated recurrences of the same failures. I have declared a \"Safety Stop Use\" on the vehicle.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "BMW",
+     "productModel": "I5",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11722386,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/27/2026",
+   "dateComplaintFiled": "03/06/2026",
+   "vin": "WBY43FK06SC",
+   "components": "ELECTRICAL SYSTEM,VEHICLE SPEED CONTROL,SERVICE BRAKES",
+   "summary": "Loss power and system reset",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "BMW",
+     "productModel": "I5",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11721496,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "03/02/2026",
+   "dateComplaintFiled": "03/02/2026",
+   "vin": "wby33fk00sc",
+   "components": "POWER TRAIN,ELECTRICAL SYSTEM,ENGINE",
+   "summary": "The car shut off unexpectedly while driving down a main road. There was first a power train warning, suggesting taking the car to the dealer and to drive cautiously. Then the car suddenly had an emergency power failure and the car shut completely off.  Luckily I was able to coast into a subdivision. If I had been on a major highway this could have been deadly.  The care then become inoperable and could not be turned on or even put in neutral. My car was dead in the middle of the road.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "BMW",
+     "productModel": "I5",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11594543,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": true,
+   "fire": false,
+   "numberOfInjuries": 1,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "06/14/2024",
+   "dateComplaintFiled": "06/15/2024",
+   "vin": "WBY13HG00SC",
+   "components": "SERVICE BRAKES,FORWARD COLLISION AVOIDANCE",
+   "summary": "I was driving a brand-new 2025 BMW i5 electric car, just leased from dealer the day before. The car was at rest, waiting for traffic light to turn green. Then the car started to move forward, and suddenly hit the car in front with a big thrust. My foot was on the brake trying to stop the car, but I felt like being hit by another car behind me, twice, the second time being the final thrust. My wife on the passenger side also felt the car shaking before the collision. Looking back after the collision, there was actually no car hitting mine. I believe the braking system failed. I have downloaded the video recordings from the car, with 30 seconds before and 30 seconds after the accident, by front, rear, left and right cameras, confirming that the car was at rest for about 20 seconds, then moving forward, and finally accelerating with a big thrust into the collision. I wish to have the Event Data Recorder (EDR) data to verify the pressure I applied on the brake pedal (or/and the pressure on the accelerator pedal as others may speculate that I did), to nail down the facts.  Two cars in front of mime were damaged, and one lady driver had injury. Luckily all cars were initially at rest. With higher speed and such brake failure it can cause deaths.  I have reported the problem to the BMW dealer in Rockville, Maryland. I will report to BMW manufacturer too. The dealer said BMW can send engineer to pull the EDR data and investigate. It will take time though.  I have reported the accident to insurance company. I'll talk with the insurance agent assigned to the case next Monday, to discuss what he wants to do for inspection.  In addition to the brake failure, there was no automatic emergency braking, or forward collision warning, as in my previous leased BMW car. The dealer did set up safety features before leasing the car to me, such as the video recording 30 seconds before and after. This makes the accident more surprising.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "BMW",
+     "productModel": "I5",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  }
+ ]
+}

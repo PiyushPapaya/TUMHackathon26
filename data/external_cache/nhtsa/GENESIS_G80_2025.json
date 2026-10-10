@@ -1,0 +1,72 @@
+{
+ "count": 3,
+ "message": "Results returned successfully",
+ "results": [
+  {
+   "odiNumber": 11700956,
+   "manufacturer": "Hyundai Motor America",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/14/2025",
+   "dateComplaintFiled": "11/22/2025",
+   "vin": "Kmtge4sd3su",
+   "components": "VEHICLE SPEED CONTROL",
+   "summary": "On Oct 14, 2025 I was traveling on route 287 north in cruise control set at 67 mph. Suddenly the dashboard screen went black and the car floored itself.  The gas pedal went to the floor. It took a few seconds to realize what was going on. When the dashboard lit back up I was going over 100 mph. I quickly applied the brakes which disengaged it. It never happened again.  The car is currently at the dealership but they could not reproduce the problem.  They said it did not throw a code either. I felt it was important to report this so I am.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "GENESIS",
+     "productModel": "G80",
+     "manufacturer": "Hyundai Motor America"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11691447,
+   "manufacturer": "Hyundai Motor America",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/30/2025",
+   "dateComplaintFiled": "10/05/2025",
+   "vin": "KMTGC4SC2SU",
+   "components": "LANE DEPARTURE,FORWARD COLLISION AVOIDANCE",
+   "summary": "Driver attention warning \"consider taking a break\" too sensitive, too frequent and too random, happens every 7-15 minutes with loud beeps. Very annoying and distracting, and the feature cannot be turned off.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "GENESIS",
+     "productModel": "G80",
+     "manufacturer": "Hyundai Motor America"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11660904,
+   "manufacturer": "Hyundai Motor America",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "05/13/2025",
+   "dateComplaintFiled": "05/14/2025",
+   "vin": "KMTGG4SD0SU",
+   "components": "ELECTRICAL SYSTEM",
+   "summary": "The entire instrument panel/cluster went out while driving. It did come back on after going totally black. We had no ability to see speed, fuel, or any cameras. This happened yesterday, May 13, 2025. We are trying to get an appointment at the dealership to address it. There does not appear to be any error codes recorded by the vehicle for this event, according to the app. It appears that this problem is the same as an existing recall for G80 vehicles through 2024. Genesis and NHTSA needs to add 2025 models to this recall (026G)",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2025",
+     "productMake": "GENESIS",
+     "productModel": "G80",
+     "manufacturer": "Hyundai Motor America"
+    }
+   ]
+  }
+ ]
+}

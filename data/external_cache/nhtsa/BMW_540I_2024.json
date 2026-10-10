@@ -1,0 +1,116 @@
+{
+ "count": 5,
+ "message": "Results returned successfully",
+ "results": [
+  {
+   "odiNumber": 11639714,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "01/09/2025",
+   "dateComplaintFiled": "01/30/2025",
+   "vin": "WBA63FJ06RC",
+   "components": "SERVICE BRAKES, HYDRAULIC,ELECTRONIC STABILITY CONTROL (ESC)",
+   "summary": "See attached document for complaint.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "540I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11625407,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "11/07/2024",
+   "dateComplaintFiled": "11/15/2024",
+   "vin": "WBA63FJ00RC",
+   "components": "SERVICE BRAKES",
+   "summary": "I reserved this vehicle with a deposit on Oct. 26.  At the time I was told the vehicle was under recall/stop sale for a brake issue and I would not be able to take delivery until the recall work was performed.  On 11/5, I was able to purchase the vehicle after the repair work was done.  After leaving the dealership, about a half mile down the road I received a message on the vehicle display which said \"Brake fluid level low. Have the problem checked by the nearest service center.\"  The message also advised that I could continue driving the vehicle.  I returned to the dealership and the car was inspected for roughly 30 mins.  The vehicle was released to me and the message was gone.  I was advised that the vehicle probably needed brake fluid from the recall repair.  On 11/7, while driving I received the same Brake fluid level low message from the vehicle.  I contacted the dealership and drove to the dealership to have the vehicle looked at again.  About a mile from the dealership, as I applied the brakes, the vehicle suddenly generated a number of messages including \"Brake system malfunction, stop carefully. Do not continue driving\".  At this point the brake pedal fell to the floor.  I was able to stop the vehicle by applying a large amount of force to the brake pedal and was able to get to a nearby parking lot.  I was very lucky and I would have been unable to prevent a crash under many circumstances.  The braking power was almost completely gone from the vehicle.  I returned the vehicle to the dealership and they reversed the transaction.  From what I read online, the symptoms I experienced were exactly the same as those who experienced the brake failure which led to the recall.   This car was either not fixed correctly or (even worse) the BMW remedy for the recall suffers the same potential problem as the original recall.  In the second case, I believe this is a very dangerous situation.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "540I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11625223,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "11/06/2024",
+   "dateComplaintFiled": "11/14/2024",
+   "vin": "WBA63FJ08RC",
+   "components": "BACK OVER PREVENTION,ELECTRICAL SYSTEM",
+   "summary": "See attached document for complaint.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "540I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11622466,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": true,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/10/2024",
+   "dateComplaintFiled": "10/29/2024",
+   "vin": "WBA63FJ08RC",
+   "components": "BACK OVER PREVENTION,FORWARD COLLISION AVOIDANCE",
+   "summary": "PROBLEM: I recently had several incidents when the RAB (rear automatic brake) on the 2024 BMW 540i vehicle DID NOT WORK on multiple occasions. The vehicle never stopped as I backed out of my parking space.   Afterwards I tested the RAB by perpendicularly slowly walking behind the car. I had to run out of the way when the vehicle was continuing to move when approximately 12” from me. I tested both vehicles, 540i & X-3, with the same results.   As a further test I placed a plastic figure that’s ordinarily used a warning to drivers of children playing in the area. Results while slowly backing was that the vehicle hit (bumped) the little green “man”.   I later discussed this issue with my wife that drives the 2024 X-3. She then informed me that she too almost backed into a pedestrian.   I then did the same tests on my wife’s 2024 X-3, VIN [XXX] , with the exact same results.   BMW of Wesley Chapel had no solution. I spoke with managers Doonan and Hernandez.   I believe the photos demonstrate the slight graze of an item whereby the RAB should have stopped the car; it never should have allowed the collision.  INFORMATION REDACTED PURSUANT TO THE FREEDOM OF INFORMATION ACT (FOIA), 5 U.S.C. 552(B)(6)",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "540I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  },
+  {
+   "odiNumber": 11620068,
+   "manufacturer": "BMW of North America, LLC",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/16/2024",
+   "dateComplaintFiled": "10/16/2024",
+   "vin": "WBA63FJ01RC",
+   "components": "SERVICE BRAKES, HYDRAULIC,ELECTRONIC STABILITY CONTROL (ESC)",
+   "summary": "The contact owns a 2024 BMW 540i. The contact received notification of NHTSA Campaign Number: 24V10400(Electronic Stability Control(ESC), Service Brakes, Hydraulic); however, the part to do the recall repair was not yet available. The local dealer was contacted. The contact stated that the manufacturer exceeded a reasonable amount of time for the recall repair. The manufacturer was made aware of the issue. The contact had not experienced the failure. VIN tool confirms parts not available.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "BMW",
+     "productModel": "540I",
+     "manufacturer": "BMW of North America, LLC"
+    }
+   ]
+  }
+ ]
+}

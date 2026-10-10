@@ -1,0 +1,226 @@
+{
+ "count": 10,
+ "message": "Results returned successfully",
+ "results": [
+  {
+   "odiNumber": 11761102,
+   "manufacturer": "Lucid USA, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "08/29/2026",
+   "dateComplaintFiled": "08/31/2026",
+   "vin": "50ea1tea1ra",
+   "components": "POWER TRAIN",
+   "summary": "On XXX, my wife, [XXX], was operating the vehicle on a public roadway at approximately 40 miles per hour with our children as passengers. Without warning, the vehicle began jerking violently and decelerated to a stop in a live traffic lane, displaying a \"Drive System Fault\" message. Throughout the event, the vehicle would not respond to accelerator or brake input. The vehicle came to rest in a moving lane of traffic. No vehicle was following us at that moment; had one been, we would have been struck from behind. After restarting the vehicle, I was able to move it off the roadway at roughly one mile per hour, with the right rear wheel catching and refusing to rotate freely. The vehicle was then undriveable. It was towed to Lucid the same day and remains in your possession. This was not an inconvenience. It was an unwarned loss of propulsion and loss of vehicle control, in traffic, with minor children in the car. At highway speed, the outcome could have been catastrophic. The right rear wheel’s inability to rotate indicates a mechanical failure within the rear drive unit or driveline, not a recoverable software condition.  INFORMATION REDACTED PURSUANT TO THE FREEDOM OF INFORMATION ACT (FOIA), 5 U.S.C. 552(B)(6)",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "LUCID",
+     "productModel": "AIR",
+     "manufacturer": "Lucid USA, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11760643,
+   "manufacturer": "Lucid USA, Inc.",
+   "crash": true,
+   "fire": false,
+   "numberOfInjuries": 1,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "07/21/2026",
+   "dateComplaintFiled": "08/29/2026",
+   "vin": "50EA1TEA1RA",
+   "components": "VEHICLE SPEED CONTROL,SERVICE BRAKES,FORWARD COLLISION AVOIDANCE",
+   "summary": "On July 21, 2026, a catastrophic safety defect occurred involving sudden, unprompted vehicle acceleration and a complete loss of braking capability.  While operating the vehicle in reverse, it experienced a sudden, violent, and uncommanded surge in acceleration. Simultaneously, the braking system completely failed to respond to the driver's input, resulting in an initial collision with a vehicle parked across the street. The driver managed to carefully maneuver and limp the vehicle back home to the residential driveway.  Upon arriving at the driveway, the vehicle suffered a secondary, severe surge/acceleration event combined with another total failure of the braking system, causing the vehicle to crash into the home garage. Throughout both incidents, the driver firmly applied the brakes, but the vehicle's braking system was completely overridden and unresponsive due to a catastrophic electronic or software failure.  Failure Symptoms & Evidence: Immediately following the system failures, the vehicle's instrument cluster explicitly illuminated a critical warning: \"Brake System Fault – Drive with caution and contact Customer Care immediately.\" This confirms that the vehicle's critical safety and braking systems actively faulted during the operational failure.  Despite this clear dashboard warning and objective technical failure, the insurance carrier and investigators have been slow to recognize the hardware/software malfunction, posing an extreme safety hazard to the driver, passengers, and the public. We strongly request NHTSA to investigate this dangerous unintended acceleration and brake failure defect in 2024 Lucid vehicles.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "LUCID",
+     "productModel": "AIR",
+     "manufacturer": "Lucid USA, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11757529,
+   "manufacturer": "Lucid USA, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "08/12/2026",
+   "dateComplaintFiled": "08/17/2026",
+   "vin": "50EA1GBA5RA",
+   "components": "POWER TRAIN,ELECTRICAL SYSTEM,FUEL/PROPULSION SYSTEM",
+   "summary": "While operating the vehicle, I experienced a sudden and unexpected loss of propulsion accompanied by a Drive System Failure warning. An associated fault message was also displayed. The vehicle became immediately undrivable and required towing.  This matter is not being raised as a routine service concern. The critical issue is the abrupt and uncommanded loss of propulsion during active vehicle operation. Had this event occurred under different driving conditions—such as highway speeds, dense traffic, or an intersection—the potential safety consequences could have been severe, including elevated risk of collision.  A propulsion loss of this nature represents a potential safety hazard to vehicle occupants and surrounding road users. Accordingly, I am requesting that Lucid treat this matter as a formal PRODUCT SAFETY INCIDENT requiring engineering-level review, rather than a standard repair disposition.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "LUCID",
+     "productModel": "AIR",
+     "manufacturer": "Lucid USA, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11675786,
+   "manufacturer": "Lucid USA, Inc.",
+   "crash": true,
+   "fire": false,
+   "numberOfInjuries": 1,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "12/16/2024",
+   "dateComplaintFiled": "07/24/2025",
+   "vin": "50EA1TEA3RA",
+   "components": "FORWARD COLLISION AVOIDANCE",
+   "summary": "On [XXX], at approximately [XXX], I arrived at the YMCA parking lot for my yoga class (located on [XXX], Mountain View, CA). While waiting for a parking spot, I put my Lucid Air in reverse to back up slightly. Generally, Lucid’s strong regenerative braking stops the car when the accelerator is released. However, this time, when I lifted my foot, the car unexpectedly accelerated at high speed, completely unresponsive to my control. It plowed through a pedestrian walkway, a row of bushes, and crashed into the exterior wall of the YMCA building before shutting itself off. The steering wheel was also unresponsive during the unexpected acceleration. After the crash, the car shut itself down and would not restart. The crash caused injury to my neck, and it was a miracle that no one was behind me at the normally very busy parking lot. The sudden acceleration and loss of control over the car was terrifying. In addition, all other safety mechanisms such as automatic braking failed.  INFORMATION REDACTED PURSUANT TO THE FREEDOM OF INFORMATION ACT (FOIA), 5 U.S.C. 552(B)(6)",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "LUCID",
+     "productModel": "AIR",
+     "manufacturer": "Lucid USA, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11672457,
+   "manufacturer": "Lucid USA, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "06/03/2025",
+   "dateComplaintFiled": "07/10/2025",
+   "vin": "50EA1TEA9RA",
+   "components": "SEATS,UNKNOWN OR OTHER,VISIBILITY/WIPER",
+   "summary": "Main issue is that the vehicle will take about 30 seconds to unlock/awake, this is completely unacceptable! even the cheapest car on the market unlocks within a fraction of a second, this can also be a dangerous situation if i need to enter my vehicle quickly.  Second issue is that the drivers side windshield wiper leaves smudges after wiping, even after changing the blades, the wiper still performs the same, i believe its the shape of the windshield that causes this. third issue is that the driver side lower seat cushion is retracting and buckling, this has been replaced once and its doing it again, but warranty says its normal wear and tear, this vehicle only has 18k miles on it.  4th issue is that Lucid just sent out an email blast for customers have an option to purchase a hardware upgrade for future enhancements and faster response on screen animations, this is completely insane! this vehicle manufacturer should've calculated all this before vehicle production, this should be a free upgrade for customers to offer future updates and safety features on the vehicles computer hardware. 5ft issue is, i contacted Lucid customer service to voice my opinion and find a resolution more than 5 times, which nobody ever got back to me, i asked to speak to someone on a higher role in the company, and that seems to be impossible. 6th issue is that i asked my service advisor for someone to get in touch with me for a buy-back, he replied that he will forward this to his team and they will send me an application for the buy-back process, that was 6 months ago! and contact from Lucid.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "LUCID",
+     "productModel": "AIR",
+     "manufacturer": "Lucid USA, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11663435,
+   "manufacturer": "Lucid USA, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "05/01/2025",
+   "dateComplaintFiled": "05/28/2025",
+   "vin": "50EA1TEA4RA",
+   "components": "POWER TRAIN",
+   "summary": "Following the OTA software update to V2.6.16, the car will randomly refuse to shift out of Park and into either Drive or Reverse.  This occurs after the car has been recently plugged in to charge as well as randomly regardless of charging activity.  This is a significant safety issue in that the car will not move despite having foot on the brake.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "LUCID",
+     "productModel": "AIR",
+     "manufacturer": "Lucid USA, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11658784,
+   "manufacturer": "Lucid USA, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "02/09/2025",
+   "dateComplaintFiled": "05/04/2025",
+   "vin": "50EA1PGA0RA",
+   "components": "STEERING,POWER TRAIN,SERVICE BRAKES",
+   "summary": "There was a safety recall, but Lucid told us the car was safe to drive while we waited for our service appointment.  A couple of days before our appointment, (this past 2/9/2025) the car lost brakes, steering, and then completely bricked on the GWB. By great good fortune my wife, who was driving, wasn't injured. The car needed to be towed off the bridge.   The service center afterward told us that it was the recall issue (short cable to power train or something like that) and that we shouldn't have been told it was safe to drive the car.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "LUCID",
+     "productModel": "AIR",
+     "manufacturer": "Lucid USA, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11627594,
+   "manufacturer": "Lucid USA, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "11/18/2024",
+   "dateComplaintFiled": "11/26/2024",
+   "vin": "50EA1PGA2RA",
+   "components": "ELECTRICAL SYSTEM",
+   "summary": "The recent software update v2.5.0 has been very unstable. The screens would often black out every 30 seconds and calls get cut off. But the biggest problem was it resetting profile while driving on the highway! Theres no way to fix it and we had to pull over on the side to switch profiles again to fix the seat. We called them and lucid has yet to call us back. This is a safety issue",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "LUCID",
+     "productModel": "AIR",
+     "manufacturer": "Lucid USA, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11622619,
+   "manufacturer": "Lucid USA, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "10/28/2024",
+   "dateComplaintFiled": "10/29/2024",
+   "vin": "50EA1PGA7RA",
+   "components": "ELECTRICAL SYSTEM,SERVICE BRAKES,ENGINE",
+   "summary": "I was driving on a residential road and the car signaled it had an error and the engine turned off immediately. I was left in the road and couldn’t move. After an hour the electric died. No hazards. I was put in a very dangerous situation for me and passerby’s.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "LUCID",
+     "productModel": "AIR",
+     "manufacturer": "Lucid USA, Inc."
+    }
+   ]
+  },
+  {
+   "odiNumber": 11614679,
+   "manufacturer": "Lucid USA, Inc.",
+   "crash": false,
+   "fire": false,
+   "numberOfInjuries": 0,
+   "numberOfDeaths": 0,
+   "dateOfIncident": "09/15/2024",
+   "dateComplaintFiled": "09/15/2024",
+   "vin": "50EA1PGA4RA",
+   "components": "POWER TRAIN",
+   "summary": "Car lost power and shut down in the middle of the road. Very dangerous, almost got hit. I was able to get the car to the side of the road. The vehicle was not driveable. Call Lucid customer care and they towed the vehicle to the service center. No loaner was provided to me.",
+   "products": [
+    {
+     "type": "Vehicle",
+     "productYear": "2024",
+     "productMake": "LUCID",
+     "productModel": "AIR",
+     "manufacturer": "Lucid USA, Inc."
+    }
+   ]
+  }
+ ]
+}
