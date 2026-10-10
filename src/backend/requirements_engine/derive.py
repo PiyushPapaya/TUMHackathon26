@@ -22,12 +22,8 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from pydantic import BaseModel
-
 from core.llm import ask_json
-from core.model_parts import Horizon
 from core.models import (
-    Category,
     Evidence,
     OfferCheck,
     Requirement,
@@ -36,6 +32,7 @@ from core.models import (
     SignalKind,
 )
 from requirements_engine import evidence_level, scoring
+from requirements_engine.blocks import merge_overlapping, separate_bets, split_into_blocks
 from requirements_engine.derive_checks import (
     badges_for,
     conflict_notes,
@@ -44,31 +41,11 @@ from requirements_engine.derive_checks import (
     not_covered,
     stable_key,
 )
+from requirements_engine.drafts import RequirementDraft, RequirementDrafts
 from requirements_engine.factors import compute_factors, rationale_from
 from requirements_engine.offer_check import check, load_offer
 from requirements_engine.prompts import SYSTEM_PROMPT
 from requirements_engine.robustness import compute_robustness
-
-
-class RequirementDraft(BaseModel):
-    """Was die KI vorschlägt. Zahlen, Rang und Stufe kommen NICHT von der KI, sondern aus Code."""
-
-    title: str
-    description: str
-    acceptance_criterion: str
-    category: Category
-    signal_ids: list[str]
-    assumptions: list[str] = []
-    uncertainties: list[str] = []
-    effort: str = "M"
-    forward_looking: bool = False
-    horizon: Horizon = "today"
-    in_scope: bool = True
-    scope_reason: str = ""
-
-
-class RequirementDrafts(BaseModel):
-    drafts: list[RequirementDraft]
 
 
 def _compact(signals: list[Signal]) -> str:
@@ -88,25 +65,27 @@ def derive_all(
     """Liefert (Anforderungen nach Rang, verworfene Out-of-scope-Entwürfe mit Grund)."""
     if not signals:  # nichts zu bündeln: die KI nicht fragen (kostet Geld und könnte Themen erfinden)
         return [], []
-    known = {s.id: s for s in signals}
-    answer = ask_json(SYSTEM_PROMPT, f"Scenario: {scenario.model_name} ({scenario.market})\n"
-                      f"Signals:\n{_compact(signals)}", RequirementDrafts)
     kept: list[tuple[RequirementDraft, list[Signal]]] = []
     discarded: list[dict] = []
-    for draft in answer.drafts:
-        # Halluzinationsschutz: nur IDs, die es in der Eingabe wirklich gibt.
-        ids = [i for i in dict.fromkeys(draft.signal_ids) if i in known]
-        if not ids:
-            continue
-        if not draft.in_scope:
-            discarded.append({"title": draft.title, "reason": draft.scope_reason, "signal_ids": ids})
-            continue
-        linked = [known[i] for i in ids]
-        problem = next_gen_problem(draft.assumptions, linked) if draft.horizon == "next_gen" else None
-        if problem:
-            discarded.append({"title": draft.title, "reason": problem, "signal_ids": ids})
-            continue
-        kept.append((draft, linked))
+    for block_name, block in split_into_blocks(signals):  # ein KI-Aufruf pro Themenblock (W-C5)
+        known = {s.id: s for s in block}
+        answer = ask_json(SYSTEM_PROMPT, f"Scenario: {scenario.model_name} ({scenario.market})\n"
+                          f"Topic block: {block_name}\nSignals:\n{_compact(block)}", RequirementDrafts)
+        for draft in answer.drafts:
+            # Halluzinationsschutz: nur IDs aus DIESEM Block, denn nur die hat die KI gesehen.
+            ids = [i for i in dict.fromkeys(draft.signal_ids) if i in known]
+            if not ids:
+                continue
+            if not draft.in_scope:
+                discarded.append({"title": draft.title, "reason": draft.scope_reason, "signal_ids": ids})
+                continue
+            linked = [known[i] for i in ids]
+            problem = next_gen_problem(draft.assumptions, linked) if draft.horizon == "next_gen" else None
+            if problem:
+                discarded.append({"title": draft.title, "reason": problem, "signal_ids": ids})
+                continue
+            kept.append((draft, linked))
+    kept = separate_bets(merge_overlapping(kept))
     discarded += not_covered(signals, kept, discarded)
     # reach braucht die größte Nennungszahl ALLER Anforderungen, darum erst jetzt bauen.
     max_mentions = max((sum(s.mention_count for s in linked) for _, linked in kept), default=0)
