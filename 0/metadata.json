@@ -1,0 +1,59 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4M0Y1ZMMQ8Y725Z2ETVS8SP",
+  "session_id": "798a76bc-474c-47ea-b230-27a14d18ce96",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T23:04:01.2089319Z",
+  "branch": "piyush-frontend",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/DEPLOY.md",
+    "scripts/start_demo.sh",
+    "visuals/flow-prompts.md"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5-5",
+  "turn_id": "b406ce842286",
+  "checkpoint_transcript_start": 802,
+  "transcript_lines_at_start": 802,
+  "compact_transcript_start": 100,
+  "token_usage": {
+    "input_tokens": 10,
+    "cache_creation_tokens": 6439,
+    "cache_read_tokens": 1786594,
+    "output_tokens": 5287,
+    "api_call_count": 5
+  },
+  "session_metrics": {
+    "turn_count": 5
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T23:04:00.72839Z",
+    "agent_lines": 95,
+    "agent_removed": 19,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 95,
+    "total_lines_changed": 114,
+    "agent_percentage": 100,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 267,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "scripts/new_scenario.py": 50,
+        "src/backend/core/ask.py": 57,
+        "src/backend/evidence_internal/opportunities.py": 61,
+        "src/backend/evidence_internal/segments.py": 36,
+        "src/shared/beispiele/views/ask.json": 62,
+        "src/shared/beispiele/views/export_md.json": 1
+      }
+    }
+  ]
+}
