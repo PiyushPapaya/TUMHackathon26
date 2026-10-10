@@ -1,0 +1,35 @@
+mavche das alles wie möglich: 
+
+<pasted_content id="c1b0">
+1. Webstufe neu laufen lassen. Sie braucht Adityas echte 45 Befunde, danach laufen requirements und bundle noch einmal. Das kostet Websuche und LLM-Aufrufe. Ohne diesen Schritt passen die 10 Web-Befunde nicht zu den internen Befunden. Sag „Web neu", dann starte ich es.
+2. Backend starten und den Kernflow prüfen. Ich starte das Backend und rufe die API ab. So sehen wir, ob Liste und Detail echte Daten liefern, bevor ihr alle auf Lasses Bildschirm schaut.
+3. Verifikation vor dem Push. ruff check, python -m pytest -q und python scripts/secret_scan.py. Nach der Pipeline gibt es nichts zu committen, das ist also nur eine Sicherheitsprüfung.
+4. L4 abschließen. Du, Lasse, Aditya und Dennis schaut zusammen auf die App. Danach setze ich den Haken in docs/pfade/LEAD.md:22. Das kann ich nicht für euch tun.
+5. Danach nach Zeitplan weiter. Das ist M3 (22:00). Wenn dort etwas wackelt, kürzen wir den Umfang.
+6. Zweites Szenario. Aditya meldet, dass signals für G70-US und F70-EU schon läuft. Ich kann für sie requirements und bundle erzeugen, sobald G60-US steht.
+</pasted_content id="c1b0">
+
+---
+
+<task-notification>
+<task-id>b3ousxqz8</task-id>
+<tool-use-id>toolu_01SupWhsBaKEfXke4mz4NxxP</tool-use-id>
+<output-file>C:\Users\anil1\AppData\Local\Temp\claude\C--Users-anil1-Downloads-Hackathon-TUMHackathon26\54b91c91-badc-481e-b5b3-de78b2fa4c93\tasks\b3ousxqz8.output</output-file>
+<status>completed</status>
+<summary>Background command "Alle Pipeline-Stufen für G70-US laufen lassen" completed (exit code 0)</summary>
+</task-notification>
+
+---
+
+<task-notification>
+<task-id>b44vvo06g</task-id>
+<tool-use-id>toolu_01TxS8PrHCurZj5yKiH6F49u</tool-use-id>
+<output-file>C:\Users\anil1\AppData\Local\Temp\claude\C--Users-anil1-Downloads-Hackathon-TUMHackathon26\54b91c91-badc-481e-b5b3-de78b2fa4c93\tasks\b44vvo06g.output</output-file>
+<status>completed</status>
+<summary>Monitor "Warten bis G70-US-Bundle existiert" stream ended</summary>
+<event>bundle fertig</event>
+</task-notification>
+
+---
+
+markieer alles erledigt
