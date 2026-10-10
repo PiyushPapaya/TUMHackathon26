@@ -1,0 +1,19 @@
+{
+  "id": "G60-EU",
+  "derivative": "G60",
+  "model_name": "BMW 5er Limousine (G60)",
+  "market": "EU",
+  "countries": ["GB", "SE", "DK", "FI", "NO", "FR", "LV", "ES"],
+  "competitors": ["Mercedes-Benz E-Class", "Audi A6 e-tron", "Volvo ES90", "Tesla Model S"],
+  "successor_horizon": "2030",
+  "warnings": ["Nur 111 Kundenkommentare aus Europa; Studie und Absatz tragen mehr Gewicht als bei G60-US."],
+  "data": {
+    "feedback_file": "G60_feedback_hackathon.xlsx",
+    "study_file": "F70_G60_G68_G70_customer_studies.xlsx",
+    "study_sheet": "CN_EU_2025",
+    "study_column": "BMW 5 Series G60",
+    "sales_sheet": "G60_G68",
+    "sales_market_code": "EU",
+    "option_list_file": "G60_OptionList.PDF"
+  }
+}

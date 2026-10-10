@@ -85,7 +85,9 @@ def run_stage(stage: str, cfg: dict) -> None:
         internal, counter = triangulated_internal(sid)
         signals = internal + [Signal(**s) for s in read_stage(sid, "web_signals")]
         evidence = [Evidence(**e) for e in read_stage(sid, "evidence") + read_stage(sid, "web_evidence")]
-        context = {**read_stage(sid, "context"), "option_list_path": str(RAW_DIR / cfg["data"]["option_list_file"]),
+        option_file = cfg["data"].get("option_list_file")  # None bei Kaltstart-Märkten (G68-CN)
+        option_path = str(RAW_DIR / option_file) if option_file else None
+        context = {**read_stage(sid, "context"), "option_list_path": option_path,
                    "counter_evidence": counter}  # Webbelege, die interne Befunde widerlegen (für die Challenge)
         requirements, discarded = derive_all(scenario, signals, evidence, context)
         _write(sid, "requirements", requirements)
