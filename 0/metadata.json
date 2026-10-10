@@ -1,0 +1,47 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4K1QTXJRAR98CYQRF16P3PF",
+  "session_id": "b208f4c2-7ad9-44ba-a9ab-8fb7e76bedb1",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T13:58:51.626793Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "src/backend/evidence_external/questions.py",
+    "src/backend/evidence_external/trust.py",
+    "tests/pfad_b/test_questions.py",
+    "tests/pfad_b/test_trust.py"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5-5",
+  "turn_id": "9745ac94af95",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 24,
+    "cache_creation_tokens": 70506,
+    "cache_read_tokens": 1048213,
+    "output_tokens": 10163,
+    "api_call_count": 12
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T13:58:51.5395518Z",
+    "agent_lines": 212,
+    "agent_removed": 0,
+    "human_added": 4,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 216,
+    "total_lines_changed": 217,
+    "agent_percentage": 97.6958525345622,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    }
+  ]
+}

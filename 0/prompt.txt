@@ -1,0 +1,8 @@
+maceh deisen schritt: 
+
+<pasted_content id="0d98">
+4. B2 (16:00, 60 min) kannst du schon jetzt starten, weil es ohne Key geht:
+   - questions.py: 13 Fragen für G60-US.
+   - trust.py: Vertrauen per Regel aus der Domain, mit Test über 6 URLs.
+   - Beide Dateien sind unabhängig voneinander, ich kann sie also parallel bauen.
+</pasted_content id="0d98">
