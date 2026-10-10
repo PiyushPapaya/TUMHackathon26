@@ -1,0 +1,5 @@
+Baue src/frontend/src/lib/api.ts: TypeScript-Typen für Scenario, Signal, Evidence, Requirement (mit score_breakdown, offer_check), AuditEvent nach src/shared/API.md und http://localhost:8000/openapi.json, plus eine fetch-Funktion pro Endpunkt (scenarios, funnel, signals, requirements, requirement detail, decision, weights, audit, verify, export-URL). Basis-URL aus NEXT_PUBLIC_API_URL. Fehler als lesbare Meldung werfen. Warum eine Datei: Alle Seiten nutzen dieselben Typen, und bei Vertragsänderungen ändern wir nur hier.
+
+---
+
+joleeight@gmail.com
