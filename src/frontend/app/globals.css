@@ -7,12 +7,12 @@
 /* BMW-Look: weiß/schwarz statt bunt, BMW-Blau (#1C69D4) als einzige Akzentfarbe,
    Flächen trennen sich über dünne Haarlinien statt über Farbe oder Schatten. */
 :root {
-  --background: #ffffff;
-  --foreground: #1a1a1a;
+  --background: #dbd3d800; 
+  --foreground: #223843;
   /* Hintergrund von Karten, Kopfzeile, Eingabefeldern — eine Stelle für alle Elemente */
-  --surface: #ffffff;
-  --accent: #1c69d4;
-  --accent-hover: #164f9f;
+  --surface: #eff1f3;
+  --accent: #9197ae;
+  --accent-hover: #9da2b8;
   /* Eigene Variablen, damit Tabellen-Hintergrund und Score-Balken einzeln
      umgefärbt werden können, ohne --surface/--accent überall sonst mitzuändern. */
   --table-background: var(--surface);
@@ -20,11 +20,23 @@
 }
 
 .dark {
-  --background: #0a0a0a;
+  --background: #0a0a0a00;
   --foreground: #f2f2f2;
-  --surface: #141414;
-  --accent: #4a90e2;
+  --surface: #13293d;
+  --accent: #006494;
   --accent-hover: #70aaee;
+  --table-background: var(--surface);
+  --score-slider: var(--accent);
+}
+
+/* Erzwingt die helle Palette lokal, auch wenn ein Vorfahre die .dark-Klasse
+   trägt — für Bereiche, die in Screenshots/Demos immer gleich aussehen sollen. */
+.theme-light-fixed {
+  --background: #dbd3d800;
+  --foreground: #223843;
+  --surface: #eff1f3;
+  --accent: #9197ae;
+  --accent-hover: #9da2b8;
   --table-background: var(--surface);
   --score-slider: var(--accent);
 }

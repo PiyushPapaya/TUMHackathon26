@@ -1,21 +1,19 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
   getExportUrl,
   getRequirements,
   getScenarios,
-  getSignals,
   putWeights,
   type Requirement,
   type Scenario,
-  type Signal,
   type WeightKey,
   type Weights,
 } from "@/src/lib/api";
-import { categoryLabel, ConflictBadge, EvidenceBadge, StatusBadge } from "@/src/components/badges";
+import { categoryLabel } from "@/src/components/badges";
 import { ScoreBar } from "@/src/components/ScoreBar";
 import { ThemeToggle } from "@/src/components/ThemeToggle";
 
@@ -57,22 +55,11 @@ function weightsFromRequirements(requirements: Requirement[]): Record<WeightKey,
   };
 }
 
-function RankDelta({ oldRank, newRank }: { oldRank?: number; newRank: number }) {
-  if (!oldRank || oldRank === newRank) return <span className="text-xs text-zinc-400 dark:text-zinc-500">-</span>;
-  const movedUp = oldRank > newRank;
-  return (
-    <span className={movedUp ? "text-xs font-semibold text-emerald-700 dark:text-emerald-400" : "text-xs font-semibold text-rose-700 dark:text-rose-400"}>
-      {movedUp ? "↑" : "↓"} {Math.abs(oldRank - newRank)}
-    </span>
-  );
-}
-
 export default function RequirementsPage() {
   const router = useRouter();
   const [scenarios, setScenarios] = useState<Scenario[]>([]);
   const [scenarioId, setScenarioId] = useState(DEFAULT_SCENARIO_ID);
   const [requirements, setRequirements] = useState<Requirement[]>([]);
-  const [signals, setSignals] = useState<Signal[]>([]);
   const [weights, setWeights] = useState<Record<WeightKey, number>>(DEFAULT_WEIGHTS);
   const [rationale, setRationale] = useState("");
   const [previousRanks, setPreviousRanks] = useState<Record<string, number>>({});
@@ -94,11 +81,10 @@ export default function RequirementsPage() {
 
   useEffect(() => {
     let cancelled = false;
-    Promise.all([getRequirements(scenarioId), getSignals(scenarioId)])
-      .then(([nextRequirements, nextSignals]) => {
+    getRequirements(scenarioId)
+      .then((nextRequirements) => {
         if (cancelled) return;
         setRequirements(nextRequirements);
-        setSignals(nextSignals);
         setWeights(weightsFromRequirements(nextRequirements));
         setError(null);
       })
@@ -113,15 +99,7 @@ export default function RequirementsPage() {
     };
   }, [scenarioId]);
 
-  const signalById = useMemo(() => new Map(signals.map((signal) => [signal.id, signal])), [signals]);
   const selectedScenario = scenarios.find((scenario) => scenario.id === scenarioId);
-
-  function conflictTitles(requirement: Requirement) {
-    return requirement.signal_ids.flatMap((signalId) => {
-      const signal = signalById.get(signalId);
-      return (signal?.conflicts_with ?? []).map((conflictId) => signalById.get(conflictId)?.title ?? conflictId);
-    });
-  }
 
   async function applyWeights(nextWeights: Weights = weights) {
     if (applying) return;
@@ -230,60 +208,38 @@ export default function RequirementsPage() {
                 <table className="w-full min-w-[900px] text-left text-sm">
                   <thead className="border-b border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 text-xs uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
                     <tr>
-                      <th className="px-4 py-3">Rank</th>
-                      <th className="px-4 py-3">Title</th>
                       <th className="px-4 py-3">Score</th>
-                      <th className="px-4 py-3">Evidence</th>
+                      <th className="px-4 py-3">Title</th>
                       <th className="px-4 py-3">Category</th>
-                      <th className="px-4 py-3">Status</th>
-                      <th className="px-4 py-3">Conflict</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {requirements.map((req) => {
-                      const conflicts = conflictTitles(req);
-                      return (
-                        <tr
-                          key={req.id}
-                          role="link"
-                          tabIndex={0}
-                          onClick={() => router.push(`/requirements/${req.id}`)}
-                          onKeyDown={(event) => {
-                            if (event.key === "Enter" || event.key === " ") {
-                              event.preventDefault();
-                              router.push(`/requirements/${req.id}`);
-                            }
-                          }}
-                          className={`cursor-pointer border-b border-zinc-100 dark:border-zinc-800 transition last:border-0 hover:bg-accent/5 dark:hover:bg-accent/10 focus:bg-accent/5 dark:focus:bg-accent/10 focus:outline-none ${
-                            highlightRanks && previousRanks[req.id] !== req.rank ? "bg-accent/5 dark:bg-accent/10" : ""
-                          }`}
-                        >
-                          <td className="px-4 py-4">
-                            <div className="flex items-center gap-2">
-                              <span className="font-semibold text-foreground">#{req.rank}</span>
-                              <RankDelta oldRank={previousRanks[req.id]} newRank={req.rank} />
-                            </div>
-                          </td>
-                          <td className="max-w-sm px-4 py-4">
-                            <p className="font-semibold text-foreground">{req.title}</p>
-                            <p className="mt-1 line-clamp-2 text-xs text-zinc-500 dark:text-zinc-400">{req.description}</p>
-                          </td>
-                          <td className="px-4 py-4">
-                            <ScoreBar score={req.score} source={`${req.signal_ids.length} linked findings`} />
-                          </td>
-                          <td className="px-4 py-4">
-                            <EvidenceBadge level={req.evidence_level} reason={req.rationale} />
-                          </td>
-                          <td className="px-4 py-4 text-zinc-700 dark:text-zinc-300">{categoryLabel(req.category)}</td>
-                          <td className="px-4 py-4">
-                            <StatusBadge status={req.status} />
-                          </td>
-                          <td className="px-4 py-4">
-                            <ConflictBadge conflictingTitles={conflicts} href={conflicts.length ? `/requirements/${req.id}#signal-${req.signal_ids[0]}` : undefined} />
-                          </td>
-                        </tr>
-                      );
-                    })}
+                    {requirements.map((req) => (
+                      <tr
+                        key={req.id}
+                        role="link"
+                        tabIndex={0}
+                        onClick={() => router.push(`/requirements/${req.id}`)}
+                        onKeyDown={(event) => {
+                          if (event.key === "Enter" || event.key === " ") {
+                            event.preventDefault();
+                            router.push(`/requirements/${req.id}`);
+                          }
+                        }}
+                        className={`cursor-pointer border-b border-zinc-100 dark:border-zinc-800 transition last:border-0 hover:bg-accent/5 dark:hover:bg-accent/10 focus:bg-accent/5 dark:focus:bg-accent/10 focus:outline-none ${
+                          highlightRanks && previousRanks[req.id] !== req.rank ? "bg-accent/5 dark:bg-accent/10" : ""
+                        }`}
+                      >
+                        <td className="px-4 py-4">
+                          <ScoreBar score={req.score} source={`${req.signal_ids.length} linked findings`} />
+                        </td>
+                        <td className="max-w-sm px-4 py-4">
+                          <p className="font-semibold text-foreground">{req.title}</p>
+                          <p className="mt-1 line-clamp-2 text-xs text-zinc-500 dark:text-zinc-400">{req.description}</p>
+                        </td>
+                        <td className="px-4 py-4 text-zinc-700 dark:text-zinc-300">{categoryLabel(req.category)}</td>
+                      </tr>
+                    ))}
                   </tbody>
                 </table>
               </div>
@@ -292,7 +248,7 @@ export default function RequirementsPage() {
         </section>
 
         <aside className="grid h-fit gap-4 xl:sticky xl:top-6">
-          <section className="rounded-lg border border-accent/30 dark:border-accent/40 bg-accent/5 dark:bg-accent/10 p-5">
+          <section className="theme-light-fixed rounded-lg border border-accent/30 bg-accent/5 p-5">
             <h2 className="text-sm font-semibold uppercase tracking-wide text-foreground">Demo navigation</h2>
             <ol className="mt-3 grid gap-2 text-sm text-foreground">
               <li><span className="font-semibold">1.</span> Pick a scenario and scan the ranked list.</li>
