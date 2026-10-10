@@ -50,3 +50,7 @@ app/layout.tsx (29:5) @ RootLayout
 ---
 
 Please change the table so it doesnt expand with the amount of entries and i can scroll in the window through all entries
+
+---
+
+Please revert the scroll view so i can scroll the website again and not the window
