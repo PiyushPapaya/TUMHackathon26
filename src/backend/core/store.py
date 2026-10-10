@@ -19,6 +19,7 @@ from pydantic import ValidationError
 
 from core.audit import AuditLog
 from core.models import Actor, ActorType, Evidence, Requirement, Scenario, Signal, Status
+from core.replay import replay
 from requirements_engine import scoring
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -54,9 +55,12 @@ class Store:
         sources |= {p.stem: p for p in sorted(processed_dir.glob("*.json"))}
         for path in sources.values():
             state = ScenarioState(json.loads(path.read_text(encoding="utf-8")))
-            self._rescore(state)  # Score immer aus der Formel, nie aus der Datei übernehmen
             self.states[state.scenario.id] = state
-            if not self.audit.events(scenario_id=state.scenario.id):
+            history = self.audit.events(scenario_id=state.scenario.id)
+            if history:
+                replay(state, history)  # PM-Entscheidungen überleben den Neustart (L19)
+            self._rescore(state)  # Score immer aus der Formel (mit evtl. wiederhergestellten Gewichten)
+            if not history:
                 self._log_initial_proposals(state, path.name)
 
     def _log_initial_proposals(self, state: ScenarioState, source: str) -> None:
