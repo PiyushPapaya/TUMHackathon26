@@ -105,6 +105,9 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 > Test mit einem Fake für `ask_json` (monkeypatch), der eine erfundene ID zurückgibt → muss rausgefiltert werden.
 - **Fertig, wenn:** Test grün · echter Lauf G60-US: Titel lesen sich wie Kundenaussagen · zweiter Lauf ist sofort fertig (Cache) · `sync`.
 - **Wenn es hakt:** Kürzung 5 in der ROADMAP (v1-Titel bleiben). Kosten: ~30 Aufrufe, wenige Cent.
+- **Stand:** Code + Tests fertig (`signals_llm.py`, `extract_signals(..., use_llm=True)`). **Echter Lauf offen:** `.env` hat keinen `OPENAI_API_KEY`;
+  ohne Key bleibt v1 und es erscheint eine Warnung. Danach `pipeline.py --scenario G60-US --stage signals` zweimal laufen lassen (zweiter Lauf = Cache).
+  Entscheidungen: Gruppen und `kind` bleiben aus v1 (nicht im Schema); Titel/Zusammenfassung mit Zahlen werden abgelehnt (Zahlen nur aus dem Code); Zitate nur aus der eigenen Gruppe.
 
 ### [ ] A7 · Konflikte (45 min, bis 22:00, **M3**)
 **Prompt:**

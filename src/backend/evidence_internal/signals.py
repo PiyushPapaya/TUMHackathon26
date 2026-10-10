@@ -11,7 +11,8 @@ Ablauf:
 2. Gruppen unter MIN_MENTIONS fallen weg, Themen ohne Kategorie ebenfalls (siehe taxonomy.py).
 3. Studienwerte mit Problem hängen am passenden Feedback-Befund oder werden ein eigener Befund.
 4. IDs SIG-<szenario>-<nnn> nach Nennungen absteigend.
-Konflikte (A7) und LLM-Formulierung (A6) kommen später und ändern die Gruppen nicht.
+5. v2 (signals_llm.py): Das LLM formuliert Titel/Zusammenfassung und wählt Zitate; die Gruppen bleiben.
+Konflikte (A7) kommen später und ändern die Gruppen nicht.
 """
 
 from __future__ import annotations
@@ -19,6 +20,7 @@ from __future__ import annotations
 from collections import defaultdict
 
 from core.models import Category, Evidence, Scenario, Signal, SignalKind, SourceType
+from evidence_internal.signals_llm import MAX_COMMENTS, refine_signals
 from evidence_internal.study_topics import study_category, study_vfc2
 from evidence_internal.taxonomy import category_for_vfc2, survey_area
 
@@ -81,14 +83,14 @@ def _group_feedback(evidence: list[Evidence]) -> tuple[dict[Group, set[str]], di
     return members, category_of
 
 
-def _quotes(ids: set[str], by_id: dict[str, Evidence]) -> list[str]:
-    """Bis zu MAX_QUOTES typische Belege: Länge im Zitatbereich zuerst, dann stabil nach ID."""
+def _quotes(ids: set[str], by_id: dict[str, Evidence], limit: int = MAX_QUOTES) -> list[str]:
+    """Bis zu `limit` typische Belege: Länge im Zitatbereich zuerst, dann stabil nach ID."""
     low, high = QUOTE_LENGTH
 
     def rank(i: str) -> tuple[int, str]:
         return (0 if low <= len(by_id[i].text) <= high else 1, i)
 
-    return sorted(ids, key=rank)[:MAX_QUOTES]
+    return sorted(ids, key=rank)[:limit]
 
 
 def _summary(name: str, kind: SignalKind, comments: int, study_texts: list[str]) -> str:
@@ -145,12 +147,14 @@ def _select(drafts: list[dict]) -> list[dict]:
     return chosen[:MAX_SIGNALS]
 
 
-def extract_signals(scenario: Scenario, evidence: list[Evidence]) -> list[Signal]:
+def extract_signals(scenario: Scenario, evidence: list[Evidence], use_llm: bool = True) -> list[Signal]:
+    """v1 (Regeln) und danach v2 (LLM formuliert). use_llm=False = reines v1; bei LLM-Fehler bleibt v1 ebenfalls."""
     by_id = {e.id: e for e in evidence}
     members, category_of = _group_feedback(evidence)
     feedback = [
         {"name": name, "kind": kind, "category": category_of[name], "mentions": len(ids),
-         "quotes": _quotes(ids, by_id), "title": f"{name}: {kind.value}", "severity": 0.0}
+         "quotes": _quotes(ids, by_id), "title": f"{name}: {kind.value}", "severity": 0.0,
+         "members": _quotes(ids, by_id, MAX_COMMENTS)}
         for (name, kind), ids in members.items()
         if len(ids) >= MIN_MENTIONS
     ]  # fmt: skip
@@ -172,4 +176,6 @@ def extract_signals(scenario: Scenario, evidence: list[Evidence]) -> list[Signal
             mention_count=max(d["mentions"], len(study_ids)),
             source_types=source_types,
         ))  # fmt: skip
+    if use_llm:
+        signals = refine_signals(signals, [d.get("members", []) for d in drafts], evidence)
     return signals
