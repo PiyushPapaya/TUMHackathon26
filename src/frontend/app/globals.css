@@ -41,6 +41,18 @@
   --score-slider: var(--accent);
 }
 
+/* Erzwingt die dunkle Palette lokal, auch ohne die .dark-Klasse auf <html> —
+   Gegenstück zu .theme-light-fixed für Bereiche, die immer dunkel bleiben sollen. */
+.theme-dark-fixed {
+  --background: #0a0a0a00;
+  --foreground: #f2f2f2;
+  --surface: #13293d;
+  --accent: #006494;
+  --accent-hover: #70aaee;
+  --table-background: var(--surface);
+  --score-slider: var(--accent);
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

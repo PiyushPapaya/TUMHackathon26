@@ -248,7 +248,7 @@ export default function RequirementsPage() {
         </section>
 
         <aside className="grid h-fit gap-4 xl:sticky xl:top-6">
-          <section className="theme-light-fixed rounded-lg border border-accent/30 bg-accent/5 p-5">
+          <section className="theme-dark-fixed rounded-lg border border-accent/30 bg-accent/5 p-5">
             <h2 className="text-sm font-semibold uppercase tracking-wide text-foreground">Demo navigation</h2>
             <ol className="mt-3 grid gap-2 text-sm text-foreground">
               <li><span className="font-semibold">1.</span> Pick a scenario and scan the ranked list.</li>
