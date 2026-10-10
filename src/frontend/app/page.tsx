@@ -112,7 +112,7 @@ export default function RequirementsPage() {
       </header>
 
       {/* Mitte: Ergebnis-Fenster, 2cm Abstand zu Rand, Top-Bar und Prompt-Leiste */}
-      <main className="m-[2cm] flex flex-1 flex-col">
+      <main className="m-[2cm] flex min-h-0 flex-1 flex-col">
         <div className="flex-1 overflow-hidden rounded-lg border border-zinc-200 bg-surface backdrop-blur-sm dark:border-zinc-800">
           <div className="h-full overflow-auto">
             {error && (
