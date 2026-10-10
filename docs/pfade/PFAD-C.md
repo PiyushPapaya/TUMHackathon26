@@ -116,6 +116,6 @@ Prompt zum Kopieren für jede Karte: [`docs/UPGRADE_WELLE2.md`](../UPGRADE_WELLE
 - [x] **W-C4** · What-if als reine Funktion, baut auf `score_without()` auf (neue Datei `whatif.py`) · 00:30–01:00
 - [x] **W-C5** · 15–25 Anforderungen in allen Szenarien (Ableitung pro Kategorie-Block) · 01:00–02:00
 - [x] **W-C6** · Business-Faktor: Volumen 2030 + Wachstum, Satz nennt die Zahl · 02:00–03:00
-- [ ] **W-C7** · Keine stillen Fehler + ohne Optionsliste (G68-CN) · 03:00–03:30
+- [x] **W-C7** · Keine stillen Fehler + ohne Optionsliste (G68-CN) · 03:00–03:30
 - [ ] **W-C8** · Eval mit Aditya (siehe W-A8) · 06:00–07:00
 - [ ] *(soll/kann)* **W-C9** Segment-Konflikte an Anforderungen · **W-C10** Preis im Offer-Check · **W-C11** Markdown-Lastenheft · **W-C12** Scope-Filter beweisen

@@ -15,12 +15,14 @@ Sicherheit (gleiche Regeln wie überall):
 from __future__ import annotations
 
 import json
+import logging
 
 from pydantic import BaseModel
 
 from core.llm import ask_json
 from core.models import Evidence, Requirement, Signal
 
+logger = logging.getLogger(__name__)
 MAX_EVIDENCE = 30
 SYSTEM_PROMPT = """You are a critical reviewer for a BMW product manager (PM). The PM challenges a
 requirement. Do NOT defend it blindly: be a fair devil's advocate. Write in English, at most 120 words.
@@ -88,7 +90,8 @@ def answer_challenge(req: Requirement, question: str, signals: list[Signal], evi
     }
     try:
         answer = ask_json(SYSTEM_PROMPT, json.dumps(payload, ensure_ascii=False), ChallengeAnswer)
-    except Exception:  # kein Netz, Demo-Cache-Fehlschlag, Schemafehler: die API darf nie ausfallen
+    except Exception as error:  # kein Netz, Demo-Cache-Fehlschlag, Schemafehler: die API darf nie ausfallen
+        logger.warning("Challenge answer fell back to rules for %s: %s: %s", req.id, type(error).__name__, error)
         return fallback
     known = {e.id for e in chosen}
     supporting = [i for i in dict.fromkeys(answer.supporting_evidence_ids) if i in known]

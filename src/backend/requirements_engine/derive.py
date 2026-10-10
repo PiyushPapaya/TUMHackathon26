@@ -20,7 +20,6 @@ Regeln für den Prompt:
 from __future__ import annotations
 
 import json
-from pathlib import Path
 
 from core.llm import ask_json
 from core.models import (
@@ -44,7 +43,7 @@ from requirements_engine.derive_checks import (
 )
 from requirements_engine.drafts import RequirementDraft, RequirementDrafts
 from requirements_engine.factors import compute_factors, rationale_from
-from requirements_engine.offer_check import check, load_offer
+from requirements_engine.offer_check import check, load_offer_for
 from requirements_engine.prompts import SYSTEM_PROMPT
 from requirements_engine.robustness import compute_robustness
 
@@ -93,10 +92,9 @@ def derive_all(
     by_id = {e.id: e for e in evidence}
     requirements = [_build(scenario, d, linked, by_id, max_mentions, context) for d, linked in kept]
     make_ids_unique(requirements)
-    offer = _load_offer(context)
-    if offer:  # "Gibt es das schon?": pro Anforderung ein KI-Abgleich gegen die Optionsliste
-        for req in requirements:
-            req.offer_check = check(req.title, offer)
+    offer, offer_note = load_offer_for(context)
+    for req in requirements:  # "Gibt es das schon?": pro Anforderung ein KI-Abgleich gegen die Optionsliste
+        req.offer_check = check(req.title, offer) if offer else OfferCheck(status="unknown", note=offer_note)
     requirements.sort(key=lambda r: -r.score)  # stabil: gleiche Punkte behalten KI-Reihenfolge
     for rank, req in enumerate(requirements, start=1):
         req.rank = rank
@@ -104,17 +102,6 @@ def derive_all(
     for req in requirements:
         req.robustness = robustness[req.id]
     return requirements, discarded
-
-
-def _load_offer(context: dict) -> list[dict]:
-    """Optionsliste lesen; fehlt oder kaputt, läuft die Pipeline ohne Abgleich weiter (Status unknown)."""
-    path = context.get("option_list_path")
-    if not path or not Path(path).exists():
-        return []
-    try:
-        return load_offer(Path(path))
-    except Exception:
-        return []
 
 
 def _build(
@@ -138,7 +125,7 @@ def _build(
         rationale=f"{rationale_from(breakdown)} Evidence level {level.value}: {level_reason}",
         evidence_level=level, assumptions=draft.assumptions,
         uncertainties=[*conflict_notes(linked), *draft.uncertainties],
-        offer_check=OfferCheck(status="unknown", note="Option list not checked yet (C5)."),
+        offer_check=OfferCheck(status="unknown", note="Option list not checked yet."),
         effort=effort, horizon=draft.horizon, badges=badges_for(draft.horizon, level.value),
         business=business_context(context.get("sales", {})),
     )
