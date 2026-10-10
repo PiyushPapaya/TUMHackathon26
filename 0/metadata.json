@@ -1,0 +1,83 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4K4CN8B54ZRB4XJEYXY3KQ8",
+  "session_id": "d5d2db92-9cf8-4260-8506-c3f660408639",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T14:45:08.348476037Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "src/frontend/app/page.tsx",
+    "src/frontend/src/components/ScoreBar.tsx",
+    "src/frontend/src/components/badges.tsx"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5",
+  "turn_id": "684295f1fb7c",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 108,
+    "cache_creation_tokens": 89766,
+    "cache_read_tokens": 5213428,
+    "output_tokens": 31920,
+    "api_call_count": 54
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "claude-skill-toolu_01Pny6B6tnZuQLHroG2doqyy",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "sync"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "684295f1fb7c",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 322,
+        "end": 323,
+        "entry_ids": [
+          "1a31f434-8a68-42df-a8c2-cad139f56ab6"
+        ],
+        "tool_use_id": "toolu_01Pny6B6tnZuQLHroG2doqyy"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_01Pny6B6tnZuQLHroG2doqyy"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: sync",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T14:45:08.327996399Z",
+    "agent_lines": 275,
+    "agent_removed": 60,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 275,
+    "total_lines_changed": 335,
+    "agent_percentage": 100,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 1,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "src/frontend/.gitignore": 1
+      }
+    }
+  ]
+}
