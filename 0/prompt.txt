@@ -1,0 +1,32 @@
+implmeneteier das alles: 
+
+<pasted_content id="1e5b">
+Sofort (5 min): Datenleck an Piyush melden
+
+Die BMW-Dateien liegen im öffentlichen Repo. Das ist das größte Risiko. Wenn BMW oder die Jury das sieht, kann es das Team disqualifizieren, egal wie gut der Code ist.
+Schick Piyush die Nachricht von oben, oder geh direkt zu ihm hin.
+Schnellste Lösung: Er stellt das Repo auf GitHub auf privat (Settings → General → ganz unten „Change visibility“) und fragt die Organisatoren, wie die Abgabe dann klappt.
+Das kann nur Piyush entscheiden, du und ich sollten da nichts anfassen.
+
+Gleich danach (10 min, Piyush): Bundles neu bauen
+
+Mit den 7 Befehlen aus der Nachricht. Erst dann sieht die Jury im UI die neuen Kunden-Titel.
+
+Du, bis ca. 22:30 (30 min): A9 labeln
+
+Davon hängt deine Pitch-Zahl ab.
+Öffnen: ! start data/eval/G60-US_sample.csv
+Lies jede Zeile: Passt der Kommentar (text) zum Befund (signal_title)? → j oder n in die Spalte passt.
+Ehrlich labeln. 80 % ehrlich wirken vor der Jury besser als 100 %, die niemand glaubt.
+Speicher als CSV und sag mir Bescheid.
+
+Ich, danach (10 min): A10 Report neu rechnen
+
+Ich rechne die Befund-Treue aus, aktualisiere tests/eval/REPORT.md und pushe. Die Anforderungs-Zahl kommt dazu, sobald Dennis' requirements.json da ist.
+
+Sonntag 08:30: A11 Pitch-Folie
+
+Zusammen mit Piyush.
+
+Kurz: Jetzt Piyush Bescheid geben, dann labeln. Sag mir „fertig gelabelt“, wenn du so weit bist.
+</pasted_content id="1e5b">
