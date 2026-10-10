@@ -9,6 +9,7 @@ Eine Mission ist eine kleine Bauaufgabe, die am Ende in der Demo oder im Pitch z
 | [Wettbewerbs-Scout](wettbewerbs-scout.md) | Mercedes, Audi, Tesla und Lucid zu unseren Top-Themen mit Quellen recherchieren | nein | wer mag |
 | [Visual-Designer](visual-designer.md) | Diagramme, Mockups und Charts für Pitch und App | nein | Lasse |
 | [Story & Pitch](story-und-pitch.md) | Demo-Story, Folien, Jury-Fragen, Pitch üben | nein | Piyush |
+| [Baukasten](../src/frontend/baukasten/README.md) | Texte, Farben, Feature-Schalter und angepinnte Zitate der Werkbank ändern | nein | alle |
 | [Builder](builder.md) | Pipeline und App, alles von den anderen einbauen | ja, mit Claude Code | Piyush, Lasse |
 
 ## So läuft jede Mission

@@ -42,3 +42,4 @@ scripts/ export-ignore
 .claude/hooks/ export-ignore
 .github/pull_request_template.md export-ignore
 .entire/ export-ignore
+src/frontend/baukasten/README.md export-ignore

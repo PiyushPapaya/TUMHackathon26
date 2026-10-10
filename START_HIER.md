@@ -28,6 +28,8 @@ flowchart LR
 | **mitentscheiden** | [entscheidungen/ENTSCHEIDUNGSBOGEN.md](entscheidungen/ENTSCHEIDUNGSBOGEN.md) | 10 Minuten |
 | ein Extra-Feature aussuchen | [entscheidungen/E04_features.md](entscheidungen/E04_features.md) | 5 Minuten |
 | etwas bauen, ohne Code | [missionen/](missionen/README.md) | |
+| Texte, Farben oder Features der App ändern | [src/frontend/baukasten/](src/frontend/baukasten/README.md) | 5 Minuten |
+| die Werkbank ansehen | App starten, dann http://localhost:3000/studio (Bilder: `visuals/werkbank/`) | |
 | wissen, was bis Sonntag fertig sein muss | [docs/06_roadmap.md](docs/06_roadmap.md) | 5 Minuten |
 | ein Wort nachschlagen | [docs/02_glossar.md](docs/02_glossar.md) | |
 | den Pitch üben | [docs/07_pitch.md](docs/07_pitch.md) | |

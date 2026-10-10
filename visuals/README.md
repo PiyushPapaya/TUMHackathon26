@@ -16,4 +16,6 @@ Es gibt jeweils PNG (Folien) und SVG (verlustfrei, bei Diagrammen). Kein BMW-Log
 | `charts/03_studie_g60_vs_g70.png` | Die 10 Attribute des G60 mit dem höchsten Unzufriedenheitsanteil, neben dem G70 (echte US-Studie) | Folie "Evidenz aus der Studie"; Challenge-Beispiele |
 | `charts/04_absatz_pro_markt.png` | Absatz des 5er (G60/G68) je Markt 2024, 2025, Prognose 2030 (echte Daten) | Folie Reichweite im Score |
 
+| `werkbank/*.png` | Echte Screenshots der Werkbank (`/studio`): Start, Duell, Konflikt-Arena, Annahmen-Schalter, Kundenstimmen, Entscheidungslauf. Daten: synthetisches Beispiel-Bundle | Deck, Backup, Abstimmung mit Lasse |
+
 Mockups: Alle Zahlen sind Beispielwerte. Nur das Zitat `G60-0019` und die Charts in `charts/` sind echte Daten.

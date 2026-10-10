@@ -28,6 +28,10 @@ Setzt bei **Unsere Wahl** ein `x`.
 | [ ] | **Markt-Umschalter** | Dropdown G60 / G70 / F70. Zeigt: für andere Modelle geht es auch. | 4 | klein | Piyush |
 | [ ] | **Evidenz-Ampel** | A bis D als Farbe. Existiert schon als Badge. | 3 | klein | Lasse |
 
+## Stand: schon gebaut (Werkbank `/studio`)
+
+Duell-Modus, Konflikt-Arena, Annahmen-Schalter, Kundenstimmen-Wand und ein Entscheidungslauf (statt Swipe) laufen unter `http://localhost:3000/studio`. Jedes Werkzeug lässt sich in `src/frontend/baukasten/features.json` aus- und einschalten. Ihr entscheidet also nicht mehr, **ob** sie gebaut werden, sondern **welche** in die Demo kommen. Bilder: `visuals/werkbank/`.
+
 ## Meine Empfehlung
 
 Für die Jury zählt: **Kontrolle** und **Ehrlichkeit über Unsicherheit**. Dazu passen am besten:
