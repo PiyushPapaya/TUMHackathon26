@@ -1,0 +1,84 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KYSBY9222BS657TX8EJHR6",
+  "session_id": "318bd04f-11c9-405b-b167-b86463326d85",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T22:26:27.634778665Z",
+  "branch": "jolesCrazyFrontend",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "src/frontend/src/components/RequirementDetailView.tsx"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5",
+  "turn_id": "ec1caceed143",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 30,
+    "cache_creation_tokens": 29278,
+    "cache_read_tokens": 904650,
+    "output_tokens": 3703,
+    "api_call_count": 15
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "claude-skill-toolu_017RYRBUbCLgfSfDKJdgs5T7",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "sync"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "ec1caceed143",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 87,
+        "end": 88,
+        "entry_ids": [
+          "d6e03a87-3c85-4711-b07a-26dc060ed819"
+        ],
+        "tool_use_id": "toolu_017RYRBUbCLgfSfDKJdgs5T7"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_017RYRBUbCLgfSfDKJdgs5T7"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: sync",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T22:26:27.62279641Z",
+    "agent_lines": 2,
+    "agent_removed": 2,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 2,
+    "total_lines_changed": 4,
+    "agent_percentage": 100,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 1,
+      "user_lines_removed": 1,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "src/frontend/app/globals.css": 1
+      },
+      "user_removed_per_file": {
+        "src/frontend/app/globals.css": 1
+      }
+    }
+  ]
+}

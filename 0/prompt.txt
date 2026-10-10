@@ -1,0 +1,1 @@
+Please change the text in the acceptance criterion window to always use the dark color theme regardless of dark mode
