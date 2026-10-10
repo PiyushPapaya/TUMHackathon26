@@ -1,0 +1,118 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KKX21G532D4TZ12CXHQ1GD",
+  "session_id": "8d63e115-a99d-44e9-9044-62173392a8a4",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T19:16:14.018421301Z",
+  "branch": "main",
+  "checkpoints_count": 2,
+  "save_step_count": 1,
+  "files_touched": [
+    "scripts/make_view_examples.py",
+    "src/backend/api/routes.py",
+    "src/backend/api/views.py",
+    "src/backend/core/insights.py",
+    "src/backend/core/store.py",
+    "src/backend/main.py",
+    "src/backend/pipeline.py",
+    "src/shared/API.md",
+    "src/shared/beispiele/bundle_G60-US.json",
+    "src/shared/beispiele/views/audit_timeline.json",
+    "src/shared/beispiele/views/compare.json",
+    "src/shared/beispiele/views/evidence.json",
+    "src/shared/beispiele/views/explain.json",
+    "src/shared/beispiele/views/gaps.json",
+    "src/shared/beispiele/views/health.json",
+    "src/shared/beispiele/views/opportunities.json",
+    "src/shared/beispiele/views/overview.json",
+    "src/shared/beispiele/views/portfolio.json",
+    "src/shared/beispiele/views/scenarios.json",
+    "src/shared/beispiele/views/trends.json",
+    "src/shared/beispiele/views/whatif.json",
+    "tests/test_api.py",
+    "tests/test_pipeline.py",
+    "tests/test_views.py"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5",
+  "turn_id": "149b5b9b64c8",
+  "checkpoint_transcript_start": 120,
+  "transcript_lines_at_start": 120,
+  "compact_transcript_start": 19,
+  "token_usage": {
+    "input_tokens": 26,
+    "cache_creation_tokens": 13195,
+    "cache_read_tokens": 959560,
+    "output_tokens": 9346,
+    "api_call_count": 13
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "claude-skill-toolu_01MFMPDg9TETfYbhrW6fwWZx",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "sync"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "9e1756ed385e",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 64,
+        "end": 65,
+        "entry_ids": [
+          "f10f1ab6-96a5-46f0-b3aa-754701761e21"
+        ],
+        "tool_use_id": "toolu_01MFMPDg9TETfYbhrW6fwWZx"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_01MFMPDg9TETfYbhrW6fwWZx"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: sync",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "session_metrics": {
+    "turn_count": 2
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T19:16:14.006020113Z",
+    "agent_lines": 1471,
+    "agent_removed": 38,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 34,
+    "total_committed": 1471,
+    "total_lines_changed": 1543,
+    "agent_percentage": 97.79650032404406,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 606,
+      "user_lines_removed": 56,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "src/backend/core/portfolio.py": 94,
+        "src/backend/core/store.py": 3,
+        "src/backend/core/views.py": 172,
+        "src/frontend/src/components/ShaderBackground.tsx": 6,
+        "src/shared/beispiele/bundle_G60-US.json": 331
+      },
+      "user_removed_per_file": {
+        "src/frontend/src/components/ShaderBackground.tsx": 22,
+        "src/shared/beispiele/bundle_G60-US.json": 34
+      }
+    }
+  ]
+}
