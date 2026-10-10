@@ -50,3 +50,10 @@ def test_prompt_verlangt_abdeckung_aller_beschwerden():
 def test_prompt_haelt_die_zielzahl_aus_dem_ticket():
     # W-C5: pro Block 3-7 Anforderungen (heute) plus höchstens 2 Wetten; Summe über 3 Blöcke 15-25.
     assert "3-7 requirements with horizon" in SYSTEM_PROMPT and "up to 2 bets" in SYSTEM_PROMPT
+
+
+def test_prompt_trennt_paketinhalt_von_paketpreis_und_verbietet_rechtswoerter():
+    # Echter Fund (W-C12, 8 Läufe): Preiswünsche in der Kategorie "Varianten/Pakete" wurden in 2 von 8 Läufen zu einer
+    # Anforderung "MSRP < $50,000" verschmolzen, CCC und GDPR rutschten durch. Der Code-Wächter fängt den Rest.
+    assert "What a package CONTAINS is in scope, what it COSTS is not" in SYSTEM_PROMPT
+    assert "WITHOUT any legal or certification wording" in SYSTEM_PROMPT
