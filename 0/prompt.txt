@@ -1,0 +1,505 @@
+Ich bin Piyus. Bitte mach das: 
+
+<pasted_content id="8ddc">
+ Here is Claude's plan:
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ Signal2Spec: Siegplan „Welle 2“ (Backend, Daten, Pitch; Frontend nur noch anzeigen)
+
+ ▎ Ziel: Bis So 07:30 liefert das Backend für 6 Szenarien alles fertig gerechnet und erklärt, sodass das Frontend (Lasse) nur noch anzeigt. Ab 07:30 nur noch Pitch, Deck und Probe. Code-Freeze 10:30, Abgabe 11:30.
+
+ ---
+
+ Teil 1: Was wir herausgefunden haben (Ist-Stand Sa ~20:30)
+
+ 1.1 Was gut ist (behalten, im Pitch zeigen)
+
+ - Pipeline läuft durchgehend: Evidenz → Signale → Web → Anforderungen → Bundle (src/backend/pipeline.py), für G60-US, G70-US, F70-EU.
+ - Saubere Trennung: Python rechnet, das LLM formuliert nur. Score = Formel (requirements_engine/scoring.py), Evidenzstufe A–D = Regel (evidence_level.py), LLM darf nur IDs aus der Eingabe zitieren (Tests vorhanden).
+ - Audit-Trail mit SHA-256-Hash-Kette (core/audit.py), CSV-Export mit Schutz gegen Formel-Injection.
+ - 164 Testfunktionen, keine Datei über 200 Zeilen, keine TODOs.
+ - Eval: Grounding 100 %, wörtliche Zitate 100 % (tests/eval/REPORT.md).
+ - Web: 90–99 Webbelege pro Szenario mit Vertrauensstufe (evidence_external/trust.py), offline über Cache.
+
+ 1.2 Die BMW-Daten genau (data/raw/, alle 9 Dateien plus Brief)
+
+ ┌─────────────────────────────────────────┬──────────────────────────────────────────────────────────────┬──────────────────────────┬─────────────────────────────────────────────────────────────────┐
+ │                  Datei                  │                            Inhalt                            │   Was wir heute nutzen   │                        Was ungenutzt ist                        │
+ ├─────────────────────────────────────────┼──────────────────────────────────────────────────────────────┼──────────────────────────┼─────────────────────────────────────────────────────────────────┤
+ │ F70_feedback_hackathon.xlsx             │ 4.076 Kommentare, nur Quelle A, nur Verbrenner. GB 2.790, JP │ EU-Länder (1.433)        │ JP (1.026!), Feedback-Typ-Mix (Likes 1.630, Defect 491,         │
+ │                                         │  1.026, SE 121, FR 75, AU 30, DK 13, FI 11, KR 5, ZA 5       │                          │ Difficult to Use 595, Wants 273) nur teilweise                  │
+ ├─────────────────────────────────────────┼──────────────────────────────────────────────────────────────┼──────────────────────────┼─────────────────────────────────────────────────────────────────┤
+ │ G60_feedback_hackathon.xlsx             │ 5.005 Kommentare, Quellen A–D. US 4.365, KR 278, GB 89, JP   │ US (3.610)               │ Antriebsart, KR, EU (~240)                                      │
+ │                                         │ 76 … Antrieb: ICE 2.768, BEV 1.763, PHEV 474                 │                          │                                                                 │
+ ├─────────────────────────────────────────┼──────────────────────────────────────────────────────────────┼──────────────────────────┼─────────────────────────────────────────────────────────────────┤
+ │ G70_feedback_hackathon.xlsx             │ 4.690 Kommentare, Quellen A–D. US 4.418, KR 157 … ICE 2.956, │ US (3.792)               │ Antriebsart, KR, EU (<50)                                       │
+ │                                         │  BEV 1.347, PHEV 387                                         │                          │                                                                 │
+ ├─────────────────────────────────────────┼──────────────────────────────────────────────────────────────┼──────────────────────────┼─────────────────────────────────────────────────────────────────┤
+ │                                         │ US_2025: 103 Attribute, 7-stufige Skala, G60 + G70.          │                          │ China G68, China G70, EU G60, EU G70;                           │
+ │ F70_G60_G68_G70_customer_studies.xlsx   │ CN_EU_2025: Mittelwerte für China G68, China G70, EU F70, EU │ US-Spalten, EU F70       │ Wichtigkeit-vs-Zufriedenheit-Analyse                            │
+ │                                         │  G60, EU G70                                                 │                          │                                                                 │
+ ├─────────────────────────────────────────┼──────────────────────────────────────────────────────────────┼──────────────────────────┼─────────────────────────────────────────────────────────────────┤
+ │ sales_volumes.xlsx                      │ Blätter F70, G60_G68, G70; Märkte EU/CN/US/RoW; Volumen      │ Volumen 2025/2030 des    │ Wachstum 2024→2030, Marktanteile, Vergleich zwischen Märkten    │
+ │                                         │ 2024/2025/2030. Achtung: F70-CN ist eine Formel =-D3-C10     │ Szenario-Markts          │                                                                 │
+ ├─────────────────────────────────────────┼──────────────────────────────────────────────────────────────┼──────────────────────────┼─────────────────────────────────────────────────────────────────┤
+ │ F70/G60/G70_OptionList.PDF              │ Deutsche Preislisten, 23–28 Seiten, ■ Serie / □ Option       │ Abgleich „gibt es das    │ Preis als Signal („nur gegen Aufpreis“), Paket-Struktur         │
+ │                                         │                                                              │ schon?“                  │                                                                 │
+ ├─────────────────────────────────────────┼──────────────────────────────────────────────────────────────┼──────────────────────────┼─────────────────────────────────────────────────────────────────┤
+ │ BMW_Hackathon_Briefing_Short.pdf,       │ Der Brief (nur Bilder)                                       │ —                        │ —                                                               │
+ │ AI-BMV.pdf                              │                                                              │                          │                                                                 │
+ └─────────────────────────────────────────┴──────────────────────────────────────────────────────────────┴──────────────────────────┴─────────────────────────────────────────────────────────────────┘
+
+ Wichtig: Es gibt keinen neuen BMW-Datensatz im Repo. „Neuer Datensatz“ heißt bei uns deshalb zweierlei:
+ 1. die vorhandenen Dateien voll ausschöpfen (Antrieb, China-/EU-Studie, Wachstum, Preise, JP/KR);
+ 2. neue Quellen anbinden (externe öffentliche Daten, Teil 4) und einen Loader bauen, der künftige BMW-Dateien ohne Code-Änderung aufnimmt.
+
+ 1.3 Die Schwächen, die die Jury findet
+
+ ┌─────┬──────────────────────────────────────────────────────────┬───────────────────────────────────────────────────────────────────────────┬────────────────────────────────────────────────────────┐
+ │  #  │                         Schwäche                         │                                   Beleg                                   │                         Folge                          │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S1  │ Keine Annahmen sichtbar                                  │ G60-US: 10×A, 1×B, 0×D                                                    │ „Evidence vs. assumption“ (Kernsatz im Brief) wird     │
+ │     │                                                          │                                                                           │ nicht gezeigt                                          │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S2  │ Konflikte nur Lob gegen Kritik                           │ conflicts.py                                                              │ „Conflicting evidence“ ist flach                       │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S3  │ Keine Unsicherheit in der Priorisierung                  │ Score = eine Zahl                                                         │ „Understanding of uncertainty“ fehlt                   │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S4  │ Nur 3 Szenarien, kein Vergleich                          │ config/scenarios/                                                         │ „Scale across vehicle lines, markets“ nur behauptet    │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S5  │ Zu wenige Anforderungen                                  │ 11 / 16 / 12, Ziel 15–25                                                  │ wirkt dünn                                             │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S6  │ Zukunft (3–5 Jahre) dünn                                 │ 5 feste Trendfragen, Horizont hart „2028-2031“ (questions.py L67, L76)    │ Brief-Kernpunkt schwach                                │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S7  │ Business-Seite nur über Reach                            │ factors.py                                                                │ BMW-Folie „Customer + Business“ halb erfüllt           │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S8  │ PM-Entscheidungen weg nach Neustart                      │ store.py L47, Events werden nie neu abgespielt                            │ Demo-Risiko                                            │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S9  │ Anforderungs-IDs ändern sich bei Re-Run                  │ derive.py L122                                                            │ Audit-Links brechen                                    │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S10 │ Ein Web-Fehler bricht die ganze Stufe ab                 │ claims.py L42, pipeline.py ohne Fehlerbehandlung                          │ Nachtlauf-Risiko                                       │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S11 │ Fehler werden still verschluckt                          │ derive.py L141 except Exception: return []                                │ falsche Ergebnisse ohne Warnung                        │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S12 │ llm.py ohne Timeout, Retry, None-Check, atomares         │ core/llm.py                                                               │ Abbrüche, kaputter Cache                               │
+ │     │ Schreiben                                                │                                                                           │                                                        │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S13 │ Unbekannte Themen fallen still raus                      │ taxonomy.py von Hand gebaut                                               │ neuer Datensatz würde lautlos verlieren                │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S14 │ Scope-Filter hat nie gegriffen                           │ discarded.json = [] überall                                               │ „Was verwerfen wir?“ nicht zeigbar                     │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S15 │ Trust-Zahl unvollständig                                 │ Fidelity: 0 von 50 gelabelt; Report veraltet                              │ Trust-Folie ohne Kopfzahl                              │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S16 │ G60-US-Bundle veraltet                                   │ gebaut 19:12, vor C7 (20:02) und A7 (20:06)                               │ Demo zeigt alten Stand                                 │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S17 │ Pitch passt nicht zu den Daten                           │ Skript: #1 „physical controls“; echt: öffentliches Laden (65,7)           │ peinlich bei Nachfrage                                 │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S18 │ Kein Deck, FAQ ist Vorlage mit Altresten                 │ docs/pitch/JURY-FAQ.md                                                    │ Abgabe-Checkliste rot                                  │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S19 │ Doku veraltet                                            │ /studio in ARCHITEKTUR, data/README.md sagt „gitignored“, aber Rohdaten   │ KI-Review zieht ab                                     │
+ │     │                                                          │ sind committet                                                            │                                                        │
+ ├─────┼──────────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────┤
+ │ S20 │ F70-EU-Länderliste nennt Länder ohne Daten (DE, IT, NL,  │ config/scenarios/F70-EU.json                                              │ unehrlich                                              │
+ │     │ NO, ES, LV)                                              │                                                                           │                                                        │
+ └─────┴──────────────────────────────────────────────────────────┴───────────────────────────────────────────────────────────────────────────┴────────────────────────────────────────────────────────┘
+
+ ---
+
+ Teil 2: Wie wir gewinnen
+
+ 2.1 Wer entscheidet, und worauf er schaut
+
+ - Menschliche Jury nach 6 Minuten Pitch entscheidet den Platz (docs/wissen/EHL-BEWERTUNG.md). Sie bewertet, was sie sieht und versteht.
+ - BMW sagt wörtlich, was zählt: „trustworthy sources, transparent reasoning, thoughtful prioritization, clear understanding of uncertainty and conflicting evidence“, plus „PM stays in control“, „3–5 years ahead“, „scale across vehicle lines, markets“.
+ - KI-Review (Lesehilfe): Code 30, Architektur 25, Challenge-Fit 25, Innovation 20.
+ - Entire-Bonus: Ownership-Sprache 35, Konkretheit 25, Iteration 25, Randfälle 15.
+
+ 2.2 Unsere Siegformel: jedes BMW-Wort bekommt einen sichtbaren Beweis
+
+ ┌───────────────────────────┬────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────────────────┐
+ │       BMW-Kriterium       │                                Unser Beweis im Produkt                                 │               Moment im Pitch               │
+ ├───────────────────────────┼────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────┤
+ │ Trustworthy sources       │ Jede Aussage verlinkt auf wörtliche Kommentare + Quelle mit Vertrauensstufe; Eval-Zahl │ Klick auf Zitat → Original-Excel-ID         │
+ ├───────────────────────────┼────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────┤
+ │ Transparent reasoning     │ Score-Wasserfall: Faktor × Gewicht, jede Zahl mit Herkunft                             │ Wasserfall öffnen                           │
+ ├───────────────────────────┼────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────┤
+ │ Thoughtful prioritization │ Kunde und Business (Volumen 2030, Wachstum), Robustheit                                │ „#1 bleibt in X % aller Gewichtungen vorne“ │
+ ├───────────────────────────┼────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────┤
+ │ Uncertainty               │ Stufe A–D, D nur mit ausgeschriebener Annahme, Rang-Spanne                             │ „Hier raten wir, und wir sagen es.“         │
+ ├───────────────────────────┼────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────┤
+ │ Conflicting evidence      │ Segment-Konflikte (BEV vs. ICE, US vs. KR, Studie vs. Kommentare, Web widerspricht)    │ ein echter BEV-vs-ICE-Konflikt              │
+ ├───────────────────────────┼────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────┤
+ │ PM in control             │ Freigeben/Ablehnen/Bearbeiten/Challenge, Gewichte, Audit-Kette                         │ Freigabe → Audit „Kette gültig“             │
+ ├───────────────────────────┼────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────┤
+ │ 3–5 Jahre                 │ Zukunftswetten mit Wachstumsdaten 2030 und Trendradar                                  │ Trendradar-Folie                            │
+ ├───────────────────────────┼────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────┤
+ │ Scale                     │ 6 Szenarien, Portfolio-Vergleich, „neues Szenario = 1 Config“                          │ Matrix: plattformweit vs. marktspezifisch   │
+ └───────────────────────────┴────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────────────────┘
+
+ 2.3 Drei „Wow“-Momente (die Jury erinnert sich an 3 Dinge)
+
+ 1. Der Kaltstart G68-CN: „Für China haben wir null Kundenkommentare. Andere Tools würden trotzdem eine Liste erfinden. Wir zeigen: Hier tragen nur Studie, Absatz und Web, die meisten Punkte sind Stufe C/D, und genau diese Fragen sollte BMW als Nächstes erforschen.“ → Ehrlichkeit als Feature.
+ 2. Robustheit: Gewichte-Regler bewegen, die #1 bleibt; dann zeigen, dass Platz 4–7 wackelt → „Da muss der PM entscheiden, nicht die KI.“
+ 3. Plattform-Blick: „Laden und Reichweite ist bei 5er und 7er in den USA Top 3; beim 1er in Europa nicht. Das ist eine Plattform-Entscheidung, keine Modell-Entscheidung.“ (Zahlen erst nach dem Nachtlauf einsetzen.)
+
+ 2.4 Was wir bewusst NICHT tun (und im Pitch so sagen)
+
+ - Keine Technik-Specs, keine Regulierung, keine Business-Case-Rechnung (BMW schließt das aus).
+ - Keine Anforderung nur aus Web (Web darf bestätigen, nie allein tragen).
+ - Kein LLM-Score, keine LLM-Stufe.
+
+ ---
+
+ Teil 3: Zielbild Backend: „Frontend muss nur anzeigen“
+
+ Prinzip: Jede Zahl, jeder Text, jede Farbe/Stufe, jede Diagramm-Reihe kommt fertig aus dem Backend. Das Frontend rechnet nichts. Dafür bekommt jede Ansicht einen eigenen, fertigen Endpunkt („View-Model“).
+
+ 3.1 Neue und erweiterte Endpunkte (alle unter /api)
+
+ ┌───────────────────────────────────────────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────┐
+ │                       Endpunkt                        │                                                  Liefert fertig                                                   │   Für welche Ansicht    │
+ ├───────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────┤
+ │ GET /scenarios                                        │ + data_coverage, badge („reich“, „dünn“, „Kaltstart“), headline_numbers                                           │ Szenario-Wähler         │
+ ├───────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────┤
+ │ GET /scenarios/{id}/overview neu                      │ Funnel-Zahlen, Top 3, Stufen-Verteilung A–D, Warnungen (dünne Daten, unbekannte Themen), Quellen-Mix, Zeitstempel │ Startseite              │
+ ├───────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────┤
+ │ GET /scenarios/{id}/requirements                      │ + robustness, horizon, assumptions, segment_conflicts, badges[]                                                   │ Tabelle                 │
+ ├───────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────┤
+ │ GET /requirements/{id}/explain neu                    │ Wasserfall-Schritte (Faktor, Gewicht, Beitrag, Satz mit Zahl), Top-5-Zitate mit Quelle/Land/Antrieb,              │ Detailseite             │
+ │                                                       │ Segment-Balken, Konflikte, Annahmen, Optionslisten-Status inkl. Preis, Webquellen nach Vertrauen, Rang-Spanne     │                         │
+ ├───────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────┤
+ │ POST /scenarios/{id}/whatif neu                       │ neue Reihenfolge für Probe-Gewichte, ohne zu speichern, mit Rang-Änderung pro Anforderung (↑↓)                    │ Gewichte-Regler         │
+ │                                                       │                                                                                                                   │ (Live-Vorschau)         │
+ ├───────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────┤
+ │ PUT /scenarios/{id}/weights                           │ unverändert, schreibt Audit                                                                                       │ Regler „Übernehmen“     │
+ ├───────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────┤
+ │ GET /portfolio neu                                    │ Matrix Kategorie × Szenario (Rang, Stufe), Klassen „plattformweit / marktspezifisch / modellspezifisch“,          │ Vergleichsseite         │
+ │                                                       │ Datenabdeckung                                                                                                    │                         │
+ ├───────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────┤
+ │ GET /compare?a=G60-US&b=G60-EU neu                    │ gleiche Themen nebeneinander, Unterschiede in Rang und Zufriedenheit                                              │ Markt-Vergleich         │
+ ├───────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────┤
+ │ GET /scenarios/{id}/opportunities neu                 │ Wichtigkeit-vs-Zufriedenheit-Punkte aus der Studie (Quadranten fertig benannt)                                    │ Chancen-Karte           │
+ ├───────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────┤
+ │ GET /scenarios/{id}/trends neu                        │ Trendradar: Thema, Horizont (heute / 2028 / 2031), Stärke, Quellen, Stufe                                         │ Zukunft                 │
+ ├───────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────┤
+ │ GET                                                   │                                                                                                                   │                         │
+ │ /scenarios/{id}/evidence?signal=&segment=&q=&page=    │ gefilterte, seitenweise Kommentare                                                                                │ Beleg-Browser           │
+ │ neu                                                   │                                                                                                                   │                         │
+ ├───────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────┤
+ │ GET /scenarios/{id}/gaps neu                          │ „Was wir nicht wissen“: Themen mit Stufe C/D, fehlende Quellen, empfohlene nächste Studie                         │ Ehrlichkeits-Panel      │
+ ├───────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────┤
+ │ POST /scenarios/{id}/ask neu (S)                      │ Frage an die Belege, Antwort nur mit zitierten IDs; im Demo-Modus nur vorbereitete Fragen aus dem Cache           │ „Frag die Daten“        │
+ ├───────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────┤
+ │ GET /scenarios/{id}/export?format=csv|json|md         │ CSV wie heute, + JSON, + Markdown-„Lastenheft“ (eine Seite pro Anforderung)                                       │ Export                  │
+ ├───────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────┤
+ │ GET /audit?scenario=&requirement= / GET /audit/verify │ + gruppierte Zeitleiste mit lesbaren Sätzen                                                                       │ Prüfpfad                │
+ ├───────────────────────────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────┤
+ │ GET /health                                           │ + Version, Demo-Modus an/aus, geladene Szenarien                                                                  │ Status                  │
+ └───────────────────────────────────────────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────┘
+
+ 3.2 Neue Felder im Vertrag (core/models.py, nur additiv mit Default)
+
+ - Signal.segments: Zählung nach engine (ICE/BEVE/PHEV), country, source (A–D), feedback_type.
+ - Signal.study_link: Studien-Attribut, Wichtigkeit, Unzufriedenheit (falls zuordenbar).
+ - Requirement.horizon (today | next_gen), assumptions[], robustness{rank_min, rank_max, top3_share}, segment_conflicts[], business{volume_2030, growth_pct, market_share}, stable_key, badges[].
+ - Scenario.data_coverage{feedback, study, sales, options, web, external}, warnings[].
+ - Evidence.meta erweitert um engine, country, source_letter, feedback_type.
+
+ ---
+
+ Teil 4: Daten: genau, was wir woher holen
+
+ 4.1 BMW-Daten voll ausschöpfen (Pfad A, Aditya)
+
+ 1. Antriebsart als Segment (G60: 1.763 BEV, G70: 1.347 BEV) → BEV-Fahrer-Bedürfnisse = Zukunftssignal (Anteil BEV wächst bis 2030).
+ 2. Studie, alle Spalten: China G68, China G70, EU G60, EU G70 zusätzlich lesen. US_2025 (103 Attribute, 7er-Skala) → Wichtigkeit-vs-Zufriedenheit-Karte (Importance-Performance-Analyse): Quadrant „wichtig + unzufrieden“ = Chance. Rein rechnerisch, kein LLM.
+ 3. Sales: Wachstum 2024→2025→2030 pro Markt, Anteil des Markts am Modell. F70-CN-Formelzelle sauber behandeln (Wert berechnen oder als „nicht verfügbar“ markieren, nie still 0).
+ 4. Feedback-Typ (Likes / Defect / Difficult to Use / Wants / leer) getrennt nutzen: „Wants“ = expliziter Wunsch (stärkstes Signal für Nachfolger), „Difficult to Use“ = UX-Schmerz, „Defect“ = Qualität(oft außerhalb unseres Scopes, wird begründet verworfen).
+ 5. Optionslisten: Preis eines Ausstattungsmerkmals mitlesen → Faktor „nur gegen Aufpreis, aber oft gewünscht“ = Paket-Chance.
+ 6. JP und KR als eigene Segmente im Detail sichtbar (nicht als eigene Szenarien, weil Studie/Sales dafür fehlen).
+
+ 4.2 Neue externe Quellen (Pfad B, Piyush). Alle öffentlich, alle werden gecacht und für den Demo-Modus committet
+
+ ┌─────────────────────┬─────────────────────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────┬──────────┐
+ │       Quelle        │               Was               │                                            Zugang                                             │             Nutzen              │   Prio   │
+ ├─────────────────────┼─────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────┼──────────┤
+ │                     │ echte US-Kundenbeschwerden pro  │                                                                                               │ zweite unabhängige Kundenquelle │          │
+ │ NHTSA Complaints    │ Marke/Modell/Jahr, z. B. BMW 5  │ https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=...&modelYear=...,        │  für US-Szenarien → hebt Stufen │ M        │
+ │ API                 │ Series / 7 Series und           │ kostenlos, kein Key, US-Behördendaten (gemeinfrei)                                            │  ehrlich; Vergleich BMW vs.     │          │
+ │                     │ Wettbewerber                    │                                                                                               │ Wettbewerber                    │          │
+ ├─────────────────────┼─────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────┼──────────┤
+ │ fueleconomy.gov Web │ Reichweite/Verbrauch BMW vs.    │                                                                                               │ Wettbewerbsdruck bei            │          │
+ │  Services           │ Wettbewerber (US)               │ https://www.fueleconomy.gov/ws/rest/..., kostenlos, kein Key                                  │ Reichweite/Laden mit harten     │ S        │
+ │                     │                                 │                                                                                               │ Zahlen                          │          │
+ ├─────────────────────┼─────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────┼──────────┤
+ │ NREL AFDC Stations  │                                 │                                                                                               │ stützt „öffentliches Laden“     │          │
+ │ API                 │ Ladesäulen-Bestand USA          │ https://developer.nrel.gov/api/alt-fuel-stations/v1, kostenloser Key nötig                    │ (unsere echte G60-US-#1) mit    │ S        │
+ │                     │                                 │                                                                                               │ Infrastruktur-Zahl              │          │
+ ├─────────────────────┼─────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────┼──────────┤
+ │ EAFO (European      │ Ladeinfrastruktur + BEV-Anteil  │                                                                                               │                                 │          │
+ │ Alternative Fuels   │ EU                              │ öffentliche Statistik-Seiten, manuell als kleine CSV in data/external/                        │ EU-Zukunftssignal               │ K        │
+ │ Observatory)        │                                 │                                                                                               │                                 │          │
+ ├─────────────────────┼─────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────┼──────────┤
+ │ ACEA Neuzulassungen │ BEV-Anteil EU nach Quartal      │ Pressemitteilungen, Zahlen manuell in CSV                                                     │ Wachstums-Annahmen begründen    │ K        │
+ ├─────────────────────┼─────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────┼──────────┤
+ │                     │                                 │                                                                                               │                                 │ K (läuft │
+ │ Euro NCAP / IIHS    │ Assistenz-Bewertungen           │ Webseiten über bestehende web_search                                                          │ Wettbewerbsvergleich Assistenz  │  schon   │
+ │                     │                                 │                                                                                               │                                 │ über     │
+ │                     │                                 │                                                                                               │                                 │ Web)     │
+ ├─────────────────────┼─────────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────┼──────────┤
+ │ bestehendes         │ Reviews, Wettbewerber, Trends   │ wie heute                                                                                     │ bleibt; Fragen werden aus       │ M        │
+ │ web_search (OpenAI) │                                 │                                                                                               │ Config + Horizont erzeugt       │          │
+ └─────────────────────┴─────────────────────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────┴──────────┘
+
+ Regeln für externe Daten: eigene SourceType (external_stat für Statistiken; NHTSA zählt als Kundenstimme feedback_external), Vertrauensstufe „high“ für Behördenquellen, Web/Statistik darf nie allein eine Anforderung tragen (bestehende Regel bleibt), jede Abfrage im Cache unter data/external_cache/ und für die Demo committet. Neue Pakete: keine nötig (httpx/requests prüfen, was schon in requirements.txt steht; sonst Rückfrage).
+
+ 4.3 Loader für künftige Datensätze
+
+ - config/datasets.json: pro Dateityp Sheet-Name, Spaltennamen, Werte-Zuordnung (z. B. „Feedback Type“ → Polarität). Heutige Werte = Default.
+ - scripts/inspect_dataset.py <datei>: liest ein neues Excel, schlägt das Profil vor, meldet unbekannte Spalten und Themen.
+ - scripts/new_scenario.py --derivative G68 --market CN: erzeugt die Szenario-Config aus dem, was es in den Dateien findet, und meldet die Abdeckung.
+ - Unbekannte Taxonomie-Themen: Zählung + Warnung, optional einmalige LLM-Zuordnung zu den 9 Kategorien (gecacht, mit Test „nur erlaubte Kategorien“).
+
+ ---
+
+ Teil 5: Die 6 Szenarien
+
+ ┌────────────┬────────────────────────┬─────────────────┬──────────────┬──────────────┬──────────────────────────────────────────┐
+ │     ID     │       Kommentare       │     Studie      │    Sales     │ Optionsliste │            Rolle in der Story            │
+ ├────────────┼────────────────────────┼─────────────────┼──────────────┼──────────────┼──────────────────────────────────────────┤
+ │ G60-US     │ 3.610 (+ NHTSA)        │ US_2025 G60     │ G60_G68 / US │ G60          │ Demo-Fall                                │
+ ├────────────┼────────────────────────┼─────────────────┼──────────────┼──────────────┼──────────────────────────────────────────┤
+ │ G70-US     │ 3.792 (+ NHTSA)        │ US_2025 G70     │ G70 / US     │ G70          │ Luxus-Vergleich                          │
+ ├────────────┼────────────────────────┼─────────────────┼──────────────┼──────────────┼──────────────────────────────────────────┤
+ │ F70-EU     │ 1.433 (überwiegend GB) │ CN_EU EU F70    │ F70 / EU     │ F70          │ Kompaktklasse, ehrlich „EU, UK-lastig“   │
+ ├────────────┼────────────────────────┼─────────────────┼──────────────┼──────────────┼──────────────────────────────────────────┤
+ │ G60-EU neu │ ~240                   │ CN_EU EU G60    │ G60_G68 / EU │ G60          │ gleiches Modell, anderer Markt → compare │
+ ├────────────┼────────────────────────┼─────────────────┼──────────────┼──────────────┼──────────────────────────────────────────┤
+ │ G70-EU neu │ <50                    │ CN_EU EU G70    │ G70 / EU     │ G70          │ sehr dünn, Studie + Web tragen           │
+ ├────────────┼────────────────────────┼─────────────────┼──────────────┼──────────────┼──────────────────────────────────────────┤
+ │ G68-CN neu │ 0                      │ CN_EU China G68 │ G60_G68 / CN │ —            │ Kaltstart, Wow-Moment 1                  │
+ ├────────────┼────────────────────────┼─────────────────┼──────────────┼──────────────┼──────────────────────────────────────────┤
+ │ G70-CN (K) │ 0                      │ CN_EU China G70 │ G70 / CN     │ G70          │ nur wenn Zeit bleibt                     │
+ └────────────┴────────────────────────┴─────────────────┴──────────────┴──────────────┴──────────────────────────────────────────┘
+
+ ---
+
+ Teil 6: Tickets pro Person
+
+ Format pro Ticket: Test zuerst → Code → Beweis (Befehl + Ausgabe) → Skill sync. M = muss, S = soll, K = kann. Reihenfolge = Priorität.
+
+ 6.0 Phase 0: Verträge (Piyush, Sa 20:45–21:45, blockiert alle)
+
+ - P0.1 [M] Neue Felder aus 3.2 in core/models.py, Beispiel-Bundle in src/shared/beispiele/ ergänzen, src/shared/API.md mit allen Endpunkten aus 3.1 (Signatur + Beispiel-JSON). Lasse bekommt diese Datei als Vertrag und baut sofort gegen die Beispiele.
+ - P0.2 [M] 3 neue Configs (G60-EU, G70-EU, G68-CN); feedback_file/option_list_file dürfen null sein; F70-EU-Länderliste ehrlich kürzen (S20).
+ - P0.3 [M] config/datasets.json mit heutigen Werten.
+ - P0.4 [M] Erste Abgabe 22:00 mit jetzigem Stand (Skill abgabe), damit wir nie ohne Abgabe dastehen.
+
+ 6.1 Aditya: Pfad A, Daten (src/backend/evidence_internal/, tests/pfad_a/, tests/eval/)
+
+ ┌────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬──────────────────────────────────────────────────────┐
+ │ Ticket │                                                                 Was                                                                 │                     Fertig, wenn                     │
+ ├────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────┤
+ │ A12    │ Profil statt harter Namen (feedback.py L21, context.py L19, study.py L33/L145–149)                                                  │ Test: Mini-Excel mit umbenannten Spalten wird        │
+ │ [M]    │                                                                                                                                     │ gelesen                                              │
+ ├────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────┤
+ │ A13    │ Optionale Quellen: ohne Feedback (G68-CN) laufen; China- und EU-G60/G70-Spalten der Studie lesen                                    │ Test: Szenario ohne Feedback → >0 Signale, keine     │
+ │ [M]    │                                                                                                                                     │ Exception                                            │
+ ├────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────┤
+ │ A14    │ Segmente pro Signal (Antrieb, Land, Quelle, Feedback-Typ) in neuer Datei segments.py (signals.py ist bei 195 Zeilen)                │ Test mit Mini-Daten: Zählung stimmt                  │
+ │ [M]    │                                                                                                                                     │                                                      │
+ ├────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────┤
+ │ A15    │ Unbekannte Themen zählen + warnen (taxonomy.py), context.json["unmapped_topics"]                                                    │ Test: unbekanntes Thema erscheint in Warnung         │
+ │ [M]    │                                                                                                                                     │                                                      │
+ ├────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────┤
+ │ A16    │ Sales sauber: Wachstum 2024→2030, Marktanteil, F70-CN-Formelzelle                                                                   │ Test: Formelzelle → Wert oder „n/a“, nie 0           │
+ │ [M]    │                                                                                                                                     │                                                      │
+ ├────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────┤
+ │ A17    │ Wichtigkeit-vs-Zufriedenheit aus US_2025 (neue Datei opportunities.py)                                                              │ Test: Quadranten-Zuordnung an Mini-Daten             │
+ │ [S]    │                                                                                                                                     │                                                      │
+ ├────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────┤
+ │ A18    │ Segment-Konflikte (conflicts.py): Thema in Segment X Kritik, in Y Lob, je ≥10 Nennungen; plus „Studie sagt zufrieden, Kommentare    │ Test mit konstruiertem Konflikt                      │
+ │ [S]    │ sagen unzufrieden“                                                                                                                  │                                                      │
+ ├────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────┤
+ │ A19    │ „Wants“-Kommentare als eigene Signal-Art höher gewichten (expliziter Wunsch)                                                        │ Test                                                 │
+ │ [S]    │                                                                                                                                     │                                                      │
+ ├────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────┤
+ │ A20    │ Eval fertig: 50 Stichproben labeln (mit Dennis, je 25), run_eval.py für alle 6 Szenarien, Requirement-Grounding, neuer REPORT.md    │ Kopfzahl steht im Report                             │
+ │ [M]    │                                                                                                                                     │                                                      │
+ └────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────┘
+
+ 6.2 Dennis: Pfad C, Priorisierung (src/backend/requirements_engine/, tests/pfad_c/)
+
+ ┌────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────────────────────┐
+ │ Ticket │                                                     Was                                                      │                                Fertig, wenn                                 │
+ ├────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+ │ C12    │ Stabile IDs: Hash aus sortierten signal_ids statt LLM-Reihenfolge (derive.py L122)                           │ Test: vertauschte Reihenfolge → gleiche IDs                                 │
+ │ [M]    │                                                                                                              │                                                                             │
+ ├────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+ │ C13    │ Zukunftswetten: 2–4 next_gen-Anforderungen aus Trend-Signalen + Wachstum; D nur mit assumptions              │ Test: D ohne Annahme wird abgelehnt                                         │
+ │ [M]    │ (evidence_level.py L35)                                                                                      │                                                                             │
+ ├────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+ │ C14    │ Robustheit (robustness.py): 500 zufällige Gewichtungen ±30 %, fester Seed → rank_min/max, top3_share         │ Test: gleiche Eingabe → gleiches Ergebnis; dominante Anforderung hat        │
+ │ [M]    │                                                                                                              │ top3_share 1.0                                                              │
+ ├────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+ │ C15    │ 15–25 Anforderungen: Ableitung pro Kategorie-Block, Duplikate über überlappende signal_ids zusammenführen    │ G60-US ≥15 im Nachtlauf                                                     │
+ │ [M]    │                                                                                                              │                                                                             │
+ ├────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+ │ C16    │ whatif-Logik als reine Funktion (Reihenfolge + Rang-Änderung für Probe-Gewichte)                             │ Test                                                                        │
+ │ [M]    │                                                                                                              │                                                                             │
+ ├────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+ │ C17    │ Business-Faktor: Reach × Volumen 2030, Wachstum → future_relevance mit BMW-Zahl; jeder Faktor-Satz nennt     │ Test: Faktor-Text enthält die Zahl                                          │
+ │ [M]    │ seine Zahl                                                                                                   │                                                                             │
+ ├────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+ │ C18    │ Ohne Optionsliste weiterlaufen + keine stillen Fehler (derive.py L141 → Warnung)                             │ Test für G68-CN-Fall                                                        │
+ │ [M]    │                                                                                                              │                                                                             │
+ ├────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+ │ C19    │ Segment-Konflikte an Anforderungen; starke Konflikte senken die Stufe um eins, mit Satz                      │ Test                                                                        │
+ │ [S]    │                                                                                                              │                                                                             │
+ ├────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+ │ C20    │ Preis aus Optionsliste in offer_check („Option für X €, 40 Kunden wünschen es als Serie“)                    │ Test mit Mini-Optionsliste                                                  │
+ │ [S]    │                                                                                                              │                                                                             │
+ ├────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+ │ C21    │ Markdown-„Lastenheft“-Export: pro Anforderung User Story, Akzeptanzkriterien, Belege, Annahmen, Stufe        │ Test: jede Anforderung hat einen Abschnitt                                  │
+ │ [S]    │                                                                                                              │                                                                             │
+ ├────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────────────────────┤
+ │ C22    │ Scope-Filter beweisen: regulatorisches Signal → discarded mit Grund                                          │ Test                                                                        │
+ │ [K]    │                                                                                                              │                                                                             │
+ └────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────────────────────┘
+
+ 6.3 Piyush: Lead + Pfad B (core/, api/, pipeline.py, main.py, evidence_external/, config/, docs/, scripts/)
+
+ ┌────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬─────────────────────────────────────────┐
+ │ Ticket │                                                                        Was                                                                        │              Fertig, wenn               │
+ ├────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────┤
+ │ L17    │ core/llm.py: Timeout, 2 Retries, None-Check, atomarer Cache-Write. Cache-Schlüssel NICHT ändern (sonst ist data/demo_cache wertlos)               │ Tests für Retry und None                │
+ │ [M]    │                                                                                                                                                   │                                         │
+ ├────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────┤
+ │ L18    │ pipeline.py --scenario all + Fehler pro Schritt; claims.py pro Frage try/except; Zusammenfassung am Ende                                          │ ein kaputter Web-Aufruf stoppt den Lauf │
+ │ [M]    │                                                                                                                                                   │  nicht (Test)                           │
+ ├────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────┤
+ │ L19    │ PM-Entscheidungen überleben Neustart: Events aus audit.db neu abspielen (store.py L47)                                                            │ Test: entscheiden → neu laden → Status  │
+ │ [M]    │                                                                                                                                                   │ da                                      │
+ ├────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────┤
+ │ L20    │ Neue Endpunkte aus 3.1 in eigenen Dateien (api/views.py, api/portfolio.py, Logik in core/portfolio.py, core/views.py); routes.py bleibt unter 200 │ API-Tests pro Endpunkt mit              │
+ │ [M]    │  Zeilen                                                                                                                                           │ Beispiel-Bundle                         │
+ ├────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────┤
+ │ L21    │ Web-Fragen aus Config + successor_horizon (questions.py L67, L76); CN-Wettbewerber (NIO, Li Auto, BYD, Mercedes E-Klasse L) in Config; für G68-CN │ Test: Horizont aus Config im Fragetext  │
+ │ [M]    │  bis 8 Trendfragen                                                                                                                                │                                         │
+ ├────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────┤
+ │ L22    │ NHTSA-Connector (evidence_external/nhtsa.py) mit Cache, für BMW + Wettbewerber, als zweite Kundenquelle                                           │ Test mit gespeicherter Beispielantwort  │
+ │ [M]    │                                                                                                                                                   │                                         │
+ ├────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────┤
+ │ L23    │ fueleconomy.gov- und AFDC-Connector (Statistik-Belege)                                                                                            │ Test mit Beispielantwort                │
+ │ [S]    │                                                                                                                                                   │                                         │
+ ├────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────┤
+ │ L24    │ trends, gaps, opportunities als Endpunkte (Daten von A17, C13)                                                                                    │ API-Tests                               │
+ │ [S]    │                                                                                                                                                   │                                         │
+ ├────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────┤
+ │ L25    │ ask-Endpunkt: Antwort nur mit Beleg-IDs aus der Eingabe, Demo-Modus nur Cache                                                                     │ Test: fremde ID wird entfernt           │
+ │ [S]    │                                                                                                                                                   │                                         │
+ ├────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────┤
+ │ L26    │ Nachtlauf echtes LLM für alle 6, Bundles prüfen, Cache nach data/demo_cache/ + data/external_cache/ committen                                     │ Fremd-Clone mit DEMO_MODUS=true läuft   │
+ │ [M]    │                                                                                                                                                   │ (Skill demo-check)                      │
+ ├────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────┤
+ │ L27    │ Doku: docs/ARCHITEKTUR.md (neue Komponenten, /studio raus), data/README.md (Rohdaten sind committet, warum), README „Neues Auto in 2 Schritten“,  │ selbstreview ohne Doku-Abzug            │
+ │ [M]    │ docs/UPGRADE_WELLE2.md = dieser Plan, Tickets in docs/pfade/*.md + docs/ROADMAP.md                                                                │                                         │
+ ├────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼─────────────────────────────────────────┤
+ │ L28    │ scripts/inspect_dataset.py + scripts/new_scenario.py (4.3)                                                                                        │ G70-CN in unter 5 Minuten angelegt      │
+ │ [S]    │                                                                                                                                                   │ (Beweis für Pitch)                      │
+ └────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴─────────────────────────────────────────┘
+
+ 6.4 Lasse: Pfad D (nicht Teil dieses Plans, nur Schnittstelle)
+
+ - Bekommt um 21:45 src/shared/API.md + Beispiel-JSONs und baut gegen die Beispiele (keine Wartezeit auf echte Daten).
+ - Ansichten, die das Backend vollständig bedient: Szenario-Wähler, Overview, Tabelle, Detail mit Wasserfall, Gewichte mit whatif, Portfolio-Matrix, Chancen-Karte, Trendradar, „Was wir nicht wissen“, Audit, Export.
+ - Pitch-Rolle: Demo klicken, Backup-Video ab So 08:00.
+
+ ---
+
+ Teil 7: Pitch, Deck, Jury-Fragen (ab So 07:30, Zahlen aus dem eingefrorenen Nachtlauf)
+
+ 7.1 Ablauf 4:00 + 2:00 Fragen
+
+ ┌──────┬──────────────────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+ │ Zeit │             Wer              │                                                      Inhalt                                                       │
+ ├──────┼──────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+ │ 0:00 │ Piyush                       │ BMW-Folie „1 Mrd. Findings → 1.000 Anforderungen → ein Auto“. 13.771 Kommentare, 3 Baureihen, 1 PM, wenige Wochen │
+ ├──────┼──────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+ │ 0:30 │ Piyush                       │ Lösung in einem Satz + Funnel G60-US mit echten Zahlen                                                            │
+ ├──────┼──────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+ │ 0:50 │ Lasse klickt, Piyush spricht │ echte #1 → Wasserfall → Zitat → Segment-Konflikt BEV vs. ICE → Challenge → Freigeben → Regler + Robustheit        │
+ ├──────┼──────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+ │ 2:20 │ Dennis                       │ Zukunftswette Stufe D mit Annahme; „Was wir nicht wissen“                                                         │
+ ├──────┼──────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+ │ 2:50 │ Aditya                       │ Trust-Zahl (Eval) + NHTSA als unabhängige zweite Quelle                                                           │
+ ├──────┼──────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+ │ 3:10 │ Dennis/Aditya                │ Portfolio: 6 Szenarien, plattformweit vs. marktspezifisch, G68-CN-Kaltstart                                       │
+ ├──────┼──────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+ │ 3:40 │ Piyush                       │ KI vs. Mensch, Audit „Kette gültig“, CSV/Lastenheft, Schlusssatz                                                  │
+ └──────┴──────────────────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+ 7.2 Deck (9 Folien, Datei unter outputs/)
+
+ Problem · Lösung + Funnel · Demo-Ablauf · Unsicherheit (A–D, Robustheit) · Konflikte · Vertrauen (Eval, Quellen) · Skalierung (Portfolio, Kaltstart, „1 Config“) · KI vs. Mensch · Team + Ausblick.
+
+ 7.3 Jury-FAQ (docs/pitch/JURY-FAQ.md neu, alte Atira/tacto-Reste raus)
+
+ Pflichtantworten: Warum Regeln statt LLM für Stufe und Score? · Was passiert ohne Kommentare (G68-CN)? · Wie kommt ein neuer Datensatz rein? · Wie verhindert ihr Halluzinationen (ID-Prüfung, wörtliche Zitate, Eval)? · Warum ist NHTSA vertrauenswürdig, und wo sind ihre Grenzen? · Wie robust ist die Reihenfolge? · Was entscheidet der PM, was die KI? · Warum sind Rohdaten im Repo? · Was kostet ein Lauf, wie lange dauert er? · Was würdet ihr mit 3 Monaten mehr bauen?
+
+ ---
+
+ Teil 8: Zeitplan (Umfang kürzen, nicht Zeit verlängern)
+
+ ┌────────────────┬────────────────────────────────────────────────────────┬──────────────────────────────────────────┬──────────────────────┐
+ │      Zeit      │                         Piyush                         │                  Aditya                  │        Dennis        │
+ ├────────────────┼────────────────────────────────────────────────────────┼──────────────────────────────────────────┼──────────────────────┤
+ │ Sa 20:45–21:45 │ Phase 0 (P0.1–P0.3)                                    │ A12 (nur eigener Ordner, Profil-Default) │ C12 stabile IDs      │
+ ├────────────────┼────────────────────────────────────────────────────────┼──────────────────────────────────────────┼──────────────────────┤
+ │ 21:45–22:00    │ P0.4 erste Abgabe                                      │ A12 fertig                               │ C12 fertig           │
+ ├────────────────┼────────────────────────────────────────────────────────┼──────────────────────────────────────────┼──────────────────────┤
+ │ 22:00–00:30    │ L17, L18, L19                                          │ A13, A14                                 │ C13, C14             │
+ ├────────────────┼────────────────────────────────────────────────────────┼──────────────────────────────────────────┼──────────────────────┤
+ │ 00:30–02:00    │ L20, L21                                               │ A15, A16                                 │ C15, C16             │
+ ├────────────────┼────────────────────────────────────────────────────────┼──────────────────────────────────────────┼──────────────────────┤
+ │ 02:00–03:30    │ L22 (NHTSA), Integration --scenario all mit Beispielen │ Schlaf                                   │ C17, C18             │
+ ├────────────────┼────────────────────────────────────────────────────────┼──────────────────────────────────────────┼──────────────────────┤
+ │ 03:30–06:00    │ Schlaf                                                 │ A17, A18                                 │ Schlaf               │
+ ├────────────────┼────────────────────────────────────────────────────────┼──────────────────────────────────────────┼──────────────────────┤
+ │ 04:00–06:00    │ Nachtlauf L26 (läuft im Hintergrund, Aditya überwacht) │ —                                        │ —                    │
+ ├────────────────┼────────────────────────────────────────────────────────┼──────────────────────────────────────────┼──────────────────────┤
+ │ 06:00–07:30    │ L24, L27, Demo-Cache committen                         │ A20 Eval (mit Dennis)                    │ A20 + C19–C21        │
+ ├────────────────┼────────────────────────────────────────────────────────┼──────────────────────────────────────────┼──────────────────────┤
+ │ 07:30          │ Feature-Freeze Backend, Zahlen einfrieren              │                                          │                      │
+ ├────────────────┼────────────────────────────────────────────────────────┼──────────────────────────────────────────┼──────────────────────┤
+ │ 07:30–10:00    │ Deck, Pitch, FAQ (Skill pitch-prep), Probe 10:00       │ Trust-Folie                              │ Priorisierungs-Folie │
+ ├────────────────┼────────────────────────────────────────────────────────┼──────────────────────────────────────────┼──────────────────────┤
+ │ 10:30          │ Code-Freeze, Skill abgabe                              │                                          │                      │
+ └────────────────┴────────────────────────────────────────────────────────┴──────────────────────────────────────────┴──────────────────────┘
+
+ Streichliste, falls es wackelt (in dieser Reihenfolge): C22 → L25 (ask) → L23 → C21 → L28 → A19 → G70-EU → A18/C19.
+ Nie streichen: C12 + L19 (Demo-Stabilität), C13 + C14 (Unsicherheit), L20 (fertige Endpunkte fürs Frontend), A13 + G68-CN (Kaltstart-Wow), L22 (zweite Kundenquelle), A20 (Trust-Zahl), L26 (offline-Demo).
+
+ ---
+
+ Teil 9: Regeln während der Umsetzung
+
+ - Jede Person nur im eigenen Ordner; core/models.py, config/, src/shared/ nur Piyush und nur in Phase 0 (danach nur additive Nachträge mit Ansage).
+ - Neue Felder immer mit Default → altes Bundle, Tests und Frontend brechen nicht.
+ - Neue Dateien statt Dateien über 200 Zeilen aufblähen.
+ - Keine neuen Pakete ohne Rückfrage (Robustheit nur mit random; HTTP mit dem, was schon installiert ist).
+ - Externe Daten: nur öffentliche Quellen, Cache committen, Quelle + Abrufdatum im Beleg.
+ - Commit-Text: Was + Warum + Was verworfen + Wie geprüft (Entire-Bewertung 35 % Ownership).
+ - Alle 30–45 Minuten sync; nie mit roten Tests pushen.
+
+ ---
+
+ Teil 10: Verifikation
+
+ 1. ruff check src/backend tests und python -m pytest -q grün; Ziel >230 Tests.
+ 2. python src/backend/pipeline.py --scenario all --stage all mit DEMO_MODUS=true auf frischem Clone → 6 Bundles, keine Exception, Zusammenfassung mit Zahlen pro Szenario.
+ 3. Inhalts-Check über data/processed/*.json (kleines Skript scripts/check_bundles.py): G60-US ≥15 Anforderungen; ≥1×D gesamt und jede D mit assumptions; alle mit robustness; G68-CN data_coverage.feedback == 0 und trotzdem >0 Anforderungen; keine unbekannten IDs.
+ 4. API mit uvicorn: jeder Endpunkt aus 3.1 antwortet; Entscheidung posten → Server neu starten → Status da; GET /api/audit/verify gültig; whatif speichert nichts (Audit unverändert).
+ 5. Stabile IDs: Requirements-Stufe zweimal → ID-Listen identisch.
+ 6. python scripts/secret_scan.py sauber; Skill demo-check auf Fremd-Clone; cd src/frontend && npm run build läuft weiter.
+ 7. Skill selbstreview nach Phase 1 (ca. 02:00) und vor Code-Freeze.
+</pasted_content id="8ddc">
