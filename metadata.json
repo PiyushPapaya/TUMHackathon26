@@ -1,0 +1,32 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KCZWTM51E0RW725VVW54W1",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 2,
+  "files_touched": [
+    "docs/pfade/PFAD-A.md",
+    "src/backend/evidence_internal/signals.py",
+    "tests/eval/REPORT.md",
+    "tests/eval/eval_metrics.py",
+    "tests/eval/make_sample.py",
+    "tests/eval/run_eval.py",
+    "tests/eval/test_metrics.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": ""
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 24,
+    "cache_creation_tokens": 23069,
+    "cache_read_tokens": 1334838,
+    "output_tokens": 15422,
+    "api_call_count": 12
+  }
+}

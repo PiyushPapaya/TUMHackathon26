@@ -1,0 +1,80 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KCZWTM51E0RW725VVW54W1",
+  "session_id": "c5dbbec9-6224-4703-a705-daec5cfe1de9",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T17:15:27.9585309Z",
+  "branch": "main",
+  "checkpoints_count": 2,
+  "files_touched": [
+    "docs/pfade/PFAD-A.md",
+    "src/backend/evidence_internal/signals.py",
+    "tests/eval/REPORT.md",
+    "tests/eval/eval_metrics.py",
+    "tests/eval/make_sample.py",
+    "tests/eval/run_eval.py",
+    "tests/eval/test_metrics.py"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5-5",
+  "turn_id": "98a1a211fe91",
+  "checkpoint_transcript_start": 181,
+  "transcript_lines_at_start": 181,
+  "compact_transcript_start": 32,
+  "token_usage": {
+    "input_tokens": 24,
+    "cache_creation_tokens": 23069,
+    "cache_read_tokens": 1334838,
+    "output_tokens": 15422,
+    "api_call_count": 12
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "claude-skill-toolu_01FeesT1VcYTPQP4QCpHJCrT",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "sitzung-start"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "98a1a211fe91",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 49,
+        "end": 50,
+        "entry_ids": [
+          "29639dc3-d868-4526-a0f7-e92a628acad2"
+        ],
+        "tool_use_id": "toolu_01FeesT1VcYTPQP4QCpHJCrT"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_01FeesT1VcYTPQP4QCpHJCrT"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: sitzung-start",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "session_metrics": {
+    "turn_count": 2
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T17:15:27.9256832Z",
+    "agent_lines": 282,
+    "agent_removed": 3,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 282,
+    "total_lines_changed": 285,
+    "agent_percentage": 100,
+    "metric_version": 2
+  }
+}
