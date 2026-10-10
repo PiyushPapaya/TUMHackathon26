@@ -1,0 +1,27 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4M0JNGGKFQ4KAY10WBY91YG",
+  "strategy": "manual-commit",
+  "branch": "jolesCrazyFrontend",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "src/frontend/app/page.tsx",
+    "src/frontend/src/components/AuditPageClient.tsx"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 8,
+    "cache_creation_tokens": 24350,
+    "cache_read_tokens": 208326,
+    "output_tokens": 5081,
+    "api_call_count": 4
+  }
+}
