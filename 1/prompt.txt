@@ -1,0 +1,7 @@
+5. B3 (17:00): research() v1. Sie braucht B1 und B2, aber der Test läuft mit Fake-ask_claims, ohne Netz. Echt prüfen kannst du erst mit Key (pipeline.py --scenario G60-US --stage web, ≥ 5 Webbelege).
+
+---
+
+<task-notification>
+<summary>Commit security review found: parser-differential in src/backend/evidence_external/trust.py</summary>
+</task-notification>
