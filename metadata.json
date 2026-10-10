@@ -1,0 +1,62 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KMAXV1P1WARJVA4XVG3EX8",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    ".gitignore",
+    "config/scenarios/G60-US.json",
+    "config/scenarios/G70-US.json",
+    "data/external_cache/nhtsa/AUDI_A6_SEDAN_2024.json",
+    "data/external_cache/nhtsa/AUDI_A6_SEDAN_2025.json",
+    "data/external_cache/nhtsa/BMW_530I_2024.json",
+    "data/external_cache/nhtsa/BMW_530I_2025.json",
+    "data/external_cache/nhtsa/BMW_540I_2024.json",
+    "data/external_cache/nhtsa/BMW_540I_2025.json",
+    "data/external_cache/nhtsa/BMW_7_SERIES_SEDAN_2024.json",
+    "data/external_cache/nhtsa/BMW_7_SERIES_SEDAN_2025.json",
+    "data/external_cache/nhtsa/BMW_I5_2024.json",
+    "data/external_cache/nhtsa/BMW_I5_2025.json",
+    "data/external_cache/nhtsa/BMW_I7_SEDAN_2024.json",
+    "data/external_cache/nhtsa/BMW_I7_SEDAN_2025.json",
+    "data/external_cache/nhtsa/GENESIS_ELECTRIFIED_G80_2024.json",
+    "data/external_cache/nhtsa/GENESIS_ELECTRIFIED_G80_2025.json",
+    "data/external_cache/nhtsa/GENESIS_G80_2024.json",
+    "data/external_cache/nhtsa/GENESIS_G80_2025.json",
+    "data/external_cache/nhtsa/GENESIS_G90_2024.json",
+    "data/external_cache/nhtsa/GENESIS_G90_2025.json",
+    "data/external_cache/nhtsa/LUCID_AIR_2024.json",
+    "data/external_cache/nhtsa/LUCID_AIR_2025.json",
+    "data/external_cache/nhtsa/MERCEDES-BENZ_E-CLASS_2024.json",
+    "data/external_cache/nhtsa/MERCEDES-BENZ_E-CLASS_2025.json",
+    "data/external_cache/nhtsa/MERCEDES-BENZ_EQS_2024.json",
+    "data/external_cache/nhtsa/MERCEDES-BENZ_EQS_2025.json",
+    "data/external_cache/nhtsa/MERCEDES-BENZ_S-CLASS_2024.json",
+    "data/external_cache/nhtsa/MERCEDES-BENZ_S-CLASS_2025.json",
+    "data/external_cache/nhtsa/TESLA_MODEL_S_(ALL_VARIANTS)_2024.json",
+    "data/external_cache/nhtsa/TESLA_MODEL_S_(ALL_VARIANTS)_2025.json",
+    "src/backend/core/models.py",
+    "src/backend/evidence_external/nhtsa.py",
+    "src/backend/pipeline.py",
+    "src/shared/beispiele/stufen/external_evidence.json",
+    "src/shared/beispiele/stufen/external_signals.json",
+    "tests/pfad_b/test_nhtsa.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 26,
+    "cache_creation_tokens": 21893,
+    "cache_read_tokens": 2779388,
+    "output_tokens": 15103,
+    "api_call_count": 13
+  }
+}

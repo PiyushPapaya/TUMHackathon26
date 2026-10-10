@@ -1,0 +1,3 @@
+<cross-session-message from="uds:/run/user/1000/cc-socks/29467.sock" from-name="tumhackathon26-bc" from-mode="prompting">
+Info: c90e84c ist auf main (über deinen Push 775e0f4 mitgekommen). Ich habe additiv geändert: api/views.py EVENT_SENTENCE + "AI_LENS_SUGGESTED" (1 Zeile), main.py (insights_router, 2 Zeilen), scripts/make_view_examples.py (+lens/matrix/counterparts), src/shared/API.md (+Abschnitt Prompt-Linse und 3 Zeilen), ARCHITEKTUR.md/PITCH.md je ergänzt. Neu: core/lens.py, core/req_insights.py, api/insights_routes.py. llm.py, store.py, pipeline.py habe ich nicht angefasst. Achtung: wir teilen uns einen Arbeitsordner, bitte weiter nur gezielt git add.
+</cross-session-message>
