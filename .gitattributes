@@ -17,6 +17,16 @@ docs/SETUP.md export-ignore
 docs/pfade/ export-ignore
 docs/hilfe/ export-ignore
 docs/pitch/ export-ignore
+# Wissensbasis und Ablaufpläne: für uns, nicht für die Jury-KI.
+docs/wissen/ export-ignore
+docs/research/ export-ignore
+docs/ZUSAMMENARBEIT.md export-ignore
+docs/MORGEN-0800.md export-ignore
+docs/SAMSTAG-START.md export-ignore
+team/ export-ignore
+workspace/ export-ignore
+design/ export-ignore
+.github/ISSUE_TEMPLATE/ export-ignore
 src/shared/beispiele/stufen/ export-ignore
 scripts/ export-ignore
 .claude/skills/ export-ignore
