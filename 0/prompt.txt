@@ -1,0 +1,18 @@
+mache alles fertig un pushe. ──
+
+---
+
+mache alles fertig un pushe.
+
+<pasted_content id="cfb8">
+B3 ist fertig und auf main gepusht (Commit 765d029).
+
+Der echte Lauf pipeline.py --scenario G60-US --stage web lieferte 98 Webbelege, alle mit URL (Ziel war ≥ 5). 32 davon haben Vertrauen high, 7 medium und 59 low. Daraus entstanden 10 Befunde, 8 competitor_advantage und 2 trend. Alle evidence_ids der Befunde zeigen auf vorhandene Belege. pytest zeigt 55 passed, ruff und secret_scan sind sauber.
+
+- Sicherheitsfund in trust.py: Er war echt. https://evil.com\@caranddriver.com bekam „high“, weil ein Browser \ wie / liest und evil.com aufruft, urlparse aber caranddriver.com sieht. Jetzt zählen nur eindeutige http(s)-URLs. Backslash, Leerzeichen, user@ und andere Schemata gelten als „low“. Die Prüfung steht in trust.py und wird auch in claims.py genutzt. Sechs neue Tests decken das ab.
+- Nur 2 von 5 Trendfragen ergaben einen Befund. Bei den anderen 3 gab es keinen Beleg mit high oder medium. Das ist gewollt, weil nur high/medium in Befunde darf. Wenn Dennis mehr Trendbefunde braucht, müsste man MEDIUM_DOMAINS in trust.py erweitern.
+- Low-Belege bleiben als Webbeleg erhalten, kommen aber in keinen Befund. B4 muss beim Anhängen an interne Befunde meta["trust"] prüfen und low überspringen.
+- Mehrere Fragen mit derselben URL ergeben einen Beleg. supports_signal_id zeigt dann nur auf den ersten auslösenden Befund. Die Befunde zitieren den Beleg trotzdem alle.
+- Doku: docs/ARCHITEKTUR.md hat eine neue Zeile unter Entscheidungen und die geänderte Komponentenzeile. In docs/pfade/PFAD-B.md ist B3 abgehakt.
+- Demo-Cache: Ich habe nichts nach data/demo_cache/ kopiert. Der Offline-Lauf auf fremden Laptops klappt damit erst, wenn das nachgeholt wird. Das kann ich als Nächstes machen, oder wir starten B4.
+</pasted_content id="cfb8">

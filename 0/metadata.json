@@ -1,0 +1,61 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4K2PAVKEC9QFY2WGPSASM6K",
+  "session_id": "a103bef5-ef81-4db4-addb-29ad0bba9e8a",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T14:15:29.7750551Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "data/demo_cache/Claims_0f781f3b0b9b3f713baca596.json",
+    "data/demo_cache/Claims_1d3604dde3a66ac61230f3d4.json",
+    "data/demo_cache/Claims_3abe5269d28630aff9f6e7b2.json",
+    "data/demo_cache/Claims_406f2f4618055646ce3e64ed.json",
+    "data/demo_cache/Claims_4b281153f8cff7d7f5067e4b.json",
+    "data/demo_cache/Claims_54f4fef09d286efb166ebbcb.json",
+    "data/demo_cache/Claims_7c5b9f6dc9c755090e0bc084.json",
+    "data/demo_cache/Claims_7d314f9049e816023ee7596b.json",
+    "data/demo_cache/Claims_89f9747c2d662fb9bec4b567.json",
+    "data/demo_cache/Claims_ba42297c1c573601485c3479.json",
+    "data/demo_cache/Claims_bfd6650506abc26ff88dcd46.json",
+    "data/demo_cache/Claims_d30716218ffd3f991530d2b6.json",
+    "data/demo_cache/Claims_dfb5a46d398164abdeef6e8d.json"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5-5",
+  "turn_id": "bf30b211755e",
+  "checkpoint_transcript_start": 181,
+  "transcript_lines_at_start": 181,
+  "compact_transcript_start": 28,
+  "token_usage": {
+    "input_tokens": 8,
+    "cache_creation_tokens": 4592,
+    "cache_read_tokens": 460426,
+    "output_tokens": 2539,
+    "api_call_count": 4
+  },
+  "session_metrics": {
+    "turn_count": 2
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T14:15:29.7033769Z",
+    "agent_lines": 980,
+    "agent_removed": 0,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 980,
+    "total_lines_changed": 980,
+    "agent_percentage": 100,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    }
+  ]
+}

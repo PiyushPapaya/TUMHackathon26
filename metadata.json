@@ -1,0 +1,38 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4K2PAVKEC9QFY2WGPSASM6K",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "data/demo_cache/Claims_0f781f3b0b9b3f713baca596.json",
+    "data/demo_cache/Claims_1d3604dde3a66ac61230f3d4.json",
+    "data/demo_cache/Claims_3abe5269d28630aff9f6e7b2.json",
+    "data/demo_cache/Claims_406f2f4618055646ce3e64ed.json",
+    "data/demo_cache/Claims_4b281153f8cff7d7f5067e4b.json",
+    "data/demo_cache/Claims_54f4fef09d286efb166ebbcb.json",
+    "data/demo_cache/Claims_7c5b9f6dc9c755090e0bc084.json",
+    "data/demo_cache/Claims_7d314f9049e816023ee7596b.json",
+    "data/demo_cache/Claims_89f9747c2d662fb9bec4b567.json",
+    "data/demo_cache/Claims_ba42297c1c573601485c3479.json",
+    "data/demo_cache/Claims_bfd6650506abc26ff88dcd46.json",
+    "data/demo_cache/Claims_d30716218ffd3f991530d2b6.json",
+    "data/demo_cache/Claims_dfb5a46d398164abdeef6e8d.json"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 8,
+    "cache_creation_tokens": 4592,
+    "cache_read_tokens": 460426,
+    "output_tokens": 2539,
+    "api_call_count": 4
+  }
+}
