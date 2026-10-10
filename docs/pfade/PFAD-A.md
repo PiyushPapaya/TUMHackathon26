@@ -19,6 +19,8 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - **Studie** `F70_G60_G68_G70_customer_studies.xlsx`, Blätter `CN_EU_2025` (76×6) und `US_2025` (929×4), beide **ohne Kopfzeile** lesen (`header=None`).
   - `US_2025`: **Blöcke à 9 Zeilen**: Attributname · `Sample total` · 7 Stufen `I Hate It, A Failure, Unsatisfactory, Satisfactory, Excellent, Delightful, I Love It` (Anteile 0-1).
     Modellnamen stehen nur in Zeile 0, Spalten 2-3: `"BMW 5 Series G60"`, `"BMW 7 Series G70 "` (**Leerzeichen am Ende → `strip()`**).
+    **103 Attribute** (nicht ~100); **2 Blöcke haben eine zusätzliche leere Zeile** nach `Sample total` (10 statt 9 Zeilen) → nach Label lesen, nicht nach festem Abstand.
+    Ergebnis A2: G60-US 103 Belege, G70-US 103, F70-EU 37.
   - `CN_EU_2025`: Zeile 1 = Land (`China` in Spalte 1, `EU` in Spalte 3; **nach rechts auffüllen**), Zeile 2 = Modell, danach Paare (Attributzeile, `Mean`-Zeile, Skala ~1-10).
     F70 EU = Spalte 3.
 - **Absatz** `sales_volumes.xlsx`, Blätter `F70`, `G60_G68`, `G70`; Kopf: `market, market_code, volume_2024, volume_2025, volume_2030`.
@@ -52,7 +54,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - **Subagent:** „Ein Subagent schreibt den Test aus diesen Regeln, während du `feedback.py` baust.“
 - **Wenn es hakt:** Zahl ≠ 3.610 → prüfen, ob `Country` Leerzeichen hat (`str.strip()`), ob IDs als Zahl/Text gemischt sind (`astype(str)`).
 
-### [ ] A2 · Studie einlesen (45 min, bis 17:00)
+### [x] A2 · Studie einlesen (45 min, bis 17:00)
 **Prompt:**
 > Ticket A2. Lege `src/backend/evidence_internal/study.py` an mit `parse_us_study(df, model_column)` und `parse_cn_eu_study(df, market, model_column)`
 > (beide rein, testbar) und `load_study(cfg, raw_dir)`. Format steht exakt im Abschnitt „Datenfakten“ von `docs/pfade/PFAD-A.md`
