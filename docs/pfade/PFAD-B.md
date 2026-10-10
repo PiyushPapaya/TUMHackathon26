@@ -15,7 +15,7 @@
 
 ## Tickets
 
-### [ ] B1 · Websuche-Probe (30 min, 15:30-16:00)
+### [x] B1 · Websuche-Probe (30 min, 15:30-16:00)
 **Prompt:**
 > Ich baue Pfad B, Ticket B1. Wir nutzen die OpenAI-Websuche über `core.llm.ask_json(..., tools=[{"type": "web_search"}])` statt eigenem Scraping,
 > weil sie Quellen-URLs mitliefert und in 24 h kein Scraper robust wird. Verworfen: Testmagazine scrapen (Paywalls, fragil).
@@ -25,7 +25,7 @@
 - **Fertig, wenn:** Test grün · echte Frage liefert ≥ 3 Claims mit echter URL.
 - **Wenn es hakt:** Websuche + Schema zusammen geht nicht → zweistufig: erst Websuche als Freitext, dann `ask_json` ohne Tools, das den Text ins Schema bringt; URLs nur übernehmen, wenn sie wörtlich im Freitext vorkamen.
 
-### [ ] B2 · Fragen + Vertrauen (60 min, 16:00-17:00)
+### [x] B2 · Fragen + Vertrauen (60 min, 16:00-17:00)
 **Prompt:**
 > Ticket B2. (1) `questions.py`: aus den Top-8-Befunden der Art complaint/unmet_need (bis zur echten Datei: `src/shared/beispiele/stufen/signals.json`)
 > und `scenario.competitors` je eine Wettbewerbsfrage; dazu 5 feste Trendfragen für 2028-2031 im Segment und Markt des Szenarios (Laden/Reichweite, Software/Apps, Bedienung, Innenraum, Assistenz).
@@ -33,7 +33,7 @@
 > Fachpresse/Nachrichten = medium; Foren, Reddit, YouTube, unbekannt = low. Tests mit 6 URLs.
 - **Fertig, wenn:** 13 Fragen für G60-US · Trust-Test grün · `sync`.
 
-### [ ] B3 · `research()` v1 (45 min, 17:00-17:45)
+### [x] B3 · `research()` v1 (45 min, 17:00-17:45)
 **Prompt:**
 > Ticket B3. `research()` in `web_research.py`: alle Fragen → Claims → `Evidence(source_type="web", id="EV-<szenario>-WEB-<nn>", url, retrieved_at, source_name=publisher)` mit Meta (siehe Regeln in `docs/pfade/PFAD-B.md`).
 > Wettbewerbsfragen mit ≥ 1 Claim high/medium → `Signal(kind="competitor_advantage")`, Trendfragen → `Signal(kind="trend")`, IDs `SIG-<szenario>-WEB-<nn>`, Kategorie aus der Frage.

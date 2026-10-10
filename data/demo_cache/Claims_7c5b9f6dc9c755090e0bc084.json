@@ -1,0 +1,100 @@
+{
+  "claims": [
+    {
+      "text": "BMW’s Remote Software Upgrade policy (updated September 23, 2025) states that starting with BMW Operating System 8.5, software installations can be started remotely via the My BMW App (i.e., OTA installation initiation from the companion app).",
+      "url": "https://customer.bmwgroup.com/pm2/pm-document-service/api/v1link/documents/policyName/BMW_CONNECTED_DRIVE_TAC/GB/PDF?KeyId=f195e93a-6bbd-46f3-b762-6cf0bea480b0&language=en",
+      "publisher": "BMW Group (customer.bmwgroup.com)",
+      "published": "2025-09-23",
+      "stance": "supports",
+      "about": "BMW Remote Software Upgrade / My BMW App OTA installation"
+    },
+    {
+      "text": "BMW Group’s 2025 Management Report describes the company’s software-defined vehicle strategy that increases personalization, regular over‑the‑air updates and seamless My BMW app integration using 5G and cloud services. ",
+      "url": "https://www.bmwgroup.com/en/report/2025/downloads/BMW-Group-Management-Report-2025-en.pdf",
+      "publisher": "BMW Group Management Report",
+      "published": "2025",
+      "stance": "supports",
+      "about": "BMW software-defined vehicle strategy / OTA and 5G"
+    },
+    {
+      "text": "BMW’s online Connected Car overview states BMW offers features including OTA updates, a broad app ecosystem (digital premium subscriptions) and, in vehicles with the newest OS versions, entertainment apps such as AirConsole; it also reports millions of vehicles are remote‑software‑upgrade capable (BMW cited 7.4M vehicles as of 2024).",
+      "url": "https://www.bmwgroup-werke.com/content/grpw/websites/bmwgroup_com/en/innovation/connected-car.html",
+      "publisher": "BMW Group (Connected Car)",
+      "published": "2024",
+      "stance": "supports",
+      "about": "BMW Connected Car features / AirConsole / OTA-capable fleet size"
+    },
+    {
+      "text": "BMW corporate communications has reported (in press materials) that BMW can deliver over‑the‑air updates to millions of vehicles worldwide (BMW has publicly stated figures in its press materials indicating multi‑million OTA-capable fleet size).",
+      "url": "https://www.press.bmwgroup.com/global/article/attachment/T0445455EN/623038",
+      "publisher": "BMW Group Press",
+      "published": "(press material; BMW corporate communications)",
+      "stance": "supports",
+      "about": "Scale of BMW OTA capability worldwide"
+    },
+    {
+      "text": "Industry analysts project that premium infotainment and in‑vehicle digital aftersales will grow substantially by 2030 (Oliver Wyman projects an infotainment-enabled aftermarket approaching ~$14 billion by 2030), supporting expectations of increased on‑demand/subscription apps and OTA feature monetization in premium segments between 2028–2031.",
+      "url": "https://www.oliverwyman.com/our-expertise/insights/2025/dec/infotainment-turns-car-dashboard-into-new-revenue.html",
+      "publisher": "Oliver Wyman",
+      "published": "2025-12",
+      "stance": "supports",
+      "about": "Infotainment market growth / FoD and subscription monetization by 2030"
+    },
+    {
+      "text": "Market research and consultancy reports (Frost & Sullivan, Frost) indicate OEMs and US consumers are moving toward feature‑on‑demand (FoD) and OTA activation as a mainstream monetization and engagement channel — a trend expected to accelerate in the late 2020s for premium vehicle segments. ",
+      "url": "https://www.frost.com/growth-opportunity-news/mobility-automotive-transportation/safety-connectivity/heres-what-us-car-buyers-want-oems-to-know-the-data-that-fuels-long-term-growth-and-competitive-advantage-mob14_tg09_pg5g_aug26_cim-ps/",
+      "publisher": "Frost & Sullivan / Frost",
+      "published": "2026",
+      "stance": "supports",
+      "about": "FoD adoption and OTA engagement (US premium buyers) trend"
+    },
+    {
+      "text": "ABI Research forecasts that digital cockpit domain controller computing power and graphics/AI processing will roughly double by 2030, which supports expectations that premium cars (BMW 5‑class segment) will enable richer apps (AR navigation, gaming, video streaming, local AI features) via OTA-capable centralized compute platforms between 2028–2031.",
+      "url": "https://www.abiresearch.com/press/automotive-digital-cockpit-domain-controller-power-expected-to-double-by-2030",
+      "publisher": "ABI Research",
+      "published": "(report/press release) 2024–2025",
+      "stance": "supports",
+      "about": "Domain controller compute growth by 2030 enabling richer in‑car apps"
+    },
+    {
+      "text": "Consulting firms and industry advisories (PwC, BCG/HCLTech analyses) highlight that OEMs are adopting software‑centric operating models and SaaS / FoD business models and recommend regular OTA release cadences — indicating that premium OEMs (including BMW) are expected to expand OTA feature delivery and paid app/subscription offerings through 2028–2031.",
+      "url": "https://www.pwc.com/us/en/industries/industrial-products/library/automotive-software-trends.html",
+      "publisher": "PwC",
+      "published": "2023-03-08",
+      "stance": "supports",
+      "about": "OEM software-centric models / SaaS and FoD / OTA cadence recommendations"
+    },
+    {
+      "text": "Examples from major OEM disclosures show OEMs planning frequent OTA cadences and FoD monetization (e.g., Stellantis stated it intends quarterly releases and €20bn software-enabled revenue ambition by 2030), illustrating an industry precedent likely to influence premium OEM practices in the US 2028–2031 timeframe.",
+      "url": "https://www.stellantis.com/en/news/press-releases/2021/december/stellantis-targets-20-billion-in-incremental-annual-revenues-by-2030-driven-by-software-enabled-vehicles",
+      "publisher": "Stellantis (press release)",
+      "published": "2021-12-07",
+      "stance": "supports",
+      "about": "Industry precedent for frequent OTA cadence and FoD monetization"
+    },
+    {
+      "text": "US regulators and safety agencies are actively updating guidance and research on vehicle cybersecurity, OTA update security and automated driving standards (NHTSA’s vehicle cybersecurity research and recent Automated Vehicle and safety updates), which will shape how OEMs deploy OTA, ADAS updates and safety‑critical software changes in the US between 2028–2031.",
+      "url": "https://www.nhtsa.gov/research/vehicle-cybersecurity",
+      "publisher": "NHTSA (U.S. Department of Transportation)",
+      "published": "(ongoing; page updated 2024–2026)",
+      "stance": "supports",
+      "about": "Regulatory influence on OTA/cybersecurity and ADAS updates in US"
+    },
+    {
+      "text": "Federal rulemaking and agency actions affecting radio/firmware permissive‑change waivers (FCC notices extending certain waivers through January 1, 2029) and congressional proposals about connected‑vehicle software further indicate an active regulatory environment that will affect how OEMs perform OTA software and firmware changes in the US 2028–2031 period.",
+      "url": "https://docs.fcc.gov/public/attachments/DOC-422746A1.pdf",
+      "publisher": "Federal Communications Commission (FCC) public notice",
+      "published": "2026-05-08",
+      "stance": "supports",
+      "about": "FCC waiver extension affecting software/firmware permissive changes through 2029"
+    },
+    {
+      "text": "Model‑cycle reporting and enthusiast coverage indicate a BMW 5 Series (G60) mid‑cycle update / LCI is expected in the 2027–2028 timeframe with interior/infotainment refinements reported by specialist outlets — implying that BMW is likely to roll software/UI updates for the G60 family during the 2028–2031 period as part of regular lifecycle updates.",
+      "url": "https://www.bmwblog.com/2026/08/31/028-bmw-5-series-facelift-whats-changing/",
+      "publisher": "BMWBLOG",
+      "published": "2026-08-31",
+      "stance": "supports",
+      "about": "BMW 5 Series (G60) mid‑cycle update / likely infotainment/software updates"
+    }
+  ]
+}

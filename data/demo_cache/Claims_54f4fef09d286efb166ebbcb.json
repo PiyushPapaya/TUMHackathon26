@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "text": "The 2025 Audi A6 e‑tron uses a large, curved “digital stage” made up of an 11.9‑inch driver display and a 14.5‑inch center MMI touchscreen and relies heavily on capacitive (touch) controls with relatively few physical knobs or buttons.",
+      "url": "https://www.consumerreports.org/cars/audi/a6-e-tron/2025/road-test-report/",
+      "publisher": "Consumer Reports",
+      "published": "2026-?",
+      "stance": "supports",
+      "about": "Audi A6 e-tron infotainment and displays"
+    },
+    {
+      "text": "Multiple professional reviews say the A6 e‑tron’s infotainment initially ‘feels overwhelming’ because many secondary controls (including climate and many convenience functions) are handled via touch or touch‑sensitive surfaces rather than dedicated physical switches.",
+      "url": "https://www.caranddriver.com/reviews/a62986357/2025-audi-a6-e-tron-drive/",
+      "publisher": "Car and Driver",
+      "published": "2025-09-18",
+      "stance": "supports",
+      "about": "Audi A6 e-tron touchscreen controls usability"
+    },
+    {
+      "text": "Car and Driver and other reviewers note Audi provides haptic feedback on its touch surfaces and a refreshed MMI interface, but still rely primarily on capacitive-touch inputs for many functions.",
+      "url": "https://www.caranddriver.com/audi/a6-2025",
+      "publisher": "Car and Driver",
+      "published": "2025-?",
+      "stance": "supports",
+      "about": "Audi MMI haptic feedback and touch controls"
+    },
+    {
+      "text": "Audi offers an optional 10.9‑inch passenger touchscreen and locates climate/secondary controls in a lower touch‑sensitive panel under the main screen on many A6 e‑tron trims.",
+      "url": "https://www.cars.com/articles/2026-audi-a6-s6-sportback-e-tron-review-electric-maturity-512401/",
+      "publisher": "Cars.com",
+      "published": "2026-?",
+      "stance": "supports",
+      "about": "Audi passenger screen and lower touch panel"
+    },
+    {
+      "text": "The BMW 5 Series (G60) uses a curved display (about a 12.3‑inch driver cluster plus a 14.9‑inch infotainment screen) running BMW’s iDrive 8.5/Panoramic Vision software in U.S.‑spec cars.",
+      "url": "https://www.motortrend.com/reviews/2024-bmw-530i-xdrive-awd-first-test-review/",
+      "publisher": "MotorTrend",
+      "published": "2024-?",
+      "stance": "supports",
+      "about": "BMW 5 Series G60 display and iDrive 8.5"
+    },
+    {
+      "text": "Unlike Audi’s more touch‑first layout, reviewers consistently note BMW has retained a center‑console iDrive rotary controller and steering‑wheel shortcuts, allowing many common tasks to be completed without reaching for the touchscreen; nevertheless, BMW also moved climate and many secondary controls into the digital interface.",
+      "url": "https://www.autocar.co.uk/car-review/bmw/5-series",
+      "publisher": "Autocar",
+      "published": "2024-?",
+      "stance": "supports",
+      "about": "BMW iDrive controller vs touchscreen climate controls"
+    },
+    {
+      "text": "Professional reviews find iDrive 8.5 improves the home/‘zero‑layer’ layout but still relies heavily on touchscreen menus and some small on‑screen shortcut targets, which reviewers say can be fiddly and attention‑demanding while driving.",
+      "url": "https://www.motortrend.com/reviews/2024-bmw-530i-xdrive-awd-first-test-review/",
+      "publisher": "MotorTrend",
+      "published": "2024-?",
+      "stance": "supports",
+      "about": "BMW iDrive 8.5 usability and distraction concerns"
+    },
+    {
+      "text": "Owner and enthusiast reports echo that both brands’ touch‑heavy interfaces can be distracting: Audi A6 e‑tron owners complain about capacitive steering‑wheel/door touches and the wide glass display, and BMW owners report the touchscreen climate controls and removal of some buttons increase glance time for some tasks.",
+      "url": "https://www.reddit.com/r/etron/comments/1mxjeep/2025_a6_etron_us_pretty_disappointed/",
+      "publisher": "Reddit (owner reports)",
+      "published": "2025-?",
+      "stance": "supports",
+      "about": "Audi owner complaints about touch controls"
+    },
+    {
+      "text": "Comparative summary based on reviews and owner feedback: Audi’s A6 e‑tron is more ‘touch‑first’ (large touch surfaces, fewer physical controls) and therefore, per reviewers/owners, generally presents a higher risk of momentary distraction for common secondary tasks; BMW’s G60 mixes a large touchscreen with a retained iDrive rotary controller and steering‑wheel shortcuts, which many reviewers and owners say makes some frequent operations possible with less visual attention than on purely touch‑centric layouts.",
+      "url": "https://www.consumerreports.org/cars/audi/a6-e-tron/2025/road-test-report/",
+      "publisher": "Consumer Reports; MotorTrend; Autocar (aggregate)",
+      "published": "2024-2026",
+      "stance": "supports",
+      "about": "Overall comparison of Audi A6 e-tron vs BMW 5 Series G60 infotainment and controls"
+    }
+  ]
+}

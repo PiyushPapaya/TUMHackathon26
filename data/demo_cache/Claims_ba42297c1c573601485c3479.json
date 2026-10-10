@@ -1,0 +1,84 @@
+{
+  "claims": [
+    {
+      "text": "The Genesis Electrified G80 is EPA-rated at 282 miles of driving range (U.S. EPA estimate).",
+      "url": "https://www.genesis.com/content/dam/genesis/us/pdf/2023/2023-G80-Brochure-vFinal2.pdf",
+      "publisher": "Genesis (U.S. brochure PDF)",
+      "published": "2023",
+      "stance": "supports",
+      "about": "Genesis Electrified G80 EPA range"
+    },
+    {
+      "text": "Genesis publishes a 10%→80% DC fast‑charge time of about 22 minutes when using a 350 kW charger for the Electrified G80 (manufacturer figure, optimal conditions).",
+      "url": "https://www.genesis.com/content/dam/genesis/us/pdf/2023/2023-G80-Brochure-vFinal2.pdf",
+      "publisher": "Genesis (U.S. brochure PDF)",
+      "published": "2023",
+      "stance": "supports",
+      "about": "Genesis Electrified G80 DC fast‑charging capability"
+    },
+    {
+      "text": "Genesis specification sheets list the Electrified G80’s onboard AC (Level‑2) charging capability at roughly 10.5 kW (three‑phase/market dependent spec).",
+      "url": "https://www.genesis.com/content/dam/genesis/au/en/documents/g80ev/GENESIS_Specification_Sheet_Electrified_G80.pdf",
+      "publisher": "Genesis (spec sheet)",
+      "published": "2022–2024 (model specs)",
+      "stance": "supports",
+      "about": "Genesis Electrified G80 onboard AC charging"
+    },
+    {
+      "text": "Genesis quietly ended U.S. sales of the Electrified G80 (the model was discontinued from the U.S. lineup in August 2025).",
+      "url": "https://www.caranddriver.com/news/a65616170/genesis-electrified-g80-discontinued/",
+      "publisher": "Car and Driver",
+      "published": "2025-08",
+      "stance": "supports",
+      "about": "Genesis Electrified G80 U.S. availability"
+    },
+    {
+      "text": "BMW documents a maximum DC fast‑charging power of 205 kW for the i5 and quotes roughly a 10%→80% time of about 30 minutes under ideal conditions.",
+      "url": "https://www.bmwusa.com/vehicles/bmw-i-series/i5/bmw-i5-technical-data.html",
+      "publisher": "BMW USA (technical data)",
+      "published": "2026 (technical data page)",
+      "stance": "supports",
+      "about": "BMW i5 peak DC charging rate"
+    },
+    {
+      "text": "BMW’s published i5 estimated range varies by trim and wheels (BMW lists combined range bands; eDrive40 trims are published in the ~280–328 mile band depending on wheel/tire choices).",
+      "url": "https://www.bmwusa.com/vehicles/bmw-i-series/i5/bmw-i5-technical-data.html",
+      "publisher": "BMW USA (technical data)",
+      "published": "2026 (technical data page)",
+      "stance": "supports",
+      "about": "BMW i5 EPA range variability"
+    },
+    {
+      "text": "BMW moved toward NACS (Tesla Supercharger) compatibility across its EV lineup in 2026; reports and BMW releases show some 2026/LCI production i5/iX3 units shipping with native NACS or with pathway to Supercharger access (model‑and build‑date dependent).",
+      "url": "https://www.press.bmwgroup.com/usa/article/detail/T0454794EN_US/the-bmw-ix3-ushers-in-next-generation-innovations-at-ces-2026",
+      "publisher": "BMW Group press release",
+      "published": "2026-01-05",
+      "stance": "supports",
+      "about": "BMW NACS / Supercharger compatibility"
+    },
+    {
+      "text": "Genesis-branded U.S. EVs built 2023–2025 use CCS inlets and Genesis’ owner guidance notes that owners of 2023–2025 Genesis EVs with CCS ports may need to purchase an external adapter to access certain chargers (i.e., to connect to networks using NACS without a factory NACS inlet).",
+      "url": "https://www.genesis.com/us/en/genesis-electric#charging",
+      "publisher": "Genesis USA (owners/charging guidance)",
+      "published": "2026 (owners/charging guidance page)",
+      "stance": "supports",
+      "about": "Genesis connector standard and adapter guidance"
+    },
+    {
+      "text": "As of September 1, 2026, the Tesla Supercharger network remained the largest U.S. DC‑fast network (about 37,995 stalls) while Electrify America and EVgo were much smaller (~5.9k and ~5.2k stalls respectively), which means cars with native NACS access typically have the broadest DC‑fast options on many U.S. routes today.",
+      "url": "https://evchargingstations.com/chargingnews/dc-fast-charging-september-2026/",
+      "publisher": "EVChargingStations.com (summary of AFDC data)",
+      "published": "2026-09-01",
+      "stance": "supports",
+      "about": "U.S. DC fast‑charging network sizes (2026)"
+    },
+    {
+      "text": "Manufacturers and EPA both note that real‑world EV range depends strongly on wheel/tire choice, driving speed, temperature and HVAC use; BMW’s technical notes explicitly show wheel size and drive configuration affect the i5’s EPA/estimated range, which explains why customers say “range is hard to estimate.”",
+      "url": "https://www.bmwusa.com/vehicles/bmw-i-series/i5/bmw-i5-technical-data.html",
+      "publisher": "BMW USA (technical data)",
+      "published": "2026 (technical data page)",
+      "stance": "supports",
+      "about": "Causes of EV real‑world range variability"
+    }
+  ]
+}
