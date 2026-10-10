@@ -1,0 +1,187 @@
+{
+  "drafts": [
+    {
+      "title": "Keep the car's strong, smooth and responsive driving feel",
+      "description": "Owners experience brisk acceleration, a smooth refined ride and confident, sporty handling that make everyday driving engaging and luxurious.",
+      "acceptance_criterion": "In a representative post-delivery owner survey, >=85% of respondents rate acceleration and pickup >=8/10 and >=80% rate overall ride/handling and NVH (noise, vibration, harshness) >=8/10 within the first 6 months of ownership.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-001",
+        "SIG-G60-US-002",
+        "SIG-G60-US-004",
+        "SIG-G60-US-022"
+      ],
+      "assumptions": [
+        "Survey sample of at least 1,000 owners across primary US regions is available within 6 months.",
+        "Baseline current G60 satisfaction scores are achievable or exceeded with incremental tuning rather than major hardware changes."
+      ],
+      "uncertainties": [
+        "Perceptions may vary by powertrain variant (PHEV, BEV) and wheel/tire choices."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Eliminate jerky, delayed or inconsistent power delivery during normal driving and mode transitions",
+      "description": "Drivers experience smooth, linear power delivery with predictable response and no abrupt surges or harsh transitions when changing drive modes or power source (EV/gas).",
+      "acceptance_criterion": "Owner-reported incidents of jerky or inconsistent power delivery are <=2 per 1,000 vehicles in the first 12 months; in instrumented driver trials across drive modes and transitions, >=95% of participants rate power-delivery smoothness >=8/10.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-012",
+        "SIG-G60-US-036",
+        "SIG-G60-US-001"
+      ],
+      "assumptions": [
+        "Drive-mode behavior and powertrain calibrations can be tuned in software and ECU calibrations without full powertrain hardware redesign for most variants.",
+        "Instrumented trials will use a representative mix of road and ambient temperature conditions."
+      ],
+      "uncertainties": [
+        "Some legacy hardware combinations or extreme ambient conditions may limit how much calibration alone can resolve (may require hardware changes)."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Deliver brakes that are quiet, non-grabby, and produce low visible dust",
+      "description": "Braking feels smooth and controlled without harsh grabby behaviour, loud squeal/grinding, and without heavy visible brake-dust that spoils wheel appearance soon after ownership.",
+      "acceptance_criterion": "Fewer than 2% of owners report squeal/grind/grabby braking or excessive brake dust within the first 6 months; in a 5,000-mile fleet durability test, audible brake-squeal events occur in <1% of braking events.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-015",
+        "SIG-G60-US-WEB-05"
+      ],
+      "assumptions": [
+        "Brake material/pad choices and brake system calibration options can be adjusted between model years or as part of successor development.",
+        "Fleet test uses representative vehicle weights, wheel finishes and environmental conditions that reflect primary US usage."
+      ],
+      "uncertainties": [
+        "Certain aftermarket wheel/finish combinations or regional road salt/grit conditions may still increase dust/noise beyond target."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Provide a persistent, easy-to-set control to disable automatic engine start–stop",
+      "description": "Drivers can permanently disable engine auto start–stop via a clearly labelled, discoverable control or preference so the engine does not shut off at every stop unless the driver re-enables it.",
+      "acceptance_criterion": "A driver can set a persistent 'auto start–stop off' preference in <=30 seconds in 95% of usability-test attempts; the preference persists across ignition cycles and software restarts, and owner complaints about unwanted auto start–stop fall to <=1 per 1,000 vehicles in the first 6 months.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-025",
+        "SIG-G60-US-039"
+      ],
+      "assumptions": [
+        "Persistent user preferences can be stored and restored across vehicle power cycles and software updates.",
+        "The preference will be allowed by applicable safety/regulatory requirements in target markets."
+      ],
+      "uncertainties": [
+        "Some regulatory or warranty constraints in specific markets may limit permanently disabling certain emissions-related functions."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make My Modes easy to create, customize and persist as a default",
+      "description": "Drivers can quickly create and save personalized drive modes (settings for performance, comfort, HUD, ambient lighting etc.) and set one to load by default so the car behaves as the driver expects every time.",
+      "acceptance_criterion": "In usability testing, 95% of participants can create and save a personalized My Mode in <=3 steps; a saved mode can be set as the default and loads automatically at vehicle start in >=95% of trials.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-017",
+        "SIG-G60-US-034"
+      ],
+      "assumptions": [
+        "UI flows and storage for named custom modes are feasible within the successor HMI and retained across updates.",
+        "Personalization scope includes drive characteristics, interior lighting/HUD presets and basic climate preferences."
+      ],
+      "uncertainties": [
+        "More advanced personalization (third-party app states or in-depth inter-system presets) may require cross-team integration effort."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make real-world range, charging speed and charger availability reliable and transparent for trip planning",
+      "description": "Drivers see range estimates they can trust for daily use, get clear guidance about charger compatibility and availability on route, and experience fast, consistent charging when using capable public fast chargers.",
+      "acceptance_criterion": "Displayed electric-range MAE (mean absolute error) is <=±5% over mixed real-world trips including cold-weather conditions; in multi-day route tests across representative US regions, >=90% of planned fast-charge stops are operational and compatible at arrival; when connected to a public fast charger that supports high-power charging, measured time to charge 10→80% is <=25 minutes; scheduled charging executes within ±10 minutes of the scheduled time in >=95% of cases.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-009",
+        "SIG-G60-US-014",
+        "SIG-G60-US-020",
+        "SIG-G60-US-027",
+        "SIG-G60-US-WEB-02",
+        "SIG-G60-US-WEB-08"
+      ],
+      "assumptions": [
+        "Access to real-time public-charger status and compatibility APIs is available for routing (OEM agreements or third‑party data).",
+        "Sufficient onboard battery thermal management and charging acceptance exists across common variants to benefit from high‑power public chargers; where limits apply, the UI communicates expected charge time.",
+        "Representative test routes will include cold-weather conditions to evaluate range estimate robustness."
+      ],
+      "uncertainties": [
+        "Charging times depend on external charger power capability and network congestion; not all regions will have high-power chargers widely available at launch.",
+        "OEM access to some charger networks or rapid changes in third-party data quality could impact compatibility accuracy."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Off-road capability for the sedan is out of scope for the successor",
+      "description": "Customers expect clarity about the vehicle's intended use; the 5‑Series limousine is not designed or positioned for off‑road capability.",
+      "acceptance_criterion": "N/A — this is a scope decision rather than a customer‑deliverable requirement.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-045"
+      ],
+      "assumptions": [],
+      "uncertainties": [
+        "Some customers will still desire greater ground clearance or mild off-road features; those could be considered as accessory or separate model/package options."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Off-road capability is a vehicle positioning/hardware capability beyond the sedan's intended use; addressing it would require a different model or major platform changes."
+    },
+    {
+      "title": "Offer certified hands-off highway driving in supported jurisdictions (trial-level customer experience)",
+      "description": "Where regulation permits and infrastructure/supporting suppliers allow, provide a highway assistant that can let drivers take their hands off the wheel for extended highway segments while monitoring and managing the driving task, with smooth transitions back to the driver when required.",
+      "acceptance_criterion": "In controlled customer trials in certified jurisdictions, the system can be engaged for at least 70% of eligible highway miles and sustain hands-off operation for those miles with safe driver re-engagement transitions of <=10 seconds when requested; trials achieve >=80% user satisfaction with hand-off clarity and comfort.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SIG-G60-US-WEB-10",
+        "SIG-G60-US-024"
+      ],
+      "assumptions": [
+        "Regulatory approvals for conditional (hands-off) driving are granted in the target US jurisdictions by the time of launch.",
+        "Sufficiently capable sensor/perception stacks and supplier support are available at acceptable cost and reliability for limited highway use cases.",
+        "Certification and validation frameworks exist to declare eligible road segments and operating conditions."
+      ],
+      "uncertainties": [
+        "Regulatory timelines and scope are uncertain and may vary by state; supplier availability (e.g., sensor supply) and cost may affect the feature set and rollout speed.",
+        "Public acceptance and insurance/legal frameworks could constrain usable speed/road envelopes."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}

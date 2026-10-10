@@ -1,0 +1,203 @@
+{
+  "drafts": [
+    {
+      "title": "Provide tactile physical controls for primary climate functions so drivers can adjust without looking",
+      "description": "Drivers can change primary climate settings by feel (no menu dives) using dedicated tactile controls for at least temperature, fan speed and front defrost, so adjustments are fast and safe while driving.",
+      "acceptance_criterion": "There are dedicated physical/tactile controls for cabin temperature(s), fan speed and front defrost; in a driving-mode usability test 95% of participants can (1) change cabin temperature by 3°C and (2) change fan speed one step within 3 seconds without looking at the screen.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-028",
+        "SIG-F70-EU-003",
+        "SIG-F70-EU-015"
+      ],
+      "assumptions": [
+        "Usability test uses a representative sample (n≥50 drivers) in a vehicle on a closed course or driving simulator.",
+        "Physical controls are ergonomically placed within normal driver reach."
+      ],
+      "uncertainties": [
+        "Some customers may accept virtual sliders if they are highly tactile/haptic; this requirement assumes physical controls are preferred for primary climate tasks."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Surface top functions on a one‑glance home layer and provide tactile shortcuts to avoid menu dives",
+      "description": "Drivers can access the most-used functions (media, nav destination entry, climate quick-adjust, phone call, volume) in one glance or via physical shortcut buttons so that routine tasks do not require fiddly menu navigation.",
+      "acceptance_criterion": "In driving-mode usability tests the 10 most-common driver tasks are reachable within two interactions (either one tap on a zero‑layer home element or one physical shortcut + one tap) for ≥95% of participants, and average task completion time ≤2.0 seconds. Compared with the current baseline, menu dives are reduced by ≥60% for those tasks.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-003",
+        "SIG-F70-EU-004",
+        "SIG-F70-EU-WEB-01",
+        "SIG-F70-EU-015"
+      ],
+      "assumptions": [
+        "Baseline metrics are taken from current F70 usability data using the same task list and test conditions.",
+        "The home layer and shortcut layout are configurable per driver profile."
+      ],
+      "uncertainties": [
+        "Defining the 'top 10' tasks must come from usage telemetry; task lists may vary by region and user age."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Maintain or exceed today’s best‑perceived infotainment responsiveness and reliability",
+      "description": "Customers experience a responsive, reliable infotainment system (fast UI feedback, rare faults or reboots) so the system feels consistently well‑executed and satisfying to use.",
+      "acceptance_criterion": "Median UI input-to-feedback latency <200 ms for core screens; customer-reported infotainment faults ≤1 per 1,000 vehicle‑months and average vehicle requires a manual system reboot less than once per year. Over 12 months, 99% of attempted primary interactions (touch, shortcut, voice) complete without error.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-011",
+        "SIG-F70-EU-004"
+      ],
+      "assumptions": [
+        "Telemetric collection of interaction success and fault events is available to measure rates.",
+        "Latency target measured on typical customer configurations (connected phone present, background services active)."
+      ],
+      "uncertainties": [
+        "Field conditions (poor mobile connectivity, paired smartphones) can temporarily affect perceived reliability; targets are measured as fleet averages."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Navigation works fully and reliably without mandatory app registration and delivers accurate routing and voice guidance",
+      "description": "Customers can use the full navigation feature set without being forced to register or pay through an app; routing and spoken guidance work reliably during trips and do not drop out or degrade unexpectedly.",
+      "acceptance_criterion": "Full navigation feature set (route planning, reroute, turn-by-turn voice guidance) is available without mandatory mobile-app sign-in; in a 1,000-route field trial, 90% of trips arrive within ETA ±5 minutes and voice guidance is delivered without audible dropouts in ≥95% of instruction events. No core navigation feature is gated behind mandatory paid app registration.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-023",
+        "SIG-F70-EU-045"
+      ],
+      "assumptions": [
+        "Field trial includes urban and interurban routes across varied connectivity regions.",
+        "Offline map/data fallbacks or cached routing are permitted to achieve continuity where mobile data is poor."
+      ],
+      "uncertainties": [
+        "Third-party map provider changes or licensing may affect feature parity across launch markets."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Deliver natural, high‑quality cabin audio and make synthetic engine sound optional and non‑intrusive",
+      "description": "Audio playback and any synthesized engine or exhaust sound must be clean and convincing: music should play without buzzing or distortion and synthetic engine sound (if enabled) must not produce artificial 'pops' or distracting artifacts.",
+      "acceptance_criterion": "In double-blind listening tests with at least 50 participants, ≥90% rate cabin audio as 'clean' (no buzzing/distortion) at normal listening levels; when synthesized engine sound is enabled, ≤5% of test drives report perceivable 'pops' or clearly artificial artifacts. Customers must be able to disable synthetic engine sound entirely.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-014",
+        "SIG-F70-EU-WEB-05"
+      ],
+      "assumptions": [
+        "Listening tests use representative music/audio tracks and a mix of driver ages; tests are performed at common in-car listening levels.",
+        "Customers can opt-out of Active Sound Design in the vehicle settings."
+      ],
+      "uncertainties": [
+        "Perception of 'natural' engine sound is subjective and varies by customer; laboratory and field testing are required to refine tuning."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Support straightforward media playback from USB sticks and provide front-facing data-capable USB port(s)",
+      "description": "Customers can play music directly from USB sticks without needing to pair a phone and can access files easily from a front-accessible USB port.",
+      "acceptance_criterion": "System recognizes and plays MP3/WAV/FLAC files from a USB stick without phone pairing; in interoperability testing across 100 common USB sticks/formats (FAT32/exFAT/NTFS) at least 90% are listed and start playback within 10 seconds. At least one front-facing data-capable USB port is available for media.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-029"
+      ],
+      "assumptions": [
+        "Interoperability test uses commonly distributed USB sticks and typical folder structures.",
+        "The media UI presents files/folders clearly and supports basic playback controls."
+      ],
+      "uncertainties": [
+        "High-variation or damaged USB sticks may remain unsupported; documentation should list supported file systems and codecs."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Improve connected‑services satisfaction measured by independent study",
+      "description": "Connected services (account/registration flows, telematics, remote services, app-dependencies) feel reliable and valuable so that overall customer satisfaction improves measurably versus the current baseline.",
+      "acceptance_criterion": "Achieve a mean score of ≥8.0 in the same EU connected‑services satisfaction study methodology used for SIG-F70-EU-045 within the vehicle’s first year on market.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-045",
+        "SIG-F70-EU-023"
+      ],
+      "assumptions": [
+        "Study methodology and sample are comparable to the referenced study for valid comparison.",
+        "Improvements include removing mandatory paid/app gates for core services and stabilising service uptime."
+      ],
+      "uncertainties": [
+        "Customer expectations evolve quickly; score improvements depend on both feature set and perceived ease-of-use."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Personalized, OTA‑iterable HMI that persists driver preferences and receives meaningful feature updates",
+      "description": "Drivers can personalize their home screen and HMI preferences which persist across software updates; the vehicle receives OTA HMI/feature updates that add or improve customer-facing functionality within the first year after launch.",
+      "acceptance_criterion": "In a customer trial of ≥200 users, ≥80% can create and persist a personalized home-screen/profile and those personalizations survive at least two OTA updates; within 12 months of launch at least one OTA delivers a measurable new HMI feature that is used by ≥25% of participating customers.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-WEB-09"
+      ],
+      "assumptions": [
+        "Centralized compute and OTA infrastructure become widely available by the successor launch window (2028–2031).",
+        "Regulatory and vehicle‑OTA approval processes permit frequent non-safety HMI updates in target markets."
+      ],
+      "uncertainties": [
+        "Timing and scope of OTA approvals, and third‑party app dependencies, may limit the pace or content of updates."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Reliable voice control that completes common driving tasks without fallback to touch",
+      "description": "Drivers can use voice to complete the most common in‑car tasks (navigation entry, media selection, climate quick-adjust, phone calls) reliably in realistic cabin noise so they are not forced to use the touchscreen while driving.",
+      "acceptance_criterion": "In on‑road trials covering noisy and quiet cabin conditions (≥200 trials across users), voice recognition successfully completes ≥90% of a defined set of 20 common driving tasks without requiring the driver to use the touchscreen to finish the task.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-WEB-09",
+        "SIG-F70-EU-004"
+      ],
+      "assumptions": [
+        "Network connectivity available for cloud ASR/NLU in the majority of test scenarios, or on‑device models reach comparable accuracy by launch.",
+        "Privacy consent and data‑processing agreements are accepted by participating users for voice processing where required."
+      ],
+      "uncertainties": [
+        "Performance may vary by language, accent and noisy environments; fallbacks and clear feedback are needed when voice fails."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}

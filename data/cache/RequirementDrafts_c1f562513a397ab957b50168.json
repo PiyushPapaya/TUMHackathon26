@@ -1,0 +1,227 @@
+{
+  "drafts": [
+    {
+      "title": "Let drivers view, export and delete their driver profile data from car and associated account",
+      "description": "Customers can inspect the personal data stored in their driver profile, export a portable copy, and permanently delete the profile and its vehicle-associated data via the vehicle settings or BMW app without legal wording or manual support.",
+      "acceptance_criterion": "A non-technical tester can (1) view a complete list of profile data fields, (2) export the full profile to a standard portable file format, and (3) delete the profile such that the car no longer restores that profile on next login — each action completed within 10 minutes in 90% of trials.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-R08"
+      ],
+      "assumptions": [
+        "Driver profiles are synced with a BMW cloud account and the export/delete flows are implemented in both vehicle UI and BMW app.",
+        "Export format is a commonly used portable format (e.g., JSON/CSV) understandable by the user.",
+        "Deletion request includes clear user confirmation; backend propagation to cloud completes within the product's normal sync window (assume under 24 hours)."
+      ],
+      "uncertainties": [
+        "Exact scope of 'profile data' (what BMW considers personal) may differ between regions and implementations.",
+        "Propagation of deletions to third-party services (if any) depends on third-party policies and may not be instantaneous."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Improve voice control reliability for common driving commands",
+      "description": "Voice control reliably recognizes and executes common driving-related voice commands (navigation destinations, climate setpoints, media and phone controls) while driving, including with typical cabin noise and accents.",
+      "acceptance_criterion": "On a predefined set of 50 common driving voice commands in English (US), the system correctly recognizes and executes the intent in at least 95% of attempts across a test fleet of 100 drivers while the vehicle is in motion and cabin noise up to 85 dB is present.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N01"
+      ],
+      "assumptions": [
+        "Test set of 50 commands is representative of typical driver requests and includes navigation, climate, media and phone actions.",
+        "Focus is English (US) for the initial target; other languages follow product language roadmap.",
+        "Connectivity may be required for some intents; tests include cases with and without backend connectivity."
+      ],
+      "uncertainties": [
+        "Performance across wide range of accents, speech rates and heavy background noise may vary; further tuning may be needed for edge cases.",
+        "Third-party voice engines or cloud services used for recognition may change availability or latency."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Wireless charging pad charges reliably during driving",
+      "description": "When a compatible phone is placed on the wireless charging pad, charging stays active under normal driving conditions (bumps, turns, accelerations) and with common phone cases.",
+      "acceptance_criterion": "For a representative set of Qi-compatible phones (at least 5 popular models) placed on the pad with cases up to 3 mm thickness, the pad maintains an active charging connection for at least 95% of each 30-minute real-driving session across urban and highway routes and maneuvers up to 70 mph in 90% of trials.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N04"
+      ],
+      "assumptions": [
+        "Testing covers a representative sample of current market phones and case thicknesses up to 3 mm.",
+        "Definition of 'active charging connection' is a continuous power delivery to the phone without repeated disconnects that would stop charging for more than 5 seconds."
+      ],
+      "uncertainties": [
+        "Performance may vary with third-party phone case materials, phone placement accuracy and future phone designs.",
+        "Some phone models may require firmware updates to be fully compatible; coordination with OEM phone behaviors may be necessary."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Displays (HUD and center display) remain legible in bright sunlight",
+      "description": "Both the head-up display and the center information screen remain readable to drivers in bright daylight so speed, navigation prompts and map/media text can be read quickly without repositioning.",
+      "acceptance_criterion": "Under direct sunlight conditions equivalent to 100,000 lux on the display surface: (a) HUD text and primary navigation symbols are legible so that 95% of test participants can correctly read speed and the next-turn instruction within 1.5 seconds; (b) center display map and media text are legible so that 90% of test participants can correctly identify displayed information within 3 seconds.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N08",
+        "SCOPE-N19"
+      ],
+      "assumptions": [
+        "Test participants have normal (corrected) vision and the test uses standardized font sizes and contrast used in production UI.",
+        "Lux measurement is taken at the display surface with the vehicle parked and oriented to simulate typical sun angles for worst-case daylight.",
+        "This requirement addresses perceptual legibility (user outcome), not prescribing specific hardware or luminance numbers."
+      ],
+      "uncertainties": [
+        "Extreme glare angles, aftermarket window tinting or heavy sunglasses may still affect legibility.",
+        "Measuring equivalent sunlight in a reproducible way requires a defined lab procedure; implementation details will be refined during validation."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Physical, tactile climate controls for temperature and fan that can be used without looking",
+      "description": "Temperature and fan speed can be adjusted using dedicated physical controls that drivers can find and operate by feel while driving, avoiding the need to use the touchscreen for basic climate functions.",
+      "acceptance_criterion": "A driver can, by touch only, (1) change cabin temperature by at least 1°C and (2) cycle fan speed through at least four discrete levels within 2 seconds in 90% of timed user trials while seated and belted.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N13"
+      ],
+      "assumptions": [
+        "Controls are positioned within natural reach of the seated driver and have distinct tactile shapes/feedback to discriminate temperature and fan controls.",
+        "This requirement targets common adjustments used during driving (not detailed HVAC configuration)."
+      ],
+      "uncertainties": [
+        "Exact control layout and shapes that work best for all drivers may require iterative usability testing across driver hand sizes and seating positions."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Include heated steering wheel in the cold-weather package",
+      "description": "The heated steering wheel is included as a standard item within the cold-weather (cold climate) package so customers who choose that package receive the steering wheel heater without a separate expensive option.",
+      "acceptance_criterion": "For the US market launch, every offered cold-weather package configuration includes a heated steering wheel as standard; verified through product configuration data and dealer ordering system for all trim levels.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-N20",
+        "SCOPE-P09"
+      ],
+      "assumptions": [
+        "Applies to US market configurations for the successor vehicle.",
+        "Product configuration and ordering data reflect the package content at production launch."
+      ],
+      "uncertainties": [
+        "Regional variations outside the US or special trim editions may have different package content.",
+        "Dealer packaging or aftermarket adjustments could affect what a customer receives after purchase."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Allow heated seats to be enabled as a post-purchase software subscription or one-time activation",
+      "description": "Customers can enable heated seats after purchase via an in-car store or BMW app (subscription or one-time activation), so heated seats are available to buyers who did not select the hardware or package at purchase.",
+      "acceptance_criterion": "A customer can purchase and activate heated-seat functionality from the BMW app or in-car store and have the heating function active within 15 minutes in 95% of activation attempts (activation end-to-end: purchase, backend provisioning, local enablement).",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-P08"
+      ],
+      "assumptions": [
+        "Vehicle hardware for heated seats is present or retrofitability is defined; this requirement focuses on the software provisioning path.",
+        "Subscription/payment platform and backend provisioning systems are available in the target market at launch."
+      ],
+      "uncertainties": [
+        "Regulatory and payment method availability may vary by region and could delay service rollout in some markets.",
+        "If the vehicle lacks physical heating hardware, activation may not be possible without retrofit; product decision required to allow software-only enablement."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Request for Chinese CCC certification (customer ask)",
+      "description": "Customers asked that the infotainment system pass the China Compulsory Certification (CCC) for the Chinese market.",
+      "acceptance_criterion": "Customer request documented; certification and homologation work is out of product-scope for this requirement set.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-R05"
+      ],
+      "assumptions": [
+        "Certification is a regulatory/homologation activity managed outside product feature requirements."
+      ],
+      "uncertainties": [
+        "Business decision needed whether the same infotainment build will be offered in China and whether localization is required."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Certification/homologation request — regulatory activity outside product feature requirements."
+    },
+    {
+      "title": "Specific cockpit chip request: Snapdragon 8295",
+      "description": "Customers requested that the cockpit computer use the Snapdragon 8295 chip.",
+      "acceptance_criterion": "Signal recorded; selecting specific silicon is an engineering component decision and therefore out of scope for customer-facing requirements.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-E04"
+      ],
+      "assumptions": [
+        "Customers expressed a preference for a specific chipset but the customer outcome can be satisfied by performance targets rather than a named part."
+      ],
+      "uncertainties": [
+        "Chip availability, roadmap and supplier decisions will drive final hardware choices."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Engineering/component specification request — out of scope for customer-facing requirements."
+    },
+    {
+      "title": "Price and financing requests (documented customer asks, out of scope)",
+      "description": "Multiple customer requests concern price, lease rates, discounts, dealer margins and financing terms.",
+      "acceptance_criterion": "Signals recorded: SCOPE-P01, SCOPE-P02, SCOPE-P03, SCOPE-P04, SCOPE-P06 and SCOPE-P10 are pricing/finance requests and therefore out of scope for feature-level requirements.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-P01",
+        "SCOPE-P02",
+        "SCOPE-P03",
+        "SCOPE-P04",
+        "SCOPE-P06",
+        "SCOPE-P10"
+      ],
+      "assumptions": [
+        "These signals reflect customer dissatisfaction with price/financial terms; pricing and dealer margins are business decisions outside the technical/product feature scope."
+      ],
+      "uncertainties": [
+        "Product packaging choices can influence perceived value but specific price points and financing terms require commercial decisions."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Price, financing and dealer margin requests — commercial decisions out of scope."
+    }
+  ]
+}

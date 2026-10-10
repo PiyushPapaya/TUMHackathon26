@@ -1,0 +1,159 @@
+{
+  "drafts": [
+    {
+      "title": "Voice assistant reliably understands driving commands while on the road",
+      "description": "When driving, the driver can issue common vehicle and navigation commands by voice and have the system understand and execute them reliably without repeating or switching to manual input.",
+      "acceptance_criterion": "In real-driving conditions (cabin noise 60–80 dB), the voice assistant correctly recognizes and executes a predefined set of 50 common driving commands in at least 95% of attempts, measured across 100 unique driver trials with a median response time ≤ 2.0 seconds.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N01"
+      ],
+      "assumptions": [
+        "The test set of 50 commands is representative of typical driving commands (navigation, media, climate, phone).",
+        "Microphone placement and in-cabin noise levels are comparable to current BMW 5 Series test vehicles."
+      ],
+      "uncertainties": [
+        "Performance may vary with non-native accents or rare background noises not represented in the test set.",
+        "Third-party voice services or updates could change measured accuracy unless controlled for during testing."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Wireless charging works reliably for phones during normal driving",
+      "description": "Drivers can place a Qi-compatible phone on the vehicle wireless charging pad and expect continuous charging while driving without having to reposition the device frequently.",
+      "acceptance_criterion": "Across 500 randomized placement trials using a representative set of popular phone models (with typical protective cases) and while driving at speeds up to 80 mph on mixed roads, the pad maintains continuous charging for at least 30 minutes in 95% of trials.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N04"
+      ],
+      "assumptions": [
+        "Test phones cover major form factors and case thicknesses in the US market at launch.",
+        "Standard Qi charging protocols are supported by the tested phones.",
+        "Normal driving includes typical vibration and minor seat/road impacts but not extreme off-road conditions."
+      ],
+      "uncertainties": [
+        "Some phone models or aftermarket cases may interfere with charging beyond the tested sample.",
+        "Firmware updates from phone OEMs could alter interoperability over time."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Head-up display remains readable in direct bright sunlight",
+      "description": "Drivers can read primary HUD information (speed, turn-by-turn navigation cues, active warnings) from the driving position even when bright sunlight hits the windshield.",
+      "acceptance_criterion": "In a daylight usability test with direct sunlight on the windshield (ambient illumination ≥ 80,000 lux), at least 90% of participants can correctly read speed and upcoming navigation cues from the driver seating position within 2 seconds.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N08"
+      ],
+      "assumptions": [
+        "Test participants represent a range of normal visual acuity (with corrective lenses where needed).",
+        "Sun-angle and windshield reflectivity in the test reflect realistic worst-case daylight scenarios for US markets."
+      ],
+      "uncertainties": [
+        "Extreme windshield tinting, aftermarket films or unusual eyewear may affect individual readability.",
+        "Very high-latitude or low-sun-angle conditions might require additional adjustments beyond this criterion."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Physical, tactile climate controls that can be operated without looking",
+      "description": "Drivers can change temperature and fan speed by feel, without taking their eyes off the road, using dedicated physical controls.",
+      "acceptance_criterion": "Using only touch (no visual feedback), users must be able to (a) change cabin temperature by ±3°C and (b) change fan speed by at least one level within 3 seconds in 9 out of 10 blindfolded trials from the driver seating position.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SCOPE-N13"
+      ],
+      "assumptions": [
+        "Controls are placed within normal reach and follow standard ergonomics for a mid-size executive sedan.",
+        "Blindfolded tests simulate eyes-free operation and include average hand sizes and glove use scenarios."
+      ],
+      "uncertainties": [
+        "Some drivers may prefer a hybrid approach (physical + touchscreen) — this requirement focuses on a reliable physical fallback.",
+        "Lighting conditions and glove thickness could affect tactile discrimination for a minority of users."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Certification and data-regulation requests (China CCC, GDPR) are regulatory asks outside product feature scope",
+      "description": "Customers request that the infotainment system passes CCC certification for China and that driver profiles satisfy GDPR storage requirements. These are regulatory and certification matters rather than functional customer-facing behavior specifications for the vehicle product definition.",
+      "acceptance_criterion": "This draft is out of scope for product-feature requirements; certification and legal compliance will be directed to regulatory/homologation and legal teams.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-R05",
+        "SCOPE-R08"
+      ],
+      "assumptions": [
+        "Certification and data storage compliance depend on regional legal processes, submission timelines and documentation outside the product UX definition."
+      ],
+      "uncertainties": [
+        "Specific certification test cases and data-retention timelines may require design or architecture changes once legal/regulatory teams define exact requirements."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulation / homologation and legal compliance are out of scope for customer-facing product requirements in this block."
+    },
+    {
+      "title": "Specific cockpit chip request (Snapdragon 8295) is an engineering specification and out of scope",
+      "description": "Customers asked for the cockpit computer to use the Snapdragon 8295 chip. Specifying a particular chip is an engineering-level requirement rather than a customer-facing outcome.",
+      "acceptance_criterion": "This draft is out of scope for product-facing requirements; engineering teams should evaluate required performance and provide a customer-facing outcome (e.g., UI responsiveness targets) if needed.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-E04"
+      ],
+      "assumptions": [
+        "Customers express preference for a specific chip model but the same customer outcomes (responsiveness, app performance) can be delivered by multiple hardware choices."
+      ],
+      "uncertainties": [
+        "Actual hardware availability, supplier contracts and thermal/integration constraints will determine feasible platform choices."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Engineering specification (specific chipset request) is out of scope for customer-facing requirements."
+    },
+    {
+      "title": "Pricing, package and subscription demands are business/pricing asks outside product-feature scope",
+      "description": "Customers requested lower base price, cheaper leases, including option packages in base price, discounts on Comfort package, lower dealer margin and heated-seats subscription at $15/month. These are commercial and pricing decisions, not product behavior requirements.",
+      "acceptance_criterion": "This draft is out of scope for product requirements; pricing and packaging decisions will be handled by commercial/finance teams.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-P01",
+        "SCOPE-P02",
+        "SCOPE-P03",
+        "SCOPE-P04",
+        "SCOPE-P06",
+        "SCOPE-P08"
+      ],
+      "assumptions": [
+        "Pricing and package structure depend on market strategy, dealer agreements and corporate pricing policies beyond the product definition."
+      ],
+      "uncertainties": [
+        "Customer willingness to accept feature trade-offs for lower price points may require conjoint studies or elasticity analysis by commercial teams."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Price, lease and package composition are commercial decisions and out of scope for product functional requirements."
+    }
+  ]
+}

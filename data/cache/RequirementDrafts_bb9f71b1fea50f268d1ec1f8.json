@@ -1,0 +1,238 @@
+{
+  "drafts": [
+    {
+      "title": "Maintain and improve perceived ride comfort on broken pavement and reduce distracting wind noise at highway speeds",
+      "description": "Customers experience a smooth, non‑harsh ride on broken or uneven pavement and no distracting wind noise at highway speeds so long-distance and highway driving feels comfortable and non-fatiguing.",
+      "acceptance_criterion": "1) On a standardized rough‑road route (predefined broken‑pavement loop) driven at 30–50 mph, >=80% of a 20‑person representative customer panel rate ride comfort >=4/5. 2) At steady speeds above 70 mph on a straight test section, A‑weighted cabin noise measured at the driver's ear is <=68 dB(A).",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SCOPE-N06",
+        "SCOPE-N15"
+      ],
+      "assumptions": [
+        "Test panels use representative US customer demographic (age, height) and repeatable route; weather conditions are within normal range (no heavy rain).",
+        "Measurement protocol and cabin microphone position follow an internal NVH test standard; current baseline vehicle is available for benchmarking if needed."
+      ],
+      "uncertainties": [
+        "Trade‑offs between ride comfort improvements and sporty handling (customer preference variations).",
+        "Exterior noise can vary with optional roof/trim packages and wheel size; results assume production‑standard configurations."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make lane‑keeping assist feel smooth and predictable in curves (avoid abrupt steering corrections)",
+      "description": "When lane‑keeping assist is engaged on highways and curved roads customers feel the system steers smoothly and predictably without sudden or nervous corrections.",
+      "acceptance_criterion": "In a standardized highway curved‑road test at 65–75 mph with 20 representative drivers, >=90% of participants rate the lane‑keeping behaviour as 'smooth/predictable' (>=4/5) and the system completes the test route without an abrupt correction event as judged by the test drivers in >=95% of runs.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SCOPE-N16"
+      ],
+      "assumptions": [
+        "Tests run on well‑marked highways with lane lines visible and dry conditions; driver attention and readiness requirements remain as today.",
+        "Customer panel reflects typical US drivers and includes both users who have used lane assist before and those who have not."
+      ],
+      "uncertainties": [
+        "Edge cases (poor lane markings, heavy crosswind, construction zones) may still require conservative behaviour to ensure safety, which can feel intrusive.",
+        "Perception of 'smooth' is subjective and may vary by driver preference for more/less intervention."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Plan long trips and find compatible fast chargers so a 600‑mile journey is practical and not confusing",
+      "description": "When customers plan long trips, the vehicle presents a clear route with compatible fast‑charging stops and minimizes confusion by showing charger compatibility, estimated stop durations and total on‑route charging time so a 600‑mile trip is practical to execute.",
+      "acceptance_criterion": "On a set of representative 600‑mile mixed‑condition routes, the vehicle's trip planner identifies at least one compatible high‑power charging stop (correct connector/network) for each required charge and presents a route with no more than two charging stops and a cumulative estimated on‑route charging time <=40 minutes in >=90% of tested routes. The planner finds a compatible charger within 5 minutes in >=95% of route planning operations.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SCOPE-N10",
+        "SCOPE-N09"
+      ],
+      "assumptions": [
+        "The vehicle has live access to charging network availability/status and connector mappings (agreements with charging networks or standardized roaming data).",
+        "Target routes use commonly available fast chargers and typical US interstate infrastructure; charger power capabilities and actual charging speeds follow publicly available network data."
+      ],
+      "uncertainties": [
+        "Real‑world charger availability and queuing at third‑party stations can vary and may increase actual stop time.",
+        "Different driver charging preferences (state-of-charge at stop, maximum acceptable stop duration) may require personalization."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make the charge‑port light show charging state at a glance from outside the car",
+      "description": "Customers can quickly tell if the vehicle is not charging, charging, or fully charged by a clear, easily visible indicator at the charge port without needing to approach the vehicle or open an app.",
+      "acceptance_criterion": "The exterior charge‑port indicator conveys three visually distinct states (not charging / charging / fully charged) readable from 2 meters in daylight. In a blind test with 20 observers, the correct charging state is identified >=95% of the time.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SCOPE-N17"
+      ],
+      "assumptions": [
+        "Observers have normal vision and tests are conducted in typical daylight conditions; indicator brightness meets applicable vehicle exterior lighting constraints.",
+        "Indicator design uses distinct colors and/or blinking patterns to represent states."
+      ],
+      "uncertainties": [
+        "Visibility may vary with aftermarket covers, dirt, or snow; durability of exterior indicator over time is unknown.",
+        "Color perception differences (e.g., colorblind users) should be considered in final design."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Level 3 automated driving type approval (customer request)",
+      "description": "Customers request that the vehicle receives type approval for Level 3 automated driving in Germany.",
+      "acceptance_criterion": "Out of scope for product requirements: type approval and homologation are regulatory processes handled by Compliance/Legal; this draft records the customer request for traceability.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SCOPE-R01"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulatory/homologation request — compliance activity handled outside product requirement scope."
+    },
+    {
+      "title": "CARB emission limits compliance across US states (customer request)",
+      "description": "Customers ask that the powertrain complies with California Air Resources Board (CARB) emission limits in all US states.",
+      "acceptance_criterion": "Out of scope for product requirements: regulatory compliance (emissions certification) is managed by Compliance/Legal; this draft records the customer request for traceability.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SCOPE-R03"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulatory/certification request — handled by compliance organization, not a product behavior requirement."
+    },
+    {
+      "title": "UN R155 cybersecurity type approval (customer request)",
+      "description": "Customers ask that the vehicle fulfils UN R155 cybersecurity type approval.",
+      "acceptance_criterion": "Out of scope for product requirements: cybersecurity type approval is a regulatory/certification activity; this draft records the customer request for traceability.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SCOPE-R06"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulatory/certification request — compliance/legal responsibility."
+    },
+    {
+      "title": "Battery passport compliance (customer request)",
+      "description": "Customers ask that the vehicle battery complies with the EU battery passport regulation.",
+      "acceptance_criterion": "Out of scope for product requirements: reporting/certification requirement handled by supply‑chain and compliance teams; recorded for traceability.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SCOPE-R07"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulatory/reporting requirement — managed by compliance and supply‑chain functions."
+    },
+    {
+      "title": "Request for 800 V electrical architecture (engineering spec)",
+      "description": "Customers request the car uses an 800 V electrical architecture.",
+      "acceptance_criterion": "Out of scope as a product requirement: this is a specific engineering architecture request; record for engineering evaluation and trade‑off decisions.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SCOPE-E01"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Specific engineering architecture request — treated as an engineering specification, not a direct customer‑facing requirement."
+    },
+    {
+      "title": "Request for 22 kW onboard AC charger (engineering spec)",
+      "description": "Customers request that the onboard AC charger is upgraded to 22 kW.",
+      "acceptance_criterion": "Out of scope as a product requirement: this is a specific component/power specification; record for engineering assessment.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SCOPE-E03"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Specific component power request — engineering specification outside customer‑facing requirement scope."
+    },
+    {
+      "title": "Request for solid‑state cells with 400 Wh/kg (engineering spec)",
+      "description": "Customers request the battery uses solid‑state cells with 400 Wh/kg.",
+      "acceptance_criterion": "Out of scope as a product requirement: specific cell chemistry and energy density are engineering specifications; recorded for technology roadmap consideration.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SCOPE-E06"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Specific cell chemistry/energy density request — engineering/technology roadmap item, not a direct customer outcome requirement."
+    },
+    {
+      "title": "Request for 395 mm front brake discs (engineering spec)",
+      "description": "Customers ask that the front brake discs have a diameter of 395 mm.",
+      "acceptance_criterion": "Out of scope as a product requirement: exact brake disc dimension is an engineering specification; record for engineering evaluation.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SCOPE-E07"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Specific mechanical component dimension — engineering specification outside customer‑facing requirement scope."
+    },
+    {
+      "title": "Request for a specific lidar supplier for highway assist (engineering spec)",
+      "description": "Customers ask that highway assist uses a lidar sensor from a named supplier.",
+      "acceptance_criterion": "Out of scope as a product requirement: supplier selection is a procurement/engineering decision; recorded for procurement and system architecture teams.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SCOPE-E08"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Supplier/component preference — procurement/engineering decision, not a customer‑facing requirement."
+    }
+  ]
+}

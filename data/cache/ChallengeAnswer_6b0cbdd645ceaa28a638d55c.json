@@ -1,0 +1,28 @@
+{
+  "answer": "No. Multiple EU signals, negative feedback and an EU study show boot size, tailgate reliability and ingress/egress problems in the EU market — this is not a US‑only issue.",
+  "supporting_evidence_ids": [
+    "SIG-F70-EU-022",
+    "SIG-F70-EU-025",
+    "SIG-F70-EU-039",
+    "SIG-F70-EU-042",
+    "EV-F70-EU-ST-29",
+    "EV-F70-EU-FB-F70-0377",
+    "EV-F70-EU-FB-F70-0942",
+    "EV-F70-EU-FB-F70-1535",
+    "EV-F70-EU-FB-F70-0961",
+    "EV-F70-EU-FB-F70-1236",
+    "EV-F70-EU-FB-F70-0278",
+    "EV-F70-EU-FB-F70-0955",
+    "EV-F70-EU-FB-F70-1231",
+    "EV-F70-EU-FB-F70-0155",
+    "EV-F70-EU-FB-F70-0501",
+    "EV-F70-EU-FB-F70-1147",
+    "EV-F70-EU-FB-F70-0764"
+  ],
+  "counter_evidence_ids": [
+    "EV-F70-EU-FB-F70-0290",
+    "EV-F70-EU-FB-F70-0493",
+    "EV-F70-EU-FB-F70-2100"
+  ],
+  "suggested_change": "Specify regional scope: require the 10,000‑cycle test, 12‑month field trial and the ≥100‑participant ingress/egress study to be executed in the EU (and other key markets showing complaints), or make acceptance criteria regionally reported so remedies can be prioritized by market."
+}

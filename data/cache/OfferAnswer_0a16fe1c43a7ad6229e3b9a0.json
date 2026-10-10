@@ -1,0 +1,5 @@
+{
+  "status": "optional",
+  "option_id": "5AT",
+  "note": "Contains steering and lane guidance with adaptive distance and navigation-based control, enabling conditional motorway automated driving functions."
+}

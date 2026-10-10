@@ -1,0 +1,147 @@
+{
+  "drafts": [
+    {
+      "title": "Infotainment meets market certifications and GDPR privacy controls",
+      "description": "Customers experience an infotainment/driver-profile system that is certified for target markets and gives clear, GDPR-compliant data controls: they can see what personal data is stored, export it, and request deletion with a verifiable process.",
+      "acceptance_criterion": "System is CCC-certified for China at vehicle launch; driver profile exposes user-facing controls to view, export and delete personal data, and deletion/export requests are completed (or a completion confirmation issued) within 30 calendar days. The product documentation and in-car UI explicitly show the data storage region for the driver profile.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-R05",
+        "SCOPE-R08"
+      ],
+      "assumptions": [
+        "Certification processes (CCC) proceed on typical automotive timelines and BMW can submit required artifacts before launch.",
+        "Legal requirements for GDPR (data access/export/delete) remain consistent with today's rules and can be implemented in the driver profile UI and backend storage.",
+        "Backend services can be configured to store or route European user data to required regions when users request it."
+      ],
+      "uncertainties": [
+        "Timing and administrative steps for CCC certification may vary by year and could affect launch timing.",
+        "Future changes in privacy regulations or interpretations could require additional changes after launch."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Controls and displays work reliably without drivers taking their eyes off the road",
+      "description": "Drivers can operate primary climate controls by touch, use voice for common tasks, and read HUD/center-display content reliably in bright daylight and against glare, so interaction is safe and effortless while driving.",
+      "acceptance_criterion": "Tactile climate controls allow users to change cabin temperature by at least ±2°C and adjust fan speed without looking: in a driving usability test, ≥90% of participants complete a temperature or fan-speed adjustment within 3 seconds and without glancing at the screen. Voice assistant correctly understands and executes simple driving-related commands in ≥95% of trials under typical driving audio conditions (road and cabin noise). HUD and center display maintain legibility for 95% of tested UI elements at simulated direct sunlight up to 10,000 lux (participants correctly read navigation/text elements).",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N01",
+        "SCOPE-N08",
+        "SCOPE-N13",
+        "SCOPE-N19"
+      ],
+      "assumptions": [
+        "Usability tests use a representative sample of drivers and realistic in-cabin noise; lighting tests simulate direct sunlight up to 10,000 lux.",
+        "Voice system improvements (acoustic models, microphone arrays and noise handling) available for successor generation are integrated into the product.",
+        "HUD and display materials and calibration can be optimized to improve contrast and reduce reflectivity within design constraints."
+      ],
+      "uncertainties": [
+        "Extreme sunlight angles or aftermarket window tints may still reduce legibility for some users.",
+        "Voice accuracy depends on continued advances in speech recognition and availability of in-car compute or cloud services; performance may vary across languages/accents."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Wireless phone charging works reliably during typical drives",
+      "description": "Customers reliably charge their phones on the in-car wireless pad without frequent dropouts or the need for precise repositioning.",
+      "acceptance_criterion": "In a 30-minute drive test across 10 representative phone models and 5 common positioning variants, the wireless charging pad maintains continuous charging (no power dropouts) for ≥95% of phone-position combinations. Any temporary disconnects automatically resume charging within 5 seconds in ≥95% of occurrences.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N04"
+      ],
+      "assumptions": [
+        "Test phone set includes current mainstream handset models and common protective cases in use at time of launch.",
+        "Wireless charging implementation adheres to widely adopted standards used by the tested phones (e.g., Qi)."
+      ],
+      "uncertainties": [
+        "Future phone designs (new form factors, magnetic attachments or non-standard charging interfaces) may not be covered by the tested set.",
+        "Third-party phone cases or metal attachments may continue to cause failures outside the test coverage."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Heated steering wheel included in the Cold Weather package",
+      "description": "Customers who order the Cold Weather (or equivalent) package receive a heated steering wheel as part of that package by default so the feature is available to those buying winter comfort equipment.",
+      "acceptance_criterion": "The heated steering wheel is offered as a standard item within the published Cold Weather package (or equivalent name) for all trims that support that package at vehicle launch; the package contents are reflected in the official configurator and dealer order system.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-N20"
+      ],
+      "assumptions": [
+        "Supplier availability and integration for heated steering wheels match production schedules.",
+        "Cold Weather package content and naming remain consistent across launch markets where the package is offered."
+      ],
+      "uncertainties": [
+        "Market-specific regulatory or supplier constraints could force regional differences in package contents.",
+        "Some trims or optional combinations may still exclude the package for technical reasons; such exceptions must be documented."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Pricing, financing, subscriptions and dealer margins (commercial requests) — out of scope for product requirements",
+      "description": "Requests for lower base MSRP, cheaper lease rates, free option packages, discounts on Comfort package, lower dealer margins, specific subscription prices and financing terms are commercial decisions. These are noted for commercial and pricing teams but are not product-technical requirements.",
+      "acceptance_criterion": "Commercial teams review these requests during go-to-market and provide position statements; pricing, lease rates, subscription pricing and dealer margin targets are set outside of product requirement artifacts.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-P01",
+        "SCOPE-P02",
+        "SCOPE-P03",
+        "SCOPE-P04",
+        "SCOPE-P06",
+        "SCOPE-P08",
+        "SCOPE-P09",
+        "SCOPE-P10"
+      ],
+      "assumptions": [
+        "Pricing, subscription fees and dealer margin decisions are handled by BMW's commercial and finance organizations, informed by market analysis.",
+        "Product requirement documents should not set MSRP, lease rates, or subscription dollar amounts as they are business decisions."
+      ],
+      "uncertainties": [
+        "Commercial decisions may affect customer perception of product value; product team will coordinate with commercial stakeholders to communicate features and packages."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Pricing, financing, subscription rates and dealer margin targets are commercial/business decisions and outside the scope of product technical requirements."
+    },
+    {
+      "title": "Specific cockpit chip request (engineering specification) — out of scope",
+      "description": "Customer request for a specific cockpit chip model is an engineering-level component selection. Component model selection is treated as an engineering decision rather than a customer-facing product requirement.",
+      "acceptance_criterion": "Chip model selection is documented by engineering as part of platform/architecture decisions; specific chip model requests are not set as customer-facing requirements.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-E04"
+      ],
+      "assumptions": [
+        "Hardware component choices (chip models) will be made by engineering teams based on performance, supply and integration constraints.",
+        "Customer-facing outcomes (UI responsiveness, app performance) remain the criteria for product acceptance rather than the specific chip name."
+      ],
+      "uncertainties": [
+        "Supply chain or end-of-life for specific chip models may require alternatives at launch."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Request for a specific chip model is an engineering specification (out of scope for customer-facing product requirements)."
+    }
+  ]
+}
