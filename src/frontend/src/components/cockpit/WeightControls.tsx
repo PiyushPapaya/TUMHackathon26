@@ -2,34 +2,36 @@
 
 import type { WeightKey } from "@/src/lib/api";
 import { Button } from "@/src/components/ui/Button";
-import { DEMO_RATIONALE, WEIGHT_LABELS } from "./useCockpit";
+import { Icon } from "@/src/components/ui/Icon";
+import { WEIGHT_LABELS } from "./useCockpit";
 
+// Feintuning für Profis, standardmäßig zugeklappt: Im Demo fragt der PM in eigenen Worten,
+// die Slider sind nur die Lupe darunter. Die Begründung baut useCockpit automatisch aus dem Diff.
 export function WeightControls({
   weights,
   onChange,
-  rationale,
-  onRationale,
   applying,
   onApply,
   onReset,
 }: {
   weights: Record<WeightKey, number>;
   onChange: (next: Record<WeightKey, number>) => void;
-  rationale: string;
-  onRationale: (v: string) => void;
   applying: boolean;
   onApply: () => void;
   onReset: () => void;
 }) {
   return (
-    <section className="border border-[var(--hairline)] bg-white p-6">
-      <h2 className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--grey-500)]">Weight controls</h2>
-      <p className="mt-3 text-sm text-[var(--grey-500)]">
-        Move sliders and press Apply. An empty rationale uses a demo rationale and still records WEIGHTS_CHANGED.
-      </p>
-      <div className="mt-5 grid gap-4">
+    <details className="group border-b border-[var(--hairline)]">
+      <summary className="flex cursor-pointer list-none items-center justify-between py-4 text-sm font-semibold text-[var(--ink)] hover:text-[var(--blue)]">
+        <span className="flex items-center gap-3">
+          <Icon name="sliders" size={18} />
+          Fine-tune weights
+        </span>
+        <Icon name="down" size={16} className="transition-transform group-open:rotate-180" />
+      </summary>
+      <div className="grid gap-x-10 gap-y-4 pb-6 sm:grid-cols-2 lg:grid-cols-3">
         {(Object.keys(WEIGHT_LABELS) as WeightKey[]).map((key) => (
-          <label key={key} className="grid gap-1 text-sm font-semibold text-[var(--ink)]">
+          <label key={key} className="grid gap-1 text-sm text-[var(--ink)]">
             <span className="flex items-center justify-between gap-3">
               {WEIGHT_LABELS[key]}
               <span className="text-xs font-semibold tabular-nums text-[var(--grey-500)]">{weights[key].toFixed(2)}</span>
@@ -46,26 +48,11 @@ export function WeightControls({
           </label>
         ))}
       </div>
-      <label className="mt-5 grid gap-1 text-sm font-semibold text-[var(--ink)]">
-        Rationale
-        <textarea
-          className="min-h-24 border border-[var(--hairline)] px-3 py-2 font-normal text-[var(--ink)]"
-          placeholder="Why should the prioritization change?"
-          value={rationale}
-          onChange={(e) => onRationale(e.target.value)}
-        />
-      </label>
-      <button
-        type="button"
-        onClick={() => onRationale(DEMO_RATIONALE)}
-        className="mt-2 text-sm font-semibold text-[var(--blue)] hover:text-[var(--blue-hover)]"
-      >
-        Use demo rationale
-      </button>
-      <div className="mt-5 flex flex-wrap gap-3">
+      <div className="flex flex-wrap items-center gap-3 pb-6">
         <Button disabled={applying} onClick={onApply}>{applying ? "Applying..." : "Apply weights"}</Button>
-        <Button variant="outline" onClick={onReset}>Reset to default</Button>
+        <Button variant="outline" onClick={onReset}>Reset</Button>
+        <p className="text-xs text-[var(--grey-500)]">The change itself is recorded as the rationale.</p>
       </div>
-    </section>
+    </details>
   );
 }

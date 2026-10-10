@@ -14,7 +14,7 @@ const STEPS = [
 ];
 
 const FEATURES = [
-  ["Weight controls", "Sliders change what matters to you. \"Apply weights\" recomputes the ranking (the backend normalizes the sum to 1) and writes WEIGHTS_CHANGED to the audit trail. Without your own rationale the cockpit uses a demo rationale. \"Reset to default\" resets the sliders but applies nothing yet."],
+  ["Weight controls", "Sliders change what matters to you. \"Apply weights\" recomputes the ranking (the backend normalizes the sum to 1) and writes WEIGHTS_CHANGED to the audit trail. The change itself (for example \"Customer pain +0.10\") is stored as the rationale; a question asked in your own words is stored as the rationale when you apply it. \"Reset to default\" resets the sliders but applies nothing yet."],
   ["Conflicting evidence", "Yellow label: two pieces of evidence contradict each other (for example US customers say something different than European ones). The detail view shows which."],
   ["Status", "Proposed (new), Challenged (questioned), Approved, Rejected."],
   ["Overview", "Summary: funnel from customer voices to requirements, top proposals, evidence level split, workflow and warnings."],

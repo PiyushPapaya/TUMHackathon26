@@ -5,7 +5,6 @@ const COLUMNS: { title: string; links: { href: string; label: string }[] }[] = [
     title: "Product",
     links: [
       { href: "/#how", label: "How it works" },
-      { href: "/#features", label: "What you can do" },
       { href: "/#scenarios", label: "Scenarios" },
     ],
   },
@@ -13,10 +12,6 @@ const COLUMNS: { title: string; links: { href: string; label: string }[] }[] = [
     title: "Cockpit",
     links: [
       { href: "/cockpit", label: "Ranked list" },
-      { href: "/overview", label: "Overview" },
-      { href: "/insights", label: "Insights" },
-      { href: "/portfolio", label: "Portfolio" },
-      { href: "/evidence", label: "Evidence browser" },
       { href: "/audit", label: "Audit trail" },
     ],
   },

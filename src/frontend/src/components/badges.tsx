@@ -1,22 +1,44 @@
 import type { EvidenceLevel, RequirementStatus, SourceType } from "@/src/lib/api";
 
-const EVIDENCE_STYLE: Record<EvidenceLevel, { label: string; className: string }> = {
-  A: { label: "A · strong", className: "border-emerald-300 bg-emerald-50 text-emerald-800" },
-  B: { label: "B · medium", className: "border-blue-300 bg-blue-50 text-blue-800" },
-  C: { label: "C · weak", className: "border-amber-300 bg-amber-50 text-amber-800" },
-  D: { label: "D · assumption", className: "border-slate-300 bg-slate-50 text-slate-700" },
+// Ampel statt vier Farben: Ein PM soll in einer Sekunde sehen, ob etwas belegt ist.
+// A und B sind durch Kundenstimmen getragen (grün), C ist dünn (gelb), D ist nur Annahme (rot).
+// Der Buchstabe bleibt klein daneben, damit die feinere Stufe nicht verloren geht.
+export const EVIDENCE_LIGHT: Record<EvidenceLevel, { word: string; dot: string; text: string }> = {
+  A: { word: "Proven", dot: "bg-emerald-500", text: "text-emerald-800" },
+  B: { word: "Proven", dot: "bg-emerald-500", text: "text-emerald-800" },
+  C: { word: "Weak", dot: "bg-amber-400", text: "text-amber-800" },
+  D: { word: "Assumption", dot: "bg-[var(--m-red)]", text: "text-[var(--m-red)]" },
 };
 
+export function EvidenceDot({ level, size = 10 }: { level: EvidenceLevel; size?: number }) {
+  const style = EVIDENCE_LIGHT[level];
+  if (!style) return null;
+  return <span aria-hidden="true" className={`inline-block shrink-0 rounded-full ${style.dot}`} style={{ width: size, height: size }} />;
+}
+
 export function EvidenceBadge({ level, reason }: { level: EvidenceLevel; reason?: string }) {
-  const style = EVIDENCE_STYLE[level];
+  const style = EVIDENCE_LIGHT[level];
   // Trend-Einträge ohne Anforderung haben keine Evidenzstufe: dann gar kein Badge statt Absturz.
   if (!style) return null;
   return (
+    <span title={reason} className={`inline-flex min-h-7 items-center gap-2 whitespace-nowrap text-xs font-semibold ${style.text}`}>
+      <EvidenceDot level={level} />
+      {style.word}
+      <span className="font-normal text-[var(--grey-500)]">{level}</span>
+    </span>
+  );
+}
+
+// Kleines Warnzeichen statt eigener Spalte: Konflikte sind selten, sollen aber auffallen.
+export function ConflictMark({ conflictingTitles }: { conflictingTitles: string[] }) {
+  if (conflictingTitles.length === 0) return null;
+  return (
     <span
-      title={reason}
-      className={`inline-flex min-h-7 items-center rounded-none border px-3 text-xs font-semibold ${style.className}`}
+      title={`Conflicting evidence: ${conflictingTitles.join(", ")}`}
+      aria-label="Conflicting evidence"
+      className="ml-2 inline-flex h-5 w-5 items-center justify-center bg-amber-100 align-middle text-[11px] font-bold text-amber-800"
     >
-      {style.label}
+      !
     </span>
   );
 }

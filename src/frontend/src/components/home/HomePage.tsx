@@ -3,15 +3,16 @@
 import { useCallback, useMemo, useState } from "react";
 import { buildChapters } from "./chapters";
 import { CarScene } from "./CarScene";
-import { FeatureTiles } from "./FeatureTiles";
 import { Hero } from "./Hero";
+import { HowItWorks } from "./HowItWorks";
 import { Preloader } from "./Preloader";
-import { ScenarioSections } from "./ScenarioSections";
+import { ScenarioStrip } from "./ScenarioStrip";
 import { SplitSection } from "./SplitSection";
 import { MediaContext } from "./MediaImage";
 import { useHomeData } from "./useHomeData";
 import type { FrameStatus } from "./useCarFrames";
 
+// Fünf Abschnitte, eine Geschichte: Versprechen → wie es arbeitet (Scroll) → Zahlen und Rollen → Modell wählen → Nachweis.
 export function HomePage({ media }: { media: string[] }) {
   const data = useHomeData();
   const chapters = useMemo(() => buildChapters(data), [data]);
@@ -24,8 +25,8 @@ export function HomePage({ media }: { media: string[] }) {
       <Preloader progress={frames.progress} done={frames.status !== "loading"} />
       <Hero data={data} />
       <CarScene chapters={chapters} onFramesStatus={onFramesStatus} />
-      <FeatureTiles />
-      <ScenarioSections data={data} />
+      <HowItWorks data={data} />
+      <ScenarioStrip data={data} />
       <SplitSection />
     </main>
     </MediaContext.Provider>

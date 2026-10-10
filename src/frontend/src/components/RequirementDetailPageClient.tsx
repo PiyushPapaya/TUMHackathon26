@@ -64,20 +64,20 @@ export function RequirementDetailPageClient({ id }: { id: string }) {
   }, [detail]);
 
   return (
-    <main className="min-h-screen px-4 py-6 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-7xl">
-        <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+    <main className="min-h-screen px-6 py-10 lg:px-10">
+      <div className="mx-auto max-w-[1400px]">
+        <div className="mb-8 flex flex-wrap items-center justify-between gap-3">
           <Link
             href="/cockpit"
-            className="inline-flex min-h-11 items-center rounded-md border border-slate-300 bg-white px-4 text-sm font-semibold text-[#262626] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
+            className="inline-flex min-h-11 items-center text-sm font-semibold text-[var(--ink)] hover:text-[var(--blue)]"
           >
-            Back to list
+            ← Back to ranked list
           </Link>
           <Link
             href="/audit"
-            className="inline-flex min-h-11 items-center rounded-md border border-slate-300 bg-white px-4 text-sm font-semibold text-[#262626] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
+            className="inline-flex min-h-11 items-center text-sm font-semibold text-[var(--ink)] hover:text-[var(--blue)]"
           >
-            Open audit trail
+            Audit trail →
           </Link>
         </div>
 

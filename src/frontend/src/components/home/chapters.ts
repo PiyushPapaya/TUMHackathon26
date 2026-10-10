@@ -18,8 +18,13 @@ export function buildChapters(d: HomeData): Chapter[] {
     {
       n: "03",
       title: "Prove it.",
-      text: "Every requirement gets an evidence level from A (strong) to D (assumption).",
-      figures: (["A", "B", "C", "D"] as const).map((k) => ({ label: `level ${k}`, value: lv ? lv[k] : null })),
+      text: "Every requirement gets a traffic light: green is proven by customers, yellow is weak, red is only an assumption.",
+      // Gleiche Ampel wie im Cockpit (badges.tsx): A+B grün, C gelb, D rot.
+      figures: [
+        { label: "green · proven", value: lv ? lv.A + lv.B : null },
+        { label: "yellow · weak", value: lv ? lv.C : null },
+        { label: "red · assumption", value: lv ? lv.D : null },
+      ],
     },
     { n: "04", title: "Decide.", text: d.topTitle ? `Ranked, explained, auditable. Rank 1: ${d.topTitle}.` : "Ranked, explained, auditable.", figures: [{ label: "requirements", value: f?.requirements ?? null }] },
   ];

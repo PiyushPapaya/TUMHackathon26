@@ -7,8 +7,9 @@ import { CockpitHero } from "@/src/components/cockpit/CockpitHero";
 import { RequirementsTable } from "@/src/components/cockpit/RequirementsTable";
 import { WeightControls } from "@/src/components/cockpit/WeightControls";
 import { LensPanel } from "@/src/components/cockpit/LensPanel";
-import { DemoSteps } from "@/src/components/cockpit/DemoSteps";
 
+// Eine Spalte, drei Schritte von oben nach unten: fragen → Liste springt → Zeile öffnen.
+// Warum keine Seitenleiste mehr: Im 2-Minuten-Demo soll das Auge nicht zwischen Kästen springen.
 function Cockpit() {
   const params = useSearchParams();
   const c = useCockpit(params.get("scenario"));
@@ -29,35 +30,28 @@ function Cockpit() {
         onApply={(weights, question) => c.applyWeights({ ...c.weights, ...weights }, question)}
       />
 
-      <div className="grid gap-10 xl:grid-cols-[1fr_360px]">
-        <section className="min-w-0">
-          {c.loading && <p className="py-8 text-sm text-[var(--grey-500)]">Loading requirements...</p>}
-          {!c.loading && c.requirements.length === 0 && (
-            <p className="py-8 text-sm text-[var(--grey-500)]">No requirements for this scenario yet.</p>
-          )}
-          {!c.loading && c.requirements.length > 0 && (
-            <RequirementsTable
-              requirements={c.requirements}
-              previousRanks={c.previousRanks}
-              highlightRanks={c.highlightRanks}
-              conflictTitles={c.conflictTitles}
-            />
-          )}
-        </section>
+      <WeightControls
+        weights={c.weights}
+        onChange={c.setWeights}
+        applying={c.applying}
+        onApply={() => c.applyWeights()}
+        onReset={c.resetWeights}
+      />
 
-        <aside className="grid h-fit gap-6 xl:sticky xl:top-24">
-          <DemoSteps />
-          <WeightControls
-            weights={c.weights}
-            onChange={c.setWeights}
-            rationale={c.rationale}
-            onRationale={c.setRationale}
-            applying={c.applying}
-            onApply={() => c.applyWeights()}
-            onReset={c.resetWeights}
+      <section className="mt-6 min-w-0">
+        {c.loading && <p className="py-8 text-sm text-[var(--grey-500)]">Loading requirements...</p>}
+        {!c.loading && c.requirements.length === 0 && (
+          <p className="py-8 text-sm text-[var(--grey-500)]">No requirements for this scenario yet.</p>
+        )}
+        {!c.loading && c.requirements.length > 0 && (
+          <RequirementsTable
+            requirements={c.requirements}
+            previousRanks={c.previousRanks}
+            highlightRanks={c.highlightRanks}
+            conflictTitles={c.conflictTitles}
           />
-        </aside>
-      </div>
+        )}
+      </section>
 
       {c.toast && (
         <div role="status" className="fixed bottom-24 right-6 z-50 border-l-4 border-[var(--blue)] bg-[var(--black)] px-5 py-3 text-sm text-white">

@@ -7,20 +7,17 @@ import { getScenarios, type Scenario } from "@/src/lib/api";
 import { Logo } from "@/src/components/ui/Logo";
 import { MStripe } from "@/src/components/ui/MStripe";
 import { Icon } from "@/src/components/ui/Icon";
-import { MegaMenu } from "./MegaMenu";
 import { DEFAULT_SCENARIO_ID, scenarioLabel } from "./scenarioLabel";
 
+// Nur die zwei Ziele des Demo-Flows. Insights, Portfolio, Evidence und Guide bleiben per URL erreichbar,
+// stehen aber nicht in der Navigation: weniger Auswahl, klarerer Weg (fragen → entscheiden → nachweisen).
 const NAV = [
-  { href: "/overview", label: "Overview" },
   { href: "/cockpit", label: "Cockpit" },
-  { href: "/insights", label: "Insights" },
-  { href: "/portfolio", label: "Portfolio" },
-  { href: "/evidence", label: "Evidence" },
   { href: "/audit", label: "Audit trail" },
 ];
 
 // Seiten, die ein Szenario in ?scenario= verstehen. Das Szenario-Menü bleibt auf der Seite, statt ins Cockpit zu springen.
-const SCENARIO_PAGES = ["/cockpit", "/overview", "/insights", "/evidence"];
+const SCENARIO_PAGES = ["/cockpit", "/insights", "/evidence"];
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -29,19 +26,15 @@ export function SiteHeader() {
   const [scenarios, setScenarios] = useState<Scenario[]>([]);
   // Wir merken die Route, bei der das Menü geöffnet wurde: Routenwechsel schließt es automatisch,
   // ohne setState im Effect.
-  const [menuPath, setMenuPath] = useState<string | null>(null);
   const [mobilePath, setMobilePath] = useState<string | null>(null);
-  const menuOpen = menuPath === pathname;
   const mobileOpen = mobilePath === pathname;
-  const setMenuOpen = (open: boolean | ((v: boolean) => boolean)) =>
-    setMenuPath((cur) => ((typeof open === "function" ? open(cur === pathname) : open) ? pathname : null));
   const setMobileOpen = (open: boolean | ((v: boolean) => boolean)) =>
     setMobilePath((cur) => ((typeof open === "function" ? open(cur === pathname) : open) ? pathname : null));
   const [scrolled, setScrolled] = useState(false);
 
   const isHome = pathname === "/";
   // Auf der Startseite liegt der Header transparent über dem schwarzen Hero.
-  const light = isHome && !scrolled && !menuOpen && !mobileOpen;
+  const light = isHome && !scrolled && !mobileOpen;
   // Das Szenario steckt in der URL (?scenario=), so teilen Header, Cockpit und Menü denselben Zustand.
   const scenarioId = params.get("scenario") ?? DEFAULT_SCENARIO_ID;
 
@@ -59,7 +52,6 @@ export function SiteHeader() {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
-        setMenuPath(null);
         setMobilePath(null);
       }
     };
@@ -71,7 +63,6 @@ export function SiteHeader() {
 
   return (
     <>
-      {menuOpen && <div className="fixed inset-0 z-30 bg-black/40" onClick={() => setMenuOpen(false)} aria-hidden="true" />}
       <header
         className={`fixed inset-x-0 top-0 z-40 transition-colors duration-300 ${
           light ? "bg-transparent" : "border-b border-[var(--hairline)] bg-white"
@@ -95,15 +86,6 @@ export function SiteHeader() {
                 </Link>
               );
             })}
-            <button
-              type="button"
-              aria-expanded={menuOpen}
-              aria-controls="mega-menu"
-              onClick={() => setMenuOpen((v) => !v)}
-              className={`flex items-center gap-1 py-6 text-[15px] ${textCls} hover:text-[var(--blue)]`}
-            >
-              Scenarios <Icon name="down" size={16} className={menuOpen ? "rotate-180" : ""} />
-            </button>
           </nav>
 
           <div className="flex items-center gap-3">
@@ -133,7 +115,6 @@ export function SiteHeader() {
           </div>
         </div>
         <MStripe />
-        {menuOpen && <MegaMenu scenarios={scenarios} scenarioId={scenarioId} onNavigate={() => setMenuOpen(false)} />}
         {mobileOpen && (
           <nav className="border-t border-[var(--hairline)] bg-white px-6 py-4 lg:hidden" aria-label="Mobile">
             {NAV.map((item) => (

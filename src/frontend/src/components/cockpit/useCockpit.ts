@@ -33,7 +33,17 @@ export const WEIGHT_LABELS: Record<WeightKey, string> = {
   future_relevance: "Future relevance",
   effort_inverse: "Low effort",
 };
-export const DEMO_RATIONALE = "Demo adjustment: product management is testing a different prioritization focus.";
+
+// Begründung für manuelle Slider-Änderungen, automatisch aus dem Unterschied gebaut.
+// Warum kein Textfeld mehr: Die Frage in "Ask in your own words" ist schon die Begründung,
+// und für Slider reicht ein lesbarer Diff im Prüfpfad ("Customer pain +0.10, Reach -0.05").
+export function describeWeightChange(before: Record<WeightKey, number>, after: Weights): string {
+  const parts = (Object.keys(WEIGHT_LABELS) as WeightKey[])
+    .map((key) => [key, (after[key] ?? before[key]) - before[key]] as const)
+    .filter(([, diff]) => Math.abs(diff) >= 0.005)
+    .map(([key, diff]) => `${WEIGHT_LABELS[key]} ${diff > 0 ? "+" : ""}${diff.toFixed(2)}`);
+  return parts.length ? `Manual weight change: ${parts.join(", ")}` : "Weights re-applied without change.";
+}
 
 function weightsFromRequirements(requirements: Requirement[]): Record<WeightKey, number> {
   const first = requirements[0]?.score_breakdown;
@@ -53,7 +63,8 @@ export function useCockpit(initialScenarioId: string | null) {
   const [requirements, setRequirements] = useState<Requirement[]>([]);
   const [signals, setSignals] = useState<Signal[]>([]);
   const [weights, setWeights] = useState<Record<WeightKey, number>>(DEFAULT_WEIGHTS);
-  const [rationale, setRationale] = useState("");
+  // Gewichte, mit denen die aktuelle Rangliste gerechnet wurde (Basis für die Auto-Begründung).
+  const [appliedWeights, setAppliedWeights] = useState<Record<WeightKey, number>>(DEFAULT_WEIGHTS);
   const [previousRanks, setPreviousRanks] = useState<Record<string, number>>({});
   const [highlightRanks, setHighlightRanks] = useState(false);
   const [applying, setApplying] = useState(false);
@@ -78,6 +89,7 @@ export function useCockpit(initialScenarioId: string | null) {
         setRequirements(nextRequirements);
         setSignals(nextSignals);
         setWeights(weightsFromRequirements(nextRequirements));
+        setAppliedWeights(weightsFromRequirements(nextRequirements));
         setPreviousRanks({});
         setError(null);
       })
@@ -113,14 +125,14 @@ export function useCockpit(initialScenarioId: string | null) {
       const reranked = await putWeights(scenarioId, {
         weights: nextWeights,
         actor: PM_ACTOR,
-        rationale: (why ?? rationale).trim() || DEMO_RATIONALE,
+        rationale: why?.trim() || describeWeightChange(appliedWeights, nextWeights),
       });
       setPreviousRanks(before);
       setRequirements(reranked);
       setWeights(weightsFromRequirements(reranked));
-      setRationale("");
+      setAppliedWeights(weightsFromRequirements(reranked));
       setHighlightRanks(true);
-      setToast("WEIGHTS_CHANGED recorded");
+      setToast(why ? "Re-ranked. Your question is saved as the rationale." : "Re-ranked. Change recorded in the audit trail.");
       window.setTimeout(() => setHighlightRanks(false), 2500);
       window.setTimeout(() => setToast(null), 3500);
     } catch (err) {
@@ -131,7 +143,7 @@ export function useCockpit(initialScenarioId: string | null) {
   }
 
   return {
-    scenarioId, selectedScenario, requirements, weights, setWeights, rationale, setRationale,
+    scenarioId, selectedScenario, requirements, weights, setWeights,
     previousRanks, highlightRanks, loading, applying, error, toast,
     conflictTitles, applyWeights, resetWeights: () => setWeights(DEFAULT_WEIGHTS),
   };

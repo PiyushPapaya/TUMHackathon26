@@ -1,13 +1,7 @@
-import { Suspense } from "react";
-import { OverviewPageClient } from "@/src/components/OverviewPageClient";
+import { redirect } from "next/navigation";
 
-export const instant = false;
-
+// Overview ist in die Startseite gewandert (Abschnitt "How it works"), weil beide dasselbe erzählten.
+// Die Weiterleitung hält alte Links und Lesezeichen am Leben.
 export default function OverviewPage() {
-  // useSearchParams (Szenario aus der URL) braucht Suspense.
-  return (
-    <Suspense fallback={<main className="px-6 py-12 text-sm text-[var(--grey-500)]">Loading...</main>}>
-      <OverviewPageClient />
-    </Suspense>
-  );
+  redirect("/#flow");
 }
