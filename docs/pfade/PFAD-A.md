@@ -29,6 +29,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 ## Absprache mit Dennis (Pfad C braucht diese Felder, bitte genau so)
 
 - Feedback-Beleg `meta`: `vfc2`, `vfc3`, `feedback_type` (bei mehreren: `" | "`-getrennt), `labels` (`"vfc2/Typ | vfc2/Typ"`), `engine`, `source` (A-D), `scope` (`in`/`out`).
+- Polarität: leerer Feedback-Typ = 0, **außer Quelle D** = +1 (Frage „Was liebst du am meisten?“, BMW lässt den Typ leer). Dann steht `meta["polarity_basis"] = "source_d_praise"`. Quelle A/C ohne Typ bleiben 0 (mischen Lob und Beschwerden).
 - Studien-Beleg `meta`: `attribute`, `neg_share` (US: Hate+Failure+Unsatisfactory, als `"0.14"`), `top2` (Delightful+Love), `mean` (CN/EU).
 - Beleg-IDs: Feedback `EV-<szenario>-FB-<BMW-ID>`, Studie `EV-<szenario>-ST-<nn>`. Befund-IDs: `SIG-<szenario>-<nnn>`.
 
