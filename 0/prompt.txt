@@ -1,0 +1,172 @@
+<pasted_content id="7535">
+# Auftrag: Repo neu organisieren, verständlich machen und das ganze Team mitbauen lassen
+
+## Kontext
+Wir sind ein Team beim EHL-Hackathon (TUM.ai) und machen die BMW-Challenge
+„AI for Product Decision Making“. Unser Tool liest Kundenfeedback, Kundenstudien,
+Verkaufszahlen, Ausstattungslisten und Webquellen. Daraus schlägt es vor, was das
+nächste BMW-Modell können muss (Requirements), und priorisiert die Vorschläge.
+Ein Produktmanager (PM) entscheidet, und jede Aktion landet in einem Audit Trail.
+
+- Demo-Fall: BMW 5er (G60) im US-Markt. Später per Umschalter auch G70 / EU.
+- Abgabe: Sonntag 12:00. Danach 6-Minuten-Pitch inklusive Fragen.
+- Das Entire-Setup im Repo muss funktionsfähig bleiben (Pflicht für die Abgabe).
+- Eine Person programmiert, die anderen haben keine Coding-Erfahrung.
+
+Das Problem: Keiner versteht gerade, was wir machen. Das Repo ist unübersichtlich,
+die Pläne sind zu kompliziert und die meisten im Team können nichts beitragen.
+Ziel: Jeder versteht das Projekt, jeder entscheidet mit, jeder baut etwas Sichtbares
+für die Demo, und es macht Spaß.
+
+## Schreibstil (gilt für jede Datei, jeden Kommentar, jede Antwort an uns)
+Schreib auf Deutsch. Der Stil:
+Write in a natural, direct, conversational style. Use grammatically correct
+sentences and proper punctuation. Keep sentences relatively short and
+straightforward. Use simple, precise vocabulary rather than sophisticated or
+decorative language. Get to the point quickly and avoid unnecessary
+introductions, filler, rhetorical flourishes, and corporate-sounding language.
+Explain ideas logically and concretely. The tone should feel like an intelligent
+university student speaking naturally: informal but articulate, clear but not
+overly polished, and analytical without sounding academic. Prioritize clarity
+and substance over elegant phrasing.
+
+Zusätzlich:
+- Jeder Fachbegriff wird beim ersten Mal in einem Satz erklärt und kommt ins Glossar.
+- Zu jeder Erklärung gehört ein echtes Beispiel aus unseren Daten.
+- Lieber ein Diagramm als drei Absätze.
+
+## Schritt 0: Erst ansehen, nichts löschen
+1. Lies das ganze Repo und alle Datendateien.
+2. Sag uns kurz: was funktioniert, was halb fertig ist, was weg kann.
+3. Lösch nichts, was funktioniert. Altes kommt nach `archiv/`.
+
+## Schritt 1: Entscheidungen gehören dem Team
+Du triffst keine großen Entscheidungen allein. Leg für jede offene Frage eine
+Entscheidungskarte an: `entscheidungen/E01_<thema>.md`. Jede Karte enthält:
+- die Frage in einem Satz,
+- 2–3 Optionen mit Vor- und Nachteilen in normalen Worten,
+- was jede Option für die Demo bedeutet,
+- deine Empfehlung mit Begründung,
+- ein leeres Feld „Unsere Entscheidung“ und „Warum“.
+
+Erste Karten, mindestens:
+- E01 Name und Story unseres Tools
+- E02 Oberfläche: Streamlit, einfache Web-App oder etwas anderes
+- E03 Design-Richtung (zeig 2–3 Stile als kurze Beschreibung oder Mockup)
+- E04 Welche Extra-Features wir bauen (siehe Feature-Speisekarte unten)
+- E05 Wie wir priorisieren: welche Faktoren, welche Gewichte
+- E06 Wer welche Rolle und welche Mission übernimmt
+
+Stell uns die Karten vor und warte auf unsere Antworten. Kleine technische Details
+entscheidest du selbst und trägst sie in `entscheidungen/LOG.md` ein.
+
+## Schritt 2: Neue Ordnerstruktur (Vorschlag, gern verbessern)
+```
+START_HIER.md            ← eine Seite: was wir bauen, wo was liegt, was ich jetzt tun kann
+docs/
+  01_projekt.md          ← Aufgabe, Idee, Demo-Fall
+  02_glossar.md          ← jeder Begriff in einem Satz + Beispiel
+  03_daten.md            ← jede Datei: Inhalt, Beispielzeile, wofür wir sie nutzen
+  04_techflow.md         ← der Weg der Daten, Schritt für Schritt, mit Diagramm
+  05_rollen.md           ← wer macht was
+  06_roadmap.md          ← Checklisten bis Sonntag 12:00
+  07_pitch.md            ← 6-Minuten-Ablauf, Demo-Skript, Jury-Fragen
+entscheidungen/          ← Entscheidungskarten + LOG.md
+missionen/               ← eine Mission pro Person (siehe unten)
+werkstatt/<name>/        ← eigener Ordner pro Teammitglied zum Bauen und Ausprobieren
+visuals/                 ← Diagramme, Charts, Mockups, Pitch-Grafiken
+data/raw/                ← Original-Daten von BMW, nie verändern
+data/processed/          ← bereinigte Daten
+src/                     ← Code, ein Unterordner pro Pipeline-Schritt
+app/                     ← die Oberfläche
+outputs/                 ← Requirement-Liste, Audit Trail, Exporte
+archiv/
+```
+Jeder Ordner bekommt eine kurze README: was liegt hier und wer braucht das.
+
+## Schritt 3: Den Techflow erklären
+`docs/04_techflow.md` zeigt den ganzen Weg als Mermaid-Diagramm, mit klarer Markierung,
+was die KI allein macht und wo der Mensch entscheidet. Danach kommt jeder Schritt
+mit 5 Antworten:
+Was passiert? Warum? Wer macht es? Was kommt raus (mit Beispiel)? Woran sehen wir,
+dass es fertig ist?
+Markiere bei jedem Schritt, wo das Team etwas mitgestalten kann, z. B. eigene Prompts,
+eigene Gewichte oder eigene Kategorien.
+
+## Schritt 4: Jeder baut etwas – Missionen
+Schreib für jede Rolle eine Mission in `missionen/`. Jede Mission ist eine kleine,
+klare Bauaufgabe, die am Ende sichtbar in der Demo oder im Pitch landet. Jede Mission hat:
+- Ziel in einem Satz und warum es für die Demo zählt,
+- was die Person selbst entscheidet (Freiheit!),
+- Schritt-für-Schritt-Anleitung, auch für Leute ohne Coding,
+- Werkzeuge (Excel, Browser, Canva/Figma, Claude/ChatGPT, oder Claude Code mit fertigen Befehlen zum Kopieren),
+- „Fertig, wenn …“,
+- wo das Ergebnis abgelegt wird und wie es in die App kommt.
+
+Missions-Ideen (ergänzen, umbauen, eigene erfinden):
+- Daten-Detektiv: die 15–25 stärksten Kundenthemen und die besten Zitate finden,
+  und daraus selbst Requirement-Entwürfe schreiben, die wir mit der KI vergleichen.
+- Prompt-Designer: die Prompts schreiben und testen, mit denen die KI Requirements
+  formuliert und auf Challenges antwortet. Prompts schreiben ist echtes Bauen, kein Code nötig.
+- Wettbewerbs-Scout: Mercedes, Audi, Tesla, Lucid zu unseren Top-Themen recherchieren,
+  jede Quelle mit Link, als Tabelle, die direkt in die App geladen wird.
+- Visual-Designer: Workflow-Diagramm, App-Mockups, Pitch-Grafiken und Charts aus
+  unseren Daten bauen.
+- Story & Pitch: Demo-Story, Pitch-Folien, Jury-Fragen, den Pitch üben und timen.
+- Builder: Pipeline und App, und alles von den anderen einbauen.
+
+Jede Person bekommt einen eigenen `werkstatt/<name>/`-Ordner mit einer Starter-Datei
+und einem Mini-Tutorial, damit sie sofort loslegen kann.
+
+## Schritt 5: Visuals
+Erstelle in `visuals/` als Startpunkt, den das Team weiter gestalten kann:
+- Techflow-Diagramm (Mermaid und als PNG/SVG exportiert)
+- 3–5 Charts aus unseren echten Daten, z. B. Top-Beschwerden beim G60 US,
+  Studienwerte G60 vs. G70, Verkaufszahlen pro Markt
+- 2–3 einfache Mockups der App-Hauptseiten
+- ein Bild „vom Kundenzitat zum Requirement“ für den Pitch
+Für jedes Visual eine Zeile in `visuals/README.md`: was es zeigt und wo wir es nutzen.
+
+## Schritt 6: Feature-Speisekarte (das Team wählt in E04)
+Pro Feature: was es tut, warum die Jury es mag, Aufwand (klein, mittel, groß),
+wer es bauen könnte. Ideen:
+- Konflikt-Detektor: zeigt, wenn Quellen sich widersprechen
+- Devil's-Advocate-KI: der PM klickt „Challenge“, und die KI verteidigt sich mit Belegen oder passt das Requirement an
+- Gewichte-Schieberegler: Priorisierung live ändern, Ranking sortiert sich neu
+- Kundenstimmen-Wand: echte Zitate pro Requirement
+- Swipe-Modus: Requirements wie Karten annehmen oder ablehnen
+- Audit-Zeitreise: Geschichte eines Requirements Schritt für Schritt abspielen
+- Evidenz-Ampel pro Requirement
+- Markt-Umschalter G60/G70, US/EU
+Ergänze eigene Ideen.
+
+## Schritt 7: Oberfläche
+Erst nach E02 und E03 bauen. Mindestens:
+- Startseite: Top-Requirements als Karten mit Score, Evidenzlevel und Status
+- Detailseite: Beschreibung, Score-Aufschlüsselung, Zitate, Quellen, Annahmen,
+  Buttons Approve / Reject / Edit / Challenge, Begründung als Pflichtfeld
+- Audit-Trail-Seite
+Kein BMW-Logo. Ruhiges, modernes Design, BMW-Blau als Akzent ist okay.
+
+## Schritt 8: Roadmap
+`docs/06_roadmap.md` ohne Stundenschätzungen. Meilensteine:
+Samstagabend, Samstagnacht, Sonntag 10:00 (Feature-Stopp), Sonntag 12:00 (Abgabe).
+Pro Meilenstein eine Checkliste mit Namen. Klar markiert: MUSS (BMW-Pflicht) und KANN (Bonus).
+
+BMW-Pflicht:
+1. Prototyp: Daten → Requirements → Priorisierung → PM-Entscheidung
+2. 15–25 Requirements mit ID, Beschreibung, verlinkten Findings und Quellen, Score,
+   Begründung, Evidenzlevel, Annahmen/Unsicherheiten, Status
+3. Workflow-Diagramm: KI allein vs. Mensch entscheidet
+4. Audit Trail bis zum Original-Kundenzitat
+
+## Arbeitsregeln
+- Kleine Schritte. Nach jedem Schritt 3–5 Sätze, was du gemacht hast und warum.
+- Commits auf Deutsch, verständlich.
+- Große Entscheidungen fragst du über Entscheidungskarten, kleine trägst du ins LOG ein.
+- Wenn jemand aus dem Team eine Idee hat, die von deinem Plan abweicht, hilf ihm,
+  sie umzusetzen, statt sie wegzudiskutieren. Sag nur ehrlich, wenn es die Deadline gefährdet.
+- Lieber einfach und fertig als kompliziert und halb.
+
+Starte mit Schritt 0, dann leg die Entscheidungskarten an und stell sie uns vor.
+</pasted_content id="7535">

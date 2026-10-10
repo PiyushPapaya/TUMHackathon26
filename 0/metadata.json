@@ -1,0 +1,65 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4K91R8E5MK3X2QGFJR2X0SM",
+  "session_id": "b95f1a7e-51dd-45bd-84de-2c7f1ef3469f",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T16:06:35.1760271Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "save_step_count": 1,
+  "files_touched": [
+    "entscheidungen/E01_name_und_story.md",
+    "entscheidungen/E02_oberflaeche.md",
+    "entscheidungen/E03_design.md",
+    "entscheidungen/E04_features.md",
+    "entscheidungen/E05_priorisierung.md",
+    "entscheidungen/E06_rollen.md",
+    "entscheidungen/E07_ordnerstruktur.md",
+    "entscheidungen/E08_bmw_daten_im_repo.md",
+    "entscheidungen/LOG.md",
+    "entscheidungen/README.md",
+    "entscheidungen/SCHRITT0_BESTANDSAUFNAHME.md"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5-5",
+  "turn_id": "1881c83c6d21",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 98,
+    "cache_creation_tokens": 215503,
+    "cache_read_tokens": 8412496,
+    "output_tokens": 79768,
+    "api_call_count": 49
+  },
+  "session_metrics": {
+    "turn_count": 1
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T16:06:34.9395197Z",
+    "agent_lines": 316,
+    "agent_removed": 0,
+    "human_added": 17068,
+    "human_modified": 3,
+    "human_removed": 0,
+    "total_committed": 17387,
+    "total_lines_changed": 17656,
+    "agent_percentage": 1.7897598550067964,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    },
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 319,
+      "agent_lines_removed": 0
+    }
+  ]
+}
