@@ -48,7 +48,7 @@ function FactorRow({ label, factor }: { label: string; factor: ScoreFactor }) {
         </span>
       </div>
       <div className="mt-1 h-2 w-full overflow-hidden rounded-full bg-zinc-100 dark:bg-zinc-800">
-        <div className="h-full rounded-full bg-blue-600" style={{ width: `${width}%` }} />
+        <div className="h-full rounded-full bg-score-slider" style={{ width: `${width}%` }} />
       </div>
       <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">{factor.explanation}</p>
     </div>

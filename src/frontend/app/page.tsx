@@ -75,12 +75,15 @@ export default function RequirementsPage() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      {/* Top bar: volle Breite, Platz für weitere Elemente später. Halbtransparent, damit der Shader-Hintergrund durchscheint. */}
-      <header className="w-full border-b border-zinc-200 bg-surface backdrop-blur-sm dark:border-zinc-800">
+      {/* Top bar: volle Breite, nach BMW-Vorbild schlicht weiß/schwarz mit dünner Haarlinie statt Schatten.
+          Sticky, damit sie beim Scrollen der Seite oben bleibt. */}
+      <header className="sticky top-0 z-10 w-full border-b border-zinc-200 bg-surface dark:border-zinc-800">
         <div className="flex flex-wrap items-center justify-between gap-4 px-6 py-4">
           <div>
-            <h1 className="text-xl font-semibold text-[#0b1f3a] dark:text-zinc-100">Spec Checker</h1>
-            <p className="text-sm text-zinc-500 dark:text-zinc-400">Prioritized requirements for product decisions</p>
+            <h1 className="text-xl font-semibold tracking-tight text-foreground">Signal2Spec</h1>
+            <p className="text-xs uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+              Prioritized requirements for product decisions
+            </p>
           </div>
           <div className="flex items-center gap-3">
             <label className="flex items-center gap-2 text-sm text-zinc-700 dark:text-zinc-300">
@@ -89,7 +92,7 @@ export default function RequirementsPage() {
                 value={scenarioId}
                 onChange={(e) => setScenarioId(e.target.value)}
                 disabled={!scenarios}
-                className="rounded-md border border-zinc-300 bg-surface px-3 py-1.5 text-sm text-[#0b1f3a] focus:border-blue-500 focus:outline-none dark:border-zinc-700 dark:text-zinc-100"
+                className="rounded-sm border border-zinc-300 bg-surface px-3 py-1.5 text-sm text-foreground focus:border-accent focus:outline-none dark:border-zinc-700"
               >
                 {(scenarios ?? []).map((s) => (
                   <option key={s.id} value={s.id}>
@@ -102,7 +105,7 @@ export default function RequirementsPage() {
               href={getExportUrl(scenarioId)}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-md bg-blue-600 px-4 py-1.5 text-sm font-medium text-white hover:bg-blue-700"
+              className="rounded-sm bg-accent px-4 py-1.5 text-sm font-medium uppercase tracking-wide text-white hover:bg-accent-hover"
             >
               Export CSV
             </a>
@@ -113,7 +116,7 @@ export default function RequirementsPage() {
 
       {/* Mitte: Ergebnis-Fenster, 2cm Abstand zu Rand, Top-Bar und Prompt-Leiste */}
       <main className="m-[2cm] flex flex-1 flex-col">
-        <div className="rounded-lg border border-zinc-200 bg-surface backdrop-blur-sm dark:border-zinc-800">
+        <div className="border-t border-b border-zinc-200 bg-table-background dark:border-zinc-800">
           {error && (
             <div className="m-4 rounded-md border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-800 dark:border-rose-800 dark:bg-rose-950 dark:text-rose-300">
               {error}
@@ -148,12 +151,12 @@ export default function RequirementsPage() {
                         router.push(`/requirements/${req.id}`);
                       }
                     }}
-                    className="cursor-pointer border-b border-zinc-100 last:border-0 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none dark:border-zinc-800 dark:hover:bg-zinc-900 dark:focus:bg-zinc-900"
+                    className="cursor-pointer border-b border-zinc-100 last:border-0 hover:bg-accent/5 focus:bg-accent/5 focus:outline-none dark:border-zinc-800 dark:hover:bg-zinc-900 dark:focus:bg-zinc-900"
                   >
                     <td className="px-4 py-3">
                       <ScoreBar score={req.score} />
                     </td>
-                    <td className="px-4 py-3 font-medium text-[#0b1f3a] dark:text-zinc-100">{req.title}</td>
+                    <td className="px-4 py-3 font-medium text-foreground">{req.title}</td>
                     <td className="px-4 py-3 text-zinc-700 dark:text-zinc-300">{categoryLabel(req.category)}</td>
                   </tr>
                 ))}
@@ -175,12 +178,12 @@ export default function RequirementsPage() {
               if (e.key === "Enter") handlePromptSubmit();
             }}
             placeholder="Ask me your questions..."
-            className="flex-1 rounded-md border border-zinc-300 bg-surface backdrop-blur-sm px-4 py-4 text-sm text-[#0b1f3a] focus:border-blue-500 focus:outline-none dark:border-zinc-700 dark:text-zinc-100"
+            className="flex-1 rounded-sm border border-zinc-300 bg-surface px-4 py-4 text-sm text-foreground focus:border-accent focus:outline-none dark:border-zinc-700"
           />
           <button
             type="button"
             onClick={handlePromptSubmit}
-            className="rounded-md bg-blue-600 px-5 py-4 text-sm font-medium text-white hover:bg-blue-700"
+            className="rounded-sm bg-accent px-5 py-4 text-sm font-medium uppercase tracking-wide text-white hover:bg-accent-hover"
           >
             Submit
           </button>

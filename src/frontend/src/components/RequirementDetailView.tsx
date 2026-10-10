@@ -22,7 +22,7 @@ export function RequirementDetailView({
     <>
       <header className="mt-4">
         <div className="flex flex-wrap items-center gap-3">
-          <h1 className="text-2xl font-semibold text-[#0b1f3a] dark:text-zinc-100">{requirement.title}</h1>
+          <h1 className="text-2xl font-semibold text-foreground">{requirement.title}</h1>
           <StatusBadge status={requirement.status} />
           <EvidenceBadge level={requirement.evidence_level} reason={requirement.rationale} />
         </div>
@@ -34,14 +34,14 @@ export function RequirementDetailView({
 
       <section className="mt-6">
         <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Description</h2>
-        <p className="mt-2 text-[#0b1f3a] dark:text-zinc-200">{requirement.description}</p>
+        <p className="mt-2 text-foreground">{requirement.description}</p>
       </section>
 
-      <section className="mt-4 rounded-lg border-l-4 border-blue-600 bg-blue-50 p-4 dark:border-blue-500 dark:bg-blue-950">
-        <p className="text-xs font-semibold uppercase tracking-wide text-blue-700 dark:text-blue-300">
+      <section className="mt-4 border-l-4 border-accent bg-accent/5 p-4 dark:bg-accent/10">
+        <p className="text-xs font-semibold uppercase tracking-wide text-accent">
           Acceptance criterion
         </p>
-        <p className="mt-1 text-[#0b1f3a] dark:text-zinc-200">{requirement.acceptance_criterion}</p>
+        <p className="mt-1 text-foreground">{requirement.acceptance_criterion}</p>
       </section>
 
       <section className="mt-8">

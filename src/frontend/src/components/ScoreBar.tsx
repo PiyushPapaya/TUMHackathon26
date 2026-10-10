@@ -8,9 +8,9 @@ export function ScoreBar({ score }: { score: number }) {
   return (
     <div className="flex items-center gap-2">
       <div className="h-2 w-28 overflow-hidden rounded-full bg-zinc-200 dark:bg-zinc-800">
-        <div className="h-full rounded-full bg-blue-600" style={{ width: `${width}%` }} />
+        <div className="h-full rounded-full bg-score-slider" style={{ width: `${width}%` }} />
       </div>
-      <span className="w-10 text-right text-sm font-medium text-[#0b1f3a] dark:text-zinc-100">
+      <span className="w-10 text-right text-sm font-medium text-foreground">
         {Math.round(score)}
       </span>
     </div>

@@ -28,7 +28,7 @@ function EvidenceItem({ evidence }: { evidence: Evidence }) {
             href={evidence.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 underline dark:text-blue-400"
+            className="text-accent underline"
           >
             Link
           </a>

@@ -52,7 +52,7 @@ export function RequirementDetailPageClient({ id }: { id: string }) {
   return (
     <div className="min-h-screen">
       <main className="mx-auto max-w-5xl px-6 py-8">
-        <Link href="/" className="text-sm text-blue-600 hover:underline dark:text-blue-400">
+        <Link href="/" className="text-sm text-accent hover:underline">
           ← Back to list
         </Link>
 
@@ -67,7 +67,7 @@ export function RequirementDetailPageClient({ id }: { id: string }) {
           <>
             <RequirementDetailView detail={detail} evidenceBySignal={evidenceBySignal} />
             <div className="mt-8">
-              <Link href="/" className="text-sm text-blue-600 hover:underline dark:text-blue-400">
+              <Link href="/" className="text-sm text-accent hover:underline">
                 ← Back to list
               </Link>
             </div>
