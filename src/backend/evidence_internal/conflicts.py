@@ -1,12 +1,15 @@
 """Pfad A, A7: Widersprüche zeigen statt wegmitteln (der Brief will "conflicting evidence" ausdrücklich).
 
-Regel: gleiche Kategorie, eine Seite delight, die andere complaint/unmet_need, beide mit mindestens
-MIN_MENTIONS Nennungen. Höchstens MAX_CONFLICTS pro Befund, damit die Oberfläche nicht überladen ist.
+Regel: gleiches oder verwandtes Thema (und gleiche Kategorie), eine Seite delight, die andere
+complaint/unmet_need, beide mit mindestens MIN_MENTIONS Nennungen. Höchstens MAX_CONFLICTS pro Befund,
+damit die Oberfläche nicht überladen ist.
 
-Warum zuerst gleiches Thema: "Touch screen: Lob" gegen "Touch screen: Kritik" ist ein echter Widerspruch,
-"Antrieb: Lob" gegen "Navigation: Kritik" liegt nur zufällig in derselben groben Kategorie. Also kommen
-Paare mit gleichem Thema zuerst, danach die mit den meisten Nennungen. Verschiedene Themen zählen nur ab
-CROSS_TOPIC_MIN (echte Daten: bei 10 hingen 33 von 45 Befunden an einem Konflikt, bei 30 nur noch 22).
+Warum eine feste Liste verwandter Themen: "Touch screen: Lob" gegen "Touch screen: Kritik" ist ein echter
+Widerspruch, "Anzeige: Lob" gegen "Touch-Bedienung: Kritik" auch (gleiche Bedienoberfläche). Vorher galt
+für verschiedene Themen nur "gleiche Kategorie und ab 30 Nennungen"; das ergab Zufallspaare wie
+"Interior comfort: Lob" gegen "Kofferraum-Öffnung: Kritik", die dann in der Konflikt-Arena, im
+Anforderungs-Prompt und in der Challenge landeten. Verworfen: nur gleiches Thema (verliert z. B.
+"Fahrdynamik gesamt: Lob" gegen "Antrieb: Kritik"), LLM entscheidet (schwankt je Lauf).
 """
 
 from __future__ import annotations
@@ -16,18 +19,45 @@ from itertools import combinations
 from core.models import Signal, SignalKind
 
 MIN_MENTIONS = 10
-CROSS_TOPIC_MIN = 30  # verschiedene Themen: erst ab 30 Nennungen, sonst hängt fast jeder Befund an einem Zufallspartner
 MAX_CONFLICTS = 2
 NEGATIVE = {SignalKind.COMPLAINT, SignalKind.UNMET_NEED}
+
+# Themen (vfc2 bzw. Quelle-D-Bereich), die dasselbe Erlebnis beschreiben. Ein Test prüft die Namen gegen taxonomy.py.
+RELATED_TOPICS: tuple[frozenset[str], ...] = (
+    frozenset({  # Fahren
+        "Drivetrain", "Drive, driving dynamics and chassis, overall technology", "Handling / Riding",
+        "Transmission", "Survey D, driving feel", "Survey D, engine/motor",
+    }),
+    frozenset({  # Anzeige und Bedienung
+        "Touch screen, operation", "Operating concept, operating system", "Instrument cluster", "Head-Up Display",
+        "ConnectedDrive and Infotainment, overall technology", "Survey D, infotainment system",
+    }),
+    frozenset({"Seats", "Interior comfort", "Seating, ventilate / heat", "Seat massage"}),  # Sitzkomfort
+    frozenset({  # Klima
+        "Vehicle, climatization", "Air conditioning control panel", "Air conditioning, setting", "Blower function",
+    }),
+    frozenset({"Exterior design", "Exterior", "Survey D, exterior styling"}),
+    frozenset({"Interior design", "Interior", "Survey D, interior"}),
+    frozenset({  # Assistenz
+        "Driver assistance, automated driving, overall technology", "Highway assistant",
+        "(Active) cruise control", "Steering and lane guide assist",
+    }),
+    frozenset({"Electric Range", "Charge high-voltage battery", "Public charging / external providers"}),
+)  # fmt: skip
 
 
 def _topic(signal: Signal) -> str:
     return signal.title.rpartition(": ")[0]  # v1-Titel: "<Thema>: <Art>"
 
 
+def _related(a: str, b: str) -> bool:
+    return a == b or any(a in group and b in group for group in RELATED_TOPICS)
+
+
 def _opposed(a: Signal, b: Signal) -> bool:
-    needed = MIN_MENTIONS if _topic(a) == _topic(b) else CROSS_TOPIC_MIN
-    if a.category != b.category or min(a.mention_count, b.mention_count) < needed:
+    if a.category != b.category or not _related(_topic(a), _topic(b)):
+        return False
+    if min(a.mention_count, b.mention_count) < MIN_MENTIONS:
         return False
     return {a.kind == SignalKind.DELIGHT, b.kind == SignalKind.DELIGHT} == {True, False} and (
         a.kind in NEGATIVE or b.kind in NEGATIVE
@@ -38,7 +68,7 @@ def link_conflicts(signals: list[Signal]) -> list[Signal]:
     """Trägt `conflicts_with` gegenseitig ein. Titel müssen noch im v1-Format sein (vor der LLM-Stufe aufrufen)."""
     pairs = [(a, b) for a, b in combinations(signals, 2) if _opposed(a, b)]
     pairs.sort(key=lambda p: (
-        _topic(p[0]) != _topic(p[1]),                       # gleiches Thema zuerst
+        _topic(p[0]) != _topic(p[1]),                       # gleiches Thema zuerst, dann verwandte
         -min(p[0].mention_count, p[1].mention_count),       # dann die stärkere schwächere Seite
         -(p[0].mention_count + p[1].mention_count),
         p[0].id, p[1].id,
