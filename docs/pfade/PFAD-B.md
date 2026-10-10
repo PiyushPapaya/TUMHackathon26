@@ -40,7 +40,7 @@
 > Doppelte URLs zusammenführen. Test mit Fake-`ask_claims`.
 - **Fertig, wenn:** `pipeline.py --scenario G60-US --stage web` → **≥ 5 Webbelege mit URL** · `sync`.
 
-### [ ] B4 · Triangulation Web ↔ intern (60 min, 19:30-20:30)
+### [x] B4 · Triangulation Web ↔ intern (60 min, 19:30-20:30)
 **Prompt:**
 > Ticket B4. Webbelege sollen interne Befunde stützen können, weil zwei unabhängige Quellenarten die Evidenzstufe heben (Regel in `evidence_level.py`).
 > Bei Wettbewerbsfragen ist der auslösende interne Befund bekannt → `meta["supports_signal_id"]` + `stance`. In `pipeline.py` (Stufe requirements): für jeden Webbeleg mit

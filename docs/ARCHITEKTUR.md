@@ -58,6 +58,7 @@ flowchart LR
 | Entscheidung | Warum | Verworfen |
 |---|---|---|
 | Score per Formel in Python, nicht per LLM | reproduzierbar, jeder Punkt erklärbar, PM kann Gewichte ändern | LLM vergibt Priorität (Blackbox, schwankt) |
+| Triangulation per Regel (`evidence_external/triangulation.py`): nur Webbelege mit Vertrauen high/medium und stance=supports werden an den internen Befund gehängt; Widersprüche gehen als Gegenbeleg an die Challenge | zwei unabhängige Quellenarten heben die Evidenzstufe, Forum-Stimmen und Widerspruch dürfen das nicht verfälschen | Widerspruch ignorieren (PM sähe nur die schöne Seite), LLM entscheidet über Zuordnung (schwankt) |
 | Evidenzstufe per Regel (A-D) | Brief verlangt klare Trennung Evidenz vs. Annahme | LLM-Selbsteinschätzung ("confidence: 0.8") |
 | Vorgruppieren per BMW-Taxonomie, LLM nur zum Zusammenfassen | ~3.600 Kommentare → ~50 LLM-Aufrufe statt 3.600; erklärbar | Embedding-Clustering aller Kommentare (teurer, schwer erklärbar) |
 | Pipeline-Stufen als JSON-Dateien | 4 Pfade parallel, jede Stufe einzeln prüfbar, Demo ohne Wartezeit | alles live pro Request (langsam, teuer) |
