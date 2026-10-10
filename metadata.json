@@ -3,7 +3,7 @@
   "checkpoint_id": "01M4KM5P0DKSWEPS0S2ANA18SB",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 1,
+  "checkpoints_count": 2,
   "files_touched": [
     "config/scenarios/G68-CN.json",
     "src/backend/core/models.py",
@@ -18,13 +18,20 @@
       "compact_transcript": "/0/transcript.jsonl",
       "content_hash": "/0/content_hash.txt",
       "prompt": ""
+    },
+    {
+      "metadata": "/1/metadata.json",
+      "transcript": "/1/full.jsonl",
+      "compact_transcript": "/1/transcript.jsonl",
+      "content_hash": "/1/content_hash.txt",
+      "prompt": ""
     }
   ],
   "token_usage": {
-    "input_tokens": 12,
-    "cache_creation_tokens": 9375,
-    "cache_read_tokens": 1182684,
-    "output_tokens": 5489,
-    "api_call_count": 6
+    "input_tokens": 14,
+    "cache_creation_tokens": 10605,
+    "cache_read_tokens": 1314152,
+    "output_tokens": 5786,
+    "api_call_count": 7
   }
 }
