@@ -37,7 +37,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - BMW-Dateien per USB von Piyush nach `data/raw/` kopieren (nie committen, `data/` ist gitignored).
 - **Fertig, wenn:** `python -m pytest -q` grün, `entire status` = Enabled, `ls data/raw` zeigt 9 Dateien.
 
-### [ ] A1 · Feedback einlesen (45 min, bis 16:15)
+### [x] A1 · Feedback einlesen (45 min, bis 16:15)
 **Prompt:**
 > Ich baue Pfad A, Ticket A1. Wir lesen das Feedback mit pandas statt mit einem LLM, weil das reproduzierbar ist und jede Zeile eine stabile ID braucht.
 > Lege `src/backend/evidence_internal/feedback.py` an mit `feedback_to_evidence(df, cfg) -> list[Evidence]` (rein, testbar ohne Datei) und
