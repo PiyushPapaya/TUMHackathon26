@@ -112,3 +112,28 @@ def test_kaputte_optionsliste_stoppt_die_pipeline_nicht(monkeypatch, tmp_path):
     monkeypatch.setattr(derive, "load_offer", boom)
     reqs, _ = derive_all(SCENARIO, SIGNALS, [], {"option_list_path": str(pdf)})
     assert reqs[0].offer_check.status == "unknown"
+
+
+def _conflict_signals():
+    praise = Signal(id="SIG-P", kind=SignalKind.DELIGHT, category=Category.INFOTAINMENT_DIGITAL,
+                    title="Love the large touchscreen", summary="s", evidence_ids=["E1"], mention_count=30,
+                    source_types=[SourceType.FEEDBACK], conflicts_with=["SIG-K"])
+    critique = Signal(id="SIG-K", kind=SignalKind.COMPLAINT, category=Category.INFOTAINMENT_DIGITAL,
+                      title="Too many menus", summary="s", evidence_ids=["E2"], mention_count=20,
+                      source_types=[SourceType.FEEDBACK], conflicts_with=["SIG-P"])
+    return [praise, critique]
+
+
+def test_widerspruch_wird_automatisch_als_unsicherheit_eingetragen(monkeypatch):
+    # Die KI soll Widersprüche nicht wegmitteln; der Code macht sie unabhängig vom Prompt sichtbar.
+    _fake_llm(monkeypatch, [_draft("Keep the display, fewer menus", ["SIG-P", "SIG-K"])])
+    reqs, _ = derive_all(SCENARIO, _conflict_signals(), [], {})
+    notes = [u for u in reqs[0].uncertainties if u.startswith("Conflicting evidence")]
+    assert len(notes) == 1  # ein Paar, nicht doppelt (P-K und K-P)
+    assert "Love the large touchscreen" in notes[0] and "Too many menus" in notes[0]
+
+
+def test_kein_widerspruch_keine_zusatzzeile(monkeypatch):
+    _fake_llm(monkeypatch, [_draft("Only praise", ["SIG-P"])])
+    reqs, _ = derive_all(SCENARIO, _conflict_signals(), [], {})
+    assert not any(u.startswith("Conflicting evidence") for u in reqs[0].uncertainties)
