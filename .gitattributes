@@ -22,10 +22,17 @@ docs/pitch/ export-ignore
 docs/wissen/ export-ignore
 docs/research/ export-ignore
 docs/ZUSAMMENARBEIT.md export-ignore
-docs/MORGEN-0800.md export-ignore
-docs/SAMSTAG-START.md export-ignore
 team/ export-ignore
-workspace/ export-ignore
+START_HIER.md export-ignore
+docs/README.md export-ignore
+docs/0[1-7]_*.md export-ignore
+werkstatt/ export-ignore
+archiv/ export-ignore
+entscheidungen/ export-ignore
+missionen/ export-ignore
+erklaerer/ export-ignore
+visuals/ export-ignore
+outputs/ export-ignore
 design/ export-ignore
 .github/ISSUE_TEMPLATE/ export-ignore
 src/shared/beispiele/stufen/ export-ignore
@@ -35,3 +42,4 @@ scripts/ export-ignore
 .claude/hooks/ export-ignore
 .github/pull_request_template.md export-ignore
 .entire/ export-ignore
+src/frontend/baukasten/README.md export-ignore

@@ -13,7 +13,7 @@ Reveal Sa 10:00, Deep Dives 12:00, **Wahl bis Sa 13:00** durch den Captain (Piyu
 Nein. Lesen ja. Brauchst du dort etwas: Issue oder PR-Kommentar an den Owner. Die Tabelle steht in [CLAUDE.md](../../CLAUDE.md).
 
 **Wohin mit Notizen, Prompts, Experimenten?**
-In `workspace/<dein-name>/`. Dort darfst du alles, und es landet nicht im Abgabe-Snapshot.
+In `werkstatt/<dein-name>/`. Dort darfst du alles, und es landet nicht im Abgabe-Snapshot.
 
 **Ich will eine neue Bibliothek benutzen.**
 Im PR beantragen („Neue Dependency: X, weil …“), Piyush entscheidet. Nicht selbst installieren und committen.

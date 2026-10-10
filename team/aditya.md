@@ -3,7 +3,7 @@
 - **GitHub:** @AdiAvocado
 - **Rolle:** Daten, Testfälle & Evaluation, Demo-Daten, Backup-Video (+ Design-Support)
 - **Zuständig für (schreiben):** `tests/`, `demo/`
-- **Eigener Arbeitsbereich:** `workspace/aditya/` (Notizen, Prompts, Experimente; landet nicht im Abgabe-Snapshot)
+- **Eigener Arbeitsbereich:** `werkstatt/aditya/` (Notizen, Prompts, Experimente; landet nicht im Abgabe-Snapshot)
 
 ## Unser Produkt in 2 Sätzen
 

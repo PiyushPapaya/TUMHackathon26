@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signal2Spec zum Anfassen</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #1b2330; --muted: #5d6877; --line: #dde1e8;
+    --blau: #1c69d4; --blau-hell: #e3edfb; --orange: #c46a12; --orange-hell: #fff0dc;
+    --gruen: #1f8a5b; --gruen-hell: #e0f3ea; --rot: #c0392b; --rot-hell: #fbe5e2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12161c; --card: #1a2029; --text: #e8ecf2; --muted: #9aa5b5; --line: #2b3441;
+      --blau: #6aa6ff; --blau-hell: #1b2b45; --orange: #f0a35a; --orange-hell: #3a2a14;
+      --gruen: #5fd0a0; --gruen-hell: #14301f; --rot: #ff8a7a; --rot-hell: #3b1d1a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px 80px; }
+  header { padding: 40px 0 16px; }
+  h1 { font-size: 2rem; margin: 0 0 8px; line-height: 1.2; }
+  h2 { font-size: 1.35rem; margin: 0 0 8px; }
+  p { margin: 0 0 12px; }
+  .muted { color: var(--muted); }
+  nav.steps { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 10px 0; border-bottom: 1px solid var(--line);
+    display: flex; gap: 6px; overflow-x: auto; }
+  nav.steps button { flex: 0 0 auto; border: 1px solid var(--line); background: var(--card); color: var(--text); border-radius: 999px;
+    padding: 6px 12px; font: inherit; font-size: .85rem; cursor: pointer; }
+  nav.steps button[aria-current="true"] { background: var(--blau); color: #fff; border-color: var(--blau); }
+  section.step { display: none; padding-top: 24px; }
+  section.step.aktiv { display: block; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin: 12px 0; }
+  .chip { display: inline-block; font-size: .75rem; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+  .ki { background: var(--blau-hell); border-color: var(--blau); color: var(--blau); }
+  .code { background: var(--line); }
+  .mensch { background: var(--orange-hell); border-color: var(--orange); color: var(--orange); }
+  .quote { border-left: 4px solid var(--blau); padding: 4px 12px; margin: 8px 0; background: var(--bg); border-radius: 0 8px 8px 0; }
+  .quote small { display: block; color: var(--muted); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 640px) { .grid2 { grid-template-columns: 1fr; } }
+  .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .bar { height: 14px; border-radius: 7px; background: var(--blau); }
+  .balken { display: grid; grid-template-columns: 130px 1fr 36px; gap: 8px; align-items: center; margin: 6px 0; font-size: .9rem; }
+  .balken .bg { background: var(--line); border-radius: 7px; }
+  .navbtn { display: flex; justify-content: space-between; margin-top: 24px; }
+  button.p, button.s { font: inherit; border-radius: 8px; padding: 8px 14px; cursor: pointer; border: 1px solid var(--blau); }
+  button.p { background: var(--blau); color: #fff; }
+  button.s { background: transparent; color: var(--blau); }
+  button.p:focus-visible, button.s:focus-visible, nav button:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+  .reg { display: grid; grid-template-columns: 150px 1fr 44px; gap: 8px; align-items: center; margin: 4px 0; font-size: .9rem; }
+  input[type=range] { width: 100%; accent-color: var(--blau); }
+  .rang { display: grid; grid-template-columns: 28px 1fr 56px; gap: 8px; align-items: center; padding: 8px 0; border-top: 1px solid var(--line); }
+  .badge { display: inline-block; min-width: 22px; text-align: center; color: #fff; border-radius: 6px; font-weight: 700; font-size: .8rem; padding: 1px 6px; }
+  textarea { width: 100%; font: inherit; border: 1px solid var(--line); border-radius: 8px; padding: 8px; background: var(--card); color: var(--text); }
+  .fehler { color: var(--rot); background: var(--rot-hell); border-radius: 8px; padding: 6px 10px; margin-top: 8px; }
+  .ok { color: var(--gruen); background: var(--gruen-hell); border-radius: 8px; padding: 6px 10px; margin-top: 8px; }
+  .log { font-family: ui-monospace, Consolas, monospace; font-size: .82rem; }
+  .log div { padding: 6px 8px; border-top: 1px solid var(--line); word-break: break-all; }
+  .log .kaputt { background: var(--rot-hell); }
+  .tabelle { width: 100%; border-collapse: collapse; font-size: .9rem; }
+  .tabelle th, .tabelle td { text-align: left; padding: 6px 8px; border-top: 1px solid var(--line); vertical-align: top; }
+  details { margin: 8px 0; }
+  summary { cursor: pointer; color: var(--blau); }
+  .tipp { border-left: 4px solid var(--orange); background: var(--orange-hell); padding: 8px 12px; border-radius: 0 8px 8px 0; margin: 12px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Signal2Spec zum Anfassen</h1>
+  <p class="muted">Wir folgen <strong>einem echten Kundenkommentar</strong> aus den BMW-Daten bis zur Entscheidung. Klick dich durch die Schritte. Es dauert fünf Minuten. Danach kannst du jedem erklären, was wir bauen.</p>
+  <p class="muted">Echt sind: die Kommentare, ihre IDs und die Zahlen aus den Excel-Dateien. Ausgedacht (und so markiert) sind nur die Beispielwerte beim Priorisieren.</p>
+</header>
+
+<nav class="steps" id="nav" aria-label="Schritte"></nav>
+
+<!-- 0 -->
+<section class="step" data-titel="Aufgabe">
+  <h2>0 · Die Aufgabe</h2>
+  <p>BMW will wissen, was das <strong>nächste</strong> Modell können muss. Dazu gibt es tausende Kundenkommentare. Kein Mensch liest alle. Wir bauen ein Tool, das sie liest, Vorschläge macht, die Vorschläge sortiert und einen <strong>Menschen</strong> entscheiden lässt.</p>
+  <div class="grid2">
+    <div class="card"><strong>5.005</strong><br><span class="muted">Kommentare zum 5er (G60) in der Datei. 4.365 davon aus den USA, unser Demo-Fall.</span></div>
+    <div class="card"><strong>1.694 Lob · 1.217 „schwer zu bedienen“ · 532 Wünsche · 377 Defekte</strong><br><span class="muted">So verteilen sich die US-Kommentare, die einen Typ haben.</span></div>
+  </div>
+  <div class="tipp"><strong>Der eine Satz:</strong> Wir sagen nicht nur, WAS gebaut werden soll, sondern auch, WIE SICHER wir uns sind und WARUM.</div>
+</section>
+
+<!-- 1 -->
+<section class="step" data-titel="Einlesen">
+  <h2>1 · Einlesen: aus einer Excel-Zeile wird ein Beleg</h2>
+  <p><span class="chip code">normaler Code, keine KI</span></p>
+  <p>Jede Zeile bekommt eine feste ID. Alles, was später passiert, zeigt auf diese ID zurück. So kann am Ende jeder prüfen: „Woher kommt das?“</p>
+  <div class="card">
+    <div class="row"><span class="chip">ID</span> <strong>G60-0019</strong> <span class="chip">Land</span> US <span class="chip">Typ</span> Wants <span class="chip">Quelle</span> B <span class="chip">BMW-Thema</span> Center console, front</div>
+    <div class="quote">„Customer stated the center console layout is terrible. Customer stated the start/stop button being so close to the other buttons makes her nervous and she feels it is not safe.“<small>Echter Kommentar, G60-0019</small></div>
+  </div>
+  <div class="tipp"><strong>Du entscheidest mit:</strong> Quelle B enthält viele Service-Notizen („Writer explained …“) statt Kundenstimmen. Zählen wir sie voll mit, weniger, oder gar nicht? Das ist eine Aufgabe für den Daten-Detektiv.</div>
+</section>
+
+<!-- 2 -->
+<section class="step" data-titel="Befunde">
+  <h2>2 · Befunde: viele Kommentare werden ein Thema</h2>
+  <p><span class="chip code">Code gruppiert</span> <span class="chip ki">KI fasst zusammen</span></p>
+  <p>BMW hat jeden Kommentar schon einem Thema zugeordnet. Zu <strong>„Center console, front“</strong> gibt es 27 US-Kommentare:</p>
+  <div class="card" id="konsole"></div>
+  <p>Die KI liest die Gruppe und schreibt <strong>einen Satz</strong> dazu und nennt die IDs, auf die sie sich stützt:</p>
+  <div class="card"><strong>Befund (so ungefähr):</strong> Die Tasten der Mittelkonsole sind schwer zu unterscheiden und geben kaum Rückmeldung.<br>
+    <span class="muted">Belege:</span> <span class="chip">G60-0019</span> <span class="chip">G60-0130</span> …
+    <div class="quote">„… he would prefer the center console buttons to provide a bit of haptic feedback. … it is difficult to tell if a button actually registered …“<small>G60-0130, Wants</small></div>
+  </div>
+  <h2 style="margin-top:20px">Der spannende Teil: Widersprüche</h2>
+  <p>Beim Thema <strong>„Touch screen, operation“</strong> (64 US-Kommentare) loben viele und viele kritisieren. Wir mitteln das nicht weg. Wir zeigen beide Seiten:</p>
+  <div class="card">
+    <div class="grid2">
+      <div><strong style="color:var(--gruen)">35 × Lob</strong>
+        <div class="quote">„the vehicle's touchscreen is excellent.“<small>G60-0160</small></div>
+        <div class="quote">„he is pleased with how the touchscreen works and … the size of the screen.“<small>G60-0369</small></div></div>
+      <div><strong style="color:var(--rot)">23 × schwer zu bedienen</strong>
+        <div class="quote">„The touchscreen interface feels somewhat clumsy …“<small>G60-0853</small></div>
+        <div class="quote">„way too many main icons and then even more sub menus to pick from“<small>G60-0914</small></div></div>
+    </div>
+  </div>
+  <div class="tipp"><strong>Du entscheidest mit:</strong> Welche Kategorien soll es geben (z. B. Bedienung, Laden, Platz)? Und wie schreibt die KI die Befund-Sätze: sachlich oder mit Kundenton? Das ist ein Prompt, also Text, kein Code.</div>
+</section>
+
+<!-- 3 -->
+<section class="step" data-titel="Web">
+  <h2>3 · Web: Was machen die anderen?</h2>
+  <p><span class="chip ki">KI mit Websuche</span> <span class="chip code">Vertrauen per Regel</span></p>
+  <p>BMW fragt auch: Was bieten Mercedes, Audi, Tesla, Genesis und Lucid? Und was ändert sich in 3 bis 5 Jahren? Die KI sucht im Netz. Jede Aussage <strong>braucht einen Link</strong>. Ein Programm (keine KI) gibt jeder Quelle ein Vertrauen, nur anhand der Domain:</p>
+  <table class="tabelle">
+    <tr><th>Vertrauen</th><th>Bedeutung</th><th>Was passiert</th></tr>
+    <tr><td><span class="badge" style="background:var(--gruen)">high</span></td><td>etablierte Quelle</td><td>darf in einen Befund</td></tr>
+    <tr><td><span class="badge" style="background:#b98a10">medium</span></td><td>Fachseite, Blog</td><td>darf in einen Befund</td></tr>
+    <tr><td><span class="badge" style="background:var(--rot)">low</span></td><td>Forum, unklare URL</td><td>bleibt sichtbar, zählt aber nicht</td></tr>
+  </table>
+  <p style="margin-top:12px">Warum nicht die KI bewerten lassen? Sie würde bei jedem Lauf anders urteilen. Eine Regel ist jedes Mal gleich und erklärbar.</p>
+  <div class="tipp"><strong>Du entscheidest mit:</strong> Welche Wettbewerber und welche Themen zuerst? Das ist die Mission „Wettbewerbs-Scout“. Du kannst per Hand recherchieren, und wir vergleichen mit der KI.</div>
+</section>
+
+<!-- 4 -->
+<section class="step" data-titel="Anforderung">
+  <h2>4 · Anforderung: aus einem Befund wird ein Auftrag</h2>
+  <p><span class="chip ki">KI schlägt vor</span> <span class="chip code">Code prüft den Scope</span></p>
+  <p>Eine Anforderung sagt, was das Auto <strong>aus Kundensicht</strong> können muss, und woran man das misst. Technik, Gesetze und Preise gehören nicht dazu. Der Code sortiert sie aus und sagt warum.</p>
+  <div class="card">
+    <strong>Entwurf zur Erklärung (die KI schreibt ihren eigenen):</strong>
+    <table class="tabelle">
+      <tr><td>Titel</td><td>Tasten sind unterscheidbar und geben spürbare Rückmeldung</td></tr>
+      <tr><td>Messkriterium</td><td>Im Probandentest finden 80 % die Start/Stop-Taste blind und bestätigen den Druck</td></tr>
+      <tr><td>Belege</td><td>G60-0019, G60-0130, weitere IDs aus dem Befund</td></tr>
+      <tr><td>Annahme</td><td>Der Wunsch nach Tasten bleibt bis 2030 bestehen (nicht belegt, deshalb als Annahme markiert)</td></tr>
+      <tr><td>Status</td><td><span class="chip mensch">proposed</span> Nur ein Mensch kann das ändern.</td></tr>
+    </table>
+  </div>
+  <div class="tipp"><strong>Du entscheidest mit:</strong> Wie soll eine gute Anforderung klingen: kurz oder ausführlich? Mit Zahl oder mit Ja/Nein? Das steht im Prompt. Wer den Prompt verbessert, verbessert die Texte der ganzen App. Das ist die Mission „Prompt-Designer“.</div>
+</section>
+
+<!-- 5 -->
+<section class="step" data-titel="Priorität">
+  <h2>5 · Priorität: Was zuerst? Du bestimmst die Regeln</h2>
+  <p><span class="chip code">Formel, keine KI</span></p>
+  <p>Jede Anforderung bekommt Punkte für sechs Dinge. Die Regler bestimmen, wie viel jedes zählt. Schieb sie und sieh zu, wie sich die Rangliste ändert. Genau das kann später der Produktmanager in der App.</p>
+  <div class="card" id="regler"></div>
+  <div class="card"><div id="rangliste"></div>
+    <p class="muted" style="margin-top:8px">Beispielwerte, ausgedacht. Die Formel ist echt (<code>scoring.py</code>): Punkte × Gewicht, danach mal Sicherheit der Evidenz: A = 1,0 · B = 0,85 · C = 0,7 · D = 0,5.</p></div>
+  <div class="tipp"><strong>Du entscheidest mit:</strong> Ist „Kundenschmerz“ wichtiger als „Reichweite“? Stell die Regler so, wie ihr es für richtig haltet, und schreibt auf, warum. Das ist unsere Antwort auf „Prioritize them with a logic you define and can explain“.</div>
+</section>
+
+<!-- 6 -->
+<section class="step" data-titel="Entscheidung">
+  <h2>6 · Der Mensch entscheidet</h2>
+  <p><span class="chip mensch">Mensch Pflicht</span></p>
+  <p>Jede Anforderung startet als <strong>proposed</strong>. Nur der Produktmanager ändert den Status, und er <strong>muss begründen</strong>. Probier es aus:</p>
+  <div class="card">
+    <strong>Tasten sind unterscheidbar und geben spürbare Rückmeldung</strong> · Status: <span id="status" class="chip mensch">proposed</span>
+    <p style="margin-top:10px">Begründung (Pflicht):</p>
+    <textarea id="warum" rows="2" placeholder="z. B. 27 Kommentare, mehrere nennen Sicherheit. Annahme zu 2030 akzeptiert."></textarea>
+    <div class="row" style="margin-top:10px">
+      <button class="p" data-akt="approved">Freigeben</button>
+      <button class="s" data-akt="rejected">Ablehnen</button>
+      <button class="s" data-akt="edited">Bearbeiten</button>
+      <button class="s" data-akt="challenged">Hinterfragen</button>
+    </div>
+    <div id="meldung"></div>
+  </div>
+  <p class="muted">„Hinterfragen“ schickt eine Frage an die KI, zum Beispiel „Ist das nur Gewohnheit?“. Sie antwortet mit Belegen <strong>und</strong> Gegenbelegen.</p>
+</section>
+
+<!-- 7 -->
+<section class="step" data-titel="Audit Trail">
+  <h2>7 · Audit Trail: nichts passiert heimlich</h2>
+  <p><span class="chip code">Code</span></p>
+  <p>Jede Aktion wird als Zeile gespeichert. Jede Zeile enthält einen Fingerabdruck (Hash) der Zeile davor. Ändert jemand später etwas, passt die Kette nicht mehr. Probier es:</p>
+  <div class="card">
+    <div class="row">
+      <button class="p" id="pruefen">Kette prüfen</button>
+      <button class="s" id="faelschen">Einen alten Eintrag fälschen</button>
+      <button class="s" id="zuruck">Zurücksetzen</button>
+    </div>
+    <div id="pruefmeldung"></div>
+    <div class="log" id="log" style="margin-top:10px"></div>
+    <p class="muted">Tipp: Triff erst im Schritt 6 ein paar Entscheidungen. Dann ist hier mehr zu sehen. Der Fingerabdruck hier ist vereinfacht, in der App ist es SHA-256.</p>
+  </div>
+</section>
+
+<!-- 8 -->
+<section class="step" data-titel="Dein Platz">
+  <h2>8 · Dein Platz im Team</h2>
+  <p>Jede Person hat einen <strong>Pfad</strong> (ihr Teil der Maschine) und eine <strong>Mission</strong> (etwas Sichtbares für die Demo). Klick auf eine Karte:</p>
+  <div class="grid2" id="rollen"></div>
+  <div class="card" id="rolleninfo"><span class="muted">Wähle eine Karte.</span></div>
+  <p>Was ihr entscheiden dürft, steht auf <code>entscheidungen/ENTSCHEIDUNGSBOGEN.md</code>. Die Ideen für Extra-Features stehen in <code>entscheidungen/E04_features.md</code>.</p>
+</section>
+
+<div class="navbtn"><button class="s" id="zurueck">Zurück</button><button class="p" id="weiter">Weiter</button></div>
+</div>
+
+<script>
+const schritte = [...document.querySelectorAll("section.step")];
+const nav = document.getElementById("nav");
+let aktuell = 0;
+function zeigen(i) {
+  aktuell = Math.max(0, Math.min(schritte.length - 1, i));
+  schritte.forEach((s, k) => s.classList.toggle("aktiv", k === aktuell));
+  [...nav.children].forEach((b, k) => b.setAttribute("aria-current", k === aktuell ? "true" : "false"));
+  window.scrollTo({ top: 0 });
+  if (aktuell === 7) logZeichnen();
+}
+schritte.forEach((s, k) => {
+  const b = document.createElement("button");
+  b.textContent = k + " " + s.dataset.titel;
+  b.onclick = () => zeigen(k);
+  nav.appendChild(b);
+});
+document.getElementById("weiter").onclick = () => zeigen(aktuell + 1);
+document.getElementById("zurueck").onclick = () => zeigen(aktuell - 1);
+
+// Schritt 2: echte Zahlen zu "Center console, front"
+(function () {
+  const daten = [["Schwer zu bedienen", 12, "var(--rot)"], ["Wünsche", 6, "var(--blau)"], ["Lob", 5, "var(--gruen)"], ["Defekte", 4, "#b98a10"]];
+  document.getElementById("konsole").innerHTML = daten.map(([n, v, f]) =>
+    `<div class="balken"><span>${n}</span><div class="bg"><div class="bar" style="width:${v / 12 * 100}%;background:${f}"></div></div><strong>${v}</strong></div>`).join("")
+    + `<p class="muted" style="margin:6px 0 0">Echte Zahlen: 27 Kommentare, davon 12 „Difficult to Use“, 6 „Wants“, 5 „Likes“, 4 „Defect“.</p>`;
+})();
+
+// Schritt 5: Regler und Rangliste (Gewichte aus scoring.py, Faktorwerte ausgedacht)
+const faktoren = [["Kundenschmerz", "pain", 25], ["Reichweite", "reach", 20], ["Zufriedenheitslücke", "gap", 20], ["Wettbewerbsdruck", "comp", 15], ["Zukunftsrelevanz", "future", 10], ["Aufwand (klein = gut)", "effort", 10]];
+const kandidaten = [
+  { t: "Tasten unterscheidbar, mit spürbarer Rückmeldung", pain: .8, reach: .7, gap: .6, comp: .7, future: .5, effort: .6, ev: "B" },
+  { t: "Größeres Ablagefach in der Mittelkonsole", pain: .5, reach: .6, gap: .5, comp: .4, future: .6, effort: .8, ev: "C" },
+  { t: "Touchscreen-Menü mit weniger Ebenen", pain: .7, reach: .8, gap: .7, comp: .6, future: .7, effort: .4, ev: "A" },
+  { t: "Klima ohne Blick auf den Bildschirm bedienen", pain: .6, reach: .7, gap: .8, comp: .7, future: .4, effort: .6, ev: "B" },
+  { t: "Ladeplanung ohne App-Wechsel", pain: .5, reach: .6, gap: .5, comp: .8, future: .9, effort: .3, ev: "C" },
+];
+const sicher = { A: 1, B: .85, C: .7, D: .5 };
+const farbe = { A: "#1f8a5b", B: "#5a9c4a", C: "#b98a10", D: "#c0392b" };
+const gew = Object.fromEntries(faktoren.map(f => [f[1], f[2]]));
+const reglerBox = document.getElementById("regler");
+reglerBox.innerHTML = faktoren.map(([n, k, w]) =>
+  `<div class="reg"><label for="r_${k}">${n}</label><input type="range" id="r_${k}" min="0" max="50" value="${w}"><strong id="w_${k}">${w}</strong></div>`).join("")
+  + `<button class="s" id="reset" style="margin-top:8px">Standard (aus dem Code)</button>`;
+function rangZeichnen() {
+  const summe = Object.values(gew).reduce((a, b) => a + b, 0) || 1;
+  const res = kandidaten.map(c => {
+    const roh = Object.keys(gew).reduce((s, k) => s + c[k] * gew[k] / summe, 0);
+    return { ...c, score: Math.round(roh * 100 * sicher[c.ev]) };
+  }).sort((a, b) => b.score - a.score);
+  document.getElementById("rangliste").innerHTML = res.map((c, i) =>
+    `<div class="rang"><strong>${i + 1}</strong><div>${c.t}<div class="bg" style="background:var(--line);border-radius:7px;margin-top:4px"><div class="bar" style="width:${c.score}%;transition:width .3s"></div></div></div>
+     <div><span class="badge" style="background:${farbe[c.ev]}" title="Evidenzstufe">${c.ev}</span> <strong>${c.score}</strong></div></div>`).join("");
+}
+faktoren.forEach(([n, k]) => document.getElementById("r_" + k).oninput = e => { gew[k] = +e.target.value; document.getElementById("w_" + k).textContent = gew[k]; rangZeichnen(); });
+document.getElementById("reset").onclick = () => faktoren.forEach(([n, k, w]) => { gew[k] = w; document.getElementById("r_" + k).value = w; document.getElementById("w_" + k).textContent = w; rangZeichnen(); });
+rangZeichnen();
+
+// Schritt 6 und 7: Entscheidung und Audit-Kette
+function hash(s) { // einfacher 53-Bit-Hash, nur zur Anschauung
+  let h1 = 0xdeadbeef, h2 = 0x41c6ce57;
+  for (let i = 0; i < s.length; i++) { const c = s.charCodeAt(i); h1 = Math.imul(h1 ^ c, 2654435761); h2 = Math.imul(h2 ^ c, 1597334677); }
+  h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+  h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+  return (4294967296 * (2097151 & h2) + (h1 >>> 0)).toString(16).padStart(14, "0");
+}
+const namen = { approved: "PM_APPROVED", rejected: "PM_REJECTED", edited: "PM_EDITED", challenged: "PM_CHALLENGED" };
+let kette = [];
+function eintrag(typ, warum) {
+  const vorher = kette.length ? kette[kette.length - 1].hash : "0000";
+  const e = { nr: kette.length + 1, typ, warum, vorher };
+  e.hash = hash(e.nr + typ + warum + vorher);
+  kette.push(e);
+}
+function reset() { kette = []; eintrag("REQUIREMENT_PROPOSED", "Vorschlag aus Befund (System)"); document.getElementById("status").textContent = "proposed"; document.getElementById("pruefmeldung").innerHTML = ""; }
+reset();
+document.querySelectorAll("[data-akt]").forEach(b => b.onclick = () => {
+  const w = document.getElementById("warum").value.trim(), m = document.getElementById("meldung");
+  if (w.length < 5) { m.innerHTML = `<div class="fehler">Ohne Begründung geht nichts. Schreib kurz, warum.</div>`; return; }
+  eintrag(namen[b.dataset.akt], w);
+  document.getElementById("status").textContent = b.dataset.akt;
+  m.innerHTML = `<div class="ok">Gespeichert als Eintrag ${kette.length} im Audit Trail (Schritt 7).</div>`;
+  document.getElementById("warum").value = "";
+});
+function logZeichnen(kaputt = -1) {
+  document.getElementById("log").innerHTML = kette.map((e, i) =>
+    `<div class="${i === kaputt ? "kaputt" : ""}">#${e.nr} ${e.typ} · „${e.warum}“<br>vorher: ${e.vorher} → hash: ${e.hash}</div>`).join("");
+}
+document.getElementById("pruefen").onclick = () => {
+  let bruch = -1;
+  kette.forEach((e, i) => {
+    const vorher = i ? kette[i - 1].hash : "0000";
+    if (e.vorher !== vorher || hash(e.nr + e.typ + e.warum + e.vorher) !== e.hash) { if (bruch < 0) bruch = i; }
+  });
+  document.getElementById("pruefmeldung").innerHTML = bruch < 0
+    ? `<div class="ok">Kette gültig (${kette.length} Einträge).</div>`
+    : `<div class="fehler">Kette gebrochen bei Eintrag ${kette[bruch].nr}. Jemand hat etwas verändert.</div>`;
+  logZeichnen(bruch);
+};
+document.getElementById("faelschen").onclick = () => { if (kette.length) { kette[0].warum = "nachträglich geändert"; logZeichnen(); document.getElementById("pruefmeldung").innerHTML = `<div class="tipp">Eintrag 1 wurde heimlich geändert. Jetzt „Kette prüfen“ klicken.</div>`; } };
+document.getElementById("zuruck").onclick = () => { reset(); logZeichnen(); };
+
+// Schritt 8: Rollen
+const rollen = [
+  ["Piyush", "Lead + Web · Story & Pitch", "Hält alles zusammen, recherchiert im Netz, baut das Deck und gibt ab. Sprecher im Pitch: Problem, Demo, Schluss."],
+  ["Aditya", "Interne Daten · Daten-Detektiv", "Macht aus den Excel-Dateien Belege und Befunde. Mission: die stärksten Kundenthemen von Hand finden und mit der KI vergleichen. Daraus kommt unsere Vertrauens-Zahl."],
+  ["Dennis", "Anforderungen · Prompt-Designer", "Aus Befunden werden Anforderungen mit Score. Mission: die Anweisungen (Prompts) an die KI schreiben und testen. Das ist Bauen ohne Code."],
+  ["Lasse", "Cockpit · Visual-Designer", "Baut die Oberfläche, in der der Produktmanager klickt. Mission: Diagramme, Mockups und das Aussehen. Klickt die Demo."],
+];
+const rb = document.getElementById("rollen");
+rollen.forEach(([n, t, d]) => { const b = document.createElement("button"); b.className = "s card"; b.style.textAlign = "left"; b.innerHTML = `<strong>${n}</strong><br><span class="muted">${t}</span>`; b.onclick = () => { document.getElementById("rolleninfo").innerHTML = `<strong>${n}: ${t}</strong><p style="margin-top:6px">${d}</p><p class="muted">Genauer: docs/05_rollen.md</p>`; }; rb.appendChild(b); });
+
+zeigen(0);
+</script>
+</body>
+</html>

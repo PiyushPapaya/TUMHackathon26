@@ -31,7 +31,7 @@ Die Demo darf im Pitch **nie** ausfallen. Darum gibt es vier Rückfallebenen, di
 - Aufnahme So 08:30 (Aditya), Schnitt Fabian; max. 2 Minuten, ohne Ton aufnehmen, im Pitch live kommentieren.
 - Windows: Win+Alt+R (Xbox Game Bar) · Mac: Cmd+Shift+5.
 
-## Demo-Ablauf (5 Klicks, aus `docs/wissen/SCAFFOLD-PLAENE.md` der gewählten Idee)
+## Demo-Ablauf (5 Klicks, aus `archiv/docs/SCAFFOLD-PLAENE.md` der gewählten Idee)
 
 1. [ ]
 2. [ ]

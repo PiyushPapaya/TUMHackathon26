@@ -3,7 +3,7 @@
 - **GitHub:** @JoleEight
 - **Rolle:** Frontend-Seiten mit Claude Code
 - **Zuständig für (schreiben):** `src/frontend/`
-- **Eigener Arbeitsbereich:** `workspace/lasse/` (Notizen, Prompts, Experimente; landet nicht im Abgabe-Snapshot)
+- **Eigener Arbeitsbereich:** `werkstatt/lasse/` (Notizen, Prompts, Experimente; landet nicht im Abgabe-Snapshot)
 
 ## Unser Produkt in 2 Sätzen
 

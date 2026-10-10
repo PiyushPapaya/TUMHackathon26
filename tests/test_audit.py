@@ -1,6 +1,7 @@
 """Prüfpfad: Ereignisse werden verkettet, Manipulation wird erkannt."""
 
 import sqlite3
+from concurrent.futures import ThreadPoolExecutor
 
 import pytest
 
@@ -43,3 +44,18 @@ def test_filter_by_requirement(tmp_path):
     log.append("PM_APPROVED", "G60-US", PM, "ok", requirement_id="REQ-1")
     log.append("PM_APPROVED", "G60-US", PM, "ok", requirement_id="REQ-2")
     assert [e.requirement_id for e in log.events(requirement_id="REQ-2")] == ["REQ-2"]
+
+
+def test_parallel_requests_keep_chain_valid(tmp_path):
+    """FastAPI beantwortet Anfragen parallel in Threads. Gleichzeitiges Schreiben und Lesen darf weder
+    abstürzen noch die Kette brechen (zwei Einträge mit demselben Vorgänger-Hash)."""
+    log = AuditLog(tmp_path / "audit.db")
+
+    def write_and_read(i: int) -> None:
+        log.append("PM_APPROVED", "G60-US", PM, f"Begründung {i}", {"i": i}, requirement_id=f"REQ-{i % 3}")
+        log.events(scenario_id="G60-US")
+
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        list(pool.map(write_and_read, range(200)))
+
+    assert log.verify() == {"valid": True, "broken_at_seq": None, "checked": 200}

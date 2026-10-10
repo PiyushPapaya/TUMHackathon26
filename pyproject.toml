@@ -12,3 +12,7 @@ known-first-party = ["api", "core", "requirements_engine", "evidence_internal", 
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.ruff.lint.per-file-ignores]
+# Die Bild-Skripte enthalten lange Mockup-Texte; Umbrechen würde sie unlesbarer machen.
+"scripts/make_*.py" = ["E501"]

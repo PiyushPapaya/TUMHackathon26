@@ -5,6 +5,8 @@
 Built at the TUM.ai × EHL Grand Finale 2026 for the **BMW Group challenge "AI for Product Decision Making"**.
 Demo case: **BMW 5 Series (G60), USA**. Transferability shown with **BMW 1 Series (F70), Europe**.
 
+> **Team:** new here? Start with [START_HIER.md](START_HIER.md) (German, one page).
+
 ## What it does
 
 | Step | What happens | AI autonomous? | Human mandatory? |

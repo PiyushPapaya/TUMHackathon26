@@ -78,4 +78,4 @@ git stash                # legt Änderungen beiseite (wiederherstellbar mit git 
 
 - Ein Commit = ein logischer Schritt. Die Nachricht sagt **was und warum**, auf Deutsch.
 - Alle 1-2 Stunden ein kleiner PR. Große PRs erzeugen Konflikte.
-- Nur in **deinem** Ordner und **deinem** `workspace/<name>/` arbeiten.
+- Nur in **deinem** Ordner und **deinem** `werkstatt/<name>/` arbeiten.
