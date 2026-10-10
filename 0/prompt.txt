@@ -1,0 +1,25 @@
+erkläre mir ausführlich meine aufgabe in diesem projekt erklären
+
+---
+
+kannst du es noch ausführlicher an einem beispiel erklären
+
+---
+
+sind unsere daten von bmw bereits gelabelt oder geben wir die labels?
+
+---
+
+das heißt unser tool nimmt daten im excel format ein. welche python skripte gehen die daten bisher durch um verarbeitet zu werden und was genau machen die einzelnen skripte in meinem bereich bis die daten an piyushs teil also den algorythmus weitergegeben werden?
+
+---
+
+kannst du diesen durchgang vereinfachter erklären bitte
+
+---
+
+push meine bisherigen schritte, den rest muss ich noch verstehen
+
+---
+
+oke ich verstehe die schritte nun, mache mit a2 weiter
