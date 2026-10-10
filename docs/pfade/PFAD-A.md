@@ -115,15 +115,18 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 > Regel in `conflicts.py`: gleiche Kategorie, eine Seite delight, andere complaint/unmet_need, beide ≥ 10 Nennungen → `conflicts_with` gegenseitig.
 > Pro Befund höchstens 2 Konflikte (die mit den meisten Nennungen), damit die UI nicht überladen ist. In `extract_signals` am Ende aufrufen. Test mit 4 Mini-Befunden.
 - **Fertig, wenn:** im echten G60-US ist z. B. Display/Instrumente gelobt ↔ Touch-Bedienung kritisiert verknüpft · `sync` vor 22:00.
-- **Ergebnis A7:** gleiches Thema ab 10 Nennungen (z. B. Seats: Lob 41 ↔ Kritik 36), verschiedene Themen erst ab 30, höchstens 2 je Befund, gleiches Thema zuerst. G60-US: 11 Themenpaare; bei Schwelle 10 für alle hingen 33 von 45 Befunden an einem Konflikt (zu viel Rauschen).
+- **Ergebnis A7:** gleiches Thema ab 10 Nennungen (z. B. Seats: Lob 41 ↔ Kritik 36), höchstens 2 je Befund, gleiches Thema zuerst. G60-US: 11 Themenpaare; bei Schwelle 10 für alle hingen 33 von 45 Befunden an einem Konflikt (zu viel Rauschen).
+- **Nachbesserung A7:** Verschiedene Themen zählen nur noch, wenn sie in `RELATED_TOPICS` (`conflicts.py`) als verwandt stehen (z. B. Touch screen ↔ Instrument cluster), nicht mehr pauschal ab 30 Nennungen.
+  Grund: Die alte Regel lieferte Zufallspaare („Interior comfort: Lob“ ↔ „Kofferraum-Öffnung: Kritik“), die in Konflikt-Arena, Anforderungs-Prompt und Challenge landeten. Jetzt: G60-US 24, G70-US 13, F70-EU 21 Befunde mit Konflikt, alle mit gleichem oder verwandtem Thema.
 
-### [ ] A8 · Zweites Szenario F70-EU (+ G70-US) (60 min, Nacht ab 23:00)
+### [x] A8 · Zweites Szenario F70-EU (+ G70-US) (60 min, Nacht ab 23:00)
 - **Prompt:** „Ticket A8. Lass die Pipeline für `F70-EU` und `G70-US` laufen. Prüfe Länderliste in `config/scenarios/F70-EU.json` gegen die echten `Country`-Werte
   der F70-Datei und melde Piyush Änderungen (Config gehört dem Lead). Ergänze fehlende vfc2-Werte in `taxonomy.py`.“
 - **Fertig, wenn:** beide Szenarien liefern Befunde; Piyush hat die Bundles gebaut; im UI-Umschalter sichtbar.
 - **Stand A8:** G70-US und F70-EU liefern je 45 Befunde (0 unbekannte IDs). Länderliste F70-EU gegen die echte Datei geprüft: in `F70_feedback_hackathon.xlsx` kommen
   GB (2.790 von 4.076 Zeilen), SE, FR, DK, FI vor; NO, ES, DE, IT, NL, LV fehlen (harmlos). JP (1.026), AU, KR, ZA sind absichtlich nicht im EU-Szenario.
   **Hinweis an Piyush:** F70-EU ist praktisch ein UK-Szenario. Taxonomie deckt 73-81 % der Kommentare mit Thema ab; der Rest sind seltene Themen (je < 20 Nennungen), nichts ergänzt.
+- **Bundles gebaut (Piyush):** `F70-EU.json` (1.569 Belege, 54 Befunde, 12 Anforderungen) und `G70-US.json` liegen in `data/processed/`.
 
 ### [ ] A9 · Eval-Stichprobe von Hand labeln (60 min, Nacht ~00:00)
 **Prompt:**
