@@ -15,6 +15,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from api.routes import router
+from api.views import router as views_router
 from core.audit import AuditLog
 from core.store import ROOT, Store
 
@@ -32,7 +33,7 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="Signal2Spec", version="0.1.0", lifespan=lifespan,
+app = FastAPI(title="Signal2Spec", version="0.2.0", lifespan=lifespan,
               description="Von Kundenbelegen zu priorisierten Anforderungen, mit PM im Loop und Prüfpfad.")
 app.add_middleware(
     CORSMiddleware,
@@ -41,8 +42,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 app.include_router(router)
+app.include_router(views_router)
 
 
 @app.get("/health")
 def health() -> dict:
-    return {"status": "ok"}
+    """Status für Frontend und demo-check: Version, Demo-Modus, geladene Szenarien."""
+    store = getattr(app.state, "store", None)
+    return {"status": "ok", "version": app.version, "demo_mode": os.getenv("DEMO_MODUS", "false").lower() == "true",
+            "scenarios": sorted(store.states) if store else []}

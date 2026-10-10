@@ -8,12 +8,25 @@
    "US"
   ],
   "competitors": [
-   "Mercedes-Benz E-Klasse",
+   "Mercedes-Benz E-Class",
    "Audi A6 e-tron",
    "Tesla Model S",
-   "Genesis G80"
+   "Genesis G80",
+   "Lucid Air"
   ],
-  "successor_horizon": "2030"
+  "successor_horizon": "2030",
+  "data_coverage": {
+   "feedback": 3610,
+   "study": 103,
+   "sales": 1,
+   "options": 1,
+   "web": 2,
+   "external": 0,
+   "badge": "reich"
+  },
+  "warnings": [
+   "Beispiel-Bundle mit synthetischen Zitaten (echte Daten: data/processed/)."
+  ]
  },
  "funnel": {
   "evidence": 3610,
@@ -36,7 +49,10 @@
    "polarity": -1,
    "meta": {
     "vfc2": "Operating concept, operating system",
-    "feedback_type": "Wants"
+    "feedback_type": "Wants",
+    "engine": "ICE",
+    "country": "US",
+    "source_letter": "B"
    }
   },
   {
@@ -51,7 +67,10 @@
    "polarity": -1,
    "meta": {
     "vfc2": "Touch screen, operation",
-    "feedback_type": "Difficult to Use"
+    "feedback_type": "Difficult to Use",
+    "engine": "ICE",
+    "country": "US",
+    "source_letter": "A"
    }
   },
   {
@@ -66,7 +85,10 @@
    "polarity": -1,
    "meta": {
     "vfc2": "Touch screen, operation",
-    "feedback_type": "Difficult to Use"
+    "feedback_type": "Difficult to Use",
+    "engine": "PHEV",
+    "country": "US",
+    "source_letter": "C"
    }
   },
   {
@@ -81,7 +103,10 @@
    "polarity": 1,
    "meta": {
     "vfc2": "Touch screen, operation",
-    "feedback_type": "Likes"
+    "feedback_type": "Likes",
+    "engine": "BEVE",
+    "country": "US",
+    "source_letter": "D"
    }
   },
   {
@@ -108,7 +133,10 @@
    "url": "https://example.com/test-bericht",
    "retrieved_at": "2026-10-10T15:00:00Z",
    "polarity": -1,
-   "meta": {}
+   "meta": {
+    "trust": "high",
+    "publisher": "caranddriver.com"
+   }
   },
   {
    "id": "EV-G60-0007",
@@ -123,7 +151,9 @@
    "meta": {
     "vfc2": "Electric Range",
     "feedback_type": "Difficult to Use",
-    "engine": "BEVE"
+    "engine": "BEVE",
+    "country": "US",
+    "source_letter": "A"
    }
   },
   {
@@ -139,7 +169,9 @@
    "meta": {
     "vfc2": "Electric Range",
     "feedback_type": "Difficult to Use",
-    "engine": "BEVE"
+    "engine": "BEVE",
+    "country": "US",
+    "source_letter": "B"
    }
   },
   {
@@ -155,7 +187,9 @@
    "meta": {
     "vfc2": "Public charging / external providers",
     "feedback_type": "Difficult to Use",
-    "engine": "BEVE"
+    "engine": "BEVE",
+    "country": "US",
+    "source_letter": "A"
    }
   },
   {
@@ -168,7 +202,10 @@
    "url": "https://example.com/trend",
    "retrieved_at": "2026-10-10T15:00:00Z",
    "polarity": 0,
-   "meta": {}
+   "meta": {
+    "trust": "medium",
+    "publisher": "insideevs.com"
+   }
   },
   {
    "id": "EV-G60-0011",
@@ -183,7 +220,9 @@
    "meta": {
     "vfc2": "Body equipment, overall technology",
     "feedback_type": "Wants",
-    "engine": "BEVE"
+    "engine": "BEVE",
+    "country": "US",
+    "source_letter": "B"
    }
   },
   {
@@ -198,7 +237,10 @@
    "polarity": -1,
    "meta": {
     "vfc2": "non-contact trunk lid opening",
-    "feedback_type": "Difficult to Use"
+    "feedback_type": "Difficult to Use",
+    "engine": "ICE",
+    "country": "US",
+    "source_letter": "A"
    }
   },
   {
@@ -227,7 +269,10 @@
    "polarity": 1,
    "meta": {
     "vfc2": "Handling / Riding",
-    "feedback_type": "Likes"
+    "feedback_type": "Likes",
+    "engine": "ICE",
+    "country": "US",
+    "source_letter": "D"
    }
   }
  ],
@@ -251,7 +296,28 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-002"
-   ]
+   ],
+   "segments": {
+    "engine": {
+     "ICE": 34,
+     "BEV": 15,
+     "PHEV": 12
+    },
+    "source": {
+     "A": 21,
+     "B": 25,
+     "C": 15
+    },
+    "feedback_type": {
+     "Wants": 19,
+     "Difficult to Use": 42
+    }
+   },
+   "study_link": {
+    "attribute": "Intuitiveness of controls",
+    "importance": 0.82,
+    "dissatisfaction": 0.09
+   }
   },
   {
    "id": "SIG-G60-US-002",
@@ -268,7 +334,20 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-001"
-   ]
+   ],
+   "segments": {
+    "engine": {
+     "BEV": 30,
+     "ICE": 18
+    },
+    "source": {
+     "D": 48
+    },
+    "feedback_type": {
+     "Likes": 48
+    }
+   },
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-003",
@@ -283,7 +362,9 @@
    "source_types": [
     "web"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-004",
@@ -299,7 +380,20 @@
    "source_types": [
     "feedback"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {
+    "engine": {
+     "BEV": 38
+    },
+    "source": {
+     "A": 20,
+     "B": 18
+    },
+    "feedback_type": {
+     "Difficult to Use": 38
+    }
+   },
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-005",
@@ -316,7 +410,20 @@
     "feedback",
     "web"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {
+    "engine": {
+     "BEV": 22,
+     "PHEV": 2
+    },
+    "source": {
+     "A": 24
+    },
+    "feedback_type": {
+     "Difficult to Use": 24
+    }
+   },
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-006",
@@ -333,7 +440,19 @@
     "feedback",
     "study"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {
+    "engine": {
+     "BEV": 14
+    },
+    "source": {
+     "B": 14
+    },
+    "feedback_type": {
+     "Wants": 14
+    }
+   },
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-007",
@@ -348,7 +467,21 @@
    "source_types": [
     "feedback"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {
+    "engine": {
+     "ICE": 25,
+     "BEV": 9,
+     "PHEV": 5
+    },
+    "source": {
+     "A": 39
+    },
+    "feedback_type": {
+     "Difficult to Use": 39
+    }
+   },
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-008",
@@ -363,7 +496,21 @@
    "source_types": [
     "feedback"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {
+    "engine": {
+     "ICE": 80,
+     "BEV": 30,
+     "PHEV": 10
+    },
+    "source": {
+     "D": 120
+    },
+    "feedback_type": {
+     "Likes": 120
+    }
+   },
+   "study_link": null
   }
  ],
  "requirements": [
@@ -433,7 +580,40 @@
    },
    "effort": "M",
    "status": "proposed",
-   "version": 1
+   "version": 1,
+   "robustness": {
+    "rank_min": 1,
+    "rank_max": 1,
+    "top3_share": 1.0,
+    "runs": 500
+   },
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.6,
+    "market_share": 0.25,
+    "note": "US = 25 % des G60/G68-Volumens 2030 (sales_volumes.xlsx)"
+   },
+   "stable_key": "sk-001",
+   "horizon": "today",
+   "segment_conflicts": [
+    {
+     "dimension": "engine",
+     "segment_a": "ICE",
+     "segment_b": "BEV",
+     "statement": "ICE-Fahrer vermissen Tasten (34 Kritiken), BEV-Fahrer loben das große Display (30 Lob).",
+     "a_count": 34,
+     "b_count": 30,
+     "evidence_ids": [
+      "EV-G60-0002",
+      "EV-G60-0004"
+     ]
+    }
+   ],
+   "badges": [
+    "robust",
+    "Konflikt"
+   ]
   },
   {
    "id": "REQ-G60-US-002",
@@ -499,7 +679,24 @@
    },
    "effort": "M",
    "status": "proposed",
-   "version": 1
+   "version": 1,
+   "robustness": {
+    "rank_min": 2,
+    "rank_max": 4,
+    "top3_share": 0.71,
+    "runs": 500
+   },
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.6,
+    "market_share": 0.25,
+    "note": "US = 25 % des G60/G68-Volumens 2030 (sales_volumes.xlsx)"
+   },
+   "stable_key": "sk-002",
+   "horizon": "today",
+   "segment_conflicts": [],
+   "badges": []
   },
   {
    "id": "REQ-G60-US-003",
@@ -565,7 +762,24 @@
    },
    "effort": "L",
    "status": "proposed",
-   "version": 1
+   "version": 1,
+   "robustness": {
+    "rank_min": 2,
+    "rank_max": 4,
+    "top3_share": 0.64,
+    "runs": 500
+   },
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.6,
+    "market_share": 0.25,
+    "note": "US = 25 % des G60/G68-Volumens 2030 (sales_volumes.xlsx)"
+   },
+   "stable_key": "sk-003",
+   "horizon": "today",
+   "segment_conflicts": [],
+   "badges": []
   },
   {
    "id": "REQ-G60-US-004",
@@ -618,9 +832,7 @@
    },
    "rationale": "Häufiger Ärger bei kleinem Aufwand: Quick Win.",
    "evidence_level": "B",
-   "assumptions": [
-    "Keine."
-   ],
+   "assumptions": [],
    "uncertainties": [
     "Teilweise Bedienfehler statt echter Schwäche?"
    ],
@@ -631,7 +843,24 @@
    },
    "effort": "S",
    "status": "proposed",
-   "version": 1
+   "version": 1,
+   "robustness": {
+    "rank_min": 3,
+    "rank_max": 5,
+    "top3_share": 0.48,
+    "runs": 500
+   },
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.6,
+    "market_share": 0.25,
+    "note": "US = 25 % des G60/G68-Volumens 2030 (sales_volumes.xlsx)"
+   },
+   "stable_key": "sk-004",
+   "horizon": "today",
+   "segment_conflicts": [],
+   "badges": []
   },
   {
    "id": "REQ-G60-US-005",
@@ -683,9 +912,10 @@
     }
    },
    "rationale": "Wiederkehrender Vergleich mit Tesla, aber wenige Nennungen.",
-   "evidence_level": "C",
+   "evidence_level": "D",
    "assumptions": [
-    "BEV-Plattform erlaubt Frontstauraum."
+    "Der Nachfolger (ab 2030) nutzt eine BEV-Plattform ohne Motor vorne.",
+    "Der BEV-Anteil im US-5er (im Feedback heute 35 %) steigt bis 2030 deutlich."
    ],
    "uncertainties": [
     "Wenige Nennungen; Packaging unbekannt."
@@ -697,7 +927,74 @@
    },
    "effort": "L",
    "status": "proposed",
-   "version": 1
+   "version": 1,
+   "robustness": {
+    "rank_min": 4,
+    "rank_max": 5,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.6,
+    "market_share": 0.25,
+    "note": "US = 25 % des G60/G68-Volumens 2030 (sales_volumes.xlsx)"
+   },
+   "stable_key": "sk-005",
+   "horizon": "next_gen",
+   "segment_conflicts": [],
+   "badges": [
+    "Zukunftswette",
+    "Annahme"
+   ]
+  }
+ ],
+ "context": {
+  "sales": {
+   "market": "US",
+   "volume_2024": 75600,
+   "volume_2025": 78000,
+   "volume_2030": 80000,
+   "growth_pct": 2.6,
+   "share_of_total_2030": 0.25
+  },
+  "unmapped_topics": {
+   "Seat ventilation noise": 4
+  }
+ },
+ "opportunities": [
+  {
+   "attribute": "Intuitiveness of controls",
+   "category": "infotainment_digital",
+   "importance": 0.82,
+   "dissatisfaction": 0.09,
+   "quadrant": "Chance",
+   "evidence_id": "EV-G60-0005"
+  },
+  {
+   "attribute": "Interior storage",
+   "category": "comfort_space",
+   "importance": 0.41,
+   "dissatisfaction": 0.12,
+   "quadrant": "Beobachten",
+   "evidence_id": "EV-G60-0013"
+  },
+  {
+   "attribute": "Ride comfort",
+   "category": "driving_experience",
+   "importance": 0.77,
+   "dissatisfaction": 0.02,
+   "quadrant": "Stärke halten",
+   "evidence_id": "EV-G60-0014"
+  },
+  {
+   "attribute": "Exterior styling",
+   "category": "exterior",
+   "importance": 0.3,
+   "dissatisfaction": 0.01,
+   "quadrant": "Nebensache",
+   "evidence_id": null
   }
  ]
 }

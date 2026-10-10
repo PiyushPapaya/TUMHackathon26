@@ -1,0 +1,121 @@
+{
+ "scenarios": [
+  {
+   "id": "G60-US",
+   "model_name": "BMW 5er Limousine (G60)",
+   "market": "US",
+   "data_coverage": {
+    "feedback": 3610,
+    "study": 103,
+    "sales": 1,
+    "options": 1,
+    "web": 2,
+    "external": 0,
+    "badge": "reich"
+   }
+  }
+ ],
+ "rows": [
+  {
+   "category": "comfort_space",
+   "cells": {
+    "G60-US": {
+     "requirement_id": "REQ-G60-US-004",
+     "title": "Zuverlässige berührungslose Heckklappe",
+     "rank": 3,
+     "score": 47.2,
+     "evidence_level": "B",
+     "level_label": "mittel belegt"
+    }
+   },
+   "class": "einzeln",
+   "top_in": [
+    "G60-US"
+   ]
+  },
+  {
+   "category": "infotainment_digital",
+   "cells": {
+    "G60-US": {
+     "requirement_id": "REQ-G60-US-001",
+     "title": "Physische Bedienelemente für Top-Funktionen",
+     "rank": 1,
+     "score": 67.5,
+     "evidence_level": "A",
+     "level_label": "stark belegt"
+    }
+   },
+   "class": "einzeln",
+   "top_in": [
+    "G60-US"
+   ]
+  },
+  {
+   "category": "range_charging",
+   "cells": {
+    "G60-US": {
+     "requirement_id": "REQ-G60-US-002",
+     "title": "Verlässliche Reichweitenprognose",
+     "rank": 2,
+     "score": 48.4,
+     "evidence_level": "B",
+     "level_label": "mittel belegt"
+    }
+   },
+   "class": "einzeln",
+   "top_in": [
+    "G60-US"
+   ]
+  },
+  {
+   "category": "driver_assistance",
+   "cells": {
+    "G60-US": null
+   },
+   "class": "nicht oben",
+   "top_in": []
+  },
+  {
+   "category": "driving_experience",
+   "cells": {
+    "G60-US": null
+   },
+   "class": "nicht oben",
+   "top_in": []
+  },
+  {
+   "category": "exterior",
+   "cells": {
+    "G60-US": null
+   },
+   "class": "nicht oben",
+   "top_in": []
+  },
+  {
+   "category": "interior",
+   "cells": {
+    "G60-US": null
+   },
+   "class": "nicht oben",
+   "top_in": []
+  },
+  {
+   "category": "quality_perception",
+   "cells": {
+    "G60-US": null
+   },
+   "class": "nicht oben",
+   "top_in": []
+  },
+  {
+   "category": "variants_packages",
+   "cells": {
+    "G60-US": null
+   },
+   "class": "nicht oben",
+   "top_in": []
+  }
+ ],
+ "top_n": 5,
+ "rule": "plattformweit = in mind. 2/3 der Szenarien unter den Top 5; modell-/marktspezifisch = nur ein Modell bzw. ein Markt; einzeln = nur ein Szenario."
+}

@@ -36,6 +36,9 @@ class ScenarioState:
         self.requirements = {r["id"]: Requirement(**r) for r in bundle["requirements"]}
         self.discarded: list[dict] = bundle.get("discarded", [])  # Beispiel-Bundles haben das Feld nicht
         self.weights = scoring.normalize_weights(bundle.get("weights", {}))
+        # Welle 2: Kontext (Absatz, unbekannte Themen) und Chancen-Karte, fertig aus der Pipeline
+        self.context: dict = bundle.get("context", {})
+        self.opportunities: list[dict] = bundle.get("opportunities", [])
 
 
 class Store:

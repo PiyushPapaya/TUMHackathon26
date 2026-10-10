@@ -11,10 +11,10 @@ import io
 from typing import Literal
 
 from fastapi import APIRouter, HTTPException, Request
-from fastapi.responses import PlainTextResponse
+from fastapi.responses import JSONResponse, PlainTextResponse
 from pydantic import BaseModel, Field
 
-from core.models import Actor, ActorType, AuditEvent, Requirement, Scenario, Signal
+from core.models import Actor, ActorType, AuditEvent, Requirement, Signal
 from core.store import Store
 from requirements_engine.challenge import answer_challenge
 
@@ -46,11 +46,6 @@ def _store(request: Request) -> Store:
 
 def _not_found(err: KeyError) -> HTTPException:
     return HTTPException(status_code=404, detail=str(err.args[0]))
-
-
-@router.get("/scenarios", response_model=list[Scenario])
-def list_scenarios(request: Request):
-    return [s.scenario for s in _store(request).states.values()]
 
 
 @router.get("/scenarios/{scenario_id}/funnel")
@@ -148,12 +143,14 @@ def _csv_safe(value: object) -> str:
 
 
 @router.get("/scenarios/{scenario_id}/export", response_class=PlainTextResponse)
-def export_csv(scenario_id: str, request: Request):
-    """Die geforderte "strukturierte Anforderungsliste" als CSV (Excel-tauglich)."""
+def export(scenario_id: str, request: Request, format: Literal["csv", "json"] = "csv"):
+    """Die geforderte "strukturierte Anforderungsliste": CSV (Excel-tauglich) oder vollständiges JSON."""
     try:
         reqs = _store(request).ranked(scenario_id)
     except KeyError as err:
         raise _not_found(err) from err
+    if format == "json":
+        return JSONResponse([r.model_dump(mode="json") for r in reqs])
     buf = io.StringIO()
     writer = csv.writer(buf, delimiter=";")
     writer.writerow(["id", "rank", "title", "description", "acceptance_criterion", "signals", "score",
