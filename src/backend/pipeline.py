@@ -9,6 +9,7 @@ Jede Stufe schreibt eine JSON-Datei nach data/processed/<szenario>/. Warum:
 Aufruf (aus dem Repo-Root):
   python src/backend/pipeline.py --scenario G60-US              # alle Stufen
   python src/backend/pipeline.py --scenario G60-US --stage signals
+  python src/backend/pipeline.py --scenario all                 # alle Szenarien, Zusammenfassung am Ende
 """
 
 from __future__ import annotations
@@ -137,14 +138,51 @@ def bundle_stage(cfg: dict) -> None:
     print(f"  -> {sid}.json (App lädt diese Datei beim Start)")
 
 
+def all_scenario_ids() -> list[str]:
+    return sorted(p.stem for p in (ROOT / "config" / "scenarios").glob("*.json"))
+
+
+def run_scenario(cfg: dict, stages: list[str]) -> dict:
+    """Stufen nacheinander; scheitert eine, stoppt NUR dieses Szenario (spätere Stufen bauen darauf auf)."""
+    from evidence_external import claims
+    claims.FAILED_QUESTIONS.clear()
+    result = {"id": cfg["id"], "done": [], "failed": None, "web_failed": 0}
+    for stage in stages:
+        try:
+            run_stage(stage, cfg)
+        except Exception as err:  # Nachtlauf: ein Szenario darf die anderen nicht mitreißen
+            result["failed"] = f"{stage}: {type(err).__name__}: {err}"
+            print(f"  ! [{cfg['id']}] Stufe {stage} gescheitert: {err}", file=sys.stderr)
+            break
+        result["done"].append(stage)
+    result["web_failed"] = len(claims.FAILED_QUESTIONS)
+    bundle = OUT_DIR / f"{cfg['id']}.json"
+    if "bundle" in result["done"] and bundle.exists():
+        reqs = json.loads(bundle.read_text(encoding="utf-8"))["requirements"]
+        result["requirements"] = len(reqs)
+        result["levels"] = dict(sorted(Counter(r["evidence_level"] for r in reqs).items()))
+    return result
+
+
+def print_summary(results: list[dict]) -> None:
+    print("\nZusammenfassung")
+    for r in results:
+        status = "OK " if not r["failed"] else "FEHLER"
+        counts = f"{r.get('requirements', '-')} Anforderungen {r.get('levels', '')}"
+        web = f", {r['web_failed']} Webfragen übersprungen" if r["web_failed"] else ""
+        print(f"  {status} {r['id']:8} {counts}{web}" + (f"  <- {r['failed']}" if r["failed"] else ""))
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--scenario", required=True, help="z. B. G60-US (Datei in config/scenarios/)")
+    parser.add_argument("--scenario", required=True, help="z. B. G60-US (Datei in config/scenarios/) oder all")
     parser.add_argument("--stage", choices=[*STAGES, "all"], default="all")
     args = parser.parse_args()
-    cfg = load_config(args.scenario)
-    for stage in STAGES if args.stage == "all" else [args.stage]:
-        run_stage(stage, cfg)
+    ids = all_scenario_ids() if args.scenario == "all" else [args.scenario]
+    stages = STAGES if args.stage == "all" else [args.stage]
+    results = [run_scenario(load_config(sid), stages) for sid in ids]
+    print_summary(results)
+    sys.exit(1 if any(r["failed"] for r in results) else 0)
 
 
 if __name__ == "__main__":

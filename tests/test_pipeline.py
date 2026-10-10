@@ -84,3 +84,40 @@ def test_bundle_kaltstart_hat_abdeckung_kontext_und_zeitstempel(tmp_path, monkey
                                                    "external": 0, "badge": "Kaltstart"}
     assert bundle["context"] == {"sales": {"volume_2030": 1}} and len(bundle["opportunities"]) == 1
     assert bundle["funnel"]["generated_at"]
+
+
+def test_ein_gescheitertes_szenario_stoppt_die_anderen_nicht(tmp_path, monkeypatch, capsys):
+    """L18: Nachtlauf über alle Szenarien; Fehler wird gemeldet, nicht verschluckt, und nicht weitergereicht."""
+    monkeypatch.setattr(pipeline, "OUT_DIR", tmp_path)
+    calls = []
+
+    def fake_stage(stage, cfg):
+        calls.append((cfg["id"], stage))
+        if cfg["id"] == "KAPUTT" and stage == "signals":
+            raise RuntimeError("Netz weg")
+
+    monkeypatch.setattr(pipeline, "run_stage", fake_stage)
+    results = [pipeline.run_scenario({"id": sid}, ["evidence", "signals", "web"]) for sid in ("KAPUTT", "GUT")]
+
+    assert results[0]["failed"].startswith("signals: RuntimeError") and results[0]["done"] == ["evidence"]
+    assert ("KAPUTT", "web") not in calls and results[1]["done"] == ["evidence", "signals", "web"]
+    pipeline.print_summary(results)
+    assert "FEHLER KAPUTT" in capsys.readouterr().out
+
+
+def test_kaputte_webfrage_kostet_nur_diese_frage(monkeypatch):
+    from evidence_external import claims
+
+    def fake_ask_json(**kwargs):
+        if "kaputt" in kwargs["user"]:
+            raise RuntimeError("Timeout")
+        return claims.Claims(claims=[])
+
+    monkeypatch.setattr(claims, "ask_json", fake_ask_json)
+    claims.FAILED_QUESTIONS.clear()
+    assert claims.ask_claims("kaputt?") == [] and claims.ask_claims("gut?") == []
+    assert claims.FAILED_QUESTIONS == ["kaputt?"]
+
+
+def test_all_findet_alle_configs():
+    assert {"G60-US", "G68-CN", "G60-EU"} <= set(pipeline.all_scenario_ids())
