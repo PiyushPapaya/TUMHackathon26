@@ -32,6 +32,7 @@ from core.models import (
     Requirement,
     Scenario,
     Signal,
+    SignalKind,
 )
 from requirements_engine import evidence_level, scoring
 from requirements_engine.factors import compute_factors, rationale_from
@@ -65,7 +66,8 @@ Rules for every requirement:
 - Use ONLY signal_ids from the input. Every requirement cites at least one signal.
 - Cover EVERY complaint and unmet_need signal in at least one requirement (merge related ones, but
   never drop a topic silently). Delights only need a keep-requirement when they are strong.
-- effort is a rough guess: S, M or L. Aim for 10-16 requirements."""
+- effort is a rough guess: S, M or L. Aim for 10-15 in-scope requirements; above 15 the PM loses
+  the overview, so merge related needs instead of adding more."""
 
 
 class RequirementDraft(BaseModel):
@@ -119,6 +121,7 @@ def derive_all(
             discarded.append({"title": draft.title, "reason": draft.scope_reason, "signal_ids": ids})
             continue
         kept.append((draft, [known[i] for i in ids]))
+    discarded += _not_covered(signals, kept, discarded)
     # reach braucht die größte Nennungszahl ALLER Anforderungen, darum erst jetzt bauen.
     max_mentions = max((sum(s.mention_count for s in linked) for _, linked in kept), default=0)
     by_id = {e.id: e for e in evidence}
@@ -133,6 +136,23 @@ def derive_all(
     for rank, req in enumerate(requirements, start=1):
         req.rank = rank
     return requirements, discarded
+
+
+def _not_covered(signals: list[Signal], kept: list, discarded: list[dict]) -> list[dict]:
+    """Beschwerden/Wünsche, die die KI in keine Anforderung übernommen hat: sichtbar machen statt still verlieren.
+
+    Echter Fund (Sa 10.10.): Trotz Prompt-Regel "Cover EVERY complaint" fehlte zweimal "Start-Stopp lässt sich
+    nicht dauerhaft abschalten" (22 Nennungen). Der Prompt allein garantiert es nicht, darum prüft der Code.
+    Verworfen: automatisch eine Anforderung erzeugen (Text wäre ungeprüft) oder die KI erneut fragen (teuer, schwankt).
+    """
+    cited = {s.id for _, linked in kept for s in linked} | {i for d in discarded for i in d["signal_ids"]}
+    needs = (SignalKind.COMPLAINT, SignalKind.UNMET_NEED)
+    return [
+        {"title": f"Not covered: {s.title}",
+         "reason": f"The AI derived no requirement from this {s.kind.value} ({s.mention_count} mentions); PM to check.",
+         "signal_ids": [s.id]}
+        for s in signals if s.kind in needs and s.id not in cited
+    ]
 
 
 def _conflict_notes(linked: list[Signal]) -> list[str]:
