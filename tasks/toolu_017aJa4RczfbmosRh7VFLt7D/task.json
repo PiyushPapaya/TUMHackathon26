@@ -1,0 +1,15 @@
+{
+  "tool_use_id": "toolu_017aJa4RczfbmosRh7VFLt7D",
+  "agent_id": "a0f6c4e8d7ee100ac",
+  "subagent_type": "Explore",
+  "task_description": "Explore frontend structure",
+  "token_usage": {
+    "input_tokens": 8,
+    "cache_creation_tokens": 53053,
+    "cache_read_tokens": 135463,
+    "output_tokens": 2899,
+    "api_call_count": 4
+  },
+  "started_at": "2026-10-10T23:47:55.2977401+02:00",
+  "completed_at": "2026-10-10T23:48:24.6221021+02:00"
+}

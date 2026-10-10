@@ -3,7 +3,7 @@
   "checkpoint_id": "01M4KXVG89128F3RRVQVHYWSEW",
   "strategy": "manual-commit",
   "branch": "piyush-frontend",
-  "checkpoints_count": 4,
+  "checkpoints_count": 7,
   "files_touched": [
     "docs/ARCHITEKTUR.md",
     "docs/pitch/PITCH.md",
@@ -73,13 +73,20 @@
       "compact_transcript": "/1/transcript.jsonl",
       "content_hash": "/1/content_hash.txt",
       "prompt": "/1/prompt.txt"
+    },
+    {
+      "metadata": "/2/metadata.json",
+      "transcript": "/2/full.jsonl",
+      "compact_transcript": "/2/transcript.jsonl",
+      "content_hash": "/2/content_hash.txt",
+      "prompt": "/2/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 116,
-    "cache_creation_tokens": 389219,
-    "cache_read_tokens": 7670276,
-    "output_tokens": 78934,
-    "api_call_count": 58
+    "input_tokens": 170,
+    "cache_creation_tokens": 531775,
+    "cache_read_tokens": 10867637,
+    "output_tokens": 107480,
+    "api_call_count": 85
   }
 }

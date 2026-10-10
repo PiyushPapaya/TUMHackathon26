@@ -1,0 +1,66 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KXVG89128F3RRVQVHYWSEW",
+  "session_id": "9129f450-4ff1-4573-8ac4-5f240da5e34d",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T22:10:31.5075361Z",
+  "branch": "piyush-frontend",
+  "checkpoints_count": 3,
+  "save_step_count": 2,
+  "files_touched": [
+    "docs/ARCHITEKTUR.md",
+    "src/frontend/app/guide/page.tsx",
+    "src/frontend/app/page.tsx"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-opus-5-5",
+  "turn_id": "c339672c0052",
+  "checkpoint_transcript_start": 176,
+  "transcript_lines_at_start": 176,
+  "compact_transcript_start": 29,
+  "token_usage": {
+    "input_tokens": 54,
+    "cache_creation_tokens": 142556,
+    "cache_read_tokens": 3197361,
+    "output_tokens": 28546,
+    "api_call_count": 27
+  },
+  "session_metrics": {
+    "turn_count": 7
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T22:10:30.7563219Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 1528,
+    "human_modified": 452,
+    "human_removed": 0,
+    "total_committed": 1639,
+    "total_lines_changed": 2041,
+    "agent_percentage": 0,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    },
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 267,
+      "agent_lines_removed": 0
+    },
+    {
+      "checkpoint_number": 3,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 378,
+      "agent_lines_removed": 0
+    }
+  ]
+}
