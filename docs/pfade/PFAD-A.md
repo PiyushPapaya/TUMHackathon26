@@ -109,12 +109,13 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
   ohne Key bleibt v1 und es erscheint eine Warnung. Danach `pipeline.py --scenario G60-US --stage signals` zweimal laufen lassen (zweiter Lauf = Cache).
   Entscheidungen: Gruppen und `kind` bleiben aus v1 (nicht im Schema); Titel/Zusammenfassung mit Zahlen werden abgelehnt (Zahlen nur aus dem Code); Zitate nur aus der eigenen Gruppe.
 
-### [ ] A7 · Konflikte (45 min, bis 22:00, **M3**)
+### [x] A7 · Konflikte (45 min, bis 22:00, **M3**)
 **Prompt:**
 > Ticket A7. Widersprüche zeigen statt wegmitteln, weil der Brief „conflicting evidence“ ausdrücklich will.
 > Regel in `conflicts.py`: gleiche Kategorie, eine Seite delight, andere complaint/unmet_need, beide ≥ 10 Nennungen → `conflicts_with` gegenseitig.
 > Pro Befund höchstens 2 Konflikte (die mit den meisten Nennungen), damit die UI nicht überladen ist. In `extract_signals` am Ende aufrufen. Test mit 4 Mini-Befunden.
 - **Fertig, wenn:** im echten G60-US ist z. B. Display/Instrumente gelobt ↔ Touch-Bedienung kritisiert verknüpft · `sync` vor 22:00.
+- **Ergebnis A7:** gleiches Thema ab 10 Nennungen (z. B. Seats: Lob 41 ↔ Kritik 36), verschiedene Themen erst ab 30, höchstens 2 je Befund, gleiches Thema zuerst. G60-US: 11 Themenpaare; bei Schwelle 10 für alle hingen 33 von 45 Befunden an einem Konflikt (zu viel Rauschen).
 
 ### [ ] A8 · Zweites Szenario F70-EU (+ G70-US) (60 min, Nacht ab 23:00)
 - **Prompt:** „Ticket A8. Lass die Pipeline für `F70-EU` und `G70-US` laufen. Prüfe Länderliste in `config/scenarios/F70-EU.json` gegen die echten `Country`-Werte
