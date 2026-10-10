@@ -74,7 +74,7 @@ export default function RequirementsPage() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex h-screen flex-col overflow-hidden">
       {/* Top bar: volle Breite, Platz für weitere Elemente später. Halbtransparent, damit der Shader-Hintergrund durchscheint. */}
       <header className="w-full border-b border-zinc-200 bg-surface backdrop-blur-sm dark:border-zinc-800">
         <div className="flex flex-wrap items-center justify-between gap-4 px-6 py-4">
