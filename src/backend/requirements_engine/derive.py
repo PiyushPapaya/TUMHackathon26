@@ -33,6 +33,7 @@ from core.models import (
     Signal,
 )
 from requirements_engine import evidence_level, scoring
+from requirements_engine.factors import compute_factors, rationale_from
 
 SYSTEM_PROMPT = """You are a product analyst for BMW. You turn customer findings (signals) into
 requirements for the successor vehicle, 3-5 years ahead. Write ALL text in English.
@@ -88,7 +89,7 @@ def derive_all(
     known = {s.id: s for s in signals}
     answer = ask_json(SYSTEM_PROMPT, f"Scenario: {scenario.model_name} ({scenario.market})\n"
                       f"Signals:\n{_compact(signals)}", RequirementDrafts)
-    requirements: list[Requirement] = []
+    kept: list[tuple[RequirementDraft, list[Signal]]] = []
     discarded: list[dict] = []
     for draft in answer.drafts:
         # Halluzinationsschutz: nur IDs, die es in der Eingabe wirklich gibt.
@@ -98,28 +99,35 @@ def derive_all(
         if not draft.in_scope:
             discarded.append({"title": draft.title, "reason": draft.scope_reason, "signal_ids": ids})
             continue
-        requirements.append(_build(scenario, draft, [known[i] for i in ids], len(requirements) + 1))
+        kept.append((draft, [known[i] for i in ids]))
+    # reach braucht die größte Nennungszahl ALLER Anforderungen, darum erst jetzt bauen.
+    max_mentions = max((sum(s.mention_count for s in linked) for _, linked in kept), default=0)
+    by_id = {e.id: e for e in evidence}
+    requirements = [
+        _build(scenario, d, linked, n, by_id, max_mentions, context) for n, (d, linked) in enumerate(kept, start=1)
+    ]
     requirements.sort(key=lambda r: -r.score)  # stabil: gleiche Punkte behalten KI-Reihenfolge
     for rank, req in enumerate(requirements, start=1):
         req.rank = rank
     return requirements, discarded
 
 
-def _build(scenario: Scenario, draft: RequirementDraft, linked: list[Signal], number: int) -> Requirement:
+def _build(
+    scenario: Scenario, draft: RequirementDraft, linked: list[Signal], number: int,
+    by_id: dict[str, Evidence], max_mentions: int, context: dict,
+) -> Requirement:
     mentions = sum(s.mention_count for s in linked)
     sources = {t for s in linked for t in s.source_types}
     level, level_reason = evidence_level.classify(mentions, sources, draft.forward_looking)
     effort = draft.effort if draft.effort in ("S", "M", "L") else "M"
-    # Platzhalter bis Ticket C3 (factors.py): alle Faktoren 0,5, Aufwand aus dem Entwurf.
-    factors = {name: 0.5 for name in scoring.DEFAULT_WEIGHTS}
-    factors["effort_inverse"] = scoring.effort_factor(effort)
-    explanations = {name: "placeholder until factors.py (C3)" for name in factors}
+    factors, explanations = compute_factors(linked, by_id, max_mentions, draft.forward_looking, effort, context)
     points, breakdown = scoring.score(factors, explanations, level)
     return Requirement(
         id=f"REQ-{scenario.id}-{number:03d}", title=draft.title, description=draft.description,
         acceptance_criterion=draft.acceptance_criterion, category=draft.category,
         signal_ids=[s.id for s in linked], score=points, rank=0, score_breakdown=breakdown,
-        rationale=level_reason, evidence_level=level, assumptions=draft.assumptions,
+        rationale=f"{rationale_from(breakdown)} Evidence level {level.value}: {level_reason}",
+        evidence_level=level, assumptions=draft.assumptions,
         uncertainties=draft.uncertainties,
         offer_check=OfferCheck(status="unknown", note="Option list not checked yet (C5)."),
         effort=effort,
