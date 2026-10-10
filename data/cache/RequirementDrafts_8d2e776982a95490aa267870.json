@@ -1,0 +1,173 @@
+{
+  "drafts": [
+    {
+      "title": "Provide dedicated physical controls for essential functions while keeping the large display experience",
+      "description": "Customers can operate safety‑critical and frequently used functions (climate temperature, fan, defrost, seat heating, and audio volume) using dedicated, tactile controls without needing to look at or navigate the touchscreen, while retaining the large curved display for information and advanced settings.",
+      "acceptance_criterion": "In a driving usability test, drivers must be able to change cabin temperature by ≥3°C and adjust audio volume within 2 seconds without looking at the central screen in ≥90% of attempts; the car retains the large curved display and players report the display remains usable and visible in ≥90% of sessions.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-028",
+        "SIG-F70-EU-003",
+        "SIG-F70-EU-015",
+        "SIG-F70-EU-011",
+        "SIG-F70-EU-004"
+      ],
+      "assumptions": [
+        "Customer definition of 'essential' aligns with climate (temp, fan, defrost), seat heat, and audio volume as the highest‑priority controls.",
+        "Tactile controls can be implemented in a small interior footprint without preventing the large display layout customers like.",
+        "Usability test method: representative drivers on a closed track while performing a secondary task."
+      ],
+      "uncertainties": [
+        "Some customers will still prefer all controls via touchscreen; degree of acceptance for mixed physical/digital layout is uncertain.",
+        "Exact placement and number of physical controls may vary by trim and packaging constraints."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Directly addresses customer complaints about touchscreen‑only controls and the unmet need for physical climate controls."
+    },
+    {
+      "title": "Surface top functions on a zero‑layer home and ensure fast, reliable touchscreen responsiveness",
+      "description": "Customers find and trigger the most common functions (navigation, media, phone, climate shortcuts, hazard, top vehicle settings) immediately from the home screen and experience a responsive, predictable HMI that minimizes menu dives and distraction.",
+      "acceptance_criterion": "Home screen exposes the top 6–8 customer functions; in a usability trial ≥90% of users reach any of those top functions in ≤1 tap from the home screen; median touch response latency across core screens ≤300 ms and perceived responsiveness rated ≥4/5 by ≥85% of trial participants.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-003",
+        "SIG-F70-EU-004",
+        "SIG-F70-EU-WEB-01",
+        "SIG-F70-EU-015",
+        "SIG-F70-EU-WEB-02",
+        "SIG-F70-EU-011"
+      ],
+      "assumptions": [
+        "Top functions can be identified from telematics/usage data or by allowing easy customer customization.",
+        "Measured response latency uses realistic in‑car workloads and representative hardware for the successor vehicle."
+      ],
+      "uncertainties": [
+        "Some third‑party apps or phone projection modes may introduce latency outside OEM control.",
+        "Balancing shortcut density and touch target size for users with different dexterity is a design tradeoff."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Directly responds to repeated complaints about distraction, complexity and slow/unreliable software while preserving praised display strengths."
+    },
+    {
+      "title": "Navigation and connected services work reliably without forcing app registration",
+      "description": "Customers can use full navigation features (route guidance, voice guidance, rerouting, POI search) and the car's connected services without being forced to register or pay in an external app to get baseline navigation functionality.",
+      "acceptance_criterion": "During a 30‑day field acceptance test, ≥95% of vehicles provide full core navigation features and voice guidance without requiring the user to create an external account; navigation routing uptime (no crash/feature drop) ≥99% over 30 days; successful phone‑to‑vehicle navigation handover/pairing occurs within 60 seconds in ≥90% of attempts.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-023",
+        "SIG-F70-EU-045"
+      ],
+      "assumptions": [
+        "OEM can license/map content and voice guidance so a baseline navigation experience can be offered without mandatory account registration.",
+        "Field test uses representative mobile network coverage typical for EU customers."
+      ],
+      "uncertainties": [
+        "Some premium online map features and live traffic may require optional account/services or subscriptions; delineation of baseline vs. paid features must be defined.",
+        "Third‑party phone OS changes could affect handover reliability."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Covers customer complaints about sat nav being unreliable and tied to app registration and addresses connected services satisfaction."
+    },
+    {
+      "title": "Allow straightforward playback from USB and provide usable media USB ports",
+      "description": "Customers can plug in a USB stick and play their music easily; usable media ports (not charger‑only) are available where customers expect them (front console and at least one rear socket).",
+      "acceptance_criterion": "The system recognises and plays common audio files from a standard USB stick (MP3, AAC, FLAC, WAV) in ≥95% of tested sticks within 10 seconds of insertion; at least two USB ports supporting media (one front, one rear) are present on all trims where the vehicle is sold.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-029"
+      ],
+      "assumptions": [
+        "Test USB sticks use common filesystems (FAT32/exFAT) and common codecs; OEM will publish supported formats in the manual.",
+        "Rear port availability is feasible within packaging and trim constraints."
+      ],
+      "uncertainties": [
+        "Legacy or unusual file formats used by some customers may not be supported without additional codec licensing.",
+        "Vehicle trims may require tradeoffs between additional ports and other interior features."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Direct response to multiple customer complaints about inability to play music from USB and missing usable ports."
+    },
+    {
+      "title": "Deliver clean, high‑quality cabin audio and remove artificial/synthesized exhaust artifacts in normal modes",
+      "description": "Customers experience high‑quality, undistorted audio playback and engine/exhaust sound presentation that feels natural in normal and sport driving modes without intrusive artificial pops or buzz.",
+      "acceptance_criterion": "Audio playback across a selection of 20 representative tracks must show no audible buzzing/clipping in listener trials and measured total harmonic distortion (THD) at 85 dB SPL (1 kHz tone) <1%; in normal driving modes, synthetic exhaust/enhancement effects that produce audible 'pops' are absent in 100% of standard driving scenarios tested.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-014",
+        "SIG-F70-EU-WEB-05"
+      ],
+      "assumptions": [
+        "Standardized audio test rig and listener panel will be used to evaluate subjective and measured audio quality.",
+        "Some synthetic sound augmentation may remain available in specific sport modes if customers choose to enable them; the requirement targets the default/normal modes."
+      ],
+      "uncertainties": [
+        "Perception of 'natural' engine sound varies between customers; objective measures (THD, clipping) may not capture all subjective preferences.",
+        "Higher‑end audio hardware choices and calibration effort may be required to meet the target in all trims."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Addresses customer complaints about fake engine sound and poor audio quality while preserving documented OEM sound features as optional."
+    },
+    {
+      "title": "Personalized zero‑layer home that adapts to the driver and evolves via OTA updates",
+      "description": "The HMI surfaces each driver's most used functions on the home screen automatically (or via simple customization) and allows the OEM to refine the layout through over‑the‑air updates so the system becomes more efficient for each driver over time.",
+      "acceptance_criterion": "In a 2‑week user trial after personalization/learning, ≥80% of drivers reach their top 4 most used functions in ≤1 tap from the home screen; an OTA update can change the home layout and be installed successfully on ≥98% of trial vehicles without user intervention.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-WEB-09",
+        "SIG-F70-EU-WEB-01",
+        "SIG-F70-EU-003"
+      ],
+      "assumptions": [
+        "Centralized compute and OTA infrastructure are available for the successor platform between 2028–2031 as industry analyses predict.",
+        "Customers opt in to personalization and OTA updates and data privacy consents are obtained per EU requirements."
+      ],
+      "uncertainties": [
+        "Regulatory and privacy constraints could limit the level of personalization or remote changes available at launch.",
+        "Effectiveness depends on quality of usage data and algorithms to infer top functions without intrusive prompts."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": "A forward‑looking customer outcome built from industry trend signals about software‑defined vehicles and personalization capability."
+    },
+    {
+      "title": "Use OTA‑driven product iteration to raise connected services satisfaction",
+      "description": "Customers experience continuously improving connected services through regular, non‑disruptive OTA updates that increase reliability, usability and perceived value compared with the current baseline.",
+      "acceptance_criterion": "After a 6‑month in‑market OTA cadence (at least 3 functional updates), average connected services satisfaction in an EU study rises from 7.4 to ≥8.0 for the tested cohort.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-WEB-09",
+        "SIG-F70-EU-045"
+      ],
+      "assumptions": [
+        "OTA infrastructure, agreements and content pipelines are in place to deliver meaningful functional updates at least quarterly.",
+        "Customers in the study opt in to receive updates and participate in the satisfaction measurement."
+      ],
+      "uncertainties": [
+        "Measured satisfaction depends on update quality and perceived value; poor updates could harm satisfaction.",
+        "External dependencies (third‑party services, mobile networks) may limit achievable improvement."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": "Trend‑based bet: uses the identified industry shift to software‑defined vehicles to target a measurable customer outcome for connected services."
+    }
+  ]
+}

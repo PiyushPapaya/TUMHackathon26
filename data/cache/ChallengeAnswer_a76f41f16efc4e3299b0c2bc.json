@@ -1,0 +1,14 @@
+{
+  "answer": "Main arguments against: customer preferences vary (some will still prefer full touchscreen) and HMI changes may require center-stack redesign that affects packaging/aesthetics—both are implementation/trade-off risks rather than reasons to abandon the goal. The US feedback and study consistently show vents/controls are hard to find and distracting, so little else speaks against pursuing this requirement.",
+  "supporting_evidence_ids": [
+    "SIG-G60-US-030",
+    "EV-G60-US-FB-G60-0740",
+    "EV-G60-US-FB-G60-1594",
+    "EV-G60-US-FB-G60-2989",
+    "EV-G60-US-FB-G60-1157",
+    "EV-G60-US-FB-G60-0782",
+    "EV-G60-US-ST-48"
+  ],
+  "counter_evidence_ids": [],
+  "suggested_change": null
+}

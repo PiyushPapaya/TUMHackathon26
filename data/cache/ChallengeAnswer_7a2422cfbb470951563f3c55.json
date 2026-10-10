@@ -1,0 +1,14 @@
+{
+  "answer": "Unclear. All cited signals and feedback (SIG-G60-US-030, EV-G60-US-*) are from the US — customers report vents hard to find and 15% dissatisfaction in the US study — but no evidence is provided for other markets. You cannot conclude this is US-only without cross-market data; it may be broader or limited to the US.",
+  "supporting_evidence_ids": [
+    "SIG-G60-US-030",
+    "EV-G60-US-FB-G60-0740",
+    "EV-G60-US-FB-G60-1594",
+    "EV-G60-US-FB-G60-2989",
+    "EV-G60-US-FB-G60-1157",
+    "EV-G60-US-FB-G60-0782",
+    "EV-G60-US-ST-48"
+  ],
+  "counter_evidence_ids": [],
+  "suggested_change": "Clarify scope: require the acceptance criterion to be validated in additional target markets (e.g., EU, China) or explicitly state this requirement applies to the US only; conduct cross-market usability studies before globalizing the spec."
+}

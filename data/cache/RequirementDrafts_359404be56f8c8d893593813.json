@@ -1,0 +1,474 @@
+{
+  "drafts": [
+    {
+      "title": "Operate essential climate, audio and hazard controls without touching the central screen",
+      "description": "While driving, the customer can change temperature, fan level, volume and hazard/defrost quickly using dedicated physical controls or steering‑wheel shortcuts so they never need to navigate touchscreen menus for basic tasks.",
+      "acceptance_criterion": "In a driving usability test, drivers must be able to change cabin temperature by ±3°C, change fan speed by at least 2 levels and change audio volume by at least 5 dB within 2 seconds using non‑touchscreen controls in 95% of trials.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-003",
+        "SIG-F70-EU-028",
+        "SIG-F70-EU-015",
+        "SIG-F70-EU-004"
+      ],
+      "assumptions": [
+        "Physical actuators (buttons/knobs/steering buttons) or tactile controls are available and mapped to these functions by default.",
+        "The 2 second target reflects typical driver reaction/operation time and is achievable with well‑designed physical controls."
+      ],
+      "uncertainties": [
+        "Some customers may prefer fully touch‑based operation; design must balance fewer controls with discoverability.",
+        "Exact control locations and tactile design will affect whether the 2s target is met."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Customer-facing usability requirement."
+    },
+    {
+      "title": "Infotainment, navigation and driver‑assist software that is simple, stable and keeps features after updates",
+      "description": "Customers experience a responsive, intuitive infotainment and navigation system that does not lose features after updates, does not require mandatory app registration for core navigation, and recovers reliably from faults.",
+      "acceptance_criterion": "After any regular OTA or dealer update, >=99% of vehicles retain previously available driver assistance and nav features for at least 90 days; core sat‑nav routing functions work without mandatory app registration and offline map-based routing continues to provide basic guidance for at least 1,000 km of mapped driving without connectivity.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-004",
+        "SIG-F70-EU-020",
+        "SIG-F70-EU-023",
+        "SIG-F70-EU-011",
+        "SIG-F70-EU-015",
+        "SIG-F70-EU-045"
+      ],
+      "assumptions": [
+        "OTA infrastructure with version control and rollback will be available to push stable updates.",
+        "Offline map data up to 1,000 km of typical regional coverage can be provided on‑board or via periodic map downloads."
+      ],
+      "uncertainties": [
+        "Third‑party map/licence constraints or app ecosystems in some markets might limit what 'core' features can be offered without app registration.",
+        "Measuring feature loss requires clear definition of what counts as a 'feature' across markets."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Customer outcome about software stability and navigation access."
+    },
+    {
+      "title": "Play audio from USB sticks and provide usable USB ports for playback and charging",
+      "description": "Customers can plug in common USB sticks and have their music play reliably; front and rear USB ports support both audio playback and phone charging.",
+      "acceptance_criterion": "Vehicle recognises and begins playback from a standard FAT32 USB stick containing MP3, AAC and FLAC files within 10 seconds in 95% of trials; at least two USB ports (one front, one rear) provide USB‑data playback support and 5V/2.4A charging.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-029"
+      ],
+      "assumptions": [
+        "Common audio file formats (MP3, AAC, FLAC) cover the majority of customer libraries.",
+        "10 second recognition time is measurable from plug‑in to first audio output."
+      ],
+      "uncertainties": [
+        "Very large libraries or deeply nested folders on a stick may increase recognition time.",
+        "File system and codec licensing may limit supported formats in some markets."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Direct customer functionality requirement."
+    },
+    {
+      "title": "Key and digital‑key functions that feel high quality and reliably load driver preferences",
+      "description": "Customers experience a robust, premium physical key and reliable digital‑key behaviour: pairing a key loads the driver’s seating/mirror/climate profile quickly and the locking system behaves predictably.",
+      "acceptance_criterion": "When using a paired digital key, the car must load the associated driver profile (seat, mirror and climate presets) within 5 seconds in 99% of verified pairing attempts; physical key and digital key operations (lock/unlock) must not produce unintended locking or alarm events in more than 0.1% of 10,000 cycles.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-F70-EU-019"
+      ],
+      "assumptions": [
+        "Profiles are stored locally and/or in the cloud with fallback to ensure <5s load time.",
+        "Cycle reliability targets are measured across temperature ranges representative of EU markets."
+      ],
+      "uncertainties": [
+        "Interoperability between phone OS versions and digital key standards may affect real‑world reliability.",
+        "User setup errors could be mistaken for system faults in some reports."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Customer-facing reliability and quality requirement."
+    },
+    {
+      "title": "A practical boot with reliable opening/closing and useful load‑securing points",
+      "description": "Customers can load everyday luggage easily: the boot has sufficient usable volume for typical weekly shopping and luggage, electric or reliable key‑operated tailgate options, and practical fittings to secure cargo.",
+      "acceptance_criterion": "Standard (non‑hybrid) variants provide usable boot volume >= 380 litres; hybrid variants provide >= 320 litres usable volume; tailgate opens/closes (manual or electric) reliably in 99% of 1,000 opening/closing cycles and the boot includes at least two fixed tie‑down points and a recessed luggage area to fit a 55×40×20 cm cabin bag laid flat.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-F70-EU-022",
+        "SIG-F70-EU-025"
+      ],
+      "assumptions": [
+        "Usable boot volume is measured to industry standard (packaging method similar to OEM trunk tests).",
+        "Current BMW 1 Series baseline is approximately 380 L for non‑hybrid variants; hybrid battery packaging reduces usable volume."
+      ],
+      "uncertainties": [
+        "Exact usable volume depends on variant packaging and spare‑wheel configurations.",
+        "Customers’ expectations of 'practical' layouts vary by use case."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Direct customer experience of load space and reliability."
+    },
+    {
+      "title": "Seats that are consistently comfortable, supportive and durable for long journeys",
+      "description": "Customers experience seats that provide good lumbar and thigh support for long drives, are easy to adjust and do not show early wear, creases or squeaks.",
+      "acceptance_criterion": "In a standardized 2‑hour long‑drive user study, seats must achieve an average comfort/lumbar support rating >=8/10 across 90% of participants; in fleet quality tracking, defects related to stitching, creaks, seat‑motor faults or belt failures must be below 1% within the first 24 months.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-F70-EU-009",
+        "SIG-F70-EU-008",
+        "SIG-F70-EU-036"
+      ],
+      "assumptions": [
+        "User study uses representative demographic mix and typical European route profiles.",
+        "Quality tracking is based on dealership and warranty reports aggregated over a representative fleet."
+      ],
+      "uncertainties": [
+        "Subjective comfort scoring can vary with occupant size and personal preference.",
+        "Optional sport seats may not meet the same comfort ratings as standard seats and should be scored separately."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Customer-facing comfort and quality target."
+    },
+    {
+      "title": "Brake feel that is progressive and predictable, with adjustable regenerative braking",
+      "description": "Customers feel confident braking: pedal response is linear and intuitive, with adjustable regen levels so drivers can choose a conventional or one‑pedal feel as desired.",
+      "acceptance_criterion": "In a standard 80→0 km/h braking test and a 50→0 urban test, 90% of test drivers must rate brake modulation as 'progressive' versus a control vehicle; regenerative braking must offer at least three settings (including 'off') and drivers can select their preferred setting within 3 seconds while driving.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-026"
+      ],
+      "assumptions": [
+        "Subjective driver ratings are collected from a representative panel using a control vehicle baseline.",
+        "Regen settings are available across hybrid/EV variants; for ICE variants regen setting is not applicable."
+      ],
+      "uncertainties": [
+        "Different drivers have different braking expectations; calibration must balance city and motorway preferences.",
+        "Hardware constraints on brake‑by‑wire may limit the achievable feel in some variants."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Customer-perceived braking behaviour requirement."
+    },
+    {
+      "title": "Engines, transmissions and drive modes that feel responsive and shift smoothly in everyday driving",
+      "description": "Customers experience prompt throttle response, smooth gear changes and drive modes that enhance, not degrade, everyday drivability—no jerky starts, slow downshifts or inconsistent torque delivery.",
+      "acceptance_criterion": "In repeated real‑world tests (1000 city start/stop cycles and highway acceleration sequences), throttle response delay must be <=200 ms on average and no more than 3% of shifts may exhibit jerking/hopping; drive‑mode changes must not increase jerky behavior and 90% of test drivers must rate shifting behaviour as 'smooth' or better.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-005",
+        "SIG-F70-EU-016",
+        "SIG-F70-EU-024",
+        "SIG-F70-EU-021",
+        "SIG-F70-EU-037",
+        "SIG-F70-EU-044"
+      ],
+      "assumptions": [
+        "Tests are performed on representative powertrain variants (base and midrange petrol/diesel/hybrid) in typical European conditions.",
+        "The 200 ms response target is measurable from pedal input to engine torque delivery."
+      ],
+      "uncertainties": [
+        "Tuning trade‑offs between economy, emissions and responsiveness may affect achievable response times for some engine variants.",
+        "Software calibrations post‑launch may be needed to refine behavior."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Direct customer experience across powertrains and driving modes."
+    },
+    {
+      "title": "Tyres that provide quiet ride and confident wet grip, with aftermarket availability",
+      "description": "Customers experience low tyre noise and secure grip in wet conditions, and can source replacements easily.",
+      "acceptance_criterion": "Measured exterior tyre noise at 80 km/h must be ≤72 dB (ISO test); wet braking from 80 km/h must be ≤32 m to a full stop in standard wet‑lane test; OEM tyre model(s) must be listed and available through dealer network for at least 36 months after launch.",
+      "category": "exterior",
+      "signal_ids": [
+        "SIG-F70-EU-017"
+      ],
+      "assumptions": [
+        "Noise target references standard lab measurement (ISO 362).",
+        "Wet braking target corresponds to competitive compact premium benchmarks."
+      ],
+      "uncertainties": [
+        "Tyre noise and grip depend on wheel size and optional equipment; targets apply to factory‑specified tyre/wheel combinations.",
+        "Market tyre supply chains can change availability independent of OEM intent."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Customer outcome on ride noise and safety."
+    },
+    {
+      "title": "Exterior mirrors designed to minimise blind spots and avoid distracting reflections",
+      "description": "Customers have clear visibility from the mirrors with reduced blind spots and no distracting reflections of interior displays or lights at night.",
+      "acceptance_criterion": "In standardized lane‑change tests, blind‑spot detection must correctly identify 95% of passing vehicles; in a nighttime reflection lab test, mirror reflectance and layout must avoid direct instrument panel reflections into the driver’s line of sight in 95% of common seating positions.",
+      "category": "exterior",
+      "signal_ids": [
+        "SIG-F70-EU-027",
+        "SIG-F70-EU-041"
+      ],
+      "assumptions": [
+        "Blind‑spot detection performance is measured with the vehicle’s mirror geometry and driver position representative of EU drivers.",
+        "Reflection testing uses a set of common instrument panel luminance and cabin lighting conditions."
+      ],
+      "uncertainties": [
+        "Physical mirror geometry trade‑offs versus aerodynamics and styling may constrain the achievable blind‑spot area reduction.",
+        "Driver height and seating position variability can affect perceived reflections."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Driver visibility customer outcome."
+    },
+    {
+      "title": "Instrument cluster that is reliable, easy to read and free of crashes or distracting glare",
+      "description": "Customers rely on a stable instrument display that does not crash, freeze or cause distracting glare across common driving conditions.",
+      "acceptance_criterion": "No full‑screen instrument display crash or complete function loss in a fleet of 1,000 vehicles over 12 months; anti‑glare performance must keep reflected instrument luminance below a perceptible‑glare threshold in standard night tests for 95% of seating positions.",
+      "category": "interior",
+      "signal_ids": [
+        "SIG-F70-EU-018"
+      ],
+      "assumptions": [
+        "Crash/failure measurement is aggregated from field reports and diagnostic telemetry.",
+        "Perceptible‑glare threshold is defined by industry light measurement standards used in visibility testing."
+      ],
+      "uncertainties": [
+        "Software crashes may be caused by third‑party apps or phone integrations; isolating root cause requires telemetry.",
+        "Measuring 'perceptible glare' has subjective elements; lab thresholds mitigate variability."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Customer-facing reliability and visibility requirement."
+    },
+    {
+      "title": "Independent and effective climate control with easy physical access",
+      "description": "Customers can set independent temperatures for driver and passenger using dedicated controls and the HVAC maintains comfort quickly and quietly.",
+      "acceptance_criterion": "Dual‑zone independent setpoints must be adjustable via physical controls without entering touchscreen menus; HVAC must achieve and hold each setpoint within ±1.5°C within 5 minutes in a +35°C ambient test and within 10 minutes in a -5°C ambient test; cabin HVAC noise must score >=7/10 in perceived noise tests.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-F70-EU-030",
+        "SIG-F70-EU-028"
+      ],
+      "assumptions": [
+        "Tests run with typical vehicle occupancy and standard solar load conditions.",
+        "Physical controls provide direct access to setpoints or a clearly labelled tactile interface."
+      ],
+      "uncertainties": [
+        "Optional single‑zone configurations may remain in lower trim levels; acceptance applies to vehicles equipped with dual‑zone climate control."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Customer comfort and operability requirement."
+    },
+    {
+      "title": "Keep and improve ride comfort and handling balance customers love today",
+      "description": "Customers should continue to find the 1 Series smooth, comfortable and engaging to drive; the successor must retain or improve the current balance of cushioning and composure across EU roads.",
+      "acceptance_criterion": "In standardized EU road trials and blind user panels, at least 90% of participants must rate the successor 'same or better' for ride comfort and handling compared with the current model baseline across urban, rural and motorway tests.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-001",
+        "SIG-F70-EU-002",
+        "SIG-F70-EU-006",
+        "SIG-F70-EU-031",
+        "SIG-F70-EU-035",
+        "SIG-F70-EU-038"
+      ],
+      "assumptions": [
+        "Baseline comparison uses current F70 model instrumented test data and matched tyre/wheel configurations.",
+        "User panel is representative of typical EU 1 Series customers."
+      ],
+      "uncertainties": [
+        "Ride preferences vary by driver; exact tuning may require region‑specific options (suspension packages, wheels)."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Keep/strengthen a known customer delight."
+    },
+    {
+      "title": "Retain attractive sporty exterior design while improving exterior quality and fit‑finish",
+      "description": "Customers continue to see a sporty, classy exterior that turns heads, while build quality issues are reduced so paint/trim/fit problems are rare.",
+      "acceptance_criterion": "In customer styling surveys, exterior design must score >=8/10; in warranty/quality tracking, exterior defects (paint, trim, panel gaps) must be <1% of vehicles in the first 24 months.",
+      "category": "exterior",
+      "signal_ids": [
+        "SIG-F70-EU-007",
+        "SIG-F70-EU-033"
+      ],
+      "assumptions": [
+        "Styling scores are collected from a representative sample of prospective buyers and owners.",
+        "Quality targets are measured from dealer warranty and quality campaigns."
+      ],
+      "uncertainties": [
+        "Perceptions of styling are subjective; objective improvements in fit/finish may not change personal taste."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Customer-facing appearance and quality requirement."
+    },
+    {
+      "title": "Natural engine acoustics and high‑quality cabin audio without intrusive synthetic engine sounds by default",
+      "description": "Customers hear a natural engine note (or silence in electrified variants) and experience clean, distortion‑free audio; any synthetic engine sound is optional and off by default.",
+      "acceptance_criterion": "Synthesized engine sound must be off by default; if enabled it must be user‑configurable and removable. Audio system must achieve total harmonic distortion (THD) <1% at normal listening levels and pass a blind listening panel preference test where >=80% of participants prefer the natural/specified sound over the default synthetic sound.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-014",
+        "SIG-F70-EU-040",
+        "SIG-F70-EU-WEB-05"
+      ],
+      "assumptions": [
+        "THD measurement uses standard audio engineering practice at 1 kHz and typical cabin volumes.",
+        "Blind listening panel uses representative music and driving sounds across multiple listeners."
+      ],
+      "uncertainties": [
+        "Some customers will prefer synthetic enhancement in sport modes; offering it as optional is a design choice.",
+        "EVs naturally have different perceptual expectations for engine sound than ICE cars."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Customer perceptual requirement about sound and audio quality."
+    },
+    {
+      "title": "Exterior lighting that provides good visibility without unpleasant glare",
+      "description": "Customers experience clear night visibility from the headlamps and do not complain about flicker, uneven beams or distracting glare from exterior lights.",
+      "acceptance_criterion": "Headlamp beam pattern must meet EU visibility and glare regulations and achieve a customer night visibility score >=8/10 in standardized nighttime road tests; no more than 0.5% of vehicles report lighting faults in first 12 months.",
+      "category": "exterior",
+      "signal_ids": [
+        "SIG-F70-EU-032"
+      ],
+      "assumptions": [
+        "Night visibility score is measured in a blind panel using standardized routes.",
+        "Beam performance follows current regulatory test methods and aims to exceed competitor benchmarks."
+      ],
+      "uncertainties": [
+        "Optional adaptive lighting packages may have different user expectations and must be validated separately."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Customer safety and satisfaction requirement for lighting."
+    },
+    {
+      "title": "Next‑generation EV real‑world range target aligned with customer expectations",
+      "description": "For the upcoming EV variant, customers should get a real‑world usable driving range comparable to top market expectations in the late 2020s so charging is infrequent and convenient.",
+      "acceptance_criterion": "EV variant real‑world driving range must be >=465 km on a standardized mixed driving cycle (representative EU route and ambient 23°C) as measured in pre‑production validation.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-F70-EU-WEB-08",
+        "SIG-F70-EU-043"
+      ],
+      "assumptions": [
+        "Battery cell energy density and pack packaging improve in line with current late‑2020s industry trends (e.g., pack gravimetric energy >140 Wh/kg at cell level enabling ~75 kWh usable pack in a compact package).",
+        "Real‑world test follows an agreed industry mixed driving profile and uses typical accessory loads (HVAC off in 23°C)."
+      ],
+      "uncertainties": [
+        "Actual achievable range depends on final vehicle weight, aerodynamics, wheel/tyre choice and accessory electrical loads.",
+        "Regulatory or supply constraints on cell chemistry could affect achievable pack capacity at launch."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": "Customer expectation for EV range in successor generation."
+    },
+    {
+      "title": "Next‑generation software‑defined HMI and OTA personalization while maintaining stability",
+      "description": "Customers benefit from centralized compute allowing frequent, secure OTA improvements and personalized HMI that surface key functions without increasing instability or feature loss.",
+      "acceptance_criterion": "HMI updates delivered OTA must have a successful install rate >=99% with automatic rollback on failure; a measured reduction in menu dives for core controls must be >=50% in an HMI usability study after personalization features are enabled.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-WEB-09",
+        "SIG-F70-EU-004",
+        "SIG-F70-EU-011",
+        "SIG-F70-EU-015"
+      ],
+      "assumptions": [
+        "Centralized compute and sufficient connectivity exist in successor architecture to support OTA and personalization at launch.",
+        "Usability study defines 'menu dive' consistently and measures reductions vs a baseline experience."
+      ],
+      "uncertainties": [
+        "Regulatory or regional connectivity limitations could restrict OTA cadence in some markets.",
+        "Personalization must be designed to avoid creating fragmentation that complicates support and diagnosis."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": "Customer-facing bet on SDV and OTA capabilities."
+    },
+    {
+      "title": "Offer conditional automated driving (Level 3) on motorways where regulation allows",
+      "description": "Customers can use a validated conditional automated driving mode on suitable motorways to reduce driver workload at higher speeds while safety and takeover behaviour meet strict validation criteria.",
+      "acceptance_criterion": "Where law permits, a conditional automated driving feature operates up to 95 km/h and passes independent safety validation; in user tests driver takeover requests are acknowledged and responded to within 5 seconds in at least 95% of scenarios.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SIG-F70-EU-WEB-11",
+        "SIG-F70-EU-034",
+        "SIG-F70-EU-012"
+      ],
+      "assumptions": [
+        "Regulatory approval for Level 3 functionality in targeted launch markets is obtained before customer release.",
+        "The vehicle is equipped with the necessary sensor suite and redundant compute to meet safety validation requirements."
+      ],
+      "uncertainties": [
+        "Time to regulatory approval and market acceptance may vary widely between EU member states.",
+        "Customer understanding of system limits and human factors will influence safe operation and satisfaction."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": "Forward-looking customer feature bet tied to industry trend."
+    },
+    {
+      "title": "Next‑generation packaging: increase rear passenger space and boot practicality on EV architecture",
+      "description": "Customers experience noticeably more rear legroom and a more practical boot in the EV‑based successor owing to longer wheelbase and revised packaging.",
+      "acceptance_criterion": "EV variant provides at least 50 mm more rear knee room than the current model baseline and usable boot volume >=450 litres in the standard configuration as validated in packaging tests.",
+      "category": "interior",
+      "signal_ids": [
+        "SIG-F70-EU-WEB-10",
+        "SIG-F70-EU-042",
+        "SIG-F70-EU-022"
+      ],
+      "assumptions": [
+        "Neue Klasse or equivalent EV architecture with a longer wheelbase is adopted for the EV variant enabling the stated dimensional improvements.",
+        "Usable boot volume measured with the same methodology used for today's baseline models."
+      ],
+      "uncertainties": [
+        "Actual gains depend on final architecture choices, battery placement and bumper/underfloor packaging.",
+        "Some non‑EV variants may not achieve the same gains; this requirement targets the EV variant specifically."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": "Customer expectation from EV packaging trends in successor generation."
+    }
+  ]
+}

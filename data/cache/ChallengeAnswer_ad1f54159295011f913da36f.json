@@ -1,0 +1,19 @@
+{
+  "answer": "No. The evidence shows this is an EU problem: two EU complaint signals plus multiple EU owner feedback items and an EU study report reduced boot space (hybrid battery impact), unreliable tailgate operation and missing internal shut button — so it is not only a US issue.",
+  "supporting_evidence_ids": [
+    "SIG-F70-EU-022",
+    "SIG-F70-EU-025",
+    "EV-F70-EU-FB-F70-0377",
+    "EV-F70-EU-FB-F70-1039",
+    "EV-F70-EU-FB-F70-0942",
+    "EV-F70-EU-FB-F70-1535",
+    "EV-F70-EU-FB-F70-0961",
+    "EV-F70-EU-ST-29",
+    "EV-F70-EU-FB-F70-1236",
+    "EV-F70-EU-FB-F70-0278",
+    "EV-F70-EU-FB-F70-0955",
+    "EV-F70-EU-FB-F70-1231"
+  ],
+  "counter_evidence_ids": [],
+  "suggested_change": null
+}

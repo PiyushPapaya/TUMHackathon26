@@ -1,0 +1,20 @@
+{
+  "answer": "Main points against the requirement: hybrid/EV battery packaging already reduces usable boot volume, so the “all production variants” suitcase fit may be unachievable; multiple customer complaints document small/cramped boots and missing practical fittings (tie‑downs). There are frequent reports of unreliable tailgate operation and absence of an internal shut button, suggesting the 99%/1% reliability targets may be optimistic without engineering changes. Little in the evidence argues the need is smaller.",
+  "supporting_evidence_ids": [
+    "SIG-F70-EU-022",
+    "SIG-F70-EU-025",
+    "EV-F70-EU-FB-F70-0377",
+    "EV-F70-EU-FB-F70-0942",
+    "EV-F70-EU-FB-F70-1535",
+    "EV-F70-EU-FB-F70-0961",
+    "EV-F70-EU-FB-F70-1236",
+    "EV-F70-EU-FB-F70-0278",
+    "EV-F70-EU-FB-F70-0955",
+    "EV-F70-EU-FB-F70-1231",
+    "EV-F70-EU-ST-29"
+  ],
+  "counter_evidence_ids": [
+    "EV-F70-EU-FB-F70-1039"
+  ],
+  "suggested_change": "Allow documented per‑variant exceptions for hybrid/EV packaging: if a marketed variant cannot meet the suitcase-fit criterion due to battery packaging, permit an exception provided the limitation is disclosed in sales materials and dealers, and require either (a) a defined alternative (e.g. included/optional cargo solutions or fold-flat seat spec) or (b) engineering changes. Also relax owner-reported fault threshold to ≤2% within 24 months or require a mitigation plan if 99% durability cannot be demonstrated for a given variant."
+}

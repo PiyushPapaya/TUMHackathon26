@@ -1,0 +1,14 @@
+{
+  "answer": "Unclear. All supplied signals and evidence (SIG-G60-US-030; EV-G60-US-FB-G60-0740, EV-G60-US-FB-G60-1594, EV-G60-US-FB-G60-2989, EV-G60-US-FB-G60-1157, EV-G60-US-FB-G60-0782, EV-G60-US-ST-48) are from the US: multiple customer complaints and a US study (15% dissatisfied) show a US need, but no non‑US data are provided, so we can’t conclude whether the problem is limited to the US or is global.",
+  "supporting_evidence_ids": [
+    "SIG-G60-US-030",
+    "EV-G60-US-FB-G60-0740",
+    "EV-G60-US-FB-G60-1594",
+    "EV-G60-US-FB-G60-2989",
+    "EV-G60-US-FB-G60-1157",
+    "EV-G60-US-FB-G60-0782",
+    "EV-G60-US-ST-48"
+  ],
+  "counter_evidence_ids": [],
+  "suggested_change": "Clarify scope: require equivalent on‑road usability trials in other target markets or state that the acceptance criterion applies only to the US. E.g., \"Run the same trials in each target market (US, EU, China) and meet the criterion per market, or explicitly limit the requirement to the US.\""
+}

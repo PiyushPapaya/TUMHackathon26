@@ -1,0 +1,20 @@
+{
+  "answer": "Partly. Multiple customer complaints and a luggage-capacity study show hybrid packaging reduces usable boot space and tailgate operation is often unreliable or missing an internal shut button, so the requirement is justified but may be infeasible for every variant without adjustments; one neutral feedback notes good trunk space in some cars, so the need isn’t universal.",
+  "supporting_evidence_ids": [
+    "SIG-F70-EU-022",
+    "SIG-F70-EU-025",
+    "EV-F70-EU-FB-F70-0377",
+    "EV-F70-EU-FB-F70-0942",
+    "EV-F70-EU-ST-29",
+    "EV-F70-EU-FB-F70-1535",
+    "EV-F70-EU-FB-F70-0961",
+    "EV-F70-EU-FB-F70-1236",
+    "EV-F70-EU-FB-F70-0278",
+    "EV-F70-EU-FB-F70-0955",
+    "EV-F70-EU-FB-F70-1231"
+  ],
+  "counter_evidence_ids": [
+    "EV-F70-EU-FB-F70-1039"
+  ],
+  "suggested_change": "Allow variant-specific acceptance: require the suitcase criterion for non‑hybrid variants; for hybrid/EV variants where packaging prevents this, mandate documented customer communication of limitations and require alternative mitigations (clearly accessible internal shut control and practical tie-downs) rather than strict pass/fail across all variants."
+}
