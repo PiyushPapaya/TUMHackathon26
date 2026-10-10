@@ -54,8 +54,8 @@ export function RequirementDetailView({
           <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Description</h2>
           <p className="mt-2 text-foreground">{requirement.description}</p>
         </div>
-        <div className="rounded-lg border border-accent/30 dark:border-accent/40 bg-accent/5 dark:bg-accent/10 p-5">
-          <p className="text-xs font-semibold uppercase tracking-wide text-accent-hover dark:text-accent">
+        <div className="theme-dark-fixed rounded-lg border border-accent/30 bg-accent/5 p-5">
+          <p className="text-xs font-semibold uppercase tracking-wide text-accent-hover">
             Acceptance criterion
           </p>
           <p className="mt-2 font-semibold text-foreground">{requirement.acceptance_criterion}</p>
