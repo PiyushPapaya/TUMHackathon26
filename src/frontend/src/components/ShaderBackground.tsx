@@ -42,22 +42,22 @@ void main() {
   vec2 p = uv * 3.0;
 
   float n = 0.0;
-  n += noise(p + u_time * 0.05) * 0.6;
-  n += noise(p * 2.0 - u_time * 0.08) * 0.4;
+  n += noise(p + u_time * 0.35) * 0.6;
+  n += noise(p * 2.0 - u_time * 0.58) * 0.4;
 
   // Dunkles Navy als Basis; Hue wandert nur leicht, damit es Blau bleibt
   // und nicht wie ein Regenbogen-Effekt wirkt.
-  float hue = 0.62 + sin(u_time * 0.07) * 0.03;
-  float lightness = mix(0.08, 0.17, n);
+  float hue = 0.62 + sin(u_time * 0.4) * 0.03;
+  float lightness = mix(0.2, 0.6, n);
   vec3 color = hsv2rgb(vec3(hue, 0.7, lightness));
 
   // Heller diagonaler Balken, der über den Screen wandert (wrap-around für
   // nahtlose Wiederholung statt eines harten Sprungs am Rand).
   float diag = (uv.x + uv.y) * 0.5;
-  float barPos = fract(u_time * 0.08);
+  float barPos = fract(u_time * 0.06);
   float dist = abs(diag - barPos);
   dist = min(dist, 1.0 - dist);
-  float bar = smoothstep(0.05, 0.0, dist) * 0.3;
+  float bar = smoothstep(0.05, 0.0, dist) * 0.2;
   color += bar;
 
   gl_FragColor = vec4(color, 1.0);
