@@ -12,6 +12,8 @@ data/*
 !data/README.md
 # Bewusste Entscheidung (Piyush, 10.10.2026): BMW-Rohdateien liegen im Repo
 !data/raw/
+# Geprüfte Webantworten für die Offline-Demo (keine BMW-Daten); der volle Cache data/cache/ bleibt lokal
+!data/demo_cache/
 
 # ─── Lokale Einstellungen von Claude Code und Entire ─────────────────────
 .claude/settings.local.json

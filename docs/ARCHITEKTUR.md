@@ -70,8 +70,8 @@ flowchart LR
 
 | Dienst | Wofür | Ohne Netz |
 |---|---|---|
-| OpenAI Responses API (`OPENAI_MODEL`) | Befunde zusammenfassen, Anforderungen formulieren, Challenge | Cache in `data/cache/`, `DEMO_MODUS=true` |
-| OpenAI Websuche-Tool | externe Belege mit URL | Cache |
+| OpenAI Responses API (`OPENAI_MODEL`) | Befunde zusammenfassen, Anforderungen formulieren, Challenge | Cache in `data/cache/` (lokal), geprüfte Webantworten in `data/demo_cache/` (im Repo), `DEMO_MODUS=true` |
+| OpenAI Websuche-Tool | externe Belege mit URL | `data/demo_cache/` (Demo läuft ohne Netz) |
 
 ## Starten
 
