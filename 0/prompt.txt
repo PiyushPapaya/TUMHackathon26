@@ -1,0 +1,424 @@
+<pasted_content id="bc1a">
+Signal2Spec
+Overview
+Cockpit
+Insights
+Portfolio
+Evidence
+Audit trail
+Scenarios
+
+100%
+Signal2Spec.
+
+From customer voice to the next BMW.
+Open cockpit
+See how it works
+
+Scenario G60-US: 3,755 customer voices · 47 findings · 15 requirements, all from the live backend.
+
+01
+Listen.
+
+We read every customer voice: reviews, surveys, forums.
+
+    –
+customer voices
+
+02
+Find signals.
+
+Repeated complaints and unmet needs become findings, each with its source.
+
+    –
+findings
+
+03
+Prove it.
+
+Every requirement gets an evidence level from A (strong) to D (assumption).
+
+    –
+level A
+    –
+level B
+    –
+level C
+    –
+level D
+
+04
+Decide.
+
+Ranked, explained, auditable. Rank 1: Improve Too many touchscreens and menus make it hard for the successor.
+
+    –
+requirements
+
+Find your requirement.
+Ranked list
+
+Every proposal with score, evidence level and conflicts.
+Open list
+Evidence trail
+
+Click a row to see the voices, studies and sources behind it.
+See evidence
+What-if weights
+
+Change what matters and watch the ranking move.
+Try weights
+Audit trail
+
+Who decided what, when and why. Nothing is overwritten.
+Open audit
+Ask in your words
+
+Describe a focus in plain language. The lens re-ranks, you decide.
+Ask now
+Insights
+
+Evidence versus assumption, opportunities, 2030 trends and what we do not know.
+Explore insights
+Portfolio
+
+Which topics hold across models and markets, which do not.
+Compare markets
+Evidence browser
+
+Search every customer voice behind a proposal.
+Browse evidence
+BMW 5er Limousine (G60), US
+
+G60 · US
+The BMW 5er Limousine (G60) in the US.
+
+3,755 customer voices · 47 findings · 15 requirements
+Open in cockpit
+Discover
+BMW 1er (F70), EU
+
+F70 · EU
+The BMW 1er (F70) in the EU.
+
+1,525 customer voices · 51 findings · 15 requirements
+Open in cockpit
+Discover
+BMW 5er Limousine (G60), EU
+
+G60 · EU
+The BMW 5er Limousine (G60) in the EU.
+
+148 customer voices · 10 findings · 10 requirements
+Open in cockpit
+Discover
+
+G68 · CN
+The BMW 5er Langversion (G68) in the CN.
+
+37 customer voices · 3 findings · 3 requirements
+Open in cockpit
+Discover
+BMW 7er (G70), EU
+
+G70 · EU
+The BMW 7er (G70) in the EU.
+
+56 customer voices · 2 findings · 2 requirements
+Open in cockpit
+Discover
+BMW 7er (G70), US
+
+G70 · US
+The BMW 7er (G70) in the US.
+
+3,985 customer voices · 56 findings · 15 requirements
+Open in cockpit
+Discover
+Every decision leaves a trail.
+
+Approve, reject, edit or challenge a proposal. Each step is stored with person, time and reason, so the next review starts from facts.
+Audit trail
+Guide
+
+AI-generated content. Proposals are drafted by AI, and every claim cites evidence IDs you can open and check.
+
+Product
+How it works
+What you can do
+Scenarios
+
+Cockpit
+Ranked list
+Overview
+Insights
+Portfolio
+Evidence browser
+Audit trail
+
+Docs
+Guide
+
+Challenge
+BMW: AI for Product Decision Making
+
+Hackathon prototype for the TUM.ai × EHL BMW challenge. BMW is a trademark of BMW AG.
+1/2
+Next.js 16.4.0Turbopack
+Console Error
+A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+See more info here: https://nextjs.org/docs/messages/react-hydration-error
+client/server diff
++ Client- Server
+
+<html
+  lang="en"
+  className="hanken_grotesk_ad43da9c-module__zwqd8W__variable antialiased"
+- suppresshydrationwarning="true"
+- data-lt-installed="true"
+>
+
+app\layout.tsx (25:5) @ RootLayout
+
+  23 | export default function RootLayout({ children }: { children: React.ReactNode }) {
+  24 |   return (
+> 25 |     <html lang="en" className={`${hanken.variable} antialiased`}>
+     |     ^
+  26 |       <body className="min-h-screen" suppressHydrationWarning>
+  27 |         <ShellFrame>{children}</ShellFrame>
+  28 |       </body>
+
+Call Stack 17
+Show 15 ignore-listed frame(s)
+html
+unknown (0:0)
+RootLayout
+app\layout.tsx (25:5)
+</pasted_content id="bc1a">
+
+
+<pasted_content id="bc1a">
+Signal2Spec
+Overview
+Cockpit
+Insights
+Portfolio
+Evidence
+Audit trail
+Scenarios
+
+100%
+Signal2Spec.
+
+From customer voice to the next BMW.
+Open cockpit
+See how it works
+
+Scenario G60-US: 3,755 customer voices · 47 findings · 15 requirements, all from the live backend.
+
+01
+Listen.
+
+We read every customer voice: reviews, surveys, forums.
+
+    –
+customer voices
+
+02
+Find signals.
+
+Repeated complaints and unmet needs become findings, each with its source.
+
+    –
+findings
+
+03
+Prove it.
+
+Every requirement gets an evidence level from A (strong) to D (assumption).
+
+    –
+level A
+    –
+level B
+    –
+level C
+    –
+level D
+
+04
+Decide.
+
+Ranked, explained, auditable. Rank 1: Improve Too many touchscreens and menus make it hard for the successor.
+
+    –
+requirements
+
+Find your requirement.
+Ranked list
+
+Every proposal with score, evidence level and conflicts.
+Open list
+Evidence trail
+
+Click a row to see the voices, studies and sources behind it.
+See evidence
+What-if weights
+
+Change what matters and watch the ranking move.
+Try weights
+Audit trail
+
+Who decided what, when and why. Nothing is overwritten.
+Open audit
+Ask in your words
+
+Describe a focus in plain language. The lens re-ranks, you decide.
+Ask now
+Insights
+
+Evidence versus assumption, opportunities, 2030 trends and what we do not know.
+Explore insights
+Portfolio
+
+Which topics hold across models and markets, which do not.
+Compare markets
+Evidence browser
+
+Search every customer voice behind a proposal.
+Browse evidence
+BMW 5er Limousine (G60), US
+
+G60 · US
+The BMW 5er Limousine (G60) in the US.
+
+3,755 customer voices · 47 findings · 15 requirements
+Open in cockpit
+Discover
+BMW 1er (F70), EU
+
+F70 · EU
+The BMW 1er (F70) in the EU.
+
+1,525 customer voices · 51 findings · 15 requirements
+Open in cockpit
+Discover
+BMW 5er Limousine (G60), EU
+
+G60 · EU
+The BMW 5er Limousine (G60) in the EU.
+
+148 customer voices · 10 findings · 10 requirements
+Open in cockpit
+Discover
+
+G68 · CN
+The BMW 5er Langversion (G68) in the CN.
+
+37 customer voices · 3 findings · 3 requirements
+Open in cockpit
+Discover
+BMW 7er (G70), EU
+
+G70 · EU
+The BMW 7er (G70) in the EU.
+
+56 customer voices · 2 findings · 2 requirements
+Open in cockpit
+Discover
+BMW 7er (G70), US
+
+G70 · US
+The BMW 7er (G70) in the US.
+
+3,985 customer voices · 56 findings · 15 requirements
+Open in cockpit
+Discover
+Every decision leaves a trail.
+
+Approve, reject, edit or challenge a proposal. Each step is stored with person, time and reason, so the next review starts from facts.
+Audit trail
+Guide
+
+AI-generated content. Proposals are drafted by AI, and every claim cites evidence IDs you can open and check.
+
+Product
+How it works
+What you can do
+Scenarios
+
+Cockpit
+Ranked list
+Overview
+Insights
+Portfolio
+Evidence browser
+Audit trail
+
+Docs
+Guide
+
+Challenge
+BMW: AI for Product Decision Making
+
+Hackathon prototype for the TUM.ai × EHL BMW challenge. BMW is a trademark of BMW AG.
+2/2
+Next.js 16.4.0Turbopack
+Console Error
+A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+See more info here: https://nextjs.org/docs/messages/react-hydration-error
+client/server diff
++ Client- Server
+
+ height={undefined}
+ decoding="async"
+ data-nimg="fill"
++className={"object-cover "}
+-className="object-cover"
+-data-pblocker-observed="true"
+-data-pblocker-observed-src={"http://localhost:3000/_next/image?url=%2Fmedia%2Fposter.jpg&..."}
+-  data-pblocker-observed="true"
+-  data-pblocker-observed-src={"http://localhost:3000/_next/image?url=%2Fmedia%2Fsplit.jpg..."}
+ >
+
+src/components/home/MediaImage.tsx (16:5) @ MediaImage
+
+  14 |   if (failed || !available.includes(src)) return null;
+  15 |   return (
+> 16 |     <Image
+     |     ^
+  17 |       src={src}
+  18 |       alt={alt}
+  19 |       fill
+
+Call Stack 22
+Show 17 ignore-listed frame(s)
+img
+unknown (0:0)
+MediaImage
+src/components/home/MediaImage.tsx (16:5)
+Hero
+src/components/home/Hero.tsx (10:7)
+HomePage
+src/components/home/HomePage.tsx (25:7)
+Home
+app\page.tsx (29:10)
+</pasted_content id="bc1a">
