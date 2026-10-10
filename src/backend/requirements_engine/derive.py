@@ -52,8 +52,8 @@ Rules for every requirement:
   requirements (e.g. do not write three variants of "physical controls" from one signal).
   If two requirements would cite the same signal, merge them into one.
 - Signals that list each other in `conflicts_with` contradict each other (e.g. a praised display vs.
-  distracting touch controls). Never merge them into one requirement: give each side its own
-  requirement, so the product manager sees the conflict instead of an averaged answer.
+  distracting touch controls). Never average a conflict away: if one requirement cites both sides, it
+  must address both sides explicitly (e.g. keep the strength while fixing the weakness).
 - Every requirement must be directly supported by the signals it cites. Do not invent extra
   capabilities the signals never mention (e.g. an offline fallback from a charging complaint);
   put such ideas into `assumptions` or `uncertainties` instead.
@@ -63,7 +63,9 @@ Rules for every requirement:
   If a real customer outcome stands behind it, add a separate customer-facing requirement for that.
   Do not hide discarded drafts, we log them.
 - Use ONLY signal_ids from the input. Every requirement cites at least one signal.
-- effort is a rough guess: S, M or L. Aim for 8-15 requirements; bundle related signals."""
+- Cover EVERY complaint and unmet_need signal in at least one requirement (merge related ones, but
+  never drop a topic silently). Delights only need a keep-requirement when they are strong.
+- effort is a rough guess: S, M or L. Aim for 10-16 requirements."""
 
 
 class RequirementDraft(BaseModel):
@@ -131,6 +133,13 @@ def derive_all(
     return requirements, discarded
 
 
+def _conflict_notes(linked: list[Signal]) -> list[str]:
+    """Widersprechen sich zitierte Befunde, steht das als Unsicherheit da: sichtbar, egal was die KI schreibt."""
+    by_id = {s.id: s for s in linked}
+    pairs = {tuple(sorted((s.id, other))) for s in linked for other in s.conflicts_with if other in by_id}
+    return [f'Conflicting evidence: "{by_id[a].title}" vs. "{by_id[b].title}"' for a, b in sorted(pairs)[:3]]
+
+
 def _load_offer(context: dict) -> list[dict]:
     """Optionsliste lesen; fehlt oder kaputt, läuft die Pipeline ohne Abgleich weiter (Status unknown)."""
     path = context.get("option_list_path")
@@ -158,7 +167,7 @@ def _build(
         signal_ids=[s.id for s in linked], score=points, rank=0, score_breakdown=breakdown,
         rationale=f"{rationale_from(breakdown)} Evidence level {level.value}: {level_reason}",
         evidence_level=level, assumptions=draft.assumptions,
-        uncertainties=draft.uncertainties,
+        uncertainties=[*_conflict_notes(linked), *draft.uncertainties],
         offer_check=OfferCheck(status="unknown", note="Option list not checked yet (C5)."),
         effort=effort,
     )

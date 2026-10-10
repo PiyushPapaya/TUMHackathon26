@@ -23,3 +23,11 @@
 - **Wirkung:** 3 x A, 13 x B. HVAC-Bedienung (15 Nennungen, Studienlücke 0,60) liegt mit 47,2 knapp vor dem Touchscreen (47,0), also praktisch gleichauf.
 - **Geprüft:** `tests/pfad_c/test_evidence_level.py` (Grenzfälle 4/5/14/15 Nennungen, Web, eine Quelle).
 - **An Piyush:** in die Entscheidungstabelle von `docs/ARCHITEKTUR.md` eintragen.
+
+## Entscheidung Sa 10.10., Widersprüche und Abdeckung (Dennis, mit Claude)
+
+- **Was:** (1) Zitiert eine Anforderung Befunde, die sich widersprechen (`conflicts_with`), trägt der Code automatisch "Conflicting evidence: A vs. B" unter Unsicherheiten ein. (2) Der Prompt verlangt, jede Beschwerde und jeden Wunsch in mindestens einer Anforderung zu behandeln.
+- **Warum:** Aditya erkennt Konflikte nur grob (gleiche Kategorie, 22 von 45 Befunden betroffen). Der Prompt-Satz "nie verschmelzen" war dadurch nicht einzuhalten, die KI legte nachher sogar MEHR widersprechende Befunde zusammen (5 -> 7). Außerdem blieben nach der Änderung 10 von 30 Beschwerden ohne Anforderung (u. a. Start-Stopp, Spracherkennung).
+- **Verworfen:** Nur per Prompt trennen lassen (unwirksam); Konflikte im Code zusammenführen oder trennen (die KI soll formulieren, der Code macht sichtbar).
+- **Geprüft:** `tests/pfad_c/test_derive.py` (Widerspruch wird Unsicherheit, kein Duplikat, keine Zusatzzeile ohne Widerspruch), echter Lauf G60-US: 16 Anforderungen, 0 von 30 Beschwerden/Wünschen unbehandelt, 5 von 5 Anforderungen mit Widerspruch zeigen den Hinweis.
+- **Offen:** Die Konflikt-Erkennung von Pfad A ist grob (z. B. "Innenraum komfortabel" gegen "Heckklappe funktioniert nicht"). Aditya kann sie verfeinern.
