@@ -261,7 +261,7 @@ export default function RequirementsPage() {
           <section className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-surface p-5">
           <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Weight controls</h2>
           <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            Move sliders and press Apply weights. Empty rationale uses a demo rationale and still records WEIGHTS_CHANGED.
+            Move sliders and press Apply weights. Empty rationale uses a demo rationale and still records changed weights.
           </p>
           <div className="mt-4 grid gap-4">
             {(Object.keys(WEIGHT_LABELS) as WeightKey[]).map((key) => (
@@ -284,22 +284,6 @@ export default function RequirementsPage() {
               </label>
             ))}
           </div>
-          <label className="mt-4 grid gap-1 text-sm font-semibold text-zinc-700 dark:text-zinc-300">
-            Rationale
-            <textarea
-              className="min-h-24 rounded-sm border border-zinc-300 dark:border-zinc-700 px-3 py-2 font-normal text-foreground focus:border-accent focus:outline-none"
-              placeholder="Why should the prioritization change?"
-              value={rationale}
-              onChange={(event) => setRationale(event.target.value)}
-            />
-          </label>
-          <button
-            type="button"
-            onClick={() => setRationale(DEMO_RATIONALE)}
-            className="mt-2 min-h-11 rounded-sm border border-zinc-300 dark:border-zinc-700 bg-surface px-3 text-sm font-semibold text-foreground hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-          >
-            Use demo rationale
-          </button>
           <div className="mt-4 flex flex-wrap gap-2">
             <button
               type="button"
