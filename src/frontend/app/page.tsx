@@ -1,17 +1,15 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import {
   getExportUrl,
   getRequirements,
   getScenarios,
-  getSignals,
   type Requirement,
   type Scenario,
-  type Signal,
 } from "@/src/lib/api";
-import { categoryLabel, ConflictBadge, EvidenceBadge, StatusBadge } from "@/src/components/badges";
+import { categoryLabel } from "@/src/components/badges";
 import { ScoreBar } from "@/src/components/ScoreBar";
 
 const DEFAULT_SCENARIO_ID = "G60-US";
@@ -22,9 +20,11 @@ export default function RequirementsPage() {
   const [scenarios, setScenarios] = useState<Scenario[] | null>(null);
   const [scenarioId, setScenarioId] = useState<string>(DEFAULT_SCENARIO_ID);
   const [requirements, setRequirements] = useState<Requirement[] | null>(null);
-  const [signals, setSignals] = useState<Signal[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isFetching, setIsFetching] = useState(true);
+
+  const [promptText, setPromptText] = useState("");
+  const [promptNote, setPromptNote] = useState<string | null>(null);
 
   // Szenarien einmal laden; Standard bleibt G60-US, falls vorhanden, sonst erstes Szenario.
   useEffect(() => {
@@ -38,20 +38,16 @@ export default function RequirementsPage() {
       .catch((err: Error) => setError(err.message));
   }, []);
 
-  // Anforderungen + Befunde (für Konflikt-Check) neu laden bei Szenario-Wechsel.
+  // Anforderungen neu laden bei Szenario-Wechsel.
   useEffect(() => {
     if (!scenarioId) return;
     let cancelled = false;
     (async () => {
       setIsFetching(true);
       try {
-        const [loadedRequirements, loadedSignals] = await Promise.all([
-          getRequirements(scenarioId),
-          getSignals(scenarioId),
-        ]);
+        const loadedRequirements = await getRequirements(scenarioId);
         if (cancelled) return;
         setRequirements(loadedRequirements);
-        setSignals(loadedSignals);
         setError(null);
       } catch (err) {
         if (cancelled) return;
@@ -65,30 +61,22 @@ export default function RequirementsPage() {
     };
   }, [scenarioId]);
 
-  const signalsById = useMemo(() => {
-    const map = new Map<string, Signal>();
-    for (const signal of signals ?? []) map.set(signal.id, signal);
-    return map;
-  }, [signals]);
+  const isLoading = scenarios === null || isFetching || requirements === null;
 
-  /** Titel der gegensätzlichen Befunde, falls ein verknüpfter Befund `conflicts_with` hat. */
-  function conflictingTitlesFor(requirement: Requirement): string[] {
-    const titles: string[] = [];
-    for (const signalId of requirement.signal_ids) {
-      const signal = signalsById.get(signalId);
-      for (const otherId of signal?.conflicts_with ?? []) {
-        titles.push(signalsById.get(otherId)?.title ?? otherId);
-      }
-    }
-    return titles;
+  /** Platzhalter: Das Prompt-Feld ist noch nicht ans Backend angebunden (eigenes Ticket). */
+  function handlePromptSubmit() {
+    const text = promptText.trim();
+    if (!text) return;
+    console.log("[prompt submit - placeholder, not wired to backend yet]", text);
+    setPromptNote(`Received: "${text}" — not connected to the backend yet.`);
+    setPromptText("");
   }
 
-  const isLoading = scenarios === null || isFetching || requirements === null || signals === null;
-
   return (
-    <div className="min-h-screen bg-zinc-50">
-      <header className="border-b border-zinc-200 bg-white">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-5">
+    <div className="flex min-h-screen flex-col bg-zinc-50">
+      {/* Top bar: volle Breite, Platz für weitere Elemente später */}
+      <header className="w-full border-b border-zinc-200 bg-white">
+        <div className="flex flex-wrap items-center justify-between gap-4 px-6 py-4">
           <div>
             <h1 className="text-xl font-semibold text-[#0b1f3a]">Signal2Spec · PM Cockpit</h1>
             <p className="text-sm text-zinc-500">Prioritized requirements for product decisions</p>
@@ -121,37 +109,33 @@ export default function RequirementsPage() {
         </div>
       </header>
 
-      <main className="mx-auto max-w-6xl px-6 py-8">
-        {error && (
-          <div className="rounded-md border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-800">
-            {error}
-          </div>
-        )}
+      {/* Mitte: Ergebnis-Fenster, 1cm Abstand zu Rand, Top-Bar und Prompt-Leiste */}
+      <main className="m-[1cm] flex flex-1 flex-col">
+        <div className="flex-1 overflow-hidden rounded-lg border border-zinc-200 bg-white">
+          <div className="h-full overflow-auto">
+            {error && (
+              <div className="m-4 rounded-md border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-800">
+                {error}
+              </div>
+            )}
 
-        {!error && isLoading && <p className="text-sm text-zinc-500">Loading…</p>}
+            {!error && isLoading && <p className="p-4 text-sm text-zinc-500">Loading…</p>}
 
-        {!error && !isLoading && requirements !== null && requirements.length === 0 && (
-          <p className="text-sm text-zinc-500">No requirements for this scenario yet.</p>
-        )}
+            {!error && !isLoading && requirements !== null && requirements.length === 0 && (
+              <p className="p-4 text-sm text-zinc-500">No requirements for this scenario yet.</p>
+            )}
 
-        {!error && !isLoading && requirements !== null && requirements.length > 0 && (
-          <div className="overflow-hidden rounded-lg border border-zinc-200 bg-white">
-            <table className="w-full text-left text-sm">
-              <thead className="border-b border-zinc-200 bg-zinc-50 text-xs uppercase tracking-wide text-zinc-500">
-                <tr>
-                  <th className="px-4 py-3">Rank</th>
-                  <th className="px-4 py-3">Title</th>
-                  <th className="px-4 py-3">Score</th>
-                  <th className="px-4 py-3">Evidence</th>
-                  <th className="px-4 py-3">Category</th>
-                  <th className="px-4 py-3">Status</th>
-                  <th className="px-4 py-3">Conflict</th>
-                </tr>
-              </thead>
-              <tbody>
-                {requirements.map((req) => {
-                  const conflicts = conflictingTitlesFor(req);
-                  return (
+            {!error && !isLoading && requirements !== null && requirements.length > 0 && (
+              <table className="w-full text-left text-sm">
+                <thead className="border-b border-zinc-200 bg-zinc-50 text-xs uppercase tracking-wide text-zinc-500">
+                  <tr>
+                    <th className="px-4 py-3">Score</th>
+                    <th className="px-4 py-3">Title</th>
+                    <th className="px-4 py-3">Category</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {requirements.map((req) => (
                     <tr
                       key={req.id}
                       role="link"
@@ -165,29 +149,43 @@ export default function RequirementsPage() {
                       }}
                       className="cursor-pointer border-b border-zinc-100 last:border-0 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none"
                     >
-                      <td className="px-4 py-3 font-medium text-zinc-500">#{req.rank}</td>
-                      <td className="px-4 py-3 font-medium text-[#0b1f3a]">{req.title}</td>
                       <td className="px-4 py-3">
                         <ScoreBar score={req.score} />
                       </td>
-                      <td className="px-4 py-3">
-                        <EvidenceBadge level={req.evidence_level} reason={req.rationale} />
-                      </td>
+                      <td className="px-4 py-3 font-medium text-[#0b1f3a]">{req.title}</td>
                       <td className="px-4 py-3 text-zinc-700">{categoryLabel(req.category)}</td>
-                      <td className="px-4 py-3">
-                        <StatusBadge status={req.status} />
-                      </td>
-                      <td className="px-4 py-3">
-                        <ConflictBadge conflictingTitles={conflicts} />
-                      </td>
                     </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+                  ))}
+                </tbody>
+              </table>
+            )}
           </div>
-        )}
+        </div>
       </main>
+
+      {/* Unten: Prompt-Eingabe, 0.5cm Abstand zum Rand unten, 2cm links/rechts */}
+      <footer className="mx-[2cm] mb-[0.5cm] flex flex-col gap-2">
+        {promptNote && <p className="text-xs text-zinc-500">{promptNote}</p>}
+        <div className="flex items-center gap-3">
+          <input
+            type="text"
+            value={promptText}
+            onChange={(e) => setPromptText(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") handlePromptSubmit();
+            }}
+            placeholder="Ask about these requirements…"
+            className="flex-1 rounded-md border border-zinc-300 bg-white px-4 py-2 text-sm text-[#0b1f3a] focus:border-blue-500 focus:outline-none"
+          />
+          <button
+            type="button"
+            onClick={handlePromptSubmit}
+            className="rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+          >
+            Submit
+          </button>
+        </div>
+      </footer>
     </div>
   );
 }
