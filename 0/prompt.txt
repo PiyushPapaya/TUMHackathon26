@@ -1,0 +1,1 @@
+Im Lasse. Please change the table container so it becomes a scroll widget and doesnt expand the window if there are too many entries
