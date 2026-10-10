@@ -19,16 +19,16 @@ const KIND_LABELS: Record<string, string> = {
 
 function EvidenceItem({ evidence }: { evidence: Evidence }) {
   return (
-    <li className="rounded-md border border-zinc-200 bg-zinc-50 p-3 text-sm">
-      <p className="italic text-zinc-700">&ldquo;{evidence.text}&rdquo;</p>
-      <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-zinc-500">
-        <span className="font-medium text-zinc-600">{evidence.source_name}</span>
+    <li className="rounded-md border border-zinc-200 bg-zinc-50 p-3 text-sm dark:border-zinc-800 dark:bg-zinc-900">
+      <p className="italic text-zinc-700 dark:text-zinc-300">&ldquo;{evidence.text}&rdquo;</p>
+      <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+        <span className="font-medium text-zinc-600 dark:text-zinc-300">{evidence.source_name}</span>
         {evidence.url && (
           <a
             href={evidence.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 underline"
+            className="text-blue-600 underline dark:text-blue-400"
           >
             Link
           </a>
@@ -43,7 +43,7 @@ export function FindingCard({ signal, evidence }: { signal: Signal; evidence: Ev
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="rounded-lg border border-zinc-300 bg-white">
+    <div className="rounded-lg border border-zinc-300 bg-white dark:border-zinc-700 dark:bg-zinc-900">
       <button
         type="button"
         onClick={() => setOpen((value) => !value)}
@@ -51,22 +51,22 @@ export function FindingCard({ signal, evidence }: { signal: Signal; evidence: Ev
         className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left"
       >
         <div>
-          <p className="font-medium text-[#0b1f3a]">{signal.title}</p>
-          <p className="text-xs text-zinc-500">
+          <p className="font-medium text-[#0b1f3a] dark:text-zinc-100">{signal.title}</p>
+          <p className="text-xs text-zinc-500 dark:text-zinc-400">
             {KIND_LABELS[signal.kind] ?? signal.kind} · {signal.mention_count} mentions
           </p>
         </div>
-        <span className="text-lg leading-none text-zinc-400">{open ? "–" : "+"}</span>
+        <span className="text-lg leading-none text-zinc-400 dark:text-zinc-500">{open ? "–" : "+"}</span>
       </button>
 
       {open && (
-        <div className="border-t border-zinc-200 px-4 py-3">
-          <p className="mb-3 text-sm text-zinc-600">{signal.summary}</p>
+        <div className="border-t border-zinc-200 px-4 py-3 dark:border-zinc-800">
+          <p className="mb-3 text-sm text-zinc-600 dark:text-zinc-400">{signal.summary}</p>
 
           {signal.conflicts_with.length > 0 && (
             <p
               title={`Conflicting signal IDs: ${signal.conflicts_with.join(", ")}`}
-              className="mb-3 inline-flex items-center gap-1 rounded-full border border-yellow-300 bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-800"
+              className="mb-3 inline-flex items-center gap-1 rounded-full border border-yellow-300 bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-800 dark:border-yellow-800 dark:bg-yellow-950 dark:text-yellow-300"
             >
               ⚠ Conflicting evidence
             </p>
@@ -77,7 +77,7 @@ export function FindingCard({ signal, evidence }: { signal: Signal; evidence: Ev
               <EvidenceItem key={item.id} evidence={item} />
             ))}
             {evidence.length === 0 && (
-              <li className="text-sm text-zinc-400">No evidence linked.</li>
+              <li className="text-sm text-zinc-400 dark:text-zinc-500">No evidence linked.</li>
             )}
           </ul>
         </div>

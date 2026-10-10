@@ -39,18 +39,18 @@ function FactorRow({ label, factor }: { label: string; factor: ScoreFactor }) {
   return (
     <div className="py-2">
       <div className="flex flex-wrap items-baseline justify-between gap-x-3 text-sm">
-        <span className="font-medium text-[#0b1f3a]">{label}</span>
-        <span className="text-zinc-500">
+        <span className="font-medium text-[#0b1f3a] dark:text-zinc-100">{label}</span>
+        <span className="text-zinc-500 dark:text-zinc-400">
           +{factor.contribution.toFixed(1)} pts
-          <span className="ml-1 text-xs text-zinc-400">
+          <span className="ml-1 text-xs text-zinc-400 dark:text-zinc-500">
             ({factor.value.toFixed(2)} × {factor.weight.toFixed(2)} × 100)
           </span>
         </span>
       </div>
-      <div className="mt-1 h-2 w-full overflow-hidden rounded-full bg-zinc-100">
+      <div className="mt-1 h-2 w-full overflow-hidden rounded-full bg-zinc-100 dark:bg-zinc-800">
         <div className="h-full rounded-full bg-blue-600" style={{ width: `${width}%` }} />
       </div>
-      <p className="mt-1 text-xs text-zinc-500">{factor.explanation}</p>
+      <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">{factor.explanation}</p>
     </div>
   );
 }
@@ -74,30 +74,30 @@ export function ScoreWaterfall({
   const keptPercent = subtotal > 0 ? Math.round((finalScore / subtotal) * 100) : 100;
 
   return (
-    <div className="rounded-lg border border-zinc-200 bg-white p-5">
-      <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500">Score breakdown</h2>
-      <div className="mt-2 divide-y divide-zinc-100">
+    <div className="rounded-lg border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
+      <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Score breakdown</h2>
+      <div className="mt-2 divide-y divide-zinc-100 dark:divide-zinc-800">
         {orderedKeys.map((key) => (
           <FactorRow key={key} label={FACTOR_LABELS[key] ?? key} factor={scoreBreakdown[key]} />
         ))}
       </div>
 
-      <div className="mt-4 border-t border-dashed border-zinc-300 pt-3">
+      <div className="mt-4 border-t border-dashed border-zinc-300 pt-3 dark:border-zinc-700">
         <div className="flex items-baseline justify-between text-sm">
-          <span className="text-zinc-600">Subtotal (all factors, full confidence)</span>
-          <span className="font-medium text-[#0b1f3a]">{subtotal.toFixed(1)} pts</span>
+          <span className="text-zinc-600 dark:text-zinc-400">Subtotal (all factors, full confidence)</span>
+          <span className="font-medium text-[#0b1f3a] dark:text-zinc-100">{subtotal.toFixed(1)} pts</span>
         </div>
         {deduction > 0 && (
           <div className="mt-1 flex items-baseline justify-between text-sm">
-            <span className="text-zinc-600">
+            <span className="text-zinc-600 dark:text-zinc-400">
               Confidence deduction — evidence level {EVIDENCE_LABEL[evidenceLevel]} keeps {keptPercent}%
             </span>
-            <span className="font-medium text-amber-700">-{deduction.toFixed(1)} pts</span>
+            <span className="font-medium text-amber-700 dark:text-amber-400">-{deduction.toFixed(1)} pts</span>
           </div>
         )}
-        <div className="mt-2 flex items-baseline justify-between border-t border-zinc-200 pt-2 text-base">
-          <span className="font-semibold text-[#0b1f3a]">Final score</span>
-          <span className="font-semibold text-[#0b1f3a]">{finalScore.toFixed(1)} / 100</span>
+        <div className="mt-2 flex items-baseline justify-between border-t border-zinc-200 pt-2 text-base dark:border-zinc-800">
+          <span className="font-semibold text-[#0b1f3a] dark:text-zinc-100">Final score</span>
+          <span className="font-semibold text-[#0b1f3a] dark:text-zinc-100">{finalScore.toFixed(1)} / 100</span>
         </div>
       </div>
     </div>

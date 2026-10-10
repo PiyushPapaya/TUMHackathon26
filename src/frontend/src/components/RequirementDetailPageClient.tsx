@@ -52,22 +52,22 @@ export function RequirementDetailPageClient({ id }: { id: string }) {
   return (
     <div className="min-h-screen">
       <main className="mx-auto max-w-5xl px-6 py-8">
-        <Link href="/" className="text-sm text-blue-600 hover:underline">
+        <Link href="/" className="text-sm text-blue-600 hover:underline dark:text-blue-400">
           ← Back to list
         </Link>
 
         {error && (
-          <div className="mt-4 rounded-md border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-800">
+          <div className="mt-4 rounded-md border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-800 dark:border-rose-800 dark:bg-rose-950 dark:text-rose-300">
             {error}
           </div>
         )}
-        {!error && isLoading && <p className="mt-4 text-sm text-zinc-500">Loading…</p>}
+        {!error && isLoading && <p className="mt-4 text-sm text-zinc-500 dark:text-zinc-400">Loading…</p>}
 
         {!error && !isLoading && detail && (
           <>
             <RequirementDetailView detail={detail} evidenceBySignal={evidenceBySignal} />
             <div className="mt-8">
-              <Link href="/" className="text-sm text-blue-600 hover:underline">
+              <Link href="/" className="text-sm text-blue-600 hover:underline dark:text-blue-400">
                 ← Back to list
               </Link>
             </div>

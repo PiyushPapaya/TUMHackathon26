@@ -22,26 +22,26 @@ export function RequirementDetailView({
     <>
       <header className="mt-4">
         <div className="flex flex-wrap items-center gap-3">
-          <h1 className="text-2xl font-semibold text-[#0b1f3a]">{requirement.title}</h1>
+          <h1 className="text-2xl font-semibold text-[#0b1f3a] dark:text-zinc-100">{requirement.title}</h1>
           <StatusBadge status={requirement.status} />
           <EvidenceBadge level={requirement.evidence_level} reason={requirement.rationale} />
         </div>
-        <p className="mt-2 text-sm text-zinc-600">{requirement.rationale}</p>
-        <p className="mt-1 text-xs text-zinc-400">
+        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">{requirement.rationale}</p>
+        <p className="mt-1 text-xs text-zinc-400 dark:text-zinc-500">
           {categoryLabel(requirement.category)} · Rank #{requirement.rank} · Effort {requirement.effort}
         </p>
       </header>
 
       <section className="mt-6">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500">Description</h2>
-        <p className="mt-2 text-[#0b1f3a]">{requirement.description}</p>
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Description</h2>
+        <p className="mt-2 text-[#0b1f3a] dark:text-zinc-200">{requirement.description}</p>
       </section>
 
-      <section className="mt-4 rounded-lg border-l-4 border-blue-600 bg-blue-50 p-4">
-        <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">
+      <section className="mt-4 rounded-lg border-l-4 border-blue-600 bg-blue-50 p-4 dark:border-blue-500 dark:bg-blue-950">
+        <p className="text-xs font-semibold uppercase tracking-wide text-blue-700 dark:text-blue-300">
           Acceptance criterion
         </p>
-        <p className="mt-1 text-[#0b1f3a]">{requirement.acceptance_criterion}</p>
+        <p className="mt-1 text-[#0b1f3a] dark:text-zinc-200">{requirement.acceptance_criterion}</p>
       </section>
 
       <section className="mt-8">
@@ -53,11 +53,11 @@ export function RequirementDetailView({
       </section>
 
       <section className="mt-8 grid gap-6 md:grid-cols-2">
-        <div className="rounded-lg border border-zinc-300 bg-white p-4">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500">Evidence</h2>
+        <div className="rounded-lg border border-zinc-300 bg-white p-4 dark:border-zinc-700 dark:bg-zinc-900">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Evidence</h2>
           <div className="mt-3 space-y-3">
             {detail.signals.length === 0 && (
-              <p className="text-sm text-zinc-400">No findings linked.</p>
+              <p className="text-sm text-zinc-400 dark:text-zinc-500">No findings linked.</p>
             )}
             {detail.signals.map((signal) => (
               <FindingCard
@@ -69,8 +69,8 @@ export function RequirementDetailView({
           </div>
         </div>
 
-        <div className="rounded-lg border-2 border-dashed border-zinc-300 bg-white p-4">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500">
+        <div className="rounded-lg border-2 border-dashed border-zinc-300 bg-white p-4 dark:border-zinc-700 dark:bg-zinc-900">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
             Assumptions &amp; uncertainties
           </h2>
           <ul className="mt-3 space-y-2">
@@ -81,7 +81,7 @@ export function RequirementDetailView({
               <AssumptionItem key={`uncertainty-${i}`} label="Uncertainty" text={text} />
             ))}
             {requirement.assumptions.length === 0 && requirement.uncertainties.length === 0 && (
-              <p className="text-sm text-zinc-400">No assumptions or uncertainties recorded.</p>
+              <p className="text-sm text-zinc-400 dark:text-zinc-500">No assumptions or uncertainties recorded.</p>
             )}
           </ul>
         </div>
