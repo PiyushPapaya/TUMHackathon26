@@ -48,5 +48,5 @@ def test_prompt_verlangt_abdeckung_aller_beschwerden():
 
 
 def test_prompt_haelt_die_zielzahl_aus_dem_ticket():
-    # Ticket C2 verlangt 8-15 Anforderungen. Mit "10-16" kamen beim 5er 16 heraus: zu viele für den PM.
-    assert "10-15 in-scope requirements" in SYSTEM_PROMPT
+    # Ticket C2 verlangt 8-15 Anforderungen (heute); dazu 2-4 Wetten (W-C3). Mit "10-16" kamen 16 heraus.
+    assert "10-15 requirements with horizon" in SYSTEM_PROMPT and "2-4 bets" in SYSTEM_PROMPT

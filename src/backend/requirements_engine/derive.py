@@ -25,6 +25,7 @@ from pathlib import Path
 from pydantic import BaseModel
 
 from core.llm import ask_json
+from core.model_parts import Horizon
 from core.models import (
     Category,
     Evidence,
@@ -32,43 +33,21 @@ from core.models import (
     Requirement,
     Scenario,
     Signal,
+    SignalKind,
 )
 from requirements_engine import evidence_level, scoring
-from requirements_engine.derive_checks import conflict_notes, make_ids_unique, not_covered, stable_key
+from requirements_engine.derive_checks import (
+    badges_for,
+    conflict_notes,
+    make_ids_unique,
+    next_gen_problem,
+    not_covered,
+    stable_key,
+)
 from requirements_engine.factors import compute_factors, rationale_from
 from requirements_engine.offer_check import check, load_offer
+from requirements_engine.prompts import SYSTEM_PROMPT
 from requirements_engine.robustness import compute_robustness
-
-SYSTEM_PROMPT = """You are a product analyst for BMW. You turn customer findings (signals) into
-requirements for the successor vehicle, 3-5 years ahead. Write ALL text in English.
-Rules for every requirement:
-- Customer-facing: describe what the customer experiences, never components
-  (good: "Adjust volume without looking at the screen"; bad: "rotary encoder part X").
-- Measurable: the acceptance_criterion contains a concrete number or test condition
-  (like "range of 600 or 700 miles?", "cooler for how many bottles?"). Never leave placeholders
-  such as "X" or "±X km": pick a reasonable target and name it in `assumptions`.
-- Realistic for the successor in 3-5 years. Put forward-looking guesses into `assumptions`
-  and set forward_looking=true if the requirement rests mainly on a trend.
-- A delight (strength) becomes a keep-requirement ("Keep ride comfort at least at today's level").
-- ONE requirement per distinct customer need. Never split one need into several near-identical
-  requirements (e.g. do not write three variants of "physical controls" from one signal).
-  If two requirements would cite the same signal, merge them into one.
-- Signals that list each other in `conflicts_with` contradict each other (e.g. a praised display vs.
-  distracting touch controls). Never average a conflict away: if one requirement cites both sides, it
-  must address both sides explicitly (e.g. keep the strength while fixing the weakness).
-- Every requirement must be directly supported by the signals it cites. Do not invent extra
-  capabilities the signals never mention (e.g. an offline fallback from a charging complaint);
-  put such ideas into `assumptions` or `uncertainties` instead.
-- Out of scope: regulation/homologation, engineering specification, price or business case.
-  A wish for a specific component, part or technical value (resolution, voltage, kW) is an
-  engineering specification: output it as its own draft with in_scope=false and a scope_reason.
-  If a real customer outcome stands behind it, add a separate customer-facing requirement for that.
-  Do not hide discarded drafts, we log them.
-- Use ONLY signal_ids from the input. Every requirement cites at least one signal.
-- Cover EVERY complaint and unmet_need signal in at least one requirement (merge related ones, but
-  never drop a topic silently). Delights only need a keep-requirement when they are strong.
-- effort is a rough guess: S, M or L. Aim for 10-15 in-scope requirements; above 15 the PM loses
-  the overview, so merge related needs instead of adding more."""
 
 
 class RequirementDraft(BaseModel):
@@ -83,6 +62,7 @@ class RequirementDraft(BaseModel):
     uncertainties: list[str] = []
     effort: str = "M"
     forward_looking: bool = False
+    horizon: Horizon = "today"
     in_scope: bool = True
     scope_reason: str = ""
 
@@ -121,7 +101,12 @@ def derive_all(
         if not draft.in_scope:
             discarded.append({"title": draft.title, "reason": draft.scope_reason, "signal_ids": ids})
             continue
-        kept.append((draft, [known[i] for i in ids]))
+        linked = [known[i] for i in ids]
+        problem = next_gen_problem(draft.assumptions, linked) if draft.horizon == "next_gen" else None
+        if problem:
+            discarded.append({"title": draft.title, "reason": problem, "signal_ids": ids})
+            continue
+        kept.append((draft, linked))
     discarded += not_covered(signals, kept, discarded)
     # reach braucht die größte Nennungszahl ALLER Anforderungen, darum erst jetzt bauen.
     max_mentions = max((sum(s.mention_count for s in linked) for _, linked in kept), default=0)
@@ -158,7 +143,10 @@ def _build(
 ) -> Requirement:
     mentions = sum(s.mention_count for s in linked)
     sources = {t for s in linked for t in s.source_types}
-    level, level_reason = evidence_level.classify(mentions, sources, draft.forward_looking)
+    # Direkte Kundennennungen: ohne Trend- und Wettbewerbsbefunde (die stammen aus dem Web).
+    customer = sum(s.mention_count for s in linked if s.kind not in (SignalKind.TREND, SignalKind.COMPETITOR_ADVANTAGE))
+    level, level_reason = evidence_level.classify(
+        mentions, sources, draft.forward_looking, next_gen=draft.horizon == "next_gen", customer_mentions=customer)
     effort = draft.effort if draft.effort in ("S", "M", "L") else "M"
     factors, explanations = compute_factors(linked, by_id, max_mentions, draft.forward_looking, effort, context)
     points, breakdown = scoring.score(factors, explanations, level)
@@ -171,7 +159,7 @@ def _build(
         evidence_level=level, assumptions=draft.assumptions,
         uncertainties=[*conflict_notes(linked), *draft.uncertainties],
         offer_check=OfferCheck(status="unknown", note="Option list not checked yet (C5)."),
-        effort=effort,
+        effort=effort, horizon=draft.horizon, badges=badges_for(draft.horizon, level.value),
     )
 
 
