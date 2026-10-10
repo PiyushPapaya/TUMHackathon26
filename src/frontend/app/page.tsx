@@ -73,9 +73,9 @@ export default function RequirementsPage() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col bg-zinc-50">
-      {/* Top bar: volle Breite, Platz für weitere Elemente später */}
-      <header className="w-full border-b border-zinc-200 bg-white">
+    <div className="flex min-h-screen flex-col">
+      {/* Top bar: volle Breite, Platz für weitere Elemente später. Halbtransparent, damit der Shader-Hintergrund durchscheint. */}
+      <header className="w-full border-b border-zinc-200 bg-white/85 backdrop-blur-sm">
         <div className="flex flex-wrap items-center justify-between gap-4 px-6 py-4">
           <div>
             <h1 className="text-xl font-semibold text-[#0b1f3a]">Signal2Spec · PM Cockpit</h1>
@@ -109,9 +109,9 @@ export default function RequirementsPage() {
         </div>
       </header>
 
-      {/* Mitte: Ergebnis-Fenster, 1cm Abstand zu Rand, Top-Bar und Prompt-Leiste */}
-      <main className="m-[1cm] flex flex-1 flex-col">
-        <div className="flex-1 overflow-hidden rounded-lg border border-zinc-200 bg-white">
+      {/* Mitte: Ergebnis-Fenster, 2cm Abstand zu Rand, Top-Bar und Prompt-Leiste */}
+      <main className="m-[2cm] flex flex-1 flex-col">
+        <div className="flex-1 overflow-hidden rounded-lg border border-zinc-200 bg-white/90 backdrop-blur-sm">
           <div className="h-full overflow-auto">
             {error && (
               <div className="m-4 rounded-md border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-800">
@@ -163,8 +163,8 @@ export default function RequirementsPage() {
         </div>
       </main>
 
-      {/* Unten: Prompt-Eingabe, 0.5cm Abstand zum Rand unten, 2cm links/rechts */}
-      <footer className="mx-[2cm] mb-[0.5cm] flex flex-col gap-2">
+      {/* Unten: Prompt-Eingabe, 1cm Abstand zum Rand unten, 2cm links/rechts */}
+      <footer className="mx-[3cm] mb-[2cm] flex flex-col gap-2">
         {promptNote && <p className="text-xs text-zinc-500">{promptNote}</p>}
         <div className="flex items-center gap-3">
           <input
@@ -174,13 +174,13 @@ export default function RequirementsPage() {
             onKeyDown={(e) => {
               if (e.key === "Enter") handlePromptSubmit();
             }}
-            placeholder="Ask about these requirements…"
-            className="flex-1 rounded-md border border-zinc-300 bg-white px-4 py-2 text-sm text-[#0b1f3a] focus:border-blue-500 focus:outline-none"
+            placeholder="Ask me your questions..."
+            className="flex-1 rounded-md border border-zinc-300 bg-white/90 backdrop-blur-sm px-4 py-4 text-sm text-[#0b1f3a] focus:border-blue-500 focus:outline-none"
           />
           <button
             type="button"
             onClick={handlePromptSubmit}
-            className="rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+            className="rounded-md bg-blue-600 px-5 py-4 text-sm font-medium text-white hover:bg-blue-700"
           >
             Submit
           </button>

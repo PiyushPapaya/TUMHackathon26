@@ -50,7 +50,7 @@ export function RequirementDetailPageClient({ id }: { id: string }) {
   }, [detail]);
 
   return (
-    <div className="min-h-screen bg-zinc-50">
+    <div className="min-h-screen">
       <main className="mx-auto max-w-5xl px-6 py-8">
         <Link href="/" className="text-sm text-blue-600 hover:underline">
           ← Back to list
