@@ -1,0 +1,9 @@
+Please move the code to a virtual environment
+
+---
+
+Bitte pushe die changes
+
+---
+
+How do i start the backend on linux
