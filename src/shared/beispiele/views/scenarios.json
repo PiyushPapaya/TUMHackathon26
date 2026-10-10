@@ -1,0 +1,38 @@
+[
+ {
+  "id": "G60-US",
+  "derivative": "G60",
+  "model_name": "BMW 5er Limousine (G60)",
+  "market": "US",
+  "countries": [
+   "US"
+  ],
+  "competitors": [
+   "Mercedes-Benz E-Class",
+   "Audi A6 e-tron",
+   "Tesla Model S",
+   "Genesis G80",
+   "Lucid Air"
+  ],
+  "successor_horizon": "2030",
+  "data_coverage": {
+   "feedback": 3610,
+   "study": 103,
+   "sales": 1,
+   "options": 1,
+   "web": 2,
+   "external": 0,
+   "badge": "reich"
+  },
+  "warnings": [
+   "Beispiel-Bundle mit synthetischen Zitaten (echte Daten: data/processed/)."
+  ],
+  "badge": "reich",
+  "headline_numbers": {
+   "evidence": 3610,
+   "signals": 8,
+   "requirements": 5,
+   "top_title": "Physische Bedienelemente für Top-Funktionen"
+  }
+ }
+]

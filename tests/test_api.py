@@ -4,7 +4,8 @@ REQ = "REQ-G60-US-001"
 
 
 def test_health(client):
-    assert client.get("/health").json() == {"status": "ok"}
+    body = client.get("/health").json()
+    assert body["status"] == "ok" and body["demo_mode"] is True and "G60-US" in body["scenarios"]
 
 
 def test_requirements_are_ranked_and_complete(client):

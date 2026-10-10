@@ -1,0 +1,52 @@
+[
+ {
+  "id": "REQ-G60-US-001",
+  "title": "Physische Bedienelemente für Top-Funktionen",
+  "evidence_level": "A",
+  "old_rank": 1,
+  "new_rank": 1,
+  "rank_change": 0,
+  "old_score": 67.5,
+  "new_score": 63.5
+ },
+ {
+  "id": "REQ-G60-US-002",
+  "title": "Verlässliche Reichweitenprognose",
+  "evidence_level": "B",
+  "old_rank": 2,
+  "new_rank": 2,
+  "rank_change": 0,
+  "old_score": 48.4,
+  "new_score": 53.0
+ },
+ {
+  "id": "REQ-G60-US-003",
+  "title": "Laden ohne Suchen",
+  "evidence_level": "B",
+  "old_rank": 4,
+  "new_rank": 3,
+  "rank_change": 1,
+  "old_score": 43.4,
+  "new_score": 50.9
+ },
+ {
+  "id": "REQ-G60-US-004",
+  "title": "Zuverlässige berührungslose Heckklappe",
+  "evidence_level": "B",
+  "old_rank": 3,
+  "new_rank": 4,
+  "rank_change": -1,
+  "old_score": 47.2,
+  "new_score": 42.2
+ },
+ {
+  "id": "REQ-G60-US-005",
+  "title": "Zusätzlicher Stauraum vorne (Frunk)",
+  "evidence_level": "D",
+  "old_rank": 5,
+  "new_rank": 5,
+  "rank_change": 0,
+  "old_score": 22.0,
+  "new_score": 22.7
+ }
+]

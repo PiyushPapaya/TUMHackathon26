@@ -57,6 +57,7 @@ flowchart LR
 | Werkbank | `src/frontend/app/studio/` | 5 Werkzeuge zum Prüfen der Liste: Duell, Konflikt-Arena, Annahmen-Schalter, Kundenstimmen, Entscheidungslauf | nein |
 | Werkbank-Rechnung | `src/frontend/src/studio/scoring.ts` | Score ohne Annahmen, Gewichte aus Duellen (gleiche Formel wie `scoring.py`) | nein |
 | Baukasten | `src/frontend/baukasten/*.json` | Texte, Farben, Feature-Schalter, angepinnte Zitate; Nicht-Coder ändern sie, `tests/test_baukasten.py` prüft sie | – |
+| Shader-Hintergrund | `src/frontend/src/components/ShaderBackground.tsx` | Animierter WebGL-Verlauf hinter allen Cockpit-Seiten (fixed, `z-index` unter dem Inhalt) | nein |
 
 ## Entscheidungen (Was + Warum + Verworfen)
 
@@ -78,6 +79,7 @@ flowchart LR
 | Duell-Modus leitet Gewichte aus Paarvergleichen ab, Übernahme nur mit Begründung über `PUT /weights` | PMs sagen sicherer "A ist wichtiger als B" als "Reichweite = 20 %"; die Übernahme steht im Prüfpfad | Gewichte direkt aus Duellen setzen, ohne Bestätigung (PM verliert Kontrolle) |
 | Annahmen-Schalter rechnet im Browser und speichert nichts | Was-wäre-wenn soll den Prüfpfad nicht füllen; Formel identisch zum Backend, darum gleiche Zahlen | Backend-Endpunkt pro Schalter (unnötige Vertragsänderung) |
 | Werkbank unter `/studio` als eigene Dateien, Baukasten als JSON | Das Cockpit (`/`, Detail, Audit) gehört Pfad D; neue Werkzeuge sollen keine Merge-Konflikte erzeugen. Texte und Farben als JSON, damit Nicht-Coder mitbauen | Werkzeuge in die Cockpit-Seiten einbauen (Konflikte mit Lasse), Texte im Code (nur für Coder änderbar) |
+| Shader per rohem WebGL (eigener Vertex/Fragment-Shader), nicht per three.js | Kein neues Paket nötig (Browser-API reicht für einen einfachen Verlaufs-Shader), weniger Bundle-Gewicht | three.js/react-three-fiber (neue Abhängigkeit, Rückfrage nötig, Overkill für einen Verlauf) |
 | Neues Fahrzeug/Markt = neue JSON in `config/scenarios/` | Brief: "adaptable to other BMW vehicles and markets" | Sonderlogik pro Modell |
 
 ## Externe Dienste

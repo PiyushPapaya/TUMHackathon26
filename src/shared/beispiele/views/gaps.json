@@ -1,0 +1,20 @@
+{
+ "scenario_id": "G60-US",
+ "weak_requirements": [
+  {
+   "id": "REQ-G60-US-005",
+   "title": "Zusätzlicher Stauraum vorne (Frunk)",
+   "rank": 5,
+   "evidence_level": "D",
+   "level_label": "Annahme",
+   "assumptions": [
+    "Der Nachfolger (ab 2030) nutzt eine BEV-Plattform ohne Motor vorne.",
+    "Der BEV-Anteil im US-5er (im Feedback heute 35 %) steigt bis 2030 deutlich."
+   ],
+   "why": "Wenige Nennungen; Packaging unbekannt.",
+   "next_study": "Raum- und Alltags-Test mit Bestandskunden"
+  }
+ ],
+ "missing_sources": [],
+ "share_weak": 0.2
+}

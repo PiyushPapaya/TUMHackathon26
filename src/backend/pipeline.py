@@ -16,10 +16,13 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from collections import Counter
+from datetime import UTC, datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from core.model_parts import coverage_badge  # noqa: E402
 from core.models import Evidence, Requirement, Scenario, Signal  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -85,13 +88,30 @@ def run_stage(stage: str, cfg: dict) -> None:
         internal, counter = triangulated_internal(sid)
         signals = internal + [Signal(**s) for s in read_stage(sid, "web_signals")]
         evidence = [Evidence(**e) for e in read_stage(sid, "evidence") + read_stage(sid, "web_evidence")]
-        context = {**read_stage(sid, "context"), "option_list_path": str(RAW_DIR / cfg["data"]["option_list_file"]),
+        option_file = cfg["data"].get("option_list_file")  # None bei Kaltstart-Märkten (G68-CN)
+        option_path = str(RAW_DIR / option_file) if option_file else None
+        context = {**read_stage(sid, "context"), "option_list_path": option_path,
                    "counter_evidence": counter}  # Webbelege, die interne Befunde widerlegen (für die Challenge)
         requirements, discarded = derive_all(scenario, signals, evidence, context)
         _write(sid, "requirements", requirements)
         _write(sid, "discarded", discarded)  # Out-of-scope-Entwürfe: der PM soll sehen, was wir verworfen haben
     elif stage == "bundle":  # Lead: alles zusammen für die App
         bundle_stage(cfg)
+
+
+def _real_stage(scenario_id: str, stage: str, default):
+    """Wie read_stage, aber OHNE Beispiel-Fallback: im Bundle dürfen nie Beispieldaten landen."""
+    path = OUT_DIR / scenario_id / f"{stage}.json"
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
+
+
+def data_coverage(evidence: list[dict]) -> dict:
+    """Belege je Quelle zählen (alle, nicht nur zitierte), daraus das Badge reich / dünn / Kaltstart."""
+    counts = Counter(e["source_type"] for e in evidence)
+    feedback = counts["feedback"]
+    return {"feedback": feedback, "study": counts["study"], "sales": counts["sales"], "options": counts["option_list"],
+            "web": counts["web"], "external": counts["external_stat"] + counts["feedback_external"],
+            "badge": coverage_badge(feedback)}
 
 
 def bundle_stage(cfg: dict) -> None:
@@ -101,14 +121,16 @@ def bundle_stage(cfg: dict) -> None:
     signals = [s.model_dump(mode="json") for s in internal] + read_stage(sid, "web_signals")
     reqs = [Requirement(**r).model_dump(mode="json") for r in read_stage(sid, "requirements")]
     used = {e for s in signals for e in s["evidence_ids"]}  # nur zitierte Belege an die App geben
-    # Ältere Läufe haben keine discarded.json; dann leer, statt auf die Beispieldatei zurückzufallen.
-    discarded_file = OUT_DIR / sid / "discarded.json"
-    discarded = json.loads(discarded_file.read_text(encoding="utf-8")) if discarded_file.exists() else []
+    context = _real_stage(sid, "context", {})  # Absatz, unbekannte Themen (A15), Chancen-Karte (A17)
     bundle = {
-        "scenario": {k: v for k, v in cfg.items() if k != "data"},
-        "funnel": {"evidence": len(evidence), "signals": len(signals), "requirements": len(reqs), "approved": 0},
+        "scenario": {**{k: v for k, v in cfg.items() if k != "data"}, "data_coverage": data_coverage(evidence)},
+        "funnel": {"evidence": len(evidence), "signals": len(signals), "requirements": len(reqs), "approved": 0,
+                   "generated_at": datetime.now(UTC).isoformat(timespec="seconds")},
         "weights": {}, "evidence": [e for e in evidence if e["id"] in used], "signals": signals, "requirements": reqs,
-        "discarded": discarded,
+        # Ältere Läufe haben keine discarded.json; dann leer, statt auf die Beispieldatei zurückzufallen.
+        "discarded": _real_stage(sid, "discarded", []),
+        "context": {k: v for k, v in context.items() if k != "opportunities"},
+        "opportunities": context.get("opportunities", []),
     }
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     (OUT_DIR / f"{sid}.json").write_text(json.dumps(bundle, ensure_ascii=False, indent=1), encoding="utf-8")

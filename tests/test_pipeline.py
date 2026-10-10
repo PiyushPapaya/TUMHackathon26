@@ -65,3 +65,22 @@ def test_store_schreibt_requirement_discarded_ins_audit(tmp_path, monkeypatch):
     assert events[0].rationale == "regulatory"
     assert events[0].payload["title"] == "Meet US homologation rules"
     assert events[0].payload["signal_ids"] == ["SIG-1"]
+
+
+def test_bundle_kaltstart_hat_abdeckung_kontext_und_zeitstempel(tmp_path, monkeypatch):
+    """Welle 2: Bundle trägt Datenabdeckung (Badge), Absatz-Kontext und Chancen-Karte für die Ansichten."""
+    ordner = _bundle_ordner(tmp_path, monkeypatch)
+    (ordner / "requirements.json").write_text("[]", encoding="utf-8")
+    study = {"id": "EV-1", "source_type": "study", "source_name": "S", "derivative": "T", "market": "US", "text": "x"}
+    (ordner / "evidence.json").write_text(json.dumps([study]), encoding="utf-8")
+    opportunity = {"attribute": "a", "importance": 1, "dissatisfaction": 1}
+    context = {"sales": {"volume_2030": 1}, "opportunities": [opportunity]}
+    (ordner / "context.json").write_text(json.dumps(context), encoding="utf-8")
+
+    pipeline.bundle_stage(CFG)
+
+    bundle = json.loads((tmp_path / "T-US.json").read_text(encoding="utf-8"))
+    assert bundle["scenario"]["data_coverage"] == {"feedback": 0, "study": 1, "sales": 0, "options": 0, "web": 0,
+                                                   "external": 0, "badge": "Kaltstart"}
+    assert bundle["context"] == {"sales": {"volume_2030": 1}} and len(bundle["opportunities"]) == 1
+    assert bundle["funnel"]["generated_at"]

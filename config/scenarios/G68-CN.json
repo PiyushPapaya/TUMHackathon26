@@ -1,0 +1,19 @@
+{
+  "id": "G68-CN",
+  "derivative": "G68",
+  "model_name": "BMW 5er Langversion (G68)",
+  "market": "CN",
+  "countries": ["CN"],
+  "competitors": ["Mercedes-Benz E-Class L", "Audi A6L", "NIO ET7", "Li Auto L9", "BYD Han"],
+  "successor_horizon": "2030",
+  "warnings": ["Kaltstart: keine Kundenkommentare und keine Optionsliste für China; nur Studie, Absatz und Web."],
+  "data": {
+    "feedback_file": null,
+    "study_file": "F70_G60_G68_G70_customer_studies.xlsx",
+    "study_sheet": "CN_EU_2025",
+    "study_column": "BMW 5 Series G68",
+    "sales_sheet": "G60_G68",
+    "sales_market_code": "CN",
+    "option_list_file": null
+  }
+}

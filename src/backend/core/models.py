@@ -16,6 +16,15 @@ from enum import StrEnum
 
 from pydantic import BaseModel, Field
 
+from core.model_parts import (
+    BusinessContext,
+    DataCoverage,
+    Horizon,
+    Robustness,
+    SegmentConflict,
+    StudyLink,
+)
+
 
 class SourceType(StrEnum):
     """Woher ein Beleg stammt. Bestimmt, wie stark er für die Evidenzstufe zählt."""
@@ -25,6 +34,8 @@ class SourceType(StrEnum):
     SALES = "sales"                # Absatzvolumen pro Markt
     OPTION_LIST = "option_list"    # Preisliste/Ausstattung (heutiges Angebot)
     WEB = "web"                    # externe Webquelle (Wettbewerb, Trends, Tests)
+    EXTERNAL_STAT = "external_stat"            # öffentliche Statistik (z. B. Ladesäulen, EPA-Reichweite)
+    FEEDBACK_EXTERNAL = "feedback_external"    # externe Kundenstimme (z. B. NHTSA-Beschwerden)
 
 
 class Category(StrEnum):
@@ -90,7 +101,7 @@ class Evidence(BaseModel):
     url: str | None = None        # nur bei Webquellen
     retrieved_at: datetime | None = None
     polarity: int = Field(0, ge=-1, le=1)  # -1 negativ, 0 neutral, +1 positiv
-    meta: dict[str, str] = {}     # z. B. Taxonomie, Antriebsart, Feedback-Typ
+    meta: dict[str, str] = {}     # Schlüssel u. a.: engine, country, source_letter, feedback_type, vfc2
 
 
 class Signal(BaseModel):
@@ -105,6 +116,9 @@ class Signal(BaseModel):
     mention_count: int
     source_types: list[SourceType]
     conflicts_with: list[str] = []  # IDs widersprechender Befunde
+    # Zählung je Segment, z. B. {"engine": {"BEV": 42, "ICE": 18}, "country": {...}, "source": {...}}
+    segments: dict[str, dict[str, int]] = {}
+    study_link: StudyLink | None = None
 
 
 class ScoreFactor(BaseModel):
@@ -142,6 +156,13 @@ class Requirement(BaseModel):
     effort: str = Field("M", pattern="^(S|M|L)$")  # grober Aufwand, PM kann ändern
     status: Status = Status.PROPOSED
     version: int = 1
+    # Welle 2 (alle mit Default, damit alte Bundles gültig bleiben)
+    horizon: Horizon = "today"
+    robustness: Robustness | None = None
+    segment_conflicts: list[SegmentConflict] = []
+    business: BusinessContext | None = None
+    stable_key: str = ""           # Hash der sortierten signal_ids: gleiche Befunde -> gleiche ID
+    badges: list[str] = []         # fertige Kurzlabels fürs Frontend, z. B. "robust", "Zukunftswette"
 
 
 class AuditEvent(BaseModel):
@@ -169,3 +190,5 @@ class Scenario(BaseModel):
     countries: list[str]
     competitors: list[str]
     successor_horizon: str = "2030"
+    data_coverage: DataCoverage = Field(default_factory=DataCoverage)
+    warnings: list[str] = []       # z. B. "Nur 19 Kommentare", "3 unbekannte Themen"

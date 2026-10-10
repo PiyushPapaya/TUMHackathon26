@@ -1,0 +1,505 @@
+{
+ "requirement": {
+  "id": "REQ-G60-US-001",
+  "title": "Physische Bedienelemente für Top-Funktionen",
+  "description": "Lautstärke, Klima-Temperatur und Defrost sind ohne Blick auf den Bildschirm bedienbar.",
+  "acceptance_criterion": "Jede der 3 Funktionen in <= 1 Handgriff ohne Menü erreichbar; im Probandentest >= 80 % blind bedienbar.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G60-US-001",
+   "SIG-G60-US-002",
+   "SIG-G60-US-003"
+  ],
+  "score": 67.5,
+  "rank": 1,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.8,
+    "weight": 0.25,
+    "contribution": 20.0,
+    "explanation": "61 Kommentare, davon 70 % Bedienprobleme"
+   },
+   "reach": {
+    "value": 0.7,
+    "weight": 0.2,
+    "contribution": 14.0,
+    "explanation": "US: 78.000 Fahrzeuge 2025, 80.000 in 2030"
+   },
+   "satisfaction_gap": {
+    "value": 0.6,
+    "weight": 0.2,
+    "contribution": 12.0,
+    "explanation": "9 % unzufrieden mit Intuitiveness of controls"
+   },
+   "competitive_pressure": {
+    "value": 0.7,
+    "weight": 0.15,
+    "contribution": 10.5,
+    "explanation": "3 Webquellen: Wettbewerb kehrt zu Tasten zurück"
+   },
+   "future_relevance": {
+    "value": 0.5,
+    "weight": 0.1,
+    "contribution": 5.0,
+    "explanation": "Trend unklar: Sprachsteuerung könnte Bedarf senken"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "Aufwand M"
+   }
+  },
+  "rationale": "Häufigster Bedien-Schmerzpunkt, bestätigt durch Studie und Wettbewerb.",
+  "evidence_level": "A",
+  "assumptions": [
+   "Sprachsteuerung ersetzt bis 2030 nicht alle Bedienhandlungen."
+  ],
+  "uncertainties": [
+   "Display-Fans (SIG-G60-US-002) könnten weniger Bildschirmfläche ablehnen."
+  ],
+  "offer_check": {
+   "status": "not_offered",
+   "note": "Optionsliste nennt keine physischen Klimatasten.",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 1,
+   "rank_max": 1,
+   "top3_share": 1.0,
+   "runs": 500
+  },
+  "segment_conflicts": [
+   {
+    "dimension": "engine",
+    "segment_a": "ICE",
+    "segment_b": "BEV",
+    "statement": "ICE-Fahrer vermissen Tasten (34 Kritiken), BEV-Fahrer loben das große Display (30 Lob).",
+    "a_count": 34,
+    "b_count": 30,
+    "evidence_ids": [
+     "EV-G60-0002",
+     "EV-G60-0004"
+    ]
+   }
+  ],
+  "business": {
+   "volume_2025": 78000,
+   "volume_2030": 80000,
+   "growth_pct": 2.6,
+   "market_share": 0.25,
+   "note": "US = 25 % des G60/G68-Volumens 2030 (sales_volumes.xlsx)"
+  },
+  "stable_key": "sk-001",
+  "badges": [
+   "robust",
+   "Konflikt"
+  ]
+ },
+ "level_label": "stark belegt",
+ "waterfall": [
+  {
+   "factor": "customer_pain",
+   "label": "Kundenschmerz",
+   "value": 0.8,
+   "weight": 0.25,
+   "contribution": 20.0,
+   "sentence": "61 Kommentare, davon 70 % Bedienprobleme"
+  },
+  {
+   "factor": "reach",
+   "label": "Reichweite (Kunden × Volumen)",
+   "value": 0.7,
+   "weight": 0.2,
+   "contribution": 14.0,
+   "sentence": "US: 78.000 Fahrzeuge 2025, 80.000 in 2030"
+  },
+  {
+   "factor": "satisfaction_gap",
+   "label": "Zufriedenheitslücke (Studie)",
+   "value": 0.6,
+   "weight": 0.2,
+   "contribution": 12.0,
+   "sentence": "9 % unzufrieden mit Intuitiveness of controls"
+  },
+  {
+   "factor": "competitive_pressure",
+   "label": "Wettbewerbsdruck",
+   "value": 0.7,
+   "weight": 0.15,
+   "contribution": 10.5,
+   "sentence": "3 Webquellen: Wettbewerb kehrt zu Tasten zurück"
+  },
+  {
+   "factor": "effort_inverse",
+   "label": "Geringer Aufwand",
+   "value": 0.6,
+   "weight": 0.1,
+   "contribution": 6.0,
+   "sentence": "Aufwand M"
+  },
+  {
+   "factor": "future_relevance",
+   "label": "Zukunftsrelevanz",
+   "value": 0.5,
+   "weight": 0.1,
+   "contribution": 5.0,
+   "sentence": "Trend unklar: Sprachsteuerung könnte Bedarf senken"
+  },
+  {
+   "factor": "confidence",
+   "label": "Evidenzstufe A",
+   "value": 1.0,
+   "weight": null,
+   "contribution": 0.0,
+   "sentence": "stark belegt: Rohwert 67.5 × 1.0 = 67.5"
+  }
+ ],
+ "quotes": [
+  {
+   "id": "EV-G60-0001",
+   "text": "[synthetisch] Kunde möchte den Lautstärkeregler wieder als Drehknopf.",
+   "source_name": "Feedback Quelle B",
+   "polarity": -1,
+   "country": "US",
+   "engine": "ICE",
+   "source_letter": "B",
+   "feedback_type": "Wants"
+  },
+  {
+   "id": "EV-G60-0002",
+   "text": "[synthetisch] Ohne echte Knöpfe muss ich beim Fahren zu oft auf den Bildschirm schauen.",
+   "source_name": "Feedback Quelle A",
+   "polarity": -1,
+   "country": "US",
+   "engine": "ICE",
+   "source_letter": "A",
+   "feedback_type": "Difficult to Use"
+  },
+  {
+   "id": "EV-G60-0003",
+   "text": "[synthetisch] Klimabedienung über Touch ist umständlich.",
+   "source_name": "Feedback Quelle C",
+   "polarity": -1,
+   "country": "US",
+   "engine": "PHEV",
+   "source_letter": "C",
+   "feedback_type": "Difficult to Use"
+  },
+  {
+   "id": "EV-G60-0004",
+   "text": "[synthetisch] Kunde lobt das große, klare Display.",
+   "source_name": "Feedback Quelle B",
+   "polarity": 1,
+   "country": "US",
+   "engine": "BEV",
+   "source_letter": "D",
+   "feedback_type": "Likes"
+  }
+ ],
+ "segments": {
+  "engine": {
+   "ICE": 52,
+   "BEV": 45,
+   "PHEV": 12
+  },
+  "source": {
+   "D": 48,
+   "B": 25,
+   "A": 21,
+   "C": 15
+  },
+  "feedback_type": {
+   "Likes": 48,
+   "Difficult to Use": 42,
+   "Wants": 19
+  }
+ },
+ "conflicts": [
+  {
+   "dimension": "engine",
+   "segment_a": "ICE",
+   "segment_b": "BEV",
+   "statement": "ICE-Fahrer vermissen Tasten (34 Kritiken), BEV-Fahrer loben das große Display (30 Lob).",
+   "a_count": 34,
+   "b_count": 30,
+   "evidence_ids": [
+    "EV-G60-0002",
+    "EV-G60-0004"
+   ]
+  },
+  {
+   "dimension": "signal",
+   "statement": "\"Touch-only-Bedienung lenkt ab\" widerspricht \"Großes Display wird gelobt\"",
+   "signal_ids": [
+    "SIG-G60-US-001",
+    "SIG-G60-US-002"
+   ]
+  }
+ ],
+ "assumptions": [
+  "Sprachsteuerung ersetzt bis 2030 nicht alle Bedienhandlungen."
+ ],
+ "uncertainties": [
+  "Display-Fans (SIG-G60-US-002) könnten weniger Bildschirmfläche ablehnen."
+ ],
+ "horizon": "today",
+ "offer_check": {
+  "status": "not_offered",
+  "note": "Optionsliste nennt keine physischen Klimatasten.",
+  "option_code": null
+ },
+ "web_sources": [
+  {
+   "id": "EV-G60-0006",
+   "publisher": "caranddriver.com",
+   "url": "https://example.com/test-bericht",
+   "text": "[Beispiel] Testbericht: Wettbewerber bringt physische Tasten für Klima und Lautstärke zurück.",
+   "trust": "high"
+  }
+ ],
+ "study": [
+  {
+   "attribute": "Intuitiveness of controls",
+   "importance": 0.82,
+   "dissatisfaction": 0.09
+  }
+ ],
+ "robustness": {
+  "rank_min": 1,
+  "rank_max": 1,
+  "top3_share": 1.0,
+  "runs": 500
+ },
+ "robustness_sentence": "In 100 % von 500 zufälligen Gewichtungen (±30 %) in den Top 3 (Rang 1).",
+ "business": {
+  "volume_2025": 78000,
+  "volume_2030": 80000,
+  "growth_pct": 2.6,
+  "market_share": 0.25,
+  "note": "US = 25 % des G60/G68-Volumens 2030 (sales_volumes.xlsx)"
+ },
+ "signals": [
+  {
+   "id": "SIG-G60-US-001",
+   "kind": "complaint",
+   "category": "infotainment_digital",
+   "title": "Touch-only-Bedienung lenkt ab",
+   "summary": "Kunden vermissen physische Bedienelemente für häufige Funktionen.",
+   "evidence_ids": [
+    "EV-G60-0001",
+    "EV-G60-0002",
+    "EV-G60-0003",
+    "EV-G60-0005"
+   ],
+   "mention_count": 61,
+   "source_types": [
+    "feedback",
+    "study"
+   ],
+   "conflicts_with": [
+    "SIG-G60-US-002"
+   ],
+   "segments": {
+    "engine": {
+     "ICE": 34,
+     "BEV": 15,
+     "PHEV": 12
+    },
+    "source": {
+     "A": 21,
+     "B": 25,
+     "C": 15
+    },
+    "feedback_type": {
+     "Wants": 19,
+     "Difficult to Use": 42
+    }
+   },
+   "study_link": {
+    "attribute": "Intuitiveness of controls",
+    "importance": 0.82,
+    "dissatisfaction": 0.09
+   }
+  },
+  {
+   "id": "SIG-G60-US-002",
+   "kind": "delight",
+   "category": "infotainment_digital",
+   "title": "Großes Display wird gelobt",
+   "summary": "Das Curved Display ist ein Kaufargument.",
+   "evidence_ids": [
+    "EV-G60-0004"
+   ],
+   "mention_count": 48,
+   "source_types": [
+    "feedback"
+   ],
+   "conflicts_with": [
+    "SIG-G60-US-001"
+   ],
+   "segments": {
+    "engine": {
+     "BEV": 30,
+     "ICE": 18
+    },
+    "source": {
+     "D": 48
+    },
+    "feedback_type": {
+     "Likes": 48
+    }
+   },
+   "study_link": null
+  },
+  {
+   "id": "SIG-G60-US-003",
+   "kind": "competitor_advantage",
+   "category": "infotainment_digital",
+   "title": "Wettbewerb kehrt zu Tasten zurück",
+   "summary": "Mehrere Wettbewerber führen physische Tasten wieder ein.",
+   "evidence_ids": [
+    "EV-G60-0006"
+   ],
+   "mention_count": 3,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  }
+ ],
+ "evidence": [
+  {
+   "id": "EV-G60-0001",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle B",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[synthetisch] Kunde möchte den Lautstärkeregler wieder als Drehknopf.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Operating concept, operating system",
+    "feedback_type": "Wants",
+    "engine": "ICE",
+    "country": "US",
+    "source_letter": "B"
+   }
+  },
+  {
+   "id": "EV-G60-0002",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[synthetisch] Ohne echte Knöpfe muss ich beim Fahren zu oft auf den Bildschirm schauen.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Touch screen, operation",
+    "feedback_type": "Difficult to Use",
+    "engine": "ICE",
+    "country": "US",
+    "source_letter": "A"
+   }
+  },
+  {
+   "id": "EV-G60-0003",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle C",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[synthetisch] Klimabedienung über Touch ist umständlich.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Touch screen, operation",
+    "feedback_type": "Difficult to Use",
+    "engine": "PHEV",
+    "country": "US",
+    "source_letter": "C"
+   }
+  },
+  {
+   "id": "EV-G60-0004",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle B",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[synthetisch] Kunde lobt das große, klare Display.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Touch screen, operation",
+    "feedback_type": "Likes",
+    "engine": "BEVE",
+    "country": "US",
+    "source_letter": "D"
+   }
+  },
+  {
+   "id": "EV-G60-0005",
+   "source_type": "study",
+   "source_name": "US-Studie 2025",
+   "derivative": "G60",
+   "market": "US",
+   "text": "Intuitiveness of controls: 9 % bewerten mit Unsatisfactory oder schlechter (Beispielwert).",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "attribute": "Intuitiveness of controls"
+   }
+  },
+  {
+   "id": "EV-G60-0006",
+   "source_type": "web",
+   "source_name": "Wettbewerbs-Recherche",
+   "derivative": "G60",
+   "market": "US",
+   "text": "[Beispiel] Testbericht: Wettbewerber bringt physische Tasten für Klima und Lautstärke zurück.",
+   "url": "https://example.com/test-bericht",
+   "retrieved_at": "2026-10-10T15:00:00Z",
+   "polarity": -1,
+   "meta": {
+    "trust": "high",
+    "publisher": "caranddriver.com"
+   }
+  }
+ ],
+ "history": [
+  {
+   "seq": 2,
+   "ts": "2026-10-10T19:14:46.752531Z",
+   "event_type": "REQUIREMENT_PROPOSED",
+   "scenario_id": "G60-US",
+   "requirement_id": "REQ-G60-US-001",
+   "actor": {
+    "type": "ai",
+    "name": "pipeline"
+   },
+   "rationale": "Häufigster Bedien-Schmerzpunkt, bestätigt durch Studie und Wettbewerb.",
+   "payload": {
+    "score": 67.5,
+    "evidence_level": "A",
+    "signal_ids": [
+     "SIG-G60-US-001",
+     "SIG-G60-US-002",
+     "SIG-G60-US-003"
+    ]
+   },
+   "prev_hash": "f0f289391de2a13412ab99f3e51deef7a8bd4a3f910f9bf6c9ee27b33cf9f2c8",
+   "hash": "678614df733182a388dd5802753bc3f6324c86eb98c9be3a7dde2fd00ba30dd9"
+  }
+ ]
+}
