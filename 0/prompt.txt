@@ -1,0 +1,11 @@
+geeb mir den prompt dazu: - src/frontend/public/media/poster.jpg
+- src/frontend/public/media/scenarios/G60-US.jpg und weitere <ID>.jpg
+- src/frontend/public/media/split.jpg
+
+---
+
+welche große 9:16, 3:4, 4.3 etc. und sage dass es bem autos sein sollen und lasse auch ein video geneerien
+
+---
+
+[Image #4] [Image #5] [Image #6] [Image #7] [Image #8] [Image #9] [Image #10] [Image #11]
