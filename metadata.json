@@ -1,0 +1,34 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KCCB69SSAK7P1FWFF9EX4B",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/pfade/PFAD-D.md",
+    "src/frontend/.gitignore",
+    "src/frontend/app/requirements/[id]/page.tsx",
+    "src/frontend/src/components/DetailBlocks.tsx",
+    "src/frontend/src/components/FindingCard.tsx",
+    "src/frontend/src/components/RequirementDetailPageClient.tsx",
+    "src/frontend/src/components/RequirementDetailView.tsx",
+    "src/frontend/src/components/ScoreWaterfall.tsx",
+    "src/frontend/src/components/badges.tsx"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 182,
+    "cache_creation_tokens": 149023,
+    "cache_read_tokens": 12054739,
+    "output_tokens": 54766,
+    "api_call_count": 91
+  }
+}

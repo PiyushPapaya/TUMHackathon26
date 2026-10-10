@@ -1,0 +1,89 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KCCB69SSAK7P1FWFF9EX4B",
+  "session_id": "001b9d94-2e01-4772-bd13-2d2df8606461",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T17:04:45.808449503Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/pfade/PFAD-D.md",
+    "src/frontend/.gitignore",
+    "src/frontend/app/requirements/[id]/page.tsx",
+    "src/frontend/src/components/DetailBlocks.tsx",
+    "src/frontend/src/components/FindingCard.tsx",
+    "src/frontend/src/components/RequirementDetailPageClient.tsx",
+    "src/frontend/src/components/RequirementDetailView.tsx",
+    "src/frontend/src/components/ScoreWaterfall.tsx",
+    "src/frontend/src/components/badges.tsx"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5",
+  "turn_id": "cf4c87913333",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 182,
+    "cache_creation_tokens": 149023,
+    "cache_read_tokens": 12054739,
+    "output_tokens": 54766,
+    "api_call_count": 91
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "claude-skill-toolu_019d1Eq2oDfc9eVPPPxPPtAd",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "sync"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "cf4c87913333",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 554,
+        "end": 555,
+        "entry_ids": [
+          "8c5043e5-244a-452b-97dd-78433e4bd334"
+        ],
+        "tool_use_id": "toolu_019d1Eq2oDfc9eVPPPxPPtAd"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_019d1Eq2oDfc9eVPPPxPPtAd"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: sync",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T17:04:45.755595336Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 470,
+    "human_modified": 2,
+    "human_removed": 0,
+    "total_committed": 470,
+    "total_lines_changed": 472,
+    "agent_percentage": 0,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 1,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "src/frontend/.gitignore": 1
+      }
+    }
+  ]
+}
