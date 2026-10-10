@@ -5,7 +5,7 @@ entfernen, Out-of-scope aussortieren, IDs und Rang vergeben), nicht was die KI s
 """
 
 from core.models import Category, EvidenceLevel, Scenario, Signal, SignalKind, SourceType
-from requirements_engine import derive
+from requirements_engine import derive, offer_check
 from requirements_engine.derive import RequirementDraft, RequirementDrafts, derive_all, derive_requirements, stable_key
 
 SCENARIO = Scenario(
@@ -89,7 +89,7 @@ def test_optionsliste_wird_pro_anforderung_abgeglichen(monkeypatch, tmp_path):
     pdf = tmp_path / "liste.pdf"
     pdf.write_bytes(b"%PDF")  # Inhalt egal: load_offer ist ersetzt, nur der Pfad muss existieren
     _fake_llm(monkeypatch, [_draft("Hands-free tailgate", ["SIG-1"])])
-    monkeypatch.setattr(derive, "load_offer", lambda path: [{"name": "TRAVEL PAKET", "code": "7LK"}])
+    monkeypatch.setattr(offer_check, "load_offer", lambda path: [{"name": "TRAVEL PAKET", "code": "7LK"}])
     monkeypatch.setattr(derive, "check", lambda title, offer: OfferCheck(status="optional", option_code="7LK"))
     reqs, _ = derive_all(SCENARIO, SIGNALS, [], {"option_list_path": str(pdf)})
     assert (reqs[0].offer_check.status, reqs[0].offer_check.option_code) == ("optional", "7LK")
@@ -110,7 +110,7 @@ def test_kaputte_optionsliste_stoppt_die_pipeline_nicht(monkeypatch, tmp_path):
     def boom(path):
         raise ValueError("kein PDF")
 
-    monkeypatch.setattr(derive, "load_offer", boom)
+    monkeypatch.setattr(offer_check, "load_offer", boom)
     reqs, _ = derive_all(SCENARIO, SIGNALS, [], {"option_list_path": str(pdf)})
     assert reqs[0].offer_check.status == "unknown"
 

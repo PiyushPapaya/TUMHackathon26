@@ -15,6 +15,7 @@ Start: einfacher Wortabgleich; danach LLM-Abgleich nur gegen die Kandidaten.
 
 from __future__ import annotations
 
+import logging
 from pathlib import Path
 
 from pydantic import BaseModel
@@ -22,6 +23,8 @@ from pydantic import BaseModel
 from core.llm import ask_json
 from core.models import OfferCheck
 from requirements_engine.offer_parser import parse_option_lines, parse_series_lines
+
+logger = logging.getLogger(__name__)
 
 SYSTEM_PROMPT = """You check whether a customer requirement for a BMW is ALREADY covered by today's
 equipment list (German price list: standard equipment and optional extras, incl. packages).
@@ -56,6 +59,30 @@ def load_offer(pdf_path: Path) -> list[dict]:
     return offer
 
 
+def load_offer_for(context: dict) -> tuple[list[dict], str]:
+    """(Optionen, Notiz). Ist die Liste leer, sagt die Notiz warum; sie landet an jeder Anforderung statt "unknown" pur.
+
+    Gefangen werden nur erwartbare Fehler (Datei fehlt oder ist kaputt). Ein Programmierfehler im Parser soll auffallen,
+    darum kein "except Exception". Fehler gehen zusätzlich ins Log, damit ein Nachtlauf sie nicht verschweigt.
+    """
+    path = context.get("option_list_path")
+    if not path:  # G68-CN: option_list_file ist null, es gibt in China keine Optionsliste
+        return [], "No option list exists for this scenario (cold start): nothing to compare."
+    name = Path(path).name
+    if not Path(path).exists():
+        logger.warning("Option list not found: %s", path)
+        return [], f"Option list file not found: {name}."
+    try:
+        offer = load_offer(Path(path))
+    except (OSError, RuntimeError, ValueError, ImportError) as error:  # pymupdf wirft für kaputte Dateien RuntimeError
+        logger.warning("Option list %s could not be read: %s: %s", name, type(error).__name__, error)
+        return [], f"Option list could not be read ({type(error).__name__}): {name}."
+    if not offer:
+        logger.warning("Option list %s contains no parsable options", name)
+        return [], f"Option list contains no parsable options: {name}."
+    return offer, ""
+
+
 def _as_prompt_line(number: int, option: dict) -> str:
     contents = f" | contains: {'; '.join(option['contents'][:8])}" if option.get("contents") else ""
     return f"O{number} | {option['code'] or '-'} | {option['status']} | {option['name']}{contents}"
@@ -70,6 +97,7 @@ def check(requirement_title: str, offer: list[dict]) -> OfferCheck:
     try:
         answer = ask_json(SYSTEM_PROMPT, f"Requirement: {requirement_title}\nOptions:\n{listing}", OfferAnswer)
     except Exception as error:  # kein Netz, Demo-Cache-Fehlschlag, Schemafehler: nie die Pipeline stoppen
+        logger.warning("Option check failed for %r: %s: %s", requirement_title, type(error).__name__, error)
         return OfferCheck(status="unknown", note=f"Check not possible ({type(error).__name__}).")
     if answer.status == "not_offered":
         return OfferCheck(status="not_offered", note=answer.note)

@@ -1,18 +1,16 @@
-/**
- * Horizontaler Balken für den Score (0-100) mit Zahl daneben, Akzentfarbe Blau
- * nach Design-Regel. Eigene Datei, weil Liste (D2) und Score-Wasserfall (D3)
- * dieselbe Balken-Optik brauchen.
- */
-export function ScoreBar({ score }: { score: number }) {
+export function ScoreBar({ score, source }: { score: number; source?: string }) {
   const width = Math.max(0, Math.min(100, score));
   return (
-    <div className="flex items-center gap-2">
-      <div className="h-2 w-28 overflow-hidden rounded-full bg-zinc-200 dark:bg-zinc-800">
-        <div className="h-full rounded-full bg-score-slider" style={{ width: `${width}%` }} />
+    <div className="min-w-36">
+      <div className="flex items-center gap-3">
+        <div className="h-2.5 w-28 overflow-hidden rounded-full bg-zinc-200 dark:bg-zinc-800">
+          <div className="h-full rounded-full bg-score-slider" style={{ width: `${width}%` }} />
+        </div>
+        <span className="w-11 text-right text-sm font-semibold text-foreground">
+          {score.toFixed(1)}
+        </span>
       </div>
-      <span className="w-10 text-right text-sm font-medium text-foreground">
-        {Math.round(score)}
-      </span>
+      {source && <p className="mt-1 text-[11px] text-zinc-500 dark:text-zinc-400">{source}</p>}
     </div>
   );
 }
