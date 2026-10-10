@@ -1,0 +1,56 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4K2K32G47YJ0WZXBD4E7A2V",
+  "session_id": "99c5f643-ecf5-4efc-8727-edd867cb242f",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T14:13:41.055837Z",
+  "branch": "main",
+  "checkpoints_count": 2,
+  "save_step_count": 1,
+  "files_touched": [
+    "src/backend/evidence_external/claims.py",
+    "src/backend/evidence_external/trust.py",
+    "src/backend/evidence_external/web_research.py",
+    "tests/pfad_b/test_trust.py"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5-5",
+  "turn_id": "e17d03f1b539",
+  "checkpoint_transcript_start": 150,
+  "transcript_lines_at_start": 150,
+  "compact_transcript_start": 26,
+  "token_usage": {
+    "input_tokens": 4,
+    "cache_creation_tokens": 7457,
+    "cache_read_tokens": 208393,
+    "output_tokens": 2889,
+    "api_call_count": 2
+  },
+  "session_metrics": {
+    "turn_count": 5
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T14:13:40.9681461Z",
+    "agent_lines": 103,
+    "agent_removed": 4,
+    "human_added": 3,
+    "human_modified": 86,
+    "human_removed": 0,
+    "total_committed": 192,
+    "total_lines_changed": 198,
+    "agent_percentage": 54.04040404040404,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 105,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "tests/pfad_b/test_web_research.py": 105
+      }
+    }
+  ]
+}
