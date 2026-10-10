@@ -74,7 +74,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 > `share_of_total_2030` = Volumen 2030 des Markts / Summe aller Märkte 2030. Test mit Mini-DataFrame.
 - **Fertig, wenn:** G60-US → `share_of_total_2030 ≈ 0.253`, `volume_2030 = 80000`.
 
-### [ ] A4 · Push + M1 (10 min, 17:20-17:30)
+### [x] A4 · Push + M1 (10 min, 17:20-17:30)
 - `sync`, dann Piyush im Chat: „A1-A3 auf main, bitte Stufe evidence laufen lassen.“
 - Du selbst: `python src/backend/pipeline.py --scenario G60-US --stage evidence` → `data/processed/G60-US/evidence.json` + `context.json`.
 
@@ -109,17 +109,21 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
   ohne Key bleibt v1 und es erscheint eine Warnung. Danach `pipeline.py --scenario G60-US --stage signals` zweimal laufen lassen (zweiter Lauf = Cache).
   Entscheidungen: Gruppen und `kind` bleiben aus v1 (nicht im Schema); Titel/Zusammenfassung mit Zahlen werden abgelehnt (Zahlen nur aus dem Code); Zitate nur aus der eigenen Gruppe.
 
-### [ ] A7 · Konflikte (45 min, bis 22:00, **M3**)
+### [x] A7 · Konflikte (45 min, bis 22:00, **M3**)
 **Prompt:**
 > Ticket A7. Widersprüche zeigen statt wegmitteln, weil der Brief „conflicting evidence“ ausdrücklich will.
 > Regel in `conflicts.py`: gleiche Kategorie, eine Seite delight, andere complaint/unmet_need, beide ≥ 10 Nennungen → `conflicts_with` gegenseitig.
 > Pro Befund höchstens 2 Konflikte (die mit den meisten Nennungen), damit die UI nicht überladen ist. In `extract_signals` am Ende aufrufen. Test mit 4 Mini-Befunden.
 - **Fertig, wenn:** im echten G60-US ist z. B. Display/Instrumente gelobt ↔ Touch-Bedienung kritisiert verknüpft · `sync` vor 22:00.
+- **Ergebnis A7:** gleiches Thema ab 10 Nennungen (z. B. Seats: Lob 41 ↔ Kritik 36), verschiedene Themen erst ab 30, höchstens 2 je Befund, gleiches Thema zuerst. G60-US: 11 Themenpaare; bei Schwelle 10 für alle hingen 33 von 45 Befunden an einem Konflikt (zu viel Rauschen).
 
 ### [ ] A8 · Zweites Szenario F70-EU (+ G70-US) (60 min, Nacht ab 23:00)
 - **Prompt:** „Ticket A8. Lass die Pipeline für `F70-EU` und `G70-US` laufen. Prüfe Länderliste in `config/scenarios/F70-EU.json` gegen die echten `Country`-Werte
   der F70-Datei und melde Piyush Änderungen (Config gehört dem Lead). Ergänze fehlende vfc2-Werte in `taxonomy.py`.“
 - **Fertig, wenn:** beide Szenarien liefern Befunde; Piyush hat die Bundles gebaut; im UI-Umschalter sichtbar.
+- **Stand A8:** G70-US und F70-EU liefern je 45 Befunde (0 unbekannte IDs). Länderliste F70-EU gegen die echte Datei geprüft: in `F70_feedback_hackathon.xlsx` kommen
+  GB (2.790 von 4.076 Zeilen), SE, FR, DK, FI vor; NO, ES, DE, IT, NL, LV fehlen (harmlos). JP (1.026), AU, KR, ZA sind absichtlich nicht im EU-Szenario.
+  **Hinweis an Piyush:** F70-EU ist praktisch ein UK-Szenario. Taxonomie deckt 73-81 % der Kommentare mit Thema ab; der Rest sind seltene Themen (je < 20 Nennungen), nichts ergänzt.
 
 ### [ ] A9 · Eval-Stichprobe von Hand labeln (60 min, Nacht ~00:00)
 **Prompt:**
@@ -127,6 +131,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 > Erzeuge `data/eval/G60-US_sample.csv` (nicht im Git!): 50 zufällige Paare (Befund, zitierter Beleg), Seed 42, Spalten `signal_id, signal_title, evidence_id, text, passt (j/n)`.
 > Ich fülle `passt` in Excel aus.
 - **Du selbst:** 50 Zeilen lesen, `j`/`n` eintragen (~30 min). Ehrlich labeln, auch wenn es weh tut.
+- **Stand A9:** `python tests/eval/make_sample.py G60-US` hat `data/eval/G60-US_sample.csv` erzeugt (50 Paare, 33 Befunde, Seed 42). **Offen: das Labeln der Spalte `passt (j/n)` (nur ein Mensch).** Danach `python tests/eval/run_eval.py G60-US`.
 
 ### [ ] A10 · Eval-Skript + REPORT (60 min, bis 03:00)
 **Prompt:**
@@ -135,6 +140,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 > (b) **Befund-Treue**: Anteil `j` in `data/eval/G60-US_sample.csv`;
 > (c) **Abdeckung**: Anteil der US-Kommentare, die in mindestens einem Befund landen; (d) Anteil Anforderungen mit Zahl im Akzeptanzkriterium.
 > Schreibe `tests/eval/REPORT.md` nur mit Zahlen, Methode und Grenzen, **ohne BMW-Zitate** (Repo ist öffentlich). Kleiner pytest für die Rechenfunktionen mit Fake-Daten.
+- **Stand A10:** `tests/eval/run_eval.py` + `eval_metrics.py` + Tests fertig. G60-US: Grounding 100 %, Wortlaut 100 %, Abdeckung 41,8 %. Offen: Befund-Treue (wartet auf A9-Labels) und Anforderungs-Zahlen (wartet auf `requirements.json` von Pfad C).
 - **Fertig, wenn:** `REPORT.md` hat 4 Zahlen + Methode · Piyush hat die Zahl für Deck und README · `sync` vor dem Schlafen (03:30).
 
 ### [ ] A11 · Pitch-Teil (So 08:30-09:30)
