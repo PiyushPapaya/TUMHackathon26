@@ -1,0 +1,38 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4K0TKJ14EKS2NRZ692MQCF3",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    ".gitignore",
+    "data/raw/AI-BMV.pdf",
+    "data/raw/BMW_Hackathon_Briefing_Short.pdf",
+    "data/raw/F70_G60_G68_G70_customer_studies.xlsx",
+    "data/raw/F70_OptionList.PDF",
+    "data/raw/F70_feedback_hackathon.xlsx",
+    "data/raw/G60_OptionList.PDF",
+    "data/raw/G60_feedback_hackathon.xlsx",
+    "data/raw/G70_OptionList.PDF",
+    "data/raw/G70_feedback_hackathon.xlsx",
+    "data/raw/sales_volumes.xlsx",
+    "docs/challenge-folien/findings-zu-auto.png",
+    "docs/challenge-folien/prozess.png"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 10,
+    "cache_creation_tokens": 59333,
+    "cache_read_tokens": 372265,
+    "output_tokens": 2506,
+    "api_call_count": 5
+  }
+}

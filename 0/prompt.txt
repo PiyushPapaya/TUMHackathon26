@@ -1,0 +1,14 @@
+lade alle daten in github repo hoch und pushe sie: [Image #1] [Image #2]
+
+<pasted_content id="7502">
+C:\Users\anil1\Downloads\sales_volumes.xlsx
+C:\Users\anil1\Downloads\G70_OptionList.PDF
+C:\Users\anil1\Downloads\G60_OptionList.PDF
+C:\Users\anil1\Downloads\G70_feedback_hackathon.xlsx
+C:\Users\anil1\Downloads\G60_feedback_hackathon.xlsx
+C:\Users\anil1\Downloads\F70_OptionList.PDF
+C:\Users\anil1\Downloads\F70_G60_G68_G70_customer_studies.xlsx
+C:\Users\anil1\Downloads\F70_feedback_hackathon.xlsx
+C:\Users\anil1\Downloads\AI-BMV.pdf
+C:\Users\anil1\Downloads\BMW_Hackathon_Briefing_Short.pdf
+</pasted_content id="7502">

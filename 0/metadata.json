@@ -1,0 +1,56 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4K0TKJ14EKS2NRZ692MQCF3",
+  "session_id": "02976f2f-0693-4cc1-8600-49492ff5c27d",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T13:42:52.0932245Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    ".gitignore",
+    "data/raw/AI-BMV.pdf",
+    "data/raw/BMW_Hackathon_Briefing_Short.pdf",
+    "data/raw/F70_G60_G68_G70_customer_studies.xlsx",
+    "data/raw/F70_OptionList.PDF",
+    "data/raw/F70_feedback_hackathon.xlsx",
+    "data/raw/G60_OptionList.PDF",
+    "data/raw/G60_feedback_hackathon.xlsx",
+    "data/raw/G70_OptionList.PDF",
+    "data/raw/G70_feedback_hackathon.xlsx",
+    "data/raw/sales_volumes.xlsx",
+    "docs/challenge-folien/findings-zu-auto.png",
+    "docs/challenge-folien/prozess.png"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5-5",
+  "turn_id": "01e3ae5d2f99",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 10,
+    "cache_creation_tokens": 59333,
+    "cache_read_tokens": 372265,
+    "output_tokens": 2506,
+    "api_call_count": 5
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T13:42:52.0087448Z",
+    "agent_lines": 2,
+    "agent_removed": 0,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 2,
+    "total_lines_changed": 2,
+    "agent_percentage": 100,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    }
+  ]
+}
