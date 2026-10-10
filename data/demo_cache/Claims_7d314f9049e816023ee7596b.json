@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "text": "The 2024–2026 Mercedes‑Benz E‑Class sold in the U.S. is fitted with Mercedes’ third‑generation MBUX and a 14.4‑inch central touchscreen paired with a 12.3‑inch digital instrument cluster (MBUX “zero layer” home screen is emphasized).",
+      "url": "https://www.mbusa.com/en/vehicles/class/e-class/sedan",
+      "publisher": "Mercedes‑Benz USA",
+      "published": "accessed 2026-10-10",
+      "stance": "supports",
+      "about": "Mercedes E‑Class displays."
+    },
+    {
+      "text": "Mercedes’ marketing and technical materials describe the E‑Class MBUX experience as ‘zero‑layer’ (major functions surfaced on the home screen) and offer the optional MBUX Superscreen / large screen layouts. ",
+      "url": "https://media.mbusa.com/news/the-new-e-class-intelligence-that-excites",
+      "publisher": "Mercedes‑Benz Media (MBUSA)",
+      "published": "(press material)",
+      "stance": "supports",
+      "about": "MBUX zero layer and Superscreen."
+    },
+    {
+      "text": "Independent testers note the E‑Class moves many secondary and climate controls into touch overlays and touch‑sensitive sliders (few physical climate knobs/buttons remain), and Consumer Reports called attention to touch‑sensitive audio/cruise sliders and climate functions being in the center screen.",
+      "url": "https://www.consumerreports.org/cars/mercedes-benz/e-class/2025/road-test-report/",
+      "publisher": "Consumer Reports",
+      "published": "2025 (road test)",
+      "stance": "supports",
+      "about": "E‑Class touch controls and climate control placement."
+    },
+    {
+      "text": "Edmunds’ first‑drive coverage of the E‑Class explicitly reports the system is quick and capable but criticizes that climate controls are largely inside the central touchscreen and that this requires taking your eyes off the road. ",
+      "url": "https://www.edmunds.com/car-news/2025-mercedes-benz-e-class-all-terrain-first-drive-review.html",
+      "publisher": "Edmunds",
+      "published": "2025",
+      "stance": "supports",
+      "about": "E‑Class touchscreen climate controls are distracting."
+    },
+    {
+      "text": "For the BMW 5 Series (G60, US 2024–2026), BMW publishes and reviewers describe the ‘BMW Curved Display’ — a combined 12.3‑inch instrument cluster and 14.9‑inch center screen — running BMW’s latest OS (iDrive 8 / 8.5 on the G60).",
+      "url": "https://www.carscoops.com/2023/05/84100-all-electric-i5-m60-gets-top-billing-as-bmw-finally-reveals-2024-5-series-lineup/",
+      "publisher": "Carscoops (reporting BMW specs)",
+      "published": "2023 (5 Series reveal)",
+      "stance": "supports",
+      "about": "BMW 5 Series curved display and iDrive version."
+    },
+    {
+      "text": "Multiple service/parts and enthusiast sources for the 2024–2026 G60 indicate BMW retains a physical iDrive rotary controller and hardware shortcut keys on the center console for current 5‑Series models (iDrive controller still present on many U.S. G60 builds).",
+      "url": "https://www.go-parts.com/garage/infotainment-display-control-switch-bmw-x3-bmw-530i-bmw-540i-2025-2026",
+      "publisher": "Go‑Parts (service/parts reference)",
+      "published": "2026 (site content)",
+      "stance": "supports",
+      "about": "BMW G60 retains iDrive rotary controller."
+    },
+    {
+      "text": "BMW’s official 2024/2025 press materials state the G60’s control concept is ‘designed to be operated primarily by means of the touch screen and natural language,’ while still listing steering‑wheel buttons and the iDrive Controller among operating methods.",
+      "url": "https://press.bmwgroup.com/global/article/detail/T0418778EN_US/the-all-new-2024-bmw-5-series?showMedia=photo",
+      "publisher": "BMW Group Press (press release)",
+      "published": "2024",
+      "stance": "neutral",
+      "about": "BMW 5 Series control philosophy: touch/voice + remaining hardware controls."
+    },
+    {
+      "text": "Top Gear and other reviewers note BMW moved many climate controls to the curved touchscreen (and shortcut bars/interaction bar) on the G60, which has drawn criticism from some reviewers and owners who find touchscreen climate controls less convenient or more distracting than physical knobs. ",
+      "url": "https://www.topgear.com/car-reviews/bmw/5-series/interior",
+      "publisher": "TopGear",
+      "published": "2024–2025 review coverage",
+      "stance": "supports",
+      "about": "BMW G60 climate controls and criticism."
+    },
+    {
+      "text": "Multiple mainstream reviews and manufacturer material confirm both cars ship with smartphone integration (Apple CarPlay and Android Auto) and voice assistants, but reviewers say Mercedes’ MBUX leans heavily on touch and voice while BMW’s G60 offers a more mixed approach (touch/voice plus a retained physical controller on many trims).",
+      "url": "https://www.autoblog.com/cars/mercedes/e-class/2025/",
+      "publisher": "Autoblog (E‑Class summary)",
+      "published": "2025",
+      "stance": "neutral",
+      "about": "Both cars smartphone integration and control approach."
+    }
+  ]
+}

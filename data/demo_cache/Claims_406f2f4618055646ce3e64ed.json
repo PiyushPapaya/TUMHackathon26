@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "text": "BMW announced it plans to offer vehicles with completely vegan interiors (first launch announced for 2023) and reported targets to increase use of recycled and secondary materials (for example thermoplastics containing around 30% recycled fishing-net material in NEUE KLASSE trim and a target of thermoplastics with ~40% recycled content by 2030).",
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0403367EN/bmw-group-sustainability-through-innovation-2022",
+      "publisher": "BMW Group Press",
+      "published": "2022-09-19",
+      "stance": "supports",
+      "about": "BMW sustainability / vegan interiors / recycled content targets"
+    },
+    {
+      "text": "Market research projects rapid growth in plant‑based (vegan) leather for automotive interiors (forecast CAGR ~12.4% in TrendVault’s study through 2033) and identifies North America (including the U.S.) and premium OEM demand as major adoption drivers for 2028–2031.",
+      "url": "https://www.trendvaultresearch.com/report/plant-based-vegan-leather-for-automotive-interior-72719",
+      "publisher": "TrendVault Research",
+      "published": "2025-12-19 (updated 2026-06-08)",
+      "stance": "supports",
+      "about": "plant‑based / vegan leather market growth and premium adoption"
+    },
+    {
+      "text": "Industry analysis (July 2025) reports that recycled plastics, natural‑fiber composites (flax, hemp, kenaf) and bio‑based foams are moving from concept into production for dashboards, door panels and seat reinforcements—enabling weight reduction and wider use in premium cabins during the late‑2020s and into 2030–2031.",
+      "url": "https://automotive.messefrankfurt.com/content/dam/messefrankfurt-redaktion/automotive/documents/exl/green-materials-in-automotive-july.pdf",
+      "publisher": "Messe Frankfurt / F&S (Green Materials in Automotive)",
+      "published": "2025-07",
+      "stance": "supports",
+      "about": "natural‑fiber composites / recycled plastics / bio‑foams in interiors"
+    },
+    {
+      "text": "Market forecasts for modular or autonomous‑ready interiors show rapid expansion through 2031 (modular‑interior market forecast to ~USD 9.55B by 2031), indicating that plug‑and‑play modules, long rails and reconfigurable seating/center‑console systems will become commercially important for premium EV/automated models by 2028–2031.",
+      "url": "https://www.knowledge-sourcing.com/report/autonomous-vehicle-modular-interior-market",
+      "publisher": "Knowledge Sourcing (Autonomous Vehicle Modular Interior Market)",
+      "published": "2026",
+      "stance": "supports",
+      "about": "modular / reconfigurable interior space concepts"
+    },
+    {
+      "text": "Consulting research argues that software‑defined cockpits, larger integrated displays, advanced HMI and wellness features (air quality, climate personalization, biometric monitoring) will become key premium differentiators and increasingly standard in luxury/mid‑luxury cabins through 2030.",
+      "url": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/the-future-of-interior-in-automotive",
+      "publisher": "McKinsey & Company",
+      "published": "2021-11-12",
+      "stance": "supports",
+      "about": "digital HMI / software‑defined cockpit / wellness features"
+    },
+    {
+      "text": "A December 2024 market report projects the global automotive interior materials market to grow to about USD 79.7 billion by 2030 and explicitly calls out increasing OEM adoption of recycled textiles, synthetic/plant‑based leathers and lightweight composites—trends that will shape premium interiors in the U.S. between 2028–2031.",
+      "url": "https://www.grandviewresearch.com/industry-analysis/automotive-interior-materials-market",
+      "publisher": "Grand View Research",
+      "published": "2024-12",
+      "stance": "supports",
+      "about": "market growth and adoption of recycled / bio‑based interior materials"
+    },
+    {
+      "text": "Analyses and supplier examples show additive manufacturing and generative‑design techniques being applied to interior components (trims, seat frames) to cut weight and enable new textures/finishes—enablers for premium cabin differentiation and reduced material waste by the late 2020s. (BMW and others cite generative design and CO2‑reduction use cases.)",
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0403367EN/bmw-group-sustainability-through-innovation-2022",
+      "publisher": "BMW Group Press",
+      "published": "2022-09-19",
+      "stance": "supports",
+      "about": "generative design / additive manufacturing for interior components"
+    },
+    {
+      "text": "Modular interior architectures are being positioned to support circularity and lifecycle upgrades (replaceable consoles/modules and easier disassembly), which suppliers and OEMs expect to use to reduce waste and extend premium‑cabin serviceability across the 2028–2031 timeframe.",
+      "url": "https://www.knowledge-sourcing.com/report/autonomous-vehicle-modular-interior-market",
+      "publisher": "Knowledge Sourcing (Autonomous Vehicle Modular Interior Market)",
+      "published": "2026",
+      "stance": "supports",
+      "about": "modularity enabling circularity / lifecycle upgrades"
+    },
+    {
+      "text": "Industry surveys and CMF (colour, material, finish) research show premium marques prioritizing sustainable CMF (recycled textiles, low‑VOC coatings, natural trims) and antimicrobial/health‑oriented materials—trends that OEMs expect to package as premium features in North America between 2028 and 2031. ",
+      "url": "https://www.cardesignnews.com/files/2025/07/01/cdncmfsurvey2025reportweb_510456.pdf",
+      "publisher": "Car Design News (CMF Survey 2025)",
+      "published": "2025-07",
+      "stance": "supports",
+      "about": "CMF / sustainable materials / wellness trends in premium cabins"
+    }
+  ]
+}

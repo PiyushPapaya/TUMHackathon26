@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "text": "Genesis Electrified G80 (U.S. model) is EPA‑estimated at 282 miles of range with an 87.2 kWh battery and Genesis claimed 10→80% DC fast charging in about 22 minutes (tested on a 350 kW charger in media reviews).",
+      "url": "https://www.caranddriver.com/genesis/electrified-g80",
+      "publisher": "Car and Driver",
+      "published": "2025-?",
+      "stance": "supports",
+      "about": "Genesis Electrified G80 range and charging performance."
+    },
+    {
+      "text": "Genesis quietly stopped selling the Electrified G80 in the United States for the 2025 and 2026 model years (remaining units are 2024 stock at dealers).",
+      "url": "https://www.kbb.com/car-news/genesis-quietly-pulled-the-electrified-g80-from-us/",
+      "publisher": "Kelley Blue Book",
+      "published": "2025-08-07",
+      "stance": "supports",
+      "about": "Market availability of Genesis Electrified G80 in US 2025/2026."
+    },
+    {
+      "text": "BMW’s all‑electric 5 Series (i5 / G60) eDrive40 uses a net usable battery of 84.3 kWh and BMW estimates up to about 295 miles of range (with 19\" wheels) for that configuration, with AC charging up to 11 kW and DC fast‑charging capability up to ~205 kW (BMW’s 10→80% example ~30 minutes).",
+      "url": "https://www.press.bmwgroup.com/usa/article/detail/T0418778EN_US/the-all-new-2024-bmw-5-series?language=en_US",
+      "publisher": "BMW USA (press release)",
+      "published": "2023-10-?",
+      "stance": "supports",
+      "about": "BMW i5 (G60) battery, range and charging specs."
+    },
+    {
+      "text": "BMW said first‑time i5 owners in the U.S. receive two years of complimentary 30‑minute charging sessions at Electrify America DC fast‑charging locations, a tangible public‑charging benefit BMW promoted for the i5 launch in the U.S.",
+      "url": "https://www.press.bmwgroup.com/usa/article/detail/T0418778EN_US/the-all-new-2024-bmw-5-series?language=en_US",
+      "publisher": "BMW USA (press release)",
+      "published": "2023-10-?",
+      "stance": "supports",
+      "about": "BMW i5 Electrify America complimentary charging offer."
+    },
+    {
+      "text": "Because Genesis discontinued the Electrified G80 in the U.S. for 2025/2026, new‑car buyers seeking dealer‑supported, factory‑new Genesis EVs in that segment had effectively no current Genesis EV offering in the U.S. market for those model years, while BMW continued to offer the i5 in the U.S.; this affects practical choice, warranty support and dealer service availability for new buyers in 2025/2026.",
+      "url": "https://www.kbb.com/car-news/genesis-quietly-pulled-the-electrified-g80-from-us/",
+      "publisher": "Kelley Blue Book",
+      "published": "2025-08-07",
+      "stance": "supports",
+      "about": "Market availability and implications for buyers 2025/2026."
+    },
+    {
+      "text": "Independent reviews and tests show the Electrified G80 can meet its 10→80% claim when plugged into very high‑power (350 kW) chargers, but real‑world charging speed always depends on charger maximum power, the vehicle’s charging curve, state‑of‑charge and temperature; BMW’s i5 supports lower peak DC power (BMW lists ~205 kW) so its peak session power and 10→80% time will typically be longer than a vehicle that can sustain higher kW on the same site (actual times vary by site and conditions).",
+      "url": "https://www.caranddriver.com/genesis/electrified-g80",
+      "publisher": "Car and Driver",
+      "published": "2025-?",
+      "stance": "neutral",
+      "about": "Real‑world charging variability and comparative peak DC rates."
+    },
+    {
+      "text": "Public charging in the U.S. remains a common source of driver frustration — J.D. Power’s 2025 EVX Public Charging Study reported that 14% of EV owners experienced a visit where they could not charge (an improvement vs prior years), and academic/industry studies document ongoing reliability, payment and interoperability problems that make 'public charging is tedious' a broadly reported sentiment.",
+      "url": "https://www.jdpower.com/business/press-releases/2025-us-electric-vehicle-experience-evx-public-charging-study",
+      "publisher": "J.D. Power",
+      "published": "2025-?",
+      "stance": "supports",
+      "about": "Public charging reliability and owner experience (2025 study)."
+    },
+    {
+      "text": "Genesis’s U.S. consumer materials emphasized home charging (Genesis references a ChargePoint HomeFlex Level‑2 solution on its U.S. site) rather than advertised public DC‑charging credits, while BMW explicitly promoted Electrify America public‑charging credits for i5 buyers — a difference that can reduce perceived friction from public charging for new BMW i5 owners compared with typical Genesis EV buyers in the U.S. (while the G80 remained for sale).",
+      "url": "https://www.genesis.com/us/en/build-and-price/byo-app.year_2024.model_electrified-g80",
+      "publisher": "Genesis USA (official site)",
+      "published": "2024-?",
+      "stance": "supports",
+      "about": "Genesis charging promotions vs BMW public‑charging credits."
+    },
+    {
+      "text": "Multiple technical and industry analyses note that the Electrified G80 is a conversion of a gasoline platform (not a ground‑up EV architecture), giving it respectable real‑world range but generally lower charging/efficiency competitiveness versus more EV‑native rivals (a factor reviewers cited when comparing it to newer EV architectures such as the BMW i5).",
+      "url": "https://www.kbb.com/car-news/genesis-quietly-pulled-the-electrified-g80-from-us/",
+      "publisher": "Kelley Blue Book",
+      "published": "2025-08-07",
+      "stance": "supports",
+      "about": "Vehicle architecture (ICE‑derived EV vs EV‑native) and its effect on range/efficiency."
+    }
+  ]
+}

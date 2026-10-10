@@ -1,0 +1,76 @@
+{
+  "claims": [
+    {
+      "text": "Tesla Model S owner’s manual (Tesla.com) lists cargo volumes of front trunk 3.1 cu ft, rear cargo 25.0 cu ft with rear seats up and 61.4 cu ft with the rear seats folded (2025/2026 Model S specifications).",
+      "url": "https://www.tesla.com/ownersmanual/models/en_kr/GUID-91E5877F-3CD2-4B3B-B2B8-B5DB4A6C0A05.html",
+      "publisher": "Tesla (Owner's Manual)",
+      "published": "2026",
+      "stance": "neutral",
+      "about": "Tesla Model S cargo volume"
+    },
+    {
+      "text": "Independent reviews note the Tesla Model S uses adaptive air suspension and delivers a generally comfortable ride, but reviewers warn ride can feel firmer with the optional larger 21‑inch wheels. (The Car Connection review / specs pages discuss ride and wheel-size tradeoffs.)",
+      "url": "https://www.thecarconnection.com/overview/tesla_model-s_2024",
+      "publisher": "The Car Connection",
+      "published": "February 5, 2024",
+      "stance": "neutral",
+      "about": "Tesla Model S ride comfort"
+    },
+    {
+      "text": "Published specifications and data aggregators for the BMW 5 Series (G60) commonly list the sedan’s luggage/cargo capacity at about 520 liters (≈18.4 cu ft) with the rear seats up (expanding when the rear seats fold).",
+      "url": "https://carsbyspec.com/bmw/5-series/2024?version=860",
+      "publisher": "CarsbySpec",
+      "published": "2024",
+      "stance": "neutral",
+      "about": "BMW 5 Series (G60) cargo volume"
+    },
+    {
+      "text": "U.S. EPA / model‑specific listings used in databases show the 2025 BMW 530i (G60) 4‑door sedan luggage (trunk) volume listed as 14.0 cu ft for that specific U.S. trim — i.e., trunk volume can differ by model, powertrain and U.S. trim.",
+      "url": "https://opencarindex.com/cars/bmw/5-series/2025-bmw-530i",
+      "publisher": "OpenCarIndex (citing U.S. EPA / FuelEconomy.gov)",
+      "published": "2026",
+      "stance": "neutral",
+      "about": "BMW 5 Series (G60) U.S. trunk volume (EPA)"
+    },
+    {
+      "text": "Comparing the two: the Tesla Model S provides substantially more practical cargo volume than the BMW 5‑series sedan in common U.S. specs (Tesla ~25.0 cu ft rear cargo vs BMW sedan U.S. EPA listings of ~14.0–18.4 cu ft depending on trim/powertrain).",
+      "url": "https://www.tesla.com/ownersmanual/models/en_kr/GUID-91E5877F-3CD2-4B3B-B2B8-B5DB4A6C0A05.html",
+      "publisher": "Tesla (Owner's Manual)",
+      "published": "2026",
+      "stance": "neutral",
+      "about": "Comparison of Tesla Model S vs BMW 5 Series cargo volume"
+    },
+    {
+      "text": "Review coverage and press testing of the BMW G60 5 Series emphasize a quiet cabin, comfortable seats and a smooth ride (reviewers describe seat comfort and ride refinement among the car’s strong points).",
+      "url": "https://www.bmwblog.com/2026/02/04/2025-bmw-550e-review/",
+      "publisher": "BMWBlog",
+      "published": "2026-02-04",
+      "stance": "neutral",
+      "about": "BMW 5 Series (G60) comfort and ride"
+    },
+    {
+      "text": "Owner threads and technical parts pages in German BMW forums report the foot‑activated / ‘hands‑free’ Easy‑Open tailgate (berührungslose Heckklappe) can be omitted on some vehicles and — when present — owners commonly describe it as finicky or intermittently unreliable (forum examples and parts‑service notes document unreliability and diagnostic/repair items).",
+      "url": "https://www.motor-talk.de/forum/heckklappe-mit-komfortzugang-funktioniert-nicht-wie-gewuenscht-t7287148.html?page=2",
+      "publisher": "Motor-Talk forum (user reports)",
+      "published": "January 21, 2023",
+      "stance": "supports",
+      "about": "BMW hands‑free tailgate reliability (owner reports)"
+    },
+    {
+      "text": "Technical parts/service documentation and aftermarket parts pages note failure modes for the sensor and control modules used by ‘easy‑open’ (foot‑activated) tailgate systems and explicitly list “Easy‑Open function works unreliably” as a reported symptom.",
+      "url": "https://www.autoparts24.eu/oem/5FF-962-253/",
+      "publisher": "Autoparts24 (parts / service information)",
+      "published": "n.d.",
+      "stance": "supports",
+      "about": "Hands‑free tailgate sensor failure modes (BMW and similar systems)"
+    },
+    {
+      "text": "The Tesla Model S owner’s manual does not document a factory foot‑kick / hands‑free trunk-opening (kick‑sensor) feature — Tesla’s manual lists liftgate operation and adjustable opening height but contains no foot‑kick/‘hands‑free’ activation instructions, so the specific German complaint about an unreliable foot‑kick trunk does not describe a documented factory feature of the Model S owner’s manual.",
+      "url": "https://www.tesla.com/ownersmanual/models/en_kr/GUID-91E5877F-3CD2-4B3B-B2B8-B5DB4A6C0A05.html",
+      "publisher": "Tesla (Owner's Manual)",
+      "published": "2026",
+      "stance": "contradicts",
+      "about": "Applicability of 'hands‑free trunk' complaint to Tesla Model S"
+    }
+  ]
+}

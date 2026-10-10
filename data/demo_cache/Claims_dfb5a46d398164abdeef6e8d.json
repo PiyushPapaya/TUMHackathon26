@@ -1,0 +1,68 @@
+{
+  "claims": [
+    {
+      "text": "BMW states its Neue Klasse (Gen6) uses an 800‑volt electrical architecture and that Gen6 high‑voltage batteries will provide about 30% faster charging and up to 30% greater WLTP range versus the previous generation.",
+      "url": "https://www.press.bmwgroup.com/usa/article/detail/T0448170EN_US/bmw-reveals-revolutionary-electric-drive-concept-with-800v-technology-for-the-neue-klasse",
+      "publisher": "BMW Group Press",
+      "published": "2025-02-20",
+      "stance": "supports",
+      "about": "charging speed and real-world range"
+    },
+    {
+      "text": "BMW says the Neue Klasse’s new cylindrical Gen6 cell has roughly 20% greater energy density than BMW’s prior Gen5 prismatic cell, a change BMW links directly to the stated range and charging improvements.",
+      "url": "https://www.press.bmwgroup.com/usa/article/detail/T0448170EN_US/bmw-reveals-revolutionary-electric-drive-concept-with-800v-technology-for-the-neue-klasse",
+      "publisher": "BMW Group Press",
+      "published": "2025-02-20",
+      "stance": "supports",
+      "about": "real-world range / battery energy density"
+    },
+    {
+      "text": "BMW’s March 2025 media information for the BMW i5 (G60) shows that the G60 uses a 400‑volt battery architecture and a maximum DC fast‑charging power of 205 kW (10–80% in ~30 minutes), providing a 2025 technical baseline for the 5‑series‑segment sedan.",
+      "url": "https://device.report/m/1a13ef0c32b8394f30ebe169aceac900603feffeae91404c1edb9e3666ea36ae",
+      "publisher": "BMW Media Information (published via device.report)",
+      "published": "03/2025",
+      "stance": "neutral",
+      "about": "baseline charging speed for BMW 5er (G60)"
+    },
+    {
+      "text": "IEA’s Global EV Outlook 2026 notes the industry trend toward higher‑voltage architectures and faster charging: in 2025 about 160 BEV models supported >150 kW charging, only ~50 supported >250 kW, and the report explains that higher‑voltage systems (e.g., 800V) reduce charging time — supporting the expectation more premium models will support faster charging through 2028–2031.",
+      "url": "https://www.iea.org/reports/global-ev-outlook-2026",
+      "publisher": "International Energy Agency (IEA)",
+      "published": "2026-05-20",
+      "stance": "supports",
+      "about": "charging speed trend / 800V adoption"
+    },
+    {
+      "text": "The Joint Office of Energy and Transportation documents that SAE published a J3400 Technical Information Report in December 2023 and that most vehicle manufacturers announced plans to adopt the J3400/NACS connector beginning as early as 2025, which enables broader cross‑network connector compatibility in North America.",
+      "url": "https://driveelectric.gov/charging-connector",
+      "publisher": "U.S. Joint Office of Energy and Transportation",
+      "published": "SAE TIR Dec 2023; page accessed 2026-10-10",
+      "stance": "supports",
+      "about": "charging network access / connector standardization (NACS/J3400)"
+    },
+    {
+      "text": "General Motors says it expects all GM EVs to ship with a native NACS charging port by the 2027 model year, a step that increases mainstream non‑Tesla access to Tesla Superchargers in the US from 2027 onward.",
+      "url": "https://news.gm.com/home.detail.html/Pages/topic/us/en/2026/aug/0813-electric-vehicle-nacs-charging.html",
+      "publisher": "General Motors News",
+      "published": "page accessed 2026-10-10 (GM position: transition to native NACS by 2027)",
+      "stance": "supports",
+      "about": "charging network access (NACS / Supercharger access)"
+    },
+    {
+      "text": "EVgo’s SEC filing and investor materials state the company is building out GM‑funded fast‑charger stalls (2,850 stalls to be installed by June 30, 2028) and reported pilots/rollouts of NACS/J3400 connectors and plans for higher‑power (350 kW and higher) stalls as part of its network expansion.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1821159/000110465926024827/evgo-20251231x10k.htm",
+      "publisher": "EVgo, Inc. (SEC filing / 10‑K)",
+      "published": "2025-12-31",
+      "stance": "supports",
+      "about": "charging network expansion and high‑power chargers through 2028"
+    },
+    {
+      "text": "The NEVI Formula Program (Bipartisan Infrastructure Law) and related federal guidance aimed to help fund a nationwide public fast‑charging build‑out (the broader goal tied to ~500,000 public chargers by 2030), but FHWA/NEVI guidance was revised in August 2025 to give states more flexibility on spacing (the earlier ‘every 50 miles’ shorthand is therefore not a fixed mandate for all states going forward).",
+      "url": "https://www.transportation.gov/rural/ev/toolkit/ev-infrastructure-funding-and-financing/federal-funding-programs",
+      "publisher": "U.S. Department of Transportation (NEVI program summary)",
+      "published": "page accessed 2026-10-10 (NEVI program established under IIJA/BIL; guidance updated Aug 2025)",
+      "stance": "supports",
+      "about": "charging network expansion and policy (NEVI) toward 2030"
+    }
+  ]
+}
