@@ -1,38 +1,39 @@
 # Regeln für Claude Code (Hackathon-Team)
 
-Repo des 5-köpfigen Teams für das **TUM.ai × EHL Grand Finale** (10.-11.10.2026, Garching). Ziel: **Platz 1 in unserer Challenge.** Stack: Next.js (`src/frontend/`) + Python/FastAPI (`src/backend/`), siehe `docs/wissen/STACK.md`.
+Repo des 5-köpfigen Teams für das **TUM.ai × EHL Grand Finale** (10.-11.10.2026, Garching). Ziel: **Platz 1 in unserer Challenge.** **Challenge: BMW "AI for Product Decision Making"**, Produkt **Signal2Spec**. Stack: Next.js (`src/frontend/`) + Python/FastAPI (`src/backend/`). **Masterplan: `docs/PLAN.md`.**
 
-**Wichtig:** Nicht jede Person kann programmieren. **Antworte immer auf Deutsch, einfach.** Erkläre **vor jedem Git-Befehl in einem Satz, was er tut und warum.** Bei Unsicherheit: **fragen statt raten.** Fachwörter (Ruleset, CI, Lockfile …) erklärt `docs/wissen/GLOSSAR.md`. Python heißt auf Windows `python`, auf dem Mac `python3`.
+**Wichtig:** Nicht jede Person kann programmieren. **Antworte immer auf Deutsch, einfach.** Erkläre **vor jedem Git-Befehl in einem Satz, was er tut und warum.** Bei Unsicherheit: **fragen statt raten.** Fachwörter (Ruleset, CI, Lockfile …) erklärt `docs/hilfe/GLOSSAR.md`. Python heißt auf Windows `python`, auf dem Mac `python3`.
 
 ## Start jeder Session → Skill `sitzung-start`
 
-1. Name klären, `team/<name>.md` lesen (Rolle, Ordner, Aufgaben).
-2. `git switch main && git pull`, dann eigener Branch `<name>/<thema>` (`git switch -c …`).
-3. `docs/ARCHITEKTUR.md` (und ab Sa `docs/research/CHALLENGE.md`) lesen.
+1. Name und **Pfad** klären (Tabelle in `docs/PLAN.md` §6), dann `docs/pfade/PFAD-<X>.md` lesen (Ziel, Ordner, Schritte).
+2. `git switch main && git pull`, dann eigener Branch `<name>/pfad-<x>-<thema>` (`git switch -c …`).
+3. `docs/PLAN.md`, `docs/ARCHITEKTUR.md`, `docs/CHALLENGE.md` überfliegen; Uhrzeit gegen `docs/ZEITPLAN.md` halten.
 4. `entire status` prüfen (muss „Enabled“ zeigen). Sonst: `entire enable --agent claude-code`.
 
-## Wer schreibt wo (Ownership)
+## Wer schreibt wo (Ownership nach Pfaden)
 
-| Person | GitHub | Rolle | Schreibt in |
-|---|---|---|---|
-| Piyush | @PiyushPapaya | Lead, Captain, Backend, API-Vertrag, **merged als Einziger** | `src/backend/`, `src/shared/`, Root-Dateien, `.github/`, `.claude/`, `scripts/`, `README.md`, `CLAUDE.md`, `docs/ARCHITEKTUR.md` |
-| Lasse | @JoleEight | Frontend-Seiten | `src/frontend/` |
-| Aditya | @AdiAvocado | Daten, Testfälle, Evaluation, Demo | `tests/`, `demo/` |
-| Dennis | @Di0n-0 | Partner-Kontakt, Anforderungen, Research, README-Texte | `docs/research/`, `docs/wissen/` |
-| Fabian | (folgt) | Pitch, Slides, Design, Video | `docs/pitch/`, `design/` |
-| alle | | eigener Steckbrief und Arbeitsbereich | `team/<name>.md`, `workspace/<name>/` |
+Piyush ist Lead. Die anderen vier verteilen die Pfade A-D am Samstag unter sich (`docs/PLAN.md` §6). Es gibt keine festen Rollen, jeder Pfad baut Code, Tests, 1 Pitch-Folie und 1 Demo-Abschnitt.
 
-- **Nur im Bereich der Person schreiben.** Fremde Ordner und `src/shared/` nur lesen. Bedarf dort: erklären, dann Issue (Vorlage „Aufgabe“) oder PR-Kommentar an den Owner.
-- **Geteilte Dateien nur Piyush:** README, CLAUDE.md, `requirements.txt`, `package.json`/Lockfiles, CI, `.claude/settings.json`, `.gitignore`, `.gitattributes`, `.env.example`, `src/shared/`.
-- **Nicht-Coding-Rollen:** Texte, Recherche, Struktur, Testpläne, Markdown. Kein App-Code (Ausnahme: Tests in `tests/` für Aditya).
-- **Verträge zuerst:** API-Format steht in `src/shared/API.md` + `src/shared/beispiele/*.json`. Frontend baut gegen diese Mocks.
+| Pfad | Schreibt in | Liefert |
+|---|---|---|
+| **Lead** (Piyush, @PiyushPapaya, **merged als Einziger**) | `src/backend/core/`, `src/backend/api/`, `main.py`, `pipeline.py`, `src/shared/`, `config/`, `docs/`, Root-Dateien, `.github/`, `.claude/`, `scripts/` | Verträge, Integration, Deck, Abgabe |
+| **A** Interne Evidenz | `src/backend/evidence_internal/`, `tests/pfad_a/` | `evidence.json`, `context.json`, `signals.json` |
+| **B** Externe Evidenz + Qualitätsbeweis | `src/backend/evidence_external/`, `tests/pfad_b/`, `tests/eval/` | `web_*.json`, Eval-Zahl |
+| **C** Anforderungen + Priorisierung | `src/backend/requirements_engine/`, `tests/pfad_c/` | `requirements.json` |
+| **D** PM-Cockpit | `src/frontend/` | die Oberfläche |
+
+- **Nur im eigenen Pfad schreiben.** Fremde Ordner, `src/backend/core/` und `src/shared/` nur lesen. Bedarf dort: erklären und dem Lead als PR-Kommentar schicken.
+- **Schnittstellen sind fix:** Die Signatur im Kopf jeder Pfad-Datei nicht ändern. Innen ist alles frei.
+- **Geteilte Dateien nur Piyush:** README, CLAUDE.md, `requirements.txt`, `pyproject.toml`, `package.json`/Lockfiles, CI, `.claude/settings.json`, `.gitignore`, `.gitattributes`, `.env.example`, `src/shared/`, `config/`.
+- **LLM nur über `core/llm.py`** (Cache, Demo-Modus, JSON-Schema). Jedes LLM-Ergebnis darf nur IDs aus der Eingabe zitieren, und ein Test prüft das.
+- **BMW-Daten nie committen** (`data/` ist gitignored). Tests nutzen synthetische Mini-Daten.
 
 ## Skill-Router
 
 | Situation | Skill |
 |---|---|
 | Session beginnt, „Was soll ich tun?“ | `sitzung-start` |
-| Brief/Challenge-Text da, Ideen bewerten (Sa 10-13 Uhr) | `challenge-intake` |
 | Arbeit speichern, main holen, PR erstellen (alle 1-2 h) | `sync-und-pr` |
 | „Wie würde die Jury-KI uns bewerten?“ (ab Sa 18:00 alle paar Stunden) | `selbstreview` |
 | „Läuft das bei Fremden?“, vor jeder Abgabe | `demo-check` |
@@ -55,7 +56,7 @@ Repo des 5-köpfigen Teams für das **TUM.ai × EHL Grand Finale** (10.-11.10.20
 Entire zeichnet unsere Prompts auf. Der EHL-Session-Reviewer gibt 35 % auf eigene, begründete Entscheidungen und bewertet einen praktisch zufälligen Checkpoint. Also gilt das in **jeder** Session, in Prompts, Commits und PRs:
 
 - **Formel:** Was + Warum + Was verworfen + Wie prüfen.
-- Gut: „Wir rechnen Gesamtkosten in Python statt im LLM, weil Modelle sich bei Summen verrechnen. Prüf mit den 3 Fällen in `demo/beispiele/`.“
+- Gut: „Wir rechnen Gesamtkosten in Python statt im LLM, weil Modelle sich bei Summen verrechnen. Prüf mit `tests/test_scoring.py`.“
 - Schlecht: „Mach das mal.“ / „Die KI hat das gebaut.“
 - Wenn die Person nur „mach X“ sagt: kurz nach dem Warum fragen und es in Commit und PR übernehmen.
 
@@ -65,19 +66,19 @@ Jede Person muss das Produkt erklären können, und eine KI-Review liest Code un
 
 - Lesbarer Code: sprechende Namen, kurze Kommentare, die das **WARUM** erklären. Dateien unter ~200 Zeilen halten (der Reviewer kappt danach).
 - Bei jedem PR mit Code: `docs/ARCHITEKTUR.md` aktualisieren (Komponenten, Datenfluss, externe APIs, Entscheidungen), einfach formuliert.
-- Neue Designentscheidung → Frage + Antwort in `docs/pitch/JURY-FAQ.md`.
+- Neue Designentscheidung → Zeile in `docs/ARCHITEKTUR.md` (Entscheidungen) + ggf. Jury-Frage in `docs/pitch/PITCH.md`.
 - „Erklär mir X“: erst 2 Sätze Prinzip, dann der Ablauf, dann die Stelle im Code (`datei:zeile`).
 
 ## Verifikationspflicht
 
 Nichts ist „fertig“ ohne Beweis. Vor „fertig“ bzw. vor jedem PR (nur was existiert):
-`ruff check src/backend` · `python -m pytest tests -q` · `cd src/frontend && npm run lint && npm run build` · App startet und der Kernflow klappt.
-Ergebnis (Befehl + Ausgabe) gehört in den PR unter „Wie verifiziert“. Behauptungen über die EHL nur mit Quelle (`docs/wissen/`).
+`ruff check src/backend tests` · `python -m pytest -q` · `cd src/frontend && npm run lint && npm run build` · App startet und der Kernflow klappt.
+Ergebnis (Befehl + Ausgabe) gehört in den PR unter „Wie verifiziert“. Behauptungen über BMW-Daten nur mit Zahl aus dem Code oder `docs/CHALLENGE.md`.
 
 ## Timeboxing
 
 - Jede Aufgabe hat eine Zeitbox. **45 Minuten ohne Fortschritt → Team fragen.**
-- Harte Meilensteine (`docs/ZEITPLAN.md`): Sa 13:00 Idee + Challenge gewählt · 14:00 API-Vertrag · 18:00 End-to-End · 22:00 MVP + erste Abgabe · So 08:00 Feature-Freeze · 10:00 Pitch-Probe · **10:30 Code-Freeze** · **11:30 abgegeben** (Deadline 12:00).
+- Harte Meilensteine (`docs/ZEITPLAN.md`): Sa 15:00 Pfade verteilt · 18:00 End-to-End · 22:00 MVP + erste Abgabe · So 08:00 Feature-Freeze · 10:00 Pitch-Probe · **10:30 Code-Freeze** · **11:30 abgegeben** (Deadline 12:00).
 - Wackelt ein Meilenstein: **Umfang kürzen, nicht Zeit verlängern.**
 
 ## Code-Freeze und Abgabe → Skill `abgabe`
@@ -95,7 +96,7 @@ Ergebnis (Befehl + Ausgabe) gehört in den PR unter „Wie verifiziert“. Behau
 
 ## Wissen
 
-Kurzfassung: `docs/research/KURZFASSUNG.md`. Ausführlich: `docs/wissen/` (EHL-Bewertung, vergangene Projekte, Partner-Ideen, Stack, OpenAI/Entire, Glossar, Git-Hilfe, FAQ). Regeln ausführlich: `docs/ZUSAMMENARBEIT.md`. Setup: `docs/SETUP.md`.
+Plan: `docs/PLAN.md` · Pfade: `docs/pfade/` · Zeit: `docs/ZEITPLAN.md` · Brief: `docs/CHALLENGE.md` · Architektur: `docs/ARCHITEKTUR.md` · API: `src/shared/API.md` · Pitch: `docs/pitch/PITCH.md` · Abgabe: `docs/ABGABE.md` · Setup: `docs/SETUP.md` · Hilfe für Nicht-Coder: `docs/hilfe/` (Glossar, Git-Hilfe).
 
 
 

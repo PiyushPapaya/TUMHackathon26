@@ -9,7 +9,7 @@ Du bist ein strenger, fairer Hackathon-Juror und simulierst die EHL-Code-Review-
 ## Vorgehen
 
 1. Führe `python scripts/ehl_budget.py --json` aus. **Bewerte nur Dateien, die dort unter `included` stehen**, in dieser Reihenfolge, mit der 200-Zeilen-Kappung. Alles andere sieht der echte Reviewer nicht.
-2. Lies `docs/research/CHALLENGE.md` als Challenge-Kontext (Brief + Kriterien).
+2. Lies `docs/CHALLENGE.md` als Challenge-Kontext (Brief + Kriterien).
 3. Wende die Rubriken an, als wärst du die vier Reviewer plus Koordinator (Temperatur 0, Hackathon-Maßstab „24-48 h Prototyp, kein Produktionscode“):
    - **A Tech-Beschreibung** → `{project_summary, tech_stack, tech_stack_reasoning, architecture_pattern (Monolith|Client-Server|Microservices|Serverless|Jamstack|Other), key_dependencies}`
    - **B Code-Qualität** → `readability, structure, error_handling, best_practices, overall_code_quality`, je Score 1-10 + 2-3 Sätze. 5 = akzeptabel, 7+ = beeindruckend unter Zeitdruck, ≤3 = deutliche Probleme.

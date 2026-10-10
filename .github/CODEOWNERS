@@ -1,28 +1,30 @@
 # Wer muss Änderungen freigeben? Die LETZTE passende Zeile gilt.
-# Piyush steht überall drin, weil nur er reviewt und merged (Ruleset "main-nur-piyush-merged").
-# Die zweite Person pro Ordner ist die fachliche Ownerin und wird automatisch als Reviewer vorgeschlagen.
-# Fabian: GitHub-Username nachtragen, sobald er Collaborator ist (unbekannte Namen machen die Datei ungültig).
+# Piyush (Lead) reviewt und merged alles (Ruleset "main-nur-piyush-merged").
+# Die Pfad-Zuordnung (wer welchen Pfad baut) steht in docs/PLAN.md, Abschnitt "Wer nimmt welchen Pfad".
+# Nach der Wahl am Samstag trägt Piyush hier pro Ordner die zweite Person ein (GitHub-Name).
 
-*                       @PiyushPapaya
+*                                   @PiyushPapaya
 
-/src/frontend/          @PiyushPapaya @JoleEight
-/tests/                 @PiyushPapaya @AdiAvocado
-/demo/                  @PiyushPapaya @AdiAvocado
-/docs/research/         @PiyushPapaya @Di0n-0
-/docs/wissen/           @PiyushPapaya @Di0n-0
+# Pfad A: interne Evidenz (BMW-Daten -> Belege -> Befunde)
+/src/backend/evidence_internal/     @PiyushPapaya
+/tests/pfad_a/                      @PiyushPapaya
+# Pfad B: externe Evidenz + Qualitätsbeweis
+/src/backend/evidence_external/     @PiyushPapaya
+/tests/pfad_b/                      @PiyushPapaya
+# Pfad C: Anforderungen + Priorisierung
+/src/backend/requirements_engine/   @PiyushPapaya
+/tests/pfad_c/                      @PiyushPapaya
+# Pfad D: PM-Cockpit (Frontend)
+/src/frontend/                      @PiyushPapaya
 
-/team/lasse.md          @PiyushPapaya @JoleEight
-/team/aditya.md         @PiyushPapaya @AdiAvocado
-/team/dennis.md         @PiyushPapaya @Di0n-0
-/workspace/lasse/       @PiyushPapaya @JoleEight
-/workspace/aditya/      @PiyushPapaya @AdiAvocado
-/workspace/dennis/      @PiyushPapaya @Di0n-0
-
-# Nur Piyush (bewusst ohne Zweit-Owner): geteilte Dateien und Verträge
-/src/shared/            @PiyushPapaya
-/src/backend/           @PiyushPapaya
-/.github/               @PiyushPapaya
-/.claude/               @PiyushPapaya
-/scripts/               @PiyushPapaya
-/CLAUDE.md              @PiyushPapaya
-/README.md              @PiyushPapaya
+# Nur Lead: Verträge, Rückgrat, geteilte Dateien
+/src/shared/                        @PiyushPapaya
+/src/backend/core/                  @PiyushPapaya
+/src/backend/api/                   @PiyushPapaya
+/src/backend/main.py                @PiyushPapaya
+/src/backend/pipeline.py            @PiyushPapaya
+/config/                            @PiyushPapaya
+/.github/                           @PiyushPapaya
+/.claude/                           @PiyushPapaya
+/CLAUDE.md                          @PiyushPapaya
+/README.md                          @PiyushPapaya

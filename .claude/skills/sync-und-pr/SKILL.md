@@ -10,7 +10,7 @@ Erkläre **vor jedem Git-Befehl in einem Satz**, was er tut. Nichts Destruktives
 ## Schritte
 
 1. **Branch prüfen:** `git branch --show-current`. Auf `main`? Dann zuerst `git switch -c <name>/<thema>` (nimmt Änderungen mit).
-2. **Änderungen zeigen:** `git status --short`. Nur Dateien im eigenen Bereich (Tabelle in `CLAUDE.md`) und `workspace/<name>/`. Fremde Dateien: nicht stagen, Person fragen.
+2. **Änderungen zeigen:** `git status --short`. Nur Dateien im eigenen Pfad (Tabelle in `CLAUDE.md`). Fremde Dateien: nicht stagen, Person fragen.
 3. **Secret-Check:** `python scripts/secret_scan.py` (Mac: `python3`). Fund → stoppen, Key widerrufen lassen, Piyush holen.
 4. **Committen**, gezielt: `git add <dateien>` (nicht blind `git add .`), dann `git commit -m "<Was>, weil <Warum>"`. Läuft eine Claude-Session, verknüpft Entire den Commit automatisch.
 5. **main hereinholen:** `git fetch origin` und `git merge origin/main`.

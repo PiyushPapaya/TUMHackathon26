@@ -30,7 +30,7 @@
 | 10 | Live-Demo-URL erreichbar (Backend aufgeweckt) | Browser, Inkognito | |
 | 11 | Backup-Video hochgeladen, Link öffentlich | Inkognito öffnen | |
 | 12 | Pitch-Deck als PDF exportiert | `docs/pitch/` bzw. Drive | |
-| 13 | `docs/ARCHITEKTUR.md` und `docs/pitch/JURY-FAQ.md` aktuell | lesen | |
+| 13 | `docs/ARCHITEKTUR.md` und `docs/pitch/PITCH.md` (Jury-Fragen) aktuell | lesen | |
 
 ## So 11:15-11:30 Formular auf ehl.gg (Piyush als Captain)
 
@@ -46,7 +46,7 @@ Felder laut Plattform: `project_name`, `short_description`, `fields` (Repo, Deck
 | Tech-Stack-Tags | Python, FastAPI, Next.js, TypeScript, OpenAI, [ ] |
 
 - [ ] „Verify“ klicken → grün (Repo lesbar, Entire gefunden)
-- [ ] **Submit** → Bestätigung als Screenshot in `workspace/piyush/`
+- [ ] **Submit** → Bestätigung als Screenshot lokal in `data/notizen/` (nicht im Git)
 - [ ] Notiert: Uhrzeit und Commit-SHA von `main` beim Submit (`git rev-parse origin/main`)
 
 ## Nach jedem weiteren Push bis 12:00
@@ -65,7 +65,7 @@ Felder laut Plattform: `project_name`, `short_description`, `fields` (Repo, Deck
 
 ## Notfall A: Wissen aus `main` auslagern (nur wenn nötig)
 
-**Warum normalerweise unnötig:** Jede neue Abgabe hat Revision ≥ 1 (`tum-ai/ehl` `supabase/migrations/00072_verified_submission_versions.sql:77`). Damit lädt die EHL den GitHub-Zipball des eingefrorenen Commits (`lib/code-review/ingest.ts:158`, `archive.ts:52`), und der beachtet `export-ignore` (getestet am 09.10.). Nur im Alt-Modus ohne SHA (Trees-API, `ingest.ts:164-169`) würden `docs/wissen` + `workspace` + `.claude` **43 % des Budgets** belegen.
+**Warum normalerweise unnötig:** Jede neue Abgabe hat Revision ≥ 1 (`tum-ai/ehl` `supabase/migrations/00072_verified_submission_versions.sql:77`). Damit lädt die EHL den GitHub-Zipball des eingefrorenen Commits (`lib/code-review/ingest.ts:158`, `archive.ts:52`), und der beachtet `export-ignore` (getestet am 09.10.). Nur im Alt-Modus ohne SHA (Trees-API, `ingest.ts:164-169`) würden Doku und `.claude` einen Teil des Budgets belegen (prüfen mit `python scripts/ehl_budget.py --modus baum`).
 
 **Auslöser:** Der Report zeigt Doku-Dateien als gelesen, oder die Orga bestätigt, dass ohne Zipball gelesen wird. Dann So 11:00 (Piyush), Befehle am 10.10. in einem Wegwerf-Clone getestet:
 
@@ -73,7 +73,7 @@ Felder laut Plattform: `project_name`, `short_description`, `fields` (Repo, Deck
 git switch main && git pull
 git branch archiv/wissen && git push -u origin archiv/wissen      # alles bleibt im Archiv-Branch erhalten
 git switch -c piyush/wissen-auslagern
-git rm -r docs/wissen workspace .claude/skills .claude/agents
+git rm -r docs/pfade docs/hilfe .claude/skills .claude/agents
 git commit -m "Wissen nach archiv/wissen ausgelagert, weil die Review-KI sonst Doku statt Code liest"
 git push -u origin piyush/wissen-auslagern && gh pr create --base main --fill
 ```

@@ -14,7 +14,7 @@ Der EHL-Reviewer urteilt „would it run: yes/probably/unlikely/no“ nur aus Se
 3. **README-Quickstart wörtlich ausführen**, Befehl für Befehl, ohne Vorwissen. Nichts aus dem echten Repo kopieren. Fehlende `.env`: nur `.env.example` kopieren und `DEMO_MODUS=true` setzen (keine echten Keys in Temp-Ordner schreiben, außer die Person gibt es ausdrücklich frei).
 4. **Jeden Befehl protokollieren:** Befehl → Ergebnis (ok / Fehler + erste Fehlerzeile).
 5. **Hauptflow testen:**
-   - Backend: `GET /health` → 200; Kern-Endpunkt mit Datei aus `demo/` → erwartete Form laut `src/shared/API.md`.
+   - Backend: `GET /health` → 200; `GET /api/scenarios/G60-US/requirements` und `POST .../decision` → erwartete Form laut `src/shared/API.md`.
    - Frontend: Seite lädt, Demo-Strecke aus `docs/pitch/PITCH.md` einmal durchklicken (oder per `curl` prüfen, wenn kein Browser).
    - Live-Demo-URL aus der README öffnen (Inkognito-Gedanke: kein Login, keine lokalen Daten).
 6. **Statische Prüfung wie der Reviewer:** Sind alle Imports in `requirements.txt` / `package.json`? Gibt es offensichtliche Crash-Stellen (fehlende Env-Variable ohne Fehlermeldung, harte Pfade wie `C:\Users\…`)?

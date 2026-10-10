@@ -1,74 +1,44 @@
 # Pitch: 6 Minuten inklusive Fragen (strikt)
 
-> Owner: Fabian. Probe mit Stoppuhr: So 10:00 (Skill `pitch-prep`).
-> Pitches laufen So 12:00-14:30 parallel pro Challenge, Reihenfolge zufällig.
-> Die Jury hat unser Pitch-Deck schon eingebettet vor sich (EHL-Plattform) und den KI-Report gelesen.
+> Rahmen: Lead. Jeder Pfad liefert 1 Folie + seinen Demo-Abschnitt. Probe So 10:00 (Skill `pitch-prep`).
 
-## Zeitplan der 6 Minuten
+## Kernbotschaft (auswendig)
 
-| Zeit | Block | Wer | Inhalt |
-|---|---|---|---|
-| 0:00-0:20 | **Hook** | Fabian | Ein Satz, den man fühlt: konkrete Person, konkreter Schmerz, eine Zahl. |
-| 0:20-0:50 | **Problem** | Dennis | Wer, wie oft, was kostet es heute? (Zahl vom Partner oder aus dem Brief, Quelle nennen) |
-| 0:50-2:30 | **Live-Demo des Kernflows** | Lasse (klickt) + Piyush (erzählt) | Genau **ein** Durchlauf: Eingabe → Ergebnis → Begründung. Keine Menüs, keine Einstellungen. |
-| 2:30-3:00 | **Ergebnis / Metrik** | Aditya | „Auf N Testfällen: X statt Y (Baseline).“ Eine Folie, eine Zahl, Messmethode in einem Satz. |
-| 3:00-3:15 | **Tech in einem Satz** | Piyush | „Das LLM liest, unser Code entscheidet: Structured Outputs → Python-Regeln → Begründung mit Belegstelle.“ |
-| 3:15-3:30 | **Ask / Nächster Schritt** | Fabian | Was wir mit dem Partner als Nächstes testen würden. |
-| 3:30-6:00 | **Fragen** | alle | Antwort-Gerüste in [JURY-FAQ.md](JURY-FAQ.md). Wer gefragt wird, antwortet; Piyush ergänzt nur Technik. |
+**"Wir sagen nicht nur, WAS der nächste 5er braucht, sondern WIE SICHER wir uns sind und WARUM, und der PM behält jede Entscheidung."**
 
-Faustregel: **Wenn die Probe länger als 3:30 dauert, fliegt Inhalt raus, nicht Tempo rein.**
+## Ablauf (4:00 Pitch + 2:00 Fragen)
 
-### Harte Taktung (Sekunden, Summe 360)
+| Zeit | Wer | Inhalt |
+|---|---|---|
+| 0:00-0:30 | Lead | Problem: BMW-Folie "1 Billion findings → 1,000 requirements → One car". Heute manuell, schwer nachvollziehbar. |
+| 0:30-0:50 | Lead | Lösung in 1 Satz + Trichter für den G60 USA: "3.610 Stimmen → N Befunde → M Anforderungen". |
+| 0:50-2:50 | D klickt, Lead spricht | **Live-Demo** (Klickpfad unten) |
+| 2:50-3:20 | B | Vertrauen: die eine Zahl (Grounding-Rate, Genauigkeit vs. Baseline), Webquellen mit Vertrauensstufe |
+| 3:20-3:40 | A | Übertragbar: Szenario F70-EU umschalten, gleiche Pipeline, eine Config-Datei |
+| 3:40-4:00 | Lead | Workflow KI vs. Mensch (eine Folie), Abschluss-Satz |
 
-| Teil | Sek. | Sprecher | Übergabe-Satz |
-|---|---|---|---|
-| Hook | 20 | Fabian | „… genau das hat Dennis beim Partner gehört.“ |
-| Problem | 30 | Dennis | „Lasse zeigt euch, wie das mit uns aussieht.“ |
-| Demo | 100 | Lasse klickt, Piyush erzählt | „Wie gut ist das? Aditya.“ |
-| Ergebnis | 30 | Aditya | „Wie das technisch geht, in einem Satz: Piyush.“ |
-| Tech | 15 | Piyush | „Und was als Nächstes kommt: Fabian.“ |
-| Ask | 15 | Fabian | „Danke, wir freuen uns auf eure Fragen.“ |
-| **Fragen** | **150** | Partner/Nutzen: Dennis · Technik: Piyush · Zahl/Evaluation: Aditya · UI/Demo: Lasse · Vision/Team: Fabian | Bei 5:45 beendet Fabian höflich. |
+## Demo-Klickpfad (geprobt, mit `DEMO_MODUS=true`)
 
-Zeitwächter: Aditya hält das Handy mit Stoppuhr hoch, bei 3:00 ein Finger und bei 3:30 die Faust (= sofort zum Ask).
+1. Trichter-Seite → Anforderungsliste G60-US (Rang, Score, Evidenzstufe, Konflikt-Badge).
+2. Klick auf Platz 1 "Physische Bedienelemente": Wasserfall → Befunde → Originalzitate + Studienwert + Webquelle.
+3. Konflikt-Badge: "Display wird gelobt" → zeigt, dass wir Widersprüche nicht wegmitteln.
+4. **Hinterfragen:** "Ist das nur eine Gewohnheitsfrage älterer Kunden?" → KI antwortet mit Belegen + Gegenbelegen.
+5. **Bearbeiten** des Akzeptanzkriteriums → **Freigeben** mit Begründung.
+6. Regler "Zukunft" hoch ("Nachfolger kommt 2030") → Liste rankt neu.
+7. Prüfpfad: alle Schritte mit wer/wann/warum, Badge "Kette gültig ✓". Export CSV.
 
-### Wenn die Demo hängt (auswendig, Piyush)
+## Jury-Fragen (jede Person kann jede beantworten)
 
-> „Während das Netz nachdenkt, zeigen wir euch dieselbe Strecke aus unserer Aufnahme. Gleiche Eingabe, gleiche Ausgabe.“
-
-Dann sofort, **ohne zu debuggen**: nach 5 Sekunden ohne Reaktion → Offline-Modus-Tab (`DEMO_MODUS=true`) oder Backup-Video (Ebenen siehe `demo/README.md`). Nie länger als 10 Sekunden warten.
-
-## Folien (maximal 6, als PDF exportieren, ist Pflichtfeld bei der Abgabe)
-
-1. Titel: Projektname, One-Liner, Team, Challenge
-2. Problem mit Zahl
-3. (Demo läuft live, Folie nur als Fallback-Screenshot)
-4. Ergebnis: Zahl vs. Baseline, Messmethode, ehrliche Grenze
-5. So funktioniert's: das Mermaid-Bild aus der README als Grafik
-6. Nächster Schritt / Ask
-
-## Demo-Drehbuch (Lasse + Aditya)
-
-| Schritt | Klick | Was man sieht | Was Piyush sagt |
-|---|---|---|---|
-| 1 | Demo-Datei aus `demo/` laden | Eingabe | „Das ist eine echte Anfrage aus dem Partner-Datensatz.“ |
-| 2 | „Analysieren“ | Ladeanzeige (< 10 s, sonst Cache) | „Jetzt extrahiert das Modell …“ |
-| 3 | Ergebnis | Tabelle/Karte + Begründung | „Jede Aussage hat eine Belegstelle.“ |
-| 4 | Detail aufklappen | Belegstelle im Original | „Darum kann der Nutzer uns vertrauen.“ |
-
-## Demo-Ausfallplan (wird geprobt!)
-
-| Was fällt aus | Plan |
+| Frage | Antwort in 2 Sätzen |
 |---|---|
-| WLAN im Saal | Hotspot vom Handy (vorher testen); Backend lokal auf dem Laptop |
-| Deployte URL / Render schläft | 5 min vorher aufwecken; sonst lokal: `uvicorn …` + `npm run dev` |
-| OpenAI langsam/down | **Demo-Modus mit Cache** (`demo/cache/`), gleiche Eingabe = gleiche Antwort |
-| Laptop | zweiter Laptop mit fertigem Setup (Aditya) |
-| Alles | **Backup-Video** (2 min, Link in README und auf dem Desktop), Ton aus, live kommentieren |
+| Woher weiß ich, dass die KI keine Zitate erfindet? | Jede Aussage zeigt auf Beleg-IDs aus der Eingabe, ein Test prüft das automatisch. Die Grounding-Rate steht in `tests/eval/REPORT.md`. |
+| Warum rechnet nicht das LLM die Priorität? | Weil der PM jeden Punkt nachvollziehen und ändern können muss. Die Formel ist sichtbar, die Gewichte sind live einstellbar und protokolliert. |
+| Was ist der Unterschied zwischen Evidenzstufe und Score? | Die Stufe sagt, wie sicher wir sind (Regel A-D). Der Score sagt, wie wichtig es ist, und schwach belegte Punkte werden abgewertet, aber nicht versteckt. |
+| Wie kommt ein neues Modell oder ein neuer Markt dazu? | Eine JSON-Datei in `config/scenarios/` mit Dateien, Ländern und Wettbewerbern, dann die Pipeline starten. |
+| Was, wenn sich Belege widersprechen? | Wir zeigen beide Befunde verknüpft und markieren den Konflikt. Die Abwägung trifft der PM. |
+| Kann man den Prüfpfad fälschen? | Jeder Eintrag enthält den Hash des vorherigen. Wer etwas ändert, bricht die Kette, und `verify` zeigt die Stelle. |
+| Was ist out of scope? | Regulatorik, Engineering-Specs und Preise. Der Scope-Wächter verwirft solche Vorschläge mit Begründung im Prüfpfad. |
 
-## Checkliste vor dem Pitch (So 11:45)
+## Backup
 
-- [ ] Laptop am Strom, Bildschirm-Spiegelung getestet, Benachrichtigungen aus
-- [ ] Demo-Tab offen, Demo-Datei griffbereit, Backup-Video lokal gespeichert
-- [ ] Backend aufgeweckt
-- [ ] Jede Person kann das Produkt in 2 Sätzen erklären (siehe `team/<name>.md`)
+Backup-Video (2 min) der Demo-Strecke, aufgenommen So 08:30, lokal + Drive. Bei Netzausfall: `DEMO_MODUS=true`.
