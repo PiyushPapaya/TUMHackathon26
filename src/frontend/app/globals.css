@@ -1,44 +1,14 @@
 @import "tailwindcss";
 
-/* "dark:"-Klassen greifen über die .dark-Klasse auf <html>, nicht über die
-   Systemeinstellung — so kann der Umschalter (ThemeToggle) sie übersteuern. */
-@custom-variant dark (&:where(.dark, .dark *));
-
-/* BMW-Look: weiß/schwarz statt bunt, BMW-Blau (#1C69D4) als einzige Akzentfarbe,
-   Flächen trennen sich über dünne Haarlinien statt über Farbe oder Schatten. */
 :root {
-  --background: #ffffff;
-  --foreground: #1a1a1a;
-  /* Hintergrund von Karten, Kopfzeile, Eingabefeldern — eine Stelle für alle Elemente */
-  --surface: #ffffff;
-  --accent: #1c69d4;
-  --accent-hover: #164f9f;
-  /* Eigene Variablen, damit Tabellen-Hintergrund und Score-Balken einzeln
-     umgefärbt werden können, ohne --surface/--accent überall sonst mitzuändern. */
-  --table-background: var(--surface);
-  --score-slider: var(--accent);
-}
-
-.dark {
-  --background: #0a0a0a;
-  --foreground: #f2f2f2;
-  --surface: #141414;
-  --accent: #4a90e2;
-  --accent-hover: #70aaee;
-  --table-background: var(--surface);
-  --score-slider: var(--accent);
+  --background: #f6f8fb;
+  --foreground: #0b1f3a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-surface: var(--surface);
-  --color-accent: var(--accent);
-  --color-accent-hover: var(--accent-hover);
-  --color-table-background: var(--table-background);
-  --color-score-slider: var(--score-slider);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 * {
@@ -50,10 +20,11 @@ html {
 }
 
 body {
-  background: var(--background);
+  background:
+    linear-gradient(180deg, rgba(11, 31, 58, 0.04), rgba(11, 31, 58, 0) 280px),
+    var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), Helvetica, Arial, sans-serif;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
 button,
@@ -65,7 +36,7 @@ textarea {
 }
 
 ::selection {
-  background: color-mix(in srgb, var(--accent) 18%, transparent);
+  background: rgba(37, 99, 235, 0.18);
 }
 
 @keyframes funnel-enter {

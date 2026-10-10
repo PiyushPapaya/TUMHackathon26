@@ -34,31 +34,31 @@ export function RequirementDetailView({
 
   return (
     <div className="grid gap-8">
-      <header className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-surface p-6">
+      <header className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
         <div className="flex flex-wrap items-center gap-3">
-          <h1 className="max-w-4xl text-2xl font-semibold leading-tight text-foreground">
+          <h1 className="max-w-4xl text-2xl font-semibold leading-tight text-[#0b1f3a]">
             {requirement.title}
           </h1>
           <StatusBadge status={requirement.status} />
           <EvidenceBadge level={requirement.evidence_level} reason={requirement.rationale} />
         </div>
-        <p className="mt-3 max-w-3xl text-sm text-zinc-700 dark:text-zinc-300">{requirement.rationale}</p>
-        <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
+        <p className="mt-3 max-w-3xl text-sm text-slate-700">{requirement.rationale}</p>
+        <p className="mt-2 text-xs text-slate-500">
           {categoryLabel(requirement.category)} · Rank #{requirement.rank} · Effort {requirement.effort} · Score{" "}
           {requirement.score.toFixed(1)} from {scoreSource}
         </p>
       </header>
 
       <section className="grid gap-4 lg:grid-cols-[1.4fr_0.8fr]">
-        <div className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-surface p-5">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Description</h2>
-          <p className="mt-2 text-foreground">{requirement.description}</p>
+        <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">Description</h2>
+          <p className="mt-2 text-[#0b1f3a]">{requirement.description}</p>
         </div>
-        <div className="rounded-lg border border-accent/30 dark:border-accent/40 bg-accent/5 dark:bg-accent/10 p-5">
-          <p className="text-xs font-semibold uppercase tracking-wide text-accent-hover dark:text-accent">
+        <div className="rounded-lg border border-blue-200 bg-blue-50 p-5">
+          <p className="text-xs font-semibold uppercase tracking-wide text-blue-800">
             Acceptance criterion
           </p>
-          <p className="mt-2 font-semibold text-foreground">{requirement.acceptance_criterion}</p>
+          <p className="mt-2 font-semibold text-[#0b1f3a]">{requirement.acceptance_criterion}</p>
         </div>
       </section>
 
@@ -74,15 +74,15 @@ export function RequirementDetailView({
       {(detail.robustness_sentence || business) && (
         <section className="grid gap-4 lg:grid-cols-2">
           {detail.robustness_sentence && (
-            <div className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-surface p-5">
-              <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Robustness</h2>
-              <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">{detail.robustness_sentence}</p>
+            <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+              <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">Robustness</h2>
+              <p className="mt-2 text-sm text-slate-700">{detail.robustness_sentence}</p>
             </div>
           )}
           {business && (
-            <div className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-surface p-5">
-              <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Business context</h2>
-              <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">
+            <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+              <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">Business context</h2>
+              <p className="mt-2 text-sm text-slate-700">
                 {numberOrDash(business.volume_2025)} vehicles in 2025, {numberOrDash(business.volume_2030)} in 2030,
                 growth {numberOrDash(business.growth_pct, "%")}. {business.note}
               </p>
@@ -92,11 +92,11 @@ export function RequirementDetailView({
       )}
 
       <section className="grid gap-6 lg:grid-cols-2">
-        <div className="rounded-lg border border-zinc-300 dark:border-zinc-700 bg-surface p-5">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Evidence</h2>
+        <div className="rounded-lg border border-slate-300 bg-white p-5 shadow-sm">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">Evidence</h2>
           <div className="mt-4 space-y-3">
             {detail.signals.length === 0 && (
-              <p className="rounded-sm border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 p-3 text-sm text-zinc-500 dark:text-zinc-400">
+              <p className="rounded-md border border-slate-200 bg-slate-50 p-3 text-sm text-slate-500">
                 No findings linked.
               </p>
             )}
@@ -108,8 +108,8 @@ export function RequirementDetailView({
           </div>
         </div>
 
-        <div className="rounded-lg border-2 border-dashed border-zinc-300 dark:border-zinc-700 bg-surface p-5">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+        <div className="rounded-lg border-2 border-dashed border-slate-300 bg-white p-5 shadow-sm">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">
             Assumptions & uncertainties
           </h2>
           <ul className="mt-4 space-y-2">
@@ -123,7 +123,7 @@ export function RequirementDetailView({
               <AssumptionItem key={`conflict-${i}`} label="Conflicting evidence" text={conflict.statement} />
             ))}
             {requirement.assumptions.length === 0 && requirement.uncertainties.length === 0 && conflicts.length === 0 && (
-              <li className="rounded-sm border border-dashed border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-900 p-3 text-sm text-zinc-500 dark:text-zinc-400">
+              <li className="rounded-md border border-dashed border-slate-300 bg-slate-50 p-3 text-sm text-slate-500">
                 No assumptions, uncertainties, or conflicts recorded.
               </li>
             )}
@@ -132,23 +132,23 @@ export function RequirementDetailView({
       </section>
 
       {detail.web_sources && detail.web_sources.length > 0 && (
-        <section className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-surface p-5">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Web sources</h2>
+        <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">Web sources</h2>
           <div className="mt-3 grid gap-3">
             {detail.web_sources.map((source) => (
-              <article key={source.id} id={`evidence-${source.id}`} className="rounded-sm border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 p-3 text-sm">
+              <article key={source.id} id={`evidence-${source.id}`} className="rounded-md border border-slate-200 bg-slate-50 p-3 text-sm">
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="font-semibold text-foreground">{source.publisher}</span>
-                  <span className="rounded-full border border-zinc-300 dark:border-zinc-700 px-2 py-0.5 text-xs font-semibold text-zinc-600 dark:text-zinc-400">
+                  <span className="font-semibold text-[#0b1f3a]">{source.publisher}</span>
+                  <span className="rounded-full border border-slate-300 px-2 py-0.5 text-xs font-semibold text-slate-600">
                     trust: {source.trust}
                   </span>
                   {source.url && (
-                    <a className="font-semibold text-accent-hover dark:text-accent underline underline-offset-2" href={source.url} target="_blank" rel="noopener noreferrer">
+                    <a className="font-semibold text-blue-700 underline underline-offset-2" href={source.url} target="_blank" rel="noopener noreferrer">
                       Source link
                     </a>
                   )}
                 </div>
-                <p className="mt-2 text-zinc-700 dark:text-zinc-300">{source.text}</p>
+                <p className="mt-2 text-slate-700">{source.text}</p>
               </article>
             ))}
           </div>
@@ -158,8 +158,8 @@ export function RequirementDetailView({
       <OfferCheckBox offerCheck={requirement.offer_check} />
       <DecisionPanel requirement={requirement} onChanged={onRefresh} />
 
-      <section className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-surface p-5">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Requirement audit trail</h2>
+      <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">Requirement audit trail</h2>
         <div className="mt-4">
           <AuditTrail requirementId={requirement.id} compact />
         </div>

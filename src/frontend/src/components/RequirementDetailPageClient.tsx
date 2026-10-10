@@ -9,7 +9,6 @@ import {
   type ExplainView,
 } from "@/src/lib/api";
 import { RequirementDetailView } from "@/src/components/RequirementDetailView";
-import { ThemeToggle } from "@/src/components/ThemeToggle";
 
 export function RequirementDetailPageClient({ id }: { id: string }) {
   const [detail, setDetail] = useState<ExplainView | null>(null);
@@ -70,26 +69,25 @@ export function RequirementDetailPageClient({ id }: { id: string }) {
         <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
           <Link
             href="/"
-            className="inline-flex min-h-11 items-center rounded-sm border border-zinc-300 dark:border-zinc-700 bg-surface px-4 text-sm font-semibold text-foreground hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            className="inline-flex min-h-11 items-center rounded-md border border-slate-300 bg-white px-4 text-sm font-semibold text-[#0b1f3a] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
           >
             Back to list
           </Link>
           <Link
             href="/audit"
-            className="inline-flex min-h-11 items-center rounded-sm border border-zinc-300 dark:border-zinc-700 bg-surface px-4 text-sm font-semibold text-foreground hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            className="inline-flex min-h-11 items-center rounded-md border border-slate-300 bg-white px-4 text-sm font-semibold text-[#0b1f3a] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
           >
             Open audit trail
           </Link>
-          <ThemeToggle />
         </div>
 
         {error && (
-          <div className="rounded-sm border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-800 dark:border-rose-800 dark:bg-rose-950 dark:text-rose-300">
+          <div className="rounded-md border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-800">
             {error}
           </div>
         )}
         {!error && isLoading && (
-          <div className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-surface p-6 text-sm text-zinc-500 dark:text-zinc-400">
+          <div className="rounded-lg border border-slate-200 bg-white p-6 text-sm text-slate-500 shadow-sm">
             Loading requirement...
           </div>
         )}

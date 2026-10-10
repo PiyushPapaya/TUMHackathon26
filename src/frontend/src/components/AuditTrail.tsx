@@ -66,12 +66,12 @@ export function AuditTrail({
   const bySeq = new Map(events.map((event) => [event.seq, event]));
 
   if (loading) {
-    return <p className="rounded-sm border border-zinc-200 dark:border-zinc-800 bg-surface p-4 text-sm text-zinc-500 dark:text-zinc-400">Loading audit trail...</p>;
+    return <p className="rounded-md border border-slate-200 bg-white p-4 text-sm text-slate-500">Loading audit trail...</p>;
   }
 
   if (error) {
     return (
-      <div className="rounded-sm border border-rose-300 bg-rose-50 p-4 text-sm text-rose-800 dark:border-rose-800 dark:bg-rose-950 dark:text-rose-300">
+      <div className="rounded-md border border-rose-300 bg-rose-50 p-4 text-sm text-rose-800">
         {error}
       </div>
     );
@@ -79,7 +79,7 @@ export function AuditTrail({
 
   if (timeline.length === 0) {
     return (
-      <div className="rounded-sm border border-zinc-200 dark:border-zinc-800 bg-surface p-4 text-sm text-zinc-500 dark:text-zinc-400">
+      <div className="rounded-md border border-slate-200 bg-white p-4 text-sm text-slate-500">
         No audit events for this selection yet.
       </div>
     );
@@ -92,27 +92,27 @@ export function AuditTrail({
         return (
           <article
             key={item.seq}
-            className="rounded-lg border border-zinc-200 dark:border-zinc-800 bg-surface p-4"
+            className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm"
           >
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
-                <p className="text-sm font-semibold text-foreground">{item.sentence}</p>
-                <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
+                <p className="text-sm font-semibold text-[#0b1f3a]">{item.sentence}</p>
+                <p className="mt-1 text-xs text-slate-500">
                   #{item.seq} · {formatTime(item.ts)} · {ACTOR_LABEL[item.actor.type] ?? item.actor.type}:{" "}
                   {item.actor.name}
                 </p>
               </div>
-              <span className="rounded-full border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-900 px-3 py-1 text-xs font-semibold text-zinc-700 dark:text-zinc-300">
+              <span className="rounded-full border border-slate-300 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-700">
                 {item.event_type}
               </span>
             </div>
-            {item.rationale && <p className="mt-3 text-sm text-zinc-700 dark:text-zinc-300">{item.rationale}</p>}
+            {item.rationale && <p className="mt-3 text-sm text-slate-700">{item.rationale}</p>}
             {event && Object.keys(event.payload ?? {}).length > 0 && (
-              <details className="mt-3 rounded-sm border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 p-3">
-                <summary className="cursor-pointer text-xs font-semibold uppercase tracking-wide text-zinc-600 dark:text-zinc-400">
+              <details className="mt-3 rounded-md border border-slate-200 bg-slate-50 p-3">
+                <summary className="cursor-pointer text-xs font-semibold uppercase tracking-wide text-slate-600">
                   Before / after payload
                 </summary>
-                <pre className="mt-2 overflow-auto text-xs leading-relaxed text-zinc-700 dark:text-zinc-300">
+                <pre className="mt-2 overflow-auto text-xs leading-relaxed text-slate-700">
                   {payloadPreview(event.payload)}
                 </pre>
               </details>
