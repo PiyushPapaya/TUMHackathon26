@@ -1,0 +1,71 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KKET7G6PYZ4FKSAW2TGA6K",
+  "session_id": "8d63e115-a99d-44e9-9044-62173392a8a4",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T19:08:30.124051718Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/pfade/PFAD-A.md"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5",
+  "turn_id": "9e1756ed385e",
+  "checkpoint_transcript_start": 95,
+  "transcript_lines_at_start": 95,
+  "compact_transcript_start": 15,
+  "token_usage": {
+    "input_tokens": 2,
+    "cache_creation_tokens": 632,
+    "cache_read_tokens": 63839,
+    "output_tokens": 859,
+    "api_call_count": 1
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "claude-skill-toolu_01MFMPDg9TETfYbhrW6fwWZx",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "sync"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "9e1756ed385e",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 64,
+        "end": 65,
+        "entry_ids": [
+          "f10f1ab6-96a5-46f0-b3aa-754701761e21"
+        ],
+        "tool_use_id": "toolu_01MFMPDg9TETfYbhrW6fwWZx"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_01MFMPDg9TETfYbhrW6fwWZx"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: sync",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T19:08:30.109825602Z",
+    "agent_lines": 4,
+    "agent_removed": 3,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 4,
+    "total_lines_changed": 7,
+    "agent_percentage": 100,
+    "metric_version": 2
+  }
+}
