@@ -32,11 +32,12 @@ from core.models import (
     Requirement,
     Scenario,
     Signal,
-    SignalKind,
 )
 from requirements_engine import evidence_level, scoring
+from requirements_engine.derive_checks import conflict_notes, make_ids_unique, not_covered, stable_key
 from requirements_engine.factors import compute_factors, rationale_from
 from requirements_engine.offer_check import check, load_offer
+from requirements_engine.robustness import compute_robustness
 
 SYSTEM_PROMPT = """You are a product analyst for BMW. You turn customer findings (signals) into
 requirements for the successor vehicle, 3-5 years ahead. Write ALL text in English.
@@ -121,13 +122,12 @@ def derive_all(
             discarded.append({"title": draft.title, "reason": draft.scope_reason, "signal_ids": ids})
             continue
         kept.append((draft, [known[i] for i in ids]))
-    discarded += _not_covered(signals, kept, discarded)
+    discarded += not_covered(signals, kept, discarded)
     # reach braucht die größte Nennungszahl ALLER Anforderungen, darum erst jetzt bauen.
     max_mentions = max((sum(s.mention_count for s in linked) for _, linked in kept), default=0)
     by_id = {e.id: e for e in evidence}
-    requirements = [
-        _build(scenario, d, linked, n, by_id, max_mentions, context) for n, (d, linked) in enumerate(kept, start=1)
-    ]
+    requirements = [_build(scenario, d, linked, by_id, max_mentions, context) for d, linked in kept]
+    make_ids_unique(requirements)
     offer = _load_offer(context)
     if offer:  # "Gibt es das schon?": pro Anforderung ein KI-Abgleich gegen die Optionsliste
         for req in requirements:
@@ -135,31 +135,10 @@ def derive_all(
     requirements.sort(key=lambda r: -r.score)  # stabil: gleiche Punkte behalten KI-Reihenfolge
     for rank, req in enumerate(requirements, start=1):
         req.rank = rank
+    robustness = compute_robustness(requirements)  # erst nach dem Rang: die Spanne muss den echten Rang enthalten
+    for req in requirements:
+        req.robustness = robustness[req.id]
     return requirements, discarded
-
-
-def _not_covered(signals: list[Signal], kept: list, discarded: list[dict]) -> list[dict]:
-    """Beschwerden/Wünsche, die die KI in keine Anforderung übernommen hat: sichtbar machen statt still verlieren.
-
-    Echter Fund (Sa 10.10.): Trotz Prompt-Regel "Cover EVERY complaint" fehlte zweimal "Start-Stopp lässt sich
-    nicht dauerhaft abschalten" (22 Nennungen). Der Prompt allein garantiert es nicht, darum prüft der Code.
-    Verworfen: automatisch eine Anforderung erzeugen (Text wäre ungeprüft) oder die KI erneut fragen (teuer, schwankt).
-    """
-    cited = {s.id for _, linked in kept for s in linked} | {i for d in discarded for i in d["signal_ids"]}
-    needs = (SignalKind.COMPLAINT, SignalKind.UNMET_NEED)
-    return [
-        {"title": f"Not covered: {s.title}",
-         "reason": f"The AI derived no requirement from this {s.kind.value} ({s.mention_count} mentions); PM to check.",
-         "signal_ids": [s.id]}
-        for s in signals if s.kind in needs and s.id not in cited
-    ]
-
-
-def _conflict_notes(linked: list[Signal]) -> list[str]:
-    """Widersprechen sich zitierte Befunde, steht das als Unsicherheit da: sichtbar, egal was die KI schreibt."""
-    by_id = {s.id: s for s in linked}
-    pairs = {tuple(sorted((s.id, other))) for s in linked for other in s.conflicts_with if other in by_id}
-    return [f'Conflicting evidence: "{by_id[a].title}" vs. "{by_id[b].title}"' for a, b in sorted(pairs)[:3]]
 
 
 def _load_offer(context: dict) -> list[dict]:
@@ -174,7 +153,7 @@ def _load_offer(context: dict) -> list[dict]:
 
 
 def _build(
-    scenario: Scenario, draft: RequirementDraft, linked: list[Signal], number: int,
+    scenario: Scenario, draft: RequirementDraft, linked: list[Signal],
     by_id: dict[str, Evidence], max_mentions: int, context: dict,
 ) -> Requirement:
     mentions = sum(s.mention_count for s in linked)
@@ -183,13 +162,14 @@ def _build(
     effort = draft.effort if draft.effort in ("S", "M", "L") else "M"
     factors, explanations = compute_factors(linked, by_id, max_mentions, draft.forward_looking, effort, context)
     points, breakdown = scoring.score(factors, explanations, level)
+    key = stable_key([s.id for s in linked])
     return Requirement(
-        id=f"REQ-{scenario.id}-{number:03d}", title=draft.title, description=draft.description,
+        id=f"REQ-{scenario.id}-{key}", stable_key=key, title=draft.title, description=draft.description,
         acceptance_criterion=draft.acceptance_criterion, category=draft.category,
         signal_ids=[s.id for s in linked], score=points, rank=0, score_breakdown=breakdown,
         rationale=f"{rationale_from(breakdown)} Evidence level {level.value}: {level_reason}",
         evidence_level=level, assumptions=draft.assumptions,
-        uncertainties=[*_conflict_notes(linked), *draft.uncertainties],
+        uncertainties=[*conflict_notes(linked), *draft.uncertainties],
         offer_check=OfferCheck(status="unknown", note="Option list not checked yet (C5)."),
         effort=effort,
     )

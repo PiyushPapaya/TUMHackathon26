@@ -61,9 +61,9 @@ def test_gemischte_liste_trennt_sauber(monkeypatch):
     assert reqs[0].rank == 1  # der Rang zählt nur, was im Scope blieb
 
 
-def test_rang_und_ids_ueberspringen_keine_luecken(monkeypatch):
+def test_rang_ueberspringt_keine_luecken(monkeypatch):
     answer = _drafts(("Out", False, "regulatory", "SIG-1"), ("In A", True, "", "SIG-2"), ("In B", True, "", "SIG-3"))
     monkeypatch.setattr(derive, "ask_json", lambda *a, **k: answer)
     reqs, _ = derive_all(SCENARIO, SIGNALS, [], {})
-    assert sorted(r.id for r in reqs) == ["REQ-G60-US-001", "REQ-G60-US-002"]
+    assert len({r.id for r in reqs}) == 2 and all(r.id.startswith("REQ-G60-US-") for r in reqs)
     assert sorted(r.rank for r in reqs) == [1, 2]

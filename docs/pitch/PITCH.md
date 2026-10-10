@@ -35,6 +35,7 @@
 | Warum rechnet nicht das LLM die Priorität? | Weil der PM jeden Punkt nachvollziehen und ändern können muss. Die Formel ist sichtbar, die Gewichte sind live einstellbar und protokolliert. |
 | Was ist der Unterschied zwischen Evidenzstufe und Score? | Die Stufe sagt, wie sicher wir sind (Regel A-D). Der Score sagt, wie wichtig es ist, und schwach belegte Punkte werden abgewertet, aber nicht versteckt. |
 | Wie kommt ein neues Modell oder ein neuer Markt dazu? | Eine JSON-Datei in `config/scenarios/` mit Dateien, Ländern und Wettbewerbern, dann die Pipeline starten. |
+| Wie belastbar sind die Reichweiten-Vergleiche? | Es sind amtliche EPA-Prüfstandswerte (fueleconomy.gov), also vergleichbar zwischen Herstellern, aber kein Alltagsverbrauch, und sie gelten für die in der Config gewählte Radgröße. Nur US-Szenarien, Elektroautos ohne EPA-Reichweite (Audi A6 e-tron) fehlen bewusst. |
 | Was, wenn sich Belege widersprechen? | Wir zeigen beide Befunde verknüpft und markieren den Konflikt. Die Abwägung trifft der PM. |
 | Kann man den Prüfpfad fälschen? | Jeder Eintrag enthält den Hash des vorherigen. Wer etwas ändert, bricht die Kette, und `verify` zeigt die Stelle. |
 | Die Prompt-Zeile ist doch eine Blackbox? | Nein: Die KI übersetzt die Frage nur in Gewichte und Filter, die wir offen anzeigen, und nennt keine einzige Anforderung. Die Top 5 rechnet dieselbe Formel wie immer, und übernommen wird erst, wenn der PM klickt, mit Eintrag im Prüfpfad. |
