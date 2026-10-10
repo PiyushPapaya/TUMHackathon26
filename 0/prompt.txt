@@ -1,0 +1,17 @@
+wie aktiviere ich die venv manuell
+
+---
+
+die virtuelle umgebung ist in powershell aktiviert, da du aber im powershell fenster
+
+---
+
+soll ich python -m pytest -q in powershell runnen? was macht der befehl?
+
+---
+
+war der code in pytest schon gegeben? oder hast du ihn zugefügt? was steht bisher in pytest?
+
+---
+
+ok verstehe, dann ist a0 ja abgeschlossen und bereits gepuscht, machen wir mit a1 weiter
