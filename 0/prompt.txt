@@ -1,0 +1,1 @@
+Ich bin Lasse. Please add a variable to change the color of the table background and a variable to change the color of the score sliders

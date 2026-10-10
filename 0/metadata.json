@@ -1,0 +1,72 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KRRVZWR06DK0HXVMME9KW0",
+  "session_id": "66833f1f-f745-459a-a90a-2d1cbd0a77b9",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T20:41:18.300567322Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "save_step_count": 1,
+  "files_touched": [
+    "src/frontend/app/globals.css",
+    "src/frontend/app/page.tsx",
+    "src/frontend/src/components/FindingCard.tsx",
+    "src/frontend/src/components/RequirementDetailPageClient.tsx",
+    "src/frontend/src/components/RequirementDetailView.tsx",
+    "src/frontend/src/components/ScoreBar.tsx",
+    "src/frontend/src/components/ScoreWaterfall.tsx"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5",
+  "turn_id": "d1493babb674",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 22,
+    "cache_creation_tokens": 30260,
+    "cache_read_tokens": 670339,
+    "output_tokens": 3896,
+    "api_call_count": 11
+  },
+  "session_metrics": {
+    "turn_count": 1
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T20:41:18.287499352Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 28,
+    "total_committed": 8,
+    "total_lines_changed": 28,
+    "agent_percentage": 0,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 39,
+      "user_lines_removed": 28,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "src/frontend/app/globals.css": 14,
+        "src/frontend/app/page.tsx": 14,
+        "src/frontend/src/components/FindingCard.tsx": 1,
+        "src/frontend/src/components/RequirementDetailPageClient.tsx": 2,
+        "src/frontend/src/components/RequirementDetailView.tsx": 5,
+        "src/frontend/src/components/ScoreBar.tsx": 2,
+        "src/frontend/src/components/ScoreWaterfall.tsx": 1
+      },
+      "user_removed_per_file": {
+        "src/frontend/app/globals.css": 6,
+        "src/frontend/app/page.tsx": 11,
+        "src/frontend/src/components/FindingCard.tsx": 1,
+        "src/frontend/src/components/RequirementDetailPageClient.tsx": 2,
+        "src/frontend/src/components/RequirementDetailView.tsx": 5,
+        "src/frontend/src/components/ScoreBar.tsx": 2,
+        "src/frontend/src/components/ScoreWaterfall.tsx": 1
+      }
+    }
+  ]
+}
