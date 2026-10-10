@@ -1,0 +1,116 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KMSVRD9YE39N99YR1YMD9V",
+  "session_id": "82c9f90f-7a5f-422e-8879-2df4f7b66b76",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T19:31:56.154408757Z",
+  "branch": "main",
+  "checkpoints_count": 3,
+  "save_step_count": 3,
+  "files_touched": [
+    "src/frontend/app/globals.css",
+    "src/frontend/app/layout.tsx",
+    "src/frontend/app/page.tsx"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-opus-5-5",
+  "turn_id": "a4dd5e17f748",
+  "checkpoint_transcript_start": 311,
+  "transcript_lines_at_start": 311,
+  "compact_transcript_start": 37,
+  "token_usage": {
+    "input_tokens": 14,
+    "cache_creation_tokens": 2414,
+    "cache_read_tokens": 806271,
+    "output_tokens": 3796,
+    "api_call_count": 6
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "claude-skill-toolu_01CJ4fq6ue2gohT81XqmwRfk",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "sync"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "e061cd153610",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 298,
+        "end": 299,
+        "entry_ids": [
+          "6560dda4-4a39-4851-ba28-1636b955345a"
+        ],
+        "tool_use_id": "toolu_01CJ4fq6ue2gohT81XqmwRfk"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_01CJ4fq6ue2gohT81XqmwRfk"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: sync",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "session_metrics": {
+    "turn_count": 3
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T19:31:56.127289541Z",
+    "agent_lines": 0,
+    "agent_removed": 8,
+    "human_added": 166,
+    "human_modified": 14,
+    "human_removed": 0,
+    "total_committed": 174,
+    "total_lines_changed": 257,
+    "agent_percentage": 3.11284046692607,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    },
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 6,
+      "user_lines_removed": 6,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "src/frontend/src/components/ShaderBackground.tsx": 6
+      },
+      "user_removed_per_file": {
+        "src/frontend/src/components/ShaderBackground.tsx": 6
+      }
+    },
+    {
+      "checkpoint_number": 3,
+      "user_lines_added": 65,
+      "user_lines_removed": 12,
+      "agent_lines_added": 6,
+      "agent_lines_removed": 6,
+      "user_added_per_file": {
+        "src/frontend/app/globals.css": 10,
+        "src/frontend/app/layout.tsx": 11,
+        "src/frontend/app/page.tsx": 5,
+        "src/frontend/src/components/ThemeToggle.tsx": 39
+      },
+      "user_removed_per_file": {
+        "src/frontend/app/globals.css": 7,
+        "src/frontend/app/page.tsx": 5
+      }
+    }
+  ]
+}
