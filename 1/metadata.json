@@ -18,6 +18,40 @@
     "output_tokens": 7734,
     "api_call_count": 11
   },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "claude-skill-toolu_01CJ4fq6ue2gohT81XqmwRfk",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "sync"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "e061cd153610",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 298,
+        "end": 299,
+        "entry_ids": [
+          "6560dda4-4a39-4851-ba28-1636b955345a"
+        ],
+        "tool_use_id": "toolu_01CJ4fq6ue2gohT81XqmwRfk"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_01CJ4fq6ue2gohT81XqmwRfk"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: sync",
+        "default_collapsed": true
+      }
+    }
+  ],
   "prompt_attributions": [
     {
       "checkpoint_number": 1,
