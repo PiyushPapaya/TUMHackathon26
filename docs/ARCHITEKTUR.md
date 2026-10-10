@@ -25,12 +25,14 @@ flowchart LR
     W --> C
     C --> P[Score<br/>Formel in Python]
     P --> Q[requirements.json]
+    C --> DX[discarded.json<br/>Out-of-scope mit Grund]
   end
   Q --> BUN[Bundle G60-US.json]
+  DX --> BUN
   BUN --> API[FastAPI<br/>core/store.py]
   API <--> UI[PM-Cockpit<br/>Next.js]
   UI -- approve/reject/edit/challenge<br/>+ Begründung --> API
-  API --> AUD[(audit.db<br/>Hash-Kette)]
+  API --> AUD[(audit.db<br/>Hash-Kette<br/>inkl. REQUIREMENT_DISCARDED)]
 ```
 
 ## Komponenten

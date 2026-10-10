@@ -18,7 +18,7 @@ Pipeline mit Stufendateien + Beispiel-Fallback, 3 Szenario-Configs, Startversion
 | 15:30 | [x] **L1 Setup-Runde (15 min):** reihum M0 abhaken (Tests, Entire, `.env` mit eigenem Key). Eigene `.env` anlegen (fehlt noch!) | M0 für alle ✓ |
 | 15:30 | B1, B2, B3 (Web) | siehe PFAD-B |
 | 17:30 | [ ] **L2 M1:** `pipeline.py --scenario G60-US --stage evidence` mit Adityas Code | ~3.700 Belege |
-| 17:45 | [ ] **L3 Pipeline an `derive_all` anschließen:** Stufe requirements nutzt `derive_all` (Dennis, C2), schreibt `discarded.json`; Bundle-Stufe schreibt verworfene als Audit `REQUIREMENT_DISCARDED` | Test in `tests/test_pipeline.py` |
+| 17:45 | [x] **L3 Pipeline an `derive_all` anschließen:** Stufe requirements nutzt `derive_all` (Dennis, C2), schreibt `discarded.json`; Bundle-Stufe schreibt verworfene als Audit `REQUIREMENT_DISCARDED` | Test in `tests/test_pipeline.py` |
 | **18:30** | [ ] **L4 Durchstich:** alle Stufen, Bundle, Backend neu starten, mit allen 4 auf Lasses Bildschirm schauen | echte Liste + Detail im UI |
 | 19:00 | Stand-up beim Essen (ROADMAP §3) | Kürzungen entschieden |
 | 19:30 | B4 Triangulation | siehe PFAD-B |
