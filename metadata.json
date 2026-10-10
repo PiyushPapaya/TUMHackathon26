@@ -3,7 +3,7 @@
   "checkpoint_id": "01M4JWVF74D1X0038TCTNN3986",
   "strategy": "manual-commit",
   "branch": "piyush/neustart",
-  "checkpoints_count": 3,
+  "checkpoints_count": 7,
   "files_touched": [
     "pyproject.toml",
     "requirements.txt",
@@ -29,13 +29,20 @@
       "compact_transcript": "/0/transcript.jsonl",
       "content_hash": "/0/content_hash.txt",
       "prompt": "/0/prompt.txt"
+    },
+    {
+      "metadata": "/1/metadata.json",
+      "transcript": "/1/full.jsonl",
+      "compact_transcript": "/1/transcript.jsonl",
+      "content_hash": "/1/content_hash.txt",
+      "prompt": "/1/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 130,
-    "cache_creation_tokens": 240533,
-    "cache_read_tokens": 10924624,
-    "output_tokens": 114042,
-    "api_call_count": 65
+    "input_tokens": 156,
+    "cache_creation_tokens": 249806,
+    "cache_read_tokens": 11980321,
+    "output_tokens": 119383,
+    "api_call_count": 76
   }
 }
