@@ -1,0 +1,7 @@
+<pasted_content id="8877">
+Ticket: L3 Pipeline an derive_all anschließen
+Stand: ❌ offen
+Beleg: pipeline.py:80-87 ruft noch derive_requirements auf, nicht derive_all (das liegt in
+requirements_engine/derive.py:100). Eine discarded.json wird nicht geschrieben, das Audit-Ereignis
+REQUIREMENT_DISCARDED gibt es nirgends, und tests/test_pipeline.py fehlt.
+</pasted_content id="8877">
