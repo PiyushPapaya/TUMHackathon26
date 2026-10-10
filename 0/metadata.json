@@ -1,0 +1,77 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KBTV8TMRKK180PGYNE8CNW",
+  "session_id": "bb677499-5503-4df0-8d93-6d6ef40348a9",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T16:55:13.8140304Z",
+  "branch": "main",
+  "checkpoints_count": 2,
+  "files_touched": [
+    "src/backend/evidence_internal/signals.py",
+    "src/backend/evidence_internal/study_topics.py",
+    "src/backend/evidence_internal/taxonomy.py",
+    "tests/pfad_a/test_signals.py"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5-5",
+  "turn_id": "02aa8f8377e0",
+  "checkpoint_transcript_start": 413,
+  "transcript_lines_at_start": 413,
+  "compact_transcript_start": 68,
+  "token_usage": {
+    "input_tokens": 50,
+    "cache_creation_tokens": 76199,
+    "cache_read_tokens": 4657231,
+    "output_tokens": 58486,
+    "api_call_count": 25
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "claude-skill-toolu_01VJbvV38S87mRoLZyCdiijy",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "sync"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "3c8cc2548496",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 111,
+        "end": 112,
+        "entry_ids": [
+          "b8ceb784-c480-4379-960c-bbd5d2f2c841"
+        ],
+        "tool_use_id": "toolu_01VJbvV38S87mRoLZyCdiijy"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_01VJbvV38S87mRoLZyCdiijy"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: sync",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "session_metrics": {
+    "turn_count": 9
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T16:55:13.7591491Z",
+    "agent_lines": 627,
+    "agent_removed": 14,
+    "human_added": 4,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 631,
+    "total_lines_changed": 646,
+    "agent_percentage": 99.22600619195046,
+    "metric_version": 2
+  }
+}
