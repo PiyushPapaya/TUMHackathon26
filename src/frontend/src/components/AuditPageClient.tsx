@@ -34,9 +34,6 @@ export function AuditPageClient() {
               </p>
             </div>
             <nav className="flex flex-wrap gap-2">
-              <Link className="inline-flex min-h-11 items-center rounded-sm border border-zinc-300 dark:border-zinc-700 bg-surface px-4 text-sm font-semibold text-foreground hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background" href="/overview">
-                Overview
-              </Link>
               <Link className="inline-flex min-h-11 items-center rounded-sm border border-zinc-300 dark:border-zinc-700 bg-surface px-4 text-sm font-semibold text-foreground hover:bg-zinc-50 dark:hover:bg-zinc-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background" href="/">
                 Requirements
               </Link>
