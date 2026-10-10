@@ -1,0 +1,5 @@
+Ich bin Lasse. Wo kann ich die Farben anpassen? Gibt es dafür irgendwo eine config datei
+
+---
+
+Es pulled die Farben nicht. Sicher dass das die richtige Datei ist
