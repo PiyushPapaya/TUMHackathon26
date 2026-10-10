@@ -11,3 +11,4 @@
 | 10.10. | Roadmap `docs/06_roadmap.md` nennt Feature-Stopp So 10:00 (wie im Auftrag). Code-Freeze 10:30 und Abgabe 11:30 aus `ZEITPLAN.md` bleiben als Puffer | Alte Planung hatte Feature-Freeze So 08:00. Der Puffer vor 12:00 ist wichtiger als Zeitgewinn. |
 | 10.10. | Charts und Diagramme entstehen per Skript (`scripts/make_*.py`), nicht per Hand | Jede Person kann Farben und Titel ändern und neu bauen. PNG und SVG kommen aus derselben Quelle. |
 | 10.10. | `outputs/BEISPIEL_anforderungsliste_G60-US.csv` kommt aus den **synthetischen** Beispieldaten | So zeigt `outputs/` das Format, ohne echte BMW-Auswertungen zu veröffentlichen (Karte E08). |
+| 10.10. | E08 entschieden: BMW-Rohdaten bleiben im öffentlichen Repo, Pipeline-Ergebnisse bleiben lokal | Jury soll die Pipeline mit echten Daten nachbauen können; Herausnehmen nützt nichts, die Geschichte enthält sie schon. Rückfall: Repo privat, falls die Orga Vertraulichkeit verlangt. |

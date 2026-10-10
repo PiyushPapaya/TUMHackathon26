@@ -22,7 +22,10 @@
 **Zuerst klären, nicht raten:** Steht in den Hackathon-Regeln, ob die Daten weitergegeben werden dürfen und ob das Repo öffentlich sein muss? Wenn Vertraulichkeit gilt: **C**, falls die Abgabe ein privates Repo erlaubt, sonst **B** mit Rücksprache bei der Orga. Das ist deine Entscheidung, Piyush. Ich ändere nichts.
 
 ## Unsere Entscheidung
-_(leer)_
+**A, drinlassen** (Piyush, Sa 10.10. abends). Das Repo bleibt öffentlich, `data/raw/` bleibt getrackt.
+Pipeline-Ergebnisse (`data/processed/`, `data/eval/`, LLM-Cache) bleiben weiter **lokal**, weil sie Kundenzitate in neuer Zusammenstellung enthalten.
 
 ## Warum
-_(leer)_
+Die Jury-KI und Fremde sollen die Pipeline mit echten Daten nachbauen können (`python src/backend/pipeline.py --scenario G60-US`). Herausnehmen (B) hilft nicht, weil die Dateien in der Git-Geschichte bleiben und ein Verlauf-Umbau verboten ist.
+Verworfen: C (privat), weil unklar ist, ob die EHL-Abgabe und Entire ein privates Repo lesen können.
+**Risiko bewusst getragen:** Sagt die Orga, die Daten sind vertraulich, stellt Piyush das Repo sofort auf privat und klärt die Abgabe mit der Orga.
