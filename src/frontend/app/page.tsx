@@ -11,6 +11,7 @@ import {
 } from "@/src/lib/api";
 import { categoryLabel } from "@/src/components/badges";
 import { ScoreBar } from "@/src/components/ScoreBar";
+import { ThemeToggle } from "@/src/components/ThemeToggle";
 
 const DEFAULT_SCENARIO_ID = "G60-US";
 
@@ -75,7 +76,7 @@ export default function RequirementsPage() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Top bar: volle Breite, Platz für weitere Elemente später. Halbtransparent, damit der Shader-Hintergrund durchscheint. */}
-      <header className="w-full border-b border-zinc-200 bg-white/85 backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-950/85">
+      <header className="w-full border-b border-zinc-200 bg-white backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-950">
         <div className="flex flex-wrap items-center justify-between gap-4 px-6 py-4">
           <div>
             <h1 className="text-xl font-semibold text-[#0b1f3a] dark:text-zinc-100">Signal2Spec · PM Cockpit</h1>
@@ -105,13 +106,14 @@ export default function RequirementsPage() {
             >
               Export CSV
             </a>
+            <ThemeToggle />
           </div>
         </div>
       </header>
 
       {/* Mitte: Ergebnis-Fenster, 2cm Abstand zu Rand, Top-Bar und Prompt-Leiste */}
       <main className="m-[2cm] flex flex-1 flex-col">
-        <div className="flex-1 overflow-hidden rounded-lg border border-zinc-200 bg-white/90 backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-950/90">
+        <div className="flex-1 overflow-hidden rounded-lg border border-zinc-200 bg-white backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-950">
           <div className="h-full overflow-auto">
             {error && (
               <div className="m-4 rounded-md border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-800 dark:border-rose-800 dark:bg-rose-950 dark:text-rose-300">
@@ -175,7 +177,7 @@ export default function RequirementsPage() {
               if (e.key === "Enter") handlePromptSubmit();
             }}
             placeholder="Ask me your questions..."
-            className="flex-1 rounded-md border border-zinc-300 bg-white/90 backdrop-blur-sm px-4 py-4 text-sm text-[#0b1f3a] focus:border-blue-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900/90 dark:text-zinc-100"
+            className="flex-1 rounded-md border border-zinc-300 bg-white backdrop-blur-sm px-4 py-4 text-sm text-[#0b1f3a] focus:border-blue-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100"
           />
           <button
             type="button"
