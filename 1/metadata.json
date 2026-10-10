@@ -1,0 +1,125 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KMSVRD9YE39N99YR1YMD9V",
+  "session_id": "be47d8df-6f1e-4950-9ded-89d02e1ed716",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T19:31:57.43398615Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "src/frontend/app/globals.css",
+    "src/frontend/app/layout.tsx",
+    "src/frontend/app/page.tsx",
+    "src/frontend/src/components/DetailBlocks.tsx",
+    "src/frontend/src/components/FindingCard.tsx",
+    "src/frontend/src/components/RequirementDetailPageClient.tsx",
+    "src/frontend/src/components/RequirementDetailView.tsx",
+    "src/frontend/src/components/ScoreBar.tsx",
+    "src/frontend/src/components/ScoreWaterfall.tsx",
+    "src/frontend/src/components/ThemeToggle.tsx",
+    "src/frontend/src/components/badges.tsx"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5",
+  "turn_id": "e0911f69b3c4",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 102,
+    "cache_creation_tokens": 78801,
+    "cache_read_tokens": 4760759,
+    "output_tokens": 32091,
+    "api_call_count": 51
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "claude-skill-toolu_01N61APYUxNAgrzrdsP2qsxj",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "anthropic-skills:chrome-browser"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "e0911f69b3c4",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 273,
+        "end": 274,
+        "entry_ids": [
+          "a6c984ed-f539-49cf-873e-2aae82386311"
+        ],
+        "tool_use_id": "toolu_01N61APYUxNAgrzrdsP2qsxj"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_01N61APYUxNAgrzrdsP2qsxj"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: anthropic-skills:chrome-browser",
+        "default_collapsed": true
+      }
+    },
+    {
+      "id": "claude-skill-toolu_01NG53EwaGBvMZfQqH7gLK2b",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "sync"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "e0911f69b3c4",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 330,
+        "end": 331,
+        "entry_ids": [
+          "63c03aee-bf3a-48da-911d-ce859509dc30"
+        ],
+        "tool_use_id": "toolu_01NG53EwaGBvMZfQqH7gLK2b"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_01NG53EwaGBvMZfQqH7gLK2b"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: sync",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T19:31:57.408195841Z",
+    "agent_lines": 0,
+    "agent_removed": 20,
+    "human_added": 83,
+    "human_modified": 71,
+    "human_removed": 0,
+    "total_committed": 117,
+    "total_lines_changed": 174,
+    "agent_percentage": 11.494252873563218,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 6,
+      "user_lines_removed": 6,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "src/frontend/src/components/ShaderBackground.tsx": 6
+      },
+      "user_removed_per_file": {
+        "src/frontend/src/components/ShaderBackground.tsx": 6
+      }
+    }
+  ]
+}
