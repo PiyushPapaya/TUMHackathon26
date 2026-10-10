@@ -46,6 +46,7 @@ from requirements_engine.factors import compute_factors, rationale_from
 from requirements_engine.offer_check import check, load_offer_for
 from requirements_engine.prompts import SYSTEM_PROMPT
 from requirements_engine.robustness import compute_robustness
+from requirements_engine.scope_guard import guard_reason
 
 
 def _compact(signals: list[Signal]) -> str:
@@ -78,6 +79,10 @@ def derive_all(
                 continue
             if not draft.in_scope:
                 discarded.append({"title": draft.title, "reason": draft.scope_reason, "signal_ids": ids})
+                continue
+            guard = guard_reason(draft.title, draft.acceptance_criterion)  # zweite Linie hinter dem Prompt (W-C12)
+            if guard:
+                discarded.append({"title": draft.title, "reason": guard, "signal_ids": ids})
                 continue
             linked = [known[i] for i in ids]
             problem = next_gen_problem(draft.assumptions, linked) if draft.horizon == "next_gen" else None

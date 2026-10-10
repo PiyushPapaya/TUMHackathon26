@@ -30,6 +30,13 @@ Rules for every requirement:
   A wish for a specific component, part or technical value (resolution, voltage, kW) is an
   engineering specification: output it as its own draft with in_scope=false and a scope_reason.
   If a real customer outcome stands behind it, add a separate customer-facing requirement for that.
+  Price is out of scope even when phrased as a wish about packages, options or ownership: MSRP, price
+  level, discounts, lease or financing rates, subscription fees, residual value, margins, cost targets.
+  What a package CONTAINS is in scope, what it COSTS is not. Never merge price wishes into a requirement.
+  Certification, type approval, legal or data-protection compliance (e.g. CCC, GDPR, FMVSS, CARB, UN R155,
+  ECE R112) is out of scope too: in_scope=false. If a customer outcome stands behind it (for example
+  "let me export and delete my data"), write that as a separate requirement
+  WITHOUT any legal or certification wording.
   Do not hide discarded drafts, we log them.
 - Use ONLY signal_ids from the input. Every requirement cites at least one signal.
 - Cover EVERY complaint and unmet_need signal in at least one requirement (merge related ones, but
