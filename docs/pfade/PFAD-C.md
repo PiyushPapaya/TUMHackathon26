@@ -76,7 +76,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - **Fertig, wenn:** z. B. berührungslose Heckklappe → `optional` mit Code · `sync`.
 - **Wenn es hakt:** Kürzung 3 (Status „unknown“ lassen).
 
-### [ ] C6 · Challenge-Antwort mit LLM (60 min, 21:00-22:00, **M3**)
+### [x] C6 · Challenge-Antwort mit LLM (60 min, 21:00-22:00, **M3**)
 **Prompt:**
 > Ticket C6. Die KI soll die Anforderung nicht blind verteidigen, sondern Belege **und** Gegenbelege nennen und ggf. eine Änderung vorschlagen, weil der PM entscheidet.
 > `answer_challenge` v2 in `challenge.py`: `ask_json` mit Schema `ChallengeAnswer` (answer, supporting_evidence_ids, counter_evidence_ids, suggested_change oder null),
