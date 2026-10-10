@@ -1,0 +1,128 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KV0NF4CNJ3H2JPPT7V2Q3P",
+  "session_id": "9129f450-4ff1-4573-8ac4-5f240da5e34d",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T21:20:33.3190755Z",
+  "branch": "piyush-frontend",
+  "checkpoints_count": 4,
+  "save_step_count": 4,
+  "files_touched": [
+    "src/frontend/app/globals.css",
+    "src/frontend/app/layout.tsx",
+    "src/frontend/app/page.tsx",
+    "src/frontend/src/components/AuditPageClient.tsx",
+    "src/frontend/src/components/AuditTrail.tsx",
+    "src/frontend/src/components/DecisionPanel.tsx",
+    "src/frontend/src/components/DetailBlocks.tsx",
+    "src/frontend/src/components/FindingCard.tsx",
+    "src/frontend/src/components/OverviewPageClient.tsx",
+    "src/frontend/src/components/RequirementDetailPageClient.tsx",
+    "src/frontend/src/components/RequirementDetailView.tsx",
+    "src/frontend/src/components/ScoreBar.tsx",
+    "src/frontend/src/components/ScoreWaterfall.tsx",
+    "src/frontend/src/components/badges.tsx"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-opus-5-5",
+  "turn_id": "df9b258e7e7d",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 42,
+    "cache_creation_tokens": 66163,
+    "cache_read_tokens": 1792512,
+    "output_tokens": 10466,
+    "api_call_count": 20
+  },
+  "session_metrics": {
+    "turn_count": 4
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T21:20:33.2368099Z",
+    "agent_lines": 242,
+    "agent_removed": 325,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 242,
+    "total_lines_changed": 567,
+    "agent_percentage": 100,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 664,
+      "user_lines_removed": 48,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "README.md": 10,
+        "config/README.md": 20,
+        "data/README.md": 15,
+        "docs/ARCHITEKTUR.md": 6,
+        "scripts/make_view_examples.py": 6,
+        "scripts/new_scenario.py": 50,
+        "src/backend/api/insights_routes.py": 11,
+        "src/backend/api/routes.py": 16,
+        "src/backend/core/ask.py": 57,
+        "src/backend/evidence_internal/conflicts.py": 43,
+        "src/backend/evidence_internal/context.py": 30,
+        "src/backend/evidence_internal/feedback.py": 30,
+        "src/backend/evidence_internal/opportunities.py": 61,
+        "src/backend/evidence_internal/segments.py": 36,
+        "src/backend/evidence_internal/signals.py": 5,
+        "src/backend/evidence_internal/study.py": 23,
+        "src/backend/evidence_internal/taxonomy.py": 15,
+        "src/backend/pipeline.py": 8,
+        "src/backend/requirements_engine/derive.py": 111,
+        "src/backend/requirements_engine/factors.py": 1,
+        "src/shared/API.md": 11,
+        "src/shared/beispiele/views/ask.json": 62,
+        "src/shared/beispiele/views/audit_timeline.json": 1,
+        "src/shared/beispiele/views/explain.json": 3,
+        "src/shared/beispiele/views/export_md.json": 1,
+        "src/shared/beispiele/views/scenarios.json": 1,
+        "tests/eval/run_eval.py": 31
+      },
+      "user_removed_per_file": {
+        "README.md": 1,
+        "config/README.md": 3,
+        "scripts/make_view_examples.py": 1,
+        "src/backend/api/insights_routes.py": 1,
+        "src/backend/api/routes.py": 1,
+        "src/backend/evidence_internal/context.py": 7,
+        "src/backend/evidence_internal/feedback.py": 15,
+        "src/backend/evidence_internal/signals.py": 1,
+        "src/backend/evidence_internal/study.py": 8,
+        "src/backend/pipeline.py": 2,
+        "src/backend/requirements_engine/factors.py": 1,
+        "src/shared/API.md": 1,
+        "src/shared/beispiele/views/audit_timeline.json": 1,
+        "src/shared/beispiele/views/explain.json": 3,
+        "tests/eval/run_eval.py": 2
+      }
+    },
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 664,
+      "agent_lines_removed": 48
+    },
+    {
+      "checkpoint_number": 3,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 664,
+      "agent_lines_removed": 48
+    },
+    {
+      "checkpoint_number": 4,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 906,
+      "agent_lines_removed": 373
+    }
+  ]
+}
