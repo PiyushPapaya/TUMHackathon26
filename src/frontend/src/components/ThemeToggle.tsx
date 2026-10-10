@@ -33,7 +33,7 @@ export function ThemeToggle() {
       onClick={toggle}
       aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
       title={isDark ? "Switch to light theme" : "Switch to dark theme"}
-      className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-300 bg-white text-base text-zinc-700 shadow-sm transition hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
+      className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-300 bg-surface text-base text-zinc-700 shadow-sm transition hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-200 dark:hover:bg-zinc-800"
     >
       <span suppressHydrationWarning>{isDark ? "☀" : "🌙"}</span>
     </button>
