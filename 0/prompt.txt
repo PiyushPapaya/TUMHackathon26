@@ -1,0 +1,19 @@
+<pasted_content id="272e">
+Pfad B · Piyush · Externe Evidenz (Web)
+
+    Seit Sa 14:50 macht Piyush diesen Pfad neben dem Lead (nur 4 Personen). Die Eval-Zahl ist zu Aditya gewandert (PFAD-A.md A9/A10).
+
+Ziel: Wettbewerb und Trends aus dem Web holen. Jede Aussage hat URL, Abrufdatum, Vertrauensstufe. Trends ohne interne Belege sind Annahmen (Evidenzstufe D). Schreibt in: src/backend/evidence_external/, tests/pfad_b/. Liefert: web_evidence.json, web_signals.json (über pipeline.py --stage web). Vertrag (nie ändern): research(scenario, signals) -> tuple[list[Evidence], list[Signal]].
+Regeln
+
+    Kein Webbeleg ohne URL. Nur Vertrauen high/medium kommt in Befunde. Preise/Business-Case sind out of scope: nicht danach fragen.
+    Alles über core/llm.py (Cache!). Nach dem ersten Lauf geht die Demo offline.
+    Webbeleg-meta: trust, publisher, published, stance (supports/contradicts/neutral), supports_signal_id (interner Befund, falls passend). Dennis liest trust.
+
+Tickets
+[ ] B1 · Websuche-Probe (30 min, 15:30-16:00)
+
+Prompt:
+
+    Ich baue Pfad B, Ticket B1. Wir nutzen die OpenAI-Websuche über core.llm.ask_json(..., tools=[{"type": "web_search"}]) statt eigenem Scraping, weil sie Quellen-URLs mitliefert und in 24 h kein Scraper robust wird. Verworfen: Testmagazine scrapen (Paywalls, fragil). Lege in evidence_external/ ein Pydantic-Schema Claims an (Liste von Claim: text, url, publisher, published, stance, about) und ask_claims(question) -> list[Claim]. Claims ohne URL oder mit URL, die nicht mit http beginnt, werden verworfen. Test mit Fake-ask_json. Dann ein echter Aufruf: „How do the Mercedes-Benz E-Class and Audi A6 e-tron (2025/2026) handle physical controls vs. touch controls?“
+</pasted_content id="272e">
