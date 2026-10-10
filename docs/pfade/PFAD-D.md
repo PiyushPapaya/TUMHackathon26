@@ -41,7 +41,7 @@
 > Oben rechts Button „Export CSV“ (Link auf den Export-Endpunkt). Design-Regeln aus `docs/pfade/PFAD-D.md`. Ladezustand und Fehlermeldung, falls das Backend aus ist („Backend not reachable – start uvicorn“).
 - **Fertig, wenn:** Liste zeigt Beispieldaten, Szenario-Wechsel lädt neu, Build grün, `sync`.
 
-### [ ] D3 · Seite 2: Detail `/requirements/[id]` (75 min, bis 18:30, **M2 Durchstich**)
+### [x] D3 · Seite 2: Detail `/requirements/[id]` (75 min, bis 18:30, **M2 Durchstich**)
 **Prompt:**
 > Ticket D3. Detailseite aus `GET /api/requirements/{id}`. Abschnitte: Titel + Status + Evidenzstufe mit Begründungssatz; Beschreibung; **Acceptance criterion** hervorgehoben;
 > **Score-Wasserfall**: pro Faktor Balken (Beitrag = value × weight × 100) mit Erklärsatz, darunter Konfidenz-Abzug durch die Evidenzstufe und Endscore;

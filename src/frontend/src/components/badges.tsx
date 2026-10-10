@@ -3,7 +3,7 @@
  * Evidenzstufe mit Klartext + Tooltip, Status, Konflikt. Eine Datei, weil Liste
  * (D2) und Detailseite (D3) dieselben Badges brauchen.
  */
-import type { EvidenceLevel, RequirementStatus } from "@/src/lib/api";
+import type { EvidenceLevel, RequirementStatus, SourceType } from "@/src/lib/api";
 
 const EVIDENCE_STYLE: Record<EvidenceLevel, { label: string; className: string }> = {
   A: { label: "A · strong", className: "bg-emerald-100 text-emerald-800 border-emerald-300" },
@@ -70,4 +70,50 @@ const CATEGORY_LABELS: Record<string, string> = {
 
 export function categoryLabel(category: string): string {
   return CATEGORY_LABELS[category] ?? category;
+}
+
+/**
+ * Vertrauensstufe pro Beleg, abgeleitet aus den Regeln in
+ * requirements_engine/evidence_level.py (BMW_SOURCES zählen mehr als Web, Web bestätigt nur,
+ * Absatz/Optionsliste sind Kontext, kein Kundenbeleg). Keine neue Regel, nur die bestehende
+ * für den Detailbildschirm sichtbar gemacht.
+ */
+const SOURCE_TRUST: Record<SourceType, { label: string; hint: string; className: string }> = {
+  feedback: {
+    label: "BMW customer data",
+    hint: "Direct customer feedback; counts toward the evidence level.",
+    className: "bg-emerald-50 text-emerald-700 border-emerald-300",
+  },
+  study: {
+    label: "BMW customer data",
+    hint: "BMW customer study; counts toward the evidence level.",
+    className: "bg-emerald-50 text-emerald-700 border-emerald-300",
+  },
+  web: {
+    label: "External · confirms only",
+    hint: "Web source. Can confirm a finding but never carries it alone.",
+    className: "bg-amber-50 text-amber-700 border-amber-300",
+  },
+  sales: {
+    label: "Context data",
+    hint: "Sales volume, not direct customer feedback.",
+    className: "bg-zinc-50 text-zinc-600 border-zinc-300",
+  },
+  option_list: {
+    label: "Context data",
+    hint: "Today's options list, not direct customer feedback.",
+    className: "bg-zinc-50 text-zinc-600 border-zinc-300",
+  },
+};
+
+export function SourceTrustBadge({ sourceType }: { sourceType: SourceType }) {
+  const style = SOURCE_TRUST[sourceType];
+  return (
+    <span
+      title={style.hint}
+      className={`inline-flex items-center rounded-full border px-2 py-0.5 text-xs font-medium ${style.className}`}
+    >
+      {style.label}
+    </span>
+  );
 }
