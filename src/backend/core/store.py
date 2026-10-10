@@ -34,6 +34,7 @@ class ScenarioState:
         self.evidence = {e["id"]: Evidence(**e) for e in bundle["evidence"]}
         self.signals = {s["id"]: Signal(**s) for s in bundle["signals"]}
         self.requirements = {r["id"]: Requirement(**r) for r in bundle["requirements"]}
+        self.discarded: list[dict] = bundle.get("discarded", [])  # Beispiel-Bundles haben das Feld nicht
         self.weights = scoring.normalize_weights(bundle.get("weights", {}))
 
 
@@ -64,6 +65,12 @@ class Store:
                 "REQUIREMENT_PROPOSED", sid, Actor(type=ActorType.AI, name="pipeline"),
                 req.rationale, {"score": req.score, "evidence_level": req.evidence_level.value,
                                 "signal_ids": req.signal_ids}, requirement_id=req.id,
+            )
+        for item in state.discarded:  # Begründung = Scope-Grund der KI; ohne requirement_id, es gibt keine Anforderung
+            self.audit.append(
+                "REQUIREMENT_DISCARDED", sid, Actor(type=ActorType.AI, name="scope-waechter"),
+                item.get("reason") or "Außerhalb des Scopes",
+                {"title": item["title"], "signal_ids": item["signal_ids"]},
             )
 
     def get(self, scenario_id: str) -> ScenarioState:
