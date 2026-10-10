@@ -1,0 +1,26 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4JWVQJ0NQ2QGSCJEFEEN1NF",
+  "strategy": "manual-commit",
+  "branch": "piyush/neustart",
+  "checkpoints_count": 3,
+  "files_touched": [
+    ".github/CODEOWNERS"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 130,
+    "cache_creation_tokens": 240533,
+    "cache_read_tokens": 10924624,
+    "output_tokens": 114042,
+    "api_call_count": 65
+  }
+}
