@@ -1,68 +1,192 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
+import {
+  getExportUrl,
+  getRequirements,
+  getScenarios,
+  getSignals,
+  type Requirement,
+  type Scenario,
+  type Signal,
+} from "@/src/lib/api";
+import { categoryLabel, ConflictBadge, EvidenceBadge, StatusBadge } from "@/src/components/badges";
+import { ScoreBar } from "@/src/components/ScoreBar";
+
+const DEFAULT_SCENARIO_ID = "G60-US";
+
+export default function RequirementsPage() {
+  const router = useRouter();
+
+  const [scenarios, setScenarios] = useState<Scenario[] | null>(null);
+  const [scenarioId, setScenarioId] = useState<string>(DEFAULT_SCENARIO_ID);
+  const [requirements, setRequirements] = useState<Requirement[] | null>(null);
+  const [signals, setSignals] = useState<Signal[] | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [isFetching, setIsFetching] = useState(true);
+
+  // Szenarien einmal laden; Standard bleibt G60-US, falls vorhanden, sonst erstes Szenario.
+  useEffect(() => {
+    getScenarios()
+      .then((loaded) => {
+        setScenarios(loaded);
+        if (!loaded.some((s) => s.id === DEFAULT_SCENARIO_ID) && loaded[0]) {
+          setScenarioId(loaded[0].id);
+        }
+      })
+      .catch((err: Error) => setError(err.message));
+  }, []);
+
+  // Anforderungen + Befunde (für Konflikt-Check) neu laden bei Szenario-Wechsel.
+  useEffect(() => {
+    if (!scenarioId) return;
+    let cancelled = false;
+    (async () => {
+      setIsFetching(true);
+      try {
+        const [loadedRequirements, loadedSignals] = await Promise.all([
+          getRequirements(scenarioId),
+          getSignals(scenarioId),
+        ]);
+        if (cancelled) return;
+        setRequirements(loadedRequirements);
+        setSignals(loadedSignals);
+        setError(null);
+      } catch (err) {
+        if (cancelled) return;
+        setError((err as Error).message);
+      } finally {
+        if (!cancelled) setIsFetching(false);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [scenarioId]);
+
+  const signalsById = useMemo(() => {
+    const map = new Map<string, Signal>();
+    for (const signal of signals ?? []) map.set(signal.id, signal);
+    return map;
+  }, [signals]);
+
+  /** Titel der gegensätzlichen Befunde, falls ein verknüpfter Befund `conflicts_with` hat. */
+  function conflictingTitlesFor(requirement: Requirement): string[] {
+    const titles: string[] = [];
+    for (const signalId of requirement.signal_ids) {
+      const signal = signalsById.get(signalId);
+      for (const otherId of signal?.conflicts_with ?? []) {
+        titles.push(signalsById.get(otherId)?.title ?? otherId);
+      }
+    }
+    return titles;
+  }
+
+  const isLoading = scenarios === null || isFetching || requirements === null || signals === null;
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
+    <div className="min-h-screen bg-zinc-50">
+      <header className="border-b border-zinc-200 bg-white">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-5">
+          <div>
+            <h1 className="text-xl font-semibold text-[#0b1f3a]">Signal2Spec · PM Cockpit</h1>
+            <p className="text-sm text-zinc-500">Prioritized requirements for product decisions</p>
+          </div>
+          <div className="flex items-center gap-3">
+            <label className="flex items-center gap-2 text-sm text-zinc-700">
+              Scenario
+              <select
+                value={scenarioId}
+                onChange={(e) => setScenarioId(e.target.value)}
+                disabled={!scenarios}
+                className="rounded-md border border-zinc-300 bg-white px-3 py-1.5 text-sm text-[#0b1f3a] focus:border-blue-500 focus:outline-none"
+              >
+                {(scenarios ?? []).map((s) => (
+                  <option key={s.id} value={s.id}>
+                    {s.model_name} ({s.market})
+                  </option>
+                ))}
+              </select>
+            </label>
             <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href={getExportUrl(scenarioId)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md bg-blue-600 px-4 py-1.5 text-sm font-medium text-white hover:bg-blue-700"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              Export CSV
+            </a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+      </header>
+
+      <main className="mx-auto max-w-6xl px-6 py-8">
+        {error && (
+          <div className="rounded-md border border-rose-300 bg-rose-50 px-4 py-3 text-sm text-rose-800">
+            {error}
+          </div>
+        )}
+
+        {!error && isLoading && <p className="text-sm text-zinc-500">Loading…</p>}
+
+        {!error && !isLoading && requirements !== null && requirements.length === 0 && (
+          <p className="text-sm text-zinc-500">No requirements for this scenario yet.</p>
+        )}
+
+        {!error && !isLoading && requirements !== null && requirements.length > 0 && (
+          <div className="overflow-hidden rounded-lg border border-zinc-200 bg-white">
+            <table className="w-full text-left text-sm">
+              <thead className="border-b border-zinc-200 bg-zinc-50 text-xs uppercase tracking-wide text-zinc-500">
+                <tr>
+                  <th className="px-4 py-3">Rank</th>
+                  <th className="px-4 py-3">Title</th>
+                  <th className="px-4 py-3">Score</th>
+                  <th className="px-4 py-3">Evidence</th>
+                  <th className="px-4 py-3">Category</th>
+                  <th className="px-4 py-3">Status</th>
+                  <th className="px-4 py-3">Conflict</th>
+                </tr>
+              </thead>
+              <tbody>
+                {requirements.map((req) => {
+                  const conflicts = conflictingTitlesFor(req);
+                  return (
+                    <tr
+                      key={req.id}
+                      role="link"
+                      tabIndex={0}
+                      onClick={() => router.push(`/requirements/${req.id}`)}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          e.preventDefault();
+                          router.push(`/requirements/${req.id}`);
+                        }
+                      }}
+                      className="cursor-pointer border-b border-zinc-100 last:border-0 hover:bg-blue-50 focus:bg-blue-50 focus:outline-none"
+                    >
+                      <td className="px-4 py-3 font-medium text-zinc-500">#{req.rank}</td>
+                      <td className="px-4 py-3 font-medium text-[#0b1f3a]">{req.title}</td>
+                      <td className="px-4 py-3">
+                        <ScoreBar score={req.score} />
+                      </td>
+                      <td className="px-4 py-3">
+                        <EvidenceBadge level={req.evidence_level} reason={req.rationale} />
+                      </td>
+                      <td className="px-4 py-3 text-zinc-700">{categoryLabel(req.category)}</td>
+                      <td className="px-4 py-3">
+                        <StatusBadge status={req.status} />
+                      </td>
+                      <td className="px-4 py-3">
+                        <ConflictBadge conflictingTitles={conflicts} />
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        )}
       </main>
     </div>
   );
