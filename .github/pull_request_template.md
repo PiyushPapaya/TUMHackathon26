@@ -1,22 +1,30 @@
-## Was wurde geändert?
+## Was
 
-<!-- 1–3 Sätze in einfacher Sprache -->
+<!-- 1-3 Sätze in einfacher Sprache: Was kann man jetzt, was vorher nicht ging? -->
 
-## Welche Rolle / welcher Ordner?
+## Entscheidung + Warum
 
-<!-- z. B. Frontend (src/frontend/), Research (docs/research/) -->
+<!-- Ownership-Sprache: "Wir nehmen X, weil …; Y verworfen, weil …" -->
 
-## Getestet wie?
+## Wie verifiziert
 
-<!-- z. B. lokal gestartet und Login ausprobiert; pytest läuft durch -->
+<!-- Konkret: Befehl + Ergebnis. z. B. "pytest: 12 passed", "lokal gestartet, Upload mit demo/beispiel.pdf klappt" -->
 
-## Neue Dependencies?
+## Screenshots
 
-- [ ] Nein
-- [ ] Ja: <!-- welche und warum -->
+<!-- Bei UI-Änderungen: vorher/nachher -->
 
-## Dokumentation
+## Betroffene Ordner
 
-- [ ] `docs/ARCHITEKTUR.md` aktualisiert (bei Code-Änderungen)
-- [ ] `docs/pitch/JURY-FAQ.md` ergänzt (bei neuen Designentscheidungen)
-- [ ] Keine Secrets im Commit
+<!-- Nur eigene Ordner? Wenn nicht: warum, und wer ist Owner? -->
+
+## Checkliste
+
+- [ ] Nur Dateien in meinem Zuständigkeitsbereich bzw. `workspace/<name>/` geändert
+- [ ] `git merge origin/main` gemacht, keine Konflikte
+- [ ] Checks lokal grün (Lint, Tests, App startet)
+- [ ] Keine Secrets, keine `.env` (`python scripts/secret_scan.py`)
+- [ ] Neue Dependencies: keine / beantragt: <!-- welche, warum, Alternative -->
+- [ ] `docs/ARCHITEKTUR.md` aktualisiert (bei Code)
+- [ ] `docs/pitch/JURY-FAQ.md` ergänzt (bei neuer Designentscheidung)
+- [ ] Commit-Nachrichten auf Deutsch mit „Warum“

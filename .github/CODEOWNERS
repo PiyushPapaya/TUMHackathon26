@@ -1,1 +1,28 @@
-* @PiyushPapaya @JoleEight
+# Wer muss Änderungen freigeben? Die LETZTE passende Zeile gilt.
+# Piyush steht überall drin, weil nur er reviewt und merged (Ruleset "main-nur-piyush-merged").
+# Die zweite Person pro Ordner ist die fachliche Ownerin und wird automatisch als Reviewer vorgeschlagen.
+# Fabian: GitHub-Username nachtragen, sobald er Collaborator ist (unbekannte Namen machen die Datei ungültig).
+
+*                       @PiyushPapaya
+
+/src/frontend/          @PiyushPapaya @JoleEight
+/tests/                 @PiyushPapaya @AdiAvocado
+/demo/                  @PiyushPapaya @AdiAvocado
+/docs/research/         @PiyushPapaya @Di0n-0
+/docs/wissen/           @PiyushPapaya @Di0n-0
+
+/team/lasse.md          @PiyushPapaya @JoleEight
+/team/aditya.md         @PiyushPapaya @AdiAvocado
+/team/dennis.md         @PiyushPapaya @Di0n-0
+/workspace/lasse/       @PiyushPapaya @JoleEight
+/workspace/aditya/      @PiyushPapaya @AdiAvocado
+/workspace/dennis/      @PiyushPapaya @Di0n-0
+
+# Nur Piyush (bewusst ohne Zweit-Owner): geteilte Dateien und Verträge
+/src/shared/            @PiyushPapaya
+/src/backend/           @PiyushPapaya
+/.github/               @PiyushPapaya
+/.claude/               @PiyushPapaya
+/scripts/               @PiyushPapaya
+/CLAUDE.md              @PiyushPapaya
+/README.md              @PiyushPapaya
