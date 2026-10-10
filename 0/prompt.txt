@@ -1,0 +1,6 @@
+do this, this is my api key: REDACTED, mavceh das alles, tema breepsuejing is gelaufen: 1. L0 Kick-off (war 15:15, 15 min): Idee in 3 Sätzen, ROADMAP §1 vorlesen, Arbeitsbücher verteilen, data/raw/ per USB-Stick rumgeben. Ohne das hat keiner sein erstes Ticket.
+2. L1 Setup (15:30, 15 min): Bei dir fehlt die .env noch. Du brauchst .env mit deinem OpenAI-Key und pip install -r requirements.txt, denn openai ist nicht installiert. Danach mit allen reihum M0 abhaken (Tests, Entire, .env).
+
+---
+
+pushe alles und marekeir sie als marekeirt bei emeinr datei
