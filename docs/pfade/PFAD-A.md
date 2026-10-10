@@ -150,3 +150,19 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 ### [ ] A11 · Pitch-Teil (So 08:30-09:30)
 - Folie „Kann man der KI trauen?“: Grounding-Rate, Befund-Treue, Trichter 3.610 → N → M. Inhalt als 3 Stichpunkte an Piyush.
 - Demo-Teil (20 s): Szenario auf F70-EU umschalten. 2 Jury-Antworten aus `pitch/PITCH.md` laut üben.
+
+---
+
+## Welle 2 (Sa 21:00 bis So 07:30)
+
+Prompt zum Kopieren für jede Karte: [`docs/UPGRADE_WELLE2.md`](../UPGRADE_WELLE2.md) §3. Ablauf pro Karte: Test → Code → Fertig-Befehl → `sync`.
+
+- [ ] **W-A1** · Datensatz-Profil statt harter Sheet-/Spaltennamen (`feedback.py`, `context.py`, `study.py`, liest `config/datasets.json`) · 21:00–21:45
+- [ ] **W-A2** · Ohne Feedback laufen (G68-CN) + China-/EU-Spalten der Studie lesen · 22:00–23:00 · **nie streichen**
+- [ ] **W-A3** · Segmente pro Signal: Antrieb, Land, Quelle, Feedback-Typ (neue Datei `segments.py`) · 23:00–00:00
+- [ ] **W-A4** · Unbekannte Themen zählen und warnen (`taxonomy.py`) · 00:00–00:30
+- [ ] **W-A5** · Sales: Wachstum 2024→2030, Marktanteil, F70-CN-Formelzelle nie als 0 · 00:30–01:15
+- [ ] **W-A6** · Chancen-Karte Wichtigkeit vs. Zufriedenheit (neue Datei `opportunities.py`) · 03:30–04:30
+- [ ] **W-A7** · Segment-Konflikte BEV vs. ICE, Land vs. Land, Studie vs. Kommentare · 04:30–05:30
+- [ ] **W-A8** · Eval fertig mit Dennis: 50 Labels, Report für alle 6 Szenarien · 06:00–07:00 · **nie streichen**
+- [ ] *(kann)* **W-A9** · „Wants“-Kommentare als stärkere Signal-Art

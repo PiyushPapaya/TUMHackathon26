@@ -55,3 +55,20 @@ Pipeline mit Stufendateien + Beispiel-Fallback, 3 Szenario-Configs, Startversion
 
 `git pull` → `python -m pytest -q` → `pipeline.py --scenario G60-US` → Backend neu starten → Liste + Detail im UI anklicken → CI auf GitHub grün?
 Rot → Verursacher (ROADMAP §1) anpingen, nicht selbst in fremdem Ordner reparieren.
+
+---
+
+## Welle 2 (Sa 21:00 bis So 07:30)
+
+Prompt zum Kopieren für jede Karte: [`docs/UPGRADE_WELLE2.md`](../UPGRADE_WELLE2.md) §2. Web-Karten W-L5, W-L6, W-L10 stehen in [`PFAD-B.md`](PFAD-B.md).
+
+- [ ] **W-P0** · Verträge + 3 neue Szenarien. Felder, Configs, `datasets.json` sind fertig (Commit `915cacc`); **offen: `src/shared/API.md` + Beispiel-Bundle für Lasse**
+- [ ] **W-P0b** · Erste Abgabe (Skill `abgabe`) · bis 22:00
+- [ ] **W-L1** · `core/llm.py` robust: Timeout, Retry, None-Check, atomarer Cache (Schlüssel NICHT ändern) · 22:00–22:30
+- [ ] **W-L2** · `pipeline.py --scenario all`, Fehler pro Schritt statt Abbruch · 22:30–23:15
+- [ ] **W-L3** · PM-Entscheidungen überleben Neustart (Audit-Events neu abspielen) · 23:15–23:45 · **nie streichen**
+- [ ] **W-L4** · View-Endpunkte fürs Frontend (overview, explain, whatif, portfolio, compare, evidence, gaps, export) · 23:45–01:30 · **nie streichen**
+- [ ] **W-L7** · Nachtlauf alle 6 Szenarien + Demo-Cache committen · 04:00–06:00 · **nie streichen**
+- [ ] **W-L8** · `scripts/check_bundles.py` · 03:00–03:30
+- [ ] **W-L9** · Doku: ARCHITEKTUR, data/README, README „neues Auto in 2 Schritten“ · 06:00–07:30
+- [ ] *(kann)* **W-L11** `POST /ask` · **W-L12** `scripts/new_scenario.py`

@@ -1,5 +1,9 @@
 # Start hier
 
+> **NEU seit Sa 21:00: Welle 2.** Deine neuen Aufgaben stehen unten in deinem Arbeitsbuch unter „Welle 2“:
+> Aditya → [`docs/pfade/PFAD-A.md`](docs/pfade/PFAD-A.md) · Dennis → [`docs/pfade/PFAD-C.md`](docs/pfade/PFAD-C.md) · Piyush → [`docs/pfade/LEAD.md`](docs/pfade/LEAD.md) + [`PFAD-B.md`](docs/pfade/PFAD-B.md).
+> Die fertigen Prompts zum Kopieren und den Zeitplan findest du in [`docs/UPGRADE_WELLE2.md`](docs/UPGRADE_WELLE2.md).
+
 Du musst nichts programmieren können. Du musst nur verstehen, was wir bauen, und dir etwas aussuchen, das du übernimmst.
 
 ## 1. Schau dir zuerst das hier an (5 Minuten)
