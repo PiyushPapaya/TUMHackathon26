@@ -3,7 +3,12 @@
 Warum feste Regeln statt LLM: Die Fragen bestimmen, was wir im Web finden. Mit einer reinen Funktion
 sind sie reproduzierbar, testbar und der Cache (core.llm) trifft bei jedem Lauf dieselben Fragen.
 
-Aufteilung (13 Fragen für G60-US): bis zu 8 Wettbewerbsfragen + 5 feste Trendfragen.
+Aufteilung (13 Fragen für G60-US): bis zu 8 Wettbewerbsfragen + 5 feste Trendfragen
++ optional bis zu 3 marktspezifische Trendfragen aus der Config (extra_trend_topics, z. B. China).
+
+Zeitfenster der Trendfragen kommt aus successor_horizon der Config: Horizont -2 bis +1
+(Nachfolger 2030 -> "between 2028 and 2031"). Warum genau diese Regel: Sie ergibt für alle
+2030er-Szenarien den bisherigen Fragetext, damit der committete Demo-Cache gültig bleibt.
 """
 
 from __future__ import annotations
@@ -14,6 +19,7 @@ from typing import Literal
 from core.models import Category, Scenario, Signal
 
 MAX_COMPETITOR_QUESTIONS = 8
+MAX_EXTRA_TRENDS = 3  # 5 feste + 3 marktspezifische = höchstens 8 Trendfragen
 
 # Kategorie -> englisches Thema für die Frage (Websuche funktioniert auf Englisch am besten).
 TOPIC = {
@@ -70,14 +76,22 @@ def _competitor_questions(scenario: Scenario, signals: list[Signal]) -> list[Que
     return questions
 
 
+def trend_window(scenario: Scenario) -> tuple[int, int]:
+    """Von 2 Jahren vor dem Nachfolger bis 1 Jahr danach; unlesbarer Horizont -> 2030."""
+    horizon = int(scenario.successor_horizon) if str(scenario.successor_horizon).isdigit() else 2030
+    return horizon - 2, horizon + 1
+
+
 def _trend_questions(scenario: Scenario) -> list[Question]:
+    start, end = trend_window(scenario)
+    extra = [(Category(c), t) for c, t in scenario.extra_trend_topics[:MAX_EXTRA_TRENDS]]
     return [
         Question(
-            text=(f"Which developments in {topic} are expected between 2028 and 2031 for premium cars "
+            text=(f"Which developments in {topic} are expected between {start} and {end} for premium cars "
                   f"in the segment of the {scenario.model_name} in the {scenario.market} market?"),
             kind="trend", category=category,
         )
-        for category, topic in TREND_TOPICS
+        for category, topic in TREND_TOPICS + extra
     ]
 
 

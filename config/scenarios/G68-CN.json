@@ -6,6 +6,11 @@
   "countries": ["CN"],
   "competitors": ["Mercedes-Benz E-Class L", "Audi A6L", "NIO ET7", "Li Auto L9", "BYD Han"],
   "successor_horizon": "2030",
+  "extra_trend_topics": [
+    ["comfort_space", "rear-seat comfort and chauffeur-driven features in long-wheelbase sedans"],
+    ["infotainment_digital", "smart cockpit ecosystems, local apps and Mandarin voice assistants"],
+    ["driver_assistance", "navigate-on-autopilot for city streets (urban NOA)"]
+  ],
   "warnings": ["Kaltstart: keine Kundenkommentare und keine Optionsliste für China; nur Studie, Absatz und Web."],
   "data": {
     "feedback_file": null,
