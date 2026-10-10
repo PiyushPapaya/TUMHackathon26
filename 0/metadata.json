@@ -1,0 +1,59 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4K9G6V5B1XGDRTWC5MGM97B",
+  "session_id": "b95f1a7e-51dd-45bd-84de-2c7f1ef3469f",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T16:14:28.7807594Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "START_HIER.md",
+    "docs/01_projekt.md",
+    "docs/04_techflow.md",
+    "docs/05_rollen.md",
+    "docs/06_roadmap.md",
+    "entscheidungen/E04_features.md",
+    "entscheidungen/ENTSCHEIDUNGSBOGEN.md",
+    "erklaerer/index.html"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5-5",
+  "turn_id": "134b1ab9501d",
+  "checkpoint_transcript_start": 562,
+  "transcript_lines_at_start": 562,
+  "compact_transcript_start": 62,
+  "token_usage": {
+    "input_tokens": 18,
+    "cache_creation_tokens": 47027,
+    "cache_read_tokens": 2465192,
+    "output_tokens": 37875,
+    "api_call_count": 9
+  },
+  "session_metrics": {
+    "turn_count": 2
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T16:14:28.5595791Z",
+    "agent_lines": 424,
+    "agent_removed": 238,
+    "human_added": 14,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 438,
+    "total_lines_changed": 677,
+    "agent_percentage": 97.78434268833087,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 337,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "erklaerer/index.html": 337
+      }
+    }
+  ]
+}

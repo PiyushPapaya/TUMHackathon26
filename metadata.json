@@ -1,0 +1,33 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4K9G6V5B1XGDRTWC5MGM97B",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "START_HIER.md",
+    "docs/01_projekt.md",
+    "docs/04_techflow.md",
+    "docs/05_rollen.md",
+    "docs/06_roadmap.md",
+    "entscheidungen/E04_features.md",
+    "entscheidungen/ENTSCHEIDUNGSBOGEN.md",
+    "erklaerer/index.html"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 18,
+    "cache_creation_tokens": 47027,
+    "cache_read_tokens": 2465192,
+    "output_tokens": 37875,
+    "api_call_count": 9
+  }
+}
