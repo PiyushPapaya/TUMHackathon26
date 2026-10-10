@@ -96,3 +96,10 @@ Ergebnis (Befehl + Ausgabe) gehört in den PR unter „Wie verifiziert“. Behau
 ## Wissen
 
 Kurzfassung: `docs/research/KURZFASSUNG.md`. Ausführlich: `docs/wissen/` (EHL-Bewertung, vergangene Projekte, Partner-Ideen, Stack, OpenAI/Entire, Glossar, Git-Hilfe, FAQ). Regeln ausführlich: `docs/ZUSAMMENARBEIT.md`. Setup: `docs/SETUP.md`.
+
+
+
+<!-- entire-agent:begin -->
+Read .entire/agent-guide.md for this repository's workflow, source inspection, and verification guidance.
+@.entire/agent-guide.md
+<!-- entire-agent:end -->
