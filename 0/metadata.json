@@ -1,0 +1,88 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KN5P7WDGQ25QC3JFATP230",
+  "session_id": "54fee4bd-8317-45d1-884f-3450bb6d3c12",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T19:38:25.154671329Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "src/frontend/app/layout.tsx",
+    "src/frontend/app/page.tsx",
+    "src/frontend/src/components/ThemeToggle.tsx"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5",
+  "turn_id": "f3c7758d95cd",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 40,
+    "cache_creation_tokens": 34136,
+    "cache_read_tokens": 1275295,
+    "output_tokens": 5882,
+    "api_call_count": 20
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "claude-skill-toolu_01VEtfKuLcEGEg2Q89hggAUB",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "sync"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "f3c7758d95cd",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 119,
+        "end": 120,
+        "entry_ids": [
+          "95c28c36-4338-4ae1-8796-51579e43da40"
+        ],
+        "tool_use_id": "toolu_01VEtfKuLcEGEg2Q89hggAUB"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_01VEtfKuLcEGEg2Q89hggAUB"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: sync",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T19:38:25.143749697Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 0,
+    "human_modified": 13,
+    "human_removed": 2,
+    "total_committed": 0,
+    "total_lines_changed": 15,
+    "agent_percentage": 0,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 9,
+      "user_lines_removed": 9,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "src/frontend/app/page.tsx": 3,
+        "src/frontend/src/components/ShaderBackground.tsx": 6
+      },
+      "user_removed_per_file": {
+        "src/frontend/app/page.tsx": 3,
+        "src/frontend/src/components/ShaderBackground.tsx": 6
+      }
+    }
+  ]
+}
