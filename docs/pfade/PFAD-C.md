@@ -97,7 +97,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 ### [x] C9 · Randfälle testen (45 min, bis 05:30)
 - Prompt: „Ticket C9. Ergänze Tests in `tests/pfad_c/` für Randfälle: keine Befunde, Befund ohne Belege, alle Gewichte 0 außer einem, Anforderung ohne Studienbeleg, LLM liefert leere Liste. Nichts darf abstürzen.“
 
-### [ ] C10 · Was-wäre-wenn erklären (30 min, bis 06:00)
+### [x] C10 · Was-wäre-wenn erklären (30 min, bis 06:00)
 - Lasse baut einen Schalter „Annahmen ignorieren“ (Score ohne `future_relevance`) direkt im Frontend aus `score_breakdown`. Du lieferst ihm die Formel als 2 Sätze und prüfst 2 Beispiele von Hand.
 
 ### [ ] C11 · Pitch-Teil (So 08:30-09:30)
