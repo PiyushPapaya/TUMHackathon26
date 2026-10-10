@@ -113,7 +113,7 @@ Prompt zum Kopieren für jede Karte: [`docs/UPGRADE_WELLE2.md`](../UPGRADE_WELLE
 - [x] **W-C1** · Stabile IDs aus Hash der `signal_ids` (`derive.py`) · 21:00–21:45 · **nie streichen**
 - [x] **W-C2** · Rang-Robustheit: 500 Gewichtungen, `rank_min/max`, `top3_share` (neue Datei `robustness.py`) · 22:00–23:00 · **nie streichen**
 - [x] **W-C3** · Zukunftswetten mit Stufe D, nur mit `assumptions` · 23:00–00:30 · **nie streichen**
-- [ ] **W-C4** · What-if als reine Funktion, baut auf `score_without()` auf (neue Datei `whatif.py`) · 00:30–01:00
+- [x] **W-C4** · What-if als reine Funktion, baut auf `score_without()` auf (neue Datei `whatif.py`) · 00:30–01:00
 - [ ] **W-C5** · 15–25 Anforderungen in allen Szenarien (Ableitung pro Kategorie-Block) · 01:00–02:00
 - [ ] **W-C6** · Business-Faktor: Volumen 2030 + Wachstum, Satz nennt die Zahl · 02:00–03:00
 - [ ] **W-C7** · Keine stillen Fehler + ohne Optionsliste (G68-CN) · 03:00–03:30
