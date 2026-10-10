@@ -31,6 +31,12 @@ float noise(vec2 p) {
   );
 }
 
+vec3 hsv2rgb(vec3 c) {
+  vec4 k = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
+  vec3 p = abs(fract(c.xxx + k.xyz) * 6.0 - k.www);
+  return c.z * mix(k.xxx, clamp(p - k.xxx, 0.0, 1.0), c.y);
+}
+
 void main() {
   vec2 uv = gl_FragCoord.xy / u_resolution.xy;
   vec2 p = uv * 3.0;
@@ -39,10 +45,20 @@ void main() {
   n += noise(p + u_time * 0.05) * 0.6;
   n += noise(p * 2.0 - u_time * 0.08) * 0.4;
 
-  // Signal2Spec-Markenfarben: dunkles Navy (#0b1f3a) bis gedecktes Blau.
-  vec3 colorA = vec3(0.043, 0.122, 0.227);
-  vec3 colorB = vec3(0.145, 0.239, 0.396);
-  vec3 color = mix(colorA, colorB, n);
+  // Dunkles Navy als Basis; Hue wandert nur leicht, damit es Blau bleibt
+  // und nicht wie ein Regenbogen-Effekt wirkt.
+  float hue = 0.62 + sin(u_time * 0.07) * 0.03;
+  float lightness = mix(0.08, 0.17, n);
+  vec3 color = hsv2rgb(vec3(hue, 0.7, lightness));
+
+  // Heller diagonaler Balken, der über den Screen wandert (wrap-around für
+  // nahtlose Wiederholung statt eines harten Sprungs am Rand).
+  float diag = (uv.x + uv.y) * 0.5;
+  float barPos = fract(u_time * 0.08);
+  float dist = abs(diag - barPos);
+  dist = min(dist, 1.0 - dist);
+  float bar = smoothstep(0.05, 0.0, dist) * 0.3;
+  color += bar;
 
   gl_FragColor = vec4(color, 1.0);
 }
