@@ -1,21 +1,22 @@
 # Wer muss Änderungen freigeben? Die LETZTE passende Zeile gilt.
 # Seit Sa 10.10. pushen alle direkt auf main; diese Datei ist nur noch eine Übersicht, wer welchen Ordner verantwortet.
 # Die Pfad-Zuordnung (wer welchen Pfad baut) steht in docs/PLAN.md, Abschnitt "Wer nimmt welchen Pfad".
-# Nach der Wahl am Samstag trägt Piyush hier pro Ordner die zweite Person ein (GitHub-Name).
+# Verteilt am Sa 14:50 (4 Personen): zweite Person pro Ordner = Besitzer des Pfads.
 
 *                                   @PiyushPapaya
 
-# Pfad A: interne Evidenz (BMW-Daten -> Belege -> Befunde)
-/src/backend/evidence_internal/     @PiyushPapaya
-/tests/pfad_a/                      @PiyushPapaya
-# Pfad B: externe Evidenz + Qualitätsbeweis
+# Pfad A (Aditya): interne Evidenz + Eval
+/src/backend/evidence_internal/     @PiyushPapaya @AdiAvocado
+/tests/pfad_a/                      @PiyushPapaya @AdiAvocado
+/tests/eval/                        @PiyushPapaya @AdiAvocado
+# Pfad B (Piyush): externe Evidenz
 /src/backend/evidence_external/     @PiyushPapaya
 /tests/pfad_b/                      @PiyushPapaya
-# Pfad C: Anforderungen + Priorisierung
-/src/backend/requirements_engine/   @PiyushPapaya
-/tests/pfad_c/                      @PiyushPapaya
-# Pfad D: PM-Cockpit (Frontend)
-/src/frontend/                      @PiyushPapaya
+# Pfad C (Dennis): Anforderungen + Priorisierung
+/src/backend/requirements_engine/   @PiyushPapaya @Di0n-0
+/tests/pfad_c/                      @PiyushPapaya @Di0n-0
+# Pfad D (Lasse): PM-Cockpit (Frontend)
+/src/frontend/                      @PiyushPapaya @JoleEight
 
 # Nur Lead: Verträge, Rückgrat, geteilte Dateien
 /src/shared/                        @PiyushPapaya

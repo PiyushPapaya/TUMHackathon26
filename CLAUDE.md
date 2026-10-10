@@ -1,6 +1,8 @@
 # Regeln für Claude Code (Hackathon-Team)
 
-Repo des 5-köpfigen Teams für das **TUM.ai × EHL Grand Finale** (10.-11.10.2026, Garching). Ziel: **Platz 1 in unserer Challenge.** **Challenge: BMW "AI for Product Decision Making"**, Produkt **Signal2Spec**. Stack: Next.js (`src/frontend/`) + Python/FastAPI (`src/backend/`). **Masterplan: `docs/PLAN.md`.**
+Repo unseres Teams für das **TUM.ai × EHL Grand Finale** (10.-11.10.2026, Garching); es arbeiten **4 Personen** (Piyush, Aditya, Dennis, Lasse). Ziel: **Platz 1 in unserer Challenge.** **Challenge: BMW "AI for Product Decision Making"**, Produkt **Signal2Spec**. Stack: Next.js (`src/frontend/`) + Python/FastAPI (`src/backend/`). **Masterplan: `docs/PLAN.md`. Roadmap mit Tickets: `docs/ROADMAP.md` + Arbeitsbuch der Person in `docs/pfade/`.**
+
+**Claude programmiert, das Team steuert und prüft.** Arbeite Ticket für Ticket aus dem Arbeitsbuch der Person: Test zuerst, dann Code, dann jedes Fertig-Kriterium mit Befehl + Ausgabe belegen, dann Skill `sync`. Subagents sind erwünscht für unabhängige Dateien und Reviews (Regeln: `docs/ROADMAP.md` §5; Subagents committen nie).
 
 **Wichtig:** Nicht jede Person kann programmieren. **Antworte immer auf Deutsch, einfach.** Erkläre **vor jedem Git-Befehl in einem Satz, was er tut und warum.** Bei Unsicherheit: **fragen statt raten.** Fachwörter (Ruleset, CI, Lockfile …) erklärt `docs/hilfe/GLOSSAR.md`. Python heißt auf Windows `python`, auf dem Mac `python3`.
 
@@ -13,15 +15,16 @@ Repo des 5-köpfigen Teams für das **TUM.ai × EHL Grand Finale** (10.-11.10.20
 
 ## Wer schreibt wo (Ownership nach Pfaden)
 
-Piyush ist Lead. Die anderen vier verteilen die Pfade A-D am Samstag unter sich (`docs/PLAN.md` §6). Es gibt keine festen Rollen, jeder Pfad baut Code, Tests, 1 Pitch-Folie und 1 Demo-Abschnitt.
+Piyush ist Lead. Jeder Pfad baut Code, Tests und liefert Inhalt für 1 Pitch-Folie und 1 Demo-Abschnitt. Arbeitsbuch = Datei in `docs/pfade/`.
 
-| Pfad | Schreibt in | Liefert |
-|---|---|---|
-| **Lead** (Piyush, @PiyushPapaya) | `src/backend/core/`, `src/backend/api/`, `main.py`, `pipeline.py`, `src/shared/`, `config/`, `docs/`, Root-Dateien, `.github/`, `.claude/`, `scripts/` | Verträge, Integration, Deck, Abgabe |
-| **A** Interne Evidenz | `src/backend/evidence_internal/`, `tests/pfad_a/` | `evidence.json`, `context.json`, `signals.json` |
-| **B** Externe Evidenz + Qualitätsbeweis | `src/backend/evidence_external/`, `tests/pfad_b/`, `tests/eval/` | `web_*.json`, Eval-Zahl |
-| **C** Anforderungen + Priorisierung | `src/backend/requirements_engine/`, `tests/pfad_c/` | `requirements.json` |
-| **D** PM-Cockpit | `src/frontend/` | die Oberfläche |
+| Person · Pfad | Arbeitsbuch | Schreibt in | Liefert |
+|---|---|---|---|
+| **Piyush** (@PiyushPapaya) · Lead + B Web | `LEAD.md`, `PFAD-B.md` | `src/backend/core/`, `src/backend/api/`, `main.py`, `pipeline.py`, `src/backend/evidence_external/`, `tests/pfad_b/`, `src/shared/`, `config/`, `docs/`, Root-Dateien, `.github/`, `.claude/`, `scripts/` | Verträge, Integration, Webbelege, Deck, Abgabe |
+| **Aditya** (@AdiAvocado) · A Interne Evidenz + Eval | `PFAD-A.md` | `src/backend/evidence_internal/`, `tests/pfad_a/`, `tests/eval/` | `evidence.json`, `context.json`, `signals.json`, Eval-Zahl |
+| **Dennis** (@Di0n-0) · C Anforderungen + Priorisierung | `PFAD-C.md` | `src/backend/requirements_engine/`, `tests/pfad_c/` | `requirements.json` |
+| **Lasse** (@JoleEight) · D PM-Cockpit | `PFAD-D.md` | `src/frontend/` (inkl. `package.json`/Lock, vom Lead freigegeben) | die Oberfläche, Backup-Video |
+
+Jede Person darf zusätzlich in ihrem eigenen Arbeitsbuch die Haken `[ ]` → `[x]` setzen.
 
 - **Nur im eigenen Pfad schreiben.** Fremde Ordner, `src/backend/core/` und `src/shared/` nur lesen. Bedarf dort: erklären und dem Lead Bescheid geben (Chat/Zuruf).
 - **Schnittstellen sind fix:** Die Signatur im Kopf jeder Pfad-Datei nicht ändern. Innen ist alles frei.

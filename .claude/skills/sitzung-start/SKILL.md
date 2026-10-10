@@ -11,8 +11,8 @@ Erkläre **vor jedem Git-Befehl in einem Satz**, was er tut und warum. Antworte 
 
 ## Schritte
 
-1. **Name und Pfad klären.** Namen: piyush (immer Lead), lasse, aditya, dennis, fabian. Pfad aus der Tabelle in `docs/PLAN.md` §6 lesen; ist sie leer: fragen (A, B, C oder D).
-2. **Pfad-Datei lesen:** `docs/pfade/PFAD-<X>.md` (Lead: `docs/pfade/LEAD.md`): Ziel, Ordner, Schritte mit Zeitbox.
+1. **Name und Pfad klären.** piyush = Lead + B (`LEAD.md`, `PFAD-B.md`), aditya = A, dennis = C, lasse = D (Tabelle `docs/PLAN.md` §6). Fabian ist nicht dabei. Unbekannter Name: fragen.
+2. **Arbeitsbuch lesen:** `docs/pfade/PFAD-<X>.md` (Lead: `LEAD.md`). Nächstes Ticket = oberstes offenes `[ ]`. Dazu `docs/ROADMAP.md` §4 (Arbeitsschleife) und §5 (Subagents).
 3. **Uncommittete Änderungen?** `git status --short`. Wenn ja: zeigen und fragen, ob sie committet werden sollen (Skill `sync`), nie verwerfen.
 4. **Neuester Stand:** `git switch main` und `git pull --no-rebase origin main` (wir arbeiten alle direkt auf main).
 5. **Kein eigener Branch.** Alle arbeiten auf `main`; Claude committet und pusht nach jedem getesteten Schritt automatisch (Skill `sync`).

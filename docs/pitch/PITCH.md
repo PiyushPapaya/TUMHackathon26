@@ -10,12 +10,12 @@
 
 | Zeit | Wer | Inhalt |
 |---|---|---|
-| 0:00-0:30 | Lead | Problem: BMW-Folie "1 Billion findings → 1,000 requirements → One car". Heute manuell, schwer nachvollziehbar. |
-| 0:30-0:50 | Lead | Lösung in 1 Satz + Trichter für den G60 USA: "3.610 Stimmen → N Befunde → M Anforderungen". |
-| 0:50-2:50 | D klickt, Lead spricht | **Live-Demo** (Klickpfad unten) |
-| 2:50-3:20 | B | Vertrauen: die eine Zahl (Grounding-Rate, Genauigkeit vs. Baseline), Webquellen mit Vertrauensstufe |
-| 3:20-3:40 | A | Übertragbar: Szenario F70-EU umschalten, gleiche Pipeline, eine Config-Datei |
-| 3:40-4:00 | Lead | Workflow KI vs. Mensch (eine Folie), Abschluss-Satz |
+| 0:00-0:30 | Piyush | Problem: BMW-Folie "1 Billion findings → 1,000 requirements → One car". Heute manuell, schwer nachvollziehbar. |
+| 0:30-0:50 | Piyush | Lösung in 1 Satz + Trichter für den G60 USA: "3.610 Stimmen → N Befunde → M Anforderungen". |
+| 0:50-2:50 | Lasse klickt, Piyush spricht | **Live-Demo** (Klickpfad unten) |
+| 2:50-3:20 | Aditya | Vertrauen: die eine Zahl (Grounding-Rate, Befund-Treue), Webquellen mit Vertrauensstufe |
+| 3:20-3:40 | Aditya (Lasse schaltet um) | Übertragbar: Szenario F70-EU umschalten, gleiche Pipeline, eine Config-Datei |
+| 3:40-4:00 | Piyush (Dennis: Fragen zur Priorisierung) | Workflow KI vs. Mensch (eine Folie), Abschluss-Satz |
 
 ## Demo-Klickpfad (geprobt, mit `DEMO_MODUS=true`)
 

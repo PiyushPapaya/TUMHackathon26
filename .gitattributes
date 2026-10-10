@@ -12,6 +12,7 @@
 # Auf GitHub selbst (für die menschliche Jury) bleibt alles sichtbar.
 docs/PLAN.md export-ignore
 docs/ZEITPLAN.md export-ignore
+docs/ROADMAP.md export-ignore
 docs/ABGABE.md export-ignore
 docs/SETUP.md export-ignore
 docs/pfade/ export-ignore

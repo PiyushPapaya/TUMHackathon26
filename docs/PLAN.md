@@ -55,35 +55,34 @@ jeder Pfad bis zur echten Datei die Beispieldatei aus `src/shared/beispiele/stuf
 
 | Pfad | Ziel in einem Satz | Ordner (schreibt nur hier + eigene Tests) | Liefert an |
 |---|---|---|---|
-| **Lead** (Piyush) | Rückgrat, Verträge, Integration, Merges, Pitch-Deck, Abgabe | `src/backend/core/`, `api/`, `main.py`, `pipeline.py`, `src/shared/`, `config/`, Root | alle |
-| **A · Interne Evidenz** | BMW-Daten zu sauberen Belegen und Befunden mit Zitat-IDs | `src/backend/evidence_internal/`, `tests/pfad_a/` | `evidence.json`, `context.json`, `signals.json` |
-| **B · Externe Evidenz + Qualitätsbeweis** | Wettbewerb/Trends aus dem Web mit Quelle; die "eine Zahl" für den Pitch | `src/backend/evidence_external/`, `tests/pfad_b/`, `tests/eval/` | `web_evidence.json`, `web_signals.json`, Eval-Report |
+| **Lead** (Piyush) | Rückgrat, Verträge, Integration, Pitch-Deck, Abgabe | `src/backend/core/`, `api/`, `main.py`, `pipeline.py`, `src/shared/`, `config/`, Root | alle |
+| **A · Interne Evidenz + Eval** | BMW-Daten zu sauberen Belegen und Befunden mit Zitat-IDs; die "eine Zahl" für den Pitch | `src/backend/evidence_internal/`, `tests/pfad_a/`, `tests/eval/` | `evidence.json`, `context.json`, `signals.json`, Eval-Report |
+| **B · Externe Evidenz** | Wettbewerb/Trends aus dem Web mit Quelle und Vertrauensstufe | `src/backend/evidence_external/`, `tests/pfad_b/` | `web_evidence.json`, `web_signals.json` |
 | **C · Anforderungen + Priorisierung** | Befunde zu messbaren Anforderungen, Score, Evidenzstufe, Challenge-Antwort | `src/backend/requirements_engine/`, `tests/pfad_c/` | `requirements.json` |
 | **D · PM-Cockpit** | Die Oberfläche, in der der PM alles sieht und entscheidet | `src/frontend/` | Demo |
 
-**Profil-Hinweise** (keine feste Rolle, nur Orientierung): A mag Daten und Pandas. B recherchiert gern und denkt kritisch über Quellen.
-C denkt in Produkt-Logik und formuliert gut. D hat Spaß an UI und arbeitet gern mit Claude Code am Frontend.
-**Jeder Pfad liefert zusätzlich 1 Pitch-Folie + 1 Demo-Abschnitt** (Inhalt in der jeweiligen Pfad-Datei).
+**Jeder Pfad liefert zusätzlich Inhalt für 1 Pitch-Folie + 1 Demo-Abschnitt** (in der jeweiligen Pfad-Datei).
+Die Arbeitsbücher mit fertigen Tickets und Prompts stehen in `docs/pfade/`, die Gesamt-Roadmap in [`ROADMAP.md`](ROADMAP.md).
 
-## 6. Wer nimmt welchen Pfad (Sa 14:45, in 5 Minuten entscheiden)
+## 6. Wer macht welchen Pfad (entschieden Sa 14:50, 4 Personen, Fabian ist nicht dabei)
 
 | Pfad | Name | GitHub |
 |---|---|---|
-| A | | |
-| B | | |
-| C | | |
-| D | | |
+| Lead + B | Piyush | @PiyushPapaya |
+| A | Aditya | @AdiAvocado |
+| C | Dennis | @Di0n-0 |
+| D | Lasse | @JoleEight |
 
-Danach trägt der Lead die GitHub-Namen in `.github/CODEOWNERS` ein.
+Warum B beim Lead: Das Rückgrat steht schon, der Lead hätte bis zum Durchstich sonst Leerlauf. Die Eval-Zahl liegt bei A, weil sie auf seinen Daten beruht.
 
-## 7. Roadmap (Meilensteine sind hart; wackelt einer, wird gekürzt, nicht verlängert)
+## 7. Meilensteine (hart; wackelt einer, wird gekürzt, nicht verlängert; Details: `ROADMAP.md` §3)
 
 | Phase | Bis | Ergebnis (prüfbar) |
 |---|---|---|
-| 0 Start | Sa 15:00 | Pfade verteilt, jeder: venv, `.env`, Entire, Backend läuft lokal mit Beispiel |
-| 1 Durchstich | **Sa 18:00** | Pipeline läuft für G60-US mit **echten** Belegen (A) und erster Anforderungsliste (C); UI zeigt Liste + Detail (D); 5 Webbelege mit URL (B) |
+| 0 Start | Sa 15:45 | Pfade verteilt, jeder: venv, `.env`, Entire, Backend läuft lokal mit Beispiel |
+| 1 Durchstich | **Sa 18:30** | Pipeline läuft für G60-US mit **echten** Belegen (A) und erster Anforderungsliste (C); UI zeigt Liste + Detail (D); 5 Webbelege mit URL (B) |
 | 2 MVP | **Sa 22:00** | Befunde per LLM, Konflikte, Challenge-Antwort, Gewichte-Regler, Prüfpfad-Ansicht; **erste Abgabe auf ehl.gg** |
-| 3 Tiefe | So 07:00 | Zweites Szenario F70-EU läuft; Eval-Zahl steht; Triangulation Web ↔ intern; UI-Politur |
+| 3 Tiefe | So 07:30 | Zweites Szenario F70-EU läuft; Eval-Zahl steht; Triangulation Web ↔ intern; UI-Politur |
 | 4 Freeze | **So 08:00** | Feature-Freeze. Danach nur Bugs, Texte, Demo, Deck |
 | 5 Abgabe | **So 10:30 / 11:30** | Code-Freeze 10:30, abgegeben 11:30 (Skill `abgabe`) |
 
