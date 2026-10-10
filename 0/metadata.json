@@ -1,0 +1,106 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KM5P0DKSWEPS0S2ANA18SB",
+  "session_id": "629b2d72-29c1-4d73-a071-d0e175a325e4",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T19:20:57.229795349Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "config/scenarios/G68-CN.json",
+    "src/backend/core/models.py",
+    "src/backend/evidence_external/questions.py",
+    "src/backend/evidence_external/web_research.py",
+    "tests/pfad_b/test_questions.py"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-opus-5-5",
+  "turn_id": "f51eac32e47c",
+  "checkpoint_transcript_start": 524,
+  "transcript_lines_at_start": 524,
+  "compact_transcript_start": 75,
+  "token_usage": {
+    "input_tokens": 12,
+    "cache_creation_tokens": 9375,
+    "cache_read_tokens": 1182684,
+    "output_tokens": 5489,
+    "api_call_count": 6
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "claude-skill-toolu_01HJTt4MTv56WmeNwBz4hQgQ",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "sitzung-start"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "ba26d19d6a01",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 29,
+        "end": 30,
+        "entry_ids": [
+          "9e4c350f-1250-45c7-8fa9-8e060470adfe"
+        ],
+        "tool_use_id": "toolu_01HJTt4MTv56WmeNwBz4hQgQ"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_01HJTt4MTv56WmeNwBz4hQgQ"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: sitzung-start",
+        "default_collapsed": true
+      }
+    },
+    {
+      "id": "claude-skill-toolu_01Co4tDmV6zNPZxVYi56ExtQ",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "sync"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "ba26d19d6a01",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 219,
+        "end": 220,
+        "entry_ids": [
+          "f59cf438-ecda-4d33-85b7-52a1c9aed57a"
+        ],
+        "tool_use_id": "toolu_01Co4tDmV6zNPZxVYi56ExtQ"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_01Co4tDmV6zNPZxVYi56ExtQ"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: sync",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T19:20:57.182137394Z",
+    "agent_lines": 53,
+    "agent_removed": 6,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 53,
+    "total_lines_changed": 59,
+    "agent_percentage": 100,
+    "metric_version": 2
+  }
+}
