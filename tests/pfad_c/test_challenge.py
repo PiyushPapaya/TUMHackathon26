@@ -103,3 +103,12 @@ def test_prompt_zaehlt_beschwerden_nie_als_gegenbeleg():
 
     assert "Never list a complaint as counter-evidence" in SYSTEM_PROMPT
     assert "verdict" in SYSTEM_PROMPT
+
+
+def test_prompt_gibt_urteilswort_nur_bei_ja_nein_fragen():
+    # Echter Fund (Sa 22:55): Auf "What speaks against it?" antwortete die KI "Yes. Multiple complaints ...", weil das
+    # Urteilswort für jede Frage verlangt war. Offene Fragen (what/why/how) beginnen direkt mit der Antwort.
+    from requirements_engine.challenge import SYSTEM_PROMPT
+
+    assert "ONLY for yes/no questions" in SYSTEM_PROMPT
+    assert "open question" in SYSTEM_PROMPT and "no verdict word" in SYSTEM_PROMPT

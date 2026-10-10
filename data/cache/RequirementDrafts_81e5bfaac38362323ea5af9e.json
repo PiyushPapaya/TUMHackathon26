@@ -1,0 +1,170 @@
+{
+  "drafts": [
+    {
+      "title": "Keep the 1 Series’ premium, head-turning exterior while eliminating common functional exterior faults",
+      "description": "Customers experience a car that looks sporty and classy and still delivers reliable exterior function: the styling remains a clear strength while common exterior problems (tyres, mirrors, lighting, build/trim) are reduced so exterior quality is not a source of owner complaints.",
+      "acceptance_criterion": "In a market follow-up survey, at least 85% of owners rate the exterior styling positively (>=8/10) AND owner-reported exterior build/fit/finish or trim complaints are below 1% and owner-reported exterior lighting or mirror complaints are below 1% within the first 24 months; tyre-related noise/grip complaints are below 2% in the same period.",
+      "category": "exterior",
+      "signal_ids": [
+        "SIG-F70-EU-007",
+        "SIG-F70-EU-017",
+        "SIG-F70-EU-027",
+        "SIG-F70-EU-032",
+        "SIG-F70-EU-033",
+        "SIG-F70-EU-041"
+      ],
+      "assumptions": [
+        "Survey and complaint logging use a consistent definition of 'complaint' and cover a representative EU owner sample over 24 months.",
+        "Tyre fitment choices and supply can be aligned to achieve lower customer noise/grip complaints without unacceptable cost or emissions impacts."
+      ],
+      "uncertainties": [
+        "Some exterior complaints stem from aftermarket tyre choices or local road conditions (potholes) which may limit achievable complaint reduction.",
+        "Customer tastes for styling may shift; survey timing may affect measured positivity."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Keep and strengthen seat comfort and interior quality while removing seat reliability and safety issues",
+      "description": "Customers experience front seats that are clearly comfortable, supportive and easy to use (maintaining the current strengths) while reported problems — poor support, stitching/creasing, squeaks, electric seat faults and seat-belt issues — are eliminated so seats are both pleasant and reliable.",
+      "acceptance_criterion": "In a representative user study and owner follow-up: at least 90% of drivers rate front-seat comfort >=8/10; seat-related quality or safety faults (stitching, creaks, electric seat faults, seat-belt failures) are reported by no more than 2% of owners within 24 months; and 95% of participants report no awkward seating position or lower-back discomfort after a 2‑hour motorway drive.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-F70-EU-008",
+        "SIG-F70-EU-009",
+        "SIG-F70-EU-036",
+        "SIG-F70-EU-013",
+        "SIG-F70-EU-042",
+        "SIG-F70-EU-039"
+      ],
+      "assumptions": [
+        "User study sample covers typical EU driver heights (160–190 cm) and includes both city and long-distance driving scenarios.",
+        "Warranty/quality handling processes are in place so that manufacturing/assembly causes of stitching or squeaks are addressed."
+      ],
+      "uncertainties": [
+        "Perceived comfort has subjective variation; a small minority of users will always prefer different seat firmness/shapes.",
+        "Some reliability issues may be caused by rare installation faults or post-sale aftermarket changes."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make the boot practical for everyday use and ensure the tailgate opens/closes reliably with convenient controls",
+      "description": "Customers can load and secure everyday luggage easily and rely on the boot to open and close when expected, with a simple internal shut button provided.",
+      "acceptance_criterion": "Boot must accommodate two medium suitcases (55 x 40 x 23 cm) plus one cabin bag with the rear seats in place in all production variants; boot lid open/close operation (key/keyless/button) must show ≥99% success in a 1000-cycle durability test and owner-reported boot operation faults must be below 1% within the first 24 months. A clearly accessible internal boot-shut control is present on all variants.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-F70-EU-022",
+        "SIG-F70-EU-025"
+      ],
+      "assumptions": [
+        "Suitcase dimensions above are representative of a common luggage standard used for testing.",
+        "Space allocation may vary between powertrain variants; measurement is performed on each marketed variant (including hybrid where applicable)."
+      ],
+      "uncertainties": [
+        "Hybrid/EV packaging constraints may reduce usable volume on some variants; where this occurs, vehicle function/packaging trade-offs must be communicated to customers.",
+        "Local repair or aftermarket attachments may affect boot usability."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Controls and displays must be safe and reliable to use while driving and climate control must offer independent, physical controls",
+      "description": "Customers can operate driving‑critical displays and climate controls without distraction, experience dependable instrument functionality (no loss of key functions), and have standard independent driver/passenger temperature control with tactile controls for essential HVAC functions.",
+      "acceptance_criterion": "In a validated on-road usability test, drivers must complete common in-car tasks (e.g., change temperature, change audio source, check trip speed) with a mean glance duration ≤1.5 seconds and a task success rate ≥95%; display/system failures that remove key driving functions must occur in fewer than 1% of vehicles within 24 months; driver and passenger independent temperature control and physical buttons for essential HVAC functions are standard.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-F70-EU-018",
+        "SIG-F70-EU-030"
+      ],
+      "assumptions": [
+        "Usability test tasks are defined and executed under representative driving conditions and follow established distraction test methods.",
+        "Physical control layout can be designed to avoid excessive cost or interface complexity."
+      ],
+      "uncertainties": [
+        "Some advanced functions will still require touch input; trade-offs between minimalism and tactile controls will affect design decisions.",
+        "Software complexity and third-party apps may introduce sources of instability not fully controllable by vehicle UX design alone."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Deliver a premium-feeling, reliable key and locking experience that reliably remembers driver preferences",
+      "description": "Customers feel the key is high-quality to hold and use, and the digital/keyless system reliably stores and recalls driver profiles and locking/unlocking behaviour without unpredictable locking or false alarms.",
+      "acceptance_criterion": "In owner follow-up and product trials: perceived key quality >=8/10 by at least 90% of participants; owner-reported key or locking-system faults (including forgetting driver preferences, unexpected re-locks, or alarm triggers) are below 1% within 24 months; digital key/profile recall failures occur in fewer than 1% of uses during initial ownership period.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-F70-EU-019"
+      ],
+      "assumptions": [
+        "Surveys capture both physical key feel and digital-key behaviour; digital-key interoperability with common phone platforms is assumed.",
+        "Vehicles will ship with a robust default profile-handling implementation."
+      ],
+      "uncertainties": [
+        "Third-party smartphone OS updates may affect digital-key reliability beyond BMW control.",
+        "Some rare locking faults may be caused by aftermarket actions or extreme user behaviour."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Increase perceived rear legroom and boot practicality in the EV successor so rear passengers feel genuinely comfortable",
+      "description": "Customers experience a noticeably roomier rear seating area and a more practical boot in the successor EV variant, making the rear seat usable for adult passengers and the boot competitive for everyday luggage needs.",
+      "acceptance_criterion": "In customer trials of the successor EV variant, rear knee clearance (rear legroom) must increase by at least 50 mm versus the current F70 baseline and at least 90% of trial participants of height 175–185 cm report rear-seat comfort >=8/10; the boot must accommodate three medium suitcases (55 x 40 x 23 cm) with rear seats in place.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SIG-F70-EU-WEB-10"
+      ],
+      "assumptions": [
+        "The Neue Klasse / EV architecture delivers a longer wheelbase and packaging advantages enabling increased rear legroom and different battery packaging by the successor launch.",
+        "Measurement compares like-to-like variants (similarly equipped models) and uses representative occupant heights (175–185 cm)."
+      ],
+      "uncertainties": [
+        "Final battery packaging, crash-structure or regulatory constraints could reduce achievable interior gains.",
+        "Market acceptance depends on perceived trade-offs (e.g., ride, price)."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Offer premium-feeling, non-leather interior material options that meet customer expectations for look and durability",
+      "description": "Customers perceive sustainable, non-leather interior materials as premium and durable, so a leather-free or reduced-leather interior option no longer reduces perceived cabin quality.",
+      "acceptance_criterion": "In blinded material trials, at least 70% of participants rate the selected non-leather materials as 'premium' (>=8/10) for look and feel, and in accelerated wear testing these materials meet the same durability acceptance thresholds used for leather alternatives.",
+      "category": "interior",
+      "signal_ids": [
+        "SIG-F70-EU-WEB-10"
+      ],
+      "assumptions": [
+        "Sufficient supply of high-quality recycled or bio-based materials is available at scale by successor launch.",
+        "Durability test standards for new materials are aligned with current internal thresholds for abrasion, staining and colour-fastness."
+      ],
+      "uncertainties": [
+        "Some customer segments will continue to prefer traditional leather; regulatory or supplier changes could affect availability of materials.",
+        "Perception of 'premium' is subjective and may vary by market/culture."
+      ],
+      "effort": "M",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}

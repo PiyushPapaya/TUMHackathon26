@@ -1,0 +1,402 @@
+{
+  "drafts": [
+    {
+      "title": "Preserve the car’s strong, smooth acceleration and engaging driving feel",
+      "description": "Customers continue to experience powerful, immediate acceleration and smooth, satisfying power delivery that makes everyday driving feel sporty and effortless.",
+      "acceptance_criterion": "In dealer/customer acceleration trials, at least 85% of participants rate the vehicle’s acceleration as 'strong/peppy' and 'smooth' (scores ≥4/5) across typical launch and overtaking maneuvers.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-001",
+        "SIG-G60-US-004",
+        "SIG-G60-US-022",
+        "SIG-G60-US-002"
+      ],
+      "assumptions": [
+        "Successor uses a drivetrain that delivers equal or better 0–60 feel than today's G60 in customer perception tests.",
+        "Customer perception surveys and standardized drive trials will be used as acceptance tests."
+      ],
+      "uncertainties": [
+        "Different customer expectations over time may change the subjective baseline for 'sporty' feel.",
+        "Perceived acceleration depends on vehicle weight, tuning and software calibration that may interact with other requirements (efficiency, NVH)."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Customer-facing driving experience to be preserved; no component-level specs included."
+    },
+    {
+      "title": "Keep the ride comfort and composed handling customers praise",
+      "description": "Passengers and drivers feel the cabin is smooth, quiet and comfortable for long trips while the car still responds crisply to driver inputs.",
+      "acceptance_criterion": "Post-delivery owner surveys show ≥85% rate ride comfort as 'good' or 'excellent' (≥4/5) and standardized objective NVH and vertical acceleration tests match or improve on current G60 benchmarks.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-002",
+        "SIG-G60-US-006",
+        "SIG-G60-US-016"
+      ],
+      "assumptions": [
+        "Ride tuning and suspension architecture for successor will target similar comfort/handling balance.",
+        "Objective test methods and owner surveys are available and comparable to current model."
+      ],
+      "uncertainties": [
+        "Packaging or mass changes (e.g., battery size) could affect ride tuning and NVH.",
+        "Optional suspension variants may create different owner perceptions across trims."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Maintain a current strength in customer experience."
+    },
+    {
+      "title": "Deliver smooth, predictable power delivery across all drive modes and let customers save preferred drive profiles",
+      "description": "Power delivery responds consistently and predictably without abrupt surges, lags or jerks, and drivers can create and recall personalized drive profiles (steering, throttle, suspension, HVAC/lighting) that persist across restarts.",
+      "acceptance_criterion": "In road-tests and owner feedback: ≥90% of starts and mode switches show no perceptible surge/jerk reported; users can create and recall at least 3 personalized profiles and switching profiles is done within 2 taps with ≥90% successful recall rate.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-012",
+        "SIG-G60-US-017",
+        "SIG-G60-US-034",
+        "SIG-G60-US-036"
+      ],
+      "assumptions": [
+        "Powertrain and software calibration teams can tune software to eliminate jerky behavior while preserving responsiveness.",
+        "Personalization settings can reliably persist in user profile storage across updates and vehicle power cycles."
+      ],
+      "uncertainties": [
+        "Some jerky behavior may be caused by hardware limits or legacy calibration that cannot be fully resolved in successor.",
+        "Deep personalization increases complexity of QA and may interact with warranty/support processes."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Direct customer outcomes around drive quality and customization."
+    },
+    {
+      "title": "Stop brake squeal, reduce dust and remove grabby feel",
+      "description": "Braking is quiet, smooth and predictable from day one; owners do not experience early squeal, grinding noises, excessive wheel dust or a grabby pedal feel.",
+      "acceptance_criterion": "In pre-market durability tests and a 6-month owner trial, ≤5% of vehicles report audible brake squeal/grinding or complaints about grabby braking; wheel-dust measurements show a measurable reduction vs current baseline in a standardized test.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-015"
+      ],
+      "assumptions": [
+        "Brake material and pad/rotor pairing can be optimized for successor without compromising braking performance or durability.",
+        "A representative owner trial and lab dust/noise tests will be run as acceptance gates."
+      ],
+      "uncertainties": [
+        "Brake noise and dust depend on regional road salt, driver style, and aftermarket wheels which may affect complaint rates.",
+        "Some trade-offs between low-noise and braking bite may be required."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Customer-facing brake comfort and perceived quality."
+    },
+    {
+      "title": "Ensure seats provide better height range and comfortable fit for small and large occupants",
+      "description": "Drivers of shorter stature can achieve a clear forward view and comfortable posture; seats provide supportive bolstering that adapts to smaller occupants without uncomfortable pressure and include intuitive controls.",
+      "acceptance_criterion": "Ergonomic tests with anthropometric subjects: at least 95% of participants down to 5'0\" can obtain an unobstructed sightline to hood markers without extreme forward tilt; ≤10% of owners report seat bolsters press uncomfortably in a 3‑month survey.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-010",
+        "SIG-G60-US-007",
+        "SIG-G60-US-038"
+      ],
+      "assumptions": [
+        "Seat mechanism range can be extended through cushion geometry and mounting without major packaging penalties.",
+        "Customer acceptance will be validated with anthropometric tests and owner surveys."
+      ],
+      "uncertainties": [
+        "Extending seat height range may affect roofline packaging or center-of-gravity targets.",
+        "Perceived firmness is subjective and varies by occupant preference; multiple comfort grades may be needed."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Direct occupant comfort outcome; not a component spec."
+    },
+    {
+      "title": "Hands-free trunk and Comfort Access work reliably and doors unlock in an intuitive, user-customizable way",
+      "description": "Touchless trunk opens when customers perform the expected, simple kick gesture; approaching the car unlocks all doors by default while an obvious setting lets owners choose alternative behavior.",
+      "acceptance_criterion": "Hands-free trunk opens on first valid attempt in ≥95% of realistic user tests; default approach-unlock opens all doors in 95% of cases and the unlock behavior can be changed within two menu taps.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-008",
+        "SIG-G60-US-041",
+        "SIG-G60-US-018"
+      ],
+      "assumptions": [
+        "Sensor/algorithm improvements and UX changes are feasible for successor to reduce false negatives/positives.",
+        "A clear default setting change in the UX will resolve most confusion about which doors unlock."
+      ],
+      "uncertainties": [
+        "Hardware sensor placement or interference from accessories may still cause occasional failures.",
+        "Security/privacy trade-offs (e.g., unlocking all doors by default) may require configurable safeguards."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Customer experience for access and trunk; not prescribing sensors."
+    },
+    {
+      "title": "Make displayed electric range accurate and stable in real driving",
+      "description": "Range estimates match real-world experience and do not jump unpredictably, reducing range anxiety on longer trips including in cold weather.",
+      "acceptance_criterion": "Under mixed driving conditions including a cold-weather test, the displayed remaining range has a median error ≤10% vs measured consumed energy and a displayed change of ≤±5 miles over a continuous 30-minute drive in steady conditions.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-009",
+        "SIG-G60-US-014"
+      ],
+      "assumptions": [
+        "Improvements to range estimation algorithms, temperature compensation and battery modeling are available for successor.",
+        "Acceptance uses a combination of instrumented road tests and owner feedback."
+      ],
+      "uncertainties": [
+        "Extreme driving patterns and accessory use (AC/heater) will still create variability in individual cases.",
+        "Battery aging over ownership will change absolute range and must be compensated for in software."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Direct customer-facing range accuracy requirement."
+    },
+    {
+      "title": "Improve charging speed reliability and provide clear charger availability/compatibility guidance",
+      "description": "When customers need public charging the vehicle reaches expected charge-session speeds, scheduled charging starts reliably, and the vehicle helps find compatible and available chargers with clear guidance about adapters/ports.",
+      "acceptance_criterion": "When connected to a public DC fast charger rated ≥100 kW and advertised as compatible, the vehicle reaches at least 80% of expected session power within the first 10 minutes in 90% of sessions in field tests; scheduled charging starts within 2 minutes of configured time in ≥95% of cases; navigation shows charger availability and compatibility warning for 95% of nearby chargers in urban pilot regions.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-027",
+        "SIG-G60-US-020"
+      ],
+      "assumptions": [
+        "Vehicle supports standard charging protocols and can precondition the battery where allowed; cooperation with network providers can improve charger metadata.",
+        "Field tests and pilot regions will be used to validate charger availability guidance."
+      ],
+      "uncertainties": [
+        "Third‑party public charger reliability and network occupancy are outside BMW’s direct control.",
+        "Different charger power limits, temperature, and state-of-charge will affect achievable power in each session."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Customer-facing charging experience improvements."
+    },
+    {
+      "title": "Make infotainment easier to use: fewer taps for common tasks, clear layout and better screen ergonomics",
+      "description": "Drivers can change the most common functions (temperature, fan, volume, media source) quickly with minimal distraction; the display layout reduces clutter and resists becoming a distracting fingerprint magnet.",
+      "acceptance_criterion": "In a driving usability test, ≥90% of participants can change climate temperature, fan speed and audio source within ≤2 touches or a single physical action; in a sunlight readability and smudge test, ≥80% of users rate the screen as 'readable/acceptable' after 1 week of normal use.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-023",
+        "SIG-G60-US-028",
+        "SIG-G60-US-011",
+        "SIG-G60-US-026",
+        "SIG-G60-US-032"
+      ],
+      "assumptions": [
+        "A combination of UI simplification, dedicated physical controls for primary functions, and anti-smudge surface treatments will be applied.",
+        "Usability tests will simulate real driving conditions to validate results."
+      ],
+      "uncertainties": [
+        "Some users prefer full touchscreen control; balancing simplification and feature richness requires careful UX design.",
+        "Physical control placement may conflict with other interior design goals."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Direct user interaction improvements; not requiring particular hardware."
+    },
+    {
+      "title": "Make common vehicle information and trip odometer easy to find and read",
+      "description": "Drivers can view odometer, trip mileage and fuel/electric range information quickly from the instrument cluster or steering controls without lengthy menu dives.",
+      "acceptance_criterion": "In a quick-glance test, users can access odometer and trip mileage within ≤3 seconds or ≤2 control presses from a steady driving position in 95% of attempts.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-021",
+        "SIG-G60-US-011"
+      ],
+      "assumptions": [
+        "Instrument cluster configurable pages and physical steering or stalk controls can be assigned to show key metrics on demand.",
+        "User education and default settings will prioritize quick access."
+      ],
+      "uncertainties": [
+        "Some instrument cluster layouts or regional regulations may change how certain items are displayed."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "UX change to increase discoverability of basic vehicle data."
+    },
+    {
+      "title": "Improve mobile-device integration and in-car wireless charging so phones reliably connect and charge without fuss",
+      "description": "Apple CarPlay works reliably when a phone is connected and the in-cabin wireless charger consistently charges common phone sizes without repeated repositioning.",
+      "acceptance_criterion": "In compatibility tests across major iPhone models, CarPlay connects and functions correctly in ≥98% of connection attempts; the wireless charging pad charges 95% of tested phones at their expected wireless rate without repositioning in static and normal driving vibration tests, and physically accommodates phones up to 6.8\" diagonal.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-019",
+        "SIG-G60-US-029"
+      ],
+      "assumptions": [
+        "OEM cooperation (e.g., Apple) or use of certified protocols is available to address CarPlay issues.",
+        "Wireless charging pad form factor and magnets/retention designs can be optimized for common phone sizes."
+      ],
+      "uncertainties": [
+        "Phone OS updates and third-party accessories can affect compatibility post-launch.",
+        "Wireless charging performance depends on phone model and manufacturer restrictions."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Direct customer-facing device integration and charging requirement."
+    },
+    {
+      "title": "Make HVAC vents and climate controls discoverable and adjustable with minimal distraction",
+      "description": "Drivers can find and aim vents and adjust fan/temperature quickly, without needing to hunt through menus or look away from the road.",
+      "acceptance_criterion": "In driving simulations, ≥90% of participants can find and change vent direction or fan speed with ≤2 physical actions or taps and without more than a 2‑second glance away from the road.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-030"
+      ],
+      "assumptions": [
+        "A mix of visible vent hardware or a clear primary climate control will be implemented in successor.",
+        "Usability tests will reflect on-road distraction metrics."
+      ],
+      "uncertainties": [
+        "Some climate features may remain in software for packaging reasons; trade-offs between physical controls and clean interior surfaces may persist."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Customer-facing control discoverability."
+    },
+    {
+      "title": "Improve practical interior storage and make flat‑tire preparedness obvious and accessible",
+      "description": "Owners find useful, covered storage in convenient locations and can quickly locate vehicle guidance and emergency tools for a flat tire (spare/repair kit) or order roadside support.",
+      "acceptance_criterion": "Vehicle provides at least four distinct, easily reachable covered storage locations (center console, glovebox, door bins, rear-seat pocket); in a usability test ≥85% of participants can locate tire preparedness info or repair kit within 60 seconds. If no full-size spare is offered, an emergency repair kit or inflator is included and instructions are visible.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-040",
+        "SIG-G60-US-044"
+      ],
+      "assumptions": [
+        "Packaging will allow for one additional covered storage area and a compact repair kit or inflator where a spare is not offered.",
+        "Owner documentation and a visible in-car location (glovebox or placard) will be standard."
+      ],
+      "uncertainties": [
+        "Market/regional variations (some markets require spares) and trim-level choices may affect standardization."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Practical customer-use improvements."
+    },
+    {
+      "title": "Improve connected features: voice recognition and in-car hotspot reliability",
+      "description": "Voice commands work reliably for common tasks and the vehicle hotspot provides stable connections suitable for streaming and navigation data.",
+      "acceptance_criterion": "Voice recognition success rate for common commands is ≥90% in a simulated cabin with background road noise; hotspot connection uptime in an urban driving test is ≥95% during 45-minute continuous streaming sessions.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-042",
+        "SIG-G60-US-043"
+      ],
+      "assumptions": [
+        "Server-side speech models and on-board fallback strategies will be improved and regional telecom conditions are adequate in test regions.",
+        "Hotspot performance depends on paired SIM/contract and local cellular coverage."
+      ],
+      "uncertainties": [
+        "Third-party network congestion and carrier policies may affect hotspot metrics.",
+        "Speech models may need ongoing retraining to maintain accuracy across accents and languages."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Customer-facing connected-service reliability."
+    },
+    {
+      "title": "Address unmet interior and exterior design comments and offer richer ambient lighting customization",
+      "description": "The successor refines interior and exterior styling based on owner feedback and provides multi-zone ambient lighting that customers can customize by color and brightness to create distinct scenes.",
+      "acceptance_criterion": "Post-launch owner design-satisfaction survey shows ≥85% positive ratings for interior and exterior design updates; ambient lighting provides at least 4 independent zones, ≥5 color presets and adjustable brightness levels, and 80% of users report the lighting meets their expectations in a 2‑week trial.",
+      "category": "quality_perception",
+      "signal_ids": [
+        "SIG-G60-US-031",
+        "SIG-G60-US-033",
+        "SIG-G60-US-035",
+        "SIG-G60-US-005",
+        "SIG-G60-US-003"
+      ],
+      "assumptions": [
+        "Exterior and interior restyling activities can be validated with customer clinics before production.",
+        "Lighting hardware capable of zone control is available for successor packaging."
+      ],
+      "uncertainties": [
+        "Design taste is subjective and regional; some design choices may satisfy some customers but not others.",
+        "Lighting choices may have implications for electrical load and supplier sourcing."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": "Directly addresses multiple unmet design and lighting signals."
+    },
+    {
+      "title": "Trend-enabled cockpit personalization: richer software-defined interior and wellness features",
+      "description": "Customers can personalize the cockpit in software with profiles that include display layouts, lighting, climate presets and wellness features (air quality indicators, personalized climate and suggested breaks) to create a premium, adaptive cabin experience.",
+      "acceptance_criterion": "In a customer trial, at least 75% of participants successfully create a personalized cockpit profile that includes display layout, lighting and climate settings that persist across sessions; wellness features (air-quality indicator and suggested break alerts) are available and correctly trigger in ≥90% of lab scenarios.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-WEB-09"
+      ],
+      "assumptions": [
+        "By the successor launch (3–5 years), software-defined cockpit platforms and sensors for air quality/climate personalization will be mature enough to deploy.",
+        "Customers will accept wellness features when presented as optional, privacy-respecting services."
+      ],
+      "uncertainties": [
+        "Wellness features require validated sensors and privacy-safe biometric handling which may be subject to regional rules.",
+        "Integrating multiple personalization services increases software complexity and OTA update needs."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": "A forward-looking customer outcome based on industry trend toward software-defined cockpits."
+    },
+    {
+      "title": "Conditionally automated highway driving available where permitted and useful",
+      "description": "On suitable highways and where legally allowed, customers can engage a higher level of automation for extended hands-free driving that reliably manages lane keeping, speed and density changes, reducing fatigue on long trips.",
+      "acceptance_criterion": "In permitted jurisdictions and controlled trials, the system enables hands-free highway driving within a clearly defined operational domain and executes extended highway segments (≥30 minutes) without transfer-of-control incidents in ≥95% of supervised trials.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SIG-G60-US-WEB-10",
+        "SIG-G60-US-024"
+      ],
+      "assumptions": [
+        "Regulatory approvals and regional certification for conditional automation will be obtained for launch markets where the feature is offered.",
+        "Necessary perception and monitoring technologies and supplier agreements are available and validated by launch."
+      ],
+      "uncertainties": [
+        "Regulatory or supplier delays (as seen in other OEM programs) could postpone full rollout or limit geographic availability.",
+        "Customer acceptance and needed human‑machine interfaces for safe handback remain areas of active learning."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": "Forward-looking feature that depends on market/regulatory conditions; customer-facing description only."
+    }
+  ]
+}

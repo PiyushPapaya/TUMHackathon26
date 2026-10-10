@@ -1,0 +1,206 @@
+{
+  "drafts": [
+    {
+      "title": "Keep the car’s strong acceleration and smooth, sporty handling while eliminating jerky or inconsistent power delivery",
+      "description": "Customers should experience the current BMW 5er’s satisfying quick acceleration and planted, responsive handling but without underpowered feelings, abrupt surges, or jerky transitions when changing drive sources or launching.",
+      "acceptance_criterion": "In standardized driving validation and customer test drives (≥500 driver sessions total): average subjective smoothness rating ≥4.5/5; no more than 1% of launches or power-source transitions exhibit a perceptible surge, delay, or jerk in a 1,000-event test; and >90% of customers in follow-up surveys report the car feels appropriately peppy for its class.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-001",
+        "SIG-G60-US-002",
+        "SIG-G60-US-004",
+        "SIG-G60-US-022",
+        "SIG-G60-US-012",
+        "SIG-G60-US-036"
+      ],
+      "assumptions": [
+        "We can define repeatable test protocols for launch and power-source transition events that reproduce customer-reported issues.",
+        "Baseline subjective satisfaction scales and current G60 performance data are available for comparison."
+      ],
+      "uncertainties": [
+        "Some root causes of jerky delivery may be hardware-linked and require supplier timelines beyond typical feature calibration windows."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Provide accurate, stable real-world electric-range estimates and avoid large jumps in the displayed range",
+      "description": "Customers should see a range estimate they can trust for trip planning: the display must reflect real-world conditions consistently and avoid sudden, unexplained swings that cause anxiety on longer trips.",
+      "acceptance_criterion": "Across cold-weather, mixed-use and highway drives in objective validation runs, the displayed estimated range shall deviate from measured real-world range by no more than ±7% on average; consecutive range estimations at rest shall vary by less than 3% in 95% of checks; user trials show a reduction of range-related anxiety complaints by ≥60% versus current baseline.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-009",
+        "SIG-G60-US-014"
+      ],
+      "assumptions": [
+        "We can instrument representative vehicles and routes to capture real-world consumption across temperatures and driving styles.",
+        "Customers will accept a conservative bias when conditions are uncertain if it reduces unexpected depletion events."
+      ],
+      "uncertainties": [
+        "Extreme outlier conditions (very cold weather, sustained high-speed driving with payload) may exceed the target deviation in some cases."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Deliver a reliable public‑charging experience: find compatible stations and achieve expected charge speeds",
+      "description": "When customers need to charge away from home, the car should help them quickly locate compatible, available chargers and reach expected charging speeds consistently, with clear guidance about recommended charge limits when extra range is needed.",
+      "acceptance_criterion": "Navigation shows connector compatibility and live availability for at least 85% of nearby public chargers within a 50‑mile radius; in field measurements, at least 90% of DC fast‑charge sessions at compatible stations deliver expected power profiles (within 80% of provider-expected kW for that stall) for the first 80% SOC; scheduled charging starts within ±5 minutes of the requested start time in 95% of attempts; UI shows a clear, one-screen explanation of recommended charge limits and allows a temporary override.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-G60-US-020",
+        "SIG-G60-US-027",
+        "SIG-G60-US-WEB-08",
+        "SIG-G60-US-WEB-02"
+      ],
+      "assumptions": [
+        "Access to real‑time charger status APIs or aggregator partnerships is feasible for the majority of public networks in target markets.",
+        "Where networks require agreements or adapters (e.g., NACS), BMW can provide compatibility guidance or supported adapters at launch."
+      ],
+      "uncertainties": [
+        "Coverage and quality of public charger data varies regionally; some operators may not provide real‑time occupancy or power data."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Reduce brake noise, visible dust and grabby braking so stops feel smooth and quiet from day one",
+      "description": "Customers should experience quiet, smooth braking with minimal brake dust on wheel faces and no grabby or overly abrupt stops during normal ownership, especially in the first months after delivery.",
+      "acceptance_criterion": "In a 6‑month ownership simulation on a test fleet and in controlled NVH tests (≥200 vehicles): fewer than 3% of vehicles report audible squeal/grinding in normal use; measured brake noise during representative stops is below 45 dB(A) in 95% of stops; and visible brake dust on wheel faces after 3,000 miles is rated 'light' or less by blind visual assessors for ≥90% of vehicles.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-015",
+        "SIG-G60-US-WEB-05"
+      ],
+      "assumptions": [
+        "We can define repeatable NVH and visual-dust assessment protocols representative of customer use.",
+        "Brake material/packaging choices and warranty/after‑sales guidance can be adjusted if required."
+      ],
+      "uncertainties": [
+        "Brake dust and perceived grabbiness depend on customer environment, driving style, and aftermarket wheel/cleaning habits."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Let drivers permanently disable automatic engine start‑stop and retain that preference",
+      "description": "Customers should be able to set engine auto start‑stop to 'off' as their default and have that choice persist across key cycles, so they do not need to reselect it every drive.",
+      "acceptance_criterion": "The vehicle provides a persistent user preference for auto start‑stop that remains off after vehicle power‑cycles and software updates in ≥99% of cases; in usability testing, 95% of drivers can find and set this preference within two direct interactions from typical driving controls.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-025",
+        "SIG-G60-US-039"
+      ],
+      "assumptions": [
+        "Persistent user-profile storage is available and can be scoped for a default setting applicable to key drivers.",
+        "Regulatory constraints do not mandate temporary re‑enablement in certain circumstances."
+      ],
+      "uncertainties": [
+        "There may be region-specific legal or emissions-related rules that influence allowed persistence behavior."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make My Modes easy to create, persist and switch so personalization is fast and reliable",
+      "description": "Drivers should be able to create, save and recall personalized driving profiles (My Modes) quickly, with those profiles storing driving preferences and persisting across restarts and driver changes.",
+      "acceptance_criterion": "Drivers can create and save at least three distinct personalized profiles that store driving dynamics, steering feel and core cabin preferences; switching to a saved profile requires no more than two interaction steps from the main driving screen; in usability tests, 90% of participants successfully create and switch profiles within 30 seconds without reading a manual.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-017",
+        "SIG-G60-US-034"
+      ],
+      "assumptions": [
+        "Driver-profile linking (key/fob/account) is available to ensure persistence between users.",
+        "Storage limits permit multiple saved profiles per vehicle."
+      ],
+      "uncertainties": [
+        "Some customers expect deeper personalization (e.g., seat foam firmness) which may not be technically practical to include in a saved profile on day one."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Clearly communicate off‑road capability and provide an explicit mode for light unpaved use",
+      "description": "Customers should understand what the vehicle can and cannot do off‑pavement, and have a selectable mode that assists moderate unpaved or rough road driving without risking vehicle damage or owner surprise.",
+      "acceptance_criterion": "The vehicle offers a clearly labelled 'All‑Road' (light off‑pavement) option with in‑UI limits and recommendations; in a survey of 100 customers who use unpaved roads, ≥95% report that the mode's guidance and the vehicle behavior matched expectations and no preventable vehicle damage was reported attributable to mode misuse.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-G60-US-045"
+      ],
+      "assumptions": [
+        "This requirement targets light off‑pavement use (gravel, dirt roads), not technical off‑roading.",
+        "UI messaging and disclaimers can be validated by legal and after‑sales teams."
+      ],
+      "uncertainties": [
+        "Some customers may interpret 'off‑road' differently; clear wording will be needed to align expectations."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Offer a certified hands‑free highway driving experience in approved jurisdictions",
+      "description": "When and where regulations allow, customers should be able to use a certified hands‑free highway driving capability that reliably maintains lane and speed on divided highways and reduces driver workload for long-distance commuting.",
+      "acceptance_criterion": "In pre‑production field trials within approved jurisdictions, the system can sustain hands‑free operation on divided highways at speeds up to 70 mph for 100+ miles with no driver interventions in ≥95% of trips and successfully complete handovers when jurisdictional limits are reached.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SIG-G60-US-WEB-10"
+      ],
+      "assumptions": [
+        "Regulatory approvals for conditional (hands‑free) automation are granted in at least one target U.S. jurisdiction at launch.",
+        "Required sensing/supplier capabilities (e.g., long‑range perception) become available at acceptable cost/performance within the next 3–5 years.",
+        "OEM secures necessary validation and insurance frameworks for limited deployment."
+      ],
+      "uncertainties": [
+        "Regulatory timelines, supplier availability (e.g., LiDAR or equivalent sensing) and commercial agreements may delay availability or restrict geographic scope."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Enable seamless, measurable transitions between automated highway driving and manual control",
+      "description": "If the vehicle offers highway-level automation, customers should experience clear, timely transitions between automated and manual driving with rapid, reliable handover and minimal surprise.",
+      "acceptance_criterion": "In controlled trials of the automated highway assistant, automated-to-manual and manual-to-automated transitions complete within 5 seconds on average with clear driver cues; takeover requests occur in fewer than 1 per 10,000 automated miles in steady highway conditions during pilot deployments.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SIG-G60-US-WEB-10"
+      ],
+      "assumptions": [
+        "Driver monitoring and driver‑state detection technology matures sufficiently to support robust handover decisions within 3–5 years.",
+        "Legal and certification pathways allow defined automation domains with documented handover behavior."
+      ],
+      "uncertainties": [
+        "Actual takeover rates will depend on real‑world road complexity and varied driver behavior; early pilots may show higher intervention rates that improve over time."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}

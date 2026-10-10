@@ -1,0 +1,19 @@
+{
+  "answer": "No. Multiple independent complaints (each signal has 15 mentions) and feedback across owners — including reduced boot space from hybrid batteries, missing luggage tie‑downs, unreliable key/keyless tailgate operation, tailgates closing unexpectedly, difficulty shutting the boot, and absent internal shut button — plus a low luggage-capacity study score (mean 7.1) show this is a widespread usability issue, not merely an older-customer habit.",
+  "supporting_evidence_ids": [
+    "SIG-F70-EU-022",
+    "SIG-F70-EU-025",
+    "EV-F70-EU-FB-F70-0377",
+    "EV-F70-EU-FB-F70-1039",
+    "EV-F70-EU-FB-F70-0942",
+    "EV-F70-EU-FB-F70-1535",
+    "EV-F70-EU-FB-F70-0961",
+    "EV-F70-EU-ST-29",
+    "EV-F70-EU-FB-F70-1236",
+    "EV-F70-EU-FB-F70-0278",
+    "EV-F70-EU-FB-F70-0955",
+    "EV-F70-EU-FB-F70-1231"
+  ],
+  "counter_evidence_ids": [],
+  "suggested_change": null
+}

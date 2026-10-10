@@ -1,0 +1,19 @@
+{
+  "answer": "Main objections: hybrid/EV packaging can reduce usable boot volume so the demand that two medium suitcases + a cabin bag fit in \"all production variants\" may be impossible for some powertrains; owners repeatedly report tailgate unreliability, manual lids and missing internal shut buttons, so the 99%/ <1% targets could force costly changes or be unattainable without design trade‑offs. Only limited counterpoint: a small number of owners still report good trunk space, so the issue isn’t universal. Little speaks against mandating a clearly accessible internal shut control and luggage tie‑downs.",
+  "supporting_evidence_ids": [
+    "SIG-F70-EU-022",
+    "SIG-F70-EU-025",
+    "EV-F70-EU-FB-F70-0377",
+    "EV-F70-EU-FB-F70-1039",
+    "EV-F70-EU-FB-F70-0942",
+    "EV-F70-EU-FB-F70-1535",
+    "EV-F70-EU-FB-F70-0961",
+    "EV-F70-EU-ST-29",
+    "EV-F70-EU-FB-F70-1236",
+    "EV-F70-EU-FB-F70-0278",
+    "EV-F70-EU-FB-F70-0955",
+    "EV-F70-EU-FB-F70-1231"
+  ],
+  "counter_evidence_ids": [],
+  "suggested_change": "Allow documented exceptions for hybrid/EV variants: change the suitcase-fit requirement from \"all production variants\" to \"all non-hybrid/EV variants; where packaging prevents the fit, require clear customer communication and compensating features (mandatory internal shut button, luggage tie‑downs and folding-seat release) and measure boot-lid durability per variant with mitigation plans if targets cannot be met."
+}

@@ -12,6 +12,7 @@ from collections import Counter
 
 from core.models import Evidence, ScoreFactor, Signal, SignalKind
 from requirements_engine import scoring
+from requirements_engine.business import business_context
 
 # Schwere je Art des Befunds: Beschwerden stören am meisten, Trends sind nur Annahmen.
 SEVERITY = {
@@ -24,6 +25,7 @@ KIND_LABEL = {
     SignalKind.TREND: "trends",
 }
 TRUST_VALUE = {"high": 1.0, "medium": 0.6}
+MAX_GROWTH_PCT = 50  # mehr Marktwachstum als +50 % wirkt nicht stärker (Deckel gegen Ausreißer in den Absatzzahlen)
 US_FULL_GAP = 0.25  # 25 % Unzufriedene in der US-Studie zählen als volle Lücke (Startwert, C7 prüft)
 
 
@@ -56,7 +58,8 @@ def _reach(mentions: int, max_mentions: int, context: dict) -> tuple[float, str]
     value = math.sqrt(min(mentions / max_mentions, 1.0)) if max_mentions else 0.0
     sales = context.get("sales", {})
     share = sales.get("share_of_total_2030")
-    market = f"; {sales.get('market', '?')} = {share * 100:.0f} % of 2030 volume" if share is not None else ""
+    volume = f" ({sales['volume_2030']:,} cars)" if sales.get("volume_2030") is not None else ""
+    market = f"; {sales.get('market', '?')} = {share * 100:.0f} % of 2030 volume{volume}" if share is not None else ""
     return value, f"{mentions} of at most {max_mentions} mentions (square root scale){market}"
 
 
@@ -92,12 +95,24 @@ def _competitive_pressure(signals: list[Signal], by_id: dict[str, Evidence]) -> 
     return best, f"competitor advantage backed by a {trust_name}-trust web source"
 
 
-def _future_relevance(signals: list[Signal], forward_looking: bool) -> tuple[float, str]:
+def _future_relevance(
+    signals: list[Signal], forward_looking: bool, growth_pct: float | None = None,
+) -> tuple[float, str]:
+    """Trend 1,0, Zukunftsannahme 0,5, sonst 0,1; wachsender Markt hebt das multiplikativ (bis +50 %), nie nach unten.
+
+    Multiplikativ, damit eine Anforderung ohne Zukunftsbezug (0,1) praktisch unverändert bleibt und nicht pauschal
+    steigt: Marktwachstum gilt für das ganze Szenario, es darf die Reihenfolge nicht heimlich umstimmen.
+    """
     if any(s.kind == SignalKind.TREND for s in signals):
-        return 1.0, "linked to a 3-5 year trend (assumption)"
-    if forward_looking:
-        return 0.5, "rests partly on a forward-looking assumption"
-    return 0.1, "no trend behind it"
+        value, text = 1.0, "linked to a 3-5 year trend (assumption)"
+    elif forward_looking:
+        value, text = 0.5, "rests partly on a forward-looking assumption"
+    else:
+        value, text = 0.1, "no trend behind it"
+    if growth_pct is None:
+        return value, text
+    boosted = min(1.0, value * (1 + min(max(growth_pct, 0.0), MAX_GROWTH_PCT) / 100))
+    return boosted, f"{text}; market growth 2025-2030: {growth_pct:+.1f} %"
 
 
 def compute_factors(
@@ -111,7 +126,8 @@ def compute_factors(
         "reach": _reach(mentions, max_mentions, context),
         "satisfaction_gap": _satisfaction_gap(signals, by_id),
         "competitive_pressure": _competitive_pressure(signals, by_id),
-        "future_relevance": _future_relevance(signals, forward_looking),
+        "future_relevance": _future_relevance(signals, forward_looking,
+                                              business_context(context.get("sales", {})).growth_pct),
         "effort_inverse": (scoring.effort_factor(effort), f"effort estimate {effort}"),
     }
     return {k: min(max(v, 0.0), 1.0) for k, (v, _) in parts.items()}, {k: t for k, (_, t) in parts.items()}

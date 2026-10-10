@@ -1,0 +1,19 @@
+{
+  "answer": "No. All cited complaints and the luggage-capacity study are from EU sources: repeated EU feedback describes reduced boot space (hybrid battery), missing tie‑downs and internal shut button, and unreliable key/keyless tailgate operation; the EU study reports mean luggage capacity 7.1. There is no US evidence presented, so this is not a US‑only issue — it appears to be an EU problem that must be addressed globally or per‑market.",
+  "supporting_evidence_ids": [
+    "SIG-F70-EU-022",
+    "SIG-F70-EU-025",
+    "EV-F70-EU-FB-F70-0377",
+    "EV-F70-EU-FB-F70-1039",
+    "EV-F70-EU-FB-F70-0942",
+    "EV-F70-EU-FB-F70-1535",
+    "EV-F70-EU-FB-F70-0961",
+    "EV-F70-EU-ST-29",
+    "EV-F70-EU-FB-F70-1236",
+    "EV-F70-EU-FB-F70-0278",
+    "EV-F70-EU-FB-F70-0955",
+    "EV-F70-EU-FB-F70-1231"
+  ],
+  "counter_evidence_ids": [],
+  "suggested_change": "Allow documented exceptions for hybrid/EV variants where packaging makes the luggage requirement infeasible, but require: (a) mandatory internal boot‑shut control and luggage tie‑downs on all variants, (b) clear customer communication at point of sale when volume is reduced, and (c) per‑variant measurement of the durability/fault criteria with remedial measures if targets are missed."
+}

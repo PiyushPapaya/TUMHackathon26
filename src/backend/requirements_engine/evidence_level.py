@@ -40,9 +40,19 @@ SOLID_MENTIONS = 15  # ab hier ist ein Thema mit einer Quelle belastbar genug f�
 MIN_MENTIONS_FOR_LIFT = 5  # darunter hebt auch eine Best채tigung nicht: zu d체nn, um mehr als Zufall zu sein
 
 
-def classify(mention_count: int, source_types: set[SourceType], forward_looking: bool) -> tuple[EvidenceLevel, str]:
-    """Liefert Stufe + Begr체ndungssatz (englisch, steht im Wasserfall f체r den PM)."""
+def classify(
+    mention_count: int, source_types: set[SourceType], forward_looking: bool,
+    next_gen: bool = False, customer_mentions: int = 0,
+) -> tuple[EvidenceLevel, str]:
+    """Liefert Stufe + Begr체ndungssatz (englisch, steht im Wasserfall f체r den PM).
+
+    next_gen = Wette auf den Nachfolger (W-C3): Trends und Webtreffer z채hlen hier nicht als Kundenbeleg.
+    Tragen weniger als 15 direkte Kundennennungen (customer_mentions) die Wette, ist sie eine Annahme: D.
+    """
     independent = source_types & CUSTOMER_SOURCES
+    if next_gen and customer_mentions < SOLID_MENTIONS:
+        return EvidenceLevel.D, (f"Bet on the next generation: only {customer_mentions} direct customer mentions, "
+                                 "the rest rests on trends (assumption).")
     if forward_looking and mention_count < 5:
         return EvidenceLevel.D, "Forward-looking assumption: few direct customer data points, rests on trends."
     if not independent:

@@ -1,0 +1,177 @@
+{
+  "drafts": [
+    {
+      "title": "Keep the car’s enjoyable, responsive driving character while eliminating underpowered feel and transmission jerkiness",
+      "description": "Customers experience smooth, predictable and engaging acceleration and gear changes: when they press the throttle the car responds without delay, torque delivery is consistent (no sudden torque steer), drive modes behave predictably, and gearshifts are smooth rather than jerky or lurching. Preserve the current strengths (comfortable ride, confident handling) while removing instances of sluggish or inconsistent drivetrain behaviour that some owners report.",
+      "acceptance_criterion": "In instrumented customer drives across urban, country and motorway scenarios, at least 90% of recorded acceleration events (e.g., 50→80 km/h overtakes and 0→100 km/h launches) show continuous torque delivery with no perceptible torque interruption or lurch; gearbox shift events must not produce a perceptible judder in more than 5% of shifts and median shift duration shall be <350 ms for automatic variants. In a 100-car field survey, fewer than 5% of customers must report 'underpowered' or 'jerky transmission' experiences in normal driving.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-001",
+        "SIG-F70-EU-002",
+        "SIG-F70-EU-005",
+        "SIG-F70-EU-016",
+        "SIG-F70-EU-021",
+        "SIG-F70-EU-037",
+        "SIG-F70-EU-044"
+      ],
+      "assumptions": [
+        "Improvements are achieved via drivetrain calibration, control software and powertrain tuning rather than radical new hardware; successor launch (3–5 years) can use updated drivetrains or refined maps.",
+        "The test fleet and field survey reflect representative customer usage (mixed urban/motorway driving)."
+      ],
+      "uncertainties": [
+        "Exact numeric shift-duration thresholds may need refinement after prototype testing to match subjective perception across variants.",
+        "Some extreme performance expectations (e.g., very high power in base trims) may conflict with fuel economy targets; trade-offs need PM decisions."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Maintain and improve ride comfort and damping so the car feels composed on mixed surfaces",
+      "description": "Customers experience a comfortable, composed ride across city streets, poor-surface roads and motorways: cushioning and damping avoid harshness or bottoming while preserving nimble, confident handling. The chassis should not feel unsettled on rough surfaces and should remain comfortable on longer trips.",
+      "acceptance_criterion": "On a standardized mixed-surface EU test route (includes rough urban sections and motorway segments) at least 90% of a 50-person customer panel rate ride comfort 'comfortable' or better and fewer than 10% report 'harsh' or 'bottoming' sensations. Objective vehicle responses on the same route shall show no more than 10% of events with suspension bottoming or harsh rebound as recorded by peak vertical acceleration events.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-006",
+        "SIG-F70-EU-001",
+        "SIG-F70-EU-010",
+        "SIG-F70-EU-031",
+        "SIG-F70-EU-035",
+        "SIG-F70-EU-038"
+      ],
+      "assumptions": [
+        "Successor can use tuned damper maps and suspension geometry changes achievable within a single-generation update.",
+        "Customer panel is representative of European customer mix and uses the standardized route for consistent feedback."
+      ],
+      "uncertainties": [
+        "Preferences vary by market and wheel/tire choices; larger wheels will still increase perceived harshness and must be managed by option guidance.",
+        "Trade-offs between a softer ride and highly dynamic handling may require variant-specific tuning."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Deliver linear, predictable braking with selectable and smooth regenerative braking transitions",
+      "description": "Braking must feel progressive and predictable to the driver: pedal effort produces proportional deceleration without sudden grabbing or unexpected hard stops. For electrified variants, customers can select regeneration intensity and transitions between regenerative and friction braking occur smoothly without sudden jolts.",
+      "acceptance_criterion": "Brake pedal force vs deceleration must show a correlation R² ≥ 0.9 on standard test cycles (urban stop‑start + emergency braking). In 100 recorded braking events across mixed driving, fewer than 5% may show sudden hard grab behaviour. Electrified variants must offer at least three selectable regeneration levels and transitions between regenerative and friction braking must complete within 250 ms without a perceptible jolt in ≥95% of controlled trials.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-026"
+      ],
+      "assumptions": [
+        "Brake feel improvements are achievable through brake-by-wire calibration, pedal mapping and regenerative blending strategies available within the successor timeframe.",
+        "Customer perception of 'grab' is captured by combined objective (sensor) and subjective (panel) testing."
+      ],
+      "uncertainties": [
+        "Legacy hardware variants may limit the number of selectable regeneration levels; packaging or cost constraints may force variant differences.",
+        "Extreme environmental conditions (ice, heavy wear) may still cause local variability in braking feel."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Ensure driver assistance features are reliable and remain available after updates",
+      "description": "Customers experience driver assistance and automated features that are stable over the vehicle lifetime: features they use do not disappear after software updates, controls do not freeze, and assistance functions remain operational without repeated dealer visits. When a feature is disabled for safety or maintenance, the vehicle clearly informs the driver and offers a recovery path.",
+      "acceptance_criterion": "After any over‑the‑air or dealer-installed software update, ≥99% of previously enabled driver assistance features must remain enabled and operational without a dealer visit within 7 calendar days. Field telemetry must show fewer than 0.1 assistance-related software crashes per 1,000 vehicle-days. Customer support processes must restore any disabled feature within 7 days for ≥95% of reported cases.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SIG-F70-EU-020",
+        "SIG-F70-EU-034",
+        "SIG-F70-EU-012"
+      ],
+      "assumptions": [
+        "A robust OTA and remote diagnostics infrastructure is available at launch for the successor.",
+        "Dealer and remote support processes are staffed and trained to restore features within the stated timeframe."
+      ],
+      "uncertainties": [
+        "Some geo-specific regulatory or homologation changes could force temporary feature disablement in restricted markets; such cases must be identified and communicated to customers.",
+        "Legacy hardware in older vehicles may limit the ability to restore some features without dealer intervention."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Keep engine acoustics refined or sportily pleasing according to customer expectation",
+      "description": "Customers perceive engine and powertrain sound as either pleasantly refined (for comfort-focused customers) or sportily engaging (for sport-focused variants) rather than thin, dull, or unpleasant. The acoustic character should match the car’s advertised driving intent and remain consistent across driving modes.",
+      "acceptance_criterion": "In controlled driving evaluations (acceleration runs and steady-state cruise), at least 85% of a representative customer panel rate the engine/powertrain sound as 'refined' or 'sporty/appropriate' for the selected drive mode. Sound character must remain consistent across modes and not be reported as 'annoying' by more than 10% of panelists.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-040",
+        "SIG-F70-EU-002",
+        "SIG-F70-EU-001"
+      ],
+      "assumptions": [
+        "Acoustic tuning, rudimentary sound enhancement or mode-linked sound management available in the successor timeframe can meet customer expectations without relying on components outside standard powertrain options.",
+        "Customer panels reflect both comfort- and sport-oriented customers matched to variant intent."
+      ],
+      "uncertainties": [
+        "What customers label 'sporty' varies; objective acoustic signatures may need iteration to match subjective preference in different markets.",
+        "Electrified variants may require different strategies than combustion variants to achieve comparable 'engaging' sensations."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Deliver real‑world electric range that meets rising customer expectations for midsize EVs",
+      "description": "For the electric variant, customers experience a real-world driving range that removes range anxiety for typical mid-length trips across European conditions: daily and longer trips should be possible without frequent recharging and advertised range closely matches customer experience.",
+      "acceptance_criterion": "In real-world mixed-driving tests representative of European use (combined urban, suburban and motorway at seasonal temperatures), the electric variant achieves at least 450 km usable driving range in ≥80% of test cycles. Customer field trials must show advertised range-to-real-world variance of no more than -8% for typical drivers.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-F70-EU-043",
+        "SIG-F70-EU-WEB-08"
+      ],
+      "assumptions": [
+        "Battery energy density and pack-level improvements available by the next generation (3–5 years) will enable this range in a vehicle of this size.",
+        "Testing uses representative climates and driving patterns for Europe; winter performance will be called out separately.",
+        "Charging infrastructure and fast-charge interoperability for customer convenience continue to improve as suggested by market trends."
+      ],
+      "uncertainties": [
+        "Real-world range depends heavily on climate, payload and driving style; exact marketed claims will need careful calibration.",
+        "Achieving this range may require higher-capacity packs that affect cost and packaging; variant strategy decisions will influence rollout."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Offer conditional automated motorway driving up to customer‑useful speeds where regulation permits",
+      "description": "Where local regulations and approvals permit, customers can use a conditional automated driving mode on motorways that relieves sustained steering and speed control tasks up to the allowable speed (e.g., up to 95 km/h in markets that approve such systems). The system must operate reliably in permitted scenarios and hand back control gracefully when required.",
+      "acceptance_criterion": "In approved markets and under permitted conditions, the system runs autonomously on motorway segments up to 95 km/h and operates reliably in ≥95% of permitted motorway segments during trial fleets (daytime, good weather, and typical traffic density). Any required handover to the driver must be completed with a safe and audible prompt and a maximum handover time of 10 seconds under normal conditions.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SIG-F70-EU-WEB-11",
+        "SIG-F70-EU-020"
+      ],
+      "assumptions": [
+        "Regulatory approval for conditional automated driving up to ~95 km/h is granted in target markets by the successor launch.",
+        "Mapping and monitoring infrastructure and approved safety frameworks exist in those markets.",
+        "Robust driver-monitoring and fail-safe handover procedures are available and certified where required."
+      ],
+      "uncertainties": [
+        "Regulatory timelines vary by market; some countries may delay approvals, limiting feature availability at launch.",
+        "Customer acceptance and trust will depend heavily on initial reliability in real traffic; early fleet experiences may differ from lab tests."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}

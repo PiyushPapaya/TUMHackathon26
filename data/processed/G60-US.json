@@ -14,13 +14,90 @@
    "Genesis G80",
    "Lucid Air"
   ],
-  "successor_horizon": "2030"
+  "successor_horizon": "2030",
+  "fueleconomy": {
+   "model_year": 2025,
+   "vehicles": {
+    "BMW i5 eDrive40": [
+     "BMW",
+     "i5 eDrive40 Sedan (19 inch Wheels)"
+    ],
+    "BMW i5 M60 xDrive": [
+     "BMW",
+     "i5 M60 xDrive Sedan (19 inch Wheels)"
+    ],
+    "Tesla Model S": [
+     "Tesla",
+     "Model S"
+    ],
+    "Lucid Air Touring": [
+     "Lucid",
+     "Air Touring AWD with 19 inch wheels"
+    ],
+    "Mercedes-Benz EQE 350+": [
+     "Mercedes-Benz",
+     "EQE 350 Plus"
+    ],
+    "Genesis Electrified G80": [
+     "Genesis",
+     "Electrified G80"
+    ]
+   }
+  },
+  "nhtsa": {
+   "model_years": [
+    2024,
+    2025
+   ],
+   "bmw_models": [
+    "530I",
+    "540I",
+    "I5"
+   ],
+   "competitors": {
+    "Mercedes-Benz E-Class": [
+     "MERCEDES-BENZ",
+     [
+      "E-CLASS"
+     ]
+    ],
+    "Tesla Model S": [
+     "TESLA",
+     [
+      "MODEL S (ALL VARIANTS)"
+     ]
+    ],
+    "Genesis G80": [
+     "GENESIS",
+     [
+      "G80",
+      "ELECTRIFIED G80"
+     ]
+    ],
+    "Audi A6": [
+     "AUDI",
+     [
+      "A6 SEDAN"
+     ]
+    ]
+   }
+  },
+  "data_coverage": {
+   "feedback": 3610,
+   "study": 103,
+   "sales": 0,
+   "options": 0,
+   "web": 98,
+   "external": 0,
+   "badge": "reich"
+  }
  },
  "funnel": {
   "evidence": 3811,
   "signals": 55,
-  "requirements": 12,
-  "approved": 0
+  "requirements": 21,
+  "approved": 0,
+  "generated_at": "2026-10-10T20:40:28+00:00"
  },
  "weights": {},
  "evidence": [
@@ -5636,7 +5713,9 @@
    "conflicts_with": [
     "SIG-G60-US-012",
     "SIG-G60-US-036"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-002",
@@ -5657,7 +5736,9 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-012"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-003",
@@ -5678,7 +5759,9 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-033"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-004",
@@ -5697,7 +5780,9 @@
    "source_types": [
     "feedback"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-005",
@@ -5718,7 +5803,9 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-031"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-006",
@@ -5740,7 +5827,9 @@
    "conflicts_with": [
     "SIG-G60-US-008",
     "SIG-G60-US-010"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-007",
@@ -5762,7 +5851,9 @@
    "conflicts_with": [
     "SIG-G60-US-010",
     "SIG-G60-US-038"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-008",
@@ -5786,7 +5877,9 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-006"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-009",
@@ -5813,7 +5906,9 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-014"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-010",
@@ -5838,7 +5933,9 @@
    "conflicts_with": [
     "SIG-G60-US-007",
     "SIG-G60-US-006"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-011",
@@ -5859,7 +5956,9 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-023"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-012",
@@ -5885,7 +5984,9 @@
    "conflicts_with": [
     "SIG-G60-US-001",
     "SIG-G60-US-002"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-013",
@@ -5904,7 +6005,9 @@
    "source_types": [
     "feedback"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-014",
@@ -5925,7 +6028,9 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-009"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-015",
@@ -5950,7 +6055,9 @@
     "feedback",
     "web"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-016",
@@ -5969,7 +6076,9 @@
    "source_types": [
     "feedback"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-017",
@@ -5990,7 +6099,9 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-034"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-018",
@@ -6012,7 +6123,9 @@
     "feedback",
     "web"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-019",
@@ -6035,7 +6148,9 @@
     "feedback",
     "web"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-020",
@@ -6057,7 +6172,9 @@
     "feedback",
     "web"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-021",
@@ -6075,7 +6192,9 @@
    "source_types": [
     "feedback"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-022",
@@ -6094,7 +6213,9 @@
    "source_types": [
     "feedback"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-023",
@@ -6114,7 +6235,9 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-011"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-024",
@@ -6133,7 +6256,9 @@
    "source_types": [
     "feedback"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-025",
@@ -6151,7 +6276,9 @@
    "source_types": [
     "feedback"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-026",
@@ -6173,7 +6300,9 @@
    "conflicts_with": [
     "SIG-G60-US-028",
     "SIG-G60-US-032"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-027",
@@ -6191,7 +6320,9 @@
    "source_types": [
     "feedback"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-028",
@@ -6214,7 +6345,9 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-026"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-029",
@@ -6235,7 +6368,9 @@
     "feedback",
     "study"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-030",
@@ -6256,7 +6391,9 @@
     "feedback",
     "study"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-031",
@@ -6280,7 +6417,9 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-005"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-032",
@@ -6304,7 +6443,9 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-026"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-033",
@@ -6328,7 +6469,9 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-003"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-034",
@@ -6352,7 +6495,9 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-017"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-035",
@@ -6374,7 +6519,9 @@
    "source_types": [
     "feedback"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-036",
@@ -6398,7 +6545,9 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-001"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-037",
@@ -6420,7 +6569,9 @@
    "source_types": [
     "feedback"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-038",
@@ -6444,7 +6595,9 @@
    ],
    "conflicts_with": [
     "SIG-G60-US-007"
-   ]
+   ],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-039",
@@ -6466,7 +6619,9 @@
    "source_types": [
     "feedback"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-040",
@@ -6490,7 +6645,9 @@
     "feedback",
     "study"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-041",
@@ -6512,7 +6669,9 @@
    "source_types": [
     "feedback"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-042",
@@ -6535,7 +6694,9 @@
     "feedback",
     "study"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-043",
@@ -6557,7 +6718,9 @@
     "feedback",
     "study"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-044",
@@ -6572,7 +6735,9 @@
    "source_types": [
     "study"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-045",
@@ -6587,7 +6752,9 @@
    "source_types": [
     "study"
    ],
-   "conflicts_with": []
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   },
   {
    "id": "SIG-G60-US-WEB-01",
@@ -6762,100 +6929,28 @@
  ],
  "requirements": [
   {
-   "id": "REQ-G60-US-007",
-   "title": "Seamless smartphone connectivity, dependable in-car charging and robust online features",
-   "description": "Customers experience reliable Apple CarPlay/Android Auto connections, a passenger wireless charging solution that actually charges common phones and fits typical cases, dependable in-car Wi‑Fi hotspot performance and voice commands that work accurately for common requests.",
-   "acceptance_criterion": "Connectivity validation: (a) Wireless Apple CarPlay/Android Auto establishes and maintains a usable connection within 10 seconds in ≥95% of paired attempts in real-world tests; (b) the main wireless charge pad charges common phones at ≥7.5 W (Qi) and successfully charges 95% of tested phone+case combinations while vehicle is in normal driving; (c) vehicle Wi‑Fi maintains a usable internet connection for streaming (3+ Mbps) for ≥90% of 30-minute sessions in suburban test scenarios; (d) voice recognition correctly executes 90% of a 100-command phrasal test representing common navigation/media/climate commands.",
-   "category": "infotainment_digital",
+   "id": "REQ-G60-US-47478c",
+   "title": "Make climate controls and air vents quick to find and simple to operate while driving",
+   "description": "Drivers can adjust temperature, fan speed and vent direction quickly and with minimal visual attention so HVAC operation is not slow, confusing or distracting during normal driving.",
+   "acceptance_criterion": "In on-road usability trials, drivers change temperature or fan speed without looking at the central display within 5 seconds in ≥90% of attempts; occupants locate and adjust main vents within 5 seconds in ≥90% of trials. Measured heater/AC operation dissatisfaction in the US study target reduces from 15% to ≤8% in follow-up testing.",
+   "category": "comfort_space",
    "signal_ids": [
-    "SIG-G60-US-019",
-    "SIG-G60-US-029",
-    "SIG-G60-US-043",
-    "SIG-G60-US-042"
+    "SIG-G60-US-030"
    ],
-   "score": 50.9,
+   "score": 47.2,
    "rank": 1,
    "score_breakdown": {
     "customer_pain": {
      "value": 1.0,
      "weight": 0.25,
      "contribution": 25.0,
-     "explanation": "Mostly complaints (Difficult to Use), 57 mentions"
+     "explanation": "Mostly complaints (Difficult to Use), 15 mentions"
     },
     "reach": {
-     "value": 0.305,
+     "value": 0.16,
      "weight": 0.2,
-     "contribution": 6.1,
-     "explanation": "57 of at most 613 mentions (square root scale); US = 25 % of 2030 volume"
-    },
-    "satisfaction_gap": {
-     "value": 0.64,
-     "weight": 0.2,
-     "contribution": 12.8,
-     "explanation": "Performance of voice recognition: 16 % unsatisfied"
-    },
-    "competitive_pressure": {
-     "value": 0.0,
-     "weight": 0.15,
-     "contribution": 0.0,
-     "explanation": "no trusted web source shows a competitor advantage"
-    },
-    "future_relevance": {
-     "value": 0.1,
-     "weight": 0.1,
-     "contribution": 1.0,
-     "explanation": "no trend behind it"
-    },
-    "effort_inverse": {
-     "value": 0.6,
-     "weight": 0.1,
-     "contribution": 6.0,
-     "explanation": "effort estimate M"
-    }
-   },
-   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (12.8 points). Evidence level A: 57 mentions, confirmed by 3 independent source types.",
-   "evidence_level": "A",
-   "assumptions": [
-    "Wireless CarPlay/Android Auto protocols and smartphone OS behavior will remain compatible with OEM implementations in the successor timeframe.",
-    "Wireless charge power targets reference typical Qi charging rates used by phone manufacturers."
-   ],
-   "uncertainties": [
-    "Phone model and case interference can still prevent charging; absolute guarantees across every phone are not feasible.",
-    "Cellular network variability affects Wi‑Fi hotspot performance beyond OEM control."
-   ],
-   "offer_check": {
-    "status": "standard",
-    "note": "Smartphone Integration is standard; wireless charging (O52), 4G LTE (O34) and Personal eSIM (O51) also included. (Smartphone Integration (Kompatibles Smartphone erforderlich)7)",
-    "option_code": null
-   },
-   "effort": "M",
-   "status": "proposed",
-   "version": 1
-  },
-  {
-   "id": "REQ-G60-US-008",
-   "title": "Climate controls and vents must be fast, discoverable and operable without visual attention",
-   "description": "Customers can quickly find and operate HVAC functions and direct airflow without hunting through menus. Vent outlets and their controls are visible and intuitive, and basic temperature/fan adjustments can be made by feel or a single control while driving.",
-   "acceptance_criterion": "Usability and safety testing: (a) 90% of participants can locate and adjust fan speed and temperature within 2 seconds without looking at the screen using tactile controls or a dedicated physical interface; (b) vents are visibly and physically adjustable and reachable from driver and front-passenger seats, with ≥90% of users rating vent discoverability as 'easy' in a 50-person test.",
-   "category": "comfort_space",
-   "signal_ids": [
-    "SIG-G60-US-030",
-    "SIG-G60-US-023"
-   ],
-   "score": 49.0,
-   "rank": 2,
-   "score_breakdown": {
-    "customer_pain": {
-     "value": 1.0,
-     "weight": 0.25,
-     "contribution": 25.0,
-     "explanation": "Mostly complaints (Difficult to Use), 39 mentions"
-    },
-    "reach": {
-     "value": 0.252,
-     "weight": 0.2,
-     "contribution": 5.0,
-     "explanation": "39 of at most 613 mentions (square root scale); US = 25 % of 2030 volume"
+     "contribution": 3.2,
+     "explanation": "15 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.6,
@@ -6870,10 +6965,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -6882,119 +6977,154 @@
      "explanation": "effort estimate M"
     }
    },
-   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (12 points). Evidence level A: 39 mentions, confirmed by 2 independent source types.",
+   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (12 points). Evidence level A: 15 mentions, confirmed by 2 independent source types.",
    "evidence_level": "A",
    "assumptions": [
-    "A combination of tactile controls and simplified touchscreen surfaces will be used to meet the requirement.",
-    "Ergonomic placement of vents and controls is feasible within packaging constraints."
+    "Usability trials include participants representative of typical drivers and realistic driving conditions.",
+    "HMI changes (physical controls, haptic shortcuts or improved UX) are implemented in a way that preserves cabin aesthetics."
    ],
    "uncertainties": [
-    "Some design themes emphasize minimalism which can limit physical control placement; trade-offs may be required."
+    "Different customers have varying expectations for tactile vs screen controls; some will still prefer full touchscreen solutions.",
+    "Changes may require redesign of center stack area that affects other packaging."
    ],
    "offer_check": {
     "status": "standard",
-    "note": "Intelligent Personal Assistant provides voice control for climate, enabling hands-free operation without visual attention. (Intelligent Personal Assistant6)",
+    "note": "Intelligent Personal Assistant enables voice control of climate and vents for hands‑free, easy operation while driving. (Intelligent Personal Assistant6)",
     "option_code": null
    },
    "effort": "M",
    "status": "proposed",
-   "version": 1
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 1,
+    "rank_max": 3,
+    "top3_share": 1.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "47478c",
+   "badges": []
   },
   {
-   "id": "REQ-G60-US-009",
-   "title": "Default door-unlock behavior should match customer expectations and be easy to change",
-   "description": "When customers approach the vehicle with authorized access, doors unlock in an obvious, expected way (defaulting to unlocking all passenger doors), and the setting to change behavior is easy to find and persists across key cycles.",
-   "acceptance_criterion": "Field and usability validation: (a) Default out-of-the-box behavior unlocks all doors on approach for the primary key and is documented in the quick-start guide; (b) changing the unlock behavior is achievable within two menu steps or one dedicated UI element, and 95% of a 100-owner panel successfully change and persist the setting; (c) ≤3% of owners report unexpected single-door-only unlock events in a 90‑day ownership study.",
-   "category": "comfort_space",
+   "id": "REQ-G60-US-8ca18e",
+   "title": "Wireless charging pad that reliably fits and charges common phones without repositioning or buzzing",
+   "description": "Customers place their phone on the in-cabin charging surface and it starts and maintains charging reliably without wiggling, excessive heat, or buzzing; passenger-side charging also works consistently.",
+   "acceptance_criterion": "In a test with 20 popular phone models (covering small to flagship large sizes), 95% begin charging on first placement and maintain continuous charging for 30 minutes during a driving dynamics simulation (typical city/highway inputs) without requiring repositioning; no audible buzzing is reported in >98% of trials and passenger pad functions in 100% of tested vehicles.",
+   "category": "infotainment_digital",
    "signal_ids": [
-    "SIG-G60-US-018",
-    "SIG-G60-US-WEB-06"
+    "SIG-G60-US-029"
    ],
-   "score": 46.2,
+   "score": 43.4,
+   "rank": 2,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 1.0,
+     "weight": 0.25,
+     "contribution": 25.0,
+     "explanation": "Mostly complaints (Defect / Difficult to Use), 17 mentions"
+    },
+    "reach": {
+     "value": 0.17,
+     "weight": 0.2,
+     "contribution": 3.4,
+     "explanation": "17 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.4,
+     "weight": 0.2,
+     "contribution": 8.0,
+     "explanation": "Phone charging: 10 % unsatisfied"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.103,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (8 points). Evidence level A: 17 mentions, confirmed by 2 independent source types.",
+   "evidence_level": "A",
+   "assumptions": [
+    "Phone model selection reflects top-selling US phones at launch (assumed list included in test plan).",
+    "Tests simulate realistic vehicle motion and temperature profiles for US conditions."
+   ],
+   "uncertainties": [
+    "New phone designs or cases may affect fit/charging performance after launch.",
+    "Charging speed expectations vary by phone and user; this requirement focuses on consistent connection rather than peak watts."
+   ],
+   "offer_check": {
+    "status": "standard",
+    "note": "Standard 'Wireless Charging Ablage' (wireless charging tray) matches the requested wireless charging pad. (Wireless Charging Ablage)",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 2,
+    "rank_max": 5,
+    "top3_share": 0.768,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "8ca18e",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-US-bc1679",
+   "title": "Simplified, fast-access home and uncluttered touchscreen layout while retaining large display presence",
+   "description": "Customers experience the large, long touchscreen they like but see a simplified, less cluttered operating concept: a customizable home bar for favorite functions, reduced submenu depth for common tasks, larger touch targets for frequently used controls, and UI treatments that make the screen easier to read and less affected by fingerprints and bright sunlight.",
+   "acceptance_criterion": "In a usability test with 50 participants performing 5 common tasks (navigation entry, media source switch, climate quick-adjust, phone call, trip/odometer access): 90% of tasks are completed in ≤2 taps and average task time ≤6 seconds; post-test subjective ratings show ≥80% of participants rate the layout as 'easy to use' or better; in a bright-light legibility test (simulated sunlight) ≥90% of participants can identify and activate primary controls within 2 seconds; smudge/readability complaints in feedback-panel testing drop by ≥50% compared to current baseline.",
+   "category": "infotainment_digital",
+   "signal_ids": [
+    "SIG-G60-US-023",
+    "SIG-G60-US-028",
+    "SIG-G60-US-032",
+    "SIG-G60-US-011",
+    "SIG-G60-US-026"
+   ],
+   "score": 42.7,
    "rank": 3,
    "score_breakdown": {
     "customer_pain": {
-     "value": 0.964,
+     "value": 0.662,
      "weight": 0.25,
-     "contribution": 24.1,
-     "explanation": "Mostly complaints (Difficult to Use), 28 mentions"
+     "contribution": 16.6,
+     "explanation": "Mostly strengths (Likes / Difficult to Use), 112 mentions"
     },
     "reach": {
-     "value": 0.214,
-     "weight": 0.2,
-     "contribution": 4.3,
-     "explanation": "28 of at most 613 mentions (square root scale); US = 25 % of 2030 volume"
-    },
-    "satisfaction_gap": {
-     "value": 0.0,
-     "weight": 0.2,
-     "contribution": 0.0,
-     "explanation": "no study data"
-    },
-    "competitive_pressure": {
-     "value": 1.0,
-     "weight": 0.15,
-     "contribution": 15.0,
-     "explanation": "competitor advantage backed by a high-trust web source"
-    },
-    "future_relevance": {
-     "value": 0.1,
-     "weight": 0.1,
-     "contribution": 1.0,
-     "explanation": "no trend behind it"
-    },
-    "effort_inverse": {
-     "value": 1.0,
-     "weight": 0.1,
-     "contribution": 10.0,
-     "explanation": "effort estimate S"
-    }
-   },
-   "rationale": "Ranked mainly because of customer pain (24.1 points) and competitive pressure (15 points). Evidence level B: 28 mentions, confirmed only by web sources: A needs a second BMW source (study).",
-   "evidence_level": "B",
-   "assumptions": [
-    "Default choices can be set at production and exposed via a short, discoverable setting in the infotainment or physical controls.",
-    "User education (quick-start guide, first-use prompts) will be used to surface behavior."
-   ],
-   "uncertainties": [
-    "Regional security preferences may lead some owners to prefer different defaults; offering a clear setting mitigates this."
-   ],
-   "offer_check": {
-    "status": "optional",
-    "note": "Contains Komfortzugang and Travel & Comfort System, providing keyless access and menu settings to adjust default unlock behavior. (TRAVEL PAKET)",
-    "option_code": "7LK"
-   },
-   "effort": "S",
-   "status": "proposed",
-   "version": 1
-  },
-  {
-   "id": "REQ-G60-US-006",
-   "title": "Provide a clear, efficient operating concept for the touchscreen: fewer taps, better discoverability, and accessible odometer/trip info",
-   "description": "Customers can complete common tasks quickly without confusion or menu hunting: climate and core vehicle functions are easy to access, the odometer/trip mileage is clearly visible via the instrument cluster or two quick taps, and the large display remains elegant without overwhelming menus or excessive smudging.",
-   "acceptance_criterion": "Human factors testing: (a) 95% of participants complete six core tasks (set cabin temperature, change fan speed, switch drive mode, access odometer/trip, start navigation to home, pair phone) within ≤5 seconds and ≤3 interactions/taps, without looking away from the road for more than 2 seconds; (b) odometer/trip mileage is reachable within ≤2 taps from the primary instrument cluster view; (c) perceived clutter rating ≤15% dissatisfied in a 100‑person usability study and touchscreen legibility in direct sunlight achieves a measured contrast ratio consistent with readability standards.",
-   "category": "infotainment_digital",
-   "signal_ids": [
-    "SIG-G60-US-011",
-    "SIG-G60-US-023",
-    "SIG-G60-US-028",
-    "SIG-G60-US-021",
-    "SIG-G60-US-032"
-   ],
-   "score": 45.6,
-   "rank": 4,
-   "score_breakdown": {
-    "customer_pain": {
-     "value": 0.781,
-     "weight": 0.25,
-     "contribution": 19.5,
-     "explanation": "Mostly complaints (Difficult to Use / Wants), 115 mentions"
-    },
-    "reach": {
-     "value": 0.433,
+     "value": 0.437,
      "weight": 0.2,
      "contribution": 8.7,
-     "explanation": "115 of at most 613 mentions (square root scale); US = 25 % of 2030 volume"
+     "explanation": "112 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.52,
@@ -7009,10 +7139,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -7021,50 +7151,668 @@
      "explanation": "effort estimate M"
     }
    },
-   "rationale": "Ranked mainly because of customer pain (19.5 points) and satisfaction gap (10.4 points). Evidence level A: 115 mentions, confirmed by 2 independent source types.",
+   "rationale": "Ranked mainly because of customer pain (16.6 points) and satisfaction gap (10.4 points). Evidence level A: 112 mentions, confirmed by 2 independent source types.",
    "evidence_level": "A",
    "assumptions": [
-    "UI redesign and HMI changes can reduce menu depth and expose key functions as user-customizable shortcuts.",
-    "Display hardware improvements (anti-reflective coatings) and software theming can materially improve sunlight legibility."
+    "Usability test tasks and the participant mix reflect typical US 5 Series users (age and tech familiarity).",
+    "Improvements can be achieved through software/UX changes and non-invasive optical/screen coatings (no major hardware change required).",
+    "Perceived responsiveness can be maintained through tuning of software touch handling without changing major hardware dimensions.",
+    "Study participants reflect the target customer demographic."
    ],
    "uncertainties": [
     "Conflicting evidence: \"Love the large touchscreen and long display\" vs. \"Too many menus and the screen gets dirty\"",
-    "Some drivers will continue to prefer deeper customization even if core tasks are simplified.",
-    "Hardware constraints (e.g., bezel, sensor placement) may limit some legibility improvements."
+    "Conflicting evidence: \"Really happy with the infotainment interface and usability\" vs. \"Too many menus and touchscreens\"",
+    "Conflicting evidence: \"Really happy with the infotainment interface and usability\" vs. \"Operating concept, operating system: unmet_need\"",
+    "Extent to which physical screen coatings reduce perceived smudging without hardware changes.",
+    "User expectations vary; some users will still prefer deep menu access for advanced features.",
+    "Balancing simplification (previous requirement) and retaining a rich visual presence may require trade-offs in default home density."
    ],
    "offer_check": {
     "status": "standard",
-    "note": "BMW Operating System 8.5 provides the touchscreen user interface and menu structure aiming for intuitive navigation and instrument information access. (BMW Operating System 8.5)",
+    "note": "BMW Operating System 8.5 provides the UI and display management for simplified, large-screen, customizable home and uncluttered touchscreen layouts. (BMW Operating System 8.5)",
     "option_code": null
    },
    "effort": "M",
    "status": "proposed",
-   "version": 1
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 2,
+    "rank_max": 6,
+    "top3_share": 0.564,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "bc1679",
+   "badges": []
   },
   {
-   "id": "REQ-G60-US-010",
-   "title": "Improve interior storage and phone tray design so items fit securely and storage is practical",
-   "description": "Customers find storage compartments that are well-placed, sized for modern items (phones with cases, wallets, sunglasses), and a wireless phone tray that keeps phones stable and charges reliably. Overall cabin storage is intuitive and reduces clutter.",
-   "acceptance_criterion": "User validation: (a) 95% of tested phone+case combinations sit flat and remain stable on the primary tray during standardized lane-change maneuvers; (b) a cabin storage usability survey shows ≥85% of participants rate general storage capacity/placement as 'sufficient' or 'good'; (c) no more than 5% of owners report a wireless tray that fails to hold or charge their phone in initial 30‑day use.",
-   "category": "comfort_space",
+   "id": "REQ-G60-US-47878d",
+   "title": "Reduce brake noise, visible dust and grabby braking so stops feel smooth and quiet from day one",
+   "description": "Customers should experience quiet, smooth braking with minimal brake dust on wheel faces and no grabby or overly abrupt stops during normal ownership, especially in the first months after delivery.",
+   "acceptance_criterion": "In a 6‑month ownership simulation on a test fleet and in controlled NVH tests (≥200 vehicles): fewer than 3% of vehicles report audible squeal/grinding in normal use; measured brake noise during representative stops is below 45 dB(A) in 95% of stops; and visible brake dust on wheel faces after 3,000 miles is rated 'light' or less by blind visual assessors for ≥90% of vehicles.",
+   "category": "driving_experience",
    "signal_ids": [
-    "SIG-G60-US-040",
-    "SIG-G60-US-029"
+    "SIG-G60-US-015",
+    "SIG-G60-US-WEB-05"
    ],
-   "score": 44.2,
+   "score": 42.2,
+   "rank": 4,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.922,
+     "weight": 0.25,
+     "contribution": 23.0,
+     "explanation": "Mostly complaints (Difficult to Use), 32 mentions"
+    },
+    "reach": {
+     "value": 0.233,
+     "weight": 0.2,
+     "contribution": 4.7,
+     "explanation": "32 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.0,
+     "weight": 0.2,
+     "contribution": 0.0,
+     "explanation": "no study data"
+    },
+    "competitive_pressure": {
+     "value": 1.0,
+     "weight": 0.15,
+     "contribution": 15.0,
+     "explanation": "competitor advantage backed by a high-trust web source"
+    },
+    "future_relevance": {
+     "value": 0.103,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (23 points) and competitive pressure (15 points). Evidence level B: 32 mentions, confirmed only by web sources: A needs a second BMW source (study).",
+   "evidence_level": "B",
+   "assumptions": [
+    "We can define repeatable NVH and visual-dust assessment protocols representative of customer use.",
+    "Brake material/packaging choices and warranty/after‑sales guidance can be adjusted if required."
+   ],
+   "uncertainties": [
+    "Brake dust and perceived grabbiness depend on customer environment, driving style, and aftermarket wheel/cleaning habits."
+   ],
+   "offer_check": {
+    "status": "not_offered",
+    "note": "No option offers low‑dust, low‑noise or less‑grabby brake pads; only performance M Sport brake (O3) is listed, which doesn't meet requirement.",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 1,
+    "rank_max": 8,
+    "top3_share": 0.548,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "47878d",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-US-50b599",
+   "title": "Accurate, robust voice control for common driving tasks",
+   "description": "Customers can use voice to control navigation, media, phone, and climate reliably under normal cabin noise so they use voice rather than manual controls for common tasks.",
+   "acceptance_criterion": "In a controlled test with 200 natural-language voice commands from 50 speakers across accents and background noise levels up to 65 dB, the system correctly understands and executes the user's intent in ≥85% of commands for navigation, media, phone, and climate tasks.",
+   "category": "infotainment_digital",
+   "signal_ids": [
+    "SIG-G60-US-042"
+   ],
+   "score": 40.0,
    "rank": 5,
    "score_breakdown": {
     "customer_pain": {
      "value": 1.0,
      "weight": 0.25,
      "contribution": 25.0,
-     "explanation": "Mostly complaints (Difficult to Use / Defect), 27 mentions"
+     "explanation": "Mostly complaints (Difficult to Use / Wants | Difficult to Use | Defect), 8 mentions"
     },
     "reach": {
-     "value": 0.21,
+     "value": 0.117,
      "weight": 0.2,
-     "contribution": 4.2,
-     "explanation": "27 of at most 613 mentions (square root scale); US = 25 % of 2030 volume"
+     "contribution": 2.3,
+     "explanation": "8 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.64,
+     "weight": 0.2,
+     "contribution": 12.8,
+     "explanation": "Performance of voice recognition: 16 % unsatisfied"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.103,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (12.8 points). Evidence level B: Only 8 mentions, but confirmed by 2 independent source types.",
+   "evidence_level": "B",
+   "assumptions": [
+    "Voice language and accent coverage in tests reflect the US market.",
+    "Performance improvements are achievable through software models and back-end improvements without requiring new hardware sensors."
+   ],
+   "uncertainties": [
+    "Performance in very high noise (>70 dB) or with heavy regional accents may be lower.",
+    "Privacy and data handling expectations may constrain some cloud-based voice improvements."
+   ],
+   "offer_check": {
+    "status": "standard",
+    "note": "Includes BMW Intelligent Personal Assistant voice control for vehicle functions and services. (Intelligent Personal Assistant6)",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 3,
+    "rank_max": 6,
+    "top3_share": 0.02,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "50b599",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-US-1f37f8",
+   "title": "Deliver a reliable public‑charging experience: find compatible stations and achieve expected charge speeds",
+   "description": "When customers need to charge away from home, the car should help them quickly locate compatible, available chargers and reach expected charging speeds consistently, with clear guidance about recommended charge limits when extra range is needed.",
+   "acceptance_criterion": "Navigation shows connector compatibility and live availability for at least 85% of nearby public chargers within a 50‑mile radius; in field measurements, at least 90% of DC fast‑charge sessions at compatible stations deliver expected power profiles (within 80% of provider-expected kW for that stall) for the first 80% SOC; scheduled charging starts within ±5 minutes of the requested start time in 95% of attempts; UI shows a clear, one-screen explanation of recommended charge limits and allows a temporary override.",
+   "category": "range_charging",
+   "signal_ids": [
+    "SIG-G60-US-020",
+    "SIG-G60-US-027",
+    "SIG-G60-US-WEB-08",
+    "SIG-G60-US-WEB-02"
+   ],
+   "score": 39.9,
+   "rank": 6,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.917,
+     "weight": 0.25,
+     "contribution": 22.9,
+     "explanation": "Mostly complaints (Difficult to Use), 54 mentions"
+    },
+    "reach": {
+     "value": 0.303,
+     "weight": 0.2,
+     "contribution": 6.1,
+     "explanation": "54 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.0,
+     "weight": 0.2,
+     "contribution": 0.0,
+     "explanation": "no study data"
+    },
+    "competitive_pressure": {
+     "value": 1.0,
+     "weight": 0.15,
+     "contribution": 15.0,
+     "explanation": "competitor advantage backed by a high-trust web source"
+    },
+    "future_relevance": {
+     "value": 0.103,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
+    },
+    "effort_inverse": {
+     "value": 0.2,
+     "weight": 0.1,
+     "contribution": 2.0,
+     "explanation": "effort estimate L"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (22.9 points) and competitive pressure (15 points). Evidence level B: 54 mentions, confirmed only by web sources: A needs a second BMW source (study).",
+   "evidence_level": "B",
+   "assumptions": [
+    "Access to real‑time charger status APIs or aggregator partnerships is feasible for the majority of public networks in target markets.",
+    "Where networks require agreements or adapters (e.g., NACS), BMW can provide compatibility guidance or supported adapters at launch."
+   ],
+   "uncertainties": [
+    "Coverage and quality of public charger data varies regionally; some operators may not provide real‑time occupancy or power data."
+   ],
+   "offer_check": {
+    "status": "standard",
+    "note": "Connected Navigation/BMW Maps plus Mode‑3 cable and 22 kW AC enable locating compatible chargers and expected AC charging speeds. (Connected Navigation)",
+    "option_code": null
+   },
+   "effort": "L",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 2,
+    "rank_max": 10,
+    "top3_share": 0.1,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "1f37f8",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-US-5ef155",
+   "title": "Stable in-car WiFi hotspot for multiple devices",
+   "description": "Customers using the vehicle hotspot can connect multiple devices and stream or browse reliably while on the road.",
+   "acceptance_criterion": "In a connectivity test with 5 simultaneous consumer devices, the in-car hotspot maintains an average usable downlink of ≥5 Mbps per device and sustains connections for 95% of a continuous one-hour session across varied routes (urban/suburban highway mix).",
+   "category": "infotainment_digital",
+   "signal_ids": [
+    "SIG-G60-US-043"
+   ],
+   "score": 37.9,
+   "rank": 7,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 1.0,
+     "weight": 0.25,
+     "contribution": 25.0,
+     "explanation": "Mostly complaints (Difficult to Use), 7 mentions"
+    },
+    "reach": {
+     "value": 0.109,
+     "weight": 0.2,
+     "contribution": 2.2,
+     "explanation": "7 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.52,
+     "weight": 0.2,
+     "contribution": 10.4,
+     "explanation": "WiFi hotspot in vehicle: 13 % unsatisfied"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.103,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (10.4 points). Evidence level B: Only 7 mentions, but confirmed by 2 independent source types.",
+   "evidence_level": "B",
+   "assumptions": [
+    "Cellular network availability and carrier provisioning at launch are similar to current US conditions.",
+    "Throughput per vehicle will depend on carrier plan; targets assume a mid-tier OEM-provided data plan."
+   ],
+   "uncertainties": [
+    "Actual hotspot performance will vary with carrier coverage, congestion, and geographic location.",
+    "User experience can be affected by background system data usage and concurrent vehicle telematics."
+   ],
+   "offer_check": {
+    "status": "standard",
+    "note": "Built-in 4G LTE with fixed SIM provides vehicle cellular data enabling Wi‑Fi hotspot for multiple devices. (4G LTE Connectivity: festverbaute SIM-Karte mit 4G Netz)",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 5,
+    "rank_max": 8,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "5ef155",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-US-4bd62a",
+   "title": "Clearly communicate off‑road capability and provide an explicit mode for light unpaved use",
+   "description": "Customers should understand what the vehicle can and cannot do off‑pavement, and have a selectable mode that assists moderate unpaved or rough road driving without risking vehicle damage or owner surprise.",
+   "acceptance_criterion": "The vehicle offers a clearly labelled 'All‑Road' (light off‑pavement) option with in‑UI limits and recommendations; in a survey of 100 customers who use unpaved roads, ≥95% report that the mode's guidance and the vehicle behavior matched expectations and no preventable vehicle damage was reported attributable to mode misuse.",
+   "category": "driving_experience",
+   "signal_ids": [
+    "SIG-G60-US-045"
+   ],
+   "score": 35.8,
+   "rank": 8,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 1.0,
+     "weight": 0.25,
+     "contribution": 25.0,
+     "explanation": "Mostly complaints, 1 mentions"
+    },
+    "reach": {
+     "value": 0.041,
+     "weight": 0.2,
+     "contribution": 0.8,
+     "explanation": "1 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.72,
+     "weight": 0.2,
+     "contribution": 14.4,
+     "explanation": "Off-Road capability: 18 % unsatisfied"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.103,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
+    },
+    "effort_inverse": {
+     "value": 1.0,
+     "weight": 0.1,
+     "contribution": 10.0,
+     "explanation": "effort estimate S"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (14.4 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+   "evidence_level": "C",
+   "assumptions": [
+    "This requirement targets light off‑pavement use (gravel, dirt roads), not technical off‑roading.",
+    "UI messaging and disclaimers can be validated by legal and after‑sales teams."
+   ],
+   "uncertainties": [
+    "Some customers may interpret 'off‑road' differently; clear wording will be needed to align expectations."
+   ],
+   "offer_check": {
+    "status": "not_offered",
+    "note": "No option or package provides an Off‑Road driving mode or communicates off‑road capability in the given equipment list.",
+    "option_code": null
+   },
+   "effort": "S",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 6,
+    "rank_max": 13,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "4bd62a",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-US-c2d5c9",
+   "title": "Make flat-tire preparedness obvious and easy to act on for customers",
+   "description": "When faced with a flat tire the customer can quickly find the repair kit/spare-related tools and clear instructions so they feel confident to take immediate next steps (repair, temporary fix, or request help).",
+   "acceptance_criterion": "In a timed usability test, ≥90% of participants locate the tire repair kit or spare-related tools and the step‑by‑step instructions within 120 seconds while standing at the rear of the car; repair kit/storage is clearly labeled and its presence is indicated in the owner's materials.",
+   "category": "comfort_space",
+   "signal_ids": [
+    "SIG-G60-US-044"
+   ],
+   "score": 35.8,
+   "rank": 9,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 1.0,
+     "weight": 0.25,
+     "contribution": 25.0,
+     "explanation": "Mostly complaints, 1 mentions"
+    },
+    "reach": {
+     "value": 0.041,
+     "weight": 0.2,
+     "contribution": 0.8,
+     "explanation": "1 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.72,
+     "weight": 0.2,
+     "contribution": 14.4,
+     "explanation": "If applicable: Flat tire preparedness (spare, run flat, etc.): 18 % unsatisfied"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.103,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
+    },
+    "effort_inverse": {
+     "value": 1.0,
+     "weight": 0.1,
+     "contribution": 10.0,
+     "explanation": "effort estimate S"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (14.4 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+   "evidence_level": "C",
+   "assumptions": [
+    "Usability test participants include typical owners and non-technical users.",
+    "Labeling and documentation are available in the vehicle and in digital owner materials."
+   ],
+   "uncertainties": [
+    "Actual resolution (spare vs inflator vs run-flat) will be decided by packaging and cost trade-offs.",
+    "Some customers will still prefer dealer assistance rather than self-repair."
+   ],
+   "offer_check": {
+    "status": "standard",
+    "note": "Standard includes a tire repair kit (or Reifenpannenset Plus), enabling immediate, on‑the‑spot action for a flat tire. (Reifenreparatur Set oder Reifenpannenset Plus)",
+    "option_code": null
+   },
+   "effort": "S",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 7,
+    "rank_max": 14,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "c2d5c9",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-US-06010e",
+   "title": "Make odometer and trip mileage obvious and easy to access without dealer help",
+   "description": "Customers can find and reset odometer/trip information quickly using steering-wheel controls or a one-tap instrument-cluster shortcut, removing confusion and the need for dealer assistance.",
+   "acceptance_criterion": "In a blind usability task (no prior instruction) with 40 participants, 90% locate the odometer/trip readout and perform a trip reset in ≤10 seconds; documented dealer assistance requests for finding mileage drop by ≥80% in post-launch feedback.",
+   "category": "infotainment_digital",
+   "signal_ids": [
+    "SIG-G60-US-021"
+   ],
+   "score": 34.0,
+   "rank": 10,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 1.0,
+     "weight": 0.25,
+     "contribution": 25.0,
+     "explanation": "Mostly complaints (Difficult to Use), 24 mentions"
+    },
+    "reach": {
+     "value": 0.202,
+     "weight": 0.2,
+     "contribution": 4.0,
+     "explanation": "24 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.0,
+     "weight": 0.2,
+     "contribution": 0.0,
+     "explanation": "no study data"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.103,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
+    },
+    "effort_inverse": {
+     "value": 1.0,
+     "weight": 0.1,
+     "contribution": 10.0,
+     "explanation": "effort estimate S"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (25 points) and effort inverse (10 points). Evidence level B: 24 mentions, but from a single source type.",
+   "evidence_level": "B",
+   "assumptions": [
+    "Instrument-cluster UI can be updated to include clearer, persistent trip/odometer access points.",
+    "Dealers track and report assistance requests comparably to current baseline."
+   ],
+   "uncertainties": [
+    "Some customers with strong prior habits may still request help; measurement relies on accurate tracking of dealer contacts."
+   ],
+   "offer_check": {
+    "status": "standard",
+    "note": "12.3 inch digital instrument display shows odometer and trip readings, easy to view and access without dealer help. (Displaykombination mit 12,3\" volldigitalem Instrumentendisplay und 14,9\" Control Display)",
+    "option_code": null
+   },
+   "effort": "S",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 8,
+    "rank_max": 13,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "06010e",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-US-2830a1",
+   "title": "Provide practical interior storage and preserve the cabin's roomy feel",
+   "description": "Customers experience a cabin and storage layout that makes everyday items easy to stow and retrieve, and they still perceive the car as roomier than their previous vehicles—supporting passengers, children and pets comfortably.",
+   "acceptance_criterion": "Front center storage fits two large smartphones (e.g., large modern 'plus' phones with cases) side-by-side plus a 1.0 L water bottle; in a timed usability test ≥85% of participants can store and retrieve commonly used items (phone, wallet, keys, sunglasses) within 5 seconds; in a post-delivery survey ≥80% of rear-seat users rate cabin roominess as 'roomy' or better.",
+   "category": "comfort_space",
+   "signal_ids": [
+    "SIG-G60-US-040",
+    "SIG-G60-US-016",
+    "SIG-G60-US-013"
+   ],
+   "score": 34.0,
+   "rank": 11,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.488,
+     "weight": 0.25,
+     "contribution": 12.2,
+     "explanation": "Mostly strengths (Likes / Difficult to Use), 68 mentions"
+    },
+    "reach": {
+     "value": 0.34,
+     "weight": 0.2,
+     "contribution": 6.8,
+     "explanation": "68 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.4,
@@ -7079,10 +7827,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -7091,122 +7839,65 @@
      "explanation": "effort estimate M"
     }
    },
-   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (8 points). Evidence level A: 27 mentions, confirmed by 2 independent source types.",
+   "rationale": "Ranked mainly because of customer pain (12.2 points) and satisfaction gap (8 points). Evidence level A: 68 mentions, confirmed by 2 independent source types.",
    "evidence_level": "A",
    "assumptions": [
-    "Phone sizes and typical cases continue to follow current trends; major new form factors could require later adjustment.",
-    "Physical retention features (lip, textured surface) are acceptable to customers versus a strictly flat tray."
+    "Usability tests use representative items and participant body sizes, including children/child seat scenarios for rear-seat feedback.",
+    "Minor changes to console packaging are acceptable to provide additional storage volume."
    ],
    "uncertainties": [
-    "Very large phones or non-standard cases may still require a cable; impossible to guarantee fit for every accessory."
+    "Trade-offs between storage capacity and other features (armrest size, wireless charging pad location) may require prioritization."
    ],
    "offer_check": {
     "status": "standard",
-    "note": "Wireless Charging Ablage provides a dedicated, secure phone tray improving phone fit and practical storage. (Wireless Charging Ablage)",
+    "note": "Foldable 40:20:40 pass-through enables practical storage for long items while keeping cabin spacious. (Durchladesystem 40:20:40)",
     "option_code": null
    },
    "effort": "M",
    "status": "proposed",
-   "version": 1
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 7,
+    "rank_max": 14,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "2830a1",
+   "badges": []
   },
   {
-   "id": "REQ-G60-US-005",
-   "title": "Realistic and stable EV range estimates and improved charging speed guidance",
-   "description": "Customers see a consistent, trustworthy displayed electric range that closely matches real-world consumption across common usage and conditions, and receive clear guidance about charging compatibility and expected times so they can plan trips without repeated range anxiety. The vehicle supports widely used public charging standards or adapters and provides preconditioning guidance when needed.",
-   "acceptance_criterion": "Range and charging validation: (a) Worldwide on-road testing across warm and cold conditions shows the displayed remaining electric range is within ±10% of measured real-world range in 90% of trips over 50 miles; (b) at common DC public chargers (150 kW class), the vehicle charges to 80% state-of-charge in ≤30 minutes when ambient/pack conditions allow (measured in standardized test); (c) navigation/charging UI lists compatibility and nearby available stations with real-time status and success guidance, and user tests show 90% of participants can find a compatible nearby charger within 60 seconds.",
-   "category": "range_charging",
-   "signal_ids": [
-    "SIG-G60-US-009",
-    "SIG-G60-US-014",
-    "SIG-G60-US-027",
-    "SIG-G60-US-020",
-    "SIG-G60-US-WEB-02",
-    "SIG-G60-US-WEB-08"
-   ],
-   "score": 43.7,
-   "rank": 6,
-   "score_breakdown": {
-    "customer_pain": {
-     "value": 0.823,
-     "weight": 0.25,
-     "contribution": 20.6,
-     "explanation": "Mostly complaints (Difficult to Use), 120 mentions"
-    },
-    "reach": {
-     "value": 0.442,
-     "weight": 0.2,
-     "contribution": 8.8,
-     "explanation": "120 of at most 613 mentions (square root scale); US = 25 % of 2030 volume"
-    },
-    "satisfaction_gap": {
-     "value": 0.0,
-     "weight": 0.2,
-     "contribution": 0.0,
-     "explanation": "no study data"
-    },
-    "competitive_pressure": {
-     "value": 1.0,
-     "weight": 0.15,
-     "contribution": 15.0,
-     "explanation": "competitor advantage backed by a high-trust web source"
-    },
-    "future_relevance": {
-     "value": 0.5,
-     "weight": 0.1,
-     "contribution": 5.0,
-     "explanation": "rests partly on a forward-looking assumption"
-    },
-    "effort_inverse": {
-     "value": 0.2,
-     "weight": 0.1,
-     "contribution": 2.0,
-     "explanation": "effort estimate L"
-    }
-   },
-   "rationale": "Ranked mainly because of customer pain (20.6 points) and competitive pressure (15 points). Evidence level B: 120 mentions, confirmed only by web sources: A needs a second BMW source (study).",
-   "evidence_level": "B",
-   "assumptions": [
-    "Public charging networks and station power levels will continue to improve; successor vehicle battery and thermal management enable faster charging within safe limits.",
-    "Charging time targets assume a sufficiently powerful charger is available (e.g., ≥150 kW)."
-   ],
-   "uncertainties": [
-    "Conflicting evidence: \"Range feels limited and fluctuates\" vs. \"Range is better than quoted and fits commute\"",
-    "Actual achieved charging speeds depend on public charger power, queuing, and network availability.",
-    "Range accuracy can be affected by driver behavior, payload, terrain and weather; precise calibration across all conditions is challenging."
-   ],
-   "offer_check": {
-    "status": "not_offered",
-    "note": "No listed option provides EV range prediction or charging speed guidance; only charging hardware and general connectivity are present.",
-    "option_code": null
-   },
-   "effort": "L",
-   "status": "proposed",
-   "version": 1
-  },
-  {
-   "id": "REQ-G60-US-002",
-   "title": "Braking should feel confident and quiet with low dust and no grabby behavior",
-   "description": "Customers experience brakes that stop smoothly and quietly without squeal or grinding, produce noticeably less visible rotor/pad dust on wheels, and deliver a consistent, progressive pedal feel that does not feel grabby or cause jerky stops.",
-   "acceptance_criterion": "In durability and NVH testing and early-owner validation: (a) ≤2% of a 200-owner initial ownership cohort report brake squeal/grinding within first 3 months; (b) measured wheel-dust mass after a standardized urban driving loop is reduced by ≥30% versus the G60 baseline; (c) subjective pedal feel 'grabby' rating ≤10% negative in a 50-driver braking perception panel.",
+   "id": "REQ-G60-US-244ff6",
+   "title": "Let drivers permanently disable automatic engine start‑stop and retain that preference",
+   "description": "Customers should be able to set engine auto start‑stop to 'off' as their default and have that choice persist across key cycles, so they do not need to reselect it every drive.",
+   "acceptance_criterion": "The vehicle provides a persistent user preference for auto start‑stop that remains off after vehicle power‑cycles and software updates in ≥99% of cases; in usability testing, 95% of drivers can find and set this preference within two direct interactions from typical driving controls.",
    "category": "driving_experience",
    "signal_ids": [
-    "SIG-G60-US-015",
-    "SIG-G60-US-WEB-05"
+    "SIG-G60-US-025",
+    "SIG-G60-US-039"
    ],
-   "score": 42.2,
-   "rank": 7,
+   "score": 32.5,
+   "rank": 12,
    "score_breakdown": {
     "customer_pain": {
-     "value": 0.922,
+     "value": 0.9,
      "weight": 0.25,
-     "contribution": 23.0,
-     "explanation": "Mostly complaints (Difficult to Use), 32 mentions"
+     "contribution": 22.5,
+     "explanation": "Mostly complaints (Wants / Difficult to Use), 33 mentions"
     },
     "reach": {
-     "value": 0.228,
+     "value": 0.237,
      "weight": 0.2,
-     "contribution": 4.6,
-     "explanation": "32 of at most 613 mentions (square root scale); US = 25 % of 2030 volume"
+     "contribution": 4.7,
+     "explanation": "33 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -7215,85 +7906,16 @@
      "explanation": "no study data"
     },
     "competitive_pressure": {
-     "value": 1.0,
+     "value": 0.0,
      "weight": 0.15,
-     "contribution": 15.0,
-     "explanation": "competitor advantage backed by a high-trust web source"
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
-    },
-    "effort_inverse": {
-     "value": 0.6,
-     "weight": 0.1,
-     "contribution": 6.0,
-     "explanation": "effort estimate M"
-    }
-   },
-   "rationale": "Ranked mainly because of customer pain (23 points) and competitive pressure (15 points). Evidence level B: 32 mentions, confirmed only by web sources: A needs a second BMW source (study).",
-   "evidence_level": "B",
-   "assumptions": [
-    "Improved friction material and brake system calibration can reduce dust and NVH without unacceptable trade-offs in stopping distance.",
-    "G60 baseline dust measurements are available for comparison."
-   ],
-   "uncertainties": [
-    "Brake dust and NVH depend on wheel finish, contaminant exposure and driver style; variation across markets may occur.",
-    "Perception thresholds for 'squeal' differ between users."
-   ],
-   "offer_check": {
-    "status": "not_offered",
-    "note": "No offered option specifies quiet, low-dust, non-grabby braking; only an M Sport brake is listed.",
-    "option_code": null
-   },
-   "effort": "M",
-   "status": "proposed",
-   "version": 1
-  },
-  {
-   "id": "REQ-G60-US-012",
-   "title": "Provide basic roadside preparedness and clearly communicate spare/repair options",
-   "description": "Customers have clear, usable options for tire issues and roadside preparedness (e.g., spare, run-flat, inflator kit) and understand how the vehicle supports such situations, reducing dissatisfaction about 'flat tire preparedness'.",
-   "acceptance_criterion": "Documentation and equipment validation: (a) Each vehicle is delivered with either a run-flat tire solution or an inflator/repair kit and clear owner instructions; (b) in a representative owner survey, dissatisfaction related to flat tire preparedness falls to ≤10% (from current 18% study baseline); (c) emergency tire information and repair instructions are discoverable in ≤2 taps from the main vehicle info screen and in the quick-start guide.",
-   "category": "exterior",
-   "signal_ids": [
-    "SIG-G60-US-WEB-04",
-    "SIG-G60-US-044"
-   ],
-   "score": 40.3,
-   "rank": 8,
-   "score_breakdown": {
-    "customer_pain": {
-     "value": 0.625,
-     "weight": 0.25,
-     "contribution": 15.6,
-     "explanation": "Mostly competitor advantages, 4 mentions"
-    },
-    "reach": {
-     "value": 0.081,
-     "weight": 0.2,
-     "contribution": 1.6,
-     "explanation": "4 of at most 613 mentions (square root scale); US = 25 % of 2030 volume"
-    },
-    "satisfaction_gap": {
-     "value": 0.72,
-     "weight": 0.2,
-     "contribution": 14.4,
-     "explanation": "If applicable: Flat tire preparedness (spare, run flat, etc.): 18 % unsatisfied"
-    },
-    "competitive_pressure": {
-     "value": 1.0,
-     "weight": 0.15,
-     "contribution": 15.0,
-     "explanation": "competitor advantage backed by a high-trust web source"
-    },
-    "future_relevance": {
-     "value": 0.1,
-     "weight": 0.1,
-     "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 1.0,
@@ -7302,48 +7924,66 @@
      "explanation": "effort estimate S"
     }
    },
-   "rationale": "Ranked mainly because of customer pain (15.6 points) and competitive pressure (15 points). Evidence level C: Only 4 mentions: a hint, not a solid finding.",
-   "evidence_level": "C",
+   "rationale": "Ranked mainly because of customer pain (22.5 points) and effort inverse (10 points). Evidence level B: 33 mentions, but from a single source type.",
+   "evidence_level": "B",
    "assumptions": [
-    "Providing an inflator kit or run-flat option complies with packaging and regulatory choices in target markets.",
-    "Owner education can substantially reduce perceived dissatisfaction."
+    "Persistent user-profile storage is available and can be scoped for a default setting applicable to key drivers.",
+    "Regulatory constraints do not mandate temporary re‑enablement in certain circumstances."
    ],
    "uncertainties": [
-    "Some customers will still prefer a physical spare tire; offering both may be impractical in all trims."
+    "There may be region-specific legal or emissions-related rules that influence allowed persistence behavior."
    ],
    "offer_check": {
-    "status": "standard",
-    "note": "Standard includes a tire repair or puncture kit, offering basic roadside preparedness and a repair option. (Reifenreparatur Set oder Reifenpannenset Plus)",
+    "status": "not_offered",
+    "note": "No listed option or package mentions start‑stop deactivation or a memory function to permanently disable automatic engine start‑stop.",
     "option_code": null
    },
    "effort": "S",
    "status": "proposed",
-   "version": 1
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 9,
+    "rank_max": 15,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "244ff6",
+   "badges": []
   },
   {
-   "id": "REQ-G60-US-004",
-   "title": "Hands-free trunk and Comfort Access must work reliably and predictably",
-   "description": "When customers perform the hands-free kick-to-open gesture or approach with Comfort Access, the trunk opens reliably on the first intended attempt and Comfort Access consistently unlocks the vehicle according to the user's preferred setting.",
-   "acceptance_criterion": "Validation and field testing: (a) Kick-to-open trunk opens on first correct gesture in ≥98% of 1,000 mixed-condition trials (varied footwear, carrying items, rain/dry, lighting); (b) approach Comfort Access unlock behavior adheres to the user's selected default (all doors vs driver-only) in 99% of authenticated proximity events during a 60‑day field trial.",
+   "id": "REQ-G60-US-13b22b",
+   "title": "Make vehicle access and hands-free trunk behavior reliable and user-configurable",
+   "description": "When approaching, unlocking or loading the car, the customer experiences predictable, reliable behavior: Comfort Access and the kick-to-open trunk work consistently and owners can choose unlock behavior (driver-only or all doors) and enable/disable hands-free trunk activation so access is not confusing or frustrating.",
+   "acceptance_criterion": "Hands-free trunk (kick-to-open) succeeds on the first normal user attempt in ≥95% of trials and opens with latency <1.5 s; Comfort Access provides a user-selectable setting for 'unlock driver only' or 'unlock all doors' and when set to 'unlock all' opens all doors in ≥95% of approach tests; owners can find and change the related settings within 30 seconds in a standard UI walkthrough.",
    "category": "comfort_space",
    "signal_ids": [
     "SIG-G60-US-008",
-    "SIG-G60-US-041"
+    "SIG-G60-US-041",
+    "SIG-G60-US-018"
    ],
-   "score": 30.9,
-   "rank": 9,
+   "score": 32.5,
+   "rank": 13,
    "score_breakdown": {
     "customer_pain": {
-     "value": 0.945,
+     "value": 0.964,
      "weight": 0.25,
-     "contribution": 23.6,
-     "explanation": "Mostly complaints (Wants / Difficult to Use), 49 mentions"
+     "contribution": 24.1,
+     "explanation": "Mostly complaints (Difficult to Use / Wants), 75 mentions"
     },
     "reach": {
-     "value": 0.283,
+     "value": 0.357,
      "weight": 0.2,
-     "contribution": 5.7,
-     "explanation": "49 of at most 613 mentions (square root scale); US = 25 % of 2030 volume"
+     "contribution": 7.1,
+     "explanation": "75 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -7358,10 +7998,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -7370,55 +8010,65 @@
      "explanation": "effort estimate M"
     }
    },
-   "rationale": "Ranked mainly because of customer pain (23.6 points) and effort inverse (6 points). Evidence level B: 49 mentions, confirmed only by web sources: A needs a second BMW source (study).",
+   "rationale": "Ranked mainly because of customer pain (24.1 points) and reach (7.1 points). Evidence level B: 75 mentions, confirmed only by web sources: A needs a second BMW source (study).",
    "evidence_level": "B",
    "assumptions": [
-    "Sensors and software algorithms can be refined to reduce false negatives/positives without adding unacceptable hardware cost.",
-    "Field tests will include varied real-world footwear, clothing and load scenarios."
+    "Test trials are run across typical real-world conditions (pockets, foot motions, ambient noise and lighting).",
+    "Software settings exist that allow customers to change unlock behavior without dealer intervention."
    ],
    "uncertainties": [
-    "Some failure modes (extreme mud/ice or sensor obstruction) may still cause occasional misses.",
-    "User expectations for what 'reliable' means can vary by situation and culture."
+    "Extreme environmental conditions or obstructed key fob signals may still produce edge-case failures.",
+    "Third‑party key‑fob or aftermarket accessories may affect performance."
    ],
    "offer_check": {
     "status": "optional",
-    "note": "Contains automatic tailgate operation and Komfortzugang (Comfort Access), covering hands‑free trunk and Comfort Access. (TRAVEL PAKET)",
+    "note": "Includes Comfort Access and automatic tailgate for reliable keyless and hands‑free access; settings configurable via vehicle system. (TRAVEL PAKET)",
     "option_code": "7LK"
    },
    "effort": "M",
    "status": "proposed",
-   "version": 1
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 8,
+    "rank_max": 14,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "13b22b",
+   "badges": []
   },
   {
-   "id": "REQ-G60-US-001",
-   "title": "Keep the BMW driving character: strong, smooth and predictable acceleration with controllable sportiness",
-   "description": "Customers experience strong, repeatable acceleration and a refined, planted ride: the car still feels quick and sporty when demanded, yet smooth, linear and predictable across everyday driving and mode changes. Sporty launch and responsive throttle are available without abrupt surges, jerks or late/harsh transitions between electric and combustion assistance, and drivers can choose driveline feel through My Modes.",
-   "acceptance_criterion": "In instrumented vehicle validation and owner trials: (a) 0–60 mph is within ±5% of the advertised value for the tested trim on 95% of runs; (b) driver-perceived abrupt torque spikes or jerk events occur in ≤5% of logged throttle transitions across 1,000 real-world test miles; (c) in a 30‑driver user panel, ≥90% rate acceleration as 'smooth and appropriately strong' in both Comfort and Sport/My Modes.",
-   "category": "driving_experience",
+   "id": "REQ-G60-US-b96373",
+   "title": "Reliable Apple CarPlay connection and playback",
+   "description": "Customers can pair and use Apple CarPlay reliably: pairing/connect works quickly and media and phone functions stream/play without unexpected disconnects so customers keep using CarPlay rather than disabling it.",
+   "acceptance_criterion": "In a compatibility test across 50 representative phone/OS combinations and daily-use scenarios: CarPlay connects within 15 seconds on 95% of first-attempt pairings (wired and wireless where supported) and maintains uninterrupted audio/media playback for 95% of 2‑hour continuous sessions; in a field test across 100 real-world drives the rate of unplanned CarPlay disconnects is ≤2% of drives.",
+   "category": "infotainment_digital",
    "signal_ids": [
-    "SIG-G60-US-001",
-    "SIG-G60-US-002",
-    "SIG-G60-US-004",
-    "SIG-G60-US-012",
-    "SIG-G60-US-017",
-    "SIG-G60-US-034",
-    "SIG-G60-US-036",
-    "SIG-G60-US-039"
+    "SIG-G60-US-019"
    ],
-   "score": 29.1,
-   "rank": 10,
+   "score": 30.7,
+   "rank": 14,
    "score_breakdown": {
     "customer_pain": {
-     "value": 0.449,
+     "value": 1.0,
      "weight": 0.25,
-     "contribution": 11.2,
-     "explanation": "Mostly strengths (Wants / Likes), 613 mentions"
+     "contribution": 25.0,
+     "explanation": "Mostly complaints (Difficult to Use), 25 mentions"
     },
     "reach": {
-     "value": 1.0,
+     "value": 0.206,
      "weight": 0.2,
-     "contribution": 20.0,
-     "explanation": "613 of at most 613 mentions (square root scale); US = 25 % of 2030 volume"
+     "contribution": 4.1,
+     "explanation": "25 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -7433,10 +8083,100 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (25 points) and effort inverse (6 points). Evidence level B: 25 mentions, confirmed only by web sources: A needs a second BMW source (study).",
+   "evidence_level": "B",
+   "assumptions": [
+    "Phone/OS distribution at launch is similar to current US market (iOS versions and hardware variety).",
+    "Cooperation with Apple for CarPlay compatibility and regular software updates is available."
+   ],
+   "uncertainties": [
+    "Some disconnects may be caused by phone OS bugs outside vehicle control; mitigation depends on Apple updates.",
+    "Wireless CarPlay performance varies with phone model and radio interference."
+   ],
+   "offer_check": {
+    "status": "standard",
+    "note": "Smartphone Integration (compatible smartphones required) is standard, covering Apple CarPlay connection and playback. (Smartphone Integration (Kompatibles Smartphone erforderlich)7)",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 13,
+    "rank_max": 16,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "b96373",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-US-09a701",
+   "title": "Keep the car’s strong acceleration and smooth, sporty handling while eliminating jerky or inconsistent power delivery",
+   "description": "Customers should experience the current BMW 5er’s satisfying quick acceleration and planted, responsive handling but without underpowered feelings, abrupt surges, or jerky transitions when changing drive sources or launching.",
+   "acceptance_criterion": "In standardized driving validation and customer test drives (≥500 driver sessions total): average subjective smoothness rating ≥4.5/5; no more than 1% of launches or power-source transitions exhibit a perceptible surge, delay, or jerk in a 1,000-event test; and >90% of customers in follow-up surveys report the car feels appropriately peppy for its class.",
+   "category": "driving_experience",
+   "signal_ids": [
+    "SIG-G60-US-001",
+    "SIG-G60-US-002",
+    "SIG-G60-US-004",
+    "SIG-G60-US-022",
+    "SIG-G60-US-012",
+    "SIG-G60-US-036"
+   ],
+   "score": 28.9,
+   "rank": 15,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.439,
+     "weight": 0.25,
+     "contribution": 11.0,
+     "explanation": "Mostly strengths (Likes), 587 mentions"
+    },
+    "reach": {
+     "value": 1.0,
+     "weight": 0.2,
+     "contribution": 20.0,
+     "explanation": "587 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.0,
+     "weight": 0.2,
+     "contribution": 0.0,
+     "explanation": "no study data"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.103,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.2,
@@ -7445,55 +8185,158 @@
      "explanation": "effort estimate L"
     }
    },
-   "rationale": "Ranked mainly because of reach (20 points) and customer pain (11.2 points). Evidence level B: 613 mentions, confirmed only by web sources: A needs a second BMW source (study).",
+   "rationale": "Ranked mainly because of reach (20 points) and customer pain (11 points). Evidence level B: 587 mentions, confirmed only by web sources: A needs a second BMW source (study).",
    "evidence_level": "B",
    "assumptions": [
-    "Powertrain calibration and hybrid control logic improvements are feasible for the successor vehicle within 3–5 years without major hardware redesign.",
-    "Testing will include a representative mix of PHEV and BEV configurations; advertised 0–60 uses production-spec powertrains."
+    "We can define repeatable test protocols for launch and power-source transition events that reproduce customer-reported issues.",
+    "Baseline subjective satisfaction scales and current G60 performance data are available for comparison."
    ],
    "uncertainties": [
     "Conflicting evidence: \"Love how fast and powerful it feels\" vs. \"Power delivery is weak, jerky, or inconsistent\"",
     "Conflicting evidence: \"Love how fast and powerful it feels\" vs. \"Drivetrain: unmet_need\"",
     "Conflicting evidence: \"Smooth and comfortable ride with sporty, responsive handling\" vs. \"Power delivery is weak, jerky, or inconsistent\"",
-    "Real-world variability due to battery state-of-charge, temperature and fuel level may affect repeatability and perceived smoothness.",
-    "Perception of 'smooth' vs 'sporty' is subjective; user panel composition can influence results."
+    "Some root causes of jerky delivery may be hardware-linked and require supplier timelines beyond typical feature calibration windows."
    ],
    "offer_check": {
     "status": "standard",
-    "note": "Launch Control provides strong, predictable acceleration and controllable sporty launches. (Launch Control)",
+    "note": "Steptronic gearbox with paddle shifters provides smooth, consistent shifts, preserving strong acceleration and reducing jerky power delivery. (Steptronic Getriebe mit Schaltwippen)",
     "option_code": null
    },
    "effort": "L",
    "status": "proposed",
-   "version": 1
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 7,
+    "rank_max": 18,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "09a701",
+   "badges": []
   },
   {
-   "id": "REQ-G60-US-011",
-   "title": "Offer meaningful, easy-to-use ambient lighting and give customers a clearer interior design choice set (including panoramic roof option)",
-   "description": "Customers can personalize ambient lighting with easy presets and intensity controls, and the vehicle's interior and exterior styling options (including an available panoramic glass roof) respond to customer expectations for a premium look while offering clear, selectable design variants.",
-   "acceptance_criterion": "Design and preference validation: (a) Ambient lighting provides at least 6 color scenes and 3 intensity levels, and ≥90% of participants can set a preferred scene within 3 taps; (b) in a styling preference clinic, ≥70% of participants prefer the successor design options (new color/material/roof combos) over the current G60 baseline; (c) when a panoramic glass roof is offered, ≥60% of surveyed potential buyers indicate it is a desirable option in the configurator tests.",
-   "category": "interior",
+   "id": "REQ-G60-US-6704d5",
+   "title": "Provide accurate, stable real-world electric-range estimates and avoid large jumps in the displayed range",
+   "description": "Customers should see a range estimate they can trust for trip planning: the display must reflect real-world conditions consistently and avoid sudden, unexplained swings that cause anxiety on longer trips.",
+   "acceptance_criterion": "Across cold-weather, mixed-use and highway drives in objective validation runs, the displayed estimated range shall deviate from measured real-world range by no more than ±7% on average; consecutive range estimations at rest shall vary by less than 3% in 95% of checks; user trials show a reduction of range-related anxiety complaints by ≥60% versus current baseline.",
+   "category": "range_charging",
    "signal_ids": [
+    "SIG-G60-US-009",
+    "SIG-G60-US-014"
+   ],
+   "score": 27.5,
+   "rank": 16,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.745,
+     "weight": 0.25,
+     "contribution": 18.6,
+     "explanation": "Mostly complaints (Likes), 66 mentions"
+    },
+    "reach": {
+     "value": 0.335,
+     "weight": 0.2,
+     "contribution": 6.7,
+     "explanation": "66 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.0,
+     "weight": 0.2,
+     "contribution": 0.0,
+     "explanation": "no study data"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.103,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (18.6 points) and reach (6.7 points). Evidence level B: 66 mentions, confirmed only by web sources: A needs a second BMW source (study).",
+   "evidence_level": "B",
+   "assumptions": [
+    "We can instrument representative vehicles and routes to capture real-world consumption across temperatures and driving styles.",
+    "Customers will accept a conservative bias when conditions are uncertain if it reduces unexpected depletion events."
+   ],
+   "uncertainties": [
+    "Conflicting evidence: \"Range feels limited and fluctuates\" vs. \"Range is better than quoted and fits commute\"",
+    "Extreme outlier conditions (very cold weather, sustained high-speed driving with payload) may exceed the target deviation in some cases."
+   ],
+   "offer_check": {
+    "status": "not_offered",
+    "note": "No listed equipment or package provides EV range-prediction or stabilized real-world electric-range display features.",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 15,
+    "rank_max": 18,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "6704d5",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-US-b7f842",
+   "title": "Keep the 5 Series' admired exterior and interior styling while expanding owner personalization",
+   "description": "Owners continue to experience the current car’s sporty, luxurious exterior and refined interior while having clearer options to personalize appearance and cabin ambiance (more exterior trim/color choices, richer ambient-light control and an available panoramic glass roof) so buyers who praise the design keep that emotional benefit and those who raised unmet needs get visible personalization choices.",
+   "acceptance_criterion": "Post-delivery survey: ≥75% of new owners rate exterior styling positively and ≥80% rate interior design positively. Vehicle offers at least 8 ambient-light colors and at least 3 lighting scenes. If customer selects the panoramic glass roof option, in a perception test ≥80% of participants report increased perceived spaciousness vs the standard roof.",
+   "category": "exterior",
+   "signal_ids": [
+    "SIG-G60-US-003",
     "SIG-G60-US-005",
     "SIG-G60-US-031",
     "SIG-G60-US-033",
     "SIG-G60-US-035",
     "SIG-G60-US-037"
    ],
-   "score": 28.1,
-   "rank": 11,
+   "score": 27.0,
+   "rank": 17,
    "score_breakdown": {
     "customer_pain": {
-     "value": 0.522,
+     "value": 0.459,
      "weight": 0.25,
-     "contribution": 13.1,
-     "explanation": "Mostly strengths (Wants / Likes), 125 mentions"
+     "contribution": 11.5,
+     "explanation": "Mostly strengths (Wants / Likes), 260 mentions"
     },
     "reach": {
-     "value": 0.452,
+     "value": 0.666,
      "weight": 0.2,
-     "contribution": 9.0,
-     "explanation": "125 of at most 613 mentions (square root scale); US = 25 % of 2030 volume"
+     "contribution": 13.3,
+     "explanation": "260 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -7508,10 +8351,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.5,
+     "value": 0.103,
      "weight": 0.1,
-     "contribution": 5.0,
-     "explanation": "rests partly on a forward-looking assumption"
+     "contribution": 1.0,
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -7520,51 +8363,71 @@
      "explanation": "effort estimate M"
     }
    },
-   "rationale": "Ranked mainly because of customer pain (13.1 points) and reach (9 points). Evidence level B: 125 mentions, but from a single source type.",
+   "rationale": "Ranked mainly because of reach (13.3 points) and customer pain (11.5 points). Evidence level B: 260 mentions, but from a single source type.",
    "evidence_level": "B",
    "assumptions": [
-    "Offering multiple interior trim and ambient lighting packages is acceptable commercially and technically for the successor vehicle.",
-    "Panoramic roof option is feasible within vehicle packaging and regulatory constraints."
+    "Survey targets and perception tests use representative US buyer samples similar to current ownership base.",
+    "Ambient-light implementation can be offered without degrading perceived material quality.",
+    "Panoramic roof option will be an optional equipment line rather than standard on all trims."
    ],
    "uncertainties": [
+    "Conflicting evidence: \"Love the car's exterior styling\" vs. \"Exterior design: unmet_need\"",
     "Conflicting evidence: \"I really love the interior design\" vs. \"Interior design: unmet_need\"",
-    "Stylistic preferences vary by market; acceptance clinic results may differ regionally.",
-    "Ambient lighting hardware and electrical load trade-offs must be balanced against other features."
+    "Manufacturing/packaging limits may constrain number of exterior/trim variants.",
+    "Customer taste differences across regions may change perceived 'right' number of personalization options."
    ],
    "offer_check": {
     "status": "optional",
-    "note": "Ambient lighting is standard (O23); panoramic glass roof is offered as optional Panorama Glasdach (O128). (Panorama Glasdach inkl. Dachlackierung in Schwarz Hochglanz)",
-    "option_code": "402"
+    "note": "BMW Individual special paint offers expanded exterior personalization while preserving the 5 Series' styling. (BMW Individual Sonderlackierung)",
+    "option_code": "490"
    },
    "effort": "M",
    "status": "proposed",
-   "version": 1
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 14,
+    "rank_max": 18,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "b7f842",
+   "badges": []
   },
   {
-   "id": "REQ-G60-US-003",
-   "title": "Seating must fit and comfort a wide range of body sizes with clear sightlines for shorter drivers",
-   "description": "Drivers of different statures find the seat comfortable, supportive and adjustable enough to obtain a clear forward view over the hood. Seat controls and support (height, tilt, lumbar, leg extension, side bolsters) adapt to both smaller and larger occupants without causing pressure points or ineffective bolstering.",
-   "acceptance_criterion": "Design validation and user testing: (a) 95% of drivers between 5th and 95th percentile anthropometry report a clear sightline over the hood and unobstructed instrument view after adjusting the seat; (b) 90% of the same group rate seat comfort and lateral support as 'satisfactory' for a continuous 90‑minute drive; (c) seat vertical adjustment range provides at least 80 mm usable travel from lowest to highest positions (assessed in engineering verification).",
+   "id": "REQ-G60-US-5ae055",
+   "title": "Ensure seats are comfortable, supportive and adjustable enough for a wider range of occupants",
+   "description": "Drivers and passengers experience seats that feel luxurious on long trips, with adjustable height range, selectable firmness levels, adjustable side-bolsters and leg-extension support so both shorter and taller occupants find a comfortable, non‑painful seating position.",
+   "acceptance_criterion": "In an occupant fit and comfort study (n≥20) that includes drivers as short as the US 5th-percentile female (~152 cm / ~5'0\"), ≥90% of participants report an unobstructed forward sightline over the hood with the seat at its highest setting; seats provide at least three firmness/personalization presets and bolsters that are adjustable or selectable; in a 60‑minute simulated long‑drive test ≥85% of participants rate seat comfort as 'comfortable' or better.",
    "category": "comfort_space",
    "signal_ids": [
+    "SIG-G60-US-006",
     "SIG-G60-US-007",
     "SIG-G60-US-010",
     "SIG-G60-US-038"
    ],
-   "score": 26.9,
-   "rank": 12,
+   "score": 26.6,
+   "rank": 18,
    "score_breakdown": {
     "customer_pain": {
-     "value": 0.683,
+     "value": 0.584,
      "weight": 0.25,
-     "contribution": 17.1,
-     "explanation": "Mostly strengths (Wants / Likes), 89 mentions"
+     "contribution": 14.6,
+     "explanation": "Mostly strengths (Likes / Wants), 137 mentions"
     },
     "reach": {
-     "value": 0.381,
+     "value": 0.483,
      "weight": 0.2,
-     "contribution": 7.6,
-     "explanation": "89 of at most 613 mentions (square root scale); US = 25 % of 2030 volume"
+     "contribution": 9.7,
+     "explanation": "137 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -7579,10 +8442,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.103,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -7591,50 +8454,332 @@
      "explanation": "effort estimate M"
     }
    },
-   "rationale": "Ranked mainly because of customer pain (17.1 points) and reach (7.6 points). Evidence level B: 89 mentions, confirmed only by web sources: A needs a second BMW source (study).",
+   "rationale": "Ranked mainly because of customer pain (14.6 points) and reach (9.7 points). Evidence level B: 137 mentions, confirmed only by web sources: A needs a second BMW source (study).",
    "evidence_level": "B",
    "assumptions": [
-    "A usable vertical travel of ~80 mm will accommodate sightline needs for 5th–95th percentile drivers; final value to be confirmed in ergonomic studies.",
-    "Acceptable comfort across a wide population will rely on tuning materials and cushion contours."
+    "Fit study will include a representative cross-section of shorter and taller US drivers.",
+    "Seat adjustment mechanisms or software presets will be available to provide firmness and bolster variation.",
+    "Leg extension feature remains an available comfort element."
    ],
    "uncertainties": [
+    "Conflicting evidence: \"Interior feels very comfortable and luxurious\" vs. \"Seat height doesn't go high enough\"",
     "Conflicting evidence: \"Seats are very comfortable and supportive\" vs. \"Seat height doesn't go high enough\"",
     "Conflicting evidence: \"Seats are very comfortable and supportive\" vs. \"Seats: unmet_need\"",
-    "Exact travel needed depends on competing packaging constraints (roofline, seat track) and may require trade-offs.",
-    "Comfort perceptions vary with occupant clothing and body shape."
+    "Packaging constraints may limit absolute seat travel; acceptable sightline targets assume modest changes to current seat architecture.",
+    "Some subjective comfort preferences will vary across individuals despite presets."
    ],
    "offer_check": {
-    "status": "standard",
-    "note": "Electric driver's seat with memory provides adjustable positioning (incl. height) for varied body sizes and improved sightlines for shorter drivers. (Sitzverstellung, elektrisch, mit Memory für Fahrersitz)",
+    "status": "optional",
+    "note": "Adds active front seat ventilation, electric driver's memory adjustment and extended seat climate features improving comfort and support for more occupants. (COMFORT PAKET)",
+    "option_code": "7VB"
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 16,
+    "rank_max": 18,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "5ae055",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-US-780e0c",
+   "title": "Make My Modes easy to create, persist and switch so personalization is fast and reliable",
+   "description": "Drivers should be able to create, save and recall personalized driving profiles (My Modes) quickly, with those profiles storing driving preferences and persisting across restarts and driver changes.",
+   "acceptance_criterion": "Drivers can create and save at least three distinct personalized profiles that store driving dynamics, steering feel and core cabin preferences; switching to a saved profile requires no more than two interaction steps from the main driving screen; in usability tests, 90% of participants successfully create and switch profiles within 30 seconds without reading a manual.",
+   "category": "driving_experience",
+   "signal_ids": [
+    "SIG-G60-US-017",
+    "SIG-G60-US-034"
+   ],
+   "score": 21.0,
+   "rank": 19,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.5,
+     "weight": 0.25,
+     "contribution": 12.5,
+     "explanation": "Mostly strengths (Wants / Likes), 39 mentions"
+    },
+    "reach": {
+     "value": 0.258,
+     "weight": 0.2,
+     "contribution": 5.2,
+     "explanation": "39 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.0,
+     "weight": 0.2,
+     "contribution": 0.0,
+     "explanation": "no study data"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.103,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it; market growth 2025-2030: +2.6 %"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (12.5 points) and effort inverse (6 points). Evidence level B: 39 mentions, but from a single source type.",
+   "evidence_level": "B",
+   "assumptions": [
+    "Driver-profile linking (key/fob/account) is available to ensure persistence between users.",
+    "Storage limits permit multiple saved profiles per vehicle."
+   ],
+   "uncertainties": [
+    "Conflicting evidence: \"Enjoy the various drive modes\" vs. \"My Modes / driving experience: unmet_need\"",
+    "Some customers expect deeper personalization (e.g., seat foam firmness) which may not be technically practical to include in a saved profile on day one."
+   ],
+   "offer_check": {
+    "status": "not_offered",
+    "note": "No option lists user-profile/My Modes creation, persistence, or quick switching functionality.",
     "option_code": null
    },
    "effort": "M",
    "status": "proposed",
-   "version": 1
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 19,
+    "rank_max": 19,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "780e0c",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-US-1ba704",
+   "title": "Offer a certified hands‑free highway driving experience in approved jurisdictions",
+   "description": "When and where regulations allow, customers should be able to use a certified hands‑free highway driving capability that reliably maintains lane and speed on divided highways and reduces driver workload for long-distance commuting.",
+   "acceptance_criterion": "In pre‑production field trials within approved jurisdictions, the system can sustain hands‑free operation on divided highways at speeds up to 70 mph for 100+ miles with no driver interventions in ≥95% of trips and successfully complete handovers when jurisdictional limits are reached.",
+   "category": "driver_assistance",
+   "signal_ids": [
+    "SIG-G60-US-WEB-10"
+   ],
+   "score": 10.3,
+   "rank": 20,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.3,
+     "weight": 0.25,
+     "contribution": 7.5,
+     "explanation": "Mostly trends, 2 mentions"
+    },
+    "reach": {
+     "value": 0.058,
+     "weight": 0.2,
+     "contribution": 1.2,
+     "explanation": "2 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.0,
+     "weight": 0.2,
+     "contribution": 0.0,
+     "explanation": "no study data"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 1.0,
+     "weight": 0.1,
+     "contribution": 10.0,
+     "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +2.6 %"
+    },
+    "effort_inverse": {
+     "value": 0.2,
+     "weight": 0.1,
+     "contribution": 2.0,
+     "explanation": "effort estimate L"
+    }
+   },
+   "rationale": "Ranked mainly because of future relevance (10 points) and customer pain (7.5 points). Evidence level D: Bet on the next generation: only 0 direct customer mentions, the rest rests on trends (assumption).",
+   "evidence_level": "D",
+   "assumptions": [
+    "Regulatory approvals for conditional (hands‑free) automation are granted in at least one target U.S. jurisdiction at launch.",
+    "Required sensing/supplier capabilities (e.g., long‑range perception) become available at acceptable cost/performance within the next 3–5 years.",
+    "OEM secures necessary validation and insurance frameworks for limited deployment.",
+    "Driver monitoring and driver‑state detection technology matures sufficiently to support robust handover decisions within 3–5 years.",
+    "Legal and certification pathways allow defined automation domains with documented handover behavior."
+   ],
+   "uncertainties": [
+    "Regulatory timelines, supplier availability (e.g., LiDAR or equivalent sensing) and commercial agreements may delay availability or restrict geographic scope.",
+    "Actual takeover rates will depend on real‑world road complexity and varied driver behavior; early pilots may show higher intervention rates that improve over time."
+   ],
+   "offer_check": {
+    "status": "optional",
+    "note": "Includes lane-and-steering assistant up to 210 km/h enabling certified hands‑free highway driving in approved jurisdictions. (Driving Assistant Plus)",
+    "option_code": "5AT"
+   },
+   "effort": "L",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "next_gen",
+   "robustness": {
+    "rank_min": 20,
+    "rank_max": 20,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "1ba704",
+   "badges": [
+    "Zukunftswette",
+    "Annahme"
+   ]
+  },
+  {
+   "id": "REQ-G60-US-67ffe2",
+   "title": "Personalized cabin wellness modes that measurably improve passenger comfort",
+   "description": "Customers can select personalized wellness modes (air-quality and climate personalization, periodic micro-adjustments, and optional biometric-informed comfort) that produce a clearly better comfort experience during trips.",
+   "acceptance_criterion": "In a controlled user trial (n≥30), personalized wellness modes reduce self-reported thermal or air-quality discomfort scores by ≥30% versus a standard baseline and increase overall trip comfort rating by ≥20%.",
+   "category": "infotainment_digital",
+   "signal_ids": [
+    "SIG-G60-US-WEB-09"
+   ],
+   "score": 10.2,
+   "rank": 21,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.3,
+     "weight": 0.25,
+     "contribution": 7.5,
+     "explanation": "Mostly trends, 1 mentions"
+    },
+    "reach": {
+     "value": 0.041,
+     "weight": 0.2,
+     "contribution": 0.8,
+     "explanation": "1 of at most 587 mentions (square root scale); US = 25 % of 2030 volume (80,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.0,
+     "weight": 0.2,
+     "contribution": 0.0,
+     "explanation": "no study data"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 1.0,
+     "weight": 0.1,
+     "contribution": 10.0,
+     "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +2.6 %"
+    },
+    "effort_inverse": {
+     "value": 0.2,
+     "weight": 0.1,
+     "contribution": 2.0,
+     "explanation": "effort estimate L"
+    }
+   },
+   "rationale": "Ranked mainly because of future relevance (10 points) and customer pain (7.5 points). Evidence level D: Bet on the next generation: only 0 direct customer mentions, the rest rests on trends (assumption).",
+   "evidence_level": "D",
+   "assumptions": [
+    "Relevant sensors (air-quality, temperature zoning) and biometric options will be available and allowed by privacy/regulatory frameworks at launch.",
+    "Customers will accept and opt in to wellness features if data privacy is clearly handled and battery/energy impacts are managed.",
+    "A software-first cockpit architecture with defined personalization APIs will be available in the successor vehicle.",
+    "Dealers and owner onboarding will support customers in learning personalization features."
+   ],
+   "uncertainties": [
+    "Regulatory or privacy constraints could limit biometric uses.",
+    "Sensor accuracy and calibration in production conditions will affect perceived benefit.",
+    "Some owners may not use personalization; benefits depend on intuitive defaults and onboarding.",
+    "Software complexity may require additional validation and OTA support."
+   ],
+   "offer_check": {
+    "status": "optional",
+    "note": "COMFORT PAKET adds seat memory, seat heating/ventilation and 4-zone climate, enabling personalized cabin comfort settings. (COMFORT PAKET)",
+    "option_code": "7VB"
+   },
+   "effort": "L",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "next_gen",
+   "robustness": {
+    "rank_min": 21,
+    "rank_max": 21,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 78000,
+    "volume_2030": 80000,
+    "growth_pct": 2.564,
+    "market_share": 0.253,
+    "note": ""
+   },
+   "stable_key": "67ffe2",
+   "badges": [
+    "Zukunftswette",
+    "Annahme"
+   ]
   }
  ],
  "discarded": [
   {
-   "title": "Out-of-scope engineering spec: Support NACS port and 800V / high-peak DC charging acceptance targets",
-   "reason": "This is an engineering/hardware specification (port and voltage architecture) rather than a direct customer-experience requirement; it requires program-level technical feasibility decisions.",
+   "title": "Offer a vehicle-level option for a spare/run-flat solution (engineering specification — out of scope for this document)",
+   "reason": "This is an engineering/component decision (spare vs run-flat vs kit) rather than a direct customer-facing behavior specification; requires packaging/cost trade-offs and is therefore out of scope for customer-facing requirements.",
    "signal_ids": [
-    "SIG-G60-US-WEB-02",
-    "SIG-G60-US-WEB-08"
-   ]
-  },
-  {
-   "title": "Not covered: Can't permanently turn off auto start stop",
-   "reason": "The AI derived no requirement from this complaint (22 mentions); PM to check.",
-   "signal_ids": [
-    "SIG-G60-US-025"
-   ]
-  },
-  {
-   "title": "Not covered: Off-Road capability: complaint",
-   "reason": "The AI derived no requirement from this complaint (1 mentions); PM to check.",
-   "signal_ids": [
-    "SIG-G60-US-045"
+    "SIG-G60-US-044"
    ]
   }
- ]
+ ],
+ "context": {
+  "sales": {
+   "market": "US",
+   "volume_2025": 78000,
+   "volume_2030": 80000,
+   "share_of_total_2030": 0.253
+  }
+ },
+ "opportunities": []
 }

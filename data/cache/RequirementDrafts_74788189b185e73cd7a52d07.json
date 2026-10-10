@@ -1,0 +1,213 @@
+{
+  "drafts": [
+    {
+      "title": "Keep the 5 Series' admired exterior and interior styling while expanding owner personalization",
+      "description": "Owners continue to experience the current car’s sporty, luxurious exterior and refined interior while having clearer options to personalize appearance and cabin ambiance (more exterior trim/color choices, richer ambient-light control and an available panoramic glass roof) so buyers who praise the design keep that emotional benefit and those who raised unmet needs get visible personalization choices.",
+      "acceptance_criterion": "Post-delivery survey: ≥75% of new owners rate exterior styling positively and ≥80% rate interior design positively. Vehicle offers at least 8 ambient-light colors and at least 3 lighting scenes. If customer selects the panoramic glass roof option, in a perception test ≥80% of participants report increased perceived spaciousness vs the standard roof.",
+      "category": "exterior",
+      "signal_ids": [
+        "SIG-G60-US-003",
+        "SIG-G60-US-005",
+        "SIG-G60-US-031",
+        "SIG-G60-US-033",
+        "SIG-G60-US-035",
+        "SIG-G60-US-037"
+      ],
+      "assumptions": [
+        "Survey targets and perception tests use representative US buyer samples similar to current ownership base.",
+        "Ambient-light implementation can be offered without degrading perceived material quality.",
+        "Panoramic roof option will be an optional equipment line rather than standard on all trims."
+      ],
+      "uncertainties": [
+        "Manufacturing/packaging limits may constrain number of exterior/trim variants.",
+        "Customer taste differences across regions may change perceived 'right' number of personalization options."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Ensure seats are comfortable, supportive and adjustable enough for a wider range of occupants",
+      "description": "Drivers and passengers experience seats that feel luxurious on long trips, with adjustable height range, selectable firmness levels, adjustable side-bolsters and leg-extension support so both shorter and taller occupants find a comfortable, non‑painful seating position.",
+      "acceptance_criterion": "In an occupant fit and comfort study (n≥20) that includes drivers as short as the US 5th-percentile female (~152 cm / ~5'0\"), ≥90% of participants report an unobstructed forward sightline over the hood with the seat at its highest setting; seats provide at least three firmness/personalization presets and bolsters that are adjustable or selectable; in a 60‑minute simulated long‑drive test ≥85% of participants rate seat comfort as 'comfortable' or better.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-006",
+        "SIG-G60-US-007",
+        "SIG-G60-US-010",
+        "SIG-G60-US-038"
+      ],
+      "assumptions": [
+        "Fit study will include a representative cross-section of shorter and taller US drivers.",
+        "Seat adjustment mechanisms or software presets will be available to provide firmness and bolster variation.",
+        "Leg extension feature remains an available comfort element."
+      ],
+      "uncertainties": [
+        "Packaging constraints may limit absolute seat travel; acceptable sightline targets assume modest changes to current seat architecture.",
+        "Some subjective comfort preferences will vary across individuals despite presets."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make vehicle access and hands-free trunk behavior reliable and user-configurable",
+      "description": "When approaching, unlocking or loading the car, the customer experiences predictable, reliable behavior: Comfort Access and the kick-to-open trunk work consistently and owners can choose unlock behavior (driver-only or all doors) and enable/disable hands-free trunk activation so access is not confusing or frustrating.",
+      "acceptance_criterion": "Hands-free trunk (kick-to-open) succeeds on the first normal user attempt in ≥95% of trials and opens with latency <1.5 s; Comfort Access provides a user-selectable setting for 'unlock driver only' or 'unlock all doors' and when set to 'unlock all' opens all doors in ≥95% of approach tests; owners can find and change the related settings within 30 seconds in a standard UI walkthrough.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-008",
+        "SIG-G60-US-041",
+        "SIG-G60-US-018"
+      ],
+      "assumptions": [
+        "Test trials are run across typical real-world conditions (pockets, foot motions, ambient noise and lighting).",
+        "Software settings exist that allow customers to change unlock behavior without dealer intervention."
+      ],
+      "uncertainties": [
+        "Extreme environmental conditions or obstructed key fob signals may still produce edge-case failures.",
+        "Third‑party key‑fob or aftermarket accessories may affect performance."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make climate controls and air vents quick to find and simple to operate while driving",
+      "description": "Drivers can adjust temperature, fan speed and vent direction quickly and with minimal visual attention so HVAC operation is not slow, confusing or distracting during normal driving.",
+      "acceptance_criterion": "In on-road usability trials, drivers change temperature or fan speed without looking at the central display within 5 seconds in ≥90% of attempts; occupants locate and adjust main vents within 5 seconds in ≥90% of trials. Measured heater/AC operation dissatisfaction in the US study target reduces from 15% to ≤8% in follow-up testing.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-030"
+      ],
+      "assumptions": [
+        "Usability trials include participants representative of typical drivers and realistic driving conditions.",
+        "HMI changes (physical controls, haptic shortcuts or improved UX) are implemented in a way that preserves cabin aesthetics."
+      ],
+      "uncertainties": [
+        "Different customers have varying expectations for tactile vs screen controls; some will still prefer full touchscreen solutions.",
+        "Changes may require redesign of center stack area that affects other packaging."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Provide practical interior storage and preserve the cabin's roomy feel",
+      "description": "Customers experience a cabin and storage layout that makes everyday items easy to stow and retrieve, and they still perceive the car as roomier than their previous vehicles—supporting passengers, children and pets comfortably.",
+      "acceptance_criterion": "Front center storage fits two large smartphones (e.g., large modern 'plus' phones with cases) side-by-side plus a 1.0 L water bottle; in a timed usability test ≥85% of participants can store and retrieve commonly used items (phone, wallet, keys, sunglasses) within 5 seconds; in a post-delivery survey ≥80% of rear-seat users rate cabin roominess as 'roomy' or better.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-040",
+        "SIG-G60-US-016",
+        "SIG-G60-US-013"
+      ],
+      "assumptions": [
+        "Usability tests use representative items and participant body sizes, including children/child seat scenarios for rear-seat feedback.",
+        "Minor changes to console packaging are acceptable to provide additional storage volume."
+      ],
+      "uncertainties": [
+        "Trade-offs between storage capacity and other features (armrest size, wireless charging pad location) may require prioritization."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make flat-tire preparedness obvious and easy to act on for customers",
+      "description": "When faced with a flat tire the customer can quickly find the repair kit/spare-related tools and clear instructions so they feel confident to take immediate next steps (repair, temporary fix, or request help).",
+      "acceptance_criterion": "In a timed usability test, ≥90% of participants locate the tire repair kit or spare-related tools and the step‑by‑step instructions within 120 seconds while standing at the rear of the car; repair kit/storage is clearly labeled and its presence is indicated in the owner's materials.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-044"
+      ],
+      "assumptions": [
+        "Usability test participants include typical owners and non-technical users.",
+        "Labeling and documentation are available in the vehicle and in digital owner materials."
+      ],
+      "uncertainties": [
+        "Actual resolution (spare vs inflator vs run-flat) will be decided by packaging and cost trade-offs.",
+        "Some customers will still prefer dealer assistance rather than self-repair."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Offer a vehicle-level option for a spare/run-flat solution (engineering specification — out of scope for this document)",
+      "description": "Customers expressed dissatisfaction with flat-tire preparedness (spare, run-flat, inflator). The decision whether to provide a full-size spare, temporary spare, factory fit run-flat tires or a tire repair kit is an engineering and packaging choice that must be evaluated separately.",
+      "acceptance_criterion": "Provide either a factory‑installed run‑flat tire solution or a factory option that includes a spare tire or a clear aftermarket-equivalent solution; confirm chosen option in engineering packaging study.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-G60-US-044"
+      ],
+      "assumptions": [
+        "This draft documents a component-level option that requires trade-off analysis (weight, cargo volume, cost)."
+      ],
+      "uncertainties": [
+        "Choice will affect trunk packaging, vehicle weight and cost and may require regulatory reassessment."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "This is an engineering/component decision (spare vs run-flat vs kit) rather than a direct customer-facing behavior specification; requires packaging/cost trade-offs and is therefore out of scope for customer-facing requirements."
+    },
+    {
+      "title": "Personalized cabin wellness modes that measurably improve passenger comfort",
+      "description": "Customers can select personalized wellness modes (air-quality and climate personalization, periodic micro-adjustments, and optional biometric-informed comfort) that produce a clearly better comfort experience during trips.",
+      "acceptance_criterion": "In a controlled user trial (n≥30), personalized wellness modes reduce self-reported thermal or air-quality discomfort scores by ≥30% versus a standard baseline and increase overall trip comfort rating by ≥20%.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-WEB-09"
+      ],
+      "assumptions": [
+        "Relevant sensors (air-quality, temperature zoning) and biometric options will be available and allowed by privacy/regulatory frameworks at launch.",
+        "Customers will accept and opt in to wellness features if data privacy is clearly handled and battery/energy impacts are managed."
+      ],
+      "uncertainties": [
+        "Regulatory or privacy constraints could limit biometric uses.",
+        "Sensor accuracy and calibration in production conditions will affect perceived benefit."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Deeper cockpit personalization and flexible software-defined HMI to reduce task time",
+      "description": "Customers can reorganize and personalize instrument and central displays and use advanced HMI layouts so routine interactions are faster and the cockpit feels tailored to each driver.",
+      "acceptance_criterion": "In an in‑vehicle user trial, ≥75% of participants create and use at least one custom cockpit layout and average task completion time for five common tasks (set temp, change media source, navigation entry, seat memory recall, phone call answer) reduces by ≥20% compared with the non-personalized baseline.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-WEB-09"
+      ],
+      "assumptions": [
+        "A software-first cockpit architecture with defined personalization APIs will be available in the successor vehicle.",
+        "Dealers and owner onboarding will support customers in learning personalization features."
+      ],
+      "uncertainties": [
+        "Some owners may not use personalization; benefits depend on intuitive defaults and onboarding.",
+        "Software complexity may require additional validation and OTA support."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}

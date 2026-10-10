@@ -18,12 +18,13 @@ SIGNALS = [
     Signal(id=f"SIG-{n}", kind=SignalKind.COMPLAINT, category=Category.EXTERIOR, title="t", summary="s",
            evidence_ids=["EV-1"], mention_count=20, source_types=[SourceType.FEEDBACK])
     for n in (1, 2, 3)
-]
+] + [Signal(id="SIG-T", kind=SignalKind.TREND, category=Category.EXTERIOR, title="t", summary="s",
+            evidence_ids=["EV-1"], mention_count=2, source_types=[SourceType.WEB])]
 
 
-def _draft(title: str, ids: list[str]) -> RequirementDraft:
+def _draft(title: str, ids: list[str], **kw) -> RequirementDraft:
     return RequirementDraft(title=title, description="d", acceptance_criterion="c", category=Category.EXTERIOR,
-                            signal_ids=ids)
+                            signal_ids=ids, **kw)
 
 
 def _run(monkeypatch, *drafts: RequirementDraft):
@@ -55,9 +56,12 @@ def test_stable_key_steht_im_feld(monkeypatch):
     assert req.id == f"REQ-G60-US-{req.stable_key}" and req.stable_key == stable_key(["SIG-1", "SIG-2"])
 
 
-def test_zwei_entwuerfe_mit_gleichen_befunden_bekommen_verschiedene_ids(monkeypatch):
-    # Die KI soll das nicht tun (Prompt), aber eine doppelte ID wäre im Prüfpfad nicht mehr eindeutig.
-    reqs = _run(monkeypatch, _draft("A", ["SIG-1"]), _draft("A again", ["SIG-1"]))
+def test_gleiche_befunde_bei_heute_und_wette_bekommen_verschiedene_ids(monkeypatch):
+    # Gleiche Entwürfe zum selben Horizont werden seit W-C5 zusammengeführt, und eine Wette verliert geliehene
+    # Kundenbefunde. Bleibt es bei Heute und Wette auf demselben Trend-Befund, ist der Hash gleich: eine doppelte
+    # ID wäre im Prüfpfad nicht mehr eindeutig.
+    bet = _draft("A bet", ["SIG-T"], horizon="next_gen", assumptions=["x"])
+    reqs = _run(monkeypatch, _draft("A", ["SIG-T"]), bet)
     ids = [r.id for r in reqs]
-    assert len(set(ids)) == 2 and ids[0] != ids[1]
-    assert ids[1].startswith(ids[0] + "-")  # Dublette hängt eine Zählung an, der erste Treffer bleibt stabil
+    assert len(ids) == 2 and len(set(ids)) == 2
+    assert sorted(ids)[1].startswith(sorted(ids)[0] + "-")  # die zweite hängt eine Zählung an

@@ -1,0 +1,161 @@
+{
+  "drafts": [
+    {
+      "title": "Simplified, fast-access home and uncluttered touchscreen layout while retaining large display presence",
+      "description": "Customers experience the large, long touchscreen they like but see a simplified, less cluttered operating concept: a customizable home bar for favorite functions, reduced submenu depth for common tasks, larger touch targets for frequently used controls, and UI treatments that make the screen easier to read and less affected by fingerprints and bright sunlight.",
+      "acceptance_criterion": "In a usability test with 50 participants performing 5 common tasks (navigation entry, media source switch, climate quick-adjust, phone call, trip/odometer access): 90% of tasks are completed in ≤2 taps and average task time ≤6 seconds; post-test subjective ratings show ≥80% of participants rate the layout as 'easy to use' or better; in a bright-light legibility test (simulated sunlight) ≥90% of participants can identify and activate primary controls within 2 seconds; smudge/readability complaints in feedback-panel testing drop by ≥50% compared to current baseline.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-023",
+        "SIG-G60-US-028",
+        "SIG-G60-US-032",
+        "SIG-G60-US-011",
+        "SIG-G60-US-026"
+      ],
+      "assumptions": [
+        "Usability test tasks and the participant mix reflect typical US 5 Series users (age and tech familiarity).",
+        "Improvements can be achieved through software/UX changes and non-invasive optical/screen coatings (no major hardware change required)."
+      ],
+      "uncertainties": [
+        "Extent to which physical screen coatings reduce perceived smudging without hardware changes.",
+        "User expectations vary; some users will still prefer deep menu access for advanced features."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Maintain the large, long touchscreen's visual appeal and responsive feel customers praise",
+      "description": "Customers keep the strong visual presence and responsive touch experience of the long, integrated display that they enjoy, avoiding a reduction in perceived quality or responsiveness while addressing other usability concerns.",
+      "acceptance_criterion": "In a representative user study (n=50), ≥80% of participants rate the touchscreen's visual design and touch responsiveness as 'good' or 'very good' compared to current model; measured touch latency perceived as responsive in >85% of interactions in lab tests.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-011",
+        "SIG-G60-US-026"
+      ],
+      "assumptions": [
+        "Perceived responsiveness can be maintained through tuning of software touch handling without changing major hardware dimensions.",
+        "Study participants reflect the target customer demographic."
+      ],
+      "uncertainties": [
+        "Balancing simplification (previous requirement) and retaining a rich visual presence may require trade-offs in default home density."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Reliable Apple CarPlay connection and playback",
+      "description": "Customers can pair and use Apple CarPlay reliably: pairing/connect works quickly and media and phone functions stream/play without unexpected disconnects so customers keep using CarPlay rather than disabling it.",
+      "acceptance_criterion": "In a compatibility test across 50 representative phone/OS combinations and daily-use scenarios: CarPlay connects within 15 seconds on 95% of first-attempt pairings (wired and wireless where supported) and maintains uninterrupted audio/media playback for 95% of 2‑hour continuous sessions; in a field test across 100 real-world drives the rate of unplanned CarPlay disconnects is ≤2% of drives.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-019"
+      ],
+      "assumptions": [
+        "Phone/OS distribution at launch is similar to current US market (iOS versions and hardware variety).",
+        "Cooperation with Apple for CarPlay compatibility and regular software updates is available."
+      ],
+      "uncertainties": [
+        "Some disconnects may be caused by phone OS bugs outside vehicle control; mitigation depends on Apple updates.",
+        "Wireless CarPlay performance varies with phone model and radio interference."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make odometer and trip mileage obvious and easy to access without dealer help",
+      "description": "Customers can find and reset odometer/trip information quickly using steering-wheel controls or a one-tap instrument-cluster shortcut, removing confusion and the need for dealer assistance.",
+      "acceptance_criterion": "In a blind usability task (no prior instruction) with 40 participants, 90% locate the odometer/trip readout and perform a trip reset in ≤10 seconds; documented dealer assistance requests for finding mileage drop by ≥80% in post-launch feedback.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-021"
+      ],
+      "assumptions": [
+        "Instrument-cluster UI can be updated to include clearer, persistent trip/odometer access points.",
+        "Dealers track and report assistance requests comparably to current baseline."
+      ],
+      "uncertainties": [
+        "Some customers with strong prior habits may still request help; measurement relies on accurate tracking of dealer contacts."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Wireless charging pad that reliably fits and charges common phones without repositioning or buzzing",
+      "description": "Customers place their phone on the in-cabin charging surface and it starts and maintains charging reliably without wiggling, excessive heat, or buzzing; passenger-side charging also works consistently.",
+      "acceptance_criterion": "In a test with 20 popular phone models (covering small to flagship large sizes), 95% begin charging on first placement and maintain continuous charging for 30 minutes during a driving dynamics simulation (typical city/highway inputs) without requiring repositioning; no audible buzzing is reported in >98% of trials and passenger pad functions in 100% of tested vehicles.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-029"
+      ],
+      "assumptions": [
+        "Phone model selection reflects top-selling US phones at launch (assumed list included in test plan).",
+        "Tests simulate realistic vehicle motion and temperature profiles for US conditions."
+      ],
+      "uncertainties": [
+        "New phone designs or cases may affect fit/charging performance after launch.",
+        "Charging speed expectations vary by phone and user; this requirement focuses on consistent connection rather than peak watts."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Accurate, robust voice control for common driving tasks",
+      "description": "Customers can use voice to control navigation, media, phone, and climate reliably under normal cabin noise so they use voice rather than manual controls for common tasks.",
+      "acceptance_criterion": "In a controlled test with 200 natural-language voice commands from 50 speakers across accents and background noise levels up to 65 dB, the system correctly understands and executes the user's intent in ≥85% of commands for navigation, media, phone, and climate tasks.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-042"
+      ],
+      "assumptions": [
+        "Voice language and accent coverage in tests reflect the US market.",
+        "Performance improvements are achievable through software models and back-end improvements without requiring new hardware sensors."
+      ],
+      "uncertainties": [
+        "Performance in very high noise (>70 dB) or with heavy regional accents may be lower.",
+        "Privacy and data handling expectations may constrain some cloud-based voice improvements."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Stable in-car WiFi hotspot for multiple devices",
+      "description": "Customers using the vehicle hotspot can connect multiple devices and stream or browse reliably while on the road.",
+      "acceptance_criterion": "In a connectivity test with 5 simultaneous consumer devices, the in-car hotspot maintains an average usable downlink of ≥5 Mbps per device and sustains connections for 95% of a continuous one-hour session across varied routes (urban/suburban highway mix).",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-043"
+      ],
+      "assumptions": [
+        "Cellular network availability and carrier provisioning at launch are similar to current US conditions.",
+        "Throughput per vehicle will depend on carrier plan; targets assume a mid-tier OEM-provided data plan."
+      ],
+      "uncertainties": [
+        "Actual hotspot performance will vary with carrier coverage, congestion, and geographic location.",
+        "User experience can be affected by background system data usage and concurrent vehicle telematics."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}

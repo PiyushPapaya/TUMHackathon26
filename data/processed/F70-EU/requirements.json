@@ -1,29 +1,28 @@
 [
  {
-  "id": "REQ-F70-EU-013",
-  "title": "Boot must be practical, reliably operable and retain meaningful cargo capacity",
-  "description": "Customers can load everyday luggage easily, have an electrically operable tailgate (with internal shut button) that works reliably, and luggage space is not overly compromised by hybrid/electric components.",
-  "acceptance_criterion": "Boot volume for mainstream ICE/hybrid variants must be >= 380 L (VDA method); an electric tailgate with interior shut button must operate reliably with successful open/close in >= 99% of 500-cycle bench tests and reported owner tailgate failures must be <0.5% in the first 12 months.",
+  "id": "REQ-F70-EU-cc3dce",
+  "title": "Make the boot practical for everyday use and ensure the tailgate opens/closes reliably with convenient controls",
+  "description": "Customers can load and secure everyday luggage easily and rely on the boot to open and close when expected, with a simple internal shut button provided.",
+  "acceptance_criterion": "Boot must accommodate two medium suitcases (55 x 40 x 23 cm) plus one cabin bag with the rear seats in place in all production variants; boot lid open/close operation (key/keyless/button) must show ≥99% success in a 1000-cycle durability test and owner-reported boot operation faults must be below 1% within the first 24 months. A clearly accessible internal boot-shut control is present on all variants.",
   "category": "comfort_space",
   "signal_ids": [
    "SIG-F70-EU-022",
-   "SIG-F70-EU-025",
-   "SIG-F70-EU-WEB-10"
+   "SIG-F70-EU-025"
   ],
-  "score": 57.0,
+  "score": 48.9,
   "rank": 1,
   "score_breakdown": {
    "customer_pain": {
-    "value": 0.956,
+    "value": 1.0,
     "weight": 0.25,
-    "contribution": 23.9,
-    "explanation": "Mostly complaints (Defect), 32 mentions"
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Defect / Difficult to Use), 30 mentions"
    },
    "reach": {
-    "value": 0.209,
+    "value": 0.202,
     "weight": 0.2,
-    "contribution": 4.2,
-    "explanation": "32 of at most 731 mentions (square root scale); EU = 74 % of 2030 volume"
+    "contribution": 4.0,
+    "explanation": "30 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.643,
@@ -38,10 +37,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 1.0,
+    "value": 0.102,
     "weight": 0.1,
-    "contribution": 10.0,
-    "explanation": "linked to a 3-5 year trend (assumption)"
+    "contribution": 1.0,
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.6,
@@ -50,51 +49,66 @@
     "explanation": "effort estimate M"
    }
   },
-  "rationale": "Ranked mainly because of customer pain (23.9 points) and satisfaction gap (12.9 points). Evidence level A: 32 mentions, confirmed by 3 independent source types.",
+  "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (12.9 points). Evidence level A: 30 mentions, confirmed by 2 independent source types.",
   "evidence_level": "A",
   "assumptions": [
-   "VDA measurement method is used for comparability; packaging for EV variants will aim to preserve usable boot where possible.",
-   "Some plug‑in hybrid packaging constraints exist but should not reduce mainstream usability below the stated target."
+   "Suitcase dimensions above are representative of a common luggage standard used for testing.",
+   "Space allocation may vary between powertrain variants; measurement is performed on each marketed variant (including hybrid where applicable)."
   ],
   "uncertainties": [
-   "Exact achievable volume will be constrained by drivetrain packaging in EV/hybrid variants; some specialized trims may fall below the target."
+   "Hybrid/EV packaging constraints may reduce usable volume on some variants; where this occurs, vehicle function/packaging trade-offs must be communicated to customers.",
+   "Local repair or aftermarket attachments may affect boot usability."
   ],
   "offer_check": {
    "status": "optional",
-   "note": "Automatic tailgate ensures practical, reliable boot operation; combines with optional 40:20:40 split rear seat to retain cargo capacity. (Automatische Heckklappenbetätigung)",
+   "note": "Automatic tailgate operation provides reliable opening/closing and convenient controls for everyday boot use. (Automatische Heckklappenbetätigung)",
    "option_code": "316"
   },
   "effort": "M",
   "status": "proposed",
-  "version": 1
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 1,
+   "rank_max": 2,
+   "top3_share": 1.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
+  "stable_key": "cc3dce",
+  "badges": []
  },
  {
-  "id": "REQ-F70-EU-007",
-  "title": "Infotainment must be responsive, intuitive, robust and not force app registration for core features",
-  "description": "Customers experience a fast, logical and reliable infotainment system whose basic functions (navigation, phone, media, vehicle settings) work reliably, are straightforward to use and do not require mandatory app sign‑up or paid subscriptions for core route guidance or essential services.",
-  "acceptance_criterion": "System responsiveness: common screens and key actions must load/respond within 2 seconds in normal conditions; in a 200‑user usability study >= 90% must rate system intuitiveness >= 8/10; core navigation features must be available operationally without mandatory app registration and basic offline routing must be available out of the box.",
+  "id": "REQ-F70-EU-e5c858",
+  "title": "Navigation and connected services work reliably without forcing app registration",
+  "description": "Customers can use full navigation features (route guidance, voice guidance, rerouting, POI search) and the car's connected services without being forced to register or pay in an external app to get baseline navigation functionality.",
+  "acceptance_criterion": "During a 30‑day field acceptance test, ≥95% of vehicles provide full core navigation features and voice guidance without requiring the user to create an external account; navigation routing uptime (no crash/feature drop) ≥99% over 30 days; successful phone‑to‑vehicle navigation handover/pairing occurs within 60 seconds in ≥90% of attempts.",
   "category": "infotainment_digital",
   "signal_ids": [
-   "SIG-F70-EU-004",
-   "SIG-F70-EU-011",
    "SIG-F70-EU-023",
-   "SIG-F70-EU-WEB-09",
    "SIG-F70-EU-045"
   ],
-  "score": 53.0,
+  "score": 45.8,
   "rank": 2,
   "score_breakdown": {
    "customer_pain": {
-    "value": 0.877,
+    "value": 1.0,
     "weight": 0.25,
-    "contribution": 21.9,
-    "explanation": "Mostly complaints (Likes / Difficult to Use), 123 mentions"
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Defect / Defect | Difficult to Use), 16 mentions"
    },
    "reach": {
-    "value": 0.41,
+    "value": 0.147,
     "weight": 0.2,
-    "contribution": 8.2,
-    "explanation": "123 of at most 731 mentions (square root scale); EU = 74 % of 2030 volume"
+    "contribution": 2.9,
+    "explanation": "16 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.547,
@@ -109,63 +123,78 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 1.0,
+    "value": 0.102,
     "weight": 0.1,
-    "contribution": 10.0,
-    "explanation": "linked to a 3-5 year trend (assumption)"
+    "contribution": 1.0,
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
-    "value": 0.2,
+    "value": 0.6,
     "weight": 0.1,
-    "contribution": 2.0,
-    "explanation": "effort estimate L"
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
    }
   },
-  "rationale": "Ranked mainly because of customer pain (21.9 points) and satisfaction gap (10.9 points). Evidence level A: 123 mentions, confirmed by 3 independent source types.",
+  "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (10.9 points). Evidence level A: 16 mentions, confirmed by 2 independent source types.",
   "evidence_level": "A",
   "assumptions": [
-   "OTA and software architectures will follow SDV trends, enabling updates while preserving core features; some connected services may remain optional extras.",
-   "Offline map capability uses preloaded regional map packages."
+   "OEM can license/map content and voice guidance so a baseline navigation experience can be offered without mandatory account registration.",
+   "Field test uses representative mobile network coverage typical for EU customers."
   ],
   "uncertainties": [
-   "Conflicting evidence: \"Software is terrible and overly complicated\" vs. \"Infotainment works flawlessly and is excellent\"",
-   "Third‑party licensing (e.g., map providers) may affect some features and commercial models for connected services."
+   "Some premium online map features and live traffic may require optional account/services or subscriptions; delineation of baseline vs. paid features must be defined.",
+   "Third‑party phone OS changes could affect handover reliability."
   ],
   "offer_check": {
-   "status": "standard",
-   "note": "BMW Operating System 9 provides the infotainment platform; core features (navigation, Bluetooth) are standard, no mandatory app registration stated. (BMW Operating System 9)",
+   "status": "not_offered",
+   "note": "No entry guarantees navigation/connected services without mandatory app registration; only BMW Maps and connectivity are listed.",
    "option_code": null
   },
-  "effort": "L",
+  "effort": "M",
   "status": "proposed",
-  "version": 1
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 2,
+   "rank_max": 3,
+   "top3_share": 1.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
+  "stable_key": "e5c858",
+  "badges": []
  },
  {
-  "id": "REQ-F70-EU-006",
-  "title": "Restore physical, easy‑to‑use controls for essential functions and make dual‑zone climate easy to operate",
-  "description": "Customers can adjust heating, ventilation, and core vehicle functions quickly and safely without diving into menus or staring at the touchscreen — physical buttons/knobs (or clearly accessible tactile shortcuts) are provided for core controls and dual‑zone climate control is available and usable without navigating deep menus.",
-  "acceptance_criterion": "Common climate and heating adjustments (set driver temperature, set passenger temperature, fan speed, seat heating on/off) must be achievable within 5 seconds without using the central touchscreen in a timed usability test by 95% of participants; dual‑zone control must be standard (or clearly available) and default sync off must be changeable in one tactile action.",
+  "id": "REQ-F70-EU-b81746",
+  "title": "Controls and displays must be safe and reliable to use while driving and climate control must offer independent, physical controls",
+  "description": "Customers can operate driving‑critical displays and climate controls without distraction, experience dependable instrument functionality (no loss of key functions), and have standard independent driver/passenger temperature control with tactile controls for essential HVAC functions.",
+  "acceptance_criterion": "In a validated on-road usability test, drivers must complete common in-car tasks (e.g., change temperature, change audio source, check trip speed) with a mean glance duration ≤1.5 seconds and a task success rate ≥95%; display/system failures that remove key driving functions must occur in fewer than 1% of vehicles within 24 months; driver and passenger independent temperature control and physical buttons for essential HVAC functions are standard.",
   "category": "infotainment_digital",
   "signal_ids": [
-   "SIG-F70-EU-003",
-   "SIG-F70-EU-028",
-   "SIG-F70-EU-030",
-   "SIG-F70-EU-015"
+   "SIG-F70-EU-018",
+   "SIG-F70-EU-030"
   ],
-  "score": 49.5,
+  "score": 43.3,
   "rank": 3,
   "score_breakdown": {
    "customer_pain": {
-    "value": 0.895,
+    "value": 1.0,
     "weight": 0.25,
-    "contribution": 22.4,
-    "explanation": "Mostly complaints (Difficult to Use / Likes), 140 mentions"
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Defect / Difficult to Use), 29 mentions"
    },
    "reach": {
-    "value": 0.438,
+    "value": 0.198,
     "weight": 0.2,
-    "contribution": 8.8,
-    "explanation": "140 of at most 731 mentions (square root scale); EU = 74 % of 2030 volume"
+    "contribution": 4.0,
+    "explanation": "29 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.567,
@@ -180,221 +209,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
-   },
-   "effort_inverse": {
-    "value": 0.6,
-    "weight": 0.1,
-    "contribution": 6.0,
-    "explanation": "effort estimate M"
-   }
-  },
-  "rationale": "Ranked mainly because of customer pain (22.4 points) and satisfaction gap (11.3 points). Evidence level A: 140 mentions, confirmed by 2 independent source types.",
-  "evidence_level": "A",
-  "assumptions": [
-   "Physical controls may be a mix of real buttons and dedicated tactile shortcuts tied to the HMI; the design will be validated in usability labs.",
-   "This requirement focuses on essential controls; some secondary functions may remain in touch menus."
-  ],
-  "uncertainties": [
-   "Conflicting evidence: \"Everything on the touch screen is distracting\" vs. \"Big curved touch display shows all the info\"",
-   "Conflicting evidence: \"Big curved touch display shows all the info\" vs. \"Bring back physical buttons for heating and climate\"",
-   "Exact control layout may vary by region and trim; usability targets must hold across common configurations."
-  ],
-  "offer_check": {
-   "status": "standard",
-   "note": "2-zone automatic climate control is standard, covering easy dual-zone operation; no listed option restores dedicated physical controls. (2-Zonen-Klimaautomatik mit erweiterten Umfängen)",
-   "option_code": null
-  },
-  "effort": "M",
-  "status": "proposed",
-  "version": 1
- },
- {
-  "id": "REQ-F70-EU-009",
-  "title": "High‑quality audio and user control over synthetic engine/exhaust sounds",
-  "description": "Customers experience clean, high‑fidelity audio without distortion, and can disable or tune any synthetic engine/exhaust sounds routed through the cabin speakers so the sound matches their preference.",
-  "acceptance_criterion": "In an audio bench and in‑car listening tests >= 95% of participants must rate system audio clarity >= 8/10; synthetic engine sound can be disabled or adjusted (at least Off / Subtle / Sport) from the HMI in no more than three actions.",
-  "category": "infotainment_digital",
-  "signal_ids": [
-   "SIG-F70-EU-014",
-   "SIG-F70-EU-040",
-   "SIG-F70-EU-WEB-05"
-  ],
-  "score": 40.7,
-  "rank": 4,
-  "score_breakdown": {
-   "customer_pain": {
-    "value": 0.885,
-    "weight": 0.25,
-    "contribution": 22.1,
-    "explanation": "Mostly complaints (Defect | Wants), 27 mentions"
-   },
-   "reach": {
-    "value": 0.192,
-    "weight": 0.2,
-    "contribution": 3.8,
-    "explanation": "27 of at most 731 mentions (square root scale); EU = 74 % of 2030 volume"
-   },
-   "satisfaction_gap": {
-    "value": 0.0,
-    "weight": 0.2,
-    "contribution": 0.0,
-    "explanation": "no study data"
-   },
-   "competitive_pressure": {
-    "value": 1.0,
-    "weight": 0.15,
-    "contribution": 15.0,
-    "explanation": "competitor advantage backed by a high-trust web source"
-   },
-   "future_relevance": {
-    "value": 0.1,
-    "weight": 0.1,
-    "contribution": 1.0,
-    "explanation": "no trend behind it"
-   },
-   "effort_inverse": {
-    "value": 0.6,
-    "weight": 0.1,
-    "contribution": 6.0,
-    "explanation": "effort estimate M"
-   }
-  },
-  "rationale": "Ranked mainly because of customer pain (22.1 points) and competitive pressure (15 points). Evidence level B: 27 mentions, confirmed only by web sources: A needs a second BMW source (study).",
-  "evidence_level": "B",
-  "assumptions": [
-   "Objective acoustic testing (THD and SNR) will be used to guide tuning, but user perception is primary for acceptance.",
-   "Synthetic sound features remain optional and user‑configurable."
-  ],
-  "uncertainties": [
-   "Some sporty trim customers may prefer louder synthesized cues; calibration must balance preferences."
-  ],
-  "offer_check": {
-   "status": "not_offered",
-   "note": "Hi‑quality audio is standard (HiFi harman/kardon), but no listed option provides user control of synthetic engine/exhaust sounds.",
-   "option_code": null
-  },
-  "effort": "M",
-  "status": "proposed",
-  "version": 1
- },
- {
-  "id": "REQ-F70-EU-010",
-  "title": "Instrument displays must be reliable and free of distracting reflections or crashes",
-  "description": "Customers experience a stable, readable digital instrument panel that does not crash or remove critical driving information, and that minimises reflections and glare that would distract at night or reduce visibility.",
-  "acceptance_criterion": "Display stability: in durability and stress tests the instrument display must not crash or lose critical driving functions in > 99.5% of test cycles; in a night driving usability test complaints about mirror reflections or display glare must be <= 1% of participants.",
-  "category": "interior",
-  "signal_ids": [
-   "SIG-F70-EU-018",
-   "SIG-F70-EU-015",
-   "SIG-F70-EU-WEB-07"
-  ],
-  "score": 36.7,
-  "rank": 5,
-  "score_breakdown": {
-   "customer_pain": {
-    "value": 0.672,
-    "weight": 0.25,
-    "contribution": 16.8,
-    "explanation": "Mostly strengths (Likes / Defect), 36 mentions"
-   },
-   "reach": {
-    "value": 0.222,
-    "weight": 0.2,
-    "contribution": 4.4,
-    "explanation": "36 of at most 731 mentions (square root scale); EU = 74 % of 2030 volume"
-   },
-   "satisfaction_gap": {
-    "value": 0.0,
-    "weight": 0.2,
-    "contribution": 0.0,
-    "explanation": "no study data"
-   },
-   "competitive_pressure": {
-    "value": 1.0,
-    "weight": 0.15,
-    "contribution": 15.0,
-    "explanation": "competitor advantage backed by a high-trust web source"
-   },
-   "future_relevance": {
-    "value": 0.1,
-    "weight": 0.1,
-    "contribution": 1.0,
-    "explanation": "no trend behind it"
-   },
-   "effort_inverse": {
-    "value": 0.6,
-    "weight": 0.1,
-    "contribution": 6.0,
-    "explanation": "effort estimate M"
-   }
-  },
-  "rationale": "Ranked mainly because of customer pain (16.8 points) and competitive pressure (15 points). Evidence level B: 36 mentions, confirmed only by web sources: A needs a second BMW source (study).",
-  "evidence_level": "B",
-  "assumptions": [
-   "Hardware and anti‑reflective coatings will be specified to minimize internal reflections.",
-   "Software stability targets apply across common regional configurations."
-  ],
-  "uncertainties": [
-   "Extreme ambient lighting conditions and aftermarket films/accessories may still cause reflections."
-  ],
-  "offer_check": {
-   "status": "not_offered",
-   "note": "No listed option guarantees anti‑reflective/anti‑glare instrumentation or explicit crash‑proof/software reliability for displays.",
-   "option_code": null
-  },
-  "effort": "M",
-  "status": "proposed",
-  "version": 1
- },
- {
-  "id": "REQ-F70-EU-012",
-  "title": "Seats must be supportive, adjustable and durable with high build quality",
-  "description": "Customers find the seats comfortable on long journeys, with good lumbar support and adjustability, and experience no common quality or safety faults (squeaks, creasing, electrical seat faults or belt issues).",
-  "acceptance_criterion": "In a 100‑participant 3‑hour comfort study >= 90% must rate seat comfort >= 8/10; durability validation must show zero functional electrical seat faults and zero seat belt failures in a 10,000‑hour system test batch and machining/assembly quality issues below 0.5% in production checks.",
-  "category": "comfort_space",
-  "signal_ids": [
-   "SIG-F70-EU-008",
-   "SIG-F70-EU-009",
-   "SIG-F70-EU-036",
-   "SIG-F70-EU-013",
-   "SIG-F70-EU-WEB-04"
-  ],
-  "score": 34.6,
-  "rank": 6,
-  "score_breakdown": {
-   "customer_pain": {
-    "value": 0.602,
-    "weight": 0.25,
-    "contribution": 15.0,
-    "explanation": "Mostly strengths (Likes), 108 mentions"
-   },
-   "reach": {
-    "value": 0.384,
-    "weight": 0.2,
-    "contribution": 7.7,
-    "explanation": "108 of at most 731 mentions (square root scale); EU = 74 % of 2030 volume"
-   },
-   "satisfaction_gap": {
-    "value": 0.0,
-    "weight": 0.2,
-    "contribution": 0.0,
-    "explanation": "no study data"
-   },
-   "competitive_pressure": {
-    "value": 1.0,
-    "weight": 0.15,
-    "contribution": 15.0,
-    "explanation": "competitor advantage backed by a high-trust web source"
-   },
-   "future_relevance": {
-    "value": 0.1,
-    "weight": 0.1,
-    "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.2,
@@ -403,54 +221,66 @@
     "explanation": "effort estimate L"
    }
   },
-  "rationale": "Ranked mainly because of customer pain (15 points) and competitive pressure (15 points). Evidence level B: 108 mentions, confirmed only by web sources: A needs a second BMW source (study).",
-  "evidence_level": "B",
+  "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (11.3 points). Evidence level A: 29 mentions, confirmed by 2 independent source types.",
+  "evidence_level": "A",
   "assumptions": [
-   "Ergonomic adjustments (multi‑way lumbar) will be available across common trims; production quality targets will be enforced.",
-   "Durability targets use accelerated life tests representative of typical use."
+   "Usability test tasks are defined and executed under representative driving conditions and follow established distraction test methods.",
+   "Physical control layout can be designed to avoid excessive cost or interface complexity."
   ],
   "uncertainties": [
-   "Conflicting evidence: \"Seats are comfortable and make driving enjoyable\" vs. \"Seats not comfy and lack support\"",
-   "Conflicting evidence: \"Seats not comfy and lack support\" vs. \"Interior comfort: delight\"",
-   "Some specialist sporty seat options may emphasize lateral support over long‑journey softness; targets apply to mainline seats."
+   "Some advanced functions will still require touch input; trade-offs between minimalism and tactile controls will affect design decisions.",
+   "Software complexity and third-party apps may introduce sources of instability not fully controllable by vehicle UX design alone."
   ],
   "offer_check": {
    "status": "standard",
-   "note": "Standard sports seats are supportive and built to high quality, offering adjustable features. (Sportsitze für Fahrer und Beifahrer)",
+   "note": "Standard intuitive controls and the standard 2‑zone climate provide safe in‑drive operation and independent, physical climate controls. (Intuitive Bedienmöglichkeiten)",
    "option_code": null
   },
   "effort": "L",
   "status": "proposed",
-  "version": 1
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 3,
+   "rank_max": 5,
+   "top3_share": 0.68,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
+  "stable_key": "b81746",
+  "badges": []
  },
  {
-  "id": "REQ-F70-EU-001",
-  "title": "Keep the engaging, comfortable driving character customers love",
-  "description": "Customers experience the successor 1 Series as smooth, composed and enjoyable to drive — retaining comfortable ride cushioning, confident handling and the solid build quality praised today.",
-  "acceptance_criterion": "In a representative user panel of 200 current 1 Series owners and new customers, at least 90% must rate overall driving enjoyment (ride, handling, perceived build quality) >= 8/10 in a standardized 2‑hour mixed route evaluation.",
-  "category": "driving_experience",
+  "id": "REQ-F70-EU-62b83e",
+  "title": "Deliver clean, high‑quality cabin audio and remove artificial/synthesized exhaust artifacts in normal modes",
+  "description": "Customers experience high‑quality, undistorted audio playback and engine/exhaust sound presentation that feels natural in normal and sport driving modes without intrusive artificial pops or buzz.",
+  "acceptance_criterion": "Audio playback across a selection of 20 representative tracks must show no audible buzzing/clipping in listener trials and measured total harmonic distortion (THD) at 85 dB SPL (1 kHz tone) <1%; in normal driving modes, synthetic exhaust/enhancement effects that produce audible 'pops' are absent in 100% of standard driving scenarios tested.",
+  "category": "infotainment_digital",
   "signal_ids": [
-   "SIG-F70-EU-001",
-   "SIG-F70-EU-002",
-   "SIG-F70-EU-006",
-   "SIG-F70-EU-010",
-   "SIG-F70-EU-024",
-   "SIG-F70-EU-036"
+   "SIG-F70-EU-014",
+   "SIG-F70-EU-WEB-05"
   ],
-  "score": 31.4,
-  "rank": 7,
+  "score": 41.7,
+  "rank": 4,
   "score_breakdown": {
    "customer_pain": {
-    "value": 0.4,
+    "value": 0.95,
     "weight": 0.25,
-    "contribution": 10.0,
-    "explanation": "Mostly strengths (Likes / Likes | Wants), 731 mentions"
+    "contribution": 23.8,
+    "explanation": "Mostly complaints (Defect), 20 mentions"
    },
    "reach": {
-    "value": 1.0,
+    "value": 0.165,
     "weight": 0.2,
-    "contribution": 20.0,
-    "explanation": "731 of at most 731 mentions (square root scale); EU = 74 % of 2030 volume"
+    "contribution": 3.3,
+    "explanation": "20 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -459,16 +289,16 @@
     "explanation": "no study data"
    },
    "competitive_pressure": {
-    "value": 0.0,
+    "value": 1.0,
     "weight": 0.15,
-    "contribution": 0.0,
-    "explanation": "no trusted web source shows a competitor advantage"
+    "contribution": 15.0,
+    "explanation": "competitor advantage backed by a high-trust web source"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.6,
@@ -477,47 +307,171 @@
     "explanation": "effort estimate M"
    }
   },
-  "rationale": "Ranked mainly because of reach (20 points) and customer pain (10 points). Evidence level B: 731 mentions, but from a single source type.",
+  "rationale": "Ranked mainly because of customer pain (23.8 points) and competitive pressure (15 points). Evidence level B: 20 mentions, confirmed only by web sources: A needs a second BMW source (study).",
   "evidence_level": "B",
   "assumptions": [
-   "Current baseline enjoyment corresponds to an 8/10 mean score in historical owner surveys (used to set the target).",
-   "User panel tests are run on representative road surfaces and traffic conditions matching typical EU use."
+   "Standardized audio test rig and listener panel will be used to evaluate subjective and measured audio quality.",
+   "Some synthetic sound augmentation may remain available in specific sport modes if customers choose to enable them; the requirement targets the default/normal modes."
   ],
   "uncertainties": [
-   "Perceived driving enjoyment can vary by trim/wheel size; final validation must ensure the target across the most common configurations."
+   "Perception of 'natural' engine sound varies between customers; objective measures (THD, clipping) may not capture all subjective preferences.",
+   "Higher‑end audio hardware choices and calibration effort may be required to meet the target in all trims."
   ],
   "offer_check": {
    "status": "standard",
-   "note": "Adaptive M suspension balances sporty handling and ride comfort to preserve the engaging, comfortable driving character. (Adaptives M Fahrwerk)",
+   "note": "HiFi harman/kardon provides high-quality cabin audio; no option found to disable synthesized exhaust artifacts in normal driving modes. (HiFi Lautsprechersystem harman/kardon)",
    "option_code": null
   },
   "effort": "M",
   "status": "proposed",
-  "version": 1
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 1,
+   "rank_max": 5,
+   "top3_share": 0.32,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
+  "stable_key": "62b83e",
+  "badges": []
  },
  {
-  "id": "REQ-F70-EU-014",
-  "title": "High‑quality keys and reliable digital key/driver profile persistence",
-  "description": "Customers experience keys that feel well made and are straightforward to use, and digital keys and driver preference profiles reliably unlock the car, seat/side‑mirror positions and settings persist across reboots and software updates.",
-  "acceptance_criterion": "Physical key subjective quality: >= 90% of a 100‑user panel rate key build/fit/finish >= 8/10; digital key reliability must achieve >= 99% successful unlocking/vehicle access in a 10,000‑attempt field test; driver profiles must persist after software updates and power cycles in >= 99% of cases in validation testing.",
-  "category": "comfort_space",
+  "id": "REQ-F70-EU-ac8429",
+  "title": "Surface top functions on a zero‑layer home and ensure fast, reliable touchscreen responsiveness",
+  "description": "Customers find and trigger the most common functions (navigation, media, phone, climate shortcuts, hazard, top vehicle settings) immediately from the home screen and experience a responsive, predictable HMI that minimizes menu dives and distraction.",
+  "acceptance_criterion": "Home screen exposes the top 6–8 customer functions; in a usability trial ≥90% of users reach any of those top functions in ≤1 tap from the home screen; median touch response latency across core screens ≤300 ms and perceived responsiveness rated ≥4/5 by ≥85% of trial participants.",
+  "category": "infotainment_digital",
   "signal_ids": [
-   "SIG-F70-EU-019"
+   "SIG-F70-EU-028",
+   "SIG-F70-EU-003",
+   "SIG-F70-EU-015",
+   "SIG-F70-EU-011",
+   "SIG-F70-EU-004",
+   "SIG-F70-EU-WEB-01",
+   "SIG-F70-EU-WEB-02"
   ],
-  "score": 29.8,
-  "rank": 8,
+  "score": 38.3,
+  "rank": 5,
   "score_breakdown": {
    "customer_pain": {
-    "value": 1.0,
+    "value": 0.872,
     "weight": 0.25,
-    "contribution": 25.0,
-    "explanation": "Mostly complaints (Defect / Wants | Defect), 16 mentions"
+    "contribution": 21.8,
+    "explanation": "Mostly complaints (Likes / Difficult to Use), 235 mentions"
    },
    "reach": {
-    "value": 0.148,
+    "value": 0.565,
     "weight": 0.2,
-    "contribution": 3.0,
-    "explanation": "16 of at most 731 mentions (square root scale); EU = 74 % of 2030 volume"
+    "contribution": 11.3,
+    "explanation": "235 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
+   },
+   "satisfaction_gap": {
+    "value": 0.0,
+    "weight": 0.2,
+    "contribution": 0.0,
+    "explanation": "no study data"
+   },
+   "competitive_pressure": {
+    "value": 0.6,
+    "weight": 0.15,
+    "contribution": 9.0,
+    "explanation": "competitor advantage backed by a medium-trust web source"
+   },
+   "future_relevance": {
+    "value": 0.102,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
+   },
+   "effort_inverse": {
+    "value": 0.2,
+    "weight": 0.1,
+    "contribution": 2.0,
+    "explanation": "effort estimate L"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (21.8 points) and reach (11.3 points). Evidence level B: 235 mentions, confirmed only by web sources: A needs a second BMW source (study).",
+  "evidence_level": "B",
+  "assumptions": [
+   "Customer definition of 'essential' aligns with climate (temp, fan, defrost), seat heat, and audio volume as the highest‑priority controls.",
+   "Tactile controls can be implemented in a small interior footprint without preventing the large display layout customers like.",
+   "Usability test method: representative drivers on a closed track while performing a secondary task.",
+   "Top functions can be identified from telematics/usage data or by allowing easy customer customization.",
+   "Measured response latency uses realistic in‑car workloads and representative hardware for the successor vehicle."
+  ],
+  "uncertainties": [
+   "Conflicting evidence: \"Everything on the touch screen is distracting\" vs. \"Infotainment works flawlessly and is excellent\"",
+   "Conflicting evidence: \"Everything on the touch screen is distracting\" vs. \"Big curved touch display shows all the info\"",
+   "Conflicting evidence: \"Software is terrible and overly complicated\" vs. \"Infotainment works flawlessly and is excellent\"",
+   "Some customers will still prefer all controls via touchscreen; degree of acceptance for mixed physical/digital layout is uncertain.",
+   "Exact placement and number of physical controls may vary by trim and packaging constraints.",
+   "Some third‑party apps or phone projection modes may introduce latency outside OEM control.",
+   "Balancing shortcut density and touch target size for users with different dexterity is a design tradeoff."
+  ],
+  "offer_check": {
+   "status": "standard",
+   "note": "BMW Operating System 9 includes the zero-layer home interface and optimized touch responsiveness for fast, reliable touchscreen control. (BMW Operating System 9)",
+   "option_code": null
+  },
+  "effort": "L",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 4,
+   "rank_max": 5,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
+  "stable_key": "ac8429",
+  "badges": []
+ },
+ {
+  "id": "REQ-F70-EU-205944",
+  "title": "Keep the car’s enjoyable, responsive driving character while eliminating underpowered feel and transmission jerkiness",
+  "description": "Customers experience smooth, predictable and engaging acceleration and gear changes: when they press the throttle the car responds without delay, torque delivery is consistent (no sudden torque steer), drive modes behave predictably, and gearshifts are smooth rather than jerky or lurching. Preserve the current strengths (comfortable ride, confident handling) while removing instances of sluggish or inconsistent drivetrain behaviour that some owners report.",
+  "acceptance_criterion": "In instrumented customer drives across urban, country and motorway scenarios, at least 90% of recorded acceleration events (e.g., 50→80 km/h overtakes and 0→100 km/h launches) show continuous torque delivery with no perceptible torque interruption or lurch; gearbox shift events must not produce a perceptible judder in more than 5% of shifts and median shift duration shall be <350 ms for automatic variants. In a 100-car field survey, fewer than 5% of customers must report 'underpowered' or 'jerky transmission' experiences in normal driving.",
+  "category": "driving_experience",
+  "signal_ids": [
+   "SIG-F70-EU-001",
+   "SIG-F70-EU-002",
+   "SIG-F70-EU-005",
+   "SIG-F70-EU-016",
+   "SIG-F70-EU-021",
+   "SIG-F70-EU-037",
+   "SIG-F70-EU-044",
+   "SIG-F70-EU-040"
+  ],
+  "score": 29.8,
+  "rank": 6,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.483,
+    "weight": 0.25,
+    "contribution": 12.1,
+    "explanation": "Mostly strengths (Likes), 737 mentions"
+   },
+   "reach": {
+    "value": 1.0,
+    "weight": 0.2,
+    "contribution": 20.0,
+    "explanation": "737 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -532,10 +486,102 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
+   },
+   "effort_inverse": {
+    "value": 0.2,
+    "weight": 0.1,
+    "contribution": 2.0,
+    "explanation": "effort estimate L"
+   }
+  },
+  "rationale": "Ranked mainly because of reach (20 points) and customer pain (12.1 points). Evidence level B: 737 mentions, confirmed only by web sources: A needs a second BMW source (study).",
+  "evidence_level": "B",
+  "assumptions": [
+   "Improvements are achieved via drivetrain calibration, control software and powertrain tuning rather than radical new hardware; successor launch (3–5 years) can use updated drivetrains or refined maps.",
+   "The test fleet and field survey reflect representative customer usage (mixed urban/motorway driving).",
+   "Acoustic tuning, rudimentary sound enhancement or mode-linked sound management available in the successor timeframe can meet customer expectations without relying on components outside standard powertrain options.",
+   "Customer panels reflect both comfort- and sport-oriented customers matched to variant intent."
+  ],
+  "uncertainties": [
+   "Conflicting evidence: \"A delight to drive\" vs. \"Engine underpowered and sluggish, transmission feels awful\"",
+   "Conflicting evidence: \"A delight to drive\" vs. \"Gearbox feels jerky and sluggish\"",
+   "Conflicting evidence: \"Really enjoyable to drive with strong performance\" vs. \"Engine underpowered and sluggish, transmission feels awful\"",
+   "Exact numeric shift-duration thresholds may need refinement after prototype testing to match subjective perception across variants.",
+   "Some extreme performance expectations (e.g., very high power in base trims) may conflict with fuel economy targets; trade-offs need PM decisions.",
+   "What customers label 'sporty' varies; objective acoustic signatures may need iteration to match subjective preference in different markets.",
+   "Electrified variants may require different strategies than combustion variants to achieve comparable 'engaging' sensations."
+  ],
+  "offer_check": {
+   "status": "not_offered",
+   "note": "No listed option raises engine power or provides transmission recalibration to eliminate DCT jerkiness.",
+   "option_code": null
+  },
+  "effort": "L",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 6,
+   "rank_max": 11,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
+  "stable_key": "205944",
+  "badges": []
+ },
+ {
+  "id": "REQ-F70-EU-87a880",
+  "title": "Deliver a premium-feeling, reliable key and locking experience that reliably remembers driver preferences",
+  "description": "Customers feel the key is high-quality to hold and use, and the digital/keyless system reliably stores and recalls driver profiles and locking/unlocking behaviour without unpredictable locking or false alarms.",
+  "acceptance_criterion": "In owner follow-up and product trials: perceived key quality >=8/10 by at least 90% of participants; owner-reported key or locking-system faults (including forgetting driver preferences, unexpected re-locks, or alarm triggers) are below 1% within 24 months; digital key/profile recall failures occur in fewer than 1% of uses during initial ownership period.",
+  "category": "comfort_space",
+  "signal_ids": [
+   "SIG-F70-EU-019"
+  ],
+  "score": 29.7,
+  "rank": 7,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Defect / Wants | Defect), 16 mentions"
+   },
+   "reach": {
+    "value": 0.147,
+    "weight": 0.2,
+    "contribution": 2.9,
+    "explanation": "16 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
+   },
+   "satisfaction_gap": {
+    "value": 0.0,
+    "weight": 0.2,
+    "contribution": 0.0,
+    "explanation": "no study data"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.102,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.6,
@@ -547,47 +593,67 @@
   "rationale": "Ranked mainly because of customer pain (25 points) and effort inverse (6 points). Evidence level B: 16 mentions, but from a single source type.",
   "evidence_level": "B",
   "assumptions": [
-   "Digital key implementations use current smartphone standards and dealer support processes are in place to recover failed pairs.",
-   "Driver preference persistence is largely a software/telemetry validation exercise."
+   "Surveys capture both physical key feel and digital-key behaviour; digital-key interoperability with common phone platforms is assumed.",
+   "Vehicles will ship with a robust default profile-handling implementation."
   ],
   "uncertainties": [
-   "Smartphone OS changes or manufacturer restrictions could affect digital key interoperability over time."
+   "Third-party smartphone OS updates may affect digital-key reliability beyond BMW control.",
+   "Some rare locking faults may be caused by aftermarket actions or extreme user behaviour."
   ],
   "offer_check": {
    "status": "optional",
-   "note": "Includes Komfortzugang (premium keyless access), but persistent digital key/driver profile functionality is not specified in the provided list. (INNOVATIONSPAKET)",
+   "note": "Includes Komfortzugang (comfort access) for premium keyless entry and unlocking; supports remembering driver profile preferences. (INNOVATIONSPAKET)",
    "option_code": "7EW"
   },
   "effort": "M",
   "status": "proposed",
-  "version": 1
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 6,
+   "rank_max": 8,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
+  "stable_key": "87a880",
+  "badges": []
  },
  {
-  "id": "REQ-F70-EU-011",
-  "title": "Driver assistance features and settings must persist and remain reliable through updates",
-  "description": "Customers experience driver assistance and automated driving systems that remain functional and retain their settings after software updates; features do not disappear or degrade without clear communicated reasons and a supported fix path.",
-  "acceptance_criterion": "During staged OTA update trials across a pilot fleet (N>=1000 vehicle‑updates), >= 99% of vehicles must retain previously enabled driver assistance features and settings; customer‑reported loss or disappearance incidents must be <0.5% per year in early field fleet monitoring.",
-  "category": "driver_assistance",
+  "id": "REQ-F70-EU-c9d274",
+  "title": "Maintain and improve ride comfort and damping so the car feels composed on mixed surfaces",
+  "description": "Customers experience a comfortable, composed ride across city streets, poor-surface roads and motorways: cushioning and damping avoid harshness or bottoming while preserving nimble, confident handling. The chassis should not feel unsettled on rough surfaces and should remain comfortable on longer trips.",
+  "acceptance_criterion": "On a standardized mixed-surface EU test route (includes rough urban sections and motorway segments) at least 90% of a 50-person customer panel rate ride comfort 'comfortable' or better and fewer than 10% report 'harsh' or 'bottoming' sensations. Objective vehicle responses on the same route shall show no more than 10% of events with suspension bottoming or harsh rebound as recorded by peak vertical acceleration events.",
+  "category": "driving_experience",
   "signal_ids": [
-   "SIG-F70-EU-020",
-   "SIG-F70-EU-034",
-   "SIG-F70-EU-WEB-11",
-   "SIG-F70-EU-WEB-09"
+   "SIG-F70-EU-006",
+   "SIG-F70-EU-001",
+   "SIG-F70-EU-010",
+   "SIG-F70-EU-031",
+   "SIG-F70-EU-035",
+   "SIG-F70-EU-038"
   ],
-  "score": 28.7,
-  "rank": 9,
+  "score": 29.2,
+  "rank": 8,
   "score_breakdown": {
    "customer_pain": {
-    "value": 0.714,
+    "value": 0.425,
     "weight": 0.25,
-    "contribution": 17.9,
-    "explanation": "Mostly complaints (Likes), 28 mentions"
+    "contribution": 10.6,
+    "explanation": "Mostly strengths (Likes / Wants), 514 mentions"
    },
    "reach": {
-    "value": 0.196,
+    "value": 0.835,
     "weight": 0.2,
-    "contribution": 3.9,
-    "explanation": "28 of at most 731 mentions (square root scale); EU = 74 % of 2030 volume"
+    "contribution": 16.7,
+    "explanation": "514 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -602,83 +668,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 1.0,
-    "weight": 0.1,
-    "contribution": 10.0,
-    "explanation": "linked to a 3-5 year trend (assumption)"
-   },
-   "effort_inverse": {
-    "value": 0.2,
-    "weight": 0.1,
-    "contribution": 2.0,
-    "explanation": "effort estimate L"
-   }
-  },
-  "rationale": "Ranked mainly because of customer pain (17.9 points) and future relevance (10 points). Evidence level B: 28 mentions, confirmed only by web sources: A needs a second BMW source (study).",
-  "evidence_level": "B",
-  "assumptions": [
-   "The software architecture will support rollback/feature persistence mechanisms consistent with SDV trends.",
-   "Pilot fleets and telemetry will be used to validate OTA behaviour prior to wide rollout."
-  ],
-  "uncertainties": [
-   "Conflicting evidence: \"Features disappeared and driver aids stopped working\" vs. \"Driver assistance, automated driving, overall technology: delight\"",
-   "Regulatory approvals for advanced assisted driving functions may vary by market and affect timelines and feature availability."
-  ],
-  "offer_check": {
-   "status": "not_offered",
-   "note": "No listed option guarantees driver-assistance settings persist unchanged or remain reliable after software updates.",
-   "option_code": null
-  },
-  "effort": "L",
-  "status": "proposed",
-  "version": 1
- },
- {
-  "id": "REQ-F70-EU-015",
-  "title": "Exterior must keep the praised sporty/classy styling while improving durability, lighting and mirror visibility",
-  "description": "Customers continue to value the car's attractive exterior design, while common exterior issues (lighting faults, mirror glare/limited visibility, tyre noise and grip) are reduced so the car looks good and performs reliably in daily use.",
-  "acceptance_criterion": "Styling approval: >= 85% positive rating in customer styling panels; exterior lighting and mirror defects <0.5% in production quality checks; in night driving tests reflection/glare complaints <1% and exterior tyre rolling noise at 80 km/h must be <= 70 dB on the standard tyre specification while meeting EU wet‑grip class A/B for the factory fitment.",
-  "category": "exterior",
-  "signal_ids": [
-   "SIG-F70-EU-007",
-   "SIG-F70-EU-033",
-   "SIG-F70-EU-032",
-   "SIG-F70-EU-017",
-   "SIG-F70-EU-027",
-   "SIG-F70-EU-041"
-  ],
-  "score": 28.0,
-  "rank": 10,
-  "score_breakdown": {
-   "customer_pain": {
-    "value": 0.738,
-    "weight": 0.25,
-    "contribution": 18.4,
-    "explanation": "Mostly complaints (Defect / Likes), 104 mentions"
-   },
-   "reach": {
-    "value": 0.377,
-    "weight": 0.2,
-    "contribution": 7.5,
-    "explanation": "104 of at most 731 mentions (square root scale); EU = 74 % of 2030 volume"
-   },
-   "satisfaction_gap": {
-    "value": 0.0,
-    "weight": 0.2,
-    "contribution": 0.0,
-    "explanation": "no study data"
-   },
-   "competitive_pressure": {
-    "value": 0.0,
-    "weight": 0.15,
-    "contribution": 0.0,
-    "explanation": "no trusted web source shows a competitor advantage"
-   },
-   "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.6,
@@ -687,36 +680,53 @@
     "explanation": "effort estimate M"
    }
   },
-  "rationale": "Ranked mainly because of customer pain (18.4 points) and reach (7.5 points). Evidence level B: 104 mentions, but from a single source type.",
+  "rationale": "Ranked mainly because of reach (16.7 points) and customer pain (10.6 points). Evidence level B: 514 mentions, but from a single source type.",
   "evidence_level": "B",
   "assumptions": [
-   "Standard factory tyre choice will prioritize balanced NVH and wet grip for mainstream wheel sizes.",
-   "Mirror geometry and anti‑reflective coatings can mitigate interior reflection complaints."
+   "Successor can use tuned damper maps and suspension geometry changes achievable within a single-generation update.",
+   "Customer panel is representative of European customer mix and uses the standardized route for consistent feedback."
   ],
   "uncertainties": [
-   "Conflicting evidence: \"Love how the car looks\" vs. \"Exterior: complaint\"",
-   "Aftermarket wheel/tyre choices by owners will affect NVH and grip; production targets apply to OEM fitment only."
+   "Preferences vary by market and wheel/tire choices; larger wheels will still increase perceived harshness and must be managed by option guidance.",
+   "Trade-offs between a softer ride and highly dynamic handling may require variant-specific tuning."
   ],
   "offer_check": {
-   "status": "optional",
-   "note": "Adds adaptive LED headlights, interior/exterior mirror package (auto-dimming) and grille contour lighting for improved lighting, mirror visibility and classy styling. (INNOVATIONSPAKET)",
-   "option_code": "7EW"
+   "status": "standard",
+   "note": "Adaptive M suspension adjusts damping and ride characteristics for a composed, comfortable response on mixed surfaces. (Adaptives M Fahrwerk)",
+   "option_code": null
   },
   "effort": "M",
   "status": "proposed",
-  "version": 1
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 6,
+   "rank_max": 12,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
+  "stable_key": "c9d274",
+  "badges": []
  },
  {
-  "id": "REQ-F70-EU-008",
-  "title": "Support straightforward media playback and provide accessible data USB ports",
-  "description": "Customers can plug in a USB stick and play music or audio files directly; usable data USB ports are available up front and at the rear so residents and passengers can access media and charging simultaneously.",
-  "acceptance_criterion": "All production vehicles must be able to play common audio formats (MP3, AAC, WAV) from a USB stick in the front console; in factory validation 100% of tested units must play audio from USB and at least one front and one rear USB port supporting data and charging must be present in mainstream trims.",
+  "id": "REQ-F70-EU-d1ea65",
+  "title": "Allow straightforward playback from USB and provide usable media USB ports",
+  "description": "Customers can plug in a USB stick and play their music easily; usable media ports (not charger‑only) are available where customers expect them (front console and at least one rear socket).",
+  "acceptance_criterion": "The system recognises and plays common audio files from a standard USB stick (MP3, AAC, FLAC, WAV) in ≥95% of tested sticks within 10 seconds of insertion; at least two USB ports supporting media (one front, one rear) are present on all trims where the vehicle is sold.",
   "category": "infotainment_digital",
   "signal_ids": [
    "SIG-F70-EU-029"
   ],
   "score": 27.1,
-  "rank": 11,
+  "rank": 9,
   "score_breakdown": {
    "customer_pain": {
     "value": 1.0,
@@ -728,7 +738,7 @@
     "value": 0.133,
     "weight": 0.2,
     "contribution": 2.7,
-    "explanation": "13 of at most 731 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "13 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -743,10 +753,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 1.0,
@@ -758,46 +768,67 @@
   "rationale": "Ranked mainly because of customer pain (25 points) and effort inverse (10 points). Evidence level C: Only 13 mentions: a hint, not a solid finding.",
   "evidence_level": "C",
   "assumptions": [
-   "Format support will cover broadly used audio file types; test uses commonly formatted USB sticks.",
-   "Lower accessory trims will include at least one data‑capable front port."
+   "Test USB sticks use common filesystems (FAT32/exFAT) and common codecs; OEM will publish supported formats in the manual.",
+   "Rear port availability is feasible within packaging and trim constraints."
   ],
   "uncertainties": [
-   "Future smartphone trends may reduce USB use; legacy support remains important for many customers."
+   "Legacy or unusual file formats used by some customers may not be supported without additional codec licensing.",
+   "Vehicle trims may require tradeoffs between additional ports and other interior features."
   ],
   "offer_check": {
    "status": "standard",
-   "note": "Standard 'USB Anschlüsse' provides accessible USB data ports and supports straightforward media playback. (USB Anschlüsse)",
+   "note": "Standard 'USB Anschlüsse' provides USB ports for media playback. (USB Anschlüsse)",
    "option_code": null
   },
   "effort": "S",
   "status": "proposed",
-  "version": 1
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 7,
+   "rank_max": 11,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
+  "stable_key": "d1ea65",
+  "badges": []
  },
  {
-  "id": "REQ-F70-EU-002",
-  "title": "Deliver clearly improved power and torque feel across the range",
-  "description": "Customers feel the car offers responsive, confident acceleration and torque delivery for everyday overtaking and motorway merging — no more feeling underpowered or vague throttle response.",
-  "acceptance_criterion": "In an independent customer driving test (N=100) covering urban and motorway use, >= 90% of participants must report 'adequate/strong' acceleration for overtaking and merging (>=8/10). Additionally, median 0–80 km/h response in real-world overtaking test should improve versus the current model by at least 10% for the comparable variant(s).",
-  "category": "driving_experience",
+  "id": "REQ-F70-EU-81758e",
+  "title": "Keep and strengthen seat comfort and interior quality while removing seat reliability and safety issues",
+  "description": "Customers experience front seats that are clearly comfortable, supportive and easy to use (maintaining the current strengths) while reported problems — poor support, stitching/creasing, squeaks, electric seat faults and seat-belt issues — are eliminated so seats are both pleasant and reliable.",
+  "acceptance_criterion": "In a representative user study and owner follow-up: at least 90% of drivers rate front-seat comfort >=8/10; seat-related quality or safety faults (stitching, creaks, electric seat faults, seat-belt failures) are reported by no more than 2% of owners within 24 months; and 95% of participants report no awkward seating position or lower-back discomfort after a 2‑hour motorway drive.",
+  "category": "comfort_space",
   "signal_ids": [
-   "SIG-F70-EU-005",
-   "SIG-F70-EU-021",
-   "SIG-F70-EU-002"
+   "SIG-F70-EU-008",
+   "SIG-F70-EU-009",
+   "SIG-F70-EU-036",
+   "SIG-F70-EU-013",
+   "SIG-F70-EU-042",
+   "SIG-F70-EU-039"
   ],
-  "score": 24.8,
-  "rank": 12,
+  "score": 25.9,
+  "rank": 10,
   "score_breakdown": {
    "customer_pain": {
-    "value": 0.536,
+    "value": 0.616,
     "weight": 0.25,
-    "contribution": 13.4,
-    "explanation": "Mostly strengths (Likes), 298 mentions"
+    "contribution": 15.4,
+    "explanation": "Mostly strengths (Likes / Wants), 121 mentions"
    },
    "reach": {
-    "value": 0.638,
+    "value": 0.405,
     "weight": 0.2,
-    "contribution": 12.8,
-    "explanation": "298 of at most 731 mentions (square root scale); EU = 74 % of 2030 volume"
+    "contribution": 8.1,
+    "explanation": "121 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -812,64 +843,84 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
-    "value": 0.2,
+    "value": 0.6,
     "weight": 0.1,
-    "contribution": 2.0,
-    "explanation": "effort estimate L"
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
    }
   },
-  "rationale": "Ranked mainly because of customer pain (13.4 points) and reach (12.8 points). Evidence level B: 298 mentions, confirmed only by web sources: A needs a second BMW source (study).",
+  "rationale": "Ranked mainly because of customer pain (15.4 points) and reach (8.1 points). Evidence level B: 121 mentions, confirmed only by web sources: A needs a second BMW source (study).",
   "evidence_level": "B",
   "assumptions": [
-   "Comparisons use the current model's mainstream petrol/diesel/hybrid variants; at least one higher‑torque variant will be offered where customers expect more punch.",
-   "Real-world 0–80 km/h timing is an acceptable proxy for perceived overtaking performance."
+   "User study sample covers typical EU driver heights (160–190 cm) and includes both city and long-distance driving scenarios.",
+   "Warranty/quality handling processes are in place so that manufacturing/assembly causes of stitching or squeaks are addressed."
   ],
   "uncertainties": [
-   "Conflicting evidence: \"Really enjoyable to drive with strong performance\" vs. \"Engine underpowered and sluggish, transmission feels awful\"",
-   "Conflicting evidence: \"Really enjoyable to drive with strong performance\" vs. \"Lack of engine power and poor torque delivery\"",
-   "Exact numeric improvement depends on final powertrain choices (ICE vs hybrid vs EV)."
+   "Conflicting evidence: \"Seats are comfortable and make driving enjoyable\" vs. \"Seats not comfy and lack support\"",
+   "Conflicting evidence: \"Seats not comfy and lack support\" vs. \"Interior comfort: delight\"",
+   "Perceived comfort has subjective variation; a small minority of users will always prefer different seat firmness/shapes.",
+   "Some reliability issues may be caused by rare installation faults or post-sale aftermarket changes."
   ],
   "offer_check": {
-   "status": "not_offered",
-   "note": "No listed option provides engine power/torque upgrade; only chassis, gearbox or minor weight measures are offered.",
-   "option_code": null
+   "status": "optional",
+   "note": "Active seats (option 455) increase driver and passenger comfort and support, improving seating quality and enhancing occupant safety. (Aktivsitz für Fahrer und Beifahrer)",
+   "option_code": "455"
   },
-  "effort": "L",
+  "effort": "M",
   "status": "proposed",
-  "version": 1
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 9,
+   "rank_max": 12,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
+  "stable_key": "81758e",
+  "badges": []
  },
  {
-  "id": "REQ-F70-EU-003",
-  "title": "Gearbox and transmission must feel consistently smooth and predictable",
-  "description": "Customers no longer experience jerky, slipping or delayed gear changes; shifts feel seamless and the gearbox behaves predictably in stop‑start city driving and during acceleration.",
-  "acceptance_criterion": "In a 50‑driver urban driving test and standardized shift assessment, >= 95% of drivers must rate gearshift smoothness >= 8/10 and measured occurrence of 'jerky' shifts must be <= 5% of all shifts recorded in the test protocol.",
-  "category": "driving_experience",
+  "id": "REQ-F70-EU-08473b",
+  "title": "Keep the 1 Series’ premium, head-turning exterior while eliminating common functional exterior faults",
+  "description": "Customers experience a car that looks sporty and classy and still delivers reliable exterior function: the styling remains a clear strength while common exterior problems (tyres, mirrors, lighting, build/trim) are reduced so exterior quality is not a source of owner complaints.",
+  "acceptance_criterion": "In a market follow-up survey, at least 85% of owners rate the exterior styling positively (>=8/10) AND owner-reported exterior build/fit/finish or trim complaints are below 1% and owner-reported exterior lighting or mirror complaints are below 1% within the first 24 months; tyre-related noise/grip complaints are below 2% in the same period.",
+  "category": "exterior",
   "signal_ids": [
-   "SIG-F70-EU-016",
-   "SIG-F70-EU-044",
-   "SIG-F70-EU-024",
-   "SIG-F70-EU-001"
+   "SIG-F70-EU-007",
+   "SIG-F70-EU-017",
+   "SIG-F70-EU-027",
+   "SIG-F70-EU-032",
+   "SIG-F70-EU-033",
+   "SIG-F70-EU-041"
   ],
-  "score": 24.8,
-  "rank": 13,
+  "score": 24.6,
+  "rank": 11,
   "score_breakdown": {
    "customer_pain": {
-    "value": 0.429,
+    "value": 0.738,
     "weight": 0.25,
-    "contribution": 10.7,
-    "explanation": "Mostly strengths (Likes), 437 mentions"
+    "contribution": 18.4,
+    "explanation": "Mostly complaints (Defect / Likes), 104 mentions"
    },
    "reach": {
-    "value": 0.773,
+    "value": 0.376,
     "weight": 0.2,
-    "contribution": 15.5,
-    "explanation": "437 of at most 731 mentions (square root scale); EU = 74 % of 2030 volume"
+    "contribution": 7.5,
+    "explanation": "104 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -884,10 +935,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.2,
@@ -896,37 +947,54 @@
     "explanation": "effort estimate L"
    }
   },
-  "rationale": "Ranked mainly because of reach (15.5 points) and customer pain (10.7 points). Evidence level B: 437 mentions, confirmed only by web sources: A needs a second BMW source (study).",
+  "rationale": "Ranked mainly because of customer pain (18.4 points) and reach (7.5 points). Evidence level B: 104 mentions, but from a single source type.",
   "evidence_level": "B",
   "assumptions": [
-   "Test protocol defines 'jerky' shift with a repeatable subjective/accelerometer threshold.",
-   "Software calibrations and transmission hardware are within capability for successor timelines."
+   "Survey and complaint logging use a consistent definition of 'complaint' and cover a representative EU owner sample over 24 months.",
+   "Tyre fitment choices and supply can be aligned to achieve lower customer noise/grip complaints without unacceptable cost or emissions impacts."
   ],
   "uncertainties": [
-   "Conflicting evidence: \"A delight to drive\" vs. \"Gearbox feels jerky and sluggish\"",
-   "Conflicting evidence: \"Gearbox feels jerky and sluggish\" vs. \"Automatic gearbox is smooth and seamless\"",
-   "Some legacy hardware limitations (e.g., low-cost DCT variants) may constrain achievable smoothness in entry trims."
+   "Conflicting evidence: \"Love how the car looks\" vs. \"Exterior: complaint\"",
+   "Some exterior complaints stem from aftermarket tyre choices or local road conditions (potholes) which may limit achievable complaint reduction.",
+   "Customer tastes for styling may shift; survey timing may affect measured positivity."
   ],
   "offer_check": {
-   "status": "standard",
-   "note": "Standard Steptronic dual‑clutch gearbox delivers smooth, consistent and predictable shifting behavior. (Steptronic Getriebe mit Doppelkupplung)",
-   "option_code": null
+   "status": "optional",
+   "note": "Contains contour-illuminated kidney grille and adaptive LED headlights, enhancing premium exterior looks and addressing common exterior lighting/function issues. (INNOVATIONSPAKET)",
+   "option_code": "7EW"
   },
   "effort": "L",
   "status": "proposed",
-  "version": 1
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 10,
+   "rank_max": 12,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
+  "stable_key": "08473b",
+  "badges": []
  },
  {
-  "id": "REQ-F70-EU-004",
-  "title": "Braking must feel progressive, predictable and offer adjustable regenerative behaviour",
-  "description": "Customers experience smooth, progressive brake pedal response with no sudden grabbing or delayed onset, and can adjust regenerative braking to their preference across clear settings.",
-  "acceptance_criterion": "In a 50‑driver structured evaluation, >= 95% must rate brake progression >= 8/10; regenerative braking must be user‑selectable with at least three distinct intensity settings and confirmed usable by 95% of drivers in a real‑world driving session.",
+  "id": "REQ-F70-EU-968ff1",
+  "title": "Deliver linear, predictable braking with selectable and smooth regenerative braking transitions",
+  "description": "Braking must feel progressive and predictable to the driver: pedal effort produces proportional deceleration without sudden grabbing or unexpected hard stops. For electrified variants, customers can select regeneration intensity and transitions between regenerative and friction braking occur smoothly without sudden jolts.",
+  "acceptance_criterion": "Brake pedal force vs deceleration must show a correlation R² ≥ 0.9 on standard test cycles (urban stop‑start + emergency braking). In 100 recorded braking events across mixed driving, fewer than 5% may show sudden hard grab behaviour. Electrified variants must offer at least three selectable regeneration levels and transitions between regenerative and friction braking must complete within 250 ms without a perceptible jolt in ≥95% of controlled trials.",
   "category": "driving_experience",
   "signal_ids": [
    "SIG-F70-EU-026"
   ],
   "score": 24.4,
-  "rank": 14,
+  "rank": 12,
   "score_breakdown": {
    "customer_pain": {
     "value": 1.0,
@@ -938,7 +1006,7 @@
     "value": 0.138,
     "weight": 0.2,
     "contribution": 2.8,
-    "explanation": "14 of at most 731 mentions (square root scale); EU = 74 % of 2030 volume"
+    "explanation": "14 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -953,10 +1021,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.102,
     "weight": 0.1,
     "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.6,
@@ -968,46 +1036,244 @@
   "rationale": "Ranked mainly because of customer pain (25 points) and effort inverse (6 points). Evidence level C: Only 14 mentions: a hint, not a solid finding.",
   "evidence_level": "C",
   "assumptions": [
-   "Evaluation covers conventional friction braking and, where present, regenerative braking in hybrid/EV variants.",
-   "Pedal feel and software calibration will be tuned during vehicle development."
+   "Brake feel improvements are achievable through brake-by-wire calibration, pedal mapping and regenerative blending strategies available within the successor timeframe.",
+   "Customer perception of 'grab' is captured by combined objective (sensor) and subjective (panel) testing."
   ],
   "uncertainties": [
-   "Achievable regeneration feel may differ between mild‑hybrid, full‑hybrid and full‑EV drivetrains."
+   "Legacy hardware variants may limit the number of selectable regeneration levels; packaging or cost constraints may force variant differences.",
+   "Extreme environmental conditions (ice, heavy wear) may still cause local variability in braking feel."
   ],
   "offer_check": {
    "status": "not_offered",
-   "note": "No listed option specifies adjustable regenerative braking or brake-feel tuning; regenerative behaviour not covered.",
+   "note": "No listed option or package mentions regenerative braking, selectable regen modes, or brake energy recuperation control.",
    "option_code": null
   },
   "effort": "M",
   "status": "proposed",
-  "version": 1
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 8,
+   "rank_max": 12,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
+  "stable_key": "968ff1",
+  "badges": []
  },
  {
-  "id": "REQ-F70-EU-016",
-  "title": "Provide an EV variant with competitive real‑world range for 2028 buyers",
-  "description": "Customers considering an electric 1 Series get a variant whose real‑world driving range meets mainstream expectations for midsize EVs at the time, reducing range anxiety and making the car practical for daily and longer trips.",
-  "acceptance_criterion": "For the BEV variant, real‑world driving range must achieve at least 465 km in independent mixed‑route (urban/highway) tests representative of typical EU use (as documented by external test organization).",
+  "id": "REQ-F70-EU-7de7a7",
+  "title": "Ensure driver assistance features are reliable and remain available after updates",
+  "description": "Customers experience driver assistance and automated features that are stable over the vehicle lifetime: features they use do not disappear after software updates, controls do not freeze, and assistance functions remain operational without repeated dealer visits. When a feature is disabled for safety or maintenance, the vehicle clearly informs the driver and offers a recovery path.",
+  "acceptance_criterion": "After any over‑the‑air or dealer-installed software update, ≥99% of previously enabled driver assistance features must remain enabled and operational without a dealer visit within 7 calendar days. Field telemetry must show fewer than 0.1 assistance-related software crashes per 1,000 vehicle-days. Customer support processes must restore any disabled feature within 7 days for ≥95% of reported cases.",
+  "category": "driver_assistance",
+  "signal_ids": [
+   "SIG-F70-EU-020",
+   "SIG-F70-EU-034",
+   "SIG-F70-EU-012"
+  ],
+  "score": 19.5,
+  "rank": 13,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.591,
+    "weight": 0.25,
+    "contribution": 14.8,
+    "explanation": "Mostly strengths (Likes / Likes | Defect), 47 mentions"
+   },
+   "reach": {
+    "value": 0.253,
+    "weight": 0.2,
+    "contribution": 5.1,
+    "explanation": "47 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
+   },
+   "satisfaction_gap": {
+    "value": 0.0,
+    "weight": 0.2,
+    "contribution": 0.0,
+    "explanation": "no study data"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.102,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it; market growth 2025-2030: +2.4 %"
+   },
+   "effort_inverse": {
+    "value": 0.2,
+    "weight": 0.1,
+    "contribution": 2.0,
+    "explanation": "effort estimate L"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (14.8 points) and reach (5.1 points). Evidence level B: 47 mentions, but from a single source type.",
+  "evidence_level": "B",
+  "assumptions": [
+   "A robust OTA and remote diagnostics infrastructure is available at launch for the successor.",
+   "Dealer and remote support processes are staffed and trained to restore features within the stated timeframe."
+  ],
+  "uncertainties": [
+   "Conflicting evidence: \"Features disappeared and driver aids stopped working\" vs. \"Driver assistance, automated driving, overall technology: delight\"",
+   "Some geo-specific regulatory or homologation changes could force temporary feature disablement in restricted markets; such cases must be identified and communicated to customers.",
+   "Legacy hardware in older vehicles may limit the ability to restore some features without dealer intervention."
+  ],
+  "offer_check": {
+   "status": "standard",
+   "note": "Remote Software Upgrade allows updates and helps keep driver assistance functions current and available after software updates. (Remote Software Upgrade)",
+   "option_code": null
+  },
+  "effort": "L",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 13,
+   "rank_max": 14,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
+  "stable_key": "7de7a7",
+  "badges": []
+ },
+ {
+  "id": "REQ-F70-EU-b0f407",
+  "title": "Personalized zero‑layer home that adapts to the driver and evolves via OTA updates",
+  "description": "The HMI surfaces each driver's most used functions on the home screen automatically (or via simple customization) and allows the OEM to refine the layout through over‑the‑air updates so the system becomes more efficient for each driver over time.",
+  "acceptance_criterion": "In a 2‑week user trial after personalization/learning, ≥80% of drivers reach their top 4 most used functions in ≤1 tap from the home screen; an OTA update can change the home layout and be installed successfully on ≥98% of trial vehicles without user intervention.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-F70-EU-WEB-09",
+   "SIG-F70-EU-WEB-01"
+  ],
+  "score": 16.0,
+  "rank": 14,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.4,
+    "weight": 0.25,
+    "contribution": 10.0,
+    "explanation": "Mostly trends, 2 mentions"
+   },
+   "reach": {
+    "value": 0.052,
+    "weight": 0.2,
+    "contribution": 1.0,
+    "explanation": "2 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
+   },
+   "satisfaction_gap": {
+    "value": 0.0,
+    "weight": 0.2,
+    "contribution": 0.0,
+    "explanation": "no study data"
+   },
+   "competitive_pressure": {
+    "value": 0.6,
+    "weight": 0.15,
+    "contribution": 9.0,
+    "explanation": "competitor advantage backed by a medium-trust web source"
+   },
+   "future_relevance": {
+    "value": 1.0,
+    "weight": 0.1,
+    "contribution": 10.0,
+    "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +2.4 %"
+   },
+   "effort_inverse": {
+    "value": 0.2,
+    "weight": 0.1,
+    "contribution": 2.0,
+    "explanation": "effort estimate L"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (10 points) and future relevance (10 points). Evidence level D: Bet on the next generation: only 0 direct customer mentions, the rest rests on trends (assumption).",
+  "evidence_level": "D",
+  "assumptions": [
+   "Centralized compute and OTA infrastructure are available for the successor platform between 2028–2031 as industry analyses predict.",
+   "Customers opt in to personalization and OTA updates and data privacy consents are obtained per EU requirements.",
+   "OTA infrastructure, agreements and content pipelines are in place to deliver meaningful functional updates at least quarterly.",
+   "Customers in the study opt in to receive updates and participate in the satisfaction measurement."
+  ],
+  "uncertainties": [
+   "Regulatory and privacy constraints could limit the level of personalization or remote changes available at launch.",
+   "Effectiveness depends on quality of usage data and algorithms to infer top functions without intrusive prompts.",
+   "Measured satisfaction depends on update quality and perceived value; poor updates could harm satisfaction.",
+   "External dependencies (third‑party services, mobile networks) may limit achievable improvement."
+  ],
+  "offer_check": {
+   "status": "standard",
+   "note": "BMW Operating System 9 includes the personalized zero‑layer home; OTA evolution supported via Remote Software Upgrade. (BMW Operating System 9)",
+   "option_code": null
+  },
+  "effort": "L",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "next_gen",
+  "robustness": {
+   "rank_min": 13,
+   "rank_max": 15,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
+  "stable_key": "b0f407",
+  "badges": [
+   "Zukunftswette",
+   "Annahme"
+  ]
+ },
+ {
+  "id": "REQ-F70-EU-97aa14",
+  "title": "Deliver real‑world electric range that meets rising customer expectations for midsize EVs",
+  "description": "For the electric variant, customers experience a real-world driving range that removes range anxiety for typical mid-length trips across European conditions: daily and longer trips should be possible without frequent recharging and advertised range closely matches customer experience.",
+  "acceptance_criterion": "In real-world mixed-driving tests representative of European use (combined urban, suburban and motorway at seasonal temperatures), the electric variant achieves at least 450 km usable driving range in ≥80% of test cycles. Customer field trials must show advertised range-to-real-world variance of no more than -8% for typical drivers.",
   "category": "range_charging",
   "signal_ids": [
    "SIG-F70-EU-043",
-   "SIG-F70-EU-WEB-08",
-   "SIG-F70-EU-WEB-10"
+   "SIG-F70-EU-WEB-08"
   ],
-  "score": 23.6,
+  "score": 14.6,
   "rank": 15,
   "score_breakdown": {
    "customer_pain": {
-    "value": 0.54,
+    "value": 0.6,
     "weight": 0.25,
-    "contribution": 13.5,
-    "explanation": "Mostly unmet needs (Wants), 10 mentions"
+    "contribution": 15.0,
+    "explanation": "Mostly unmet needs (Wants), 8 mentions"
    },
    "reach": {
-    "value": 0.117,
+    "value": 0.104,
     "weight": 0.2,
-    "contribution": 2.3,
-    "explanation": "10 of at most 731 mentions (square root scale); EU = 74 % of 2030 volume"
+    "contribution": 2.1,
+    "explanation": "8 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -1025,7 +1291,7 @@
     "value": 1.0,
     "weight": 0.1,
     "contribution": 10.0,
-    "explanation": "linked to a 3-5 year trend (assumption)"
+    "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.2,
@@ -1034,50 +1300,69 @@
     "explanation": "effort estimate L"
    }
   },
-  "rationale": "Ranked mainly because of customer pain (13.5 points) and future relevance (10 points). Evidence level B: Only 10 mentions, but confirmed by 2 independent source types.",
-  "evidence_level": "B",
+  "rationale": "Ranked mainly because of customer pain (15 points) and future relevance (10 points). Evidence level D: Bet on the next generation: only 6 direct customer mentions, the rest rests on trends (assumption).",
+  "evidence_level": "D",
   "assumptions": [
-   "This requirement is forward‑looking and assumes battery energy density and vehicle packaging improvements consistent with industry trends by 2028.",
-   "Test protocol reflects real‑world conditions (mixed speeds, typical climate control use)."
+   "Battery energy density and pack-level improvements available by the next generation (3–5 years) will enable this range in a vehicle of this size.",
+   "Testing uses representative climates and driving patterns for Europe; winter performance will be called out separately.",
+   "Charging infrastructure and fast-charge interoperability for customer convenience continue to improve as suggested by market trends."
   ],
   "uncertainties": [
-   "Achievable range depends strongly on final cell technology, vehicle mass and aerodynamic choices; trade‑offs with cost and packaging will apply."
+   "Real-world range depends heavily on climate, payload and driving style; exact marketed claims will need careful calibration.",
+   "Achieving this range may require higher-capacity packs that affect cost and packaging; variant strategy decisions will influence rollout."
   ],
   "offer_check": {
    "status": "not_offered",
-   "note": "No electric powertrain, battery, or range-related option is listed, so an EV variant is not offered.",
+   "note": "No option or package lists battery, range, or efficiency measures to increase real-world EV range.",
    "option_code": null
   },
   "effort": "L",
   "status": "proposed",
-  "version": 1
+  "version": 1,
+  "horizon": "next_gen",
+  "robustness": {
+   "rank_min": 14,
+   "rank_max": 15,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
+  "stable_key": "97aa14",
+  "badges": [
+   "Zukunftswette",
+   "Annahme"
+  ]
  },
  {
-  "id": "REQ-F70-EU-005",
-  "title": "Improve ride damping and handling balance on poor surfaces without compromising comfort",
-  "description": "Customers experience better cushioning and controlled damping on rough roads while retaining the composed handling that makes the car enjoyable on local and motorway routes.",
-  "acceptance_criterion": "In a mixed‑surface test (including uneven urban surfaces), >= 90% of drivers must rate ride comfort >= 8/10 and handling confidence >= 8/10 versus the current model; vertical acceleration and comfort-related NVH metrics must show measurable reduction on the standardized bad‑road track.",
-  "category": "driving_experience",
+  "id": "REQ-F70-EU-512a36",
+  "title": "Increase perceived rear legroom and boot practicality in the EV successor so rear passengers feel genuinely comfortable",
+  "description": "Customers experience a noticeably roomier rear seating area and a more practical boot in the successor EV variant, making the rear seat usable for adult passengers and the boot competitive for everyday luggage needs.",
+  "acceptance_criterion": "In customer trials of the successor EV variant, rear knee clearance (rear legroom) must increase by at least 50 mm versus the current F70 baseline and at least 90% of trial participants of height 175–185 cm report rear-seat comfort >=8/10; the boot must accommodate three medium suitcases (55 x 40 x 23 cm) with rear seats in place.",
+  "category": "variants_packages",
   "signal_ids": [
-   "SIG-F70-EU-031",
-   "SIG-F70-EU-035",
-   "SIG-F70-EU-038",
-   "SIG-F70-EU-006"
+   "SIG-F70-EU-WEB-10"
   ],
-  "score": 20.1,
+  "score": 10.2,
   "rank": 16,
   "score_breakdown": {
    "customer_pain": {
-    "value": 0.542,
+    "value": 0.3,
     "weight": 0.25,
-    "contribution": 13.5,
-    "explanation": "Mostly strengths (Wants / Likes), 91 mentions"
+    "contribution": 7.5,
+    "explanation": "Mostly trends, 2 mentions"
    },
    "reach": {
-    "value": 0.353,
+    "value": 0.052,
     "weight": 0.2,
-    "contribution": 7.1,
-    "explanation": "91 of at most 731 mentions (square root scale); EU = 74 % of 2030 volume"
+    "contribution": 1.0,
+    "explanation": "2 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -1092,10 +1377,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 1.0,
     "weight": 0.1,
-    "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "contribution": 10.0,
+    "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +2.4 %"
    },
    "effort_inverse": {
     "value": 0.2,
@@ -1104,22 +1389,136 @@
     "explanation": "effort estimate L"
    }
   },
-  "rationale": "Ranked mainly because of customer pain (13.5 points) and reach (7.1 points). Evidence level B: 91 mentions, but from a single source type.",
-  "evidence_level": "B",
+  "rationale": "Ranked mainly because of future relevance (10 points) and customer pain (7.5 points). Evidence level D: Bet on the next generation: only 0 direct customer mentions, the rest rests on trends (assumption).",
+  "evidence_level": "D",
   "assumptions": [
-   "Tests include common wheel/tire combinations that customers typically select (avoid oversized wheels in primary validation).",
-   "Adaptive damping or tuned passive dampers will be used depending on variant."
+   "The Neue Klasse / EV architecture delivers a longer wheelbase and packaging advantages enabling increased rear legroom and different battery packaging by the successor launch.",
+   "Measurement compares like-to-like variants (similarly equipped models) and uses representative occupant heights (175–185 cm).",
+   "Sufficient supply of high-quality recycled or bio-based materials is available at scale by successor launch.",
+   "Durability test standards for new materials are aligned with current internal thresholds for abrasion, staining and colour-fastness."
   ],
   "uncertainties": [
-   "Trade‑offs between sporty handling and comfort may require multiple suspension calibrations across trims."
+   "Final battery packaging, crash-structure or regulatory constraints could reduce achievable interior gains.",
+   "Market acceptance depends on perceived trade-offs (e.g., ride, price).",
+   "Some customer segments will continue to prefer traditional leather; regulatory or supplier changes could affect availability of materials.",
+   "Perception of 'premium' is subjective and may vary by market/culture."
   ],
   "offer_check": {
-   "status": "standard",
-   "note": "Adaptives M Fahrwerk provides adaptive damping to balance handling and comfort on uneven/poor surfaces. (Adaptives M Fahrwerk)",
-   "option_code": null
+   "status": "optional",
+   "note": "40:20:40 rear seat split enables pass-through and flexible boot use, improving boot practicality and perceived rear passenger space. (Fondsitzlehne, Teilung 40 : 20 : 40)",
+   "option_code": "465"
   },
   "effort": "L",
   "status": "proposed",
-  "version": 1
+  "version": 1,
+  "horizon": "next_gen",
+  "robustness": {
+   "rank_min": 16,
+   "rank_max": 16,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
+  "stable_key": "512a36",
+  "badges": [
+   "Zukunftswette",
+   "Annahme"
+  ]
+ },
+ {
+  "id": "REQ-F70-EU-63d37b",
+  "title": "Offer conditional automated motorway driving up to customer‑useful speeds where regulation permits",
+  "description": "Where local regulations and approvals permit, customers can use a conditional automated driving mode on motorways that relieves sustained steering and speed control tasks up to the allowable speed (e.g., up to 95 km/h in markets that approve such systems). The system must operate reliably in permitted scenarios and hand back control gracefully when required.",
+  "acceptance_criterion": "In approved markets and under permitted conditions, the system runs autonomously on motorway segments up to 95 km/h and operates reliably in ≥95% of permitted motorway segments during trial fleets (daytime, good weather, and typical traffic density). Any required handover to the driver must be completed with a safe and audible prompt and a maximum handover time of 10 seconds under normal conditions.",
+  "category": "driver_assistance",
+  "signal_ids": [
+   "SIG-F70-EU-WEB-11"
+  ],
+  "score": 10.1,
+  "rank": 17,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.3,
+    "weight": 0.25,
+    "contribution": 7.5,
+    "explanation": "Mostly trends, 1 mentions"
+   },
+   "reach": {
+    "value": 0.037,
+    "weight": 0.2,
+    "contribution": 0.7,
+    "explanation": "1 of at most 737 mentions (square root scale); EU = 74 % of 2030 volume (87,000 cars)"
+   },
+   "satisfaction_gap": {
+    "value": 0.0,
+    "weight": 0.2,
+    "contribution": 0.0,
+    "explanation": "no study data"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 1.0,
+    "weight": 0.1,
+    "contribution": 10.0,
+    "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +2.4 %"
+   },
+   "effort_inverse": {
+    "value": 0.2,
+    "weight": 0.1,
+    "contribution": 2.0,
+    "explanation": "effort estimate L"
+   }
+  },
+  "rationale": "Ranked mainly because of future relevance (10 points) and customer pain (7.5 points). Evidence level D: Bet on the next generation: only 0 direct customer mentions, the rest rests on trends (assumption).",
+  "evidence_level": "D",
+  "assumptions": [
+   "Regulatory approval for conditional automated driving up to ~95 km/h is granted in target markets by the successor launch.",
+   "Mapping and monitoring infrastructure and approved safety frameworks exist in those markets.",
+   "Robust driver-monitoring and fail-safe handover procedures are available and certified where required."
+  ],
+  "uncertainties": [
+   "Regulatory timelines vary by market; some countries may delay approvals, limiting feature availability at launch.",
+   "Customer acceptance and trust will depend heavily on initial reliability in real traffic; early fleet experiences may differ from lab tests."
+  ],
+  "offer_check": {
+   "status": "optional",
+   "note": "Includes steering and lane guidance assistant with traffic‑jam assistant and active distance/navigation control enabling conditional motorway automation where regulations permit. (Kamera- und radarbasiertes Fahrerassistenzsystem bestehend aus:)",
+   "option_code": "5AT"
+  },
+  "effort": "L",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "next_gen",
+  "robustness": {
+   "rank_min": 17,
+   "rank_max": 17,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 85000,
+   "volume_2030": 87000,
+   "growth_pct": 2.353,
+   "market_share": 0.737,
+   "note": ""
+  },
+  "stable_key": "63d37b",
+  "badges": [
+   "Zukunftswette",
+   "Annahme"
+  ]
  }
 ]

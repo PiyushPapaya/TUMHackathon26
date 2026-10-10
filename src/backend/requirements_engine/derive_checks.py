@@ -55,3 +55,22 @@ def conflict_notes(linked: list[Signal]) -> list[str]:
     by_id = {s.id: s for s in linked}
     pairs = {tuple(sorted((s.id, other))) for s in linked for other in s.conflicts_with if other in by_id}
     return [f'Conflicting evidence: "{by_id[a].title}" vs. "{by_id[b].title}"' for a, b in sorted(pairs)[:3]]
+
+
+def next_gen_problem(assumptions: list[str], linked: list[Signal]) -> str | None:
+    """Grund, warum eine Zukunftswette nicht zählt, sonst None. Regeln, keine KI.
+
+    Ohne Annahme ist eine Wette nicht prüfbar (Brief: Annahmen sichtbar machen). Ohne Trend-Befund ist sie
+    erfunden, denn eine Wette soll aus einem belegten Trend entstehen, nicht aus der Fantasie der KI.
+    """
+    if not any(a.strip() for a in assumptions):
+        return "Bet on the next generation without a stated assumption: not verifiable."
+    if not any(s.kind == SignalKind.TREND for s in linked):
+        return "Bet on the next generation that cites no trend finding: it would be invented."
+    return None
+
+
+def badges_for(horizon: str, level: str) -> list[str]:
+    """Fertige Kurzlabels fürs Cockpit (Vertrag: Requirement.badges)."""
+    return [*(["Zukunftswette"] if horizon == "next_gen" else []), *(["Annahme"] if level == "D" else [])]
+
