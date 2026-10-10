@@ -190,5 +190,6 @@ class Scenario(BaseModel):
     countries: list[str]
     competitors: list[str]
     successor_horizon: str = "2030"
+    extra_trend_topics: list[tuple[str, str]] = []  # (Kategorie, englisches Thema) nur für diesen Markt
     data_coverage: DataCoverage = Field(default_factory=DataCoverage)
     warnings: list[str] = []       # z. B. "Nur 19 Kommentare", "3 unbekannte Themen"

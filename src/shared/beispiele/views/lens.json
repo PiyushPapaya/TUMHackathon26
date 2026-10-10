@@ -1,0 +1,421 @@
+{
+ "question": "Familien, Fokus Laden und Platz",
+ "interpretation": "Regel-Linse (ohne KI): Kategorien: range_charging, comfort_space.",
+ "source": "rules",
+ "weights": {
+  "customer_pain": 0.25,
+  "reach": 0.2,
+  "satisfaction_gap": 0.2,
+  "competitive_pressure": 0.15,
+  "future_relevance": 0.1,
+  "effort_inverse": 0.1
+ },
+ "filters": {
+  "categories": [
+   "range_charging",
+   "comfort_space"
+  ],
+  "only_gaps": false
+ },
+ "note": null,
+ "top": [
+  {
+   "requirement": {
+    "id": "REQ-G60-US-002",
+    "title": "Verlässliche Reichweitenprognose",
+    "description": "Das Fahrzeug zeigt eine Reichweite, auf die sich Kunden auch bei Kälte und auf der Autobahn verlassen können.",
+    "acceptance_criterion": "Abweichung Prognose vs. tatsächlich <= 5 % auf 100 km; Wetter und Topografie berücksichtigt.",
+    "category": "range_charging",
+    "signal_ids": [
+     "SIG-G60-US-004"
+    ],
+    "score": 48.4,
+    "rank": 2,
+    "score_breakdown": {
+     "customer_pain": {
+      "value": 0.7,
+      "weight": 0.25,
+      "contribution": 17.5,
+      "explanation": "38 BEV-Kommentare zu Electric Range"
+     },
+     "reach": {
+      "value": 0.5,
+      "weight": 0.2,
+      "contribution": 10.0,
+      "explanation": "BEV-Anteil wächst, Volumen 2030 steigt"
+     },
+     "satisfaction_gap": {
+      "value": 0.4,
+      "weight": 0.2,
+      "contribution": 8.0,
+      "explanation": "keine direkte Studienfrage"
+     },
+     "competitive_pressure": {
+      "value": 0.5,
+      "weight": 0.15,
+      "contribution": 7.5,
+      "explanation": "Wettbewerb wirbt mit präziser Prognose"
+     },
+     "future_relevance": {
+      "value": 0.8,
+      "weight": 0.1,
+      "contribution": 8.0,
+      "explanation": "BEV-Anteil steigt bis 2030 (Annahme)"
+     },
+     "effort_inverse": {
+      "value": 0.6,
+      "weight": 0.1,
+      "contribution": 6.0,
+      "explanation": "Aufwand M"
+     }
+    },
+    "rationale": "Starker Schmerz bei BEV-Kunden, wichtig für einen elektrischen Nachfolger.",
+    "evidence_level": "B",
+    "assumptions": [
+     "BEV-Anteil im US-Markt steigt bis 2030."
+    ],
+    "uncertainties": [
+     "Nur eine Quellenart (Feedback)."
+    ],
+    "offer_check": {
+     "status": "unknown",
+     "note": "Optionsliste enthält keine Aussage zur Prognosegüte.",
+     "option_code": null
+    },
+    "effort": "M",
+    "status": "proposed",
+    "version": 1,
+    "horizon": "today",
+    "robustness": {
+     "rank_min": 2,
+     "rank_max": 4,
+     "top3_share": 0.71,
+     "runs": 500
+    },
+    "segment_conflicts": [],
+    "business": {
+     "volume_2025": 78000,
+     "volume_2030": 80000,
+     "growth_pct": 2.6,
+     "market_share": 0.25,
+     "note": "US = 25 % des G60/G68-Volumens 2030 (sales_volumes.xlsx)"
+    },
+    "stable_key": "sk-002",
+    "badges": []
+   },
+   "lens_score": 48.4,
+   "lens_rank": 1,
+   "reasons": [
+    {
+     "factor": "customer_pain",
+     "contribution": 17.5,
+     "sentence": "38 BEV-Kommentare zu Electric Range"
+    },
+    {
+     "factor": "reach",
+     "contribution": 10.0,
+     "sentence": "BEV-Anteil wächst, Volumen 2030 steigt"
+    }
+   ]
+  },
+  {
+   "requirement": {
+    "id": "REQ-G60-US-004",
+    "title": "Zuverlässige berührungslose Heckklappe",
+    "description": "Die Heckklappe öffnet per Fußgeste beim ersten Versuch.",
+    "acceptance_criterion": ">= 95 % Öffnung beim ersten Versuch in Alltagstests (Regen, Schuhe, Beladung).",
+    "category": "comfort_space",
+    "signal_ids": [
+     "SIG-G60-US-007"
+    ],
+    "score": 47.2,
+    "rank": 3,
+    "score_breakdown": {
+     "customer_pain": {
+      "value": 0.7,
+      "weight": 0.25,
+      "contribution": 17.5,
+      "explanation": "39 Kommentare zu non-contact trunk lid"
+     },
+     "reach": {
+      "value": 0.6,
+      "weight": 0.2,
+      "contribution": 12.0,
+      "explanation": "betrifft alle Antriebe"
+     },
+     "satisfaction_gap": {
+      "value": 0.5,
+      "weight": 0.2,
+      "contribution": 10.0,
+      "explanation": "Studie: Tailgate operations im Mittelfeld"
+     },
+     "competitive_pressure": {
+      "value": 0.2,
+      "weight": 0.15,
+      "contribution": 3.0,
+      "explanation": "kein Webbeleg"
+     },
+     "future_relevance": {
+      "value": 0.3,
+      "weight": 0.1,
+      "contribution": 3.0,
+      "explanation": "kein Trend"
+     },
+     "effort_inverse": {
+      "value": 1.0,
+      "weight": 0.1,
+      "contribution": 10.0,
+      "explanation": "Aufwand S"
+     }
+    },
+    "rationale": "Häufiger Ärger bei kleinem Aufwand: Quick Win.",
+    "evidence_level": "B",
+    "assumptions": [],
+    "uncertainties": [
+     "Teilweise Bedienfehler statt echter Schwäche?"
+    ],
+    "offer_check": {
+     "status": "optional",
+     "note": "Komfortzugang mit berührungsloser Heckklappe ist Sonderausstattung.",
+     "option_code": "322"
+    },
+    "effort": "S",
+    "status": "proposed",
+    "version": 1,
+    "horizon": "today",
+    "robustness": {
+     "rank_min": 3,
+     "rank_max": 5,
+     "top3_share": 0.48,
+     "runs": 500
+    },
+    "segment_conflicts": [],
+    "business": {
+     "volume_2025": 78000,
+     "volume_2030": 80000,
+     "growth_pct": 2.6,
+     "market_share": 0.25,
+     "note": "US = 25 % des G60/G68-Volumens 2030 (sales_volumes.xlsx)"
+    },
+    "stable_key": "sk-004",
+    "badges": []
+   },
+   "lens_score": 47.2,
+   "lens_rank": 2,
+   "reasons": [
+    {
+     "factor": "customer_pain",
+     "contribution": 17.5,
+     "sentence": "39 Kommentare zu non-contact trunk lid"
+    },
+    {
+     "factor": "reach",
+     "contribution": 12.0,
+     "sentence": "betrifft alle Antriebe"
+    }
+   ]
+  },
+  {
+   "requirement": {
+    "id": "REQ-G60-US-003",
+    "title": "Laden ohne Suchen",
+    "description": "Die Routenplanung zeigt Ladestopps mit aktuellem Säulenstatus.",
+    "acceptance_criterion": "Navigation plant Ladestopps automatisch; Säulenstatus höchstens 5 min alt; >= 90 % erfolgreiche Ladevorgänge am geplanten Stopp.",
+    "category": "range_charging",
+    "signal_ids": [
+     "SIG-G60-US-005"
+    ],
+    "score": 43.4,
+    "rank": 4,
+    "score_breakdown": {
+     "customer_pain": {
+      "value": 0.6,
+      "weight": 0.25,
+      "contribution": 15.0,
+      "explanation": "24 Kommentare zu Public charging"
+     },
+     "reach": {
+      "value": 0.5,
+      "weight": 0.2,
+      "contribution": 10.0,
+      "explanation": "betrifft BEV-Kunden in den USA"
+     },
+     "satisfaction_gap": {
+      "value": 0.3,
+      "weight": 0.2,
+      "contribution": 6.0,
+      "explanation": "keine Studienfrage"
+     },
+     "competitive_pressure": {
+      "value": 0.6,
+      "weight": 0.15,
+      "contribution": 9.0,
+      "explanation": "Wettbewerber bieten integrierte Ladeplanung"
+     },
+     "future_relevance": {
+      "value": 0.9,
+      "weight": 0.1,
+      "contribution": 9.0,
+      "explanation": "Trend: wird ab 2028 Standard"
+     },
+     "effort_inverse": {
+      "value": 0.2,
+      "weight": 0.1,
+      "contribution": 2.0,
+      "explanation": "Aufwand L (Partnerdaten nötig)"
+     }
+    },
+    "rationale": "Zukunftsrelevant und vom Wettbewerb gesetzt, aber hoher Aufwand.",
+    "evidence_level": "B",
+    "assumptions": [
+     "Ladesäulenbetreiber liefern Echtzeit-Status."
+    ],
+    "uncertainties": [
+     "Abhängig von externen Anbietern."
+    ],
+    "offer_check": {
+     "status": "optional",
+     "note": "Ladeplanung vorhanden, Säulenstatus unklar.",
+     "option_code": null
+    },
+    "effort": "L",
+    "status": "proposed",
+    "version": 1,
+    "horizon": "today",
+    "robustness": {
+     "rank_min": 2,
+     "rank_max": 4,
+     "top3_share": 0.64,
+     "runs": 500
+    },
+    "segment_conflicts": [],
+    "business": {
+     "volume_2025": 78000,
+     "volume_2030": 80000,
+     "growth_pct": 2.6,
+     "market_share": 0.25,
+     "note": "US = 25 % des G60/G68-Volumens 2030 (sales_volumes.xlsx)"
+    },
+    "stable_key": "sk-003",
+    "badges": []
+   },
+   "lens_score": 43.4,
+   "lens_rank": 3,
+   "reasons": [
+    {
+     "factor": "customer_pain",
+     "contribution": 15.0,
+     "sentence": "24 Kommentare zu Public charging"
+    },
+    {
+     "factor": "reach",
+     "contribution": 10.0,
+     "sentence": "betrifft BEV-Kunden in den USA"
+    }
+   ]
+  },
+  {
+   "requirement": {
+    "id": "REQ-G60-US-005",
+    "title": "Zusätzlicher Stauraum vorne (Frunk)",
+    "description": "BEV-Varianten bieten einen Frontkofferraum für Ladekabel und Einkäufe.",
+    "acceptance_criterion": "Frunk >= 50 l, die Kabeltasche passt hinein.",
+    "category": "comfort_space",
+    "signal_ids": [
+     "SIG-G60-US-006"
+    ],
+    "score": 22.0,
+    "rank": 5,
+    "score_breakdown": {
+     "customer_pain": {
+      "value": 0.4,
+      "weight": 0.25,
+      "contribution": 10.0,
+      "explanation": "14 Kommentare, oft Tesla-Vergleich"
+     },
+     "reach": {
+      "value": 0.4,
+      "weight": 0.2,
+      "contribution": 8.0,
+      "explanation": "nur BEV"
+     },
+     "satisfaction_gap": {
+      "value": 0.5,
+      "weight": 0.2,
+      "contribution": 10.0,
+      "explanation": "Interior storage unterdurchschnittlich"
+     },
+     "competitive_pressure": {
+      "value": 0.6,
+      "weight": 0.15,
+      "contribution": 9.0,
+      "explanation": "Tesla bietet Frunk"
+     },
+     "future_relevance": {
+      "value": 0.5,
+      "weight": 0.1,
+      "contribution": 5.0,
+      "explanation": "unklar"
+     },
+     "effort_inverse": {
+      "value": 0.2,
+      "weight": 0.1,
+      "contribution": 2.0,
+      "explanation": "Aufwand L"
+     }
+    },
+    "rationale": "Wiederkehrender Vergleich mit Tesla, aber wenige Nennungen.",
+    "evidence_level": "D",
+    "assumptions": [
+     "Der Nachfolger (ab 2030) nutzt eine BEV-Plattform ohne Motor vorne.",
+     "Der BEV-Anteil im US-5er (im Feedback heute 35 %) steigt bis 2030 deutlich."
+    ],
+    "uncertainties": [
+     "Wenige Nennungen; Packaging unbekannt."
+    ],
+    "offer_check": {
+     "status": "not_offered",
+     "note": "Nicht in der Optionsliste.",
+     "option_code": null
+    },
+    "effort": "L",
+    "status": "proposed",
+    "version": 1,
+    "horizon": "next_gen",
+    "robustness": {
+     "rank_min": 4,
+     "rank_max": 5,
+     "top3_share": 0.0,
+     "runs": 500
+    },
+    "segment_conflicts": [],
+    "business": {
+     "volume_2025": 78000,
+     "volume_2030": 80000,
+     "growth_pct": 2.6,
+     "market_share": 0.25,
+     "note": "US = 25 % des G60/G68-Volumens 2030 (sales_volumes.xlsx)"
+    },
+    "stable_key": "sk-005",
+    "badges": [
+     "Zukunftswette",
+     "Annahme"
+    ]
+   },
+   "lens_score": 22.0,
+   "lens_rank": 4,
+   "reasons": [
+    {
+     "factor": "customer_pain",
+     "contribution": 10.0,
+     "sentence": "14 Kommentare, oft Tesla-Vergleich"
+    },
+    {
+     "factor": "satisfaction_gap",
+     "contribution": 10.0,
+     "sentence": "Interior storage unterdurchschnittlich"
+    }
+   ]
+  }
+ ]
+}

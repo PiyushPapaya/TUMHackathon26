@@ -9,7 +9,7 @@ sonst darf sie nicht in einen Befund.
 
 Ansatz:
 1. Fragen generieren aus den Top-Befunden von Pfad A, z. B.
-   "Bietet Mercedes E-Class 2026 physische Klimatasten?" und 3-5 Trendfragen für 2028-2031.
+   "Bietet Mercedes E-Class 2026 physische Klimatasten?" und 5-8 Trendfragen für das Nachfolger-Fenster (Config).
 2. core.llm.ask_json(..., tools=[{"type": "web_search"}]) mit Schema
    {claims: [{text, url, publisher, published, supports_signal_id, stance}]}.
 3. Quellen-Vertrauen regelbasiert (trust.py): Hersteller/Testmagazin/Studie > Forum > unbekannt.
@@ -26,7 +26,7 @@ from datetime import UTC, datetime
 
 from core.models import Evidence, Scenario, Signal, SignalKind, SourceType
 from evidence_external.claims import Claim, ask_claims
-from evidence_external.questions import Question, build_questions
+from evidence_external.questions import Question, build_questions, trend_window
 from evidence_external.trust import trust_for_url
 
 SUMMARY_CLAIMS = 3  # so viele Aussagen fasst der Befund zusammen; mehr wäre für den PM zu lang
@@ -58,7 +58,8 @@ def _signal(scenario: Scenario, number: int, question: Question, usable: list[Ev
         title = f"{question.competitor}: {internal_titles.get(question.signal_id, question.category.value)}"
     else:
         kind = SignalKind.TREND
-        title = f"Trend 2028-2031: {question.category.value}"
+        start, end = trend_window(scenario)
+        title = f"Trend {start}-{end}: {question.category.value}"
     return Signal(
         id=f"SIG-{scenario.id}-WEB-{number:02d}", kind=kind, category=question.category, title=title,
         summary=" ".join(e.text for e in usable[:SUMMARY_CLAIMS]),

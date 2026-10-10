@@ -1,0 +1,48 @@
+{
+ "scenario_id": "G60-US",
+ "successor_horizon": "2030",
+ "quadrants": [
+  "Sicher & dringend",
+  "Belegte Zukunftswette",
+  "Schwach belegt, heute",
+  "Annahme – beobachten"
+ ],
+ "items": {
+  "REQ-G60-US-001": {
+   "horizon": "today",
+   "evidence_level": "A",
+   "quadrant": "Sicher & dringend",
+   "offer_gap": "not_offered",
+   "offer_gap_label": "Lücke: nicht angeboten"
+  },
+  "REQ-G60-US-002": {
+   "horizon": "today",
+   "evidence_level": "B",
+   "quadrant": "Sicher & dringend",
+   "offer_gap": "unknown",
+   "offer_gap_label": "Angebot unbekannt"
+  },
+  "REQ-G60-US-003": {
+   "horizon": "today",
+   "evidence_level": "B",
+   "quadrant": "Sicher & dringend",
+   "offer_gap": "optional",
+   "offer_gap_label": "nur optional"
+  },
+  "REQ-G60-US-004": {
+   "horizon": "today",
+   "evidence_level": "B",
+   "quadrant": "Sicher & dringend",
+   "offer_gap": "optional",
+   "offer_gap_label": "nur optional"
+  },
+  "REQ-G60-US-005": {
+   "horizon": "next_gen",
+   "evidence_level": "D",
+   "quadrant": "Annahme – beobachten",
+   "offer_gap": "not_offered",
+   "offer_gap_label": "Lücke: nicht angeboten"
+  }
+ },
+ "rule": "Zukunft = Horizont next_gen (Pipeline); belegt = Evidenzstufe A oder B."
+}

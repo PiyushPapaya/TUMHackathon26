@@ -19,6 +19,7 @@ EVENT_SENTENCE = {
     "REQUIREMENT_DISCARDED": "KI verwirft Entwurf (außerhalb des Scopes)", "PM_APPROVE": "PM gibt frei",
     "PM_REJECT": "PM lehnt ab", "PM_EDIT": "PM bearbeitet", "PM_CHALLENGE": "PM stellt Gegenfrage",
     "AI_RESPONDED": "KI antwortet mit Belegen", "WEIGHTS_CHANGED": "PM ändert Gewichte",
+    "AI_LENS_SUGGESTED": "KI schlägt Linse (Gewichte + Filter) vor",
 }
 
 
