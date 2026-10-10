@@ -12,12 +12,19 @@ from core.models import EvidenceLevel, SourceType
 # Unabhängige Quellenarten. Absatz und Optionsliste sind Kontext, kein Kundenbeleg.
 CUSTOMER_SOURCES = {SourceType.FEEDBACK, SourceType.STUDY, SourceType.WEB}
 
+# Rangfolge laut BMW-Mentor: BMW-eigene Daten zählen mehr als Web/Social Media. Die
+# Feedback-Quellen A-D untereinander sind gleichwertig, darum gibt es dafür keine Regel.
+# Web darf bestätigen (zweite Quellenart), aber allein nie eine Anforderung tragen.
+BMW_SOURCES = {SourceType.FEEDBACK, SourceType.STUDY}
+
 
 def classify(mention_count: int, source_types: set[SourceType], forward_looking: bool) -> tuple[EvidenceLevel, str]:
     """Liefert Stufe + Begründungssatz für die UI."""
     independent = source_types & CUSTOMER_SOURCES
     if forward_looking and mention_count < 5:
         return EvidenceLevel.D, "Zukunftsannahme: kaum direkte Kundenbelege, beruht auf Trends."
+    if not independent & BMW_SOURCES:
+        return EvidenceLevel.C, f"{mention_count} Nennungen nur aus Web-Quellen: ohne BMW-Daten höchstens ein Hinweis."
     if len(independent) >= 2 and mention_count >= 20:
         return EvidenceLevel.A, f"{mention_count} Nennungen aus {len(independent)} unabhängigen Quellenarten."
     if mention_count >= 15:
