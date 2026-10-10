@@ -74,7 +74,7 @@ export function ScoreWaterfall({
   const keptPercent = subtotal > 0 ? Math.round((finalScore / subtotal) * 100) : 100;
 
   return (
-    <div className="rounded-lg border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
+    <div className="rounded-lg border border-zinc-200 bg-surface p-5 dark:border-zinc-800">
       <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">Score breakdown</h2>
       <div className="mt-2 divide-y divide-zinc-100 dark:divide-zinc-800">
         {orderedKeys.map((key) => (
