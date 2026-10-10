@@ -3,9 +3,10 @@
   "derivative": "F70",
   "model_name": "BMW 1er (F70)",
   "market": "EU",
-  "countries": ["GB", "SE", "FR", "DK", "FI", "NO", "ES", "DE", "IT", "NL", "LV"],
+  "countries": ["GB", "SE", "FR", "DK", "FI"],
   "competitors": ["Mercedes-Benz A-Class", "Audi A3 Sportback", "VW Golf", "Volvo EX30"],
   "successor_horizon": "2031",
+  "warnings": ["Europa-Szenario, aber 1.293 von 1.433 Kommentaren (90 %) stammen aus Großbritannien."],
   "data": {
     "feedback_file": "F70_feedback_hackathon.xlsx",
     "study_file": "F70_G60_G68_G70_customer_studies.xlsx",

@@ -1,0 +1,40 @@
+{
+  "_hinweis": "Profil der BMW-Dateien. Neuer Datensatz mit anderen Spalten- oder Blattnamen: nur hier anpassen, kein Code. Heutige Werte = Stand der Hackathon-Dateien. Gelesen von evidence_internal (Pfad A, Ticket A12).",
+  "feedback": {
+    "sheet": "Feedback_Explorer",
+    "columns": {
+      "id": "ID",
+      "source": "Source",
+      "country": "Country",
+      "derivative": "Derivate (e-code)",
+      "engine": "Engine Type",
+      "feedback_type": "Feedback Type",
+      "text": "Customer Feedback",
+      "topic_level2": "Vfc level2 Name",
+      "topic_level3": "Vfc level3 Name"
+    },
+    "polarity_by_feedback_type": {"Likes": 1, "Defect": -1, "Difficult to Use": -1, "Wants": -1},
+    "praise_only_source": "D",
+    "label_separator": " | "
+  },
+  "study": {
+    "us_sheet_prefix": "US",
+    "cn_eu_sheet_prefix": "CN_EU",
+    "us_levels_negative": ["I Hate It", "A Failure", "Unsatisfactory"],
+    "us_levels_all": ["I Hate It", "A Failure", "Unsatisfactory", "Satisfactory", "Excellent", "Delightful", "I Love It"],
+    "us_negative_from": 0.10,
+    "us_positive_from": 0.60,
+    "mean_negative_below": 7.5,
+    "mean_positive_from": 9.0,
+    "dataset_country": {"CN": "China", "EU": "EU", "US": "US"}
+  },
+  "sales": {
+    "file": "sales_volumes.xlsx",
+    "columns": {"market": "market", "market_code": "market_code", "volume_2024": "volume_2024",
+                "volume_2025": "volume_2025", "volume_2030": "volume_2030"}
+  },
+  "option_list": {
+    "standard_marker": "■",
+    "optional_marker": "□"
+  }
+}
