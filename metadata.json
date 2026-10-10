@@ -1,0 +1,38 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4JWVM2XQHZ0G0XHHE4V2HJ4",
+  "strategy": "manual-commit",
+  "branch": "piyush/neustart",
+  "checkpoints_count": 3,
+  "files_touched": [
+    ".gitattributes",
+    ".gitignore",
+    "config/scenarios/F70-EU.json",
+    "config/scenarios/G60-US.json",
+    "config/scenarios/G70-US.json",
+    "data/README.md",
+    "src/backend/evidence_external/web_research.py",
+    "src/backend/evidence_internal/context.py",
+    "src/backend/evidence_internal/loaders.py",
+    "src/backend/evidence_internal/signals.py",
+    "src/backend/pipeline.py",
+    "src/backend/requirements_engine/derive.py",
+    "src/backend/requirements_engine/offer_check.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 130,
+    "cache_creation_tokens": 240533,
+    "cache_read_tokens": 10924624,
+    "output_tokens": 114042,
+    "api_call_count": 65
+  }
+}
