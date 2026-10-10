@@ -1,0 +1,5 @@
+Please pull the new frontend from git without overwriting the local one and apply the style we established locally to it.
+
+---
+
+Please Change the requirements table to only show score title category and remove the other coloumns
