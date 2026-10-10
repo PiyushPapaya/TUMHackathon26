@@ -1,44 +1,58 @@
-# 01 Projekt: Aufgabe, Idee, Demo-Fall
+# 01 Das Projekt verstehen
 
-## Die Aufgabe von BMW
+Fragen und Antworten. Lies sie von oben nach unten.
 
-BMW will wissen, was das Nachfolgemodell eines Autos können muss. Heute lesen Menschen dafür tausende Kundenkommentare von Hand. Die Aufgabe: eine KI-App, die **Anforderungen ableitet, begründet und priorisiert**. Der Produktmanager (PM) bleibt bei jeder Entscheidung in Kontrolle.
+## Was will BMW von uns?
 
-Zwei Sätze aus dem Brief, die wir ernst nehmen:
+BMW will eine App, die Produktmanagern hilft, **Anforderungen für ein Nachfolgemodell** abzuleiten, zu begründen und zu sortieren. Heute lesen Menschen dafür tausende Kommentare von Hand. Das dauert lange, und später weiß keiner mehr, warum etwas entschieden wurde.
 
-> "Make clear where your conclusions are based on available evidence and where they rely on forward-looking assumptions."
-> "We value trustworthy sources, transparent reasoning, thoughtful prioritization, and a clear understanding of uncertainty and conflicting evidence."
+Zwei Sätze aus dem Brief, nach denen die Jury uns misst:
 
-Der ganze Brief steht in `docs/CHALLENGE.md`.
+> „Make clear where your conclusions are based on available evidence and where they rely on forward-looking assumptions.“
+> (Zeig, was belegt ist und was nur Annahme über die Zukunft ist.)
 
-## Unsere Idee
+> „… keeping the product manager firmly in control of every decision.“
+> (Der Produktmanager behält jede Entscheidung.)
+
+## Was bauen wir?
+
+Eine Maschine mit sieben Schritten. Ein Beispiel läuft durch alle Schritte, damit du siehst, was passiert:
 
 ```mermaid
 flowchart LR
-  D[("BMW-Daten<br/>Feedback · Studie · Absatz · Optionsliste")] --> S[Befunde]
-  W[("Web<br/>Wettbewerb + Trends")] --> S
-  S --> R[Anforderungen]
-  R --> P[Priorität]
-  P --> PM{{"PM entscheidet"}}
-  PM --> A[("Audit Trail")]
+  A["1 Einlesen<br/>G60-0019"] --> B["2 Befund<br/>Mittelkonsole: 27 Kommentare"] --> C["3 Web<br/>Was machen andere?"] --> D["4 Anforderung<br/>Tasten unterscheidbar"] --> E["5 Priorität<br/>Platz im Ranking"] --> F{{"6 Mensch<br/>entscheidet"}} --> G[("7 Protokoll")]
 ```
 
-Was uns von anderen unterscheidet:
+Jeder Schritt steht in [04_techflow.md](04_techflow.md) mit dem Beispiel. Zum Anfassen: `erklaerer/index.html`.
 
-| # | Unterschied | Beispiel |
+## Warum ist unsere Idee anders?
+
+Andere Teams zeigen vermutlich eine Liste. Wir zeigen **wie sicher** jede Zeile ist.
+
+| Wir zeigen … | Was das heißt | Echtes Beispiel |
 |---|---|---|
-| 1 | Jede Anforderung zeigt, **wie gut sie belegt ist** (Evidenzstufe A bis D) | A = Zitate + Studie + Web passen zusammen. D = fast nur Annahme. |
-| 2 | **Widersprüche werden gezeigt**, nicht wegmittelt | "Großes Display gelobt" und "Touch-Bedienung lenkt ab" stehen nebeneinander |
-| 3 | **"Gibt es das schon?"-Check** gegen die Optionsliste | Manchmal ist die Antwort ein Paket, keine neue Funktion |
-| 4 | **Priorität ist eine Formel**, die man live ändern kann | Gewichte per Regler, jede Änderung steht im Audit Trail |
-| 5 | **Neues Modell oder Markt = eine JSON-Datei** | `config/scenarios/G70-US.json` |
+| **Wie gut belegt** (Evidenzstufe A bis D) | A = viele Quellen sagen dasselbe. D = fast nur Annahme. | Eine Anforderung nur mit Webtrend und ohne Kundenzitat bekommt D. |
+| **Widersprüche** | Wir mitteln nicht, wir zeigen beides. | Touchscreen: 35 Kommentare loben ihn, 23 kritisieren die Bedienung. |
+| **Warum Platz 1** | Jede Rangzahl ist eine Formel, die man ändern kann. | Zählt „Reichweite“ mehr, ändert sich das Ranking live. |
+| **Alles protokolliert** | Jede Entscheidung mit Begründung, nicht fälschbar. | Siehe Schritt 7 in `erklaerer/index.html`. |
+| **„Gibt es das schon?“** | Wir vergleichen mit der offiziellen Optionsliste. | Manchmal ist die Antwort ein Paket, keine neue Funktion. |
 
-## Demo-Fall
+## Was ist unser Demo-Fall?
 
-- **Hauptfall:** BMW 5er Limousine (G60) im US-Markt. Die Feedback-Datei hat 4.365 Zeilen mit Land US. 3.820 davon haben einen Feedback-Typ: Likes 1.694, Difficult to Use 1.217, Wants 532, Defect 377. (Die Docs nennen 3.610 für die bereinigte Menge. Welche Zahl die Pipeline wirklich nutzt, klärt Aditya in A1.)
-- **Zweiter Fall:** G70 US (7er) und F70 (1er) per Szenario-Umschalter. Er zeigt, dass die Pipeline für andere Modelle läuft.
-- **Nicht unser Thema** (laut Brief out of scope): Technik-Specs, Gesetze, Preis und Business-Case.
+BMW 5er (G60) in den USA. Die Datei hat 5.005 Kommentare, 4.365 davon aus den USA. Per Umschalter zeigen wir später 7er (G70) und 1er (F70), damit die Jury sieht, dass es für andere Modelle auch läuft.
 
-## Was heute schon läuft
+## Was machen wir bewusst nicht?
 
-Siehe `entscheidungen/SCHRITT0_BESTANDSAUFNAHME.md`. Kurz: Backend, Prüfpfad, Score-Formel, Challenge-Antwort und Liste im Cockpit laufen. Offen sind Detailseite, Entscheiden-Buttons, Audit-Seite und die echten Befunde aus den Excel-Dateien.
+Technik-Details, Gesetze, Preise und Business-Case. Das steht im Brief als „out of scope“. Der Code sortiert solche Vorschläge aus und sagt, warum.
+
+## Wie steht es gerade?
+
+| Teil | Stand |
+|---|---|
+| Rechenkern, Priorisierung, Protokoll, Challenge-Antwort | läuft, getestet |
+| Startseite mit Rangliste | läuft |
+| Detailseite, Entscheiden-Buttons, Protokoll-Seite | **fehlen noch** (Lasse) |
+| Echte Befunde aus den Excel-Dateien | in Arbeit (Aditya) |
+| 15 bis 25 Anforderungen | aktuell 8 (Dennis) |
+
+Aktuelle Aufgaben pro Person: [05_rollen.md](05_rollen.md). Zeitplan: [06_roadmap.md](06_roadmap.md).

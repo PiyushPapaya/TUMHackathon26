@@ -1,51 +1,59 @@
-# START HIER
+# Start hier
 
-Eine Seite. Wenn du nur diese liest, weißt du, was wir bauen und was du jetzt tun kannst.
+Du musst nichts programmieren können. Du musst nur verstehen, was wir bauen, und dir etwas aussuchen, das du übernimmst.
 
-## Was wir bauen
+## 1. Schau dir zuerst das hier an (5 Minuten)
 
-**Signal2Spec** liest Kundenfeedback, Studien, Absatzzahlen, Optionslisten und Webquellen. Daraus schlägt es vor, was der nächste BMW 5er können muss, und sortiert die Vorschläge. Ein Produktmanager (PM) entscheidet, und jede Aktion landet in einem Audit Trail (Protokoll, das niemand heimlich ändern kann).
+Öffne die Datei **`erklaerer/index.html`** per Doppelklick im Browser. Dort läuft ein echter Kundenkommentar durch unser ganzes Tool. Du kannst Regler verschieben, Entscheidungen treffen und einen Audit Trail fälschen. Danach verstehst du das Projekt.
 
-Unser Satz für den Pitch: **"Wir sagen nicht nur, WAS gebaut werden soll, sondern WIE SICHER wir uns sind und WARUM."**
+## 2. Das Projekt in drei Sätzen
+
+1. BMW hat tausende Kundenkommentare und will wissen, was das **nächste** Auto können muss.
+2. Unser Tool liest die Kommentare, schlägt Anforderungen vor und sortiert sie nach Wichtigkeit.
+3. Ein **Mensch** (der Produktmanager) entscheidet, und jede Entscheidung wird protokolliert.
+
+Ein echtes Beispiel: Eine Kundin schreibt (Kommentar `G60-0019`), dass die Start/Stop-Taste zu nah an anderen Tasten liegt und sie nervös macht. Daraus wird ein Thema, daraus eine Anforderung, daraus eine Entscheidung. Den ganzen Weg erklärt [docs/04_techflow.md](docs/04_techflow.md).
 
 ```mermaid
 flowchart LR
-  A["Kundenzitat<br/>G60-0019: 'Center console layout is terrible'"] --> B["Befund<br/>Bedienung der Mittelkonsole stört"]
-  B --> C["Anforderung<br/>Top-Funktionen ohne Menü bedienbar"]
-  C --> D["Priorität<br/>Score + Evidenzstufe A-D"]
-  D --> E{{"PM entscheidet<br/>approve / reject / edit / challenge"}}
-  E --> F[("Audit Trail")]
+  A["Kommentar<br/>G60-0019"] --> B["Thema<br/>Bedienung Mittelkonsole"] --> C["Anforderung<br/>Tasten unterscheidbar"] --> D["Priorität<br/>Platz 1 bis 20"] --> E{{"Mensch<br/>entscheidet"}} --> F[("Protokoll")]
 ```
 
-Ein Beispiel mit echtem Zitat aus den Daten: Kommentar `G60-0019` sagt, die Start/Stop-Taste liege zu nah an anderen Tasten, das mache die Kundin nervös. Solche Kommentare werden zu Befunden, aus Befunden werden Anforderungen.
+## 3. Such dir deinen Weg aus
 
-## Wo liegt was
-
-| Ordner | Was drin ist | Wer braucht es |
+| Ich will … | Dann lies … | Dauer |
 |---|---|---|
-| `entscheidungen/` | Offene Fragen als Karten. Hier antwortet ihr. | alle |
-| `missionen/` | Eine Bauaufgabe pro Person, auch ohne Code | alle |
-| `werkstatt/<name>/` | Dein eigener Platz zum Ausprobieren | du |
-| `visuals/` | Diagramme, Charts, Mockups für Pitch und Demo | Pitch, Visual-Designer |
-| `docs/` | Projekt, Glossar, Daten, Techflow, Rollen, Roadmap, Pitch (Nummern 01 bis 07) | alle |
-| `src/backend/` | Python-Code der Pipeline und API | Builder |
-| `src/frontend/` | Die Oberfläche (Next.js) | Builder, Lasse |
-| `data/raw/` | BMW-Originaldaten, nie ändern | alle (lesen) |
-| `data/processed/` | Ergebnisse der Pipeline | Builder |
-| `outputs/` | Fertige Exporte: Anforderungsliste, Audit-Auszug | Abgabe |
-| `archiv/` | Altes, das wir nicht löschen | niemand |
+| verstehen, was wir machen | [`erklaerer/index.html`](erklaerer/index.html), dann [docs/01_projekt.md](docs/01_projekt.md) | 10 Minuten |
+| wissen, was **ich** tun soll | [docs/05_rollen.md](docs/05_rollen.md) | 5 Minuten |
+| **mitentscheiden** | [entscheidungen/ENTSCHEIDUNGSBOGEN.md](entscheidungen/ENTSCHEIDUNGSBOGEN.md) | 10 Minuten |
+| ein Extra-Feature aussuchen | [entscheidungen/E04_features.md](entscheidungen/E04_features.md) | 5 Minuten |
+| etwas bauen, ohne Code | [missionen/](missionen/README.md) | |
+| wissen, was bis Sonntag fertig sein muss | [docs/06_roadmap.md](docs/06_roadmap.md) | 5 Minuten |
+| ein Wort nachschlagen | [docs/02_glossar.md](docs/02_glossar.md) | |
+| den Pitch üben | [docs/07_pitch.md](docs/07_pitch.md) | |
 
-## Was ich jetzt tun kann
+## 4. Wo liegt was?
 
-1. **Ich verstehe das Projekt noch nicht:** [docs/01_projekt.md](docs/01_projekt.md), dann [docs/04_techflow.md](docs/04_techflow.md). Zusammen 10 Minuten.
-2. **Ein Wort ist unklar:** [docs/02_glossar.md](docs/02_glossar.md).
-3. **Ich will mitentscheiden:** Öffne [entscheidungen/README.md](entscheidungen/README.md), lies eine Karte, trag Entscheidung und Warum ein.
-4. **Ich will etwas bauen:** Such dir in [missionen/](missionen/README.md) eine Mission aus.
-5. **Ich will wissen, was bis Sonntag zu tun ist:** [docs/06_roadmap.md](docs/06_roadmap.md).
-6. **Ich will den Pitch üben:** [docs/07_pitch.md](docs/07_pitch.md).
+```mermaid
+flowchart TD
+  R["Repo"] --> V["Verstehen<br/>START_HIER · erklaerer/ · docs/"]
+  R --> E["Entscheiden<br/>entscheidungen/"]
+  R --> B["Bauen<br/>missionen/ · werkstatt/ · visuals/"]
+  R --> T["Technik<br/>src/ · data/ · config/ · outputs/"]
+  R --> A["Altes<br/>archiv/"]
+```
 
-## App starten (nur Builder)
+Jeder Ordner hat eine eigene `README.md`, die sagt, was drin liegt und wer es braucht.
 
+## 5. Drei Regeln
+
+1. **Du entscheidest mit.** Alles, was nach Geschmack oder Strategie riecht, steht auf dem Entscheidungsbogen. Claude entscheidet das nicht für euch.
+2. **Du schreibst nur in deinen Ordner** (`werkstatt/<dein-name>/`). Dort kannst du nichts kaputt machen.
+3. **Schreib bei jeder Entscheidung ein Warum auf.** Die Jury bewertet, ob wir unsere Entscheidungen begründen können.
+
+## Für den, der programmiert
+
+App starten:
 ```
 python -m venv .venv
 .venv\Scripts\activate
@@ -53,8 +61,4 @@ pip install -r requirements.txt
 uvicorn main:app --app-dir src/backend --port 8000
 cd src/frontend && npm install && npm run dev
 ```
-Dann öffnen: http://localhost:3000. Die genaue Anleitung steht in `docs/SETUP.md`.
-
-## Regeln in einem Satz
-
-Alle pushen direkt auf `main`, jede Person schreibt nur in ihren Ordner, und nichts ist fertig ohne Beweis (Test oder Screenshot). Alles Weitere steht in `CLAUDE.md`.
+Dann http://localhost:3000. Mehr: `docs/SETUP.md`. Git-Regeln und Besitzregeln: `CLAUDE.md`.

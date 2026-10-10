@@ -1,5 +1,7 @@
 # Entscheidungen
 
+**Kurzweg:** Füllt [ENTSCHEIDUNGSBOGEN.md](ENTSCHEIDUNGSBOGEN.md) aus. Das sind alle acht Fragen auf einer Seite. Die Karten unten sind für alle, die mehr Details wollen.
+
 Hier entscheidet das Team, nicht Claude. Jede Karte hat eine Frage, Optionen, eine Empfehlung und zwei leere Felder.
 
 **So geht's:** Karte lesen, bei "Unsere Entscheidung" eintragen, bei "Warum" in einem Satz begründen. Das Warum ist wichtig: Die Jury-KI bewertet eigene, begründete Entscheidungen.

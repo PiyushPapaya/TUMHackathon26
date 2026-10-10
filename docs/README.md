@@ -1,6 +1,6 @@
 # docs/
 
-Alle Dokumente. Wer braucht das: alle. Lies in dieser Reihenfolge, wenn du neu bist.
+Alle Dokumente. Zum Verstehen zuerst `erklaerer/index.html` öffnen. Wer braucht das: alle. Lies in dieser Reihenfolge, wenn du neu bist.
 
 | Nr. | Datei | Frage, die sie beantwortet |
 |---|---|---|

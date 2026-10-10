@@ -30,6 +30,7 @@ werkstatt/ export-ignore
 archiv/ export-ignore
 entscheidungen/ export-ignore
 missionen/ export-ignore
+erklaerer/ export-ignore
 visuals/ export-ignore
 outputs/ export-ignore
 design/ export-ignore
