@@ -103,3 +103,19 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 ### [ ] C11 · Pitch-Teil (So 08:30-09:30)
 - Folie „Priorität, die man erklären kann“: Formel, Wasserfall von Platz 1, Evidenzstufen A-D in einem Satz. 3 Stichpunkte an Piyush.
 - Jury-Fragen zu Priorisierung, Evidenzstufe, Scope aus `pitch/PITCH.md` laut üben.
+
+---
+
+## Welle 2 (Sa 21:00 bis So 07:30)
+
+Prompt zum Kopieren für jede Karte: [`docs/UPGRADE_WELLE2.md`](../UPGRADE_WELLE2.md) §4. Ablauf pro Karte: Test → Code → Fertig-Befehl → `sync`.
+
+- [ ] **W-C1** · Stabile IDs aus Hash der `signal_ids` (`derive.py`) · 21:00–21:45 · **nie streichen**
+- [ ] **W-C2** · Rang-Robustheit: 500 Gewichtungen, `rank_min/max`, `top3_share` (neue Datei `robustness.py`) · 22:00–23:00 · **nie streichen**
+- [ ] **W-C3** · Zukunftswetten mit Stufe D, nur mit `assumptions` · 23:00–00:30 · **nie streichen**
+- [ ] **W-C4** · What-if als reine Funktion, baut auf `score_without()` auf (neue Datei `whatif.py`) · 00:30–01:00
+- [ ] **W-C5** · 15–25 Anforderungen in allen Szenarien (Ableitung pro Kategorie-Block) · 01:00–02:00
+- [ ] **W-C6** · Business-Faktor: Volumen 2030 + Wachstum, Satz nennt die Zahl · 02:00–03:00
+- [ ] **W-C7** · Keine stillen Fehler + ohne Optionsliste (G68-CN) · 03:00–03:30
+- [ ] **W-C8** · Eval mit Aditya (siehe W-A8) · 06:00–07:00
+- [ ] *(soll/kann)* **W-C9** Segment-Konflikte an Anforderungen · **W-C10** Preis im Offer-Check · **W-C11** Markdown-Lastenheft · **W-C12** Scope-Filter beweisen

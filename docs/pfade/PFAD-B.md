@@ -51,3 +51,13 @@
 ### [x] B5 · F70-EU (30 min, Nacht)
 - `pipeline.py --scenario F70-EU --stage web` (andere Wettbewerber in der Config). Cache prüfen: zweiter Lauf ohne Netz.
 - **Ergebnis B5:** F70-EU: 99 Webbelege (alle mit URL), 9 Web-Befunde, 14 Befunde mit `web`. Zweiter Lauf mit `DEMO_MODUS=true` gibt dieselben Zahlen ohne Netz.
+
+---
+
+## Welle 2 (Sa 21:00 bis So 07:30)
+
+Prompt zum Kopieren für jede Karte: [`docs/UPGRADE_WELLE2.md`](../UPGRADE_WELLE2.md) §2.
+
+- [ ] **W-L5** · Web-Fragen aus Config: Horizont aus `successor_horizon`, G68-CN bis 8 Trendfragen (`questions.py`) · 01:30–02:00
+- [ ] **W-L6** · NHTSA-Beschwerden als zweite Kundenquelle für US (neue Datei `nhtsa.py`, Cache committen) · 02:00–03:00
+- [ ] *(kann)* **W-L10** · fueleconomy.gov-Connector (Reichweite Wettbewerber)
