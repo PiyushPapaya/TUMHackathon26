@@ -1,0 +1,67 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4JWGMH4KSS5YCEPHWTDR3M3",
+  "session_id": "77d3ff7a-a185-4571-8b46-1a01fcbf0266",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T12:27:31.8789077Z",
+  "branch": "piyush/neustart",
+  "checkpoints_count": 3,
+  "files_touched": [],
+  "agent": "Claude Code",
+  "model": "claude-opus-5-5",
+  "turn_id": "e41702bf10ac",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 98,
+    "cache_creation_tokens": 191899,
+    "cache_read_tokens": 6977655,
+    "output_tokens": 75873,
+    "api_call_count": 49
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "claude-skill-toolu_01Qf5GRt3HSLcx4zkf12RNyd",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "challenge-intake"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "e41702bf10ac",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 90,
+        "end": 91,
+        "entry_ids": [
+          "6c5a6d03-aa04-4626-ad76-6c4b7dc98450"
+        ],
+        "tool_use_id": "toolu_01Qf5GRt3HSLcx4zkf12RNyd"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_01Qf5GRt3HSLcx4zkf12RNyd"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: challenge-intake",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "session_metrics": {
+    "turn_count": 3
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    }
+  ]
+}
