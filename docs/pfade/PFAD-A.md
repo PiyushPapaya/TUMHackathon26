@@ -67,7 +67,7 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - **Subagent:** zwei Subagents parallel, je einer pro Studienformat (verschiedene Funktionen, gleiche Datei → nacheinander einfügen lassen).
 - **Wenn es hakt (nach 30 min):** CN/EU weglassen (nur US), F70-EU kommt in A8 dran.
 
-### [ ] A3 · Absatz-Kontext (20 min, bis 17:20)
+### [x] A3 · Absatz-Kontext (20 min, bis 17:20)
 **Prompt:**
 > Ticket A3. Implementiere `load_context` in `context.py` nach Vertrag: Blatt `cfg["data"]["sales_sheet"]`, Zeile mit `market_code == cfg["data"]["sales_market_code"]`.
 > `share_of_total_2030` = Volumen 2030 des Markts / Summe aller Märkte 2030. Test mit Mini-DataFrame.
