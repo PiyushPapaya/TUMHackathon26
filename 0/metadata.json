@@ -1,0 +1,47 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4K2Z0J1SMYB2QVD04JR1D5E",
+  "session_id": "abca4f01-bd2a-49d4-a965-20b3333fd9ac",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T14:20:13.601272Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/ARCHITEKTUR.md",
+    "src/backend/evidence_external/triangulation.py",
+    "src/backend/pipeline.py",
+    "tests/pfad_b/test_triangulation.py"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5-5",
+  "turn_id": "0a8915b54cc9",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 24,
+    "cache_creation_tokens": 74686,
+    "cache_read_tokens": 1098030,
+    "output_tokens": 8101,
+    "api_call_count": 12
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T14:20:13.518551Z",
+    "agent_lines": 122,
+    "agent_removed": 3,
+    "human_added": 1,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 123,
+    "total_lines_changed": 127,
+    "agent_percentage": 98.4251968503937,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0
+    }
+  ]
+}

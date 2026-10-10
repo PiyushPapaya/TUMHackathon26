@@ -1,0 +1,29 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4K2Z0J1SMYB2QVD04JR1D5E",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/ARCHITEKTUR.md",
+    "src/backend/evidence_external/triangulation.py",
+    "src/backend/pipeline.py",
+    "tests/pfad_b/test_triangulation.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 24,
+    "cache_creation_tokens": 74686,
+    "cache_read_tokens": 1098030,
+    "output_tokens": 8101,
+    "api_call_count": 12
+  }
+}
