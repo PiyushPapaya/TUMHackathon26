@@ -23,8 +23,10 @@ def test_prompt_verbietet_platzhalter_in_kriterien():
     assert "placeholders" in SYSTEM_PROMPT
 
 
-def test_prompt_verbietet_das_verschmelzen_widerspruechlicher_befunde():
-    assert "conflicts_with" in SYSTEM_PROMPT and "never merge" in SYSTEM_PROMPT.lower()
+def test_prompt_verlangt_beide_seiten_bei_widerspruechlichen_befunden():
+    # Echter Fund: "nie verschmelzen" war nicht einzuhalten (22 von 45 Befunden haben einen Konflikt, die
+    # Erkennung ist kategorieweise). Der Code trägt den Widerspruch selbst ein; die KI soll beide Seiten nennen.
+    assert "conflicts_with" in SYSTEM_PROMPT and "both sides" in SYSTEM_PROMPT
 
 
 def test_widersprueche_werden_der_ki_mitgegeben():
@@ -37,3 +39,9 @@ def test_widersprueche_werden_der_ki_mitgegeben():
                  summary="s", evidence_ids=["E"], mention_count=5, source_types=[SourceType.FEEDBACK],
                  conflicts_with=["SIG-2"])
     assert json.loads(_compact([sig]))[0]["conflicts_with"] == ["SIG-2"]
+
+
+def test_prompt_verlangt_abdeckung_aller_beschwerden():
+    # Echter Fund: Nach einer Prompt-Änderung blieben 10 von 30 Beschwerden/Wünschen ohne Anforderung
+    # (u. a. Start-Stopp, Spracherkennung). Jede Beschwerde muss in einer Anforderung vorkommen.
+    assert "Cover EVERY complaint and unmet_need" in SYSTEM_PROMPT

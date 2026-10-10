@@ -48,5 +48,6 @@
 > Test in `tests/pfad_b/` mit 2 Befunden und 3 Webbelegen.
 - **Fertig, wenn:** ≥ 3 interne Befunde haben `web` in `source_types` · `sync`.
 
-### [ ] B5 · F70-EU (30 min, Nacht)
+### [x] B5 · F70-EU (30 min, Nacht)
 - `pipeline.py --scenario F70-EU --stage web` (andere Wettbewerber in der Config). Cache prüfen: zweiter Lauf ohne Netz.
+- **Ergebnis B5:** F70-EU: 99 Webbelege (alle mit URL), 9 Web-Befunde, 14 Befunde mit `web`. Zweiter Lauf mit `DEMO_MODUS=true` gibt dieselben Zahlen ohne Netz.

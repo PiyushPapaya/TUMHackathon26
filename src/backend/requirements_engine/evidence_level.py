@@ -37,6 +37,8 @@ def classify(mention_count: int, source_types: set[SourceType], forward_looking:
     independent = source_types & CUSTOMER_SOURCES
     if forward_looking and mention_count < 5:
         return EvidenceLevel.D, "Forward-looking assumption: few direct customer data points, rests on trends."
+    if not independent:
+        return EvidenceLevel.C, "No customer data behind it: at most a hint."
     if not independent & BMW_SOURCES:
         return EvidenceLevel.C, f"{mention_count} mentions from web sources only: without BMW data at most a hint."
     solid = mention_count >= SOLID_MENTIONS

@@ -68,3 +68,22 @@ def score(
 
 def effort_factor(effort: str) -> float:
     return EFFORT_VALUE.get(effort, 0.6)
+
+
+def score_without(
+    breakdown: dict[str, ScoreFactor], evidence_level: EvidenceLevel, drop: str | None = "future_relevance"
+) -> float:
+    """Was-wäre-wenn: Score, wenn ein Faktor (Standard: die Zukunftsannahme) als falsch gilt.
+
+    Der Faktor fällt weg, die übrigen Gewichte werden auf 100 % hochgerechnet, damit die Skala 0-100
+    vergleichbar bleibt; danach gilt wieder die Konfidenz der Evidenzstufe. Rechnet aus value und weight
+    (nicht aus den gerundeten contribution), damit Frontend und Backend dieselbe Zahl ergeben.
+    """
+    if drop is not None and drop not in breakdown:
+        raise ValueError(f"Unbekannter Faktor: {drop}")
+    kept = [f for name, f in breakdown.items() if name != drop]
+    weight_left = sum(f.weight for f in kept)
+    if weight_left <= 0:  # nur die Annahme war gewichtet: ohne sie bleibt nichts zu bewerten
+        return 0.0
+    raw = sum(f.value * f.weight for f in kept) / weight_left * 100
+    return round(raw * CONFIDENCE[evidence_level], 1)

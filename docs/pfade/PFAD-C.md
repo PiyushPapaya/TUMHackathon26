@@ -90,14 +90,14 @@ Ablauf jedes Tickets: [`ROADMAP.md`](../ROADMAP.md) §4.
 - Prompt: „Ticket C7. Zeig mir die Verteilung A/B/C/D und die Nennungen pro Anforderung für G60-US. Passe die Schwellen in `evidence_level.py` so an, dass A wirklich stark ist (Richtwert: 2-4× A, mehrere B/C, Trends D). Begründe die Schwellen im Docstring mit den echten Zahlen.“
 - **Fertig, wenn:** Verteilung plausibel, Docstring begründet, Tests angepasst, `sync`. **Dann schlafen (Schicht 1, 23:30-03:30).**
 
-### [ ] C8 · Qualität der Anforderungstexte (60 min, ab 03:30)
+### [x] C8 · Qualität der Anforderungstexte (60 min, ab 03:30)
 - Prompt: „Ticket C8. Lies alle Anforderungen für G60-US und F70-EU kritisch wie ein BMW-PM: Ist jede kundenorientiert, messbar, realistisch? Verbessere den Prompt (nicht die Ausgabe von Hand), lass neu laufen, vergleiche vorher/nachher in einer Tabelle.“
 - **Achtung:** Neuer Prompt = neuer Cache-Eintrag. Danach Piyush bitten, das Bundle neu zu bauen.
 
-### [ ] C9 · Randfälle testen (45 min, bis 05:30)
+### [x] C9 · Randfälle testen (45 min, bis 05:30)
 - Prompt: „Ticket C9. Ergänze Tests in `tests/pfad_c/` für Randfälle: keine Befunde, Befund ohne Belege, alle Gewichte 0 außer einem, Anforderung ohne Studienbeleg, LLM liefert leere Liste. Nichts darf abstürzen.“
 
-### [ ] C10 · Was-wäre-wenn erklären (30 min, bis 06:00)
+### [x] C10 · Was-wäre-wenn erklären (30 min, bis 06:00)
 - Lasse baut einen Schalter „Annahmen ignorieren“ (Score ohne `future_relevance`) direkt im Frontend aus `score_breakdown`. Du lieferst ihm die Formel als 2 Sätze und prüfst 2 Beispiele von Hand.
 
 ### [ ] C11 · Pitch-Teil (So 08:30-09:30)
