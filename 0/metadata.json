@@ -1,0 +1,81 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KZ7QY2F54G90WQWBR1HAEV",
+  "session_id": "798a76bc-474c-47ea-b230-27a14d18ce96",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-10T22:34:22.6761204Z",
+  "branch": "piyush-frontend",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/ARCHITEKTUR.md",
+    "src/frontend/app/cockpit/page.tsx",
+    "src/frontend/app/evidence/page.tsx",
+    "src/frontend/app/insights/page.tsx",
+    "src/frontend/app/layout.tsx",
+    "src/frontend/app/overview/page.tsx",
+    "src/frontend/app/portfolio/page.tsx",
+    "src/frontend/src/components/AuditPageClient.tsx",
+    "src/frontend/src/components/OverviewPageClient.tsx",
+    "src/frontend/src/components/badges.tsx",
+    "src/frontend/src/components/cockpit/CockpitHero.tsx",
+    "src/frontend/src/components/cockpit/LensPanel.tsx",
+    "src/frontend/src/components/cockpit/useCockpit.ts",
+    "src/frontend/src/components/home/FeatureTiles.tsx",
+    "src/frontend/src/components/insights/MatrixView.tsx",
+    "src/frontend/src/components/insights/OpportunityMap.tsx",
+    "src/frontend/src/components/insights/TrendsAndGaps.tsx",
+    "src/frontend/src/components/insights/labels.ts",
+    "src/frontend/src/components/shell/MegaMenu.tsx",
+    "src/frontend/src/components/shell/SiteFooter.tsx",
+    "src/frontend/src/components/shell/SiteHeader.tsx",
+    "src/frontend/src/components/shell/useScenarioParam.ts",
+    "src/frontend/src/components/ui/PageHeader.tsx",
+    "src/frontend/src/lib/insights.ts",
+    "src/frontend/src/lib/useLoad.ts"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5-5",
+  "turn_id": "b8687361f481",
+  "checkpoint_transcript_start": 434,
+  "transcript_lines_at_start": 434,
+  "compact_transcript_start": 48,
+  "token_usage": {
+    "input_tokens": 68,
+    "cache_creation_tokens": 93465,
+    "cache_read_tokens": 8930314,
+    "output_tokens": 44679,
+    "api_call_count": 34
+  },
+  "session_metrics": {
+    "turn_count": 1
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-10T22:34:21.6911064Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 725,
+    "human_modified": 244,
+    "human_removed": 0,
+    "total_committed": 725,
+    "total_lines_changed": 969,
+    "agent_percentage": 0,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 267,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "scripts/new_scenario.py": 50,
+        "src/backend/core/ask.py": 57,
+        "src/backend/evidence_internal/opportunities.py": 61,
+        "src/backend/evidence_internal/segments.py": 36,
+        "src/shared/beispiele/views/ask.json": 62,
+        "src/shared/beispiele/views/export_md.json": 1
+      }
+    }
+  ]
+}

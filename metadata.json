@@ -1,0 +1,50 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4KZ7QY2F54G90WQWBR1HAEV",
+  "strategy": "manual-commit",
+  "branch": "piyush-frontend",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docs/ARCHITEKTUR.md",
+    "src/frontend/app/cockpit/page.tsx",
+    "src/frontend/app/evidence/page.tsx",
+    "src/frontend/app/insights/page.tsx",
+    "src/frontend/app/layout.tsx",
+    "src/frontend/app/overview/page.tsx",
+    "src/frontend/app/portfolio/page.tsx",
+    "src/frontend/src/components/AuditPageClient.tsx",
+    "src/frontend/src/components/OverviewPageClient.tsx",
+    "src/frontend/src/components/badges.tsx",
+    "src/frontend/src/components/cockpit/CockpitHero.tsx",
+    "src/frontend/src/components/cockpit/LensPanel.tsx",
+    "src/frontend/src/components/cockpit/useCockpit.ts",
+    "src/frontend/src/components/home/FeatureTiles.tsx",
+    "src/frontend/src/components/insights/MatrixView.tsx",
+    "src/frontend/src/components/insights/OpportunityMap.tsx",
+    "src/frontend/src/components/insights/TrendsAndGaps.tsx",
+    "src/frontend/src/components/insights/labels.ts",
+    "src/frontend/src/components/shell/MegaMenu.tsx",
+    "src/frontend/src/components/shell/SiteFooter.tsx",
+    "src/frontend/src/components/shell/SiteHeader.tsx",
+    "src/frontend/src/components/shell/useScenarioParam.ts",
+    "src/frontend/src/components/ui/PageHeader.tsx",
+    "src/frontend/src/lib/insights.ts",
+    "src/frontend/src/lib/useLoad.ts"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 68,
+    "cache_creation_tokens": 93465,
+    "cache_read_tokens": 8930314,
+    "output_tokens": 44679,
+    "api_call_count": 34
+  }
+}
