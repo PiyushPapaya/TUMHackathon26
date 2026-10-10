@@ -1,0 +1,1 @@
+arbeiet daran: 3. B1 abschließen (der echte Aufruf): Code und Tests sind fertig und gepusht. Sobald der Key da ist, stelle ich die E-Class/A6-Frage und prüfe, ob ≥ 3 Claims mit URL zurückkommen. Das dauert ein paar Minuten.
