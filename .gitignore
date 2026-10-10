@@ -10,6 +10,8 @@
 # bleiben lokal. Verteilung im Team per USB/Drive, siehe data/README.md.
 data/*
 !data/README.md
+# Bewusste Entscheidung (Piyush, 10.10.2026): BMW-Rohdateien liegen im Repo
+!data/raw/
 
 # ─── Lokale Einstellungen von Claude Code und Entire ─────────────────────
 .claude/settings.local.json
