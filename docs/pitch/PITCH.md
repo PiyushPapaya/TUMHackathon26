@@ -37,6 +37,7 @@
 | Wie kommt ein neues Modell oder ein neuer Markt dazu? | Eine JSON-Datei in `config/scenarios/` mit Dateien, Ländern und Wettbewerbern, dann die Pipeline starten. |
 | Was, wenn sich Belege widersprechen? | Wir zeigen beide Befunde verknüpft und markieren den Konflikt. Die Abwägung trifft der PM. |
 | Kann man den Prüfpfad fälschen? | Jeder Eintrag enthält den Hash des vorherigen. Wer etwas ändert, bricht die Kette, und `verify` zeigt die Stelle. |
+| Die Prompt-Zeile ist doch eine Blackbox? | Nein: Die KI übersetzt die Frage nur in Gewichte und Filter, die wir offen anzeigen, und nennt keine einzige Anforderung. Die Top 5 rechnet dieselbe Formel wie immer, und übernommen wird erst, wenn der PM klickt, mit Eintrag im Prüfpfad. |
 | Was ist out of scope? | Regulatorik, Engineering-Specs und Preise. Der Scope-Wächter verwirft solche Vorschläge mit Begründung im Prüfpfad. |
 
 ## Backup

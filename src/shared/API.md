@@ -25,6 +25,21 @@ aus dem Backend. **Echte Beispielantwort für jeden Endpunkt:** `beispiele/views
 | `GET /api/scenarios/{id}/evidence?signal=&segment=engine:BEV&q=&page=1&size=20` | Beleg-Browser, gefiltert und seitenweise: `{total, page, size, items}` | `views/evidence.json` |
 | `GET /api/audit/timeline?scenario_id=&requirement_id=` | Prüfpfad als Sätze: `sentence`, `actor`, `rationale` | `views/audit_timeline.json` |
 
+| `GET /api/scenarios/{id}/matrix` | Matrix Heute/Zukunft × Evidenz: `items[req_id]` mit `horizon`, `evidence_level`, `quadrant` (`Sicher & dringend`/`Belegte Zukunftswette`/`Schwach belegt, heute`/`Annahme – beobachten`), `offer_gap` + `offer_gap_label` (`Lücke: nicht angeboten`/`nur optional`/`Serie`) | `views/matrix.json` |
+| `GET /api/requirements/{req_id}/counterparts` | Markt-Vergleich je Anforderung: pro anderem Szenario `match` (`id`, `rank`, `score`) oder `null` + `sentence` (`"F70-EU: Platz 4, Score 71"` / `"kein Gegenstück"`); Regel: gleiche Kategorie + Titel-Jaccard ≥ 0,3 | `views/counterparts.json` |
+| `GET /api/scenarios/{id}/memo` | Entscheidungs-Memo als **Markdown** (text/plain): freigegebene Anforderungen (sonst Top 5 als Entwurf), Score, Stufe, Belege, Annahmen, Zeile „Prüfpfad gültig, N Ereignisse“ | – |
+
+## Prompt-Linse: `POST /api/scenarios/{id}/lens`
+
+```json
+{"question": "Familien in den USA, Fokus Laden und Platz", "actor": "pm.mueller"}
+```
+
+Antwort: `{question, interpretation, source ("ai"|"rules"), weights, filters: {categories, only_gaps}, note, top: [{requirement, lens_score, lens_rank, reasons: [{factor, contribution, sentence}]}]}` (Beispiel `views/lens.json`).
+Die KI liefert nur Gewichte + Filter, nie IDs; Python rechnet die Top 5 auf Kopien, **der Store bleibt unverändert**.
+Schreibt `AI_LENS_SUGGESTED` in den Prüfpfad. „Gewichte übernehmen“ = `PUT /weights` mit `weights` aus der Antwort und dem Prompt-Text als `rationale`.
+Fehler: `404` unbekanntes Szenario · `422` leere Frage.
+
 ## Lesen: Rohdaten (wie bisher)
 
 | Methode + Pfad | Antwort |

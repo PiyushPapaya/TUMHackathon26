@@ -30,6 +30,9 @@ CALLS = {
     "evidence": ("get", "/api/scenarios/G60-US/evidence?segment=engine:BEV&size=3", None),
     "audit_timeline": ("get", "/api/audit/timeline?requirement_id=REQ-G60-US-001", None),
     "health": ("get", "/health", None),
+    "lens": ("post", "/api/scenarios/G60-US/lens", {"question": "Familien, Fokus Laden und Platz", "actor": "pm.demo"}),
+    "matrix": ("get", "/api/scenarios/G60-US/matrix", None),
+    "counterparts": ("get", "/api/requirements/REQ-G60-US-001/counterparts", None),
 }
 
 

@@ -14,6 +14,7 @@ from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from api.insights_routes import router as insights_router
 from api.routes import router
 from api.views import router as views_router
 from core.audit import AuditLog
@@ -43,6 +44,7 @@ app.add_middleware(
 )
 app.include_router(router)
 app.include_router(views_router)
+app.include_router(insights_router)
 
 
 @app.get("/health")

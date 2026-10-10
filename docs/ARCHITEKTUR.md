@@ -53,6 +53,9 @@ flowchart LR
 | Evidenzstufe | `src/backend/requirements_engine/evidence_level.py` | Regeln A-D | nein |
 | Challenge | `src/backend/requirements_engine/challenge.py` | Antwort mit Belegen + Gegenbelegen | ja (Ziel) |
 | API | `src/backend/api/routes.py` | REST-Endpunkte, siehe `src/shared/API.md` | – |
+| Prompt-Linse | `src/backend/core/lens.py` | PM-Frage → Gewichte + Kategorien + „nur Lücken“ (LLM, sonst Schlüsselwort-Regeln) → Top 5 in Python | ja (nur Gewichte) |
+| Entscheidungshilfen | `src/backend/core/req_insights.py` | Matrix Heute/Zukunft × Evidenz, Markt-Gegenstück (Jaccard), Entscheidungs-Memo (Markdown) | nein |
+| API Linse/Memo | `src/backend/api/insights_routes.py` | `/lens`, `/matrix`, `/counterparts`, `/memo` | – |
 | Szenarien | `config/scenarios/*.json` | Fahrzeug × Markt, Dateien, Wettbewerber | – |
 | Werkbank | `src/frontend/app/studio/` | 5 Werkzeuge zum Prüfen der Liste: Duell, Konflikt-Arena, Annahmen-Schalter, Kundenstimmen, Entscheidungslauf | nein |
 | Werkbank-Rechnung | `src/frontend/src/studio/scoring.ts` | Score ohne Annahmen, Gewichte aus Duellen (gleiche Formel wie `scoring.py`) | nein |
@@ -80,6 +83,8 @@ flowchart LR
 | Annahmen-Schalter rechnet im Browser und speichert nichts | Was-wäre-wenn soll den Prüfpfad nicht füllen; Formel identisch zum Backend, darum gleiche Zahlen | Backend-Endpunkt pro Schalter (unnötige Vertragsänderung) |
 | Werkbank unter `/studio` als eigene Dateien, Baukasten als JSON | Das Cockpit (`/`, Detail, Audit) gehört Pfad D; neue Werkzeuge sollen keine Merge-Konflikte erzeugen. Texte und Farben als JSON, damit Nicht-Coder mitbauen | Werkzeuge in die Cockpit-Seiten einbauen (Konflikte mit Lasse), Texte im Code (nur für Coder änderbar) |
 | Shader per rohem WebGL (eigener Vertex/Fragment-Shader), nicht per three.js | Kein neues Paket nötig (Browser-API reicht für einen einfachen Verlaufs-Shader), weniger Bundle-Gewicht | three.js/react-three-fiber (neue Abhängigkeit, Rückfrage nötig, Overkill für einen Verlauf) |
+| Prompt-Linse: LLM wählt nur Gewichte und Kategorien, nie IDs; Python rechnet die Top 5 auf Kopien; Übernehmen erst per `PUT /weights` | Kein Treffer und keine Quelle kann erfunden werden, Rang bleibt nachrechenbar, PM behält Kontrolle (Audit `AI_LENS_SUGGESTED` + `WEIGHTS_CHANGED`). Das LLM sieht keine BMW-Daten, darum darf der Demo-Cache ins Repo | LLM sortiert Anforderungen selbst (nicht reproduzierbar, IDs halluzinierbar); Linse ändert Gewichte sofort (PM verliert Kontrolle) |
+| Markt-Gegenstück per Kategorie + Titel-Jaccard ≥ 0,3, Memo in Python statt LLM | PM kann die Regel nachrechnen; jede Zahl im Memo stammt aus Store und `audit.verify()` | Embeddings (neue Abhängigkeit, nicht erklärbar), LLM-Memo (könnte Zahlen erfinden) |
 | Neues Fahrzeug/Markt = neue JSON in `config/scenarios/` | Brief: "adaptable to other BMW vehicles and markets" | Sonderlogik pro Modell |
 
 ## Externe Dienste
