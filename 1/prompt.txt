@@ -1,0 +1,1 @@
+Pls fix: Image with src "/media/scenarios/G60-US.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold

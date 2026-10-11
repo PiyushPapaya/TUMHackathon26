@@ -1,0 +1,73 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4MF0TMJKKPAFPK242MW6DAT",
+  "session_id": "edf92e3b-3e41-4d7f-935f-37ef1a3cfb90",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-11T03:10:09.095931681Z",
+  "branch": "jolesRegionalFrontend",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "src/frontend/app/models/page.tsx"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-opus-5-5",
+  "turn_id": "ea2b61d885d8",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 10,
+    "cache_creation_tokens": 23475,
+    "cache_read_tokens": 207456,
+    "output_tokens": 1747,
+    "api_call_count": 5
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-11T03:10:09.085142556Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 1,
+    "human_modified": 2,
+    "human_removed": 0,
+    "total_committed": 1,
+    "total_lines_changed": 3,
+    "agent_percentage": 0,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 91682,
+      "user_lines_removed": 3,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".gitignore": 4,
+        "config/scenarios/F70-JP.json": 30,
+        "config/scenarios/G60-CA.json": 29,
+        "config/scenarios/G60-JP.json": 29,
+        "config/scenarios/G60-KR.json": 29,
+        "config/scenarios/G70-JP.json": 29,
+        "config/scenarios/G70-KR.json": 29,
+        "data/processed/G60-EU/context.json": 8,
+        "data/processed/G60-EU/evidence.json": 2888,
+        "data/processed/G60-KR/context.json": 8,
+        "data/processed/G60-KR/evidence.json": 4307,
+        "data/processed/G60-KR/signals.json": 128,
+        "data/processed/G60-US/external_evidence.json": 1040,
+        "data/processed/G60-US/external_signals.json": 102,
+        "data/processed/G70-EU/context.json": 8,
+        "data/processed/G70-EU/evidence.json": 956,
+        "data/processed/G70-US/context.json": 8,
+        "data/processed/G70-US/evidence.json": 81420,
+        "data/processed/G70-US/external_evidence.json": 557,
+        "data/processed/G70-US/external_signals.json": 59,
+        "entscheidungen/E08_bmw_daten_im_repo.md": 5,
+        "entscheidungen/LOG.md": 1,
+        "src/backend/evidence_internal/study.py": 2,
+        "tests/pfad_a/test_study.py": 6
+      },
+      "user_removed_per_file": {
+        ".gitignore": 3
+      }
+    }
+  ]
+}
