@@ -125,3 +125,17 @@ ja eibauen, soll aber mit der UI nichz interefeteien, kit begrunung warum und au
   
   **Grenzen dieser Bewertung:** Wie im Auftrag vorgegeben habe ich weder Tests, ruff noch Build ausgeführt. Die Rubrik-Datei `docs/hilfe/EHL-BEWERTUNG.md` gibt es nicht, deshalb habe ich die Rubrik aus der Auftragsbeschreibung genommen. Die Gegenprobe ist eine Näherung mit `git archive` und nicht die exakte Logik von `ehl_budget.py`. Die Rundung 6,25 → 6,3 ist kaufmännisch.
 </agent-message>
+
+---
+
+noch nicht , scehreeib es bei den OFFENE_AUFGABEN.md ganz oben in der datei und psuhe alles auf main
+
+---
+
+<task-notification>
+<task-id>b58oxxbhv</task-id>
+<tool-use-id>toolu_01Q4Cv4rRA45qbTRBhEvuo9o</tool-use-id>
+<output-file>C:\Users\anil1\AppData\Local\Temp\claude\C--Users-anil1-Downloads-Hackathon-TUMHackathon26\02976f2f-0693-4cc1-8600-49492ff5c27d\tasks\b58oxxbhv.output</output-file>
+<status>completed</status>
+<summary>Background command "Wait until the other session's merge finishes" completed (exit code 0)</summary>
+</task-notification>
