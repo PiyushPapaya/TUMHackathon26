@@ -1,0 +1,9 @@
+please create a new branch called jolesRegionalFrontend and commit to that until further notice
+
+---
+
+We want to add a regional filter to our data. How would we go about that. Do not implement it yet. Just explain it. We dont want to change the backend to heavily
+
+---
+
+Bitte führe die Schritte aus. Mit regionalen Märkten meinen wir Märkte wie Eu, Us, aber auch KR, JP, oder CA.
