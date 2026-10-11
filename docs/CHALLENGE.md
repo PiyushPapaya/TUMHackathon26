@@ -51,4 +51,10 @@ Marktabdeckung Feedback (Kommentare): F70 EU 1.433 · G60 US 3.610 · G70 US 3.7
 
 ## Offene Fragen an BMW
 
+Aktueller Abgleich mit den bereitgestellten PDFs, Daten und Prozessbildern:
+[UX-UND-BRIEFING-ABGLEICH.md](UX-UND-BRIEFING-ABGLEICH.md).
+Aktuelle DE-Listenpreise und grober Aufwand werden als Referenzkontext gezeigt;
+sie sind keine Nachfolger-Preiskalkulation oder technische Detailauslegung.
+Discord-Absprachen sind noch nicht geprueft, da kein Export/Zugriff vorliegt.
+
 Siehe `docs/pfade/LEAD.md` (Antworten hier eintragen).

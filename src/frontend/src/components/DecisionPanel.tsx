@@ -130,6 +130,7 @@ export function DecisionPanel({
               key={action}
               type="button"
               onClick={() => setMode(action)}
+              aria-pressed={mode === action}
               className={`min-h-11 rounded-md border px-3 text-sm font-semibold capitalize transition focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
                 mode === action
                   ? "border-blue-600 bg-blue-600 text-white"
@@ -179,9 +180,9 @@ export function DecisionPanel({
                 setDraft((value) => ({ ...value, effort: event.target.value as Effort }))
               }
             >
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
+              <option value="S">Small</option>
+              <option value="M">Medium</option>
+              <option value="L">Large</option>
             </select>
           </label>
         </div>

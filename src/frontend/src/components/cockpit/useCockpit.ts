@@ -58,7 +58,8 @@ export function useCockpit(initialScenarioId: string | null) {
   const [scenarios, setScenarios] = useState<Scenario[]>([]);
   // Das Szenario kommt aus der URL (?scenario=, Deep-Link). Ist es unbekannt, nehmen wir das erste vorhandene.
   const [fallbackId, setFallbackId] = useState<string | null>(null);
-  const scenarioId = initialScenarioId ?? fallbackId ?? DEFAULT_SCENARIO_ID;
+  const scenarioId = initialScenarioId && (!scenarios.length || scenarios.some(s => s.id === initialScenarioId))
+    ? initialScenarioId : fallbackId ?? DEFAULT_SCENARIO_ID;
   const [loadedFor, setLoadedFor] = useState<string | null>(null);
   const [requirements, setRequirements] = useState<Requirement[]>([]);
   const [signals, setSignals] = useState<Signal[]>([]);

@@ -31,6 +31,13 @@ SYSTEM = Actor(type=ActorType.SYSTEM, name="pipeline")
 class ScenarioState:
     def __init__(self, bundle: dict):
         self.scenario = Scenario(**bundle["scenario"])
+        # Warnungen sind reiner Anzeigetext: aus config/ nachladen, damit eine Textkorrektur
+        # (z. B. Übersetzung) keinen teuren Pipeline-Lauf braucht. Zahlen bleiben im Bundle.
+        config = ROOT / "config" / "scenarios" / f"{self.scenario.id}.json"
+        if config.exists():
+            warnings = json.loads(config.read_text(encoding="utf-8")).get("warnings")
+            if isinstance(warnings, list):
+                self.scenario.warnings = warnings
         self.funnel: dict = bundle.get("funnel", {})
         self.evidence = {e["id"]: Evidence(**e) for e in bundle["evidence"]}
         self.signals = {s["id"]: Signal(**s) for s in bundle["signals"]}

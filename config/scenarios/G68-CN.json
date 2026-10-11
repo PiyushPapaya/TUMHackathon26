@@ -11,7 +11,7 @@
     ["infotainment_digital", "smart cockpit ecosystems, local apps and Mandarin voice assistants"],
     ["driver_assistance", "navigate-on-autopilot for city streets (urban NOA)"]
   ],
-  "warnings": ["Kaltstart: keine Kundenkommentare und keine Optionsliste für China; nur Studie, Absatz und Web."],
+  "warnings": ["Cold start: no customer comments and no option list for China; based only on the study, sales data and web sources."],
   "data": {
     "feedback_file": null,
     "study_file": "F70_G60_G68_G70_customer_studies.xlsx",

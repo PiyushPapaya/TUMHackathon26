@@ -120,6 +120,10 @@ flowchart LR
 | Startseite erzählt mit Partikeln statt Linien (`VoiceField`, Canvas): Anzahl Cluster = Findings, Balken = echte Scores und Stufen der Top 15 | Die Story zeigt, was das Produkt tut, und bleibt ohne Auto-Video lebendig; Canvas hält 1.200 Punkte flüssig | Szenario-Fotos pro Kapitel (zeigt das Produkt nicht), Three.js (neue Abhängigkeit) |
 | Assistent regelbasiert + `/api/ask` statt freiem LLM-Chat; kein Prüfpfad-Eintrag für `/api/ask` | Antworten über das Produkt sind fest und prüfbar, Datenantworten nennen nur Store-IDs; der Assistent schlägt nichts vor | Freier Chat über `core/llm.py` (könnte erfinden, braucht Key in der Demo) |
 | Szenario im URL-Parameter `?scenario=` | Header, Mega-Menü, Cockpit und Deep-Links teilen einen Zustand ohne Context-Bibliothek | globaler State / localStorage |
+| Preis nur als heutiger DE-Listenpreis aus der gelieferten Optionsliste (`core/product_context.py`, mit PDF-Seiten), keine Kostenschätzung für den Nachfolger | Echte, prüfbare Zahl mit Quelle; der Brief verlangt keine Wirtschaftlichkeitsrechnung | Geschätzte Entwicklungskosten aus S/M/L (erfundene Zahl), LLM-Preise (geraten) |
+| Eine Eckenregel: alle Flächen eckig (Radius 0 in `globals.css`), nur Status-Punkte rund | Buttons, Logo und Tabellenchips sind eckig; gemischte 0/4 px wirkten wie Fehler | 4 px überall (jede Komponente einzeln nachziehen, neue Lücken) |
+| Szenario-Warnungen beim Start aus `config/scenarios` nachladen (`core/store.py`), nicht aus dem Bundle | Textkorrektur (z. B. englische UI) ohne teuren Pipeline-Lauf; Zahlen bleiben im Bundle | Pipeline neu laufen lassen (LLM-Kosten, Zeit) |
+| Audit zeigt Anforderungstitel und Klartext-Sätze statt IDs, Gewichtsänderungen als „20 % → 25 %“ | Ein PM ohne Vorwissen versteht jeden Eintrag; Roh-JSON bleibt unter „Full event data“ | Nur IDs und JSON (für Neulinge unlesbar) |
 
 ## Externe Dienste
 

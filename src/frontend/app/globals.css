@@ -46,6 +46,7 @@
   --color-blue-700: #0653b6;
   --color-blue-800: #0a4496;
   --color-blue-900: #0a2f66;
+  /* One corner rule: everything square like buttons, logo and table chips; only status dots stay round. */
   --radius-xs: 0;
   --radius-sm: 0;
   --radius-md: 0;
@@ -60,6 +61,22 @@
 
 * {
   box-sizing: border-box;
+  letter-spacing: 0 !important;
+}
+
+.field-label { display: grid; gap: 6px; min-width: 0; font-size: 12px; font-weight: 600; color: var(--grey-500); }
+.field-control { min-height: 44px; width: 100%; min-width: 0; border: 1px solid var(--hairline); border-radius: 0; padding: 8px 12px; background: white; color: var(--ink); font-size: 14px; font-weight: 400; }
+button:not(:disabled), summary, select { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+[id] { scroll-margin-top: 90px; }
+.requirement-summary { display: grid; align-items: start; gap: 24px; grid-template-areas: "intro" "chart" "criterion" "decision"; }
+.summary-intro { grid-area: intro; }
+.summary-chart { grid-area: chart; }
+.summary-criterion { grid-area: criterion; }
+.summary-decision { grid-area: decision; }
+@media (min-width: 1024px) {
+  .requirement-summary { grid-template-columns: 1.1fr 1fr; grid-template-areas: "intro chart" "criterion chart" "decision chart"; }
 }
 
 html {

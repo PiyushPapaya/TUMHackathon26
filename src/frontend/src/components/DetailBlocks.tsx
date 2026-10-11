@@ -3,7 +3,7 @@ import type { OfferCheck, OfferCheckStatus } from "@/src/lib/api";
 export function AssumptionItem({ label, text }: { label: string; text: string }) {
   return (
     <li className="rounded-md border border-dashed border-slate-300 bg-slate-50 p-3 text-sm text-slate-700">
-      <span className="mb-2 inline-flex min-h-6 items-center rounded-full border border-dashed border-slate-400 px-2 text-[10px] font-semibold uppercase tracking-wide text-slate-600">
+      <span className="mb-2 inline-flex min-h-6 items-center border border-dashed border-slate-400 px-2 text-[10px] font-semibold uppercase tracking-wide text-slate-600">
         {label}
       </span>
       <p>{text}</p>
@@ -40,6 +40,7 @@ export function OfferCheckBox({ offerCheck }: { offerCheck: OfferCheck }) {
         {offerCheck.option_code ? ` (${offerCheck.option_code})` : ""}
       </p>
       {offerCheck.note && <p className="mt-1 text-sm">{offerCheck.note}</p>}
+      <p className="mt-3 text-xs">Equipment reference from the supplied option list; availability in the selected market requires verification.</p>
     </section>
   );
 }

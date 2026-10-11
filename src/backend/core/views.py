@@ -14,6 +14,8 @@ from core.models import Requirement, Signal, SourceType
 from requirements_engine import scoring
 
 LEVEL_LABEL = {"A": "stark belegt", "B": "mittel belegt", "C": "schwach belegt", "D": "Annahme"}
+# Die Oberfläche ist englisch; Sätze, die direkt im UI stehen, kommen deshalb auf Englisch.
+LEVEL_LABEL_EN = {"A": "Strong evidence", "B": "Moderate evidence", "C": "Weak evidence", "D": "Assumption"}
 FACTOR_LABEL = {
     "customer_pain": "Kundenschmerz", "reach": "Reichweite (Kunden × Volumen)",
     "satisfaction_gap": "Zufriedenheitslücke (Studie)", "competitive_pressure": "Wettbewerbsdruck",
@@ -61,11 +63,11 @@ def warnings(state) -> list[str]:
     out = list(state.scenario.warnings)
     unmapped = state.context.get("unmapped_topics") or {}
     if unmapped:
-        out.append(f"{len(unmapped)} Themen ohne Kategorie ({sum(unmapped.values())} Kommentare), "
-                   "nicht in der Priorisierung.")
+        out.append(f"{len(unmapped)} topics without a category ({sum(unmapped.values())} comments) "
+                   "are not part of the ranking.")
     without = [r.id for r in state.requirements.values() if r.evidence_level.value == "D" and not r.assumptions]
     if without:
-        out.append(f"{len(without)} Annahme-Anforderungen ohne ausgeschriebene Annahme: {', '.join(without)}")
+        out.append(f"{len(without)} assumption-level requirements without a written assumption: {', '.join(without)}")
     return out
 
 
@@ -99,7 +101,7 @@ def waterfall(req: Requirement) -> list[dict]:
     confidence = scoring.CONFIDENCE[req.evidence_level]
     steps.append({"factor": "confidence", "label": f"Evidenzstufe {req.evidence_level.value}", "value": confidence,
                   "weight": None, "contribution": round(req.score - raw, 1),
-                  "sentence": f"{LEVEL_LABEL[req.evidence_level.value]}: Rohwert {raw} × {confidence} = {req.score}"})
+                  "sentence": f"{LEVEL_LABEL_EN[req.evidence_level.value]}: raw {raw} × {confidence} = {req.score}"})
     return steps
 
 

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import Link from "next/link";
 import type { EvidenceLevel, Scenario } from "@/src/lib/api";
 import { EvidenceDot } from "@/src/components/badges";
@@ -6,6 +6,7 @@ import { Eyebrow, SectionHeading } from "@/src/components/ui/Typography";
 import { Reveal } from "@/src/components/ui/Reveal";
 import { MediaContext, MediaImage } from "./MediaImage";
 import type { HomeData } from "./useHomeData";
+import { ScenarioFilters, EMPTY_SCENARIO_FILTER, matchesScenario } from "../ScenarioFilters";
 
 // Fehlt ein Foto (z. B. G68-CN), zeigen wir eine Typo-Karte im selben Stil statt einer leeren Fläche.
 function Placeholder({ s }: { s: Scenario }) {
@@ -37,6 +38,8 @@ function Lights({ levels }: { levels?: Record<EvidenceLevel, number> }) {
 // Warum nicht fünf bildschirmhohe Sektionen: Die Szenarien sind Auswahl, nicht Story.
 export function ScenarioStrip({ data }: { data: HomeData }) {
   const media = useContext(MediaContext);
+  const [filter, setFilter] = useState(EMPTY_SCENARIO_FILTER);
+  const filtered = data.scenarios.filter(s => matchesScenario(s, filter));
   if (data.scenarios.length === 0) return null;
   return (
     <section id="scenarios" className="bg-[var(--grey-100)] py-24">
@@ -48,8 +51,11 @@ export function ScenarioStrip({ data }: { data: HomeData }) {
           </div>
           <p className="max-w-sm text-[var(--grey-500)]">Same pipeline, different data. Each card opens its ranked list.</p>
         </Reveal>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {data.scenarios.map((s, i) => {
+        <div className="mt-8"><ScenarioFilters scenarios={data.scenarios} value={filter} onChange={setFilter} /></div>
+        <p role="status" className="mt-4 text-sm text-[var(--grey-500)]">{filtered.length} models and markets</p>
+        {filtered.length === 0 && <p className="py-8">No models match these filters.</p>}
+        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {filtered.map((s, i) => {
             const f = data.funnels[s.id];
             const src = `/media/scenarios/${s.id}.jpg`;
             return (

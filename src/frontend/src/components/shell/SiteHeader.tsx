@@ -9,15 +9,16 @@ import { MStripe } from "@/src/components/ui/MStripe";
 import { Icon } from "@/src/components/ui/Icon";
 import { DEFAULT_SCENARIO_ID, scenarioLabel } from "./scenarioLabel";
 
-// Nur die zwei Ziele des Demo-Flows. Insights, Portfolio, Evidence und Guide bleiben per URL erreichbar,
-// stehen aber nicht in der Navigation: weniger Auswahl, klarerer Weg (fragen → entscheiden → nachweisen).
+// Model selection, decisions, comparison and history are the primary PM destinations.
 const NAV = [
+  { href: "/models", label: "Models" },
   { href: "/cockpit", label: "Cockpit" },
+  { href: "/portfolio", label: "Compare" },
   { href: "/audit", label: "Audit trail" },
 ];
 
 // Seiten, die ein Szenario in ?scenario= verstehen. Das Szenario-Menü bleibt auf der Seite, statt ins Cockpit zu springen.
-const SCENARIO_PAGES = ["/cockpit", "/insights", "/evidence"];
+const SCENARIO_PAGES = ["/cockpit", "/insights", "/evidence", "/audit"];
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -77,7 +78,7 @@ export function SiteHeader() {
               return (
                 <Link
                   key={item.href}
-                  href={item.href}
+                  href={item.href === "/cockpit" || item.href === "/audit" ? `${item.href}?scenario=${scenarioId}` : item.href}
                   aria-current={active ? "page" : undefined}
                   className={`relative py-6 text-[15px] ${textCls} ${active ? "font-semibold" : ""} hover:text-[var(--blue)]`}
                 >
@@ -118,7 +119,7 @@ export function SiteHeader() {
         {mobileOpen && (
           <nav className="border-t border-[var(--hairline)] bg-white px-6 py-4 lg:hidden" aria-label="Mobile">
             {NAV.map((item) => (
-              <Link key={item.href} href={item.href} className="block py-3 text-lg text-[var(--ink)]">{item.label}</Link>
+              <Link key={item.href} href={item.href === "/cockpit" || item.href === "/audit" ? `${item.href}?scenario=${scenarioId}` : item.href} className="block py-3 text-lg text-[var(--ink)]">{item.label}</Link>
             ))}
             {scenarios.map((s) => (
               <Link key={s.id} href={`/cockpit?scenario=${s.id}`} className="block py-2 text-sm text-[var(--grey-500)]">

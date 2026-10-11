@@ -4,9 +4,11 @@ import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { useCockpit } from "@/src/components/cockpit/useCockpit";
 import { CockpitHero } from "@/src/components/cockpit/CockpitHero";
-import { RequirementsTable } from "@/src/components/cockpit/RequirementsTable";
+import { RequirementFilters } from "@/src/components/cockpit/RequirementFilters";
+import { ProductContext } from "@/src/components/ProductContext";
 import { WeightControls } from "@/src/components/cockpit/WeightControls";
 import { LensPanel } from "@/src/components/cockpit/LensPanel";
+import { HowToRead } from "@/src/components/cockpit/HowToRead";
 
 // Eine Spalte, drei Schritte von oben nach unten: fragen → Liste springt → Zeile öffnen.
 // Warum keine Seitenleiste mehr: Im 2-Minuten-Demo soll das Auge nicht zwischen Kästen springen.
@@ -17,6 +19,8 @@ function Cockpit() {
   return (
     <main className="mx-auto max-w-[1400px] px-6 py-12 lg:px-10">
       <CockpitHero scenario={c.selectedScenario} scenarioId={c.scenarioId} />
+      <HowToRead />
+      <div className="mb-6"><ProductContext scenarioId={c.scenarioId} compact /></div>
 
       {c.error && (
         <div role="alert" className="mb-6 border border-[var(--m-red)] bg-white px-4 py-3 text-sm text-[var(--m-red)]">
@@ -24,11 +28,15 @@ function Cockpit() {
         </div>
       )}
 
-      <LensPanel
+      <details className="mb-3 border-b border-[var(--hairline)]">
+        <summary className="flex min-h-12 items-center text-sm font-semibold text-[var(--ink)]">Ask a prioritization question</summary>
+        <LensPanel
+        key={c.scenarioId}
         scenarioId={c.scenarioId}
         applying={c.applying}
         onApply={(weights, question) => c.applyWeights({ ...c.weights, ...weights }, question)}
       />
+      </details>
 
       <WeightControls
         weights={c.weights}
@@ -44,7 +52,9 @@ function Cockpit() {
           <p className="py-8 text-sm text-[var(--grey-500)]">No requirements for this scenario yet.</p>
         )}
         {!c.loading && c.requirements.length > 0 && (
-          <RequirementsTable
+          <RequirementFilters
+            key={c.scenarioId}
+            scenarioId={c.scenarioId}
             requirements={c.requirements}
             previousRanks={c.previousRanks}
             highlightRanks={c.highlightRanks}

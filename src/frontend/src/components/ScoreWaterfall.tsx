@@ -53,12 +53,12 @@ export function scoreWithoutAssumptions(
   return Math.round((raw / weightLeft) * 100 * CONFIDENCE[evidenceLevel] * 10) / 10;
 }
 
-function FactorRow({ step }: { step: WaterfallStep }) {
+function FactorRow({ step, maximum = 100 }: { step: WaterfallStep; maximum?: number }) {
   if (step.factor === "confidence") {
     return (
       <div className="rounded-md border border-dashed border-slate-300 bg-slate-50 px-3 py-2">
         <div className="flex items-center justify-between gap-4 text-sm">
-          <span className="font-semibold text-[#262626]">{step.label}</span>
+          <span className="font-semibold text-[#262626]">Evidence confidence</span>
           <span className={step.contribution < 0 ? "font-semibold text-amber-700" : "font-semibold text-slate-600"}>
             {step.contribution.toFixed(1)} pts
           </span>
@@ -68,25 +68,19 @@ function FactorRow({ step }: { step: WaterfallStep }) {
     );
   }
 
-  const maxContribution = Math.max((step.weight ?? 0) * 100, 0.01);
-  const width = Math.min(100, Math.max(0, (step.contribution / maxContribution) * 100));
+  const width = Math.min(100, Math.max(0, (step.contribution / Math.max(maximum, 0.01)) * 100));
   return (
     <div className="py-2">
       <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 text-sm">
-        <span className="font-semibold text-[#262626]">{step.label}</span>
+        <span className="font-semibold text-[#262626]">{FACTOR_LABELS[step.factor] ?? step.label}</span>
         <span className="text-slate-600">
           +{step.contribution.toFixed(1)} pts
-          {step.weight !== null && (
-            <span className="ml-1 text-xs text-slate-500">
-              ({step.value.toFixed(2)} x {step.weight.toFixed(2)} x 100)
-            </span>
-          )}
         </span>
       </div>
-      <div className="mt-2 h-2.5 w-full overflow-hidden rounded-full bg-slate-200">
-        <div className="h-full rounded-full bg-blue-600" style={{ width: `${width}%` }} />
+      <div className="mt-2 h-2.5 w-full overflow-hidden bg-slate-200">
+        <div className="h-full bg-blue-600" style={{ width: `${width}%` }} />
       </div>
-      <p className="mt-1 text-xs text-slate-600">{step.sentence}</p>
+      <details className="mt-1 text-xs text-slate-600"><summary>Calculation details</summary><p className="mt-1">{step.sentence}</p>{step.weight !== null && <p>{step.value.toFixed(2)} x {step.weight.toFixed(2)} x 100</p>}</details>
     </div>
   );
 }
@@ -106,32 +100,35 @@ export function ScoreWaterfall({
   ignoreAssumptions?: boolean;
   onToggleIgnoreAssumptions?: (value: boolean) => void;
 }) {
-  const factorSteps = (waterfall?.length ? waterfall : fromBreakdown(scoreBreakdown)).filter(
+  const originalSteps = (waterfall?.length ? waterfall : fromBreakdown(scoreBreakdown)).filter(
     (step) => step.factor !== "confidence",
   );
-  const confidenceStep = waterfall?.find((step) => step.factor === "confidence");
+  const weightLeft = originalSteps.filter(s => s.factor !== "future_relevance").reduce((sum, s) => sum + (s.weight ?? 0), 0);
+  const factorSteps = ignoreAssumptions ? originalSteps.filter(s => s.factor !== "future_relevance").map(s => ({ ...s, contribution: weightLeft > 0 ? s.contribution / weightLeft : 0, weight: weightLeft > 0 ? (s.weight ?? 0) / weightLeft : 0 })) : originalSteps;
+  const confidenceStep = !ignoreAssumptions ? waterfall?.find((step) => step.factor === "confidence") : undefined;
   const subtotal = factorSteps.reduce((sum, step) => sum + step.contribution, 0);
-  const calculatedDeduction = Math.round((finalScore - subtotal) * 10) / 10;
   const scoreNoAssumptions = scoreWithoutAssumptions(scoreBreakdown, evidenceLevel);
+  const displayedScore = ignoreAssumptions ? scoreNoAssumptions : finalScore;
+  const calculatedDeduction = Math.round((displayedScore - subtotal) * 10) / 10;
 
   return (
     <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
           <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">
-            Score waterfall
+            Why this priority?
           </h2>
           <p className="mt-1 text-sm text-slate-600">
-            Each contribution shows value x weight x 100. Evidence confidence is applied last.
+            Priority score / 100
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-3">
           <div className="rounded-md border border-slate-200 px-3 py-2 text-right">
-            <p className="text-[11px] uppercase tracking-wide text-slate-500">Final</p>
-            <p className="text-lg font-semibold text-[#262626]">{finalScore.toFixed(1)}</p>
+            <p className="text-[11px] uppercase tracking-wide text-slate-500">{ignoreAssumptions ? "Preview" : "Final"}</p>
+            <p className="text-lg font-semibold text-[#262626]">{displayedScore.toFixed(1)}</p>
           </div>
           <div className="rounded-md border border-dashed border-slate-300 px-3 py-2 text-right">
-            <p className="text-[11px] uppercase tracking-wide text-slate-500">No assumptions</p>
+            <p className="text-[11px] uppercase tracking-wide text-slate-500">Without future factor</p>
             <p className="text-lg font-semibold text-[#262626]">{scoreNoAssumptions.toFixed(1)}</p>
           </div>
         </div>
@@ -145,13 +142,13 @@ export function ScoreWaterfall({
             checked={Boolean(ignoreAssumptions)}
             onChange={(event) => onToggleIgnoreAssumptions(event.target.checked)}
           />
-          Ignore assumptions: compare the normal score with future relevance removed.
+          Exclude future relevance (preview)
         </label>
       )}
 
       <div className="mt-4 divide-y divide-slate-100">
         {factorSteps.map((step) => (
-          <FactorRow key={step.factor} step={step} />
+          <FactorRow key={step.factor} step={step} maximum={Math.max(...factorSteps.map(s => s.contribution), 1)} />
         ))}
       </div>
 

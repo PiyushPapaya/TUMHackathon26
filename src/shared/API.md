@@ -91,6 +91,14 @@ Fehlende Faktoren behalten ihren Standardwert; alles wird auf Summe 1 normiert. 
 
 ## Wichtige Felder
 
+`GET /api/scenarios/{id}/product-context` liefert Referenzkontext aus der lokal
+bereitgestellten Optionsliste: `source`, `reference_market` (Germany), `currency`
+(EUR), `min_eur`, `max_eur`, `pages`, `engines`, `note`. Grundpreise sind brutto
+inklusive 19% MwSt., ohne Ueberfuehrung. Fehlende Preise bleiben `null`. Diese
+Referenz gilt nicht als US-/CN-Preis oder als Kostenschaetzung fuer den Nachfolger.
+`engines` bezeichnet Antriebsarten in vorhandenen Belegen, nicht das vollstaendige
+Verkaufsangebot. Der Endpunkt veraendert weder Scores noch den Audit-Verlauf.
+
 **Requirement:** `id`, `title`, `description`, `acceptance_criterion`, `category`, `signal_ids`, `score` (0-100), `rank`,
 `score_breakdown` (`{faktor: {value, weight, contribution, explanation}}`), `rationale`, `evidence_level` (`A|B|C|D`),
 `assumptions`, `uncertainties`, `offer_check`, `effort` (`S|M|L`), `status`, `version`.

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import {
   getRequirementDetail,
   getRequirementExplain,
@@ -11,13 +12,14 @@ import {
 import { RequirementDetailView } from "@/src/components/RequirementDetailView";
 
 export function RequirementDetailPageClient({ id }: { id: string }) {
+  const params = useSearchParams();
+  const scenarioId = params.get("scenario") ?? id.replace(/^REQ-/, "").replace(/-[^-]+$/, "");
   const [detail, setDetail] = useState<ExplainView | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [ignoreAssumptions, setIgnoreAssumptions] = useState(false);
 
   const loadDetail = useCallback(async () => {
-    setIsLoading(true);
     setError(null);
     try {
       const loaded = await getRequirementExplain(id).catch(async () => getRequirementDetail(id));
@@ -68,13 +70,13 @@ export function RequirementDetailPageClient({ id }: { id: string }) {
       <div className="mx-auto max-w-[1400px]">
         <div className="mb-8 flex flex-wrap items-center justify-between gap-3">
           <Link
-            href="/cockpit"
+            href={`/cockpit?scenario=${encodeURIComponent(scenarioId)}`}
             className="inline-flex min-h-11 items-center text-sm font-semibold text-[var(--ink)] hover:text-[var(--blue)]"
           >
             ← Back to ranked list
           </Link>
           <Link
-            href="/audit"
+            href={`/audit?scenario=${encodeURIComponent(scenarioId)}&requirement=${encodeURIComponent(id)}`}
             className="inline-flex min-h-11 items-center text-sm font-semibold text-[var(--ink)] hover:text-[var(--blue)]"
           >
             Audit trail →
@@ -95,6 +97,7 @@ export function RequirementDetailPageClient({ id }: { id: string }) {
         {!error && !isLoading && detail && (
           <RequirementDetailView
             detail={detail}
+            scenarioId={scenarioId}
             evidenceBySignal={evidenceBySignal}
             ignoreAssumptions={ignoreAssumptions}
             onToggleIgnoreAssumptions={setIgnoreAssumptions}

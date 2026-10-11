@@ -4,7 +4,7 @@ import type { Scenario } from "@/src/lib/api";
 import { getExportUrl } from "@/src/lib/api";
 import { getMemoUrl } from "@/src/lib/insights";
 import { Button } from "@/src/components/ui/Button";
-import { Eyebrow, SectionHeading } from "@/src/components/ui/Typography";
+import { Eyebrow } from "@/src/components/ui/Typography";
 import { scenarioLabel } from "@/src/components/shell/scenarioLabel";
 import { useAssistant } from "@/src/components/shell/assistant/AssistantProvider";
 import { Icon } from "@/src/components/ui/Icon";
@@ -14,7 +14,7 @@ export function CockpitHero({ scenario, scenarioId }: { scenario?: Scenario; sce
   const n = scenario?.headline_numbers;
   const stats = n
     ? [
-        [n.evidence.toLocaleString("en-US"), "customer voices"],
+        [(scenario?.data_coverage?.feedback ?? n.evidence).toLocaleString("en-US"), scenario?.data_coverage ? "customer feedback" : "evidence records"],
         [String(n.signals), "findings"],
         [String(n.requirements), "requirements"],
       ]
@@ -34,8 +34,8 @@ export function CockpitHero({ scenario, scenarioId }: { scenario?: Scenario; sce
           </button>
           <Eyebrow>{scenario ? scenarioLabel(scenario) : "Signal2Spec"}</Eyebrow>
         </div>
-        <SectionHeading as="h1" className="mt-4">PM cockpit.</SectionHeading>
-        <p className="mt-3 max-w-xl text-[var(--grey-500)]">Ask, compare the evidence, decide. Every step is recorded.</p>
+        <h1 className="mt-3 text-3xl font-medium">Ranked requirements</h1>
+        <p className="mt-2 max-w-xl text-sm text-[var(--grey-500)]">What the successor of this car should do better, ranked by customer evidence. Click a row for the reasons.</p>
       </div>
       <div className="grid gap-5 lg:justify-items-end">
         <dl className="flex flex-wrap gap-8">

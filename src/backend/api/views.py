@@ -10,7 +10,8 @@ from fastapi import APIRouter, HTTPException, Query, Request
 from pydantic import BaseModel
 
 from core import insights, portfolio, views
-from core.store import Store
+from core.product_context import product_context
+from core.store import ROOT, Store
 
 router = APIRouter(prefix="/api")
 
@@ -47,6 +48,11 @@ def list_scenarios(request: Request) -> list[dict]:
 @router.get("/scenarios/{scenario_id}/overview")
 def overview(scenario_id: str, request: Request) -> dict:
     return views.overview(_state(request, scenario_id))
+
+
+@router.get("/scenarios/{scenario_id}/product-context")
+def current_product_context(scenario_id: str, request: Request) -> dict:
+    return product_context(_state(request, scenario_id), ROOT)
 
 
 @router.get("/requirements/{req_id}/explain")

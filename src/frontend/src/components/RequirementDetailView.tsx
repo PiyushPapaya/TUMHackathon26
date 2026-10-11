@@ -7,27 +7,29 @@ import { FindingCard } from "@/src/components/FindingCard";
 import { AssumptionItem, OfferCheckBox } from "@/src/components/DetailBlocks";
 import { DecisionPanel } from "@/src/components/DecisionPanel";
 import { AuditTrail } from "@/src/components/AuditTrail";
+import { ProductContext } from "@/src/components/ProductContext";
 
 const H2 = "text-xs font-semibold uppercase tracking-[0.16em] text-[var(--grey-500)]";
 
 function numberOrDash(value: number | null | undefined, suffix = "") {
-  return typeof value === "number" ? `${value.toLocaleString("en-US")}${suffix}` : "not available";
+  return typeof value === "number" ? `${value.toLocaleString("en-US", { maximumFractionDigits: 1 })}${suffix}` : "not available";
 }
 
-// Reihenfolge folgt dem Demo-Satz "Was ist es, wer sagt das, ich entscheide":
-// Kopf → Kundenstimmen links + Entscheidung rechts (ohne Scrollen) → Score-Logik → Annahmen → Zusatzkontext zugeklappt.
+// Keep the proposal, priority chart and decision together before the evidence details.
 export function RequirementDetailView({
   detail,
   evidenceBySignal,
   ignoreAssumptions,
   onToggleIgnoreAssumptions,
   onRefresh,
+  scenarioId,
 }: {
   detail: ExplainView;
   evidenceBySignal: Map<string, Evidence[]>;
   ignoreAssumptions: boolean;
   onToggleIgnoreAssumptions: (value: boolean) => void;
   onRefresh: () => Promise<void>;
+  scenarioId: string;
 }) {
   const { requirement } = detail;
   const business = detail.business ?? requirement.business;
@@ -36,27 +38,37 @@ export function RequirementDetailView({
   const hasMoreContext = Boolean(detail.robustness_sentence || business || webSources.length || requirement.offer_check);
 
   return (
-    <div className="grid gap-12">
-      <header className="grid gap-8 border-b border-[var(--hairline)] pb-10 lg:grid-cols-[1.5fr_1fr]">
-        <div>
+    <div className="grid gap-8">
+      <header className="requirement-summary border-b border-[var(--hairline)] pb-6">
+        <div className="summary-intro min-w-0">
           <p className={H2}>
             Rank {requirement.rank} · {categoryLabel(requirement.category)} · Score {requirement.score.toFixed(1)}
           </p>
-          <h1 className="mt-4 text-4xl font-light leading-tight tracking-tight text-[var(--ink)] sm:text-5xl">{requirement.title}</h1>
+          <h1 className="mt-3 text-2xl font-medium leading-tight text-[var(--ink)] sm:text-3xl">{requirement.title}</h1>
           <div className="mt-5 flex flex-wrap items-center gap-4">
             <EvidenceBadge level={requirement.evidence_level} reason={requirement.rationale} />
             <StatusBadge status={requirement.status} />
           </div>
           <p className="mt-5 max-w-2xl text-[var(--grey-500)]">{requirement.rationale}</p>
+          {/* Key facts at a glance: effort, horizon and market size before any detail. Volume is context, not part of the score. */}
+          <dl className="mt-5 grid grid-cols-2 gap-4 border-y border-[var(--hairline)] py-4 text-sm sm:grid-cols-4">
+            <div><dt className="text-xs text-[var(--grey-500)]">Engineering effort</dt><dd className="mt-1 font-semibold">{({ S: "Small", M: "Medium", L: "Large" })[requirement.effort]}</dd><dd className="text-xs text-[var(--grey-500)]">preliminary estimate</dd></div>
+            <div><dt className="text-xs text-[var(--grey-500)]">Planning horizon</dt><dd className="mt-1 font-semibold">{requirement.horizon === "next_gen" ? "Next generation" : "Current product"}</dd></div>
+            <div><dt className="text-xs text-[var(--grey-500)]">Market volume 2030</dt><dd className="mt-1 font-semibold tabular-nums">{numberOrDash(business?.volume_2030)}</dd><dd className="text-xs text-[var(--grey-500)]">projection, vehicles</dd></div>
+            <div><dt className="text-xs text-[var(--grey-500)]">Growth 2025 to 2030</dt><dd className="mt-1 font-semibold tabular-nums">{numberOrDash(business?.growth_pct, "%")}</dd></div>
+          </dl>
+          <div className="mt-4"><ProductContext scenarioId={scenarioId} compact /></div>
         </div>
-        <div className="h-fit border-l-2 border-[var(--blue)] bg-[var(--grey-100)] p-6">
-          <p className={H2}>Acceptance criterion</p>
-          <p className="mt-3 text-lg font-light text-[var(--ink)]">{requirement.acceptance_criterion}</p>
-          <p className="mt-4 text-sm text-[var(--grey-500)]">{requirement.description}</p>
+        <div className="summary-chart min-w-0"><ScoreWaterfall scoreBreakdown={requirement.score_breakdown} evidenceLevel={requirement.evidence_level} finalScore={requirement.score} waterfall={detail.waterfall} ignoreAssumptions={ignoreAssumptions} onToggleIgnoreAssumptions={onToggleIgnoreAssumptions} /></div>
+        <div className="summary-criterion min-w-0 border-l-2 border-[var(--blue)] bg-[var(--grey-100)] p-4">
+          <p className={H2}>Success criterion</p>
+          <p className="mt-2 text-sm font-medium text-[var(--ink)]">{requirement.acceptance_criterion}</p>
+          <p className="mt-3 text-sm text-[var(--grey-500)]">{requirement.description}</p>
         </div>
+        <div className="summary-decision min-w-0"><DecisionPanel requirement={requirement} onChanged={onRefresh} /></div>
       </header>
 
-      <section className="grid gap-10 lg:grid-cols-[1.3fr_1fr]">
+      <section>
         <div>
           <h2 className={H2}>What customers say · {detail.signals.length} findings</h2>
           <div className="mt-4 space-y-3">
@@ -68,19 +80,9 @@ export function RequirementDetailView({
             ))}
           </div>
         </div>
-        <div className="h-fit lg:sticky lg:top-24">
-          <DecisionPanel requirement={requirement} onChanged={onRefresh} />
-        </div>
       </section>
 
-      <ScoreWaterfall
-        scoreBreakdown={requirement.score_breakdown}
-        evidenceLevel={requirement.evidence_level}
-        finalScore={requirement.score}
-        waterfall={detail.waterfall}
-        ignoreAssumptions={ignoreAssumptions}
-        onToggleIgnoreAssumptions={onToggleIgnoreAssumptions}
-      />
+      <OfferCheckBox offerCheck={requirement.offer_check} />
 
       <section>
         <h2 className={H2}>Assumptions and open questions</h2>
@@ -119,14 +121,13 @@ export function RequirementDetailView({
                 <p className="mt-2 text-[var(--grey-500)]">{source.text}</p>
               </article>
             ))}
-            <OfferCheckBox offerCheck={requirement.offer_check} />
           </div>
         </details>
       )}
 
       <section>
         <h2 className={H2}>Decision record</h2>
-        <div className="mt-4"><AuditTrail requirementId={requirement.id} compact /></div>
+        <div className="mt-4"><AuditTrail key={requirement.version + ":" + detail.history.length} requirementId={requirement.id} compact /></div>
       </section>
     </div>
   );

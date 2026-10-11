@@ -17,6 +17,16 @@ async function get<T>(path: string): Promise<T> {
 
 const enc = encodeURIComponent;
 
+export interface ProductContextView {
+  source: string;
+  min_eur: number | null;
+  max_eur: number | null;
+  pages: number[];
+  engines: string[];
+  note: string;
+}
+export const getProductContext = (id: string) => get<ProductContextView>(`/api/scenarios/${enc(id)}/product-context`);
+
 export interface MatrixItem {
   horizon: string;
   evidence_level: EvidenceLevel;

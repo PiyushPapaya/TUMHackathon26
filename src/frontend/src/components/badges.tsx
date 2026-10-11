@@ -4,8 +4,8 @@ import type { EvidenceLevel, RequirementStatus, SourceType } from "@/src/lib/api
 // A und B sind durch Kundenstimmen getragen (grün), C ist dünn (gelb), D ist nur Annahme (rot).
 // Der Buchstabe bleibt klein daneben, damit die feinere Stufe nicht verloren geht.
 export const EVIDENCE_LIGHT: Record<EvidenceLevel, { word: string; dot: string; text: string }> = {
-  A: { word: "Proven", dot: "bg-emerald-500", text: "text-emerald-800" },
-  B: { word: "Proven", dot: "bg-emerald-500", text: "text-emerald-800" },
+  A: { word: "Strong", dot: "bg-emerald-500", text: "text-emerald-800" },
+  B: { word: "Moderate", dot: "bg-emerald-500", text: "text-emerald-800" },
   C: { word: "Weak", dot: "bg-amber-400", text: "text-amber-800" },
   D: { word: "Assumption", dot: "bg-[var(--m-red)]", text: "text-[var(--m-red)]" },
 };

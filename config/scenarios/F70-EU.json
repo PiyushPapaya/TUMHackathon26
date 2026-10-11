@@ -6,7 +6,7 @@
   "countries": ["GB", "SE", "FR", "DK", "FI"],
   "competitors": ["Mercedes-Benz A-Class", "Audi A3 Sportback", "VW Golf", "Volvo EX30"],
   "successor_horizon": "2031",
-  "warnings": ["Europa-Szenario, aber 1.293 von 1.433 Kommentaren (90 %) stammen aus Großbritannien."],
+  "warnings": ["Europe scenario, but 1,293 of 1,433 comments (90%) come from the United Kingdom."],
   "data": {
     "feedback_file": "F70_feedback_hackathon.xlsx",
     "study_file": "F70_G60_G68_G70_customer_studies.xlsx",

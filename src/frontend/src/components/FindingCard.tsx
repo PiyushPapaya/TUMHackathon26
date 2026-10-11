@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Evidence, Signal } from "@/src/lib/api";
 import { SourceTrustBadge } from "@/src/components/badges";
 
@@ -23,7 +23,7 @@ function evidenceOrigin(evidence: Evidence) {
 
 function EvidenceItem({ evidence }: { evidence: Evidence }) {
   return (
-    <li className="rounded-md border border-slate-200 bg-slate-50 p-3 text-sm">
+    <li id={`evidence-${evidence.id}`} className="rounded-md border border-slate-200 bg-slate-50 p-3 text-sm">
       <p className="text-slate-700">&ldquo;{evidence.text}&rdquo;</p>
       <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-slate-500">
         <span className="font-semibold text-slate-700">{evidence.id}</span>
@@ -46,6 +46,18 @@ function EvidenceItem({ evidence }: { evidence: Evidence }) {
 
 export function FindingCard({ signal, evidence }: { signal: Signal; evidence: Evidence[] }) {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    let timer: ReturnType<typeof setTimeout>;
+    const revealLinkedEvidence = () => {
+      const target = window.location.hash.slice(1);
+      if (target !== `signal-${signal.id}` && !evidence.some(e => target === `evidence-${e.id}`)) return;
+      setOpen(true);
+      timer = setTimeout(() => document.getElementById(target)?.scrollIntoView({ block: "start" }), 100);
+    };
+    revealLinkedEvidence();
+    window.addEventListener("hashchange", revealLinkedEvidence);
+    return () => { clearTimeout(timer); window.removeEventListener("hashchange", revealLinkedEvidence); };
+  }, [signal.id, evidence]);
 
   return (
     <article className="rounded-lg border border-slate-300 bg-white">
@@ -61,7 +73,7 @@ export function FindingCard({ signal, evidence }: { signal: Signal; evidence: Ev
             {KIND_LABELS[signal.kind] ?? signal.kind} · {signal.mention_count} mentions from linked findings
           </p>
         </div>
-        <span className="grid h-8 w-8 place-items-center rounded-full border border-slate-200 text-lg leading-none text-slate-500">
+        <span className="grid h-8 w-8 place-items-center border border-slate-200 text-lg leading-none text-slate-500">
           {open ? "-" : "+"}
         </span>
       </button>
@@ -74,7 +86,7 @@ export function FindingCard({ signal, evidence }: { signal: Signal; evidence: Ev
             <a
               href={`#signal-${signal.conflicts_with[0]}`}
               title={`Conflicting signal IDs: ${signal.conflicts_with.join(", ")}`}
-              className="mb-3 inline-flex min-h-7 items-center rounded-full border border-yellow-300 bg-yellow-50 px-3 text-xs font-semibold text-yellow-800 hover:bg-yellow-100"
+              className="mb-3 inline-flex min-h-7 items-center border border-yellow-300 bg-yellow-50 px-3 text-xs font-semibold text-yellow-800 hover:bg-yellow-100"
             >
               Conflicting evidence
             </a>

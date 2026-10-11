@@ -39,8 +39,34 @@
 | Was, wenn sich Belege widersprechen? | Wir zeigen beide Befunde verknüpft und markieren den Konflikt. Die Abwägung trifft der PM. |
 | Kann man den Prüfpfad fälschen? | Jeder Eintrag enthält den Hash des vorherigen. Wer etwas ändert, bricht die Kette, und `verify` zeigt die Stelle. |
 | Die Prompt-Zeile ist doch eine Blackbox? | Nein: Die KI übersetzt die Frage nur in Gewichte und Filter, die wir offen anzeigen, und nennt keine einzige Anforderung. Die Top 5 rechnet dieselbe Formel wie immer, und übernommen wird erst, wenn der PM klickt, mit Eintrag im Prüfpfad. |
-| Was ist out of scope? | Regulatorik, Engineering-Specs und Preise. Der Scope-Wächter verwirft solche Vorschläge mit Begründung im Prüfpfad. |
+| Was ist out of scope? | Regulatorik, technische Detailauslegung und detaillierte Wirtschaftlichkeitsrechnungen. Gelieferte Listenpreise zeigen wir als DE-Referenzkontext, nicht als Nachfolger-Kalkulation. |
 
 ## Backup
+
+## Aktualisierter Demo-Fokus (11.10.2026)
+
+1. `/models`: G60 und United States waehlen. Die Zahl der Belege direkt aus
+   dem laufenden Szenario zeigen, keine Rohdatei-Gesamtzahl als US-Zahl nennen.
+2. Cockpit: eine kundenbezogene Anforderung oeffnen. Der Chart ist sofort
+   sichtbar. Kundenproblem und Erfolgskriterium erklaeren, dann den Originalbeleg.
+3. Einen Widerspruch oder eine Unsicherheit zeigen; Gegenfrage stellen.
+   Die KI-Antwort bleibt nach dem Speichern im Entscheidungspanel sichtbar.
+4. PM bearbeitet/freigibt mit Begruendung. Audit-Link oeffnen, neuestes
+   Ereignis, Person und Vorher/Nachher zeigen. CSV exportieren.
+5. F70-EU oeffnen: gleiche Pipeline, anderer Markt. Begrenzte Datenabdeckung
+   anderer Szenarien ehrlich benennen.
+
+Die Preise sind aus gelieferten DE-Listen abgelesener Kontext. Aufwand ist
+eine grobe Schaetzung. Beides nicht als optimierten Business Case verkaufen.
+Evidenzstufe A/B bedeutet stark/moderat belegt, nicht absolut bewiesen.
+Die Hash-Kette ist manipulationsnachweisend gegen die bestehende Kette;
+ein externer Anker fuer Schutz gegen vollstaendiges Neuschreiben fehlt.
+Eine evaluierte Grounding-Rate nur nennen, wenn der konkrete Report samt
+Testumfang vorliegt. Der Discord-Abgleich steht noch aus.
+
+Vollstaendige Grenzen und Dateiabgleich:
+[UX-UND-BRIEFING-ABGLEICH.md](../UX-UND-BRIEFING-ABGLEICH.md).
+
+## Backup-Datei
 
 Backup-Video (2 min) der Demo-Strecke, aufgenommen So 08:30, lokal + Drive. Bei Netzausfall: `DEMO_MODUS=true`.

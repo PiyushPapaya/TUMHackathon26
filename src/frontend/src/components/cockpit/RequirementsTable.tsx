@@ -3,7 +3,7 @@
 import { useLayoutEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import type { Requirement } from "@/src/lib/api";
-import { categoryLabel, ConflictMark, EvidenceBadge } from "@/src/components/badges";
+import { categoryLabel, ConflictMark, EvidenceBadge, StatusBadge } from "@/src/components/badges";
 import { ScoreBar } from "@/src/components/ScoreBar";
 
 function RankDelta({ oldRank, newRank }: { oldRank?: number; newRank: number }) {
@@ -19,16 +19,17 @@ function RankDelta({ oldRank, newRank }: { oldRank?: number; newRank: number }) 
 // FLIP-Animation (First, Last, Invert, Play): wir merken die Zeilenpositionen vor dem Neuordnen,
 // verschieben jede Zeile optisch zurück an den alten Platz und lassen sie dann gleiten.
 // Warum: Der Rangwechsel nach "Apply" ist der beste Demo-Moment, die Jury soll ihn sehen.
-function useFlip(requirements: Requirement[]) {
+function useFlip(requirements: Requirement[], animateRanks: boolean) {
   const rowRefs = useRef(new Map<string, HTMLTableRowElement>());
   const lastTops = useRef(new Map<string, number>());
 
   useLayoutEffect(() => {
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     rowRefs.current.forEach((el, id) => {
+      el.getAnimations().forEach(animation => animation.cancel());
       const top = el.getBoundingClientRect().top;
       const before = lastTops.current.get(id);
-      if (!reduce && before !== undefined && Math.abs(before - top) > 1) {
+      if (animateRanks && !reduce && before !== undefined && Math.abs(before - top) > 1) {
         el.animate(
           [{ transform: `translateY(${before - top}px)` }, { transform: "translateY(0)" }],
           { duration: 600, easing: "cubic-bezier(0.22, 1, 0.36, 1)" },
@@ -36,7 +37,7 @@ function useFlip(requirements: Requirement[]) {
       }
       lastTops.current.set(id, top);
     });
-  }, [requirements]);
+  }, [requirements, animateRanks]);
 
   return (id: string) => (el: HTMLTableRowElement | null) => {
     if (el) rowRefs.current.set(id, el);
@@ -51,15 +52,17 @@ export function RequirementsTable({
   previousRanks,
   highlightRanks,
   conflictTitles,
+  scenarioId,
 }: {
   requirements: Requirement[];
   previousRanks: Record<string, number>;
   highlightRanks: boolean;
   conflictTitles: (r: Requirement) => string[];
+  scenarioId: string;
 }) {
   const router = useRouter();
-  const rowRef = useFlip(requirements);
-  const open = (id: string) => router.push(`/requirements/${id}`);
+  const rowRef = useFlip(requirements, highlightRanks);
+  const open = (id: string) => router.push(`/requirements/${id}?scenario=${encodeURIComponent(scenarioId)}`);
 
   return (
     <div className="overflow-x-auto border-t border-[var(--hairline)]">
@@ -103,6 +106,7 @@ export function RequirementsTable({
                     <ConflictMark conflictingTitles={conflictTitles(req)} />
                   </p>
                   <p className="mt-1 text-xs uppercase tracking-[0.08em] text-[var(--grey-500)]">{categoryLabel(req.category)}</p>
+                  <div className="mt-2 flex flex-wrap items-center gap-3"><StatusBadge status={req.status} /><span className="text-xs text-[var(--grey-500)]">{({ S: "Small", M: "Medium", L: "Large" })[req.effort]} effort</span></div>
                 </td>
                 <td className="px-4 py-5">
                   <ScoreBar score={req.score} source={`${req.signal_ids.length} linked findings`} />

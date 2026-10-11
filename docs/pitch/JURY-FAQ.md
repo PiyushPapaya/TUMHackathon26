@@ -7,7 +7,9 @@
 ## Produkt und Nutzen
 
 **1. Wer genau benutzt das, und wann?**
-Gerüst: Rolle beim Partner + Situation + Häufigkeit. „Ein Sales Engineer bei [Kunde], jedes Mal wenn eine Anfrage kommt, ca. N pro Woche.“
+Ein BMW Product Manager bei der Planung einer Nachfolgergeneration. Er prueft
+verdichtete Kundenbeduerfnisse, priorisiert Vorschlaege und verantwortet die
+Freigabe mit nachvollziehbarer Begruendung.
 
 **2. Was ist die eine Zahl, und wie habt ihr sie gemessen?**
 Gerüst: „X auf N Testfällen, gelabelt von [wem], gegen Baseline Y.“ Grenze direkt mitsagen.
@@ -16,7 +18,10 @@ Gerüst: „X auf N Testfällen, gelabelt von [wem], gegen Baseline Y.“ Grenze
 Gerüst: manueller Prozess + Zeit/Kosten; oder „LLM allein ohne unsere Logik: Z %“.
 
 **4. Warum würde [Partner] das einsetzen?**
-Gerüst: Bezug auf deren Produkt/Kunden. Atira: Anfrage→Angebot schneller; tacto: Einkaufsersparnis; BMW: Kriterien aus dem Brief.
+Der PM bekommt eine pruefbare Verbindung von Originalbelegen zu messbaren
+Anforderungen, inklusive Gegenbelegen und Unsicherheiten. Im Pitch diesen
+Nutzen an einer konkreten Entscheidung demonstrieren; Zeitersparnis ohne
+Messung nicht beziffern.
 
 **5. Was ist an eurer Lösung neu?**
 Gerüst: die eine Designidee (z. B. „LLM liest, Code entscheidet, jede Aussage mit Beleg“), nicht die Technologie.
@@ -42,7 +47,11 @@ Gerüst: Kosten pro Lauf × 1.000, parallele Verarbeitung, Cache; Engpass ehrlic
 Gerüst: Tokens × Preis, gemessen in unseren Logs. „ca. X Cent“.
 
 **12. Wie geht ihr mit sensiblen Kundendaten um?**
-Gerüst: keine Speicherung über die Sitzung hinaus, Keys nur serverseitig, für Produktion: EU-Hosting/Vertrag mit Modellanbieter.
+Der Prototyp speichert Pipeline-Ergebnisse lokal und Entscheidungen dauerhaft
+in einem SQLite-Audit, damit sie nach einem Neustart wiederhergestellt werden
+koennen. API-Schluessel bleiben im Backend. Zugriffsrechte, Aufbewahrung,
+Hosting und Vertraege mit Modellanbietern muessen fuer Produktion festgelegt
+werden; nicht behaupten, dass Daten automatisch nach der Sitzung verschwinden.
 
 **13. Was war die schwierigste technische Entscheidung?**
 Gerüst: aus der Entscheidungstabelle in ARCHITEKTUR.md. „Wir haben X genommen, Y verworfen, weil …“
@@ -53,7 +62,10 @@ Gerüst: aus der Entscheidungstabelle in ARCHITEKTUR.md. „Wir haben X genommen
 Gerüst: Testset getrennt von Entwicklungsbeispielen; N Fälle; wo es scheitert (konkretes Beispiel).
 
 **15. Was funktioniert noch nicht?**
-Gerüst: 2 ehrliche Grenzen + wie man sie lösen würde. Nie „alles läuft“.
+Die DE-Optionslisten bestaetigen keine US-/CN-Verfuegbarkeit. Aufwand ist nur
+grob geschaetzt; die Hash-Kette hat noch keinen externen Vertrauensanker.
+Ein Discord-Abgleich ist mangels Zugriff/Export offen. Weitere Grenzen und
+den Datenabgleich zeigt [UX-UND-BRIEFING-ABGLEICH.md](../UX-UND-BRIEFING-ABGLEICH.md).
 
 **16. Was würdet ihr mit 2 weiteren Wochen machen?**
 Gerüst: 1. echtes Kundenfeedback, 2. die größte Grenze lösen, 3. Integration (CRM/ERP/Karte …).

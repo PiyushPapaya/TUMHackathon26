@@ -13,7 +13,7 @@ def test_overview_zaehlt_stufen_und_top3(client):
     body = client.get("/api/scenarios/G60-US/overview").json()
     assert len(body["top3"]) == 3 and body["top3"][0]["rank"] == 1
     assert sum(body["level_distribution"].values()) == body["funnel"]["requirements"]
-    assert any("Themen ohne Kategorie" in w for w in body["warnings"])
+    assert any("topics without a category" in w for w in body["warnings"])
 
 
 def test_explain_wasserfall_summiert_auf_score(client):
