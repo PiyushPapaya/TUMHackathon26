@@ -1,0 +1,204 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4MNT6CBH2NAFBEG4YCY5Z5T",
+  "session_id": "7f077613-a956-4359-8c10-3bbd2e47203c",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-11T05:09:00.7731459Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "save_step_count": 2,
+  "files_touched": [],
+  "agent": "Claude Code",
+  "model": "claude-opus-5-5",
+  "turn_id": "f792c7ef44f0",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 90,
+    "cache_creation_tokens": 330247,
+    "cache_read_tokens": 7145919,
+    "output_tokens": 25968,
+    "api_call_count": 44
+  },
+  "skill_events_version": 1,
+  "skill_events": [
+    {
+      "id": "claude-skill-toolu_01Ck49LzmHHdbDbVzoZnDdXE",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "pitch-prep"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "c3450ddfadd5",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 34,
+        "end": 35,
+        "entry_ids": [
+          "6687ce63-b6ae-46ba-9d0f-9068c17a7b52"
+        ],
+        "tool_use_id": "toolu_01Ck49LzmHHdbDbVzoZnDdXE"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_01Ck49LzmHHdbDbVzoZnDdXE"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: pitch-prep",
+        "default_collapsed": true
+      }
+    },
+    {
+      "id": "claude-skill-toolu_013fETNFtM4mo44NQH9c4jq8",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "sync"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "78c3e6587e01",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 255,
+        "end": 256,
+        "entry_ids": [
+          "e5127c89-c995-4c16-ad9c-15aa824a67ad"
+        ],
+        "tool_use_id": "toolu_013fETNFtM4mo44NQH9c4jq8"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_013fETNFtM4mo44NQH9c4jq8"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: sync",
+        "default_collapsed": true
+      }
+    },
+    {
+      "id": "claude-skill-toolu_01MF4UCeAiz23E7jkD5V9dwj",
+      "event_type": "tool_invocation",
+      "skill": {
+        "name": "superpowers:brainstorming"
+      },
+      "source": {
+        "agent": "claude-code",
+        "signal": "skill_tool_use",
+        "confidence": "explicit"
+      },
+      "turn_id": "f792c7ef44f0",
+      "transcript_anchor": {
+        "unit": "line",
+        "start": 357,
+        "end": 358,
+        "entry_ids": [
+          "93b3e73c-e067-40dd-bf79-0511114b0977"
+        ],
+        "tool_use_id": "toolu_01MF4UCeAiz23E7jkD5V9dwj"
+      },
+      "native": {
+        "tool_name": "Skill",
+        "tool_use_id": "toolu_01MF4UCeAiz23E7jkD5V9dwj"
+      },
+      "collapse": {
+        "target": "tool_pair",
+        "label": "Skill: superpowers:brainstorming",
+        "default_collapsed": true
+      }
+    }
+  ],
+  "session_metrics": {
+    "turn_count": 5
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 164,
+      "user_lines_removed": 22,
+      "agent_lines_added": 111613,
+      "agent_lines_removed": 180,
+      "user_added_per_file": {
+        ".gitignore": 1,
+        "src/backend/core/audit.py": 4,
+        "src/backend/core/llm.py": 10,
+        "src/backend/core/store.py": 9,
+        "src/backend/core/views.py": 2,
+        "src/backend/evidence_internal/context.py": 25,
+        "src/backend/evidence_internal/feedback.py": 1,
+        "src/backend/evidence_internal/signals.py": 14,
+        "src/backend/evidence_internal/study.py": 1,
+        "src/backend/evidence_internal/taxonomy.py": 19,
+        "src/backend/main.py": 8,
+        "src/backend/pipeline.py": 2,
+        "src/backend/requirements_engine/derive.py": 5,
+        "src/frontend/src/components/benchmarks/QualityTable.tsx": 1,
+        "tests/pfad_a/test_ingest_edges.py": 56,
+        "tests/test_pipeline.py": 2,
+        "tests/test_repository_edges.py": 4
+      },
+      "user_removed_per_file": {
+        "src/backend/core/llm.py": 3,
+        "src/backend/core/store.py": 1,
+        "src/backend/core/views.py": 1,
+        "src/backend/evidence_internal/context.py": 6,
+        "src/backend/evidence_internal/feedback.py": 1,
+        "src/backend/evidence_internal/study.py": 1,
+        "src/backend/main.py": 4,
+        "src/backend/pipeline.py": 1,
+        "src/frontend/src/components/benchmarks/QualityTable.tsx": 1,
+        "tests/test_pipeline.py": 1,
+        "tests/test_repository_edges.py": 2
+      }
+    },
+    {
+      "checkpoint_number": 3,
+      "user_lines_added": 346,
+      "user_lines_removed": 194,
+      "agent_lines_added": 146134,
+      "agent_lines_removed": 22767,
+      "user_added_per_file": {
+        "data/processed/F70-EU.json": 6,
+        "data/processed/F70-EU/context.json": 3,
+        "data/processed/G60-EU.json": 3,
+        "data/processed/G60-US.json": 48,
+        "data/processed/G60-US/context.json": 1,
+        "data/processed/G60-US/external_evidence.json": 56,
+        "data/processed/G68-CN.json": 2,
+        "data/processed/G70-EU.json": 4,
+        "data/processed/G70-EU/context.json": 1,
+        "data/processed/G70-US.json": 24,
+        "data/processed/G70-US/external_evidence.json": 32,
+        "scripts/refresh_bundles.py": 2,
+        "scripts/verify_stack.py": 110,
+        "src/backend/evidence_external/triangulation.py": 8,
+        "src/backend/evidence_external/web_research.py": 12,
+        "tests/pfad_a/test_ingest_edges.py": 19,
+        "tests/pfad_b/test_web_research.py": 15
+      },
+      "user_removed_per_file": {
+        "data/processed/F70-EU.json": 6,
+        "data/processed/F70-EU/context.json": 3,
+        "data/processed/G60-EU.json": 3,
+        "data/processed/G60-US.json": 48,
+        "data/processed/G60-US/context.json": 1,
+        "data/processed/G60-US/external_evidence.json": 56,
+        "data/processed/G68-CN.json": 2,
+        "data/processed/G70-EU.json": 4,
+        "data/processed/G70-EU/context.json": 1,
+        "data/processed/G70-US.json": 24,
+        "data/processed/G70-US/external_evidence.json": 32,
+        "scripts/refresh_bundles.py": 1,
+        "src/backend/evidence_external/triangulation.py": 6,
+        "src/backend/evidence_external/web_research.py": 7
+      }
+    }
+  ]
+}
