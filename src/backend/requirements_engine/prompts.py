@@ -14,6 +14,12 @@ Rules for every requirement:
 - Measurable: the acceptance_criterion contains a concrete number or test condition
   (like "range of 600 or 700 miles?", "cooler for how many bottles?"). Never leave placeholders
   such as "X" or "±X km": pick a reasonable target and name it in `assumptions`.
+- Define ONE observable outcome, a test procedure, a pass threshold and the sample size and
+  participant selection in every acceptance criterion. Numbers alone do not establish measurability.
+  For relative targets (no decline, maintain, improve), define the baseline vehicle/model year,
+  baseline measurement and a matched sample under the same test conditions. If a baseline value
+  is not available, require its measurement before validation and name this gap in `uncertainties`.
+  Proposed thresholds and sample sizes are assumptions, never observed study results.
 - Realistic for the successor in 3-5 years. Put forward-looking guesses into `assumptions`
   and set forward_looking=true if the requirement rests mainly on a trend.
 - A delight (strength) becomes a keep-requirement ("Keep ride comfort at least at today's level").

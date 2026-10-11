@@ -18,6 +18,7 @@ from api.insights_routes import router as insights_router
 from api.routes import router
 from api.views import router as views_router
 from core.audit import AuditLog
+from core.single_process import ProcessLock
 from core.store import ROOT, Store
 
 load_dotenv(ROOT / ".env")
@@ -28,14 +29,16 @@ async def lifespan(app: FastAPI):
     # Eine SQLite-Datei pro Laptop; liegt in data/ und damit außerhalb von Git.
     db_path = Path(os.getenv("AUDIT_DB", ROOT / "data" / "audit.db"))
     db_path.parent.mkdir(parents=True, exist_ok=True)
-    audit = AuditLog(db_path)
-    try:
-        store = Store(audit)
-        store.load_all()
-        app.state.store = store
-        yield
-    finally:
-        audit.close()
+    # Zustand liegt im RAM: ein zweiter Prozess auf derselben DB würde PM-Entscheidungen nicht sehen.
+    with ProcessLock(db_path):
+        audit = AuditLog(db_path)
+        try:
+            store = Store(audit)
+            store.load_all()
+            app.state.store = store
+            yield
+        finally:
+            audit.close()
 
 
 app = FastAPI(title="Signal2Spec", version="0.2.0", lifespan=lifespan,

@@ -48,6 +48,8 @@ flowchart LR
 | Benchmarks | `src/backend/core/benchmarks.py`, `market_benchmarks.py` | KI-Qualität je Szenario (Quellen existieren, Kriterium mit Zahl, Stufe A/B, extern bestätigt) + Simulation: 200 Läufe mit ±20 % Gewicht, wie stabil bleibt die Top 5. Marktvergleich aus EPA/NHTSA-Caches (Reichweite, Verbrauch, Beschwerden) | nein |
 | Ansichten | `src/backend/core/views.py`, `portfolio.py`, `insights.py` | fertige Antworten pro Bildschirm: Übersicht, Score-Wasserfall, Was-wäre-wenn, Portfolio-Matrix, Markt-Vergleich, Chancen-Karte, Trendradar, „Was wir nicht wissen“ | nein |
 | Replay | `src/backend/core/replay.py` | spielt PM-Entscheidungen und Gewichte beim Start aus `audit.db` neu ab | nein |
+| Prozess-Sperre | `src/backend/core/single_process.py` | erlaubt genau einen API-Prozess pro `audit.db` (RAM-Zustand bleibt eindeutig) | nein |
+| Herkunft | `src/backend/core/provenance.py` | Modell, Prompt-Hash und Commit eines Pipeline-Laufs fürs Bundle und den Prüfpfad | nein |
 | NHTSA | `src/backend/evidence_external/nhtsa.py` | US-Behördenbeschwerden als zweite Kundenquelle + Wettbewerbs-Statistik, Cache in `data/external_cache/` | nein |
 | EPA-Reichweite | `src/backend/evidence_external/fueleconomy.py` | amtliche Reichweite und Verbrauch von BMW und Wettbewerbern (nur US), ein Beleg je Fahrzeug, Cache in `data/external_cache/fueleconomy/` | nein |
 | Prüfpfad | `src/backend/core/audit.py` | append-only Ereignisse, SHA-256-Kette, `verify()` | – |
@@ -126,6 +128,8 @@ flowchart LR
 | Eine Eckenregel: alle Flächen eckig (Radius 0 in `globals.css`), nur Status-Punkte rund | Buttons, Logo und Tabellenchips sind eckig; gemischte 0/4 px wirkten wie Fehler | 4 px überall (jede Komponente einzeln nachziehen, neue Lücken) |
 | Szenario-Warnungen beim Start aus `config/scenarios` nachladen (`core/store.py`), nicht aus dem Bundle | Textkorrektur (z. B. englische UI) ohne teuren Pipeline-Lauf; Zahlen bleiben im Bundle | Pipeline neu laufen lassen (LLM-Kosten, Zeit) |
 | Audit zeigt Anforderungstitel und Klartext-Sätze statt IDs, Gewichtsänderungen als „20 % → 25 %“ | Ein PM ohne Vorwissen versteht jeden Eintrag; Roh-JSON bleibt unter „Full event data“ | Nur IDs und JSON (für Neulinge unlesbar) |
+| Genau ein API-Prozess pro `audit.db`, erzwungen per OS-Dateisperre (`core/single_process.py`) | Der Store hält PM-Status und Gewichte im RAM; ein zweiter Worker sähe fremde Entscheidungen nicht und zeigte still einen alten Stand | RAM vor jeder Anfrage aus der DB nachladen (für eine Laptop-Demo unnötig, schwer prüfbar); mehrere Worker ohne Schutz |
+| Herkunft im Bundle (`provenance`: Modell, Hash der Prompt-Dateien, Commit; `core/provenance.py`) und im Prüfpfad | Der Prüfpfad zeigt, mit welchem Modell- und Prompt-Stand die Vorschläge entstanden; alte Bundles bleiben ehrlich „not recorded“ | Alte Bundles nachträglich beschriften (geraten); volle Prompt-Texte ins Bundle (groß, stehen im Commit) |
 
 ## Externe Dienste
 

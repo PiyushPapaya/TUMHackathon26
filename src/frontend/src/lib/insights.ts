@@ -53,6 +53,8 @@ export interface OpportunitiesView {
   scenario_id: string;
   points: OpportunityPoint[];
   quadrants: string[];
+  importance_note: string;
+  thresholds: { importance: number; dissatisfaction: number };
 }
 
 export interface TrendItem {

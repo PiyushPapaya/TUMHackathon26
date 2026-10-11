@@ -20,6 +20,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 
 from core.models import Category, Evidence, Scenario, Signal, SignalKind, SourceType
+from evidence_internal.signals import semantic_signal_id
 
 ROOT = Path(__file__).resolve().parents[3]
 CACHE_DIR = ROOT / "data" / "external_cache" / "nhtsa"
@@ -123,13 +124,14 @@ def _signals(scenario: Scenario, complaints: list[Evidence], stats: list[Evidenc
         if ev.meta["category"]:
             by_cat.setdefault(ev.meta["category"], []).append(ev)
     signals = []
-    for number, (cat, items) in enumerate(sorted(by_cat.items(), key=lambda kv: -len(kv[1])), start=1):
+    for cat, items in sorted(by_cat.items(), key=lambda kv: -len(kv[1])):
         if len(items) < MIN_COMPLAINTS:
             continue
         top = Counter(c.strip() for ev in items for c in ev.meta["components"].split(",")).most_common(2)
         parts = " und ".join(name.title() for name, _ in top)
         signals.append(Signal(
-            id=f"SIG-{scenario.id}-NHTSA-{number:02d}", kind=SignalKind.COMPLAINT, category=Category(cat),
+            id=semantic_signal_id(scenario.id, "nhtsa", cat, SignalKind.COMPLAINT),
+            kind=SignalKind.COMPLAINT, category=Category(cat),
             title=f"US-Behördenbeschwerden: {parts}",
             summary=f"{len(items)} NHTSA-Beschwerden zu {parts} ({scenario.model_name}, US).",
             evidence_ids=[e.id for e in items] + [s.id for s in stats], mention_count=len(items),

@@ -11,7 +11,6 @@ ohne OpenAI-Key und ohne BMW-Rohdaten laufen.
 
 from __future__ import annotations
 
-import hashlib
 import json
 import logging
 import os
@@ -22,6 +21,7 @@ from pathlib import Path
 from pydantic import ValidationError
 
 from core.audit import AuditLog
+from core.identity import bundle_fingerprint, recorded_fingerprint
 from core.models import Actor, ActorType, Evidence, Requirement, Scenario, Signal, Status
 from core.replay import replay
 from requirements_engine import scoring
@@ -52,6 +52,8 @@ class ScenarioState:
         # Welle 2: Kontext (Absatz, unbekannte Themen) und Chancen-Karte, fertig aus der Pipeline
         self.context: dict = bundle.get("context", {})
         self.opportunities: list[dict] = bundle.get("opportunities", [])
+        # Herkunft (Modell, Prompt-Stand, Commit); fehlt bei Bundles von vor dem 11.10. -> None, nie geraten.
+        self.provenance: dict | None = bundle.get("provenance")
 
 
 class Store:
@@ -71,17 +73,18 @@ class Store:
         sources |= {p.stem: p for p in sorted(processed_dir.glob("*.json"))}
         for path in sources.values():
             bundle = json.loads(path.read_text(encoding="utf-8"))
-            fingerprint = hashlib.sha256(json.dumps(bundle, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+            fingerprint = bundle_fingerprint(bundle)
             state = ScenarioState(bundle)
             self.states[state.scenario.id] = state
             history = self.audit.events(scenario_id=state.scenario.id)
             if history:
-                recorded = next((e.payload.get("bundle_sha256") for e in history
-                                 if e.event_type == "PIPELINE_LOADED"), None)
+                recorded = recorded_fingerprint(history)
                 if recorded and recorded != fingerprint:
                     raise RuntimeError(f"{state.scenario.id}: bundle changed since the recorded decisions; "
                                        "replay refused. Review the new bundle with a separate AUDIT_DB.")
                 if not recorded:
+                    state.scenario.warnings.append(
+                        "Legacy audit has no bundle fingerprint: source identity cannot be verified.")
                     logging.getLogger(__name__).warning(
                         "%s: legacy audit has no bundle fingerprint; source identity cannot be verified",
                         state.scenario.id)
@@ -98,13 +101,14 @@ class Store:
         """Erste Einträge im Prüfpfad: woher die Vorschläge stammen."""
         sid = state.scenario.id
         self.audit.append("PIPELINE_LOADED", sid, SYSTEM, f"Ergebnisse geladen aus {source}",
-                          {"funnel": state.funnel, "bundle_sha256": fingerprint})
+                          {"funnel": state.funnel, "bundle_sha256": fingerprint,
+                           "provenance": state.provenance})
         self.audit.append("EVIDENCE_INGESTED", sid, SYSTEM, f"Einleseergebnis aus {source} registriert",
                           {"count": state.funnel.get("evidence", len(state.evidence)),
                            "data_coverage": state.scenario.data_coverage.model_dump(), "source": source})
         self.audit.append("SIGNALS_EXTRACTED", sid, SYSTEM, f"Befundergebnis aus {source} registriert",
                           {"count": len(state.signals), "source": source,
-                           "model": "not recorded in snapshot"})
+                           "model": (state.provenance or {}).get("llm_model", "not recorded in snapshot")})
         for req in sorted(state.requirements.values(), key=lambda r: r.rank):
             self.audit.append(
                 "REQUIREMENT_PROPOSED", sid, Actor(type=ActorType.AI, name="pipeline"),

@@ -140,3 +140,32 @@ def test_out_schreibt_in_getrennten_ordner(tmp_path, monkeypatch):
 
 def test_all_findet_alle_configs():
     assert {"G60-US", "G68-CN", "G60-EU"} <= set(pipeline.all_scenario_ids())
+
+
+def test_bundle_und_pruefpfad_halten_herkunft_fest(tmp_path, monkeypatch):
+    """P2 Audit-Ursprung: neue Bundles nennen Modell, Prompt-Stand und Commit; der Store protokolliert das."""
+    ordner = _bundle_ordner(tmp_path, monkeypatch)
+    (ordner / "requirements.json").write_text("[]", encoding="utf-8")
+    monkeypatch.setenv("OPENAI_MODEL", "gpt-test")
+    pipeline.bundle_stage(CFG)
+    bundle = json.loads((tmp_path / "T-US.json").read_text(encoding="utf-8"))
+    herkunft = bundle["provenance"]
+    assert herkunft["llm_model"] == "gpt-test"
+    assert len(herkunft["prompt_sources_sha256"]) == 64
+    assert "code_commit" in herkunft  # None, wenn kein Git da ist (z. B. entpacktes Archiv)
+
+    monkeypatch.setenv("PROCESSED_DIR", str(tmp_path))
+    store = Store(AuditLog(tmp_path / "audit.db"))
+    store.load_all()
+    events = {e.event_type: e for e in store.audit.events("T-US")}
+    assert events["SIGNALS_EXTRACTED"].payload["model"] == "gpt-test"
+    assert events["PIPELINE_LOADED"].payload["provenance"] == herkunft
+
+
+def test_altes_bundle_ohne_herkunft_bleibt_ehrlich(tmp_path, monkeypatch):
+    monkeypatch.setenv("PROCESSED_DIR", str(tmp_path / "leer"))  # Beispiel-Bundles haben keine Herkunft
+    store = Store(AuditLog(tmp_path / "audit.db"))
+    store.load_all()
+    events = {e.event_type: e for e in store.audit.events("G60-US")}
+    assert events["SIGNALS_EXTRACTED"].payload["model"] == "not recorded in snapshot"
+    assert events["PIPELINE_LOADED"].payload["provenance"] is None

@@ -10,13 +10,16 @@ Ablauf:
 1. Je Feedback-Beleg (nur scope=in) und je Label (Thema, Typ) eine Gruppe (Thema, Art).
 2. Gruppen unter MIN_MENTIONS fallen weg, Themen ohne Kategorie ebenfalls (siehe taxonomy.py).
 3. Studienwerte mit Problem hängen am passenden Feedback-Befund oder werden ein eigener Befund.
-4. IDs SIG-<szenario>-<nnn> nach Nennungen absteigend.
+4. IDs aus Szenario, Gruppenart, Thema und Befundart; unabhängig von Nennungen und Rang.
 5. v2 (signals_llm.py): Das LLM formuliert Titel/Zusammenfassung und wählt Zitate; die Gruppen bleiben.
 6. conflicts.py (A7): Lob und Kritik in derselben Kategorie werden gegenseitig verknüpft.
 """
 
 from __future__ import annotations
 
+import hashlib
+import json
+import unicodedata
 from collections import defaultdict
 
 from core.model_parts import StudyLink
@@ -44,6 +47,13 @@ TYPE_TO_KIND = {
 }
 
 Group = tuple[str, SignalKind]  # (Themenname, Art)
+
+
+def semantic_signal_id(scenario_id: str, origin: str, topic: str, kind: SignalKind) -> str:
+    """Versionierter Gruppenschlüssel; keine Zitate, Kennzahlen oder LLM-Titel im Hash."""
+    topic = " ".join(unicodedata.normalize("NFKC", topic).casefold().split())
+    key = json.dumps(["v1", origin, topic, kind.value], ensure_ascii=False)
+    return f"SIG-{scenario_id}-g1-{hashlib.sha256(key.encode()).hexdigest()[:16]}"
 
 
 def _labels(ev: Evidence) -> list[tuple[str, str]]:
@@ -109,6 +119,7 @@ def _assemble(drafts: list[dict], study: list[Evidence]) -> list[dict]:
     """Studienwerte an Feedback-Befunde hängen oder als eigenen Befund ergänzen."""
     out = [{**d, "study": []} for d in drafts]
     complaints = {d["name"]: d for d in out if d["kind"] == SignalKind.COMPLAINT}
+    study_only = {}
     for ev in study:
         attribute = ev.meta.get("attribute", "")
         category = study_category(attribute)
@@ -117,12 +128,16 @@ def _assemble(drafts: list[dict], study: list[Evidence]) -> list[dict]:
         target = complaints.get(study_vfc2(attribute) or "")
         if target:
             target["study"].append(ev.id)
+        elif attribute in study_only:
+            study_only[attribute]["study"].append(ev.id)
+            study_only[attribute]["severity"] = max(study_only[attribute]["severity"], _severity(ev))
         else:  # kein passender Feedback-Befund: die Studie steht für sich
             out.append({
                 "name": attribute, "kind": SignalKind.COMPLAINT, "category": category, "mentions": 0,
                 "quotes": [], "study": [ev.id], "title": f"{attribute}: {SignalKind.COMPLAINT.value}",
                 "severity": _severity(ev),
             })  # fmt: skip
+            study_only[attribute] = out[-1]
     return out
 
 
@@ -167,13 +182,13 @@ def _build(scenario: Scenario, evidence: list[Evidence]) -> tuple[list[Signal], 
 
     drafts = sorted(_select(_assemble(feedback, study)), key=lambda d: (-d["mentions"], d["title"]))
     signals: list[Signal] = []
-    for number, d in enumerate(drafts, start=1):
+    for d in drafts:
         study_ids = d["study"][:3]
         # Zitate + Studien dürfen die Nennungen nicht übersteigen (Vertrag: mention_count >= len(evidence_ids))
         quotes = d["quotes"][: max(0, min(MAX_QUOTES, d["mentions"] - len(study_ids)))] if d["mentions"] else []
         source_types = [*([SourceType.FEEDBACK] if d["mentions"] else []), *([SourceType.STUDY] if study_ids else [])]
         signals.append(Signal(
-            id=f"SIG-{scenario.id}-{number:03d}",
+            id=semantic_signal_id(scenario.id, "feedback" if d["mentions"] else "study", d["name"], d["kind"]),
             kind=d["kind"], category=d["category"], title=d["title"],
             summary=_summary(d["name"], d["kind"], d["mentions"], [by_id[i].text for i in study_ids]),
             evidence_ids=[*quotes, *study_ids],

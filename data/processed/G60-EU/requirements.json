@@ -3,7 +3,7 @@
   "id": "REQ-G60-EU-001",
   "title": "Improve Electric Range for the successor",
   "description": "Address the customer pain or unmet need around Electric Range with a measurable user outcome.",
-  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "acceptance_criterion": "On a fixed 200 km mixed urban/motorway trip starting at 100% charge, at least 80 of 100 BEV owners rate electric-range adequacy at least 4 on a 1-5 scale after the trip. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
   "category": "range_charging",
   "signal_ids": [
    "SIG-G60-EU-002"
@@ -51,7 +51,8 @@
   "rationale": "Ranked mainly because of customer pain (25 points) and reach (14.1 points). Evidence level B: Only 12 mentions, but confirmed by 2 independent source types.",
   "evidence_level": "B",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available."
+   "Rule-based fallback draft because no cached LLM draft was available.",
+   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
   ],
   "uncertainties": [
    "Needs PM wording review before approval."
@@ -86,7 +87,7 @@
   "id": "REQ-G60-EU-004",
   "title": "Improve Ease of loading/ unloading luggage for the successor",
   "description": "Address the customer pain or unmet need around Ease of loading/ unloading luggage with a measurable user outcome.",
-  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "acceptance_criterion": "At least 80 of 100 customers independently load and unload two 55 x 40 x 20 cm suitcases within 60 seconds each way, without moving the rear seats or needing assistance. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
   "category": "comfort_space",
   "signal_ids": [
    "SIG-G60-EU-008"
@@ -134,7 +135,8 @@
   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (11.7 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
   "evidence_level": "C",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available."
+   "Rule-based fallback draft because no cached LLM draft was available.",
+   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
   ],
   "uncertainties": [
    "Needs PM wording review before approval."
@@ -169,7 +171,7 @@
   "id": "REQ-G60-EU-003",
   "title": "Improve Connected services for the successor",
   "description": "Address the customer pain or unmet need around Connected services with a measurable user outcome.",
-  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "acceptance_criterion": "At least 80 of 100 customers independently pair their phone, reconnect it after a vehicle restart and access their saved navigation destination, with all three tasks completed within 3 minutes in a stationary vehicle. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
   "category": "infotainment_digital",
   "signal_ids": [
    "SIG-G60-EU-007"
@@ -217,7 +219,8 @@
   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (10.9 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
   "evidence_level": "C",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available."
+   "Rule-based fallback draft because no cached LLM draft was available.",
+   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
   ],
   "uncertainties": [
    "Needs PM wording review before approval."
@@ -252,7 +255,7 @@
   "id": "REQ-G60-EU-006",
   "title": "Improve Rear interior roominess for the successor",
   "description": "Address the customer pain or unmet need around Rear interior roominess with a measurable user outcome.",
-  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "acceptance_criterion": "At least 80 of 100 customers rate rear-seat knee room at least 4 on a 1-5 scale after a 30-minute trip, with the front seat set to the same documented driver position; include quotas of 33 rear passengers below 170 cm, 34 at 170-185 cm and 33 above 185 cm. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
   "category": "comfort_space",
   "signal_ids": [
    "SIG-G60-EU-010"
@@ -300,7 +303,8 @@
   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (10.3 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
   "evidence_level": "C",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available."
+   "Rule-based fallback draft because no cached LLM draft was available.",
+   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
   ],
   "uncertainties": [
    "Needs PM wording review before approval."
@@ -335,7 +339,7 @@
   "id": "REQ-G60-EU-005",
   "title": "Improve Heating/ ventilation/ air conditioning for the successor",
   "description": "Address the customer pain or unmet need around Heating/ ventilation/ air conditioning with a measurable user outcome.",
-  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "acceptance_criterion": "At least 80 of 100 customers independently set their preferred temperature within 15 seconds and rate thermal comfort at least 4 on a 1-5 scale after 10 minutes; test separate sessions with starting cabin temperatures of 10 and 30 degrees Celsius. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
   "category": "comfort_space",
   "signal_ids": [
    "SIG-G60-EU-009"
@@ -383,7 +387,8 @@
   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (10.2 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
   "evidence_level": "C",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available."
+   "Rule-based fallback draft because no cached LLM draft was available.",
+   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
   ],
   "uncertainties": [
    "Needs PM wording review before approval."
@@ -418,7 +423,7 @@
   "id": "REQ-G60-EU-007",
   "title": "Maintain Drive, driving dynamics and chassis, overall technology as a proven strength",
   "description": "Keep the customer experience around Drive, driving dynamics and chassis, overall technology at least at today's level.",
-  "acceptance_criterion": "No decline in linked study score or complaint share in the next validation clinic.",
+  "acceptance_criterion": "After the same 200 km mixed urban/motorway route, mean paired successor-minus-baseline satisfaction for overall driving experience on the same 1-5 scale must be at least 0.0 points. Report the paired difference and its 95% confidence interval; an interval spanning negative values requires PM review before claiming preservation. Baseline: a production model-year 2025 G60/i5 with the same powertrain, trim and software version recorded before testing. Measure and freeze the baseline before testing the successor; use the same participants, route, duration, load, tyres, ambient conditions and rating questions. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
   "category": "driving_experience",
   "signal_ids": [
    "SIG-G60-EU-001"
@@ -466,10 +471,12 @@
   "rationale": "Ranked mainly because of reach (20 points) and customer pain (10 points). Evidence level B: 24 mentions, but from a single source type.",
   "evidence_level": "B",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available."
+   "Rule-based fallback draft because no cached LLM draft was available.",
+   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
   ],
   "uncertainties": [
-   "Needs PM wording review before approval."
+   "Needs PM wording review before approval.",
+   "The model-year 2025 baseline measurement and matched customer sample have not yet been collected; measure them before validation."
   ],
   "offer_check": {
    "status": "unknown",
@@ -501,7 +508,7 @@
   "id": "REQ-G60-EU-002",
   "title": "Improve ConnectedDrive and Infotainment, overall technology for the successor",
   "description": "Address the customer pain or unmet need around ConnectedDrive and Infotainment, overall technology with a measurable user outcome.",
-  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "acceptance_criterion": "At least 80 of 100 customers independently complete all three tasks without assistance: set a navigation destination, change an audio source and adjust cabin temperature; each task must finish within 30 seconds in a stationary vehicle. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
   "category": "infotainment_digital",
   "signal_ids": [
    "SIG-G60-EU-005"
@@ -549,7 +556,8 @@
   "rationale": "Ranked mainly because of customer pain (25 points) and reach (9.1 points). Evidence level C: Only 5 mentions: a hint, not a solid finding.",
   "evidence_level": "C",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available."
+   "Rule-based fallback draft because no cached LLM draft was available.",
+   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
   ],
   "uncertainties": [
    "Needs PM wording review before approval."
@@ -584,7 +592,7 @@
   "id": "REQ-G60-EU-008",
   "title": "Maintain Drivetrain as a proven strength",
   "description": "Keep the customer experience around Drivetrain at least at today's level.",
-  "acceptance_criterion": "No decline in linked study score or complaint share in the next validation clinic.",
+  "acceptance_criterion": "After the same 200 km mixed urban/motorway route, mean paired successor-minus-baseline satisfaction for powertrain response on the same 1-5 scale must be at least 0.0 points. Report the paired difference and its 95% confidence interval; an interval spanning negative values requires PM review before claiming preservation. Baseline: a production model-year 2025 G60/i5 with the same powertrain, trim and software version recorded before testing. Measure and freeze the baseline before testing the successor; use the same participants, route, duration, load, tyres, ambient conditions and rating questions. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
   "category": "driving_experience",
   "signal_ids": [
    "SIG-G60-EU-003"
@@ -632,10 +640,12 @@
   "rationale": "Ranked mainly because of reach (12.2 points) and customer pain (10 points). Evidence level C: Only 9 mentions: a hint, not a solid finding.",
   "evidence_level": "C",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available."
+   "Rule-based fallback draft because no cached LLM draft was available.",
+   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
   ],
   "uncertainties": [
-   "Needs PM wording review before approval."
+   "Needs PM wording review before approval.",
+   "The model-year 2025 baseline measurement and matched customer sample have not yet been collected; measure them before validation."
   ],
   "offer_check": {
    "status": "unknown",
@@ -667,7 +677,7 @@
   "id": "REQ-G60-EU-009",
   "title": "Maintain Handling / Riding as a proven strength",
   "description": "Keep the customer experience around Handling / Riding at least at today's level.",
-  "acceptance_criterion": "No decline in linked study score or complaint share in the next validation clinic.",
+  "acceptance_criterion": "After the same 200 km mixed urban/motorway route, mean paired successor-minus-baseline satisfaction for ride comfort and handling on the same 1-5 scale must be at least 0.0 points. Report the paired difference and its 95% confidence interval; an interval spanning negative values requires PM review before claiming preservation. Baseline: a production model-year 2025 G60/i5 with the same powertrain, trim and software version recorded before testing. Measure and freeze the baseline before testing the successor; use the same participants, route, duration, load, tyres, ambient conditions and rating questions. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
   "category": "driving_experience",
   "signal_ids": [
    "SIG-G60-EU-004"
@@ -715,10 +725,12 @@
   "rationale": "Ranked mainly because of reach (10.8 points) and customer pain (10 points). Evidence level C: Only 7 mentions: a hint, not a solid finding.",
   "evidence_level": "C",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available."
+   "Rule-based fallback draft because no cached LLM draft was available.",
+   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
   ],
   "uncertainties": [
-   "Needs PM wording review before approval."
+   "Needs PM wording review before approval.",
+   "The model-year 2025 baseline measurement and matched customer sample have not yet been collected; measure them before validation."
   ],
   "offer_check": {
    "status": "unknown",
@@ -750,7 +762,7 @@
   "id": "REQ-G60-EU-010",
   "title": "Maintain Electric Range as a proven strength",
   "description": "Keep the customer experience around Electric Range at least at today's level.",
-  "acceptance_criterion": "No decline in linked study score or complaint share in the next validation clinic.",
+  "acceptance_criterion": "After the same 200 km mixed urban/motorway route, mean paired successor-minus-baseline satisfaction for electric-range adequacy on the same 1-5 scale must be at least 0.0 points. Report the paired difference and its 95% confidence interval; an interval spanning negative values requires PM review before claiming preservation. Baseline: a production model-year 2025 G60/i5 with the same powertrain, trim and software version recorded before testing. Measure and freeze the baseline before testing the successor; use the same participants, route, duration, load, tyres, ambient conditions and rating questions. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
   "category": "range_charging",
   "signal_ids": [
    "SIG-G60-EU-006"
@@ -798,10 +810,12 @@
   "rationale": "Ranked mainly because of customer pain (10 points) and reach (9.1 points). Evidence level C: Only 5 mentions: a hint, not a solid finding.",
   "evidence_level": "C",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available."
+   "Rule-based fallback draft because no cached LLM draft was available.",
+   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
   ],
   "uncertainties": [
-   "Needs PM wording review before approval."
+   "Needs PM wording review before approval.",
+   "The model-year 2025 baseline measurement and matched customer sample have not yet been collected; measure them before validation."
   ],
   "offer_check": {
    "status": "unknown",

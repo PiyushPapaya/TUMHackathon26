@@ -4,7 +4,7 @@ import type { Evidence, ExplainView } from "@/src/lib/api";
 import { categoryLabel, EvidenceBadge, StatusBadge } from "@/src/components/badges";
 import { ScoreWaterfall } from "@/src/components/ScoreWaterfall";
 import { FindingCard } from "@/src/components/FindingCard";
-import { AssumptionItem, OfferCheckBox } from "@/src/components/DetailBlocks";
+import { AssumptionItem, OfferCheckBox, SegmentConflictCard } from "@/src/components/DetailBlocks";
 import { DecisionPanel } from "@/src/components/DecisionPanel";
 import { AuditTrail } from "@/src/components/AuditTrail";
 import { chartFactorSteps, rationaleWithChartPoints } from "@/src/lib/scoreSteps";
@@ -35,6 +35,8 @@ export function RequirementDetailView({
   const business = detail.business ?? requirement.business;
   const conflicts = detail.conflicts ?? requirement.segment_conflicts ?? [];
   const webSources = detail.web_sources ?? [];
+  // Nur Belege, die oben in einer FindingCard stehen, haben einen Anker; Konflikt-Links zeigen nur dorthin.
+  const visibleEvidenceIds = new Set([...evidenceBySignal.values()].flat().map((e) => e.id));
   // Points in the text come from the same bars as the chart, also after reweighting or in the preview.
   const rationale = rationaleWithChartPoints(requirement.rationale, chartFactorSteps(requirement.score_breakdown, detail.waterfall, ignoreAssumptions));
   const hasMoreContext = Boolean(detail.robustness_sentence || business || webSources.length || requirement.offer_check);
@@ -64,6 +66,7 @@ export function RequirementDetailView({
         <div className="summary-criterion min-w-0 border-l-2 border-[var(--blue)] bg-[var(--grey-100)] p-4">
           <p className={H2}>Success criterion</p>
           <p className="mt-2 text-sm font-medium text-[var(--ink)]">{requirement.acceptance_criterion}</p>
+          <p className="mt-3 text-xs text-[var(--grey-500)]">Before approval, review the observable outcome, test procedure, pass threshold and participant sample. Relative targets also need a measured baseline under the same conditions. Numbers alone do not prove measurability.</p>
           <p className="mt-3 text-sm text-[var(--grey-500)]">{requirement.description}</p>
         </div>
         <div className="summary-decision min-w-0"><DecisionPanel requirement={requirement} onChanged={onRefresh} /></div>
@@ -83,6 +86,15 @@ export function RequirementDetailView({
         </div>
       </section>
 
+      {conflicts.length > 0 && (
+        <section>
+          <h2 className={H2}>Where customer groups disagree · {conflicts.length}</h2>
+          <ul className="mt-4 grid gap-2 md:grid-cols-2">
+            {conflicts.map((conflict, i) => <SegmentConflictCard key={`c-${i}`} conflict={conflict} visibleEvidenceIds={visibleEvidenceIds} />)}
+          </ul>
+        </section>
+      )}
+
       <OfferCheckBox offerCheck={requirement.offer_check} />
 
       <section>
@@ -90,9 +102,8 @@ export function RequirementDetailView({
         <ul className="mt-4 grid gap-2 md:grid-cols-2">
           {requirement.assumptions.map((text, i) => <AssumptionItem key={`a-${i}`} label="Assumption" text={text} />)}
           {requirement.uncertainties.map((text, i) => <AssumptionItem key={`u-${i}`} label="Uncertainty" text={text} />)}
-          {conflicts.map((conflict, i) => <AssumptionItem key={`c-${i}`} label="Conflicting evidence" text={conflict.statement} />)}
-          {requirement.assumptions.length === 0 && requirement.uncertainties.length === 0 && conflicts.length === 0 && (
-            <li className="border border-dashed border-[var(--hairline)] p-3 text-sm text-[var(--grey-500)]">No assumptions, uncertainties, or conflicts recorded.</li>
+          {requirement.assumptions.length === 0 && requirement.uncertainties.length === 0 && (
+            <li className="border border-dashed border-[var(--hairline)] p-3 text-sm text-[var(--grey-500)]">No assumptions or uncertainties recorded.</li>
           )}
         </ul>
       </section>

@@ -26,6 +26,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from core.model_parts import coverage_badge  # noqa: E402
 from core.models import Evidence, Requirement, Scenario, Signal  # noqa: E402
+from core.provenance import pipeline_provenance  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 RAW_DIR = ROOT / "data" / "raw"
@@ -178,6 +179,7 @@ def bundle_stage(cfg: dict) -> None:
         "discarded": _real_stage(sid, "discarded", []),
         "context": {**{k: v for k, v in context.items() if k != "opportunities"}, "counter_evidence": counter},
         "opportunities": context.get("opportunities", []),
+        "provenance": pipeline_provenance(),  # Modell/Prompt-Stand/Commit für den Prüfpfad
     }
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     (OUT_DIR / f"{sid}.json").write_text(json.dumps(bundle, ensure_ascii=False, indent=1), encoding="utf-8")

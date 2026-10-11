@@ -114,7 +114,14 @@ class AuditLog:
         if scenario_id:
             query, params = query + " AND scenario_id = ?", [*params, scenario_id]
         if requirement_id:
-            query, params = query + " AND requirement_id = ?", [*params, requirement_id]
+            # Keep historical rows immutable; include former IDs when viewing migrated requirements.
+            aliases = {requirement_id}
+            migrations = self.events(scenario_id)
+            for event in reversed(migrations):
+                if event.event_type == "IDENTITY_MIGRATED":
+                    aliases.update(old for old, new in event.payload["requirement_ids"].items() if new in aliases)
+            query += f" AND requirement_id IN ({','.join('?' for _ in aliases)})"
+            params += sorted(aliases)
         with self._lock:
             rows = self._conn.execute(query + " ORDER BY seq", params).fetchall()
         return [self._row_to_event(r) for r in rows]

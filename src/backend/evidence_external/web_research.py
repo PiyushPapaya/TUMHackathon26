@@ -28,6 +28,7 @@ from core.models import Evidence, Scenario, Signal, SignalKind, SourceType
 from evidence_external.claims import Claim, ask_claims
 from evidence_external.questions import Question, build_questions, trend_window
 from evidence_external.trust import trust_for_url
+from evidence_internal.signals import semantic_signal_id
 
 SUMMARY_CLAIMS = 3  # so viele Aussagen fasst der Befund zusammen; mehr wäre für den PM zu lang
 
@@ -61,7 +62,9 @@ def _signal(scenario: Scenario, number: int, question: Question, usable: list[Ev
         start, end = trend_window(scenario)
         title = f"Trend {start}-{end}: {question.category.value}"
     return Signal(
-        id=f"SIG-{scenario.id}-WEB-{number:02d}", kind=kind, category=question.category, title=title,
+        id=semantic_signal_id(scenario.id, "web", f"{question.category.value}|"
+                              f"{question.competitor}|{question.signal_id}" if question.kind == "competitor"
+                              else question.text, kind), kind=kind, category=question.category, title=title,
         summary=" ".join(e.text for e in usable[:SUMMARY_CLAIMS]),
         evidence_ids=[e.id for e in usable], mention_count=len(usable), source_types=[SourceType.WEB],
     )

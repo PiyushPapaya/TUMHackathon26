@@ -18,6 +18,11 @@ EDITABLE = {"title", "description", "acceptance_criterion", "effort", "assumptio
 def replay(state, events: list) -> dict:
     """Wendet PM-Ereignisse auf den frisch geladenen Zustand an. Liefert Zählung für das Log."""
     applied, skipped = 0, 0
+    aliases = {}
+    for event in events:
+        if event.event_type == "IDENTITY_MIGRATED":
+            mapping = event.payload["requirement_ids"]
+            aliases = {old: mapping.get(new, new) for old, new in aliases.items()} | mapping
     for event in events:
         if event.event_type == "WEIGHTS_CHANGED":
             state.weights = event.payload.get("weights", {}).get("after", state.weights)
@@ -25,7 +30,8 @@ def replay(state, events: list) -> dict:
             continue
         if event.event_type not in STATUS_BY_EVENT and event.event_type != "PM_EDIT":
             continue  # KI-/System-Ereignisse ändern keinen Zustand
-        req = state.requirements.get(event.requirement_id or "")
+        rid = event.requirement_id or ""
+        req = state.requirements.get(aliases.get(rid, rid))
         if req is None:
             skipped += 1
             continue
