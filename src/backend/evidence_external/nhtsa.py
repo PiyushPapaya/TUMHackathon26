@@ -47,10 +47,15 @@ def _url(make: str, model: str, year: int) -> str:
     return f"{API}?{urlencode({'make': make, 'model': model, 'modelYear': year})}"
 
 
+def cache_file(folder: Path, make: str, model: str, year: int) -> Path:
+    """Dateiname im Cache; auch core/market_benchmarks.py liest darüber (ohne Netz)."""
+    return folder / f"{make}_{model}_{year}.json".replace(" ", "_").replace("/", "-")
+
+
 def fetch(make: str, model: str, year: int, cache_dir: Path | None = None) -> list[dict]:
     """Beschwerden für ein Fahrzeug; erst Cache, dann Netz (außer im Demo-Modus)."""
     folder = cache_dir or CACHE_DIR
-    path = folder / f"{make}_{model}_{year}.json".replace(" ", "_").replace("/", "-")
+    path = cache_file(folder, make, model, year)
     if path.exists():
         return json.loads(path.read_text(encoding="utf-8")).get("results", [])
     if os.getenv("DEMO_MODUS", "false").lower() == "true":

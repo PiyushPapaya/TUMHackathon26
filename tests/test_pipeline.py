@@ -80,9 +80,10 @@ def test_bundle_kaltstart_hat_abdeckung_kontext_und_zeitstempel(tmp_path, monkey
     pipeline.bundle_stage(CFG)
 
     bundle = json.loads((tmp_path / "T-US.json").read_text(encoding="utf-8"))
-    assert bundle["scenario"]["data_coverage"] == {"feedback": 0, "study": 1, "sales": 0, "options": 0, "web": 0,
+    assert bundle["scenario"]["data_coverage"] == {"feedback": 0, "study": 1, "sales": 1, "options": 0, "web": 0,
                                                    "external": 0, "badge": "Kaltstart"}
-    assert bundle["context"] == {"sales": {"volume_2030": 1}} and len(bundle["opportunities"]) == 1
+    assert bundle["context"]["sales"] == {"volume_2030": 1} and len(bundle["opportunities"]) == 1
+    assert bundle["context"]["counter_evidence"] == {}
     assert bundle["funnel"]["generated_at"]
 
 

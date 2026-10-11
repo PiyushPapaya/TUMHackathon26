@@ -9,6 +9,7 @@ from __future__ import annotations
 
 from collections import Counter
 
+from core.evidence_context import challenge_context
 from core.model_parts import DataCoverage, coverage_badge
 from core.models import Requirement, Signal, SourceType
 from requirements_engine import scoring
@@ -61,6 +62,7 @@ def scenario_card(state) -> dict:
 def warnings(state) -> list[str]:
     """Config-Warnungen + Regeln, die der PM sehen muss, bevor er der Liste vertraut."""
     out = list(state.scenario.warnings)
+    out.extend(state.context.get("warnings", []))
     unmapped = state.context.get("unmapped_topics") or {}
     if unmapped:
         out.append(f"{len(unmapped)} topics without a category ({sum(unmapped.values())} comments) "
@@ -133,11 +135,10 @@ def robustness_sentence(req: Requirement) -> str | None:
 def explain(state, req: Requirement, history: list) -> dict:
     """Detailseite: alles, was der PM zum Prüfen einer Anforderung braucht."""
     linked = _linked(state, req)
-    ev_ids = sorted({e for s in linked for e in s.evidence_ids})
-    evidence = [state.evidence[e] for e in ev_ids if e in state.evidence]
+    all_signals, evidence = challenge_context(state, req)
     feedback = [e for e in evidence if e.source_type in (SourceType.FEEDBACK, SourceType.FEEDBACK_EXTERNAL)]
     web = [e for e in evidence if e.source_type in (SourceType.WEB, SourceType.EXTERNAL_STAT)]
-    by_id = {s.id: s for s in linked}
+    by_id = {s.id: s for s in all_signals}
     signal_conflicts = sorted({tuple(sorted((s.id, o))) for s in linked for o in s.conflicts_with if o in by_id})
     return {
         "requirement": req, "level_label": LEVEL_LABEL[req.evidence_level.value],

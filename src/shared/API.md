@@ -18,6 +18,7 @@ aus dem Backend. **Echte Beispielantwort für jeden Endpunkt:** `beispiele/views
 | `GET /api/requirements/{req_id}/explain` | Detailseite: `waterfall` (Faktor, Gewicht, Beitrag, Satz; letzter Schritt = Abschlag der Evidenzstufe), `quotes` (Top 5 mit Land/Antrieb/Quelle), `segments`, `conflicts`, `assumptions`, `offer_check`, `web_sources` (nach Vertrauen), `study`, `robustness` + `robustness_sentence`, `business`, `history` | `views/explain.json` |
 | `POST /api/scenarios/{id}/whatif` | Gewichte-Regler Live-Vorschau, **speichert nichts**: `[{id, title, old_rank, new_rank, rank_change, old_score, new_score}]` | `views/whatif.json` |
 | `GET /api/portfolio` | Matrix Kategorie × Szenario: `rows[].cells[szenario]` (Rang, Stufe), `rows[].class` (`plattformweit`/`modellspezifisch`/`marktspezifisch`/`einzeln`/`gemischt`/`nicht oben`), `rule` | `views/portfolio.json` |
+| `GET /api/benchmarks` | `quality[]` je Szenario: `funnel`, `metrics[]` (`key`, `value` in %, `target`, `ok`, `explain`); `market[]` nur US: `range[]` (EPA km, kWh/100 km, Rang), `range_gap_km`, `complaints[]` (NHTSA), `limits` | – |
 | `GET /api/compare?a=G60-US&b=G60-EU` | Markt-Vergleich: gleiche Kategorie nebeneinander, `rank_diff`, Unzufriedenheit, `sentence` | `views/compare.json` |
 | `GET /api/scenarios/{id}/opportunities` | Chancen-Karte: `points[]` mit `importance`, `dissatisfaction`, `quadrant` (`Chance`/`Stärke halten`/`Beobachten`/`Nebensache`), `thresholds` | `views/opportunities.json` |
 | `GET /api/scenarios/{id}/trends` | Trendradar: `rings` (heute, Nachfolger-Jahr), `items[]` (`kind`: `trend` oder `bet`) | `views/trends.json` |
@@ -59,7 +60,7 @@ Deutet die Frage **einmal** (Linse, ein LLM-Aufruf) und rechnet sie in **allen**
 | `GET /api/requirements/{req_id}` | `{"requirement", "signals", "evidence", "history"}` |
 | `GET /api/audit?scenario_id=&requirement_id=` | `[AuditEvent]` chronologisch |
 | `GET /api/audit/verify` | `{"valid": true, "broken_at_seq": null, "checked": 12}` |
-| `GET /api/scenarios/{id}/export?format=csv\|json` | CSV (`;`) oder JSON-Liste der Anforderungen (Markdown-Lastenheft folgt mit C21) |
+| `GET /api/scenarios/{id}/export?format=csv\|json\|md` | CSV (`;`), JSON-Liste oder Markdown-Lastenheft mit Kriterien, Belegen, Annahmen und Unsicherheiten |
 
 ## Schreiben (jede Aktion erzeugt ein Audit-Ereignis, Begründung ist Pflicht)
 

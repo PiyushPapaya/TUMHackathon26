@@ -1,0 +1,114 @@
+[
+ {
+  "title": "Not covered: Include a spare and better tire options",
+  "reason": "The AI derived no requirement from this unmet_need (18 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G70-US-022"
+  ]
+ },
+ {
+  "title": "Not covered: Prefer sleeker styling, less aggressive look",
+  "reason": "The AI derived no requirement from this unmet_need (17 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G70-US-023"
+  ]
+ },
+ {
+  "title": "Not covered: Crystal controls create glare and feel cheap",
+  "reason": "The AI derived no requirement from this unmet_need (14 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G70-US-025"
+  ]
+ },
+ {
+  "title": "Not covered: Wish the moonroof would open",
+  "reason": "The AI derived no requirement from this unmet_need (14 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G70-US-027"
+  ]
+ },
+ {
+  "title": "Not covered: Let me permanently disable auto start stop",
+  "reason": "The AI derived no requirement from this unmet_need (13 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G70-US-028"
+  ]
+ },
+ {
+  "title": "Not covered: Need much longer electric range",
+  "reason": "The AI derived no requirement from this unmet_need (13 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G70-US-029"
+  ]
+ },
+ {
+  "title": "Not covered: My Modes / driving experience: unmet_need",
+  "reason": "The AI derived no requirement from this unmet_need (11 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G70-US-031"
+  ]
+ },
+ {
+  "title": "Not covered: Door, open / close: unmet_need",
+  "reason": "The AI derived no requirement from this unmet_need (9 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G70-US-033"
+  ]
+ },
+ {
+  "title": "Not covered: Seat massage: unmet_need",
+  "reason": "The AI derived no requirement from this unmet_need (9 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G70-US-034"
+  ]
+ },
+ {
+  "title": "Not covered: Seating, ventilate / heat: unmet_need",
+  "reason": "The AI derived no requirement from this unmet_need (8 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G70-US-035"
+  ]
+ },
+ {
+  "title": "Not covered: Cupholders: complaint",
+  "reason": "The AI derived no requirement from this complaint (1 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G70-US-040"
+  ]
+ },
+ {
+  "title": "Not covered: Ease of loading/unloading cargo: complaint",
+  "reason": "The AI derived no requirement from this complaint (1 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G70-US-041"
+  ]
+ },
+ {
+  "title": "Not covered: Ease of reading and using screen interface: complaint",
+  "reason": "The AI derived no requirement from this complaint (1 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G70-US-042"
+  ]
+ },
+ {
+  "title": "Not covered: Freedom from electrical problems: complaint",
+  "reason": "The AI derived no requirement from this complaint (1 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G70-US-043"
+  ]
+ },
+ {
+  "title": "Not covered: If applicable: Flat tire preparedness (spare, run flat, etc.): complaint",
+  "reason": "The AI derived no requirement from this complaint (1 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G70-US-044"
+  ]
+ },
+ {
+  "title": "Not covered: If applicable: Interactive information system (e.g., OnStar, mbrace, iDrive): complaint",
+  "reason": "The AI derived no requirement from this complaint (1 mentions); PM to check.",
+  "signal_ids": [
+   "SIG-G70-US-045"
+  ]
+ }
+]

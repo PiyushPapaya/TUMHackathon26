@@ -5,6 +5,10 @@
 Built at the TUM.ai × EHL Grand Finale 2026 for the **BMW Group challenge "AI for Product Decision Making"**.
 Demo case: **BMW 5 Series (G60), USA**. Transferability shown with **BMW 1 Series (F70), Europe**.
 
+Six model/market snapshots are available. G60-US has 19 requirements; F70-EU has 20.
+Thin-data scenarios have fewer proposals and explicitly show their missing sources.
+The technical verification and remaining gaps are recorded in [docs/REPO_CHECK.md](docs/REPO_CHECK.md).
+
 > **Team:** new here? Start with [START_HIER.md](START_HIER.md) (German, one page).
 
 ## What it does
@@ -63,18 +67,31 @@ cp .env.example .env              # add your OPENAI_API_KEY (only needed for the
 # Without BMW data: the backend serves a synthetic example scenario
 uvicorn main:app --app-dir src/backend --reload --port 8000     # http://localhost:8000/docs
 
-# With BMW data in data/raw/ (not in git, the data is confidential):
+# Regenerate with the supplied BMW data and an OpenAI key:
 python src/backend/pipeline.py --scenario G60-US
 
 python -m pytest -q               # tests
+python scripts/verify_stack.py    # six-scenario offline API/PM/restart check; temporary audit DB
 ```
 
 ## Data & privacy
 
-BMW data is confidential and never committed (`data/` is git-ignored). Examples in `src/shared/beispiele/` are **synthetic**.
-LLM answers are cached locally so the demo runs offline (`DEMO_MODUS=true`).
+The repository includes the supplied raw data and processed snapshots under the team's recorded
+publication decision. Examples in `src/shared/beispiele/` are **synthetic**. API keys, the full LLM
+cache and PM audit databases remain local; see [data/README.md](data/README.md).
+`DEMO_MODUS=true` serves the snapshots without network calls, with rule-based challenge and lens
+fallbacks when a response is not cached. Regenerating the entire pipeline offline requires caches
+for the exact current prompts; the provided cache does not cover all six scenarios.
+
+Run the cockpit with `cd src/frontend`, `npm ci`, `npm run build`, then `npm run start`.
+Its API URL defaults to `http://localhost:8000`; set `NEXT_PUBLIC_API_URL` before building if needed.
+
+To add a model/market, copy a config in `config/scenarios/` (or use `scripts/new_scenario.py`),
+check its countries, study column, source files and competitors, then run the pipeline for its ID.
+Missing upstream stage files produce an error instead of mixing in synthetic scenario data.
 
 ## Team
 
-Five people, one lead and four parallel work paths: internal evidence, external evidence & evaluation, requirements & prioritization, PM cockpit.
+Four people: Piyush (lead and external evidence), Aditya (internal evidence and evaluation),
+Dennis (requirements and prioritization), Lasse (PM cockpit).
 Built with Claude Code; sessions recorded with Entire.

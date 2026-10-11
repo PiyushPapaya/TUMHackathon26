@@ -65,3 +65,11 @@ def test_gleiche_befunde_bei_heute_und_wette_bekommen_verschiedene_ids(monkeypat
     ids = [r.id for r in reqs]
     assert len(ids) == 2 and len(set(ids)) == 2
     assert sorted(ids)[1].startswith(sorted(ids)[0] + "-")  # die zweite hängt eine Zählung an
+
+
+def test_same_trend_today_and_next_gen_ids_do_not_swap_on_reordering(monkeypatch):
+    today = _draft("Today", ["SIG-T"])
+    bet = _draft("Future", ["SIG-T"], horizon="next_gen", assumptions=["Trend persists"])
+    first = {r.horizon: r.id for r in _run(monkeypatch, today, bet)}
+    second = {r.horizon: r.id for r in _run(monkeypatch, bet, today)}
+    assert first == second

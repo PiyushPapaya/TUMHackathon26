@@ -19,7 +19,29 @@
   "conflicts_with": [
    "SIG-F70-EU-005",
    "SIG-F70-EU-016"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 398
+   },
+   "country": {
+    "GB": 355,
+    "SE": 21,
+    "FR": 13,
+    "DK": 6,
+    "FI": 3
+   },
+   "source": {
+    "A": 398
+   },
+   "feedback_type": {
+    "Likes": 398,
+    "Difficult to Use": 61,
+    "Defect": 46,
+    "Wants": 41
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-002",
@@ -41,7 +63,27 @@
   "conflicts_with": [
    "SIG-F70-EU-005",
    "SIG-F70-EU-021"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 223
+   },
+   "country": {
+    "GB": 210,
+    "SE": 8,
+    "FR": 5
+   },
+   "source": {
+    "A": 223
+   },
+   "feedback_type": {
+    "Likes": 223,
+    "Difficult to Use": 38,
+    "Wants": 25,
+    "Defect": 24
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-003",
@@ -63,7 +105,27 @@
   "conflicts_with": [
    "SIG-F70-EU-015",
    "SIG-F70-EU-011"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 96
+   },
+   "country": {
+    "GB": 93,
+    "FR": 2,
+    "SE": 1
+   },
+   "source": {
+    "A": 96
+   },
+   "feedback_type": {
+    "Difficult to Use": 87,
+    "Defect": 51,
+    "Likes": 47,
+    "Wants": 24
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-004",
@@ -84,7 +146,28 @@
   ],
   "conflicts_with": [
    "SIG-F70-EU-011"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 82
+   },
+   "country": {
+    "GB": 77,
+    "FR": 2,
+    "SE": 2,
+    "FI": 1
+   },
+   "source": {
+    "A": 82
+   },
+   "feedback_type": {
+    "Difficult to Use": 62,
+    "Defect": 53,
+    "Likes": 21,
+    "Wants": 15
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-005",
@@ -106,7 +189,27 @@
   "conflicts_with": [
    "SIG-F70-EU-002",
    "SIG-F70-EU-001"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 60
+   },
+   "country": {
+    "GB": 55,
+    "SE": 4,
+    "FR": 1
+   },
+   "source": {
+    "A": 60
+   },
+   "feedback_type": {
+    "Difficult to Use": 53,
+    "Defect": 31,
+    "Likes": 14,
+    "Wants": 10
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-006",
@@ -127,7 +230,27 @@
   ],
   "conflicts_with": [
    "SIG-F70-EU-021"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 60
+   },
+   "country": {
+    "GB": 57,
+    "SE": 2,
+    "FI": 1
+   },
+   "source": {
+    "A": 60
+   },
+   "feedback_type": {
+    "Likes": 60,
+    "Difficult to Use": 13,
+    "Wants": 7,
+    "Defect": 7
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-007",
@@ -148,7 +271,26 @@
   ],
   "conflicts_with": [
    "SIG-F70-EU-033"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 42
+   },
+   "country": {
+    "GB": 41,
+    "FR": 1
+   },
+   "source": {
+    "A": 42
+   },
+   "feedback_type": {
+    "Likes": 42,
+    "Wants": 5,
+    "Difficult to Use": 4,
+    "Defect": 3
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-008",
@@ -169,7 +311,26 @@
   ],
   "conflicts_with": [
    "SIG-F70-EU-009"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 41
+   },
+   "country": {
+    "GB": 37,
+    "SE": 4
+   },
+   "source": {
+    "A": 41
+   },
+   "feedback_type": {
+    "Likes": 41,
+    "Difficult to Use": 7,
+    "Defect": 5,
+    "Wants": 5
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-009",
@@ -190,7 +351,27 @@
   "conflicts_with": [
    "SIG-F70-EU-008",
    "SIG-F70-EU-036"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 36
+   },
+   "country": {
+    "GB": 32,
+    "SE": 3,
+    "DK": 1
+   },
+   "source": {
+    "A": 36
+   },
+   "feedback_type": {
+    "Defect": 27,
+    "Difficult to Use": 23,
+    "Likes": 12,
+    "Wants": 9
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-010",
@@ -211,7 +392,26 @@
   ],
   "conflicts_with": [
    "SIG-F70-EU-037"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 25
+   },
+   "country": {
+    "GB": 23,
+    "SE": 2
+   },
+   "source": {
+    "A": 25
+   },
+   "feedback_type": {
+    "Likes": 25,
+    "Wants": 3,
+    "Defect": 3,
+    "Difficult to Use": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-011",
@@ -232,7 +432,25 @@
   "conflicts_with": [
    "SIG-F70-EU-004",
    "SIG-F70-EU-003"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 24
+   },
+   "country": {
+    "GB": 24
+   },
+   "source": {
+    "A": 24
+   },
+   "feedback_type": {
+    "Likes": 24,
+    "Wants": 6,
+    "Difficult to Use": 6,
+    "Defect": 6
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-012",
@@ -251,7 +469,26 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 21
+   },
+   "country": {
+    "GB": 16,
+    "SE": 4,
+    "FR": 1
+   },
+   "source": {
+    "A": 21
+   },
+   "feedback_type": {
+    "Likes": 21,
+    "Wants": 1,
+    "Defect": 1
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-013",
@@ -270,7 +507,26 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 19
+   },
+   "country": {
+    "GB": 18,
+    "SE": 1
+   },
+   "source": {
+    "A": 19
+   },
+   "feedback_type": {
+    "Likes": 19,
+    "Difficult to Use": 7,
+    "Defect": 5,
+    "Wants": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-014",
@@ -289,7 +545,27 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 18
+   },
+   "country": {
+    "GB": 14,
+    "FR": 2,
+    "SE": 2
+   },
+   "source": {
+    "A": 18
+   },
+   "feedback_type": {
+    "Defect": 16,
+    "Difficult to Use": 8,
+    "Likes": 7,
+    "Wants": 4
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-015",
@@ -311,7 +587,26 @@
   "conflicts_with": [
    "SIG-F70-EU-003",
    "SIG-F70-EU-028"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 18
+   },
+   "country": {
+    "GB": 16,
+    "SE": 2
+   },
+   "source": {
+    "A": 18
+   },
+   "feedback_type": {
+    "Likes": 18,
+    "Wants": 5,
+    "Defect": 4,
+    "Difficult to Use": 4
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-016",
@@ -333,7 +628,26 @@
   "conflicts_with": [
    "SIG-F70-EU-024",
    "SIG-F70-EU-001"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 18
+   },
+   "country": {
+    "GB": 17,
+    "SE": 1
+   },
+   "source": {
+    "A": 18
+   },
+   "feedback_type": {
+    "Difficult to Use": 15,
+    "Defect": 12,
+    "Wants": 7,
+    "Likes": 7
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-017",
@@ -352,7 +666,27 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 18
+   },
+   "country": {
+    "GB": 16,
+    "SE": 1,
+    "FR": 1
+   },
+   "source": {
+    "A": 18
+   },
+   "feedback_type": {
+    "Defect": 16,
+    "Difficult to Use": 10,
+    "Wants": 6,
+    "Likes": 5
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-018",
@@ -371,7 +705,26 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 16
+   },
+   "country": {
+    "GB": 15,
+    "SE": 1
+   },
+   "source": {
+    "A": 16
+   },
+   "feedback_type": {
+    "Defect": 13,
+    "Difficult to Use": 11,
+    "Likes": 8,
+    "Wants": 5
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-019",
@@ -390,7 +743,26 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 16
+   },
+   "country": {
+    "GB": 15,
+    "FR": 1
+   },
+   "source": {
+    "A": 16
+   },
+   "feedback_type": {
+    "Defect": 16,
+    "Difficult to Use": 5,
+    "Wants": 5,
+    "Likes": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-020",
@@ -411,7 +783,25 @@
   ],
   "conflicts_with": [
    "SIG-F70-EU-034"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 15
+   },
+   "country": {
+    "GB": 15
+   },
+   "source": {
+    "A": 15
+   },
+   "feedback_type": {
+    "Defect": 15,
+    "Likes": 8,
+    "Difficult to Use": 6,
+    "Wants": 4
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-021",
@@ -433,7 +823,25 @@
   "conflicts_with": [
    "SIG-F70-EU-002",
    "SIG-F70-EU-006"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 15
+   },
+   "country": {
+    "GB": 15
+   },
+   "source": {
+    "A": 15
+   },
+   "feedback_type": {
+    "Wants": 15,
+    "Likes": 4,
+    "Defect": 3,
+    "Difficult to Use": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-022",
@@ -453,7 +861,30 @@
    "feedback",
    "study"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 15
+   },
+   "country": {
+    "GB": 14,
+    "SE": 1
+   },
+   "source": {
+    "A": 15
+   },
+   "feedback_type": {
+    "Difficult to Use": 15,
+    "Likes": 6,
+    "Wants": 4,
+    "Defect": 3
+   }
+  },
+  "study_link": {
+   "attribute": "Luggage capacity",
+   "importance": 0.7070000000000001,
+   "dissatisfaction": 0.6433333333333332
+  }
  },
  {
   "id": "SIG-F70-EU-023",
@@ -472,7 +903,25 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 15
+   },
+   "country": {
+    "GB": 15
+   },
+   "source": {
+    "A": 15
+   },
+   "feedback_type": {
+    "Defect": 12,
+    "Difficult to Use": 12,
+    "Likes": 8,
+    "Wants": 4
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-024",
@@ -493,7 +942,24 @@
   ],
   "conflicts_with": [
    "SIG-F70-EU-016"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 15
+   },
+   "country": {
+    "GB": 15
+   },
+   "source": {
+    "A": 15
+   },
+   "feedback_type": {
+    "Likes": 15,
+    "Difficult to Use": 3,
+    "Defect": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-025",
@@ -512,7 +978,26 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 15
+   },
+   "country": {
+    "GB": 13,
+    "SE": 2
+   },
+   "source": {
+    "A": 15
+   },
+   "feedback_type": {
+    "Defect": 15,
+    "Likes": 7,
+    "Wants": 4,
+    "Difficult to Use": 4
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-026",
@@ -531,7 +1016,25 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 14
+   },
+   "country": {
+    "GB": 14
+   },
+   "source": {
+    "A": 14
+   },
+   "feedback_type": {
+    "Defect": 10,
+    "Difficult to Use": 10,
+    "Likes": 5,
+    "Wants": 3
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-027",
@@ -550,7 +1053,25 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 13
+   },
+   "country": {
+    "GB": 13
+   },
+   "source": {
+    "A": 13
+   },
+   "feedback_type": {
+    "Defect": 13,
+    "Difficult to Use": 9,
+    "Likes": 8,
+    "Wants": 6
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-028",
@@ -571,7 +1092,25 @@
   ],
   "conflicts_with": [
    "SIG-F70-EU-015"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 13
+   },
+   "country": {
+    "GB": 13
+   },
+   "source": {
+    "A": 13
+   },
+   "feedback_type": {
+    "Wants": 13,
+    "Difficult to Use": 9,
+    "Likes": 7,
+    "Defect": 5
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-029",
@@ -590,7 +1129,25 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 13
+   },
+   "country": {
+    "GB": 13
+   },
+   "source": {
+    "A": 13
+   },
+   "feedback_type": {
+    "Difficult to Use": 12,
+    "Defect": 8,
+    "Wants": 2,
+    "Likes": 1
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-030",
@@ -611,7 +1168,30 @@
    "feedback",
    "study"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 13
+   },
+   "country": {
+    "GB": 12,
+    "SE": 1
+   },
+   "source": {
+    "A": 13
+   },
+   "feedback_type": {
+    "Difficult to Use": 10,
+    "Defect": 8,
+    "Likes": 5,
+    "Wants": 2
+   }
+  },
+  "study_link": {
+   "attribute": "Heating/ ventilation/ air conditioning",
+   "importance": 0.73,
+   "dissatisfaction": 0.5666666666666668
+  }
  },
  {
   "id": "SIG-F70-EU-031",
@@ -633,7 +1213,26 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 12
+   },
+   "country": {
+    "GB": 11,
+    "FR": 1
+   },
+   "source": {
+    "A": 12
+   },
+   "feedback_type": {
+    "Defect": 12,
+    "Difficult to Use": 5,
+    "Likes": 2,
+    "Wants": 1
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-032",
@@ -655,7 +1254,25 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 12
+   },
+   "country": {
+    "GB": 12
+   },
+   "source": {
+    "A": 12
+   },
+   "feedback_type": {
+    "Defect": 11,
+    "Likes": 3,
+    "Difficult to Use": 3,
+    "Wants": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-033",
@@ -679,7 +1296,25 @@
   ],
   "conflicts_with": [
    "SIG-F70-EU-007"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 12
+   },
+   "country": {
+    "GB": 12
+   },
+   "source": {
+    "A": 12
+   },
+   "feedback_type": {
+    "Defect": 12,
+    "Likes": 5,
+    "Difficult to Use": 5,
+    "Wants": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-034",
@@ -703,7 +1338,23 @@
   ],
   "conflicts_with": [
    "SIG-F70-EU-020"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 11
+   },
+   "country": {
+    "GB": 11
+   },
+   "source": {
+    "A": 11
+   },
+   "feedback_type": {
+    "Likes": 11,
+    "Difficult to Use": 1
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-035",
@@ -725,7 +1376,25 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 10
+   },
+   "country": {
+    "GB": 10
+   },
+   "source": {
+    "A": 10
+   },
+   "feedback_type": {
+    "Wants": 10,
+    "Difficult to Use": 4,
+    "Likes": 2,
+    "Defect": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-036",
@@ -749,7 +1418,25 @@
   ],
   "conflicts_with": [
    "SIG-F70-EU-009"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 10
+   },
+   "country": {
+    "GB": 10
+   },
+   "source": {
+    "A": 10
+   },
+   "feedback_type": {
+    "Likes": 10,
+    "Wants": 4,
+    "Difficult to Use": 2,
+    "Defect": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-037",
@@ -773,7 +1460,25 @@
   ],
   "conflicts_with": [
    "SIG-F70-EU-010"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 10
+   },
+   "country": {
+    "GB": 10
+   },
+   "source": {
+    "A": 10
+   },
+   "feedback_type": {
+    "Difficult to Use": 9,
+    "Defect": 7,
+    "Likes": 5,
+    "Wants": 3
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-038",
@@ -795,7 +1500,25 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 9
+   },
+   "country": {
+    "GB": 9
+   },
+   "source": {
+    "A": 9
+   },
+   "feedback_type": {
+    "Wants": 9,
+    "Likes": 4,
+    "Difficult to Use": 4,
+    "Defect": 3
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-039",
@@ -817,7 +1540,25 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 8
+   },
+   "country": {
+    "GB": 8
+   },
+   "source": {
+    "A": 8
+   },
+   "feedback_type": {
+    "Wants": 8,
+    "Defect": 2,
+    "Difficult to Use": 2,
+    "Likes": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-040",
@@ -838,7 +1579,25 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 7
+   },
+   "country": {
+    "GB": 7
+   },
+   "source": {
+    "A": 7
+   },
+   "feedback_type": {
+    "Wants": 7,
+    "Defect": 3,
+    "Likes": 2,
+    "Difficult to Use": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-041",
@@ -859,7 +1618,25 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 7
+   },
+   "country": {
+    "GB": 7
+   },
+   "source": {
+    "A": 7
+   },
+   "feedback_type": {
+    "Wants": 7,
+    "Defect": 4,
+    "Likes": 3,
+    "Difficult to Use": 3
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-042",
@@ -880,7 +1657,24 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 7
+   },
+   "country": {
+    "GB": 7
+   },
+   "source": {
+    "A": 7
+   },
+   "feedback_type": {
+    "Wants": 7,
+    "Likes": 3,
+    "Difficult to Use": 1
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-043",
@@ -900,7 +1694,25 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 6
+   },
+   "country": {
+    "GB": 6
+   },
+   "source": {
+    "A": 6
+   },
+   "feedback_type": {
+    "Wants": 6,
+    "Difficult to Use": 2,
+    "Likes": 2,
+    "Defect": 1
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-044",
@@ -920,7 +1732,24 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 6
+   },
+   "country": {
+    "GB": 6
+   },
+   "source": {
+    "A": 6
+   },
+   "feedback_type": {
+    "Wants": 6,
+    "Defect": 4,
+    "Likes": 1
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-F70-EU-045",
@@ -935,6 +1764,12 @@
   "source_types": [
    "study"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "Connected services",
+   "importance": 0.736,
+   "dissatisfaction": 0.5466666666666665
+  }
  }
 ]

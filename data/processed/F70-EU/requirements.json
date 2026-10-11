@@ -712,7 +712,22 @@
    "top3_share": 0.0,
    "runs": 500
   },
-  "segment_conflicts": [],
+  "segment_conflicts": [
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Cushioning / damping vehicle: 21 critical comments, while the study reports satisfaction.",
+    "a_count": 21,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-F70-EU-FB-F70-0057",
+     "EV-F70-EU-FB-F70-0124",
+     "EV-F70-EU-FB-F70-0268",
+     "EV-F70-EU-ST-25"
+    ]
+   }
+  ],
   "business": {
    "volume_2025": 85000,
    "volume_2030": 87000,

@@ -9,7 +9,7 @@ from __future__ import annotations
 from fastapi import APIRouter, HTTPException, Query, Request
 from pydantic import BaseModel
 
-from core import insights, portfolio, views
+from core import benchmarks, insights, market_benchmarks, portfolio, views
 from core.product_context import product_context
 from core.store import ROOT, Store
 
@@ -17,6 +17,7 @@ router = APIRouter(prefix="/api")
 
 EVENT_SENTENCE = {
     "PIPELINE_LOADED": "Pipeline-Ergebnis geladen", "REQUIREMENT_PROPOSED": "KI schlägt Anforderung vor",
+    "EVIDENCE_INGESTED": "Einleseergebnis registriert", "SIGNALS_EXTRACTED": "Befundergebnis registriert",
     "REQUIREMENT_DISCARDED": "KI verwirft Entwurf (außerhalb des Scopes)", "PM_APPROVE": "PM gibt frei",
     "PM_REJECT": "PM lehnt ab", "PM_EDIT": "PM bearbeitet", "PM_CHALLENGE": "PM stellt Gegenfrage",
     "AI_RESPONDED": "KI antwortet mit Belegen", "WEIGHTS_CHANGED": "PM ändert Gewichte",
@@ -77,6 +78,13 @@ def whatif(scenario_id: str, body: WhatIfIn, request: Request) -> list[dict]:
 @router.get("/portfolio")
 def portfolio_matrix(request: Request) -> dict:
     return portfolio.portfolio(_store(request).states)
+
+
+@router.get("/benchmarks")
+def benchmark_view(request: Request) -> dict:
+    """Qualität der KI-Vorschläge je Szenario + Marktvergleich aus EPA/NHTSA-Caches. Rechnet nur, speichert nichts."""
+    states = _store(request).states
+    return {"quality": benchmarks.quality_all(states), "market": market_benchmarks.market_all(list(states))}
 
 
 @router.get("/compare")

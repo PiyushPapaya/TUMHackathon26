@@ -61,8 +61,8 @@ def _select(evidence: list[Evidence]) -> list[Evidence]:
 
 
 def _rule_based(req: Requirement, question: str, evidence: list[Evidence]) -> dict:
-    supporting = [e for e in evidence if e.polarity <= 0][:3]
-    contrary = [e for e in evidence if e.polarity > 0][:2]
+    supporting = [e for e in evidence if e.polarity <= 0 and e.meta.get("stance") != "contradicts"][:3]
+    contrary = [e for e in evidence if e.polarity > 0 or e.meta.get("stance") == "contradicts"][:2]
     lines = [f"PM question: {question}",
              f"Supporting evidence ({len(supporting)}): " + "; ".join(e.id for e in supporting)]
     if contrary:

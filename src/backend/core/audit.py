@@ -58,6 +58,10 @@ class AuditLog:
         # halbe Zeilen, und zwei Einträge können denselben Vorgänger-Hash bekommen (Kette kaputt).
         self._lock = threading.Lock()
 
+    def close(self) -> None:
+        with self._lock:
+            self._conn.close()
+
     def append(
         self,
         event_type: str,
@@ -71,7 +75,11 @@ class AuditLog:
         if not rationale.strip():
             raise ValueError("Jedes Audit-Ereignis braucht eine Begründung (rationale).")
         with self._lock:
-            return self._append_locked(event_type, scenario_id, actor, rationale, payload, requirement_id)
+            # Auch unabhängige AuditLog-Verbindungen müssen denselben Vorgänger sehen.
+            # Die Schreibtransaktion sperrt die DB VOR dem Lesen des letzten Hashes.
+            with self._conn:
+                self._conn.execute("BEGIN IMMEDIATE")
+                return self._append_locked(event_type, scenario_id, actor, rationale, payload, requirement_id)
 
     def _append_locked(self, event_type, scenario_id, actor, rationale, payload, requirement_id) -> AuditEvent:
         last = self._conn.execute("SELECT hash FROM audit_events ORDER BY seq DESC LIMIT 1").fetchone()
@@ -97,7 +105,6 @@ class AuditLog:
                 prev_hash, event_hash,
             ),
         )
-        self._conn.commit()
         return self._row_to_event(self._conn.execute(
             "SELECT * FROM audit_events WHERE seq = ?", (cur.lastrowid,)).fetchone())
 
@@ -118,11 +125,15 @@ class AuditLog:
         with self._lock:
             rows = self._conn.execute("SELECT * FROM audit_events ORDER BY seq").fetchall()
         for row in rows:
+            try:
+                payload = json.loads(row["payload"])
+            except (ValueError, TypeError):
+                return {"valid": False, "broken_at_seq": row["seq"], "checked": len(rows)}
             fields = {
                 "ts": row["ts"], "event_type": row["event_type"], "scenario_id": row["scenario_id"],
                 "requirement_id": row["requirement_id"], "actor_type": row["actor_type"],
                 "actor_name": row["actor_name"], "rationale": row["rationale"],
-                "payload": json.loads(row["payload"]), "prev_hash": row["prev_hash"],
+                "payload": payload, "prev_hash": row["prev_hash"],
             }
             if row["prev_hash"] != prev_hash or _hash_event(fields) != row["hash"]:
                 return {"valid": False, "broken_at_seq": row["seq"], "checked": len(rows)}

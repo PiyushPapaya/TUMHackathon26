@@ -49,12 +49,18 @@ def _write(scenario_id: str, stage: str, items: list | dict) -> None:
 
 
 def read_stage(scenario_id: str, stage: str) -> list | dict:
-    """Ergebnis einer früheren Stufe; fehlt es, die Beispieldatei (damit Pfade parallel arbeiten)."""
+    """Ergebnis einer früheren Stufe. Fehlende Eingaben niemals durch fremde Beispieldaten ersetzen."""
     real = OUT_DIR / scenario_id / f"{stage}.json"
-    path = real if real.exists() else STAGE_EXAMPLES / f"{stage}.json"
-    if path != real:
-        print(f"  (Hinweis: {stage} fehlt für {scenario_id}, nehme Beispiel {path.name})")
-    return json.loads(path.read_text(encoding="utf-8"))
+    if not real.exists():
+        raise FileNotFoundError(f"{scenario_id}: {stage}.json fehlt; zuerst die vorgelagerte Stufe ausführen.")
+    return json.loads(real.read_text(encoding="utf-8"))
+
+
+def external_stage(cfg: dict, stage: str) -> list:
+    # Ohne konfigurierte Connectoren gibt es ausdrücklich keine externen Daten.
+    if not cfg.get("nhtsa") and not cfg.get("fueleconomy"):
+        return _real_stage(cfg["id"], stage, [])
+    return read_stage(cfg["id"], stage)
 
 
 def triangulated_internal(scenario_id: str) -> tuple[list[Signal], dict[str, list[str]]]:
@@ -73,17 +79,36 @@ def run_stage(stage: str, cfg: dict) -> None:
         from evidence_internal.loaders import load_all_evidence
         _write(sid, "evidence", load_all_evidence(cfg, RAW_DIR))
         from evidence_internal.context import load_context
-        _write(sid, "context", load_context(cfg, RAW_DIR))
+        from evidence_internal.opportunities import opportunities_from_evidence
+        from evidence_internal.taxonomy import unmapped_topics
+        evidence = [Evidence(**e) for e in read_stage(sid, "evidence")]
+        context = {**load_context(cfg, RAW_DIR), "unmapped_topics": unmapped_topics(evidence),
+                   "opportunities": opportunities_from_evidence(evidence)}
+        _write(sid, "context", context)
     elif stage == "signals":  # Pfad A, KI autonom
-        from evidence_internal.signals import extract_signals
+        from evidence_internal.conflicts import segment_conflicts
+        from evidence_internal.signals import _build, extract_signals, signal_groups
         evidence = [Evidence(**e) for e in read_stage(sid, "evidence")]
         _write(sid, "signals", extract_signals(scenario, evidence))
+        raw_signals, _ = _build(scenario, evidence)
+        context = {**read_stage(sid, "context"),
+                   "segment_conflicts": segment_conflicts(raw_signals, evidence, signal_groups(scenario, evidence))}
+        _write(sid, "context", context)
     elif stage == "web":  # Pfad B, KI autonom mit Quellen
+        from evidence_external.claims import FAILED_QUESTIONS
         from evidence_external.web_research import research
+        failed_before = len(FAILED_QUESTIONS)
         signals = [Signal(**s) for s in read_stage(sid, "signals")]
         web_evidence, web_signals = research(scenario, signals)
+        failed = len(FAILED_QUESTIONS) - failed_before
+        if failed and not web_evidence:
+            raise RuntimeError(f"All web research failed ({failed} questions); existing stage files were preserved.")
         _write(sid, "web_evidence", web_evidence)
         _write(sid, "web_signals", web_signals)
+        if failed:
+            context = read_stage(sid, "context")
+            context.setdefault("warnings", []).append(f"Web research incomplete: {failed} questions failed.")
+            _write(sid, "context", context)
     elif stage == "external":  # Pfad B, ohne LLM: Behördendaten (NHTSA, nur US-Szenarien mit "nhtsa")
         from evidence_external import fueleconomy
         from evidence_external.nhtsa import collect
@@ -94,9 +119,10 @@ def run_stage(stage: str, cfg: dict) -> None:
     elif stage == "requirements":  # Pfad C, KI schlägt vor, Formel priorisiert
         from requirements_engine.derive import derive_all
         internal, counter = triangulated_internal(sid)
-        signals = internal + [Signal(**s) for s in read_stage(sid, "web_signals") + read_stage(sid, "external_signals")]
+        signals = internal + [Signal(**s) for s in
+                              read_stage(sid, "web_signals") + external_stage(cfg, "external_signals")]
         evidence = [Evidence(**e) for e in read_stage(sid, "evidence") + read_stage(sid, "web_evidence")
-                    + read_stage(sid, "external_evidence")]
+                    + external_stage(cfg, "external_evidence")]
         option_file = cfg["data"].get("option_list_file")  # None bei Kaltstart-Märkten (G68-CN)
         option_path = str(RAW_DIR / option_file) if option_file else None
         context = {**read_stage(sid, "context"), "option_list_path": option_path,
@@ -125,21 +151,31 @@ def data_coverage(evidence: list[dict]) -> dict:
 
 def bundle_stage(cfg: dict) -> None:
     sid = cfg["id"]
-    evidence = read_stage(sid, "evidence") + read_stage(sid, "web_evidence") + read_stage(sid, "external_evidence")
-    internal, _ = triangulated_internal(sid)  # sonst sähe die App "web" nur an den reinen Web-Befunden
+    evidence = read_stage(sid, "evidence") + read_stage(sid, "web_evidence") + external_stage(cfg, "external_evidence")
+    internal, counter = triangulated_internal(sid)  # sonst sähe die App "web" nur an den reinen Web-Befunden
     signals = [s.model_dump(mode="json") for s in internal] + read_stage(sid, "web_signals")
-    signals += read_stage(sid, "external_signals")
+    signals += external_stage(cfg, "external_signals")
     reqs = [Requirement(**r).model_dump(mode="json") for r in read_stage(sid, "requirements")]
     used = {e for s in signals for e in s["evidence_ids"]}  # nur zitierte Belege an die App geben
-    context = _real_stage(sid, "context", {})  # Absatz, unbekannte Themen (A15), Chancen-Karte (A17)
+    used.update(i for ids in counter.values() for i in ids)
+    context = _real_stage(sid, "context", {})
+    used.update(i for conflicts in context.get("segment_conflicts", {}).values()
+                for conflict in conflicts for i in conflict.get("evidence_ids", []))
+    cov = data_coverage(evidence)
+    if context.get("sales", {}).get("volume_2030") is not None:
+        cov["sales"] = max(cov["sales"], 1)
+    from requirements_engine.offer_check import load_offer_for
+    option_file = cfg.get("data", {}).get("option_list_file")
+    offer, _ = load_offer_for({"option_list_path": str(RAW_DIR / option_file) if option_file else None})
+    cov["options"] = max(cov["options"], len(offer))
     bundle = {
-        "scenario": {**{k: v for k, v in cfg.items() if k != "data"}, "data_coverage": data_coverage(evidence)},
+        "scenario": {**{k: v for k, v in cfg.items() if k != "data"}, "data_coverage": cov},
         "funnel": {"evidence": len(evidence), "signals": len(signals), "requirements": len(reqs), "approved": 0,
                    "generated_at": datetime.now(UTC).isoformat(timespec="seconds")},
         "weights": {}, "evidence": [e for e in evidence if e["id"] in used], "signals": signals, "requirements": reqs,
         # Ältere Läufe haben keine discarded.json; dann leer, statt auf die Beispieldatei zurückzufallen.
         "discarded": _real_stage(sid, "discarded", []),
-        "context": {k: v for k, v in context.items() if k != "opportunities"},
+        "context": {**{k: v for k, v in context.items() if k != "opportunities"}, "counter_evidence": counter},
         "opportunities": context.get("opportunities", []),
     }
     OUT_DIR.mkdir(parents=True, exist_ok=True)

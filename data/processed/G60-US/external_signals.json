@@ -1,0 +1,102 @@
+[
+ {
+  "id": "SIG-G60-US-NHTSA-01",
+  "kind": "complaint",
+  "category": "driving_experience",
+  "title": "US-Behördenbeschwerden: Service Brakes und Electronic Stability Control (Esc)",
+  "summary": "20 NHTSA-Beschwerden zu Service Brakes und Electronic Stability Control (Esc) (BMW 5er Limousine (G60), US).",
+  "evidence_ids": [
+   "EV-G60-US-NHTSA-11716484",
+   "EV-G60-US-NHTSA-11653127",
+   "EV-G60-US-NHTSA-11650140",
+   "EV-G60-US-NHTSA-11644735",
+   "EV-G60-US-NHTSA-11626816",
+   "EV-G60-US-NHTSA-11622477",
+   "EV-G60-US-NHTSA-11622507",
+   "EV-G60-US-NHTSA-11620205",
+   "EV-G60-US-NHTSA-11639714",
+   "EV-G60-US-NHTSA-11625407",
+   "EV-G60-US-NHTSA-11620068",
+   "EV-G60-US-NHTSA-11735764",
+   "EV-G60-US-NHTSA-11704372",
+   "EV-G60-US-NHTSA-11688366",
+   "EV-G60-US-NHTSA-11629951",
+   "EV-G60-US-NHTSA-11629241",
+   "EV-G60-US-NHTSA-11621364",
+   "EV-G60-US-NHTSA-11614008",
+   "EV-G60-US-NHTSA-11608006",
+   "EV-G60-US-NHTSA-11729663",
+   "EV-G60-US-NHTSA-STAT-01",
+   "EV-G60-US-NHTSA-STAT-02",
+   "EV-G60-US-NHTSA-STAT-03",
+   "EV-G60-US-NHTSA-STAT-04"
+  ],
+  "mention_count": 20,
+  "source_types": [
+   "feedback_external"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G60-US-NHTSA-02",
+  "kind": "complaint",
+  "category": "driver_assistance",
+  "title": "US-Behördenbeschwerden: Forward Collision Avoidance und Service Brakes",
+  "summary": "14 NHTSA-Beschwerden zu Forward Collision Avoidance und Service Brakes (BMW 5er Limousine (G60), US).",
+  "evidence_ids": [
+   "EV-G60-US-NHTSA-11734926",
+   "EV-G60-US-NHTSA-11650048",
+   "EV-G60-US-NHTSA-11607948",
+   "EV-G60-US-NHTSA-11625223",
+   "EV-G60-US-NHTSA-11622466",
+   "EV-G60-US-NHTSA-11734453",
+   "EV-G60-US-NHTSA-11673828",
+   "EV-G60-US-NHTSA-11646396",
+   "EV-G60-US-NHTSA-11639213",
+   "EV-G60-US-NHTSA-11591979",
+   "EV-G60-US-NHTSA-11762662",
+   "EV-G60-US-NHTSA-11729328",
+   "EV-G60-US-NHTSA-11722386",
+   "EV-G60-US-NHTSA-11594543",
+   "EV-G60-US-NHTSA-STAT-01",
+   "EV-G60-US-NHTSA-STAT-02",
+   "EV-G60-US-NHTSA-STAT-03",
+   "EV-G60-US-NHTSA-STAT-04"
+  ],
+  "mention_count": 14,
+  "source_types": [
+   "feedback_external"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G60-US-NHTSA-03",
+  "kind": "complaint",
+  "category": "quality_perception",
+  "title": "US-Behördenbeschwerden: Electrical System und Unknown Or Other",
+  "summary": "6 NHTSA-Beschwerden zu Electrical System und Unknown Or Other (BMW 5er Limousine (G60), US).",
+  "evidence_ids": [
+   "EV-G60-US-NHTSA-11698655",
+   "EV-G60-US-NHTSA-11733119",
+   "EV-G60-US-NHTSA-11686791",
+   "EV-G60-US-NHTSA-11686161",
+   "EV-G60-US-NHTSA-11733770",
+   "EV-G60-US-NHTSA-11721496",
+   "EV-G60-US-NHTSA-STAT-01",
+   "EV-G60-US-NHTSA-STAT-02",
+   "EV-G60-US-NHTSA-STAT-03",
+   "EV-G60-US-NHTSA-STAT-04"
+  ],
+  "mention_count": 6,
+  "source_types": [
+   "feedback_external"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ }
+]

@@ -1,0 +1,557 @@
+[
+ {
+  "id": "EV-G68-CN-ST-01",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Overall product satisfaction: mean 8.8 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Overall product satisfaction",
+   "mean": "8.77"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-02",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Exterior styling: mean 8.2 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Exterior styling",
+   "mean": "8.19"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-03",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Interior styling: mean 8.7 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Interior styling",
+   "mean": "8.69"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-04",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Quality of interior and materials used: mean 8.4 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Quality of interior and materials used",
+   "mean": "8.44"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-05",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Level of equipment: mean 7.5 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "attribute": "Level of equipment",
+   "mean": "7.49"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-06",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Safety: mean 8.2 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Safety",
+   "mean": "8.17"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-07",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Freedom from faults/ squeaks/ rattles: mean 8.5 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Freedom from faults/ squeaks/ rattles",
+   "mean": "8.48"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-08",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Value for money: mean 7.9 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Value for money",
+   "mean": "7.92"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-09",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Reliability: mean 8.8 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Reliability",
+   "mean": "8.84"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-10",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "All round visibility: mean 8.7 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "All round visibility",
+   "mean": "8.70"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-11",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Easy to read and use instruments/ controls/ displays: mean 8.3 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Easy to read and use instruments/ controls/ displays",
+   "mean": "8.34"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-12",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Smartphone integration/ connectivity: mean 8.1 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Smartphone integration/ connectivity",
+   "mean": "8.14"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-13",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Features of information and entertainment system including in-car apps: mean 8.4 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Features of information and entertainment system including in-car apps",
+   "mean": "8.37"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-14",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Easy to use information and entertainment system including in-car apps: mean 8.4 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Easy to use information and entertainment system including in-car apps",
+   "mean": "8.35"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-15",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Integrated navigation system: mean 8.5 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Integrated navigation system",
+   "mean": "8.52"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-16",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Overall seating comfort: mean 8.7 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Overall seating comfort",
+   "mean": "8.67"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-17",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Interior storage for small items: mean 8.5 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Interior storage for small items",
+   "mean": "8.53"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-18",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Acceleration: mean 8.6 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Acceleration",
+   "mean": "8.60"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-19",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Roadholding: mean 8.9 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Roadholding",
+   "mean": "8.92"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-20",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Fuel economy/ energy efficiency: mean 8.4 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Fuel economy/ energy efficiency",
+   "mean": "8.43"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-21",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Braking: mean 7.4 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "attribute": "Braking",
+   "mean": "7.38"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-22",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Sportiness: mean 8.9 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Sportiness",
+   "mean": "8.86"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-23",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Prestige/ manufacturer reputation: mean 8.9 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Prestige/ manufacturer reputation",
+   "mean": "8.90"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-24",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Manoeuvrability: mean 8.5 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Manoeuvrability",
+   "mean": "8.48"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-25",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Quality of ride: mean 8.4 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Quality of ride",
+   "mean": "8.45"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-26",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Front interior roominess: mean 7.8 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Front interior roominess",
+   "mean": "7.77"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-27",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Rear interior roominess: mean 8.7 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Rear interior roominess",
+   "mean": "8.71"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-28",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Ease of loading/ unloading luggage: mean 7.3 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "attribute": "Ease of loading/ unloading luggage",
+   "mean": "7.25"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-29",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Luggage capacity: mean 8.7 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Luggage capacity",
+   "mean": "8.73"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-30",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Ease of entry into and out of car: mean 8.5 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Ease of entry into and out of car",
+   "mean": "8.51"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-31",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Environm. friendliness: mean 7.5 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "attribute": "Environm. friendliness",
+   "mean": "7.49"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-32",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Heating/ ventilation/ air conditioning: mean 7.6 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Heating/ ventilation/ air conditioning",
+   "mean": "7.58"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-33",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Overall build quality: mean 8.8 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Overall build quality",
+   "mean": "8.81"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-34",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Quietness when driving: mean 7.5 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Quietness when driving",
+   "mean": "7.52"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-35",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Driving position: mean 8.7 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Driving position",
+   "mean": "8.69"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-36",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Connected services: mean 7.3 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "attribute": "Connected services",
+   "mean": "7.35"
+  }
+ },
+ {
+  "id": "EV-G68-CN-ST-37",
+  "source_type": "study",
+  "source_name": "CN-Studie 2025",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Interior versatility: mean 8.4 (CN study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Interior versatility",
+   "mean": "8.35"
+  }
+ }
+]

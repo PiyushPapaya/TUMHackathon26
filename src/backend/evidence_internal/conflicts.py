@@ -14,9 +14,12 @@ Anforderungs-Prompt und in der Challenge landeten. Verworfen: nur gleiches Thema
 
 from __future__ import annotations
 
+from collections import Counter, defaultdict
 from itertools import combinations
 
-from core.models import Signal, SignalKind
+from core.model_parts import SegmentConflict
+from core.models import Signal, SignalKind, SourceType
+from evidence_internal.study_topics import study_vfc2
 
 MIN_MENTIONS = 10
 MAX_CONFLICTS = 2
@@ -79,3 +82,57 @@ def link_conflicts(signals: list[Signal]) -> list[Signal]:
             linked[a.id].append(b.id)
             linked[b.id].append(a.id)
     return [s.model_copy(update={"conflicts_with": linked[s.id]}) for s in signals]
+
+
+def segment_conflicts(signals: list[Signal], evidence: list, groups: dict[str, list[str]]) -> dict[str, list[dict]]:
+    """Gegensätzliche Mehrheiten ab zehn Kommentaren je Segment, mit konkreten Beleg-IDs."""
+    by_id = {e.id: e for e in evidence}
+    topics = defaultdict(list)
+    for signal in signals:
+        topics[_topic(signal)].append(signal)
+    result = {}
+    for topic, related in topics.items():
+        positive = {i for s in related if s.kind == SignalKind.DELIGHT for i in groups.get(s.id, [])}
+        negative = {i for s in related if s.kind in NEGATIVE for i in groups.get(s.id, [])}
+        # Ambivalente Stimmen werden nicht als Beweis für eine Segmentmehrheit benutzt.
+        ambiguous = positive & negative
+        positive, negative = positive - ambiguous, negative - ambiguous
+        conflicts = []
+        for dimension in ("engine", "country", "source"):
+            counts = defaultdict(Counter)
+            ids = defaultdict(list)
+            for stance, members in (("positive", positive), ("negative", negative)):
+                for eid in sorted(members):
+                    segment = by_id[eid].meta.get(dimension, "")
+                    if segment:
+                        counts[segment][stance] += 1
+                        ids[segment].append(eid)
+            for a, b in combinations(sorted(counts), 2):
+                ca, cb = counts[a], counts[b]
+                if min(sum(ca.values()), sum(cb.values())) < MIN_MENTIONS:
+                    continue
+                if (ca["negative"] > ca["positive"] and cb["positive"] > cb["negative"]):
+                    negative_segment, positive_segment = a, b
+                elif (cb["negative"] > cb["positive"] and ca["positive"] > ca["negative"]):
+                    negative_segment, positive_segment = b, a
+                else:
+                    continue
+                n, p = counts[negative_segment]["negative"], counts[positive_segment]["positive"]
+                conflicts.append(SegmentConflict(
+                    dimension=dimension, segment_a=negative_segment, segment_b=positive_segment,
+                    statement=f"{topic}: {negative_segment} mostly criticises ({n}); "
+                              f"{positive_segment} mostly praises ({p}).",
+                    a_count=n, b_count=p, evidence_ids=(ids[negative_segment][:3] + ids[positive_segment][:3]),
+                ).model_dump())
+        for study in evidence:
+            if (study.source_type == SourceType.STUDY and study.polarity > 0 and len(negative) >= MIN_MENTIONS
+                    and study_vfc2(study.meta.get("attribute", "")) == topic):
+                conflicts.append(SegmentConflict(
+                    dimension="study_vs_feedback", segment_a="feedback", segment_b="study",
+                    statement=f"{topic}: {len(negative)} critical comments, while the study reports satisfaction.",
+                    a_count=len(negative), b_count=1, evidence_ids=[*sorted(negative)[:3], study.id],
+                ).model_dump())
+        if conflicts:
+            for signal in related:
+                result[signal.id] = conflicts
+    return result

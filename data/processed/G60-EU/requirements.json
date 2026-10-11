@@ -1,0 +1,832 @@
+[
+ {
+  "id": "REQ-G60-EU-001",
+  "title": "Improve Electric Range for the successor",
+  "description": "Address the customer pain or unmet need around Electric Range with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "range_charging",
+  "signal_ids": [
+   "SIG-G60-EU-002"
+  ],
+  "score": 47.9,
+  "rank": 1,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Difficult to Use / Likes | Difficult to Use), 12 mentions"
+   },
+   "reach": {
+    "value": 0.707,
+    "weight": 0.2,
+    "contribution": 14.1,
+    "explanation": "12 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.517,
+    "weight": 0.2,
+    "contribution": 10.3,
+    "explanation": "Fuel economy/ energy efficiency: mean 7.45 of 10"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and reach (14.1 points). Evidence level B: Only 12 mentions, but confirmed by 2 independent source types.",
+  "evidence_level": "B",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 1,
+   "rank_max": 1,
+   "top3_share": 1.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 115000,
+   "volume_2030": 127000,
+   "growth_pct": 15.5,
+   "market_share": 0.402,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G60-EU-004",
+  "title": "Improve Ease of loading/ unloading luggage for the successor",
+  "description": "Address the customer pain or unmet need around Ease of loading/ unloading luggage with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "comfort_space",
+  "signal_ids": [
+   "SIG-G60-EU-008"
+  ],
+  "score": 33.5,
+  "rank": 2,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints, 1 mentions"
+   },
+   "reach": {
+    "value": 0.204,
+    "weight": 0.2,
+    "contribution": 4.1,
+    "explanation": "1 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.587,
+    "weight": 0.2,
+    "contribution": 11.7,
+    "explanation": "Ease of loading/ unloading luggage: mean 7.24 of 10"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (11.7 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+  "evidence_level": "C",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 2,
+   "rank_max": 3,
+   "top3_share": 1.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 115000,
+   "volume_2030": 127000,
+   "growth_pct": 15.5,
+   "market_share": 0.402,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G60-EU-003",
+  "title": "Improve Connected services for the successor",
+  "description": "Address the customer pain or unmet need around Connected services with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G60-EU-007"
+  ],
+  "score": 32.9,
+  "rank": 3,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints, 1 mentions"
+   },
+   "reach": {
+    "value": 0.204,
+    "weight": 0.2,
+    "contribution": 4.1,
+    "explanation": "1 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.543,
+    "weight": 0.2,
+    "contribution": 10.9,
+    "explanation": "Connected services: mean 7.37 of 10"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (10.9 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+  "evidence_level": "C",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 3,
+   "rank_max": 4,
+   "top3_share": 0.646,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 115000,
+   "volume_2030": 127000,
+   "growth_pct": 15.5,
+   "market_share": 0.402,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G60-EU-006",
+  "title": "Improve Rear interior roominess for the successor",
+  "description": "Address the customer pain or unmet need around Rear interior roominess with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "comfort_space",
+  "signal_ids": [
+   "SIG-G60-EU-010"
+  ],
+  "score": 32.5,
+  "rank": 4,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints, 1 mentions"
+   },
+   "reach": {
+    "value": 0.204,
+    "weight": 0.2,
+    "contribution": 4.1,
+    "explanation": "1 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.513,
+    "weight": 0.2,
+    "contribution": 10.3,
+    "explanation": "Rear interior roominess: mean 7.46 of 10"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (10.3 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+  "evidence_level": "C",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 4,
+   "rank_max": 5,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 115000,
+   "volume_2030": 127000,
+   "growth_pct": 15.5,
+   "market_share": 0.402,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G60-EU-005",
+  "title": "Improve Heating/ ventilation/ air conditioning for the successor",
+  "description": "Address the customer pain or unmet need around Heating/ ventilation/ air conditioning with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "comfort_space",
+  "signal_ids": [
+   "SIG-G60-EU-009"
+  ],
+  "score": 32.4,
+  "rank": 5,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints, 1 mentions"
+   },
+   "reach": {
+    "value": 0.204,
+    "weight": 0.2,
+    "contribution": 4.1,
+    "explanation": "1 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.51,
+    "weight": 0.2,
+    "contribution": 10.2,
+    "explanation": "Heating/ ventilation/ air conditioning: mean 7.47 of 10"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (10.2 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+  "evidence_level": "C",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 5,
+   "rank_max": 6,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 115000,
+   "volume_2030": 127000,
+   "growth_pct": 15.5,
+   "market_share": 0.402,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G60-EU-007",
+  "title": "Maintain Drive, driving dynamics and chassis, overall technology as a proven strength",
+  "description": "Keep the customer experience around Drive, driving dynamics and chassis, overall technology at least at today's level.",
+  "acceptance_criterion": "No decline in linked study score or complaint share in the next validation clinic.",
+  "category": "driving_experience",
+  "signal_ids": [
+   "SIG-G60-EU-001"
+  ],
+  "score": 31.4,
+  "rank": 6,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.4,
+    "weight": 0.25,
+    "contribution": 10.0,
+    "explanation": "Mostly strengths (Likes / Difficult to Use | Likes), 24 mentions"
+   },
+   "reach": {
+    "value": 1.0,
+    "weight": 0.2,
+    "contribution": 20.0,
+    "explanation": "24 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.0,
+    "weight": 0.2,
+    "contribution": 0.0,
+    "explanation": "no study data"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of reach (20 points) and customer pain (10 points). Evidence level B: 24 mentions, but from a single source type.",
+  "evidence_level": "B",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 2,
+   "rank_max": 7,
+   "top3_share": 0.354,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 115000,
+   "volume_2030": 127000,
+   "growth_pct": 15.5,
+   "market_share": 0.402,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G60-EU-002",
+  "title": "Improve ConnectedDrive and Infotainment, overall technology for the successor",
+  "description": "Address the customer pain or unmet need around ConnectedDrive and Infotainment, overall technology with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G60-EU-005"
+  ],
+  "score": 28.8,
+  "rank": 7,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Difficult to Use / Difficult to Use | Defect), 5 mentions"
+   },
+   "reach": {
+    "value": 0.456,
+    "weight": 0.2,
+    "contribution": 9.1,
+    "explanation": "5 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.0,
+    "weight": 0.2,
+    "contribution": 0.0,
+    "explanation": "no study data"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and reach (9.1 points). Evidence level C: Only 5 mentions: a hint, not a solid finding.",
+  "evidence_level": "C",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 6,
+   "rank_max": 7,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 115000,
+   "volume_2030": 127000,
+   "growth_pct": 15.5,
+   "market_share": 0.402,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G60-EU-008",
+  "title": "Maintain Drivetrain as a proven strength",
+  "description": "Keep the customer experience around Drivetrain at least at today's level.",
+  "acceptance_criterion": "No decline in linked study score or complaint share in the next validation clinic.",
+  "category": "driving_experience",
+  "signal_ids": [
+   "SIG-G60-EU-003"
+  ],
+  "score": 20.4,
+  "rank": 8,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.4,
+    "weight": 0.25,
+    "contribution": 10.0,
+    "explanation": "Mostly strengths (Likes / Wants | Likes | Difficult to Use | Defect), 9 mentions"
+   },
+   "reach": {
+    "value": 0.612,
+    "weight": 0.2,
+    "contribution": 12.2,
+    "explanation": "9 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.0,
+    "weight": 0.2,
+    "contribution": 0.0,
+    "explanation": "no study data"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of reach (12.2 points) and customer pain (10 points). Evidence level C: Only 9 mentions: a hint, not a solid finding.",
+  "evidence_level": "C",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 8,
+   "rank_max": 8,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 115000,
+   "volume_2030": 127000,
+   "growth_pct": 15.5,
+   "market_share": 0.402,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G60-EU-009",
+  "title": "Maintain Handling / Riding as a proven strength",
+  "description": "Keep the customer experience around Handling / Riding at least at today's level.",
+  "acceptance_criterion": "No decline in linked study score or complaint share in the next validation clinic.",
+  "category": "driving_experience",
+  "signal_ids": [
+   "SIG-G60-EU-004"
+  ],
+  "score": 19.5,
+  "rank": 9,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.4,
+    "weight": 0.25,
+    "contribution": 10.0,
+    "explanation": "Mostly strengths (Likes / Wants | Likes), 7 mentions"
+   },
+   "reach": {
+    "value": 0.54,
+    "weight": 0.2,
+    "contribution": 10.8,
+    "explanation": "7 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.0,
+    "weight": 0.2,
+    "contribution": 0.0,
+    "explanation": "no study data"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of reach (10.8 points) and customer pain (10 points). Evidence level C: Only 7 mentions: a hint, not a solid finding.",
+  "evidence_level": "C",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 9,
+   "rank_max": 9,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 115000,
+   "volume_2030": 127000,
+   "growth_pct": 15.5,
+   "market_share": 0.402,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G60-EU-010",
+  "title": "Maintain Electric Range as a proven strength",
+  "description": "Keep the customer experience around Electric Range at least at today's level.",
+  "acceptance_criterion": "No decline in linked study score or complaint share in the next validation clinic.",
+  "category": "range_charging",
+  "signal_ids": [
+   "SIG-G60-EU-006"
+  ],
+  "score": 18.3,
+  "rank": 10,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.4,
+    "weight": 0.25,
+    "contribution": 10.0,
+    "explanation": "Mostly strengths (Likes / Likes | Wants | Defect), 5 mentions"
+   },
+   "reach": {
+    "value": 0.456,
+    "weight": 0.2,
+    "contribution": 9.1,
+    "explanation": "5 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.0,
+    "weight": 0.2,
+    "contribution": 0.0,
+    "explanation": "no study data"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (10 points) and reach (9.1 points). Evidence level C: Only 5 mentions: a hint, not a solid finding.",
+  "evidence_level": "C",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 10,
+   "rank_max": 10,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 115000,
+   "volume_2030": 127000,
+   "growth_pct": 15.5,
+   "market_share": 0.402,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ }
+]

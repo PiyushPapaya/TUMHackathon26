@@ -24,13 +24,15 @@ def triangulate(signals: list[Signal], web_evidence: list[Evidence]) -> tuple[li
     supports: dict[str, list[str]] = {}
     counter: dict[str, list[str]] = {}
     for ev in web_evidence:
-        target = ev.meta.get("supports_signal_id")
-        if target not in known or ev.meta.get("trust") not in TRUSTED:
+        targets = set(ev.meta.get("supports_signal_ids", "").split("|"))
+        targets.add(ev.meta.get("supports_signal_id"))
+        if ev.meta.get("trust") not in TRUSTED:
             continue
-        if ev.meta.get("stance") == "supports":
-            supports.setdefault(target, []).append(ev.id)
-        elif ev.meta.get("stance") == "contradicts":
-            counter.setdefault(target, []).append(ev.id)
+        for target in targets & known:
+            if ev.meta.get("stance") == "supports":
+                supports.setdefault(target, []).append(ev.id)
+            elif ev.meta.get("stance") == "contradicts":
+                counter.setdefault(target, []).append(ev.id)
 
     result: list[Signal] = []
     for signal in signals:

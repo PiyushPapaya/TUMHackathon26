@@ -14,6 +14,7 @@ const NAV = [
   { href: "/models", label: "Models" },
   { href: "/cockpit", label: "Cockpit" },
   { href: "/portfolio", label: "Compare" },
+  { href: "/benchmarks", label: "Benchmarks" },
   { href: "/audit", label: "Audit trail" },
 ];
 

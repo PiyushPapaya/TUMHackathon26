@@ -143,7 +143,47 @@ export interface LensResult {
   }[];
 }
 
-export const getMatrix = (id: string) => get<MatrixView>(`/api/scenarios/${enc(id)}/matrix`);
+// Benchmarks: Qualität der KI-Vorschläge je Szenario + Marktvergleich (EPA, NHTSA). Siehe core/benchmarks.py.
+export interface QualityMetric {
+  key: string;
+  label: string;
+  value: number;
+  unit: string;
+  target: number | null;
+  ok: boolean | null;
+  explain: string;
+}
+export interface ScenarioQuality {
+  scenario_id: string;
+  model_name: string;
+  market: string;
+  funnel: { evidence: number; signals: number; requirements: number; discarded: number };
+  metrics: QualityMetric[];
+}
+export interface MarketVehicle {
+  name: string;
+  is_bmw: boolean;
+  range_km: number;
+  kwh_per_100km: number | null;
+  rank: number;
+}
+export interface ScenarioMarket {
+  scenario_id: string;
+  model_name: string;
+  range: MarketVehicle[];
+  range_gap_km: number | null;
+  range_sentence: string;
+  complaints: { name: string; is_bmw: boolean; complaints: number }[];
+  complaint_years: number[];
+  limits: string;
+}
+export interface BenchmarksView {
+  quality: ScenarioQuality[];
+  market: ScenarioMarket[];
+}
+export const getBenchmarks = () => get<BenchmarksView>("/api/benchmarks");
+
+export const getMatrix =(id: string) => get<MatrixView>(`/api/scenarios/${enc(id)}/matrix`);
 export const getOpportunities = (id: string) => get<OpportunitiesView>(`/api/scenarios/${enc(id)}/opportunities`);
 export const getTrends = (id: string) => get<TrendsView>(`/api/scenarios/${enc(id)}/trends`);
 export const getGaps = (id: string) => get<GapsView>(`/api/scenarios/${enc(id)}/gaps`);

@@ -47,6 +47,27 @@ def scan_text(label: str, text: str) -> list[str]:
     return hits
 
 
+def scan_stream(label: str, stream, chunk_size: int = 65536) -> list[str]:
+    """Begrenzter Speicher auch bei großen Entire-Checkpoints; Überlappung schützt Chunk-Grenzen."""
+    tail, consumed, lines, hits, seen = "", 0, 0, [], set()
+    while chunk := stream.read(chunk_size):
+        text = tail + chunk
+        offset = consumed - len(tail)
+        base_line = lines - tail.count("\n")
+        for name, pattern in PATTERNS.items():
+            for match in re.finditer(pattern, text):
+                key = (name, offset + match.start())
+                if key in seen:
+                    continue
+                seen.add(key)
+                line_no = base_line + text.count("\n", 0, match.start()) + 1
+                hits.append(f"{label}:{line_no}: {name} ({match.group(0)[:12]}…)")
+        consumed += len(chunk)
+        lines += chunk.count("\n")
+        tail = text[-4096:]
+    return hits
+
+
 def main(argv: list[str] | None = None) -> int:
     # Windows-Konsolen nutzen oft cp1252; ohne das werden Umlaute zu Fragezeichen.
     if hasattr(sys.stdout, "reconfigure"):
@@ -69,8 +90,12 @@ def main(argv: list[str] | None = None) -> int:
             continue  # gelöscht, aber noch im Index
 
     if args.historie:
-        history = git("log", "-p", "--all", "--no-color", "--", ".", f":(exclude){SELF}")
-        findings += scan_text("git-historie", history)
+        command = ["git", "log", "-p", "--all", "--no-color", "--", ".", f":(exclude){SELF}"]
+        with subprocess.Popen(command, stdout=subprocess.PIPE, text=True,
+                              encoding="utf-8", errors="replace") as process:
+            findings += scan_stream("git-historie", process.stdout)
+            if process.wait():
+                raise subprocess.CalledProcessError(process.returncode, command)
 
     if findings:
         print("MÖGLICHE SECRETS GEFUNDEN:")

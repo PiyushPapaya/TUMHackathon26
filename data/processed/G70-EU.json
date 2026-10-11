@@ -1,0 +1,536 @@
+{
+ "scenario": {
+  "id": "G70-EU",
+  "derivative": "G70",
+  "model_name": "BMW 7er (G70)",
+  "market": "EU",
+  "countries": [
+   "GB",
+   "FR",
+   "DK",
+   "SE",
+   "FI",
+   "NO",
+   "ES"
+  ],
+  "competitors": [
+   "Mercedes-Benz S-Class",
+   "Mercedes-Benz EQS",
+   "Audi A8",
+   "Porsche Panamera"
+  ],
+  "successor_horizon": "2030",
+  "warnings": [
+   "Only 19 customer comments from Europe; almost everything relies on the study, sales data and web sources."
+  ],
+  "data_coverage": {
+   "feedback": 19,
+   "study": 37,
+   "sales": 1,
+   "options": 176,
+   "web": 0,
+   "external": 0,
+   "badge": "dünn"
+  }
+ },
+ "funnel": {
+  "evidence": 56,
+  "signals": 2,
+  "requirements": 2,
+  "approved": 0,
+  "generated_at": "2026-10-11T04:56:02+00:00"
+ },
+ "weights": {},
+ "evidence": [
+  {
+   "id": "EV-G70-EU-ST-22",
+   "source_type": "study",
+   "source_name": "EU-Studie 2025",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Sportiness: mean 7.0 (EU study 2025)",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "attribute": "Sportiness",
+    "mean": "6.97"
+   }
+  },
+  {
+   "id": "EV-G70-EU-ST-29",
+   "source_type": "study",
+   "source_name": "EU-Studie 2025",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Luggage capacity: mean 7.4 (EU study 2025)",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "attribute": "Luggage capacity",
+    "mean": "7.41"
+   }
+  }
+ ],
+ "signals": [
+  {
+   "id": "SIG-G70-EU-001",
+   "kind": "complaint",
+   "category": "comfort_space",
+   "title": "Luggage capacity: complaint",
+   "summary": "Study: Luggage capacity: mean 7.4 (EU study 2025).",
+   "evidence_ids": [
+    "EV-G70-EU-ST-29"
+   ],
+   "mention_count": 1,
+   "source_types": [
+    "study"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": {
+    "attribute": "Luggage capacity",
+    "importance": 0.741,
+    "dissatisfaction": 0.5299999999999999
+   }
+  },
+  {
+   "id": "SIG-G70-EU-002",
+   "kind": "complaint",
+   "category": "driving_experience",
+   "title": "Sportiness: complaint",
+   "summary": "Study: Sportiness: mean 7.0 (EU study 2025).",
+   "evidence_ids": [
+    "EV-G70-EU-ST-22"
+   ],
+   "mention_count": 1,
+   "source_types": [
+    "study"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": {
+    "attribute": "Sportiness",
+    "importance": 0.697,
+    "dissatisfaction": 0.6766666666666667
+   }
+  }
+ ],
+ "requirements": [
+  {
+   "id": "REQ-G70-EU-002",
+   "title": "Improve Sportiness for the successor",
+   "description": "Address the customer pain or unmet need around Sportiness with a measurable user outcome.",
+   "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+   "category": "driving_experience",
+   "signal_ids": [
+    "SIG-G70-EU-002"
+   ],
+   "score": 45.8,
+   "rank": 1,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 1.0,
+     "weight": 0.25,
+     "contribution": 25.0,
+     "explanation": "Mostly complaints, 1 mentions"
+    },
+    "reach": {
+     "value": 1.0,
+     "weight": 0.2,
+     "contribution": 20.0,
+     "explanation": "1 of at most 1 mentions (square root scale); EU = 33 % of 2030 volume"
+    },
+    "satisfaction_gap": {
+     "value": 0.677,
+     "weight": 0.2,
+     "contribution": 13.5,
+     "explanation": "Sportiness: mean 6.97 of 10"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.1,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (25 points) and reach (20 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+   "evidence_level": "C",
+   "assumptions": [
+    "Rule-based fallback draft because no cached LLM draft was available."
+   ],
+   "uncertainties": [
+    "Needs PM wording review before approval."
+   ],
+   "offer_check": {
+    "status": "unknown",
+    "note": "Check not possible (RuntimeError).",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 1,
+    "rank_max": 1,
+    "top3_share": 1.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 13000,
+    "volume_2030": 17000,
+    "growth_pct": 54.5,
+    "market_share": 0.327,
+    "note": "Sales context from sales_volumes.xlsx"
+   },
+   "stable_key": "",
+   "badges": []
+  },
+  {
+   "id": "REQ-G70-EU-001",
+   "title": "Improve Luggage capacity for the successor",
+   "description": "Address the customer pain or unmet need around Luggage capacity with a measurable user outcome.",
+   "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+   "category": "comfort_space",
+   "signal_ids": [
+    "SIG-G70-EU-001"
+   ],
+   "score": 43.8,
+   "rank": 2,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 1.0,
+     "weight": 0.25,
+     "contribution": 25.0,
+     "explanation": "Mostly complaints, 1 mentions"
+    },
+    "reach": {
+     "value": 1.0,
+     "weight": 0.2,
+     "contribution": 20.0,
+     "explanation": "1 of at most 1 mentions (square root scale); EU = 33 % of 2030 volume"
+    },
+    "satisfaction_gap": {
+     "value": 0.53,
+     "weight": 0.2,
+     "contribution": 10.6,
+     "explanation": "Luggage capacity: mean 7.41 of 10"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.1,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (25 points) and reach (20 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+   "evidence_level": "C",
+   "assumptions": [
+    "Rule-based fallback draft because no cached LLM draft was available."
+   ],
+   "uncertainties": [
+    "Needs PM wording review before approval."
+   ],
+   "offer_check": {
+    "status": "unknown",
+    "note": "Check not possible (RuntimeError).",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 2,
+    "rank_max": 2,
+    "top3_share": 1.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 13000,
+    "volume_2030": 17000,
+    "growth_pct": 54.5,
+    "market_share": 0.327,
+    "note": "Sales context from sales_volumes.xlsx"
+   },
+   "stable_key": "",
+   "badges": []
+  }
+ ],
+ "discarded": [],
+ "context": {
+  "sales": {
+   "market": "EU",
+   "volume_2024": 11000,
+   "volume_2025": 13000,
+   "volume_2030": 17000,
+   "share_of_total_2030": 0.327,
+   "growth_pct": 30.769,
+   "growth_2024_2025_pct": 18.182
+  },
+  "unmapped_topics": {
+   "Body equipment, overall technology": 2,
+   "no_class_found": 11,
+   "General enquiry: customer feedback": 2,
+   "Controller operation": 1,
+   "Owner's Manual": 1
+  },
+  "warnings": [],
+  "segment_conflicts": {},
+  "counter_evidence": {}
+ },
+ "opportunities": [
+  {
+   "attribute": "Quietness when driving",
+   "category": "quality_perception",
+   "importance": 0.978,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-34"
+  },
+  {
+   "attribute": "Front interior roominess",
+   "category": "comfort_space",
+   "importance": 0.969,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-26"
+  },
+  {
+   "attribute": "Reliability",
+   "category": "quality_perception",
+   "importance": 0.967,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-09"
+  },
+  {
+   "attribute": "Braking",
+   "category": "driving_experience",
+   "importance": 0.96,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-21"
+  },
+  {
+   "attribute": "Quality of ride",
+   "category": "driving_experience",
+   "importance": 0.952,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-25"
+  },
+  {
+   "attribute": "Rear interior roominess",
+   "category": "comfort_space",
+   "importance": 0.941,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-27"
+  },
+  {
+   "attribute": "Overall seating comfort",
+   "category": "comfort_space",
+   "importance": 0.929,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-16"
+  },
+  {
+   "attribute": "Safety",
+   "category": "driver_assistance",
+   "importance": 0.928,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-06"
+  },
+  {
+   "attribute": "Ease of entry into and out of car",
+   "category": "comfort_space",
+   "importance": 0.925,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-30"
+  },
+  {
+   "attribute": "Driving position",
+   "category": "driving_experience",
+   "importance": 0.913,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-35"
+  },
+  {
+   "attribute": "Quality of interior and materials used",
+   "category": "interior",
+   "importance": 0.911,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-04"
+  },
+  {
+   "attribute": "Manoeuvrability",
+   "category": "driving_experience",
+   "importance": 0.897,
+   "dissatisfaction": 0.01,
+   "evidence_id": "EV-G70-EU-ST-24"
+  },
+  {
+   "attribute": "Acceleration",
+   "category": "driving_experience",
+   "importance": 0.894,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G70-EU-ST-18"
+  },
+  {
+   "attribute": "Roadholding",
+   "category": "driving_experience",
+   "importance": 0.894,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G70-EU-ST-19"
+  },
+  {
+   "attribute": "Interior styling",
+   "category": "interior",
+   "importance": 0.892,
+   "dissatisfaction": 0.027,
+   "evidence_id": "EV-G70-EU-ST-03"
+  },
+  {
+   "attribute": "Integrated navigation system",
+   "category": "infotainment_digital",
+   "importance": 0.882,
+   "dissatisfaction": 0.06,
+   "evidence_id": "EV-G70-EU-ST-15"
+  },
+  {
+   "attribute": "Heating/ ventilation/ air conditioning",
+   "category": "comfort_space",
+   "importance": 0.88,
+   "dissatisfaction": 0.067,
+   "evidence_id": "EV-G70-EU-ST-32"
+  },
+  {
+   "attribute": "Overall build quality",
+   "category": "quality_perception",
+   "importance": 0.878,
+   "dissatisfaction": 0.073,
+   "evidence_id": "EV-G70-EU-ST-33"
+  },
+  {
+   "attribute": "Ease of loading/ unloading luggage",
+   "category": "comfort_space",
+   "importance": 0.867,
+   "dissatisfaction": 0.11,
+   "evidence_id": "EV-G70-EU-ST-28"
+  },
+  {
+   "attribute": "Freedom from faults/ squeaks/ rattles",
+   "category": "quality_perception",
+   "importance": 0.861,
+   "dissatisfaction": 0.13,
+   "evidence_id": "EV-G70-EU-ST-07"
+  },
+  {
+   "attribute": "Exterior styling",
+   "category": "exterior",
+   "importance": 0.838,
+   "dissatisfaction": 0.207,
+   "evidence_id": "EV-G70-EU-ST-02"
+  },
+  {
+   "attribute": "Smartphone integration/ connectivity",
+   "category": "infotainment_digital",
+   "importance": 0.836,
+   "dissatisfaction": 0.213,
+   "evidence_id": "EV-G70-EU-ST-12"
+  },
+  {
+   "attribute": "Interior versatility",
+   "category": "comfort_space",
+   "importance": 0.832,
+   "dissatisfaction": 0.227,
+   "evidence_id": "EV-G70-EU-ST-37"
+  },
+  {
+   "attribute": "All round visibility",
+   "category": "driver_assistance",
+   "importance": 0.83,
+   "dissatisfaction": 0.233,
+   "evidence_id": "EV-G70-EU-ST-10"
+  },
+  {
+   "attribute": "Features of information and entertainment system including in-car apps",
+   "category": "infotainment_digital",
+   "importance": 0.829,
+   "dissatisfaction": 0.237,
+   "evidence_id": "EV-G70-EU-ST-13"
+  },
+  {
+   "attribute": "Easy to read and use instruments/ controls/ displays",
+   "category": "infotainment_digital",
+   "importance": 0.819,
+   "dissatisfaction": 0.27,
+   "evidence_id": "EV-G70-EU-ST-11"
+  },
+  {
+   "attribute": "Easy to use information and entertainment system including in-car apps",
+   "category": "infotainment_digital",
+   "importance": 0.799,
+   "dissatisfaction": 0.337,
+   "evidence_id": "EV-G70-EU-ST-14"
+  },
+  {
+   "attribute": "Interior storage for small items",
+   "category": "comfort_space",
+   "importance": 0.796,
+   "dissatisfaction": 0.347,
+   "evidence_id": "EV-G70-EU-ST-17"
+  },
+  {
+   "attribute": "Connected services",
+   "category": "infotainment_digital",
+   "importance": 0.786,
+   "dissatisfaction": 0.38,
+   "evidence_id": "EV-G70-EU-ST-36"
+  },
+  {
+   "attribute": "Fuel economy/ energy efficiency",
+   "category": "range_charging",
+   "importance": 0.768,
+   "dissatisfaction": 0.44,
+   "evidence_id": "EV-G70-EU-ST-20"
+  },
+  {
+   "attribute": "Luggage capacity",
+   "category": "comfort_space",
+   "importance": 0.741,
+   "dissatisfaction": 0.53,
+   "evidence_id": "EV-G70-EU-ST-29"
+  },
+  {
+   "attribute": "Sportiness",
+   "category": "driving_experience",
+   "importance": 0.697,
+   "dissatisfaction": 0.677,
+   "evidence_id": "EV-G70-EU-ST-22"
+  }
+ ]
+}

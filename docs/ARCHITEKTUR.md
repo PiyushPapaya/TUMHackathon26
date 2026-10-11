@@ -45,6 +45,7 @@ flowchart LR
 | Datenmodell | `src/backend/core/models.py` | Vertrag: Evidence, Signal, Requirement, AuditEvent | – |
 | Vertrag Welle 2 | `src/backend/core/model_parts.py` | Robustheit, Segment-Konflikt, Business, Datenabdeckung (alle Felder mit Default) | – |
 | Datensatz-Profil | `config/datasets.json` + `core/datasets.py` | Spalten- und Blattnamen der BMW-Dateien; neuer Datensatz = JSON ändern, kein Code | – |
+| Benchmarks | `src/backend/core/benchmarks.py`, `market_benchmarks.py` | KI-Qualität je Szenario (Quellen existieren, Kriterium mit Zahl, Stufe A/B, extern bestätigt) + Simulation: 200 Läufe mit ±20 % Gewicht, wie stabil bleibt die Top 5. Marktvergleich aus EPA/NHTSA-Caches (Reichweite, Verbrauch, Beschwerden) | nein |
 | Ansichten | `src/backend/core/views.py`, `portfolio.py`, `insights.py` | fertige Antworten pro Bildschirm: Übersicht, Score-Wasserfall, Was-wäre-wenn, Portfolio-Matrix, Markt-Vergleich, Chancen-Karte, Trendradar, „Was wir nicht wissen“ | nein |
 | Replay | `src/backend/core/replay.py` | spielt PM-Entscheidungen und Gewichte beim Start aus `audit.db` neu ab | nein |
 | NHTSA | `src/backend/evidence_external/nhtsa.py` | US-Behördenbeschwerden als zweite Kundenquelle + Wettbewerbs-Statistik, Cache in `data/external_cache/` | nein |
@@ -76,6 +77,7 @@ flowchart LR
 | Hülle | `src/components/shell/*` (`SiteHeader`, `MegaMenu`, `SiteFooter`, `ChatButton`) | Header mit Mega-Menü (Szenarien live aus `getScenarios`), Szenario im URL-Parameter `?scenario=`, Footer mit KI-Hinweis, Guide als Seitenleiste (`?embed=1`) | nein |
 | Cockpit | `src/frontend/app/cockpit/page.tsx`, `src/components/cockpit/*` | `useCockpit` (State + API, Logik unverändert), `RequirementsTable` mit FLIP-Animation bei Rangwechsel, `WeightControls`, `CockpitHero`, `DemoSteps` | nein |
 | Insights | `src/frontend/app/insights/page.tsx`, `src/components/insights/*` | Reiter: Matrix Evidenz × Annahme (Heute/Nachfolger), Chancen-Karte, Trends/Wetten, „Was wir nicht wissen“. Lesen nur Backend-Ansichten (`matrix`, `opportunities`, `trends`, `gaps`) | nein |
+| Benchmarks | `app/benchmarks/page.tsx`, `src/components/benchmarks/` | Tabelle KI-Qualität × Szenario (blau = Ziel erreicht, rot = darunter), Balken BMW gegen Wettbewerb | nein |
 | Portfolio + Evidenz | `app/portfolio/page.tsx`, `app/evidence/page.tsx` | Kategorie × Szenario, Markt-Vergleich, durchsuchbarer Beleg-Browser mit Filter und Seiten | nein |
 | Prompt-Linse (UI) | `src/components/cockpit/LensPanel.tsx`, `src/lib/insights.ts` | Frage in eigenen Worten → Gewichte + Top 5; „Apply“ schreibt `WEIGHTS_CHANGED` mit der Frage als Begründung | ja (nur Gewichte, im Backend) |
 | UI-Bausteine | `src/frontend/src/components/ui/*` | Button, Typography, HairlineCard, MStripe, Reveal, Icon, Logo statt kopierter Tailwind-Ketten | nein |

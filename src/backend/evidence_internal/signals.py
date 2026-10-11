@@ -19,8 +19,11 @@ from __future__ import annotations
 
 from collections import defaultdict
 
+from core.model_parts import StudyLink
 from core.models import Category, Evidence, Scenario, Signal, SignalKind, SourceType
 from evidence_internal.conflicts import link_conflicts
+from evidence_internal.opportunities import _dissatisfaction, _importance
+from evidence_internal.segments import signal_segments
 from evidence_internal.signals_llm import MAX_COMMENTS, refine_signals
 from evidence_internal.study_topics import study_category, study_vfc2
 from evidence_internal.taxonomy import category_for_vfc2, survey_area
@@ -176,8 +179,19 @@ def _build(scenario: Scenario, evidence: list[Evidence]) -> tuple[list[Signal], 
             evidence_ids=[*quotes, *study_ids],
             mention_count=max(d["mentions"], len(study_ids)),
             source_types=source_types,
+            segments=signal_segments(d.get("ids", []), by_id),
+            study_link=_study_link([by_id[i] for i in study_ids]),
         ))  # fmt: skip
     return signals, drafts
+
+
+def _study_link(studies: list[Evidence]) -> StudyLink | None:
+    if not studies:
+        return None
+    ev = max(studies, key=lambda e: _dissatisfaction(e) or 0)
+    dissatisfaction = _dissatisfaction(ev)
+    return StudyLink(attribute=ev.meta.get("attribute", ""), dissatisfaction=dissatisfaction,
+                     importance=_importance(ev, dissatisfaction) if dissatisfaction is not None else None)
 
 
 def signal_groups(scenario: Scenario, evidence: list[Evidence]) -> dict[str, list[str]]:

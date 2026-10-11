@@ -1,0 +1,208 @@
+[
+ {
+  "id": "SIG-G70-US-WEB-01",
+  "kind": "competitor_advantage",
+  "category": "comfort_space",
+  "title": "Mercedes-Benz S-Class: Air conditioning does not cool or push enough air",
+  "summary": "The 2025 Mercedes‑Benz S‑Class sedan’s EPA/trunk volume is about 13 cubic feet (reported trunk volume: 13 ft³). Major U.S. reviewers report the 2025 BMW 7‑Series (G70) trunk/cargo volume is substantially larger than the S‑Class at about 18–19 cubic feet (Car and Driver lists 19 ft³ and other sources list ~18–19 ft³). Edmunds lists the 2025 Mercedes‑Benz S‑Class rear legroom at 43.8 inches (showing the S‑Class provides very generous rear-seat legroom).",
+  "evidence_ids": [
+   "EV-G70-US-WEB-01",
+   "EV-G70-US-WEB-02",
+   "EV-G70-US-WEB-03"
+  ],
+  "mention_count": 3,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-WEB-02",
+  "kind": "competitor_advantage",
+  "category": "infotainment_digital",
+  "title": "Mercedes-Benz EQS: Infotainment system is too complicated",
+  "summary": "For the 2025–2026 US Mercedes‑Benz EQS, Mercedes fits the MBUX Hyperscreen: three active displays (12.3\" driver + 17.7\" center + 12.3\" passenger) under a single curved glass measuring over 55–56 inches across the dash. Mercedes has moved many formerly physical controls into the EQS central touchscreen and steering touch surfaces, leaving relatively few hard buttons on the dash or center stack. Multiple professional reviews and owner reports say MBUX and the Hyperscreen offer extensive functionality but have a steep learning curve and can hide commonly used functions several menu levels deep, which some users describe as 'tricky' or 'complex' to use.",
+  "evidence_ids": [
+   "EV-G70-US-WEB-08",
+   "EV-G70-US-WEB-09",
+   "EV-G70-US-WEB-10",
+   "EV-G70-US-WEB-11",
+   "EV-G70-US-WEB-02",
+   "EV-G70-US-WEB-12",
+   "EV-G70-US-WEB-14"
+  ],
+  "mention_count": 7,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-WEB-03",
+  "kind": "competitor_advantage",
+  "category": "infotainment_digital",
+  "title": "Audi A8: eSIM setup is a nightmare and unreliable",
+  "summary": "Audi's current MMI 'touch response' infotainment architecture (used on the A8) pairs a 12.3‑inch Audi Virtual Cockpit Plus instrument display with two center touchscreen panels — a 10.1‑inch upper screen for navigation/media and an 8.6‑inch lower screen for climate/comfort — and the platform (MIB 3) uses an Online Connectivity Unit (OCU) that includes an integrated eSIM and a built‑in Wi‑Fi hotspot option. Edmunds’ 2024/2025 coverage and aggregated owner feedback list a steep infotainment learning curve and electrical/software complaints among common owner criticisms for the A8 (noting a 'steep infotainment learning curve' and occasional electrical gremlins in owner reports). BMW’s G70 7 Series (the 2023‑onward 7 Series family) uses BMW’s Curved Display — a large, driver‑facing panel pairing a 12.3‑inch digital instrument cluster with a 14.9‑inch infotainment touchscreen — and runs BMW’s iDrive 8 (touchscreen + voice + controller/rotary input) interface with extensive rear‑seat touchscreen and entertainment options available.",
+  "evidence_ids": [
+   "EV-G70-US-WEB-15",
+   "EV-G70-US-WEB-17",
+   "EV-G70-US-WEB-18",
+   "EV-G70-US-WEB-19"
+  ],
+  "mention_count": 4,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-WEB-04",
+  "kind": "competitor_advantage",
+  "category": "infotainment_digital",
+  "title": "Lucid Air: Screen cluttered and hard to use while driving",
+  "summary": "The Lucid Air uses a 34‑inch curved “Glass Cockpit” display assembly that integrates the driver instrument cluster and the main infotainment area across the dash. Multiple professional reviews describe Lucid’s native infotainment as “menu‑heavy” with many functions buried in layers, and note that many users default to Apple CarPlay/Android Auto rather than the native UI because of that complexity. Consumer Reports’ Lucid Air road test criticizes having to adjust items such as the steering wheel and side mirrors through the infotainment touchscreen, calling that a prolonged driver distraction and a nuisance.",
+  "evidence_ids": [
+   "EV-G70-US-WEB-22",
+   "EV-G70-US-WEB-24",
+   "EV-G70-US-WEB-25",
+   "EV-G70-US-WEB-26",
+   "EV-G70-US-WEB-27"
+  ],
+  "mention_count": 5,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-WEB-05",
+  "kind": "competitor_advantage",
+  "category": "comfort_space",
+  "title": "Genesis G90: Seats are uncomfortable and hard to adjust",
+  "summary": "Major U.S. expert reviews describe the Genesis G90’s front and outboard rear seats as feature‑rich and generally ‘plush’—standard Nappa leather with heated, ventilated and massage functions and multi‑way powered adjustments—making it a comfort‑focused cabin in road tests of the 2024–2026 G90.  Genesis’ official specifications list trunk (cargo) volume for the G90 as about 12.0 cu ft for the base 3.5T and 10.6 cu ft for the E‑Supercharged/mild‑hybrid variant (U.S. spec sheet).",
+  "evidence_ids": [
+   "EV-G70-US-WEB-29",
+   "EV-G70-US-WEB-30"
+  ],
+  "mention_count": 2,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-WEB-06",
+  "kind": "competitor_advantage",
+  "category": "infotainment_digital",
+  "title": "Mercedes-Benz S-Class: Doesn't connect or connects inconsistently",
+  "summary": "Mercedes-Benz markets the 2026 S‑Class with a new MB.OS architecture and a standard MBUX Superscreen that combines a 14.4‑inch central display and a 12.3‑inch front passenger display, plus a 12.3‑inch driver display option (including an optional 3D instrument cluster). BMW offers Remote Software Upgrade (over‑the‑air software updates) specifically to deliver infotainment and operating‑system fixes and feature improvements (BMW lists multiple RSU release notes and encourages installing RSUs to address functional issues). Independent industry research (JD Power U.S. Multimedia Quality and Satisfaction Study, Sept 12, 2024) documents that multimedia/infotainment problems increased in prior years and that further optimization of Apple CarPlay and Android Auto remains a top industry priority — i.e., inconsistent phone‑projection connectivity is a recognized, cross‑OEM issue.",
+  "evidence_ids": [
+   "EV-G70-US-WEB-33",
+   "EV-G70-US-WEB-39",
+   "EV-G70-US-WEB-40"
+  ],
+  "mention_count": 3,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-WEB-07",
+  "kind": "competitor_advantage",
+  "category": "exterior",
+  "title": "Audi A8: Include a spare and better tire options",
+  "summary": "Car and Driver’s 2025 review describes the Audi A8’s exterior as “reserved and stately,” noting the A8 ‘‘flies too far under the radar’’ compared with rivals such as the BMW 7‑series (i.e., the A8’s styling is more understated in the US 2025 market). Audi’s own 2021 press release for the enhanced A8 describes the A8 exterior as ‘‘representative, confident, and athletic’’ with a sharpened front and rear design, new headlight/taillight signatures and wheel choices (Audi’s presentation positions the A8 as a more restrained, refined flagship rather than an overtly extroverted statement).",
+  "evidence_ids": [
+   "EV-G70-US-WEB-41",
+   "EV-G70-US-WEB-43"
+  ],
+  "mention_count": 2,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-WEB-08",
+  "kind": "trend",
+  "category": "range_charging",
+  "title": "Trend 2028-2031: range_charging",
+  "summary": "Network connector access: major U.S. charging networks and equipment vendors announced plans in 2023–2025 to add Tesla’s NACS connector to their portfolios (Electrify America, ChargePoint, EVgo and others), and most large OEMs announced NACS adoption for North America — which improves charging access for premium cars that switch to NACS or for networks that install NACS ports between 2025 and the late 2020s. (announcement example: Electrify America plan to add NACS plugs).",
+  "evidence_ids": [
+   "EV-G70-US-WEB-50"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-WEB-09",
+  "kind": "trend",
+  "category": "infotainment_digital",
+  "title": "Trend 2028-2031: infotainment_digital",
+  "summary": "Automakers have publicly reversed purely ‘buttonless’ designs (for example Mercedes-Benz has said it will restore essential tactile buttons), signalling that premium brands selling in the US will reintroduce tactile controls alongside large displays during the 2028–2031 timeframe. ",
+  "evidence_ids": [
+   "EV-G70-US-WEB-69"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-WEB-10",
+  "kind": "trend",
+  "category": "interior",
+  "title": "Trend 2028-2031: interior",
+  "summary": "Automotive strategy/consulting analyses (McKinsey) and industry‑design coverage report that electrification plus higher levels of automation enable ‘lounge‑like’ and multi‑use interiors (flexible seating arrangements, flat floors, modular furniture) — concepts that premium‑segment OEMs are prototyping and that analysts expect to influence production designs in the late‑2020s/early‑2030s (this is an industry inference supported by cited analyses and concept examples).",
+  "evidence_ids": [
+   "EV-G70-US-WEB-77"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-WEB-11",
+  "kind": "trend",
+  "category": "driver_assistance",
+  "title": "Trend 2028-2031: driver_assistance",
+  "summary": "McKinsey’s industry analysis projects strong growth of advanced ADAS and estimates that by 2030 roughly 12% of vehicles could be equipped with Level‑3/4 capabilities (while Level‑2+ will dominate broader market adoption), supporting the expectation that Level‑3/hands‑off features will be present but limited in market share by 2030.",
+  "evidence_ids": [
+   "EV-G70-US-WEB-86"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ }
+]

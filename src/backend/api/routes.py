@@ -12,7 +12,7 @@ from typing import Literal
 
 from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import JSONResponse, PlainTextResponse
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 from core.models import Actor, ActorType, AuditEvent, Requirement, Signal
 from core.store import Store
@@ -22,8 +22,9 @@ router = APIRouter(prefix="/api")
 
 
 class DecisionIn(BaseModel):
+    model_config = ConfigDict(str_strip_whitespace=True)
     action: Literal["approve", "reject", "edit", "challenge"]
-    actor: str = Field(examples=["pm.mueller"])
+    actor: str = Field(min_length=1, examples=["pm.mueller"])
     rationale: str = Field(min_length=3)  # Pflicht: jede Entscheidung braucht ein Warum
     changes: dict | None = None           # nur bei "edit"
     question: str | None = None           # nur bei "challenge"
@@ -35,8 +36,9 @@ class DecisionOut(BaseModel):
 
 
 class WeightsIn(BaseModel):
+    model_config = ConfigDict(str_strip_whitespace=True)
     weights: dict[str, float]
-    actor: str
+    actor: str = Field(min_length=1)
     rationale: str = Field(min_length=3)
 
 
@@ -84,11 +86,12 @@ def requirement_detail(req_id: str, request: Request) -> dict:
     except KeyError as err:
         raise _not_found(err) from err
     sigs = [state.signals[s] for s in req.signal_ids if s in state.signals]
-    ev_ids = {e for s in sigs for e in s.evidence_ids}
+    from core.evidence_context import challenge_context
+    _, evidence = challenge_context(state, req)
     return {
         "requirement": req,
         "signals": sigs,
-        "evidence": [state.evidence[e] for e in sorted(ev_ids) if e in state.evidence],
+        "evidence": evidence,
         "history": store.audit.events(requirement_id=req_id),
     }
 
@@ -106,8 +109,8 @@ def decide(req_id: str, body: DecisionIn, request: Request):
     ai_answer = None
     if body.action == "challenge":
         state, _ = store.find_requirement(req_id)
-        sigs = [state.signals[s] for s in req.signal_ids if s in state.signals]
-        evidence = [state.evidence[e] for s in sigs for e in s.evidence_ids if e in state.evidence]
+        from core.evidence_context import challenge_context
+        sigs, evidence = challenge_context(state, req)
         ai_answer = answer_challenge(req, body.question or body.rationale, sigs, evidence)
         store.audit.append("AI_RESPONDED", state.scenario.id, Actor(type=ActorType.AI, name="challenge-engine"),
                            "Antwort auf PM-Challenge mit Belegen und Gegenbelegen", ai_answer, requirement_id=req_id)
@@ -143,7 +146,7 @@ def _csv_safe(value: object) -> str:
 
 
 @router.get("/scenarios/{scenario_id}/export", response_class=PlainTextResponse)
-def export(scenario_id: str, request: Request, format: Literal["csv", "json"] = "csv"):
+def export(scenario_id: str, request: Request, format: Literal["csv", "json", "md"] = "csv"):
     """Die geforderte "strukturierte Anforderungsliste": CSV (Excel-tauglich) oder vollständiges JSON."""
     try:
         reqs = _store(request).ranked(scenario_id)
@@ -151,6 +154,9 @@ def export(scenario_id: str, request: Request, format: Literal["csv", "json"] = 
         raise _not_found(err) from err
     if format == "json":
         return JSONResponse([r.model_dump(mode="json") for r in reqs])
+    if format == "md":
+        from core.export import requirements_markdown
+        return requirements_markdown(_store(request).get(scenario_id))
     buf = io.StringIO()
     writer = csv.writer(buf, delimiter=";")
     writer.writerow(["id", "rank", "title", "description", "acceptance_criterion", "signals", "score",

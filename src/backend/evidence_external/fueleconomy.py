@@ -25,7 +25,8 @@ API = "https://www.fueleconomy.gov/ws/rest/vehicle"
 HEADERS = {"Accept": "application/json"}  # ohne diesen Header liefert die API XML
 
 
-def _cache_path(folder: Path, make: str, model: str, year: int) -> Path:
+def cache_path(folder: Path, make: str, model: str, year: int) -> Path:
+    """Dateiname im Cache; auch core/market_benchmarks.py liest darüber (ohne Netz)."""
     name = f"{make}_{model}_{year}.json"
     return folder / "".join(c if c.isalnum() or c in "._-" else "_" for c in name)
 
@@ -41,7 +42,7 @@ def _get(url: str) -> dict:
 def fetch_vehicle(make: str, model: str, year: int, cache_dir: Path | None = None) -> dict:
     """Fahrzeugdatensatz der EPA; leer, wenn unbekannt oder (Demo) nicht im Cache."""
     folder = cache_dir or CACHE_DIR
-    path = _cache_path(folder, make, model, year)
+    path = cache_path(folder, make, model, year)
     if path.exists():
         return json.loads(path.read_text(encoding="utf-8"))
     if os.getenv("DEMO_MODUS", "false").lower() == "true":

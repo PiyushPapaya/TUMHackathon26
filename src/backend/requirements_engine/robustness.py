@@ -13,7 +13,7 @@ import random
 
 from core.model_parts import Robustness
 from core.models import Requirement
-from requirements_engine.scoring import CONFIDENCE, DEFAULT_WEIGHTS
+from requirements_engine.scoring import CONFIDENCE, DEFAULT_WEIGHTS, effort_factor, normalize_weights
 
 RUNS = 500
 PERTURBATION = 0.3  # jedes Gewicht darf um bis zu ±30 % abweichen
@@ -31,11 +31,16 @@ def _ranks(rows: list[tuple[list[float], float]], weights: list[float]) -> list[
     return ranks
 
 
-def compute_robustness(requirements: list[Requirement], runs: int = RUNS, seed: int = SEED) -> dict[str, Robustness]:
+def compute_robustness(requirements: list[Requirement], runs: int = RUNS, seed: int = SEED,
+                       weights: dict[str, float] | None = None) -> dict[str, Robustness]:
     """{Anforderungs-ID: Robustheit}. Die Spanne enthält immer auch den unverschobenen Rang."""
     names = list(DEFAULT_WEIGHTS)
-    base_weights = [DEFAULT_WEIGHTS[n] for n in names]
-    rows = [([req.score_breakdown[n].value if n in req.score_breakdown else 0.0 for n in names],
+    if runs < 1:
+        raise ValueError("runs must be positive")
+    base = normalize_weights(weights or {})
+    base_weights = [base[n] for n in names]
+    rows = [([effort_factor(req.effort) if n == "effort_inverse" and weights is not None
+              else req.score_breakdown[n].value if n in req.score_breakdown else 0.0 for n in names],
              CONFIDENCE[req.evidence_level]) for req in requirements]
     best = _ranks(rows, base_weights)  # Startpunkt: die Rangliste mit den Standardgewichten
     worst = list(best)

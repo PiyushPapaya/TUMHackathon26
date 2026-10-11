@@ -24,6 +24,8 @@ def main(scenario: str = "G60-US", n: int = 50) -> Path:
     pairs = [(sid, eid) for sid, s in signals.items() for eid in s["evidence_ids"] if eid in evidence]
     out = ROOT / "data" / "eval" / f"{scenario}_sample.csv"
     out.parent.mkdir(parents=True, exist_ok=True)
+    if out.exists():
+        raise FileExistsError(f"{out} exists; existing human labels must not be overwritten.")
     with out.open("w", encoding="utf-8-sig", newline="") as f:  # utf-8-sig: Excel zeigt Umlaute richtig
         writer = csv.writer(f)
         writer.writerow(["signal_id", "signal_title", "evidence_id", "text", "passt (j/n)"])

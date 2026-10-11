@@ -1,0 +1,1765 @@
+[
+ {
+  "id": "SIG-G70-US-001",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Really like the all wheel drive and performance",
+  "summary": "Customers say the drivetrain feels powerful, smooth, and fun to drive. Many also praise the all wheel drive and the electric or hybrid efficiency, along with strong acceleration and handling.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0257",
+   "EV-G70-US-FB-G70-0199",
+   "EV-G70-US-FB-G70-0043",
+   "EV-G70-US-FB-G70-0289",
+   "EV-G70-US-FB-G70-0527"
+  ],
+  "mention_count": 260,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 151,
+    "BEVE": 83,
+    "PHEV": 26
+   },
+   "country": {
+    "US": 260
+   },
+   "source": {
+    "B": 212,
+    "A": 48
+   },
+   "feedback_type": {
+    "Likes": 260,
+    "Wants": 8,
+    "Difficult to Use": 8,
+    "Defect": 6
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-002",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Very smooth ride and excellent handling",
+  "summary": "Customers say the car delivers a very smooth, luxurious ride and excellent handling. They praise the comfortable, composed feel and confident cornering, often noting a refined and quiet driving experience.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0156",
+   "EV-G70-US-FB-G70-0208",
+   "EV-G70-US-FB-G70-0439",
+   "EV-G70-US-FB-G70-0517",
+   "EV-G70-US-FB-G70-0536"
+  ],
+  "mention_count": 208,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 130,
+    "BEVE": 58,
+    "PHEV": 20
+   },
+   "country": {
+    "US": 208
+   },
+   "source": {
+    "B": 155,
+    "A": 53
+   },
+   "feedback_type": {
+    "Likes": 208,
+    "Defect": 9,
+    "Difficult to Use": 7,
+    "Wants": 5
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-003",
+  "kind": "delight",
+  "category": "exterior",
+  "title": "Love the vehicle's design and styling",
+  "summary": "Customers consistently say they love how the car looks, calling it beautiful, luxurious, modern and classic. Many mention specific colors and packages that make it stand out and report getting attention and compliments from others.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0063",
+   "EV-G70-US-FB-G70-0462",
+   "EV-G70-US-FB-G70-0611",
+   "EV-G70-US-FB-G70-0654",
+   "EV-G70-US-FB-G70-1037"
+  ],
+  "mention_count": 157,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G70-US-023"
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 114,
+    "BEVE": 38,
+    "PHEV": 5
+   },
+   "country": {
+    "US": 157
+   },
+   "source": {
+    "B": 142,
+    "A": 15
+   },
+   "feedback_type": {
+    "Likes": 157,
+    "Wants": 5,
+    "Defect": 3,
+    "Difficult to Use": 2
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-004",
+  "kind": "delight",
+  "category": "interior",
+  "title": "Interior is stunningly beautiful and luxurious",
+  "summary": "Customers say the interior looks beautiful and feels luxurious. They mention high quality materials, tasteful crystal accents, refined modern design, and impressive in-car technology.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0028",
+   "EV-G70-US-FB-G70-0455",
+   "EV-G70-US-FB-G70-0561",
+   "EV-G70-US-FB-G70-0378",
+   "EV-G70-US-FB-G70-2105"
+  ],
+  "mention_count": 96,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G70-US-025"
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 71,
+    "BEVE": 20,
+    "PHEV": 5
+   },
+   "country": {
+    "US": 96
+   },
+   "source": {
+    "B": 87,
+    "A": 9
+   },
+   "feedback_type": {
+    "Likes": 96,
+    "Difficult to Use": 2,
+    "Wants": 1,
+    "Defect": 1
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-005",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Fantastic car to drive and super comfortable",
+  "summary": "Customers say the car is a joy to drive, combining sporty handling with ultra smooth, quiet luxury and very comfortable seating. They also praise the state of the art technology that enhances the driving experience and makes it feel modern and effortless.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0362",
+   "EV-G70-US-FB-G70-1565",
+   "EV-G70-US-FB-G70-3348",
+   "EV-G70-US-FB-G70-3368",
+   "EV-G70-US-FB-G70-1880"
+  ],
+  "mention_count": 75,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 50,
+    "BEVE": 22,
+    "PHEV": 3
+   },
+   "country": {
+    "US": 75
+   },
+   "source": {
+    "A": 71,
+    "B": 4
+   },
+   "feedback_type": {
+    "Likes": 75,
+    "Defect": 11,
+    "Wants": 10,
+    "Difficult to Use": 9
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-006",
+  "kind": "delight",
+  "category": "comfort_space",
+  "title": "Interior is very comfortable and luxurious",
+  "summary": "Customers consistently say the cabin is extremely comfortable and feels very luxurious. Comfort is often called a standout attribute, with drivers praising the relaxed ride, rear-seat comfort, and suitability for long trips.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-2068",
+   "EV-G70-US-FB-G70-1042",
+   "EV-G70-US-FB-G70-3413",
+   "EV-G70-US-FB-G70-2247",
+   "EV-G70-US-FB-G70-0818"
+  ],
+  "mention_count": 69,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G70-US-018"
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 44,
+    "BEVE": 22,
+    "PHEV": 3
+   },
+   "country": {
+    "US": 69
+   },
+   "source": {
+    "B": 65,
+    "A": 4
+   },
+   "feedback_type": {
+    "Likes": 69,
+    "Difficult to Use": 3,
+    "Defect": 1
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-007",
+  "kind": "delight",
+  "category": "comfort_space",
+  "title": "Most comfortable seats I have ever experienced",
+  "summary": "Customers say the seats are extremely comfortable and often the most comfortable they have ever sat in. They note improvements over prior models and competitors, and praise the rear seats for long trips and a very luxurious feel.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0155",
+   "EV-G70-US-FB-G70-0254",
+   "EV-G70-US-FB-G70-1235",
+   "EV-G70-US-FB-G70-1623",
+   "EV-G70-US-FB-G70-1799"
+  ],
+  "mention_count": 61,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G70-US-018"
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 39,
+    "BEVE": 12,
+    "PHEV": 10
+   },
+   "country": {
+    "US": 61
+   },
+   "source": {
+    "B": 45,
+    "A": 16
+   },
+   "feedback_type": {
+    "Likes": 61,
+    "Difficult to Use": 5,
+    "Defect": 5,
+    "Wants": 4
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-008",
+  "kind": "delight",
+  "category": "comfort_space",
+  "title": "Interior is very spacious and roomy",
+  "summary": "Customers consistently say the cabin feels very roomy and comfortable. They praise the generous legroom and space for passengers, noting the back seat impresses guests and tall riders feel well accommodated.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0015",
+   "EV-G70-US-FB-G70-0884",
+   "EV-G70-US-FB-G70-1328",
+   "EV-G70-US-FB-G70-0426",
+   "EV-G70-US-FB-G70-3858"
+  ],
+  "mention_count": 37,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 26,
+    "BEVE": 6,
+    "PHEV": 5
+   },
+   "country": {
+    "US": 37
+   },
+   "source": {
+    "B": 35,
+    "A": 2
+   },
+   "feedback_type": {
+    "Likes": 37,
+    "Wants": 1,
+    "Defect": 1
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-009",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Air conditioning does not cool or push enough air",
+  "summary": "Customers report the air conditioning is weak and slow to cool the cabin, even when max settings are used. They say vents do not deliver enough airflow, rear passengers get less cooling, and some areas of the cabin receive little or no air. Study: Overall performance of climate control system: 18 % dissatisfied, 39 % top-2 (US study 2025); Air conditioner performance: 21 % dissatisfied, 35 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0060",
+   "EV-G70-US-FB-G70-0470",
+   "EV-G70-US-FB-G70-0965",
+   "EV-G70-US-FB-G70-1551",
+   "EV-G70-US-FB-G70-1790",
+   "EV-G70-US-ST-45",
+   "EV-G70-US-ST-47"
+  ],
+  "mention_count": 35,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 30,
+    "BEVE": 5
+   },
+   "country": {
+    "US": 35
+   },
+   "source": {
+    "B": 22,
+    "A": 8,
+    "C": 5
+   },
+   "feedback_type": {
+    "Difficult to Use": 33,
+    "Defect": 6,
+    "Likes": 4,
+    "Wants": 3
+   }
+  },
+  "study_link": {
+   "attribute": "Air conditioner performance",
+   "importance": 0.35,
+   "dissatisfaction": 0.21
+  }
+ },
+ {
+  "id": "SIG-G70-US-010",
+  "kind": "delight",
+  "category": "interior",
+  "title": "Really enjoy the ambient lighting",
+  "summary": "Customers say the ambient lighting makes the cabin feel special and enhances the night experience. They praise the roof LEDs, the jewelry-style crystal welcome lights, and the color-changing options that are fun to switch.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0874",
+   "EV-G70-US-FB-G70-0435",
+   "EV-G70-US-FB-G70-3875",
+   "EV-G70-US-FB-G70-2727",
+   "EV-G70-US-FB-G70-2986"
+  ],
+  "mention_count": 33,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 22,
+    "BEVE": 6,
+    "PHEV": 5
+   },
+   "country": {
+    "US": 33
+   },
+   "source": {
+    "B": 32,
+    "A": 1
+   },
+   "feedback_type": {
+    "Likes": 33,
+    "Difficult to Use": 1,
+    "Wants": 1,
+    "Defect": 1
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-011",
+  "kind": "delight",
+  "category": "comfort_space",
+  "title": "I really love the automatic doors",
+  "summary": "Customers say the automatic doors are convenient and they really enjoy using them. They like that doors open and close with a button or by pressing the brake, appreciate the soft close, and find it helpful when hands are full or when helping children.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0096",
+   "EV-G70-US-FB-G70-2281",
+   "EV-G70-US-FB-G70-2548",
+   "EV-G70-US-FB-G70-0974",
+   "EV-G70-US-FB-G70-3945"
+  ],
+  "mention_count": 33,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 26,
+    "BEVE": 5,
+    "PHEV": 2
+   },
+   "country": {
+    "US": 33
+   },
+   "source": {
+    "B": 33
+   },
+   "feedback_type": {
+    "Likes": 33
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-012",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Infotainment system is too complicated",
+  "summary": "Customers say the operating system is hard to learn and not intuitive. They report buried menus, too many steps and icons, and that reliance on the touchscreen makes controls distracting or harder to use, with several customers wanting physical buttons, easier shortcuts, or better app organization. Study: Menu structure of infotainment system: 21 % dissatisfied, 32 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-2465",
+   "EV-G70-US-FB-G70-1470",
+   "EV-G70-US-FB-G70-2616",
+   "EV-G70-US-FB-G70-2826",
+   "EV-G70-US-FB-G70-3027",
+   "EV-G70-US-ST-96"
+  ],
+  "mention_count": 33,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": [
+   "SIG-G70-US-017",
+   "SIG-G70-US-019"
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 27,
+    "BEVE": 6
+   },
+   "country": {
+    "US": 33
+   },
+   "source": {
+    "B": 33
+   },
+   "feedback_type": {
+    "Difficult to Use": 33
+   }
+  },
+  "study_link": {
+   "attribute": "Menu structure of infotainment system",
+   "importance": 0.32,
+   "dissatisfaction": 0.21
+  }
+ },
+ {
+  "id": "SIG-G70-US-013",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "eSIM setup is a nightmare and unreliable",
+  "summary": "Customers cannot get the personal eSIM to work reliably. Setup is confusing and time consuming, the connection often drops or never connects, and carrier compatibility or setup steps leave owners frustrated and unable to use vehicle services.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0987",
+   "EV-G70-US-FB-G70-1910",
+   "EV-G70-US-FB-G70-2544",
+   "EV-G70-US-FB-G70-2971",
+   "EV-G70-US-FB-G70-1556"
+  ],
+  "mention_count": 31,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "BEVE": 16,
+    "ICE": 13,
+    "PHEV": 2
+   },
+   "country": {
+    "US": 31
+   },
+   "source": {
+    "B": 23,
+    "A": 8
+   },
+   "feedback_type": {
+    "Difficult to Use": 28,
+    "Defect": 7,
+    "Likes": 3,
+    "Wants": 3
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-014",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Ride is incredibly smooth and comfortable",
+  "summary": "Customers say the suspension and cushioning make the ride extremely smooth and comfortable. They describe a floating, luxurious feel, excellent bump absorption, and strong comfort on long trips.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-1010",
+   "EV-G70-US-FB-G70-1405",
+   "EV-G70-US-FB-G70-3529",
+   "EV-G70-US-FB-G70-2558",
+   "EV-G70-US-FB-G70-2995"
+  ],
+  "mention_count": 30,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 19,
+    "BEVE": 7,
+    "PHEV": 4
+   },
+   "country": {
+    "US": 30
+   },
+   "source": {
+    "B": 29,
+    "A": 1
+   },
+   "feedback_type": {
+    "Likes": 30
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-015",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Enjoy the various driving modes",
+  "summary": "Customers love switching among driving modes and enjoy experimenting with My Modes. They say the modes noticeably change the car’s feel and positioning, delivering everything from sporty, fun performance to smooth, comfortable driving.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-1104",
+   "EV-G70-US-FB-G70-1117",
+   "EV-G70-US-FB-G70-1114",
+   "EV-G70-US-FB-G70-3921",
+   "EV-G70-US-FB-G70-0861"
+  ],
+  "mention_count": 28,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G70-US-031"
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 13,
+    "BEVE": 11,
+    "PHEV": 4
+   },
+   "country": {
+    "US": 28
+   },
+   "source": {
+    "B": 22,
+    "A": 6
+   },
+   "feedback_type": {
+    "Likes": 28,
+    "Wants": 1,
+    "Difficult to Use": 1
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-016",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Screen cluttered and hard to use while driving",
+  "summary": "Customers say the touchscreen is cluttered, confusing, and hard to operate while driving. They report unresponsive or small buttons, too many icons, setup and pairing problems, and glitches that make common tasks slow and unsafe.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-1329",
+   "EV-G70-US-FB-G70-1961",
+   "EV-G70-US-FB-G70-3213",
+   "EV-G70-US-FB-G70-3554",
+   "EV-G70-US-FB-G70-2715"
+  ],
+  "mention_count": 28,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G70-US-019",
+   "SIG-G70-US-017"
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 14,
+    "BEVE": 9,
+    "PHEV": 5
+   },
+   "country": {
+    "US": 28
+   },
+   "source": {
+    "A": 14,
+    "C": 8,
+    "B": 6
+   },
+   "feedback_type": {
+    "Difficult to Use": 28,
+    "Likes": 9,
+    "Wants": 9,
+    "Defect": 6
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-017",
+  "kind": "delight",
+  "category": "infotainment_digital",
+  "title": "All the technology is phenomenal",
+  "summary": "Customers praise the car's technology as advanced, easy to use, and a standout part of the ownership experience. They appreciate the wide range of features, frequent updates, and consistent, reliable operation.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0131",
+   "EV-G70-US-FB-G70-0318",
+   "EV-G70-US-FB-G70-1645",
+   "EV-G70-US-FB-G70-2454",
+   "EV-G70-US-FB-G70-1295"
+  ],
+  "mention_count": 26,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G70-US-012",
+   "SIG-G70-US-016"
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 13,
+    "BEVE": 10,
+    "PHEV": 3
+   },
+   "country": {
+    "US": 26
+   },
+   "source": {
+    "B": 14,
+    "A": 12
+   },
+   "feedback_type": {
+    "Likes": 26,
+    "Defect": 4,
+    "Wants": 3,
+    "Difficult to Use": 2
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-018",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Seats are uncomfortable and hard to adjust",
+  "summary": "Customers say the seats are uncomfortable and difficult to adjust because controls are buried in the central screen or require very precise digital input. They report limited seat travel and lumbar support, headrest movement issues, and delicate or overly perforated light upholstery that soils or scuffs easily.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-1499",
+   "EV-G70-US-FB-G70-3721",
+   "EV-G70-US-FB-G70-1424",
+   "EV-G70-US-FB-G70-3440",
+   "EV-G70-US-FB-G70-1577"
+  ],
+  "mention_count": 26,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G70-US-007",
+   "SIG-G70-US-006"
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 17,
+    "BEVE": 7,
+    "PHEV": 2
+   },
+   "country": {
+    "US": 26
+   },
+   "source": {
+    "A": 14,
+    "B": 7,
+    "C": 5
+   },
+   "feedback_type": {
+    "Difficult to Use": 23,
+    "Defect": 12,
+    "Wants": 7,
+    "Likes": 6
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-019",
+  "kind": "delight",
+  "category": "infotainment_digital",
+  "title": "Love the big sleek touch screens",
+  "summary": "Customers say the touch screens make the interior feel luxurious and look very sleek. They like the large, curved displays, responsive touch, impressive graphics, and the rear-seat screens that let back passengers control options themselves.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0087",
+   "EV-G70-US-FB-G70-0755",
+   "EV-G70-US-FB-G70-1718",
+   "EV-G70-US-FB-G70-1784",
+   "EV-G70-US-FB-G70-3005"
+  ],
+  "mention_count": 26,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G70-US-016",
+   "SIG-G70-US-012"
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 21,
+    "BEVE": 5
+   },
+   "country": {
+    "US": 26
+   },
+   "source": {
+    "B": 23,
+    "A": 3
+   },
+   "feedback_type": {
+    "Likes": 26,
+    "Defect": 1,
+    "Difficult to Use": 1
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-020",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Doesn't connect or connects inconsistently",
+  "summary": "Customers say the My BMW app often fails to stay connected to their vehicle, drops vehicles from the app, or prevents remote functions like unlocking and starting. They also report login and setup problems, confusing connection indicators, and incorrect or missing vehicle information. Study: Vehicle's Mobile App: 10 % dissatisfied, 39 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-2220",
+   "EV-G70-US-FB-G70-0238",
+   "EV-G70-US-FB-G70-2858",
+   "EV-G70-US-FB-G70-3478",
+   "EV-G70-US-FB-G70-0975",
+   "EV-G70-US-ST-99"
+  ],
+  "mention_count": 25,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 14,
+    "BEVE": 8,
+    "PHEV": 3
+   },
+   "country": {
+    "US": 25
+   },
+   "source": {
+    "C": 13,
+    "B": 10,
+    "A": 2
+   },
+   "feedback_type": {
+    "Difficult to Use": 25,
+    "Defect": 1
+   }
+  },
+  "study_link": {
+   "attribute": "Vehicle's Mobile App",
+   "importance": 0.39,
+   "dissatisfaction": 0.1
+  }
+ },
+ {
+  "id": "SIG-G70-US-021",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Apple CarPlay connection is unreliable and glitchy",
+  "summary": "Customers report Apple CarPlay frequently disconnects, crashes, or cuts out during use and can fail to reconnect automatically after phone changes. They also describe audio or Siri voice recognition problems and confusion when multiple phones are present. Study: Mirroring of smartphone content on vehicle display: 11 % dissatisfied, 33 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0186",
+   "EV-G70-US-FB-G70-2387",
+   "EV-G70-US-FB-G70-2960",
+   "EV-G70-US-FB-G70-0448",
+   "EV-G70-US-FB-G70-1401",
+   "EV-G70-US-ST-90"
+  ],
+  "mention_count": 18,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 12,
+    "BEVE": 6
+   },
+   "country": {
+    "US": 18
+   },
+   "source": {
+    "B": 11,
+    "C": 6,
+    "A": 1
+   },
+   "feedback_type": {
+    "Difficult to Use": 17,
+    "Defect": 1,
+    "Wants": 1,
+    "Likes": 1
+   }
+  },
+  "study_link": {
+   "attribute": "Mirroring of smartphone content on vehicle display",
+   "importance": 0.33,
+   "dissatisfaction": 0.11
+  }
+ },
+ {
+  "id": "SIG-G70-US-022",
+  "kind": "unmet_need",
+  "category": "exterior",
+  "title": "Include a spare and better tire options",
+  "summary": "Customers want the car to come with a spare tire or at least a donut, and they want more practical factory tire choices like all-season or runflat options. Some also report fitment and lug pattern issues that prevent reusing wheels, and concerns about rapid tire wear or poor wet/snow performance.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-2334",
+   "EV-G70-US-FB-G70-2428",
+   "EV-G70-US-FB-G70-3495",
+   "EV-G70-US-FB-G70-1084",
+   "EV-G70-US-FB-G70-0397"
+  ],
+  "mention_count": 18,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 11,
+    "BEVE": 5,
+    "PHEV": 2
+   },
+   "country": {
+    "US": 18
+   },
+   "source": {
+    "B": 12,
+    "A": 6
+   },
+   "feedback_type": {
+    "Wants": 18,
+    "Defect": 5,
+    "Difficult to Use": 3,
+    "Likes": 3
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-023",
+  "kind": "unmet_need",
+  "category": "exterior",
+  "title": "Prefer sleeker styling, less aggressive look",
+  "summary": "Customers feel the exterior is too muscular or harsh and would prefer a sleeker, less aggressive appearance. They also want simpler or different trim and color choices and practical details like a proper front license plate mounting point.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-1201",
+   "EV-G70-US-FB-G70-0879",
+   "EV-G70-US-FB-G70-2192",
+   "EV-G70-US-FB-G70-2198",
+   "EV-G70-US-FB-G70-3565"
+  ],
+  "mention_count": 17,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G70-US-003"
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 11,
+    "BEVE": 4,
+    "PHEV": 2
+   },
+   "country": {
+    "US": 17
+   },
+   "source": {
+    "B": 17
+   },
+   "feedback_type": {
+    "Wants": 17
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-024",
+  "kind": "complaint",
+  "category": "interior",
+  "title": "Dashboard glare and missing storage",
+  "summary": "The reflective glass and crystal‑style trim on the dash and center controls throws sunlight and ambient or accent lighting back into drivers' eyes and can be distracting or blinding. Some customers also miss the small compartment left of the steering wheel for sunglasses, change and other small items, and find the dash controls and tech overwhelming or hard to operate. Study: Instrument panel (IP): 17 % dissatisfied, 37 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-3252",
+   "EV-G70-US-FB-G70-0261",
+   "EV-G70-US-FB-G70-2912",
+   "EV-G70-US-FB-G70-2472",
+   "EV-G70-US-FB-G70-1185",
+   "EV-G70-US-ST-39"
+  ],
+  "mention_count": 15,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 10,
+    "BEVE": 4,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 15
+   },
+   "source": {
+    "C": 6,
+    "A": 5,
+    "B": 4
+   },
+   "feedback_type": {
+    "Difficult to Use": 14,
+    "Defect": 5,
+    "Wants": 2,
+    "Likes": 1
+   }
+  },
+  "study_link": {
+   "attribute": "Instrument panel (IP)",
+   "importance": 0.37,
+   "dissatisfaction": 0.17
+  }
+ },
+ {
+  "id": "SIG-G70-US-025",
+  "kind": "unmet_need",
+  "category": "interior",
+  "title": "Crystal controls create glare and feel cheap",
+  "summary": "Customers say the crystal, clear plastic, and glossy surfaces in the interior cause distracting glare, show fingerprints and dust, and come across as cheap. They also report touch‑sensitive and faintly lit controls are hard to find and use without looking, and prefer more substantial, tactile materials like metal or wood.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0224",
+   "EV-G70-US-FB-G70-0458",
+   "EV-G70-US-FB-G70-0522",
+   "EV-G70-US-FB-G70-3299",
+   "EV-G70-US-FB-G70-3423"
+  ],
+  "mention_count": 14,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G70-US-004"
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 9,
+    "BEVE": 4,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 14
+   },
+   "source": {
+    "B": 12,
+    "A": 2
+   },
+   "feedback_type": {
+    "Wants": 14,
+    "Difficult to Use": 1,
+    "Defect": 1
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-026",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Navigation sends me to wrong address or location",
+  "summary": "The navigation gives incorrect or outdated locations and can send me to the wrong place, often confusing nearby addresses with similar names. The system is hard to use because menus and voice guidance are difficult to control, search results do not show address details until selected, and the displayed vehicle location can be wrong after parking. Study: If applicable: Navigation system: 13 % dissatisfied, 39 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-2690",
+   "EV-G70-US-FB-G70-3591",
+   "EV-G70-US-FB-G70-1481",
+   "EV-G70-US-FB-G70-3414",
+   "EV-G70-US-FB-G70-3923",
+   "EV-G70-US-ST-87"
+  ],
+  "mention_count": 14,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "BEVE": 8,
+    "ICE": 5,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 14
+   },
+   "source": {
+    "C": 5,
+    "A": 5,
+    "B": 4
+   },
+   "feedback_type": {
+    "Difficult to Use": 13,
+    "Wants": 4,
+    "Likes": 2,
+    "Defect": 2
+   }
+  },
+  "study_link": {
+   "attribute": "If applicable: Navigation system",
+   "importance": 0.39,
+   "dissatisfaction": 0.13
+  }
+ },
+ {
+  "id": "SIG-G70-US-027",
+  "kind": "unmet_need",
+  "category": "exterior",
+  "title": "Wish the moonroof would open",
+  "summary": "Customers are disappointed the panoramic glass roof does not open and want a sunroof or moonroof that can open for ventilation. Some also want smarter controls like automatic open or close based on location.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0841",
+   "EV-G70-US-FB-G70-1457",
+   "EV-G70-US-FB-G70-2699",
+   "EV-G70-US-FB-G70-3527",
+   "EV-G70-US-FB-G70-3821"
+  ],
+  "mention_count": 14,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 8,
+    "BEVE": 5,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 14
+   },
+   "source": {
+    "B": 9,
+    "A": 5
+   },
+   "feedback_type": {
+    "Wants": 14,
+    "Difficult to Use": 4,
+    "Defect": 4,
+    "Likes": 2
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-028",
+  "kind": "unmet_need",
+  "category": "driving_experience",
+  "title": "Let me permanently disable auto start stop",
+  "summary": "Customers want a way to keep the Automatic Engine Start-Stop turned off all the time or a dedicated physical button to disable it. They report the quick control was removed so they have to re-disable it each drive or use workarounds like Sport Mode.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-2608",
+   "EV-G70-US-FB-G70-3389",
+   "EV-G70-US-FB-G70-2177",
+   "EV-G70-US-FB-G70-1331",
+   "EV-G70-US-FB-G70-1358"
+  ],
+  "mention_count": 13,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 13
+   },
+   "country": {
+    "US": 13
+   },
+   "source": {
+    "B": 12,
+    "A": 1
+   },
+   "feedback_type": {
+    "Wants": 13,
+    "Likes": 1,
+    "Difficult to Use": 1
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-029",
+  "kind": "unmet_need",
+  "category": "range_charging",
+  "title": "Need much longer electric range",
+  "summary": "Customers say the car does not go far enough on electric power and they want a noticeably longer driving range. They ask for a bigger battery or more usable miles so they can charge less often, avoid being stranded, and match the longer range they see in other vehicles.",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-1906",
+   "EV-G70-US-FB-G70-2047",
+   "EV-G70-US-FB-G70-2961",
+   "EV-G70-US-FB-G70-3267",
+   "EV-G70-US-FB-G70-1091"
+  ],
+  "mention_count": 13,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "BEVE": 11,
+    "PHEV": 2
+   },
+   "country": {
+    "US": 13
+   },
+   "source": {
+    "B": 9,
+    "A": 4
+   },
+   "feedback_type": {
+    "Wants": 13,
+    "Difficult to Use": 3,
+    "Likes": 3,
+    "Defect": 2
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-030",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Wi-Fi keeps dropping and won't reliably connect",
+  "summary": "The built-in Wi-Fi frequently drops or fails to connect, causing phones, watches, and CarPlay to lose or not establish a connection. Customers also report slow or invisible hotspot discovery and confusion about hotspot trial availability even when the eSIM is set up. Study: WiFi hotspot in vehicle: 20 % dissatisfied, 28 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-1480",
+   "EV-G70-US-FB-G70-1720",
+   "EV-G70-US-FB-G70-3169",
+   "EV-G70-US-FB-G70-0729",
+   "EV-G70-US-FB-G70-2188",
+   "EV-G70-US-ST-89"
+  ],
+  "mention_count": 13,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 8,
+    "BEVE": 4,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 13
+   },
+   "source": {
+    "C": 10,
+    "B": 2,
+    "A": 1
+   },
+   "feedback_type": {
+    "Difficult to Use": 12,
+    "Defect": 1
+   }
+  },
+  "study_link": {
+   "attribute": "WiFi hotspot in vehicle",
+   "importance": 0.28,
+   "dissatisfaction": 0.2
+  }
+ },
+ {
+  "id": "SIG-G70-US-031",
+  "kind": "unmet_need",
+  "category": "driving_experience",
+  "title": "My Modes / driving experience: unmet_need",
+  "summary": "11 customer comments about 'My Modes / driving experience' (unmet need).",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0184",
+   "EV-G70-US-FB-G70-0690",
+   "EV-G70-US-FB-G70-2092",
+   "EV-G70-US-FB-G70-2372",
+   "EV-G70-US-FB-G70-3119",
+   "EV-G70-US-FB-G70-3799",
+   "EV-G70-US-FB-G70-0924",
+   "EV-G70-US-FB-G70-1148"
+  ],
+  "mention_count": 11,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [
+   "SIG-G70-US-015"
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 6,
+    "BEVE": 4,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 11
+   },
+   "source": {
+    "B": 7,
+    "A": 4
+   },
+   "feedback_type": {
+    "Wants": 11,
+    "Defect": 3,
+    "Likes": 3,
+    "Difficult to Use": 2
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-032",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Manage / pair mobile device (Bluetooth): complaint",
+  "summary": "10 customer comments about 'Manage / pair mobile device (Bluetooth)' (complaint). Study: Bluetooth/ smartphone pairing: 17 % dissatisfied, 46 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0460",
+   "EV-G70-US-FB-G70-1444",
+   "EV-G70-US-FB-G70-2221",
+   "EV-G70-US-FB-G70-2541",
+   "EV-G70-US-FB-G70-2719",
+   "EV-G70-US-FB-G70-1559",
+   "EV-G70-US-FB-G70-1759",
+   "EV-G70-US-FB-G70-2841",
+   "EV-G70-US-ST-88"
+  ],
+  "mention_count": 10,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 7,
+    "BEVE": 3
+   },
+   "country": {
+    "US": 10
+   },
+   "source": {
+    "B": 6,
+    "C": 3,
+    "A": 1
+   },
+   "feedback_type": {
+    "Difficult to Use": 9,
+    "Defect": 1,
+    "Likes": 1
+   }
+  },
+  "study_link": {
+   "attribute": "Bluetooth/ smartphone pairing",
+   "importance": 0.46,
+   "dissatisfaction": 0.17
+  }
+ },
+ {
+  "id": "SIG-G70-US-033",
+  "kind": "unmet_need",
+  "category": "comfort_space",
+  "title": "Door, open / close: unmet_need",
+  "summary": "9 customer comments about 'Door, open / close' (unmet need).",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0098",
+   "EV-G70-US-FB-G70-0415",
+   "EV-G70-US-FB-G70-1701",
+   "EV-G70-US-FB-G70-1930",
+   "EV-G70-US-FB-G70-2443",
+   "EV-G70-US-FB-G70-3002",
+   "EV-G70-US-FB-G70-3880",
+   "EV-G70-US-FB-G70-2446"
+  ],
+  "mention_count": 9,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 7,
+    "BEVE": 2
+   },
+   "country": {
+    "US": 9
+   },
+   "source": {
+    "B": 8,
+    "A": 1
+   },
+   "feedback_type": {
+    "Wants": 9,
+    "Likes": 1,
+    "Difficult to Use": 1
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-034",
+  "kind": "unmet_need",
+  "category": "comfort_space",
+  "title": "Seat massage: unmet_need",
+  "summary": "9 customer comments about 'Seat massage' (unmet need).",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0693",
+   "EV-G70-US-FB-G70-1056",
+   "EV-G70-US-FB-G70-1131",
+   "EV-G70-US-FB-G70-1817",
+   "EV-G70-US-FB-G70-2249",
+   "EV-G70-US-FB-G70-2554",
+   "EV-G70-US-FB-G70-1970",
+   "EV-G70-US-FB-G70-1978"
+  ],
+  "mention_count": 9,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 8,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 9
+   },
+   "source": {
+    "B": 8,
+    "A": 1
+   },
+   "feedback_type": {
+    "Wants": 9,
+    "Difficult to Use": 1,
+    "Likes": 1,
+    "Defect": 1
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-035",
+  "kind": "unmet_need",
+  "category": "comfort_space",
+  "title": "Seating, ventilate / heat: unmet_need",
+  "summary": "8 customer comments about 'Seating, ventilate / heat' (unmet need).",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0440",
+   "EV-G70-US-FB-G70-1253",
+   "EV-G70-US-FB-G70-2137",
+   "EV-G70-US-FB-G70-2964",
+   "EV-G70-US-FB-G70-3352",
+   "EV-G70-US-FB-G70-3415",
+   "EV-G70-US-FB-G70-0640",
+   "EV-G70-US-FB-G70-2898"
+  ],
+  "mention_count": 8,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 6,
+    "BEVE": 2
+   },
+   "country": {
+    "US": 8
+   },
+   "source": {
+    "B": 5,
+    "A": 3
+   },
+   "feedback_type": {
+    "Wants": 8,
+    "Defect": 3,
+    "Likes": 2,
+    "Difficult to Use": 1
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-036",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Head-Up Display: complaint",
+  "summary": "7 customer comments about 'Head-Up Display' (complaint). Study: Head-up Display: 11 % dissatisfied, 52 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-3261",
+   "EV-G70-US-FB-G70-3269",
+   "EV-G70-US-FB-G70-3846",
+   "EV-G70-US-FB-G70-3956",
+   "EV-G70-US-FB-G70-3998",
+   "EV-G70-US-FB-G70-0114",
+   "EV-G70-US-ST-94"
+  ],
+  "mention_count": 7,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 6,
+    "BEVE": 1
+   },
+   "country": {
+    "US": 7
+   },
+   "source": {
+    "B": 4,
+    "C": 2,
+    "A": 1
+   },
+   "feedback_type": {
+    "Difficult to Use": 7,
+    "Wants": 1,
+    "Defect": 1
+   }
+  },
+  "study_link": {
+   "attribute": "Head-up Display",
+   "importance": 0.52,
+   "dissatisfaction": 0.11
+  }
+ },
+ {
+  "id": "SIG-G70-US-037",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Air conditioning control panel: complaint",
+  "summary": "6 customer comments about 'Air conditioning control panel' (complaint). Study: Operation of heater/ AC controls: 20 % dissatisfied, 32 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0020",
+   "EV-G70-US-FB-G70-0283",
+   "EV-G70-US-FB-G70-0578",
+   "EV-G70-US-FB-G70-1702",
+   "EV-G70-US-FB-G70-3247",
+   "EV-G70-US-ST-48"
+  ],
+  "mention_count": 6,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 3,
+    "BEVE": 3
+   },
+   "country": {
+    "US": 6
+   },
+   "source": {
+    "C": 6
+   },
+   "feedback_type": {
+    "Difficult to Use": 5,
+    "Defect": 1
+   }
+  },
+  "study_link": {
+   "attribute": "Operation of heater/ AC controls",
+   "importance": 0.32,
+   "dissatisfaction": 0.2
+  }
+ },
+ {
+  "id": "SIG-G70-US-038",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Mobile device, wireless charging: complaint",
+  "summary": "6 customer comments about 'Mobile device, wireless charging' (complaint). Study: Phone charging: 18 % dissatisfied, 38 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0006",
+   "EV-G70-US-FB-G70-1284",
+   "EV-G70-US-FB-G70-2803",
+   "EV-G70-US-FB-G70-3597",
+   "EV-G70-US-FB-G70-3887",
+   "EV-G70-US-ST-92"
+  ],
+  "mention_count": 6,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 3,
+    "BEVE": 3
+   },
+   "country": {
+    "US": 6
+   },
+   "source": {
+    "B": 3,
+    "C": 3
+   },
+   "feedback_type": {
+    "Difficult to Use": 5,
+    "Defect": 1
+   }
+  },
+  "study_link": {
+   "attribute": "Phone charging",
+   "importance": 0.39,
+   "dissatisfaction": 0.18
+  }
+ },
+ {
+  "id": "SIG-G70-US-039",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Voice control / speech recognition: complaint",
+  "summary": "5 customer comments about 'Voice control / speech recognition' (complaint). Study: Performance of voice recognition: 18 % dissatisfied, 36 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-FB-G70-0438",
+   "EV-G70-US-FB-G70-0795",
+   "EV-G70-US-FB-G70-1251",
+   "EV-G70-US-FB-G70-2905",
+   "EV-G70-US-ST-98"
+  ],
+  "mention_count": 5,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "BEVE": 3,
+    "ICE": 2
+   },
+   "country": {
+    "US": 5
+   },
+   "source": {
+    "C": 5
+   },
+   "feedback_type": {
+    "Difficult to Use": 5
+   }
+  },
+  "study_link": {
+   "attribute": "Performance of voice recognition",
+   "importance": 0.36,
+   "dissatisfaction": 0.18
+  }
+ },
+ {
+  "id": "SIG-G70-US-040",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Cupholders: complaint",
+  "summary": "Study: Cupholders: 13 % dissatisfied, 32 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-ST-40"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "Cupholders",
+   "importance": 0.32,
+   "dissatisfaction": 0.13
+  }
+ },
+ {
+  "id": "SIG-G70-US-041",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Ease of loading/unloading cargo: complaint",
+  "summary": "Study: Ease of loading/unloading cargo: 11 % dissatisfied, 53 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-ST-37"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "Ease of loading/unloading cargo",
+   "importance": 0.53,
+   "dissatisfaction": 0.11
+  }
+ },
+ {
+  "id": "SIG-G70-US-042",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Ease of reading and using screen interface: complaint",
+  "summary": "Study: Ease of reading and using screen interface: 19 % dissatisfied, 35 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-ST-93"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "Ease of reading and using screen interface",
+   "importance": 0.35,
+   "dissatisfaction": 0.19
+  }
+ },
+ {
+  "id": "SIG-G70-US-043",
+  "kind": "complaint",
+  "category": "range_charging",
+  "title": "Freedom from electrical problems: complaint",
+  "summary": "Study: Freedom from electrical problems: 14 % dissatisfied, 49 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-ST-64"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "Freedom from electrical problems",
+   "importance": 0.49,
+   "dissatisfaction": 0.14
+  }
+ },
+ {
+  "id": "SIG-G70-US-044",
+  "kind": "complaint",
+  "category": "exterior",
+  "title": "If applicable: Flat tire preparedness (spare, run flat, etc.): complaint",
+  "summary": "Study: If applicable: Flat tire preparedness (spare, run flat, etc.): 32 % dissatisfied, 27 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-ST-101"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "If applicable: Flat tire preparedness (spare, run flat, etc.)",
+   "importance": 0.32,
+   "dissatisfaction": 0.32
+  }
+ },
+ {
+  "id": "SIG-G70-US-045",
+  "kind": "complaint",
+  "category": "driving_experience",
+  "title": "If applicable: Interactive information system (e.g., OnStar, mbrace, iDrive): complaint",
+  "summary": "Study: If applicable: Interactive information system (e.g., OnStar, mbrace, iDrive): 10 % dissatisfied, 28 % top-2 (US study 2025).",
+  "evidence_ids": [
+   "EV-G70-US-ST-97"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "If applicable: Interactive information system (e.g., OnStar, mbrace, iDrive)",
+   "importance": 0.28,
+   "dissatisfaction": 0.1
+  }
+ }
+]

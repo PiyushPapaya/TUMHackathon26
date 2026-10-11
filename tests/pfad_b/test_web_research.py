@@ -103,3 +103,18 @@ def test_ohne_claims_keine_ergebnisse(monkeypatch):
     monkeypatch.setattr(web_research, "ask_claims", lambda question: [])
 
     assert web_research.research(scenario, signals) == ([], [])
+
+
+def test_same_url_different_claims_keep_their_own_text_and_stance(monkeypatch):
+    scenario, signals = _g60()
+    claims = [_claim(HIGH_URL, "Competitor has physical controls"),
+              _claim(HIGH_URL, "Customers prefer touch controls", stance="contradicts")]
+    monkeypatch.setattr(web_research, "ask_claims", lambda question: claims)
+    evidence, web_signals = web_research.research(scenario, signals)
+    assert len(evidence) == 2
+    contrary = next(e for e in evidence if e.meta["stance"] == "contradicts")
+    assert contrary.text == "Customers prefer touch controls"
+    assert all(contrary.id not in signal.evidence_ids for signal in web_signals)
+    from evidence_external.triangulation import triangulate
+    _, counter = triangulate(signals, evidence)
+    assert len(counter) > 1  # Wiederverwendete Aussage behält alle auslösenden Befunde.

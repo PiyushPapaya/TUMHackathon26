@@ -1,8 +1,1045 @@
 {
  "sales": {
   "market": "US",
+  "volume_2024": 75600,
   "volume_2025": 78000,
   "volume_2030": 80000,
-  "share_of_total_2030": 0.253
- }
+  "share_of_total_2030": 0.253,
+  "growth_pct": 2.564,
+  "growth_2024_2025_pct": 3.175
+ },
+ "warnings": [],
+ "unmapped_topics": {
+  "(unlabelled)": 100,
+  "Parking brake": 7,
+  "Real Time Traffic Information (RTTI)": 5,
+  "Owner's Manual": 20,
+  "no_class_found": 339,
+  "Drive Recorder": 11,
+  "Remote controlled parking": 5,
+  "Touch Command": 5,
+  "Traffic Camera Information": 6,
+  "Body equipment, overall technology": 191,
+  "Interior rearview mirror": 5,
+  "Side View": 5,
+  "Pedals, operate": 5,
+  "Adjustment of lower lumbar support": 9,
+  "Controller operation": 5,
+  "Night Vision": 4,
+  "Android Auto": 4,
+  "Interior camera": 8,
+  "Trunk light": 5,
+  "Garage door opener": 5,
+  "Windshield wiper": 5,
+  "Windshield": 4,
+  "Horns": 2,
+  "Start engine/switch on drive readiness": 6,
+  "CD / DVD changer, playback": 5,
+  "Video: playback / streaming": 5,
+  "Charging cable": 6,
+  "Front collision warning": 9,
+  "Outer door handle, rear": 3,
+  "Heated rear window": 3,
+  "Shift paddle": 5,
+  "Traffic Light And Sign Warning": 5,
+  "Cross Traffic Warning Rear with Brake Intervention": 7,
+  "Fuel filler flap , open / close": 6,
+  "Running board": 1,
+  "Anti-theft alarm system": 5,
+  "General enquiry: customer feedback": 9,
+  "Launch Control": 6,
+  "Bumper, rear": 3,
+  "Lane Change Assistant": 6,
+  "Route optimized for charging": 4,
+  "High-voltage charging power socket": 4,
+  "ConnectedDrive services (smartphone) technology overall": 5,
+  "ground clearance": 11,
+  "Starting engine": 4,
+  "Blind spot monitoring": 9,
+  "Multi-function steering wheel operation": 7,
+  "Welcome Light Carpet": 6,
+  "Remote Engine Start (Vehicle Key )": 5,
+  "Rear wiper": 6,
+  "Priorities for telephones": 6,
+  "Hood": 3,
+  "Fog light": 5,
+  "BMW ConnectedDrive upgrades/ MINI CONNECTED upgrades": 6,
+  "Flashing": 4,
+  "Tire pressure control": 5,
+  "Rear-end collision warning": 2,
+  "Through-loading facility": 5,
+  "Sun visor, front": 4,
+  "BMW Online / MINI Online": 1,
+  "Tirefit": 8,
+  "Self-leveling suspension": 5,
+  "Hood, open / close": 5,
+  "My BMW / MINI Portal": 5,
+  "Floor mat": 5,
+  "High-beam assistant": 7,
+  "Outer door handle, front": 5,
+  "12 V connection": 5,
+  "Washer fluid, top up": 4,
+  "Screen mirroring": 3,
+  "Emergency request": 5,
+  "Dynamic Stability Control": 5,
+  "Smart POI search": 5,
+  "Grab handle": 6,
+  "Child safety latch": 5,
+  "Bumper, front": 2,
+  "High voltage battery, preconditioning": 11,
+  "Teleservices": 5,
+  "Headrest, adjust": 4,
+  "Child restraint seat, use": 4,
+  "Driver's Guide App": 2,
+  "Experience Modes": 7,
+  "Frunk": 8,
+  "Side sill trim panel": 4,
+  "Center armrest, front": 6,
+  "Back-up Assistant": 7,
+  "Light switch operating unit": 4,
+  "Rain sensor mode": 4,
+  "Roof function centre": 5,
+  "Auxiliary heater function": 2,
+  "Remote 3D View (My BMW App / MINI App)": 5,
+  "Remote interior camera (My BMW App / MINI App)": 2,
+  "Roof": 1,
+  "Display, time": 5,
+  "Map update": 3,
+  "Panel heating": 4,
+  "Trailer, use": 3,
+  "Air conditioning, overall technology": 2,
+  "Fuel tank": 6,
+  "Engine oil": 4,
+  "Fatigue Alert": 6,
+  "Exhaust system": 2,
+  "Customer Account (My BMW / MINI Portal)": 1,
+  "Wash / wipe switch": 1,
+  "Intersection Warning with Brake Intervention": 2,
+  "Radiator grille": 1,
+  "Caring Car": 1,
+  "Display key": 1,
+  "Bidirectional charging": 1,
+  "Apps (smartphone)": 1,
+  "Opening / closing convertible top / hardtop": 1
+ },
+ "segment_conflicts": {
+  "SIG-G60-US-001": [
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Drivetrain: 43 critical comments, while the study reports satisfaction.",
+    "a_count": 43,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0401",
+     "EV-G60-US-FB-G60-0668",
+     "EV-G60-US-FB-G60-0792",
+     "EV-G60-US-ST-14"
+    ]
+   }
+  ],
+  "SIG-G60-US-012": [
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Drivetrain: 43 critical comments, while the study reports satisfaction.",
+    "a_count": 43,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0401",
+     "EV-G60-US-FB-G60-0668",
+     "EV-G60-US-FB-G60-0792",
+     "EV-G60-US-ST-14"
+    ]
+   }
+  ],
+  "SIG-G60-US-036": [
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Drivetrain: 43 critical comments, while the study reports satisfaction.",
+    "a_count": 43,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0401",
+     "EV-G60-US-FB-G60-0668",
+     "EV-G60-US-FB-G60-0792",
+     "EV-G60-US-ST-14"
+    ]
+   }
+  ],
+  "SIG-G60-US-003": [
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Exterior design: 13 critical comments, while the study reports satisfaction.",
+    "a_count": 13,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0048",
+     "EV-G60-US-FB-G60-1056",
+     "EV-G60-US-FB-G60-1068",
+     "EV-G60-US-ST-01"
+    ]
+   }
+  ],
+  "SIG-G60-US-033": [
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Exterior design: 13 critical comments, while the study reports satisfaction.",
+    "a_count": 13,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0048",
+     "EV-G60-US-FB-G60-1056",
+     "EV-G60-US-FB-G60-1068",
+     "EV-G60-US-ST-01"
+    ]
+   }
+  ],
+  "SIG-G60-US-007": [
+   {
+    "dimension": "source",
+    "segment_a": "A",
+    "segment_b": "B",
+    "statement": "Seats: A mostly criticises (16); B mostly praises (30).",
+    "a_count": 16,
+    "b_count": 30,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0930",
+     "EV-G60-US-FB-G60-1474",
+     "EV-G60-US-FB-G60-2467",
+     "EV-G60-US-FB-G60-0308",
+     "EV-G60-US-FB-G60-0482",
+     "EV-G60-US-FB-G60-0617"
+    ]
+   },
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Seats: 43 critical comments, while the study reports satisfaction.",
+    "a_count": 43,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0107",
+     "EV-G60-US-FB-G60-0236",
+     "EV-G60-US-FB-G60-0258",
+     "EV-G60-US-ST-25"
+    ]
+   },
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Seats: 43 critical comments, while the study reports satisfaction.",
+    "a_count": 43,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0107",
+     "EV-G60-US-FB-G60-0236",
+     "EV-G60-US-FB-G60-0258",
+     "EV-G60-US-ST-26"
+    ]
+   }
+  ],
+  "SIG-G60-US-010": [
+   {
+    "dimension": "source",
+    "segment_a": "A",
+    "segment_b": "B",
+    "statement": "Seats: A mostly criticises (16); B mostly praises (30).",
+    "a_count": 16,
+    "b_count": 30,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0930",
+     "EV-G60-US-FB-G60-1474",
+     "EV-G60-US-FB-G60-2467",
+     "EV-G60-US-FB-G60-0308",
+     "EV-G60-US-FB-G60-0482",
+     "EV-G60-US-FB-G60-0617"
+    ]
+   },
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Seats: 43 critical comments, while the study reports satisfaction.",
+    "a_count": 43,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0107",
+     "EV-G60-US-FB-G60-0236",
+     "EV-G60-US-FB-G60-0258",
+     "EV-G60-US-ST-25"
+    ]
+   },
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Seats: 43 critical comments, while the study reports satisfaction.",
+    "a_count": 43,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0107",
+     "EV-G60-US-FB-G60-0236",
+     "EV-G60-US-FB-G60-0258",
+     "EV-G60-US-ST-26"
+    ]
+   }
+  ],
+  "SIG-G60-US-038": [
+   {
+    "dimension": "source",
+    "segment_a": "A",
+    "segment_b": "B",
+    "statement": "Seats: A mostly criticises (16); B mostly praises (30).",
+    "a_count": 16,
+    "b_count": 30,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0930",
+     "EV-G60-US-FB-G60-1474",
+     "EV-G60-US-FB-G60-2467",
+     "EV-G60-US-FB-G60-0308",
+     "EV-G60-US-FB-G60-0482",
+     "EV-G60-US-FB-G60-0617"
+    ]
+   },
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Seats: 43 critical comments, while the study reports satisfaction.",
+    "a_count": 43,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0107",
+     "EV-G60-US-FB-G60-0236",
+     "EV-G60-US-FB-G60-0258",
+     "EV-G60-US-ST-25"
+    ]
+   },
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Seats: 43 critical comments, while the study reports satisfaction.",
+    "a_count": 43,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0107",
+     "EV-G60-US-FB-G60-0236",
+     "EV-G60-US-FB-G60-0258",
+     "EV-G60-US-ST-26"
+    ]
+   }
+  ],
+  "SIG-G60-US-009": [
+   {
+    "dimension": "engine",
+    "segment_a": "BEVE",
+    "segment_b": "PHEV",
+    "statement": "Electric Range: BEVE mostly criticises (34); PHEV mostly praises (10).",
+    "a_count": 34,
+    "b_count": 10,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0078",
+     "EV-G60-US-FB-G60-0116",
+     "EV-G60-US-FB-G60-0321",
+     "EV-G60-US-FB-G60-0156",
+     "EV-G60-US-FB-G60-0389",
+     "EV-G60-US-FB-G60-0520"
+    ]
+   },
+   {
+    "dimension": "source",
+    "segment_a": "A",
+    "segment_b": "B",
+    "statement": "Electric Range: A mostly criticises (11); B mostly praises (26).",
+    "a_count": 11,
+    "b_count": 26,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-1638",
+     "EV-G60-US-FB-G60-2322",
+     "EV-G60-US-FB-G60-0498",
+     "EV-G60-US-FB-G60-0078",
+     "EV-G60-US-FB-G60-0116",
+     "EV-G60-US-FB-G60-0156"
+    ]
+   }
+  ],
+  "SIG-G60-US-014": [
+   {
+    "dimension": "engine",
+    "segment_a": "BEVE",
+    "segment_b": "PHEV",
+    "statement": "Electric Range: BEVE mostly criticises (34); PHEV mostly praises (10).",
+    "a_count": 34,
+    "b_count": 10,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0078",
+     "EV-G60-US-FB-G60-0116",
+     "EV-G60-US-FB-G60-0321",
+     "EV-G60-US-FB-G60-0156",
+     "EV-G60-US-FB-G60-0389",
+     "EV-G60-US-FB-G60-0520"
+    ]
+   },
+   {
+    "dimension": "source",
+    "segment_a": "A",
+    "segment_b": "B",
+    "statement": "Electric Range: A mostly criticises (11); B mostly praises (26).",
+    "a_count": 11,
+    "b_count": 26,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-1638",
+     "EV-G60-US-FB-G60-2322",
+     "EV-G60-US-FB-G60-0498",
+     "EV-G60-US-FB-G60-0078",
+     "EV-G60-US-FB-G60-0116",
+     "EV-G60-US-FB-G60-0156"
+    ]
+   }
+  ],
+  "SIG-G60-US-011": [
+   {
+    "dimension": "source",
+    "segment_a": "A",
+    "segment_b": "B",
+    "statement": "Touch screen, operation: A mostly criticises (7); B mostly praises (31).",
+    "a_count": 7,
+    "b_count": 31,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-1681",
+     "EV-G60-US-FB-G60-1833",
+     "EV-G60-US-FB-G60-3549",
+     "EV-G60-US-FB-G60-0125",
+     "EV-G60-US-FB-G60-0160",
+     "EV-G60-US-FB-G60-0369"
+    ]
+   },
+   {
+    "dimension": "source",
+    "segment_a": "C",
+    "segment_b": "B",
+    "statement": "Touch screen, operation: C mostly criticises (14); B mostly praises (31).",
+    "a_count": 14,
+    "b_count": 31,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0853",
+     "EV-G60-US-FB-G60-0914",
+     "EV-G60-US-FB-G60-1091",
+     "EV-G60-US-FB-G60-0125",
+     "EV-G60-US-FB-G60-0160",
+     "EV-G60-US-FB-G60-0369"
+    ]
+   }
+  ],
+  "SIG-G60-US-023": [
+   {
+    "dimension": "source",
+    "segment_a": "A",
+    "segment_b": "B",
+    "statement": "Touch screen, operation: A mostly criticises (7); B mostly praises (31).",
+    "a_count": 7,
+    "b_count": 31,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-1681",
+     "EV-G60-US-FB-G60-1833",
+     "EV-G60-US-FB-G60-3549",
+     "EV-G60-US-FB-G60-0125",
+     "EV-G60-US-FB-G60-0160",
+     "EV-G60-US-FB-G60-0369"
+    ]
+   },
+   {
+    "dimension": "source",
+    "segment_a": "C",
+    "segment_b": "B",
+    "statement": "Touch screen, operation: C mostly criticises (14); B mostly praises (31).",
+    "a_count": 14,
+    "b_count": 31,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0853",
+     "EV-G60-US-FB-G60-0914",
+     "EV-G60-US-FB-G60-1091",
+     "EV-G60-US-FB-G60-0125",
+     "EV-G60-US-FB-G60-0160",
+     "EV-G60-US-FB-G60-0369"
+    ]
+   }
+  ],
+  "SIG-G60-US-035": [
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Ambient light: 12 critical comments, while the study reports satisfaction.",
+    "a_count": 12,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0499",
+     "EV-G60-US-FB-G60-0737",
+     "EV-G60-US-FB-G60-0800",
+     "EV-G60-US-ST-20"
+    ]
+   }
+  ]
+ },
+ "opportunities": [
+  {
+   "attribute": "Headlight function/ brightness",
+   "category": "exterior",
+   "importance": 0.7,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-70"
+  },
+  {
+   "attribute": "Handling/Maneuverability",
+   "category": "driving_experience",
+   "importance": 0.7,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-11"
+  },
+  {
+   "attribute": "Appearance of tires/ wheels",
+   "category": "exterior",
+   "importance": 0.69,
+   "dissatisfaction": 0.05,
+   "evidence_id": "EV-G60-US-ST-03"
+  },
+  {
+   "attribute": "Acceleration from stop",
+   "category": "driving_experience",
+   "importance": 0.68,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-15"
+  },
+  {
+   "attribute": "Front seat roominess",
+   "category": "comfort_space",
+   "importance": 0.68,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-30"
+  },
+  {
+   "attribute": "Riding comfort",
+   "category": "driving_experience",
+   "importance": 0.68,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-09"
+  },
+  {
+   "attribute": "Overall comfort of the seats",
+   "category": "comfort_space",
+   "importance": 0.67,
+   "dissatisfaction": 0.04,
+   "evidence_id": "EV-G60-US-ST-25"
+  },
+  {
+   "attribute": "Overall impression of durability/reliability",
+   "category": "quality_perception",
+   "importance": 0.66,
+   "dissatisfaction": 0.04,
+   "evidence_id": "EV-G60-US-ST-62"
+  },
+  {
+   "attribute": "Comfort of front seat",
+   "category": "comfort_space",
+   "importance": 0.65,
+   "dissatisfaction": 0.07,
+   "evidence_id": "EV-G60-US-ST-26"
+  },
+  {
+   "attribute": "Interior colors",
+   "category": "interior",
+   "importance": 0.65,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-18"
+  },
+  {
+   "attribute": "Overall driving performance",
+   "category": "driving_experience",
+   "importance": 0.65,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-07"
+  },
+  {
+   "attribute": "Interior trim and finish",
+   "category": "interior",
+   "importance": 0.64,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-19"
+  },
+  {
+   "attribute": "Overall exterior styling",
+   "category": "exterior",
+   "importance": 0.64,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-01"
+  },
+  {
+   "attribute": "Overall power and pickup",
+   "category": "driving_experience",
+   "importance": 0.64,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-14"
+  },
+  {
+   "attribute": "Front visibility",
+   "category": "driver_assistance",
+   "importance": 0.63,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-66"
+  },
+  {
+   "attribute": "Interior lighting",
+   "category": "interior",
+   "importance": 0.63,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-20"
+  },
+  {
+   "attribute": "Turning radius",
+   "category": "driving_experience",
+   "importance": 0.63,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-10"
+  },
+  {
+   "attribute": "Passing capability",
+   "category": "driving_experience",
+   "importance": 0.62,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-16"
+  },
+  {
+   "attribute": "Adaptive driving assists (lane keeping, cruise, braking)",
+   "category": "driver_assistance",
+   "importance": 0.61,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-85"
+  },
+  {
+   "attribute": "Headlight/ taillight design",
+   "category": "exterior",
+   "importance": 0.61,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-05"
+  },
+  {
+   "attribute": "Head-up Display",
+   "category": "infotainment_digital",
+   "importance": 0.6,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-94"
+  },
+  {
+   "attribute": "Smoothness of transmission",
+   "category": "driving_experience",
+   "importance": 0.59,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-61"
+  },
+  {
+   "attribute": "Trunk lid/ tailgate and liftgate operations",
+   "category": "comfort_space",
+   "importance": 0.59,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-36"
+  },
+  {
+   "attribute": "Overall noise/vibration/harshness",
+   "category": "quality_perception",
+   "importance": 0.58,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-55"
+  },
+  {
+   "attribute": "Sound of engine",
+   "category": "driving_experience",
+   "importance": 0.58,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-59"
+  },
+  {
+   "attribute": "Overall safety of the vehicle",
+   "category": "driver_assistance",
+   "importance": 0.58,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-65"
+  },
+  {
+   "attribute": "If applicable: Backup system (camera, sensors, etc.)",
+   "category": "driver_assistance",
+   "importance": 0.58,
+   "dissatisfaction": 0.01,
+   "evidence_id": "EV-G60-US-ST-83"
+  },
+  {
+   "attribute": "Freedom from squeaks and rattles",
+   "category": "quality_perception",
+   "importance": 0.57,
+   "dissatisfaction": 0.08,
+   "evidence_id": "EV-G60-US-ST-58"
+  },
+  {
+   "attribute": "Rear visibility",
+   "category": "driver_assistance",
+   "importance": 0.57,
+   "dissatisfaction": 0.06,
+   "evidence_id": "EV-G60-US-ST-67"
+  },
+  {
+   "attribute": "Bluetooth/ smartphone pairing",
+   "category": "infotainment_digital",
+   "importance": 0.57,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-88"
+  },
+  {
+   "attribute": "Safety monitoring features (blid spot warning, lane departure warning, etc)",
+   "category": "driver_assistance",
+   "importance": 0.57,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-84"
+  },
+  {
+   "attribute": "Solid vehicle construction",
+   "category": "quality_perception",
+   "importance": 0.57,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-63"
+  },
+  {
+   "attribute": "Phone charging",
+   "category": "infotainment_digital",
+   "importance": 0.56,
+   "dissatisfaction": 0.1,
+   "evidence_id": "EV-G60-US-ST-92"
+  },
+  {
+   "attribute": "Freedom from wind and road noise",
+   "category": "quality_perception",
+   "importance": 0.56,
+   "dissatisfaction": 0.06,
+   "evidence_id": "EV-G60-US-ST-60"
+  },
+  {
+   "attribute": "Driver seat adjustability",
+   "category": "comfort_space",
+   "importance": 0.56,
+   "dissatisfaction": 0.04,
+   "evidence_id": "EV-G60-US-ST-43"
+  },
+  {
+   "attribute": "Overall interior versatility/seat stowaway",
+   "category": "comfort_space",
+   "importance": 0.55,
+   "dissatisfaction": 0.05,
+   "evidence_id": "EV-G60-US-ST-42"
+  },
+  {
+   "attribute": "Overall interior design / layout",
+   "category": "interior",
+   "importance": 0.55,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-28"
+  },
+  {
+   "attribute": "Braking",
+   "category": "driving_experience",
+   "importance": 0.55,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-68"
+  },
+  {
+   "attribute": "Vehicle's Mobile App",
+   "category": "infotainment_digital",
+   "importance": 0.54,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-99"
+  },
+  {
+   "attribute": "Ease of front seat entry",
+   "category": "comfort_space",
+   "importance": 0.54,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-29"
+  },
+  {
+   "attribute": "Overall interior styling/ aesthetics",
+   "category": "interior",
+   "importance": 0.53,
+   "dissatisfaction": 0.06,
+   "evidence_id": "EV-G60-US-ST-17"
+  },
+  {
+   "attribute": "If applicable: Navigation system",
+   "category": "infotainment_digital",
+   "importance": 0.53,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-87"
+  },
+  {
+   "attribute": "Overall interior workmanship",
+   "category": "interior",
+   "importance": 0.53,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-21"
+  },
+  {
+   "attribute": "Interior roominess",
+   "category": "comfort_space",
+   "importance": 0.52,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-34"
+  },
+  {
+   "attribute": "Quality of interior materials",
+   "category": "interior",
+   "importance": 0.52,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-23"
+  },
+  {
+   "attribute": "Passenger seating capacity",
+   "category": "comfort_space",
+   "importance": 0.51,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-33"
+  },
+  {
+   "attribute": "Ease of reading and using screen interface",
+   "category": "infotainment_digital",
+   "importance": 0.5,
+   "dissatisfaction": 0.08,
+   "evidence_id": "EV-G60-US-ST-93"
+  },
+  {
+   "attribute": "Mirroring of smartphone content on vehicle display",
+   "category": "infotainment_digital",
+   "importance": 0.5,
+   "dissatisfaction": 0.05,
+   "evidence_id": "EV-G60-US-ST-90"
+  },
+  {
+   "attribute": "Cargo capacity/usefulness",
+   "category": "comfort_space",
+   "importance": 0.5,
+   "dissatisfaction": 0.04,
+   "evidence_id": "EV-G60-US-ST-38"
+  },
+  {
+   "attribute": "Overall performance of sound system",
+   "category": "infotainment_digital",
+   "importance": 0.5,
+   "dissatisfaction": 0.04,
+   "evidence_id": "EV-G60-US-ST-49"
+  },
+  {
+   "attribute": "Quality of seat materials",
+   "category": "comfort_space",
+   "importance": 0.5,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-22"
+  },
+  {
+   "attribute": "Instrument panel (IP)",
+   "category": "interior",
+   "importance": 0.49,
+   "dissatisfaction": 0.08,
+   "evidence_id": "EV-G60-US-ST-39"
+  },
+  {
+   "attribute": "Interior door handles",
+   "category": "exterior",
+   "importance": 0.49,
+   "dissatisfaction": 0.07,
+   "evidence_id": "EV-G60-US-ST-24"
+  },
+  {
+   "attribute": "Gas or electric mileage (fuel economy)",
+   "category": "range_charging",
+   "importance": 0.48,
+   "dissatisfaction": 0.07,
+   "evidence_id": "EV-G60-US-ST-76"
+  },
+  {
+   "attribute": "Ease of loading/unloading cargo",
+   "category": "comfort_space",
+   "importance": 0.48,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-37"
+  },
+  {
+   "attribute": "Active noise cancellation",
+   "category": "quality_perception",
+   "importance": 0.47,
+   "dissatisfaction": 0.07,
+   "evidence_id": "EV-G60-US-ST-57"
+  },
+  {
+   "attribute": "Comfort of 2nd row seat",
+   "category": "comfort_space",
+   "importance": 0.47,
+   "dissatisfaction": 0.05,
+   "evidence_id": "EV-G60-US-ST-27"
+  },
+  {
+   "attribute": "Cupholders",
+   "category": "comfort_space",
+   "importance": 0.47,
+   "dissatisfaction": 0.05,
+   "evidence_id": "EV-G60-US-ST-40"
+  },
+  {
+   "attribute": "2nd row seat roominess",
+   "category": "comfort_space",
+   "importance": 0.47,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-32"
+  },
+  {
+   "attribute": "Exterior door handles",
+   "category": "exterior",
+   "importance": 0.46,
+   "dissatisfaction": 0.04,
+   "evidence_id": "EV-G60-US-ST-04"
+  },
+  {
+   "attribute": "Overall driver assist features",
+   "category": "driver_assistance",
+   "importance": 0.46,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-82"
+  },
+  {
+   "attribute": "Ease of 2nd row seat entry",
+   "category": "comfort_space",
+   "importance": 0.46,
+   "dissatisfaction": 0.01,
+   "evidence_id": "EV-G60-US-ST-31"
+  },
+  {
+   "attribute": "Overall driver-vehicle interaction (HMI)",
+   "category": "infotainment_digital",
+   "importance": 0.45,
+   "dissatisfaction": 0.04,
+   "evidence_id": "EV-G60-US-ST-86"
+  },
+  {
+   "attribute": "Passenger seat adjustability",
+   "category": "comfort_space",
+   "importance": 0.45,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G60-US-ST-44"
+  },
+  {
+   "attribute": "Position/ integration of displays in dashboard",
+   "category": "infotainment_digital",
+   "importance": 0.43,
+   "dissatisfaction": 0.09,
+   "evidence_id": "EV-G60-US-ST-95"
+  },
+  {
+   "attribute": "Heater performance",
+   "category": "comfort_space",
+   "importance": 0.41,
+   "dissatisfaction": 0.06,
+   "evidence_id": "EV-G60-US-ST-46"
+  },
+  {
+   "attribute": "Freedom from electrical problems",
+   "category": "range_charging",
+   "importance": 0.41,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-64"
+  },
+  {
+   "attribute": "Performance of voice recognition",
+   "category": "infotainment_digital",
+   "importance": 0.39,
+   "dissatisfaction": 0.16,
+   "evidence_id": "EV-G60-US-ST-98"
+  },
+  {
+   "attribute": "Interior storage",
+   "category": "comfort_space",
+   "importance": 0.39,
+   "dissatisfaction": 0.1,
+   "evidence_id": "EV-G60-US-ST-35"
+  },
+  {
+   "attribute": "Air conditioner performance",
+   "category": "comfort_space",
+   "importance": 0.39,
+   "dissatisfaction": 0.07,
+   "evidence_id": "EV-G60-US-ST-47"
+  },
+  {
+   "attribute": "If applicable: Sunroof/ moonroof",
+   "category": "exterior",
+   "importance": 0.39,
+   "dissatisfaction": 0.03,
+   "evidence_id": "EV-G60-US-ST-102"
+  },
+  {
+   "attribute": "WiFi hotspot in vehicle",
+   "category": "infotainment_digital",
+   "importance": 0.38,
+   "dissatisfaction": 0.13,
+   "evidence_id": "EV-G60-US-ST-89"
+  },
+  {
+   "attribute": "Menu structure of infotainment system",
+   "category": "infotainment_digital",
+   "importance": 0.36,
+   "dissatisfaction": 0.13,
+   "evidence_id": "EV-G60-US-ST-96"
+  },
+  {
+   "attribute": "If applicable: Interactive information system (e.g., OnStar, mbrace, iDrive)",
+   "category": "driving_experience",
+   "importance": 0.36,
+   "dissatisfaction": 0.07,
+   "evidence_id": "EV-G60-US-ST-97"
+  },
+  {
+   "attribute": "Overall performance of climate control system",
+   "category": "comfort_space",
+   "importance": 0.36,
+   "dissatisfaction": 0.06,
+   "evidence_id": "EV-G60-US-ST-45"
+  },
+  {
+   "attribute": "If applicable: Flat tire preparedness (spare, run flat, etc.)",
+   "category": "exterior",
+   "importance": 0.35,
+   "dissatisfaction": 0.18,
+   "evidence_id": "EV-G60-US-ST-101"
+  },
+  {
+   "attribute": "Operation of heater/ AC controls",
+   "category": "comfort_space",
+   "importance": 0.29,
+   "dissatisfaction": 0.15,
+   "evidence_id": "EV-G60-US-ST-48"
+  },
+  {
+   "attribute": "Off-Road capability",
+   "category": "driving_experience",
+   "importance": 0.18,
+   "dissatisfaction": 0.18,
+   "evidence_id": "EV-G60-US-ST-13"
+  }
+ ]
 }

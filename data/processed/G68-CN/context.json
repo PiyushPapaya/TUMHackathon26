@@ -1,0 +1,240 @@
+{
+ "sales": {
+  "market": "CN",
+  "volume_2024": 68000,
+  "volume_2025": 75000,
+  "volume_2030": 78000,
+  "share_of_total_2030": 0.247,
+  "growth_pct": 4.0,
+  "growth_2024_2025_pct": 10.294
+ },
+ "unmapped_topics": {},
+ "opportunities": [
+  {
+   "attribute": "Roadholding",
+   "category": "driving_experience",
+   "importance": 0.892,
+   "dissatisfaction": 0.027,
+   "evidence_id": "EV-G68-CN-ST-19"
+  },
+  {
+   "attribute": "Sportiness",
+   "category": "driving_experience",
+   "importance": 0.886,
+   "dissatisfaction": 0.047,
+   "evidence_id": "EV-G68-CN-ST-22"
+  },
+  {
+   "attribute": "Reliability",
+   "category": "quality_perception",
+   "importance": 0.884,
+   "dissatisfaction": 0.053,
+   "evidence_id": "EV-G68-CN-ST-09"
+  },
+  {
+   "attribute": "Overall build quality",
+   "category": "quality_perception",
+   "importance": 0.881,
+   "dissatisfaction": 0.063,
+   "evidence_id": "EV-G68-CN-ST-33"
+  },
+  {
+   "attribute": "Luggage capacity",
+   "category": "comfort_space",
+   "importance": 0.873,
+   "dissatisfaction": 0.09,
+   "evidence_id": "EV-G68-CN-ST-29"
+  },
+  {
+   "attribute": "Rear interior roominess",
+   "category": "comfort_space",
+   "importance": 0.871,
+   "dissatisfaction": 0.097,
+   "evidence_id": "EV-G68-CN-ST-27"
+  },
+  {
+   "attribute": "All round visibility",
+   "category": "driver_assistance",
+   "importance": 0.87,
+   "dissatisfaction": 0.1,
+   "evidence_id": "EV-G68-CN-ST-10"
+  },
+  {
+   "attribute": "Driving position",
+   "category": "driving_experience",
+   "importance": 0.869,
+   "dissatisfaction": 0.103,
+   "evidence_id": "EV-G68-CN-ST-35"
+  },
+  {
+   "attribute": "Interior styling",
+   "category": "interior",
+   "importance": 0.869,
+   "dissatisfaction": 0.103,
+   "evidence_id": "EV-G68-CN-ST-03"
+  },
+  {
+   "attribute": "Overall seating comfort",
+   "category": "comfort_space",
+   "importance": 0.867,
+   "dissatisfaction": 0.11,
+   "evidence_id": "EV-G68-CN-ST-16"
+  },
+  {
+   "attribute": "Acceleration",
+   "category": "driving_experience",
+   "importance": 0.86,
+   "dissatisfaction": 0.133,
+   "evidence_id": "EV-G68-CN-ST-18"
+  },
+  {
+   "attribute": "Interior storage for small items",
+   "category": "comfort_space",
+   "importance": 0.853,
+   "dissatisfaction": 0.157,
+   "evidence_id": "EV-G68-CN-ST-17"
+  },
+  {
+   "attribute": "Integrated navigation system",
+   "category": "infotainment_digital",
+   "importance": 0.852,
+   "dissatisfaction": 0.16,
+   "evidence_id": "EV-G68-CN-ST-15"
+  },
+  {
+   "attribute": "Ease of entry into and out of car",
+   "category": "comfort_space",
+   "importance": 0.851,
+   "dissatisfaction": 0.163,
+   "evidence_id": "EV-G68-CN-ST-30"
+  },
+  {
+   "attribute": "Freedom from faults/ squeaks/ rattles",
+   "category": "quality_perception",
+   "importance": 0.848,
+   "dissatisfaction": 0.173,
+   "evidence_id": "EV-G68-CN-ST-07"
+  },
+  {
+   "attribute": "Manoeuvrability",
+   "category": "driving_experience",
+   "importance": 0.848,
+   "dissatisfaction": 0.173,
+   "evidence_id": "EV-G68-CN-ST-24"
+  },
+  {
+   "attribute": "Quality of ride",
+   "category": "driving_experience",
+   "importance": 0.845,
+   "dissatisfaction": 0.183,
+   "evidence_id": "EV-G68-CN-ST-25"
+  },
+  {
+   "attribute": "Quality of interior and materials used",
+   "category": "interior",
+   "importance": 0.844,
+   "dissatisfaction": 0.187,
+   "evidence_id": "EV-G68-CN-ST-04"
+  },
+  {
+   "attribute": "Fuel economy/ energy efficiency",
+   "category": "range_charging",
+   "importance": 0.843,
+   "dissatisfaction": 0.19,
+   "evidence_id": "EV-G68-CN-ST-20"
+  },
+  {
+   "attribute": "Features of information and entertainment system including in-car apps",
+   "category": "infotainment_digital",
+   "importance": 0.837,
+   "dissatisfaction": 0.21,
+   "evidence_id": "EV-G68-CN-ST-13"
+  },
+  {
+   "attribute": "Easy to use information and entertainment system including in-car apps",
+   "category": "infotainment_digital",
+   "importance": 0.835,
+   "dissatisfaction": 0.217,
+   "evidence_id": "EV-G68-CN-ST-14"
+  },
+  {
+   "attribute": "Interior versatility",
+   "category": "comfort_space",
+   "importance": 0.835,
+   "dissatisfaction": 0.217,
+   "evidence_id": "EV-G68-CN-ST-37"
+  },
+  {
+   "attribute": "Easy to read and use instruments/ controls/ displays",
+   "category": "infotainment_digital",
+   "importance": 0.834,
+   "dissatisfaction": 0.22,
+   "evidence_id": "EV-G68-CN-ST-11"
+  },
+  {
+   "attribute": "Exterior styling",
+   "category": "exterior",
+   "importance": 0.819,
+   "dissatisfaction": 0.27,
+   "evidence_id": "EV-G68-CN-ST-02"
+  },
+  {
+   "attribute": "Safety",
+   "category": "driver_assistance",
+   "importance": 0.817,
+   "dissatisfaction": 0.277,
+   "evidence_id": "EV-G68-CN-ST-06"
+  },
+  {
+   "attribute": "Smartphone integration/ connectivity",
+   "category": "infotainment_digital",
+   "importance": 0.814,
+   "dissatisfaction": 0.287,
+   "evidence_id": "EV-G68-CN-ST-12"
+  },
+  {
+   "attribute": "Front interior roominess",
+   "category": "comfort_space",
+   "importance": 0.777,
+   "dissatisfaction": 0.41,
+   "evidence_id": "EV-G68-CN-ST-26"
+  },
+  {
+   "attribute": "Heating/ ventilation/ air conditioning",
+   "category": "comfort_space",
+   "importance": 0.758,
+   "dissatisfaction": 0.473,
+   "evidence_id": "EV-G68-CN-ST-32"
+  },
+  {
+   "attribute": "Quietness when driving",
+   "category": "quality_perception",
+   "importance": 0.752,
+   "dissatisfaction": 0.493,
+   "evidence_id": "EV-G68-CN-ST-34"
+  },
+  {
+   "attribute": "Braking",
+   "category": "driving_experience",
+   "importance": 0.738,
+   "dissatisfaction": 0.54,
+   "evidence_id": "EV-G68-CN-ST-21"
+  },
+  {
+   "attribute": "Connected services",
+   "category": "infotainment_digital",
+   "importance": 0.735,
+   "dissatisfaction": 0.55,
+   "evidence_id": "EV-G68-CN-ST-36"
+  },
+  {
+   "attribute": "Ease of loading/ unloading luggage",
+   "category": "comfort_space",
+   "importance": 0.725,
+   "dissatisfaction": 0.583,
+   "evidence_id": "EV-G68-CN-ST-28"
+  }
+ ],
+ "warnings": [],
+ "segment_conflicts": {}
+}

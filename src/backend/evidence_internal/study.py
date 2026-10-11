@@ -17,6 +17,7 @@ from pathlib import Path
 
 import pandas as pd
 
+from core.datasets import load_profile
 from core.models import Evidence, SourceType
 
 NEGATIVE_LEVELS = ("I Hate It", "A Failure", "Unsatisfactory")
@@ -87,6 +88,7 @@ def _us_blocks(df: pd.DataFrame, position: int) -> list[tuple[str, dict[str, flo
 def parse_us_study(df: pd.DataFrame, model_column: str, cfg: dict) -> list[Evidence]:
     """Rein und ohne Datei testbar: US-Blatt -> ein Beleg je Attribut für dieses Modell."""
     position = _model_position(df.iloc[0], model_column)
+    profile = load_profile().get("study", {})
     evidence: list[Evidence] = []
     for number, (attribute, levels) in enumerate(_us_blocks(df, position), start=1):
         if any(levels.get(level) is None for level in ALL_LEVELS):
@@ -94,7 +96,8 @@ def parse_us_study(df: pd.DataFrame, model_column: str, cfg: dict) -> list[Evide
         # runden, weil 0.01 + 0.06 + 0.03 in Python 0.0999... ergibt, fachlich aber genau 10 % sind
         neg = round(sum(levels[level] for level in NEGATIVE_LEVELS), 4)  # type: ignore[misc]
         top2 = round(sum(levels[level] for level in TOP2_LEVELS), 4)  # type: ignore[misc]
-        polarity = -1 if neg >= US_NEGATIVE_FROM else 1 if top2 >= US_POSITIVE_FROM else 0
+        polarity = (-1 if neg >= profile.get("us_negative_from", US_NEGATIVE_FROM)
+                    else 1 if top2 >= profile.get("us_positive_from", US_POSITIVE_FROM) else 0)
         text = f"{attribute}: {_percent(neg)} % dissatisfied, {_percent(top2)} % top-2 (US study 2025)"
         meta = {"attribute": attribute, "neg_share": f"{neg:.2f}", "top2": f"{top2:.2f}"}
         evidence.append(_evidence(cfg, number, text, polarity, meta, "US"))
@@ -112,7 +115,8 @@ def _filled_right(row: pd.Series) -> list[str]:
 
 def parse_cn_eu_study(df: pd.DataFrame, market: str, model_column: str, cfg: dict) -> list[Evidence]:
     """Rein und ohne Datei testbar: CN/EU-Blatt -> ein Beleg je Attribut (Mean-Zeile) für Modell und Markt."""
-    country = DATASET_COUNTRY.get(market, market).lower()
+    profile = load_profile().get("study", {})
+    country = profile.get("dataset_country", DATASET_COUNTRY).get(market, market).lower()
     countries = _filled_right(df.iloc[1])
     in_market = {i for i, c in enumerate(countries) if c.lower() == country}
     if not in_market:
@@ -129,7 +133,8 @@ def parse_cn_eu_study(df: pd.DataFrame, market: str, model_column: str, cfg: dic
         mean = _number(df.iloc[index, position])
         if mean is None:
             continue
-        polarity = -1 if mean < MEAN_NEGATIVE_BELOW else 1 if mean >= MEAN_POSITIVE_FROM else 0
+        polarity = (-1 if mean < profile.get("mean_negative_below", MEAN_NEGATIVE_BELOW)
+                    else 1 if mean >= profile.get("mean_positive_from", MEAN_POSITIVE_FROM) else 0)
         text = f"{attribute}: mean {mean:.1f} ({market} study 2025)"
         meta = {"attribute": attribute, "mean": f"{mean:.2f}"}
         evidence.append(_evidence(cfg, attribute_count, text, polarity, meta, market))
@@ -142,8 +147,9 @@ def load_study(cfg: dict, raw_dir: Path) -> list[Evidence]:
     path = Path(raw_dir) / data["study_file"]
     sheet = data["study_sheet"]
     df = pd.read_excel(path, sheet_name=sheet, header=None)
-    if sheet.startswith("US"):
+    profile = load_profile().get("study", {})
+    if sheet.startswith(profile.get("us_sheet_prefix", "US")):
         return parse_us_study(df, data["study_column"], cfg)
-    if sheet.startswith("CN_EU"):
+    if sheet.startswith(profile.get("cn_eu_sheet_prefix", "CN_EU")):
         return parse_cn_eu_study(df, cfg["market"], data["study_column"], cfg)
     raise ValueError(f"Unbekanntes Studienblatt '{sheet}'")

@@ -91,6 +91,11 @@ def derive_all(
                 continue
             kept.append((draft, linked))
     kept = separate_bets(merge_overlapping(kept))
+    for draft, linked in kept:
+        if not linked:
+            discarded.append({"title": draft.title, "reason": "No supporting signals remain after deduplication.",
+                              "signal_ids": draft.signal_ids})
+    kept = [(draft, linked) for draft, linked in kept if linked]
     discarded += not_covered(signals, kept, discarded)
     # reach braucht die größte Nennungszahl ALLER Anforderungen, darum erst jetzt bauen.
     max_mentions = max((sum(s.mention_count for s in linked) for _, linked in kept), default=0)
@@ -123,6 +128,11 @@ def _build(
     factors, explanations = compute_factors(linked, by_id, max_mentions, draft.forward_looking, effort, context)
     points, breakdown = scoring.score(factors, explanations, level)
     key = stable_key([s.id for s in linked])
+    conflicts = []
+    for s in linked:
+        for conflict in context.get("segment_conflicts", {}).get(s.id, []):
+            if conflict not in conflicts:
+                conflicts.append(conflict)
     return Requirement(
         id=f"REQ-{scenario.id}-{key}", stable_key=key, title=draft.title, description=draft.description,
         acceptance_criterion=draft.acceptance_criterion, category=draft.category,
@@ -133,6 +143,7 @@ def _build(
         offer_check=OfferCheck(status="unknown", note="Option list not checked yet."),
         effort=effort, horizon=draft.horizon, badges=badges_for(draft.horizon, level.value),
         business=business_context(context.get("sales", {})),
+        segment_conflicts=conflicts,
     )
 
 

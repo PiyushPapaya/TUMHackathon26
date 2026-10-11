@@ -1,0 +1,2393 @@
+{
+ "scenario": {
+  "id": "G60-EU",
+  "derivative": "G60",
+  "model_name": "BMW 5er Limousine (G60)",
+  "market": "EU",
+  "countries": [
+   "GB",
+   "SE",
+   "DK",
+   "FI",
+   "NO",
+   "FR",
+   "LV",
+   "ES"
+  ],
+  "competitors": [
+   "Mercedes-Benz E-Class",
+   "Audi A6 e-tron",
+   "Volvo ES90",
+   "Tesla Model S"
+  ],
+  "successor_horizon": "2030",
+  "warnings": [
+   "Only 111 customer comments from Europe; the study and sales data carry more weight than for G60-US."
+  ],
+  "data_coverage": {
+   "feedback": 111,
+   "study": 37,
+   "sales": 1,
+   "options": 133,
+   "web": 0,
+   "external": 0,
+   "badge": "dünn"
+  }
+ },
+ "funnel": {
+  "evidence": 148,
+  "signals": 10,
+  "requirements": 10,
+  "approved": 0,
+  "generated_at": "2026-10-11T04:56:00+00:00"
+ },
+ "weights": {},
+ "evidence": [
+  {
+   "id": "EV-G60-EU-FB-G60-0025",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "feels bmw handles well.\ncar has been reliable and needs very little maintenance.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Handling / Riding | no_class_found",
+    "vfc3": "Like: function",
+    "feedback_type": "Likes",
+    "labels": "Handling / Riding/Likes | no_class_found/",
+    "engine": "BEVE",
+    "country": "NO",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-0034",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "for a car on a newly developed model platform, the range should have been much better. i have to drive very slowly to get a sensible distance between charges, even for 30- to 40-mile round trips, which means lots of stops. i also find it a bit stingy that with a car in this price class, basically fully equipped, you still have to buy subscriptions for things like remote parking (parking ass. prof.), welcome light animation, etc. some are one-off payments, others tie you into an annual contract period. on top of that, it wasn't really clear that these features weren't actually included when you buy the equipment packages. apart from that, it's an absolutely fantastic car, but the high weight is a small minus, because it would have been even more fun if it were at least 200-300 kg lighter",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Electric Range | Remote controlled parking | no_class_found",
+    "vfc3": "Range, not OK | Not user-friendly",
+    "feedback_type": "Difficult to Use",
+    "labels": "Electric Range/Difficult to Use | Remote controlled parking/Difficult to Use | no_class_found/",
+    "engine": "BEVE",
+    "country": "SE",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-0263",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "strong performance, very quiet, comfortable, fun to drive, and uses the interior space well.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Drivetrain",
+    "vfc3": "Like: performance",
+    "feedback_type": "Likes",
+    "labels": "Drivetrain/Likes",
+    "engine": "BEVE",
+    "country": "SE",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-0270",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "pros: handling and comfort\n\nimprovements: clearer solutions and feedback on error messages, plus faster response times from the service organization....",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Handling / Riding",
+    "vfc3": "Like: function",
+    "feedback_type": "Likes",
+    "labels": "Handling / Riding/Likes",
+    "engine": "BEVE",
+    "country": "DK",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-0298",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "im generally very happy, but in winter the electric range maybe isnt the greatest. some options are hard to find again in the menus.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "ConnectedDrive and Infotainment, overall technology | Electric Range",
+    "vfc3": "Not user-friendly | Range, not OK",
+    "feedback_type": "Difficult to Use",
+    "labels": "ConnectedDrive and Infotainment, overall technology/Difficult to Use | Electric Range/Difficult to Use",
+    "engine": "PHEV",
+    "country": "SE",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-0325",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "i'm really unhappy with the range, and with this limitation on how many times you can fast charge in a 24 hour period. on top of that, bmw has basically said nothing about it, which is very disappointing.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Electric Range",
+    "vfc3": "Range, not OK",
+    "feedback_type": "Difficult to Use",
+    "labels": "Electric Range/Difficult to Use",
+    "engine": "BEVE",
+    "country": "DK",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-0400",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "car is nice, comfy to ride in, and the battery range is good even in winter, about 7 mil or so. luggage space is much better than my previoos 5series hybrid cannon car",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Electric Range",
+    "vfc3": "Like: Range",
+    "feedback_type": "Likes",
+    "labels": "Electric Range/Likes",
+    "engine": "PHEV",
+    "country": "SE",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-0426",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "bmw puts the driver first and i realy like that. it's always stylish and constantly draws positive attention.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Drive, driving dynamics and chassis, overall technology | no_class_found",
+    "vfc3": "Like: function",
+    "feedback_type": "Likes",
+    "labels": "Drive, driving dynamics and chassis, overall technology/Likes | no_class_found/",
+    "engine": "PHEV",
+    "country": "SE",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-0506",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "the bmw 530e has a full new luxury style, not just on the outside but inside too, with lots of safety systems from various angles in traffic for both driver and passengers. comfort is good, and the battery so far is fine, i get about 77 km in winter and around 94 km in summer. the driving feel is totally different and more comfortable than my old bmw 520d-2019. i recomend it as an economical car with good-luxury design, suitable as a family car, etc.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Electric Range",
+    "vfc3": "Like: function",
+    "feedback_type": "Likes",
+    "labels": "Electric Range/Likes",
+    "engine": "PHEV",
+    "country": "SE",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-0595",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "against my old 68 plate 520i, this one pulls quicker and uses less fuel. i really like the head up display and the new main screen, and the journey fuel info is handy. adaptive cruise itself works fine, but changing the gap to the car ahead while driving is awkward, especially when i want more distance in the wet. lane control helps. sat nav overall is good, yet the traffic delay icons/text are tiny and digging into that info on the move is hard, plus minor roads are shown too faintly. spotify is well integrated, simple to use and looks good. downside is the road noise, which is much louder on some surfaces and basically drowns out the audio. the speed limit warning drives me mad and is often wrong. i also want to keep the car in efficient mode without having to set it again every single journey.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "(Active) cruise control | Drivetrain | Head-Up Display | Navigation | Speed Limit Assistant | Touch screen, operation | no_class_found",
+    "vfc3": "Customer request: usability | Like: Efficiency | Like: function | Not user-friendly | Like: usability | Malfunction",
+    "feedback_type": "Wants | Likes | Difficult to Use | Defect",
+    "labels": "(Active) cruise control/Wants | Drivetrain/Likes | Head-Up Display/Likes | Navigation/Difficult to Use | Speed Limit Assistant/Difficult to Use | Touch screen, operation/Likes | Touch screen, operation/Defect | no_class_found/",
+    "engine": "ICE",
+    "country": "GB",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-0621",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "a very comfortable car with solid technology and truly wonderful driving pleasure.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Drive, driving dynamics and chassis, overall technology | no_class_found",
+    "vfc3": "Like: function",
+    "feedback_type": "Likes",
+    "labels": "Drive, driving dynamics and chassis, overall technology/Likes | no_class_found/",
+    "engine": "BEVE",
+    "country": "SE",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-0798",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "the car itself is very good but the info system really leaves a lot to be desired, with way too many submenus. some of the materials feel a bit questionable for such a nice car.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "ConnectedDrive and Infotainment, overall technology | no_class_found",
+    "vfc3": "Not user-friendly",
+    "feedback_type": "Difficult to Use",
+    "labels": "ConnectedDrive and Infotainment, overall technology/Difficult to Use | no_class_found/",
+    "engine": "PHEV",
+    "country": "SE",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-0843",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "i still like my old 520 more, this one feels over-regulated. the speed warning gets on my nerves and there are a bunch of privacy data settings you have to switch off. the car also starts braking the moment you take your foot off the accelerator, so you have to press the pedal again just to stop it from slowing down. that behavior is really annoying, and it feels like i'm always battling the computer system instead of simply enjoying the drive.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "ConnectedDrive and Infotainment, overall technology | Speed Limit Assistant | no_class_found",
+    "vfc3": "Not user-friendly | Malfunction",
+    "feedback_type": "Difficult to Use | Defect",
+    "labels": "ConnectedDrive and Infotainment, overall technology/Difficult to Use | Speed Limit Assistant/Defect | no_class_found/",
+    "engine": "ICE",
+    "country": "GB",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-0912",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "really like the car, super fun to drive. but android auto feels a bit bare, and charging operator integration is weak.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 0,
+   "meta": {
+    "vfc2": "Android Auto | Drive, driving dynamics and chassis, overall technology",
+    "vfc3": "Not user-friendly | Like: function",
+    "feedback_type": "Difficult to Use | Likes",
+    "labels": "Android Auto/Difficult to Use | Drive, driving dynamics and chassis, overall technology/Likes",
+    "engine": "BEVE",
+    "country": "DK",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-1032",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "it is about as close as you can get to an electric car that still doesnt really appear or feel like an ev. the whole premium feel is intact. the range, though, really has to be improved, right now it is simply not good enough. on top of that there are some irritating design details. 1. the seat belts bang into plastic if you dont consciously pull them fully up. 2. the small hooks in the trunk for groceries cant actually hold a bag handle. 3. the door handles are oddly placed, so people who dont know the car cant locate them in the dark. 4. the trunk lid needs a very firm pull to shut correctly, which again is hard for people unfamiliar with the car. 5. since clever is a major player in denmark, it is pretty frustrating that their charging card isnt integrated in the infotainment, so the charging guidance is basically unusable in denmark. supposedly that will be sorted.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Door, front | Electric Range | Trunk lid | Trunk lid, open / close | no_class_found",
+    "vfc3": "Damage | Range, not OK | Operating force not OK",
+    "feedback_type": "Defect | Difficult to Use",
+    "labels": "Door, front/Defect | Electric Range/Difficult to Use | Trunk lid/Defect | Trunk lid, open / close/Defect | no_class_found/",
+    "engine": "BEVE",
+    "country": "DK",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-1137",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "nice to drive and the range is very good",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Electric Range",
+    "vfc3": "Like: Range",
+    "feedback_type": "Likes",
+    "labels": "Electric Range/Likes",
+    "engine": "BEVE",
+    "country": "GB",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-1222",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "really love this car. the build quality is excellent, and the 2.0l engine feels very refined, runs quietly, and still has more than enough power for everyday driving situations.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Body equipment, overall technology | Drivetrain",
+    "vfc3": "Workmanship appeals | Like: performance",
+    "feedback_type": "Likes",
+    "labels": "Body equipment, overall technology/Likes | Drivetrain/Likes",
+    "engine": "ICE",
+    "country": "GB",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-1461",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "this is my fourth bmw since my first one back in 2016, and just when i think the standards have peaked, suddenly there are all these new features and the car basically performs better than ever for what you need. i'm still figuring out everything the 520i can do, but every trip so far has been a real pleasure behind the wheel. even though many of our roads are awful with potholes, once you are on the motorway the car is an absolute dream to drive and unmatched by anything else in its class. i did try a used 7 series on a test drive and almost went for it, but when the new 520i came out it felt like having a 7 series anyway, with plenty of space, luxury and majesty. a fantastic car and, in my view, the best in its class.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Drive, driving dynamics and chassis, overall technology | Drivetrain | Space / spatial impression | no_class_found",
+    "vfc3": "Like: function | Like: performance | Customer request: space / spatial impression",
+    "feedback_type": "Likes | Wants",
+    "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Drivetrain/Likes | Space / spatial impression/Wants | no_class_found/",
+    "engine": "ICE",
+    "country": "GB",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-1500",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "the car handles very well and is excellent for touring, and the hybrid system itself is very good. but i don't really feel the 300 hp that's advertised, the acceleration is gentle, especially when it's just the combustion engine working.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 0,
+   "meta": {
+    "vfc2": "Engine acoustics / engine sound | Handling / Riding",
+    "vfc3": "Customer request: sound | Like: function",
+    "feedback_type": "Wants | Likes",
+    "labels": "Engine acoustics / engine sound/Wants | Handling / Riding/Likes",
+    "engine": "PHEV",
+    "country": "FR",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-1545",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "this version has major improvements in driving safety systems and the infotainment setup. handling and road behavior are excellent, giving a smooth drive. on the downside, cost savings in the interior are very noticeable compared to the earlier series, including the material choices. torque, overall power and driving dynamics do not meet expectations, and a stronger engine as the entry option would help. even so, the car offers fair value and still carries a high level of prestige.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 0,
+   "meta": {
+    "vfc2": "Engine acoustics / engine sound | Handling / Riding | Impression of safety | Upholstery / interior trim | no_class_found",
+    "vfc3": "Customer request: sound | Like: function | Damage",
+    "feedback_type": "Wants | Likes | Defect",
+    "labels": "Engine acoustics / engine sound/Wants | Handling / Riding/Likes | Impression of safety/Likes | Upholstery / interior trim/Defect | no_class_found/",
+    "engine": "ICE",
+    "country": "GB",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-1814",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "it is a fantastic car. very comfortable, plenty of power, packed with technology and simple to charge. very straightforward to manage through the app. only letdown was the manual boot closing unless you pay for a much more expensive upgrade. very easy to wow friends and family. brilliant for long motorway trips across europe but also drives nicely around town. almost the ultimate driving machine! mark collins",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Drivetrain | Handling / Riding | Trunk lid | no_class_found",
+    "vfc3": "Like: function | Like: performance | Damage",
+    "feedback_type": "Likes | Defect",
+    "labels": "Drivetrain/Likes | Handling / Riding/Likes | Trunk lid/Defect | no_class_found/",
+    "engine": "PHEV",
+    "country": "GB",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-1848",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "for me the car feels a bit oversized, but other than that it really is excellent. the one downside is the software, which is pretty sluggish and makes you tap several times for a lot of functions.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "ConnectedDrive and Infotainment, overall technology | General enquiry: customer feedback",
+    "vfc3": "Not user-friendly | Information / accuracy insufficient",
+    "feedback_type": "Difficult to Use",
+    "labels": "ConnectedDrive and Infotainment, overall technology/Difficult to Use | General enquiry: customer feedback/Difficult to Use",
+    "engine": "BEVE",
+    "country": "GB",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-1910",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "significantly improved electric range. faster charging (up to about 11 kw ac) means it actually makes sense to plug in during a break on a long journey. however, there is now hassle with the software, since you cant download it directly in the car anymore and have to use an app that doesnt run flawlessly. it is also no longer possible to top up the battery via the petrol engine to have air conditioning the next day at a location without a charging spot.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Air conditioning, overall technology | ConnectedDrive and Infotainment, overall technology | Electric Range | High voltage battery",
+    "vfc3": "Like: function | Not user-friendly | Range, not OK | Malfunction",
+    "feedback_type": "Likes | Difficult to Use | Defect",
+    "labels": "Air conditioning, overall technology/Likes | ConnectedDrive and Infotainment, overall technology/Difficult to Use | Electric Range/Difficult to Use | High voltage battery/Defect",
+    "engine": "PHEV",
+    "country": "SE",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-2047",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "very strong acceleration, precise handling, efficient hybrid system, and a very pleasant electric drive in town. interior has nice nordic-style furniture, deep trunk, top-notch chassis, great wheeler overall and economical.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Drivetrain",
+    "vfc3": "Like: performance",
+    "feedback_type": "Likes",
+    "labels": "Drivetrain/Likes",
+    "engine": "PHEV",
+    "country": "FR",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-2109",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "for me this is much better than full electric, since i always have petroleum backup. plus it has the b58, which i consider the best engine in the world at the moment.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Drivetrain | no_class_found",
+    "vfc3": "Like: performance",
+    "feedback_type": "Likes",
+    "labels": "Drivetrain/Likes | no_class_found/",
+    "engine": "PHEV",
+    "country": "GB",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-2232",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "it's the world's best driving machine, in every single category.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Drive, driving dynamics and chassis, overall technology",
+    "vfc3": "Like: function",
+    "feedback_type": "Likes",
+    "labels": "Drive, driving dynamics and chassis, overall technology/Likes",
+    "engine": "PHEV",
+    "country": "SE",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-2329",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "very high quality car overall, from the finish to the driving enjoyment. it does feel heavy, but the electric motor torque makes up for that. a bit let down by some of the plastic parts inside, and the black plastic grille does not feel very premium either.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 0,
+   "meta": {
+    "vfc2": "Drive, driving dynamics and chassis, overall technology | Radiator grille | no_class_found",
+    "vfc3": "Like: function | Damage",
+    "feedback_type": "Likes | Defect",
+    "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Radiator grille/Defect | no_class_found/",
+    "engine": "BEVE",
+    "country": "FR",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-2488",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "it's awesome to drive, and all the controls and screens are positioned just right. the design is awesome and the engine is really good.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Drive, driving dynamics and chassis, overall technology | no_class_found",
+    "vfc3": "Like: function",
+    "feedback_type": "Likes",
+    "labels": "Drive, driving dynamics and chassis, overall technology/Likes | no_class_found/",
+    "engine": "BEVE",
+    "country": "SE",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-2503",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "the low fuel use, about 4-4.5 liters per 100 km, is absolutely fantastic.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Drivetrain",
+    "vfc3": "Like: Efficiency",
+    "feedback_type": "Likes",
+    "labels": "Drivetrain/Likes",
+    "engine": "ICE",
+    "country": "SE",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-2752",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "extremely comfortable car and easy to drive, and it is also fast. the 60 liter gas tank together with a battery that does 100 km is a major advantage compared to earlier models (previously had a 330e with a 40 liter tank and 35 km battery range).",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 0,
+   "meta": {
+    "vfc2": "Drive, driving dynamics and chassis, overall technology | Electric Range",
+    "vfc3": "Like: function | Range, not OK",
+    "feedback_type": "Likes | Difficult to Use",
+    "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Electric Range/Difficult to Use",
+    "engine": "PHEV",
+    "country": "SE",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-2775",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "overall i like the vehicle, but the interior feels rubbery and the real-world range is embarrassingly short",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Electric Range | Interior",
+    "vfc3": "Range, not OK | Not user-friendly",
+    "feedback_type": "Difficult to Use",
+    "labels": "Electric Range/Difficult to Use | Interior/Difficult to Use",
+    "engine": "BEVE",
+    "country": "SE",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-2789",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "as a vehicle, the bmw feels nicely luxurious, practical and enjoyable to drive. plus, the dealer i've dealt with has been excellent, both during the purchase and afterward, giving me good advice and guidance whenever i have questions.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Drive, driving dynamics and chassis, overall technology | no_class_found",
+    "vfc3": "Like: function",
+    "feedback_type": "Likes",
+    "labels": "Drive, driving dynamics and chassis, overall technology/Likes | no_class_found/",
+    "engine": "PHEV",
+    "country": "FI",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-2972",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "the car turned out a bit too small for me and the electric range was far under what was advertised, so i ended up trading it for an i7 demonstrator.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Electric Range | no_class_found",
+    "vfc3": "Range, not OK",
+    "feedback_type": "Difficult to Use",
+    "labels": "Electric Range/Difficult to Use | no_class_found/",
+    "engine": "PHEV",
+    "country": "GB",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-3232",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "the software works well and the range estimates are pretty accurate. assisted driving gives good support for the driver. the one thing that really disappoints me is that the driver seat does not have memory as standard.\n\nit would be great to have a better way in the app to plan charging stops and then send the entire planned route directly to the car. same thing for trips with several waypoints. right now it comes over as separate stops and you have to piece the whole route together again in the car.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 0,
+   "meta": {
+    "vfc2": "Driver assistance, automated driving, overall technology | Electric Range | Route optimized for charging | Seat memory | no_class_found",
+    "vfc3": "Like: function | Like: Range | Customer request: usability | Malfunction",
+    "feedback_type": "Likes | Wants | Defect",
+    "labels": "Driver assistance, automated driving, overall technology/Likes | Electric Range/Likes | Route optimized for charging/Wants | Seat memory/Defect | no_class_found/",
+    "engine": "BEVE",
+    "country": "SE",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-3433",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "the car itself is excellent, but the range really should be higher for something in this price bracket. mine listed at around sek 1,020,000 and in summer i only get roughly 420 km, which i find too limited.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "vfc2": "Body equipment, overall technology | Electric Range",
+    "vfc3": "Dislike: price-performance ratio | Range, not OK",
+    "feedback_type": "Wants | Difficult to Use",
+    "labels": "Body equipment, overall technology/Wants | Electric Range/Difficult to Use",
+    "engine": "BEVE",
+    "country": "SE",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-3633",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "the driving experience is very impressive, and nearly all our local town trips are now done purely on electric. only when we travel out of town do we use the 20ltr petrol engine together with the electric power, and we are getting an excellent 60 miles on electric. very happy with it so far.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Electric Range",
+    "vfc3": "Like: function",
+    "feedback_type": "Likes",
+    "labels": "Electric Range/Likes",
+    "engine": "PHEV",
+    "country": "GB",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-3690",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "great handling, design and quality, plus good servcie and reliability",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Handling / Riding",
+    "vfc3": "Like: function",
+    "feedback_type": "Likes",
+    "labels": "Handling / Riding/Likes",
+    "engine": "BEVE",
+    "country": "DK",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-3886",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "the bmw i5 edrive is a car i genuinely enjoy getting behind the wheel of. the battery range is somewhat limited, but still reasonable for everyday driving. the ride is comfortable and the finish is nice. my only real regret is that the engine compartment area isn't used to provide an extra trunk.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Drivetrain | Handling / Riding | High voltage battery | no_class_found",
+    "vfc3": "Malfunction | Like: function",
+    "feedback_type": "Defect | Likes",
+    "labels": "Drivetrain/Defect | Handling / Riding/Likes | High voltage battery/Likes | no_class_found/",
+    "engine": "BEVE",
+    "country": "FR",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-ST-20",
+   "source_type": "study",
+   "source_name": "EU-Studie 2025",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Fuel economy/ energy efficiency: mean 7.4 (EU study 2025)",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "attribute": "Fuel economy/ energy efficiency",
+    "mean": "7.45"
+   }
+  },
+  {
+   "id": "EV-G60-EU-ST-27",
+   "source_type": "study",
+   "source_name": "EU-Studie 2025",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Rear interior roominess: mean 7.5 (EU study 2025)",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "attribute": "Rear interior roominess",
+    "mean": "7.46"
+   }
+  },
+  {
+   "id": "EV-G60-EU-ST-28",
+   "source_type": "study",
+   "source_name": "EU-Studie 2025",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Ease of loading/ unloading luggage: mean 7.2 (EU study 2025)",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "attribute": "Ease of loading/ unloading luggage",
+    "mean": "7.24"
+   }
+  },
+  {
+   "id": "EV-G60-EU-ST-32",
+   "source_type": "study",
+   "source_name": "EU-Studie 2025",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Heating/ ventilation/ air conditioning: mean 7.5 (EU study 2025)",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "attribute": "Heating/ ventilation/ air conditioning",
+    "mean": "7.47"
+   }
+  },
+  {
+   "id": "EV-G60-EU-ST-36",
+   "source_type": "study",
+   "source_name": "EU-Studie 2025",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Connected services: mean 7.4 (EU study 2025)",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": -1,
+   "meta": {
+    "attribute": "Connected services",
+    "mean": "7.37"
+   }
+  }
+ ],
+ "signals": [
+  {
+   "id": "SIG-G60-EU-001",
+   "kind": "delight",
+   "category": "driving_experience",
+   "title": "Drive, driving dynamics and chassis, overall technology: delight",
+   "summary": "24 customer comments about 'Drive, driving dynamics and chassis, overall technology' (delight).",
+   "evidence_ids": [
+    "EV-G60-EU-FB-G60-0426",
+    "EV-G60-EU-FB-G60-0621",
+    "EV-G60-EU-FB-G60-0912",
+    "EV-G60-EU-FB-G60-2232",
+    "EV-G60-EU-FB-G60-2329",
+    "EV-G60-EU-FB-G60-2488",
+    "EV-G60-EU-FB-G60-2752",
+    "EV-G60-EU-FB-G60-2789"
+   ],
+   "mention_count": 24,
+   "source_types": [
+    "feedback"
+   ],
+   "conflicts_with": [],
+   "segments": {
+    "engine": {
+     "BEVE": 14,
+     "PHEV": 5,
+     "ICE": 5
+    },
+    "country": {
+     "GB": 8,
+     "SE": 6,
+     "DK": 5,
+     "FI": 2,
+     "NO": 2,
+     "FR": 1
+    },
+    "source": {
+     "A": 24
+    },
+    "feedback_type": {
+     "Likes": 24,
+     "Difficult to Use": 7,
+     "Wants": 4,
+     "Defect": 4
+    }
+   },
+   "study_link": null
+  },
+  {
+   "id": "SIG-G60-EU-002",
+   "kind": "complaint",
+   "category": "range_charging",
+   "title": "Electric Range: complaint",
+   "summary": "12 customer comments about 'Electric Range' (complaint). Study: Fuel economy/ energy efficiency: mean 7.4 (EU study 2025).",
+   "evidence_ids": [
+    "EV-G60-EU-FB-G60-0298",
+    "EV-G60-EU-FB-G60-0325",
+    "EV-G60-EU-FB-G60-2752",
+    "EV-G60-EU-FB-G60-2775",
+    "EV-G60-EU-FB-G60-2972",
+    "EV-G60-EU-FB-G60-3433",
+    "EV-G60-EU-FB-G60-0034",
+    "EV-G60-EU-FB-G60-1032",
+    "EV-G60-EU-ST-20"
+   ],
+   "mention_count": 12,
+   "source_types": [
+    "feedback",
+    "study"
+   ],
+   "conflicts_with": [],
+   "segments": {
+    "engine": {
+     "BEVE": 8,
+     "PHEV": 4
+    },
+    "country": {
+     "SE": 6,
+     "DK": 3,
+     "GB": 3
+    },
+    "source": {
+     "A": 12
+    },
+    "feedback_type": {
+     "Difficult to Use": 12,
+     "Wants": 4,
+     "Likes": 4,
+     "Defect": 3
+    }
+   },
+   "study_link": {
+    "attribute": "Fuel economy/ energy efficiency",
+    "importance": 0.745,
+    "dissatisfaction": 0.5166666666666666
+   }
+  },
+  {
+   "id": "SIG-G60-EU-003",
+   "kind": "delight",
+   "category": "driving_experience",
+   "title": "Drivetrain: delight",
+   "summary": "9 customer comments about 'Drivetrain' (delight).",
+   "evidence_ids": [
+    "EV-G60-EU-FB-G60-0263",
+    "EV-G60-EU-FB-G60-1222",
+    "EV-G60-EU-FB-G60-2047",
+    "EV-G60-EU-FB-G60-2109",
+    "EV-G60-EU-FB-G60-2503",
+    "EV-G60-EU-FB-G60-0595",
+    "EV-G60-EU-FB-G60-1461",
+    "EV-G60-EU-FB-G60-1814"
+   ],
+   "mention_count": 9,
+   "source_types": [
+    "feedback"
+   ],
+   "conflicts_with": [],
+   "segments": {
+    "engine": {
+     "ICE": 4,
+     "PHEV": 4,
+     "BEVE": 1
+    },
+    "country": {
+     "GB": 5,
+     "SE": 2,
+     "FR": 1,
+     "FI": 1
+    },
+    "source": {
+     "A": 9
+    },
+    "feedback_type": {
+     "Likes": 9,
+     "Defect": 3,
+     "Wants": 2,
+     "Difficult to Use": 2
+    }
+   },
+   "study_link": null
+  },
+  {
+   "id": "SIG-G60-EU-004",
+   "kind": "delight",
+   "category": "driving_experience",
+   "title": "Handling / Riding: delight",
+   "summary": "7 customer comments about 'Handling / Riding' (delight).",
+   "evidence_ids": [
+    "EV-G60-EU-FB-G60-0025",
+    "EV-G60-EU-FB-G60-0270",
+    "EV-G60-EU-FB-G60-1500",
+    "EV-G60-EU-FB-G60-3690",
+    "EV-G60-EU-FB-G60-3886",
+    "EV-G60-EU-FB-G60-1545",
+    "EV-G60-EU-FB-G60-1814"
+   ],
+   "mention_count": 7,
+   "source_types": [
+    "feedback"
+   ],
+   "conflicts_with": [],
+   "segments": {
+    "engine": {
+     "BEVE": 4,
+     "PHEV": 2,
+     "ICE": 1
+    },
+    "country": {
+     "DK": 2,
+     "FR": 2,
+     "GB": 2,
+     "NO": 1
+    },
+    "source": {
+     "A": 7
+    },
+    "feedback_type": {
+     "Likes": 7,
+     "Defect": 3,
+     "Wants": 2
+    }
+   },
+   "study_link": null
+  },
+  {
+   "id": "SIG-G60-EU-005",
+   "kind": "complaint",
+   "category": "infotainment_digital",
+   "title": "ConnectedDrive and Infotainment, overall technology: complaint",
+   "summary": "5 customer comments about 'ConnectedDrive and Infotainment, overall technology' (complaint).",
+   "evidence_ids": [
+    "EV-G60-EU-FB-G60-0298",
+    "EV-G60-EU-FB-G60-0798",
+    "EV-G60-EU-FB-G60-1848",
+    "EV-G60-EU-FB-G60-0843",
+    "EV-G60-EU-FB-G60-1910"
+   ],
+   "mention_count": 5,
+   "source_types": [
+    "feedback"
+   ],
+   "conflicts_with": [],
+   "segments": {
+    "engine": {
+     "PHEV": 3,
+     "ICE": 1,
+     "BEVE": 1
+    },
+    "country": {
+     "SE": 3,
+     "GB": 2
+    },
+    "source": {
+     "A": 5
+    },
+    "feedback_type": {
+     "Difficult to Use": 5,
+     "Defect": 2,
+     "Likes": 1
+    }
+   },
+   "study_link": null
+  },
+  {
+   "id": "SIG-G60-EU-006",
+   "kind": "delight",
+   "category": "range_charging",
+   "title": "Electric Range: delight",
+   "summary": "5 customer comments about 'Electric Range' (delight).",
+   "evidence_ids": [
+    "EV-G60-EU-FB-G60-0400",
+    "EV-G60-EU-FB-G60-3633",
+    "EV-G60-EU-FB-G60-0506",
+    "EV-G60-EU-FB-G60-1137",
+    "EV-G60-EU-FB-G60-3232"
+   ],
+   "mention_count": 5,
+   "source_types": [
+    "feedback"
+   ],
+   "conflicts_with": [],
+   "segments": {
+    "engine": {
+     "PHEV": 3,
+     "BEVE": 2
+    },
+    "country": {
+     "SE": 3,
+     "GB": 2
+    },
+    "source": {
+     "A": 5
+    },
+    "feedback_type": {
+     "Likes": 5,
+     "Wants": 1,
+     "Defect": 1
+    }
+   },
+   "study_link": null
+  },
+  {
+   "id": "SIG-G60-EU-007",
+   "kind": "complaint",
+   "category": "infotainment_digital",
+   "title": "Connected services: complaint",
+   "summary": "Study: Connected services: mean 7.4 (EU study 2025).",
+   "evidence_ids": [
+    "EV-G60-EU-ST-36"
+   ],
+   "mention_count": 1,
+   "source_types": [
+    "study"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": {
+    "attribute": "Connected services",
+    "importance": 0.737,
+    "dissatisfaction": 0.5433333333333333
+   }
+  },
+  {
+   "id": "SIG-G60-EU-008",
+   "kind": "complaint",
+   "category": "comfort_space",
+   "title": "Ease of loading/ unloading luggage: complaint",
+   "summary": "Study: Ease of loading/ unloading luggage: mean 7.2 (EU study 2025).",
+   "evidence_ids": [
+    "EV-G60-EU-ST-28"
+   ],
+   "mention_count": 1,
+   "source_types": [
+    "study"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": {
+    "attribute": "Ease of loading/ unloading luggage",
+    "importance": 0.724,
+    "dissatisfaction": 0.5866666666666666
+   }
+  },
+  {
+   "id": "SIG-G60-EU-009",
+   "kind": "complaint",
+   "category": "comfort_space",
+   "title": "Heating/ ventilation/ air conditioning: complaint",
+   "summary": "Study: Heating/ ventilation/ air conditioning: mean 7.5 (EU study 2025).",
+   "evidence_ids": [
+    "EV-G60-EU-ST-32"
+   ],
+   "mention_count": 1,
+   "source_types": [
+    "study"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": {
+    "attribute": "Heating/ ventilation/ air conditioning",
+    "importance": 0.747,
+    "dissatisfaction": 0.5100000000000001
+   }
+  },
+  {
+   "id": "SIG-G60-EU-010",
+   "kind": "complaint",
+   "category": "comfort_space",
+   "title": "Rear interior roominess: complaint",
+   "summary": "Study: Rear interior roominess: mean 7.5 (EU study 2025).",
+   "evidence_ids": [
+    "EV-G60-EU-ST-27"
+   ],
+   "mention_count": 1,
+   "source_types": [
+    "study"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": {
+    "attribute": "Rear interior roominess",
+    "importance": 0.746,
+    "dissatisfaction": 0.5133333333333333
+   }
+  }
+ ],
+ "requirements": [
+  {
+   "id": "REQ-G60-EU-001",
+   "title": "Improve Electric Range for the successor",
+   "description": "Address the customer pain or unmet need around Electric Range with a measurable user outcome.",
+   "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+   "category": "range_charging",
+   "signal_ids": [
+    "SIG-G60-EU-002"
+   ],
+   "score": 47.9,
+   "rank": 1,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 1.0,
+     "weight": 0.25,
+     "contribution": 25.0,
+     "explanation": "Mostly complaints (Difficult to Use / Likes | Difficult to Use), 12 mentions"
+    },
+    "reach": {
+     "value": 0.707,
+     "weight": 0.2,
+     "contribution": 14.1,
+     "explanation": "12 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+    },
+    "satisfaction_gap": {
+     "value": 0.517,
+     "weight": 0.2,
+     "contribution": 10.3,
+     "explanation": "Fuel economy/ energy efficiency: mean 7.45 of 10"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.1,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (25 points) and reach (14.1 points). Evidence level B: Only 12 mentions, but confirmed by 2 independent source types.",
+   "evidence_level": "B",
+   "assumptions": [
+    "Rule-based fallback draft because no cached LLM draft was available."
+   ],
+   "uncertainties": [
+    "Needs PM wording review before approval."
+   ],
+   "offer_check": {
+    "status": "unknown",
+    "note": "Check not possible (RuntimeError).",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 1,
+    "rank_max": 1,
+    "top3_share": 1.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 115000,
+    "volume_2030": 127000,
+    "growth_pct": 15.5,
+    "market_share": 0.402,
+    "note": "Sales context from sales_volumes.xlsx"
+   },
+   "stable_key": "",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-EU-004",
+   "title": "Improve Ease of loading/ unloading luggage for the successor",
+   "description": "Address the customer pain or unmet need around Ease of loading/ unloading luggage with a measurable user outcome.",
+   "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+   "category": "comfort_space",
+   "signal_ids": [
+    "SIG-G60-EU-008"
+   ],
+   "score": 33.5,
+   "rank": 2,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 1.0,
+     "weight": 0.25,
+     "contribution": 25.0,
+     "explanation": "Mostly complaints, 1 mentions"
+    },
+    "reach": {
+     "value": 0.204,
+     "weight": 0.2,
+     "contribution": 4.1,
+     "explanation": "1 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+    },
+    "satisfaction_gap": {
+     "value": 0.587,
+     "weight": 0.2,
+     "contribution": 11.7,
+     "explanation": "Ease of loading/ unloading luggage: mean 7.24 of 10"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.1,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (11.7 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+   "evidence_level": "C",
+   "assumptions": [
+    "Rule-based fallback draft because no cached LLM draft was available."
+   ],
+   "uncertainties": [
+    "Needs PM wording review before approval."
+   ],
+   "offer_check": {
+    "status": "unknown",
+    "note": "Check not possible (RuntimeError).",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 2,
+    "rank_max": 3,
+    "top3_share": 1.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 115000,
+    "volume_2030": 127000,
+    "growth_pct": 15.5,
+    "market_share": 0.402,
+    "note": "Sales context from sales_volumes.xlsx"
+   },
+   "stable_key": "",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-EU-003",
+   "title": "Improve Connected services for the successor",
+   "description": "Address the customer pain or unmet need around Connected services with a measurable user outcome.",
+   "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+   "category": "infotainment_digital",
+   "signal_ids": [
+    "SIG-G60-EU-007"
+   ],
+   "score": 32.9,
+   "rank": 3,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 1.0,
+     "weight": 0.25,
+     "contribution": 25.0,
+     "explanation": "Mostly complaints, 1 mentions"
+    },
+    "reach": {
+     "value": 0.204,
+     "weight": 0.2,
+     "contribution": 4.1,
+     "explanation": "1 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+    },
+    "satisfaction_gap": {
+     "value": 0.543,
+     "weight": 0.2,
+     "contribution": 10.9,
+     "explanation": "Connected services: mean 7.37 of 10"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.1,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (10.9 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+   "evidence_level": "C",
+   "assumptions": [
+    "Rule-based fallback draft because no cached LLM draft was available."
+   ],
+   "uncertainties": [
+    "Needs PM wording review before approval."
+   ],
+   "offer_check": {
+    "status": "unknown",
+    "note": "Check not possible (RuntimeError).",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 3,
+    "rank_max": 4,
+    "top3_share": 0.646,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 115000,
+    "volume_2030": 127000,
+    "growth_pct": 15.5,
+    "market_share": 0.402,
+    "note": "Sales context from sales_volumes.xlsx"
+   },
+   "stable_key": "",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-EU-006",
+   "title": "Improve Rear interior roominess for the successor",
+   "description": "Address the customer pain or unmet need around Rear interior roominess with a measurable user outcome.",
+   "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+   "category": "comfort_space",
+   "signal_ids": [
+    "SIG-G60-EU-010"
+   ],
+   "score": 32.5,
+   "rank": 4,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 1.0,
+     "weight": 0.25,
+     "contribution": 25.0,
+     "explanation": "Mostly complaints, 1 mentions"
+    },
+    "reach": {
+     "value": 0.204,
+     "weight": 0.2,
+     "contribution": 4.1,
+     "explanation": "1 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+    },
+    "satisfaction_gap": {
+     "value": 0.513,
+     "weight": 0.2,
+     "contribution": 10.3,
+     "explanation": "Rear interior roominess: mean 7.46 of 10"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.1,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (10.3 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+   "evidence_level": "C",
+   "assumptions": [
+    "Rule-based fallback draft because no cached LLM draft was available."
+   ],
+   "uncertainties": [
+    "Needs PM wording review before approval."
+   ],
+   "offer_check": {
+    "status": "unknown",
+    "note": "Check not possible (RuntimeError).",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 4,
+    "rank_max": 5,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 115000,
+    "volume_2030": 127000,
+    "growth_pct": 15.5,
+    "market_share": 0.402,
+    "note": "Sales context from sales_volumes.xlsx"
+   },
+   "stable_key": "",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-EU-005",
+   "title": "Improve Heating/ ventilation/ air conditioning for the successor",
+   "description": "Address the customer pain or unmet need around Heating/ ventilation/ air conditioning with a measurable user outcome.",
+   "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+   "category": "comfort_space",
+   "signal_ids": [
+    "SIG-G60-EU-009"
+   ],
+   "score": 32.4,
+   "rank": 5,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 1.0,
+     "weight": 0.25,
+     "contribution": 25.0,
+     "explanation": "Mostly complaints, 1 mentions"
+    },
+    "reach": {
+     "value": 0.204,
+     "weight": 0.2,
+     "contribution": 4.1,
+     "explanation": "1 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+    },
+    "satisfaction_gap": {
+     "value": 0.51,
+     "weight": 0.2,
+     "contribution": 10.2,
+     "explanation": "Heating/ ventilation/ air conditioning: mean 7.47 of 10"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.1,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (10.2 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+   "evidence_level": "C",
+   "assumptions": [
+    "Rule-based fallback draft because no cached LLM draft was available."
+   ],
+   "uncertainties": [
+    "Needs PM wording review before approval."
+   ],
+   "offer_check": {
+    "status": "unknown",
+    "note": "Check not possible (RuntimeError).",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 5,
+    "rank_max": 6,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 115000,
+    "volume_2030": 127000,
+    "growth_pct": 15.5,
+    "market_share": 0.402,
+    "note": "Sales context from sales_volumes.xlsx"
+   },
+   "stable_key": "",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-EU-007",
+   "title": "Maintain Drive, driving dynamics and chassis, overall technology as a proven strength",
+   "description": "Keep the customer experience around Drive, driving dynamics and chassis, overall technology at least at today's level.",
+   "acceptance_criterion": "No decline in linked study score or complaint share in the next validation clinic.",
+   "category": "driving_experience",
+   "signal_ids": [
+    "SIG-G60-EU-001"
+   ],
+   "score": 31.4,
+   "rank": 6,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.4,
+     "weight": 0.25,
+     "contribution": 10.0,
+     "explanation": "Mostly strengths (Likes / Difficult to Use | Likes), 24 mentions"
+    },
+    "reach": {
+     "value": 1.0,
+     "weight": 0.2,
+     "contribution": 20.0,
+     "explanation": "24 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+    },
+    "satisfaction_gap": {
+     "value": 0.0,
+     "weight": 0.2,
+     "contribution": 0.0,
+     "explanation": "no study data"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.1,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of reach (20 points) and customer pain (10 points). Evidence level B: 24 mentions, but from a single source type.",
+   "evidence_level": "B",
+   "assumptions": [
+    "Rule-based fallback draft because no cached LLM draft was available."
+   ],
+   "uncertainties": [
+    "Needs PM wording review before approval."
+   ],
+   "offer_check": {
+    "status": "unknown",
+    "note": "Check not possible (RuntimeError).",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 2,
+    "rank_max": 7,
+    "top3_share": 0.354,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 115000,
+    "volume_2030": 127000,
+    "growth_pct": 15.5,
+    "market_share": 0.402,
+    "note": "Sales context from sales_volumes.xlsx"
+   },
+   "stable_key": "",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-EU-002",
+   "title": "Improve ConnectedDrive and Infotainment, overall technology for the successor",
+   "description": "Address the customer pain or unmet need around ConnectedDrive and Infotainment, overall technology with a measurable user outcome.",
+   "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+   "category": "infotainment_digital",
+   "signal_ids": [
+    "SIG-G60-EU-005"
+   ],
+   "score": 28.8,
+   "rank": 7,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 1.0,
+     "weight": 0.25,
+     "contribution": 25.0,
+     "explanation": "Mostly complaints (Difficult to Use / Difficult to Use | Defect), 5 mentions"
+    },
+    "reach": {
+     "value": 0.456,
+     "weight": 0.2,
+     "contribution": 9.1,
+     "explanation": "5 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+    },
+    "satisfaction_gap": {
+     "value": 0.0,
+     "weight": 0.2,
+     "contribution": 0.0,
+     "explanation": "no study data"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.1,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (25 points) and reach (9.1 points). Evidence level C: Only 5 mentions: a hint, not a solid finding.",
+   "evidence_level": "C",
+   "assumptions": [
+    "Rule-based fallback draft because no cached LLM draft was available."
+   ],
+   "uncertainties": [
+    "Needs PM wording review before approval."
+   ],
+   "offer_check": {
+    "status": "unknown",
+    "note": "Check not possible (RuntimeError).",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 6,
+    "rank_max": 7,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 115000,
+    "volume_2030": 127000,
+    "growth_pct": 15.5,
+    "market_share": 0.402,
+    "note": "Sales context from sales_volumes.xlsx"
+   },
+   "stable_key": "",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-EU-008",
+   "title": "Maintain Drivetrain as a proven strength",
+   "description": "Keep the customer experience around Drivetrain at least at today's level.",
+   "acceptance_criterion": "No decline in linked study score or complaint share in the next validation clinic.",
+   "category": "driving_experience",
+   "signal_ids": [
+    "SIG-G60-EU-003"
+   ],
+   "score": 20.4,
+   "rank": 8,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.4,
+     "weight": 0.25,
+     "contribution": 10.0,
+     "explanation": "Mostly strengths (Likes / Wants | Likes | Difficult to Use | Defect), 9 mentions"
+    },
+    "reach": {
+     "value": 0.612,
+     "weight": 0.2,
+     "contribution": 12.2,
+     "explanation": "9 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+    },
+    "satisfaction_gap": {
+     "value": 0.0,
+     "weight": 0.2,
+     "contribution": 0.0,
+     "explanation": "no study data"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.1,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of reach (12.2 points) and customer pain (10 points). Evidence level C: Only 9 mentions: a hint, not a solid finding.",
+   "evidence_level": "C",
+   "assumptions": [
+    "Rule-based fallback draft because no cached LLM draft was available."
+   ],
+   "uncertainties": [
+    "Needs PM wording review before approval."
+   ],
+   "offer_check": {
+    "status": "unknown",
+    "note": "Check not possible (RuntimeError).",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 8,
+    "rank_max": 8,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 115000,
+    "volume_2030": 127000,
+    "growth_pct": 15.5,
+    "market_share": 0.402,
+    "note": "Sales context from sales_volumes.xlsx"
+   },
+   "stable_key": "",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-EU-009",
+   "title": "Maintain Handling / Riding as a proven strength",
+   "description": "Keep the customer experience around Handling / Riding at least at today's level.",
+   "acceptance_criterion": "No decline in linked study score or complaint share in the next validation clinic.",
+   "category": "driving_experience",
+   "signal_ids": [
+    "SIG-G60-EU-004"
+   ],
+   "score": 19.5,
+   "rank": 9,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.4,
+     "weight": 0.25,
+     "contribution": 10.0,
+     "explanation": "Mostly strengths (Likes / Wants | Likes), 7 mentions"
+    },
+    "reach": {
+     "value": 0.54,
+     "weight": 0.2,
+     "contribution": 10.8,
+     "explanation": "7 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+    },
+    "satisfaction_gap": {
+     "value": 0.0,
+     "weight": 0.2,
+     "contribution": 0.0,
+     "explanation": "no study data"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.1,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of reach (10.8 points) and customer pain (10 points). Evidence level C: Only 7 mentions: a hint, not a solid finding.",
+   "evidence_level": "C",
+   "assumptions": [
+    "Rule-based fallback draft because no cached LLM draft was available."
+   ],
+   "uncertainties": [
+    "Needs PM wording review before approval."
+   ],
+   "offer_check": {
+    "status": "unknown",
+    "note": "Check not possible (RuntimeError).",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 9,
+    "rank_max": 9,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 115000,
+    "volume_2030": 127000,
+    "growth_pct": 15.5,
+    "market_share": 0.402,
+    "note": "Sales context from sales_volumes.xlsx"
+   },
+   "stable_key": "",
+   "badges": []
+  },
+  {
+   "id": "REQ-G60-EU-010",
+   "title": "Maintain Electric Range as a proven strength",
+   "description": "Keep the customer experience around Electric Range at least at today's level.",
+   "acceptance_criterion": "No decline in linked study score or complaint share in the next validation clinic.",
+   "category": "range_charging",
+   "signal_ids": [
+    "SIG-G60-EU-006"
+   ],
+   "score": 18.3,
+   "rank": 10,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.4,
+     "weight": 0.25,
+     "contribution": 10.0,
+     "explanation": "Mostly strengths (Likes / Likes | Wants | Defect), 5 mentions"
+    },
+    "reach": {
+     "value": 0.456,
+     "weight": 0.2,
+     "contribution": 9.1,
+     "explanation": "5 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+    },
+    "satisfaction_gap": {
+     "value": 0.0,
+     "weight": 0.2,
+     "contribution": 0.0,
+     "explanation": "no study data"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 0.1,
+     "weight": 0.1,
+     "contribution": 1.0,
+     "explanation": "no trend behind it"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (10 points) and reach (9.1 points). Evidence level C: Only 5 mentions: a hint, not a solid finding.",
+   "evidence_level": "C",
+   "assumptions": [
+    "Rule-based fallback draft because no cached LLM draft was available."
+   ],
+   "uncertainties": [
+    "Needs PM wording review before approval."
+   ],
+   "offer_check": {
+    "status": "unknown",
+    "note": "Check not possible (RuntimeError).",
+    "option_code": null
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 10,
+    "rank_max": 10,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 115000,
+    "volume_2030": 127000,
+    "growth_pct": 15.5,
+    "market_share": 0.402,
+    "note": "Sales context from sales_volumes.xlsx"
+   },
+   "stable_key": "",
+   "badges": []
+  }
+ ],
+ "discarded": [],
+ "context": {
+  "sales": {
+   "market": "EU",
+   "volume_2024": 110000,
+   "volume_2025": 115000,
+   "volume_2030": 127000,
+   "share_of_total_2030": 0.402,
+   "growth_pct": 10.435,
+   "growth_2024_2025_pct": 4.545
+  },
+  "unmapped_topics": {
+   "no_class_found": 73,
+   "Remote controlled parking": 1,
+   "General enquiry: customer feedback": 2,
+   "Air conditioning, overall technology": 2,
+   "Trailer, use": 2,
+   "Body equipment, overall technology": 7,
+   "Android Auto": 1,
+   "Self-leveling suspension": 1,
+   "Multi-function steering wheel operation": 1,
+   "Headrest, adjust": 1,
+   "Radiator grille": 2,
+   "Charging cable": 1,
+   "Route optimized for charging": 1
+  },
+  "warnings": [],
+  "segment_conflicts": {},
+  "counter_evidence": {}
+ },
+ "opportunities": [
+  {
+   "attribute": "Quality of ride",
+   "category": "driving_experience",
+   "importance": 0.995,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G60-EU-ST-25"
+  },
+  {
+   "attribute": "Exterior styling",
+   "category": "exterior",
+   "importance": 0.983,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G60-EU-ST-02"
+  },
+  {
+   "attribute": "Reliability",
+   "category": "quality_perception",
+   "importance": 0.925,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G60-EU-ST-09"
+  },
+  {
+   "attribute": "Driving position",
+   "category": "driving_experience",
+   "importance": 0.917,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G60-EU-ST-35"
+  },
+  {
+   "attribute": "Safety",
+   "category": "driver_assistance",
+   "importance": 0.915,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G60-EU-ST-06"
+  },
+  {
+   "attribute": "Front interior roominess",
+   "category": "comfort_space",
+   "importance": 0.888,
+   "dissatisfaction": 0.04,
+   "evidence_id": "EV-G60-EU-ST-26"
+  },
+  {
+   "attribute": "Acceleration",
+   "category": "driving_experience",
+   "importance": 0.885,
+   "dissatisfaction": 0.05,
+   "evidence_id": "EV-G60-EU-ST-18"
+  },
+  {
+   "attribute": "Overall seating comfort",
+   "category": "comfort_space",
+   "importance": 0.881,
+   "dissatisfaction": 0.063,
+   "evidence_id": "EV-G60-EU-ST-16"
+  },
+  {
+   "attribute": "Manoeuvrability",
+   "category": "driving_experience",
+   "importance": 0.873,
+   "dissatisfaction": 0.09,
+   "evidence_id": "EV-G60-EU-ST-24"
+  },
+  {
+   "attribute": "All round visibility",
+   "category": "driver_assistance",
+   "importance": 0.864,
+   "dissatisfaction": 0.12,
+   "evidence_id": "EV-G60-EU-ST-10"
+  },
+  {
+   "attribute": "Integrated navigation system",
+   "category": "infotainment_digital",
+   "importance": 0.859,
+   "dissatisfaction": 0.137,
+   "evidence_id": "EV-G60-EU-ST-15"
+  },
+  {
+   "attribute": "Interior styling",
+   "category": "interior",
+   "importance": 0.855,
+   "dissatisfaction": 0.15,
+   "evidence_id": "EV-G60-EU-ST-03"
+  },
+  {
+   "attribute": "Smartphone integration/ connectivity",
+   "category": "infotainment_digital",
+   "importance": 0.846,
+   "dissatisfaction": 0.18,
+   "evidence_id": "EV-G60-EU-ST-12"
+  },
+  {
+   "attribute": "Freedom from faults/ squeaks/ rattles",
+   "category": "quality_perception",
+   "importance": 0.841,
+   "dissatisfaction": 0.197,
+   "evidence_id": "EV-G60-EU-ST-07"
+  },
+  {
+   "attribute": "Easy to use information and entertainment system including in-car apps",
+   "category": "infotainment_digital",
+   "importance": 0.826,
+   "dissatisfaction": 0.247,
+   "evidence_id": "EV-G60-EU-ST-14"
+  },
+  {
+   "attribute": "Braking",
+   "category": "driving_experience",
+   "importance": 0.825,
+   "dissatisfaction": 0.25,
+   "evidence_id": "EV-G60-EU-ST-21"
+  },
+  {
+   "attribute": "Features of information and entertainment system including in-car apps",
+   "category": "infotainment_digital",
+   "importance": 0.819,
+   "dissatisfaction": 0.27,
+   "evidence_id": "EV-G60-EU-ST-13"
+  },
+  {
+   "attribute": "Roadholding",
+   "category": "driving_experience",
+   "importance": 0.815,
+   "dissatisfaction": 0.283,
+   "evidence_id": "EV-G60-EU-ST-19"
+  },
+  {
+   "attribute": "Interior versatility",
+   "category": "comfort_space",
+   "importance": 0.814,
+   "dissatisfaction": 0.287,
+   "evidence_id": "EV-G60-EU-ST-37"
+  },
+  {
+   "attribute": "Easy to read and use instruments/ controls/ displays",
+   "category": "infotainment_digital",
+   "importance": 0.807,
+   "dissatisfaction": 0.31,
+   "evidence_id": "EV-G60-EU-ST-11"
+  },
+  {
+   "attribute": "Ease of entry into and out of car",
+   "category": "comfort_space",
+   "importance": 0.791,
+   "dissatisfaction": 0.363,
+   "evidence_id": "EV-G60-EU-ST-30"
+  },
+  {
+   "attribute": "Quietness when driving",
+   "category": "quality_perception",
+   "importance": 0.779,
+   "dissatisfaction": 0.403,
+   "evidence_id": "EV-G60-EU-ST-34"
+  },
+  {
+   "attribute": "Quality of interior and materials used",
+   "category": "interior",
+   "importance": 0.775,
+   "dissatisfaction": 0.417,
+   "evidence_id": "EV-G60-EU-ST-04"
+  },
+  {
+   "attribute": "Interior storage for small items",
+   "category": "comfort_space",
+   "importance": 0.772,
+   "dissatisfaction": 0.427,
+   "evidence_id": "EV-G60-EU-ST-17"
+  },
+  {
+   "attribute": "Overall build quality",
+   "category": "quality_perception",
+   "importance": 0.767,
+   "dissatisfaction": 0.443,
+   "evidence_id": "EV-G60-EU-ST-33"
+  },
+  {
+   "attribute": "Sportiness",
+   "category": "driving_experience",
+   "importance": 0.764,
+   "dissatisfaction": 0.453,
+   "evidence_id": "EV-G60-EU-ST-22"
+  },
+  {
+   "attribute": "Luggage capacity",
+   "category": "comfort_space",
+   "importance": 0.754,
+   "dissatisfaction": 0.487,
+   "evidence_id": "EV-G60-EU-ST-29"
+  },
+  {
+   "attribute": "Heating/ ventilation/ air conditioning",
+   "category": "comfort_space",
+   "importance": 0.747,
+   "dissatisfaction": 0.51,
+   "evidence_id": "EV-G60-EU-ST-32"
+  },
+  {
+   "attribute": "Rear interior roominess",
+   "category": "comfort_space",
+   "importance": 0.746,
+   "dissatisfaction": 0.513,
+   "evidence_id": "EV-G60-EU-ST-27"
+  },
+  {
+   "attribute": "Fuel economy/ energy efficiency",
+   "category": "range_charging",
+   "importance": 0.745,
+   "dissatisfaction": 0.517,
+   "evidence_id": "EV-G60-EU-ST-20"
+  },
+  {
+   "attribute": "Connected services",
+   "category": "infotainment_digital",
+   "importance": 0.737,
+   "dissatisfaction": 0.543,
+   "evidence_id": "EV-G60-EU-ST-36"
+  },
+  {
+   "attribute": "Ease of loading/ unloading luggage",
+   "category": "comfort_space",
+   "importance": 0.724,
+   "dissatisfaction": 0.587,
+   "evidence_id": "EV-G60-EU-ST-28"
+  }
+ ]
+}

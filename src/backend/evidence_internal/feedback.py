@@ -16,6 +16,7 @@ from pathlib import Path
 
 import pandas as pd
 
+from core.datasets import load_profile
 from core.models import Evidence, SourceType
 
 SHEET = "Feedback_Explorer"
@@ -46,6 +47,14 @@ def _sign(total: int) -> int:
 
 def feedback_to_evidence(df: pd.DataFrame, cfg: dict) -> list[Evidence]:
     """Rein und ohne Datei testbar: Feedback-Zeilen -> ein Beleg je BMW-ID."""
+    profile = load_profile().get("feedback", {})
+    defaults = {"id": "ID", "source": "Source", "country": "Country", "derivative": "Derivate (e-code)",
+                "engine": "Engine Type", "feedback_type": "Feedback Type", "text": "Customer Feedback",
+                "topic_level2": "Vfc level2 Name", "topic_level3": "Vfc level3 Name"}
+    columns = {**defaults, **profile.get("columns", {})}
+    df = df.rename(columns={actual: defaults[key] for key, actual in columns.items() if key in defaults})
+    polarity_map = profile.get("polarity_by_feedback_type", POLARITY)
+    praise_source = profile.get("praise_only_source", PRAISE_ONLY_SOURCE)
     countries = set(cfg["countries"])
     rows = df.assign(_country=df["Country"].map(_clean))
     rows = rows[rows["_country"].isin(countries)]
@@ -67,7 +76,7 @@ def feedback_to_evidence(df: pd.DataFrame, cfg: dict) -> list[Evidence]:
         only_defects = all(t == "Defect" for t in types)
         scope = "out" if only_defects and source == "B" else "in"
 
-        polarity = _sign(sum(POLARITY.get(t, 0) for t in types))
+        polarity = _sign(sum(polarity_map.get(t, 0) for t in types))
         meta = {
             "vfc2": SEPARATOR.join(_unique(vfc2)),
             "vfc3": SEPARATOR.join(_unique(vfc3)),
@@ -76,9 +85,10 @@ def feedback_to_evidence(df: pd.DataFrame, cfg: dict) -> list[Evidence]:
             "engine": _clean(group["Engine Type"].iloc[0]),
             "country": _clean(group["Country"].iloc[0]),  # für den Länderfilter (EU = GB, FR, SE ...)
             "source": source,
+            "source_letter": source,
             "scope": scope,
         }
-        if source == PRAISE_ONLY_SOURCE and not any(types):  # nur bei ganz leerem Typ, echte Typen gewinnen
+        if source == praise_source and not any(types):  # nur bei ganz leerem Typ, echte Typen gewinnen
             polarity = 1
             meta["polarity_basis"] = "source_d_praise"  # für Review und UI: warum +1 trotz leerem Typ
 
@@ -99,6 +109,9 @@ def feedback_to_evidence(df: pd.DataFrame, cfg: dict) -> list[Evidence]:
 
 def load_feedback(cfg: dict, raw_dir: Path) -> list[Evidence]:
     """Liest die Feedback-Excel des Szenarios und baut die Belege."""
-    path = Path(raw_dir) / cfg["data"]["feedback_file"]
-    df = pd.read_excel(path, sheet_name=SHEET)
+    filename = cfg["data"].get("feedback_file")
+    if not filename:
+        return []
+    path = Path(raw_dir) / filename
+    df = pd.read_excel(path, sheet_name=load_profile().get("feedback", {}).get("sheet", SHEET))
     return feedback_to_evidence(df, cfg)

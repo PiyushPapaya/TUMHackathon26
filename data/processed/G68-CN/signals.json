@@ -1,0 +1,65 @@
+[
+ {
+  "id": "SIG-G68-CN-001",
+  "kind": "complaint",
+  "category": "driving_experience",
+  "title": "Braking: complaint",
+  "summary": "Study: Braking: mean 7.4 (CN study 2025).",
+  "evidence_ids": [
+   "EV-G68-CN-ST-21"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "Braking",
+   "importance": 0.738,
+   "dissatisfaction": 0.54
+  }
+ },
+ {
+  "id": "SIG-G68-CN-002",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Connected services: complaint",
+  "summary": "Study: Connected services: mean 7.3 (CN study 2025).",
+  "evidence_ids": [
+   "EV-G68-CN-ST-36"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "Connected services",
+   "importance": 0.735,
+   "dissatisfaction": 0.5500000000000002
+  }
+ },
+ {
+  "id": "SIG-G68-CN-003",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Ease of loading/ unloading luggage: complaint",
+  "summary": "Study: Ease of loading/ unloading luggage: mean 7.3 (CN study 2025).",
+  "evidence_ids": [
+   "EV-G68-CN-ST-28"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "Ease of loading/ unloading luggage",
+   "importance": 0.725,
+   "dissatisfaction": 0.5833333333333334
+  }
+ }
+]

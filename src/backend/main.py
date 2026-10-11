@@ -28,10 +28,14 @@ async def lifespan(app: FastAPI):
     # Eine SQLite-Datei pro Laptop; liegt in data/ und damit außerhalb von Git.
     db_path = Path(os.getenv("AUDIT_DB", ROOT / "data" / "audit.db"))
     db_path.parent.mkdir(parents=True, exist_ok=True)
-    store = Store(AuditLog(db_path))
-    store.load_all()
-    app.state.store = store
-    yield
+    audit = AuditLog(db_path)
+    try:
+        store = Store(audit)
+        store.load_all()
+        app.state.store = store
+        yield
+    finally:
+        audit.close()
 
 
 app = FastAPI(title="Signal2Spec", version="0.2.0", lifespan=lifespan,

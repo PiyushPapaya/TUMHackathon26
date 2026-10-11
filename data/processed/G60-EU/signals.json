@@ -1,0 +1,347 @@
+[
+ {
+  "id": "SIG-G60-EU-001",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Drive, driving dynamics and chassis, overall technology: delight",
+  "summary": "24 customer comments about 'Drive, driving dynamics and chassis, overall technology' (delight).",
+  "evidence_ids": [
+   "EV-G60-EU-FB-G60-0426",
+   "EV-G60-EU-FB-G60-0621",
+   "EV-G60-EU-FB-G60-0912",
+   "EV-G60-EU-FB-G60-2232",
+   "EV-G60-EU-FB-G60-2329",
+   "EV-G60-EU-FB-G60-2488",
+   "EV-G60-EU-FB-G60-2752",
+   "EV-G60-EU-FB-G60-2789"
+  ],
+  "mention_count": 24,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "BEVE": 14,
+    "PHEV": 5,
+    "ICE": 5
+   },
+   "country": {
+    "GB": 8,
+    "SE": 6,
+    "DK": 5,
+    "FI": 2,
+    "NO": 2,
+    "FR": 1
+   },
+   "source": {
+    "A": 24
+   },
+   "feedback_type": {
+    "Likes": 24,
+    "Difficult to Use": 7,
+    "Wants": 4,
+    "Defect": 4
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G60-EU-002",
+  "kind": "complaint",
+  "category": "range_charging",
+  "title": "Electric Range: complaint",
+  "summary": "12 customer comments about 'Electric Range' (complaint). Study: Fuel economy/ energy efficiency: mean 7.4 (EU study 2025).",
+  "evidence_ids": [
+   "EV-G60-EU-FB-G60-0298",
+   "EV-G60-EU-FB-G60-0325",
+   "EV-G60-EU-FB-G60-2752",
+   "EV-G60-EU-FB-G60-2775",
+   "EV-G60-EU-FB-G60-2972",
+   "EV-G60-EU-FB-G60-3433",
+   "EV-G60-EU-FB-G60-0034",
+   "EV-G60-EU-FB-G60-1032",
+   "EV-G60-EU-ST-20"
+  ],
+  "mention_count": 12,
+  "source_types": [
+   "feedback",
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "BEVE": 8,
+    "PHEV": 4
+   },
+   "country": {
+    "SE": 6,
+    "DK": 3,
+    "GB": 3
+   },
+   "source": {
+    "A": 12
+   },
+   "feedback_type": {
+    "Difficult to Use": 12,
+    "Wants": 4,
+    "Likes": 4,
+    "Defect": 3
+   }
+  },
+  "study_link": {
+   "attribute": "Fuel economy/ energy efficiency",
+   "importance": 0.745,
+   "dissatisfaction": 0.5166666666666666
+  }
+ },
+ {
+  "id": "SIG-G60-EU-003",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Drivetrain: delight",
+  "summary": "9 customer comments about 'Drivetrain' (delight).",
+  "evidence_ids": [
+   "EV-G60-EU-FB-G60-0263",
+   "EV-G60-EU-FB-G60-1222",
+   "EV-G60-EU-FB-G60-2047",
+   "EV-G60-EU-FB-G60-2109",
+   "EV-G60-EU-FB-G60-2503",
+   "EV-G60-EU-FB-G60-0595",
+   "EV-G60-EU-FB-G60-1461",
+   "EV-G60-EU-FB-G60-1814"
+  ],
+  "mention_count": 9,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 4,
+    "PHEV": 4,
+    "BEVE": 1
+   },
+   "country": {
+    "GB": 5,
+    "SE": 2,
+    "FR": 1,
+    "FI": 1
+   },
+   "source": {
+    "A": 9
+   },
+   "feedback_type": {
+    "Likes": 9,
+    "Defect": 3,
+    "Wants": 2,
+    "Difficult to Use": 2
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G60-EU-004",
+  "kind": "delight",
+  "category": "driving_experience",
+  "title": "Handling / Riding: delight",
+  "summary": "7 customer comments about 'Handling / Riding' (delight).",
+  "evidence_ids": [
+   "EV-G60-EU-FB-G60-0025",
+   "EV-G60-EU-FB-G60-0270",
+   "EV-G60-EU-FB-G60-1500",
+   "EV-G60-EU-FB-G60-3690",
+   "EV-G60-EU-FB-G60-3886",
+   "EV-G60-EU-FB-G60-1545",
+   "EV-G60-EU-FB-G60-1814"
+  ],
+  "mention_count": 7,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "BEVE": 4,
+    "PHEV": 2,
+    "ICE": 1
+   },
+   "country": {
+    "DK": 2,
+    "FR": 2,
+    "GB": 2,
+    "NO": 1
+   },
+   "source": {
+    "A": 7
+   },
+   "feedback_type": {
+    "Likes": 7,
+    "Defect": 3,
+    "Wants": 2
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G60-EU-005",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "ConnectedDrive and Infotainment, overall technology: complaint",
+  "summary": "5 customer comments about 'ConnectedDrive and Infotainment, overall technology' (complaint).",
+  "evidence_ids": [
+   "EV-G60-EU-FB-G60-0298",
+   "EV-G60-EU-FB-G60-0798",
+   "EV-G60-EU-FB-G60-1848",
+   "EV-G60-EU-FB-G60-0843",
+   "EV-G60-EU-FB-G60-1910"
+  ],
+  "mention_count": 5,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "PHEV": 3,
+    "ICE": 1,
+    "BEVE": 1
+   },
+   "country": {
+    "SE": 3,
+    "GB": 2
+   },
+   "source": {
+    "A": 5
+   },
+   "feedback_type": {
+    "Difficult to Use": 5,
+    "Defect": 2,
+    "Likes": 1
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G60-EU-006",
+  "kind": "delight",
+  "category": "range_charging",
+  "title": "Electric Range: delight",
+  "summary": "5 customer comments about 'Electric Range' (delight).",
+  "evidence_ids": [
+   "EV-G60-EU-FB-G60-0400",
+   "EV-G60-EU-FB-G60-3633",
+   "EV-G60-EU-FB-G60-0506",
+   "EV-G60-EU-FB-G60-1137",
+   "EV-G60-EU-FB-G60-3232"
+  ],
+  "mention_count": 5,
+  "source_types": [
+   "feedback"
+  ],
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "PHEV": 3,
+    "BEVE": 2
+   },
+   "country": {
+    "SE": 3,
+    "GB": 2
+   },
+   "source": {
+    "A": 5
+   },
+   "feedback_type": {
+    "Likes": 5,
+    "Wants": 1,
+    "Defect": 1
+   }
+  },
+  "study_link": null
+ },
+ {
+  "id": "SIG-G60-EU-007",
+  "kind": "complaint",
+  "category": "infotainment_digital",
+  "title": "Connected services: complaint",
+  "summary": "Study: Connected services: mean 7.4 (EU study 2025).",
+  "evidence_ids": [
+   "EV-G60-EU-ST-36"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "Connected services",
+   "importance": 0.737,
+   "dissatisfaction": 0.5433333333333333
+  }
+ },
+ {
+  "id": "SIG-G60-EU-008",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Ease of loading/ unloading luggage: complaint",
+  "summary": "Study: Ease of loading/ unloading luggage: mean 7.2 (EU study 2025).",
+  "evidence_ids": [
+   "EV-G60-EU-ST-28"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "Ease of loading/ unloading luggage",
+   "importance": 0.724,
+   "dissatisfaction": 0.5866666666666666
+  }
+ },
+ {
+  "id": "SIG-G60-EU-009",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Heating/ ventilation/ air conditioning: complaint",
+  "summary": "Study: Heating/ ventilation/ air conditioning: mean 7.5 (EU study 2025).",
+  "evidence_ids": [
+   "EV-G60-EU-ST-32"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "Heating/ ventilation/ air conditioning",
+   "importance": 0.747,
+   "dissatisfaction": 0.5100000000000001
+  }
+ },
+ {
+  "id": "SIG-G60-EU-010",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Rear interior roominess: complaint",
+  "summary": "Study: Rear interior roominess: mean 7.5 (EU study 2025).",
+  "evidence_ids": [
+   "EV-G60-EU-ST-27"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "Rear interior roominess",
+   "importance": 0.746,
+   "dissatisfaction": 0.5133333333333333
+  }
+ }
+]

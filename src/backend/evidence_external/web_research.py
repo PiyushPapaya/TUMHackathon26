@@ -70,18 +70,23 @@ def _signal(scenario: Scenario, number: int, question: Question, usable: list[Ev
 def research(scenario: Scenario, signals: list[Signal]) -> tuple[list[Evidence], list[Signal]]:
     now = datetime.now(UTC)
     internal_titles = {s.id: s.title for s in signals}
-    by_url: dict[str, Evidence] = {}  # eine Quelle = ein Beleg, auch wenn mehrere Fragen sie liefern
+    by_claim: dict[tuple[str, str, str], Evidence] = {}  # verschiedene Aussagen derselben URL nicht verwechseln
     web_signals: list[Signal] = []
 
     for question in build_questions(scenario, signals):
         usable: list[Evidence] = []  # Belege dieser Frage mit Vertrauen high/medium
         for claim in ask_claims(question.text):
-            key = _url_key(claim.url)
-            if key not in by_url:
-                by_url[key] = _evidence(scenario, len(by_url) + 1, claim, question, now)
-            evidence = by_url[key]
-            if evidence.meta["trust"] in ("high", "medium") and evidence not in usable:
+            key = (_url_key(claim.url), claim.text.strip(), claim.stance)
+            if key not in by_claim:
+                by_claim[key] = _evidence(scenario, len(by_claim) + 1, claim, question, now)
+            evidence = by_claim[key]
+            if question.signal_id:
+                targets = set(evidence.meta.get("supports_signal_ids", "").split("|")) - {""}
+                targets.add(question.signal_id)
+                evidence.meta["supports_signal_ids"] = "|".join(sorted(targets))
+            if (evidence.meta["trust"] in ("high", "medium") and claim.stance != "contradicts"
+                    and evidence not in usable):
                 usable.append(evidence)
         if usable:  # Befund nur mit mindestens einem belastbaren Beleg
             web_signals.append(_signal(scenario, len(web_signals) + 1, question, usable, internal_titles))
-    return list(by_url.values()), web_signals
+    return list(by_claim.values()), web_signals

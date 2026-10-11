@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import PlainTextResponse
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 from core import ask, lens, req_insights
 from core.models import Actor, ActorType
@@ -19,6 +19,7 @@ router = APIRouter(prefix="/api")
 
 
 class LensIn(BaseModel):
+    model_config = ConfigDict(str_strip_whitespace=True)
     question: str = Field(min_length=1, max_length=500, examples=["Familien in den USA, Fokus Laden und Platz"])
     actor: str = Field(min_length=1, examples=["pm.mueller"])
 
@@ -50,6 +51,7 @@ def run_lens(scenario_id: str, body: LensIn, request: Request) -> dict:
 
 
 class AskIn(BaseModel):
+    model_config = ConfigDict(str_strip_whitespace=True)
     question: str = Field(min_length=1, max_length=500, examples=["What matters most for families?"])
     actor: str = Field(default="pm.demo", min_length=1)
 

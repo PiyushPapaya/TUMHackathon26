@@ -1,0 +1,254 @@
+{
+ "sales": {
+  "market": "EU",
+  "volume_2024": 110000,
+  "volume_2025": 115000,
+  "volume_2030": 127000,
+  "share_of_total_2030": 0.402,
+  "growth_pct": 10.435,
+  "growth_2024_2025_pct": 4.545
+ },
+ "unmapped_topics": {
+  "no_class_found": 73,
+  "Remote controlled parking": 1,
+  "General enquiry: customer feedback": 2,
+  "Air conditioning, overall technology": 2,
+  "Trailer, use": 2,
+  "Body equipment, overall technology": 7,
+  "Android Auto": 1,
+  "Self-leveling suspension": 1,
+  "Multi-function steering wheel operation": 1,
+  "Headrest, adjust": 1,
+  "Radiator grille": 2,
+  "Charging cable": 1,
+  "Route optimized for charging": 1
+ },
+ "opportunities": [
+  {
+   "attribute": "Quality of ride",
+   "category": "driving_experience",
+   "importance": 0.995,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G60-EU-ST-25"
+  },
+  {
+   "attribute": "Exterior styling",
+   "category": "exterior",
+   "importance": 0.983,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G60-EU-ST-02"
+  },
+  {
+   "attribute": "Reliability",
+   "category": "quality_perception",
+   "importance": 0.925,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G60-EU-ST-09"
+  },
+  {
+   "attribute": "Driving position",
+   "category": "driving_experience",
+   "importance": 0.917,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G60-EU-ST-35"
+  },
+  {
+   "attribute": "Safety",
+   "category": "driver_assistance",
+   "importance": 0.915,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G60-EU-ST-06"
+  },
+  {
+   "attribute": "Front interior roominess",
+   "category": "comfort_space",
+   "importance": 0.888,
+   "dissatisfaction": 0.04,
+   "evidence_id": "EV-G60-EU-ST-26"
+  },
+  {
+   "attribute": "Acceleration",
+   "category": "driving_experience",
+   "importance": 0.885,
+   "dissatisfaction": 0.05,
+   "evidence_id": "EV-G60-EU-ST-18"
+  },
+  {
+   "attribute": "Overall seating comfort",
+   "category": "comfort_space",
+   "importance": 0.881,
+   "dissatisfaction": 0.063,
+   "evidence_id": "EV-G60-EU-ST-16"
+  },
+  {
+   "attribute": "Manoeuvrability",
+   "category": "driving_experience",
+   "importance": 0.873,
+   "dissatisfaction": 0.09,
+   "evidence_id": "EV-G60-EU-ST-24"
+  },
+  {
+   "attribute": "All round visibility",
+   "category": "driver_assistance",
+   "importance": 0.864,
+   "dissatisfaction": 0.12,
+   "evidence_id": "EV-G60-EU-ST-10"
+  },
+  {
+   "attribute": "Integrated navigation system",
+   "category": "infotainment_digital",
+   "importance": 0.859,
+   "dissatisfaction": 0.137,
+   "evidence_id": "EV-G60-EU-ST-15"
+  },
+  {
+   "attribute": "Interior styling",
+   "category": "interior",
+   "importance": 0.855,
+   "dissatisfaction": 0.15,
+   "evidence_id": "EV-G60-EU-ST-03"
+  },
+  {
+   "attribute": "Smartphone integration/ connectivity",
+   "category": "infotainment_digital",
+   "importance": 0.846,
+   "dissatisfaction": 0.18,
+   "evidence_id": "EV-G60-EU-ST-12"
+  },
+  {
+   "attribute": "Freedom from faults/ squeaks/ rattles",
+   "category": "quality_perception",
+   "importance": 0.841,
+   "dissatisfaction": 0.197,
+   "evidence_id": "EV-G60-EU-ST-07"
+  },
+  {
+   "attribute": "Easy to use information and entertainment system including in-car apps",
+   "category": "infotainment_digital",
+   "importance": 0.826,
+   "dissatisfaction": 0.247,
+   "evidence_id": "EV-G60-EU-ST-14"
+  },
+  {
+   "attribute": "Braking",
+   "category": "driving_experience",
+   "importance": 0.825,
+   "dissatisfaction": 0.25,
+   "evidence_id": "EV-G60-EU-ST-21"
+  },
+  {
+   "attribute": "Features of information and entertainment system including in-car apps",
+   "category": "infotainment_digital",
+   "importance": 0.819,
+   "dissatisfaction": 0.27,
+   "evidence_id": "EV-G60-EU-ST-13"
+  },
+  {
+   "attribute": "Roadholding",
+   "category": "driving_experience",
+   "importance": 0.815,
+   "dissatisfaction": 0.283,
+   "evidence_id": "EV-G60-EU-ST-19"
+  },
+  {
+   "attribute": "Interior versatility",
+   "category": "comfort_space",
+   "importance": 0.814,
+   "dissatisfaction": 0.287,
+   "evidence_id": "EV-G60-EU-ST-37"
+  },
+  {
+   "attribute": "Easy to read and use instruments/ controls/ displays",
+   "category": "infotainment_digital",
+   "importance": 0.807,
+   "dissatisfaction": 0.31,
+   "evidence_id": "EV-G60-EU-ST-11"
+  },
+  {
+   "attribute": "Ease of entry into and out of car",
+   "category": "comfort_space",
+   "importance": 0.791,
+   "dissatisfaction": 0.363,
+   "evidence_id": "EV-G60-EU-ST-30"
+  },
+  {
+   "attribute": "Quietness when driving",
+   "category": "quality_perception",
+   "importance": 0.779,
+   "dissatisfaction": 0.403,
+   "evidence_id": "EV-G60-EU-ST-34"
+  },
+  {
+   "attribute": "Quality of interior and materials used",
+   "category": "interior",
+   "importance": 0.775,
+   "dissatisfaction": 0.417,
+   "evidence_id": "EV-G60-EU-ST-04"
+  },
+  {
+   "attribute": "Interior storage for small items",
+   "category": "comfort_space",
+   "importance": 0.772,
+   "dissatisfaction": 0.427,
+   "evidence_id": "EV-G60-EU-ST-17"
+  },
+  {
+   "attribute": "Overall build quality",
+   "category": "quality_perception",
+   "importance": 0.767,
+   "dissatisfaction": 0.443,
+   "evidence_id": "EV-G60-EU-ST-33"
+  },
+  {
+   "attribute": "Sportiness",
+   "category": "driving_experience",
+   "importance": 0.764,
+   "dissatisfaction": 0.453,
+   "evidence_id": "EV-G60-EU-ST-22"
+  },
+  {
+   "attribute": "Luggage capacity",
+   "category": "comfort_space",
+   "importance": 0.754,
+   "dissatisfaction": 0.487,
+   "evidence_id": "EV-G60-EU-ST-29"
+  },
+  {
+   "attribute": "Heating/ ventilation/ air conditioning",
+   "category": "comfort_space",
+   "importance": 0.747,
+   "dissatisfaction": 0.51,
+   "evidence_id": "EV-G60-EU-ST-32"
+  },
+  {
+   "attribute": "Rear interior roominess",
+   "category": "comfort_space",
+   "importance": 0.746,
+   "dissatisfaction": 0.513,
+   "evidence_id": "EV-G60-EU-ST-27"
+  },
+  {
+   "attribute": "Fuel economy/ energy efficiency",
+   "category": "range_charging",
+   "importance": 0.745,
+   "dissatisfaction": 0.517,
+   "evidence_id": "EV-G60-EU-ST-20"
+  },
+  {
+   "attribute": "Connected services",
+   "category": "infotainment_digital",
+   "importance": 0.737,
+   "dissatisfaction": 0.543,
+   "evidence_id": "EV-G60-EU-ST-36"
+  },
+  {
+   "attribute": "Ease of loading/ unloading luggage",
+   "category": "comfort_space",
+   "importance": 0.724,
+   "dissatisfaction": 0.587,
+   "evidence_id": "EV-G60-EU-ST-28"
+  }
+ ],
+ "warnings": [],
+ "segment_conflicts": {}
+}

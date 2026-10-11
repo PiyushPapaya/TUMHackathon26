@@ -10,7 +10,11 @@ Wer ein Thema umhängt, ändert nur diese Datei. Der Test prüft, dass kein Them
 
 from __future__ import annotations
 
+import logging
+from collections import Counter
+
 from core.models import Category as C
+from core.models import SourceType
 
 _BY_CATEGORY: dict[C, tuple[str, ...]] = {
     C.EXTERIOR: (
@@ -99,3 +103,18 @@ def survey_area(text: str) -> tuple[str, C] | None:
         if keyword in phrase:
             return f"Survey D, {label}", category
     return None
+
+
+def unmapped_topics(evidence: list) -> dict[str, int]:
+    """Nicht zugeordnete Themen zählen, je Kommentar und Thema nur einmal."""
+    counts = Counter()
+    for ev in evidence:
+        if ev.source_type != SourceType.FEEDBACK or ev.meta.get("scope", "in") != "in":
+            continue
+        topics = {p.rpartition("/")[0].strip() for p in ev.meta.get("labels", "").split(" | ") if "/" in p}
+        for topic in topics:
+            if category_for_vfc2(topic) is None and not (not topic and survey_area(ev.text)):
+                counts[topic or "(unlabelled)"] += 1
+    if counts:
+        logging.getLogger(__name__).warning("Unmapped feedback topics: %s", dict(counts))
+    return dict(counts)

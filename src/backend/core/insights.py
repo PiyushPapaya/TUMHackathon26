@@ -26,7 +26,7 @@ COVERAGE_GAP = {
     "feedback": "Keine Kundenkommentare für diesen Markt: Befunde stützen sich nur auf Studie, Absatz und Web.",
     "study": "Keine Kundenstudie: Zufriedenheitslücken sind nicht messbar.",
     "sales": "Keine Absatzzahlen: Reichweite ist geschätzt.",
-    "options": "Keine Optionsliste: wir wissen nicht, was es heute schon gibt.",
+    "options": "Keine lesbare Optionsliste: wir wissen nicht, was es heute schon gibt.",
     "web": "Keine Webbelege: Wettbewerb und Trends fehlen.",
 }
 QUADRANTS = ("Chance", "Stärke halten", "Beobachten", "Nebensache")
@@ -87,6 +87,7 @@ def opportunities(state) -> dict:
     points = [{**o, "quadrant": quadrant(o["importance"], o["dissatisfaction"])}
               for o in state.opportunities if o.get("importance") is not None and o.get("dissatisfaction") is not None]
     return {"scenario_id": state.scenario.id, "points": points, "quadrants": list(QUADRANTS),
+            "importance_note": "Importance is a proxy derived from satisfaction extremes, not measured importance.",
             "thresholds": {"importance": IMPORTANT_FROM, "dissatisfaction": DISSATISFIED_FROM}}
 
 

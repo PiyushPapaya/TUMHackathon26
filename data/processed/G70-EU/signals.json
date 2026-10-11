@@ -1,0 +1,44 @@
+[
+ {
+  "id": "SIG-G70-EU-001",
+  "kind": "complaint",
+  "category": "comfort_space",
+  "title": "Luggage capacity: complaint",
+  "summary": "Study: Luggage capacity: mean 7.4 (EU study 2025).",
+  "evidence_ids": [
+   "EV-G70-EU-ST-29"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "Luggage capacity",
+   "importance": 0.741,
+   "dissatisfaction": 0.5299999999999999
+  }
+ },
+ {
+  "id": "SIG-G70-EU-002",
+  "kind": "complaint",
+  "category": "driving_experience",
+  "title": "Sportiness: complaint",
+  "summary": "Study: Sportiness: mean 7.0 (EU study 2025).",
+  "evidence_ids": [
+   "EV-G70-EU-ST-22"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "study"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "Sportiness",
+   "importance": 0.697,
+   "dissatisfaction": 0.6766666666666667
+  }
+ }
+]

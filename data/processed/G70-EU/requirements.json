@@ -1,0 +1,168 @@
+[
+ {
+  "id": "REQ-G70-EU-002",
+  "title": "Improve Sportiness for the successor",
+  "description": "Address the customer pain or unmet need around Sportiness with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "driving_experience",
+  "signal_ids": [
+   "SIG-G70-EU-002"
+  ],
+  "score": 45.8,
+  "rank": 1,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints, 1 mentions"
+   },
+   "reach": {
+    "value": 1.0,
+    "weight": 0.2,
+    "contribution": 20.0,
+    "explanation": "1 of at most 1 mentions (square root scale); EU = 33 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.677,
+    "weight": 0.2,
+    "contribution": 13.5,
+    "explanation": "Sportiness: mean 6.97 of 10"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and reach (20 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+  "evidence_level": "C",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 1,
+   "rank_max": 1,
+   "top3_share": 1.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 13000,
+   "volume_2030": 17000,
+   "growth_pct": 54.5,
+   "market_share": 0.327,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G70-EU-001",
+  "title": "Improve Luggage capacity for the successor",
+  "description": "Address the customer pain or unmet need around Luggage capacity with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "comfort_space",
+  "signal_ids": [
+   "SIG-G70-EU-001"
+  ],
+  "score": 43.8,
+  "rank": 2,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints, 1 mentions"
+   },
+   "reach": {
+    "value": 1.0,
+    "weight": 0.2,
+    "contribution": 20.0,
+    "explanation": "1 of at most 1 mentions (square root scale); EU = 33 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.53,
+    "weight": 0.2,
+    "contribution": 10.6,
+    "explanation": "Luggage capacity: mean 7.41 of 10"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and reach (20 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+  "evidence_level": "C",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 2,
+   "rank_max": 2,
+   "top3_share": 1.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 13000,
+   "volume_2030": 17000,
+   "growth_pct": 54.5,
+   "market_share": 0.327,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ }
+]

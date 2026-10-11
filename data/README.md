@@ -7,10 +7,11 @@ Was hier im Git liegt und was lokal bleibt (Regeln in `.gitignore`):
 | `raw/` | Originaldateien von BMW (Feedback-Excel, Studie, Absatz, Optionslisten-PDF, Brief) | **ja**, bewusste Entscheidung des Leads (10.10.): ein Ort für alle Quellen, Jury kann die Pipeline nachlaufen lassen | BMW |
 | `demo_cache/` | geprüfte LLM-/Webantworten für die Offline-Demo | ja | `core/llm.py`, von Hand ausgewählt |
 | `external_cache/nhtsa/` | Antworten der öffentlichen NHTSA-API (US-Behörde, gemeinfrei) | ja | `evidence_external/nhtsa.py` |
-| `processed/<szenario>/*.json` | Ergebnisse je Pipeline-Stufe (enthalten Kundenzitate) | nein | `python src/backend/pipeline.py --scenario G60-US` |
-| `processed/<szenario>.json` | Bundle, das die App beim Start lädt | nein | Stufe `bundle` |
+| `processed/<szenario>/*.json` | Ergebnisse je Pipeline-Stufe (enthalten Kundenzitate) | ja, gemäß dokumentierter Freigabe vom 11.10. in `.gitignore` | `python src/backend/pipeline.py --scenario G60-US` |
+| `processed/<szenario>.json` | Bundle, das die App beim Start lädt | ja, gleiche Freigabe | Stufe `bundle` |
 | `cache/` | alle LLM-Antworten (spart Credits) | nein | automatisch durch `core/llm.py` |
 | `audit.db` | Prüfpfad (SQLite, Hash-Kette) | nein | automatisch beim Start des Backends |
+| `eval/` | Stichproben und menschliche Labels | nein | `tests/eval/make_sample.py` |
 
 Dateien in `raw/`: `F70_feedback_hackathon.xlsx`, `G60_feedback_hackathon.xlsx`, `G70_feedback_hackathon.xlsx`,
 `F70_G60_G68_G70_customer_studies.xlsx`, `sales_volumes.xlsx`, `F70_OptionList.PDF`, `G60_OptionList.PDF`,
@@ -18,3 +19,11 @@ Dateien in `raw/`: `F70_feedback_hackathon.xlsx`, `G60_feedback_hackathon.xlsx`,
 
 Ohne `processed/` laufen Backend und Tests trotzdem: Dann nimmt die App das synthetische
 Beispiel aus `src/shared/beispiele/`. Tests nutzen nie echte BMW-Daten, nur Mini-Daten.
+
+Mit den vorhandenen Snapshots läuft die App offline (`DEMO_MODUS=true`). Ein vollständiger
+Neulauf der KI-Pipeline braucht einen OpenAI-Key oder alle zum aktuellen Prompt passenden
+Cache-Einträge. Fehlende Stufen werden nicht durch Beispiele ersetzt.
+
+`python scripts/refresh_bundles.py` ergänzt vorhandene KI-Texte um aktuelle Metadaten,
+Segment-Konflikte, öffentliche Cache-Daten und Robustheit, ohne das LLM zu fragen.
+IDs, Texte und Evidenzstufen bleiben erhalten. Das ersetzt keine neue Webrecherche oder Ableitung.

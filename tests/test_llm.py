@@ -85,3 +85,12 @@ def test_kaputte_cache_datei_zaehlt_als_fehlend(tmp_path, monkeypatch):
     monkeypatch.setattr(llm, "_call_openai", lambda *a: Antwort(text="neu"))
     assert llm.ask_json("s", "u", Antwort).text == "neu"
     assert Antwort.model_validate_json(kaputt.read_text(encoding="utf-8")).text == "neu"
+
+
+def test_parallel_cache_writes_leave_one_complete_json_file(tmp_path):
+    from concurrent.futures import ThreadPoolExecutor
+    path = tmp_path / "cache.json"
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        list(pool.map(lambda i: llm._write_atomic(path, Antwort(text=str(i)).model_dump_json()), range(50)))
+    assert Antwort.model_validate_json(path.read_text(encoding="utf-8")).text.isdigit()
+    assert list(tmp_path.iterdir()) == [path]

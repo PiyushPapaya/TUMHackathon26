@@ -39,6 +39,10 @@ def normalize_weights(weights: dict[str, float]) -> dict[str, float]:
     if any(not math.isfinite(v) or v < 0 for v in weights.values()):
         raise ValueError("Gewichte müssen endliche Zahlen >= 0 sein.")
     merged = {**DEFAULT_WEIGHTS, **weights}
+    scale = max(merged.values())
+    if scale <= 0:
+        raise ValueError("Mindestens ein Gewicht muss größer als 0 sein.")
+    merged = {k: v / scale for k, v in merged.items()}
     total = sum(merged.values())
     if total <= 0:
         raise ValueError("Mindestens ein Gewicht muss größer als 0 sein.")

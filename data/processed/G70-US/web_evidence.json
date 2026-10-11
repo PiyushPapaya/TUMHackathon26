@@ -1,0 +1,1758 @@
+[
+ {
+  "id": "EV-G70-US-WEB-01",
+  "source_type": "web",
+  "source_name": "Car and Driver",
+  "derivative": "G70",
+  "market": "US",
+  "text": "The 2025 Mercedes‑Benz S‑Class sedan’s EPA/trunk volume is about 13 cubic feet (reported trunk volume: 13 ft³).",
+  "url": "https://www.caranddriver.com/mercedes-benz/s-class-2025",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Car and Driver",
+   "published": "2025",
+   "stance": "neutral",
+   "about": "S‑Class cargo volume",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-009"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-02",
+  "source_type": "web",
+  "source_name": "Car and Driver",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Major U.S. reviewers report the 2025 BMW 7‑Series (G70) trunk/cargo volume is substantially larger than the S‑Class at about 18–19 cubic feet (Car and Driver lists 19 ft³ and other sources list ~18–19 ft³).",
+  "url": "https://www.caranddriver.com/bmw/7-series-2025",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Car and Driver",
+   "published": "2025",
+   "stance": "neutral",
+   "about": "7‑Series cargo volume",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-009"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-03",
+  "source_type": "web",
+  "source_name": "Edmunds",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Edmunds lists the 2025 Mercedes‑Benz S‑Class rear legroom at 43.8 inches (showing the S‑Class provides very generous rear-seat legroom).",
+  "url": "https://www.edmunds.com/mercedes-benz/s-class/2025/sedan/features-specs/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Edmunds",
+   "published": "2025",
+   "stance": "neutral",
+   "about": "S‑Class rear legroom",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-009"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-04",
+  "source_type": "web",
+  "source_name": "BMW dealer inventory/spec sheet",
+  "derivative": "G70",
+  "market": "US",
+  "text": "BMW dealer specification listings and inventory sheets for the 7‑Series/i7 show rear legroom around 42.8–43.3 inches (typical published rear‑legroom figures for G70 7‑Series/i7 are ~42.8 in).",
+  "url": "https://www.bmwofkansascitysouth.com/certified/BMW/2025-BMW-i7-kansas-city-mo-dd5fe5b7ac183f1287c59be717f1baa4.htm",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW dealer inventory/spec sheet",
+   "published": "2025–2026",
+   "stance": "neutral",
+   "about": "7‑Series rear legroom",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-009"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-05",
+  "source_type": "web",
+  "source_name": "BumperScan (aggregate of Mercedes service bulletins)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Multiple Mercedes‑Benz service communications / technical‑service bulletins and dealer guidance documents note customer complaints that the A/C ‘either does not cool/has poor performance’ and provide diagnostic/recharge or part‑replacement procedures (manufacturer communication example: reference communication number 11027751 and related LI guidance).",
+  "url": "https://bumperscan.com/tsbs/mercedes-benz/s-580/2023",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BumperScan (aggregate of Mercedes service bulletins)",
+   "published": "manufacturer communications (TSBs) 2023–2026",
+   "stance": "supports",
+   "about": "Mercedes HVAC complaints/TSBs",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-009"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-06",
+  "source_type": "web",
+  "source_name": "NHTSA / BMW recall report (static NHTSA filing)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "I found a manufacturer/NHTSA service/recall document for BMW’s G70/7‑Series program addressing a service action related to cabin‑air‑filter wiring harness routing (a precautionary action identified in BMW’s safety/recall paperwork) but did not find an equivalent BMW technical‑service bulletin or manufacturer communication explicitly describing widespread ‘A/C does not cool / poor airflow’ failures for the G70 7‑Series in 2025–2026 in the sources searched.",
+  "url": "https://static.nhtsa.gov/odi/rcl/2026/RCLRPT-26V096-6591.pdf",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "NHTSA / BMW recall report (static NHTSA filing)",
+   "published": "2026 (recall/service action filing)",
+   "stance": "neutral",
+   "about": "BMW service action / absence of HVAC TSBs found",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-009"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-07",
+  "source_type": "web",
+  "source_name": "One Source (HVAC troubleshooting guide)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Common root causes for a car’s A/C that ‘does not cool or does not push enough air’ include low refrigerant charge/leaks, clogged cabin‑air filter or vents, a failed blower motor or blower‑resistor/controller, restricted ducting or a frozen evaporator coil — these are standard HVAC troubleshooting causes cited by professional HVAC/automotive diagnostic guides.",
+  "url": "https://www.onesourceair.com/blog/how-do-i-diagnose-whats-wrong-with-my-ac",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "One Source (HVAC troubleshooting guide)",
+   "published": "2025–2026 guidance",
+   "stance": "neutral",
+   "about": "common HVAC causes",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-009"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-08",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz Media (USA)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "For the 2025–2026 US Mercedes‑Benz EQS, Mercedes fits the MBUX Hyperscreen: three active displays (12.3\" driver + 17.7\" center + 12.3\" passenger) under a single curved glass measuring over 55–56 inches across the dash.",
+  "url": "https://media.mbusa.com/news/the-eqs-the-first-electric-vehicle-in-the-luxury-class",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Mercedes‑Benz Media (USA)",
+   "published": "2021-04-19",
+   "stance": "supports",
+   "about": "EQS Hyperscreen size and composition",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-012"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-09",
+  "source_type": "web",
+  "source_name": "Cars.com",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Mercedes has moved many formerly physical controls into the EQS central touchscreen and steering touch surfaces, leaving relatively few hard buttons on the dash or center stack.",
+  "url": "https://www.cars.com/articles/2024-mercedes-eq-eqs450-plus-sedan-review-not-quite-an-electric-s-class-488639/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Cars.com",
+   "published": "2024-06-11",
+   "stance": "supports",
+   "about": "EQS control layout and physical button reduction",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-012"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-10",
+  "source_type": "web",
+  "source_name": "Car and Driver",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Multiple professional reviews and owner reports say MBUX and the Hyperscreen offer extensive functionality but have a steep learning curve and can hide commonly used functions several menu levels deep, which some users describe as 'tricky' or 'complex' to use.",
+  "url": "https://www.caranddriver.com/reviews/a69826490/2025-mercedes-benz-eqs450-4matic-test/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Car and Driver",
+   "published": "2025-02-27",
+   "stance": "supports",
+   "about": "EQS MBUX complexity and usability critiques",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-012"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-11",
+  "source_type": "web",
+  "source_name": "Autoblog",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Mercedes’ natural‑language assistant (“Hey Mercedes”) is capable of handling many tasks (navigation entry, HVAC, media), and some reviewers report it works well for addresses but that screen-driven alternatives remain necessary for many settings.",
+  "url": "https://www.autoblog.com/reviews/mercedes-benz-eqs-580-review-500-miles-176810291.html",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Autoblog",
+   "published": "2021-10-06",
+   "stance": "neutral",
+   "about": "Hey Mercedes voice capability and reviewer experience",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-012"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-12",
+  "source_type": "web",
+  "source_name": "Consumer Reports",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Consumer Reports’ coverage of the 7‑Series notes BMW retained a physical control knob plus surrounding buttons and also introduced an 'interaction bar' (touch surfaces) for climate and other functions — giving drivers both tactile and touchscreen options.",
+  "url": "https://www.consumerreports.org/cars/bmw/7-series/2025/road-test-report/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Consumer Reports",
+   "published": "2025",
+   "stance": "supports",
+   "about": "BMW 7 Series controls and interaction bar",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-012"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-13",
+  "source_type": "web",
+  "source_name": "Reddit user discussion (owner reports)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Owners and forum commenters for both brands report that modern luxury infotainment systems (including EQS MBUX and BMW’s iDrive 8 family) are powerful but can feel 'too complicated' for some buyers — a frequent real‑world complaint rather than a brand‑exclusive issue.",
+  "url": "https://www.reddit.com/r/mercedes_benz/comments/1kumxyy/perhaps_retirees_and_older_people_arent_buying/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Reddit user discussion (owner reports)",
+   "published": "2025-05-24",
+   "stance": "supports",
+   "about": "Owner-reported complexity complaints for modern infotainment",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-012"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-14",
+  "source_type": "web",
+  "source_name": "BMW USA Release Notes",
+  "derivative": "G70",
+  "market": "US",
+  "text": "BMW’s 7 Series also supports over‑the‑air software updates for iDrive to improve features and usability (iDrive updates were explicitly called out in BMW’s US release notes), which can change behavior or add refinements after delivery.",
+  "url": "https://www.bmwusa.com/content/dam/bmw/common/connected-drive/pdf/2025/ReleaseNotes_2507_US_BMW-v2.pdf",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "BMW USA Release Notes",
+   "published": "2025-07",
+   "stance": "supports",
+   "about": "BMW OTA updates for iDrive 8.5",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-012"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-15",
+  "source_type": "web",
+  "source_name": "Audi (audi.com)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Audi's current MMI 'touch response' infotainment architecture (used on the A8) pairs a 12.3‑inch Audi Virtual Cockpit Plus instrument display with two center touchscreen panels — a 10.1‑inch upper screen for navigation/media and an 8.6‑inch lower screen for climate/comfort — and the platform (MIB 3) uses an Online Connectivity Unit (OCU) that includes an integrated eSIM and a built‑in Wi‑Fi hotspot option.",
+  "url": "https://www.audi.com/en/audi-technology-lexicon-7180/user-operation-displays-and-infotainment-16948",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Audi (audi.com)",
+   "published": "December 18, 2025",
+   "stance": "supports",
+   "about": "Audi A8 infotainment hardware and eSIM",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-013"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-16",
+  "source_type": "web",
+  "source_name": "MotorGPA (review aggregation)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Independent reviewers note Audi’s dual‑screen MMI Touch Response remains functional but is becoming dated compared with rival single‑billboard layouts — reviewers describe the A8’s dual‑screen layout as smaller and 'a generation behind' the latest single‑panel interfaces, and they call the system logical but sometimes slow or reach‑heavy for common controls.",
+  "url": "https://motorgpa.com/cars/audi/a8/2026",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "MotorGPA (review aggregation)",
+   "published": "2026 (web page)",
+   "stance": "supports",
+   "about": "Reviewer assessment of Audi A8 infotainment UX and responsiveness",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-013"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-17",
+  "source_type": "web",
+  "source_name": "Edmunds",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Edmunds’ 2024/2025 coverage and aggregated owner feedback list a steep infotainment learning curve and electrical/software complaints among common owner criticisms for the A8 (noting a 'steep infotainment learning curve' and occasional electrical gremlins in owner reports).",
+  "url": "https://www.edmunds.com/audi/a8/2024/for-sale/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Edmunds",
+   "published": "2024 (Edmunds page)",
+   "stance": "supports",
+   "about": "Audi A8 owner reports and reviewer summary",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-013"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-18",
+  "source_type": "web",
+  "source_name": "Car and Driver",
+  "derivative": "G70",
+  "market": "US",
+  "text": "BMW’s G70 7 Series (the 2023‑onward 7 Series family) uses BMW’s Curved Display — a large, driver‑facing panel pairing a 12.3‑inch digital instrument cluster with a 14.9‑inch infotainment touchscreen — and runs BMW’s iDrive 8 (touchscreen + voice + controller/rotary input) interface with extensive rear‑seat touchscreen and entertainment options available.",
+  "url": "https://www.caranddriver.com/reviews/a41886907/2023-bmw-760i-xdrive-drive/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Car and Driver",
+   "published": "November 8, 2022",
+   "stance": "supports",
+   "about": "BMW 7 Series (G70) display and iDrive 8 description",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-013"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-19",
+  "source_type": "web",
+  "source_name": "Car and Driver",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Car and Driver and other reviewers describe BMW’s iDrive 7/8 family as feature‑rich but sometimes 'bloated' or gimmicky — reviewers call out complicated menus and gesture controls as an annoyance for some users compared with simpler, more direct interfaces.",
+  "url": "https://www.caranddriver.com/bmw/7-series-2022",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Car and Driver",
+   "published": "2022 (review page)",
+   "stance": "supports",
+   "about": "Reviewer criticism of BMW iDrive usability",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-013"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-20",
+  "source_type": "web",
+  "source_name": "Reddit (r/BMWiX)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Multiple U.S. BMW owner posts (myBMW/myBMW App / r/BMWiX community) document real‑world eSIM activation problems: users report being 'stuck' in activation steps, carriers requiring NumberSync or a separate (consumer) line, business plans being ineligible, long setup calls with carrier/BMW support, and workarounds such as adding a separate consumer line or using external streaming sticks/hotspots.",
+  "url": "https://www.reddit.com/r/BMWiX/comments/1ovldfo/activating_esim/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Reddit (r/BMWiX)",
+   "published": "user thread (2024–2025 timeframe)",
+   "stance": "supports",
+   "about": "BMW owner reports of eSIM activation problems in the U.S.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-013"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-21",
+  "source_type": "web",
+  "source_name": "Reddit (r/BMWiX)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Additional BMW owner discussion threads similarly report that eSIMs become tied to a BMW ID/phone number (NumberSync) and that the activation experience can vary by carrier and dealer support knowledge — owners recommend patience and sometimes a separate consumer line for reliable activation.",
+  "url": "https://www.reddit.com/r/BMWiX/comments/1n39sif/personal_esim/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Reddit (r/BMWiX)",
+   "published": "user thread (2024–2025 timeframe)",
+   "stance": "supports",
+   "about": "BMW eSIM provisioning behavior and owner workarounds",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-013"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-22",
+  "source_type": "web",
+  "source_name": "Top Gear",
+  "derivative": "G70",
+  "market": "US",
+  "text": "The Lucid Air uses a 34‑inch curved “Glass Cockpit” display assembly that integrates the driver instrument cluster and the main infotainment area across the dash.",
+  "url": "https://www.topgear.com/car-reviews/lucid/air/interior",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Top Gear",
+   "published": "14 Jul 2025",
+   "stance": "neutral",
+   "about": "Lucid Air display architecture",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-016"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-23",
+  "source_type": "web",
+  "source_name": "Clean Fleet Report",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Lucid locates most vehicle functions (climate, seats, lights, wipers, door locks) behind touchscreens (a large curved Cockpit Panel plus a vertical Pilot Panel) with relatively few physical controls on the dash or center console.",
+  "url": "https://cleanfleetreport.com/road-test-2025-lucid-air-pure-dreamdrive-pro/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Clean Fleet Report",
+   "published": "November 2, 2025",
+   "stance": "neutral",
+   "about": "Lucid Air controls and touchscreens",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-016"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-24",
+  "source_type": "web",
+  "source_name": "Autoblog",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Multiple professional reviews describe Lucid’s native infotainment as “menu‑heavy” with many functions buried in layers, and note that many users default to Apple CarPlay/Android Auto rather than the native UI because of that complexity.",
+  "url": "https://www.autoblog.com/reviews/i-drove-the-2026-lucid-air-touring-and-it-embarrassed-every-other-sub-80k-ev",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Autoblog",
+   "published": "May 25, 2026",
+   "stance": "supports",
+   "about": "Lucid Air infotainment usability",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-016"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-25",
+  "source_type": "web",
+  "source_name": "Consumer Reports",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Consumer Reports’ Lucid Air road test criticizes having to adjust items such as the steering wheel and side mirrors through the infotainment touchscreen, calling that a prolonged driver distraction and a nuisance.",
+  "url": "https://www.consumerreports.org/cars/lucid/air/2024/road-test-report/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Consumer Reports",
+   "published": "2024",
+   "stance": "supports",
+   "about": "Lucid Air touchscreen controls and driver distraction",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-016"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-26",
+  "source_type": "web",
+  "source_name": "Electrek",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Lucid announced and began deploying an Air software refresh (Air UX 3.0) in 2026 that the company and reporting outlets say is modelled on the Gravity SUV’s interface and promises faster screens and less digging through menus.",
+  "url": "https://electrek.co/2026/09/29/lucid-air-ux-3-0-update-950-hardware-upgrade/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Electrek",
+   "published": "September 29, 2026",
+   "stance": "contradicts",
+   "about": "Lucid Air UX 3.0 update",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-016"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-27",
+  "source_type": "web",
+  "source_name": "Edmunds",
+  "derivative": "G70",
+  "market": "US",
+  "text": "BMW’s G70 7 Series in the U.S. uses a BMW “Curved Display” (a combined digital instrument cluster plus central touchscreen—12.3″ + 14.9″ commonly reported) running BMW’s iDrive 8 platform.",
+  "url": "https://www.edmunds.com/car-news/2023-bmw-7-series-first-drive-review.html",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Edmunds",
+   "published": "November 5, 2022",
+   "stance": "neutral",
+   "about": "BMW 7 Series display architecture (G70)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-016"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-28",
+  "source_type": "web",
+  "source_name": "CarGurus",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Despite the alternative inputs, reviewers have also complained that iDrive 8 (and some BMW models’ capacitive shortcut buttons) can be ‘bloated’ or arranged in deep menus, and that some capacitive touch shortcuts require glancing away from the road to use.",
+  "url": "https://www.cargurus.com/research/2023-BMW-7-Series-c32173",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "CarGurus",
+   "published": "2023 (review pages updated 2023–2025)",
+   "stance": "supports",
+   "about": "BMW 7 Series infotainment usability (menu depth and capacitive controls)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-016"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-29",
+  "source_type": "web",
+  "source_name": "Edmunds",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Major U.S. expert reviews describe the Genesis G90’s front and outboard rear seats as feature‑rich and generally ‘plush’—standard Nappa leather with heated, ventilated and massage functions and multi‑way powered adjustments—making it a comfort‑focused cabin in road tests of the 2024–2026 G90. ",
+  "url": "https://www.edmunds.com/genesis/g90/2024/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Edmunds",
+   "published": "2024",
+   "stance": "supports",
+   "about": "Genesis G90 seat comfort and features. ",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-018"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-30",
+  "source_type": "web",
+  "source_name": "Genesis (official spec sheet)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Genesis’ official specifications list trunk (cargo) volume for the G90 as about 12.0 cu ft for the base 3.5T and 10.6 cu ft for the E‑Supercharged/mild‑hybrid variant (U.S. spec sheet).",
+  "url": "https://www.genesis.com/content/dam/genesis/us/com/pdf/2024/2024%20G90%20Specs%20Sheet_vfin.pdf",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Genesis (official spec sheet)",
+   "published": "2024",
+   "stance": "supports",
+   "about": "Genesis G90 trunk/cargo volume.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-018"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-31",
+  "source_type": "web",
+  "source_name": "Kelley Blue Book",
+  "derivative": "G70",
+  "market": "US",
+  "text": "By contrast, the gasoline/hybrid BMW 7 Series (G70) offers much larger rear cargo capacity—typically reported around 18.5–19.1 cu ft in U.S. specifications—placing the 7 Series among the class leaders for trunk volume. ",
+  "url": "https://www.kbb.com/bmw/7-series/2024/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Kelley Blue Book",
+   "published": "2024",
+   "stance": "supports",
+   "about": "BMW 7 Series (G70) trunk/cargo volume.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-018"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-32",
+  "source_type": "web",
+  "source_name": "AutoEdgeView (spec/EV review)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "The BMW i7 (electric derivative of the G70) has a slightly smaller trunk (commonly cited ≈17.7 cu ft) and no front trunk (frunk), but still provides generous rear legroom and similar rear comfort options; that makes the i7’s cargo practicality better than the G90’s?—smaller than ICE 7 Series but larger than the G90’s ~10.6–12 cu ft trunk depending on trim. ",
+  "url": "https://autoedgeview.com/ev-reviews/2025-bmw-i7-specs-range-charging-review",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "AutoEdgeView (spec/EV review)",
+   "published": "2025",
+   "stance": "neutral",
+   "about": "BMW i7 trunk and rear‑seat comparison to G90.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-018"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-33",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz Media (MBUSA)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Mercedes-Benz markets the 2026 S‑Class with a new MB.OS architecture and a standard MBUX Superscreen that combines a 14.4‑inch central display and a 12.3‑inch front passenger display, plus a 12.3‑inch driver display option (including an optional 3D instrument cluster).",
+  "url": "https://media.mbusa.com/news/the-new-mercedes-benz-s-class-refined-in-every-detail",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Mercedes‑Benz Media (MBUSA)",
+   "published": "May 13, 2026",
+   "stance": "supports",
+   "about": "Mercedes S‑Class displays / MBUX Superscreen",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-020"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-34",
+  "source_type": "web",
+  "source_name": "AboutAutomobile (TSB compilation of Mercedes TSB LI82.85‑P‑079088)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Mercedes has published technical service guidance (TSB LI82.85‑P‑079088, May 30, 2025) acknowledging brief connectivity interruptions with Apple CarPlay over Wi‑Fi, listing likely causes (environmental interference, head‑unit or iPhone software issues, cables/ports, power‑management) and prescribing diagnostic steps and software updates as remedies.",
+  "url": "https://www.aboutautomobile.com/Technical-Service-Bulletin/2025/Mercedes-Benz/AMG-S-63-E/Electrical-System",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "AboutAutomobile (TSB compilation of Mercedes TSB LI82.85‑P‑079088)",
+   "published": "May 30, 2025",
+   "stance": "supports",
+   "about": "Mercedes S‑Class / Apple CarPlay connectivity TSB",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-020"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-35",
+  "source_type": "web",
+  "source_name": "CarGurus (model research)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "The BMW 7‑Series (G70 generation, MY2023–2026) uses a wide curved ‘curved display’ combining the digital instrument cluster and a large center screen (commonly documented as a 12.3‑inch driver display plus a ~14.9‑inch central touchscreen) and a primarily touchscreen‑first interface (iDrive 8) while retaining physical steering‑wheel controls and a rotary/controller option for users who prefer non‑touch input.",
+  "url": "https://www.cargurus.com/research/2024-BMW-7-Series-c32996",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "CarGurus (model research)",
+   "published": "2024 (model overview)",
+   "stance": "supports",
+   "about": "BMW 7 Series (G70) displays & controls",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-020"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-36",
+  "source_type": "web",
+  "source_name": "BMW Group Press",
+  "derivative": "G70",
+  "market": "US",
+  "text": "BMW states the 7‑Series (G70) supports wireless Apple CarPlay and Android Auto as standard equipment (smartphone projection available wirelessly).",
+  "url": "https://www.press.bmwgroup.com/usa/article/detail/T0457293EN_US/the-new-bmw-7-series",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press",
+   "published": "April 22, 2026 (press for updated 7 Series)",
+   "stance": "supports",
+   "about": "BMW 7 Series infotainment / CarPlay support",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-020"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-37",
+  "source_type": "web",
+  "source_name": "Google Android Auto Help community (user report)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "BMW owners and drivers have reported repeated wireless Apple CarPlay / Android Auto disconnects, occasional media/control failures, and system reboots on iDrive 8 / 8.5 systems in public forums and support threads — examples include multiple Reddit threads reporting CarPlay disconnects and a Google Android Auto community thread describing iDrive reboots triggered by wireless Android Auto use.",
+  "url": "https://support.google.com/androidauto/thread/406510287/wireless-android-auto-with-google-maps-intermittently-causes-bmw-idrive-to-reboot-during-frequent?hl=en",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Google Android Auto Help community (user report)",
+   "published": "2026 (user thread)",
+   "stance": "supports",
+   "about": "BMW iDrive / Android Auto / CarPlay owner reports",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-020"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-38",
+  "source_type": "web",
+  "source_name": "Reddit (BMW owner community)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Numerous BMW owner forum and Reddit threads document that firmware updates (iDrive 8 → 8.5 and later RSU patches) have sometimes fixed — and at other times introduced — wireless CarPlay/Android Auto issues; owners routinely report resolving or temporarily working around problems by installing BMW remote/software updates or by rebooting/resetting systems.",
+  "url": "https://www.reddit.com/r/BMWiX/comments/1n33gz2/firmware_update_07202538/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Reddit (BMW owner community)",
+   "published": "2025 (examples across 2024–2026)",
+   "stance": "supports",
+   "about": "BMW iDrive software updates and owner‑reported connectivity effects",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-020"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-39",
+  "source_type": "web",
+  "source_name": "BMW USA (BMW of North America)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "BMW offers Remote Software Upgrade (over‑the‑air software updates) specifically to deliver infotainment and operating‑system fixes and feature improvements (BMW lists multiple RSU release notes and encourages installing RSUs to address functional issues).",
+  "url": "https://www.bmwusa.com/explore/connecteddrive/remote-software-upgrade.html/1000",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "BMW USA (BMW of North America)",
+   "published": "page updated 2026 (RSU release notes listed)",
+   "stance": "supports",
+   "about": "BMW remote software upgrades / fixes for infotainment",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-020"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-40",
+  "source_type": "web",
+  "source_name": "J.D. Power",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Independent industry research (JD Power U.S. Multimedia Quality and Satisfaction Study, Sept 12, 2024) documents that multimedia/infotainment problems increased in prior years and that further optimization of Apple CarPlay and Android Auto remains a top industry priority — i.e., inconsistent phone‑projection connectivity is a recognized, cross‑OEM issue.",
+  "url": "https://www.jdpower.com/business/press-releases/2024-us-multimedia-quality-and-satisfaction-study",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "J.D. Power",
+   "published": "September 12, 2024",
+   "stance": "supports",
+   "about": "Industry context for CarPlay/Android Auto connectivity issues",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-020"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-41",
+  "source_type": "web",
+  "source_name": "Car and Driver",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Car and Driver’s 2025 review describes the Audi A8’s exterior as “reserved and stately,” noting the A8 ‘‘flies too far under the radar’’ compared with rivals such as the BMW 7‑series (i.e., the A8’s styling is more understated in the US 2025 market).",
+  "url": "https://www.caranddriver.com/audi/a8-2025",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Car and Driver",
+   "published": "",
+   "stance": "supports",
+   "about": "Audi A8 (2025) exterior styling characterization (US market)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-022"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-42",
+  "source_type": "web",
+  "source_name": "BMW Group (PressClub USA)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "BMW’s official press material for the G70 7 Series (the 7‑series introduced for the 2023+ model cycle) emphasizes a ‘‘vertically prominent front end’’ with an illuminated kidney grille and two‑piece split headlight units, describing the G70 exterior as intentionally powerful and highly distinctive.",
+  "url": "https://www.press.bmwgroup.com/usa/article/detail/T0382613EN_US/the-new-bmw-7-series",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group (PressClub USA)",
+   "published": "April 20, 2022",
+   "stance": "supports",
+   "about": "BMW 7 Series (G70) exterior design (official description)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-022"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-43",
+  "source_type": "web",
+  "source_name": "Audi (Audi Media Center)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Audi’s own 2021 press release for the enhanced A8 describes the A8 exterior as ‘‘representative, confident, and athletic’’ with a sharpened front and rear design, new headlight/taillight signatures and wheel choices (Audi’s presentation positions the A8 as a more restrained, refined flagship rather than an overtly extroverted statement).",
+  "url": "https://www.audi.com/en/press-releases/sharpened-design-and-innovative-technologies-for-the-flagship-the-enhanced-audi-a8-14262",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Audi (Audi Media Center)",
+   "published": "November 2, 2021",
+   "stance": "supports",
+   "about": "Audi A8 enhanced model exterior description",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-022"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-44",
+  "source_type": "web",
+  "source_name": "BMW (owner manual / documentation mirror)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "BMW owner documentation and service guides state that some BMW models use run‑flat tires or a mobility/repair system and that ‘‘No spare tire is available in the case of a flat tire’’ (i.e., BMW’s materials explicitly note the lack of a conventional spare in many configurations).",
+  "url": "https://manualsfile.com/product/ax3cizu7v.html",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW (owner manual / documentation mirror)",
+   "published": "",
+   "stance": "supports",
+   "about": "BMW policy / owner manual statement about spares and run‑flat/mobility systems",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-022"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-45",
+  "source_type": "web",
+  "source_name": "Audi (owner manual / manuals.plus mirror)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Audi owner/manual excerpts for A‑class and flagship Audi models describe the Tire Mobility System (TMS) / tire repair kit (sealant + compressor) being stored under the luggage floor and note that a spare wheel is provided only ‘‘if equipped’’ — indicating Audi commonly supplies a repair kit instead of a full spare on modern A8 variants in this era.",
+  "url": "https://media.manuals.plus/m/a80115b42180d1974e96b117b4ae8bae57e3ecfcd2aedb9075ed51a193f64a4f",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Audi (owner manual / manuals.plus mirror)",
+   "published": "",
+   "stance": "supports",
+   "about": "Audi Tire Mobility System / spare‑if‑equipped guidance",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-022"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-46",
+  "source_type": "web",
+  "source_name": "BMW7Series.org (owner forum)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "BMW/Audi owner and brand forums show repeated owner complaints requesting conventional spares or the option to avoid factory run‑flat/repair‑kit setups; BMW 7‑series / BMW owner forums include threads where owners say they dislike run‑flats and the lack of a spare and report switching to conventional tires to broaden tire choices.",
+  "url": "https://www.bmw7series.org/threads/run-flat-tires.20868/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW7Series.org (owner forum)",
+   "published": "",
+   "stance": "supports",
+   "about": "Owner feedback requesting spares / different tire options",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-US-022"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-47",
+  "source_type": "web",
+  "source_name": "BMW Group Press",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Baseline: BMW’s official press materials for the G70 7 Series (BMW i7) state the i7’s on-board DC charging capability is up to about 195 kW (BMW cites ~10–80% DC charging times on that order).",
+  "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0382793EN_GB/the-new-bmw-7-series",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press",
+   "published": "20 April 2022",
+   "stance": "supports",
+   "about": "BMW 7 Series (G70) current DC charging capability",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-48",
+  "source_type": "web",
+  "source_name": "U.S. Department of Energy / NREL (AFDC)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Public fast‑charging capacity and average power in the U.S. are expected to grow through 2030: NREL’s “The 2030 National Charging Network” analysis models a 2030 network where light‑duty BEVs will commonly use DC fast chargers in the 150–350+ kW range and planners assume BEVs will prefer the fastest compatible option (up to 350+ kW).",
+  "url": "https://afdc.energy.gov/files/u/publication/2030-charging-network.pdf",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "U.S. Department of Energy / NREL (AFDC)",
+   "published": "2023",
+   "stance": "supports",
+   "about": "U.S. public DC fast‑charging power (150–350+ kW) by 2030",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-49",
+  "source_type": "web",
+  "source_name": "International Energy Agency (Global EV Outlook 2025)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "IEA projects the share of fast chargers and public charging capacity per EV will increase to 2030 (IEA shows the U.S. fast‑charger share rising and public charging capacity per electric LDV increasing through 2030), supporting faster, more‑available DCFC for premium cars in the 2028–2031 window.",
+  "url": "https://www.iea.org/reports/global-ev-outlook-2025/electric-vehicle-charging",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "International Energy Agency (Global EV Outlook 2025)",
+   "published": "2025",
+   "stance": "supports",
+   "about": "growth in public fast‑charging deployment and average power to 2030",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-50",
+  "source_type": "web",
+  "source_name": "InsideEVs (reporting Electrify America announcement)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Network connector access: major U.S. charging networks and equipment vendors announced plans in 2023–2025 to add Tesla’s NACS connector to their portfolios (Electrify America, ChargePoint, EVgo and others), and most large OEMs announced NACS adoption for North America — which improves charging access for premium cars that switch to NACS or for networks that install NACS ports between 2025 and the late 2020s. (announcement example: Electrify America plan to add NACS plugs).",
+  "url": "https://insideevs.com/news/674460/electrify-america-add-nacs-connectors/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "InsideEVs (reporting Electrify America announcement)",
+   "published": "2024",
+   "stance": "supports",
+   "about": "NACS adoption by networks and OEMs (charging network access)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-51",
+  "source_type": "web",
+  "source_name": "BloombergNEF",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Range trends: BloombergNEF’s analysis shows that in a growth scenario average EV ranges increase by roughly ~5% per year out to 2030 — implying premium full‑size sedans could see material year‑on‑year real‑world range improvements through 2028–2030 (and into 2031 depending on commercialization timing).",
+  "url": "https://about.bnef.com/insights/clean-transport/battery-bloat-could-backfire-on-electric-vehicle-manufacturers/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BloombergNEF",
+   "published": "2023",
+   "stance": "supports",
+   "about": "projected EV range growth (~5%/yr to 2030) and implications for premium segment range",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-52",
+  "source_type": "web",
+  "source_name": "IDTechEx (power‑electronics for EVs market research)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Vehicle architecture / charging capability: industry research and market evidence show 800V–900V (and higher) architectures are concentrated in the luxury/premium segment and are expected to remain important through the late‑2020s, enabling sustained high‑power charging plateaus (examples: Porsche Taycan, Lucid Air, Hyundai/Kia E‑GMP vehicles); industry market research projects growth in 800V capable vehicle architectures into the early 2030s. That trend enables many premium models to accept sustained 250–350+ kW peak charging when paired with suitably capable public chargers. ",
+  "url": "https://www.idtechex.com/de/research-report/power-electronics-for-electric-vehicles-2022-2032/836",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "IDTechEx (power‑electronics for EVs market research)",
+   "published": "2024",
+   "stance": "supports",
+   "about": "800V/900V architecture adoption in premium cars and resulting higher onboard charging capability",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-53",
+  "source_type": "web",
+  "source_name": "Electrify America / California Energy Commission filing (ISO 15118 materials)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Seamless authentication / user experience: Plug‑and‑Charge (ISO 15118) support is expanding among OEMs and networks (Electrify America and other networks support Plug & Charge; many OEMs are enabling ISO‑15118 in new models), so premium cars sold 2028–2031 will increasingly experience certificate‑based Plug‑and‑Charge and fewer manual app/RFID steps at compatible stations.",
+  "url": "https://efiling.energy.ca.gov/GetDocument.aspx?tn=240675",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Electrify America / California Energy Commission filing (ISO 15118 materials)",
+   "published": "2021 (panel material) / ongoing updates through 2024–2026",
+   "stance": "supports",
+   "about": "ISO 15118 Plug & Charge expansion and expected in‑car support in the late 2020s",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-54",
+  "source_type": "web",
+  "source_name": "BMW Group PressClub (USA)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "BMW has developed 'BMW Operating System X' (the Neue Klasse software/electronics architecture) based on the Android Open Source Project (AOSP), using four high-performance 'superbrain' domain computers, a four-zone/zonal electronics layout, and explicit support for over‑the‑air updates and continuous feature expansion—enabling long-term OTA-delivered functionality for future premium BMW models (the Neue Klasse foundation applies across new BMW models).",
+  "url": "https://www.press.bmwgroup.com/usa/article/detail/T0456286EN_US/the-new-bmw-i3-second-model-of-the-neue-klasse",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group PressClub (USA)",
+   "published": "2026-03-18",
+   "stance": "supports",
+   "about": "BMW Operating System X, AOSP, zonal architecture, OTA",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-55",
+  "source_type": "web",
+  "source_name": "BMW Group PressClub (Global)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "BMW’s official 7 Series (G70 / i7) product documentation states the G70 offers a 31.3-inch 'BMW Theatre Screen' and built‑in streaming apps (Amazon Fire TV among the advertised services) and confirms the 7 Series supports in‑car third‑party apps and streaming via the vehicle’s cellular/eSIM connection—showing premium segment models already integrating app ecosystems and media streaming in the G70 class today.",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0380173EN/the-new-bmw-7-series",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group PressClub (Global)",
+   "published": "2022-04-20",
+   "stance": "supports",
+   "about": "BMW 7 Series (G70) in‑car apps and streaming/theatre screen",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-56",
+  "source_type": "web",
+  "source_name": "Qualcomm Technologies, Inc.",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Qualcomm (official) announced in January 2026 an expanded collaboration with Google and described 'Snapdragon Chassis Agents' and Snapdragon Digital Chassis as a production pathway to on‑device 'agentic' AI in vehicles—explicitly positioning agentic (LLM/AI‑assisted) in‑car assistants and edge‑to‑cloud AI as deployable capabilities for automakers and infotainment platforms. ",
+  "url": "https://www.qualcomm.com/news/releases/2026/01/qualcomm-expands-decade-long-collaboration-with-google-for-autom",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Qualcomm Technologies, Inc.",
+   "published": "2026-01-05",
+   "stance": "supports",
+   "about": "Agentic AI, Snapdragon Chassis Agents, Google partnership",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-57",
+  "source_type": "web",
+  "source_name": "Qualcomm OnQ (Qualcomm Technologies)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Qualcomm’s technical blog/whitepaper (OnQ) described 'Snapdragon Chassis Agents' (Jan 2026) and explained the company’s roadmap for integrating agentic/LLM-like on‑device agents into the automotive cockpit and SDV stacks—supporting industry expectations that premium vehicles will host on‑device conversational/agentic assistants within this decade. ",
+  "url": "https://www.qualcomm.com/news/onq/2026/01/from-software-defined-to-ai-defined-vehicle-snapdragon-chassis-agents",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Qualcomm OnQ (Qualcomm Technologies)",
+   "published": "2026-01-06",
+   "stance": "supports",
+   "about": "On‑device agentic AI for vehicles",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-58",
+  "source_type": "web",
+  "source_name": "DataIntelo (market research)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Market research and industry analyses forecast rapid adoption of zonal E/E architectures and higher central/zone compute content across new vehicle programs from the mid‑2020s onward; these reports project zonal/centralized compute (and the required high‑bandwidth in‑vehicle Ethernet backbones) to be widely adopted in premium/volume SDVs through 2028–2031, enabling more powerful infotainment/ADAS and broader OTA/app capability. ",
+  "url": "https://dataintelo.com/report/automotive-domain-controller-soc-market",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "DataIntelo (market research)",
+   "published": "2025",
+   "stance": "supports",
+   "about": "zonal architectures & centralized compute adoption forecasts",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-59",
+  "source_type": "web",
+  "source_name": "DataIntelo (market research)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Independent market reports project the in‑car app ecosystem (OEM app stores and AAOS/embedded apps) to expand strongly across 2026–2034; these forecasts expect OEM/third‑party app ecosystems and paid subscriptions (navigation, media, productivity, AR/assistant services) to become material recurring‑revenue sources in premium vehicles by the late 2020s. ",
+  "url": "https://dataintelo.com/report/in-car-apps-market",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "DataIntelo (market research)",
+   "published": "2025",
+   "stance": "supports",
+   "about": "in‑car app store and apps market growth forecast",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-60",
+  "source_type": "web",
+  "source_name": "RegWatch / UNECE documentation (WP.29 references)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "UNECE WP.29 UN Regulations No. 155 (cybersecurity management system) and No. 156 (software update management system / SUMS) require manufacturers to deploy certified CSMS and SUMS processes for type approval; these UN regulations (adopted 2020, entered into force in 2021 and phased into EU type‑approval timelines) have already forced OEMs to build production‑grade OTA toolchains and will continue to shape how OTA for safety‑relevant and non‑safety software is managed across premium vehicles. ",
+  "url": "https://www.regwatch.io/glossary/unece-r155-r156",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "RegWatch / UNECE documentation (WP.29 references)",
+   "published": "2021",
+   "stance": "supports",
+   "about": "UN R155 / R156 affecting OTA and cybersecurity compliance",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-61",
+  "source_type": "web",
+  "source_name": "Insoftex Insights (industry analysis)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Industry analysis and technical commentary (2025–2026) note OEMs are moving OTA platforms from best‑effort consumer updates toward mixed‑criticality, deterministic/update‑orchestration capable platforms able to deploy both infotainment features and safety‑relevant software patches—i.e., OTA toolchains are expected to support validated rollouts, rollback, cryptographic signing and SUMS evidence suitable for safety‑critical updates by the late 2020s. ",
+  "url": "https://insoftex.com/insights/software-defined-vehicles-engineering/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Insoftex Insights (industry analysis)",
+   "published": "2026",
+   "stance": "supports",
+   "about": "evolution of OTA to mixed‑criticality and safety‑capable updates",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-62",
+  "source_type": "web",
+  "source_name": "DataIntelo (market research)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Market reporting indicates premium/luxury vehicles already receive substantially more OTA activity than mainstream models and projects that premium cars will average many updates per year (industry summaries cite figures in the mid‑teens per year for premium models), implying that BMW‑7‑class vehicles in the U.S. will likely see frequent OTA feature, security and app updates through 2028–2031. ",
+  "url": "https://dataintelo.com/report/automotive-ota-compliance-management-market",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "DataIntelo (market research)",
+   "published": "2026",
+   "stance": "supports",
+   "about": "OTA update frequency and premium vehicle update rates",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-63",
+  "source_type": "web",
+  "source_name": "BMW Group press",
+  "derivative": "G70",
+  "market": "US",
+  "text": "BMW announced its “Panoramic iDrive” display and operating concept and said the new display/operating concept (with BMW Operating System X) will be introduced across new BMW models from the end of 2025 (i.e., the company is standardizing large, software-defined displays that will influence the 7‑Series segment through 2028–2031).",
+  "url": "https://www.press.bmwgroup.com/middle-east/article/further-news/314169?tag=119&tag=1841&tag=556&tag=6801&tag=84",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press",
+   "published": "08 Jan 2025",
+   "stance": "supports",
+   "about": "BMW Panoramic iDrive / OS X rollout",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-64",
+  "source_type": "web",
+  "source_name": "European Parliament / Euro NCAP (referenced)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Euro NCAP’s 2026 updates explicitly incentivise physical, one‑touch controls for core safety‑related functions (indicators, hazard lights, wipers, horn, eCall), which has driven OEMs to return tactile buttons or equivalent tactile solutions for premium models.",
+  "url": "https://www.europarl.europa.eu/RegData/questions/reponses_qe/2024/000830/P9_RE%282024%29000830_EN.pdf",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "European Parliament / Euro NCAP (referenced)",
+   "published": "2024",
+   "stance": "supports",
+   "about": "Regulatory pressure for physical controls (Euro NCAP)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-65",
+  "source_type": "web",
+  "source_name": "Mobility Global / S&P Global Automotive Insights",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Consumer research shows strong preference for hybrid interfaces (touchscreens plus physical buttons/knobs) in major markets—including US respondents—and manufacturers are revising HMI designs accordingly, a trend expected to shape premium‑segment cabins in 2028–2031. ",
+  "url": "https://www.mobilityglobal.com/en-us/automotive-insights/blog/what-consumers-value-in-human-machine-interface-technologies",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mobility Global / S&P Global Automotive Insights",
+   "published": "12 Feb 2026",
+   "stance": "supports",
+   "about": "Consumer preference for hybrid HMI (touch + physical)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-66",
+  "source_type": "web",
+  "source_name": "Research and Markets",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Market forecasts and industry analyses project a shift to multimodal HMIs (coordinated touch, voice, gesture, haptics and instrument‑cluster/HUD integration) as the dominant cockpit paradigm in the coming decade, with explicit forecasts covering 2025–2031. ",
+  "url": "https://www.researchandmarkets.com/reports/6175994/automotive-human-machine-interface-market",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Research and Markets",
+   "published": "2026 (report)",
+   "stance": "supports",
+   "about": "Multimodal HMI market forecasts 2025–2031",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-67",
+  "source_type": "web",
+  "source_name": "Knowledge‑Sourcing (voice HMI market report)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Specialist market research forecasts rapid growth of voice/AI HMI through 2031 (LLM/edge+cloud voice assistants becoming mainstream in premium vehicles), citing OEM and supplier LLM/AI partnerships and a projected market increase to 2031. ",
+  "url": "https://www.knowledge-sourcing.com/report/automotive-voice-hmi-market",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Knowledge‑Sourcing (voice HMI market report)",
+   "published": "2026 (report)",
+   "stance": "supports",
+   "about": "Voice / LLM adoption in vehicles through 2031",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-68",
+  "source_type": "web",
+  "source_name": "Microchip Technology (press release)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Tier‑1 and semiconductor suppliers are shipping ‘knob‑on‑display’ and low‑latency haptic touchscreen controllers (e.g., Microchip’s maXTouch KoD family) that let OEMs restore tactile rotary/push controls on top of large screens—an enabler for combining touchscreen aesthetics with physical feedback in premium cabins by 2028–2031. ",
+  "url": "https://www.microchip.com/en-us/about/news-releases/products/maxtouch-knob-on-display-touch-controller-family",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Microchip Technology (press release)",
+   "published": "30 Jun 2022 (product) / product pages updated 2024–2025",
+   "stance": "supports",
+   "about": "Knob‑on‑Display and haptic controller technology",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-69",
+  "source_type": "web",
+  "source_name": "Autoblog (reporting Mercedes statements)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Automakers have publicly reversed purely ‘buttonless’ designs (for example Mercedes-Benz has said it will restore essential tactile buttons), signalling that premium brands selling in the US will reintroduce tactile controls alongside large displays during the 2028–2031 timeframe. ",
+  "url": "https://www.autoblog.com/news/mercedes-is-bringing-back-buttons-after-touchscreen-backlash",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Autoblog (reporting Mercedes statements)",
+   "published": "Aug 4, 2026",
+   "stance": "supports",
+   "about": "OEMs reintroducing physical controls (Mercedes example)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-70",
+  "source_type": "web",
+  "source_name": "IndexBox (US HMI market analysis)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "US market analyses for HMI show software‑defined vehicle architectures and OTA delivery enabling cockpit UI updates and feature‑subscription models (including HMI/voice features) and project these business/technical shifts to be material by 2028–2030 in the premium segment. ",
+  "url": "https://www.indexbox.io/store/united-states-automotive-human-machine-interface-hmi-technologies-market-analysis-forecast-size-trends-and-insights/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "IndexBox (US HMI market analysis)",
+   "published": "2026 (report)",
+   "stance": "supports",
+   "about": "SDV + OTA enabling HMI feature delivery and subscriptions in US premium vehicles",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-71",
+  "source_type": "web",
+  "source_name": "BMW Group — BMW Group Report 2025 (pdf)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "BMW Group has set a product-level target that “all automobiles produced globally in 2030 must have a total average recycled content of at least 25%.”",
+  "url": "https://www.bmwgroup.com/en/report/2025/downloads/BMW-Group-Report-2025-en.pdf?page=59",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group — BMW Group Report 2025 (pdf)",
+   "published": "2025",
+   "stance": "supports",
+   "about": "BMW sustainability / recycled content target for 2030.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-72",
+  "source_type": "web",
+  "source_name": "Volkswagen Newsroom",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Volkswagen is developing a 100% bio‑based hemp imitation‑leather (LOVR) that the company says ‘could initially be used in car interiors from 2028.’",
+  "url": "https://www.volkswagen-newsroom.com/en/press-releases/imitation-leather-from-industrial-hemp-innovative-and-sustainable-material-for-future-car-interiors-18665",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Volkswagen Newsroom",
+   "published": "2024-03-28",
+   "stance": "supports",
+   "about": "Hemp-based leather alternative availability from 2028.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-73",
+  "source_type": "web",
+  "source_name": "General Motors / Cadillac News",
+  "derivative": "G70",
+  "market": "US",
+  "text": "General Motors (Cadillac) announced a collaboration with MycoWorks to develop mycelium (mushroom)‑based ‘Fine Mycelium™’ leather alternatives for automotive interiors (Cadillac–MycoWorks public announcement, 2024).",
+  "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2024/jun/0626-mycoworks.html",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "General Motors / Cadillac News",
+   "published": "2024-06-26",
+   "stance": "supports",
+   "about": "Mycelium-based leather development for premium automotive interiors.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-74",
+  "source_type": "web",
+  "source_name": "Veolia press release (Faurecia partnership)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Faurecia (FORVIA) and Veolia have a research cooperation to accelerate interior compounds made with recycled plastics, with an initial goal cited to reach ~30% recycled content in some modules (press release describing joint R&D and market rollout acceleration).",
+  "url": "https://www.veolia.com/en/our-media/newsroom/press-releases/sustainable-mobility-faurecia-veolia-pioneer-use-recycled",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Veolia press release (Faurecia partnership)",
+   "published": "2022-05-03",
+   "stance": "supports",
+   "about": "Supplier partnership to scale recycled‑plastic interior compounds.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-75",
+  "source_type": "web",
+  "source_name": "MarketsandMarkets — Automotive HUD market report",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Market research firms project rapid growth in augmented‑reality head‑up displays (AR‑HUD) in the automotive market through 2030, with AR‑HUD adoption and capability rising strongly in premium vehicles by 2030 (market forecasts and technology trend reports).",
+  "url": "https://www.marketresearch.com/MarketsandMarkets-v3719/Automotive-HUD-Technology-2D-AR-37076515/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "MarketsandMarkets — Automotive HUD market report",
+   "published": "2024",
+   "stance": "supports",
+   "about": "AR‑HUD adoption growth to 2030 in premium vehicles.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-76",
+  "source_type": "web",
+  "source_name": "Grand View Research (market forecast)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Grand View Research projects the automotive augmented‑reality market to grow sharply to 2030, citing use cases such as overlaying navigation and EV‑specific information on the windshield — a capability likely to appear first in premium models and expand by 2030.",
+  "url": "https://www.grandviewresearch.com/industry-analysis/augmented-reality-automotive-market",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Grand View Research (market forecast)",
+   "published": "2024",
+   "stance": "supports",
+   "about": "AR applications (navigation, EV info) expanding in premium vehicles by 2030.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-77",
+  "source_type": "web",
+  "source_name": "McKinsey & Company — 'The future of interior' (report)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Automotive strategy/consulting analyses (McKinsey) and industry‑design coverage report that electrification plus higher levels of automation enable ‘lounge‑like’ and multi‑use interiors (flexible seating arrangements, flat floors, modular furniture) — concepts that premium‑segment OEMs are prototyping and that analysts expect to influence production designs in the late‑2020s/early‑2030s (this is an industry inference supported by cited analyses and concept examples).",
+  "url": "https://www.mckinsey.com/de/~/media/mckinsey/locations/europe%20and%20middle%20east/deutschland/publikationen/2021-09-07%20future%20of%20interior/mcfm_mxt%20lab%20the%20future%20of%20interior_september%202021.pdf",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "McKinsey & Company — 'The future of interior' (report)",
+   "published": "2021-09",
+   "stance": "supports",
+   "about": "Electrification/autonomy enabling lounge‑style, multi‑use interiors (inference: late‑2020s production influence).",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-78",
+  "source_type": "web",
+  "source_name": "Hyundai concept coverage / industry press",
+  "derivative": "G70",
+  "market": "US",
+  "text": "OEM concept vehicles from premium brands — examples include Hyundai’s SEVEN/Ioniq concepts and Genesis’s GV90 showpieces — already demonstrate swivel/‘lounge’ seating, panoramic displays and reconfigurable rear compartments, indicating OEM intent to transfer such spatial concepts toward production premium models in the late‑2020s and early‑2030s.",
+  "url": "https://carinterior.alibaba.com/buyingguides/hyundai-ev-concepts-design-cues-for-buyers",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Hyundai concept coverage / industry press",
+   "published": "2025-xx",
+   "stance": "supports",
+   "about": "Concept cars (Hyundai SEVEN, Genesis GV90) showing lounge interiors and swivel seats.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-79",
+  "source_type": "web",
+  "source_name": "DataIntelo — CO2 sensor for vehicle cabin market report",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Premium‑segment wellness and air‑quality features (CO2 sensors, HEPA/ionization systems, cabin air purification, seat climate and fragrance packages) are becoming standard options in luxury sedans and are forecast to see wider adoption across the segment through 2030; market reports document growing demand and supplier/product rollouts for these systems.",
+  "url": "https://dataintelo.com/report/co2-sensor-for-vehicle-cabin-market/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "DataIntelo — CO2 sensor for vehicle cabin market report",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Cabin air‑quality and wellness feature adoption in luxury sedans.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-80",
+  "source_type": "web",
+  "source_name": "Faurecia / FORVIA CES press kit (MATERI’ACT)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Tier‑one suppliers and materials programs (FORVIA/Faurecia’s MATERI’ACT and supplier press materials) describe accelerated development of bio‑based, recycled and mono‑material foils/compounds for interiors — supplier roadmaps aimed at reducing virgin plastics and enabling higher recycled content in modules that premium OEMs will specify toward 2030.",
+  "url": "https://www.faurecia.de/sites/faurecia-de/files/2023-01/CES2023_PressKit_EN.pdf",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Faurecia / FORVIA CES press kit (MATERI’ACT)",
+   "published": "2023",
+   "stance": "supports",
+   "about": "Supplier programs to scale recycled/bio‑based interior materials.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-81",
+  "source_type": "web",
+  "source_name": "BMWBLOG (reporting BMW FSCM project)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "BMW publicly showcases prototype circular‑economy interior components (e.g., wooden seat shell, separable mono‑materials and recyclable subassemblies) and states product development programs to speed sustainable material approvals into series production — actions that support production‑line introduction of more circular premium‑interior parts by 2030.",
+  "url": "https://www.bmwblog.com/2026/08/26/bmw-fscm-sustainable-materials-wooden-seat/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMWBLOG (reporting BMW FSCM project)",
+   "published": "2026-08-26",
+   "stance": "supports",
+   "about": "BMW prototypes and development for circular, recyclable interior components.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-82",
+  "source_type": "web",
+  "source_name": "BMW Group",
+  "derivative": "G70",
+  "market": "US",
+  "text": "BMW announced that the new BMW 7 Series (model starting August 2024) combines Level 2 and Level 3 automated-driving functions (BMW Highway Assistant + BMW Personal Pilot L3) that allow hands‑off driving in specified conditions.",
+  "url": "https://www.bmwgroup.com/en/news/general/2024/automated-driving.html",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group",
+   "published": "August 2, 2024",
+   "stance": "supports",
+   "about": "BMW 7 Series Level 2/3 availability",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-83",
+  "source_type": "web",
+  "source_name": "California Department of Motor Vehicles (DMV)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "The California DMV issued a deployment permit (June 8, 2023) authorizing Mercedes‑Benz to offer its DRIVE PILOT SAE Level 3 system on designated California freeways (Drive Pilot is available as an option for 2024 S‑Class and EQS models under those restrictions).",
+  "url": "https://www.dmv.ca.gov/portal/news-and-media/california-dmv-approves-mercedes-benz-automated-driving-system-for-certain-highways-and-conditions/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "California Department of Motor Vehicles (DMV)",
+   "published": "June 8, 2023",
+   "stance": "supports",
+   "about": "California regulatory approval for Level 3 (Mercedes Drive Pilot)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-84",
+  "source_type": "web",
+  "source_name": "Mobileye Global Inc. (SEC filing)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Mobileye’s 2025 SEC filing and disclosures state that Mobileye’s next‑generation EyeQ6 High / SuperVision / Chauffeur/Drive product family is intended to enable eyes‑off/hands‑off and fleet self‑driving features, positioning Surround ADAS/SuperVision as a production path toward broader hands‑off and Level‑3/above capabilities.",
+  "url": "https://www.sec.gov/Archives/edgar/data/1910139/000110465926014300/mbly-20251227x10k.htm",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mobileye Global Inc. (SEC filing)",
+   "published": "December 27, 2025",
+   "stance": "supports",
+   "about": "Mobileye roadmap for eyes‑off / hands‑off and Level‑3+",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-85",
+  "source_type": "web",
+  "source_name": "Mobileye investor earnings transcript (earningscalls.dev)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Mobileye management told investors that Surround ADAS using EyeQ6 has a planned start‑of‑production (SOP) in mid‑2028 and that the company’s Gen‑2 stack had an SOP target of 2027 — indicating supplier timelines that would enable expanded hands‑off (L2+/L3) production features around 2028 and after.",
+  "url": "https://earningscalls.dev/transcripts/mobileye-global-inc_mbly_earnings_call_transcript_2026-01-06",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mobileye investor earnings transcript (earningscalls.dev)",
+   "published": "January 6, 2026",
+   "stance": "supports",
+   "about": "Mobileye SOP timeline for Surround ADAS / Gen‑2 stack",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-86",
+  "source_type": "web",
+  "source_name": "McKinsey & Company (Center for Future Mobility)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "McKinsey’s industry analysis projects strong growth of advanced ADAS and estimates that by 2030 roughly 12% of vehicles could be equipped with Level‑3/4 capabilities (while Level‑2+ will dominate broader market adoption), supporting the expectation that Level‑3/hands‑off features will be present but limited in market share by 2030.",
+  "url": "https://www.mckinsey.com/~/media/mckinsey/industries/automotive%20and%20assembly/our%20insights/mapping%20the%20automotive%20software%20and%20electronics%20landscape%20through%202030/outlook%20on%20the%20automotive%20software%20and%20electronics%20market%20through%202030/outlook-on-the-automotive-software-and-electronics-market-through-2030-f.pdf",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "McKinsey & Company (Center for Future Mobility)",
+   "published": "January 2023",
+   "stance": "supports",
+   "about": "Market forecast for Level‑3/4 adoption by 2030",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-87",
+  "source_type": "web",
+  "source_name": "NVIDIA (press release)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "OEM and tier‑1 compute roadmaps (NVIDIA DRIVE Thor, Qualcomm Snapdragon Ride) show industry adoption of centralized, high‑performance vehicle compute platforms and software stacks that OEMs plan to sample in the mid‑2020s and deploy into premium vehicles — a technical enabler for expanding L2+/L3 hands‑off features in premium segment cars between 2028–2031.",
+  "url": "https://investor.nvidia.com/news/press-release-details/2024/NVIDIA-DRIVE-Powers-Next-Generation-of-Transportation--From-Cars-and-Trucks-to-Robotaxis-and-Autonomous-Delivery-Vehicles/default.aspx",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "NVIDIA (press release)",
+   "published": "March 18, 2024",
+   "stance": "supports",
+   "about": "NVIDIA DRIVE Thor adoption enabling advanced ADAS/AD",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-88",
+  "source_type": "web",
+  "source_name": "Qualcomm (press release)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Qualcomm’s Snapdragon Ride program and related OEM/Tier‑1 collaborations (sampling announced in 2024–2025 and further partnerships announced in 2026) describe a path for automakers to deploy L3‑capable stacks and to consolidate ADAS/automated‑driving and cockpit workloads on centralized platforms — supporting broader L2+/L3 feature rollouts in premium vehicles through the late 2020s.",
+  "url": "https://www.qualcomm.com/news/releases/2026/03/qualcomm-and-wayve-advance-production-ready----end-to-end-ai-for",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Qualcomm (press release)",
+   "published": "March 10, 2026",
+   "stance": "supports",
+   "about": "Qualcomm Snapdragon Ride roadmap for L3-capable platforms",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-89",
+  "source_type": "web",
+  "source_name": "Ars Technica",
+  "derivative": "G70",
+  "market": "US",
+  "text": "GM’s long–running hands‑free Super Cruise program and GM statements about expanding compatible roads (plus the one‑billion driven‑miles milestone reported in 2026) demonstrate production‑proven, large‑scale L2+/hands‑free deployment in the U.S. premium/mass‑market mix, evidencing an industry pathway to expand hands‑off capabilities into more models and road miles by 2028–2031.",
+  "url": "https://arstechnica.com/cars/2026/04/gms-super-cruise-passes-a-billion-driven-miles-since-2017/",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Ars Technica",
+   "published": "April 2026",
+   "stance": "supports",
+   "about": "GM Super Cruise usage and scale",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-US-WEB-90",
+  "source_type": "web",
+  "source_name": "U.S. Federal Register / NHTSA (proposed rule document)",
+  "derivative": "G70",
+  "market": "US",
+  "text": "U.S. federal and state regulatory activity is explicitly addressing Level‑3 and higher systems: California’s DMV issued a deployment permit for Mercedes DRIVE PILOT in 2023, and NHTSA’s 2025 Federal Register notices and proposed AV oversight programs explicitly discuss eligibility and oversight for vehicles operating at SAE Level‑3 and above — indicating regulators are preparing frameworks that will shape how L3 systems may scale in the U.S. by 2028–2031.",
+  "url": "https://www.gpo.gov/fdsys/pkg/FR-2025-01-15/pdf/2024-30854.pdf",
+  "retrieved_at": "2026-10-10T20:05:39.694384Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "U.S. Federal Register / NHTSA (proposed rule document)",
+   "published": "January 15, 2025",
+   "stance": "supports",
+   "about": "U.S. regulatory activity on Level‑3+ automated driving",
+   "question_kind": "trend"
+  }
+ }
+]

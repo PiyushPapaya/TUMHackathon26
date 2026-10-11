@@ -1,0 +1,1309 @@
+[
+ {
+  "id": "REQ-G70-US-001",
+  "title": "Improve Air conditioning does not cool or push enough air for the successor",
+  "description": "Address the customer pain or unmet need around Air conditioning does not cool or push enough air with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "comfort_space",
+  "signal_ids": [
+   "SIG-G70-US-009"
+  ],
+  "score": 68.8,
+  "rank": 1,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Difficult to Use), 35 mentions"
+   },
+   "reach": {
+    "value": 1.0,
+    "weight": 0.2,
+    "contribution": 20.0,
+    "explanation": "35 of at most 35 mentions (square root scale); US = 27 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.84,
+    "weight": 0.2,
+    "contribution": 16.8,
+    "explanation": "Air conditioner performance: 21 % unsatisfied"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and reach (20 points). Evidence level A: 35 mentions, confirmed by 2 independent source types.",
+  "evidence_level": "A",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 1,
+   "rank_max": 1,
+   "top3_share": 1.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 12000,
+   "volume_2030": 14000,
+   "growth_pct": 40.0,
+   "market_share": 0.269,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G70-US-002",
+  "title": "Improve Infotainment system is too complicated for the successor",
+  "description": "Address the customer pain or unmet need around Infotainment system is too complicated with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G70-US-012"
+  ],
+  "score": 68.2,
+  "rank": 2,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Difficult to Use), 33 mentions"
+   },
+   "reach": {
+    "value": 0.971,
+    "weight": 0.2,
+    "contribution": 19.4,
+    "explanation": "33 of at most 35 mentions (square root scale); US = 27 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.84,
+    "weight": 0.2,
+    "contribution": 16.8,
+    "explanation": "Menu structure of infotainment system: 21 % unsatisfied"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and reach (19.4 points). Evidence level A: 33 mentions, confirmed by 3 independent source types.",
+  "evidence_level": "A",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 2,
+   "rank_max": 2,
+   "top3_share": 1.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 12000,
+   "volume_2030": 14000,
+   "growth_pct": 40.0,
+   "market_share": 0.269,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G70-US-008",
+  "title": "Improve Dashboard glare and missing storage for the successor",
+  "description": "Address the customer pain or unmet need around Dashboard glare and missing storage with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "interior",
+  "signal_ids": [
+   "SIG-G70-US-024"
+  ],
+  "score": 58.7,
+  "rank": 3,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Difficult to Use / Defect | Difficult to Use), 15 mentions"
+   },
+   "reach": {
+    "value": 0.655,
+    "weight": 0.2,
+    "contribution": 13.1,
+    "explanation": "15 of at most 35 mentions (square root scale); US = 27 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.68,
+    "weight": 0.2,
+    "contribution": 13.6,
+    "explanation": "Instrument panel (IP): 17 % unsatisfied"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (13.6 points). Evidence level A: 15 mentions, confirmed by 2 independent source types.",
+  "evidence_level": "A",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 3,
+   "rank_max": 4,
+   "top3_share": 0.946,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 12000,
+   "volume_2030": 14000,
+   "growth_pct": 40.0,
+   "market_share": 0.269,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G70-US-006",
+  "title": "Improve Doesn't connect or connects inconsistently for the successor",
+  "description": "Address the customer pain or unmet need around Doesn't connect or connects inconsistently with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G70-US-020"
+  ],
+  "score": 56.9,
+  "rank": 4,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Difficult to Use), 25 mentions"
+   },
+   "reach": {
+    "value": 0.845,
+    "weight": 0.2,
+    "contribution": 16.9,
+    "explanation": "25 of at most 35 mentions (square root scale); US = 27 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.4,
+    "weight": 0.2,
+    "contribution": 8.0,
+    "explanation": "Vehicle's Mobile App: 10 % unsatisfied"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and reach (16.9 points). Evidence level A: 25 mentions, confirmed by 3 independent source types.",
+  "evidence_level": "A",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 3,
+   "rank_max": 4,
+   "top3_share": 0.054,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 12000,
+   "volume_2030": 14000,
+   "growth_pct": 40.0,
+   "market_share": 0.269,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G70-US-007",
+  "title": "Improve Apple CarPlay connection is unreliable and glitchy for the successor",
+  "description": "Address the customer pain or unmet need around Apple CarPlay connection is unreliable and glitchy with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G70-US-021"
+  ],
+  "score": 55.1,
+  "rank": 5,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Difficult to Use), 18 mentions"
+   },
+   "reach": {
+    "value": 0.717,
+    "weight": 0.2,
+    "contribution": 14.3,
+    "explanation": "18 of at most 35 mentions (square root scale); US = 27 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.44,
+    "weight": 0.2,
+    "contribution": 8.8,
+    "explanation": "Mirroring of smartphone content on vehicle display: 11 % unsatisfied"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and reach (14.3 points). Evidence level A: 18 mentions, confirmed by 2 independent source types.",
+  "evidence_level": "A",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 5,
+   "rank_max": 5,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 12000,
+   "volume_2030": 14000,
+   "growth_pct": 40.0,
+   "market_share": 0.269,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G70-US-010",
+  "title": "Improve Wi-Fi keeps dropping and won't reliably connect for the successor",
+  "description": "Address the customer pain or unmet need around Wi-Fi keeps dropping and won't reliably connect with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G70-US-030"
+  ],
+  "score": 51.2,
+  "rank": 6,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Difficult to Use), 13 mentions"
+   },
+   "reach": {
+    "value": 0.609,
+    "weight": 0.2,
+    "contribution": 12.2,
+    "explanation": "13 of at most 35 mentions (square root scale); US = 27 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.8,
+    "weight": 0.2,
+    "contribution": 16.0,
+    "explanation": "WiFi hotspot in vehicle: 20 % unsatisfied"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (16 points). Evidence level B: Only 13 mentions, but confirmed by 2 independent source types.",
+  "evidence_level": "B",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 6,
+   "rank_max": 6,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 12000,
+   "volume_2030": 14000,
+   "growth_pct": 40.0,
+   "market_share": 0.269,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G70-US-011",
+  "title": "Improve Manage / pair mobile device (Bluetooth) for the successor",
+  "description": "Address the customer pain or unmet need around Manage / pair mobile device (Bluetooth) with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G70-US-032"
+  ],
+  "score": 47.9,
+  "rank": 7,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Difficult to Use / Defect | Likes), 10 mentions"
+   },
+   "reach": {
+    "value": 0.535,
+    "weight": 0.2,
+    "contribution": 10.7,
+    "explanation": "10 of at most 35 mentions (square root scale); US = 27 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.68,
+    "weight": 0.2,
+    "contribution": 13.6,
+    "explanation": "Bluetooth/ smartphone pairing: 17 % unsatisfied"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (13.6 points). Evidence level B: Only 10 mentions, but confirmed by 2 independent source types.",
+  "evidence_level": "B",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 7,
+   "rank_max": 9,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 12000,
+   "volume_2030": 14000,
+   "growth_pct": 40.0,
+   "market_share": 0.269,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G70-US-013",
+  "title": "Improve Air conditioning control panel for the successor",
+  "description": "Address the customer pain or unmet need around Air conditioning control panel with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "comfort_space",
+  "signal_ids": [
+   "SIG-G70-US-037"
+  ],
+  "score": 47.9,
+  "rank": 8,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Difficult to Use), 6 mentions"
+   },
+   "reach": {
+    "value": 0.414,
+    "weight": 0.2,
+    "contribution": 8.3,
+    "explanation": "6 of at most 35 mentions (square root scale); US = 27 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.8,
+    "weight": 0.2,
+    "contribution": 16.0,
+    "explanation": "Operation of heater/ AC controls: 20 % unsatisfied"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (16 points). Evidence level B: Only 6 mentions, but confirmed by 2 independent source types.",
+  "evidence_level": "B",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 7,
+   "rank_max": 12,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 12000,
+   "volume_2030": 14000,
+   "growth_pct": 40.0,
+   "market_share": 0.269,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G70-US-009",
+  "title": "Improve Navigation sends me to wrong address or location for the successor",
+  "description": "Address the customer pain or unmet need around Navigation sends me to wrong address or location with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G70-US-026"
+  ],
+  "score": 46.8,
+  "rank": 9,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Difficult to Use), 14 mentions"
+   },
+   "reach": {
+    "value": 0.632,
+    "weight": 0.2,
+    "contribution": 12.6,
+    "explanation": "14 of at most 35 mentions (square root scale); US = 27 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.52,
+    "weight": 0.2,
+    "contribution": 10.4,
+    "explanation": "If applicable: Navigation system: 13 % unsatisfied"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and reach (12.6 points). Evidence level B: Only 14 mentions, but confirmed by 2 independent source types.",
+  "evidence_level": "B",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 7,
+   "rank_max": 11,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 12000,
+   "volume_2030": 14000,
+   "growth_pct": 40.0,
+   "market_share": 0.269,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G70-US-014",
+  "title": "Improve Mobile device, wireless charging for the successor",
+  "description": "Address the customer pain or unmet need around Mobile device, wireless charging with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G70-US-038"
+  ],
+  "score": 46.5,
+  "rank": 10,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Difficult to Use / Defect), 6 mentions"
+   },
+   "reach": {
+    "value": 0.414,
+    "weight": 0.2,
+    "contribution": 8.3,
+    "explanation": "6 of at most 35 mentions (square root scale); US = 27 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.72,
+    "weight": 0.2,
+    "contribution": 14.4,
+    "explanation": "Phone charging: 18 % unsatisfied"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (14.4 points). Evidence level B: Only 6 mentions, but confirmed by 2 independent source types.",
+  "evidence_level": "B",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 9,
+   "rank_max": 13,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 12000,
+   "volume_2030": 14000,
+   "growth_pct": 40.0,
+   "market_share": 0.269,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G70-US-015",
+  "title": "Improve Voice control / speech recognition for the successor",
+  "description": "Address the customer pain or unmet need around Voice control / speech recognition with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G70-US-039"
+  ],
+  "score": 45.9,
+  "rank": 11,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Difficult to Use), 5 mentions"
+   },
+   "reach": {
+    "value": 0.378,
+    "weight": 0.2,
+    "contribution": 7.6,
+    "explanation": "5 of at most 35 mentions (square root scale); US = 27 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.72,
+    "weight": 0.2,
+    "contribution": 14.4,
+    "explanation": "Performance of voice recognition: 18 % unsatisfied"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (14.4 points). Evidence level B: Only 5 mentions, but confirmed by 2 independent source types.",
+  "evidence_level": "B",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 10,
+   "rank_max": 14,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 12000,
+   "volume_2030": 14000,
+   "growth_pct": 40.0,
+   "market_share": 0.269,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G70-US-003",
+  "title": "Improve eSIM setup is a nightmare and unreliable for the successor",
+  "description": "Address the customer pain or unmet need around eSIM setup is a nightmare and unreliable with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G70-US-013"
+  ],
+  "score": 43.2,
+  "rank": 12,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Difficult to Use), 31 mentions"
+   },
+   "reach": {
+    "value": 0.941,
+    "weight": 0.2,
+    "contribution": 18.8,
+    "explanation": "31 of at most 35 mentions (square root scale); US = 27 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.0,
+    "weight": 0.2,
+    "contribution": 0.0,
+    "explanation": "no study data"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and reach (18.8 points). Evidence level B: 31 mentions, confirmed only by web sources: A needs a second BMW source (study).",
+  "evidence_level": "B",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 7,
+   "rank_max": 13,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 12000,
+   "volume_2030": 14000,
+   "growth_pct": 40.0,
+   "market_share": 0.269,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G70-US-004",
+  "title": "Improve Screen cluttered and hard to use while driving for the successor",
+  "description": "Address the customer pain or unmet need around Screen cluttered and hard to use while driving with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G70-US-016"
+  ],
+  "score": 42.4,
+  "rank": 13,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Difficult to Use), 28 mentions"
+   },
+   "reach": {
+    "value": 0.894,
+    "weight": 0.2,
+    "contribution": 17.9,
+    "explanation": "28 of at most 35 mentions (square root scale); US = 27 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.0,
+    "weight": 0.2,
+    "contribution": 0.0,
+    "explanation": "no study data"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and reach (17.9 points). Evidence level B: 28 mentions, confirmed only by web sources: A needs a second BMW source (study).",
+  "evidence_level": "B",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 10,
+   "rank_max": 14,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [
+   {
+    "dimension": "engine",
+    "segment_a": "BEVE",
+    "segment_b": "ICE",
+    "statement": "Touch screen, operation: BEVE mostly criticises (9); ICE mostly praises (21).",
+    "a_count": 9,
+    "b_count": 21,
+    "evidence_ids": [
+     "EV-G70-US-FB-G70-0124",
+     "EV-G70-US-FB-G70-0424",
+     "EV-G70-US-FB-G70-1073",
+     "EV-G70-US-FB-G70-0087",
+     "EV-G70-US-FB-G70-0469",
+     "EV-G70-US-FB-G70-0632"
+    ]
+   },
+   {
+    "dimension": "source",
+    "segment_a": "A",
+    "segment_b": "B",
+    "statement": "Touch screen, operation: A mostly criticises (14); B mostly praises (23).",
+    "a_count": 14,
+    "b_count": 23,
+    "evidence_ids": [
+     "EV-G70-US-FB-G70-0424",
+     "EV-G70-US-FB-G70-1073",
+     "EV-G70-US-FB-G70-3317",
+     "EV-G70-US-FB-G70-0087",
+     "EV-G70-US-FB-G70-0124",
+     "EV-G70-US-FB-G70-0469"
+    ]
+   }
+  ],
+  "business": {
+   "volume_2025": 12000,
+   "volume_2030": 14000,
+   "growth_pct": 40.0,
+   "market_share": 0.269,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G70-US-012",
+  "title": "Improve Head-Up Display for the successor",
+  "description": "Address the customer pain or unmet need around Head-Up Display with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G70-US-036"
+  ],
+  "score": 42.2,
+  "rank": 14,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Difficult to Use), 7 mentions"
+   },
+   "reach": {
+    "value": 0.447,
+    "weight": 0.2,
+    "contribution": 8.9,
+    "explanation": "7 of at most 35 mentions (square root scale); US = 27 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.44,
+    "weight": 0.2,
+    "contribution": 8.8,
+    "explanation": "Head-up Display: 11 % unsatisfied"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and reach (8.9 points). Evidence level B: Only 7 mentions, but confirmed by 2 independent source types.",
+  "evidence_level": "B",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 12,
+   "rank_max": 15,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 12000,
+   "volume_2030": 14000,
+   "growth_pct": 40.0,
+   "market_share": 0.269,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G70-US-005",
+  "title": "Improve Seats are uncomfortable and hard to adjust for the successor",
+  "description": "Address the customer pain or unmet need around Seats are uncomfortable and hard to adjust with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "comfort_space",
+  "signal_ids": [
+   "SIG-G70-US-018"
+  ],
+  "score": 41.8,
+  "rank": 15,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints (Difficult to Use), 26 mentions"
+   },
+   "reach": {
+    "value": 0.862,
+    "weight": 0.2,
+    "contribution": 17.2,
+    "explanation": "26 of at most 35 mentions (square root scale); US = 27 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.0,
+    "weight": 0.2,
+    "contribution": 0.0,
+    "explanation": "no study data"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and reach (17.2 points). Evidence level B: 26 mentions, confirmed only by web sources: A needs a second BMW source (study).",
+  "evidence_level": "B",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Check not possible (RuntimeError).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 11,
+   "rank_max": 15,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Seats: 24 critical comments, while the study reports satisfaction.",
+    "a_count": 24,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G70-US-FB-G70-0201",
+     "EV-G70-US-FB-G70-0554",
+     "EV-G70-US-FB-G70-0629",
+     "EV-G70-US-ST-25"
+    ]
+   },
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Seats: 24 critical comments, while the study reports satisfaction.",
+    "a_count": 24,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G70-US-FB-G70-0201",
+     "EV-G70-US-FB-G70-0554",
+     "EV-G70-US-FB-G70-0629",
+     "EV-G70-US-ST-27"
+    ]
+   }
+  ],
+  "business": {
+   "volume_2025": 12000,
+   "volume_2030": 14000,
+   "growth_pct": 40.0,
+   "market_share": 0.269,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ }
+]

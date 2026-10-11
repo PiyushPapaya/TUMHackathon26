@@ -1,0 +1,251 @@
+[
+ {
+  "id": "REQ-G68-CN-003",
+  "title": "Improve Ease of loading/ unloading luggage for the successor",
+  "description": "Address the customer pain or unmet need around Ease of loading/ unloading luggage with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "comfort_space",
+  "signal_ids": [
+   "SIG-G68-CN-003"
+  ],
+  "score": 44.6,
+  "rank": 1,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints, 1 mentions"
+   },
+   "reach": {
+    "value": 1.0,
+    "weight": 0.2,
+    "contribution": 20.0,
+    "explanation": "1 of at most 1 mentions (square root scale); CN = 25 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.583,
+    "weight": 0.2,
+    "contribution": 11.7,
+    "explanation": "Ease of loading/ unloading luggage: mean 7.25 of 10"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and reach (20 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+  "evidence_level": "C",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Option list not checked yet (C5).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 1,
+   "rank_max": 1,
+   "top3_share": 1.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 75000,
+   "volume_2030": 78000,
+   "growth_pct": 14.7,
+   "market_share": 0.247,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G68-CN-002",
+  "title": "Improve Connected services for the successor",
+  "description": "Address the customer pain or unmet need around Connected services with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G68-CN-002"
+  ],
+  "score": 44.1,
+  "rank": 2,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints, 1 mentions"
+   },
+   "reach": {
+    "value": 1.0,
+    "weight": 0.2,
+    "contribution": 20.0,
+    "explanation": "1 of at most 1 mentions (square root scale); CN = 25 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.55,
+    "weight": 0.2,
+    "contribution": 11.0,
+    "explanation": "Connected services: mean 7.35 of 10"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and reach (20 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+  "evidence_level": "C",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Option list not checked yet (C5).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 2,
+   "rank_max": 2,
+   "top3_share": 1.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 75000,
+   "volume_2030": 78000,
+   "growth_pct": 14.7,
+   "market_share": 0.247,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ },
+ {
+  "id": "REQ-G68-CN-001",
+  "title": "Improve Braking for the successor",
+  "description": "Address the customer pain or unmet need around Braking with a measurable user outcome.",
+  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "category": "driving_experience",
+  "signal_ids": [
+   "SIG-G68-CN-001"
+  ],
+  "score": 44.0,
+  "rank": 3,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 1.0,
+    "weight": 0.25,
+    "contribution": 25.0,
+    "explanation": "Mostly complaints, 1 mentions"
+   },
+   "reach": {
+    "value": 1.0,
+    "weight": 0.2,
+    "contribution": 20.0,
+    "explanation": "1 of at most 1 mentions (square root scale); CN = 25 % of 2030 volume"
+   },
+   "satisfaction_gap": {
+    "value": 0.54,
+    "weight": 0.2,
+    "contribution": 10.8,
+    "explanation": "Braking: mean 7.38 of 10"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 0.1,
+    "weight": 0.1,
+    "contribution": 1.0,
+    "explanation": "no trend behind it"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (25 points) and reach (20 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+  "evidence_level": "C",
+  "assumptions": [
+   "Rule-based fallback draft because no cached LLM draft was available."
+  ],
+  "uncertainties": [
+   "Needs PM wording review before approval."
+  ],
+  "offer_check": {
+   "status": "unknown",
+   "note": "Option list not checked yet (C5).",
+   "option_code": null
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 3,
+   "rank_max": 3,
+   "top3_share": 1.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 75000,
+   "volume_2030": 78000,
+   "growth_pct": 14.7,
+   "market_share": 0.247,
+   "note": "Sales context from sales_volumes.xlsx"
+  },
+  "stable_key": "",
+  "badges": []
+ }
+]

@@ -422,7 +422,40 @@
    "top3_share": 0.056,
    "runs": 500
   },
-  "segment_conflicts": [],
+  "segment_conflicts": [
+   {
+    "dimension": "engine",
+    "segment_a": "BEVE",
+    "segment_b": "PHEV",
+    "statement": "Electric Range: BEVE mostly criticises (34); PHEV mostly praises (10).",
+    "a_count": 34,
+    "b_count": 10,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0078",
+     "EV-G60-US-FB-G60-0116",
+     "EV-G60-US-FB-G60-0321",
+     "EV-G60-US-FB-G60-0156",
+     "EV-G60-US-FB-G60-0389",
+     "EV-G60-US-FB-G60-0520"
+    ]
+   },
+   {
+    "dimension": "source",
+    "segment_a": "A",
+    "segment_b": "B",
+    "statement": "Electric Range: A mostly criticises (11); B mostly praises (26).",
+    "a_count": 11,
+    "b_count": 26,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-1638",
+     "EV-G60-US-FB-G60-2322",
+     "EV-G60-US-FB-G60-0498",
+     "EV-G60-US-FB-G60-0078",
+     "EV-G60-US-FB-G60-0116",
+     "EV-G60-US-FB-G60-0156"
+    ]
+   }
+  ],
   "business": {
    "volume_2025": 78000,
    "volume_2030": 80000,
@@ -600,7 +633,40 @@
    "top3_share": 0.06,
    "runs": 500
   },
-  "segment_conflicts": [],
+  "segment_conflicts": [
+   {
+    "dimension": "source",
+    "segment_a": "A",
+    "segment_b": "B",
+    "statement": "Touch screen, operation: A mostly criticises (7); B mostly praises (31).",
+    "a_count": 7,
+    "b_count": 31,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-1681",
+     "EV-G60-US-FB-G60-1833",
+     "EV-G60-US-FB-G60-3549",
+     "EV-G60-US-FB-G60-0125",
+     "EV-G60-US-FB-G60-0160",
+     "EV-G60-US-FB-G60-0369"
+    ]
+   },
+   {
+    "dimension": "source",
+    "segment_a": "C",
+    "segment_b": "B",
+    "statement": "Touch screen, operation: C mostly criticises (14); B mostly praises (31).",
+    "a_count": 14,
+    "b_count": 31,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0853",
+     "EV-G60-US-FB-G60-0914",
+     "EV-G60-US-FB-G60-1091",
+     "EV-G60-US-FB-G60-0125",
+     "EV-G60-US-FB-G60-0160",
+     "EV-G60-US-FB-G60-0369"
+    ]
+   }
+  ],
   "business": {
    "volume_2025": 78000,
    "volume_2030": 80000,
@@ -1112,7 +1178,22 @@
    "top3_share": 0.0,
    "runs": 500
   },
-  "segment_conflicts": [],
+  "segment_conflicts": [
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Drivetrain: 43 critical comments, while the study reports satisfaction.",
+    "a_count": 43,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0401",
+     "EV-G60-US-FB-G60-0668",
+     "EV-G60-US-FB-G60-0792",
+     "EV-G60-US-ST-14"
+    ]
+   }
+  ],
   "business": {
    "volume_2025": 78000,
    "volume_2030": 80000,
@@ -1200,7 +1281,22 @@
    "top3_share": 0.0,
    "runs": 500
   },
-  "segment_conflicts": [],
+  "segment_conflicts": [
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Drivetrain: 43 critical comments, while the study reports satisfaction.",
+    "a_count": 43,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0401",
+     "EV-G60-US-FB-G60-0668",
+     "EV-G60-US-FB-G60-0792",
+     "EV-G60-US-ST-14"
+    ]
+   }
+  ],
   "business": {
    "volume_2025": 78000,
    "volume_2030": 80000,
@@ -1288,7 +1384,22 @@
    "top3_share": 0.0,
    "runs": 500
   },
-  "segment_conflicts": [],
+  "segment_conflicts": [
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Exterior design: 13 critical comments, while the study reports satisfaction.",
+    "a_count": 13,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0048",
+     "EV-G60-US-FB-G60-1056",
+     "EV-G60-US-FB-G60-1068",
+     "EV-G60-US-ST-01"
+    ]
+   }
+  ],
   "business": {
    "volume_2025": 78000,
    "volume_2030": 80000,
@@ -1377,7 +1488,22 @@
    "top3_share": 0.0,
    "runs": 500
   },
-  "segment_conflicts": [],
+  "segment_conflicts": [
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Ambient light: 12 critical comments, while the study reports satisfaction.",
+    "a_count": 12,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0499",
+     "EV-G60-US-FB-G60-0737",
+     "EV-G60-US-FB-G60-0800",
+     "EV-G60-US-ST-20"
+    ]
+   }
+  ],
   "business": {
    "volume_2025": 78000,
    "volume_2030": 80000,
@@ -1551,7 +1677,52 @@
    "top3_share": 0.0,
    "runs": 500
   },
-  "segment_conflicts": [],
+  "segment_conflicts": [
+   {
+    "dimension": "source",
+    "segment_a": "A",
+    "segment_b": "B",
+    "statement": "Seats: A mostly criticises (16); B mostly praises (30).",
+    "a_count": 16,
+    "b_count": 30,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0930",
+     "EV-G60-US-FB-G60-1474",
+     "EV-G60-US-FB-G60-2467",
+     "EV-G60-US-FB-G60-0308",
+     "EV-G60-US-FB-G60-0482",
+     "EV-G60-US-FB-G60-0617"
+    ]
+   },
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Seats: 43 critical comments, while the study reports satisfaction.",
+    "a_count": 43,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0107",
+     "EV-G60-US-FB-G60-0236",
+     "EV-G60-US-FB-G60-0258",
+     "EV-G60-US-ST-25"
+    ]
+   },
+   {
+    "dimension": "study_vs_feedback",
+    "segment_a": "feedback",
+    "segment_b": "study",
+    "statement": "Seats: 43 critical comments, while the study reports satisfaction.",
+    "a_count": 43,
+    "b_count": 1,
+    "evidence_ids": [
+     "EV-G60-US-FB-G60-0107",
+     "EV-G60-US-FB-G60-0236",
+     "EV-G60-US-FB-G60-0258",
+     "EV-G60-US-ST-26"
+    ]
+   }
+  ],
   "business": {
    "volume_2025": 78000,
    "volume_2030": 80000,

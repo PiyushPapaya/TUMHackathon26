@@ -24,11 +24,22 @@ def stable_key(signal_ids: list[str]) -> str:
 
 def make_ids_unique(requirements: list[Requirement]) -> None:
     """Zwei Entwürfe auf denselben Befunden dürfen nicht dieselbe ID tragen (Prüfpfad braucht Eindeutigkeit)."""
-    seen: dict[str, int] = {}
+    counts = {}
     for req in requirements:
-        seen[req.id] = seen.get(req.id, 0) + 1
-        if seen[req.id] > 1:
-            req.id = f"{req.id}-{seen[req.id]}"
+        counts[req.id] = counts.get(req.id, 0) + 1
+    for req in requirements:
+        if counts[req.id] > 1 and req.horizon == "next_gen":
+            req.id = f"{req.id}-next-gen"
+    # Verbleibende Hash-Kollisionen deterministisch auflösen, unabhängig von der LLM-Reihenfolge.
+    counts = {}
+    for req in requirements:
+        counts[req.id] = counts.get(req.id, 0) + 1
+    for req in requirements:
+        if counts[req.id] > 1:
+            suffix = hashlib.sha256("|".join(sorted(req.signal_ids)).encode()).hexdigest()[:12]
+            req.id = f"{req.id}-{suffix}"
+    if len({r.id for r in requirements}) != len(requirements):
+        raise ValueError("Duplicate requirements with identical signals and horizon survived deduplication.")
 
 
 

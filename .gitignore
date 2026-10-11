@@ -16,6 +16,9 @@ data/*
 !data/demo_cache/
 # Öffentliche Behördendaten (NHTSA, gemeinfrei) für die Offline-Demo; keine BMW-Daten
 !data/external_cache/
+# Pipeline-Ergebnisse aller 6 Szenarien (Orga hat Veröffentlichung erlaubt, 11.10.2026). Vorher lagen nur
+# 2 von 6 im Repo, die anderen per USB: wer klonte, sah nur 2 Autos. Audit-DB und voller LLM-Cache bleiben lokal.
+!data/processed/
 
 # ─── Lokale Einstellungen von Claude Code und Entire ─────────────────────
 .claude/settings.local.json
@@ -28,7 +31,9 @@ data/*
 node_modules/
 .next/
 .next-ux-*/
+.next-audit/
 outputs/ux-review/
+outputs/repo-audit/
 out/
 dist/
 build/

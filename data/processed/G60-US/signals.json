@@ -19,7 +19,28 @@
   "conflicts_with": [
    "SIG-G60-US-012",
    "SIG-G60-US-036"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 148,
+    "BEVE": 86,
+    "PHEV": 34
+   },
+   "country": {
+    "US": 268
+   },
+   "source": {
+    "B": 201,
+    "A": 67
+   },
+   "feedback_type": {
+    "Likes": 268,
+    "Difficult to Use": 15,
+    "Defect": 15,
+    "Wants": 8
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-002",
@@ -40,7 +61,28 @@
   ],
   "conflicts_with": [
    "SIG-G60-US-012"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 101,
+    "BEVE": 61,
+    "PHEV": 12
+   },
+   "country": {
+    "US": 174
+   },
+   "source": {
+    "B": 123,
+    "A": 51
+   },
+   "feedback_type": {
+    "Likes": 174,
+    "Difficult to Use": 12,
+    "Wants": 10,
+    "Defect": 9
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-003",
@@ -61,7 +103,28 @@
   ],
   "conflicts_with": [
    "SIG-G60-US-033"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 74,
+    "BEVE": 48,
+    "PHEV": 13
+   },
+   "country": {
+    "US": 135
+   },
+   "source": {
+    "B": 115,
+    "A": 20
+   },
+   "feedback_type": {
+    "Likes": 135,
+    "Defect": 6,
+    "Difficult to Use": 3,
+    "Wants": 3
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-004",
@@ -80,7 +143,28 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 38,
+    "BEVE": 34,
+    "PHEV": 5
+   },
+   "country": {
+    "US": 77
+   },
+   "source": {
+    "A": 70,
+    "B": 7
+   },
+   "feedback_type": {
+    "Likes": 77,
+    "Defect": 17,
+    "Wants": 16,
+    "Difficult to Use": 14
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-005",
@@ -101,7 +185,28 @@
   ],
   "conflicts_with": [
    "SIG-G60-US-031"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 43,
+    "BEVE": 26,
+    "PHEV": 5
+   },
+   "country": {
+    "US": 74
+   },
+   "source": {
+    "B": 67,
+    "A": 7
+   },
+   "feedback_type": {
+    "Likes": 74,
+    "Defect": 5,
+    "Wants": 2,
+    "Difficult to Use": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-006",
@@ -123,7 +228,25 @@
   "conflicts_with": [
    "SIG-G60-US-008",
    "SIG-G60-US-010"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "BEVE": 21,
+    "ICE": 19,
+    "PHEV": 8
+   },
+   "country": {
+    "US": 48
+   },
+   "source": {
+    "B": 44,
+    "A": 4
+   },
+   "feedback_type": {
+    "Likes": 48
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-007",
@@ -145,7 +268,27 @@
   "conflicts_with": [
    "SIG-G60-US-010",
    "SIG-G60-US-038"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 29,
+    "BEVE": 12
+   },
+   "country": {
+    "US": 41
+   },
+   "source": {
+    "B": 30,
+    "A": 11
+   },
+   "feedback_type": {
+    "Likes": 41,
+    "Defect": 4,
+    "Wants": 4,
+    "Difficult to Use": 3
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-008",
@@ -166,7 +309,28 @@
   ],
   "conflicts_with": [
    "SIG-G60-US-006"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 21,
+    "BEVE": 14,
+    "PHEV": 5
+   },
+   "country": {
+    "US": 40
+   },
+   "source": {
+    "C": 20,
+    "B": 19,
+    "A": 1
+   },
+   "feedback_type": {
+    "Difficult to Use": 40,
+    "Defect": 1,
+    "Likes": 1
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-009",
@@ -186,7 +350,28 @@
   ],
   "conflicts_with": [
    "SIG-G60-US-014"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "BEVE": 34,
+    "PHEV": 4
+   },
+   "country": {
+    "US": 38
+   },
+   "source": {
+    "B": 20,
+    "A": 11,
+    "C": 7
+   },
+   "feedback_type": {
+    "Difficult to Use": 38,
+    "Wants": 5,
+    "Defect": 5,
+    "Likes": 5
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-010",
@@ -208,7 +393,29 @@
   "conflicts_with": [
    "SIG-G60-US-007",
    "SIG-G60-US-006"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 22,
+    "BEVE": 13,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 36
+   },
+   "source": {
+    "A": 18,
+    "B": 10,
+    "C": 8
+   },
+   "feedback_type": {
+    "Difficult to Use": 33,
+    "Defect": 16,
+    "Likes": 11,
+    "Wants": 9
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-011",
@@ -229,7 +436,28 @@
   ],
   "conflicts_with": [
    "SIG-G60-US-023"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 23,
+    "BEVE": 10,
+    "PHEV": 2
+   },
+   "country": {
+    "US": 35
+   },
+   "source": {
+    "B": 31,
+    "A": 4
+   },
+   "feedback_type": {
+    "Likes": 35,
+    "Difficult to Use": 1,
+    "Wants": 1,
+    "Defect": 1
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-012",
@@ -251,7 +479,29 @@
   "conflicts_with": [
    "SIG-G60-US-001",
    "SIG-G60-US-002"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 16,
+    "BEVE": 10,
+    "PHEV": 6
+   },
+   "country": {
+    "US": 32
+   },
+   "source": {
+    "A": 14,
+    "B": 14,
+    "C": 4
+   },
+   "feedback_type": {
+    "Difficult to Use": 28,
+    "Defect": 13,
+    "Wants": 9,
+    "Likes": 7
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-013",
@@ -270,7 +520,28 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 24,
+    "BEVE": 6,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 31
+   },
+   "source": {
+    "B": 27,
+    "A": 4
+   },
+   "feedback_type": {
+    "Likes": 31,
+    "Wants": 2,
+    "Defect": 2,
+    "Difficult to Use": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-014",
@@ -291,7 +562,27 @@
   ],
   "conflicts_with": [
    "SIG-G60-US-009"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "BEVE": 18,
+    "PHEV": 10
+   },
+   "country": {
+    "US": 28
+   },
+   "source": {
+    "B": 26,
+    "A": 2
+   },
+   "feedback_type": {
+    "Likes": 28,
+    "Wants": 1,
+    "Defect": 1,
+    "Difficult to Use": 1
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-015",
@@ -310,7 +601,29 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 19,
+    "BEVE": 6,
+    "PHEV": 2
+   },
+   "country": {
+    "US": 27
+   },
+   "source": {
+    "B": 13,
+    "A": 7,
+    "C": 7
+   },
+   "feedback_type": {
+    "Difficult to Use": 26,
+    "Defect": 5,
+    "Likes": 4,
+    "Wants": 3
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-016",
@@ -329,7 +642,27 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 18,
+    "BEVE": 8,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 27
+   },
+   "source": {
+    "B": 24,
+    "A": 3
+   },
+   "feedback_type": {
+    "Likes": 27,
+    "Wants": 1,
+    "Difficult to Use": 1
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-017",
@@ -350,7 +683,28 @@
   ],
   "conflicts_with": [
    "SIG-G60-US-034"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 14,
+    "BEVE": 10,
+    "PHEV": 2
+   },
+   "country": {
+    "US": 26
+   },
+   "source": {
+    "B": 17,
+    "A": 9
+   },
+   "feedback_type": {
+    "Likes": 26,
+    "Defect": 4,
+    "Difficult to Use": 4,
+    "Wants": 3
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-018",
@@ -369,7 +723,28 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 19,
+    "PHEV": 4,
+    "BEVE": 3
+   },
+   "country": {
+    "US": 26
+   },
+   "source": {
+    "B": 17,
+    "C": 5,
+    "A": 4
+   },
+   "feedback_type": {
+    "Difficult to Use": 24,
+    "Defect": 4,
+    "Wants": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-019",
@@ -388,7 +763,29 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 11,
+    "BEVE": 10,
+    "PHEV": 4
+   },
+   "country": {
+    "US": 25
+   },
+   "source": {
+    "B": 10,
+    "C": 8,
+    "A": 7
+   },
+   "feedback_type": {
+    "Difficult to Use": 24,
+    "Defect": 6,
+    "Likes": 5,
+    "Wants": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-020",
@@ -407,7 +804,27 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "BEVE": 24,
+    "ICE": 1
+   },
+   "country": {
+    "US": 25
+   },
+   "source": {
+    "B": 19,
+    "A": 6
+   },
+   "feedback_type": {
+    "Difficult to Use": 24,
+    "Defect": 5,
+    "Likes": 2,
+    "Wants": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-021",
@@ -425,7 +842,28 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 16,
+    "BEVE": 7,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 24
+   },
+   "source": {
+    "B": 17,
+    "C": 4,
+    "A": 3
+   },
+   "feedback_type": {
+    "Difficult to Use": 22,
+    "Defect": 2,
+    "Likes": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-022",
@@ -444,7 +882,21 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 13,
+    "BEVE": 9,
+    "PHEV": 2
+   },
+   "country": {
+    "US": 24
+   },
+   "source": {
+    "D": 24
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-023",
@@ -464,7 +916,29 @@
   ],
   "conflicts_with": [
    "SIG-G60-US-011"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 19,
+    "BEVE": 4,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 24
+   },
+   "source": {
+    "C": 14,
+    "A": 7,
+    "B": 3
+   },
+   "feedback_type": {
+    "Difficult to Use": 24,
+    "Defect": 6,
+    "Wants": 4,
+    "Likes": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-024",
@@ -483,7 +957,24 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "BEVE": 15,
+    "ICE": 6,
+    "PHEV": 2
+   },
+   "country": {
+    "US": 23
+   },
+   "source": {
+    "B": 23
+   },
+   "feedback_type": {
+    "Likes": 23
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-025",
@@ -501,7 +992,26 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 22
+   },
+   "country": {
+    "US": 22
+   },
+   "source": {
+    "B": 10,
+    "C": 7,
+    "A": 5
+   },
+   "feedback_type": {
+    "Difficult to Use": 22,
+    "Defect": 4,
+    "Likes": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-026",
@@ -523,7 +1033,24 @@
   "conflicts_with": [
    "SIG-G60-US-028",
    "SIG-G60-US-032"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 13,
+    "BEVE": 8
+   },
+   "country": {
+    "US": 21
+   },
+   "source": {
+    "B": 21
+   },
+   "feedback_type": {
+    "Likes": 21,
+    "Difficult to Use": 1
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-027",
@@ -541,7 +1068,28 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "BEVE": 15,
+    "PHEV": 4,
+    "ICE": 1
+   },
+   "country": {
+    "US": 20
+   },
+   "source": {
+    "B": 15,
+    "A": 5
+   },
+   "feedback_type": {
+    "Difficult to Use": 20,
+    "Wants": 4,
+    "Likes": 3,
+    "Defect": 3
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-028",
@@ -564,7 +1112,29 @@
   ],
   "conflicts_with": [
    "SIG-G60-US-026"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "BEVE": 9,
+    "ICE": 8,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 18
+   },
+   "source": {
+    "B": 18
+   },
+   "feedback_type": {
+    "Difficult to Use": 18,
+    "Likes": 1
+   }
+  },
+  "study_link": {
+   "attribute": "Menu structure of infotainment system",
+   "importance": 0.36,
+   "dissatisfaction": 0.13
+  }
  },
  {
   "id": "SIG-G60-US-029",
@@ -585,7 +1155,31 @@
    "feedback",
    "study"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 8,
+    "BEVE": 7,
+    "PHEV": 2
+   },
+   "country": {
+    "US": 17
+   },
+   "source": {
+    "C": 9,
+    "B": 7,
+    "A": 1
+   },
+   "feedback_type": {
+    "Difficult to Use": 10,
+    "Defect": 7
+   }
+  },
+  "study_link": {
+   "attribute": "Phone charging",
+   "importance": 0.56,
+   "dissatisfaction": 0.1
+  }
  },
  {
   "id": "SIG-G60-US-030",
@@ -606,7 +1200,29 @@
    "feedback",
    "study"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 11,
+    "BEVE": 3,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 15
+   },
+   "source": {
+    "C": 15
+   },
+   "feedback_type": {
+    "Difficult to Use": 14,
+    "Defect": 1
+   }
+  },
+  "study_link": {
+   "attribute": "Operation of heater/ AC controls",
+   "importance": 0.29,
+   "dissatisfaction": 0.15
+  }
  },
  {
   "id": "SIG-G60-US-031",
@@ -630,7 +1246,28 @@
   ],
   "conflicts_with": [
    "SIG-G60-US-005"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 6,
+    "BEVE": 5,
+    "PHEV": 3
+   },
+   "country": {
+    "US": 14
+   },
+   "source": {
+    "B": 13,
+    "A": 1
+   },
+   "feedback_type": {
+    "Wants": 14,
+    "Defect": 1,
+    "Likes": 1,
+    "Difficult to Use": 1
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-032",
@@ -654,7 +1291,24 @@
   ],
   "conflicts_with": [
    "SIG-G60-US-026"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 10,
+    "BEVE": 3,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 14
+   },
+   "source": {
+    "B": 14
+   },
+   "feedback_type": {
+    "Wants": 14
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-033",
@@ -678,7 +1332,24 @@
   ],
   "conflicts_with": [
    "SIG-G60-US-003"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 8,
+    "BEVE": 4,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 13
+   },
+   "source": {
+    "B": 13
+   },
+   "feedback_type": {
+    "Wants": 13
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-034",
@@ -702,7 +1373,28 @@
   ],
   "conflicts_with": [
    "SIG-G60-US-017"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "BEVE": 8,
+    "ICE": 3,
+    "PHEV": 2
+   },
+   "country": {
+    "US": 13
+   },
+   "source": {
+    "B": 9,
+    "A": 4
+   },
+   "feedback_type": {
+    "Wants": 13,
+    "Likes": 4,
+    "Defect": 3,
+    "Difficult to Use": 1
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-035",
@@ -724,7 +1416,23 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 11,
+    "BEVE": 1
+   },
+   "country": {
+    "US": 12
+   },
+   "source": {
+    "B": 12
+   },
+   "feedback_type": {
+    "Wants": 12
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-036",
@@ -748,7 +1456,28 @@
   ],
   "conflicts_with": [
    "SIG-G60-US-001"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 6,
+    "BEVE": 3,
+    "PHEV": 3
+   },
+   "country": {
+    "US": 12
+   },
+   "source": {
+    "A": 8,
+    "B": 4
+   },
+   "feedback_type": {
+    "Wants": 12,
+    "Difficult to Use": 6,
+    "Likes": 5,
+    "Defect": 2
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-037",
@@ -770,7 +1499,26 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 6,
+    "BEVE": 3,
+    "PHEV": 3
+   },
+   "country": {
+    "US": 12
+   },
+   "source": {
+    "B": 11,
+    "A": 1
+   },
+   "feedback_type": {
+    "Wants": 12,
+    "Defect": 1
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-038",
@@ -794,7 +1542,27 @@
   ],
   "conflicts_with": [
    "SIG-G60-US-007"
-  ]
+  ],
+  "segments": {
+   "engine": {
+    "ICE": 8,
+    "BEVE": 3,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 12
+   },
+   "source": {
+    "B": 9,
+    "A": 3
+   },
+   "feedback_type": {
+    "Wants": 12,
+    "Difficult to Use": 3,
+    "Defect": 1
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-039",
@@ -816,7 +1584,25 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 11
+   },
+   "country": {
+    "US": 11
+   },
+   "source": {
+    "B": 10,
+    "A": 1
+   },
+   "feedback_type": {
+    "Wants": 11,
+    "Defect": 1,
+    "Difficult to Use": 1
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-040",
@@ -840,7 +1626,31 @@
    "feedback",
    "study"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "ICE": 6,
+    "BEVE": 3,
+    "PHEV": 1
+   },
+   "country": {
+    "US": 10
+   },
+   "source": {
+    "B": 9,
+    "A": 1
+   },
+   "feedback_type": {
+    "Difficult to Use": 10,
+    "Wants": 1,
+    "Likes": 1
+   }
+  },
+  "study_link": {
+   "attribute": "Interior storage",
+   "importance": 0.39,
+   "dissatisfaction": 0.1
+  }
  },
  {
   "id": "SIG-G60-US-041",
@@ -862,7 +1672,23 @@
   "source_types": [
    "feedback"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "BEVE": 5,
+    "ICE": 4
+   },
+   "country": {
+    "US": 9
+   },
+   "source": {
+    "B": 9
+   },
+   "feedback_type": {
+    "Wants": 9
+   }
+  },
+  "study_link": null
  },
  {
   "id": "SIG-G60-US-042",
@@ -885,7 +1711,30 @@
    "feedback",
    "study"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "BEVE": 4,
+    "ICE": 4
+   },
+   "country": {
+    "US": 8
+   },
+   "source": {
+    "C": 5,
+    "A": 3
+   },
+   "feedback_type": {
+    "Difficult to Use": 8,
+    "Defect": 3,
+    "Wants": 1
+   }
+  },
+  "study_link": {
+   "attribute": "Performance of voice recognition",
+   "importance": 0.39,
+   "dissatisfaction": 0.16
+  }
  },
  {
   "id": "SIG-G60-US-043",
@@ -907,7 +1756,30 @@
    "feedback",
    "study"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {
+   "engine": {
+    "BEVE": 4,
+    "ICE": 3
+   },
+   "country": {
+    "US": 7
+   },
+   "source": {
+    "C": 5,
+    "A": 1,
+    "B": 1
+   },
+   "feedback_type": {
+    "Difficult to Use": 7,
+    "Defect": 1
+   }
+  },
+  "study_link": {
+   "attribute": "WiFi hotspot in vehicle",
+   "importance": 0.38,
+   "dissatisfaction": 0.13
+  }
  },
  {
   "id": "SIG-G60-US-044",
@@ -922,7 +1794,13 @@
   "source_types": [
    "study"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "If applicable: Flat tire preparedness (spare, run flat, etc.)",
+   "importance": 0.35,
+   "dissatisfaction": 0.18
+  }
  },
  {
   "id": "SIG-G60-US-045",
@@ -937,6 +1815,12 @@
   "source_types": [
    "study"
   ],
-  "conflicts_with": []
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": {
+   "attribute": "Off-Road capability",
+   "importance": 0.18,
+   "dissatisfaction": 0.18
+  }
  }
 ]

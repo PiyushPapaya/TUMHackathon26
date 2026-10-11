@@ -1,0 +1,246 @@
+{
+ "sales": {
+  "market": "EU",
+  "volume_2024": 11000,
+  "volume_2025": 13000,
+  "volume_2030": 17000,
+  "share_of_total_2030": 0.327,
+  "growth_pct": 30.769,
+  "growth_2024_2025_pct": 18.182
+ },
+ "unmapped_topics": {
+  "Body equipment, overall technology": 2,
+  "no_class_found": 11,
+  "General enquiry: customer feedback": 2,
+  "Controller operation": 1,
+  "Owner's Manual": 1
+ },
+ "opportunities": [
+  {
+   "attribute": "Quietness when driving",
+   "category": "quality_perception",
+   "importance": 0.978,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-34"
+  },
+  {
+   "attribute": "Front interior roominess",
+   "category": "comfort_space",
+   "importance": 0.969,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-26"
+  },
+  {
+   "attribute": "Reliability",
+   "category": "quality_perception",
+   "importance": 0.967,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-09"
+  },
+  {
+   "attribute": "Braking",
+   "category": "driving_experience",
+   "importance": 0.96,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-21"
+  },
+  {
+   "attribute": "Quality of ride",
+   "category": "driving_experience",
+   "importance": 0.952,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-25"
+  },
+  {
+   "attribute": "Rear interior roominess",
+   "category": "comfort_space",
+   "importance": 0.941,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-27"
+  },
+  {
+   "attribute": "Overall seating comfort",
+   "category": "comfort_space",
+   "importance": 0.929,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-16"
+  },
+  {
+   "attribute": "Safety",
+   "category": "driver_assistance",
+   "importance": 0.928,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-06"
+  },
+  {
+   "attribute": "Ease of entry into and out of car",
+   "category": "comfort_space",
+   "importance": 0.925,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-30"
+  },
+  {
+   "attribute": "Driving position",
+   "category": "driving_experience",
+   "importance": 0.913,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-35"
+  },
+  {
+   "attribute": "Quality of interior and materials used",
+   "category": "interior",
+   "importance": 0.911,
+   "dissatisfaction": 0.0,
+   "evidence_id": "EV-G70-EU-ST-04"
+  },
+  {
+   "attribute": "Manoeuvrability",
+   "category": "driving_experience",
+   "importance": 0.897,
+   "dissatisfaction": 0.01,
+   "evidence_id": "EV-G70-EU-ST-24"
+  },
+  {
+   "attribute": "Acceleration",
+   "category": "driving_experience",
+   "importance": 0.894,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G70-EU-ST-18"
+  },
+  {
+   "attribute": "Roadholding",
+   "category": "driving_experience",
+   "importance": 0.894,
+   "dissatisfaction": 0.02,
+   "evidence_id": "EV-G70-EU-ST-19"
+  },
+  {
+   "attribute": "Interior styling",
+   "category": "interior",
+   "importance": 0.892,
+   "dissatisfaction": 0.027,
+   "evidence_id": "EV-G70-EU-ST-03"
+  },
+  {
+   "attribute": "Integrated navigation system",
+   "category": "infotainment_digital",
+   "importance": 0.882,
+   "dissatisfaction": 0.06,
+   "evidence_id": "EV-G70-EU-ST-15"
+  },
+  {
+   "attribute": "Heating/ ventilation/ air conditioning",
+   "category": "comfort_space",
+   "importance": 0.88,
+   "dissatisfaction": 0.067,
+   "evidence_id": "EV-G70-EU-ST-32"
+  },
+  {
+   "attribute": "Overall build quality",
+   "category": "quality_perception",
+   "importance": 0.878,
+   "dissatisfaction": 0.073,
+   "evidence_id": "EV-G70-EU-ST-33"
+  },
+  {
+   "attribute": "Ease of loading/ unloading luggage",
+   "category": "comfort_space",
+   "importance": 0.867,
+   "dissatisfaction": 0.11,
+   "evidence_id": "EV-G70-EU-ST-28"
+  },
+  {
+   "attribute": "Freedom from faults/ squeaks/ rattles",
+   "category": "quality_perception",
+   "importance": 0.861,
+   "dissatisfaction": 0.13,
+   "evidence_id": "EV-G70-EU-ST-07"
+  },
+  {
+   "attribute": "Exterior styling",
+   "category": "exterior",
+   "importance": 0.838,
+   "dissatisfaction": 0.207,
+   "evidence_id": "EV-G70-EU-ST-02"
+  },
+  {
+   "attribute": "Smartphone integration/ connectivity",
+   "category": "infotainment_digital",
+   "importance": 0.836,
+   "dissatisfaction": 0.213,
+   "evidence_id": "EV-G70-EU-ST-12"
+  },
+  {
+   "attribute": "Interior versatility",
+   "category": "comfort_space",
+   "importance": 0.832,
+   "dissatisfaction": 0.227,
+   "evidence_id": "EV-G70-EU-ST-37"
+  },
+  {
+   "attribute": "All round visibility",
+   "category": "driver_assistance",
+   "importance": 0.83,
+   "dissatisfaction": 0.233,
+   "evidence_id": "EV-G70-EU-ST-10"
+  },
+  {
+   "attribute": "Features of information and entertainment system including in-car apps",
+   "category": "infotainment_digital",
+   "importance": 0.829,
+   "dissatisfaction": 0.237,
+   "evidence_id": "EV-G70-EU-ST-13"
+  },
+  {
+   "attribute": "Easy to read and use instruments/ controls/ displays",
+   "category": "infotainment_digital",
+   "importance": 0.819,
+   "dissatisfaction": 0.27,
+   "evidence_id": "EV-G70-EU-ST-11"
+  },
+  {
+   "attribute": "Easy to use information and entertainment system including in-car apps",
+   "category": "infotainment_digital",
+   "importance": 0.799,
+   "dissatisfaction": 0.337,
+   "evidence_id": "EV-G70-EU-ST-14"
+  },
+  {
+   "attribute": "Interior storage for small items",
+   "category": "comfort_space",
+   "importance": 0.796,
+   "dissatisfaction": 0.347,
+   "evidence_id": "EV-G70-EU-ST-17"
+  },
+  {
+   "attribute": "Connected services",
+   "category": "infotainment_digital",
+   "importance": 0.786,
+   "dissatisfaction": 0.38,
+   "evidence_id": "EV-G70-EU-ST-36"
+  },
+  {
+   "attribute": "Fuel economy/ energy efficiency",
+   "category": "range_charging",
+   "importance": 0.768,
+   "dissatisfaction": 0.44,
+   "evidence_id": "EV-G70-EU-ST-20"
+  },
+  {
+   "attribute": "Luggage capacity",
+   "category": "comfort_space",
+   "importance": 0.741,
+   "dissatisfaction": 0.53,
+   "evidence_id": "EV-G70-EU-ST-29"
+  },
+  {
+   "attribute": "Sportiness",
+   "category": "driving_experience",
+   "importance": 0.697,
+   "dissatisfaction": 0.677,
+   "evidence_id": "EV-G70-EU-ST-22"
+  }
+ ],
+ "warnings": [],
+ "segment_conflicts": {}
+}

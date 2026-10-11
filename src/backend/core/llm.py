@@ -18,6 +18,8 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import tempfile
+import threading
 import time
 from pathlib import Path
 
@@ -30,6 +32,7 @@ DEMO_CACHE_DIR = ROOT / "data" / "demo_cache"
 RETRIES = 2              # nach dem ersten Versuch noch 2 Mal; Netzfehler im Nachtlauf sind meist kurz
 TIMEOUT_SECONDS = 180.0  # Websuche braucht teils über eine Minute; ohne Limit hängt der Lauf ewig
 BACKOFF_SECONDS = 2.0
+_CACHE_IO_LOCK = threading.RLock()
 
 
 def lade_env(pfad: Path = ROOT / ".env") -> None:
@@ -69,17 +72,36 @@ def _read_cache(path: Path, schema: type[BaseModel]) -> BaseModel | None:
     if not path.exists():
         return None
     try:
-        return schema.model_validate_json(path.read_text(encoding="utf-8"))
+        with _CACHE_IO_LOCK:
+            return schema.model_validate_json(path.read_text(encoding="utf-8"))
     except (ValidationError, ValueError):
         return None
 
 
 def _write_atomic(path: Path, text: str) -> None:
     """Erst in eine Temp-Datei, dann umbenennen: os.replace ist atomar, es gibt nie eine halbe Datei."""
+    with _CACHE_IO_LOCK:
+        _write_atomic_locked(path, text)
+
+
+def _write_atomic_locked(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    tmp = path.with_suffix(f".tmp{os.getpid()}")
-    tmp.write_text(text, encoding="utf-8")
-    os.replace(tmp, path)
+    # Pro Aufruf eine eigene Datei: parallele Requests im selben Prozess teilen die PID.
+    with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent,
+                                     prefix=path.stem, suffix=".tmp", delete=False) as stream:
+        tmp = Path(stream.name)
+    try:
+        tmp.write_text(text, encoding="utf-8")
+        for attempt in range(5):
+            try:
+                os.replace(tmp, path)
+                break
+            except PermissionError:
+                if attempt == 4:
+                    raise
+                time.sleep(0.05 * (attempt + 1))  # Windows: anderer Prozess/Scanner hält kurz einen Handle.
+    finally:
+        tmp.unlink(missing_ok=True)
 
 
 def _ask_with_retries(model: str, system: str, user: str, schema: type[BaseModel], tools: list[dict]) -> BaseModel:

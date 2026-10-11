@@ -39,11 +39,21 @@ def compute(scenario_id: str) -> dict:
     requirements = _json(processed / "requirements.json") or []
     # Anforderungen zitieren auch Web-Befunde (B6); ohne sie zählt Grounding echte IDs als "erfunden".
     web_signals = _json(processed / "web_signals.json") or []
-    known = {e["id"] for e in evidence}
-    cited = [i for s in signals for i in s["evidence_ids"]]
-    excel = pd.read_excel(ROOT / "data" / "raw" / cfg["data"]["feedback_file"], sheet_name="Feedback_Explorer")
-    source_texts = set(excel["Customer Feedback"].dropna().astype(str).str.strip())
-    by_id = {e["id"]: e for e in evidence}
+    external_signals = _json(processed / "external_signals.json") or []
+    all_signals = signals + web_signals + external_signals
+    all_evidence = (evidence + (_json(processed / "web_evidence.json") or [])
+                    + (_json(processed / "external_evidence.json") or []))
+    known = {e["id"] for e in all_evidence}
+    cited = [i for s in all_signals for i in s["evidence_ids"]]
+    source_texts = set()
+    if cfg["data"].get("feedback_file"):
+        from core.datasets import load_profile
+        profile = load_profile().get("feedback", {})
+        excel = pd.read_excel(ROOT / "data" / "raw" / cfg["data"]["feedback_file"],
+                              sheet_name=profile.get("sheet", "Feedback_Explorer"))
+        column = profile.get("columns", {}).get("text", "Customer Feedback")
+        source_texts = set(excel[column].dropna().astype(str).str.strip())
+    by_id = {e["id"]: e for e in all_evidence}
     cited_texts = [by_id[i]["text"] for i in set(cited) if i in by_id and by_id[i]["source_type"] == "feedback"]
     comments = {e["id"] for e in evidence if e["source_type"] == "feedback" and e["meta"].get("scope", "in") == "in"}
     scenario = Scenario(**{k: v for k, v in cfg.items() if k in Scenario.model_fields})
@@ -54,13 +64,14 @@ def compute(scenario_id: str) -> dict:
         with sample.open(encoding="utf-8-sig", newline="") as f:
             labels = [row[-1] for row in list(csv.reader(f))[1:]]
     return {
-        "scenario": scenario_id, "evidence": len(evidence), "comments": len(comments), "signals": len(signals),
+        "scenario": scenario_id, "evidence": len(all_evidence), "comments": len(comments), "signals": len(all_signals),
         "requirements": len(requirements),
         "ground_signals": grounding_rate(cited, known),
         "ground_requirements": grounding_rate([i for r in requirements for i in r["signal_ids"]],
-                                              {s["id"] for s in signals + web_signals}),
+                                              {s["id"] for s in all_signals}),
         "verbatim": verbatim_rate(cited_texts, source_texts),
-        "fidelity": fidelity(labels), "labelled": sum(1 for x in labels if x.strip()), "sample": len(labels),
+        "fidelity": fidelity(labels), "labelled": sum(1 for x in labels if x.strip().lower() in {"j", "n"}),
+        "sample": len(labels),
         "coverage": coverage(groups, comments),
         "numbers": numbers_share([r["acceptance_criterion"] for r in requirements]),
     }  # fmt: skip
@@ -106,10 +117,16 @@ Erzeugt mit `python tests/eval/run_eval.py {m['scenario']}`. Nur Zahlen, keine B
 
 if __name__ == "__main__":
     scenario_id = sys.argv[1] if len(sys.argv) > 1 else "G60-US"
-    try:
-        metrics = compute(scenario_id)
-    except FileNotFoundError as err:
-        print(f"Eval übersprungen: {err}")
-        sys.exit(0)
-    (Path(__file__).parent / "REPORT.md").write_text(report(metrics), encoding="utf-8")
-    print(json.dumps(metrics, indent=2, default=str))
+    ids = (sorted(p.stem for p in (ROOT / "config" / "scenarios").glob("*.json"))
+           if scenario_id == "all" else [scenario_id])
+    results = []
+    for sid in ids:
+        try:
+            metrics = compute(sid)
+        except FileNotFoundError as err:
+            print(f"Eval failed: {err}", file=sys.stderr)
+            sys.exit(1)
+        name = f"REPORT-{sid}.md" if scenario_id == "all" else "REPORT.md"
+        (Path(__file__).parent / name).write_text(report(metrics), encoding="utf-8")
+        results.append(metrics)
+    print(json.dumps(results if scenario_id == "all" else results[0], indent=2, default=str))

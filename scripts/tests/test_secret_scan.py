@@ -1,5 +1,6 @@
 """Tests für scripts/secret_scan.py. Die Beispiel-Keys sind erfunden und zusammengesetzt."""
 
+import io
 import os
 import sys
 import unittest
@@ -30,6 +31,14 @@ class SecretScanTests(unittest.TestCase):
         self.assertTrue(ss.FORBIDDEN_FILES.search("src/backend/.env.local"))
         self.assertTrue(ss.FORBIDDEN_FILES.search(".claude/settings.local.json"))
         self.assertIsNone(ss.FORBIDDEN_FILES.search("docs/env.md"))
+
+    def test_stream_detects_key_split_between_chunks_without_duplicate_or_leak(self):
+        fake = "sk-" + "proj-" + "D" * 40
+        text = "first line\n" + " " * 50 + fake + "\nlast line"
+        hits = ss.scan_stream("history", io.StringIO(text), chunk_size=64)
+        self.assertEqual(len(hits), 1)
+        self.assertIn("history:2:", hits[0])
+        self.assertNotIn(fake, hits[0])
 
 
 if __name__ == "__main__":
