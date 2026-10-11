@@ -1,0 +1,9 @@
+macvhe letzte ändeiurnhen im dem code base, sodas undetr frontedn mit unsreem backend völlig gut funktioniert
+
+---
+
+sag lasse er soll npm build laufen lassen
+
+---
+
+lasse sagt build ist grün
