@@ -29,17 +29,17 @@
    "study": 37,
    "sales": 1,
    "options": 133,
-   "web": 0,
+   "web": 105,
    "external": 0,
    "badge": "dünn"
   }
  },
  "funnel": {
-  "evidence": 148,
-  "signals": 10,
-  "requirements": 10,
+  "evidence": 253,
+  "signals": 19,
+  "requirements": 9,
   "approved": 0,
-  "generated_at": "2026-10-11T04:56:00+00:00"
+  "generated_at": "2026-10-11T07:02:42+00:00"
  },
  "weights": {},
  "evidence": [
@@ -198,28 +198,6 @@
    }
   },
   {
-   "id": "EV-G60-EU-FB-G60-0426",
-   "source_type": "feedback",
-   "source_name": "Feedback Quelle A",
-   "derivative": "G60",
-   "market": "EU",
-   "text": "bmw puts the driver first and i realy like that. it's always stylish and constantly draws positive attention.",
-   "url": null,
-   "retrieved_at": null,
-   "polarity": 1,
-   "meta": {
-    "vfc2": "Drive, driving dynamics and chassis, overall technology | no_class_found",
-    "vfc3": "Like: function",
-    "feedback_type": "Likes",
-    "labels": "Drive, driving dynamics and chassis, overall technology/Likes | no_class_found/",
-    "engine": "PHEV",
-    "country": "SE",
-    "source": "A",
-    "source_letter": "A",
-    "scope": "in"
-   }
-  },
-  {
    "id": "EV-G60-EU-FB-G60-0506",
    "source_type": "feedback",
    "source_name": "Feedback Quelle A",
@@ -236,28 +214,6 @@
     "labels": "Electric Range/Likes",
     "engine": "PHEV",
     "country": "SE",
-    "source": "A",
-    "source_letter": "A",
-    "scope": "in"
-   }
-  },
-  {
-   "id": "EV-G60-EU-FB-G60-0595",
-   "source_type": "feedback",
-   "source_name": "Feedback Quelle A",
-   "derivative": "G60",
-   "market": "EU",
-   "text": "against my old 68 plate 520i, this one pulls quicker and uses less fuel. i really like the head up display and the new main screen, and the journey fuel info is handy. adaptive cruise itself works fine, but changing the gap to the car ahead while driving is awkward, especially when i want more distance in the wet. lane control helps. sat nav overall is good, yet the traffic delay icons/text are tiny and digging into that info on the move is hard, plus minor roads are shown too faintly. spotify is well integrated, simple to use and looks good. downside is the road noise, which is much louder on some surfaces and basically drowns out the audio. the speed limit warning drives me mad and is often wrong. i also want to keep the car in efficient mode without having to set it again every single journey.",
-   "url": null,
-   "retrieved_at": null,
-   "polarity": -1,
-   "meta": {
-    "vfc2": "(Active) cruise control | Drivetrain | Head-Up Display | Navigation | Speed Limit Assistant | Touch screen, operation | no_class_found",
-    "vfc3": "Customer request: usability | Like: Efficiency | Like: function | Not user-friendly | Like: usability | Malfunction",
-    "feedback_type": "Wants | Likes | Difficult to Use | Defect",
-    "labels": "(Active) cruise control/Wants | Drivetrain/Likes | Head-Up Display/Likes | Navigation/Difficult to Use | Speed Limit Assistant/Difficult to Use | Touch screen, operation/Likes | Touch screen, operation/Defect | no_class_found/",
-    "engine": "ICE",
-    "country": "GB",
     "source": "A",
     "source_letter": "A",
     "scope": "in"
@@ -330,50 +286,6 @@
    }
   },
   {
-   "id": "EV-G60-EU-FB-G60-0912",
-   "source_type": "feedback",
-   "source_name": "Feedback Quelle A",
-   "derivative": "G60",
-   "market": "EU",
-   "text": "really like the car, super fun to drive. but android auto feels a bit bare, and charging operator integration is weak.",
-   "url": null,
-   "retrieved_at": null,
-   "polarity": 0,
-   "meta": {
-    "vfc2": "Android Auto | Drive, driving dynamics and chassis, overall technology",
-    "vfc3": "Not user-friendly | Like: function",
-    "feedback_type": "Difficult to Use | Likes",
-    "labels": "Android Auto/Difficult to Use | Drive, driving dynamics and chassis, overall technology/Likes",
-    "engine": "BEVE",
-    "country": "DK",
-    "source": "A",
-    "source_letter": "A",
-    "scope": "in"
-   }
-  },
-  {
-   "id": "EV-G60-EU-FB-G60-1032",
-   "source_type": "feedback",
-   "source_name": "Feedback Quelle A",
-   "derivative": "G60",
-   "market": "EU",
-   "text": "it is about as close as you can get to an electric car that still doesnt really appear or feel like an ev. the whole premium feel is intact. the range, though, really has to be improved, right now it is simply not good enough. on top of that there are some irritating design details. 1. the seat belts bang into plastic if you dont consciously pull them fully up. 2. the small hooks in the trunk for groceries cant actually hold a bag handle. 3. the door handles are oddly placed, so people who dont know the car cant locate them in the dark. 4. the trunk lid needs a very firm pull to shut correctly, which again is hard for people unfamiliar with the car. 5. since clever is a major player in denmark, it is pretty frustrating that their charging card isnt integrated in the infotainment, so the charging guidance is basically unusable in denmark. supposedly that will be sorted.",
-   "url": null,
-   "retrieved_at": null,
-   "polarity": -1,
-   "meta": {
-    "vfc2": "Door, front | Electric Range | Trunk lid | Trunk lid, open / close | no_class_found",
-    "vfc3": "Damage | Range, not OK | Operating force not OK",
-    "feedback_type": "Defect | Difficult to Use",
-    "labels": "Door, front/Defect | Electric Range/Difficult to Use | Trunk lid/Defect | Trunk lid, open / close/Defect | no_class_found/",
-    "engine": "BEVE",
-    "country": "DK",
-    "source": "A",
-    "source_letter": "A",
-    "scope": "in"
-   }
-  },
-  {
    "id": "EV-G60-EU-FB-G60-1137",
    "source_type": "feedback",
    "source_name": "Feedback Quelle A",
@@ -418,50 +330,6 @@
    }
   },
   {
-   "id": "EV-G60-EU-FB-G60-1461",
-   "source_type": "feedback",
-   "source_name": "Feedback Quelle A",
-   "derivative": "G60",
-   "market": "EU",
-   "text": "this is my fourth bmw since my first one back in 2016, and just when i think the standards have peaked, suddenly there are all these new features and the car basically performs better than ever for what you need. i'm still figuring out everything the 520i can do, but every trip so far has been a real pleasure behind the wheel. even though many of our roads are awful with potholes, once you are on the motorway the car is an absolute dream to drive and unmatched by anything else in its class. i did try a used 7 series on a test drive and almost went for it, but when the new 520i came out it felt like having a 7 series anyway, with plenty of space, luxury and majesty. a fantastic car and, in my view, the best in its class.",
-   "url": null,
-   "retrieved_at": null,
-   "polarity": 1,
-   "meta": {
-    "vfc2": "Drive, driving dynamics and chassis, overall technology | Drivetrain | Space / spatial impression | no_class_found",
-    "vfc3": "Like: function | Like: performance | Customer request: space / spatial impression",
-    "feedback_type": "Likes | Wants",
-    "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Drivetrain/Likes | Space / spatial impression/Wants | no_class_found/",
-    "engine": "ICE",
-    "country": "GB",
-    "source": "A",
-    "source_letter": "A",
-    "scope": "in"
-   }
-  },
-  {
-   "id": "EV-G60-EU-FB-G60-1500",
-   "source_type": "feedback",
-   "source_name": "Feedback Quelle A",
-   "derivative": "G60",
-   "market": "EU",
-   "text": "the car handles very well and is excellent for touring, and the hybrid system itself is very good. but i don't really feel the 300 hp that's advertised, the acceleration is gentle, especially when it's just the combustion engine working.",
-   "url": null,
-   "retrieved_at": null,
-   "polarity": 0,
-   "meta": {
-    "vfc2": "Engine acoustics / engine sound | Handling / Riding",
-    "vfc3": "Customer request: sound | Like: function",
-    "feedback_type": "Wants | Likes",
-    "labels": "Engine acoustics / engine sound/Wants | Handling / Riding/Likes",
-    "engine": "PHEV",
-    "country": "FR",
-    "source": "A",
-    "source_letter": "A",
-    "scope": "in"
-   }
-  },
-  {
    "id": "EV-G60-EU-FB-G60-1545",
    "source_type": "feedback",
    "source_name": "Feedback Quelle A",
@@ -477,28 +345,6 @@
     "feedback_type": "Wants | Likes | Defect",
     "labels": "Engine acoustics / engine sound/Wants | Handling / Riding/Likes | Impression of safety/Likes | Upholstery / interior trim/Defect | no_class_found/",
     "engine": "ICE",
-    "country": "GB",
-    "source": "A",
-    "source_letter": "A",
-    "scope": "in"
-   }
-  },
-  {
-   "id": "EV-G60-EU-FB-G60-1814",
-   "source_type": "feedback",
-   "source_name": "Feedback Quelle A",
-   "derivative": "G60",
-   "market": "EU",
-   "text": "it is a fantastic car. very comfortable, plenty of power, packed with technology and simple to charge. very straightforward to manage through the app. only letdown was the manual boot closing unless you pay for a much more expensive upgrade. very easy to wow friends and family. brilliant for long motorway trips across europe but also drives nicely around town. almost the ultimate driving machine! mark collins",
-   "url": null,
-   "retrieved_at": null,
-   "polarity": 1,
-   "meta": {
-    "vfc2": "Drivetrain | Handling / Riding | Trunk lid | no_class_found",
-    "vfc3": "Like: function | Like: performance | Damage",
-    "feedback_type": "Likes | Defect",
-    "labels": "Drivetrain/Likes | Handling / Riding/Likes | Trunk lid/Defect | no_class_found/",
-    "engine": "PHEV",
     "country": "GB",
     "source": "A",
     "source_letter": "A",
@@ -572,28 +418,6 @@
    }
   },
   {
-   "id": "EV-G60-EU-FB-G60-2109",
-   "source_type": "feedback",
-   "source_name": "Feedback Quelle A",
-   "derivative": "G60",
-   "market": "EU",
-   "text": "for me this is much better than full electric, since i always have petroleum backup. plus it has the b58, which i consider the best engine in the world at the moment.",
-   "url": null,
-   "retrieved_at": null,
-   "polarity": 1,
-   "meta": {
-    "vfc2": "Drivetrain | no_class_found",
-    "vfc3": "Like: performance",
-    "feedback_type": "Likes",
-    "labels": "Drivetrain/Likes | no_class_found/",
-    "engine": "PHEV",
-    "country": "GB",
-    "source": "A",
-    "source_letter": "A",
-    "scope": "in"
-   }
-  },
-  {
    "id": "EV-G60-EU-FB-G60-2232",
    "source_type": "feedback",
    "source_name": "Feedback Quelle A",
@@ -610,28 +434,6 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes",
     "engine": "PHEV",
     "country": "SE",
-    "source": "A",
-    "source_letter": "A",
-    "scope": "in"
-   }
-  },
-  {
-   "id": "EV-G60-EU-FB-G60-2329",
-   "source_type": "feedback",
-   "source_name": "Feedback Quelle A",
-   "derivative": "G60",
-   "market": "EU",
-   "text": "very high quality car overall, from the finish to the driving enjoyment. it does feel heavy, but the electric motor torque makes up for that. a bit let down by some of the plastic parts inside, and the black plastic grille does not feel very premium either.",
-   "url": null,
-   "retrieved_at": null,
-   "polarity": 0,
-   "meta": {
-    "vfc2": "Drive, driving dynamics and chassis, overall technology | Radiator grille | no_class_found",
-    "vfc3": "Like: function | Damage",
-    "feedback_type": "Likes | Defect",
-    "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Radiator grille/Defect | no_class_found/",
-    "engine": "BEVE",
-    "country": "FR",
     "source": "A",
     "source_letter": "A",
     "scope": "in"
@@ -682,22 +484,22 @@
    }
   },
   {
-   "id": "EV-G60-EU-FB-G60-2752",
+   "id": "EV-G60-EU-FB-G60-2548",
    "source_type": "feedback",
    "source_name": "Feedback Quelle A",
    "derivative": "G60",
    "market": "EU",
-   "text": "extremely comfortable car and easy to drive, and it is also fast. the 60 liter gas tank together with a battery that does 100 km is a major advantage compared to earlier models (previously had a 330e with a 40 liter tank and 35 km battery range).",
+   "text": "rides are solid, suspension feels comfy yet still carries loads well. performance is enough for what i need, and the interior seems very high quality.\nthere is quite a bit of tire humming, maybe from tires that are too low and possibly big rims. space is fine. why is there no insulation under the hood?",
    "url": null,
    "retrieved_at": null,
-   "polarity": 0,
+   "polarity": 1,
    "meta": {
-    "vfc2": "Drive, driving dynamics and chassis, overall technology | Electric Range",
-    "vfc3": "Like: function | Range, not OK",
-    "feedback_type": "Likes | Difficult to Use",
-    "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Electric Range/Difficult to Use",
+    "vfc2": "Audio mode, sound | Cushioning / damping vehicle | Drivetrain | Interior design | Wheels / tires",
+    "vfc3": "Noise | Like: usability | Like: performance | Look / design appeals",
+    "feedback_type": "Defect | Likes | Difficult to Use",
+    "labels": "Audio mode, sound/Defect | Cushioning / damping vehicle/Likes | Drivetrain/Likes | Interior design/Likes | Wheels / tires/Difficult to Use",
     "engine": "PHEV",
-    "country": "SE",
+    "country": "FI",
     "source": "A",
     "source_letter": "A",
     "scope": "in"
@@ -720,28 +522,6 @@
     "labels": "Electric Range/Difficult to Use | Interior/Difficult to Use",
     "engine": "BEVE",
     "country": "SE",
-    "source": "A",
-    "source_letter": "A",
-    "scope": "in"
-   }
-  },
-  {
-   "id": "EV-G60-EU-FB-G60-2789",
-   "source_type": "feedback",
-   "source_name": "Feedback Quelle A",
-   "derivative": "G60",
-   "market": "EU",
-   "text": "as a vehicle, the bmw feels nicely luxurious, practical and enjoyable to drive. plus, the dealer i've dealt with has been excellent, both during the purchase and afterward, giving me good advice and guidance whenever i have questions.",
-   "url": null,
-   "retrieved_at": null,
-   "polarity": 1,
-   "meta": {
-    "vfc2": "Drive, driving dynamics and chassis, overall technology | no_class_found",
-    "vfc3": "Like: function",
-    "feedback_type": "Likes",
-    "labels": "Drive, driving dynamics and chassis, overall technology/Likes | no_class_found/",
-    "engine": "PHEV",
-    "country": "FI",
     "source": "A",
     "source_letter": "A",
     "scope": "in"
@@ -792,22 +572,22 @@
    }
   },
   {
-   "id": "EV-G60-EU-FB-G60-3433",
+   "id": "EV-G60-EU-FB-G60-3406",
    "source_type": "feedback",
    "source_name": "Feedback Quelle A",
    "derivative": "G60",
    "market": "EU",
-   "text": "the car itself is excellent, but the range really should be higher for something in this price bracket. mine listed at around sek 1,020,000 and in summer i only get roughly 420 km, which i find too limited.",
+   "text": "such a wonderfully put-together car, it really brings me a lot of happiness and joy to drive.",
    "url": null,
    "retrieved_at": null,
-   "polarity": -1,
+   "polarity": 1,
    "meta": {
-    "vfc2": "Body equipment, overall technology | Electric Range",
-    "vfc3": "Dislike: price-performance ratio | Range, not OK",
-    "feedback_type": "Wants | Difficult to Use",
-    "labels": "Body equipment, overall technology/Wants | Electric Range/Difficult to Use",
-    "engine": "BEVE",
-    "country": "SE",
+    "vfc2": "Drive, driving dynamics and chassis, overall technology",
+    "vfc3": "Like: function",
+    "feedback_type": "Likes",
+    "labels": "Drive, driving dynamics and chassis, overall technology/Likes",
+    "engine": "PHEV",
+    "country": "GB",
     "source": "A",
     "source_letter": "A",
     "scope": "in"
@@ -874,6 +654,28 @@
     "labels": "Drivetrain/Defect | Handling / Riding/Likes | High voltage battery/Likes | no_class_found/",
     "engine": "BEVE",
     "country": "FR",
+    "source": "A",
+    "source_letter": "A",
+    "scope": "in"
+   }
+  },
+  {
+   "id": "EV-G60-EU-FB-G60-3931",
+   "source_type": "feedback",
+   "source_name": "Feedback Quelle A",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "great driving car with a very logical layout and a nice balance of analog and digital controls. as a pilot i really value the headup display a lot.",
+   "url": null,
+   "retrieved_at": null,
+   "polarity": 1,
+   "meta": {
+    "vfc2": "Drive, driving dynamics and chassis, overall technology | Head-Up Display",
+    "vfc3": "Like: function",
+    "feedback_type": "Likes",
+    "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Head-Up Display/Likes",
+    "engine": "BEVE",
+    "country": "SE",
     "source": "A",
     "source_letter": "A",
     "scope": "in"
@@ -953,24 +755,578 @@
     "attribute": "Connected services",
     "mean": "7.37"
    }
+  },
+  {
+   "id": "EV-G60-EU-WEB-04",
+   "source_type": "web",
+   "source_name": "Mercedes‑Benz Group (environmental information)",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Mercedes’ technical material (environmental check) also states the E‑Class PHEV electric range can be quoted up to roughly 118 km WLTP for certain variants/conditions (manufacturer figure for EAER).",
+   "url": "https://group.mercedes-benz.com/sustainability/environment-climate/decarbonisation/environmental-check/e-300-e.html",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Mercedes‑Benz Group (environmental information)",
+    "published": "Jan 30, 2024 (page updated)",
+    "stance": "supports",
+    "about": "Mercedes E‑Class PHEV WLTP range (environmental check)",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-8cc0e559a909d782",
+    "supports_signal_ids": "SIG-G60-EU-g1-8cc0e559a909d782"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-08",
+   "source_type": "web",
+   "source_name": "MotorTrend",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "The 2025 Audi A6 e‑tron uses Android Automotive OS and is offered with a triple‑screen layout: an 11.9‑inch digital instrument cluster, a 14.5‑inch centre OLED touchscreen and an optional 10.9‑inch passenger touchscreen (2025 model year).",
+   "url": "https://www.motortrend.com/news/2025-audi-a6-e-tron-first-look-review/",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "MotorTrend",
+    "published": "2025",
+    "stance": "supports",
+    "about": "Audi A6 e-tron infotainment hardware.",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+    "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-09",
+   "source_type": "web",
+   "source_name": "Consumer Reports",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Multiple independent reviews note Audi’s A6 e‑tron replaces many physical knobs with capacitive‑touch controls and that the screen‑forward layout can feel overwhelming to some users (few physical knobs/buttons).",
+   "url": "https://www.consumerreports.org/cars/audi/a6-e-tron/2025/road-test-report/",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Consumer Reports",
+    "published": "2025",
+    "stance": "supports",
+    "about": "Audi controls (physical vs touch).",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+    "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-10",
+   "source_type": "web",
+   "source_name": "Edmunds",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Reviewers described the A6 e‑tron’s interface as ‘menu‑heavy’ and reviewers/owners reported software glitches and intermittent sluggishness on 2025 A6 e‑tron examples (reports from 2025–2026).",
+   "url": "https://www.edmunds.com/car-news/2025-audi-a6-s6-e-tron-first-drive.html",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Edmunds",
+    "published": "2025",
+    "stance": "supports",
+    "about": "Audi A6 e-tron infotainment usability and reported sluggishness.",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+    "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-12",
+   "source_type": "web",
+   "source_name": "MotorTrend",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Audi’s A6 e‑tron infotainment runs on Android Automotive OS with an Audi Application Store and supports over‑the‑air (OTA) updates, enabling software fixes and app delivery via OTA. ",
+   "url": "https://www.motortrend.com/features/2025-audi-lineup-updates-changes/",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "MotorTrend",
+    "published": "2025",
+    "stance": "supports",
+    "about": "Audi A6 e-tron software platform and OTA.",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+    "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-13",
+   "source_type": "web",
+   "source_name": "Top Gear",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "The BMW 5‑Series (G60 / 2024–2026) uses BMW’s curved ‘Curved Display’ (paired 12.3‑inch driver cluster + 14.9‑inch central touchscreen) running BMW Operating System (iDrive) 8/8.5 in European market cars. ",
+   "url": "https://www.topgear.com/car-reviews/bmw/5-series/interior",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Top Gear",
+    "published": "2024",
+    "stance": "supports",
+    "about": "BMW 5 Series display hardware and OS.",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+    "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-15",
+   "source_type": "web",
+   "source_name": "Autoblog",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Critics and some owners say BMW’s iDrive 8/8.5 has a learning curve and that a few functions (notably some climate/vehicle settings) are buried in menus, and there are isolated owner reports of interface lag or sluggishness (2024–2026 commentary).",
+   "url": "https://www.autoblog.com/news/2025-bmw-5-series-review-214412817.html",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Autoblog",
+    "published": "2025",
+    "stance": "supports",
+    "about": "BMW infotainment usability and owner/reviewer frustration.",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+    "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-17",
+   "source_type": "web",
+   "source_name": "MotorTrend (Audi) and multiple BMW reviews (Top Gear/Autoblog)",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "In the EU market for 2025–2026 the practical difference is that Audi’s A6 e‑tron is a screen‑first, Android Automotive‑based system with fewer physical controls (some reviewers and customers find it menu‑heavy and occasionally sluggish), while the BMW 5‑Series uses a large curved display but generally retains more tactile controls and the iDrive interaction paradigm (which many reviewers find faster for routine tasks, though it too has reported frustrations and a learning curve).",
+   "url": "https://www.motortrend.com/news/2025-audi-a6-e-tron-first-look-review/",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "MotorTrend (Audi) and multiple BMW reviews (Top Gear/Autoblog)",
+    "published": "2025–2026",
+    "stance": "neutral",
+    "about": "Comparative summary (Audi A6 e-tron vs BMW 5 Series G60 infotainment).",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+    "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-18",
+   "source_type": "web",
+   "source_name": "Top Gear",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "The Volvo ES90 uses Android Automotive with built‑in Google services (Google Maps, Google Assistant, Google Play) and a 14.5‑inch portrait central touchscreen as the primary infotainment interface. ([topgear.com](https://www.topgear.com/car-reviews/volvo/es90/interior))",
+   "url": "https://www.topgear.com/car-reviews/volvo/es90/interior",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Top Gear",
+    "published": "2026",
+    "stance": "neutral",
+    "about": "Volvo ES90 infotainment",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-b6073d391f9db2d1",
+    "supports_signal_ids": "SIG-G60-EU-g1-b6073d391f9db2d1"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-19",
+   "source_type": "web",
+   "source_name": "Auto Express",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Multiple European reviews note Volvo has removed many physical controls and moved common functions (climate, seat/mirror adjustment, etc.) into the central touchscreen, which has prompted ergonomic criticisms. ([topgear.com](https://www.topgear.com/car-reviews/volvo/es90/interior))",
+   "url": "https://www.autoexpress.co.uk/volvo/es90",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Auto Express",
+    "published": "2026",
+    "stance": "neutral",
+    "about": "Volvo ES90 controls",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-b6073d391f9db2d1",
+    "supports_signal_ids": "SIG-G60-EU-g1-b6073d391f9db2d1"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-20",
+   "source_type": "web",
+   "source_name": "Autocar",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Reviewers describe the ES90’s Android‑based system as graphically crisp and responsive, but report early software 'kinks' and a rollout that required software/hardware fixes during 2025–2026. ([dev.images.cdn.autocar.co.uk](https://dev.images.cdn.autocar.co.uk/car-review/volvo/es90))",
+   "url": "https://www.autocar.co.uk/car-review/volvo/es90",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Autocar",
+    "published": "2026",
+    "stance": "neutral",
+    "about": "Volvo ES90 infotainment performance",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-b6073d391f9db2d1",
+    "supports_signal_ids": "SIG-G60-EU-g1-b6073d391f9db2d1"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-21",
+   "source_type": "web",
+   "source_name": "Volvo Cars (user manual)",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Volvo supplies connected services and a Volvo Cars app for remote functions on the ES90, and the official ES90 user manual states use of connected services is subject to conditions and that Volvo may suspend access in cases such as disproportionate data use. ([volvocars.com](https://www.volvocars.com/static/support-content/pdfs/uk_en-GB_es90_2026_UM_b02b0168a59415a9457a102f1bd113d7.pdf?utm_source=openai))",
+   "url": "https://www.volvocars.com/static/support-content/pdfs/uk_en-GB_es90_2026_UM_b02b0168a59415a9457a102f1bd113d7.pdf",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Volvo Cars (user manual)",
+    "published": "2026 (user manual)",
+    "stance": "neutral",
+    "about": "Volvo ES90 connected services terms",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-b6073d391f9db2d1",
+    "supports_signal_ids": "SIG-G60-EU-g1-b6073d391f9db2d1"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-26",
+   "source_type": "web",
+   "source_name": "Tesla (Owner's Manual PDF)",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Tesla Model S (EU Owner's Manual) lists rear cargo volume 26.3 cu ft (744.7 L), front cargo 2.1 cu ft (59.5 L), total cargo volume 28.4 cu ft (804.2 L) and rear seats folded 58.1 cu ft (1,645.2 L).",
+   "url": "https://www.tesla.com/sites/default/files/pdfs/JO/model_s_eu_en.PDF",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Tesla (Owner's Manual PDF)",
+    "published": "accessed 2026-10-11",
+    "stance": "supports",
+    "about": "Tesla Model S cargo volume",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-9cf42e0d041bc38d",
+    "supports_signal_ids": "SIG-G60-EU-g1-9cf42e0d041bc38d"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-29",
+   "source_type": "web",
+   "source_name": "Tesla (Owner's Manual PDF)",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Tesla's EU Owner's Manual lists interior measurements including rear legroom 35.4 in (899 mm) and documents load limits and a lower‑trunk compartment (i.e., a low/flat floor and specific weight limits for cargo areas).",
+   "url": "https://www.tesla.com/sites/default/files/pdfs/JO/model_s_eu_en.PDF",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Tesla (Owner's Manual PDF)",
+    "published": "accessed 2026-10-11",
+    "stance": "supports",
+    "about": "Tesla Model S interior dimensions and cargo details",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-9cf42e0d041bc38d",
+    "supports_signal_ids": "SIG-G60-EU-g1-9cf42e0d041bc38d"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-36",
+   "source_type": "web",
+   "source_name": "Auto Express (UK) — BMW 5 Series review",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Independent reviews and road tests characterise the BMW 5 Series (G60) as still more focused on handling/driver engagement and slightly firmer in ride than the E‑Class while remaining very capable and refined — Auto Express explicitly contrasts the 5 Series' firmer ride/keen dynamics with the E‑Class's softer ride.",
+   "url": "https://www.autoexpress.co.uk/bmw/5-series",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Auto Express (UK) — BMW 5 Series review",
+    "published": "28 June 2024 (review)",
+    "stance": "supports",
+    "about": "BMW 5 Series (G60) driving dynamics and ride (reviews) 2024–2026",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-51bf94f3f5a2546a",
+    "supports_signal_ids": "SIG-G60-EU-g1-51bf94f3f5a2546a"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-39",
+   "source_type": "web",
+   "source_name": "Top Gear",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Audi’s A6 e‑tron Sportback and Avant are reported by multiple European reviews to have a 502‑litre luggage compartment (seats up) and a small front trunk (~27 litres) for charging cables.",
+   "url": "https://www.topgear.com/car-reviews/audi/a6-e-tron/interior",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Top Gear",
+    "published": "2025-02-17",
+    "stance": "supports",
+    "about": "Audi A6 e-tron (Sportback / Avant) boot capacity",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-c05e4775de723036",
+    "supports_signal_ids": "SIG-G60-EU-g1-c05e4775de723036"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-40",
+   "source_type": "web",
+   "source_name": "Auto Express",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "European reviews note the A6 e‑tron Sportback’s rear bench is relatively tight for tall passengers: the high battery floor plus the sloping Sportback roofline reduce rear headroom and rear foot space, and reviewers recommend the Avant/estate if rear‑seat room is a priority.",
+   "url": "https://www.autoexpress.co.uk/audi/a6/365223/audi-a6-e-tron-review",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Auto Express",
+    "published": "",
+    "stance": "supports",
+    "about": "Audi A6 e-tron rear passenger space / practicality",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-c05e4775de723036",
+    "supports_signal_ids": "SIG-G60-EU-g1-c05e4775de723036"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-41",
+   "source_type": "web",
+   "source_name": "Autocar",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Autocar’s measurements and comparison report the Audi A6’s typical rear knee room at about 700 mm and state the latest BMW 5‑Series (the ‘G60’ generation) offers roughly 740 mm rear knee room in their comparison—i.e. the BMW is measurably roomier rearwards in that test.",
+   "url": "https://www.autocar.co.uk/car-review/audi/a6",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Autocar",
+    "published": "",
+    "stance": "supports",
+    "about": "Audi A6 vs BMW 5 Series rear knee room (measured comparison)",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-c05e4775de723036",
+    "supports_signal_ids": "SIG-G60-EU-g1-c05e4775de723036"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-43",
+   "source_type": "web",
+   "source_name": "Autocar",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Autocar explicitly states that, for boot capacity in comparable variants, BMW’s 530e manages about 520 litres (making it a class leader in some comparisons), while the A6 variants they tested (particularly hybrids) can have notably less usable boot space—supporting the finding that BMW variants often offer more rear/cargo practicality.",
+   "url": "https://www.autocar.co.uk/car-review/audi/a6",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Autocar",
+    "published": "",
+    "stance": "supports",
+    "about": "BMW 530e boot capacity vs Audi A6 boot/practicality",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-c05e4775de723036",
+    "supports_signal_ids": "SIG-G60-EU-g1-c05e4775de723036"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-44",
+   "source_type": "web",
+   "source_name": "Auto Express (supported by Autocar measurements)",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Summary (reviewed EU market 2025/2026): independent European road tests conclude the A6 e‑tron Sportback gives competitive boot volume (502 L) and useful frunk space, but its rear‑seat accommodation is generally tighter than the BMW 5‑Series (G60) sedan—reviews and measured figures have driven customer complaints about rear interior roominess for the A6 Sportback; reviewers therefore recommend the A6 Avant or choosing the BMW 5 if rear‑seat space is a priority.",
+   "url": "https://www.autoexpress.co.uk/audi/a6/365223/audi-a6-e-tron-review",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Auto Express (supported by Autocar measurements)",
+    "published": "",
+    "stance": "supports",
+    "about": "Overall comparison: Audi A6 e-tron (Sportback/Avant) vs BMW 5 Series (G60) on comfort and cargo",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-c05e4775de723036",
+    "supports_signal_ids": "SIG-G60-EU-g1-c05e4775de723036"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-58",
+   "source_type": "web",
+   "source_name": "MotorTrend",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "The BMW 5‑Series (G60) launched with BMW’s iDrive 8.5 and a single‑piece curved display (12.3\" instrument + 14.9\" infotainment); multiple reviews (MotorTrend, Auto Express, CarGurus) describe iDrive 8.5 as an improved, responsive and feature‑rich interface, though it has a learning curve. ",
+   "url": "https://www.motortrend.com/reviews/2024-bmw-530i-xdrive-5-series-first-drive-review",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "MotorTrend",
+    "published": "25 Apr 2024",
+    "stance": "contradicts",
+    "about": "BMW 5 Series (G60) iDrive 8.5 responsiveness and reviewer assessment",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+    "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-59",
+   "source_type": "web",
+   "source_name": "Auto Express",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Reviewers and buyers note BMW retained a physical iDrive rotary controller and shortcut keys on the 5‑Series center tunnel; outlets say the rotary knob provides a less‑distracting, more tactile way to operate many functions on the move compared with touchscreen‑only designs. ",
+   "url": "https://www.autoexpress.co.uk/bmw/5-series",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Auto Express",
+    "published": "(review updated online; page accessed 2026)",
+    "stance": "contradicts",
+    "about": "BMW 5 Series physical controls (iDrive rotary) vs touchscreen usability",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+    "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-65",
+   "source_type": "web",
+   "source_name": "Mercedes‑Benz Media",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Mercedes‑Benz has announced deployment of modular high‑performance charging infrastructure (HYC1000 systems) able to provide up to 1,000 kW per power unit and to intelligently distribute that power across multiple charging points at select Mercedes charging parks (installation starting in 2026 at select sites). ([media.mbusa.com](https://media.mbusa.com/news/mercedes-benz-sets-new-standards-for-public-charging-integration-of-revolutionary-high-performance-fast-charger-into-the-companys-own-fast-charging-network?utm_source=openai))",
+   "url": "https://media.mbusa.com/news/mercedes-benz-sets-new-standards-for-public-charging-integration-of-revolutionary-high-performance-fast-charger-into-the-companys-own-fast-charging-network",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Mercedes‑Benz Media",
+    "published": "8 September 2025",
+    "stance": "neutral",
+    "about": "Mercedes HYC1000 high‑power charging deployment",
+    "question_kind": "trend"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-69",
+   "source_type": "web",
+   "source_name": "Consumer Reports",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Tesla’s European Supercharger fleet already uses CCS‑compatible pedestals at many sites and Tesla has been progressively opening Supercharger sites or specific stalls to non‑Tesla vehicles (and OEMs have been announcing access partnerships), which increases public high‑power charging access for non‑Tesla premium cars across EU markets. Consumer Reports and other outlets summarise these developments and partnerships. ([consumerreports.org](https://www.consumerreports.org/cars/hybrids-evs/tesla-superchargers-open-to-other-evs-what-to-know-a9262067544?utm_source=openai))",
+   "url": "https://www.consumerreports.org/cars/hybrids-evs/tesla-superchargers-open-to-other-evs-what-to-know-a9262067544",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Consumer Reports",
+    "published": "2024 (article summarising network opening developments)",
+    "stance": "neutral",
+    "about": "Tesla Superchargers opening to non‑Tesla / CCS compatibility in Europe",
+    "question_kind": "trend"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-73",
+   "source_type": "web",
+   "source_name": "McKinsey & Company / S&P Global Autotech Insight",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Industry analyses and market reports show premium OEMs are shifting to zonal/centralized E/E and 'software‑defined vehicle' architectures, and most OEMs target rollout of central compute, cross‑domain software and frequent OTA delivery for premium lines within the 2026–2030 timeframe — a trend expected to underpin widespread SDV/OTA capabilities by 2028–2031. ([autotechinsight.spglobal.com](https://autotechinsight.spglobal.com/shop/product/5003647/oems-deployment-strategy-for-the-software-defined-vehicle-sdv?utm_source=openai))",
+   "url": "https://www.mckinsey.com/features/mckinsey-center-for-future-mobility/our-insights/mapping-the-automotive-software-and-electronics-landscape",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "McKinsey & Company / S&P Global Autotech Insight",
+    "published": "McKinsey article Jan 6, 2026; S&P Global Autotech insight (2025–2026)",
+    "stance": "supports",
+    "about": "Market/technology trend: centralized computing and SDV deployment timelines for premium OEMs",
+    "question_kind": "trend"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-76",
+   "source_type": "web",
+   "source_name": "McKinsey & Company",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Consultancies and market analysts project significant growth in the automotive software and electronics market and expect generative/edge AI capabilities to be integrated into vehicle cockpits and personalization services across premium models by the late 2020s, enabling AI‑based assistants, contextual recommendations and voice/chat features delivered via OTA updates and cloud‑edge orchestration. ([mckinsey.com](https://www.mckinsey.com/features/mckinsey-center-for-future-mobility/our-insights/mapping-the-automotive-software-and-electronics-landscape?trk=article-ssr-frontend-pulse_little-text-block&utm_source=openai))",
+   "url": "https://www.mckinsey.com/features/mckinsey-center-for-future-mobility/our-insights/mapping-the-automotive-software-and-electronics-landscape",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "McKinsey & Company",
+    "published": "January 6, 2026",
+    "stance": "supports",
+    "about": "Trend: integration of generative/edge AI into vehicle cockpits and services by late 2020s",
+    "question_kind": "trend"
+   }
+  },
+  {
+   "id": "EV-G60-EU-WEB-104",
+   "source_type": "web",
+   "source_name": "Mercedes‑Benz media centre",
+   "derivative": "G60",
+   "market": "EU",
+   "text": "Mercedes‑Benz was granted national approval in Germany to test special marker lights and to trial DRIVE PILOT and other Level‑3/advanced systems for limited purposes (approval initially limited until July 2028), showing that OEM testing and national trials for Level‑3 features continue in the EU and that limited, country‑by‑country deployments/testing of Level‑3 systems are ongoing.",
+   "url": "https://media.mercedes-benz.com/article/1c19e612-5fe0-4f87-8a21-4dc45bbc2797",
+   "retrieved_at": "2026-10-11T06:37:01.864239Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Mercedes‑Benz media centre",
+    "published": "2025-03-05 (approval reported)",
+    "stance": "supports",
+    "about": "Mercedes testing/limited approval for Level‑3 Drive Pilot trials through 2028",
+    "question_kind": "trend"
+   }
   }
  ],
  "signals": [
   {
-   "id": "SIG-G60-EU-001",
+   "id": "SIG-G60-EU-g1-2eb6c60338293688",
    "kind": "delight",
    "category": "driving_experience",
-   "title": "Drive, driving dynamics and chassis, overall technology: delight",
-   "summary": "24 customer comments about 'Drive, driving dynamics and chassis, overall technology' (delight).",
+   "title": "Really fun and comfortable to drive",
+   "summary": "Customers consistently praise how enjoyable and comfortable the car is to drive, noting a solid build and a great driving feel. Many also mention well‑positioned controls and useful displays that enhance the overall driving experience.",
    "evidence_ids": [
-    "EV-G60-EU-FB-G60-0426",
     "EV-G60-EU-FB-G60-0621",
-    "EV-G60-EU-FB-G60-0912",
-    "EV-G60-EU-FB-G60-2232",
-    "EV-G60-EU-FB-G60-2329",
     "EV-G60-EU-FB-G60-2488",
-    "EV-G60-EU-FB-G60-2752",
-    "EV-G60-EU-FB-G60-2789"
+    "EV-G60-EU-FB-G60-3406",
+    "EV-G60-EU-FB-G60-2232",
+    "EV-G60-EU-FB-G60-3931"
    ],
    "mention_count": 24,
    "source_types": [
@@ -1004,26 +1360,25 @@
    "study_link": null
   },
   {
-   "id": "SIG-G60-EU-002",
+   "id": "SIG-G60-EU-g1-8cc0e559a909d782",
    "kind": "complaint",
    "category": "range_charging",
-   "title": "Electric Range: complaint",
-   "summary": "12 customer comments about 'Electric Range' (complaint). Study: Fuel economy/ energy efficiency: mean 7.4 (EU study 2025).",
+   "title": "Range is embarrassingly short",
+   "summary": "Customers say the electric range is shorter than expected and often falls short of what was advertised, especially in winter, forcing slower driving or extra stops. They are also frustrated by limits on fast charging and by a lack of clear communication from BMW. Study: Fuel economy/ energy efficiency: mean 7.4 (EU study 2025).",
    "evidence_ids": [
-    "EV-G60-EU-FB-G60-0298",
-    "EV-G60-EU-FB-G60-0325",
-    "EV-G60-EU-FB-G60-2752",
     "EV-G60-EU-FB-G60-2775",
     "EV-G60-EU-FB-G60-2972",
-    "EV-G60-EU-FB-G60-3433",
+    "EV-G60-EU-FB-G60-0325",
     "EV-G60-EU-FB-G60-0034",
-    "EV-G60-EU-FB-G60-1032",
-    "EV-G60-EU-ST-20"
+    "EV-G60-EU-FB-G60-0298",
+    "EV-G60-EU-ST-20",
+    "EV-G60-EU-WEB-04"
    ],
    "mention_count": 12,
    "source_types": [
     "feedback",
-    "study"
+    "study",
+    "web"
    ],
    "conflicts_with": [],
    "segments": {
@@ -1053,20 +1408,17 @@
    }
   },
   {
-   "id": "SIG-G60-EU-003",
+   "id": "SIG-G60-EU-g1-0d3f4592c15c0f5f",
    "kind": "delight",
    "category": "driving_experience",
-   "title": "Drivetrain: delight",
-   "summary": "9 customer comments about 'Drivetrain' (delight).",
+   "title": "Strong, very quiet and fun to drive",
+   "summary": "Customers say the drivetrain feels powerful, refined and very quiet, making the car enjoyable to drive. They also praise the fuel efficiency and the pleasant electric driving in town while finding acceleration and handling satisfying.",
    "evidence_ids": [
     "EV-G60-EU-FB-G60-0263",
     "EV-G60-EU-FB-G60-1222",
     "EV-G60-EU-FB-G60-2047",
-    "EV-G60-EU-FB-G60-2109",
     "EV-G60-EU-FB-G60-2503",
-    "EV-G60-EU-FB-G60-0595",
-    "EV-G60-EU-FB-G60-1461",
-    "EV-G60-EU-FB-G60-1814"
+    "EV-G60-EU-FB-G60-2548"
    ],
    "mention_count": 9,
    "source_types": [
@@ -1098,19 +1450,17 @@
    "study_link": null
   },
   {
-   "id": "SIG-G60-EU-004",
+   "id": "SIG-G60-EU-g1-545ac46f6e8e9200",
    "kind": "delight",
    "category": "driving_experience",
-   "title": "Handling / Riding: delight",
-   "summary": "7 customer comments about 'Handling / Riding' (delight).",
+   "title": "Great handling and comfort",
+   "summary": "Customers say the car handles very well, with smooth road behavior and a comfortable ride that makes driving enjoyable for everyday use and touring. They describe the driving experience as confident and pleasant to be behind the wheel of.",
    "evidence_ids": [
     "EV-G60-EU-FB-G60-0025",
     "EV-G60-EU-FB-G60-0270",
-    "EV-G60-EU-FB-G60-1500",
     "EV-G60-EU-FB-G60-3690",
-    "EV-G60-EU-FB-G60-3886",
     "EV-G60-EU-FB-G60-1545",
-    "EV-G60-EU-FB-G60-1814"
+    "EV-G60-EU-FB-G60-3886"
    ],
    "mention_count": 7,
    "source_types": [
@@ -1141,21 +1491,28 @@
    "study_link": null
   },
   {
-   "id": "SIG-G60-EU-005",
+   "id": "SIG-G60-EU-g1-bc69af266b41dcb6",
    "kind": "complaint",
    "category": "infotainment_digital",
-   "title": "ConnectedDrive and Infotainment, overall technology: complaint",
-   "summary": "5 customer comments about 'ConnectedDrive and Infotainment, overall technology' (complaint).",
+   "title": "Infotainment software is sluggish and hard to use",
+   "summary": "The infotainment and connected software feel sluggish and overcomplicated. Menus and submenus make options hard to find, many functions need repeated taps, privacy and warning settings are intrusive, and software updates or the companion app can be a hassle.",
    "evidence_ids": [
-    "EV-G60-EU-FB-G60-0298",
     "EV-G60-EU-FB-G60-0798",
     "EV-G60-EU-FB-G60-1848",
+    "EV-G60-EU-FB-G60-1910",
+    "EV-G60-EU-FB-G60-0298",
     "EV-G60-EU-FB-G60-0843",
-    "EV-G60-EU-FB-G60-1910"
+    "EV-G60-EU-WEB-08",
+    "EV-G60-EU-WEB-09",
+    "EV-G60-EU-WEB-10",
+    "EV-G60-EU-WEB-12",
+    "EV-G60-EU-WEB-13",
+    "EV-G60-EU-WEB-15"
    ],
    "mention_count": 5,
    "source_types": [
-    "feedback"
+    "feedback",
+    "web"
    ],
    "conflicts_with": [],
    "segments": {
@@ -1180,11 +1537,11 @@
    "study_link": null
   },
   {
-   "id": "SIG-G60-EU-006",
+   "id": "SIG-G60-EU-g1-fdeec05dca30e2cd",
    "kind": "delight",
    "category": "range_charging",
-   "title": "Electric Range: delight",
-   "summary": "5 customer comments about 'Electric Range' (delight).",
+   "title": "Battery range is very good and reliable",
+   "summary": "Customers say the battery range meets expectations and stays reliable even in cold weather, letting many local trips be done purely on electric power. They also find the range estimates and onboard software accurate and supportive.",
    "evidence_ids": [
     "EV-G60-EU-FB-G60-0400",
     "EV-G60-EU-FB-G60-3633",
@@ -1218,7 +1575,7 @@
    "study_link": null
   },
   {
-   "id": "SIG-G60-EU-007",
+   "id": "SIG-G60-EU-g1-b6073d391f9db2d1",
    "kind": "complaint",
    "category": "infotainment_digital",
    "title": "Connected services: complaint",
@@ -1239,17 +1596,20 @@
    }
   },
   {
-   "id": "SIG-G60-EU-008",
+   "id": "SIG-G60-EU-g1-9cf42e0d041bc38d",
    "kind": "complaint",
    "category": "comfort_space",
    "title": "Ease of loading/ unloading luggage: complaint",
    "summary": "Study: Ease of loading/ unloading luggage: mean 7.2 (EU study 2025).",
    "evidence_ids": [
-    "EV-G60-EU-ST-28"
+    "EV-G60-EU-ST-28",
+    "EV-G60-EU-WEB-26",
+    "EV-G60-EU-WEB-29"
    ],
    "mention_count": 1,
    "source_types": [
-    "study"
+    "study",
+    "web"
    ],
    "conflicts_with": [],
    "segments": {},
@@ -1260,17 +1620,19 @@
    }
   },
   {
-   "id": "SIG-G60-EU-009",
+   "id": "SIG-G60-EU-g1-51bf94f3f5a2546a",
    "kind": "complaint",
    "category": "comfort_space",
    "title": "Heating/ ventilation/ air conditioning: complaint",
    "summary": "Study: Heating/ ventilation/ air conditioning: mean 7.5 (EU study 2025).",
    "evidence_ids": [
-    "EV-G60-EU-ST-32"
+    "EV-G60-EU-ST-32",
+    "EV-G60-EU-WEB-36"
    ],
    "mention_count": 1,
    "source_types": [
-    "study"
+    "study",
+    "web"
    ],
    "conflicts_with": [],
    "segments": {},
@@ -1281,17 +1643,23 @@
    }
   },
   {
-   "id": "SIG-G60-EU-010",
+   "id": "SIG-G60-EU-g1-c05e4775de723036",
    "kind": "complaint",
    "category": "comfort_space",
    "title": "Rear interior roominess: complaint",
    "summary": "Study: Rear interior roominess: mean 7.5 (EU study 2025).",
    "evidence_ids": [
-    "EV-G60-EU-ST-27"
+    "EV-G60-EU-ST-27",
+    "EV-G60-EU-WEB-39",
+    "EV-G60-EU-WEB-40",
+    "EV-G60-EU-WEB-41",
+    "EV-G60-EU-WEB-43",
+    "EV-G60-EU-WEB-44"
    ],
    "mention_count": 1,
    "source_types": [
-    "study"
+    "study",
+    "web"
    ],
    "conflicts_with": [],
    "segments": {},
@@ -1300,200 +1668,204 @@
     "importance": 0.746,
     "dissatisfaction": 0.5133333333333333
    }
+  },
+  {
+   "id": "SIG-G60-EU-g1-0a8be1f6051bbae1",
+   "kind": "competitor_advantage",
+   "category": "range_charging",
+   "title": "Mercedes-Benz E-Class: Range is embarrassingly short",
+   "summary": "Mercedes’ technical material (environmental check) also states the E‑Class PHEV electric range can be quoted up to roughly 118 km WLTP for certain variants/conditions (manufacturer figure for EAER).",
+   "evidence_ids": [
+    "EV-G60-EU-WEB-04"
+   ],
+   "mention_count": 1,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  },
+  {
+   "id": "SIG-G60-EU-g1-1e0b051a8af5c4f8",
+   "kind": "competitor_advantage",
+   "category": "infotainment_digital",
+   "title": "Audi A6 e-tron: Infotainment software is sluggish and hard to use",
+   "summary": "The 2025 Audi A6 e‑tron uses Android Automotive OS and is offered with a triple‑screen layout: an 11.9‑inch digital instrument cluster, a 14.5‑inch centre OLED touchscreen and an optional 10.9‑inch passenger touchscreen (2025 model year). Multiple independent reviews note Audi’s A6 e‑tron replaces many physical knobs with capacitive‑touch controls and that the screen‑forward layout can feel overwhelming to some users (few physical knobs/buttons). Reviewers described the A6 e‑tron’s interface as ‘menu‑heavy’ and reviewers/owners reported software glitches and intermittent sluggishness on 2025 A6 e‑tron examples (reports from 2025–2026).",
+   "evidence_ids": [
+    "EV-G60-EU-WEB-08",
+    "EV-G60-EU-WEB-09",
+    "EV-G60-EU-WEB-10",
+    "EV-G60-EU-WEB-12",
+    "EV-G60-EU-WEB-13",
+    "EV-G60-EU-WEB-15",
+    "EV-G60-EU-WEB-17"
+   ],
+   "mention_count": 7,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  },
+  {
+   "id": "SIG-G60-EU-g1-ebd9a459a9c67b55",
+   "kind": "competitor_advantage",
+   "category": "infotainment_digital",
+   "title": "Volvo ES90: Connected services: complaint",
+   "summary": "The Volvo ES90 uses Android Automotive with built‑in Google services (Google Maps, Google Assistant, Google Play) and a 14.5‑inch portrait central touchscreen as the primary infotainment interface. ([topgear.com](https://www.topgear.com/car-reviews/volvo/es90/interior)) Multiple European reviews note Volvo has removed many physical controls and moved common functions (climate, seat/mirror adjustment, etc.) into the central touchscreen, which has prompted ergonomic criticisms. ([topgear.com](https://www.topgear.com/car-reviews/volvo/es90/interior)) Reviewers describe the ES90’s Android‑based system as graphically crisp and responsive, but report early software 'kinks' and a rollout that required software/hardware fixes during 2025–2026. ([dev.images.cdn.autocar.co.uk](https://dev.images.cdn.autocar.co.uk/car-review/volvo/es90))",
+   "evidence_ids": [
+    "EV-G60-EU-WEB-18",
+    "EV-G60-EU-WEB-19",
+    "EV-G60-EU-WEB-20",
+    "EV-G60-EU-WEB-21"
+   ],
+   "mention_count": 4,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  },
+  {
+   "id": "SIG-G60-EU-g1-556aea849ce1c333",
+   "kind": "competitor_advantage",
+   "category": "comfort_space",
+   "title": "Tesla Model S: Ease of loading/ unloading luggage: complaint",
+   "summary": "Tesla Model S (EU Owner's Manual) lists rear cargo volume 26.3 cu ft (744.7 L), front cargo 2.1 cu ft (59.5 L), total cargo volume 28.4 cu ft (804.2 L) and rear seats folded 58.1 cu ft (1,645.2 L). Tesla's EU Owner's Manual lists interior measurements including rear legroom 35.4 in (899 mm) and documents load limits and a lower‑trunk compartment (i.e., a low/flat floor and specific weight limits for cargo areas).",
+   "evidence_ids": [
+    "EV-G60-EU-WEB-26",
+    "EV-G60-EU-WEB-29"
+   ],
+   "mention_count": 2,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  },
+  {
+   "id": "SIG-G60-EU-g1-943eafb0e48a7781",
+   "kind": "competitor_advantage",
+   "category": "comfort_space",
+   "title": "Mercedes-Benz E-Class: Heating/ ventilation/ air conditioning: complaint",
+   "summary": "Independent reviews and road tests characterise the BMW 5 Series (G60) as still more focused on handling/driver engagement and slightly firmer in ride than the E‑Class while remaining very capable and refined — Auto Express explicitly contrasts the 5 Series' firmer ride/keen dynamics with the E‑Class's softer ride.",
+   "evidence_ids": [
+    "EV-G60-EU-WEB-36"
+   ],
+   "mention_count": 1,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  },
+  {
+   "id": "SIG-G60-EU-g1-87f345847daff4e6",
+   "kind": "competitor_advantage",
+   "category": "comfort_space",
+   "title": "Audi A6 e-tron: Rear interior roominess: complaint",
+   "summary": "Audi’s A6 e‑tron Sportback and Avant are reported by multiple European reviews to have a 502‑litre luggage compartment (seats up) and a small front trunk (~27 litres) for charging cables. European reviews note the A6 e‑tron Sportback’s rear bench is relatively tight for tall passengers: the high battery floor plus the sloping Sportback roofline reduce rear headroom and rear foot space, and reviewers recommend the Avant/estate if rear‑seat room is a priority. Autocar’s measurements and comparison report the Audi A6’s typical rear knee room at about 700 mm and state the latest BMW 5‑Series (the ‘G60’ generation) offers roughly 740 mm rear knee room in their comparison—i.e. the BMW is measurably roomier rearwards in that test.",
+   "evidence_ids": [
+    "EV-G60-EU-WEB-39",
+    "EV-G60-EU-WEB-40",
+    "EV-G60-EU-WEB-41",
+    "EV-G60-EU-WEB-43",
+    "EV-G60-EU-WEB-44"
+   ],
+   "mention_count": 5,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  },
+  {
+   "id": "SIG-G60-EU-g1-f04bcceafa4e5e63",
+   "kind": "trend",
+   "category": "range_charging",
+   "title": "Trend 2028-2031: range_charging",
+   "summary": "Mercedes‑Benz has announced deployment of modular high‑performance charging infrastructure (HYC1000 systems) able to provide up to 1,000 kW per power unit and to intelligently distribute that power across multiple charging points at select Mercedes charging parks (installation starting in 2026 at select sites). ([media.mbusa.com](https://media.mbusa.com/news/mercedes-benz-sets-new-standards-for-public-charging-integration-of-revolutionary-high-performance-fast-charger-into-the-companys-own-fast-charging-network?utm_source=openai)) Tesla’s European Supercharger fleet already uses CCS‑compatible pedestals at many sites and Tesla has been progressively opening Supercharger sites or specific stalls to non‑Tesla vehicles (and OEMs have been announcing access partnerships), which increases public high‑power charging access for non‑Tesla premium cars across EU markets. Consumer Reports and other outlets summarise these developments and partnerships. ([consumerreports.org](https://www.consumerreports.org/cars/hybrids-evs/tesla-superchargers-open-to-other-evs-what-to-know-a9262067544?utm_source=openai))",
+   "evidence_ids": [
+    "EV-G60-EU-WEB-65",
+    "EV-G60-EU-WEB-69"
+   ],
+   "mention_count": 2,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  },
+  {
+   "id": "SIG-G60-EU-g1-a6387297e1cb947e",
+   "kind": "trend",
+   "category": "infotainment_digital",
+   "title": "Trend 2028-2031: infotainment_digital",
+   "summary": "Industry analyses and market reports show premium OEMs are shifting to zonal/centralized E/E and 'software‑defined vehicle' architectures, and most OEMs target rollout of central compute, cross‑domain software and frequent OTA delivery for premium lines within the 2026–2030 timeframe — a trend expected to underpin widespread SDV/OTA capabilities by 2028–2031. ([autotechinsight.spglobal.com](https://autotechinsight.spglobal.com/shop/product/5003647/oems-deployment-strategy-for-the-software-defined-vehicle-sdv?utm_source=openai)) Consultancies and market analysts project significant growth in the automotive software and electronics market and expect generative/edge AI capabilities to be integrated into vehicle cockpits and personalization services across premium models by the late 2020s, enabling AI‑based assistants, contextual recommendations and voice/chat features delivered via OTA updates and cloud‑edge orchestration. ([mckinsey.com](https://www.mckinsey.com/features/mckinsey-center-for-future-mobility/our-insights/mapping-the-automotive-software-and-electronics-landscape?trk=article-ssr-frontend-pulse_little-text-block&utm_source=openai))",
+   "evidence_ids": [
+    "EV-G60-EU-WEB-73",
+    "EV-G60-EU-WEB-76"
+   ],
+   "mention_count": 2,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  },
+  {
+   "id": "SIG-G60-EU-g1-ac48e4ba11dea7e1",
+   "kind": "trend",
+   "category": "driver_assistance",
+   "title": "Trend 2028-2031: driver_assistance",
+   "summary": "Mercedes‑Benz was granted national approval in Germany to test special marker lights and to trial DRIVE PILOT and other Level‑3/advanced systems for limited purposes (approval initially limited until July 2028), showing that OEM testing and national trials for Level‑3 features continue in the EU and that limited, country‑by‑country deployments/testing of Level‑3 systems are ongoing.",
+   "evidence_ids": [
+    "EV-G60-EU-WEB-104"
+   ],
+   "mention_count": 1,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   }
  ],
  "requirements": [
   {
-   "id": "REQ-G60-EU-001",
-   "title": "Improve Electric Range for the successor",
-   "description": "Address the customer pain or unmet need around Electric Range with a measurable user outcome.",
-   "acceptance_criterion": "On a fixed 200 km mixed urban/motorway trip starting at 100% charge, at least 80 of 100 BEV owners rate electric-range adequacy at least 4 on a 1-5 scale after the trip. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
-   "category": "range_charging",
+   "id": "REQ-G60-EU-832ea7",
+   "title": "Infotainment responds immediately to touch and voice so interactions feel instantaneous",
+   "description": "When the driver or passenger touches the centre screen or uses voice, the system reacts without noticeable delay so interactions feel immediate and natural (no visible lag, no spinning/loading states). This reduces frustration and makes routine tasks feel fast.",
+   "acceptance_criterion": "Instrumented in-vehicle usability test: 30 participants (EU 5 Series target demographic: ages 30–70, 50% self-identified as non-technical, balanced gender, mix of current BMW owners and prospective buyers) each performs a scripted set of 20 representative touchscreen/voice actions (20 actions × 30 participants = 600 measured actions). Measure system response latency (time from user input — touch or voice command — to first visible UI response). Pass if (a) the median latency across all measured actions ≤ 120 ms, and (b) the 95th percentile latency across all measured actions ≤ 250 ms. Secondary perceptual check: at least 90% of participants must rate perceived responsiveness ≥ 4 on a 1–5 Likert scale after the session. Test runs must be performed in at least 5 vehicles (different build dates) under typical in-car conditions (ambient temp 15–25°C, normal cellular signal).",
+   "category": "infotainment_digital",
    "signal_ids": [
-    "SIG-G60-EU-002"
+    "SIG-G60-EU-g1-bc69af266b41dcb6",
+    "SIG-G60-EU-g1-1e0b051a8af5c4f8",
+    "SIG-G60-EU-g1-ebd9a459a9c67b55",
+    "SIG-G60-EU-g1-b6073d391f9db2d1"
    ],
-   "score": 47.9,
+   "score": 62.9,
    "rank": 1,
    "score_breakdown": {
     "customer_pain": {
-     "value": 1.0,
+     "value": 0.676,
      "weight": 0.25,
-     "contribution": 25.0,
-     "explanation": "Mostly complaints (Difficult to Use / Likes | Difficult to Use), 12 mentions"
+     "contribution": 16.9,
+     "explanation": "Mostly competitor advantages (Difficult to Use), 17 mentions"
     },
     "reach": {
-     "value": 0.707,
+     "value": 0.652,
      "weight": 0.2,
-     "contribution": 14.1,
-     "explanation": "12 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
-    },
-    "satisfaction_gap": {
-     "value": 0.517,
-     "weight": 0.2,
-     "contribution": 10.3,
-     "explanation": "Fuel economy/ energy efficiency: mean 7.45 of 10"
-    },
-    "competitive_pressure": {
-     "value": 0.0,
-     "weight": 0.15,
-     "contribution": 0.0,
-     "explanation": "no trusted web source shows a competitor advantage"
-    },
-    "future_relevance": {
-     "value": 0.1,
-     "weight": 0.1,
-     "contribution": 1.0,
-     "explanation": "no trend behind it"
-    },
-    "effort_inverse": {
-     "value": 0.6,
-     "weight": 0.1,
-     "contribution": 6.0,
-     "explanation": "effort estimate M"
-    }
-   },
-   "rationale": "Ranked mainly because of customer pain (25 points) and reach (14.1 points). Evidence level B: Only 12 mentions, but confirmed by 2 independent source types.",
-   "evidence_level": "B",
-   "assumptions": [
-    "Rule-based fallback draft because no cached LLM draft was available.",
-    "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
-   ],
-   "uncertainties": [
-    "Needs PM wording review before approval."
-   ],
-   "offer_check": {
-    "status": "unknown",
-    "note": "Check not possible (RuntimeError).",
-    "option_code": null
-   },
-   "effort": "M",
-   "status": "proposed",
-   "version": 1,
-   "horizon": "today",
-   "robustness": {
-    "rank_min": 1,
-    "rank_max": 1,
-    "top3_share": 1.0,
-    "runs": 500
-   },
-   "segment_conflicts": [],
-   "business": {
-    "volume_2025": 115000,
-    "volume_2030": 127000,
-    "growth_pct": 15.5,
-    "market_share": 0.402,
-    "note": "Sales context from sales_volumes.xlsx"
-   },
-   "stable_key": "",
-   "badges": []
-  },
-  {
-   "id": "REQ-G60-EU-004",
-   "title": "Improve Ease of loading/ unloading luggage for the successor",
-   "description": "Address the customer pain or unmet need around Ease of loading/ unloading luggage with a measurable user outcome.",
-   "acceptance_criterion": "At least 80 of 100 customers independently load and unload two 55 x 40 x 20 cm suitcases within 60 seconds each way, without moving the rear seats or needing assistance. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
-   "category": "comfort_space",
-   "signal_ids": [
-    "SIG-G60-EU-008"
-   ],
-   "score": 33.5,
-   "rank": 2,
-   "score_breakdown": {
-    "customer_pain": {
-     "value": 1.0,
-     "weight": 0.25,
-     "contribution": 25.0,
-     "explanation": "Mostly complaints, 1 mentions"
-    },
-    "reach": {
-     "value": 0.204,
-     "weight": 0.2,
-     "contribution": 4.1,
-     "explanation": "1 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
-    },
-    "satisfaction_gap": {
-     "value": 0.587,
-     "weight": 0.2,
-     "contribution": 11.7,
-     "explanation": "Ease of loading/ unloading luggage: mean 7.24 of 10"
-    },
-    "competitive_pressure": {
-     "value": 0.0,
-     "weight": 0.15,
-     "contribution": 0.0,
-     "explanation": "no trusted web source shows a competitor advantage"
-    },
-    "future_relevance": {
-     "value": 0.1,
-     "weight": 0.1,
-     "contribution": 1.0,
-     "explanation": "no trend behind it"
-    },
-    "effort_inverse": {
-     "value": 0.6,
-     "weight": 0.1,
-     "contribution": 6.0,
-     "explanation": "effort estimate M"
-    }
-   },
-   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (11.7 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
-   "evidence_level": "C",
-   "assumptions": [
-    "Rule-based fallback draft because no cached LLM draft was available.",
-    "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
-   ],
-   "uncertainties": [
-    "Needs PM wording review before approval."
-   ],
-   "offer_check": {
-    "status": "unknown",
-    "note": "Check not possible (RuntimeError).",
-    "option_code": null
-   },
-   "effort": "M",
-   "status": "proposed",
-   "version": 1,
-   "horizon": "today",
-   "robustness": {
-    "rank_min": 2,
-    "rank_max": 3,
-    "top3_share": 1.0,
-    "runs": 500
-   },
-   "segment_conflicts": [],
-   "business": {
-    "volume_2025": 115000,
-    "volume_2030": 127000,
-    "growth_pct": 15.5,
-    "market_share": 0.402,
-    "note": "Sales context from sales_volumes.xlsx"
-   },
-   "stable_key": "",
-   "badges": []
-  },
-  {
-   "id": "REQ-G60-EU-003",
-   "title": "Improve Connected services for the successor",
-   "description": "Address the customer pain or unmet need around Connected services with a measurable user outcome.",
-   "acceptance_criterion": "At least 80 of 100 customers independently pair their phone, reconnect it after a vehicle restart and access their saved navigation destination, with all three tasks completed within 3 minutes in a stationary vehicle. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
-   "category": "infotainment_digital",
-   "signal_ids": [
-    "SIG-G60-EU-007"
-   ],
-   "score": 32.9,
-   "rank": 3,
-   "score_breakdown": {
-    "customer_pain": {
-     "value": 1.0,
-     "weight": 0.25,
-     "contribution": 25.0,
-     "explanation": "Mostly complaints, 1 mentions"
-    },
-    "reach": {
-     "value": 0.204,
-     "weight": 0.2,
-     "contribution": 4.1,
-     "explanation": "1 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+     "contribution": 13.0,
+     "explanation": "17 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.543,
@@ -1502,16 +1874,16 @@
      "explanation": "Connected services: mean 7.37 of 10"
     },
     "competitive_pressure": {
-     "value": 0.0,
+     "value": 1.0,
      "weight": 0.15,
-     "contribution": 0.0,
-     "explanation": "no trusted web source shows a competitor advantage"
+     "contribution": 15.0,
+     "explanation": "competitor advantage backed by a high-trust web source"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.11,
      "weight": 0.1,
-     "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "contribution": 1.1,
+     "explanation": "no trend behind it; market growth 2025-2030: +10.4 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -1520,18 +1892,35 @@
      "explanation": "effort estimate M"
     }
    },
-   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (10.9 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
-   "evidence_level": "C",
+   "rationale": "Ranked mainly because of customer pain (16.9 points) and competitive pressure (15 points). Evidence level A: 17 mentions, confirmed by 3 independent source types.",
+   "evidence_level": "A",
    "assumptions": [
-    "Rule-based fallback draft because no cached LLM draft was available.",
-    "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
+    "Test vehicles under test have production-level software representative of the candidate release.",
+    "Instrumentation is capable of measuring from input event to first-frame UI update with ±10 ms precision.",
+    "Typical in-car connectivity conditions are available for any cloud-backed UI actions; purely local UI actions should meet latency targets independently of network.",
+    "Tasks are implemented as they would be presented to customers in production software (no engineering-only shortcuts).",
+    "Voice invocation counts as one interaction if it completes the task without intermediate screen taps.",
+    "Driving-simulated environment is used to emulate attention constraints; non-safety-critical tasks may allow brief glances.",
+    "Driving-simulator prompts are representative of typical on-road prompts (safety-critical warnings that must be presented are excluded from suppression).",
+    "’Blocking modal’ is defined as a dialog that requires explicit user dismissal before continuing the primary driving UI.",
+    "Production-level wording and localization are used for prompts during the test.",
+    "The 2025 study questionnaire and scoring rubric are available to replicate exactly.",
+    "Sample quotas will match the original study to ensure comparability (age, country, ownership status).",
+    "Connected-services scope includes companion app flows and OTA update experience as evaluated in the original instrument."
    ],
    "uncertainties": [
-    "Needs PM wording review before approval."
+    "Current G60 baseline latency (median and 95th percentile) is not provided in the signals; baseline measurements must be taken before A/B comparisons.",
+    "Some features (map rendering, large OTA-installed apps) may have different performance characteristics; scope here covers standard cockpit UI actions (menus, climate, media, common voice intents).",
+    "The existing G60 task interaction counts and times are not supplied in the signals; comparator baseline should be measured before formal A/B comparisons.",
+    "Some customers may prefer physical controls; this requirement targets touchscreen/voice flow efficiency, not whether physical knobs are retained.",
+    "Signals describe prompts as 'intrusive' but do not catalogue which specific dialogs trigger the most complaints; a prompt audit is required to prioritise changes.",
+    "Regulatory-required safety warnings may limit the ability to suppress certain dialogs; those exceptions will be documented and excluded from the suppression metric.",
+    "If the original 2025 study instrument or sampling frame is not available, an equivalent validated questionnaire must be produced before testing.",
+    "Some issues (e.g., app store approvals or third-party service outages) are external to vehicle software and may affect results."
    ],
    "offer_check": {
-    "status": "unknown",
-    "note": "Check not possible (RuntimeError).",
+    "status": "standard",
+    "note": "BMW Operating System 8.5 is the infotainment platform enabling fast touch response and integration with the voice assistant. (BMW Operating System 8.5)",
     "option_code": null
    },
    "effort": "M",
@@ -1539,45 +1928,228 @@
    "version": 1,
    "horizon": "today",
    "robustness": {
-    "rank_min": 3,
-    "rank_max": 4,
-    "top3_share": 0.646,
+    "rank_min": 1,
+    "rank_max": 2,
+    "top3_share": 1.0,
     "runs": 500
    },
    "segment_conflicts": [],
    "business": {
     "volume_2025": 115000,
     "volume_2030": 127000,
-    "growth_pct": 15.5,
+    "growth_pct": 10.435,
     "market_share": 0.402,
-    "note": "Sales context from sales_volumes.xlsx"
+    "note": ""
    },
-   "stable_key": "",
-   "badges": []
+   "stable_key": "832ea7",
+   "badges": [],
+   "outlook": null
   },
   {
-   "id": "REQ-G60-EU-006",
-   "title": "Improve Rear interior roominess for the successor",
-   "description": "Address the customer pain or unmet need around Rear interior roominess with a measurable user outcome.",
-   "acceptance_criterion": "At least 80 of 100 customers rate rear-seat knee room at least 4 on a 1-5 scale after a 30-minute trip, with the front seat set to the same documented driver position; include quotas of 33 rear passengers below 170 cm, 34 at 170-185 cm and 33 above 185 cm. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
+   "id": "REQ-G60-EU-99ce7c",
+   "title": "Deliver usable electric range and consistent cold‑weather performance that meets customer expectations",
+   "description": "Customers can complete typical daily trips on electric power even in cold weather and do not experience the large shortfalls vs advertised range that cause slower driving or extra charging stops. Variants that today are praised for reliable range keep that reliability across temperatures and driving styles.",
+   "acceptance_criterion": "Measure electric‑only real‑world range in a standardized cold‑weather test (ambient temperature -7 ±2 °C) using N=20 production successor vehicles with 100% start SOC, standardized urban/suburban driving profile (50% city, 50% mixed speed), and no battery preconditioning. Record the distance driven until the vehicle exits electric‑only mode. Pass if (a) the fleet mean real‑world cold‑weather electric range >= 60 km, and (b) no more than 10% of tested vehicles have an individual range < 50 km. Report per‑vehicle values and full test logs. When variants today receive praise for reliable range, those variants must meet the same pass thresholds in this test.",
+   "category": "range_charging",
+   "signal_ids": [
+    "SIG-G60-EU-g1-8cc0e559a909d782",
+    "SIG-G60-EU-g1-fdeec05dca30e2cd",
+    "SIG-G60-EU-g1-0a8be1f6051bbae1"
+   ],
+   "score": 61.9,
+   "rank": 2,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.806,
+     "weight": 0.25,
+     "contribution": 20.1,
+     "explanation": "Mostly complaints (Difficult to Use / Likes), 18 mentions"
+    },
+    "reach": {
+     "value": 0.671,
+     "weight": 0.2,
+     "contribution": 13.4,
+     "explanation": "18 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.517,
+     "weight": 0.2,
+     "contribution": 10.3,
+     "explanation": "Fuel economy/ energy efficiency: mean 7.45 of 10"
+    },
+    "competitive_pressure": {
+     "value": 1.0,
+     "weight": 0.15,
+     "contribution": 15.0,
+     "explanation": "competitor advantage backed by a high-trust web source"
+    },
+    "future_relevance": {
+     "value": 0.11,
+     "weight": 0.1,
+     "contribution": 1.1,
+     "explanation": "no trend behind it; market growth 2025-2030: +10.4 %"
+    },
+    "effort_inverse": {
+     "value": 0.2,
+     "weight": 0.1,
+     "contribution": 2.0,
+     "explanation": "effort estimate L"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (20.1 points) and competitive pressure (15 points). Evidence level A: 18 mentions, confirmed by 3 independent source types.",
+   "evidence_level": "A",
+   "assumptions": [
+    "Typical customer daily trips in target markets are adequately represented by a 50/50 city/mixed driving profile and a 60 km cold‑weather target is aligned with customer expectations for a premium PHEV sedan in 3–5 years.",
+    "Successor will offer PHEV variants aimed at providing at least this level of electric range.",
+    "The onboard estimator will have access to typical vehicle sensors and state data used today to compute range estimates; the validation focuses on end‑user accuracy rather than internal algorithm details.",
+    "In‑car UI can surface charger handshake information and estimated time‑to‑charge in route planning and during charging sessions.",
+    "User trial scenarios reflect common EU public‑charging conditions (varying charger power, congestion)."
+   ],
+   "uncertainties": [
+    "Current baseline cold‑weather measured range for the 2025 G60 under this exact protocol is not available and should be measured before comparative claims.",
+    "Real‑world results may vary by optional equipment (wheel size, roof load) not fully controlled in the fleet sample; test vehicles must be representative of common customer configurations.",
+    "Baseline MAPE for the current G60 under the same protocol must be measured to support relative claims; this requirement sets an absolute target for successor validation.",
+    "Actual charger handshake behaviour in the field may vary by charger operator; validation uses simulated or recorded real‑world handshake logs to ensure reproducible user trials."
+   ],
+   "offer_check": {
+    "status": "not_offered",
+    "note": "No listed option provides battery thermal management, heat‑pump or explicit preconditioning to ensure reliable cold‑weather range.",
+    "option_code": null
+   },
+   "effort": "L",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 1,
+    "rank_max": 2,
+    "top3_share": 1.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 115000,
+    "volume_2030": 127000,
+    "growth_pct": 10.435,
+    "market_share": 0.402,
+    "note": ""
+   },
+   "stable_key": "99ce7c",
+   "badges": [],
+   "outlook": null
+  },
+  {
+   "id": "REQ-G60-EU-9bb8fa",
+   "title": "Make loading/unloading typical checked suitcases and carry‑ons quick and ergonomically easy without folding rear seats",
+   "description": "When using the 5 Series luggage area, a single adult can load common checked suitcases and carry‑on bags quickly and without awkward tilting, lifting above shoulder height, or having to fold rear seats. Customers perceive loading/unloading as noticeably easier than the current model.",
+   "acceptance_criterion": "Two-part validation: (1) Subjective: In a controlled EU consumer study that repeats the 2025 methodology, the mean ease‑of‑loading/unloading score increases from the G60 baseline of 7.2 (EU study 2025) to at least 8.2. Sample: 200 participants matched to the 5 Series shopper/owner demographic (age, gender, household travel behaviour). Statistical test: paired or matched sample against the G60 baseline or a matched G60 control group; result significant at p<0.05. (2) Objective task: 30 different adult participants (balanced by sex, ages 18–65, carrying typical luggage-handling strength) each perform an individual loading trial: load 3 checked suitcases (assumed dimensions 76×50×32 cm) plus 2 cabin bags (assumed dimensions 55×40×20 cm) into the luggage area without folding rear seats. Success is defined as completing the load within 90 seconds without needing two‑person assistance or forceful wedging. Pass threshold: ≥27/30 successful trials (90%). Record time, need for assistance, and any damage to luggage.",
    "category": "comfort_space",
    "signal_ids": [
-    "SIG-G60-EU-010"
+    "SIG-G60-EU-g1-9cf42e0d041bc38d",
+    "SIG-G60-EU-g1-556aea849ce1c333"
    ],
-   "score": 32.5,
+   "score": 39.2,
+   "rank": 3,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.667,
+     "weight": 0.25,
+     "contribution": 16.7,
+     "explanation": "Mostly competitor advantages, 3 mentions"
+    },
+    "reach": {
+     "value": 0.274,
+     "weight": 0.2,
+     "contribution": 5.5,
+     "explanation": "3 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.587,
+     "weight": 0.2,
+     "contribution": 11.7,
+     "explanation": "Ease of loading/ unloading luggage: mean 7.24 of 10"
+    },
+    "competitive_pressure": {
+     "value": 1.0,
+     "weight": 0.15,
+     "contribution": 15.0,
+     "explanation": "competitor advantage backed by a high-trust web source"
+    },
+    "future_relevance": {
+     "value": 0.11,
+     "weight": 0.1,
+     "contribution": 1.1,
+     "explanation": "no trend behind it; market growth 2025-2030: +10.4 %"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of customer pain (16.7 points) and competitive pressure (15 points). Evidence level C: Only 3 mentions: a hint, not a solid finding.",
+   "evidence_level": "C",
+   "assumptions": [
+    "Standard checked suitcase dimensions for the test are 76×50×32 cm and cabin bag dimensions 55×40×20 cm.",
+    "90 seconds is a realistic target for a single person to load this set of luggage; this target assumes the luggage aperture height, sill design and cargo floor layout allow ergonomic placement.",
+    "The EU 2025 study methodology for the subjective score is available and can be replicated for a matched sample."
+   ],
+   "uncertainties": [
+    "Objective baseline measures of G60 real‑world loading success (same suitcase set and task) are not available and must be measured before final validation.",
+    "The 2025 subjective baseline (mean 7.2) must be verified to be from a comparable sample and questionnaire wording; differences in protocol could affect comparability."
+   ],
+   "offer_check": {
+    "status": "optional",
+    "note": "Automatic tailgate and Comfort Access included, enabling hands-free, faster ergonomic loading/unloading without folding rear seats. (TRAVEL PAKET)",
+    "option_code": "7LK"
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 3,
+    "rank_max": 5,
+    "top3_share": 0.93,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 115000,
+    "volume_2030": 127000,
+    "growth_pct": 10.435,
+    "market_share": 0.402,
+    "note": ""
+   },
+   "stable_key": "9bb8fa",
+   "badges": [],
+   "outlook": null
+  },
+  {
+   "id": "REQ-G60-EU-29dc23",
+   "title": "Rear-seat occupants perceive and experience noticeably more room for long trips, including taller passengers",
+   "description": "Rear passengers—especially taller adults—experience improved legroom and headroom for multi‑hour journeys: they report less leg/head discomfort and objectively have measurable knee clearance behind a typical front seat position.",
+   "acceptance_criterion": "Two-part validation: (1) Subjective: Using the same EU study methodology, mean rear interior roominess score improves from the G60 baseline of 7.5 to at least 8.5. Sample: 200 participants representative of 5 Series shoppers/owners; ensure ≥30% of participants are tall (height ≥185 cm). Statistical significance p<0.05 versus baseline or matched G60 control. (2) Objective: Seating‑fit task: pairs of adults where at least one occupant is ≥185 cm sit in the rear behind a front seat set to a representative driving position for a 95th‑percentile driver. Measure knee clearance (rear occupant femur to front seat back) and head clearance. Pass if ≥80% of tested rear occupants have ≥50 mm knee clearance and no head contact at normal posture. Test sample: 30 rear occupant tests with the described height distribution and repeated on 5 vehicles (total 150 measurements).",
+   "category": "comfort_space",
+   "signal_ids": [
+    "SIG-G60-EU-g1-c05e4775de723036",
+    "SIG-G60-EU-g1-87f345847daff4e6"
+   ],
+   "score": 38.0,
    "rank": 4,
    "score_breakdown": {
     "customer_pain": {
-     "value": 1.0,
+     "value": 0.583,
      "weight": 0.25,
-     "contribution": 25.0,
-     "explanation": "Mostly complaints, 1 mentions"
+     "contribution": 14.6,
+     "explanation": "Mostly competitor advantages, 6 mentions"
     },
     "reach": {
-     "value": 0.204,
+     "value": 0.387,
      "weight": 0.2,
-     "contribution": 4.1,
-     "explanation": "1 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+     "contribution": 7.7,
+     "explanation": "6 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.513,
@@ -1586,82 +2158,86 @@
      "explanation": "Rear interior roominess: mean 7.46 of 10"
     },
     "competitive_pressure": {
-     "value": 0.0,
+     "value": 0.6,
      "weight": 0.15,
-     "contribution": 0.0,
-     "explanation": "no trusted web source shows a competitor advantage"
+     "contribution": 9.0,
+     "explanation": "competitor advantage backed by a medium-trust web source"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.11,
      "weight": 0.1,
-     "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "contribution": 1.1,
+     "explanation": "no trend behind it; market growth 2025-2030: +10.4 %"
     },
     "effort_inverse": {
-     "value": 0.6,
+     "value": 0.2,
      "weight": 0.1,
-     "contribution": 6.0,
-     "explanation": "effort estimate M"
+     "contribution": 2.0,
+     "explanation": "effort estimate L"
     }
    },
-   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (10.3 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
-   "evidence_level": "C",
+   "rationale": "Ranked mainly because of customer pain (14.6 points) and satisfaction gap (10.3 points). Evidence level B: Only 6 mentions, but confirmed by 2 independent source types.",
+   "evidence_level": "B",
    "assumptions": [
-    "Rule-based fallback draft because no cached LLM draft was available.",
-    "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
+    "‘Comfortable’ knee clearance is operationalised as ≥50 mm of free space in normal seating posture for sustained travel.",
+    "Front seat driving position for the 95th‑percentile driver will be defined according to an agreed EU anthropometric reference for comparability.",
+    "The EU 2025 rear‑roominess study protocol and questionnaire are reproducible for the subjective part."
    ],
    "uncertainties": [
-    "Needs PM wording review before approval."
+    "A directly comparable objective baseline (G60 knee/head clearance measured using the exact test setup above) is not available and must be measured before final validation; Autocar’s published figure (~740 mm knee room) uses a different test method.",
+    "Passenger posture during long trips may vary; the 50 mm knee clearance assumption is a comfort threshold based on ergonomic literature but could be refined by further user testing."
    ],
    "offer_check": {
-    "status": "unknown",
-    "note": "Check not possible (RuntimeError).",
+    "status": "not_offered",
+    "note": "No listed option increases rear legroom or offers rear-seat adjustment to provide noticeably more space for taller passengers.",
     "option_code": null
    },
-   "effort": "M",
+   "effort": "L",
    "status": "proposed",
    "version": 1,
    "horizon": "today",
    "robustness": {
-    "rank_min": 4,
+    "rank_min": 3,
     "rank_max": 5,
-    "top3_share": 0.0,
+    "top3_share": 0.064,
     "runs": 500
    },
    "segment_conflicts": [],
    "business": {
     "volume_2025": 115000,
     "volume_2030": 127000,
-    "growth_pct": 15.5,
+    "growth_pct": 10.435,
     "market_share": 0.402,
-    "note": "Sales context from sales_volumes.xlsx"
+    "note": ""
    },
-   "stable_key": "",
-   "badges": []
+   "stable_key": "29dc23",
+   "badges": [],
+   "outlook": null
   },
   {
-   "id": "REQ-G60-EU-005",
-   "title": "Improve Heating/ ventilation/ air conditioning for the successor",
-   "description": "Address the customer pain or unmet need around Heating/ ventilation/ air conditioning with a measurable user outcome.",
-   "acceptance_criterion": "At least 80 of 100 customers independently set their preferred temperature within 15 seconds and rate thermal comfort at least 4 on a 1-5 scale after 10 minutes; test separate sessions with starting cabin temperatures of 10 and 30 degrees Celsius. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
+   "id": "REQ-G60-EU-00be3c",
+   "title": "Deliver faster, more consistent cabin thermal comfort and perceived HVAC performance for all seating positions",
+   "description": "Customers experience the cabin reaching a comfortable temperature quickly after startup and report consistent comfort across front and rear seats (no cold/hot spots). Perceived heating/ventilation/air conditioning performance is improved versus the current model.",
+   "acceptance_criterion": "Two-part validation: (1) Subjective: In a repeat of the 2025 EU study methodology, the mean HVAC satisfaction score increases from the G60 baseline of 7.5 to at least 8.5. Sample: 200 participants matched to 5 Series shoppers/owners; statistical significance p<0.05 versus baseline or matched control. (2) Objective: Environmental‑chamber test: with vehicle cabin pre‑cooled to -10°C ambient, set climate to Auto and target 21°C. Measured at front and rear seating positions, the cabin must reach 21°C ±2°C within 8 minutes and show ≤2°C temperature variance between seating positions within 15 minutes. Test sample: 15 vehicles, 3 repeated runs each (45 runs). Pass threshold: ≥42/45 runs meet the timing and variance criteria (≥93%). Record setup, sensor locations and repeatability.",
    "category": "comfort_space",
    "signal_ids": [
-    "SIG-G60-EU-009"
+    "SIG-G60-EU-g1-51bf94f3f5a2546a",
+    "SIG-G60-EU-g1-943eafb0e48a7781"
    ],
-   "score": 32.4,
+   "score": 34.7,
    "rank": 5,
    "score_breakdown": {
     "customer_pain": {
-     "value": 1.0,
+     "value": 0.75,
      "weight": 0.25,
-     "contribution": 25.0,
-     "explanation": "Mostly complaints, 1 mentions"
+     "contribution": 18.8,
+     "explanation": "Mostly complaints, 2 mentions"
     },
     "reach": {
-     "value": 0.204,
+     "value": 0.224,
      "weight": 0.2,
-     "contribution": 4.1,
-     "explanation": "1 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+     "contribution": 4.5,
+     "explanation": "2 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.51,
@@ -1670,16 +2246,16 @@
      "explanation": "Heating/ ventilation/ air conditioning: mean 7.47 of 10"
     },
     "competitive_pressure": {
-     "value": 0.0,
+     "value": 0.6,
      "weight": 0.15,
-     "contribution": 0.0,
-     "explanation": "no trusted web source shows a competitor advantage"
+     "contribution": 9.0,
+     "explanation": "competitor advantage backed by a medium-trust web source"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.11,
      "weight": 0.1,
-     "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "contribution": 1.1,
+     "explanation": "no trend behind it; market growth 2025-2030: +10.4 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -1688,19 +2264,21 @@
      "explanation": "effort estimate M"
     }
    },
-   "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (10.2 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+   "rationale": "Ranked mainly because of customer pain (18.8 points) and satisfaction gap (10.2 points). Evidence level C: Only 2 mentions: a hint, not a solid finding.",
    "evidence_level": "C",
    "assumptions": [
-    "Rule-based fallback draft because no cached LLM draft was available.",
-    "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
+    "Comfort target is defined as 21°C cabin air temperature; ±2°C is considered perceivably consistent across seats for typical occupants.",
+    "8 minutes to reach target from -10°C is a realistic and customer‑meaningful improvement target for a successor model.",
+    "The EU 2025 HVAC satisfaction study protocol is reproducible for the subjective part."
    ],
    "uncertainties": [
-    "Needs PM wording review before approval."
+    "Objective baseline metrics for G60 time‑to‑temperature and inter-seat variance under the exact chamber protocol above are not available and must be measured before final validation.",
+    "The Mercedes‑E‑Class signal highlights competitor comfort positioning (softer ride) rather than direct HVAC metrics; using it assumes customers link overall perceived cabin comfort to HVAC responsiveness."
    ],
    "offer_check": {
-    "status": "unknown",
-    "note": "Check not possible (RuntimeError).",
-    "option_code": null
+    "status": "optional",
+    "note": "Contains 4-zone climate control, active front-seat ventilation and front/rear seat heating to speed and equalize thermal comfort and HVAC perception. (COMFORT PAKET)",
+    "option_code": "7VB"
    },
    "effort": "M",
    "status": "proposed",
@@ -1716,36 +2294,39 @@
    "business": {
     "volume_2025": 115000,
     "volume_2030": 127000,
-    "growth_pct": 15.5,
+    "growth_pct": 10.435,
     "market_share": 0.402,
-    "note": "Sales context from sales_volumes.xlsx"
+    "note": ""
    },
-   "stable_key": "",
-   "badges": []
+   "stable_key": "00be3c",
+   "badges": [],
+   "outlook": null
   },
   {
-   "id": "REQ-G60-EU-007",
-   "title": "Maintain Drive, driving dynamics and chassis, overall technology as a proven strength",
-   "description": "Keep the customer experience around Drive, driving dynamics and chassis, overall technology at least at today's level.",
-   "acceptance_criterion": "After the same 200 km mixed urban/motorway route, mean paired successor-minus-baseline satisfaction for overall driving experience on the same 1-5 scale must be at least 0.0 points. Report the paired difference and its 95% confidence interval; an interval spanning negative values requires PM review before claiming preservation. Baseline: a production model-year 2025 G60/i5 with the same powertrain, trim and software version recorded before testing. Measure and freeze the baseline before testing the successor; use the same participants, route, duration, load, tyres, ambient conditions and rating questions. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
+   "id": "REQ-G60-EU-fa70ef",
+   "title": "Keep the car's engaging, quiet and comfortable driving feel",
+   "description": "Drivers experience the successor 5 Series as at least as fun, refined and comfortable to drive as the current G60: strong, quiet acceleration, confident handling, and well‑positioned, intuitive controls across everyday and touring routes.",
+   "acceptance_criterion": "Conduct a blinded on‑road comparative driving study with N=30 licensed drivers (balanced by age 25–65 and gender, mixed urban/suburban/touring driving experience). Each driver completes the same 60 km route in the baseline G60 (model year 2025) and the successor car, in randomized order, with matched tire type and load. After each drive, drivers rate 'Overall Driving Experience' on a 1–10 scale and answer a 5‑question usability checklist about control placement. Pass if (a) the successor's mean Overall Driving Experience rating is >= the baseline G60 mean (baseline mean must be measured before validation) and (b) at least 80% of drivers give 'acceptable' or better responses on the usability checklist for the successor. Record and report per‑driver results; report fails if more than 1 vehicle shows a systematic negative outlier (>=1.5 points lower than baseline mean).",
    "category": "driving_experience",
    "signal_ids": [
-    "SIG-G60-EU-001"
+    "SIG-G60-EU-g1-2eb6c60338293688",
+    "SIG-G60-EU-g1-0d3f4592c15c0f5f",
+    "SIG-G60-EU-g1-545ac46f6e8e9200"
    ],
-   "score": 31.4,
+   "score": 31.5,
    "rank": 6,
    "score_breakdown": {
     "customer_pain": {
      "value": 0.4,
      "weight": 0.25,
      "contribution": 10.0,
-     "explanation": "Mostly strengths (Likes / Difficult to Use | Likes), 24 mentions"
+     "explanation": "Mostly strengths (Likes / Defect | Likes | Difficult to Use), 40 mentions"
     },
     "reach": {
      "value": 1.0,
      "weight": 0.2,
      "contribution": 20.0,
-     "explanation": "24 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+     "explanation": "40 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -1760,10 +2341,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.11,
      "weight": 0.1,
-     "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "contribution": 1.1,
+     "explanation": "no trend behind it; market growth 2025-2030: +10.4 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -1772,19 +2353,18 @@
      "explanation": "effort estimate M"
     }
    },
-   "rationale": "Ranked mainly because of reach (20 points) and customer pain (10 points). Evidence level B: 24 mentions, but from a single source type.",
+   "rationale": "Ranked mainly because of reach (20 points) and customer pain (10 points). Evidence level B: 40 mentions, but from a single source type.",
    "evidence_level": "B",
    "assumptions": [
-    "Rule-based fallback draft because no cached LLM draft was available.",
-    "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
+    "A representative baseline G60 (model year 2025) exemplar and its mean Overall Driving Experience rating will be measured prior to validation.",
+    "Test vehicles are configured in representative equipment levels for the 5 Series segment used by customers giving feedback."
    ],
    "uncertainties": [
-    "Needs PM wording review before approval.",
-    "The model-year 2025 baseline measurement and matched customer sample have not yet been collected; measure them before validation."
+    "Baseline G60 mean Overall Driving Experience rating is not yet available and must be measured under the same protocol before a pass/fail decision can be made."
    ],
    "offer_check": {
-    "status": "unknown",
-    "note": "Check not possible (RuntimeError).",
+    "status": "standard",
+    "note": "Adaptive suspension adjusts damping for ride comfort, reduced noise and dynamic, engaging handling. (Adaptives Fahrwerk Professional)",
     "option_code": null
    },
    "effort": "M",
@@ -1792,45 +2372,46 @@
    "version": 1,
    "horizon": "today",
    "robustness": {
-    "rank_min": 2,
-    "rank_max": 7,
-    "top3_share": 0.354,
+    "rank_min": 3,
+    "rank_max": 6,
+    "top3_share": 0.006,
     "runs": 500
    },
    "segment_conflicts": [],
    "business": {
     "volume_2025": 115000,
     "volume_2030": 127000,
-    "growth_pct": 15.5,
+    "growth_pct": 10.435,
     "market_share": 0.402,
-    "note": "Sales context from sales_volumes.xlsx"
+    "note": ""
    },
-   "stable_key": "",
-   "badges": []
+   "stable_key": "fa70ef",
+   "badges": [],
+   "outlook": null
   },
   {
-   "id": "REQ-G60-EU-002",
-   "title": "Improve ConnectedDrive and Infotainment, overall technology for the successor",
-   "description": "Address the customer pain or unmet need around ConnectedDrive and Infotainment, overall technology with a measurable user outcome.",
-   "acceptance_criterion": "At least 80 of 100 customers independently complete all three tasks without assistance: set a navigation destination, change an audio source and adjust cabin temperature; each task must finish within 30 seconds in a stationary vehicle. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
-   "category": "infotainment_digital",
+   "id": "REQ-G60-EU-70883a",
+   "title": "Use emerging high‑power public charging to materially shorten long‑distance charging stops (assumes broad HVC adoption)",
+   "description": "When customers connect at modern high‑power public chargers available on main corridors, they experience significantly shorter 20–80% charging times compared with current HPC averages and the car reports realistic timelines to the driver.",
+   "acceptance_criterion": "Field trial across N=20 high‑power public charging sessions at CCS‑compatible sites (minimum available peak power 300 kW at the pedestal) in representative EU locations. For each session record peak sustained power and the elapsed time from 20% to 80% SOC. Pass if the median 20–80% time across sessions is <= 15 minutes and at least 70% of sessions achieve a measured peak power >= 200 kW. Also, the vehicle's predicted 20–80% time at session start must be within ±20% of the measured time in at least 80% of sessions. Participants and sessions should reflect typical customer usage (loaded vehicle, ambient temperature logged).",
+   "category": "range_charging",
    "signal_ids": [
-    "SIG-G60-EU-005"
+    "SIG-G60-EU-g1-f04bcceafa4e5e63"
    ],
-   "score": 28.8,
+   "score": 12.0,
    "rank": 7,
    "score_breakdown": {
     "customer_pain": {
-     "value": 1.0,
+     "value": 0.3,
      "weight": 0.25,
-     "contribution": 25.0,
-     "explanation": "Mostly complaints (Difficult to Use / Difficult to Use | Defect), 5 mentions"
+     "contribution": 7.5,
+     "explanation": "Mostly trends, 2 mentions"
     },
     "reach": {
-     "value": 0.456,
+     "value": 0.224,
      "weight": 0.2,
-     "contribution": 9.1,
-     "explanation": "5 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+     "contribution": 4.5,
+     "explanation": "2 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -1845,38 +2426,40 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 1.0,
      "weight": 0.1,
-     "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "contribution": 10.0,
+     "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +10.4 %"
     },
     "effort_inverse": {
-     "value": 0.6,
+     "value": 0.2,
      "weight": 0.1,
-     "contribution": 6.0,
-     "explanation": "effort estimate M"
+     "contribution": 2.0,
+     "explanation": "effort estimate L"
     }
    },
-   "rationale": "Ranked mainly because of customer pain (25 points) and reach (9.1 points). Evidence level C: Only 5 mentions: a hint, not a solid finding.",
-   "evidence_level": "C",
+   "rationale": "Ranked mainly because of future relevance (10 points) and customer pain (7.5 points). Evidence level D: Bet on the next generation: only 0 direct customer mentions, the rest rests on trends (assumption).",
+   "evidence_level": "D",
    "assumptions": [
-    "Rule-based fallback draft because no cached LLM draft was available.",
-    "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
+    "Public high‑power charging infrastructure (modular HYC1000‑class or comparable CCS pedestals) is installed and accessible to non‑Tesla premium vehicles at the time of successor launch.",
+    "Successor battery chemistry and thermal management support high‑power charging without premature tapering to very low power.",
+    "Charge station operators provide at least some pedestals capable of sustained >=300 kW power and support for the connector standard used in the EU."
    ],
    "uncertainties": [
-    "Needs PM wording review before approval."
+    "Availability of compatible high‑power pedestals at enough geographic locations for a 20‑session trial depends on regional infrastructure rollout speed and operator access policies.",
+    "Regulatory or operator restrictions on peak power allocation or on non‑OEM access could limit achievable peak power in some sites."
    ],
    "offer_check": {
-    "status": "unknown",
-    "note": "Check not possible (RuntimeError).",
+    "status": "not_offered",
+    "note": "No option provides DC high‑power (HPC/CCS) charging; list only shows Mode 3 cable and 22 kW AC charging.",
     "option_code": null
    },
-   "effort": "M",
+   "effort": "L",
    "status": "proposed",
    "version": 1,
-   "horizon": "today",
+   "horizon": "next_gen",
    "robustness": {
-    "rank_min": 6,
+    "rank_min": 7,
     "rank_max": 7,
     "top3_share": 0.0,
     "runs": 500
@@ -1885,36 +2468,40 @@
    "business": {
     "volume_2025": 115000,
     "volume_2030": 127000,
-    "growth_pct": 15.5,
+    "growth_pct": 10.435,
     "market_share": 0.402,
-    "note": "Sales context from sales_volumes.xlsx"
+    "note": ""
    },
-   "stable_key": "",
-   "badges": []
+   "stable_key": "70883a",
+   "badges": [
+    "Zukunftswette",
+    "Annahme"
+   ],
+   "outlook": null
   },
   {
-   "id": "REQ-G60-EU-008",
-   "title": "Maintain Drivetrain as a proven strength",
-   "description": "Keep the customer experience around Drivetrain at least at today's level.",
-   "acceptance_criterion": "After the same 200 km mixed urban/motorway route, mean paired successor-minus-baseline satisfaction for powertrain response on the same 1-5 scale must be at least 0.0 points. Report the paired difference and its 95% confidence interval; an interval spanning negative values requires PM review before claiming preservation. Baseline: a production model-year 2025 G60/i5 with the same powertrain, trim and software version recorded before testing. Measure and freeze the baseline before testing the successor; use the same participants, route, duration, load, tyres, ambient conditions and rating questions. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
-   "category": "driving_experience",
+   "id": "REQ-G60-EU-efe638",
+   "title": "Contextual, AI-based cockpit assistant provides useful hands-free help and proactive suggestions",
+   "description": "An in-cockpit assistant understands natural requests and proactively suggests contextual actions (navigation shortcuts, calendar-aware routing, media suggestions) so customers can get useful help hands-free and with fewer manual steps.",
+   "acceptance_criterion": "Customer trial (field pilot): 100 representative EU users (owners or regular drivers of premium sedans; balanced tech-savvy and non-tech-savvy) use the assistant over 4 weeks in daily driving. Success metric is assistant task completion rate without fallback to manual UI: at least 70% of valid assistant requests (intent-defined set) must be completed end-to-end by the assistant without requiring the driver to use the touchscreen. Additionally, compared with a control group of 100 matched users in vehicles without the assistant, the trial group must report a statistically significant increase (p < 0.05) in perceived cockpit usefulness (measured by a validated 10-point scale) of ≥ 1.0 points. Pilot must log request types, success/failure reasons, and perceived usefulness.",
+   "category": "infotainment_digital",
    "signal_ids": [
-    "SIG-G60-EU-003"
+    "SIG-G60-EU-g1-a6387297e1cb947e"
    ],
-   "score": 20.4,
+   "score": 12.0,
    "rank": 8,
    "score_breakdown": {
     "customer_pain": {
-     "value": 0.4,
+     "value": 0.3,
      "weight": 0.25,
-     "contribution": 10.0,
-     "explanation": "Mostly strengths (Likes / Wants | Likes | Difficult to Use | Defect), 9 mentions"
+     "contribution": 7.5,
+     "explanation": "Mostly trends, 2 mentions"
     },
     "reach": {
-     "value": 0.612,
+     "value": 0.224,
      "weight": 0.2,
-     "contribution": 12.2,
-     "explanation": "9 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+     "contribution": 4.5,
+     "explanation": "2 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -1929,37 +2516,43 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 1.0,
      "weight": 0.1,
-     "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "contribution": 10.0,
+     "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +10.4 %"
     },
     "effort_inverse": {
-     "value": 0.6,
+     "value": 0.2,
      "weight": 0.1,
-     "contribution": 6.0,
-     "explanation": "effort estimate M"
+     "contribution": 2.0,
+     "explanation": "effort estimate L"
     }
    },
-   "rationale": "Ranked mainly because of reach (12.2 points) and customer pain (10 points). Evidence level C: Only 9 mentions: a hint, not a solid finding.",
-   "evidence_level": "C",
+   "rationale": "Ranked mainly because of future relevance (10 points) and customer pain (7.5 points). Evidence level D: Bet on the next generation: only 0 direct customer mentions, the rest rests on trends (assumption).",
+   "evidence_level": "D",
    "assumptions": [
-    "Rule-based fallback draft because no cached LLM draft was available.",
-    "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
+    "Cloud connectivity and edge compute available to support natural-language processing for the pilot; fallback handling is implemented safely.",
+    "Appropriate data-consent flows are in place so users agree to assistant telemetry for evaluation.",
+    "OEM backend and update channels support delivering incremental assistant improvements during the 4-week pilot.",
+    "Sufficient cellular connectivity/data plans or home Wi‑Fi integration for pilot vehicles; backend update orchestration is deployed.",
+    "Legal/telecom regulations allow OTA delivery of the planned features in the pilot countries.",
+    "Vehicles in the pilot have hardware capable of receiving and running the new features."
    ],
    "uncertainties": [
-    "Needs PM wording review before approval.",
-    "The model-year 2025 baseline measurement and matched customer sample have not yet been collected; measure them before validation."
+    "Regulatory or privacy constraints in specific EU countries may limit available assistant features; pilot cohorts should exclude countries where features are blocked.",
+    "Quality of third-party speech/AI services and language support for multiple EU languages may vary and affect measured success rates.",
+    "Some failures may be caused by third-party app stores or services outside OEM control; these should be identified but may not be remediable within the pilot.",
+    "Actual customer perception of 'value' depends on the specific features delivered; pilot must include a clearly described set of feature changes."
    ],
    "offer_check": {
-    "status": "unknown",
-    "note": "Check not possible (RuntimeError).",
+    "status": "standard",
+    "note": "Standard Intelligent Personal Assistant offers AI-based voice assistance with contextual features and proactive suggestions. (Intelligent Personal Assistant6)",
     "option_code": null
    },
-   "effort": "M",
+   "effort": "L",
    "status": "proposed",
    "version": 1,
-   "horizon": "today",
+   "horizon": "next_gen",
    "robustness": {
     "rank_min": 8,
     "rank_max": 8,
@@ -1970,36 +2563,40 @@
    "business": {
     "volume_2025": 115000,
     "volume_2030": 127000,
-    "growth_pct": 15.5,
+    "growth_pct": 10.435,
     "market_share": 0.402,
-    "note": "Sales context from sales_volumes.xlsx"
+    "note": ""
    },
-   "stable_key": "",
-   "badges": []
+   "stable_key": "efe638",
+   "badges": [
+    "Zukunftswette",
+    "Annahme"
+   ],
+   "outlook": null
   },
   {
-   "id": "REQ-G60-EU-009",
-   "title": "Maintain Handling / Riding as a proven strength",
-   "description": "Keep the customer experience around Handling / Riding at least at today's level.",
-   "acceptance_criterion": "After the same 200 km mixed urban/motorway route, mean paired successor-minus-baseline satisfaction for ride comfort and handling on the same 1-5 scale must be at least 0.0 points. Report the paired difference and its 95% confidence interval; an interval spanning negative values requires PM review before claiming preservation. Baseline: a production model-year 2025 G60/i5 with the same powertrain, trim and software version recorded before testing. Measure and freeze the baseline before testing the successor; use the same participants, route, duration, load, tyres, ambient conditions and rating questions. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
-   "category": "driving_experience",
+   "id": "REQ-G60-EU-b20d86",
+   "title": "Offer limited, regulated hands‑off driving on approved roads under strict conditions (pilot target)",
+   "description": "On approved segments and under defined conditions, drivers can temporarily hand off lateral and longitudinal control to the vehicle for an extended, comfortable stretch (the vehicle clearly indicates when hands‑off is permitted and when the driver must resume control).",
+   "acceptance_criterion": "Country‑by‑country pilot with N=50 consenting participants on approved routes where limited hands‑off operation is permitted. During the pilot measure total pilot kilometers and the proportion of kilometers where the system maintained lane position and speed without requiring corrective driver intervention. Pass if the system completes >=95% of pilot kilometers without safety‑critical interventions and participants report at least 80% perceived confidence/trust (measured via a post‑trial questionnaire). Document any driver takeover events and their causes. The pilot must run only where local approvals and regulations allow the tested functionality.",
+   "category": "driver_assistance",
    "signal_ids": [
-    "SIG-G60-EU-004"
+    "SIG-G60-EU-g1-ac48e4ba11dea7e1"
    ],
-   "score": 19.5,
+   "score": 11.3,
    "rank": 9,
    "score_breakdown": {
     "customer_pain": {
-     "value": 0.4,
+     "value": 0.3,
      "weight": 0.25,
-     "contribution": 10.0,
-     "explanation": "Mostly strengths (Likes / Wants | Likes), 7 mentions"
+     "contribution": 7.5,
+     "explanation": "Mostly trends, 1 mentions"
     },
     "reach": {
-     "value": 0.54,
+     "value": 0.158,
      "weight": 0.2,
-     "contribution": 10.8,
-     "explanation": "7 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+     "contribution": 3.2,
+     "explanation": "1 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.0,
@@ -2014,37 +2611,38 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 1.0,
      "weight": 0.1,
-     "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "contribution": 10.0,
+     "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +10.4 %"
     },
     "effort_inverse": {
-     "value": 0.6,
+     "value": 0.2,
      "weight": 0.1,
-     "contribution": 6.0,
-     "explanation": "effort estimate M"
+     "contribution": 2.0,
+     "explanation": "effort estimate L"
     }
    },
-   "rationale": "Ranked mainly because of reach (10.8 points) and customer pain (10 points). Evidence level C: Only 7 mentions: a hint, not a solid finding.",
-   "evidence_level": "C",
+   "rationale": "Ranked mainly because of future relevance (10 points) and customer pain (7.5 points). Evidence level D: Bet on the next generation: only 0 direct customer mentions, the rest rests on trends (assumption).",
+   "evidence_level": "D",
    "assumptions": [
-    "Rule-based fallback draft because no cached LLM draft was available.",
-    "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
+    "National regulatory approvals or trial permits are obtained for limited, supervised hands‑off operation in the chosen pilot countries.",
+    "High‑definition map and roadside marker infrastructure used in pilot routes are available and maintained for the trial.",
+    "Participant selection covers a representative mix of typical 5 Series drivers (age 25–70, mixed motorway experience)."
    ],
    "uncertainties": [
-    "Needs PM wording review before approval.",
-    "The model-year 2025 baseline measurement and matched customer sample have not yet been collected; measure them before validation."
+    "Regulatory approvals and national trial windows are uncertain and vary by country; deployment depends on the state of approvals at pilot time.",
+    "The trial outcome depends on safe integration of maps, signage recognition and vehicle control performance; these system details must be validated within the pilot and may require iterations."
    ],
    "offer_check": {
-    "status": "unknown",
-    "note": "Check not possible (RuntimeError).",
-    "option_code": null
+    "status": "optional",
+    "note": "Contains steering and lane‑guidance assistant and active cruise control — advanced assistance but no explicit limited 'hands‑off' pilot claim. (Driving Assistant Plus)",
+    "option_code": "5AT"
    },
-   "effort": "M",
+   "effort": "L",
    "status": "proposed",
    "version": 1,
-   "horizon": "today",
+   "horizon": "next_gen",
    "robustness": {
     "rank_min": 9,
     "rank_max": 9,
@@ -2055,97 +2653,16 @@
    "business": {
     "volume_2025": 115000,
     "volume_2030": 127000,
-    "growth_pct": 15.5,
+    "growth_pct": 10.435,
     "market_share": 0.402,
-    "note": "Sales context from sales_volumes.xlsx"
+    "note": ""
    },
-   "stable_key": "",
-   "badges": []
-  },
-  {
-   "id": "REQ-G60-EU-010",
-   "title": "Maintain Electric Range as a proven strength",
-   "description": "Keep the customer experience around Electric Range at least at today's level.",
-   "acceptance_criterion": "After the same 200 km mixed urban/motorway route, mean paired successor-minus-baseline satisfaction for electric-range adequacy on the same 1-5 scale must be at least 0.0 points. Report the paired difference and its 95% confidence interval; an interval spanning negative values requires PM review before claiming preservation. Baseline: a production model-year 2025 G60/i5 with the same powertrain, trim and software version recorded before testing. Measure and freeze the baseline before testing the successor; use the same participants, route, duration, load, tyres, ambient conditions and rating questions. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
-   "category": "range_charging",
-   "signal_ids": [
-    "SIG-G60-EU-006"
+   "stable_key": "b20d86",
+   "badges": [
+    "Zukunftswette",
+    "Annahme"
    ],
-   "score": 18.3,
-   "rank": 10,
-   "score_breakdown": {
-    "customer_pain": {
-     "value": 0.4,
-     "weight": 0.25,
-     "contribution": 10.0,
-     "explanation": "Mostly strengths (Likes / Likes | Wants | Defect), 5 mentions"
-    },
-    "reach": {
-     "value": 0.456,
-     "weight": 0.2,
-     "contribution": 9.1,
-     "explanation": "5 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
-    },
-    "satisfaction_gap": {
-     "value": 0.0,
-     "weight": 0.2,
-     "contribution": 0.0,
-     "explanation": "no study data"
-    },
-    "competitive_pressure": {
-     "value": 0.0,
-     "weight": 0.15,
-     "contribution": 0.0,
-     "explanation": "no trusted web source shows a competitor advantage"
-    },
-    "future_relevance": {
-     "value": 0.1,
-     "weight": 0.1,
-     "contribution": 1.0,
-     "explanation": "no trend behind it"
-    },
-    "effort_inverse": {
-     "value": 0.6,
-     "weight": 0.1,
-     "contribution": 6.0,
-     "explanation": "effort estimate M"
-    }
-   },
-   "rationale": "Ranked mainly because of customer pain (10 points) and reach (9.1 points). Evidence level C: Only 5 mentions: a hint, not a solid finding.",
-   "evidence_level": "C",
-   "assumptions": [
-    "Rule-based fallback draft because no cached LLM draft was available.",
-    "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
-   ],
-   "uncertainties": [
-    "Needs PM wording review before approval.",
-    "The model-year 2025 baseline measurement and matched customer sample have not yet been collected; measure them before validation."
-   ],
-   "offer_check": {
-    "status": "unknown",
-    "note": "Check not possible (RuntimeError).",
-    "option_code": null
-   },
-   "effort": "M",
-   "status": "proposed",
-   "version": 1,
-   "horizon": "today",
-   "robustness": {
-    "rank_min": 10,
-    "rank_max": 10,
-    "top3_share": 0.0,
-    "runs": 500
-   },
-   "segment_conflicts": [],
-   "business": {
-    "volume_2025": 115000,
-    "volume_2030": 127000,
-    "growth_pct": 15.5,
-    "market_share": 0.402,
-    "note": "Sales context from sales_volumes.xlsx"
-   },
-   "stable_key": "",
-   "badges": []
+   "outlook": null
   }
  ],
  "discarded": [],
@@ -2159,6 +2676,7 @@
    "growth_pct": 10.435,
    "growth_2024_2025_pct": 4.545
   },
+  "warnings": [],
   "unmapped_topics": {
    "no_class_found": 73,
    "Remote controlled parking": 1,
@@ -2174,9 +2692,13 @@
    "Charging cable": 1,
    "Route optimized for charging": 1
   },
-  "warnings": [],
   "segment_conflicts": {},
-  "counter_evidence": {}
+  "counter_evidence": {
+   "SIG-G60-EU-g1-bc69af266b41dcb6": [
+    "EV-G60-EU-WEB-58",
+    "EV-G60-EU-WEB-59"
+   ]
+  }
  },
  "opportunities": [
   {
@@ -2403,5 +2925,10 @@
    "dissatisfaction": 0.587,
    "evidence_id": "EV-G60-EU-ST-28"
   }
- ]
+ ],
+ "provenance": {
+  "llm_model": "gpt-5-mini",
+  "prompt_sources_sha256": "12640dd429f90ef6d54fbe14dca5c1578ee566b4e87b82712ab6aba551ae6abc",
+  "code_commit": "69e5342d3d24f64e3aead60b0094477ec20cf13a"
+ }
 }

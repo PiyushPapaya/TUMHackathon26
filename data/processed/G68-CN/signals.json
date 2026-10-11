@@ -1,6 +1,6 @@
 [
  {
-  "id": "SIG-G68-CN-001",
+  "id": "SIG-G68-CN-g1-5c56d4653d607e2c",
   "kind": "complaint",
   "category": "driving_experience",
   "title": "Braking: complaint",
@@ -21,7 +21,7 @@
   }
  },
  {
-  "id": "SIG-G68-CN-002",
+  "id": "SIG-G68-CN-g1-b6073d391f9db2d1",
   "kind": "complaint",
   "category": "infotainment_digital",
   "title": "Connected services: complaint",
@@ -42,7 +42,7 @@
   }
  },
  {
-  "id": "SIG-G68-CN-003",
+  "id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
   "kind": "complaint",
   "category": "comfort_space",
   "title": "Ease of loading/ unloading luggage: complaint",

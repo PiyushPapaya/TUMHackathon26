@@ -1,1 +1,36 @@
-[]
+[
+ {
+  "id": "SIG-G68-CN-g1-a78979bb71a82bc4",
+  "kind": "trend",
+  "category": "infotainment_digital",
+  "title": "Trend 2028-2031: infotainment_digital",
+  "summary": "BMW’s customer‑facing release notes and Remote Software Upgrade documentation show regular OTA releases and feature updates (example release notes PDFs and RSU release notes in 2025), indicating OTA is already used to deliver functional and infotainment changes on a quarterly/half‑year cadence. (example: BMW US release notes July 2025 and March 2025).",
+  "evidence_ids": [
+   "EV-G68-CN-WEB-82"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G68-CN-g1-1e46470f79d850fd",
+  "kind": "trend",
+  "category": "comfort_space",
+  "title": "Trend 2028-2031: comfort_space",
+  "summary": "Major China‑market intelligence (McKinsey China Auto Consumer Insights 2026) reports that consumers see city NOA/advanced driver assistance and in‑vehicle AI as essential features and expect higher‑level autonomy by the 2030s—supporting OEM product planning to pair advanced chauffeur‑assist ADAS with rear‑seat comfort and smart‑cabin services in premium long‑wheelbase sedans by 2028–2031.",
+  "evidence_ids": [
+   "EV-G68-CN-WEB-120"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ }
+]
