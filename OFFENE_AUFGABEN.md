@@ -1,5 +1,35 @@
 # Offene Aufgaben
 
+## Offene Punkte nach Priorität
+
+Die folgenden Punkte sind offen und aus dem [technischen Abgleich](docs/REPO_CHECK.md#offene-punkte-nach-priorität) übernommen. Die älteren Detailaufgaben darunter enthalten frühere Arbeitsstände; sie sind zusammen mit dem aktuellen Abgleich zu lesen.
+
+| Priorität | Punkt | Konsequenz / konkreter Abschluss |
+|---|---|---|
+| P1 | Menschliche Evaluation fehlt | Aditya/Dennis bewerten die 50 vorbereiteten G60-US-Paare in `data/eval/G60-US_sample.csv` mit j/n; danach Evaluation neu ausführen. Keine KI-erfundene Trust-Zahl verwenden. |
+| P1 | Dünne Szenarien und unvollständiger Zukunftshorizont | Piyush/Dennis recherchieren belastbare marktbezogene Wettbewerber-/Trendquellen und erzeugen neue Anforderungen; bis dahin F70-EU/G60-US als Hauptdemo, andere als Datenlücken-/Kaltstartbeweis einordnen. |
+| P1 | Vollständige Neuerzeugung nicht bestätigt | Alle sechs Szenarien mit aktuellem Code/Prompts in einen getrennten Ausgabeordner erzeugen, Cache-Fails und Quellen prüfen, Bundle-/API-/Eval-Prüfung wiederholen. Alte PM-Verläufe behalten; für neue Bundles separate Audit-DB verwenden. |
+| P1 | Vollständiger Browser-Flow fehlt | Auf freigegebenem laufendem Frontend Modellwechsel, Belege, Challenge, Edit, Gewichte, Exporte und Neustart prüfen. Start des separaten Frontend-Testservers wurde automatisch abgelehnt, ohne spezifische Begründung. Build/API-Tests ersetzen diesen Schritt nicht. |
+| P2 | Stabile Identität bei neuen Quellen | Signal-IDs künftig aus semantischen Gruppenschlüsseln ableiten und bestehende IDs kontrolliert migrieren. Legacy-Audit ohne Fingerabdruck kann bisherige Quelldatenidentität nicht belegen und meldet eine Warnung. |
+| P2 | Chancenkarte und Akzeptanzkriterien | Proxy-Wichtigkeit ehrlich erklären. G60-EU hat nur 60 % Kriterien mit Ziffer; relative Kriterien benötigen definierte Baseline/Stichprobe. Die Ziffern-Heuristik beweist generell keine fachlich sinnvolle Messbarkeit. |
+| P2 | Vollständigkeit des Audit-Ursprungs | Neu registrierte Snapshots protokollieren Einlese-/Signalzahlen und markieren den ursprünglichen LLM als nicht aufgezeichnet. Historische Prompts/Modellversionen/Generierungsschritte sind damit nicht nachträglich rekonstruiert. |
+| P2 | Reviewer-Budget | Frühere HEAD-Simulation: 200000 Zeichen voll, nur 21,8 % `src/`, 331 Dateien nicht gesehen. Parallel wurden `export-ignore`-Regeln für erzeugte Daten ergänzt. Deren finale Archiv-/Budgetwirkung noch nicht bestätigt; ein Archiv ohne Snapshots braucht eine geprüfte Demo-Datenstrategie. |
+| P2 | Betriebsmodell | Geprüft ist ein API-Prozess für die Hackathon-Demo. Mehrere Prozesse können zwar gültige Audit-Events schreiben, ihre RAM-Zustände werden aber nicht automatisch synchronisiert; kein belastbarer Multiworker-Betriebsnachweis. |
+
+## Weitere offene Teamaufgaben – in dieser Reihenfolge
+
+Alle fünf Aufgaben sind offen. Die Reihenfolge ist die gewünschte Arbeitsreihenfolge des Teams; die technischen Prioritäten oben bleiben bestehen.
+
+| Reihenfolge | Aufgabe | Konkreter Abschluss | Status |
+|---|---|---|---|
+| 1 | Alle lesen die Projektzusammenfassung und verstehen das Projekt sehr gut | Das gesamte Team liest [START_HIER.md](START_HIER.md) und [docs/01_projekt.md](docs/01_projekt.md). Jede Person kann Problem, Zielgruppe, Datenfluss, Nutzen, menschliche Entscheidungen und aktuelle Grenzen in eigenen Worten erklären; Verständnisfragen sind gemeinsam geklärt. | offen |
+| 2 | Pitch-Slides sehr gut gestalten | Eine klare Story mit Problem, Lösung, Demo, belegbaren Ergebnissen und Grenzen ausarbeiten. Die Slides visuell hochwertig und konsistent gestalten; Aussagen mit dem tatsächlichen Projektstand abgleichen. Grundlage: [Pitch](docs/pitch/PITCH.md). | offen |
+| 3 | Gesamte Codebase aufräumen | Dateien und Ordner verständlicher organisieren, Benennung und Lesbarkeit verbessern sowie hilfreiche Kommentare zu Zweck und Entscheidungen ergänzen. Referenzen, Imports und Dokumentation anpassen; bestehende Funktionalität durch passende Checks absichern. | offen |
+| 4 | Repository visuell und inhaltlich verbessern | README, Beschreibungen und Navigation überarbeiten; passende Bilder, Screenshots und Diagramme ergänzen. Einstieg, Projektidee, Architektur und Demo sollen für neue Leser schnell verständlich sein. | offen |
+| 5 | Pitches üben | Den vollständigen Pitch einschließlich Demo mehrfach gemeinsam proben, Zeit messen, Übergänge und Rollen abstimmen sowie Juryfragen und einen Demo-Ausfall üben. Feedback in Vortrag und Slides einarbeiten. | offen |
+
+---
+
 ## R · Jury-KI-Review: Kern-Code sichtbar machen (Selbstreview So 07:30)
 
 > Status: **Entscheidung offen** (Piyush). Simulierte EHL-Note heute **6,3/10**, mit R1-R4 ca. **7,5**.
