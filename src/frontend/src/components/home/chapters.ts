@@ -6,9 +6,11 @@ export type Chapter = {
   text: string;
   // Jede Zahl ist ein Zähler, der beim Scrollen hochläuft. value null = Backend nicht erreichbar.
   figures: { label: string; value: number | null }[];
+  // Letztes Kapitel zeigt zusätzlich die Leiste "Who does what" (KI vs. PM).
+  workflow?: boolean;
 };
 
-// Die vier Kapitel der Scroll-Story entsprechen den vier Schritten des Produkts.
+// Vier Kapitel = vier Schritte des Produkts, das fünfte fasst den Trichter zusammen und zeigt, wer entscheidet.
 export function buildChapters(d: HomeData): Chapter[] {
   const f = d.funnels[d.mainId];
   const lv = d.levels;
@@ -27,5 +29,17 @@ export function buildChapters(d: HomeData): Chapter[] {
       ],
     },
     { n: "04", title: "Decide.", text: d.topTitle ? `Ranked, explained, auditable. Rank 1: ${d.topTitle}.` : "Ranked, explained, auditable.", figures: [{ label: "requirements", value: f?.requirements ?? null }] },
+    {
+      n: "05",
+      title: "A handful of decisions.",
+      text: "Thousands of voices in, a short list out. The AI reads and counts; the product manager asks, decides and signs off.",
+      figures: [
+        { label: "voices", value: f?.evidence ?? null },
+        { label: "findings", value: f?.signals ?? null },
+        { label: "requirements", value: f?.requirements ?? null },
+        { label: "approved by PM", value: f?.approved ?? null },
+      ],
+      workflow: true,
+    },
   ];
 }

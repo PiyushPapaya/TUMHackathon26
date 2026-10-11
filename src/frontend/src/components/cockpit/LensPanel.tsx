@@ -69,7 +69,7 @@ export function LensPanel({
             aria-label="Question for the prioritization lens"
             className="h-[60px] min-w-64 flex-1 border border-white/25 bg-white/5 px-5 text-lg font-light text-white placeholder:text-white/40 focus:border-[var(--m-light)] focus:outline-none"
           />
-          <Button type="submit" disabled={busy} className="h-[60px]">{busy ? "Thinking..." : "Ask"}</Button>
+          <Button type="submit" disabled={busy} className="h-[60px]!">{busy ? "Thinking..." : "Ask"}</Button>
         </form>
         <div className="mt-4 flex flex-wrap gap-2">
           {EXAMPLES.map((ex) => (

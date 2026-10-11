@@ -3,7 +3,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { getRequirements, getScenarios, type EvidenceLevel, type Scenario } from "@/src/lib/api";
-import { postAsk, type AskHit } from "@/src/lib/insights";
+import { postAsk, postLens, type AskHit } from "@/src/lib/insights";
 import { DEFAULT_SCENARIO_ID } from "@/src/components/shell/scenarioLabel";
 import { routeQuestion, type Link } from "./intents";
 import { AssistantPanel } from "./AssistantPanel";
@@ -67,7 +67,14 @@ export function AssistantProvider({ children }: { children: React.ReactNode }) {
             links: [{ href: `/cockpit?scenario=${routed.scenarioId}`, label: "Open the full list" }],
           });
         } else {
-          const res = await postAsk(routed.question, "pm.demo");
+          // Rückfall: Läuft ein älteres Backend ohne /api/ask, fragen wir die Linse des aktuellen Szenarios.
+          const res = await postAsk(routed.question, "pm.demo").catch(async () => {
+            const lens = await postLens(scenarioId, routed.question, "pm.demo");
+            return {
+              question: lens.question, source: "rules" as const, answer: lens.interpretation,
+              top: lens.top.map((t) => ({ scenario_id: scenarioId, requirement_id: t.requirement.id, title: t.requirement.title, rank: t.requirement.rank, score: t.lens_score, lens_score: t.lens_score, evidence_level: t.requirement.evidence_level, reasons: t.reasons })),
+            };
+          });
           push({
             role: "bot",
             text: res.top.length ? `Best matches across all models and markets:` : "I found no matching requirement. Try a topic like charging, space, infotainment or a model like \"7 Series US\".",
