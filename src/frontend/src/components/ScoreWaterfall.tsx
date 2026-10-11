@@ -1,22 +1,5 @@
 import type { EvidenceLevel, ScoreFactor, WaterfallStep } from "@/src/lib/api";
-
-const FACTOR_ORDER = [
-  "customer_pain",
-  "reach",
-  "satisfaction_gap",
-  "competitive_pressure",
-  "future_relevance",
-  "effort_inverse",
-] as const;
-
-const FACTOR_LABELS: Record<string, string> = {
-  customer_pain: "Customer pain",
-  reach: "Reach",
-  satisfaction_gap: "Satisfaction gap",
-  competitive_pressure: "Competitive pressure",
-  future_relevance: "Future relevance",
-  effort_inverse: "Low effort",
-};
+import { chartFactorSteps, FACTOR_LABELS } from "@/src/lib/scoreSteps";
 
 const CONFIDENCE: Record<EvidenceLevel, number> = { A: 1, B: 0.85, C: 0.7, D: 0.5 };
 const EVIDENCE_LABEL: Record<EvidenceLevel, string> = {
@@ -25,22 +8,6 @@ const EVIDENCE_LABEL: Record<EvidenceLevel, string> = {
   C: "C · weak",
   D: "D · assumption",
 };
-
-function fromBreakdown(scoreBreakdown: Record<string, ScoreFactor>): WaterfallStep[] {
-  const known = new Set<string>(FACTOR_ORDER);
-  const orderedKeys = [
-    ...FACTOR_ORDER.filter((key) => key in scoreBreakdown),
-    ...Object.keys(scoreBreakdown).filter((key) => !known.has(key)),
-  ];
-  return orderedKeys.map((key) => ({
-    factor: key,
-    label: FACTOR_LABELS[key] ?? key,
-    value: scoreBreakdown[key].value,
-    weight: scoreBreakdown[key].weight,
-    contribution: scoreBreakdown[key].contribution,
-    sentence: scoreBreakdown[key].explanation,
-  }));
-}
 
 export function scoreWithoutAssumptions(
   scoreBreakdown: Record<string, ScoreFactor>,
@@ -100,11 +67,7 @@ export function ScoreWaterfall({
   ignoreAssumptions?: boolean;
   onToggleIgnoreAssumptions?: (value: boolean) => void;
 }) {
-  const originalSteps = (waterfall?.length ? waterfall : fromBreakdown(scoreBreakdown)).filter(
-    (step) => step.factor !== "confidence",
-  );
-  const weightLeft = originalSteps.filter(s => s.factor !== "future_relevance").reduce((sum, s) => sum + (s.weight ?? 0), 0);
-  const factorSteps = ignoreAssumptions ? originalSteps.filter(s => s.factor !== "future_relevance").map(s => ({ ...s, contribution: weightLeft > 0 ? s.contribution / weightLeft : 0, weight: weightLeft > 0 ? (s.weight ?? 0) / weightLeft : 0 })) : originalSteps;
+  const factorSteps = chartFactorSteps(scoreBreakdown, waterfall, Boolean(ignoreAssumptions));
   const confidenceStep = !ignoreAssumptions ? waterfall?.find((step) => step.factor === "confidence") : undefined;
   const subtotal = factorSteps.reduce((sum, step) => sum + step.contribution, 0);
   const scoreNoAssumptions = scoreWithoutAssumptions(scoreBreakdown, evidenceLevel);

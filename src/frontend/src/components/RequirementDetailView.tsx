@@ -8,6 +8,7 @@ import { AssumptionItem, OfferCheckBox } from "@/src/components/DetailBlocks";
 import { DecisionPanel } from "@/src/components/DecisionPanel";
 import { AuditTrail } from "@/src/components/AuditTrail";
 import { ProductContext } from "@/src/components/ProductContext";
+import { chartFactorSteps, rationaleWithChartPoints } from "@/src/lib/scoreSteps";
 
 const H2 = "text-xs font-semibold uppercase tracking-[0.16em] text-[var(--grey-500)]";
 
@@ -35,6 +36,8 @@ export function RequirementDetailView({
   const business = detail.business ?? requirement.business;
   const conflicts = detail.conflicts ?? requirement.segment_conflicts ?? [];
   const webSources = detail.web_sources ?? [];
+  // Points in the text come from the same bars as the chart, also after reweighting or in the preview.
+  const rationale = rationaleWithChartPoints(requirement.rationale, chartFactorSteps(requirement.score_breakdown, detail.waterfall, ignoreAssumptions));
   const hasMoreContext = Boolean(detail.robustness_sentence || business || webSources.length || requirement.offer_check);
 
   return (
@@ -46,10 +49,10 @@ export function RequirementDetailView({
           </p>
           <h1 className="mt-3 text-2xl font-medium leading-tight text-[var(--ink)] sm:text-3xl">{requirement.title}</h1>
           <div className="mt-5 flex flex-wrap items-center gap-4">
-            <EvidenceBadge level={requirement.evidence_level} reason={requirement.rationale} />
+            <EvidenceBadge level={requirement.evidence_level} reason={rationale} />
             <StatusBadge status={requirement.status} />
           </div>
-          <p className="mt-5 max-w-2xl text-[var(--grey-500)]">{requirement.rationale}</p>
+          <p className="mt-5 max-w-2xl text-[var(--grey-500)]">{rationale}</p>
           {/* Key facts at a glance: effort, horizon and market size before any detail. Volume is context, not part of the score. */}
           <dl className="mt-5 grid grid-cols-2 gap-4 border-y border-[var(--hairline)] py-4 text-sm sm:grid-cols-4">
             <div><dt className="text-xs text-[var(--grey-500)]">Engineering effort</dt><dd className="mt-1 font-semibold">{({ S: "Small", M: "Medium", L: "Large" })[requirement.effort]}</dd><dd className="text-xs text-[var(--grey-500)]">preliminary estimate</dd></div>
