@@ -3,7 +3,7 @@
   "checkpoint_id": "01M4MN3XRGZG5YGRDM6M9QBVER",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 7,
+  "checkpoints_count": 15,
   "files_touched": [
     ".gitignore",
     "data/processed/G60-EU/context.json",
@@ -33,13 +33,27 @@
       "compact_transcript": "/1/transcript.jsonl",
       "content_hash": "/1/content_hash.txt",
       "prompt": "/1/prompt.txt"
+    },
+    {
+      "metadata": "/2/metadata.json",
+      "transcript": "/2/full.jsonl",
+      "compact_transcript": "/2/transcript.jsonl",
+      "content_hash": "/2/content_hash.txt",
+      "prompt": "/2/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 98,
-    "cache_creation_tokens": 133976,
-    "cache_read_tokens": 3234831,
-    "output_tokens": 37476,
-    "api_call_count": 48
+    "input_tokens": 190,
+    "cache_creation_tokens": 269289,
+    "cache_read_tokens": 8474406,
+    "output_tokens": 68993,
+    "api_call_count": 94,
+    "subagent_tokens": {
+      "input_tokens": 16,
+      "cache_creation_tokens": 45010,
+      "cache_read_tokens": 222423,
+      "output_tokens": 607,
+      "api_call_count": 8
+    }
   }
 }

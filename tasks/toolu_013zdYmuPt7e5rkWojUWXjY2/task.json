@@ -1,0 +1,15 @@
+{
+  "tool_use_id": "toolu_013zdYmuPt7e5rkWojUWXjY2",
+  "agent_id": "a168ce9f769e229c8",
+  "subagent_type": "Explore",
+  "task_description": "Finde Code zu Fahrzeugen/Szenarien und Anzahl-Begrenzung",
+  "token_usage": {
+    "input_tokens": 16,
+    "cache_creation_tokens": 45010,
+    "cache_read_tokens": 222423,
+    "output_tokens": 607,
+    "api_call_count": 8
+  },
+  "started_at": "2026-10-11T00:59:16.786119201+02:00",
+  "completed_at": "2026-10-11T01:00:47.836151292+02:00"
+}
