@@ -1,0 +1,36 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4MSPSCG2J4E4HQ41ZWZF5FT",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "data/processed/G60-EU.json",
+    "data/processed/G60-EU/requirements.json",
+    "src/backend/api/routes.py",
+    "src/backend/core/audit.py",
+    "src/backend/core/benchmarks.py",
+    "src/backend/core/insights.py",
+    "src/backend/core/store.py",
+    "src/backend/evidence_external/nhtsa.py",
+    "src/backend/evidence_internal/signals.py",
+    "src/frontend/src/lib/insights.ts",
+    "tests/pfad_b/test_benchmarks.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 90,
+    "cache_creation_tokens": 330247,
+    "cache_read_tokens": 7145919,
+    "output_tokens": 25968,
+    "api_call_count": 44
+  }
+}
