@@ -1,0 +1,57 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4MPBS57X9YBGYV9DMJ2K9R2",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 3,
+  "files_touched": [
+    ".gitattributes",
+    ".gitignore",
+    "OFFENE_AUFGABEN.md",
+    "PROJEKT_ERKLAERT.html",
+    "README.md",
+    "entscheidungen/E08_bmw_daten_im_repo.md",
+    "entscheidungen/LOG.md",
+    "src/frontend/app/cockpit/page.tsx",
+    "src/frontend/app/evidence/page.tsx",
+    "src/frontend/app/guide/page.tsx",
+    "src/frontend/app/insights/page.tsx",
+    "src/frontend/eslint.config.mjs",
+    "src/frontend/src/components/AuditTrail.tsx",
+    "src/frontend/src/components/DecisionPanel.tsx",
+    "src/frontend/src/components/FindingCard.tsx",
+    "src/frontend/src/components/badges.tsx",
+    "src/frontend/src/components/cockpit/RequirementsTable.tsx",
+    "src/frontend/src/components/home/Hero.tsx",
+    "src/frontend/src/components/home/ScenarioStrip.tsx",
+    "src/frontend/src/components/home/chapters.ts",
+    "src/frontend/src/components/home/useHomeData.ts",
+    "src/frontend/src/components/insights/OpportunityMap.tsx",
+    "src/frontend/src/components/insights/TrendsAndGaps.tsx",
+    "src/frontend/src/components/insights/labels.ts",
+    "src/frontend/src/components/shell/assistant/AssistantPanel.tsx"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 26,
+    "cache_creation_tokens": 17352,
+    "cache_read_tokens": 1229081,
+    "output_tokens": 4844,
+    "api_call_count": 12,
+    "subagent_tokens": {
+      "input_tokens": 26,
+      "cache_creation_tokens": 74039,
+      "cache_read_tokens": 773122,
+      "output_tokens": 4604,
+      "api_call_count": 13
+    }
+  }
+}
