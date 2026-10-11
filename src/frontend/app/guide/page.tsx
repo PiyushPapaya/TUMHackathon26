@@ -6,7 +6,7 @@ import { Eyebrow, SectionHeading } from "@/src/components/ui/Typography";
 // Why its own page: jury and team see what to click without prior knowledge. Also shown in the floating side panel.
 
 const STEPS = [
-  ["1. Pick a scenario", "Choose model and market in the header (for example 5 Series G60 US). Next to it you see how many customer voices, findings and requirements the AI evaluated."],
+  ["1. Pick a scenario", "Choose model and market in the header (for example 5 Series G60 US). The cockpit then shows how many customer voices, findings and requirements the AI evaluated."],
   ["2. Read the ranked list", "Every row is an AI proposal. Rank is the order by score. The thin line shows the score (0-100), \"linked findings\" the number of pieces of evidence behind it."],
   ["3. Open a row", "A click shows the description, assumptions, the math behind the score (waterfall), all evidence and web sources."],
   ["4. Decide", "In the detail view you can approve, reject, edit or challenge a proposal (for example \"Does this only apply in the US?\"). Every decision needs a rationale."],

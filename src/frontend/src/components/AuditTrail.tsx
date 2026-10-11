@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { getAudit, getRequirements, type AuditEvent } from "@/src/lib/api";
+import { getAudit, getRequirements, getScenarios, type AuditEvent } from "@/src/lib/api";
 
 const LABELS: Record<string, string> = {
   PIPELINE_LOADED: "Data loaded", REQUIREMENT_PROPOSED: "Requirement proposed",
@@ -65,14 +65,20 @@ export function AuditTrail({ scenarioId, requirementId, compact = false }: { sce
   const [selected, setSelected] = useState<number | null>(null);
   // Requirement titles instead of hash IDs like REQ-G60-US-67ffe2: readable without context.
   const [titles, setTitles] = useState<Record<string, string>>({});
+  // Old events can name scenarios the backend no longer loads; only those it knows get a link and a title lookup.
+  const [known, setKnown] = useState<Set<string>>(new Set());
   const key = `${scenarioId ?? ""}:${requirementId ?? ""}`;
   useEffect(() => {
     let cancelled = false;
     getAudit({ scenarioId, requirementId }).then(next => {
       if (!cancelled) { setEvents(next); setError(null); setPage(0); setSelected(null); }
-      const ids = [...new Set(next.map(e => e.scenario_id).filter(Boolean))];
-      Promise.all(ids.map(id => getRequirements(id).catch(() => [])))
-        .then(lists => { if (!cancelled) setTitles(Object.fromEntries(lists.flat().map(r => [r.id, r.title]))); });
+      getScenarios().then(scenarios => {
+        const live = new Set(scenarios.map(s => s.id));
+        if (!cancelled) setKnown(live);
+        const ids = [...new Set(next.map(e => e.scenario_id).filter(id => id && live.has(id)))];
+        return Promise.all(ids.map(id => getRequirements(id).catch(() => [])));
+      }).then(lists => { if (!cancelled) setTitles(Object.fromEntries(lists.flat().map(r => [r.id, r.title]))); })
+        .catch(() => { /* titles are optional, IDs stay readable */ });
     }).catch((err: Error) => { if (!cancelled) setError(err.message); })
       .finally(() => { if (!cancelled) setLoadedFor(key); });
     return () => { cancelled = true; };
@@ -102,6 +108,7 @@ export function AuditTrail({ scenarioId, requirementId, compact = false }: { sce
         <label className="field-label">Order<select className="field-control" value={order} onChange={e => changeFilter(setOrder, e.target.value)}><option value="newest">Latest first</option><option value="oldest">Oldest first</option></select></label>
       </div>
     </>}
+    {events.length === 0 ? <p className="border-y border-[var(--hairline)] py-8 text-sm text-[var(--grey-500)]">No decisions recorded yet. Approve, reject, edit or challenge this proposal and the step appears here with its reason.</p> : <>
     <div className="mb-3 flex flex-wrap items-center justify-between gap-3 text-xs text-[var(--grey-500)]"><p role="status">{filtered.length} events{filtered.length !== events.length ? ` / ${events.length} total` : ""}</p>{(query || actor || type) && <button className="min-h-11 text-[var(--blue)]" onClick={() => { setQuery(""); setActor(""); setType(""); setPage(0); }}>Clear filters</button>}</div>
     {visible.length === 0 ? <p className="border-y border-[var(--hairline)] py-8 text-sm text-[var(--grey-500)]">No events match this selection.</p> : <div className={`grid min-w-0 gap-6 ${compact ? "" : "lg:grid-cols-[1fr_1.2fr]"}`}>
       <ol className="min-w-0 divide-y divide-[var(--hairline)] border-y border-[var(--hairline)]">
@@ -117,10 +124,11 @@ export function AuditTrail({ scenarioId, requirementId, compact = false }: { sce
         <h3 className="text-lg font-medium">{sentence(chosen, titles[chosen.requirement_id ?? ""])}</h3>
         <p className="mt-2 text-xs text-[var(--grey-500)]">{WHO[chosen.actor.type]}: {chosen.actor.name} / {new Date(chosen.ts).toLocaleString("en")} / entry #{chosen.seq}</p>
         <p className="mt-4 text-xs font-semibold text-[var(--grey-500)]">Reason</p><p className="mt-1 break-words text-sm">{chosen.rationale}</p>
-        {chosen.requirement_id && <Link href={`/requirements/${chosen.requirement_id}?scenario=${chosen.scenario_id}`} className="mt-4 inline-block text-sm font-semibold text-[var(--blue)]">Open requirement &rarr;</Link>}
+        {chosen.requirement_id && known.has(chosen.scenario_id) && <Link href={`/requirements/${chosen.requirement_id}?scenario=${chosen.scenario_id}`} className="mt-4 inline-block text-sm font-semibold text-[var(--blue)]">Open requirement &rarr;</Link>}
         <Changes payload={chosen.payload} />
       </article>}
     </div>}
     {pages > 1 && <div className="mt-4 flex items-center justify-between gap-4 text-sm"><button className="min-h-11 px-3 disabled:opacity-40" disabled={currentPage === 0} onClick={() => { setPage(currentPage - 1); setSelected(null); }}>Previous</button><span className="tabular-nums">Page {currentPage + 1} of {pages}</span><button className="min-h-11 px-3 disabled:opacity-40" disabled={currentPage === pages - 1} onClick={() => { setPage(currentPage + 1); setSelected(null); }}>Next</button></div>}
+    </>}
   </section>;
 }

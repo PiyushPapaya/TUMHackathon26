@@ -41,7 +41,7 @@ export function Hero({ data }: { data: HomeData }) {
         </ul>
         <p className="mt-8 max-w-3xl border-t border-white/20 pt-4 text-xs text-white/70">
           {f
-            ? `Scenario ${data.mainId}: ${f.evidence.toLocaleString("en-US")} customer voices · ${f.signals} findings · ${f.requirements} requirements, all from the live backend.`
+            ? `Scenario ${data.mainId}: ${(data.voices[data.mainId] ?? f.evidence).toLocaleString("en-US")} customer voices · ${f.signals} findings · ${f.requirements} requirements, all from the live backend.`
             : "Live numbers appear when the backend is running."}
         </p>
       </div>

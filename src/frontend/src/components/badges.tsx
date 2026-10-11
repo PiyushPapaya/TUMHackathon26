@@ -29,16 +29,15 @@ export function EvidenceBadge({ level, reason }: { level: EvidenceLevel; reason?
   );
 }
 
-// Kleines Warnzeichen statt eigener Spalte: Konflikte sind selten, sollen aber auffallen.
+// Gelbes Badge mit Klartext statt eigener Spalte: Konflikte sind selten, sollen aber ohne Hover verständlich sein.
 export function ConflictMark({ conflictingTitles }: { conflictingTitles: string[] }) {
   if (conflictingTitles.length === 0) return null;
   return (
     <span
       title={`Conflicting evidence: ${conflictingTitles.join(", ")}`}
-      aria-label="Conflicting evidence"
-      className="ml-2 inline-flex h-5 w-5 items-center justify-center bg-amber-100 align-middle text-[11px] font-bold text-amber-800"
+      className="inline-flex h-7 items-center gap-1.5 border border-amber-300 bg-amber-50 px-2 text-xs font-semibold text-amber-800"
     >
-      !
+      <span aria-hidden="true">!</span> Conflicting evidence
     </span>
   );
 }

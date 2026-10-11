@@ -81,8 +81,9 @@ export function AssistantPanel({
       <aside
         aria-label="Signal2Spec assistant"
         aria-hidden={!isOpen}
-        className={`fixed bottom-0 right-0 top-0 z-50 flex w-full max-w-[420px] flex-col border-l border-[var(--hairline)] bg-white shadow-[-20px_0_60px_rgba(0,0,0,0.12)] transition-transform duration-300 ease-out ${
-          isOpen ? "translate-x-0" : "pointer-events-none translate-x-full"
+        className={`fixed bottom-0 right-0 top-0 z-50 flex w-full max-w-[420px] flex-col border-l border-[var(--hairline)] bg-white transition-[transform,box-shadow] duration-300 ease-out ${
+          // Schatten nur im offenen Zustand: geschlossen lag er sonst als grauer Streifen am rechten Seitenrand.
+          isOpen ? "translate-x-0 shadow-[-20px_0_60px_rgba(0,0,0,0.12)]" : "pointer-events-none invisible translate-x-full"
         }`}
       >
         <header className="bg-[var(--black)] px-6 pb-0 pt-6 text-white">

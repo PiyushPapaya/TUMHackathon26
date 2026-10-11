@@ -15,12 +15,14 @@ export type HomeData = {
   bars: { score: number; level: EvidenceLevel }[];
   topTitle: string | null;
   mainId: string;
+  // Kundenstimmen je Szenario = nur Kundenfeedback (wie im Cockpit), nicht Studien- und Webbelege mitgezählt.
+  voices: Record<string, number>;
 };
 
 // Alle Zahlen der Startseite kommen aus dem Backend. Es gibt keine erfundenen Werte:
 // fehlt das Backend, bleibt `null` und die Seite zeigt ehrlich "–".
 export function useHomeData(): HomeData {
-  const [data, setData] = useState<HomeData>({ scenarios: [], funnels: {}, levels: null, levelsBy: {}, bars: [], topTitle: null, mainId: DEFAULT_SCENARIO_ID });
+  const [data, setData] = useState<HomeData>({ scenarios: [], funnels: {}, levels: null, levelsBy: {}, bars: [], topTitle: null, mainId: DEFAULT_SCENARIO_ID, voices: {} });
 
   useEffect(() => {
     let cancelled = false;
@@ -47,9 +49,14 @@ export function useHomeData(): HomeData {
           const f = funnelList[i];
           if (f) funnels[s.id] = f;
         });
+        const voices: Record<string, number> = {};
+        scenarios.forEach((s) => {
+          const v = s.data_coverage?.feedback ?? funnels[s.id]?.evidence;
+          if (typeof v === "number") voices[s.id] = v;
+        });
         const levels = count(reqs);
         if (!cancelled) {
-          setData({ scenarios, funnels, levels: reqs.length ? levels : null, levelsBy, bars, topTitle: reqs[0]?.title ?? null, mainId });
+          setData({ scenarios, funnels, levels: reqs.length ? levels : null, levelsBy, bars, topTitle: reqs[0]?.title ?? null, mainId, voices });
         }
       } catch {
         /* Backend aus: Seite bleibt mit "–" nutzbar */
