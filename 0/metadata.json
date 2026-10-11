@@ -1,0 +1,67 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4MNDARWNKQAAGR67Y7M7TV5",
+  "session_id": "b0b985c9-3e2a-40b3-9794-fc95af5be393",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-11T05:01:50.855754749Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "src/frontend/app/cockpit/page.tsx",
+    "src/frontend/app/evidence/page.tsx",
+    "src/frontend/app/guide/page.tsx",
+    "src/frontend/src/components/DecisionPanel.tsx",
+    "src/frontend/src/components/FindingCard.tsx",
+    "src/frontend/src/components/badges.tsx"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-opus-5-5",
+  "turn_id": "57b44f1b5cdc",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 138,
+    "cache_creation_tokens": 156050,
+    "cache_read_tokens": 8080781,
+    "output_tokens": 36669,
+    "api_call_count": 69
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-11T05:01:50.68808429Z",
+    "agent_lines": 27,
+    "agent_removed": 14,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 27,
+    "total_lines_changed": 41,
+    "agent_percentage": 100,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 87056,
+      "user_lines_removed": 3,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".gitignore": 4,
+        "data/processed/G60-EU/context.json": 8,
+        "data/processed/G60-EU/evidence.json": 2888,
+        "data/processed/G60-US/external_evidence.json": 1040,
+        "data/processed/G60-US/external_signals.json": 102,
+        "data/processed/G70-EU/context.json": 8,
+        "data/processed/G70-EU/evidence.json": 956,
+        "data/processed/G70-US/context.json": 8,
+        "data/processed/G70-US/evidence.json": 81420,
+        "data/processed/G70-US/external_evidence.json": 557,
+        "data/processed/G70-US/external_signals.json": 59,
+        "entscheidungen/E08_bmw_daten_im_repo.md": 5,
+        "entscheidungen/LOG.md": 1
+      },
+      "user_removed_per_file": {
+        ".gitignore": 3
+      }
+    }
+  ]
+}
