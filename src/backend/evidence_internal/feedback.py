@@ -74,6 +74,7 @@ def feedback_to_evidence(df: pd.DataFrame, cfg: dict) -> list[Evidence]:
             "feedback_type": SEPARATOR.join(_unique(types)),
             "labels": SEPARATOR.join(labels),
             "engine": _clean(group["Engine Type"].iloc[0]),
+            "country": _clean(group["Country"].iloc[0]),  # für den Länderfilter (EU = GB, FR, SE ...)
             "source": source,
             "scope": scope,
         }

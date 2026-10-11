@@ -9,7 +9,13 @@ export type Routed =
   | { kind: "top"; scenarioId: string }
   | { kind: "ask"; question: string };
 
-const has = (q: string, words: string[]) => words.some((w) => q.includes(w));
+// Nur ganze Wörter (plus Mehrzahl -s/-es) zählen. Warum: Mit reinem includes() steckte "red" in "required"
+// und "rot" in "protection", und echte Datenfragen bekamen die Ampel-Erklärung. Ein "*" am Ende erlaubt
+// bewusst Wortanfänge ("opportunit*" für opportunity/opportunities).
+const escape = (w: string) => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const wordPattern = (w: string) =>
+  w.endsWith("*") ? `(?<![\\p{L}\\d])${escape(w.slice(0, -1))}` : `(?<![\\p{L}\\d])${escape(w)}(?:e?s)?(?![\\p{L}\\d])`;
+const has = (q: string, words: string[]) => words.some((w) => new RegExp(wordPattern(w), "u").test(q));
 
 // "7er us", "g70", "1 series", "china" → Szenario-ID. Markt allein reicht nicht, Modell allein nimmt das erste passende.
 export function matchScenario(q: string, scenarios: Scenario[]): Scenario | undefined {
@@ -21,7 +27,7 @@ export function matchScenario(q: string, scenarios: Scenario[]): Scenario | unde
   ];
   const model = models.find(([, words]) => has(q, words))?.[0];
   if (!model) return undefined;
-  const market = has(q, [" us", "usa", "america"]) ? "US" : has(q, [" eu", "europe", "germany"]) ? "EU" : has(q, [" cn", "china"]) ? "CN" : null;
+  const market = has(q, ["us", "usa", "america"]) ? "US" : has(q, ["eu", "europe", "germany"]) ? "EU" : has(q, ["cn", "china"]) ? "CN" : null;
   const candidates = scenarios.filter((s) => s.derivative.toLowerCase() === model || s.id.toLowerCase().startsWith(model));
   return candidates.find((s) => !market || s.market === market) ?? candidates[0];
 }
@@ -52,7 +58,7 @@ export function routeQuestion(raw: string, ctx: { scenarioId: string; scenarios:
       links: [{ href: `/cockpit?scenario=${sid}`, label: "Open cockpit" }],
     };
   }
-  if (has(q, ["first", "top", "most important", "build next", "priority", "zuerst", "wichtigst"])) {
+  if (has(q, ["first", "top", "most important", "build next", "priorit*", "zuerst", "wichtigst*"])) {
     return { kind: "top", scenarioId: scenario?.id ?? sid };
   }
   if (has(q, ["audit", "prüfpfad", "history", "who decided", "trail"])) {
@@ -61,7 +67,7 @@ export function routeQuestion(raw: string, ctx: { scenarioId: string; scenarios:
   if (has(q, ["compare", "vergleich", "markets", "portfolio", "märkte"])) {
     return { kind: "reply", text: "Opening the portfolio: which topics hold across models and markets.", navigate: "/portfolio" };
   }
-  if (has(q, ["insight", "trend", "2030", "opportunit", "gap"]) && !scenario) {
+  if (has(q, ["insight", "trend", "2030", "opportunit*", "gap"]) && !scenario) {
     return { kind: "reply", text: "Opening insights: evidence vs. assumption, opportunities and 2030 trends.", navigate: `/insights?scenario=${sid}` };
   }
   if (has(q, ["evidence browser", "voices", "quotes", "stimmen", "belege"])) {

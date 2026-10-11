@@ -57,7 +57,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Defect | Navigation/Wants | Navigation/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -77,7 +78,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Touch screen, operation/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -97,7 +99,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Likes | Drive, driving dynamics and chassis, overall technology/Likes | Drivetrain/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -117,7 +120,8 @@
     "labels": "Braking/Defect | Seats/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -137,7 +141,8 @@
     "labels": "Drivetrain/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -157,7 +162,8 @@
     "labels": "Drivetrain/Likes | Impression of safety/Likes | Seats/Likes | Touch screen, operation/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -177,7 +183,8 @@
     "labels": "Electric Range/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -197,7 +204,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -217,7 +225,8 @@
     "labels": "Interior design/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -237,7 +246,8 @@
     "labels": "Cushioning / damping vehicle/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -257,7 +267,8 @@
     "labels": "Drivetrain/Likes | My Modes / driving experience/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -277,7 +288,8 @@
     "labels": "Exterior lighting/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -297,7 +309,8 @@
     "labels": "Touch screen, operation/Defect | Touch screen, operation/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -317,7 +330,8 @@
     "labels": "Body equipment, overall technology/Wants | Handling / Riding/Likes | Instrument panel/Difficult to Use | Interior comfort/Likes | My Modes / driving experience/Difficult to Use | Seats/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -337,7 +351,8 @@
     "labels": "Exterior/Defect | Handling / Riding/Defect | Touch screen, operation/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -357,7 +372,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Drivetrain/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -377,7 +393,8 @@
     "labels": "Braking/Defect | Drivetrain/Wants | Drivetrain/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -397,7 +414,8 @@
     "labels": "Touch screen, operation/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -417,7 +435,8 @@
     "labels": "Handling / Riding/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -437,7 +456,8 @@
     "labels": "Touch screen, operation/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -457,7 +477,8 @@
     "labels": "Cushioning / damping vehicle/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -477,7 +498,8 @@
     "labels": "Navigation/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -497,7 +519,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Defect | ConnectedDrive and Infotainment, overall technology/Difficult to Use | Touch screen, operation/Difficult to Use | Wheels / tires/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -517,7 +540,8 @@
     "labels": "Steering/Defect | Transmission/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -537,7 +561,8 @@
     "labels": "Driver assistance, automated driving, overall technology/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -557,7 +582,8 @@
     "labels": "Electric Range/Wants | Seats/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -577,7 +603,8 @@
     "labels": "Apple CarPlay/Defect | High voltage battery/Defect | Steering wheel/Difficult to Use | Vehicle, access and exit/Wants | Vehicle, climatization/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -597,7 +624,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Defect | Drive, driving dynamics and chassis, overall technology/Likes | Exterior rearview mirror/Wants | Owner's Manual/Difficult to Use | Touch screen, operation/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -617,7 +645,8 @@
     "labels": "Drivetrain/Likes | Interior comfort/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -637,7 +666,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Handling / Riding/Likes | Luggage compartment/Difficult to Use | My Modes / driving experience/Difficult to Use | Speed Limit Assistant/Difficult to Use | Touch screen, operation/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -657,7 +687,8 @@
     "labels": "Navigation/Difficult to Use | Space / spatial impression/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -677,7 +708,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Exterior rearview mirror/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -697,7 +729,8 @@
     "labels": "Body equipment, overall technology/Likes | Center console, front/Likes | Drivetrain/Difficult to Use | Navigation/Defect | Navigation/Difficult to Use | Steering wheel/Difficult to Use | Touch screen, operation/Defect | Touch screen, operation/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -717,7 +750,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -737,7 +771,8 @@
     "labels": "Exterior design/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -757,7 +792,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -777,7 +813,8 @@
     "labels": "Cushioning / damping vehicle/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "FR"
    }
   },
   {
@@ -797,7 +834,8 @@
     "labels": "Exterior lighting/Defect | Trunk lid/Defect | Vehicle, lock / unlock/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -817,7 +855,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Engine acoustics / engine sound/Wants | Exterior design/Likes | My Modes / driving experience/Wants | Remote Services & Remote Keyless Entry (My BMW App/MINI App)/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -837,7 +876,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Likes | Electric Range/Likes | Vehicle, access and exit/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -857,7 +897,8 @@
     "labels": "Interior design/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -877,7 +918,8 @@
     "labels": "Handling / Riding/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -897,7 +939,8 @@
     "labels": "Drivetrain/Difficult to Use | Touch screen, operation/Difficult to Use | Wheels / tires/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "SE"
    }
   },
   {
@@ -917,7 +960,8 @@
     "labels": "Instrument panel/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -937,7 +981,8 @@
     "labels": "Cushioning / damping vehicle/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -957,7 +1002,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -977,7 +1023,8 @@
     "labels": "Driver assistance, automated driving, overall technology/Likes | Drivetrain/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -997,7 +1044,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Heated steering wheel/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1017,7 +1065,8 @@
     "labels": "Body equipment, overall technology/Likes | Drive, driving dynamics and chassis, overall technology/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1037,7 +1086,8 @@
     "labels": "Drivetrain/Difficult to Use | Transmission/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1057,7 +1107,8 @@
     "labels": "Drivetrain/Likes | Touch screen, operation/Likes | Transmission/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1077,7 +1128,8 @@
     "labels": "Electric Range/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1097,7 +1149,8 @@
     "labels": "Audio mode, sound/Defect | Exterior rearview mirror/Wants | Impression of safety/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1117,7 +1170,8 @@
     "labels": "Drivetrain/Difficult to Use | Luggage compartment/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1137,7 +1191,8 @@
     "labels": "Digital Key/Wants | Vehicle key/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1157,7 +1212,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Difficult to Use | Cushioning / damping vehicle/Wants | Instrument panel/Likes | Navigation/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1177,7 +1233,8 @@
     "labels": "My Modes / driving experience/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "SE"
    }
   },
   {
@@ -1197,7 +1254,8 @@
     "labels": "Driver assistance, automated driving, overall technology/Likes | Handling / Riding/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1217,7 +1275,8 @@
     "labels": "Owner's Manual/Difficult to Use | Transmission/Difficult to Use | Wheels / tires/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1237,7 +1296,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Drivetrain/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1257,7 +1317,8 @@
     "labels": "Drivetrain/Likes | Seats/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1277,7 +1338,8 @@
     "labels": "Vehicle, access and exit/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1297,7 +1359,8 @@
     "labels": "Automatic-hold/Defect | ConnectedDrive and Infotainment, overall technology/Difficult to Use | Cushioning / damping vehicle/Defect | Remote Software Upgrade/RSU/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1317,7 +1380,8 @@
     "labels": "Drivetrain/Likes | Seats/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1337,7 +1401,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Drivetrain/Likes | Exterior rearview mirror/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1357,7 +1422,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Likes | Drive, driving dynamics and chassis, overall technology/Likes | Touch screen, operation/Likes | Transmission/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1377,7 +1443,8 @@
     "labels": "Navigation/Defect | Navigation/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1397,7 +1464,8 @@
     "labels": "Seats/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1417,7 +1485,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Likes | Handling / Riding/Wants | Owner's Manual/Difficult to Use | Touch screen, operation/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1437,7 +1506,8 @@
     "labels": "Handling / Riding/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1457,7 +1527,8 @@
     "labels": "Vehicle, access and exit/Wants | Vehicle, access and exit/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1477,7 +1548,8 @@
     "labels": "Space / spatial impression/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1497,7 +1569,8 @@
     "labels": "Cushioning / damping vehicle/Wants | Cushioning / damping vehicle/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1517,7 +1590,8 @@
     "labels": "Exterior design/Likes | Handling / Riding/Likes | Interior comfort/Likes | My Modes / driving experience/Wants | My Modes / driving experience/Likes | Rear view camera/Likes | Touch screen, operation/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1537,7 +1611,8 @@
     "labels": "Air conditioning, setting/Wants | Drivetrain/Likes | Handling / Riding/Likes | Speed Limit Assistant/Difficult to Use | Touch screen, operation/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1557,7 +1632,8 @@
     "labels": "Handling / Riding/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1577,7 +1653,8 @@
     "labels": "Cushioning / damping vehicle/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1597,7 +1674,8 @@
     "labels": "Vehicle key/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1617,7 +1695,8 @@
     "labels": "Exterior lighting/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1637,7 +1716,8 @@
     "labels": "Digital Key/Defect | Driver assistance, automated driving, overall technology/Defect | Exterior rearview mirror/Wants | Vehicle key/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1657,7 +1737,8 @@
     "labels": "Seats/Defect | Transmission/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1677,7 +1758,8 @@
     "labels": "Audio mode, sound/Defect | Body equipment, overall technology/Likes | General enquiry: customer feedback/Difficult to Use | Seats/Defect | Transmission/Defect | Transmission/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1697,7 +1779,8 @@
     "labels": "Handling / Riding/Wants | Intelligent Personal Assistant, activation word/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1717,7 +1800,8 @@
     "labels": "Drivetrain/Likes | Exterior/Defect | Handling / Riding/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1737,7 +1821,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Likes | Drive, driving dynamics and chassis, overall technology/Likes | Drivetrain/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1757,7 +1842,8 @@
     "labels": "Drivetrain/Likes | General enquiry: customer feedback/Difficult to Use | My Modes / driving experience/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1777,7 +1863,8 @@
     "labels": "My Modes / driving experience/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1797,7 +1884,8 @@
     "labels": "USB port/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1817,7 +1905,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1837,7 +1926,8 @@
     "labels": "Door, front/Defect | Wheels / tires/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1857,7 +1947,8 @@
     "labels": "Drivetrain/Likes | Seats/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1877,7 +1968,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Space / spatial impression/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1897,7 +1989,8 @@
     "labels": "Body equipment, overall technology/Wants | Driver assistance, automated driving, overall technology/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1917,7 +2010,8 @@
     "labels": "Manage / pair mobile device (Bluetooth)/Difficult to Use | USB port/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1937,7 +2031,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Electric Range/Wants | Interior/Difficult to Use | Interior design/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1957,7 +2052,8 @@
     "labels": "Drivetrain/Likes | Exterior rearview mirror/Likes | Handling / Riding/Likes | Touch screen, operation/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1977,7 +2073,8 @@
     "labels": "Braking/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -1997,7 +2094,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Multi-function steering wheel operation/Defect | Outer door handle, front/Defect | Touch screen, operation/Wants | Touch screen, operation/Difficult to Use | Voice control / speech recognition/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2017,7 +2115,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Exterior design/Likes | Transmission/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2037,7 +2136,8 @@
     "labels": "Exterior rearview mirror/Defect | Vehicle, access and exit/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2057,7 +2157,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Likes | ConnectedDrive and Infotainment, overall technology/Difficult to Use | Engine acoustics / engine sound/Wants | Exterior lighting/Defect | High voltage battery/Defect | Resting state after door opening/Defect | Resting state after door opening/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2077,7 +2178,8 @@
     "labels": "Cushioning / damping vehicle/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2097,7 +2199,8 @@
     "labels": "Center console, front/Wants | Exterior/Defect | Exterior design/Likes | General enquiry: customer feedback/Difficult to Use | Impression of safety/Difficult to Use | Instrument panel/Defect | Transmission/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2117,7 +2220,8 @@
     "labels": "Wheels / tires/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "FR"
    }
   },
   {
@@ -2137,7 +2241,8 @@
     "labels": "Drivetrain/Difficult to Use | Park Distance Control (PDC)/Defect | Rear view camera/Defect | Transmission/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2157,7 +2262,8 @@
     "labels": "Driver assistance, automated driving, overall technology/Defect | Engine acoustics / engine sound/Likes | Exterior/Defect | Handling / Riding/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2177,7 +2283,8 @@
     "labels": "Exterior design/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2197,7 +2304,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Likes | Drive, driving dynamics and chassis, overall technology/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2217,7 +2325,8 @@
     "labels": "Exterior lighting/Difficult to Use | Seating, ventilate / heat/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2237,7 +2346,8 @@
     "labels": "Vehicle, climatization/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2257,7 +2367,8 @@
     "labels": "Impression of safety/Likes | Parking Assistant/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "SE"
    }
   },
   {
@@ -2277,7 +2388,8 @@
     "labels": "Vehicle, access and exit/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2297,7 +2409,8 @@
     "labels": "Cushioning / damping vehicle/Wants | Drive, driving dynamics and chassis, overall technology/Likes | Drivetrain/Likes | Owner's Manual/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2317,7 +2430,8 @@
     "labels": "Instrument panel/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2337,7 +2451,8 @@
     "labels": "Handling / Riding/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2357,7 +2472,8 @@
     "labels": "Body equipment, overall technology/Wants | Drive, driving dynamics and chassis, overall technology/Likes | My Modes / driving experience/Difficult to Use | Seats/Difficult to Use | Voice control / speech recognition/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2377,7 +2493,8 @@
     "labels": "Drivetrain/Likes | Touch screen, operation/Wants | Touch screen, operation/Defect | Touch screen, operation/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2397,7 +2514,8 @@
     "labels": "Audio mode, sound/Likes | Drivetrain/Likes | Seats/Likes | Touch screen, operation/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2417,7 +2535,8 @@
     "labels": "Apple CarPlay/Defect | Head-Up Display/Wants | Luggage compartment/Difficult to Use | My Modes / driving experience/Likes | Park Distance Control (PDC)/Defect | Seats/Wants | Touch screen, operation/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2437,7 +2556,8 @@
     "labels": "Driver assistance, automated driving, overall technology/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2457,7 +2577,8 @@
     "labels": "Door, open / close/Defect | Drivetrain/Likes | Instrument panel/Defect | Trunk lid/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2477,7 +2598,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Seats/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "SE"
    }
   },
   {
@@ -2497,7 +2619,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Drivetrain/Likes | Exterior/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2517,7 +2640,8 @@
     "labels": "Body equipment, overall technology/Wants | Exterior/Defect | Luggage compartment/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2537,7 +2661,8 @@
     "labels": "Audio mode, sound/Defect | Body equipment, overall technology/Wants | Transmission/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2557,7 +2682,8 @@
     "labels": "Drivetrain/Defect | My Modes / driving experience/Difficult to Use | Vehicle key/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2577,7 +2703,8 @@
     "labels": "Seats/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "SE"
    }
   },
   {
@@ -2597,7 +2724,8 @@
     "labels": "Impression of safety/Likes | Interior design/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2617,7 +2745,8 @@
     "labels": "Exterior lighting/Defect | Owner's Manual/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2637,7 +2766,8 @@
     "labels": "Vehicle, climatization/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2657,7 +2787,8 @@
     "labels": "Driver assistance, automated driving, overall technology/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2677,7 +2808,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Interior design/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2697,7 +2829,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Trunk lid/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "SE"
    }
   },
   {
@@ -2717,7 +2850,8 @@
     "labels": "Exterior lighting/Defect | Handling / Riding/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2737,7 +2871,8 @@
     "labels": "Cushioning / damping vehicle/Defect | Wheels / tires/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2757,7 +2892,8 @@
     "labels": "Electric Range/Wants | Rear view camera/Likes | Vehicle key/Defect | Voice control / speech recognition/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2777,7 +2913,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Likes | Drive, driving dynamics and chassis, overall technology/Likes | Impression of safety/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2797,7 +2934,8 @@
     "labels": "Air conditioning, setting/Wants | Interior comfort/Likes | Seats/Defect | Touch screen, operation/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2817,7 +2955,8 @@
     "labels": "Touch screen, operation/Wants | Voice control / speech recognition/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2837,7 +2976,8 @@
     "labels": "Interior comfort/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2857,7 +2997,8 @@
     "labels": "Door, open / close/Difficult to Use | Exterior rearview mirror/Defect | Navigation/Likes | Owner's Manual/Wants | Wheels / tires/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2877,7 +3018,8 @@
     "labels": "Seats/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2897,7 +3039,8 @@
     "labels": "Driver assistance, automated driving, overall technology/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2917,7 +3060,8 @@
     "labels": "Electric Range/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2937,7 +3081,8 @@
     "labels": "Cushioning / damping vehicle/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2957,7 +3102,8 @@
     "labels": "Space / spatial impression/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2977,7 +3123,8 @@
     "labels": "Wheels / tires/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -2997,7 +3144,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Difficult to Use | Touch screen, operation/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3017,7 +3165,8 @@
     "labels": "Exterior/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3037,7 +3186,8 @@
     "labels": "Cushioning / damping vehicle/Defect | Transmission/Difficult to Use | Transmission/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3057,7 +3207,8 @@
     "labels": "Interior comfort/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3077,7 +3228,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Likes | Transmission/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3097,7 +3249,8 @@
     "labels": "Braking/Difficult to Use | ConnectedDrive and Infotainment, overall technology/Defect | Drive, driving dynamics and chassis, overall technology/Likes | Driver assistance, automated driving, overall technology/Defect | General enquiry: customer feedback/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3117,7 +3270,8 @@
     "labels": "Drivetrain/Difficult to Use | Handling / Riding/Wants | Transmission/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3137,7 +3291,8 @@
     "labels": "Drivetrain/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3157,7 +3312,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Likes | Driver assistance, automated driving, overall technology/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3177,7 +3333,8 @@
     "labels": "ConnectedDrive services (smartphone) technology overall/Wants | Owner's Manual/Difficult to Use | Trunk lid/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3197,7 +3354,8 @@
     "labels": "Trunk lid/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3217,7 +3375,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Defect | ConnectedDrive and Infotainment, overall technology/Difficult to Use | USB port/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3237,7 +3396,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Handling / Riding/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3257,7 +3417,8 @@
     "labels": "Handling / Riding/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3277,7 +3438,8 @@
     "labels": "Exterior/Defect | Touch screen, operation/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3297,7 +3459,8 @@
     "labels": "My Modes / driving experience/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3317,7 +3480,8 @@
     "labels": "Drivetrain/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3337,7 +3501,8 @@
     "labels": "Audio mode, sound/Wants | Drivetrain/Difficult to Use | USB port/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3357,7 +3522,8 @@
     "labels": "Transmission/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3377,7 +3543,8 @@
     "labels": "My Modes / driving experience/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3397,7 +3564,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3417,7 +3585,8 @@
     "labels": "Driver assistance, automated driving, overall technology/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3437,7 +3606,8 @@
     "labels": "Exterior lighting/Defect | Handling / Riding/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3457,7 +3627,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Impression of safety/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3477,7 +3648,8 @@
     "labels": "Cupholder/Difficult to Use | Engine acoustics / engine sound/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3497,7 +3669,8 @@
     "labels": "Drivetrain/Difficult to Use | Vehicle, access and exit/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3517,7 +3690,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Drivetrain/Likes | Exterior design/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3537,7 +3711,8 @@
     "labels": "Drivetrain/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3557,7 +3732,8 @@
     "labels": "Exterior rearview mirror/Defect | Instrument cluster/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3577,7 +3753,8 @@
     "labels": "Braking/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3597,7 +3774,8 @@
     "labels": "Vehicle key/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3617,7 +3795,8 @@
     "labels": "Drivetrain/Wants | Engine acoustics / engine sound/Wants | Wheels / tires/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3637,7 +3816,8 @@
     "labels": "Exterior rearview mirror/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3657,7 +3837,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Touch screen, operation/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "SE"
    }
   },
   {
@@ -3677,7 +3858,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Difficult to Use | Cushioning / damping vehicle/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3697,7 +3879,8 @@
     "labels": "Driver assistance, automated driving, overall technology/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3717,7 +3900,8 @@
     "labels": "Drivetrain/Wants | Drivetrain/Likes | Exterior rearview mirror/Wants | Interior design/Likes | Space / spatial impression/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3737,7 +3921,8 @@
     "labels": "Seats/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3757,7 +3942,8 @@
     "labels": "Air conditioning, overall technology/Difficult to Use | Drivetrain/Likes | Glove box/Difficult to Use | Luggage compartment/Difficult to Use | Owner's Manual/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3777,7 +3963,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Likes | Touch screen, operation/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3797,7 +3984,8 @@
     "labels": "Instrument panel/Defect | Rear view camera/Defect | Seats/Difficult to Use | USB port/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3817,7 +4005,8 @@
     "labels": "Exterior design/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3837,7 +4026,8 @@
     "labels": "Drivetrain/Likes | Handling / Riding/Wants | Owner's Manual/Difficult to Use | Touch screen, operation/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3857,7 +4047,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Touch screen, operation/Defect | Touch screen, operation/Difficult to Use | Trunk lid/Defect | Vehicle, climatization/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3877,7 +4068,8 @@
     "labels": "Audio mode, sound/Defect | Engine acoustics / engine sound/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3897,7 +4089,8 @@
     "labels": "Drivetrain/Difficult to Use | My Modes / driving experience/Difficult to Use | Owner's Manual/Difficult to Use | Touch screen, operation/Defect | USB port/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3917,7 +4110,8 @@
     "labels": "Audio mode, sound/Defect | Body equipment, overall technology/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3937,7 +4131,8 @@
     "labels": "Vehicle, access and exit/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3957,7 +4152,8 @@
     "labels": "Interior comfort/Likes | Seats/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3977,7 +4173,8 @@
     "labels": "Braking/Difficult to Use | Drive, driving dynamics and chassis, overall technology/Likes | Transmission/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -3997,7 +4194,8 @@
     "labels": "Space / spatial impression/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4017,7 +4215,8 @@
     "labels": "Audio mode, sound/Likes | Audio mode, sound/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4037,7 +4236,8 @@
     "labels": "Interior comfort/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4057,7 +4257,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Defect | Exterior lighting/Defect | My Modes / driving experience/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4077,7 +4278,8 @@
     "labels": "ConnectedDrive services (smartphone) technology overall/Difficult to Use | Vehicle, climatization/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4097,7 +4299,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Drivetrain/Likes | Impression of safety/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4117,7 +4320,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Space / spatial impression/Wants | Tire pressure control/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4137,7 +4341,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Handling / Riding/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4157,7 +4362,8 @@
     "labels": "Body equipment, overall technology/Likes | Drive, driving dynamics and chassis, overall technology/Likes | Driver assistance, automated driving, overall technology/Defect | Drivetrain/Likes | Touch screen, operation/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4177,7 +4383,8 @@
     "labels": "Braking/Defect | Handling / Riding/Wants | Headrest, adjust/Defect | Map update/Difficult to Use | Seats/Wants | Steering/Likes | Touch screen, operation/Difficult to Use | Transmission/Defect | Transmission/Difficult to Use | Wheels / tires/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4197,7 +4404,8 @@
     "labels": "Navigation/Defect | Touch screen, operation/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4217,7 +4425,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Difficult to Use | Instrument panel/Defect | Instrument panel/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4237,7 +4446,8 @@
     "labels": "Body equipment, overall technology/Likes | Drivetrain/Likes | Exterior rearview mirror/Difficult to Use | Instrument cluster/Likes | Interior design/Likes | Rear view camera/Likes | USB port/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4257,7 +4467,8 @@
     "labels": "Drivetrain/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4277,7 +4488,8 @@
     "labels": "Driver assistance, automated driving, overall technology/Defect | Vehicle key/Defect | Vehicle, lock / unlock/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4297,7 +4509,8 @@
     "labels": "Handling / Riding/Likes | Transmission/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4317,7 +4530,8 @@
     "labels": "Exterior design/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4337,7 +4551,8 @@
     "labels": "Exterior rearview mirror/Wants | Instrument panel/Difficult to Use | Trunk lid/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4357,7 +4572,8 @@
     "labels": "Space / spatial impression/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4377,7 +4593,8 @@
     "labels": "Electric Range/Likes | Exterior/Likes | Transmission/Wants | Transmission/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4397,7 +4614,8 @@
     "labels": "Vehicle, climatization/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4417,7 +4635,8 @@
     "labels": "Cushioning / damping vehicle/Defect | Drivetrain/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4437,7 +4656,8 @@
     "labels": "ConnectedDrive and Infotainment, overall technology/Difficult to Use | Seats/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4457,7 +4677,8 @@
     "labels": "Wheels / tires/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4477,7 +4698,8 @@
     "labels": "Instrument panel/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4497,7 +4719,8 @@
     "labels": "Cushioning / damping vehicle/Wants | Engine acoustics / engine sound/Wants | Transmission/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4517,7 +4740,8 @@
     "labels": "Audio mode, sound/Defect | Drivetrain/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "SE"
    }
   },
   {
@@ -4537,7 +4761,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Drivetrain/Difficult to Use | Exterior rearview mirror/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4557,7 +4782,8 @@
     "labels": "Audio mode, sound/Defect | Automatic engine start-stop function (MSA)/Wants | Body equipment, overall technology/Difficult to Use | Center console, front/Defect | ConnectedDrive and Infotainment, overall technology/Defect | My Modes / driving experience/Difficult to Use | Space / spatial impression/Likes | Steering wheel/Wants | Touch screen, operation/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4577,7 +4803,8 @@
     "labels": "Cushioning / damping vehicle/Wants | Touch screen, operation/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4597,7 +4824,8 @@
     "labels": "Drivetrain/Difficult to Use | My BMW App / MINI App/Defect | Vehicle key/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4617,7 +4845,8 @@
     "labels": "Interior design/Likes",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4637,7 +4866,8 @@
     "labels": "Drivetrain/Likes | Space / spatial impression/Wants",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4657,7 +4887,8 @@
     "labels": "Audio mode, sound/Defect",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "FR"
    }
   },
   {
@@ -4677,7 +4908,8 @@
     "labels": "Engine acoustics / engine sound/Wants | Navigation/Wants | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {
@@ -4697,7 +4929,8 @@
     "labels": "Center console, front/Defect | Driver assistance, automated driving, overall technology/Defect | My Modes / driving experience/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "GB"
    }
   },
   {

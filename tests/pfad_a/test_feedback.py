@@ -110,3 +110,10 @@ def test_quelle_d_mit_echtem_typ_behaelt_den_typ_der_regel_greift_nur_bei_leerem
     ev = feedback_to_evidence(df, CFG)[0]
     assert ev.polarity == -1
     assert "polarity_basis" not in ev.meta
+
+
+def test_land_steht_im_beleg_fuer_den_laenderfilter():
+    # Ein EU-Szenario mischt GB, FR, SE ...; ohne Land in meta kann der Beleg-Browser nicht nach Land filtern.
+    cfg = {**CFG, "id": "F70-EU", "market": "EU", "countries": ["GB", "FR"]}
+    evidence = feedback_to_evidence(_df(_row(1, country="GB"), _row(2, country=" FR ")), cfg)
+    assert [e.meta["country"] for e in evidence] == ["GB", "FR"]

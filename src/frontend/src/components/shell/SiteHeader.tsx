@@ -20,6 +20,12 @@ const NAV = [
 // Seiten, die ein Szenario in ?scenario= verstehen. Das Szenario-Menü bleibt auf der Seite, statt ins Cockpit zu springen.
 const SCENARIO_PAGES = ["/cockpit", "/insights", "/evidence", "/audit"];
 
+// Nur das Cockpit braucht ein Szenario. Der Audit-Trail startet bewusst mit "All scenarios",
+// damit PMs zuerst die ganze Entscheidungshistorie sehen und dann selbst filtern.
+function navHref(href: string, scenarioId: string) {
+  return href === "/cockpit" ? `${href}?scenario=${scenarioId}` : href;
+}
+
 export function SiteHeader() {
   const pathname = usePathname();
   const router = useRouter();
@@ -78,7 +84,7 @@ export function SiteHeader() {
               return (
                 <Link
                   key={item.href}
-                  href={item.href === "/cockpit" || item.href === "/audit" ? `${item.href}?scenario=${scenarioId}` : item.href}
+                  href={navHref(item.href, scenarioId)}
                   aria-current={active ? "page" : undefined}
                   className={`relative py-6 text-[15px] ${textCls} ${active ? "font-semibold" : ""} hover:text-[var(--blue)]`}
                 >
@@ -119,7 +125,7 @@ export function SiteHeader() {
         {mobileOpen && (
           <nav className="border-t border-[var(--hairline)] bg-white px-6 py-4 lg:hidden" aria-label="Mobile">
             {NAV.map((item) => (
-              <Link key={item.href} href={item.href === "/cockpit" || item.href === "/audit" ? `${item.href}?scenario=${scenarioId}` : item.href} className="block py-3 text-lg text-[var(--ink)]">{item.label}</Link>
+              <Link key={item.href} href={navHref(item.href, scenarioId)} className="block py-3 text-lg text-[var(--ink)]">{item.label}</Link>
             ))}
             {scenarios.map((s) => (
               <Link key={s.id} href={`/cockpit?scenario=${s.id}`} className="block py-2 text-sm text-[var(--grey-500)]">

@@ -63,7 +63,7 @@ export function ScenarioStrip({ data }: { data: HomeData }) {
                 <Link href={`/cockpit?scenario=${s.id}`} className="group relative block h-full">
                   <div className="relative aspect-[16/9] overflow-hidden bg-[var(--black)]">
                     {media.includes(src) ? (
-                      <MediaImage src={src} alt={`${s.model_name}, ${s.market}`} className="transition-transform duration-[900ms] ease-out group-hover:scale-105" />
+                      <MediaImage src={src} alt={`${s.model_name}, ${s.market}`} sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="transition-transform duration-[900ms] ease-out group-hover:scale-105" />
                     ) : (
                       <Placeholder s={s} />
                     )}

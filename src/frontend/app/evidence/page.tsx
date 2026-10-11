@@ -2,18 +2,19 @@
 
 import { Suspense, useState } from "react";
 import { getEvidencePage } from "@/src/lib/insights";
+import { getScenarios } from "@/src/lib/api";
+import { countryName } from "@/src/lib/countries";
 import { useLoad } from "@/src/lib/useLoad";
 import { useScenarioParam } from "@/src/components/shell/useScenarioParam";
 import { ErrorNote, Loading, PageHeader } from "@/src/components/ui/PageHeader";
 import { SourceTrustBadge } from "@/src/components/badges";
 import { Button } from "@/src/components/ui/Button";
 
-const SEGMENTS = [["", "All drivetrains"], ["engine:BEV", "BEV"], ["engine:PHEV", "PHEV"], ["engine:ICE", "Combustion"]];
+const DRIVETRAINS = [["engine:BEV", "BEV"], ["engine:PHEV", "PHEV"], ["engine:ICE", "Combustion"]];
 const SIZE = 20;
 
 // Beleg-Browser: jede Kundenstimme hinter einem Vorschlag, filterbar. Das macht "grounded in evidence" nachprüfbar.
-function Browser() {
-  const id = useScenarioParam();
+function Browser({ id }: { id: string }) {
   const [q, setQ] = useState("");
   const [applied, setApplied] = useState("");
   const [segment, setSegment] = useState("");
@@ -21,6 +22,8 @@ function Browser() {
   const key = [id, applied, segment, page].join("|");
   const view = useLoad(key, () => getEvidencePage(id, { q: applied, segment, page, size: SIZE }));
   const total = view.data?.total ?? 0;
+  // Länder des Szenarios aus der Config (EU = GB, FR, SE …). Bei nur einem Land (US) gibt es nichts zu filtern.
+  const countries = useLoad(`countries|${id}`, () => getScenarios().then((all) => all.find((s) => s.id === id)?.countries ?? [])).data ?? [];
 
   return (
     <main className="mx-auto max-w-[1000px] px-6 py-12 lg:px-10">
@@ -43,7 +46,7 @@ function Browser() {
           className="h-[52px] min-w-64 flex-1 border border-[var(--hairline)] px-4"
         />
         <select
-          aria-label="Drivetrain"
+          aria-label="Filter by drivetrain or country"
           value={segment}
           onChange={(e) => {
             setPage(1);
@@ -51,7 +54,16 @@ function Browser() {
           }}
           className="h-[52px] border border-[var(--hairline)] bg-white px-3"
         >
-          {SEGMENTS.map(([v, l]) => <option key={v} value={v}>{l}</option>)}
+          {/* Eine Auswahl statt zwei, weil die API genau ein Segment filtert (core/insights.py evidence_page). */}
+          <option value="">All drivetrains and countries</option>
+          <optgroup label="Drivetrain">
+            {DRIVETRAINS.map(([v, l]) => <option key={v} value={v}>{l}</option>)}
+          </optgroup>
+          {countries.length > 1 && (
+            <optgroup label="Country">
+              {countries.map((c) => <option key={c} value={`country:${c}`}>{countryName(c)}</option>)}
+            </optgroup>
+          )}
         </select>
         <Button type="submit">Search</Button>
       </form>
@@ -67,6 +79,7 @@ function Browser() {
                   <span className="font-mono">{ev.id}</span>
                   <SourceTrustBadge sourceType={ev.source_type} />
                   <span>{ev.source_name}</span>
+                  {typeof ev.meta.country === "string" && ev.meta.country && <span>{countryName(ev.meta.country)}</span>}
                   <span>{ev.polarity < 0 ? "▼ negative" : ev.polarity > 0 ? "▲ positive" : "neutral"}</span>
                 </div>
                 <p className="mt-2">{ev.text}</p>
@@ -87,10 +100,17 @@ function Browser() {
   );
 }
 
+// key={id}: Beim Szenario-Wechsel im Header startet der Browser frisch. Warum: Sonst blieben Suche, Seite
+// und ein Länderfilter wie "country:FR" stehen, den es im neuen Szenario (z. B. US) nicht gibt, und die Liste zeigte 0 Treffer.
+function ScenarioBrowser() {
+  const id = useScenarioParam();
+  return <Browser key={id} id={id} />;
+}
+
 export default function EvidencePage() {
   return (
     <Suspense fallback={<main className="px-6 py-12 text-sm text-[var(--grey-500)]">Loading...</main>}>
-      <Browser />
+      <ScenarioBrowser />
     </Suspense>
   );
 }

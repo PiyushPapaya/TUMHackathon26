@@ -121,7 +121,7 @@ export function DecisionPanel({
             PM decision
           </h2>
           <p className="mt-1 text-sm text-slate-600">
-            Actor: <span className="font-semibold text-[#262626]">{PM_ACTOR}</span>. A rationale is required.
+            Actor: <span className="font-semibold text-[#262626]">{PM_ACTOR}</span>. A reason is required.
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -214,7 +214,7 @@ export function DecisionPanel({
       )}
 
       <label className="mt-4 grid gap-1 text-sm font-semibold text-slate-700">
-        Rationale
+        Reason
         <textarea
           required
           className="min-h-24 rounded-md border border-slate-300 px-3 py-2 font-normal text-[#262626] focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-100"

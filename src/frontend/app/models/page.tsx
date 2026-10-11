@@ -20,9 +20,10 @@ export default function ModelsPage() {
     {view.loading && <Loading what="models" />}
     {view.error && <ErrorNote message={view.error} />}
     {!view.loading && !view.error && <p role="status" className="my-5 text-sm text-[var(--grey-500)]">{filtered.length} of {scenarios.length} model and market combinations</p>}
+    {/* Erste Reihe (max. 3 Karten) liegt über dem Falz: eager laden, sonst wird das LCP-Bild verzögert. */}
     <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-      {filtered.map(s => <article key={s.id} className="flex min-w-0 flex-col overflow-hidden border border-[var(--hairline)]">
-        {s.derivative !== "G68" && <div className="relative aspect-[16/9] overflow-hidden bg-[var(--grey-100)]"><Image src={`/media/scenarios/${s.id}.jpg`} alt={s.model_name} fill sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw" className="object-cover" /></div>}
+      {filtered.map((s, i) => <article key={s.id} className="flex min-w-0 flex-col overflow-hidden border border-[var(--hairline)]">
+        {s.derivative !== "G68" && <div className="relative aspect-[16/9] overflow-hidden bg-[var(--grey-100)]"><Image src={`/media/scenarios/${s.id}.jpg`} alt={s.model_name} fill loading={i < 3 ? "eager" : "lazy"} sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw" className="object-cover" /></div>}
         {s.derivative === "G68" && <div className="flex aspect-[16/9] items-center justify-center bg-[var(--grey-100)] text-4xl font-light text-[var(--grey-500)]">{s.derivative}</div>}
         <div className="flex flex-1 flex-col p-5">
           <p className="text-xs text-[var(--grey-500)]">{s.derivative} / {s.market} / Successor {s.successor_horizon}</p>
