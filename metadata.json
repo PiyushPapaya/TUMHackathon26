@@ -3,7 +3,7 @@
   "checkpoint_id": "01M4MMFXNQR05V5X7DMEATJS46",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 3,
+  "checkpoints_count": 4,
   "files_touched": [
     "docs/pitch/RECHERCHE.md",
     "src/backend/core/views.py",
@@ -28,13 +28,20 @@
       "compact_transcript": "/1/transcript.jsonl",
       "content_hash": "/1/content_hash.txt",
       "prompt": "/1/prompt.txt"
+    },
+    {
+      "metadata": "/2/metadata.json",
+      "transcript": "/2/full.jsonl",
+      "compact_transcript": "/2/transcript.jsonl",
+      "content_hash": "/2/content_hash.txt",
+      "prompt": "/2/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 138,
-    "cache_creation_tokens": 190016,
-    "cache_read_tokens": 11087135,
-    "output_tokens": 44716,
-    "api_call_count": 69
+    "input_tokens": 192,
+    "cache_creation_tokens": 286127,
+    "cache_read_tokens": 13984186,
+    "output_tokens": 62009,
+    "api_call_count": 96
   }
 }

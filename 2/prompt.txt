@@ -1,0 +1,2 @@
+alles klar, amche es de beiden scahen: 1. Eval-Report neu laufen lassen (python tests/eval/run_eval.py G60-US).
+  2. Live prüfen, welche Anforderung einen echten Konflikt zeigt. , zu theme pixthes erstelelt, hast eien recherze dazu gemacht. impeleneuere die scahen un bitte felieeg nocheinmal drüber ob unser mdoel die anfoderudbeg der bwm vollsätif erfüllt  sino der ncihtC:\Users\anil1\Downloads\BMW_Hackathon_Briefing_Short-1.pdf
