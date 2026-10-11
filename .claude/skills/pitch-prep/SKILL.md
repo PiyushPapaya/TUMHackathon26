@@ -5,7 +5,7 @@ description: Schärft den Pitch, führt eine Probe mit Zeitmessung durch und dri
 
 # Pitch-Vorbereitung
 
-Rahmen: **6 Minuten inklusive Fragen, strikt.** Ziel: ~3:30 Pitch mit Live-Demo, ~2:30 Fragen (`docs/pitch/PITCH.md`).
+Rahmen: **6 Minuten, strikt: 3:00 Vortrag inklusive Live-Demo + 3:00 Fragen** (`docs/pitch/PITCH.md`, Begründung `docs/pitch/RECHERCHE.md`).
 
 ## Modus A: Pitch schärfen
 
@@ -16,7 +16,7 @@ Rahmen: **6 Minuten inklusive Fragen, strikt.** Ziel: ~3:30 Pitch mit Live-Demo,
    - Demo zeigt genau einen Kernflow?
    - Jedes Bewertungskriterium des Briefs wird mindestens einmal hörbar adressiert?
    - Ehrliche Grenze genannt?
-3. Wortzahl schätzen: ~130 Wörter pro Minute gesprochen. Über 3:30 → **kürzen, Liste was raus soll**.
+3. Wortzahl schätzen: ~130 Wörter pro Minute gesprochen. Über 3:00 (~390 Wörter) → **kürzen, Liste was raus soll**.
 4. Vorschläge als Diff für `docs/pitch/PITCH.md` (Rahmen: Lead; Pfade liefern je 1 Folie).
 
 ## Modus B: Probe mit Stoppuhr

@@ -13,6 +13,7 @@ import {
   type Weights,
 } from "@/src/lib/api";
 import { DEFAULT_SCENARIO_ID } from "@/src/components/shell/scenarioLabel";
+import { conflictTitlesFor } from "@/src/lib/conflicts";
 
 // State und API-Aufrufe des Cockpits, unverändert aus der alten app/page.tsx übernommen.
 // Warum ausgelagert: die Seite bleibt unter 200 Zeilen und die Logik ist getrennt vom Aussehen testbar.
@@ -110,10 +111,7 @@ export function useCockpit(initialScenarioId: string | null) {
   const selectedScenario = scenarios.find((s) => s.id === scenarioId);
 
   const conflictTitles = useCallback(
-    (requirement: Requirement) =>
-      requirement.signal_ids.flatMap((id) =>
-        (signalById.get(id)?.conflicts_with ?? []).map((cid) => signalById.get(cid)?.title ?? cid),
-      ),
+    (requirement: Requirement) => conflictTitlesFor(requirement.signal_ids, signalById),
     [signalById],
   );
 

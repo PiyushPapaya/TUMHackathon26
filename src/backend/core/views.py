@@ -145,7 +145,7 @@ def explain(state, req: Requirement, history: list) -> dict:
         "quotes": [_quote(e) for e in sorted(feedback, key=lambda e: e.polarity)[:5]],
         "segments": segments(linked),
         "conflicts": [c.model_dump() for c in req.segment_conflicts]
-        + [{"dimension": "signal", "statement": f'"{by_id[a].title}" widerspricht "{by_id[b].title}"',
+        + [{"dimension": "signal", "statement": f'"{by_id[a].title}" contradicts "{by_id[b].title}"',
             "signal_ids": [a, b]} for a, b in signal_conflicts],
         "assumptions": req.assumptions, "uncertainties": req.uncertainties, "horizon": req.horizon,
         "offer_check": req.offer_check,
