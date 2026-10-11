@@ -32,7 +32,6 @@ Jede Person darf zusätzlich in ihrem eigenen Arbeitsbuch die Haken `[ ]` → `[
 - **Schnittstellen sind fix:** Die Signatur im Kopf jeder Pfad-Datei nicht ändern. Innen ist alles frei.
 - **Geteilte Dateien nur Piyush:** README, CLAUDE.md, `requirements.txt`, `pyproject.toml`, `package.json`/Lockfiles, CI, `.claude/settings.json`, `.gitignore`, `.gitattributes`, `.env.example`, `src/shared/`, `config/`.
 - **LLM nur über `core/llm.py`** (Cache, Demo-Modus, JSON-Schema). Jedes LLM-Ergebnis darf nur IDs aus der Eingabe zitieren, und ein Test prüft das.
-- **BMW-Daten nie committen** (`data/` ist gitignored). Tests nutzen synthetische Mini-Daten.
 
 ## Skill-Router
 
