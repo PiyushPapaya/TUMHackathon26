@@ -1,0 +1,62 @@
+Bitte pull die aktuelle Version von main
+
+---
+
+Jo Claude. What do i do: 
+
+<pasted_content id="fc42">
+G60-US: legacy audit has no bundle fingerprint; source identity cannot be verified
+F70-EU: legacy audit has no bundle fingerprint; source identity cannot be verified
+ERROR:    Traceback (most recent call last):
+  File "/home/lasse/workspace/hackathon/TUMHackathon26/.venv/lib/python3.14/site-packages/starlette/routing.py", line 654, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/lib/python3.14/contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasse/workspace/hackathon/TUMHackathon26/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 247, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/lib/python3.14/contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasse/workspace/hackathon/TUMHackathon26/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 247, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/lib/python3.14/contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasse/workspace/hackathon/TUMHackathon26/.venv/lib/python3.14/site-packages/fastapi/routing.py", line 247, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/lib/python3.14/contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lasse/workspace/hackathon/TUMHackathon26/src/backend/main.py", line 37, in lifespan
+    store.load_all()
+    ~~~~~~~~~~~~~~^^
+  File "/home/lasse/workspace/hackathon/TUMHackathon26/src/backend/core/store.py", line 98, in load_all
+    raise RuntimeError(f"{state.scenario.id}: bundle changed since the recorded decisions; "
+                       "replay refused. Review the new bundle with a separate AUDIT_DB.")
+RuntimeError: G60-EU: bundle changed since the recorded decisions; replay refused. Review the new bundle with a separate AUDIT_DB.
+
+ERROR:    Application startup failed. Exiting.
+</pasted_content id="fc42">
+
+. Please make no mistakes. PLEASE
+
+---
+
+bitte pull nochmal
+
+---
+
+Hallo Klaus. Bitte hilf mir. Im design/layouts folder ist eine html datei für das Layout der slides die wir machen müssen. Bitte erstelle mir eine html datei. Die erste Seite kannst du übernehmen, die zweite auch aber füge hier bitte eine Tabelle mit header pro Spalte und Testinhalt hinzu. Auf der dritten Seite adde bitte die Graphic die unsere Pipeline für das backend erklärt. Auf die letzte Seite kommen bitte die benchmarks. Die musst du vielleicht nochmal pullen
+
+---
+
+Bitte fülle die Tabelle mit dem Problem, dass uns von BMW-EHL gegeben wurde und die zweite Spalte unseren Ansatz
+
+---
+
+Bitte scaliere die width, dass alles auf eine Seite passt
