@@ -11,6 +11,18 @@ Six model/market snapshots are available. G60-US has 19 requirements; F70-EU has
 Thin-data scenarios have fewer proposals and explicitly show their missing sources.
 The technical verification and remaining gaps are recorded in [docs/REPO_CHECK.md](docs/REPO_CHECK.md).
 
+![ReSpec cockpit: ranked requirements for the BMW 5 Series (G60) US with score, evidence level and decision status](visuals/app/cockpit.png)
+
+*The cockpit in demo mode (G60-US): 3,610 customer comments → 58 findings → 19 ranked requirements, every one open for the PM to approve, reject, edit or challenge.*
+
+**Quickstart (3 commands, no API key needed, uses the shipped snapshots):**
+
+```bash
+pip install -r requirements.txt
+DEMO_MODUS=true uvicorn main:app --app-dir src/backend --port 8000     # terminal 1 (PowerShell: $env:DEMO_MODUS="true" first)
+cd src/frontend && npm ci && npm run build && npm run start            # terminal 2 → http://localhost:3000
+```
+
 > **Team:** new here? Start with [START_HIER.md](START_HIER.md) (German, one page).
 
 ## What it does
@@ -95,6 +107,8 @@ if os.getenv("DEMO_MODUS", "false").lower() == "true":
 changes a requirement's status, a rationale is mandatory, and the change is appended to the audit chain.
 
 ## Architecture
+
+![Data flow: Excel → evidence → findings → web → requirement → priority → PM decision → audit trail. Blue = AI alone, grey = plain code, orange = human decides.](visuals/techflow.png)
 
 ```mermaid
 flowchart LR
