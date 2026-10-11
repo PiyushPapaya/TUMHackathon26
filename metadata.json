@@ -1,0 +1,29 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4MHRD75MV1RVTXDD028D7P5",
+  "strategy": "manual-commit",
+  "branch": "jolesRegionalFrontend",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "src/frontend/src/components/RequirementDetailView.tsx",
+    "src/frontend/src/components/ScoreWaterfall.tsx",
+    "src/frontend/src/lib/scoreSteps.test.mjs",
+    "src/frontend/src/lib/scoreSteps.ts"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 38,
+    "cache_creation_tokens": 50748,
+    "cache_read_tokens": 1174776,
+    "output_tokens": 10754,
+    "api_call_count": 19
+  }
+}

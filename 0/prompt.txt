@@ -1,0 +1,1 @@
+Make sure that when success criterions on the requirement details page mention the amount of points, its the correct one from the chart.
