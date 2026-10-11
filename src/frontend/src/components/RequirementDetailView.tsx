@@ -32,6 +32,7 @@ export function RequirementDetailView({
   scenarioId: string;
 }) {
   const { requirement } = detail;
+  const outlook = detail.outlook ?? requirement.outlook;
   const business = detail.business ?? requirement.business;
   const conflicts = detail.conflicts ?? requirement.segment_conflicts ?? [];
   const webSources = detail.web_sources ?? [];
@@ -61,6 +62,12 @@ export function RequirementDetailView({
             <div><dt className="text-xs text-[var(--grey-500)]">Market volume 2030</dt><dd className="mt-1 font-semibold tabular-nums">{numberOrDash(business?.volume_2030)}</dd><dd className="text-xs text-[var(--grey-500)]">projection, vehicles</dd></div>
             <div><dt className="text-xs text-[var(--grey-500)]">Growth 2025 to 2030</dt><dd className="mt-1 font-semibold tabular-nums">{numberOrDash(business?.growth_pct, "%")}</dd></div>
           </dl>
+          {outlook && (
+            <div className="mt-4 text-sm">
+              <p className="font-semibold text-[var(--ink)]">Outlook {outlook.successor_year}: {outlook.direction} <span className="font-normal text-[var(--grey-500)]">· Assumption</span></p>
+              <p className="mt-1 text-[var(--grey-500)]">{outlook.sentence}</p>
+            </div>
+          )}
         </div>
         <div className="summary-chart min-w-0"><ScoreWaterfall scoreBreakdown={requirement.score_breakdown} evidenceLevel={requirement.evidence_level} finalScore={requirement.score} waterfall={detail.waterfall} ignoreAssumptions={ignoreAssumptions} onToggleIgnoreAssumptions={onToggleIgnoreAssumptions} /></div>
         <div className="summary-criterion min-w-0 border-l-2 border-[var(--blue)] bg-[var(--grey-100)] p-4">

@@ -156,6 +156,7 @@ def explain(state, req: Requirement, history: list) -> dict:
         "study": [s.study_link.model_dump() for s in linked if s.study_link],
         "robustness": req.robustness, "robustness_sentence": robustness_sentence(req),
         "business": req.business,
+        "outlook": req.outlook,
         "signals": linked, "evidence": evidence, "history": history,
     }
 

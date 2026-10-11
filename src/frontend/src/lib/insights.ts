@@ -1,6 +1,6 @@
 // API-Aufrufe für die Ansichten, die api.ts (Vertrag des Leads) noch nicht kennt.
 // Warum eine eigene Datei: api.ts bleibt unverändert, neue Endpunkte aus src/shared/API.md kommen hierher.
-import type { Evidence, EvidenceLevel, Weights, WeightKey } from "@/src/lib/api";
+import type { Evidence, EvidenceLevel, Outlook, Weights, WeightKey } from "@/src/lib/api";
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -61,12 +61,13 @@ export interface TrendItem {
   topic: string;
   category: string;
   horizon: string;
-  kind: "trend" | "bet";
+  kind: "trend" | "bet" | "outlook";
   strength: number;
   sources: string[];
   requirement_id: string | null;
   evidence_level: EvidenceLevel;
   assumptions: string[];
+  outlook?: Outlook;
 }
 export interface TrendsView {
   scenario_id: string;
