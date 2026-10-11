@@ -75,7 +75,7 @@ export function ScenarioStrip({ data }: { data: HomeData }) {
                     <p className="text-xl font-light text-[var(--ink)] transition-colors group-hover:text-[var(--blue)]">{s.model_name}</p>
                     <p className="mt-1 text-sm text-[var(--grey-500)]">{s.market} market · successor {s.successor_horizon}</p>
                     <div className="mt-5 flex items-center justify-between border-t border-[var(--hairline)] pt-4 text-xs text-[var(--grey-500)]">
-                      <span>{f ? `${f.evidence.toLocaleString("en-US")} voices · ${f.requirements} requirements` : "–"}</span>
+                      <span>{f ? `${(data.voices[s.id] ?? f.evidence).toLocaleString("en-US")} voices · ${f.requirements} requirements` : "–"}</span>
                       <Lights levels={data.levelsBy[s.id]} />
                     </div>
                   </div>

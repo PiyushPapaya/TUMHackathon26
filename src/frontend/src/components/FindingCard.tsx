@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { Evidence, Signal } from "@/src/lib/api";
-import { SourceTrustBadge } from "@/src/components/badges";
+import { SourceTrustBadge, sourceLabel } from "@/src/components/badges";
 
 const KIND_LABELS: Record<string, string> = {
   complaint: "Complaint",
@@ -16,7 +16,10 @@ function evidenceOrigin(evidence: Evidence) {
   const letter = evidence.meta?.source_letter;
   const country = evidence.meta?.country;
   const engine = evidence.meta?.engine;
-  return [evidence.source_name, letter ? `Feedback ${letter}` : null, country, engine]
+  const name = sourceLabel(evidence.source_name);
+  // "Feedback source B" nennt den Buchstaben schon, darum nicht doppelt "Feedback B" anhängen.
+  const letterLabel = letter && !name.endsWith(` ${letter}`) ? `Feedback ${letter}` : null;
+  return [name, letterLabel, country, engine]
     .filter(Boolean)
     .join(" · ");
 }
@@ -74,7 +77,7 @@ export function FindingCard({ signal, evidence }: { signal: Signal; evidence: Ev
           </p>
         </div>
         <span className="grid h-8 w-8 place-items-center border border-slate-200 text-lg leading-none text-slate-500">
-          {open ? "-" : "+"}
+          {open ? "−" : "+"}
         </span>
       </button>
 

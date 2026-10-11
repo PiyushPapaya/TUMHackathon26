@@ -6,7 +6,7 @@ import { Eyebrow, SectionHeading } from "@/src/components/ui/Typography";
 // Why its own page: jury and team see what to click without prior knowledge. Also shown in the floating side panel.
 
 const STEPS = [
-  ["1. Pick a scenario", "Choose model and market in the header (for example 5 Series G60 US). Next to it you see how many customer voices, findings and requirements the AI evaluated."],
+  ["1. Pick a scenario", "Choose model and market in the header (for example 5 Series G60 US). The cockpit then shows how many customer voices, findings and requirements the AI evaluated."],
   ["2. Read the ranked list", "Every row is an AI proposal. Rank is the order by score. The thin line shows the score (0-100), \"linked findings\" the number of pieces of evidence behind it."],
   ["3. Open a row", "A click shows the description, assumptions, the math behind the score (waterfall), all evidence and web sources."],
   ["4. Decide", "In the detail view you can approve, reject, edit or challenge a proposal (for example \"Does this only apply in the US?\"). Every decision needs a rationale."],
@@ -16,7 +16,7 @@ const STEPS = [
 const FEATURES = [
   ["Weight controls", "Sliders change what matters to you. \"Apply weights\" recomputes the ranking (the backend normalizes the sum to 1) and writes WEIGHTS_CHANGED to the audit trail. The change itself (for example \"Customer pain +0.10\") is stored as the rationale; a question asked in your own words is stored as the rationale when you apply it. \"Reset to default\" resets the sliders but applies nothing yet."],
   ["Ask in your own words", "Dark panel at the top of the cockpit. The AI turns your question into weights only, Python ranks. \"Apply & re-rank\" moves the list and stores your question as the rationale."],
-  ["Conflicting evidence", "Small yellow \"!\" next to a title: two findings cited by this requirement contradict each other (for example many customers praise the range while others say it falls short). The detail view shows both sides."],
+  ["Conflicting evidence", "Yellow \"Conflicting evidence\" badge under a title: two findings cited by this requirement contradict each other (for example many customers praise the range while others say it falls short). The detail view shows both sides."],
   ["Status", "Proposed (new), Challenged (questioned), Approved, Rejected."],
   ["Assistant", "Blue button bottom right. Ask what to build first, what a label means, or where to go. It only cites requirements that exist in the data."],
   ["Export", "Downloads the current ranking as CSV, JSON or Markdown, for example for Excel or a ticket system."],

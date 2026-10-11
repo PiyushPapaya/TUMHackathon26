@@ -7,7 +7,7 @@ import { countryName } from "@/src/lib/countries";
 import { useLoad } from "@/src/lib/useLoad";
 import { useScenarioParam } from "@/src/components/shell/useScenarioParam";
 import { ErrorNote, Loading, PageHeader } from "@/src/components/ui/PageHeader";
-import { SourceTrustBadge } from "@/src/components/badges";
+import { SourceTrustBadge, sourceLabel } from "@/src/components/badges";
 import { Button } from "@/src/components/ui/Button";
 
 const DRIVETRAINS = [["engine:BEV", "BEV"], ["engine:PHEV", "PHEV"], ["engine:ICE", "Combustion"]];
@@ -78,7 +78,7 @@ function Browser({ id }: { id: string }) {
                 <div className="flex flex-wrap items-center gap-3 text-xs text-[var(--grey-500)]">
                   <span className="font-mono">{ev.id}</span>
                   <SourceTrustBadge sourceType={ev.source_type} />
-                  <span>{ev.source_name}</span>
+                  <span>{sourceLabel(ev.source_name)}</span>
                   {typeof ev.meta.country === "string" && ev.meta.country && <span>{countryName(ev.meta.country)}</span>}
                   <span>{ev.polarity < 0 ? "▼ negative" : ev.polarity > 0 ? "▲ positive" : "neutral"}</span>
                 </div>

@@ -89,6 +89,8 @@ Its API URL defaults to `http://localhost:8000`; set `NEXT_PUBLIC_API_URL` befor
 To add a model/market, copy a config in `config/scenarios/` (or use `scripts/new_scenario.py`),
 check its countries, study column, source files and competitors, then run the pipeline for its ID.
 Missing upstream stage files produce an error instead of mixing in synthetic scenario data.
+New audit databases record the bundle fingerprint. After regenerating a bundle, review it with a
+separate `AUDIT_DB`; replay refuses a changed snapshot so old approvals cannot silently apply to new content.
 
 ## Team
 

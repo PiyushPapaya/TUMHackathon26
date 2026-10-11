@@ -24,6 +24,17 @@ export function OpportunityMap({ data }: { data: OpportunitiesView }) {
   const ranked = [...data.points].sort((a, b) => b.importance * b.dissatisfaction - a.importance * a.dissatisfaction);
   const labeled = new Set(ranked.slice(0, 5).map((p) => p.attribute));
   const rows = showAll ? ranked : ranked.slice(0, 12);
+  // Ohne Studien-Attribute wäre das Diagramm nur ein leeres Achsenkreuz: lieber ehrlich sagen, was fehlt.
+  if (data.points.length === 0) {
+    return (
+      <div className="border border-dashed border-[var(--hairline)] p-8">
+        <p className="text-lg font-light text-[var(--ink)]">No study attributes for this scenario yet.</p>
+        <p className="mt-2 max-w-2xl text-sm text-[var(--grey-500)]">
+          The map needs importance and satisfaction scores per attribute from a BMW customer study. Until they arrive, the ranking in the cockpit relies on customer comments and web sources.
+        </p>
+      </div>
+    );
+  }
   return (
     <div>
       <svg viewBox="0 0 1200 490" className="w-full border border-[var(--hairline)]" role="img" aria-label="Importance versus dissatisfaction per attribute">

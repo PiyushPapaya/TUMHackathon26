@@ -14,8 +14,9 @@ export type Chapter = {
 export function buildChapters(d: HomeData): Chapter[] {
   const f = d.funnels[d.mainId];
   const lv = d.levels;
+  const voices = d.voices[d.mainId] ?? null;
   return [
-    { n: "01", title: "Listen.", text: "We read every customer voice: reviews, surveys, forums.", figures: [{ label: "customer voices", value: f?.evidence ?? null }] },
+    { n: "01", title: "Listen.", text: "We read every customer voice: reviews, surveys, forums.", figures: [{ label: "customer voices", value: voices }] },
     { n: "02", title: "Find signals.", text: "Repeated complaints and unmet needs become findings, each with its source.", figures: [{ label: "findings", value: f?.signals ?? null }] },
     {
       n: "03",
@@ -34,7 +35,7 @@ export function buildChapters(d: HomeData): Chapter[] {
       title: "A handful of decisions.",
       text: "Thousands of voices in, a short list out. The AI reads and counts; the product manager asks, decides and signs off.",
       figures: [
-        { label: "voices", value: f?.evidence ?? null },
+        { label: "voices", value: voices },
         { label: "findings", value: f?.signals ?? null },
         { label: "requirements", value: f?.requirements ?? null },
         { label: "approved by PM", value: f?.approved ?? null },

@@ -43,3 +43,9 @@ scripts/ export-ignore
 .github/pull_request_template.md export-ignore
 .entire/ export-ignore
 src/frontend/baukasten/README.md export-ignore
+# Erzeugte Daten (LLM-Cache, Web-Cache, Pipeline-Ergebnisse): ~900 kleine JSONs,
+# die als kleinste Dateien zuerst gelesen werden und sonst ~80 % des Budgets fressen.
+# Klonen, App und Demo bleiben unberührt: export-ignore wirkt nur auf `git archive`.
+data/cache/ export-ignore
+data/external_cache/ export-ignore
+data/processed/ export-ignore

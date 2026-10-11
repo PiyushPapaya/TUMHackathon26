@@ -9,6 +9,7 @@ import { ProductContext } from "@/src/components/ProductContext";
 import { WeightControls } from "@/src/components/cockpit/WeightControls";
 import { LensPanel } from "@/src/components/cockpit/LensPanel";
 import { HowToRead } from "@/src/components/cockpit/HowToRead";
+import { Icon } from "@/src/components/ui/Icon";
 
 // Eine Spalte, drei Schritte von oben nach unten: fragen → Liste springt → Zeile öffnen.
 // Warum keine Seitenleiste mehr: Im 2-Minuten-Demo soll das Auge nicht zwischen Kästen springen.
@@ -28,14 +29,18 @@ function Cockpit() {
         </div>
       )}
 
-      <details className="mb-3 border-b border-[var(--hairline)]">
-        <summary className="flex min-h-12 items-center text-sm font-semibold text-[var(--ink)]">Ask a prioritization question</summary>
+      {/* Gleiche Optik wie "Fine-tune weights" darunter (Symbol + Pfeil), damit man sieht, dass es aufklappt. */}
+      <details className="group border-b border-[var(--hairline)]">
+        <summary className="flex cursor-pointer list-none items-center justify-between py-4 text-sm font-semibold text-[var(--ink)] hover:text-[var(--blue)]">
+          <span className="flex items-center gap-3"><Icon name="chat" size={18} />Ask a prioritization question</span>
+          <Icon name="down" size={16} className="transition-transform group-open:rotate-180" />
+        </summary>
         <LensPanel
-        key={c.scenarioId}
-        scenarioId={c.scenarioId}
-        applying={c.applying}
-        onApply={(weights, question) => c.applyWeights({ ...c.weights, ...weights }, question)}
-      />
+          key={c.scenarioId}
+          scenarioId={c.scenarioId}
+          applying={c.applying}
+          onApply={(weights, question) => c.applyWeights({ ...c.weights, ...weights }, question)}
+        />
       </details>
 
       <WeightControls

@@ -234,7 +234,7 @@ export function DecisionPanel({
           {busy ? "Saving..." : `Submit ${mode}`}
         </button>
         {!rationaleReady && (
-          <p className="text-sm text-slate-500">Enter at least 3 characters of rationale.</p>
+          <p className="text-sm text-slate-500">Enter a reason of at least 3 characters.</p>
         )}
         {error && <p className="text-sm font-semibold text-rose-700">{error}</p>}
       </div>

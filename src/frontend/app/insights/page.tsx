@@ -36,7 +36,10 @@ function Insights() {
 
   return (
     <main className="mx-auto max-w-[1400px] px-6 py-12 lg:px-10">
-      <PageHeader eyebrow={`Insights · ${id}`} title="Insights.">{INTRO[tab]}</PageHeader>
+      <PageHeader eyebrow={`Insights · ${id}`} title="Insights.">
+        {/* Feste Mindesthöhe, damit die Tabs beim Wechsel nicht springen (Untertitel sind 1 oder 2 Zeilen lang). */}
+        <span className="block min-h-[3em]">{INTRO[tab]}</span>
+      </PageHeader>
       <div role="tablist" className="mb-8 flex flex-wrap gap-x-8 border-b border-[var(--hairline)]">
         {TABS.map(([key, label]) => (
           <button

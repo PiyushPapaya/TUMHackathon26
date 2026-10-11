@@ -1,5 +1,9 @@
 # Offene Aufgaben
 
+Aktueller technischer Abgleich: [docs/REPO_CHECK.md](docs/REPO_CHECK.md). A1 ist im Backend und den
+sechs Snapshots ergänzt und getestet; die vollständige Browserprüfung bleibt offen. A2 bleibt eine
+Produktentscheidung. A3 benötigt weiterhin menschliche Labels (G60-US: 0 von 50).
+
 > Stand: So 11.10.2026, 07:10. Angelegt nach dem Abgleich mit dem BMW-Brief (`docs/CHALLENGE.md`).
 > Status: **Entscheidung offen.** Das Team (Piyush) entscheidet später. Ein Agent arbeitet eine Aufgabe nur ab,
 > wenn sie hier auf `freigegeben` steht. Nach dem Abarbeiten: Status auf `erledigt` setzen, Commit-Hash eintragen.

@@ -1,6 +1,10 @@
 import Link from "next/link";
 import type { GapsView, TrendsView } from "@/src/lib/insights";
 import { EvidenceBadge, categoryLabel } from "@/src/components/badges";
+import { en, GAP_EN, STUDY_EN } from "./labels";
+
+// Trend-Titel enthalten teils Kategorie-Schlüssel ("driver_assistance"): als lesbares Label zeigen.
+const readable = (text: string) => text.replace(/\b[a-z]+(?:_[a-z]+)+\b/g, (key) => categoryLabel(key));
 
 export function TrendsList({ data }: { data: TrendsView }) {
   const items = [...data.items].sort((a, b) => b.strength - a.strength);
@@ -11,7 +15,7 @@ export function TrendsList({ data }: { data: TrendsView }) {
           <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--grey-500)]">
             {t.kind === "bet" ? `Bet for ${t.horizon}` : "Trend today"} · {categoryLabel(t.category)}
           </p>
-          <h3 className="mt-2 text-xl font-light">{t.topic}</h3>
+          <h3 className="mt-2 text-xl font-light">{readable(t.topic)}</h3>
           <div className="mt-3 flex items-center gap-3">
             <EvidenceBadge level={t.evidence_level} />
             <span className="text-xs text-[var(--grey-500)]">Strength {t.strength.toFixed(0)} · {(t.sources ?? []).join(", ")}</span>
@@ -46,13 +50,13 @@ export function GapsList({ data }: { data: GapsView }) {
               <EvidenceBadge level={w.evidence_level} />
             </div>
             <p className="mt-3 text-sm">{w.why}</p>
-            <p className="mt-3 text-sm"><span className="font-semibold">Next step:</span> {w.next_study}</p>
+            <p className="mt-3 text-sm"><span className="font-semibold">Next step:</span> {en(STUDY_EN, w.next_study)}</p>
           </article>
         ))}
         {data.weak_requirements.length === 0 && <p className="bg-white p-6 text-sm text-[var(--grey-500)]">No weak requirements. Every proposal has solid evidence.</p>}
       </div>
       {data.missing_sources.length > 0 && (
-        <p className="mt-6 text-sm text-[var(--grey-500)]">Missing sources: {data.missing_sources.join(", ")}</p>
+        <p className="mt-6 text-sm text-[var(--grey-500)]">Missing sources: {data.missing_sources.map((m) => en(GAP_EN, m)).join(" ")}</p>
       )}
     </div>
   );

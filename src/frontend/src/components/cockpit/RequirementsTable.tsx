@@ -103,10 +103,9 @@ export function RequirementsTable({
                 <td className="px-4 py-5">
                   <p className="text-base font-light text-[var(--ink)] group-hover:text-[var(--blue)]">
                     {req.title}
-                    <ConflictMark conflictingTitles={conflictTitles(req)} />
                   </p>
                   <p className="mt-1 text-xs uppercase tracking-[0.08em] text-[var(--grey-500)]">{categoryLabel(req.category)}</p>
-                  <div className="mt-2 flex flex-wrap items-center gap-3"><StatusBadge status={req.status} /><span className="text-xs text-[var(--grey-500)]">{({ S: "Small", M: "Medium", L: "Large" })[req.effort]} effort</span></div>
+                  <div className="mt-2 flex flex-wrap items-center gap-3"><StatusBadge status={req.status} /><ConflictMark conflictingTitles={conflictTitles(req)} /><span className="text-xs text-[var(--grey-500)]">{({ S: "Small", M: "Medium", L: "Large" })[req.effort]} effort</span></div>
                 </td>
                 <td className="px-4 py-5">
                   <ScoreBar score={req.score} source={`${req.signal_ids.length} linked findings`} />
