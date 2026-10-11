@@ -1,0 +1,14 @@
+{
+  "tool_use_id": "toolu_01D16tFiajp3z8hwVb3VcVBL",
+  "agent_id": "a11cd0b65cfae81bb",
+  "task_description": "G70-Läufe prüfen + API-Check",
+  "token_usage": {
+    "input_tokens": 18,
+    "cache_creation_tokens": 36711,
+    "cache_read_tokens": 411351,
+    "output_tokens": 2266,
+    "api_call_count": 9
+  },
+  "started_at": "2026-10-11T10:01:24.932502+02:00",
+  "completed_at": "2026-10-11T10:15:11.2673867+02:00"
+}
