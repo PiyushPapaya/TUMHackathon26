@@ -40,6 +40,15 @@ Die KI liefert nur Gewichte + Filter, nie IDs; Python rechnet die Top 5 auf Kopi
 Schreibt `AI_LENS_SUGGESTED` in den Prüfpfad. „Gewichte übernehmen“ = `PUT /weights` mit `weights` aus der Antwort und dem Prompt-Text als `rationale`.
 Fehler: `404` unbekanntes Szenario · `422` leere Frage.
 
+## Assistent: `POST /api/ask`
+
+```json
+{"question": "What matters most for families?", "actor": "pm.demo"}
+```
+
+Antwort: `{question, source ("rules"|"mixed"), answer, top: [{scenario_id, requirement_id, title, rank, score, lens_score, evidence_level, signal_ids, evidence_ids, reasons}]}` (Beispiel `views/ask.json`).
+Läuft die Linse über **alle** Szenarien (je Szenario Top 2, insgesamt max. 6). Nur IDs aus dem Store, nichts wird gespeichert (kein Prüfpfad, weil nichts vorgeschlagen wird). Fehler: `422` leere Frage.
+
 ## Lesen: Rohdaten (wie bisher)
 
 | Methode + Pfad | Antwort |

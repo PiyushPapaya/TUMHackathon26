@@ -11,7 +11,7 @@ from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import PlainTextResponse
 from pydantic import BaseModel, Field
 
-from core import lens, req_insights
+from core import ask, lens, req_insights
 from core.models import Actor, ActorType
 from core.store import Store
 
@@ -47,6 +47,24 @@ def run_lens(scenario_id: str, body: LensIn, request: Request) -> dict:
          "filters": result["filters"], "top_ids": [t["requirement"]["id"] for t in result["top"]]},
     )
     return result
+
+
+class AskIn(BaseModel):
+    question: str = Field(min_length=1, max_length=500, examples=["What matters most for families?"])
+    actor: str = Field(default="pm.demo", min_length=1)
+
+
+@router.post("/ask")
+def ask_all(body: AskIn, request: Request) -> dict:
+    """Frage des Assistenten über alle Szenarien: dieselbe Linse, nur IDs aus dem Store, nichts wird gespeichert.
+
+    Warum kein Prüfpfad-Eintrag: Der Assistent ist Navigation und Lesehilfe, er schlägt keine Gewichte vor.
+    Ändert der PM danach etwas, schreibt das wie immer PUT /weights oder /decision.
+    """
+    question = body.question.strip()
+    if not question:
+        raise HTTPException(status_code=422, detail="question is empty")
+    return ask.answer(_store(request).states, question)
 
 
 @router.get("/scenarios/{scenario_id}/matrix")

@@ -1,0 +1,62 @@
+{
+ "question": "Was ist fuer Familien am wichtigsten?",
+ "source": "rules",
+ "answer": "Staerkster Treffer ist REQ-G60-US-004 in G60-US: Zuverlässige berührungslose Heckklappe (Score 47.2).",
+ "top": [
+  {
+   "scenario_id": "G60-US",
+   "requirement_id": "REQ-G60-US-004",
+   "title": "Zuverlässige berührungslose Heckklappe",
+   "rank": 3,
+   "score": 47.2,
+   "lens_score": 47.2,
+   "evidence_level": "B",
+   "signal_ids": [
+    "SIG-G60-US-007"
+   ],
+   "evidence_ids": [
+    "EV-G60-0012"
+   ],
+   "reasons": [
+    {
+     "factor": "customer_pain",
+     "contribution": 17.5,
+     "sentence": "39 Kommentare zu non-contact trunk lid"
+    },
+    {
+     "factor": "reach",
+     "contribution": 12.0,
+     "sentence": "betrifft alle Antriebe"
+    }
+   ]
+  },
+  {
+   "scenario_id": "G60-US",
+   "requirement_id": "REQ-G60-US-005",
+   "title": "Zusätzlicher Stauraum vorne (Frunk)",
+   "rank": 5,
+   "score": 22.0,
+   "lens_score": 22.0,
+   "evidence_level": "D",
+   "signal_ids": [
+    "SIG-G60-US-006"
+   ],
+   "evidence_ids": [
+    "EV-G60-0011",
+    "EV-G60-0013"
+   ],
+   "reasons": [
+    {
+     "factor": "customer_pain",
+     "contribution": 10.0,
+     "sentence": "14 Kommentare, oft Tesla-Vergleich"
+    },
+    {
+     "factor": "satisfaction_gap",
+     "contribution": 10.0,
+     "sentence": "Interior storage unterdurchschnittlich"
+    }
+   ]
+  }
+ ]
+}
