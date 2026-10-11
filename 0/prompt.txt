@@ -7,3 +7,7 @@ We want to add a regional filter to our data. How would we go about that. Do not
 ---
 
 Bitte führe die Schritte aus. Mit regionalen Märkten meinen wir Märkte wie Eu, Us, aber auch KR, JP, oder CA.
+
+---
+
+Machen wir erstmal die Länderfelder ohne Ki
