@@ -1,0 +1,21 @@
+on the requirements detail page, what does the pm decission input field and buttons do?
+
+---
+
+Commite meine changes auf den branch und merge ihn danach mit main
+
+---
+
+1
+
+---
+
+switche zum main branch
+
+---
+
+ja
+
+---
+
+commite und pushe mein code
