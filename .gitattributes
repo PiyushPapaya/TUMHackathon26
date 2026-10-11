@@ -49,3 +49,8 @@ src/frontend/baukasten/README.md export-ignore
 data/cache/ export-ignore
 data/external_cache/ export-ignore
 data/processed/ export-ignore
+# Weitere große Daten (R2). bundle_G60-US.json bleibt drin: Ohne processed/ ist es das Fallback-Beispiel der App.
+data/demo_cache/ export-ignore
+src/shared/beispiele/views/ export-ignore
+tests/pfad_c/scope_cases.py export-ignore
+tests/pfad_c/SCOPE_REPORT.md export-ignore

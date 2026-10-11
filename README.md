@@ -43,6 +43,55 @@ The technical verification and remaining gaps are recorded in [docs/REPO_CHECK.m
 | Complete audit trail | `src/backend/core/audit.py` (append-only, hash chain, `GET /api/audit/verify`) |
 | Structured requirement list | `GET /api/scenarios/{id}/export` (CSV) |
 
+## Key code
+
+Five places carry the product logic (excerpts, line numbers refer to `HEAD`):
+
+**1. Score formula** (`src/backend/requirements_engine/scoring.py:50-70`): weighted factors, then scaled by
+how strong the evidence is. Not an LLM, so the same inputs always give the same rank.
+
+```python
+for name, weight in w.items():
+    value = min(max(factor_values.get(name, 0.0), 0.0), 1.0)
+    breakdown[name] = ScoreFactor(value=round(value, 3), weight=round(weight, 3),
+                                  contribution=round(value * weight * 100, 1), ...)
+raw = sum(f.contribution for f in breakdown.values())
+return round(raw * CONFIDENCE[evidence_level], 1), breakdown
+```
+
+**2. Tamper-evident audit trail** (`src/backend/core/audit.py:46-49` and `122-141`): every event stores the
+hash of its predecessor; `verify()` recomputes the whole chain and reports the first broken row.
+
+```python
+canonical = json.dumps(fields, sort_keys=True, ensure_ascii=False, default=str)
+return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+...
+if row["prev_hash"] != prev_hash or _hash_event(fields) != row["hash"]:
+    return {"valid": False, "broken_at_seq": row["seq"], "checked": len(rows)}
+```
+
+**3. Hallucination guard** (`src/backend/requirements_engine/derive.py:77`): the LLM may only cite signal IDs
+that were part of its input block; invented IDs are dropped, drafts without any valid ID are discarded.
+
+```python
+ids = [i for i in dict.fromkeys(draft.signal_ids) if i in known]
+```
+
+**4. One door to the LLM** (`src/backend/core/llm.py:48-63`): every call is cached by (model, prompt, schema).
+With `DEMO_MODUS=true` there is never a network call; a missing cache entry is a clear error, not a guess.
+
+```python
+for kandidat in (path, _cache_path(*anfrage, ordner=DEMO_CACHE_DIR)):
+    cached = _read_cache(kandidat, schema)
+    if cached is not None:
+        return cached
+if os.getenv("DEMO_MODUS", "false").lower() == "true":
+    raise RuntimeError(f"DEMO_MODUS: kein Cache-Eintrag für {schema.__name__} ({path.name}).")
+```
+
+**5. Human decides** (`src/backend/api/routes.py`, `POST /api/requirements/{id}/decision`): only the PM
+changes a requirement's status, a rationale is mandatory, and the change is appended to the audit chain.
+
 ## Architecture
 
 ```mermaid
@@ -76,9 +125,13 @@ python scripts/verify_stack.py    # six-scenario offline API/PM/restart check; t
 
 ## Data & privacy
 
-The repository includes the supplied raw data and processed snapshots under the team's recorded
-publication decision. Examples in `src/shared/beispiele/` are **synthetic**. API keys, the full LLM
-cache and PM audit databases remain local; see [data/README.md](data/README.md).
+The repository includes the supplied BMW raw data (`data/raw/`), the processed snapshots and the LLM
+cache (`data/cache/`, `data/demo_cache/`). We use the BMW data here because the hackathon organisers
+supplied it for this challenge and the team's lead decided to publish it in this repository.
+Examples in `src/shared/beispiele/` are **synthetic**. API keys (`.env`) and PM audit databases
+(`data/audit.db`) stay local; see [data/README.md](data/README.md). The generated data folders are
+marked `export-ignore` in `.gitattributes`, so a `git archive` download contains only code and docs;
+the full demo runs from a git clone.
 `DEMO_MODUS=true` serves the snapshots without network calls, with rule-based challenge and lens
 fallbacks when a response is not cached. Regenerating the entire pipeline offline requires caches
 for the exact current prompts; the provided cache does not cover all six scenarios.
