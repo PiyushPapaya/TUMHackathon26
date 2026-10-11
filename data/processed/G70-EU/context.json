@@ -8,6 +8,7 @@
   "growth_pct": 30.769,
   "growth_2024_2025_pct": 18.182
  },
+ "warnings": [],
  "unmapped_topics": {
   "Body equipment, overall technology": 2,
   "no_class_found": 11,
@@ -241,6 +242,5 @@
    "evidence_id": "EV-G70-EU-ST-22"
   }
  ],
- "warnings": [],
  "segment_conflicts": {}
 }

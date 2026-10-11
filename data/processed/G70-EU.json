@@ -28,17 +28,17 @@
    "study": 37,
    "sales": 1,
    "options": 176,
-   "web": 0,
+   "web": 98,
    "external": 0,
    "badge": "dünn"
   }
  },
  "funnel": {
-  "evidence": 56,
-  "signals": 2,
-  "requirements": 2,
+  "evidence": 154,
+  "signals": 11,
+  "requirements": 4,
   "approved": 0,
-  "generated_at": "2026-10-11T04:56:02+00:00"
+  "generated_at": "2026-10-11T08:11:15+00:00"
  },
  "weights": {},
  "evidence": [
@@ -71,21 +71,568 @@
     "attribute": "Luggage capacity",
     "mean": "7.41"
    }
+  },
+  {
+   "id": "EV-G70-EU-WEB-04",
+   "source_type": "web",
+   "source_name": "Car and Driver",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Car and Driver’s U.S. specification/testing lists the 2024 S‑Class trunk volume as 13 cu ft (≈368 litres), illustrating differences between regional/model specifications and measurement methods.",
+   "url": "https://www.caranddriver.com/mercedes-benz/s-class-2024",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Car and Driver",
+    "published": "2024 (page accessed 2026)",
+    "stance": "supports",
+    "about": "S‑Class trunk volume (U.S. spec).",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+    "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-08",
+   "source_type": "web",
+   "source_name": "Car and Driver (example review)",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Multiple authoritative reviews note that the Mercedes S‑Class (especially long‑wheelbase versions) delivers limousine‑like rear comfort and extensive rear features, but reviewers also flag that PHEV versions have substantially reduced luggage space compared with ICE S‑Class models.",
+   "url": "https://www.caranddriver.com/mercedes-benz/s-class-2024",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Car and Driver (example review)",
+    "published": "2024 (page accessed 2026)",
+    "stance": "supports",
+    "about": "S‑Class rear comfort and PHEV luggage penalty (review observations).",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+    "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-15",
+   "source_type": "web",
+   "source_name": "Car and Driver",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Car and Driver’s AMG EQS test notes AMG tuning improves body control relative to the regular EQS and summarises that the EQS in regular trim “rides soft” — indicating the standard EQS prioritises comfort and only AMG variants approach noticeably sharper handling. ",
+   "url": "https://www.caranddriver.com/reviews/a38697462/2022-mercedes-amg-eqs-drive/",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Car and Driver",
+    "published": "2022-07-14",
+    "stance": "supports",
+    "about": "Mercedes‑Benz EQS (standard vs AMG) — ride comfort vs sportiness",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+    "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-17",
+   "source_type": "web",
+   "source_name": "Autocar",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Independent reviews note the 7 Series’ rear compartment is limousine‑like with very generous rear legroom (Autocar quotes about 880 mm of rear legroom), making it one of the most comfortable cars for rear passengers in this class.",
+   "url": "https://www.autocar.co.uk/car-review/bmw/7-series",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Autocar",
+    "published": "",
+    "stance": "supports",
+    "about": "BMW 7 Series (G70) - rear comfort/legroom",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+    "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-18",
+   "source_type": "web",
+   "source_name": "Porsche Newsroom",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Porsche’s own press material states the Panamera Sport Turismo offers up to 520 litres of luggage capacity (measured to the upper edge of the rear seats) and that the Sport Turismo provides about 20 litres more than the fastback/sedan variant (i.e., the standard Panamera sedan is ≈500 litres).",
+   "url": "https://newsroom.porsche.com/dam/jcr:82339041-ce23-4b22-9deb-774f8e49b76d/15%20-%20Porsche%20Panamera%20Sport%20Turismo%20Press%20Release.pdf",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Porsche Newsroom",
+    "published": "2017-03-01",
+    "stance": "supports",
+    "about": "Porsche Panamera (Sport Turismo and sedan) - luggage capacity",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+    "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-19",
+   "source_type": "web",
+   "source_name": "Porsche Newsroom",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Porsche’s press release and subsequent reviews report Panamera plug‑in‑hybrid variants have reduced usable boot volume (Panamera 4 E‑Hybrid Sport Turismo shown at 425 litres in Porsche material); reviewers also list hybrid sedan boots around ≈421–430 litres because of the battery intrusion.",
+   "url": "https://newsroom.porsche.com/dam/jcr:82339041-ce23-4b22-9deb-774f8e49b76d/15%20-%20Porsche%20Panamera%20Sport%20Turismo%20Press%20Release.pdf",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Porsche Newsroom",
+    "published": "2017-03-01",
+    "stance": "supports",
+    "about": "Porsche Panamera 4 E‑Hybrid (Sport Turismo) - boot capacity",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+    "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-20",
+   "source_type": "web",
+   "source_name": "Autocar",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Autocar’s recent Panamera review states the hybrid Panamera’s boot is about 430 litres and explicitly notes that this is substantially less (around 90 litres) than the BMW 7 Series’ boot — i.e., reviews record the Panamera hybrid’s luggage space as noticeably smaller than the 7 Series’ trunk.",
+   "url": "https://zephr.autocar.co.uk/car-review/porsche/panamera",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Autocar",
+    "published": "",
+    "stance": "supports",
+    "about": "Comparison: Panamera hybrid vs BMW 7 Series - boot capacity",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+    "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-23",
+   "source_type": "web",
+   "source_name": "Mercedes‑Benz Media Newsroom USA",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Mercedes-Benz's May 13, 2026 press release describes the updated S‑Class as having standard AIRMATIC air suspension with intelligent/predictive damping and rear‑axle steering (up to 4.5°) to prioritise ride comfort and rear‑seat refinement.",
+   "url": "https://media.mbusa.com/news/the-new-mercedes-benz-s-class-refined-in-every-detail",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Mercedes‑Benz Media Newsroom USA",
+    "published": "May 13, 2026",
+    "stance": "supports",
+    "about": "Mercedes‑Benz S‑Class suspension and ride‑comfort technology",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+    "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-24",
+   "source_type": "web",
+   "source_name": "Auto Express",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "In a 2023 twin test Auto Express wrote that the S‑Class ‘floats above the road’ and that its ride quality is ‘fantastic’, describing the Mercedes as more compliant/‘floating’ than the BMW 7 Series in the same comparison.",
+   "url": "https://www.autoexpress.co.uk/car-group-tests/361074/bmw-7-series-vs-mercedes-s-class-2023-twin-test-review",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Auto Express",
+    "published": "2023",
+    "stance": "supports",
+    "about": "Comparative ride comfort: S‑Class vs BMW 7 Series",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+    "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-25",
+   "source_type": "web",
+   "source_name": "Auto Express",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Auto Express's March 25, 2026 overview of the BMW 7 Series states the 7 Series is tuned marginally firmer than the S‑Class and ‘stands ahead’ of the S‑Class for driving dynamics, trading a little ride compliance for more engaging handling.",
+   "url": "https://www.autoexpress.co.uk/bmw/7-series/353217/used-bmw-7-series-review",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Auto Express",
+    "published": "March 25, 2026",
+    "stance": "supports",
+    "about": "BMW 7 Series (G70) driving dynamics vs S‑Class",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+    "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-33",
+   "source_type": "web",
+   "source_name": "Porsche Newsroom (press kit)",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Porsche presents the Panamera as a sports‑car‑derived luxury sedan with chassis systems (Porsche 4D Chassis Control, multi‑chamber air suspension and Active Ride) designed to combine agile handling with ride comfort.",
+   "url": "https://newsroom.porsche.com/dam/jcr%3A65fc25c0-794b-413c-88db-af52bd3e467e/_Panamera%204%20E-hybrid%20and%20Executive%20Models%20Press%20Kit.pdf",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Porsche Newsroom (press kit)",
+    "published": "2025",
+    "stance": "neutral",
+    "about": "Panamera chassis/comfort tech.",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+    "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-34",
+   "source_type": "web",
+   "source_name": "Car and Driver",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Professional reviews of the 2025 Panamera GTS report very sharp, sports‑car‑like handling but explicitly warn that the GTS’s setup (stiffer springs/anti‑roll bars and lower ride height) produces a firm, sometimes harsh ride for passengers.",
+   "url": "https://www.caranddriver.com/reviews/a62704977/2025-porsche-panamera-gts-drive/",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Car and Driver",
+    "published": "Updated Jul 28, 2025",
+    "stance": "supports",
+    "about": "Panamera GTS handling vs ride comfort.",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+    "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-35",
+   "source_type": "web",
+   "source_name": "Motor1",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Several mainstream reviews of the 2025 Panamera (including hybrid variants) praise the car’s overall balance, saying Active Ride and electronic chassis systems extend a wide bandwidth between compliant cruising and sporty handling for many Panamera trims.",
+   "url": "https://www.motor1.com/reviews/774852/2025-porsche-panamera-4s-e-hybrid-review/",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Motor1",
+    "published": "2025",
+    "stance": "supports",
+    "about": "Panamera ride/handling for hybrid variants.",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+    "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-36",
+   "source_type": "web",
+   "source_name": "Autoblog",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Independent first‑drive reports from drives in and around Stuttgart note the refreshed Panamera delivers sharper handling and, in everyday settings, a smoother ride compared with some prior Panamera iterations thanks to adaptive suspension and rear‑wheel steering.",
+   "url": "https://www.autoblog.com/news/2025-porsche-panamera-e-hybrid-review",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Autoblog",
+    "published": "2025",
+    "stance": "supports",
+    "about": "Panamera ride/handling improvements (EU testing).",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+    "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-37",
+   "source_type": "web",
+   "source_name": "Autocar",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Reviewers of the BMW 7 Series (G70) in the EU/UK press describe the car as prioritising ‘pillowy, isolated’ ride comfort and refinement, and note that it offers less sporting dynamism and driver engagement compared with past 7‑Series generations.",
+   "url": "https://www.autocar.co.uk/car-review/bmw/7-series",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Autocar",
+    "published": "2025/2026 (review)",
+    "stance": "supports",
+    "about": "BMW 7 Series (G70) ride vs sportiness.",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+    "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-39",
+   "source_type": "web",
+   "source_name": "Synthesis of Car and Driver + Autocar reviews",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Taken together, EU/UK professional coverage for 2025–2026 indicates a clear pattern: the Panamera is positioned toward sharper, sportier driving behaviour (with some trims trading rear‑seat smoothness for handling), while the BMW G70 is positioned toward maximum rear‑seat comfort and isolation at the expense of the more engaged ‘sporty’ driving character many older BMW buyers expected.",
+   "url": "https://www.caranddriver.com/reviews/a62704977/2025-porsche-panamera-gts-drive/",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Synthesis of Car and Driver + Autocar reviews",
+    "published": "2025–2026",
+    "stance": "supports",
+    "about": "Comparative summary of Panamera vs BMW 7 (G70).",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+    "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-40",
+   "source_type": "web",
+   "source_name": "Auto Express",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "The Mercedes‑Benz EQS (sedan) has a listed boot capacity of 610 litres with the rear seats up and expands to about 1,770 litres with the rear seats folded down.",
+   "url": "https://www.autoexpress.co.uk/mercedes/eqs/363916/mercedes-eqs-review",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Auto Express",
+    "published": "30 July 2024",
+    "stance": "supports",
+    "about": "Mercedes‑Benz EQS boot capacity",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+    "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-41",
+   "source_type": "web",
+   "source_name": "Auto Express",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Reviewers note the EQS uses a fastback/hatch-style tailgate that improves access but the load space has a relatively low vertical height, so some tall/bulky items may not fit easily despite the 610‑litre figure.",
+   "url": "https://www.autoexpress.co.uk/mercedes/eqs/363916/mercedes-eqs-review",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Auto Express",
+    "published": "30 July 2024",
+    "stance": "supports",
+    "about": "EQS boot shape and practical luggage limits",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+    "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-47",
+   "source_type": "web",
+   "source_name": "Car and Driver",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Professional reviews describe the 2025 Audi A8 as prioritising ride comfort and quietness, with adjustable air suspension and adaptive dampers standard. ([caranddriver.com](https://www.caranddriver.com/audi/a8-2025))",
+   "url": "https://www.caranddriver.com/audi/a8-2025",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Car and Driver",
+    "published": "2025",
+    "stance": "supports",
+    "about": "A8 ride comfort",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+    "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-48",
+   "source_type": "web",
+   "source_name": "What Car?",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "What Car? notes the A8 ‘wallows on its standard air suspension through bends’ and explicitly recommends the BMW 7 Series if you want a sharper-handling limousine. ([whatcar.com](https://www.whatcar.com/audi/a8/saloon/review/n17302?utm_source=openai))",
+   "url": "https://www.whatcar.com/audi/a8/saloon/review/n17302",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "What Car?",
+    "published": "22 March 2023",
+    "stance": "supports",
+    "about": "A8 handling (sportiness complaint)",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+    "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-49",
+   "source_type": "web",
+   "source_name": "Autocar",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Autocar’s 2025 review of the BMW 7 Series (G70) describes the 7 as ‘medium‑soft’ and ‘pillowy’ with excellent isolation at ordinary speeds, but says it becomes noticeably less engaging when driven hard. ([em.autocar.co.uk](https://www.em.autocar.co.uk/car-review/bmw/7-series?utm_source=openai))",
+   "url": "https://www.autocar.co.uk/car-review/bmw/7-series",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "medium",
+    "publisher": "Autocar",
+    "published": "2025",
+    "stance": "neutral",
+    "about": "7 Series ride vs engagement",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+    "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-51",
+   "source_type": "web",
+   "source_name": "Edmunds",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Edmunds’ 2025 expert test judged the A8 to feel ‘numb and clumsy’ in some situations, citing wallowy body motions and inconsistent ride over imperfect roads — supporting customer reports that the A8 is less sporty/engaging than some rivals. ([edmunds.com](https://www.edmunds.com/audi/a8/2025/))",
+   "url": "https://www.edmunds.com/audi/a8/2025/",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Edmunds",
+    "published": "2025",
+    "stance": "supports",
+    "about": "A8 perceived lack of sportiness/handling issues",
+    "question_kind": "competitor",
+    "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+    "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-71",
+   "source_type": "web",
+   "source_name": "Consumer Reports",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Manufacturers will reduce the number of physical buttons overall but keep dedicated physical controls (e.g., volume, climate, steering‑wheel shortcuts, iDrive/controller) for high‑use and safety‑critical functions.",
+   "url": "https://www.consumerreports.org/cars/bmw/7-series/2025/road-test-report/",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Consumer Reports",
+    "published": "2025",
+    "stance": "supports",
+    "about": "retention of physical controls in BMW 7 Series",
+    "question_kind": "trend"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-74",
+   "source_type": "web",
+   "source_name": "McKinsey & Company",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Analyst and industry forecasts expect mass adoption of connected, AI‑enabled in‑car services in the premium segment by 2030–2031 (large share of vehicles connected and increasing take‑rates for voice/AI features), which will accelerate voice‑first and personalized HMI capabilities in 7‑series–class cars.",
+   "url": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/car-connectivity-what-consumers-want-and-are-willing-to-pay",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "McKinsey & Company",
+    "published": "2024-01-08",
+    "stance": "supports",
+    "about": "connected vehicles and demand for in-car AI services",
+    "question_kind": "trend"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-77",
+   "source_type": "web",
+   "source_name": "BMW FAQ / BMW USA",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "OEMs will increasingly deliver HMI changes via software (OS redesigns, personalization and OTA updates), enabling faster iteration of touchscreen/voice interfaces for premium models between 2028–2031.",
+   "url": "https://faq.bmwusa.com/s/article/BMW-7-Series-from-2026-BMW-i7-from-2026-Display-and-operation-BMW-Touch-Command-MY27-Xeicm?nocache=https%3A%2F%2Ffaq.bmwusa.com%2Fs%2Farticle%2FBMW-7-Series-from-2026-BMW-i7-from-2026-Display-and-operation-BMW-Touch-Command-MY27-Xeicm%3Flanguage%3Den_US",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "BMW FAQ / BMW USA",
+    "published": "2026",
+    "stance": "supports",
+    "about": "BMW OS redesign and software-driven HMI updates",
+    "question_kind": "trend"
+   }
+  },
+  {
+   "id": "EV-G70-EU-WEB-94",
+   "source_type": "web",
+   "source_name": "Mercedes‑Benz media centre",
+   "derivative": "G70",
+   "market": "EU",
+   "text": "Mercedes‑Benz received national approval in Germany for its DRIVE PILOT Level‑3 system (updated to allow operation up to 95 km/h) and indicated a market rollout in Germany starting around early 2025, demonstrating an existing premium‑segment L3 offering in Europe.  ",
+   "url": "https://media.mercedes-benz.com/en/article/1b23ed3c-8fba-46af-ad6b-5d4d9804d4da",
+   "retrieved_at": "2026-10-11T07:52:59.432343Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "Mercedes‑Benz media centre",
+    "published": "17 December 2024",
+    "stance": "supports",
+    "about": "Mercedes DRIVE PILOT Level 3 (95 km/h) and rollout timing",
+    "question_kind": "trend"
+   }
   }
  ],
  "signals": [
   {
-   "id": "SIG-G70-EU-001",
+   "id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
    "kind": "complaint",
    "category": "comfort_space",
    "title": "Luggage capacity: complaint",
    "summary": "Study: Luggage capacity: mean 7.4 (EU study 2025).",
    "evidence_ids": [
-    "EV-G70-EU-ST-29"
+    "EV-G70-EU-ST-29",
+    "EV-G70-EU-WEB-04",
+    "EV-G70-EU-WEB-08",
+    "EV-G70-EU-WEB-17",
+    "EV-G70-EU-WEB-18",
+    "EV-G70-EU-WEB-19",
+    "EV-G70-EU-WEB-20",
+    "EV-G70-EU-WEB-40",
+    "EV-G70-EU-WEB-41"
    ],
    "mention_count": 1,
    "source_types": [
-    "study"
+    "study",
+    "web"
    ],
    "conflicts_with": [],
    "segments": {},
@@ -96,17 +643,30 @@
    }
   },
   {
-   "id": "SIG-G70-EU-002",
+   "id": "SIG-G70-EU-g1-1548852b67c3479b",
    "kind": "complaint",
    "category": "driving_experience",
    "title": "Sportiness: complaint",
    "summary": "Study: Sportiness: mean 7.0 (EU study 2025).",
    "evidence_ids": [
-    "EV-G70-EU-ST-22"
+    "EV-G70-EU-ST-22",
+    "EV-G70-EU-WEB-15",
+    "EV-G70-EU-WEB-23",
+    "EV-G70-EU-WEB-24",
+    "EV-G70-EU-WEB-25",
+    "EV-G70-EU-WEB-34",
+    "EV-G70-EU-WEB-35",
+    "EV-G70-EU-WEB-36",
+    "EV-G70-EU-WEB-37",
+    "EV-G70-EU-WEB-39",
+    "EV-G70-EU-WEB-47",
+    "EV-G70-EU-WEB-48",
+    "EV-G70-EU-WEB-51"
    ],
    "mention_count": 1,
    "source_types": [
-    "study"
+    "study",
+    "web"
    ],
    "conflicts_with": [],
    "segments": {},
@@ -115,32 +675,206 @@
     "importance": 0.697,
     "dissatisfaction": 0.6766666666666667
    }
+  },
+  {
+   "id": "SIG-G70-EU-g1-24ceb0277b11bb3c",
+   "kind": "competitor_advantage",
+   "category": "comfort_space",
+   "title": "Mercedes-Benz S-Class: Luggage capacity: complaint",
+   "summary": "Car and Driver’s U.S. specification/testing lists the 2024 S‑Class trunk volume as 13 cu ft (≈368 litres), illustrating differences between regional/model specifications and measurement methods. Multiple authoritative reviews note that the Mercedes S‑Class (especially long‑wheelbase versions) delivers limousine‑like rear comfort and extensive rear features, but reviewers also flag that PHEV versions have substantially reduced luggage space compared with ICE S‑Class models.",
+   "evidence_ids": [
+    "EV-G70-EU-WEB-04",
+    "EV-G70-EU-WEB-08"
+   ],
+   "mention_count": 2,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  },
+  {
+   "id": "SIG-G70-EU-g1-f6ab0b5f2006daed",
+   "kind": "competitor_advantage",
+   "category": "driving_experience",
+   "title": "Mercedes-Benz EQS: Sportiness: complaint",
+   "summary": "Car and Driver’s AMG EQS test notes AMG tuning improves body control relative to the regular EQS and summarises that the EQS in regular trim “rides soft” — indicating the standard EQS prioritises comfort and only AMG variants approach noticeably sharper handling. ",
+   "evidence_ids": [
+    "EV-G70-EU-WEB-15"
+   ],
+   "mention_count": 1,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  },
+  {
+   "id": "SIG-G70-EU-g1-4dacfae65992a82f",
+   "kind": "competitor_advantage",
+   "category": "comfort_space",
+   "title": "Porsche Panamera: Luggage capacity: complaint",
+   "summary": "Independent reviews note the 7 Series’ rear compartment is limousine‑like with very generous rear legroom (Autocar quotes about 880 mm of rear legroom), making it one of the most comfortable cars for rear passengers in this class. Porsche’s own press material states the Panamera Sport Turismo offers up to 520 litres of luggage capacity (measured to the upper edge of the rear seats) and that the Sport Turismo provides about 20 litres more than the fastback/sedan variant (i.e., the standard Panamera sedan is ≈500 litres). Porsche’s press release and subsequent reviews report Panamera plug‑in‑hybrid variants have reduced usable boot volume (Panamera 4 E‑Hybrid Sport Turismo shown at 425 litres in Porsche material); reviewers also list hybrid sedan boots around ≈421–430 litres because of the battery intrusion.",
+   "evidence_ids": [
+    "EV-G70-EU-WEB-17",
+    "EV-G70-EU-WEB-18",
+    "EV-G70-EU-WEB-19",
+    "EV-G70-EU-WEB-20"
+   ],
+   "mention_count": 4,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  },
+  {
+   "id": "SIG-G70-EU-g1-61d0b3fc46a20e2f",
+   "kind": "competitor_advantage",
+   "category": "driving_experience",
+   "title": "Mercedes-Benz S-Class: Sportiness: complaint",
+   "summary": "Mercedes-Benz's May 13, 2026 press release describes the updated S‑Class as having standard AIRMATIC air suspension with intelligent/predictive damping and rear‑axle steering (up to 4.5°) to prioritise ride comfort and rear‑seat refinement. In a 2023 twin test Auto Express wrote that the S‑Class ‘floats above the road’ and that its ride quality is ‘fantastic’, describing the Mercedes as more compliant/‘floating’ than the BMW 7 Series in the same comparison. Auto Express's March 25, 2026 overview of the BMW 7 Series states the 7 Series is tuned marginally firmer than the S‑Class and ‘stands ahead’ of the S‑Class for driving dynamics, trading a little ride compliance for more engaging handling.",
+   "evidence_ids": [
+    "EV-G70-EU-WEB-23",
+    "EV-G70-EU-WEB-24",
+    "EV-G70-EU-WEB-25"
+   ],
+   "mention_count": 3,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  },
+  {
+   "id": "SIG-G70-EU-g1-1802e2f2191b9030",
+   "kind": "competitor_advantage",
+   "category": "driving_experience",
+   "title": "Porsche Panamera: Sportiness: complaint",
+   "summary": "Porsche presents the Panamera as a sports‑car‑derived luxury sedan with chassis systems (Porsche 4D Chassis Control, multi‑chamber air suspension and Active Ride) designed to combine agile handling with ride comfort. Professional reviews of the 2025 Panamera GTS report very sharp, sports‑car‑like handling but explicitly warn that the GTS’s setup (stiffer springs/anti‑roll bars and lower ride height) produces a firm, sometimes harsh ride for passengers. Several mainstream reviews of the 2025 Panamera (including hybrid variants) praise the car’s overall balance, saying Active Ride and electronic chassis systems extend a wide bandwidth between compliant cruising and sporty handling for many Panamera trims.",
+   "evidence_ids": [
+    "EV-G70-EU-WEB-33",
+    "EV-G70-EU-WEB-34",
+    "EV-G70-EU-WEB-35",
+    "EV-G70-EU-WEB-36",
+    "EV-G70-EU-WEB-37",
+    "EV-G70-EU-WEB-39"
+   ],
+   "mention_count": 6,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  },
+  {
+   "id": "SIG-G70-EU-g1-d8ccca9232e51a8a",
+   "kind": "competitor_advantage",
+   "category": "comfort_space",
+   "title": "Mercedes-Benz EQS: Luggage capacity: complaint",
+   "summary": "The Mercedes‑Benz EQS (sedan) has a listed boot capacity of 610 litres with the rear seats up and expands to about 1,770 litres with the rear seats folded down. Reviewers note the EQS uses a fastback/hatch-style tailgate that improves access but the load space has a relatively low vertical height, so some tall/bulky items may not fit easily despite the 610‑litre figure.",
+   "evidence_ids": [
+    "EV-G70-EU-WEB-40",
+    "EV-G70-EU-WEB-41"
+   ],
+   "mention_count": 2,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  },
+  {
+   "id": "SIG-G70-EU-g1-036d463463dc315b",
+   "kind": "competitor_advantage",
+   "category": "driving_experience",
+   "title": "Audi A8: Sportiness: complaint",
+   "summary": "Professional reviews describe the 2025 Audi A8 as prioritising ride comfort and quietness, with adjustable air suspension and adaptive dampers standard. ([caranddriver.com](https://www.caranddriver.com/audi/a8-2025)) What Car? notes the A8 ‘wallows on its standard air suspension through bends’ and explicitly recommends the BMW 7 Series if you want a sharper-handling limousine. ([whatcar.com](https://www.whatcar.com/audi/a8/saloon/review/n17302?utm_source=openai)) Autocar’s 2025 review of the BMW 7 Series (G70) describes the 7 as ‘medium‑soft’ and ‘pillowy’ with excellent isolation at ordinary speeds, but says it becomes noticeably less engaging when driven hard. ([em.autocar.co.uk](https://www.em.autocar.co.uk/car-review/bmw/7-series?utm_source=openai))",
+   "evidence_ids": [
+    "EV-G70-EU-WEB-47",
+    "EV-G70-EU-WEB-48",
+    "EV-G70-EU-WEB-49",
+    "EV-G70-EU-WEB-51"
+   ],
+   "mention_count": 4,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  },
+  {
+   "id": "SIG-G70-EU-g1-0dbd2b7411a65cf3",
+   "kind": "trend",
+   "category": "infotainment_digital",
+   "title": "Trend 2028-2031: infotainment_digital",
+   "summary": "Manufacturers will reduce the number of physical buttons overall but keep dedicated physical controls (e.g., volume, climate, steering‑wheel shortcuts, iDrive/controller) for high‑use and safety‑critical functions. Analyst and industry forecasts expect mass adoption of connected, AI‑enabled in‑car services in the premium segment by 2030–2031 (large share of vehicles connected and increasing take‑rates for voice/AI features), which will accelerate voice‑first and personalized HMI capabilities in 7‑series–class cars. OEMs will increasingly deliver HMI changes via software (OS redesigns, personalization and OTA updates), enabling faster iteration of touchscreen/voice interfaces for premium models between 2028–2031.",
+   "evidence_ids": [
+    "EV-G70-EU-WEB-71",
+    "EV-G70-EU-WEB-74",
+    "EV-G70-EU-WEB-77"
+   ],
+   "mention_count": 3,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  },
+  {
+   "id": "SIG-G70-EU-g1-5f3563482d3ce1a9",
+   "kind": "trend",
+   "category": "driver_assistance",
+   "title": "Trend 2028-2031: driver_assistance",
+   "summary": "Mercedes‑Benz received national approval in Germany for its DRIVE PILOT Level‑3 system (updated to allow operation up to 95 km/h) and indicated a market rollout in Germany starting around early 2025, demonstrating an existing premium‑segment L3 offering in Europe.  ",
+   "evidence_ids": [
+    "EV-G70-EU-WEB-94"
+   ],
+   "mention_count": 1,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   }
  ],
  "requirements": [
   {
-   "id": "REQ-G70-EU-002",
-   "title": "Improve Sportiness for the successor",
-   "description": "Address the customer pain or unmet need around Sportiness with a measurable user outcome.",
-   "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+   "id": "REQ-G70-EU-887fd9",
+   "title": "Improve driver-perceived sportiness during dynamic driving without sacrificing controllability",
+   "description": "When the driver requests a more engaging drive (e.g., via sport mode or by driving enthusiastically), the vehicle should feel measurably more sporty and responsive to the driver’s inputs compared with the current G70 baseline while remaining predictable and controllable under dynamic maneuvers.",
+   "acceptance_criterion": "Conduct a randomized, blinded track comparison between the successor vehicle and a current G70 (model year 2026) baseline using 30 experienced drivers (min. 5 years driving experience, regular drivers of premium sedans, balanced gender). Each driver performs a standardized dynamic sequence (40–120 km/h slalom, 80 km/h double-lane-change, and a 0.5 g steady-state corner) with both cars in the same dynamic driving configuration. Primary observable outcome: mean driver sportiness rating on a 10-point Likert scale for the dynamic sequence. Pass threshold: successor mean >= baseline mean + 1.0 point AND the improvement is statistically significant (paired t-test, p < 0.05). Secondary pass condition (safety/controllability): no more than 10% of drivers report loss of predictable control (binary question) and no vehicle exceeds a pre-defined stability intervention threshold (baseline stability intervention measured on the G70 prior to test).",
    "category": "driving_experience",
    "signal_ids": [
-    "SIG-G70-EU-002"
+    "SIG-G70-EU-g1-1548852b67c3479b",
+    "SIG-G70-EU-g1-1802e2f2191b9030",
+    "SIG-G70-EU-g1-036d463463dc315b",
+    "SIG-G70-EU-g1-f6ab0b5f2006daed",
+    "SIG-G70-EU-g1-61d0b3fc46a20e2f"
    ],
-   "score": 45.8,
+   "score": 55.3,
    "rank": 1,
    "score_breakdown": {
     "customer_pain": {
-     "value": 1.0,
+     "value": 0.533,
      "weight": 0.25,
-     "contribution": 25.0,
-     "explanation": "Mostly complaints, 1 mentions"
+     "contribution": 13.3,
+     "explanation": "Mostly competitor advantages, 15 mentions"
     },
     "reach": {
      "value": 1.0,
      "weight": 0.2,
      "contribution": 20.0,
-     "explanation": "1 of at most 1 mentions (square root scale); EU = 33 % of 2030 volume"
+     "explanation": "15 of at most 15 mentions (square root scale); EU = 33 % of 2030 volume (17,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.677,
@@ -149,38 +883,46 @@
      "explanation": "Sportiness: mean 6.97 of 10"
     },
     "competitive_pressure": {
-     "value": 0.0,
+     "value": 1.0,
      "weight": 0.15,
-     "contribution": 0.0,
-     "explanation": "no trusted web source shows a competitor advantage"
+     "contribution": 15.0,
+     "explanation": "competitor advantage backed by a high-trust web source"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.131,
      "weight": 0.1,
-     "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "contribution": 1.3,
+     "explanation": "no trend behind it; market growth 2025-2030: +30.8 %"
     },
     "effort_inverse": {
-     "value": 0.6,
+     "value": 0.2,
      "weight": 0.1,
-     "contribution": 6.0,
-     "explanation": "effort estimate M"
+     "contribution": 2.0,
+     "explanation": "effort estimate L"
     }
    },
-   "rationale": "Ranked mainly because of customer pain (25 points) and reach (20 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
-   "evidence_level": "C",
+   "rationale": "Ranked mainly because of reach (20 points) and competitive pressure (15 points). Evidence level B: 15 mentions, confirmed only by web sources: A needs a second BMW source (study).",
+   "evidence_level": "B",
    "assumptions": [
-    "Rule-based fallback draft because no cached LLM draft was available."
+    "A representative G70 (model year 2026) baseline will be measured using the identical test protocol before comparison.",
+    "A 1.0-point increase on a 10-point sportiness scale is a meaningful, perceivable improvement for the target customer segment.",
+    "30 experienced drivers provide sufficient power to detect a 1.0-point mean difference with paired testing given expected within-subject variability (assumed SD ~1.5).",
+    "A G70 (model year 2026) baseline motorway comfort measurement will be performed using the same protocol prior to comparison.",
+    "A difference of 0.5 points on a 10-point comfort scale is the maximum acceptable perceived decline for premium rear-seat passengers.",
+    "20 participants provide adequate sensitivity to detect meaningful comfort changes under paired testing conditions (assumed within-subject SD ~0.8)."
    ],
    "uncertainties": [
-    "Needs PM wording review before approval."
+    "Baseline mean and within-subject variance for the specified dynamic sequence are not currently available and must be measured before final validation.",
+    "Track surface and weather variability may affect absolute ratings; tests must be run on the same day or controlled conditions.",
+    "Exact baseline RMS acceleration and subjective baseline comfort values are not available and must be measured before final validation.",
+    "Route-specific surface quality may influence results; test route must be standardized and repeatable."
    ],
    "offer_check": {
-    "status": "unknown",
-    "note": "Check not possible (RuntimeError).",
+    "status": "standard",
+    "note": "Adaptive M Chassis Control Professional provides active chassis tuning for sharper, sportier responses while preserving vehicle controllability. (Adaptive M Chassis Control Professional)",
     "option_code": null
    },
-   "effort": "M",
+   "effort": "L",
    "status": "proposed",
    "version": 1,
    "horizon": "today",
@@ -194,36 +936,40 @@
    "business": {
     "volume_2025": 13000,
     "volume_2030": 17000,
-    "growth_pct": 54.5,
+    "growth_pct": 30.769,
     "market_share": 0.327,
-    "note": "Sales context from sales_volumes.xlsx"
+    "note": ""
    },
-   "stable_key": "",
-   "badges": []
+   "stable_key": "887fd9",
+   "badges": [],
+   "outlook": null
   },
   {
-   "id": "REQ-G70-EU-001",
-   "title": "Improve Luggage capacity for the successor",
-   "description": "Address the customer pain or unmet need around Luggage capacity with a measurable user outcome.",
-   "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+   "id": "REQ-G70-EU-abf070",
+   "title": "Provide at least 520 litres of usable luggage volume with rear seats up",
+   "description": "Customers can load everyday luggage for long trips without needing to fold rear seats. The trunk must deliver a usable volume that compares with leading rivals (Porsche Panamera Sport Turismo, Mercedes EQS) so rear passengers do not trade rear comfort for inadequate luggage space.",
+   "acceptance_criterion": "Measurement procedure: use the VDA 210 block method (200×100×50 mm blocks) to measure luggage volume with rear seats upright and measured to the upper edge of the rear seats. Test on 3 production-representative vehicles of the standard wheelbase variant and 3 of the long-wheelbase variant. Pass threshold: at least 2 of 3 vehicles of a given variant measure >= 520 litres. Report both median and individual vehicle measurements. If either variant fails, the requirement fails.",
    "category": "comfort_space",
    "signal_ids": [
-    "SIG-G70-EU-001"
+    "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+    "SIG-G70-EU-g1-24ceb0277b11bb3c",
+    "SIG-G70-EU-g1-4dacfae65992a82f",
+    "SIG-G70-EU-g1-d8ccca9232e51a8a"
    ],
-   "score": 43.8,
+   "score": 49.6,
    "rank": 2,
    "score_breakdown": {
     "customer_pain": {
-     "value": 1.0,
+     "value": 0.556,
      "weight": 0.25,
-     "contribution": 25.0,
-     "explanation": "Mostly complaints, 1 mentions"
+     "contribution": 13.9,
+     "explanation": "Mostly competitor advantages, 9 mentions"
     },
     "reach": {
-     "value": 1.0,
+     "value": 0.775,
      "weight": 0.2,
-     "contribution": 20.0,
-     "explanation": "1 of at most 1 mentions (square root scale); EU = 33 % of 2030 volume"
+     "contribution": 15.5,
+     "explanation": "9 of at most 15 mentions (square root scale); EU = 33 % of 2030 volume (17,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.53,
@@ -232,38 +978,49 @@
      "explanation": "Luggage capacity: mean 7.41 of 10"
     },
     "competitive_pressure": {
-     "value": 0.0,
+     "value": 1.0,
      "weight": 0.15,
-     "contribution": 0.0,
-     "explanation": "no trusted web source shows a competitor advantage"
+     "contribution": 15.0,
+     "explanation": "competitor advantage backed by a high-trust web source"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.131,
      "weight": 0.1,
-     "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "contribution": 1.3,
+     "explanation": "no trend behind it; market growth 2025-2030: +30.8 %"
     },
     "effort_inverse": {
-     "value": 0.6,
+     "value": 0.2,
      "weight": 0.1,
-     "contribution": 6.0,
-     "explanation": "effort estimate M"
+     "contribution": 2.0,
+     "explanation": "effort estimate L"
     }
    },
-   "rationale": "Ranked mainly because of customer pain (25 points) and reach (20 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
-   "evidence_level": "C",
+   "rationale": "Ranked mainly because of reach (15.5 points) and competitive pressure (15 points). Evidence level B: Only 9 mentions, but confirmed by 2 independent source types.",
+   "evidence_level": "B",
    "assumptions": [
-    "Rule-based fallback draft because no cached LLM draft was available."
+    "520 litres is a realistic customer-facing target for the successor 7 Series sedan to remain competitive with Panamera Sport Turismo (≈520 L) and to narrow the gap to EQS (610 L).",
+    "Using the VDA 210 block method yields comparable results to the competitor numbers cited and will be accepted internally as the measurement standard for luggage volume.",
+    "Test vehicles will be production-representative or pre-production vehicles with final interior packaging.",
+    "A maximum 10% reduction is a realistic engineering target to keep PHEV variants practical while allowing for battery packaging constraints (benchmark: Porsche Panamera PHEV reductions reported around ~10–20%).",
+    "VDA 210 measurements will be used for both variants to ensure comparability.",
+    "A 29-inch checked suitcase of the stated approximate dimensions represents a common large suitcase customers expect to stow in a flagship sedan.",
+    "Providing this capability addresses the competitor advantage noted for hatch/fastback designs (EQS) and for Sport Turismo body styles (Panamera)."
    ],
    "uncertainties": [
-    "Needs PM wording review before approval."
+    "The current G70 (baseline) luggage volume measured by VDA 210 is not provided in the input signals; a baseline measurement of the G70 must be taken before final validation.",
+    "Competitor volumes referenced may use different measurement conventions; direct comparability depends on using the same VDA method.",
+    "Exact current PHEV vs ICE luggage-volume delta for the G70 platform is unknown and must be measured as a baseline before final validation.",
+    "Some regional packaging (spare wheel, inflator, etc.) may change usable volume; tests must use representative equipment/loadout for the target market (EU).",
+    "Some competitor advantages come from a hatch/fastback architecture (EQS), which may not be fully replicable in a traditional sedan body; if the successor remains a sedan, achieving the same ease of access may require changes to sill height or aperture that must be validated for manufacturability.",
+    "Exact suitcase dimensions can vary; test must use a specified model for reproducibility."
    ],
    "offer_check": {
-    "status": "unknown",
-    "note": "Check not possible (RuntimeError).",
+    "status": "not_offered",
+    "note": "No option specifies trunk capacity or ≥520 L; the equipment list contains no luggage volume information.",
     "option_code": null
    },
-   "effort": "M",
+   "effort": "L",
    "status": "proposed",
    "version": 1,
    "horizon": "today",
@@ -277,15 +1034,211 @@
    "business": {
     "volume_2025": 13000,
     "volume_2030": 17000,
-    "growth_pct": 54.5,
+    "growth_pct": 30.769,
     "market_share": 0.327,
-    "note": "Sales context from sales_volumes.xlsx"
+    "note": ""
    },
-   "stable_key": "",
-   "badges": []
+   "stable_key": "abf070",
+   "badges": [],
+   "outlook": null
+  },
+  {
+   "id": "REQ-G70-EU-48b235",
+   "title": "Operate volume and climate controls without looking while driving",
+   "description": "Customers must be able to find and operate core physical controls for volume and climate (including primary steering‑wheel shortcuts) without glancing at the central display, so they can keep eyes on the road and reduce distraction.",
+   "acceptance_criterion": "Closed‑road driving trial with N=30 licensed drivers (15 current BMW 7‑series owners, 15 target luxury buyers). Each participant performs 20 randomized tasks (adjust volume up/down, mute, set cabin temperature ±2°C, toggle defrost) while driving at 50–100 km/h under typical urban/highway conditions. Eye‑tracking is used to detect glances to the central display. Pass if: (a) ≥90% of tasks are completed without the driver making a gaze fixation on the central display longer than 250 ms; and (b) the mean task completion time ≤ 1.5 seconds. All 30 participants must complete the full task set to count.",
+   "category": "infotainment_digital",
+   "signal_ids": [
+    "SIG-G70-EU-g1-0dbd2b7411a65cf3"
+   ],
+   "score": 22.7,
+   "rank": 3,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.3,
+     "weight": 0.25,
+     "contribution": 7.5,
+     "explanation": "Mostly trends, 3 mentions"
+    },
+    "reach": {
+     "value": 0.447,
+     "weight": 0.2,
+     "contribution": 8.9,
+     "explanation": "3 of at most 15 mentions (square root scale); EU = 33 % of 2030 volume (17,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.0,
+     "weight": 0.2,
+     "contribution": 0.0,
+     "explanation": "no study data"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 1.0,
+     "weight": 0.1,
+     "contribution": 10.0,
+     "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +30.8 %"
+    },
+    "effort_inverse": {
+     "value": 0.6,
+     "weight": 0.1,
+     "contribution": 6.0,
+     "explanation": "effort estimate M"
+    }
+   },
+   "rationale": "Ranked mainly because of future relevance (10 points) and reach (8.9 points). Evidence level C: 3 mentions from web sources only: without BMW data at most a hint.",
+   "evidence_level": "C",
+   "assumptions": [
+    "Test vehicles use the production layout for physical controls as offered to customers.",
+    "Driving speeds and environmental conditions stated (50–100 km/h) approximate typical customer use.",
+    "Eye‑tracking hardware and analysis follow established automotive distraction protocols.",
+    "Controls evaluated are the production‑intended surfaces and actuation forces.",
+    "Tests include participants wearing thin gloves and bare hands to reflect use variability.",
+    "Vehicles have connectivity available for receiving optional updates during the test period.",
+    "Update packages used in the test are representative in size and scope of expected HMI personalization changes."
+   ],
+   "uncertainties": [
+    "Individual customer differences in reach and ergonomics may affect results; test sample attempts to represent the target population but does not cover all body sizes.",
+    "Perception of 'distinct feel' may vary culturally and by prior vehicle experience; chosen thresholds are a practical target for the successor vehicle.",
+    "Backend services and regional connectivity variability may affect real‑world update delivery times; this requirement only covers in‑vehicle controls and user understanding."
+   ],
+   "offer_check": {
+    "status": "optional",
+    "note": "Multifunction steering wheel with Shy‑Tech haptic controls enables tactile operation of audio and functions without looking. (Sport Lenkrad mit Shy-Tech-Bedienelementen:)",
+    "option_code": "255"
+   },
+   "effort": "M",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "today",
+   "robustness": {
+    "rank_min": 3,
+    "rank_max": 3,
+    "top3_share": 1.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 13000,
+    "volume_2030": 17000,
+    "growth_pct": 30.769,
+    "market_share": 0.327,
+    "note": ""
+   },
+   "stable_key": "48b235",
+   "badges": [],
+   "outlook": null
+  },
+  {
+   "id": "REQ-G70-EU-48b235-next-gen",
+   "title": "Customers can rely on a voice‑first, AI‑enabled assistant to complete common driving tasks without manual fallback",
+   "description": "Customers should be able to accomplish core in‑car tasks (navigation address entry, media selection, phone calls, climate setpoints) using voice alone, with the assistant personalized to the user and available during real driving.",
+   "acceptance_criterion": "Real‑world field trial with N=100 consenting drivers across multiple EU markets, each using the system for 4 weeks for daily driving. Logged voice attempts cover the core task set (navigation entry, media selection, calling a contact, setting climate). Pass if: (a) ≥90% of logged attempts complete the requested task without manual fallback or touch intervention; (b) median end‑to‑end completion latency ≤ 2.5 seconds; and (c) mean user satisfaction (post‑trial survey) ≥ 4.0 on a 1–5 scale. At least 80% of participants must have used at least 25 voice commands during the trial to count.",
+   "category": "infotainment_digital",
+   "signal_ids": [
+    "SIG-G70-EU-g1-0dbd2b7411a65cf3"
+   ],
+   "score": 14.2,
+   "rank": 4,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.3,
+     "weight": 0.25,
+     "contribution": 7.5,
+     "explanation": "Mostly trends, 3 mentions"
+    },
+    "reach": {
+     "value": 0.447,
+     "weight": 0.2,
+     "contribution": 8.9,
+     "explanation": "3 of at most 15 mentions (square root scale); EU = 33 % of 2030 volume (17,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.0,
+     "weight": 0.2,
+     "contribution": 0.0,
+     "explanation": "no study data"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 1.0,
+     "weight": 0.1,
+     "contribution": 10.0,
+     "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +30.8 %"
+    },
+    "effort_inverse": {
+     "value": 0.2,
+     "weight": 0.1,
+     "contribution": 2.0,
+     "explanation": "effort estimate L"
+    }
+   },
+   "rationale": "Ranked mainly because of future relevance (10 points) and reach (8.9 points). Evidence level D: Bet on the next generation: only 0 direct customer mentions, the rest rests on trends (assumption).",
+   "evidence_level": "D",
+   "assumptions": [
+    "Sufficient mobile connectivity (4G/5G) is available in the trial regions and participants opt in to data collection and personalization features.",
+    "The system supports the major EU languages relevant to the trial participants.",
+    "Speech recognition models and personalization are deployed server‑side and updated during the trial as needed.",
+    "Consenting customers provide connectivity for OTA downloads and agree to logging for pilot metrics.",
+    "The backend update delivery system can target and report on EU regional delivery success rates.",
+    "Legal/regulatory approvals required for OTA content in each pilot market have been obtained prior to the pilot."
+   ],
+   "uncertainties": [
+    "Actual success rates will depend on ambient noise, regional accents and network latency; the requirement assumes these factors are representative across the selected EU regions.",
+    "Regulatory or privacy restrictions could limit personalization or logging in certain markets; compliance constraints must be validated before trial.",
+    "Delivery times may vary with carrier performance and local network outages; the 48‑hour target assumes typical network conditions.",
+    "Regulatory or certification delays could restrict certain types of UI changes in specific countries; this must be checked per market before rollout."
+   ],
+   "offer_check": {
+    "status": "not_offered",
+    "note": "No listed option provides a voice-first AI assistant that autonomously completes driving tasks without manual fallback.",
+    "option_code": null
+   },
+   "effort": "L",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "next_gen",
+   "robustness": {
+    "rank_min": 4,
+    "rank_max": 4,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 13000,
+    "volume_2030": 17000,
+    "growth_pct": 30.769,
+    "market_share": 0.327,
+    "note": ""
+   },
+   "stable_key": "48b235",
+   "badges": [
+    "Zukunftswette",
+    "Annahme"
+   ],
+   "outlook": null
   }
  ],
- "discarded": [],
+ "discarded": [
+  {
+   "title": "Enable certified conditional hands-off highway driving up to 95 km/h where regulations permit",
+   "reason": "Scope guard: regulatory / certification wording ('certified'); out of scope per brief.",
+   "signal_ids": [
+    "SIG-G70-EU-g1-5f3563482d3ce1a9"
+   ]
+  }
+ ],
  "context": {
   "sales": {
    "market": "EU",
@@ -296,6 +1249,7 @@
    "growth_pct": 30.769,
    "growth_2024_2025_pct": 18.182
   },
+  "warnings": [],
   "unmapped_topics": {
    "Body equipment, overall technology": 2,
    "no_class_found": 11,
@@ -303,7 +1257,6 @@
    "Controller operation": 1,
    "Owner's Manual": 1
   },
-  "warnings": [],
   "segment_conflicts": {},
   "counter_evidence": {}
  },
@@ -532,5 +1485,10 @@
    "dissatisfaction": 0.677,
    "evidence_id": "EV-G70-EU-ST-22"
   }
- ]
+ ],
+ "provenance": {
+  "llm_model": "gpt-5-mini",
+  "prompt_sources_sha256": "12640dd429f90ef6d54fbe14dca5c1578ee566b4e87b82712ab6aba551ae6abc",
+  "code_commit": "3f7920734124648f074ddeb43d7696c0833d80d8"
+ }
 }

@@ -4,8 +4,8 @@ Erzeugt mit `python tests/eval/run_eval.py G70-EU`. Nur Zahlen, keine BMW-Zitate
 
 ## Trichter
 
-56 Belege (davon 19 Kommentare im Umfang) -> 2 Befunde
--> 2 Anforderungen.
+154 Belege (davon 19 Kommentare im Umfang) -> 11 Befunde
+-> 4 Anforderungen.
 
 ## Die Zahlen
 

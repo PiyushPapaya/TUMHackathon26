@@ -1,1 +1,9 @@
-[]
+[
+ {
+  "title": "Enable certified conditional hands-off highway driving up to 95 km/h where regulations permit",
+  "reason": "Scope guard: regulatory / certification wording ('certified'); out of scope per brief.",
+  "signal_ids": [
+   "SIG-G70-EU-g1-5f3563482d3ce1a9"
+  ]
+ }
+]

@@ -1,1 +1,172 @@
-[]
+[
+ {
+  "id": "SIG-G70-EU-g1-24ceb0277b11bb3c",
+  "kind": "competitor_advantage",
+  "category": "comfort_space",
+  "title": "Mercedes-Benz S-Class: Luggage capacity: complaint",
+  "summary": "Car and Driver’s U.S. specification/testing lists the 2024 S‑Class trunk volume as 13 cu ft (≈368 litres), illustrating differences between regional/model specifications and measurement methods. Multiple authoritative reviews note that the Mercedes S‑Class (especially long‑wheelbase versions) delivers limousine‑like rear comfort and extensive rear features, but reviewers also flag that PHEV versions have substantially reduced luggage space compared with ICE S‑Class models.",
+  "evidence_ids": [
+   "EV-G70-EU-WEB-04",
+   "EV-G70-EU-WEB-08"
+  ],
+  "mention_count": 2,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-EU-g1-f6ab0b5f2006daed",
+  "kind": "competitor_advantage",
+  "category": "driving_experience",
+  "title": "Mercedes-Benz EQS: Sportiness: complaint",
+  "summary": "Car and Driver’s AMG EQS test notes AMG tuning improves body control relative to the regular EQS and summarises that the EQS in regular trim “rides soft” — indicating the standard EQS prioritises comfort and only AMG variants approach noticeably sharper handling. ",
+  "evidence_ids": [
+   "EV-G70-EU-WEB-15"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-EU-g1-4dacfae65992a82f",
+  "kind": "competitor_advantage",
+  "category": "comfort_space",
+  "title": "Porsche Panamera: Luggage capacity: complaint",
+  "summary": "Independent reviews note the 7 Series’ rear compartment is limousine‑like with very generous rear legroom (Autocar quotes about 880 mm of rear legroom), making it one of the most comfortable cars for rear passengers in this class. Porsche’s own press material states the Panamera Sport Turismo offers up to 520 litres of luggage capacity (measured to the upper edge of the rear seats) and that the Sport Turismo provides about 20 litres more than the fastback/sedan variant (i.e., the standard Panamera sedan is ≈500 litres). Porsche’s press release and subsequent reviews report Panamera plug‑in‑hybrid variants have reduced usable boot volume (Panamera 4 E‑Hybrid Sport Turismo shown at 425 litres in Porsche material); reviewers also list hybrid sedan boots around ≈421–430 litres because of the battery intrusion.",
+  "evidence_ids": [
+   "EV-G70-EU-WEB-17",
+   "EV-G70-EU-WEB-18",
+   "EV-G70-EU-WEB-19",
+   "EV-G70-EU-WEB-20"
+  ],
+  "mention_count": 4,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-EU-g1-61d0b3fc46a20e2f",
+  "kind": "competitor_advantage",
+  "category": "driving_experience",
+  "title": "Mercedes-Benz S-Class: Sportiness: complaint",
+  "summary": "Mercedes-Benz's May 13, 2026 press release describes the updated S‑Class as having standard AIRMATIC air suspension with intelligent/predictive damping and rear‑axle steering (up to 4.5°) to prioritise ride comfort and rear‑seat refinement. In a 2023 twin test Auto Express wrote that the S‑Class ‘floats above the road’ and that its ride quality is ‘fantastic’, describing the Mercedes as more compliant/‘floating’ than the BMW 7 Series in the same comparison. Auto Express's March 25, 2026 overview of the BMW 7 Series states the 7 Series is tuned marginally firmer than the S‑Class and ‘stands ahead’ of the S‑Class for driving dynamics, trading a little ride compliance for more engaging handling.",
+  "evidence_ids": [
+   "EV-G70-EU-WEB-23",
+   "EV-G70-EU-WEB-24",
+   "EV-G70-EU-WEB-25"
+  ],
+  "mention_count": 3,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-EU-g1-1802e2f2191b9030",
+  "kind": "competitor_advantage",
+  "category": "driving_experience",
+  "title": "Porsche Panamera: Sportiness: complaint",
+  "summary": "Porsche presents the Panamera as a sports‑car‑derived luxury sedan with chassis systems (Porsche 4D Chassis Control, multi‑chamber air suspension and Active Ride) designed to combine agile handling with ride comfort. Professional reviews of the 2025 Panamera GTS report very sharp, sports‑car‑like handling but explicitly warn that the GTS’s setup (stiffer springs/anti‑roll bars and lower ride height) produces a firm, sometimes harsh ride for passengers. Several mainstream reviews of the 2025 Panamera (including hybrid variants) praise the car’s overall balance, saying Active Ride and electronic chassis systems extend a wide bandwidth between compliant cruising and sporty handling for many Panamera trims.",
+  "evidence_ids": [
+   "EV-G70-EU-WEB-33",
+   "EV-G70-EU-WEB-34",
+   "EV-G70-EU-WEB-35",
+   "EV-G70-EU-WEB-36",
+   "EV-G70-EU-WEB-37",
+   "EV-G70-EU-WEB-39"
+  ],
+  "mention_count": 6,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-EU-g1-d8ccca9232e51a8a",
+  "kind": "competitor_advantage",
+  "category": "comfort_space",
+  "title": "Mercedes-Benz EQS: Luggage capacity: complaint",
+  "summary": "The Mercedes‑Benz EQS (sedan) has a listed boot capacity of 610 litres with the rear seats up and expands to about 1,770 litres with the rear seats folded down. Reviewers note the EQS uses a fastback/hatch-style tailgate that improves access but the load space has a relatively low vertical height, so some tall/bulky items may not fit easily despite the 610‑litre figure.",
+  "evidence_ids": [
+   "EV-G70-EU-WEB-40",
+   "EV-G70-EU-WEB-41"
+  ],
+  "mention_count": 2,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-EU-g1-036d463463dc315b",
+  "kind": "competitor_advantage",
+  "category": "driving_experience",
+  "title": "Audi A8: Sportiness: complaint",
+  "summary": "Professional reviews describe the 2025 Audi A8 as prioritising ride comfort and quietness, with adjustable air suspension and adaptive dampers standard. ([caranddriver.com](https://www.caranddriver.com/audi/a8-2025)) What Car? notes the A8 ‘wallows on its standard air suspension through bends’ and explicitly recommends the BMW 7 Series if you want a sharper-handling limousine. ([whatcar.com](https://www.whatcar.com/audi/a8/saloon/review/n17302?utm_source=openai)) Autocar’s 2025 review of the BMW 7 Series (G70) describes the 7 as ‘medium‑soft’ and ‘pillowy’ with excellent isolation at ordinary speeds, but says it becomes noticeably less engaging when driven hard. ([em.autocar.co.uk](https://www.em.autocar.co.uk/car-review/bmw/7-series?utm_source=openai))",
+  "evidence_ids": [
+   "EV-G70-EU-WEB-47",
+   "EV-G70-EU-WEB-48",
+   "EV-G70-EU-WEB-49",
+   "EV-G70-EU-WEB-51"
+  ],
+  "mention_count": 4,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-EU-g1-0dbd2b7411a65cf3",
+  "kind": "trend",
+  "category": "infotainment_digital",
+  "title": "Trend 2028-2031: infotainment_digital",
+  "summary": "Manufacturers will reduce the number of physical buttons overall but keep dedicated physical controls (e.g., volume, climate, steering‑wheel shortcuts, iDrive/controller) for high‑use and safety‑critical functions. Analyst and industry forecasts expect mass adoption of connected, AI‑enabled in‑car services in the premium segment by 2030–2031 (large share of vehicles connected and increasing take‑rates for voice/AI features), which will accelerate voice‑first and personalized HMI capabilities in 7‑series–class cars. OEMs will increasingly deliver HMI changes via software (OS redesigns, personalization and OTA updates), enabling faster iteration of touchscreen/voice interfaces for premium models between 2028–2031.",
+  "evidence_ids": [
+   "EV-G70-EU-WEB-71",
+   "EV-G70-EU-WEB-74",
+   "EV-G70-EU-WEB-77"
+  ],
+  "mention_count": 3,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-EU-g1-5f3563482d3ce1a9",
+  "kind": "trend",
+  "category": "driver_assistance",
+  "title": "Trend 2028-2031: driver_assistance",
+  "summary": "Mercedes‑Benz received national approval in Germany for its DRIVE PILOT Level‑3 system (updated to allow operation up to 95 km/h) and indicated a market rollout in Germany starting around early 2025, demonstrating an existing premium‑segment L3 offering in Europe.  ",
+  "evidence_ids": [
+   "EV-G70-EU-WEB-94"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ }
+]

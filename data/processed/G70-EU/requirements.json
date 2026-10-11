@@ -1,27 +1,31 @@
 [
  {
-  "id": "REQ-G70-EU-002",
-  "title": "Improve Sportiness for the successor",
-  "description": "Address the customer pain or unmet need around Sportiness with a measurable user outcome.",
-  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "id": "REQ-G70-EU-887fd9",
+  "title": "Improve driver-perceived sportiness during dynamic driving without sacrificing controllability",
+  "description": "When the driver requests a more engaging drive (e.g., via sport mode or by driving enthusiastically), the vehicle should feel measurably more sporty and responsive to the driver’s inputs compared with the current G70 baseline while remaining predictable and controllable under dynamic maneuvers.",
+  "acceptance_criterion": "Conduct a randomized, blinded track comparison between the successor vehicle and a current G70 (model year 2026) baseline using 30 experienced drivers (min. 5 years driving experience, regular drivers of premium sedans, balanced gender). Each driver performs a standardized dynamic sequence (40–120 km/h slalom, 80 km/h double-lane-change, and a 0.5 g steady-state corner) with both cars in the same dynamic driving configuration. Primary observable outcome: mean driver sportiness rating on a 10-point Likert scale for the dynamic sequence. Pass threshold: successor mean >= baseline mean + 1.0 point AND the improvement is statistically significant (paired t-test, p < 0.05). Secondary pass condition (safety/controllability): no more than 10% of drivers report loss of predictable control (binary question) and no vehicle exceeds a pre-defined stability intervention threshold (baseline stability intervention measured on the G70 prior to test).",
   "category": "driving_experience",
   "signal_ids": [
-   "SIG-G70-EU-002"
+   "SIG-G70-EU-g1-1548852b67c3479b",
+   "SIG-G70-EU-g1-1802e2f2191b9030",
+   "SIG-G70-EU-g1-036d463463dc315b",
+   "SIG-G70-EU-g1-f6ab0b5f2006daed",
+   "SIG-G70-EU-g1-61d0b3fc46a20e2f"
   ],
-  "score": 45.8,
+  "score": 55.3,
   "rank": 1,
   "score_breakdown": {
    "customer_pain": {
-    "value": 1.0,
+    "value": 0.533,
     "weight": 0.25,
-    "contribution": 25.0,
-    "explanation": "Mostly complaints, 1 mentions"
+    "contribution": 13.3,
+    "explanation": "Mostly competitor advantages, 15 mentions"
    },
    "reach": {
     "value": 1.0,
     "weight": 0.2,
     "contribution": 20.0,
-    "explanation": "1 of at most 1 mentions (square root scale); EU = 33 % of 2030 volume"
+    "explanation": "15 of at most 15 mentions (square root scale); EU = 33 % of 2030 volume (17,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.677,
@@ -30,38 +34,46 @@
     "explanation": "Sportiness: mean 6.97 of 10"
    },
    "competitive_pressure": {
-    "value": 0.0,
+    "value": 1.0,
     "weight": 0.15,
-    "contribution": 0.0,
-    "explanation": "no trusted web source shows a competitor advantage"
+    "contribution": 15.0,
+    "explanation": "competitor advantage backed by a high-trust web source"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.131,
     "weight": 0.1,
-    "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "contribution": 1.3,
+    "explanation": "no trend behind it; market growth 2025-2030: +30.8 %"
    },
    "effort_inverse": {
-    "value": 0.6,
+    "value": 0.2,
     "weight": 0.1,
-    "contribution": 6.0,
-    "explanation": "effort estimate M"
+    "contribution": 2.0,
+    "explanation": "effort estimate L"
    }
   },
-  "rationale": "Ranked mainly because of customer pain (25 points) and reach (20 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
-  "evidence_level": "C",
+  "rationale": "Ranked mainly because of reach (20 points) and competitive pressure (15 points). Evidence level B: 15 mentions, confirmed only by web sources: A needs a second BMW source (study).",
+  "evidence_level": "B",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available."
+   "A representative G70 (model year 2026) baseline will be measured using the identical test protocol before comparison.",
+   "A 1.0-point increase on a 10-point sportiness scale is a meaningful, perceivable improvement for the target customer segment.",
+   "30 experienced drivers provide sufficient power to detect a 1.0-point mean difference with paired testing given expected within-subject variability (assumed SD ~1.5).",
+   "A G70 (model year 2026) baseline motorway comfort measurement will be performed using the same protocol prior to comparison.",
+   "A difference of 0.5 points on a 10-point comfort scale is the maximum acceptable perceived decline for premium rear-seat passengers.",
+   "20 participants provide adequate sensitivity to detect meaningful comfort changes under paired testing conditions (assumed within-subject SD ~0.8)."
   ],
   "uncertainties": [
-   "Needs PM wording review before approval."
+   "Baseline mean and within-subject variance for the specified dynamic sequence are not currently available and must be measured before final validation.",
+   "Track surface and weather variability may affect absolute ratings; tests must be run on the same day or controlled conditions.",
+   "Exact baseline RMS acceleration and subjective baseline comfort values are not available and must be measured before final validation.",
+   "Route-specific surface quality may influence results; test route must be standardized and repeatable."
   ],
   "offer_check": {
-   "status": "unknown",
-   "note": "Check not possible (RuntimeError).",
+   "status": "standard",
+   "note": "Adaptive M Chassis Control Professional provides active chassis tuning for sharper, sportier responses while preserving vehicle controllability. (Adaptive M Chassis Control Professional)",
    "option_code": null
   },
-  "effort": "M",
+  "effort": "L",
   "status": "proposed",
   "version": 1,
   "horizon": "today",
@@ -75,36 +87,40 @@
   "business": {
    "volume_2025": 13000,
    "volume_2030": 17000,
-   "growth_pct": 54.5,
+   "growth_pct": 30.769,
    "market_share": 0.327,
-   "note": "Sales context from sales_volumes.xlsx"
+   "note": ""
   },
-  "stable_key": "",
-  "badges": []
+  "stable_key": "887fd9",
+  "badges": [],
+  "outlook": null
  },
  {
-  "id": "REQ-G70-EU-001",
-  "title": "Improve Luggage capacity for the successor",
-  "description": "Address the customer pain or unmet need around Luggage capacity with a measurable user outcome.",
-  "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+  "id": "REQ-G70-EU-abf070",
+  "title": "Provide at least 520 litres of usable luggage volume with rear seats up",
+  "description": "Customers can load everyday luggage for long trips without needing to fold rear seats. The trunk must deliver a usable volume that compares with leading rivals (Porsche Panamera Sport Turismo, Mercedes EQS) so rear passengers do not trade rear comfort for inadequate luggage space.",
+  "acceptance_criterion": "Measurement procedure: use the VDA 210 block method (200×100×50 mm blocks) to measure luggage volume with rear seats upright and measured to the upper edge of the rear seats. Test on 3 production-representative vehicles of the standard wheelbase variant and 3 of the long-wheelbase variant. Pass threshold: at least 2 of 3 vehicles of a given variant measure >= 520 litres. Report both median and individual vehicle measurements. If either variant fails, the requirement fails.",
   "category": "comfort_space",
   "signal_ids": [
-   "SIG-G70-EU-001"
+   "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "SIG-G70-EU-g1-24ceb0277b11bb3c",
+   "SIG-G70-EU-g1-4dacfae65992a82f",
+   "SIG-G70-EU-g1-d8ccca9232e51a8a"
   ],
-  "score": 43.8,
+  "score": 49.6,
   "rank": 2,
   "score_breakdown": {
    "customer_pain": {
-    "value": 1.0,
+    "value": 0.556,
     "weight": 0.25,
-    "contribution": 25.0,
-    "explanation": "Mostly complaints, 1 mentions"
+    "contribution": 13.9,
+    "explanation": "Mostly competitor advantages, 9 mentions"
    },
    "reach": {
-    "value": 1.0,
+    "value": 0.775,
     "weight": 0.2,
-    "contribution": 20.0,
-    "explanation": "1 of at most 1 mentions (square root scale); EU = 33 % of 2030 volume"
+    "contribution": 15.5,
+    "explanation": "9 of at most 15 mentions (square root scale); EU = 33 % of 2030 volume (17,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.53,
@@ -113,38 +129,49 @@
     "explanation": "Luggage capacity: mean 7.41 of 10"
    },
    "competitive_pressure": {
-    "value": 0.0,
+    "value": 1.0,
     "weight": 0.15,
-    "contribution": 0.0,
-    "explanation": "no trusted web source shows a competitor advantage"
+    "contribution": 15.0,
+    "explanation": "competitor advantage backed by a high-trust web source"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.131,
     "weight": 0.1,
-    "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "contribution": 1.3,
+    "explanation": "no trend behind it; market growth 2025-2030: +30.8 %"
    },
    "effort_inverse": {
-    "value": 0.6,
+    "value": 0.2,
     "weight": 0.1,
-    "contribution": 6.0,
-    "explanation": "effort estimate M"
+    "contribution": 2.0,
+    "explanation": "effort estimate L"
    }
   },
-  "rationale": "Ranked mainly because of customer pain (25 points) and reach (20 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
-  "evidence_level": "C",
+  "rationale": "Ranked mainly because of reach (15.5 points) and competitive pressure (15 points). Evidence level B: Only 9 mentions, but confirmed by 2 independent source types.",
+  "evidence_level": "B",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available."
+   "520 litres is a realistic customer-facing target for the successor 7 Series sedan to remain competitive with Panamera Sport Turismo (≈520 L) and to narrow the gap to EQS (610 L).",
+   "Using the VDA 210 block method yields comparable results to the competitor numbers cited and will be accepted internally as the measurement standard for luggage volume.",
+   "Test vehicles will be production-representative or pre-production vehicles with final interior packaging.",
+   "A maximum 10% reduction is a realistic engineering target to keep PHEV variants practical while allowing for battery packaging constraints (benchmark: Porsche Panamera PHEV reductions reported around ~10–20%).",
+   "VDA 210 measurements will be used for both variants to ensure comparability.",
+   "A 29-inch checked suitcase of the stated approximate dimensions represents a common large suitcase customers expect to stow in a flagship sedan.",
+   "Providing this capability addresses the competitor advantage noted for hatch/fastback designs (EQS) and for Sport Turismo body styles (Panamera)."
   ],
   "uncertainties": [
-   "Needs PM wording review before approval."
+   "The current G70 (baseline) luggage volume measured by VDA 210 is not provided in the input signals; a baseline measurement of the G70 must be taken before final validation.",
+   "Competitor volumes referenced may use different measurement conventions; direct comparability depends on using the same VDA method.",
+   "Exact current PHEV vs ICE luggage-volume delta for the G70 platform is unknown and must be measured as a baseline before final validation.",
+   "Some regional packaging (spare wheel, inflator, etc.) may change usable volume; tests must use representative equipment/loadout for the target market (EU).",
+   "Some competitor advantages come from a hatch/fastback architecture (EQS), which may not be fully replicable in a traditional sedan body; if the successor remains a sedan, achieving the same ease of access may require changes to sill height or aperture that must be validated for manufacturability.",
+   "Exact suitcase dimensions can vary; test must use a specified model for reproducibility."
   ],
   "offer_check": {
-   "status": "unknown",
-   "note": "Check not possible (RuntimeError).",
+   "status": "not_offered",
+   "note": "No option specifies trunk capacity or ≥520 L; the equipment list contains no luggage volume information.",
    "option_code": null
   },
-  "effort": "M",
+  "effort": "L",
   "status": "proposed",
   "version": 1,
   "horizon": "today",
@@ -158,11 +185,199 @@
   "business": {
    "volume_2025": 13000,
    "volume_2030": 17000,
-   "growth_pct": 54.5,
+   "growth_pct": 30.769,
    "market_share": 0.327,
-   "note": "Sales context from sales_volumes.xlsx"
+   "note": ""
   },
-  "stable_key": "",
-  "badges": []
+  "stable_key": "abf070",
+  "badges": [],
+  "outlook": null
+ },
+ {
+  "id": "REQ-G70-EU-48b235",
+  "title": "Operate volume and climate controls without looking while driving",
+  "description": "Customers must be able to find and operate core physical controls for volume and climate (including primary steering‑wheel shortcuts) without glancing at the central display, so they can keep eyes on the road and reduce distraction.",
+  "acceptance_criterion": "Closed‑road driving trial with N=30 licensed drivers (15 current BMW 7‑series owners, 15 target luxury buyers). Each participant performs 20 randomized tasks (adjust volume up/down, mute, set cabin temperature ±2°C, toggle defrost) while driving at 50–100 km/h under typical urban/highway conditions. Eye‑tracking is used to detect glances to the central display. Pass if: (a) ≥90% of tasks are completed without the driver making a gaze fixation on the central display longer than 250 ms; and (b) the mean task completion time ≤ 1.5 seconds. All 30 participants must complete the full task set to count.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G70-EU-g1-0dbd2b7411a65cf3"
+  ],
+  "score": 22.7,
+  "rank": 3,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.3,
+    "weight": 0.25,
+    "contribution": 7.5,
+    "explanation": "Mostly trends, 3 mentions"
+   },
+   "reach": {
+    "value": 0.447,
+    "weight": 0.2,
+    "contribution": 8.9,
+    "explanation": "3 of at most 15 mentions (square root scale); EU = 33 % of 2030 volume (17,000 cars)"
+   },
+   "satisfaction_gap": {
+    "value": 0.0,
+    "weight": 0.2,
+    "contribution": 0.0,
+    "explanation": "no study data"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 1.0,
+    "weight": 0.1,
+    "contribution": 10.0,
+    "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +30.8 %"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of future relevance (10 points) and reach (8.9 points). Evidence level C: 3 mentions from web sources only: without BMW data at most a hint.",
+  "evidence_level": "C",
+  "assumptions": [
+   "Test vehicles use the production layout for physical controls as offered to customers.",
+   "Driving speeds and environmental conditions stated (50–100 km/h) approximate typical customer use.",
+   "Eye‑tracking hardware and analysis follow established automotive distraction protocols.",
+   "Controls evaluated are the production‑intended surfaces and actuation forces.",
+   "Tests include participants wearing thin gloves and bare hands to reflect use variability.",
+   "Vehicles have connectivity available for receiving optional updates during the test period.",
+   "Update packages used in the test are representative in size and scope of expected HMI personalization changes."
+  ],
+  "uncertainties": [
+   "Individual customer differences in reach and ergonomics may affect results; test sample attempts to represent the target population but does not cover all body sizes.",
+   "Perception of 'distinct feel' may vary culturally and by prior vehicle experience; chosen thresholds are a practical target for the successor vehicle.",
+   "Backend services and regional connectivity variability may affect real‑world update delivery times; this requirement only covers in‑vehicle controls and user understanding."
+  ],
+  "offer_check": {
+   "status": "optional",
+   "note": "Multifunction steering wheel with Shy‑Tech haptic controls enables tactile operation of audio and functions without looking. (Sport Lenkrad mit Shy-Tech-Bedienelementen:)",
+   "option_code": "255"
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 3,
+   "rank_max": 3,
+   "top3_share": 1.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 13000,
+   "volume_2030": 17000,
+   "growth_pct": 30.769,
+   "market_share": 0.327,
+   "note": ""
+  },
+  "stable_key": "48b235",
+  "badges": [],
+  "outlook": null
+ },
+ {
+  "id": "REQ-G70-EU-48b235-next-gen",
+  "title": "Customers can rely on a voice‑first, AI‑enabled assistant to complete common driving tasks without manual fallback",
+  "description": "Customers should be able to accomplish core in‑car tasks (navigation address entry, media selection, phone calls, climate setpoints) using voice alone, with the assistant personalized to the user and available during real driving.",
+  "acceptance_criterion": "Real‑world field trial with N=100 consenting drivers across multiple EU markets, each using the system for 4 weeks for daily driving. Logged voice attempts cover the core task set (navigation entry, media selection, calling a contact, setting climate). Pass if: (a) ≥90% of logged attempts complete the requested task without manual fallback or touch intervention; (b) median end‑to‑end completion latency ≤ 2.5 seconds; and (c) mean user satisfaction (post‑trial survey) ≥ 4.0 on a 1–5 scale. At least 80% of participants must have used at least 25 voice commands during the trial to count.",
+  "category": "infotainment_digital",
+  "signal_ids": [
+   "SIG-G70-EU-g1-0dbd2b7411a65cf3"
+  ],
+  "score": 14.2,
+  "rank": 4,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.3,
+    "weight": 0.25,
+    "contribution": 7.5,
+    "explanation": "Mostly trends, 3 mentions"
+   },
+   "reach": {
+    "value": 0.447,
+    "weight": 0.2,
+    "contribution": 8.9,
+    "explanation": "3 of at most 15 mentions (square root scale); EU = 33 % of 2030 volume (17,000 cars)"
+   },
+   "satisfaction_gap": {
+    "value": 0.0,
+    "weight": 0.2,
+    "contribution": 0.0,
+    "explanation": "no study data"
+   },
+   "competitive_pressure": {
+    "value": 0.0,
+    "weight": 0.15,
+    "contribution": 0.0,
+    "explanation": "no trusted web source shows a competitor advantage"
+   },
+   "future_relevance": {
+    "value": 1.0,
+    "weight": 0.1,
+    "contribution": 10.0,
+    "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +30.8 %"
+   },
+   "effort_inverse": {
+    "value": 0.2,
+    "weight": 0.1,
+    "contribution": 2.0,
+    "explanation": "effort estimate L"
+   }
+  },
+  "rationale": "Ranked mainly because of future relevance (10 points) and reach (8.9 points). Evidence level D: Bet on the next generation: only 0 direct customer mentions, the rest rests on trends (assumption).",
+  "evidence_level": "D",
+  "assumptions": [
+   "Sufficient mobile connectivity (4G/5G) is available in the trial regions and participants opt in to data collection and personalization features.",
+   "The system supports the major EU languages relevant to the trial participants.",
+   "Speech recognition models and personalization are deployed server‑side and updated during the trial as needed.",
+   "Consenting customers provide connectivity for OTA downloads and agree to logging for pilot metrics.",
+   "The backend update delivery system can target and report on EU regional delivery success rates.",
+   "Legal/regulatory approvals required for OTA content in each pilot market have been obtained prior to the pilot."
+  ],
+  "uncertainties": [
+   "Actual success rates will depend on ambient noise, regional accents and network latency; the requirement assumes these factors are representative across the selected EU regions.",
+   "Regulatory or privacy restrictions could limit personalization or logging in certain markets; compliance constraints must be validated before trial.",
+   "Delivery times may vary with carrier performance and local network outages; the 48‑hour target assumes typical network conditions.",
+   "Regulatory or certification delays could restrict certain types of UI changes in specific countries; this must be checked per market before rollout."
+  ],
+  "offer_check": {
+   "status": "not_offered",
+   "note": "No listed option provides a voice-first AI assistant that autonomously completes driving tasks without manual fallback.",
+   "option_code": null
+  },
+  "effort": "L",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "next_gen",
+  "robustness": {
+   "rank_min": 4,
+   "rank_max": 4,
+   "top3_share": 0.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 13000,
+   "volume_2030": 17000,
+   "growth_pct": 30.769,
+   "market_share": 0.327,
+   "note": ""
+  },
+  "stable_key": "48b235",
+  "badges": [
+   "Zukunftswette",
+   "Annahme"
+  ],
+  "outlook": null
  }
 ]

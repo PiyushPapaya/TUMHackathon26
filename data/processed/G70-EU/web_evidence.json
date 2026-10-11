@@ -1,1 +1,1968 @@
-[]
+[
+ {
+  "id": "EV-G70-EU-WEB-01",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz (Germany)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Mercedes-Benz official EU technical data lists the S‑Class long‑wheelbase (S 450 / S 500 / S 580) trunk volume as 535 litres.",
+  "url": "https://www.mercedes-benz.de/passengercars/models/saloon/s-class/overview.html",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mercedes‑Benz (Germany)",
+   "published": "accessed 2026-10-11",
+   "stance": "supports",
+   "about": "Mercedes‑Benz S‑Class trunk volume (EU spec).",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-02",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz (Germany)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Mercedes‑Benz official data shows the S‑Class plug‑in‑hybrid variants (S 450 e / S 580 e) with a reduced trunk volume of 350 litres (EU spec).",
+  "url": "https://www.mercedes-benz.de/passengercars/models/saloon/s-class/overview.html",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mercedes‑Benz (Germany)",
+   "published": "accessed 2026-10-11",
+   "stance": "supports",
+   "about": "Mercedes‑Benz S‑Class PHEV trunk volume (EU spec).",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-03",
+  "source_type": "web",
+  "source_name": "CompleteCar.ie",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "CompleteCar.ie measured/tested the S 580 e (long‑wheelbase) and reported boot space of 345 litres with all seats in use, and listed “PHEV gets smaller boot” as a con.",
+  "url": "https://www.completecar.ie/car-reviews/article/Mercedes-Benz/S-Class/S-Class/212/14892/2026-Mercedes-Benz-S-Class-review.html",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "CompleteCar.ie",
+   "published": "12 May 2026",
+   "stance": "supports",
+   "about": "S 580 e (LWB) measured boot and reviewer complaint about PHEV boot size.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-04",
+  "source_type": "web",
+  "source_name": "Car and Driver",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Car and Driver’s U.S. specification/testing lists the 2024 S‑Class trunk volume as 13 cu ft (≈368 litres), illustrating differences between regional/model specifications and measurement methods.",
+  "url": "https://www.caranddriver.com/mercedes-benz/s-class-2024",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Car and Driver",
+   "published": "2024 (page accessed 2026)",
+   "stance": "supports",
+   "about": "S‑Class trunk volume (U.S. spec).",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-05",
+  "source_type": "web",
+  "source_name": "ADAC",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "ADAC’s technical summary for the BMW i7 (G70) shows the manufacturer-specified trunk volume as 500 litres, while ADAC’s own measured trunk volume (ADAC method) is 410 litres for the i7 xDrive60.",
+  "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/bmw/bmw-i7/",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ADAC",
+   "published": "page updated 2026 (accessed 2026)",
+   "stance": "supports",
+   "about": "BMW i7 manufacturer vs ADAC measured trunk volume.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-06",
+  "source_type": "web",
+  "source_name": "AutoScout24",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "AutoScout24’s technical summary lists current BMW 7er (G70 generation) trunk volumes for combustion/PHEV/ICE variants in the EU as approximately 540 litres for some ICE 7er entries and about 525 litres for plug‑in‑hybrid 7er variants (values depend on the exact model/version).",
+  "url": "https://www.autoscout24.de/auto/technische-daten/bmw/7er/",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "AutoScout24",
+   "published": "site data (accessed 2026)",
+   "stance": "supports",
+   "about": "BMW 7er (G70) trunk volumes by variant.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-07",
+  "source_type": "web",
+  "source_name": "ADAC",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "ADAC’s i7 test and multiple media reviews highlight that BMW’s G70/i7 offers very generous rear‑seat legroom and rear comfort (ADAC: “im Fond fürstlich”), making the 7er a strong contender on passenger comfort in the EU market.",
+  "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/bmw/bmw-i7/",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ADAC",
+   "published": "page updated 2026 (accessed 2026)",
+   "stance": "supports",
+   "about": "BMW i7 rear‑seat comfort (ADAC review).",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-08",
+  "source_type": "web",
+  "source_name": "Car and Driver (example review)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Multiple authoritative reviews note that the Mercedes S‑Class (especially long‑wheelbase versions) delivers limousine‑like rear comfort and extensive rear features, but reviewers also flag that PHEV versions have substantially reduced luggage space compared with ICE S‑Class models.",
+  "url": "https://www.caranddriver.com/mercedes-benz/s-class-2024",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Car and Driver (example review)",
+   "published": "2024 (page accessed 2026)",
+   "stance": "supports",
+   "about": "S‑Class rear comfort and PHEV luggage penalty (review observations).",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-09",
+  "source_type": "web",
+  "source_name": "CompleteCar.ie (and related Autoblog luggage test)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Independent reviews/tests and luggage‑specific writeups (e.g., CompleteCar.ie and Autoblog luggage tests) document customer/reviewer complaints about reduced luggage capacity on S‑Class PHEV variants and note that published/advertised trunk figures can vary by market and measurement method (manufacturer vs third‑party tests).",
+  "url": "https://www.completecar.ie/car-reviews/article/Mercedes-Benz/S-Class/S-Class/212/14892/2026-Mercedes-Benz-S-Class-review.html",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "CompleteCar.ie (and related Autoblog luggage test)",
+   "published": "2026 / various (accessed 2026)",
+   "stance": "supports",
+   "about": "Customer/reviewer complaints: luggage capacity on S‑Class PHEV and measurement variability.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-10",
+  "source_type": "web",
+  "source_name": "Autocar",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Autocar (road test) finds the Mercedes‑Benz EQS delivers excellent cruising refinement and ride isolation but notes “occasional thumps and jitters” from the axles and that “ride and body control deteriorate a little on out‑of‑town country roads.”",
+  "url": "https://d2km96w3x5blkf.cloudfront.net/car-review/mercedes-benz/eqs",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autocar",
+   "published": "",
+   "stance": "supports",
+   "about": "Mercedes‑Benz EQS driving experience / ride comfort (2025/2026 EU) ",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-11",
+  "source_type": "web",
+  "source_name": "Autocar",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Autocar’s BMW i7 road test says the i7’s adaptive air suspension, four‑wheel steering and active chassis systems deliver a “ride and handling compromise [that] feels luxurious — but still BMW,” giving the i7 more composed, agile behaviour than typical large‑flagship EVs. ",
+  "url": "https://d2km96w3x5blkf.cloudfront.net/car-review/bmw/i7",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autocar",
+   "published": "",
+   "stance": "supports",
+   "about": "BMW 7 Series (G70) / i7 driving experience / ride comfort (2025/2026 EU) ",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-12",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz (UK)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Mercedes‑Benz (official EQS page, UK) documents that the EQS uses AIRMATIC air suspension with intelligent damper control, steer‑by‑wire and rear‑axle steering and offers Comfort and Sport DYNAMIC SELECT modes — emphasising manufacturer tuning for outstanding ride comfort with a Sport setting available. ",
+  "url": "https://www.mercedes-benz.co.uk/passengercars/models/saloon/eqs/overview.html",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mercedes‑Benz (UK)",
+   "published": "",
+   "stance": "supports",
+   "about": "Mercedes‑Benz EQS equipment and ride philosophy (manufacturer specification) ",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-13",
+  "source_type": "web",
+  "source_name": "BMW Group (press release)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "BMW’s press release for the new G70 7 Series (i7) states standard air springs, adaptive dampers, rear‑wheel steering and optional active anti‑roll technology and presents the model as combining “unsurpassed long‑distance comfort” with dynamic driving qualities. ",
+  "url": "https://www.press.bmwgroup.com/usa/article/detail/T0382613EN_US/the-new-bmw-7-series?language=en_US",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group (press release)",
+   "published": "2022-04-20",
+   "stance": "supports",
+   "about": "BMW 7 Series (G70) / i7 equipment and ride philosophy (manufacturer specification) ",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-14",
+  "source_type": "web",
+  "source_name": "Reddit (r/mercedes_benz)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Owner and enthusiast posts report the EQS “feels sluggish” and “handling feels sluggish (even in sport mode)” — e.g. a 2023 EQS580 owner thread on Reddit where multiple owners describe the EQS as a comfort‑first, less sporty car. ",
+  "url": "https://www.reddit.com/r/mercedes_benz/comments/1gg6hyt/2023_eqs_580/",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Reddit (r/mercedes_benz)",
+   "published": "",
+   "stance": "supports",
+   "about": "Owner feedback on EQS handling / sportiness (real‑world owners) ",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-15",
+  "source_type": "web",
+  "source_name": "Car and Driver",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Car and Driver’s AMG EQS test notes AMG tuning improves body control relative to the regular EQS and summarises that the EQS in regular trim “rides soft” — indicating the standard EQS prioritises comfort and only AMG variants approach noticeably sharper handling. ",
+  "url": "https://www.caranddriver.com/reviews/a38697462/2022-mercedes-amg-eqs-drive/",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Car and Driver",
+   "published": "2022-07-14",
+   "stance": "supports",
+   "about": "Mercedes‑Benz EQS (standard vs AMG) — ride comfort vs sportiness",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-16",
+  "source_type": "web",
+  "source_name": "Kofferraum.org",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "The BMW 7 Series (G70) has a large trunk — commonly listed at about 540 litres of boot volume (saloon version).",
+  "url": "https://kofferraum.org/en-gb/boot-dimensions/bmw/7-series/",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Kofferraum.org",
+   "published": "",
+   "stance": "supports",
+   "about": "BMW 7 Series (G70) - boot capacity",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-17",
+  "source_type": "web",
+  "source_name": "Autocar",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Independent reviews note the 7 Series’ rear compartment is limousine‑like with very generous rear legroom (Autocar quotes about 880 mm of rear legroom), making it one of the most comfortable cars for rear passengers in this class.",
+  "url": "https://www.autocar.co.uk/car-review/bmw/7-series",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Autocar",
+   "published": "",
+   "stance": "supports",
+   "about": "BMW 7 Series (G70) - rear comfort/legroom",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-18",
+  "source_type": "web",
+  "source_name": "Porsche Newsroom",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Porsche’s own press material states the Panamera Sport Turismo offers up to 520 litres of luggage capacity (measured to the upper edge of the rear seats) and that the Sport Turismo provides about 20 litres more than the fastback/sedan variant (i.e., the standard Panamera sedan is ≈500 litres).",
+  "url": "https://newsroom.porsche.com/dam/jcr:82339041-ce23-4b22-9deb-774f8e49b76d/15%20-%20Porsche%20Panamera%20Sport%20Turismo%20Press%20Release.pdf",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Porsche Newsroom",
+   "published": "2017-03-01",
+   "stance": "supports",
+   "about": "Porsche Panamera (Sport Turismo and sedan) - luggage capacity",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-19",
+  "source_type": "web",
+  "source_name": "Porsche Newsroom",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Porsche’s press release and subsequent reviews report Panamera plug‑in‑hybrid variants have reduced usable boot volume (Panamera 4 E‑Hybrid Sport Turismo shown at 425 litres in Porsche material); reviewers also list hybrid sedan boots around ≈421–430 litres because of the battery intrusion.",
+  "url": "https://newsroom.porsche.com/dam/jcr:82339041-ce23-4b22-9deb-774f8e49b76d/15%20-%20Porsche%20Panamera%20Sport%20Turismo%20Press%20Release.pdf",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Porsche Newsroom",
+   "published": "2017-03-01",
+   "stance": "supports",
+   "about": "Porsche Panamera 4 E‑Hybrid (Sport Turismo) - boot capacity",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-20",
+  "source_type": "web",
+  "source_name": "Autocar",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Autocar’s recent Panamera review states the hybrid Panamera’s boot is about 430 litres and explicitly notes that this is substantially less (around 90 litres) than the BMW 7 Series’ boot — i.e., reviews record the Panamera hybrid’s luggage space as noticeably smaller than the 7 Series’ trunk.",
+  "url": "https://zephr.autocar.co.uk/car-review/porsche/panamera",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Autocar",
+   "published": "",
+   "stance": "supports",
+   "about": "Comparison: Panamera hybrid vs BMW 7 Series - boot capacity",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-21",
+  "source_type": "web",
+  "source_name": "Team‑BHP forum",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Owner and enthusiast threads (for example Team‑BHP and Rennlist) commonly cite complaints about Panamera luggage usability — owners report a shallow load bay, low/fasterback boot opening and reduced vertical space (soft luggage recommended), and note hybrids further lose capacity to battery packaging.",
+  "url": "https://www.team-bhp.com/forum/test-drives-initial-ownership-reports/186331-porsche-panamera-edition-diesel-my-new-daily-drive.html",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Team‑BHP forum",
+   "published": "",
+   "stance": "supports",
+   "about": "Owner reports: Porsche Panamera - luggage complaints",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-22",
+  "source_type": "web",
+  "source_name": "Carwow",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Multiple mainstream reviews (e.g., Carwow) describe the BMW 7 Series boot as a ‘good size’ but warn it is not the most practical solution for versatility — reviewers note less flexibility (and in some variants no simple fold‑flat rear‑seat solution) despite the generous volume.",
+  "url": "https://www.carwow.co.uk/bmw/7-series",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Carwow",
+   "published": "",
+   "stance": "supports",
+   "about": "BMW 7 Series - boot practicality and versatility",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-23",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz Media Newsroom USA",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Mercedes-Benz's May 13, 2026 press release describes the updated S‑Class as having standard AIRMATIC air suspension with intelligent/predictive damping and rear‑axle steering (up to 4.5°) to prioritise ride comfort and rear‑seat refinement.",
+  "url": "https://media.mbusa.com/news/the-new-mercedes-benz-s-class-refined-in-every-detail",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Mercedes‑Benz Media Newsroom USA",
+   "published": "May 13, 2026",
+   "stance": "supports",
+   "about": "Mercedes‑Benz S‑Class suspension and ride‑comfort technology",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-24",
+  "source_type": "web",
+  "source_name": "Auto Express",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "In a 2023 twin test Auto Express wrote that the S‑Class ‘floats above the road’ and that its ride quality is ‘fantastic’, describing the Mercedes as more compliant/‘floating’ than the BMW 7 Series in the same comparison.",
+  "url": "https://www.autoexpress.co.uk/car-group-tests/361074/bmw-7-series-vs-mercedes-s-class-2023-twin-test-review",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Auto Express",
+   "published": "2023",
+   "stance": "supports",
+   "about": "Comparative ride comfort: S‑Class vs BMW 7 Series",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-25",
+  "source_type": "web",
+  "source_name": "Auto Express",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Auto Express's March 25, 2026 overview of the BMW 7 Series states the 7 Series is tuned marginally firmer than the S‑Class and ‘stands ahead’ of the S‑Class for driving dynamics, trading a little ride compliance for more engaging handling.",
+  "url": "https://www.autoexpress.co.uk/bmw/7-series/353217/used-bmw-7-series-review",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Auto Express",
+   "published": "March 25, 2026",
+   "stance": "supports",
+   "about": "BMW 7 Series (G70) driving dynamics vs S‑Class",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-26",
+  "source_type": "web",
+  "source_name": "BMW Group PressClub (UK)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "BMW's official press materials for the 7 Series (G70/i7) describe adaptive two‑axle air suspension with electronically controlled dampers and modes that deliberately balance ride comfort and sportiness, supporting BMW's positioning of the 7 Series as more driver‑engaging than typical limousines.",
+  "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0221565EN_GB/the-new-bmw-7-series?language=en_GB",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group PressClub (UK)",
+   "published": "June 11, 2015",
+   "stance": "supports",
+   "about": "BMW 7 Series suspension design and intended driving character",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-27",
+  "source_type": "web",
+  "source_name": "Carwow",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Independent buyer/reviewer guides (Carwow, last updated May 18, 2026) characterise the S‑Class as a ‘buttery‑smooth’ cruiser 'best for wafting around in comfort', noting that a BMW 7 Series is ‘probably a little bit more engaging to drive’—an observation that aligns with customer/owner reports that sportiness is a common shortcoming for S‑Class buyers seeking driver engagement.",
+  "url": "https://www.carwow.co.uk/mercedes/s-class",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Carwow",
+   "published": "May 18, 2026",
+   "stance": "supports",
+   "about": "Customer and reviewer perception: S‑Class comfort versus sportiness",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-28",
+  "source_type": "web",
+  "source_name": "Audi MediaCenter",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Audi publishes a luggage-compartment volume of 505 litres (boot behind the 2nd seat row) for the standard A8 (long‑wheelbase A8 L / non‑PHEV) in its technical data. ([uploads.audi-mediacenter.com](https://uploads.audi-mediacenter.com/system/production/car_motorizations/632/file_en/b56e37f81d3658f0b63f12381a9429189ff5249d/eTD-Audi-A8-55TFSI-quattro-tiptronic-250kW-MHEV_251023.pdf?1761641662=&disposition=attachment&utm_source=openai))",
+  "url": "https://uploads.audi-mediacenter.com/system/production/car_motorizations/632/file_en/b56e37f81d3658f0b63f12381a9429189ff5249d/eTD-Audi-A8-55-TFSI-quattro-tiptronic-250kW-MHEV_251023.pdf?1761641662=&disposition=attachment",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Audi MediaCenter",
+   "published": "",
+   "stance": "supports",
+   "about": "Audi A8 boot volume (EU) -- standard models",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-29",
+  "source_type": "web",
+  "source_name": "Audi UK",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Audi’s A8 L TFSI e plug‑in hybrid is documented with a smaller luggage capacity — Audi UK lists the A8 L TFSI e at 390 litres — i.e., the PHEV battery package reduces usable boot space versus the standard A8. ([audi.co.uk](https://www.audi.co.uk/en/models/a8/a8-l-tfsi-e/?category=Car+Review&utm_source=openai))",
+  "url": "https://www.audi.co.uk/en/models/a8/a8-l-tfsi-e/?category=Car+Review",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Audi UK",
+   "published": "",
+   "stance": "supports",
+   "about": "Audi A8 L TFSI e (PHEV) boot volume (EU/UK) reduced",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-30",
+  "source_type": "web",
+  "source_name": "BMW Group Press",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "BMW’s official materials state the new 7 Series (G70) offers roughly 540 litres for conventionally powered variants, about 525 litres for plug‑in‑hybrid variants and approximately 500 litres for the fully electric i7 — i.e., BMW’s 7 Series line‑up generally reports larger boot volumes than the standard Audi A8 figure. ([press.bmwgroup.com](https://www.press.bmwgroup.com/canada/article/detail/T0382653EN/the-new-bmw-7-series%3A-automotive-luxury-and-innovations-for-the-digital-era?language=en&utm_source=openai))",
+  "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0382793EN_GB/the-new-bmw-7-series?language=en_GB",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press",
+   "published": "",
+   "stance": "supports",
+   "about": "BMW 7 Series (G70 / i7) boot volumes (EU) by powertrain",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-31",
+  "source_type": "web",
+  "source_name": "BMW Group Press / Audi MediaCenter / Audi UK",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Direct volume comparison: published numbers show the BMW 7 (G70) conventional models ≈540 L vs Audi A8 ≈505 L (standard) — and the A8 PHEV’s ≈390 L is substantially smaller than BMW’s PHEV ≈525 L or the i7 ≈500 L; these official/spec figures explain why some customers might complain about 'luggage capacity' for certain A8 variants (especially the PHEV). ([press.bmwgroup.com](https://www.press.bmwgroup.com/canada/article/detail/T0382653EN/the-new-bmw-7-series%3A-automotive-luxury-and-innovations-for-the-digital-era?language=en&utm_source=openai))",
+  "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0382793EN_GB/the-new-bmw-7-series?language=en_GB",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press / Audi MediaCenter / Audi UK",
+   "published": "",
+   "stance": "neutral",
+   "about": "Numeric comparison of boot volumes (BMW G70 vs Audi A8, incl. PHEV differences)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-32",
+  "source_type": "web",
+  "source_name": "BMW Group Press / Audi (regional brochure)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Comfort and rear‑passenger equipment: BMW’s G70 emphasizes enhanced rear comfort (long‑wheelbase packaging, ‘Executive/Executive Lounge’ rear seat options, reclining/footrest and large rear‑seat features) while Audi’s A8 L also targets rear‑seat comfort with long‑wheelbase dimensions and luxury fittings — reviewers note both are very comfortable but BMW highlights more configurable rear‑seat ‘lounge’ features; these comfort claims are documented in BMW’s press materials and Audi’s technical/brochure pages. ([press.bmwgroup.com](https://www.press.bmwgroup.com/united-kingdom/article/detail/T0382793EN_GB/the-new-bmw-7-series?language=en_GB&utm_source=openai))",
+  "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0382793EN_GB/the-new-bmw-7-series?language=en_GB",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press / Audi (regional brochure)",
+   "published": "",
+   "stance": "neutral",
+   "about": "Rear comfort and equipment comparison (BMW 7 G70 vs Audi A8 L)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-33",
+  "source_type": "web",
+  "source_name": "Porsche Newsroom (press kit)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Porsche presents the Panamera as a sports‑car‑derived luxury sedan with chassis systems (Porsche 4D Chassis Control, multi‑chamber air suspension and Active Ride) designed to combine agile handling with ride comfort.",
+  "url": "https://newsroom.porsche.com/dam/jcr%3A65fc25c0-794b-413c-88db-af52bd3e467e/_Panamera%204%20E-hybrid%20and%20Executive%20Models%20Press%20Kit.pdf",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Porsche Newsroom (press kit)",
+   "published": "2025",
+   "stance": "neutral",
+   "about": "Panamera chassis/comfort tech.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-34",
+  "source_type": "web",
+  "source_name": "Car and Driver",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Professional reviews of the 2025 Panamera GTS report very sharp, sports‑car‑like handling but explicitly warn that the GTS’s setup (stiffer springs/anti‑roll bars and lower ride height) produces a firm, sometimes harsh ride for passengers.",
+  "url": "https://www.caranddriver.com/reviews/a62704977/2025-porsche-panamera-gts-drive/",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Car and Driver",
+   "published": "Updated Jul 28, 2025",
+   "stance": "supports",
+   "about": "Panamera GTS handling vs ride comfort.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-35",
+  "source_type": "web",
+  "source_name": "Motor1",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Several mainstream reviews of the 2025 Panamera (including hybrid variants) praise the car’s overall balance, saying Active Ride and electronic chassis systems extend a wide bandwidth between compliant cruising and sporty handling for many Panamera trims.",
+  "url": "https://www.motor1.com/reviews/774852/2025-porsche-panamera-4s-e-hybrid-review/",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Motor1",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Panamera ride/handling for hybrid variants.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-36",
+  "source_type": "web",
+  "source_name": "Autoblog",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Independent first‑drive reports from drives in and around Stuttgart note the refreshed Panamera delivers sharper handling and, in everyday settings, a smoother ride compared with some prior Panamera iterations thanks to adaptive suspension and rear‑wheel steering.",
+  "url": "https://www.autoblog.com/news/2025-porsche-panamera-e-hybrid-review",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Autoblog",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Panamera ride/handling improvements (EU testing).",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-37",
+  "source_type": "web",
+  "source_name": "Autocar",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Reviewers of the BMW 7 Series (G70) in the EU/UK press describe the car as prioritising ‘pillowy, isolated’ ride comfort and refinement, and note that it offers less sporting dynamism and driver engagement compared with past 7‑Series generations.",
+  "url": "https://www.autocar.co.uk/car-review/bmw/7-series",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Autocar",
+   "published": "2025/2026 (review)",
+   "stance": "supports",
+   "about": "BMW 7 Series (G70) ride vs sportiness.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-38",
+  "source_type": "web",
+  "source_name": "BMW Group press release",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "BMW’s own technical briefing for the 7 Series emphasises technologies aimed at ride quality (two‑axle air suspension, Dynamic Damper Control) and an optional Active Comfort Drive with Road Preview and active roll stabilisation that prioritise comfort and high‑speed composure.",
+  "url": "https://www.press.bmwgroup.com/usa/article/detail/T0221442EN_US/the-all-new-bmw-7-series?language=en_US",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press release",
+   "published": "2022–2024 (model briefing)",
+   "stance": "neutral",
+   "about": "BMW 7 Series chassis technology.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-39",
+  "source_type": "web",
+  "source_name": "Synthesis of Car and Driver + Autocar reviews",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Taken together, EU/UK professional coverage for 2025–2026 indicates a clear pattern: the Panamera is positioned toward sharper, sportier driving behaviour (with some trims trading rear‑seat smoothness for handling), while the BMW G70 is positioned toward maximum rear‑seat comfort and isolation at the expense of the more engaged ‘sporty’ driving character many older BMW buyers expected.",
+  "url": "https://www.caranddriver.com/reviews/a62704977/2025-porsche-panamera-gts-drive/",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Synthesis of Car and Driver + Autocar reviews",
+   "published": "2025–2026",
+   "stance": "supports",
+   "about": "Comparative summary of Panamera vs BMW 7 (G70).",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-40",
+  "source_type": "web",
+  "source_name": "Auto Express",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "The Mercedes‑Benz EQS (sedan) has a listed boot capacity of 610 litres with the rear seats up and expands to about 1,770 litres with the rear seats folded down.",
+  "url": "https://www.autoexpress.co.uk/mercedes/eqs/363916/mercedes-eqs-review",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Auto Express",
+   "published": "30 July 2024",
+   "stance": "supports",
+   "about": "Mercedes‑Benz EQS boot capacity",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-41",
+  "source_type": "web",
+  "source_name": "Auto Express",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Reviewers note the EQS uses a fastback/hatch-style tailgate that improves access but the load space has a relatively low vertical height, so some tall/bulky items may not fit easily despite the 610‑litre figure.",
+  "url": "https://www.autoexpress.co.uk/mercedes/eqs/363916/mercedes-eqs-review",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Auto Express",
+   "published": "30 July 2024",
+   "stance": "supports",
+   "about": "EQS boot shape and practical luggage limits",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-42",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz 2025 EQS Order Guide (PDF)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Mercedes lists the EQS with standard AIRMATIC (air) suspension and the 2025 EQS order guide shows optional rear‑seat packages and power‑adjustable second‑row seats (including chauffeur/rear comfort features) that increase rear‑seat comfort and configurability.",
+  "url": "https://device.report/m/b644b63e01a8ebfa82cf77ef34c5deee49a2ffa5db969c43b3e9db7f039f0c97.pdf",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mercedes‑Benz 2025 EQS Order Guide (PDF)",
+   "published": "Order guide published 24 April 2024 (MY25)",
+   "stance": "supports",
+   "about": "EQS suspension and rear‑seat options / comfort features",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-43",
+  "source_type": "web",
+  "source_name": "Wikipedia (BMW 7 Series / i7 (G70) page)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "BMW's G70 7 Series lists roughly 540 litres of trunk space for the ICE models, while the battery‑electric i7 variant has about 500 litres of trunk space — BMW places the battery under the floor, which reduces boot volume versus ICE models.",
+  "url": "https://en.wikipedia.org/wiki/BMW_7_Series_(G70)",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Wikipedia (BMW 7 Series / i7 (G70) page)",
+   "published": "accessed Oct 11, 2026 (page content cites manufacturer/specification sources)",
+   "stance": "supports",
+   "about": "BMW 7 Series / i7 trunk capacity (540 L ICE vs ~500 L i7)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-44",
+  "source_type": "web",
+  "source_name": "Carwow (7 Series review/specs)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "BMW positions the 7 Series as highly configurable for rear‑seat comfort — optional packages (Executive / Rear Seat Comfort / Executive Lounge) add electrically adjustable, massaging and reclining rear seats, making the 7 Series more configurable for chauffeured rear‑seat comfort than many rivals.",
+  "url": "https://www.carwow.co.uk/bmw/7-series",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Carwow (7 Series review/specs)",
+   "published": "accessed Oct 11, 2026",
+   "stance": "supports",
+   "about": "BMW 7 Series rear‑seat comfort options",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-45",
+  "source_type": "web",
+  "source_name": "The AA (EQS review/practicality)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Several professional reviews and comparison pages summarise the practical outcome: the EQS shows a larger headline luggage volume (610 L) and good cabin/cubby storage (including underfloor cable storage), while the 7 Series/i7 offers more rear‑seat reclining/comfort options but (especially for the i7) a smaller trunk (~500 L) than the EQS.",
+  "url": "https://www.theaa.com/cars/reviews/mercedes/eqs",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "The AA (EQS review/practicality)",
+   "published": "accessed Oct 11, 2026",
+   "stance": "supports",
+   "about": "Overall comparison: EQS larger headline luggage volume and cabin storage vs 7 Series/i7 smaller trunk but stronger rear‑seat comfort options",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-46",
+  "source_type": "web",
+  "source_name": "Carwow (7 Series review/specs)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Reviewers and buyer guides commonly describe the BMW 7 Series' boot as 'not the most practical boot around' (Carwow) and note the i7's battery underfloor both reduces trunk volume and can slightly affect rear‑seat foot/legroom — these are the practical bases for customer complaints about luggage capacity in the 7 Series/i7.",
+  "url": "https://www.carwow.co.uk/bmw/7-series",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Carwow (7 Series review/specs)",
+   "published": "accessed Oct 11, 2026",
+   "stance": "supports",
+   "about": "Customer/reviewer complaints: BMW 7 Series / i7 practical luggage limits",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-e40f7f9d3a5a9f54",
+   "supports_signal_ids": "SIG-G70-EU-g1-e40f7f9d3a5a9f54"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-47",
+  "source_type": "web",
+  "source_name": "Car and Driver",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Professional reviews describe the 2025 Audi A8 as prioritising ride comfort and quietness, with adjustable air suspension and adaptive dampers standard. ([caranddriver.com](https://www.caranddriver.com/audi/a8-2025))",
+  "url": "https://www.caranddriver.com/audi/a8-2025",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Car and Driver",
+   "published": "2025",
+   "stance": "supports",
+   "about": "A8 ride comfort",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-48",
+  "source_type": "web",
+  "source_name": "What Car?",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "What Car? notes the A8 ‘wallows on its standard air suspension through bends’ and explicitly recommends the BMW 7 Series if you want a sharper-handling limousine. ([whatcar.com](https://www.whatcar.com/audi/a8/saloon/review/n17302?utm_source=openai))",
+  "url": "https://www.whatcar.com/audi/a8/saloon/review/n17302",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "What Car?",
+   "published": "22 March 2023",
+   "stance": "supports",
+   "about": "A8 handling (sportiness complaint)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-49",
+  "source_type": "web",
+  "source_name": "Autocar",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Autocar’s 2025 review of the BMW 7 Series (G70) describes the 7 as ‘medium‑soft’ and ‘pillowy’ with excellent isolation at ordinary speeds, but says it becomes noticeably less engaging when driven hard. ([em.autocar.co.uk](https://www.em.autocar.co.uk/car-review/bmw/7-series?utm_source=openai))",
+  "url": "https://www.autocar.co.uk/car-review/bmw/7-series",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Autocar",
+   "published": "2025",
+   "stance": "neutral",
+   "about": "7 Series ride vs engagement",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-50",
+  "source_type": "web",
+  "source_name": "Car Enthusiast",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "A UK/European test (Car Enthusiast, 2026) reports the G70 retains better steering weighting/feedback and is the more driver‑focused choice relative to rivals such as the Audi A8, while still emphasising ride comfort. ([carenthusiast.com](https://www.carenthusiast.com/reviews/article/14026/-/2026-BMW-7%2BSeries/Driven%3A%2B750e%2BxDrive%2BM%2BSport%2B%28pre-LCI%29.html))",
+  "url": "https://www.carenthusiast.com/reviews/article/14026/-/2026-BMW-7%2BSeries/Driven:%2B750e%2BxDrive%2BM%2BSport%2B(pre-LCI).html",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Car Enthusiast",
+   "published": "2026",
+   "stance": "supports",
+   "about": "7 Series steering and sportiness",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-51",
+  "source_type": "web",
+  "source_name": "Edmunds",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Edmunds’ 2025 expert test judged the A8 to feel ‘numb and clumsy’ in some situations, citing wallowy body motions and inconsistent ride over imperfect roads — supporting customer reports that the A8 is less sporty/engaging than some rivals. ([edmunds.com](https://www.edmunds.com/audi/a8/2025/))",
+  "url": "https://www.edmunds.com/audi/a8/2025/",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Edmunds",
+   "published": "2025",
+   "stance": "supports",
+   "about": "A8 perceived lack of sportiness/handling issues",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-52",
+  "source_type": "web",
+  "source_name": "Reddit / forum posts",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Owner and forum discussions (examples on r/Audi and regional buyer forums) show buyers sometimes favour BMW models for a more engaging driving feel, reflecting customer complaints about the A8’s relative sportiness; these are visible in multiple owner threads. ([reddit.com](https://www.reddit.com/r/Audi/comments/1pbztof/2024_audi_a8_review_coming_from_2020_bmw_745e/))",
+  "url": "https://www.reddit.com/r/Audi/comments/1pbztof/2024_audi_a8_review_coming_from_2020_bmw_745e/",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Reddit / forum posts",
+   "published": "2025–2026 (forum threads)",
+   "stance": "supports",
+   "about": "customer sentiment on sportiness",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G70-EU-g1-1548852b67c3479b",
+   "supports_signal_ids": "SIG-G70-EU-g1-1548852b67c3479b"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-53",
+  "source_type": "web",
+  "source_name": "EUR‑Lex / European Commission",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "EU regulation (AFIR) legally requires deployment of high‑power public charging pools along the TEN‑T network (at least one 150 kW point and a total pool output ≥300–400 kW every 60 km) and sets binding corridor targets for 2025–2030 — this will materially raise available corridor‑charging power in the EU between 2028 and 2031.",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32023R1804",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EUR‑Lex / European Commission",
+   "published": "22 September 2023",
+   "stance": "supports",
+   "about": "EU charging network access (AFIR) targets 2025–2030",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-54",
+  "source_type": "web",
+  "source_name": "IONITY press release",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "IONITY has publicly committed financing and a rollout plan to expand to >1,300 stations (~13,000 charging points) by 2030 and to upgrade its network toward up to 600 kW chargers with explicit support for 800‑volt vehicle architectures — increasing high‑power charging availability on European corridors by 2028–2030.",
+  "url": "https://www.ionity.eu/nl/ionity/persberichten/ionity-verzekert-recordfinanciering-om-kritieke-infrastructuur-uit-te-breiden-voor-europas-elektrische-toekomst",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "IONITY press release",
+   "published": "15 May 2025",
+   "stance": "supports",
+   "about": "Ionity charging network expansion and 600 kW / 800V support",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-55",
+  "source_type": "web",
+  "source_name": "Fastned investor presentation",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Fastned’s investor and corporate plans target large expansion of public high‑power charging in Europe (ambitions such as ~1,000 stations by 2030 and rollouts of 300–400 kW+ chargers at key locations), which will improve access to multi‑hundred‑kW charging for premium cars on main routes between 2028 and 2031.",
+  "url": "https://www.fastnedcharging.com/media/jo1fuzoi/investor-presentation-april-2026.pdf",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Fastned investor presentation",
+   "published": "April 2026",
+   "stance": "supports",
+   "about": "Fastned expansion & high‑power charger deployment to 2030",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-56",
+  "source_type": "web",
+  "source_name": "BMW Group PressClub",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "BMW has announced the new BMW 7 Series (G70 LCI / i7) integrates sixth‑generation (Gen6) high‑voltage battery technology (cylindrical Gen6 cells) and states usable pack energy up to ~112.5 kWh and WLTP electric range above 720 km — an indication that flagship premium cars already achieve much higher WLTP ranges and that this capability will be present in the segment through the late 2020s.",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0457130EN/the-new-bmw-7-series?language=en",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group PressClub",
+   "published": "22 April 2026",
+   "stance": "supports",
+   "about": "BMW i7 (G70 LCI) Gen6 battery, 112.5 kWh usable, >720 km WLTP",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-57",
+  "source_type": "web",
+  "source_name": "BMW Group PressClub (Rimac cooperation)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "BMW and Rimac publicly describe a co‑operation to supply Gen6 cylindrical cells for the updated i7; BMW states Gen6 gives roughly +20% volumetric energy density versus previous prismatic Gen5 cells and enables faster charging — supporting vehicle‑side improvements in both WLTP and peak DC charging capability for premium models in the late‑2020s/early‑2030s.",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0456278EN/bmw-group-and-rimac-technology-cooperate-on-innovative-high-voltage-battery-for-the-bmw-i7?language=en",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group PressClub (Rimac cooperation)",
+   "published": "7 April 2026",
+   "stance": "supports",
+   "about": "BMW–Rimac Gen6 cell cooperation and energy‑density / charging benefits",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-58",
+  "source_type": "web",
+  "source_name": "BMW Group Annual Conference 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "BMW’s corporate materials (Annual Conference 2025) explicitly state the Group will move to an 800‑volt system and round (cylindrical) cells across future vehicle clusters — implying premium models will increasingly support 800V architectures (enabling higher peak charge rates) through the 2028–2031 period as Neue‑Klasse technologies roll out.",
+  "url": "https://www.bmwgroup.com/en/news/general/2025/annualconference2025.html",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Annual Conference 2025",
+   "published": "14 March 2025",
+   "stance": "supports",
+   "about": "BMW plan to adopt 800V / round cells (Neue Klasse rollout)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-59",
+  "source_type": "web",
+  "source_name": "Mordor Intelligence (industry report)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Multiple market‑research reports and industry analyses project that 800‑volt architectures and SiC power‑electronics will grow fastest in the premium/performance vehicle segment and that the share of >400 V / 800 V platforms will rise significantly toward 2030 — supporting vehicle peak charging rates in the 200–400+ kW band for premium cars by 2028–2031.",
+  "url": "https://www.mordorintelligence.com/industry-reports/europe-hybrid-electric-vehicle-battery-market",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mordor Intelligence (industry report)",
+   "published": "2026 (market report)",
+   "stance": "supports",
+   "about": "800V adoption growth in premium segment to 2030",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-60",
+  "source_type": "web",
+  "source_name": "ScienceDirect / scholarly review (2025)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Technical and academic reviews of battery technology (lithium‑ion roadmap) document industry targets for much higher specific energy (e.g., >400–450 Wh/kg ambitions by 2030) and lower $/kWh costs; such cell‑level improvements are the primary enabler of longer WLTP and real‑world ranges for premium BEVs during 2028–2031.",
+  "url": "https://doi.org/10.1016/j.est.2025.119694",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ScienceDirect / scholarly review (2025)",
+   "published": "2025",
+   "stance": "supports",
+   "about": "battery specific energy improvements target by 2030 enabling longer ranges",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-61",
+  "source_type": "web",
+  "source_name": "UNECE",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "UN Regulation No. 156 (Software Update and Software Update Management System) requires manufacturers to implement certified Software Update Management Systems (SUMS) and will be a binding international framework driving secure OTA practices for vehicles sold in the EU; full details are on the UNECE page.",
+  "url": "https://unece.org/transport/documents/2021/03/standards/un-regulation-no-156-software-update-and-software-update",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "UNECE",
+   "published": "2021-03-xx",
+   "stance": "supports",
+   "about": "Regulation R156 (software updates) compliance and SUMS",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-62",
+  "source_type": "web",
+  "source_name": "EUR-Lex (EU Commission)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "The European Union’s Delegated Regulation (EU) 2022/2236 (amendments to type-approval rules) links EU type-approval and software-update rules to UN R156 and prohibits registration/market placement of vehicles whose manufacturer executes software updates that affect type‑approved characteristics without compliance; the legal text is on EUR-Lex.",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1786701915573&uri=CELEX%3A32022R2236",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EUR-Lex (EU Commission)",
+   "published": "2022-06-20",
+   "stance": "supports",
+   "about": "EU delegated regulation linking R156 to type-approval",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-63",
+  "source_type": "web",
+  "source_name": "UNECE WP.29 / GRVA document",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "WP.29/GRVA transitional decisions explicitly reference acceptance windows and implementation timelines for R156-related type approvals — including wording that Contracting Parties shall accept original approvals issued before 1 Sept 2028 until 1 Sept 2030 — which shapes when manufacturers must have SUMS and OTA processes in place for new type approvals in the EU market.",
+  "url": "https://unece.org/sites/default/files/2025-05/ECE-TRANS-WP.29-GRVA-2025-28e.pdf",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "UNECE WP.29 / GRVA document",
+   "published": "2025-05",
+   "stance": "supports",
+   "about": "GRVA transitional timelines for R156 and type approvals",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-64",
+  "source_type": "web",
+  "source_name": "McKinsey & Company",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Analysts and industry studies project a rapid shift to zonal and centralized E/E architectures through the late 2020s and by 2030, enabling broader, faster, full‑vehicle OTA updates (including domain and ECU-level images) in premium cars; McKinsey’s analysis of next‑generation E/E architectures explains how zonal/central compute facilitates secure, scalable OTA.",
+  "url": "https://www.mckinsey.com.br/industries/semiconductors/our-insights/getting-ready-for-next-generation-ee-architecture-with-zonal-compute",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "McKinsey & Company",
+   "published": "2023-xx",
+   "stance": "supports",
+   "about": "Zonal/centralized E/E architectures enabling broader OTA (McKinsey) ",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-65",
+  "source_type": "web",
+  "source_name": "International Energy Agency (IEA)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "The International Energy Agency and related SDV studies describe the software‑defined vehicle (SDV) trend and expect feature‑as‑a‑service, subscription and pay‑per‑use software monetization (for navigation, comfort, ADAS and concierge services) to gain traction across premium models in the late 2020s.",
+  "url": "https://www.iea.org/reports/vehicle-software-and-software-defined-vehicles",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "International Energy Agency (IEA)",
+   "published": "2026-xx",
+   "stance": "supports",
+   "about": "SDV and feature-as-a-service expectations for premium vehicles",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-66",
+  "source_type": "web",
+  "source_name": "MarketsandMarkets",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Market forecasts for Europe predict strong growth in the automotive OTA market through 2031, reflecting expanding OTA scope (infotainment → ADAS/powertrain) and higher per‑vehicle software revenues in the premium segment; MarketsandMarkets provides a Europe OTA market projection to 2031.",
+  "url": "https://www.marketsandmarkets.com/Market-Reports/geography/automotive-over-the-air-updates-market/europe",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "MarketsandMarkets",
+   "published": "2026-xx",
+   "stance": "supports",
+   "about": "Europe OTA market growth projection to 2031",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-67",
+  "source_type": "web",
+  "source_name": "UNECE press release (on R155/R156)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Multiple industry reports and supplier analyses expect OTA updates to extend from infotainment and map updates to safety‑relevant ECUs (ADAS stacks, battery management, powertrain) during 2028–2031 in premium cars — but these deliveries must meet R155 cybersecurity and R156 SUMS audit/certification requirements before safety‑critical updates are applied.",
+  "url": "https://unece.org/media/press/1632",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "UNECE press release (on R155/R156)",
+   "published": "2022-xx",
+   "stance": "supports",
+   "about": "OTA scope extension to safety-relevant ECUs conditioned on R155/R156 compliance",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-68",
+  "source_type": "web",
+  "source_name": "BMW Group",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Premium OEMs (including BMW) are already operating Remote Software Upgrade (OTA) programs and report multi‑million vehicle OTA capability; BMW’s connected‑car/OTA overview states millions of vehicles are remote‑software‑upgrade capable, forming the operational base for expanded OTA services into 2028–2031.",
+  "url": "https://www.bmwgroup-werke.com/content/grpw/websites/bmwgroup_com/en/innovation/connected-car.html",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group",
+   "published": "2024-xx",
+   "stance": "supports",
+   "about": "BMW Remote Software Upgrade capability and scale",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-69",
+  "source_type": "web",
+  "source_name": "Volvo / corporate technology disclosure (example of Google/Android Automotive integration)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Industry analyses forecast increasing adoption of third‑party app ecosystems and cloud assistants (Google Android Automotive, Google/third‑party cloud services, Amazon/Alexa integrations) and deeper in‑car app marketplaces in premium EU cars by 2028–2030, enabling more third‑party apps and cloud‑based AI assistants in vehicles like the BMW 7 Series segment.",
+  "url": "https://mb.cision.com/Public/20685/3728747/b22de6428654ba4a.html",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Volvo / corporate technology disclosure (example of Google/Android Automotive integration)",
+   "published": "2022-xx",
+   "stance": "supports",
+   "about": "Adoption of Android Automotive and cloud assistants in premium cars (example: Volvo)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-70",
+  "source_type": "web",
+  "source_name": "BMW Press",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Premium OEMs will continue to use a multimodal HMI (touchscreen + voice + retained physical controls) as the primary operating concept for 7‑series–class cars, rather than moving to a single-control paradigm.",
+  "url": "https://www.press.bmwgroup.com/usa/article/detail/T0382613EN_US/the-new-bmw-7-series?language=en_US",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Press",
+   "published": "2024-06-21",
+   "stance": "supports",
+   "about": "multimodal HMI in BMW 7 Series",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-71",
+  "source_type": "web",
+  "source_name": "Consumer Reports",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Manufacturers will reduce the number of physical buttons overall but keep dedicated physical controls (e.g., volume, climate, steering‑wheel shortcuts, iDrive/controller) for high‑use and safety‑critical functions.",
+  "url": "https://www.consumerreports.org/cars/bmw/7-series/2025/road-test-report/",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Consumer Reports",
+   "published": "2025",
+   "stance": "supports",
+   "about": "retention of physical controls in BMW 7 Series",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-72",
+  "source_type": "web",
+  "source_name": "EUR-Lex (European Union law)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "EU type‑approval and safety rules (Regulation (EU) 2019/2144 and Delegated Regulation (EU) 2023/2590) require advanced driver distraction warning systems and place technical limits on in‑drive driver distraction, which will constrain what touchscreen interactions are allowed while driving and thus favor retaining simple physical or voice controls for driving tasks.",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32023R2590",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EUR-Lex (European Union law)",
+   "published": "2023-07-13",
+   "stance": "supports",
+   "about": "EU advanced driver distraction/type-approval rules",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-73",
+  "source_type": "web",
+  "source_name": "Bosch Press (CES 2026)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Tier‑1 suppliers and OEMs are investing in on‑board AI and cloud‑connected voice assistants (GenAI and multimodal agents) to shift routine and complex interactions toward voice and conversational systems in premium vehicles between 2028–2031.",
+  "url": "https://us.bosch-press.com/pressportal/us/en/press-release-29312.html",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Bosch Press (CES 2026)",
+   "published": "2026-01",
+   "stance": "supports",
+   "about": "AI-powered voice assistants and cockpit AI",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-74",
+  "source_type": "web",
+  "source_name": "McKinsey & Company",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Analyst and industry forecasts expect mass adoption of connected, AI‑enabled in‑car services in the premium segment by 2030–2031 (large share of vehicles connected and increasing take‑rates for voice/AI features), which will accelerate voice‑first and personalized HMI capabilities in 7‑series–class cars.",
+  "url": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/car-connectivity-what-consumers-want-and-are-willing-to-pay",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "McKinsey & Company",
+   "published": "2024-01-08",
+   "stance": "supports",
+   "about": "connected vehicles and demand for in-car AI services",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-75",
+  "source_type": "web",
+  "source_name": "Bosch (product information)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "To compensate for fewer mechanical switches, suppliers will ship haptic/‘pseudo‑button’ touchscreen technology (haptic feedback and tactile surface tech) so touchscreens provide tactile cues similar to buttons in premium models.",
+  "url": "https://us.bosch-press.com/pressportal/zip?country=us&docId=726&language=en&vip=false",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Bosch (product information)",
+   "published": "2016 (ongoing development updates)",
+   "stance": "supports",
+   "about": "haptic touchscreen technologies for automotive HMI",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-76",
+  "source_type": "web",
+  "source_name": "S&P Global / Autotech Insight",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Large, centralized/curved displays (as in current BMW 7 Series) will persist and likely grow in size/functionality in premium cars, but OEMs will maintain redundant control paths (steering‑wheel buttons, controller knob, voice) for usability and regulatory/safety reasons.",
+  "url": "https://autotechinsight.spglobal.com/main/news/proc/download?id=5285645",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "S&P Global / Autotech Insight",
+   "published": "2025",
+   "stance": "supports",
+   "about": "trend to larger displays with redundant controls in premium vehicles",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-77",
+  "source_type": "web",
+  "source_name": "BMW FAQ / BMW USA",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "OEMs will increasingly deliver HMI changes via software (OS redesigns, personalization and OTA updates), enabling faster iteration of touchscreen/voice interfaces for premium models between 2028–2031.",
+  "url": "https://faq.bmwusa.com/s/article/BMW-7-Series-from-2026-BMW-i7-from-2026-Display-and-operation-BMW-Touch-Command-MY27-Xeicm?nocache=https%3A%2F%2Ffaq.bmwusa.com%2Fs%2Farticle%2FBMW-7-Series-from-2026-BMW-i7-from-2026-Display-and-operation-BMW-Touch-Command-MY27-Xeicm%3Flanguage%3Den_US",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "BMW FAQ / BMW USA",
+   "published": "2026",
+   "stance": "supports",
+   "about": "BMW OS redesign and software-driven HMI updates",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-78",
+  "source_type": "web",
+  "source_name": "EUR-Lex (European Union law)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "EU circularity regulation (Regulation (EU) 2026/1738) requires methodology for calculating recycled post‑consumer plastic share to be adopted by 31 August 2028 and sets minimum recycled‑plastic requirements for type‑approved vehicle types (e.g., a 15% minimum for plastics in new vehicle types from 1 Sept 2032) — this creates binding compliance and planning deadlines that OEMs/suppliers must address in 2028–2031 planning cycles.",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1789606838573&uri=CELEX%3A32026R1738",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EUR-Lex (European Union law)",
+   "published": "2026-??",
+   "stance": "supports",
+   "about": "EU regulation on circularity and recycled plastics in vehicles",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-79",
+  "source_type": "web",
+  "source_name": "EUR-Lex / European Commission (proposal and impact assessment)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "The European Commission’s impact assessment and proposal for a Regulation on circularity/ELV (accompanying documents) set out mandatory recycled‑content targets and explicitly foresee recycled‑plastic targets at fleet level (e.g., proposals discussed for 6% by 2031 and staged increases thereafter), signalling regulatory pressure on premium OEM interiors between 2028–2031.",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=celex%3A52023PC0451",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EUR-Lex / European Commission (proposal and impact assessment)",
+   "published": "2023-06-22",
+   "stance": "supports",
+   "about": "EU Proposal and impact assessment on circularity requirements for vehicle design",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-80",
+  "source_type": "web",
+  "source_name": "DPPtex Research (ESPR/DPP timeline summary)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "The EU Ecodesign for Sustainable Products / Digital Product Passport workstreams and delegated‑act timelines (ESPR / DPP) foresee product‑level data and traceability rules for textiles and electronics in the 2027–2029 window, meaning premium car interiors sold in the EU will increasingly require material composition and provenance data between 2028–2031.",
+  "url": "https://dpptex.com/blog/eu-dpp-timeline-key-deadlines-2025-2030/",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "DPPtex Research (ESPR/DPP timeline summary)",
+   "published": "2026-??",
+   "stance": "supports",
+   "about": "EU Digital Product Passport / ESPR timelines for textiles and electronics",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-81",
+  "source_type": "web",
+  "source_name": "BMW Group Press",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "BMW’s corporate publications (i Vision Circular / 'secondary first' and Neue Klasse announcements) commit the BMW Group to a circular‑design approach and to substantially increase secondary/recycled material shares (targeting up to ~50% secondary material use in future vehicle programmes), indicating BMW’s premium models (including 7 Series family) will incorporate more recycled and mono‑material interior components during the 2028–2031 period.",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0341639EN_US/bmw-group-accelerates-co2-reduction-and-focuses-consistently-on-a-circular-economy-with-the-neue-klasse",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press",
+   "published": "2021-09-02 (programme updated in subsequent sustainability communications)",
+   "stance": "supports",
+   "about": "BMW Group circularity targets and Neue Klasse strategy",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-82",
+  "source_type": "web",
+  "source_name": "BMW Group Press (UK)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "BMW’s 7 Series (new generation) press materials explicitly highlight increased use of recycled and sustainable materials in visible interior surfaces (for example recycled PET fibres for headliner and pillar trims and higher shares of secondary aluminium), showing OEM production intent to expand recycled content in premium interiors now and into the 2028–2031 timeframe.",
+  "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0382793EN_GB/the-new-bmw-7-series?language=en_GB",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press (UK)",
+   "published": "2023-??",
+   "stance": "supports",
+   "about": "BMW 7 Series (G70) sustainability and interior materials describe increased recycled content",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-83",
+  "source_type": "web",
+  "source_name": "FORVIA (corporate report)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Major interior‑system suppliers (e.g., FORVIA / Faurecia) have commercialised low‑carbon, recycled and bio‑composite trim materials (FORVIA ‘Ecorium’, NAFILean etc.) and are scaling production — these sustainable premium trim solutions are available to OEMs and are likely to appear in premium EU‑market cars (7‑Series segment) between 2028 and 2031.",
+  "url": "https://forvia.fr.digital-report.net/en/report/1987",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "FORVIA (corporate report)",
+   "published": "2023 (report summary)",
+   "stance": "supports",
+   "about": "FORVIA Ecorium and sustainable interior material production",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-84",
+  "source_type": "web",
+  "source_name": "GII Research / industry market reports",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Supplier and market research forecasts project growing penetration of recycled and bio‑based interior materials in premium segments through 2030 (recycled PET fabrics, bio‑PU foams, natural fibres), driven by regulatory pressure and supplier product availability — implying the BMW‑7 class will progressively replace some conventional leather/plastics with certified recycled and bio‑based alternatives between 2028–2031.",
+  "url": "https://www.giiresearch.com/report/smrc2068664-automotive-interior-materials-market-forecasts.html",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "GII Research / industry market reports",
+   "published": "2024-2026 (market forecast)",
+   "stance": "supports",
+   "about": "Market forecasts for interior materials (recycled/bio‑based adoption in premium vehicles)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-85",
+  "source_type": "web",
+  "source_name": "Knowledge Sourcing Intelligence (autonomous‑vehicle interior market report)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Automotive‑interiors market and technology studies (autonomous‑interiors analyses) forecast a rising focus on reconfigurable ‘lounge / mobile‑office’ cabin modes and modular seating as higher‑level automation and EV platforms mature — premium sedans (7‑Series segment) are specifically identified as candidates for such multi‑mode interiors during 2028–2031 as Level‑3/4 features and supplier modules mature.",
+  "url": "https://www.knowledge-sourcing.com/report/autonomous-vehicle-interior-market",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Knowledge Sourcing Intelligence (autonomous‑vehicle interior market report)",
+   "published": "2025-12-17 (report)",
+   "stance": "supports",
+   "about": "Autonomous vehicle interior market forecasts and lounge/reconfigurable interiors",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-86",
+  "source_type": "web",
+  "source_name": "ResearchGate / academic conference paper",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Academic and industry seating research and supplier forecasts describe modular, multi‑function seats (swivelling, reclining, active wellness, embedded sensing) and increased seat‑reconfigurability for automated driving use cases as near‑market technologies; OEMs in the premium segment are expected to introduce such seat systems in production programmes between 2028–2031 depending on regulatory approvals for automated driving modes.",
+  "url": "https://www.researchgate.net/publication/395731831_Seating_Comfort_of_occupants_in_a_highly_automated_vehicle",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ResearchGate / academic conference paper",
+   "published": "2024-??",
+   "stance": "supports",
+   "about": "Seating research on comfort and reconfigurability for automated vehicles",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-87",
+  "source_type": "web",
+  "source_name": "BMW Group Press (7 Series press release)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "‘Smart surfaces’ and expanded in‑cabin display concepts (large theatre‑style screens, immersive displays and integrated haptics) are being commercialised by OEMs and Tier‑1s (BMW’s ‘Theatre Screen’ / FORVIA Immersive Display), indicating premium interiors will emphasise large, configurable displays and haptic/ambient UX between 2028–2031.",
+  "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0382793EN_GB/the-new-bmw-7-series?language=en_GB",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press (7 Series press release)",
+   "published": "2023-??",
+   "stance": "supports",
+   "about": "BMW 7 Series 'Theatre Screen' and in‑cab display features",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-88",
+  "source_type": "web",
+  "source_name": "DataBridge Market Research (industry report)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Industry examples and supplier announcements (Adient, FORVIA, Dow collaborations) show prototyping and low‑volume production of closed‑loop seat foam and recycled polyols; these pilot circular supply chains aim to reach scaled series use in premium programmes in the late 2020s — making recycled/closed‑loop seat foams a realistic interior material development for 2028–2031.",
+  "url": "https://www.databridgemarketresearch.com/reports/europe-automotive-soft-trim-interior-materials-market",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "DataBridge Market Research (industry report)",
+   "published": "2024-2026 (report)",
+   "stance": "supports",
+   "about": "Supplier collaborations on recycled seat‑foam and closed‑loop interior materials",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-89",
+  "source_type": "web",
+  "source_name": "EUR-Lex (EU Regulation text)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "EU legislation and OEM circularity strategies will increase requirements for material traceability, mono‑material design and reparability in vehicle interiors — by 2028–2031 premium models will show more ‘design for disassembly’ details (fewer mixed composites in visible trims, labelled components) driven by type‑approval and DPP obligations.",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1784007059585&uri=CELEX%3A32026R1738",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EUR-Lex (EU Regulation text)",
+   "published": "2026-??",
+   "stance": "supports",
+   "about": "Regulatory requirements for vehicle design circularity and labelling",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-90",
+  "source_type": "web",
+  "source_name": "Publications Office of the European Union (OP.europa.eu)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Commission Implementing Regulation (EU) 2026/481 (adopted 3 March 2026) amends the EU type‑approval rules (Implementing Regulation 2022/1426) and updates uniform procedures and technical specifications for whole‑vehicle type‑approval of automated driving systems (ADS).",
+  "url": "https://op.europa.eu/en/publication-detail/-/publication/64773794-176b-11f1-8870-01aa75ed71a1/language-en",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Publications Office of the European Union (OP.europa.eu)",
+   "published": "3 March 2026",
+   "stance": "supports",
+   "about": "EU type-approval rules for ADS",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-91",
+  "source_type": "web",
+  "source_name": "EUR-Lex / Official Journal of the European Union",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Commission Delegated Regulation (EU) 2026/1188 (Official Journal L, 2 June 2026) amends the EU type‑approval annexes and sets implementation lead times that include a prohibition on registration for certain non‑compliant vehicles effective 7 July 2028.",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32026R1188",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EUR-Lex / Official Journal of the European Union",
+   "published": "2 June 2026",
+   "stance": "supports",
+   "about": "EU delegated/implementing acts and 7 July 2028 date",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-92",
+  "source_type": "web",
+  "source_name": "UNECE (World Forum for Harmonization of Vehicle Regulations)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "UN Regulation No. 157 (ALKS) — the UNECE technical standard for Automated Lane Keeping Systems for passenger cars and vans — has been in force since January 2021 and has been subject to further amendments to expand and standardise technical requirements for conditionally automated driving.",
+  "url": "https://unece.org/media/transport/Vehicle-Regulations/press/362551",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "UNECE (World Forum for Harmonization of Vehicle Regulations)",
+   "published": "(UN R157 originally adopted 2020; in force since January 2021)",
+   "stance": "supports",
+   "about": "UNECE R157 / ALKS (Level 3 technical framework)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-93",
+  "source_type": "web",
+  "source_name": "BMW Group press release",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "BMW announced (25 June 2024) that the new BMW 7 Series (G70 generation) is the first production vehicle approved to combine a Level‑2 Highway Assistant and the BMW Personal Pilot L3 (Level‑3) package (initial availability targeted to Germany).",
+  "url": "https://www.press.bmwgroup.com/africa-dom-easteurope/article/further-news/533796?tag=1843&tag=3441&tag=556&tag=633",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press release",
+   "published": "25 June 2024",
+   "stance": "supports",
+   "about": "BMW 7 Series (G70) — Personal Pilot L3 and Highway Assistant",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-94",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz media centre",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Mercedes‑Benz received national approval in Germany for its DRIVE PILOT Level‑3 system (updated to allow operation up to 95 km/h) and indicated a market rollout in Germany starting around early 2025, demonstrating an existing premium‑segment L3 offering in Europe.  ",
+  "url": "https://media.mercedes-benz.com/en/article/1b23ed3c-8fba-46af-ad6b-5d4d9804d4da",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Mercedes‑Benz media centre",
+   "published": "17 December 2024",
+   "stance": "supports",
+   "about": "Mercedes DRIVE PILOT Level 3 (95 km/h) and rollout timing",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-95",
+  "source_type": "web",
+  "source_name": "Qualcomm press release",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Qualcomm and BMW unveiled the Snapdragon Ride Pilot automated‑driving stack (debuted in BMW iX3, IAA 2025) as a scalable platform designed to support L2+/L3 automated‑driving functions and validated for use in many countries, giving BMW a software/hardware pathway to expand hands‑off and conditional automation across its premium vehicles. ",
+  "url": "https://www.qualcomm.com/news/releases/2025/09/qualcomm-and-bmw-group-unveil-groundbreaking-automated-driving-s",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Qualcomm press release",
+   "published": "5 September 2025",
+   "stance": "supports",
+   "about": "BMW–Qualcomm Snapdragon Ride Pilot (scalable L2+/L3 platform)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-96",
+  "source_type": "web",
+  "source_name": "Mobileye Global Inc. (SEC filing, Form 10‑K)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Mobileye (SEC Form 10‑K / 2026 filings) reports customer programs targeting use of Mobileye imaging radar and other sensor suites to deliver SAE Level‑3 automated driving at highway speeds starting in 2028 for at least one global automaker.",
+  "url": "https://ir.mobileye.com/static-files/245c9e7c-db18-443e-ba65-3613ad260873",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mobileye Global Inc. (SEC filing, Form 10‑K)",
+   "published": "Form 10‑K for fiscal year ended December 27, 2025 (filed 2026)",
+   "stance": "supports",
+   "about": "Mobileye / imaging radar / customer L3 production timing (2028)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-97",
+  "source_type": "web",
+  "source_name": "Arbe / Nasdaq press release (example)",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Tier‑1 sensor and perception suppliers (examples: Arbe, Innoviz, Valeo) and their public statements/earnings releases show programs and RFIs targeting serial production of Level‑3‑capable sensors and perception stacks with OEM production targets in the 2028–2030 timeframe.",
+  "url": "https://www.nasdaq.com/press-release/arbe-announces-q3-2025-financial-results-2025-11-17",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Arbe / Nasdaq press release (example)",
+   "published": "17 November 2025",
+   "stance": "supports",
+   "about": "Tier‑1 sensor suppliers targeting 2028–2030 production for L3-capable sensors",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G70-EU-WEB-98",
+  "source_type": "web",
+  "source_name": "PlatformExecutive / industry market outlook",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Independent industry analyses and market outlooks published in 2025–2026 forecast broader adoption of hands‑off/eyes‑off and Level‑3 capabilities in personal vehicles during 2028–2030 as regulatory clarity, supplier readiness and OEM programs converge (multiple analyst and trade reports).",
+  "url": "https://www.platformexecutive.com/insight/automotive-research/ai-enabled-autonomous-driving-market-outlook-2025-2035/",
+  "retrieved_at": "2026-10-11T07:52:59.432343Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "PlatformExecutive / industry market outlook",
+   "published": "(industry forecast, 2026)",
+   "stance": "supports",
+   "about": "Market forecasts for L3 adoption in 2028–2030",
+   "question_kind": "trend"
+  }
+ }
+]

@@ -23,18 +23,18 @@ python scripts/verify_stack.py --processed-dir data/regen
 | G60-EU | 0 -> 105 | 10 -> 9 | 6 / 3 | 0 |
 | G60-US | 98 -> 112 | 19 -> 16 | 15 / 1 | 0 |
 | G68-CN | 0 -> 140 | 3 -> 5 | 3 / 2 | 0 |
-| G70-EU | 0 -> läuft noch | 2 -> läuft noch | läuft noch | läuft noch |
-| G70-US | 90 -> läuft noch | 15 -> läuft noch | läuft noch | läuft noch |
+| G70-EU | 0 -> 98 | 2 -> 4 | 3 / 1 | 0 |
+| G70-US | 90 -> 113 | 15 -> 20 | 17 / 3 | 0 |
 
 Weitere Befunde:
-- Keine Webfrage wurde übersprungen (F70-EU, G60-EU, G60-US, G68-CN). Es gab keine Warnungen.
-- API-Prüfung `verify_stack.py --processed-dir data/regen` (Temp-Audit-DB): bestanden für F70-EU, G60-EU, G60-US. Das sind 106 HTTP-Reads, 15 PM-Aktionen, Neustart-Replay ok, offline ok.
-- Cache-Fails: Challenge-Antworten neuer Anforderungen fallen offline auf Regeln zurück, weil es dafür noch keinen Cache-Eintrag gibt. Das ist erwartbar.
+- Keine Webfrage wurde übersprungen, keine Stufe ist gescheitert (alle 6 Szenarien). Es gab keine Warnungen.
+- API-Prüfung `verify_stack.py --processed-dir data/regen` (Temp-Audit-DB): bestanden für alle 6 Szenarien. Das sind 186 HTTP-Reads, 30 PM-Aktionen, Neustart-Replay ok, offline ok.
+- Cache-Fails: je Szenario genau 1 Challenge-Antwort fällt offline auf Regeln zurück, weil es für die neue Anforderung noch keinen Cache-Eintrag gibt (6 insgesamt). Das ist erwartbar.
 
 ## Was wir daraus schließen
 
 - Die Pipeline erzeugt aus den Rohdaten wieder vollständige, gültige Bundles. Das ist bestätigt.
-- Die Neuerzeugung ist NICHT wortgleich reproduzierbar: 0 gleiche Anforderungstitel bei F70-EU, G60-EU und G60-US, und die Anzahl schwankt (z. B. G60-US 19 -> 16). Gründe: LLM-Formulierung, neue Prompts und neue IDs.
+- Die Neuerzeugung ist NICHT wortgleich reproduzierbar: 0 gleiche Anforderungstitel in allen 6 Szenarien, und die Anzahl schwankt (z. B. G60-US 19 -> 16). Gründe: LLM-Formulierung, neue Prompts und neue IDs.
 - Folge: Die Demo nutzt eingefrorene Snapshots (`data/processed`). Neuerzeugung ist ein Werkzeug, kein Determinismus-Versprechen.
 
 ## Was übernommen wurde und warum
@@ -42,7 +42,9 @@ Weitere Befunde:
 Übernommen in `data/processed` (Aufgabe 2 "dünne Szenarien"):
 - G60-EU: Web 0 -> 105 Belege, 3 Zukunftsanforderungen (`next_gen`), Quellen u. a. MotorTrend, Consumer Reports, Edmunds, McKinsey mit Vertrauen high/medium. Vorher fehlte Web-Evidenz ganz.
 - G68-CN: 3 -> 5 Anforderungen, davon 2 `next_gen`.
-- G70-EU: folgt, falls rechtzeitig fertig.
+- G70-EU: Web 0 -> 98 Belege, 2 -> 4 Anforderungen, davon 1 `next_gen`; alle 4 zitieren Webbefunde mit Vertrauen
+  high/medium (u. a. Car and Driver, Edmunds, Consumer Reports, Porsche/Mercedes-Newsroom). Grenze: Rang 3 und 4
+  stützen sich auf denselben einen Trend-Befund.
 
 Bewusst alte Snapshots behalten: F70-EU, G60-US, G70-US. Grund: Ränge und Pitch-Demo bleiben stabil.
 
@@ -58,13 +60,15 @@ Nach der Übernahme (`python tests/eval/run_eval.py all`, `python scripts/verify
 |---|---|---|---|---|
 | G60-EU | 100 % | 100 % | 100 % | 100 % |
 | G68-CN | 100 % | 100 % | n/a (Kaltstart, keine Kommentare) | 100 % |
+| G70-EU | 100 % | 100 % | n/a (keine zitierten Kommentare) | 100 % |
 
-API-Prüfung auf `data/processed` mit allen 6 Szenarien: bestanden (181 HTTP-Reads, 30 PM-Aktionen,
-Neustart-Replay ok, offline ok). `pytest -q`: 475 passed.
+API-Prüfung auf `data/processed` mit allen 6 Szenarien nach der Übernahme: bestanden (183 HTTP-Reads,
+30 PM-Aktionen, Neustart-Replay ok, offline ok). `pytest -q`: 475 passed.
 
 ## Grenzen
 
-- G70-EU und G70-US waren beim Schreiben noch nicht fertig (Tabelle: "läuft noch").
+- G70-US wurde ebenfalls neu erzeugt (15 -> 20 Anforderungen, 3 `next_gen`), aber bewusst nicht übernommen
+  (Pitch-Demo-Ränge stabil). Eine Übernahme wäre der nächste Schritt nach dem Pitch.
 - Kein Wort-für-Wort-Vergleich möglich: Wir vergleichen Zahlen (Anzahl, Horizont, Vertrauen), nicht Texte.
 - Ergebnis hängt vom Modell (`gpt-5-mini`) und vom Websuche-Zeitpunkt ab; ein zweiter Lauf kann wieder anders ausfallen.
 - Offline-Challenge-Antworten für neue Anforderungen sind Regel-Fallbacks, nicht LLM-Texte.
