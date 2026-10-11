@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReSpec Slides</title>
+<link rel="stylesheet" href="../tokens/tokens.css">
+<link rel="stylesheet" href="slide-layouts.css">
+<style>
+  /* Nur für diese Datei: Tabelle (Seite 2) und Diagramm-Bild (Seite 3). Kein Eingriff in slide-layouts.css. */
+  .demo-table { width: 100%; border-collapse: collapse; margin-top: 56px; font-size: 24px; }
+  .demo-table th, .demo-table td { border: 1px solid rgba(255,255,255,.28); padding: 18px 24px; text-align: left; }
+  .demo-table th { font-size: 20px; text-transform: uppercase; letter-spacing: .02em; color: var(--m-light); font-weight: 600; }
+  .bench-table th, .bench-table td { border-color: var(--hairline); }
+  .bench-table th { color: var(--grey-500); }
+  .diagram-img { width: 100%; height: 520px; object-fit: contain; background: var(--white); border: 1px solid var(--hairline); }
+  /* Jede Folie ist fest 1920px breit (fuer den PDF-Export). Im Browser auf die Fensterbreite
+     herunterskalieren, damit nichts seitlich abgeschnitten wird oder gescrollt werden muss.
+     Beim Drucken (PDF) nicht aktiv, damit der Export weiter volle Auflösung hat. */
+  @media screen {
+    .slide { zoom: calc(100vw / 1920px); }
+  }
+</style>
+</head>
+<body>
+<!-- Vier Folien fuer die Deck-Vorschau: 1 Titel (uebernommen), 2 Abschnitt + Testtabelle,
+     3 Pipeline-Diagramm, 4 Benchmarks mit echten Zahlen aus tests/eval/REPORT-*.md. -->
+
+<!-- Seite 1 · L1 Titel, unveraendert aus slide-layouts.html uebernommen -->
+<section class="slide dark">
+  <div class="photo" style="background-image:url(../assets/images/poster.jpg)"></div><div class="shade"></div>
+  <div class="top"><img src="../logo/respec-logo-white.svg" alt="ReSpec"><span class="eyebrow">01 · Event | Challenge</span></div>
+  <div class="stripes"><i></i><i></i><i></i></div>
+  <div class="body" style="top:330px">
+    <div class="display">ReSpec</div>
+  </div>
+</section>
+
+<!-- Seite 2 · L2 Abschnitt, unveraendert uebernommen + Testtabelle (Platzhalter-Inhalt) -->
+<section class="slide dark">
+  <div class="photo" style="background-image:url(../assets/images/split.jpg);opacity:.5"></div><div class="shade"></div>
+  <div class="top"><img src="../logo/respec-logo-white.svg" alt="ReSpec"><span class="eyebrow">02 · Section</span></div>
+  <div class="stripes"><i></i><i></i><i></i></div>
+  <div class="body" style="top:260px">
+    <h1 style="font-size:100px"></h1>
+    <table class="demo-table">
+      <thead>
+        <tr><th>Problem (BMW-EHL Brief)</th><th>Our approach</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>"Keep the product manager firmly in control of every decision."</td><td>AI drafts requirements, the PM approves, rejects, edits or challenges each one. Nothing ships without a human decision and a stated reason.</td></tr>
+        <tr><td>"Ground your proposals in customer feedback, BMW product and sales data, and relevant web research."</td><td>Every requirement cites real evidence from feedback, sales data and verified web sources, grounding is checked automatically, not just claimed (100% in our benchmarks).</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="foot"><span></span><span>2</span></div>
+</section>
+
+<!-- Seite 3 · Pipeline-Diagramm (Datenfluss in 7 Schritten), Layout nach L8 -->
+<section class="slide">
+  <div class="top"><img src="../logo/respec-logo.svg" alt="ReSpec"><span class="eyebrow">03 · Pipeline</span></div>
+  <div class="stripes"><i></i><i></i><i></i></div>
+  <div class="body">
+    <h2 style="font-size:52px">Vom Rohdatensatz zur geprüften Anforderung</h2>
+    <img class="diagram-img" style="margin-top:40px" src="../assets/diagrams/techflow.svg" alt="Datenfluss der Pipeline in 7 Schritten">
+    <p class="muted" style="margin-top:20px"><span class="role" style="background:var(--role-ai)"></span>KI allein &nbsp;&nbsp; <span class="role" style="background:var(--role-code)"></span>reiner Code &nbsp;&nbsp; <span class="role" style="background:var(--role-human)"></span>Mensch entscheidet</p>
+  </div>
+  <div class="foot"><span>Source: design/assets/diagrams/techflow.svg</span><span>3</span></div>
+</section>
+
+</body>
+</html>
