@@ -3,7 +3,7 @@
   "checkpoint_id": "01M4N5QCDSX6VNSJPPHH400ZB0",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 2,
+  "checkpoints_count": 5,
   "files_touched": [
     "docs/ARCHITEKTUR.md",
     "docs/REPO_CHECK.md",
@@ -24,13 +24,20 @@
       "compact_transcript": "/1/transcript.jsonl",
       "content_hash": "/1/content_hash.txt",
       "prompt": "/1/prompt.txt"
+    },
+    {
+      "metadata": "/2/metadata.json",
+      "transcript": "/2/full.jsonl",
+      "compact_transcript": "/2/transcript.jsonl",
+      "content_hash": "/2/content_hash.txt",
+      "prompt": "/2/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 262,
-    "cache_creation_tokens": 573980,
-    "cache_read_tokens": 23181458,
-    "output_tokens": 97007,
-    "api_call_count": 130
+    "input_tokens": 286,
+    "cache_creation_tokens": 591868,
+    "cache_read_tokens": 24920996,
+    "output_tokens": 101352,
+    "api_call_count": 141
   }
 }
