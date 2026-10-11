@@ -1,5 +1,7 @@
 # 07 Pitch: 6 Minuten inklusive Fragen
 
+> **Neu (11.10.):** 3:00 Vortrag inkl. Demo + 3:00 Fragen. Gültiger Ablauf in `docs/pitch/PITCH.md`, Begründung in `docs/pitch/RECHERCHE.md`. Der Ablauf unten ist die alte 4:00-Fassung.
+
 Die ausführliche Fassung mit allen Jury-Fragen steht in `docs/pitch/PITCH.md` und `docs/pitch/JURY-FAQ.md`. Diese Seite ist die Kurzform zum Üben.
 
 **Der Satz zum Auswendiglernen:**

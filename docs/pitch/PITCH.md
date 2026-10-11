@@ -1,12 +1,26 @@
-# Pitch: 6 Minuten inklusive Fragen (strikt)
+# Pitch: 3:00 Vortrag inklusive Demo + 3:00 Fragen (strikt)
 
 > Rahmen: Lead. Jeder Pfad liefert 1 Folie + seinen Demo-Abschnitt. Probe So 10:00 (Skill `pitch-prep`).
+> Warum dieser Ablauf: [RECHERCHE.md](RECHERCHE.md) (frühere EHL-Gewinner, Web-Regeln, unsere Zahlen).
 
 ## Kernbotschaft (auswendig)
 
 **"Wir sagen nicht nur, WAS der nächste 5er braucht, sondern WIE SICHER wir uns sind und WARUM, und der PM behält jede Entscheidung."**
 
-## Ablauf (4:00 Pitch + 2:00 Fragen)
+## Ablauf NEU (3:00 Vortrag + 3:00 Fragen), ~390 Wörter
+
+| Zeit | Wer | Inhalt | Folie |
+|---|---|---|---|
+| 0:00-0:20 | Piyush | Aufhänger: ein echtes Kundenzitat. „Für den 5er in den USA sind das 3.811 solcher Belege. Heute liest sie ein PM von Hand.“ | 1 |
+| 0:20-0:35 | Piyush | Lösung in einem Satz + Trichter **3.811 Belege → 55 Befunde → 19 Anforderungen** | 2 |
+| 0:35-2:15 | Lasse klickt, Piyush spricht | **Demo, 3 Momente:** ① Platz 1 öffnen: Wasserfall, Originalzitat, Stufe A. ② Hinterfragen: KI antwortet mit Belegen und Gegenbelegen → PM bearbeitet und gibt mit Begründung frei. ③ Gewicht ändern: Liste sortiert sich neu, Eintrag im Prüfpfad. | Demo |
+| 2:15-2:45 | Aditya | Vertrauen: Stufen A-D, 100 % der zitierten Beleg-IDs existieren wörtlich in der Excel, eine ehrliche Grenze | 3 |
+| 2:45-3:00 | Piyush | „Neues Modell oder Markt = eine JSON-Datei.“ Kernsatz. | 4 |
+| 3:00-6:00 | alle | Fragen: Dennis Priorisierung/Score, Aditya Daten/Evaluation, Lasse Oberfläche, Piyush Architektur. Reservefolien A1-A6. | Anhang |
+
+**Deck:** 4 Vortragsfolien + Anhang ohne Sprecher verständlich (A1 Workflow KI vs. Mensch, A2 Formel, A3 Architektur, A4 F70-EU, A5 Grenzen, A6 Prüfpfad). Das PDF wird hochgeladen; die Jury liest es auch ohne uns.
+
+## Ablauf ALT (4:00 Pitch + 2:00 Fragen, ersetzt)
 
 | Zeit | Wer | Inhalt |
 |---|---|---|
