@@ -1,0 +1,21 @@
+okay ich üwrde bei eunser frntend noch bendchmakr zufügen ,m aber ich weiß nicht wielche ebndchamrks aber dei auch wikrlcih ichtig sind. lasse ismeulatioene ducglaufen und finde irgendwlche bencjarnarks. und zuröstzlich zusätzlcih inde ich komsich, dass ich peoblich 6 uatos ahb ber lasse nur 2 uatos bei mde faten set hat, woeos ist es so fixnieer dne bug
+
+---
+
+<task-notification>
+<task-id>bmwcbwer5</task-id>
+<tool-use-id>toolu_013vrc6DVA3bXsbZdRrebNaT</tool-use-id>
+<output-file>C:\Users\anil1\AppData\Local\Temp\claude\C--Users-anil1-Downloads-Hackathon-TUMHackathon26\3d5391a7-38a9-4824-b34c-8d4e297a25c5\tasks\bmwcbwer5.output</output-file>
+<status>completed</status>
+<summary>Background command "Placeholder no-op skipped" completed (exit code 0)</summary>
+</task-notification>
+
+---
+
+<task-notification>
+<task-id>b44hm2bzt</task-id>
+<tool-use-id>toolu_01WNutmz46rG1JKJbyqqJMWi</tool-use-id>
+<output-file>C:\Users\anil1\AppData\Local\Temp\claude\C--Users-anil1-Downloads-Hackathon-TUMHackathon26\3d5391a7-38a9-4824-b34c-8d4e297a25c5\tasks\b44hm2bzt.output</output-file>
+<status>failed</status>
+<summary>Background command "Start frontend dev server on port 3011" failed with exit code 1</summary>
+</task-notification>
