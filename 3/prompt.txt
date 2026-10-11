@@ -23,3 +23,30 @@ können wir sie noch inetegeiren:
 │ ⚠ Widersprüchliche Belege  │  das Programm nie, das Feld ist überall leer. Die Hilfeseite hatte genau das als  │
 │                            │ Beispiel versprochen, den Text habe ich korrigiert.
 </pasted_content id="51eb">
+
+---
+
+erstelle im root eine datei mit zu ereldiegn scahen.md oder so  und trage es da bein: 
+
+<pasted_content id="51eb">
+
+Die Segment-Konflikte baut gerade eine andere Session. Seit meinem letzten Commit vor 15 Minuten sind im Arbeitsordner 44 Dateien geändert (+11.000 Zeilen), die letzte Änderung war um 06:58. Darunter ist in evidence_internal/conflicts.py eine fertige Funktion segment_conflicts: Sie vergleicht Antrieb, Land und Quelle, verlangt mindestens 10 Kommentare je Seite und erkennt auch „Studie gegen Feedback“. Außerdem ist sie schon in pipeline.py und derive.py eingehängt. Wenn ich jetzt parallel dasselbe baue, überschreiben wir uns gegenseitig. Committet ist davon noch nichts.
+
+Der 3–5-Jahres-Ausblick ist dort nicht dabei. Mein Vorschlag dafür, ohne LLM und ohne Änderung an den Rängen:
+- Eine neue Datei core/outlook.py gibt jeder Anforderung einen „Ausblick 2030“: wächst, bleibt oder nimmt ab, jeweils mit Begründung und als Annahme markiert.
+- Wächst heißt: Es gibt einen Web-Trend 2028–2031 in derselben Kategorie, oder die Kritik kommt überproportional von BEV-Fahrern, und der Nachfolger wird elektrischer.
+- Nimmt ab heißt: Die Kritik betrifft fast nur Verbrenner (z. B. Getriebe, Motorklang).
+- Angezeigt wird das auf der Detailseite und im Trendradar, das heute fast leer ist.
+
+Das Problem: Dafür muss ich store.py, insights.py und views.py ändern. Genau die bearbeitet die andere Session gerade auch.
+
+Bevor ich das baue, brauche ich von dir zwei Antworten:
+1. Wer ist die andere Session? Deine eigene zweite Claude-Session oder jemand aus dem Team? Sie sollte ihre Segment-Konflikte bald committen, sonst gehen sie beim Feature-Freeze um 08:00 unter.
+2. Soll ich den Ausblick 2030 bauen? Ich würde ihn zuerst nur als eigene Datei mit Tests anlegen und die 3 gemeinsamen Dateien erst anfassen, wenn die andere Session committet hat. Oder streichen wir ihn und sagen in der Fragerunde ehrlich, dass das der nächste Schritt ist?
+</pasted_content id="51eb">
+
+, wir entscehiden späterm aber mit conetrnt sodass ein agent wieß was er tun soll
+
+---
+
+tre alles auf dem main psuhen
