@@ -13,7 +13,7 @@ export function SplitSection() {
   return (
     <section className="grid md:grid-cols-2">
       <div className="relative min-h-[50vh] bg-[radial-gradient(ellipse_at_30%_60%,#2a2318_0%,#0a0a0b_75%)]">
-        <MediaImage src="/media/split.jpg" alt="" />
+        <MediaImage src="/media/split.jpg" alt="" sizes="(min-width: 768px) 50vw, 100vw" />
       </div>
       <Reveal className="flex flex-col justify-center bg-[var(--grey-100)] px-6 py-20 lg:px-16">
         <SectionHeading>Every decision leaves a trail.</SectionHeading>

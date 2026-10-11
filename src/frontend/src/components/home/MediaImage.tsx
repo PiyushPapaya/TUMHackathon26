@@ -8,7 +8,8 @@ import Image from "next/image";
 export const MediaContext = createContext<string[]>([]);
 
 // Bild, das still verschwindet, wenn die Datei (noch) fehlt. Die echten Flow-Bilder kommen später in public/media/.
-export function MediaImage({ src, alt, priority, className = "" }: { src: string; alt: string; priority?: boolean; className?: string }) {
+// `sizes` = echte Anzeigebreite, damit Next.js keine zu großen Varianten lädt (Standard: volle Breite wie im Hero).
+export function MediaImage({ src, alt, priority, className = "", sizes = "100vw" }: { src: string; alt: string; priority?: boolean; className?: string; sizes?: string }) {
   const available = useContext(MediaContext);
   const [failed, setFailed] = useState(false);
   if (failed || !available.includes(src)) return null;
@@ -18,7 +19,7 @@ export function MediaImage({ src, alt, priority, className = "" }: { src: string
       alt={alt}
       fill
       priority={priority}
-      sizes="100vw"
+      sizes={sizes}
       className={`object-cover ${className}`.trim()}
       suppressHydrationWarning
       onError={() => setFailed(true)}
