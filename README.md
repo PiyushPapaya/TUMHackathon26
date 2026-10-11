@@ -23,8 +23,6 @@ DEMO_MODUS=true uvicorn main:app --app-dir src/backend --port 8000     # termina
 cd src/frontend && npm ci && npm run build && npm run start            # terminal 2 → http://localhost:3000
 ```
 
-> **Team:** new here? Start with [START_HIER.md](START_HIER.md) (German, one page).
-
 ## What it does
 
 | Step | What happens | AI autonomous? | Human mandatory? |
@@ -132,7 +130,7 @@ cp .env.example .env              # add your OPENAI_API_KEY (only needed for the
 # Without BMW data: the backend serves a synthetic example scenario
 uvicorn main:app --app-dir src/backend --reload --port 8000     # http://localhost:8000/docs
 
-# Regenerate with the supplied BMW data and an OpenAI key:
+# Regenerate with the BMW challenge files placed in data/raw/ (not in the repo) and an OpenAI key:
 python src/backend/pipeline.py --scenario G60-US
 
 python -m pytest -q               # tests
@@ -141,9 +139,9 @@ python scripts/verify_stack.py    # six-scenario offline API/PM/restart check; t
 
 ## Data & privacy
 
-The repository includes the supplied BMW raw data (`data/raw/`), the processed snapshots and the LLM
-cache (`data/cache/`, `data/demo_cache/`). We use the BMW data here because the hackathon organisers
-supplied it for this challenge and the team's lead decided to publish it in this repository.
+The repository includes the processed snapshots and the LLM cache (`data/cache/`, `data/demo_cache/`),
+so the cockpit runs without any raw files. The confidential BMW raw files (`data/raw/`) are **not**
+in the repository; without them only the option-list price reference shows "unavailable".
 Examples in `src/shared/beispiele/` are **synthetic**. API keys (`.env`) and PM audit databases
 (`data/audit.db`) stay local; see [data/README.md](data/README.md). The generated data folders are
 marked `export-ignore` in `.gitattributes`, so a `git archive` download contains only code and docs;

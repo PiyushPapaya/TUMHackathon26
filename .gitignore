@@ -9,15 +9,13 @@
 # LLM-Cache und Audit-DB (lokaler Laufzeit-Zustand pro Rechner) bleiben lokal.
 data/*
 !data/README.md
-# Bewusste Entscheidung (Piyush, 10.10.2026): BMW-Rohdateien liegen im Repo
-!data/raw/
+# BMW-Rohdateien (data/raw/) bleiben seit 11.10.2026 lokal: Die App läuft aus den Snapshots in processed/.
 # Geprüfte Webantworten für die Offline-Demo (keine BMW-Daten); der volle Cache data/cache/ bleibt lokal
 !data/demo_cache/
 # Öffentliche Behördendaten (NHTSA, gemeinfrei) für die Offline-Demo; keine BMW-Daten
 !data/external_cache/
 # Pipeline-Ergebnisse aller 6 Szenarien (Orga hat Veröffentlichung erlaubt, 11.10.2026). Vorher lagen nur
 # 2 von 6 im Repo, die anderen per USB: wer klonte, sah nur 2 Autos. Audit-DB und voller LLM-Cache bleiben lokal.
-# Freigabe dokumentiert in entscheidungen/E08_bmw_daten_im_repo.md.
 !data/processed/
 
 # ─── Lokale Einstellungen von Claude Code und Entire ─────────────────────
