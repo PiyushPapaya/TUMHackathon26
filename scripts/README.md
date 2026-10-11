@@ -5,6 +5,7 @@ Helper scripts for checks, data and the demo.
 | Script | What it does |
 |---|---|
 | `start_demo.sh` | Starts backend and cockpit in demo mode |
+| `start_dev.ps1` | Windows: frees ports 8000/3000, then starts backend (demo mode) and the frontend dev server in two windows |
 | `verify_stack.py` | Offline check of all six scenarios: API, PM decisions, restart replay |
 | `check_bundles.py` | Rule checks on the snapshots in `data/processed/` |
 | `refresh_bundles.py` | Adds metadata to existing snapshots without calling the LLM |

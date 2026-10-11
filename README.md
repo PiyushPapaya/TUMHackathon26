@@ -189,7 +189,8 @@ npm ci && npm run build && npm run start      # open http://localhost:3000
 ```
 
 On Windows PowerShell, set the variable first with `$env:DEMO_MODUS="true"`.
-Or run both at once with `bash scripts/start_demo.sh`. More options, including the online
+Or run both at once with `bash scripts/start_demo.sh`, or on Windows with
+`powershell -ExecutionPolicy Bypass -File scripts\start_dev.ps1` (dev server, ports 8000 + 3000). More options, including the online
 setup on Render and Vercel, are in [docs/DEPLOY.md](docs/DEPLOY.md).
 
 Run the tests with `python -m pytest -q`.
