@@ -156,7 +156,7 @@ letzte Spalte `passt` mit `j`/`n` füllen, dann `python tests/eval/run_eval.py G
 
 ## R · Jury-KI-Review: Kern-Code sichtbar machen (Selbstreview So 07:30)
 
-> Status: **R0-R3 erledigt 11.10.** (`4eea655`, `7a7f5ef`), R4 verworfen. Simulierte EHL-Note heute **6,3/10**, mit R1-R4 ca. **7,5**.
+> Status: **FERTIG (R0-R3 erledigt 11.10.)** (`4eea655`, `7a7f5ef`), R4 verworfen. Simulierte EHL-Note heute **6,3/10**, mit R1-R4 ca. **7,5**.
 > Warum: Die Review liest nur 200.000 Zeichen, kleinste Dateien zuerst. Scoring, Audit-Hash-Kette,
 > `llm.py` und Routen sieht sie nie, sie muss dem README glauben. Prüfen: `python scripts/ehl_budget.py`.
 
