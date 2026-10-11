@@ -1,0 +1,14 @@
+{
+  "tool_use_id": "toolu_01TGm8sMZXHjmkZeh9zXSYnf",
+  "agent_id": "ae02b8bbd76830083",
+  "task_description": "Eval über regen-Bundles",
+  "token_usage": {
+    "input_tokens": 14,
+    "cache_creation_tokens": 96682,
+    "cache_read_tokens": 227213,
+    "output_tokens": 114,
+    "api_call_count": 7
+  },
+  "started_at": "2026-10-11T10:01:24.8928143+02:00",
+  "completed_at": "2026-10-11T10:18:23.1535682+02:00"
+}
