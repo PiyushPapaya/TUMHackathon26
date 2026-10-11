@@ -3,8 +3,10 @@
   "checkpoint_id": "01M4MV1S2JH2P5KK10ZX6FH870",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 1,
+  "checkpoints_count": 3,
   "files_touched": [
+    "docs/REPO_CHECK.md",
+    "scripts/verify_stack.py",
     "src/backend/main.py",
     "src/frontend/src/components/shell/SiteHeader.tsx"
   ],
@@ -15,13 +17,20 @@
       "compact_transcript": "/0/transcript.jsonl",
       "content_hash": "/0/content_hash.txt",
       "prompt": "/0/prompt.txt"
+    },
+    {
+      "metadata": "/1/metadata.json",
+      "transcript": "/1/full.jsonl",
+      "compact_transcript": "/1/transcript.jsonl",
+      "content_hash": "/1/content_hash.txt",
+      "prompt": "/1/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 90,
-    "cache_creation_tokens": 330247,
-    "cache_read_tokens": 7145919,
-    "output_tokens": 25968,
-    "api_call_count": 44
+    "input_tokens": 292,
+    "cache_creation_tokens": 788465,
+    "cache_read_tokens": 25586403,
+    "output_tokens": 87966,
+    "api_call_count": 145
   }
 }
