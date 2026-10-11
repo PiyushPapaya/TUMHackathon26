@@ -1,0 +1,35 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4MC4F0MM3E629805K3070KE",
+  "strategy": "manual-commit",
+  "branch": "piyush-frontend",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "src/frontend/src/components/ProductContext.tsx",
+    "src/frontend/src/components/cockpit/HowToRead.tsx",
+    "tests/test_product_context.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": "/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 160,
+    "cache_creation_tokens": 188461,
+    "cache_read_tokens": 12439485,
+    "output_tokens": 49292,
+    "api_call_count": 79,
+    "subagent_tokens": {
+      "input_tokens": 18,
+      "cache_creation_tokens": 81989,
+      "cache_read_tokens": 504047,
+      "output_tokens": 4693,
+      "api_call_count": 9
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "tool_use_id": "toolu_01HqNrhKC6d3twmQqJXfqxsJ",
+  "agent_id": "a1ca3be8e39de97f4",
+  "subagent_type": "Explore",
+  "task_description": "Map frontend UI structure",
+  "token_usage": {
+    "input_tokens": 18,
+    "cache_creation_tokens": 81989,
+    "cache_read_tokens": 504047,
+    "output_tokens": 4693,
+    "api_call_count": 9
+  },
+  "started_at": "2026-10-11T03:04:20.9234828+02:00",
+  "completed_at": "2026-10-11T03:05:59.8464247+02:00"
+}
