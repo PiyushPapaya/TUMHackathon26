@@ -54,6 +54,10 @@ Hinweis: Alte PM-Entscheidungen hängen am Bundle-Fingerabdruck und werden auf n
 
 ## Eval auf den neuen Bundles
 
+Alle 6 Szenarien in `data/regen` (run_eval über einen Temp-Root, keine Repo-Änderung): Grounding Befunde und
+Anforderungen je 100 %, Wortlaut 100 % wo Kommentare zitiert sind, Zahl im Akzeptanzkriterium 100 %. Befund-Treue
+dort n/a, weil die Label-Stichprobe zu den alten Signal-IDs gehört.
+
 Nach der Übernahme (`python tests/eval/run_eval.py all`, `python scripts/verify_stack.py`):
 
 | Szenario | Grounding Befunde | Grounding Anforderungen | Wortlaut | Zahl im Kriterium |
