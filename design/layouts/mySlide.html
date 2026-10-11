@@ -9,11 +9,25 @@
 <style>
   /* Nur für diese Datei: Tabelle (Seite 2) und Diagramm-Bild (Seite 3). Kein Eingriff in slide-layouts.css. */
   .demo-table { width: 100%; border-collapse: collapse; margin-top: 56px; font-size: 24px; }
-  .demo-table th, .demo-table td { border: 1px solid rgba(255,255,255,.28); padding: 18px 24px; text-align: left; }
+  .demo-table th, .demo-table td { border: 1px solid rgba(255,255,255,.28); padding: 18px 24px; text-align: left; background: rgba(10,10,11,.62); }
   .demo-table th { font-size: 20px; text-transform: uppercase; letter-spacing: .02em; color: var(--m-light); font-weight: 600; }
   .bench-table th, .bench-table td { border-color: var(--hairline); }
   .bench-table th { color: var(--grey-500); }
   .diagram-img { width: 100%; height: 520px; object-fit: contain; background: var(--white); border: 1px solid var(--hairline); }
+  /* Seite 3: Pipeline als 7 Kästen, Farbe = wer den Schritt macht (KI / Code / Mensch). */
+  .pipe { display: grid; grid-template-columns: repeat(7, 1fr); gap: 22px; margin-top: 56px; }
+  .step { position: relative; border: 2px solid var(--role-code); border-top-width: 8px; background: #f3f4f6; padding: 26px 22px 22px; min-height: 330px; display: flex; flex-direction: column; }
+  .step.ai { border-color: var(--role-ai); background: var(--blue-50); }
+  .step.human { border-color: var(--role-human); background: #fdf1e4; }
+  .step b { font-size: 22px; color: var(--grey-500); font-weight: 600; }
+  .step h4 { font-size: 34px; font-weight: 500; margin: 6px 0 14px; }
+  .step p { font-size: 21px; line-height: 1.4; color: var(--ink); }
+  .step span { margin-top: auto; padding-top: 16px; font-size: 20px; font-weight: 600; color: var(--blue-900); text-transform: uppercase; letter-spacing: .02em; }
+  .step.human span { color: #9a4f0c; }
+  .step:not(:last-child)::after { content: "→"; position: absolute; right: -21px; top: 46%; font-size: 26px; color: var(--grey-500); }
+  /* Challenge-Schleife: gestrichelte Klammer von "Decide" zurück zu "Draft". */
+  .loop { margin: 0 calc(100% / 7 * 1 + 11px) 0 calc(100% / 7 * 3 + 30px); height: 46px; border: 3px dashed var(--role-human); border-top: none; position: relative; }
+  .loop span { position: absolute; left: 50%; bottom: -40px; transform: translateX(-50%); white-space: nowrap; font-size: 22px; color: #9a4f0c; }
   /* Jede Folie ist fest 1920px breit (fuer den PDF-Export). Im Browser auf die Fensterbreite
      herunterskalieren, damit nichts seitlich abgeschnitten wird oder gescrollt werden muss.
      Beim Drucken (PDF) nicht aktiv, damit der Export weiter volle Auflösung hat. */
@@ -50,17 +64,21 @@
 <!-- Seite 2 · L2 Abschnitt, unveraendert uebernommen + Testtabelle (Platzhalter-Inhalt) -->
 <section class="slide dark">
   <div class="photo" style="background-image:url(../assets/images/split.jpg);opacity:.5"></div><div class="shade"></div>
-  <div class="top"><img src="../logo/respec-logo-white.svg" alt="ReSpec"><span class="eyebrow">02 · Section</span></div>
+  <div class="top"><img src="../logo/respec-logo-white.svg" alt="ReSpec"><span class="eyebrow">02 · The brief</span></div>
   <div class="stripes"><i></i><i></i><i></i></div>
-  <div class="body" style="top:260px">
-    <h1 style="font-size:100px"></h1>
-    <table class="demo-table">
+  <!-- Zitate wörtlich aus dem BMW-Brief (BMW_Hackathon_Briefing_Short.pdf), Zahlen aus docs/EVALUATION.md. -->
+  <div class="body" style="top:200px">
+    <h1 style="font-size:64px">What BMW asked for, <span style="color:var(--m-light)">and how we answer it.</span></h1>
+    <table class="demo-table" style="margin-top:40px;font-size:22px">
       <thead>
-        <tr><th>Problem (BMW-EHL Brief)</th><th>Our approach</th></tr>
+        <tr><th style="width:38%">The brief says</th><th>ReSpec does</th><th style="width:15%">Proof</th></tr>
       </thead>
       <tbody>
-        <tr><td>"Keep the product manager firmly in control of every decision."</td><td>AI drafts requirements, the PM approves, rejects, edits or challenges each one. Nothing ships without a human decision and a stated reason.</td></tr>
-        <tr><td>"Ground your proposals in customer feedback, BMW product and sales data, and relevant web research."</td><td>Every requirement cites real evidence from feedback, sales data and verified web sources, grounding is checked automatically, not just claimed (100% in our benchmarks).</td></tr>
+        <tr><td>"keeping the product manager firmly in control of every decision"</td><td>AI only drafts. The PM approves, rejects, edits or challenges each requirement, always with a reason.</td><td>0 auto-approvals</td></tr>
+        <tr><td>"Ground your proposals in customer feedback, BMW product and sales data, and relevant web research"</td><td>Every requirement links to findings, every finding to real customer quotes. Invented IDs are dropped.</td><td>100 % grounded</td></tr>
+        <tr><td>"Make clear where your conclusions are based on available evidence and where they rely on forward-looking assumptions"</td><td>Evidence level A to D as a traffic light. Assumptions are listed separately, with the study that would settle them.</td><td>A-D by rule, not by AI</td></tr>
+        <tr><td>"Prioritize them with a logic you define and can explain"</td><td>A plain formula with six factors. Every score is a visible waterfall, and weights can be changed live.</td><td>Top 5 stable in 91 % of 200 runs</td></tr>
+        <tr><td>"a clear understanding of uncertainty and conflicting evidence"</td><td>Conflicts are shown, not averaged. A challenge returns supporting and counter-evidence.</td><td>7 of 19 flag a conflict</td></tr>
       </tbody>
     </table>
   </div>
@@ -71,12 +89,26 @@
 <section class="slide">
   <div class="top"><img src="../logo/respec-logo.svg" alt="ReSpec"><span class="eyebrow">03 · Pipeline</span></div>
   <div class="stripes"><i></i><i></i><i></i></div>
+  <!-- Diagramm direkt in HTML statt techflow.svg: englisch, und die Folie braucht keine Bilddatei. -->
   <div class="body">
-    <h2 style="font-size:52px">Vom Rohdatensatz zur geprüften Anforderung</h2>
-    <img class="diagram-img" style="margin-top:40px" src="../assets/diagrams/techflow.svg" alt="Datenfluss der Pipeline in 7 Schritten">
-    <p class="muted" style="margin-top:20px"><span class="role" style="background:var(--role-ai)"></span>KI allein &nbsp;&nbsp; <span class="role" style="background:var(--role-code)"></span>reiner Code &nbsp;&nbsp; <span class="role" style="background:var(--role-human)"></span>Mensch entscheidet</p>
+    <h2 style="font-size:56px">From raw customer data <span class="blue">to a decided requirement.</span></h2>
+    <p class="muted" style="margin-top:16px;font-size:26px">Seven steps. The AI does the reading, plain code does the math, a person makes the call.</p>
+    <div class="pipe">
+      <div class="step code"><b>1</b><h4>Read</h4><p>Excel, study, sales and option list become evidence with stable IDs</p><span>3,610 comments</span></div>
+      <div class="step ai"><b>2</b><h4>Find</h4><p>Group by BMW topic, AI summarizes and cites every comment</p><span>58 findings</span></div>
+      <div class="step ai"><b>3</b><h4>Research</h4><p>Competitors and trends from the web, with URL, date and trust</p><span>source-rated</span></div>
+      <div class="step ai"><b>4</b><h4>Draft</h4><p>AI writes customer-facing requirements, code checks the scope</p><span>19 drafted</span></div>
+      <div class="step code"><b>5</b><h4>Rank</h4><p>Weighted formula, discounted by evidence level A&#8209;D</p><span>no AI involved</span></div>
+      <div class="step human"><b>6</b><h4>Decide</h4><p>Approve, reject, edit or challenge, always with a reason</p><span>PM only</span></div>
+      <div class="step code"><b>7</b><h4>Log</h4><p>Who, when, why, before and after, in a hash chain</p><span>tamper-evident</span></div>
+    </div>
+    <div class="loop"><span>Challenge: the AI must answer with evidence <b>and</b> counter-evidence</span></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:44px">
+      <p class="muted" style="font-size:24px"><span class="role" style="background:var(--role-ai)"></span>AI works &nbsp;&nbsp;&nbsp; <span class="role" style="background:var(--role-code)"></span>Plain code &nbsp;&nbsp;&nbsp; <span class="role" style="background:var(--role-human)"></span>Human decides</p>
+      <p style="font-size:24px">The AI may only cite IDs it was given. <span class="muted">A test checks this.</span></p>
+    </div>
   </div>
-  <div class="foot"><span>Source: design/assets/diagrams/techflow.svg</span><span>3</span></div>
+  <div class="foot"><span>Numbers: BMW 5 Series (G60), USA</span><span>3</span></div>
 </section>
 
 </body>
