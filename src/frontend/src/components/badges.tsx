@@ -101,6 +101,11 @@ export function categoryLabel(category: string): string {
   return CATEGORY_LABELS[category] ?? category.replaceAll("_", " ");
 }
 
+// Die BMW-Dateien heißen "Feedback Quelle A-D"; die Oberfläche ist englisch.
+export function sourceLabel(sourceName: string): string {
+  return sourceName.replace(/\bQuelle\b/, "source");
+}
+
 const SOURCE_TRUST: Record<SourceType, { label: string; hint: string; className: string }> = {
   feedback: {
     label: "Feedback A-D",
