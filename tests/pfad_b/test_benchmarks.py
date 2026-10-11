@@ -41,6 +41,16 @@ def test_messbar_zaehlt_kriterien_mit_zahl():
     assert _metric(benchmarks.quality(state), "measurable")["value"] == 0.0
 
 
+def test_numbers_never_claim_acceptance_is_testable():
+    state = _state()
+    for req in state.requirements.values():
+        req.acceptance_criterion = "Make the 2025 model better"
+    metric = _metric(benchmarks.quality(state), "measurable")
+    assert metric["value"] == 100.0
+    assert metric["ok"] is None and metric["target"] is None
+    assert "does not prove" in metric["explain"] and "heuristic" in metric["label"]
+
+
 def test_stabilitaet_ist_reproduzierbar():
     """Gleicher Seed -> gleiche Zahl. Sonst zeigt die Seite bei jedem Laden einen anderen Wert."""
     a = _metric(benchmarks.quality(_state()), "rank_stability")["value"]

@@ -21,12 +21,12 @@ from fastapi.testclient import TestClient  # noqa: E402
 from main import app  # noqa: E402
 
 
-def verify() -> dict:
+def verify(processed_dir: Path = ROOT / "data" / "processed") -> dict:
     os.environ["DEMO_MODUS"] = "true"
     checks, snapshots = [], {}
     with tempfile.TemporaryDirectory(prefix="signal2spec-verify-") as folder:
         os.environ["AUDIT_DB"] = str(Path(folder) / "audit.db")
-        os.environ["PROCESSED_DIR"] = str(ROOT / "data" / "processed")
+        os.environ["PROCESSED_DIR"] = str(processed_dir.resolve())
         with TestClient(app) as client:
             def get(path):
                 response = client.get(path)
@@ -100,8 +100,9 @@ def verify() -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path)
+    parser.add_argument("--processed-dir", type=Path, default=ROOT / "data" / "processed")
     args = parser.parse_args()
-    result = verify()
+    result = verify(args.processed_dir)
     rendered = json.dumps(result, indent=2)
     print(rendered)
     if args.output:

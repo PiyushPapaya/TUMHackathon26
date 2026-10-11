@@ -90,8 +90,11 @@ export function DecisionPanel({
     return output;
   }, [draft, requirement]);
 
+  const hasEditChanges = Object.keys(changes).length > 0;
+  const canSubmit = rationaleReady && (!isEdit || hasEditChanges);
+
   async function submit() {
-    if (!rationaleReady || busy) return;
+    if (!canSubmit || busy) return;
     setBusy(true);
     setError(null);
     setAiAnswer(null);
@@ -228,13 +231,16 @@ export function DecisionPanel({
         <button
           type="button"
           onClick={submit}
-          disabled={!rationaleReady || busy}
+          disabled={!canSubmit || busy}
           className="min-h-11 rounded-md bg-blue-600 px-5 text-sm font-semibold text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 disabled:cursor-not-allowed disabled:bg-slate-300"
         >
           {busy ? "Saving..." : `Submit ${mode}`}
         </button>
         {!rationaleReady && (
           <p className="text-sm text-slate-500">Enter a reason of at least 3 characters.</p>
+        )}
+        {isEdit && !hasEditChanges && (
+          <p className="text-sm text-slate-500">Change at least one field before submitting an edit.</p>
         )}
         {error && <p className="text-sm font-semibold text-rose-700">{error}</p>}
       </div>

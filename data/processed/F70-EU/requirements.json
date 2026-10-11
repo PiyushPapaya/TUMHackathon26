@@ -437,7 +437,7 @@
   "id": "REQ-F70-EU-7313a2",
   "title": "Surface top functions on a one‑glance home layer and provide tactile shortcuts to avoid menu dives",
   "description": "Drivers can access the most-used functions (media, nav destination entry, climate quick-adjust, phone call, volume) in one glance or via physical shortcut buttons so that routine tasks do not require fiddly menu navigation.",
-  "acceptance_criterion": "In driving-mode usability tests the 10 most-common driver tasks are reachable within two interactions (either one tap on a zero‑layer home element or one physical shortcut + one tap) for ≥95% of participants, and average task completion time ≤2.0 seconds. Compared with the current baseline, menu dives are reduced by ≥60% for those tasks.",
+  "acceptance_criterion": "In driving-mode usability tests the 10 most-common driver tasks are reachable within two interactions (either one tap on a zero‑layer home element or one physical shortcut + one tap) for ≥95% of participants, and average task completion time ≤2.0 seconds. Compared with the current baseline, menu dives are reduced by ≥60% for those tasks. Baseline protocol: measure a production model-year 2025 F70 in the same trim/powertrain and recorded software version before successor testing, using the same 50 participants in counterbalanced order. Recruit current F70 customers with age and gender quotas matching the target market. Freeze baseline task times, interaction counts, complaint shares and comfort ratings as applicable; use identical tasks, route, seat positions, load, tyres and ambient conditions for both vehicles. For comparative geometry measurements, freeze the reference seat positions and luggage configuration. Baseline measurements are pending; do not claim improvement until they are recorded.",
   "category": "infotainment_digital",
   "signal_ids": [
    "SIG-F70-EU-028",
@@ -495,7 +495,8 @@
    "Baseline metrics are taken from current F70 usability data using the same task list and test conditions.",
    "The home layer and shortcut layout are configurable per driver profile.",
    "Telemetric collection of interaction success and fault events is available to measure rates.",
-   "Latency target measured on typical customer configurations (connected phone present, background services active)."
+   "Latency target measured on typical customer configurations (connected phone present, background services active).",
+   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
   ],
   "uncertainties": [
    "Conflicting evidence: \"Everything on the touch screen is distracting\" vs. \"Infotainment works flawlessly and is excellent\"",
@@ -503,7 +504,8 @@
    "Conflicting evidence: \"Software is terrible and overly complicated\" vs. \"Infotainment works flawlessly and is excellent\"",
    "Some customers may accept virtual sliders if they are highly tactile/haptic; this requirement assumes physical controls are preferred for primary climate tasks.",
    "Defining the 'top 10' tasks must come from usage telemetry; task lists may vary by region and user age.",
-   "Field conditions (poor mobile connectivity, paired smartphones) can temporarily affect perceived reliability; targets are measured as fleet averages."
+   "Field conditions (poor mobile connectivity, paired smartphones) can temporarily affect perceived reliability; targets are measured as fleet averages.",
+   "Relative targets require a recorded model-year 2025 F70 baseline and matched validation sample; these measurements are pending."
   ],
   "offer_check": {
    "status": "standard",
@@ -630,7 +632,7 @@
   "id": "REQ-F70-EU-2ba155",
   "title": "Keep and improve the car’s smooth, confident ride while removing inconsistent damping",
   "description": "Customers experience a smooth, comfortable ride and composed, confident handling on local roads and motorways. The successor must preserve today’s high perceived ride comfort and address reports of harsh or inconsistent damping so everyday and long trips feel pleasant and reassuring.",
-  "acceptance_criterion": "In a mixed-surface driving route (urban, B-roads, motorway) with a representative sample of 50 test drivers, ≥90% of drivers rate overall ride comfort and handling ≥4/5 and objective comfort metrics (ride vibration ISO metric or equivalent) do not degrade compared with the current model in the same test configuration.",
+  "acceptance_criterion": "In a mixed-surface driving route (urban, B-roads, motorway) with a representative sample of 50 test drivers, ≥90% of drivers rate overall ride comfort and handling ≥4/5 and objective comfort metrics (ride vibration ISO metric or equivalent) do not degrade compared with the current model in the same test configuration. Baseline protocol: measure a production model-year 2025 F70 in the same trim/powertrain and recorded software version before successor testing, using the same 50 participants in counterbalanced order. Recruit current F70 customers with age and gender quotas matching the target market. Freeze baseline task times, interaction counts, complaint shares and comfort ratings as applicable; use identical tasks, route, seat positions, load, tyres and ambient conditions for both vehicles. For comparative geometry measurements, freeze the reference seat positions and luggage configuration. Baseline measurements are pending; do not claim improvement until they are recorded.",
   "category": "driving_experience",
   "signal_ids": [
    "SIG-F70-EU-001",
@@ -688,14 +690,16 @@
    "Successor will be evaluated in comparable trim/wheel sizes to current customer fleet for a fair comparison.",
    "Test route and driver panel are representative of typical EU customer use (mixed surfaces).",
    "Mode names and marketing will clearly describe the expected differences to avoid mismatched expectations.",
-   "Mode calibrations are validated across typical option combinations (steering, suspension, powertrain)."
+   "Mode calibrations are validated across typical option combinations (steering, suspension, powertrain).",
+   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
   ],
   "uncertainties": [
    "Conflicting evidence: \"Really lovely car comfy and nice to drive\" vs. \"My Modes / driving experience: complaint\"",
    "Customer perception may vary with optional wheel/tire packages; larger wheels may reduce perceived comfort.",
    "Road surface variability between test regions could affect objective metrics.",
    "Customer expectations for what each mode should deliver may differ across markets and vehicle generations.",
-   "Optional hardware (e.g., adaptive dampers) can change the magnitude of the differences perceived."
+   "Optional hardware (e.g., adaptive dampers) can change the magnitude of the differences perceived.",
+   "Relative targets require a recorded model-year 2025 F70 baseline and matched validation sample; these measurements are pending."
   ],
   "offer_check": {
    "status": "standard",
@@ -1260,7 +1264,7 @@
   "id": "REQ-F70-EU-c81984",
   "title": "Improve engine acoustics so noise and sound are pleasant and non‑intrusive",
   "description": "Engine sound and cabin acoustic behaviour should feel refined: occupants should not find engine noise intrusive during city driving or at motorway speeds, and engine acoustics should match customer expectations for a premium compact car.",
-  "acceptance_criterion": "In controlled urban and motorway drives with 40 participants, ≥90% of drivers/passengers rate engine noise as 'pleasant and not intrusive' (≥4/5) and subjective complaints about intrusive engine acoustics are reduced by ≥80% versus the current model sample.",
+  "acceptance_criterion": "In controlled urban and motorway drives with 40 participants, ≥90% of drivers/passengers rate engine noise as 'pleasant and not intrusive' (≥4/5) and subjective complaints about intrusive engine acoustics are reduced by ≥80% versus the current model sample. Baseline protocol: measure a production model-year 2025 F70 in the same trim/powertrain and recorded software version before successor testing, using the same 40 participants in counterbalanced order. Recruit current F70 customers with age and gender quotas matching the target market. Freeze baseline task times, interaction counts, complaint shares and comfort ratings as applicable; use identical tasks, route, seat positions, load, tyres and ambient conditions for both vehicles. For comparative geometry measurements, freeze the reference seat positions and luggage configuration. Baseline measurements are pending; do not claim improvement until they are recorded.",
   "category": "driving_experience",
   "signal_ids": [
    "SIG-F70-EU-040"
@@ -1309,11 +1313,13 @@
   "evidence_level": "C",
   "assumptions": [
    "Cabin sound insulation and powertrain acoustic tuning are considered during vehicle development.",
-   "Target ratings account for variability in optional equipment (wheels, tires)."
+   "Target ratings account for variability in optional equipment (wheels, tires).",
+   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
   ],
   "uncertainties": [
    "Perception of 'pleasant' sound is subjective and influenced by cultural preferences and prior vehicle experience.",
-   "Acoustic improvements may be constrained by packaging or weight targets."
+   "Acoustic improvements may be constrained by packaging or weight targets.",
+   "Relative targets require a recorded model-year 2025 F70 baseline and matched validation sample; these measurements are pending."
   ],
   "offer_check": {
    "status": "not_offered",
@@ -1522,7 +1528,7 @@
   "id": "REQ-F70-EU-512a36",
   "title": "Increase rear legroom and boot practicality for electric‑architecture variants",
   "description": "For the successor generation EV variant, customers experience noticeably more rear‑seat legroom and a more practical boot compared with today’s 1 Series, so rear passengers are comfortable on longer journeys and everyday luggage fits without compromise.",
-  "acceptance_criterion": "Compared with the current F70 baseline used in the internal benchmark, rear legroom increases by at least 35 mm and the boot can accommodate three carry‑on suitcases (each 55 x 40 x 20 cm) in a configuration test. In a user trial of ≥100 rear passengers, ≥90% rate rear‑seat comfort ≥4/5 for journeys of 90+ minutes.",
+  "acceptance_criterion": "Compared with the current F70 baseline used in the internal benchmark, rear legroom increases by at least 35 mm and the boot can accommodate three carry‑on suitcases (each 55 x 40 x 20 cm) in a configuration test. In a user trial of ≥100 rear passengers, ≥90% rate rear‑seat comfort ≥4/5 for journeys of 90+ minutes. Baseline protocol: measure a production model-year 2025 F70 in the same trim/powertrain and recorded software version before successor testing, using the same 100 participants in counterbalanced order. Recruit current F70 customers with age and gender quotas matching the target market. Freeze baseline task times, interaction counts, complaint shares and comfort ratings as applicable; use identical tasks, route, seat positions, load, tyres and ambient conditions for both vehicles. For comparative geometry measurements, freeze the reference seat positions and luggage configuration. Baseline measurements are pending; do not claim improvement until they are recorded.",
   "category": "variants_packages",
   "signal_ids": [
    "SIG-F70-EU-WEB-10"
@@ -1574,13 +1580,15 @@
    "Internal baseline measurements from the F70 are available and comparable to successor packaging.",
    "Customer acceptance measured on production‑intent vehicles or properly representative prototypes.",
    "Viable recycled or bio‑based material suppliers are available at scale and meet BMW durability and safety expectations.",
-   "Consumer panels reflect target market preferences for sustainability and premium feel."
+   "Consumer panels reflect target market preferences for sustainability and premium feel.",
+   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
   ],
   "uncertainties": [
    "Actual achievable wheelbase/packaging gains depend on final architecture and battery placement decisions.",
    "Increases in rear legroom may trade off with other packaging or structural constraints.",
    "Material supply chain, cost and regulatory considerations may change availability or option positioning at launch.",
-   "Perceived premium feel of recycled materials depends on finishing and trim choices."
+   "Perceived premium feel of recycled materials depends on finishing and trim choices.",
+   "Relative targets require a recorded model-year 2025 F70 baseline and matched validation sample; these measurements are pending."
   ],
   "offer_check": {
    "status": "not_offered",

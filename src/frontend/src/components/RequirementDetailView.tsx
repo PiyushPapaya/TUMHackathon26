@@ -64,6 +64,7 @@ export function RequirementDetailView({
         <div className="summary-criterion min-w-0 border-l-2 border-[var(--blue)] bg-[var(--grey-100)] p-4">
           <p className={H2}>Success criterion</p>
           <p className="mt-2 text-sm font-medium text-[var(--ink)]">{requirement.acceptance_criterion}</p>
+          <p className="mt-3 text-xs text-[var(--grey-500)]">Before approval, review the observable outcome, test procedure, pass threshold and participant sample. Relative targets also need a measured baseline under the same conditions. Numbers alone do not prove measurability.</p>
           <p className="mt-3 text-sm text-[var(--grey-500)]">{requirement.description}</p>
         </div>
         <div className="summary-decision min-w-0"><DecisionPanel requirement={requirement} onChanged={onRefresh} /></div>

@@ -30,17 +30,18 @@ export function OpportunityMap({ data }: { data: OpportunitiesView }) {
       <div className="border border-dashed border-[var(--hairline)] p-8">
         <p className="text-lg font-light text-[var(--ink)]">No study attributes for this scenario yet.</p>
         <p className="mt-2 max-w-2xl text-sm text-[var(--grey-500)]">
-          The map needs importance and satisfaction scores per attribute from a BMW customer study. Until they arrive, the ranking in the cockpit relies on customer comments and web sources.
+          The map needs satisfaction scores per attribute from a BMW customer study to derive its importance proxy. Until they arrive, the ranking in the cockpit relies on customer comments and web sources.
         </p>
       </div>
     );
   }
   return (
     <div>
-      <svg viewBox="0 0 1200 490" className="w-full border border-[var(--hairline)]" role="img" aria-label="Importance versus dissatisfaction per attribute">
+      <p className="mb-4 max-w-3xl text-sm text-[var(--grey-500)]">{data.importance_note}</p>
+      <svg viewBox="0 0 1200 490" className="w-full border border-[var(--hairline)]" role="img" aria-label="Importance proxy versus dissatisfaction per attribute">
         <line x1="50" y1="450" x2="1150" y2="450" stroke="#cfcfcf" />
         <line x1="50" y1="20" x2="50" y2="450" stroke="#cfcfcf" />
-        <text x="1150" y="478" fontSize="14" textAnchor="end" fill="#6b6b6b">Importance →</text>
+        <text x="1150" y="478" fontSize="14" textAnchor="end" fill="#6b6b6b">Importance proxy →</text>
         <text x="60" y="30" fontSize="14" fill="#6b6b6b">↑ Dissatisfaction</text>
         {data.points.map((p) => (
           <circle key={p.attribute + p.category + p.importance} cx={x(p.importance)} cy={y(p.dissatisfaction)} r={labeled.has(p.attribute) ? 6 : 4} fill={COLOR[p.quadrant] ?? "#9a9a9a"} opacity={labeled.has(p.attribute) ? 1 : 0.7}>
@@ -51,19 +52,19 @@ export function OpportunityMap({ data }: { data: OpportunitiesView }) {
           <text key={p.attribute} x={Math.min(x(p.importance) + 10, 1000)} y={y(p.dissatisfaction) + 4} fontSize="13" fill="#262626">{p.attribute.slice(0, 40)}</text>
         ))}
       </svg>
-      <p className="mt-2 text-xs text-[var(--grey-500)]">Blue = opportunity (important and dissatisfied). Hover a dot for its name.</p>
+      <p className="mt-2 text-xs text-[var(--grey-500)]">Blue = exploratory opportunity: importance proxy ≥ {data.thresholds.importance} and dissatisfaction index ≥ {data.thresholds.dissatisfaction}. Values are indices on a 0–1 scale. Hover a dot for its name.</p>
       <div className="mt-6 overflow-x-auto">
         <table className="w-full min-w-[600px] text-left text-sm">
           <thead className="text-xs uppercase tracking-[0.12em] text-[var(--grey-500)]">
-            <tr>{["Attribute", "Category", "Importance", "Dissatisfaction", "Verdict"].map((h) => <th key={h} className="py-2 pr-4 font-semibold">{h}</th>)}</tr>
+            <tr>{["Attribute", "Category", "Importance proxy", "Dissatisfaction index", "Exploratory quadrant"].map((h) => <th key={h} className="py-2 pr-4 font-semibold">{h}</th>)}</tr>
           </thead>
           <tbody>
             {rows.map((p) => (
               <tr key={p.attribute + p.category + p.importance} className="border-t border-[var(--hairline)]">
                 <td className="py-3 pr-4">{p.attribute}</td>
                 <td className="py-3 pr-4 text-[var(--grey-500)]">{categoryLabel(p.category)}</td>
-                <td className="py-3 pr-4 tabular-nums">{Math.round(p.importance * 100)}%</td>
-                <td className="py-3 pr-4 tabular-nums">{Math.round(p.dissatisfaction * 100)}%</td>
+                <td className="py-3 pr-4 tabular-nums">{p.importance.toFixed(3)}</td>
+                <td className="py-3 pr-4 tabular-nums">{p.dissatisfaction.toFixed(3)}</td>
                 <td className="py-3 pr-4 font-semibold">{en(QUADRANT_EN, p.quadrant)}</td>
               </tr>
             ))}

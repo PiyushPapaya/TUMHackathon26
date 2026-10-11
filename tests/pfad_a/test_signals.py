@@ -139,15 +139,40 @@ def test_studie_ohne_problem_und_ausserhalb_des_scopes_wird_nicht_zum_befund():
     assert extract_signals(SCENARIO, evidence) == []
 
 
-def test_ids_sind_fortlaufend_nach_nennungen_absteigend_und_zitieren_nur_vorhandene_belege():
+def test_ids_sind_semantisch_und_sortierung_bleibt_nach_nennungen():
     evidence = _many(5, labels="Seats/Likes", polarity=1) + _many(9, start=50, labels="Braking/Defect")
     signals = extract_signals(SCENARIO, evidence)
 
-    assert [s.id for s in signals] == ["SIG-G60-US-001", "SIG-G60-US-002"]
+    assert all(s.id.startswith("SIG-G60-US-g1-") for s in signals)
+    assert len({s.id for s in signals}) == 2
     assert [s.mention_count for s in signals] == [9, 5]
     known = {e.id for e in evidence}
     assert all(set(s.evidence_ids) <= known for s in signals)
     assert all(s.summary and s.title for s in signals)
+
+
+def test_new_sources_and_reordered_groups_keep_signal_identity():
+    original = _many(5, labels="Seats/Likes", polarity=1) + _many(9, start=50, labels="Braking/Defect")
+    before = _by_title(extract_signals(SCENARIO, original, use_llm=False))
+    added = _many(20, start=100, labels="Seats/Likes", polarity=1)
+    added += _many(30, start=200, labels="Navigation/Difficult to Use")
+    added += [_study(9, "Navigation system")]
+    after = _by_title(extract_signals(SCENARIO, original + added, use_llm=False))
+    assert {name: s.id for name, s in before.items()} == {name: after[name].id for name in before}
+    assert next(iter(after)) != next(iter(before))
+
+
+def test_adding_a_study_does_not_change_feedback_group_identity():
+    evidence = _many(6, labels="Navigation/Difficult to Use")
+    [before] = extract_signals(SCENARIO, evidence, use_llm=False)
+    [after] = extract_signals(SCENARIO, evidence + [_study(1, "Navigation system")], use_llm=False)
+    assert before.id == after.id
+
+
+def test_several_study_sources_for_one_attribute_share_one_group():
+    [sig] = extract_signals(SCENARIO, [_study(1, "Navigation system"), _study(2, "Navigation system")],
+                            use_llm=False)
+    assert len(sig.evidence_ids) == 2 and sig.mention_count == 2
 
 
 def test_lauf_ist_reproduzierbar():

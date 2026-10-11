@@ -2,7 +2,7 @@
 
 Warum diese Messungen und keine anderen: Ein BMW-PM fragt vor jeder Freigabe dasselbe.
   1. Stimmt die Quelle?            -> grounding (jede zitierte ID existiert)
-  2. Kann ich es abnehmen?         -> measurable (Akzeptanzkriterium enthält eine Zahl)
+  2. Enthält das Kriterium Zahlen? -> measurable (Syntax-Heuristik, kein fachlicher Nachweis)
   3. Wie stark ist der Beleg?      -> strong_evidence (Stufe A/B) und triangulated (intern + extern)
   4. Kippt das Ranking bei kleinen Änderungen? -> rank_stability (Simulation, siehe unten)
   5. Was hat die KI verworfen?     -> scope_guard (Entwürfe außerhalb des Scopes, sichtbar statt still)
@@ -95,8 +95,10 @@ def quality(state) -> dict:
         "metrics": [
             _metric("grounding", "Sources exist", _share(found, cited), 100,
                     f"{found} of {cited} cited IDs exist (requirement → finding → evidence)."),
-            _metric("measurable", "Testable acceptance criteria", _share(measurable, len(reqs)), 80,
-                    f"{measurable} of {len(reqs)} acceptance criteria contain a number."),
+            _metric("measurable", "Criteria containing a number (heuristic)", _share(measurable, len(reqs)), None,
+                    f"{measurable} of {len(reqs)} acceptance criteria contain a number. "
+                    "This syntax check does not prove meaningful measurability. Review the outcome, "
+                    "test procedure, threshold, sample and baseline for relative targets."),
             _metric("rank_stability", "Top 5 stays stable", overlap, 80,
                     f"{SIMULATION_RUNS} simulated runs, every weight ±{JITTER:.0%}: "
                     f"average overlap with today's top {TOP_N}."),

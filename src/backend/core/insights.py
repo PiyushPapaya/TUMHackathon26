@@ -87,7 +87,12 @@ def opportunities(state) -> dict:
     points = [{**o, "quadrant": quadrant(o["importance"], o["dissatisfaction"])}
               for o in state.opportunities if o.get("importance") is not None and o.get("dissatisfaction") is not None]
     return {"scenario_id": state.scenario.id, "points": points, "quadrants": list(QUADRANTS),
-            "importance_note": "Importance is a proxy derived from satisfaction extremes, not measured importance.",
+            "importance_note": "Importance proxy, not measured customer importance: max(dissatisfaction, "
+                               "top-two satisfaction share), or max(dissatisfaction, mean satisfaction / 10). "
+                               "Both axes reuse satisfaction data; high satisfaction can create high proxy importance. "
+                               "For mean scores, dissatisfaction is clamp((9 - mean) / 3, 0, 1), "
+                               "not a measured share of dissatisfied customers. Quadrants are exploratory "
+                               "and thresholds are assumptions; validate with a separate importance survey.",
             "thresholds": {"importance": IMPORTANT_FROM, "dissatisfaction": DISSATISFIED_FROM}}
 
 

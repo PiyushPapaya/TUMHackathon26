@@ -3,7 +3,7 @@ import type { QualityMetric, ScenarioQuality } from "@/src/lib/insights";
 // Die Frage, die der PM mit der Zeile beantwortet. Die genauen Zahlen je Szenario stehen im Tooltip der Zelle.
 const QUESTION: Record<string, string> = {
   grounding: "Does every cited source really exist? Checked ID by ID.",
-  measurable: "Can engineering verify it? The acceptance criterion contains a number.",
+  measurable: "Syntax heuristic only: a number does not prove measurability. Review the outcome, procedure, threshold, sample and baseline for relative targets.",
   rank_stability: "Simulation: 200 runs with every weight changed by up to ±20%. How much of the top 5 survives?",
   first_stays_first: "Same simulation: how often does the #1 proposal stay #1?",
   strong_evidence: "Share of proposals backed by several sources or many mentions. Thin data stays visible as C/D.",
