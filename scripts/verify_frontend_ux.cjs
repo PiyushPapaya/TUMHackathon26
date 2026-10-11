@@ -6,7 +6,7 @@ const path = require('node:path');
 
 async function main() {
   const base = process.env.UX_BASE_URL || 'http://localhost:3001';
-  const output = path.resolve('outputs/ux-review');
+  const output = path.resolve(process.env.UX_OUTPUT || 'outputs/ux-review');
   fs.mkdirSync(output, { recursive: true });
   const browser = await chromium.launch({ headless: true, ...(process.env.UX_CHROMIUM_PATH ? { executablePath: process.env.UX_CHROMIUM_PATH } : {}) });
   const errors = [];
@@ -56,7 +56,7 @@ async function main() {
       json: { requirement, ai_answer: { answer: 'Regression check: answer remains visible after refresh.', supporting_evidence_ids: [], counter_evidence_ids: [], suggested_change: null } },
     }));
     await page.getByRole('button', { name: /^challenge$/i }).click();
-    await page.getByLabel('Rationale', { exact: true }).fill('Check evidence before making a decision.');
+    await page.getByLabel('Reason', { exact: true }).fill('Check evidence before making a decision.');
     await page.getByRole('button', { name: 'Submit challenge' }).click();
     await page.getByText('Regression check: answer remains visible after refresh.').waitFor();
     await page.getByRole('button', { name: 'Submit challenge' }).waitFor();

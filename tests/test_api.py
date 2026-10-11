@@ -65,7 +65,10 @@ def test_edit_only_allowed_fields(client):
 
 
 def test_export_csv(client):
-    csv_text = client.get("/api/scenarios/G60-US/export").text
+    response = client.get("/api/scenarios/G60-US/export")
+    assert response.headers["content-type"] == "text/csv; charset=utf-8"
+    assert response.headers["content-disposition"] == 'attachment; filename="G60-US-requirements.csv"'
+    csv_text = response.text
     assert csv_text.splitlines()[0].startswith("id;rank;title")
     assert REQ in csv_text
 

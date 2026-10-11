@@ -1,7 +1,7 @@
 """Chancen-Karte aus Studienbelegen.
 
-Importance ist eine einfache, nachvollziehbare Proxy-Zahl: je stärker ein Attribut
-polarisiert (sehr zufrieden oder unzufrieden), desto wichtiger behandeln wir es.
+Importance ist ein Zufriedenheits-Proxy, keine erhobene Wichtigkeit. max(Unzufriedenheit,
+Top-2-Zufriedenheit bzw. Mittelwert/10) verwendet dieselben Daten wie die y-Achse.
 """
 
 from __future__ import annotations

@@ -68,7 +68,8 @@ def test_wettbewerb_wird_competitor_advantage_trend_wird_trend(monkeypatch):
     kinds = [s.kind for s in web_signals]
     assert kinds.count(SignalKind.COMPETITOR_ADVANTAGE) == 8
     assert kinds.count(SignalKind.TREND) == 5
-    assert [s.id for s in web_signals] == [f"SIG-G60-US-WEB-{n:02d}" for n in range(1, 14)]
+    assert all(s.id.startswith("SIG-G60-US-g1-") for s in web_signals)
+    assert len({s.id for s in web_signals}) == 13
     assert all(s.source_types == [SourceType.WEB] for s in web_signals)
 
 

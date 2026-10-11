@@ -166,4 +166,5 @@ def export(scenario_id: str, request: Request, format: Literal["csv", "json", "m
                r.score, r.rationale, r.evidence_level.value, " | ".join(r.assumptions),
                " | ".join(r.uncertainties), r.status.value]
         writer.writerow([_csv_safe(v) for v in row])
-    return buf.getvalue()
+    return PlainTextResponse(buf.getvalue(), media_type="text/csv",
+                             headers={"Content-Disposition": f'attachment; filename="{scenario_id}-requirements.csv"'})
