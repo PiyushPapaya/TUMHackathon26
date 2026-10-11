@@ -53,7 +53,9 @@ Quellen: [Reskilll](https://reskilll.com/blogs/hackathon-demo-presentation-tips-
 | Messbare Kriterien | 100 % der 19 Akzeptanzkriterien enthalten eine Zahl | dieselbe Datei |
 
 Eval neu gelaufen (So 06:45). Vorher standen dort 89,8 % Grounding: Messfehler, weil das Skript die 5 zitierten
-Web-Befunde nicht kannte. Behoben in `tests/eval/run_eval.py`. Befund-Treue ist weiter **n/a** (0 von 50 gelabelt).
+Web-Befunde nicht kannte. Behoben in `tests/eval/run_eval.py`. **Befund-Treue G60-US: 88 %** (44 von 50 Paaren
+„Kommentar belegt den Befund“; So 08:30). Ehrlich zur Methode: Claude schlug j/n vor, Aditya prüfte und bestätigte;
+die 6 „n“ sind meist Kundenfragen, die als Beschwerde zählten (z. B. „Wofür ist der Valet-Modus?“).
 
 **Konflikt-Moment der Demo (live geprüft, G60-US):** Rang 5 „Make real-world range, charging speed and charger
 availability …“. Diese Anforderung zitiert **beide Seiten**: 38 Nennungen „Range feels limited and fluctuates“ gegen

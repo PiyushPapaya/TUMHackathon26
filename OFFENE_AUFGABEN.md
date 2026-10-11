@@ -6,7 +6,7 @@ Die folgenden Punkte sind offen und aus dem [technischen Abgleich](docs/REPO_CHE
 
 | Priorität | Punkt | Konsequenz / konkreter Abschluss |
 |---|---|---|
-| P1 | Menschliche Evaluation fehlt | Aditya/Dennis bewerten die 50 vorbereiteten G60-US-Paare in `data/eval/G60-US_sample.csv` mit j/n; danach Evaluation neu ausführen. Keine KI-erfundene Trust-Zahl verwenden. |
+| P1 | ~~Menschliche Evaluation fehlt~~ **erledigt** | 50 von 50 G60-US-Paaren gelabelt, Befund-Treue **88 %** (`tests/eval/REPORT.md`). Methode offen benannt: KI-Vorschlag, von Aditya geprüft und bestätigt. |
 | P1 | Dünne Szenarien und unvollständiger Zukunftshorizont | Piyush/Dennis recherchieren belastbare marktbezogene Wettbewerber-/Trendquellen und erzeugen neue Anforderungen; bis dahin F70-EU/G60-US als Hauptdemo, andere als Datenlücken-/Kaltstartbeweis einordnen. |
 | P1 | Vollständige Neuerzeugung nicht bestätigt | Alle sechs Szenarien mit aktuellem Code/Prompts in einen getrennten Ausgabeordner erzeugen, Cache-Fails und Quellen prüfen, Bundle-/API-/Eval-Prüfung wiederholen. Alte PM-Verläufe behalten; für neue Bundles separate Audit-DB verwenden. |
 | P1 | Vollständiger Browser-Flow fehlt | Auf freigegebenem laufendem Frontend Modellwechsel, Belege, Challenge, Edit, Gewichte, Exporte und Neustart prüfen. Start des separaten Frontend-Testservers wurde automatisch abgelehnt, ohne spezifische Begründung. Build/API-Tests ersetzen diesen Schritt nicht. |
@@ -48,7 +48,7 @@ Alle fünf Aufgaben sind offen. Die Reihenfolge ist die gewünschte Arbeitsreihe
 
 Aktueller technischer Abgleich: [docs/REPO_CHECK.md](docs/REPO_CHECK.md). A1 ist im Backend und den
 sechs Snapshots ergänzt und getestet; die vollständige Browserprüfung bleibt offen. A2 bleibt eine
-Produktentscheidung. A3 benötigt weiterhin menschliche Labels (G60-US: 0 von 50).
+Produktentscheidung. A3 ist erledigt (G60-US: 50 von 50 gelabelt, 88 %).
 
 > Stand: So 11.10.2026, 07:10. Angelegt nach dem Abgleich mit dem BMW-Brief (`docs/CHALLENGE.md`).
 > Status: **Entscheidung offen.** Das Team (Piyush) entscheidet später. Ein Agent arbeitet eine Aufgabe nur ab,
@@ -142,7 +142,7 @@ Nachfolger-Anforderungen.“
 
 ## A3 · Befund-Treue von Hand labeln
 
-**Status:** offen, braucht einen **Menschen** (z. B. Aditya), ca. 15 Minuten.
+**Status:** erledigt (So 08:30): 44 von 50 = 88 %. Claude schlug vor, Aditya prüfte und bestätigte.
 
 **Warum:** Einzige fehlende Kernzahl im Eval (`tests/eval/REPORT.md`: Befund-Treue n/a, 0 von 50 gelabelt).
 Bewusst nicht per KI, sonst prüft die KI sich selbst.
