@@ -149,3 +149,25 @@ def test_corrupt_audit_is_not_replayed(tmp_path, monkeypatch):
     log._conn.commit()
     with pytest.raises(RuntimeError, match="replay refused"):
         Store(log).load_all()
+
+
+def test_changed_bundle_never_inherits_old_pm_decisions(tmp_path, monkeypatch):
+    from core.store import EXAMPLES_DIR
+
+    folder = tmp_path / "processed"
+    folder.mkdir()
+    path = folder / "G60-US.json"
+    bundle = json.loads((EXAMPLES_DIR / "bundle_G60-US.json").read_text(encoding="utf-8"))
+    path.write_text(json.dumps(bundle), encoding="utf-8")
+    monkeypatch.setenv("PROCESSED_DIR", str(folder))
+    log = AuditLog(tmp_path / "audit.db")
+    store = Store(log)
+    store.load_all()
+    store.decide("REQ-G60-US-001", "approve", Actor(type="human", name="pm"), "Reviewed original source")
+    # Same ID, different requirement: replay must not silently approve the new content.
+    bundle["requirements"][0]["description"] = "New content using the old identifier"
+    path.write_text(json.dumps(bundle), encoding="utf-8")
+    with pytest.raises(RuntimeError, match="bundle changed.*replay refused"):
+        Store(log).load_all()
+    assert log.verify()["valid"]
+    log.close()
