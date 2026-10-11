@@ -1,0 +1,25 @@
+on the lolck host it shows : Backend not reachable – start uvicorn
+
+---
+
+mache sodass dass es immer 3000 und 800 imemmer gelcihzeieteig start
+
+---
+
+<task-notification>
+<task-id>brsb35has</task-id>
+<tool-use-id>toolu_01EAto2JqoyXa5qUihpJZVg4</tool-use-id>
+<output-file>C:\Users\anil1\AppData\Local\Temp\claude\C--Users-anil1-Downloads-Hackathon-TUMHackathon26\54b91c91-badc-481e-b5b3-de78b2fa4c93\tasks\brsb35has.output</output-file>
+<status>failed</status>
+<summary>Background command "Start backend server in demo mode on port 8000" failed with exit code 255</summary>
+</task-notification>
+
+---
+
+<task-notification>
+<task-id>byvs2ee2r</task-id>
+<tool-use-id>toolu_01NzTsYvJuratkfG4WKYqNjx</tool-use-id>
+<output-file>C:\Users\anil1\AppData\Local\Temp\claude\C--Users-anil1-Downloads-Hackathon-TUMHackathon26\54b91c91-badc-481e-b5b3-de78b2fa4c93\tasks\byvs2ee2r.output</output-file>
+<status>failed</status>
+<summary>Background command "Start frontend dev server on port 3000 to see errors" failed with exit code 1</summary>
+</task-notification>
