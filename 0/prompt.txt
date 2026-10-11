@@ -11,3 +11,7 @@ Bitte führe die Schritte aus. Mit regionalen Märkten meinen wir Märkte wie Eu
 ---
 
 Machen wir erstmal die Länderfelder ohne Ki
+
+---
+
+Ich habe den openai key hinterlegt
