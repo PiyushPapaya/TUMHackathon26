@@ -3,7 +3,7 @@
   "checkpoint_id": "01M4MT7SY66BEWWX040BHV22HX",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 1,
+  "checkpoints_count": 2,
   "files_touched": [
     "OFFENE_AUFGABEN.md",
     "docs/pitch/RECHERCHE.md",
@@ -17,13 +17,20 @@
       "compact_transcript": "/0/transcript.jsonl",
       "content_hash": "/0/content_hash.txt",
       "prompt": ""
+    },
+    {
+      "metadata": "/1/metadata.json",
+      "transcript": "/1/full.jsonl",
+      "compact_transcript": "/1/transcript.jsonl",
+      "content_hash": "/1/content_hash.txt",
+      "prompt": ""
     }
   ],
   "token_usage": {
-    "input_tokens": 4,
-    "cache_creation_tokens": 1360,
-    "cache_read_tokens": 190936,
-    "output_tokens": 412,
-    "api_call_count": 2
+    "input_tokens": 12,
+    "cache_creation_tokens": 3994,
+    "cache_read_tokens": 451392,
+    "output_tokens": 2399,
+    "api_call_count": 6
   }
 }
