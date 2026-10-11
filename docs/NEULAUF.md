@@ -69,6 +69,10 @@ Nach der Übernahme (`python tests/eval/run_eval.py all`, `python scripts/verify
 API-Prüfung auf `data/processed` mit allen 6 Szenarien nach der Übernahme: bestanden (183 HTTP-Reads,
 30 PM-Aktionen, Neustart-Replay ok, offline ok). `pytest -q`: 475 passed.
 
+Frontend-Schnittstelle nach der Übernahme: alle 22 vom Frontend genutzten API-Pfade für alle 6 Szenarien
+abgerufen (230 Abrufe, alle 200), Pflichtfelder gegen die Typen in `src/frontend/src/lib/api.ts` abgeglichen
+(0 fehlend). `npm run lint` und `npm run build` grün (von Lasse auf seinem Rechner ausgeführt).
+
 ## Grenzen
 
 - G70-US wurde ebenfalls neu erzeugt (15 -> 20 Anforderungen, 3 `next_gen`), aber bewusst nicht übernommen
