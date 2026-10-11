@@ -5,18 +5,18 @@ Erzeugt mit `python tests/eval/run_eval.py G60-US`. Nur Zahlen, keine BMW-Zitate
 ## Trichter
 
 3713 Belege (davon 3481 Kommentare im Umfang) -> 45 Befunde
--> 0 Anforderungen.
+-> 19 Anforderungen.
 
 ## Die Zahlen
 
 | Messung | Ergebnis | Ziel |
 |---|---|---|
 | Grounding Befunde: zitierte Beleg-IDs, die existieren | 100.0 % | 100 % |
-| Grounding Anforderungen: zitierte Befund-IDs, die existieren | n/a | 100 % |
+| Grounding Anforderungen: zitierte Befund-IDs, die existieren | 100.0 % | 100 % |
 | Wortlaut: zitierte Kommentare, wörtlich in der Excel | 100.0 % | 100 % |
-| Befund-Treue: "passt" (0 von 50 gelabelt) | n/a | >= 80 % |
+| Befund-Treue: "passt" (0 von 0 gelabelt) | n/a | >= 80 % |
 | Abdeckung: Kommentare in mindestens einem Befund | 41.8 % | Orientierung |
-| Anforderungen mit Zahl im Akzeptanzkriterium | n/a | >= 80 % |
+| Anforderungen mit Zahl im Akzeptanzkriterium | 100.0 % | >= 80 % |
 
 ## Methode
 

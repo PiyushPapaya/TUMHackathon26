@@ -37,6 +37,8 @@ def compute(scenario_id: str) -> dict:
     if evidence is None or signals is None:
         raise FileNotFoundError(f"{processed}: erst pipeline.py --stage evidence und --stage signals laufen lassen")
     requirements = _json(processed / "requirements.json") or []
+    # Anforderungen zitieren auch Web-Befunde (B6); ohne sie zählt Grounding echte IDs als "erfunden".
+    web_signals = _json(processed / "web_signals.json") or []
     known = {e["id"] for e in evidence}
     cited = [i for s in signals for i in s["evidence_ids"]]
     excel = pd.read_excel(ROOT / "data" / "raw" / cfg["data"]["feedback_file"], sheet_name="Feedback_Explorer")
@@ -56,7 +58,7 @@ def compute(scenario_id: str) -> dict:
         "requirements": len(requirements),
         "ground_signals": grounding_rate(cited, known),
         "ground_requirements": grounding_rate([i for r in requirements for i in r["signal_ids"]],
-                                              {s["id"] for s in signals}),
+                                              {s["id"] for s in signals + web_signals}),
         "verbatim": verbatim_rate(cited_texts, source_texts),
         "fidelity": fidelity(labels), "labelled": sum(1 for x in labels if x.strip()), "sample": len(labels),
         "coverage": coverage(groups, comments),

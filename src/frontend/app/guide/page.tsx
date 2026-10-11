@@ -16,7 +16,7 @@ const STEPS = [
 const FEATURES = [
   ["Weight controls", "Sliders change what matters to you. \"Apply weights\" recomputes the ranking (the backend normalizes the sum to 1) and writes WEIGHTS_CHANGED to the audit trail. The change itself (for example \"Customer pain +0.10\") is stored as the rationale; a question asked in your own words is stored as the rationale when you apply it. \"Reset to default\" resets the sliders but applies nothing yet."],
   ["Ask in your own words", "Dark panel at the top of the cockpit. The AI turns your question into weights only, Python ranks. \"Apply & re-rank\" moves the list and stores your question as the rationale."],
-  ["Conflicting evidence", "Small yellow \"!\" next to a title: two pieces of evidence contradict each other (for example US customers say something different than European ones). The detail view shows which."],
+  ["Conflicting evidence", "Small yellow \"!\" next to a title: two findings cited by this requirement contradict each other (for example many customers praise the range while others say it falls short). The detail view shows both sides."],
   ["Status", "Proposed (new), Challenged (questioned), Approved, Rejected."],
   ["Assistant", "Blue button bottom right. Ask what to build first, what a label means, or where to go. It only cites requirements that exist in the data."],
   ["Export", "Downloads the current ranking as CSV, JSON or Markdown, for example for Excel or a ticket system."],

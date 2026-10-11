@@ -49,10 +49,22 @@ Quellen: [Reskilll](https://reskilll.com/blogs/hackathon-demo-presentation-tips-
 | Trichter G60-US | **3.811 Belege → 55 Befunde → 19 Anforderungen** | `data/processed/G60-US.json` → `funnel` |
 | Evidenzstufen | A 3 · B 14 · C 1 · D 1 | dieselbe Datei |
 | Grounding Befunde | 100 % der zitierten Beleg-IDs existieren, 100 % wörtlich in der Excel | `tests/eval/REPORT.md` |
+| Grounding Anforderungen | 100 % der zitierten Befund-IDs existieren (inkl. Web-Befunde) | `tests/eval/REPORT.md` (So 06:45) |
+| Messbare Kriterien | 100 % der 19 Akzeptanzkriterien enthalten eine Zahl | dieselbe Datei |
 
-**Vor dem Pitch prüfen:** `tests/eval/REPORT.md` zeigt noch „0 Anforderungen“ (veraltet) → `python tests/eval/run_eval.py G60-US` neu laufen lassen.
-Platz 1 ist jetzt „HVAC controls and vents …“ (Stufe A), nicht mehr „Physische Bedienelemente“.
-In den Top 6 sind keine Konflikte verknüpft → Konflikt-Moment der Demo live an einer passenden Anforderung suchen oder streichen.
+Eval neu gelaufen (So 06:45). Vorher standen dort 89,8 % Grounding: Messfehler, weil das Skript die 5 zitierten
+Web-Befunde nicht kannte. Behoben in `tests/eval/run_eval.py`. Befund-Treue ist weiter **n/a** (0 von 50 gelabelt).
+
+**Konflikt-Moment der Demo (live geprüft, G60-US):** Rang 5 „Make real-world range, charging speed and charger
+availability …“. Diese Anforderung zitiert **beide Seiten**: 38 Nennungen „Range feels limited and fluctuates“ gegen
+28 Nennungen „Range is better than quoted and fits commute“. Fast gleich groß, also ein echter Widerspruch, kein
+Ausreißer. Satz für die Demo: „Wir mitteln das nicht weg. 38 sagen zu wenig, 28 sagen mehr als versprochen. Der PM sieht
+beides und entscheidet.“ Ersatz: Rang 7 Touchscreen (35 „Love the large touchscreen“ gegen 24 „Too many menus“).
+Verworfen: Rang 14 Antrieb (268 gegen 32), weil das eher eine Minderheit ist als ein Widerspruch.
+
+Dabei gefunden und behoben: Die Cockpit-Liste zeigte das gelbe „!“ auch, wenn die Gegenseite nicht zitiert war
+(z. B. Rang 11 „Access systems“ gegen „Interior feels luxurious“), die Detailseite dann aber keinen Konflikt.
+Jetzt gilt in Liste und Detail dieselbe Regel (`src/frontend/src/lib/conflicts.ts`).
 
 ## 5. Was daraus folgt (Entscheidungen)
 
