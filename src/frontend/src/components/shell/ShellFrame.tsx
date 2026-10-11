@@ -4,20 +4,19 @@ import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { SiteHeader } from "./SiteHeader";
 import { SiteFooter } from "./SiteFooter";
-import { ChatButton } from "./ChatButton";
+import { AssistantProvider } from "./assistant/AssistantProvider";
 
-// Rahmen um jede Seite. Mit ?embed=1 (Guide-Seitenleiste) fehlen Header, Footer und Chat-Knopf,
-// sonst würde die Leiste die ganze Seite noch einmal in sich zeigen.
+// Rahmen um jede Seite: Header, Footer und der Assistent (Chat + Guide) unten rechts.
+// ?embed=1 zeigt nur den Inhalt (für eingebettete Ansichten ohne Rahmen).
 function Frame({ children }: { children: React.ReactNode }) {
   const embed = useSearchParams().get("embed") === "1";
   if (embed) return <>{children}</>;
   return (
-    <>
+    <AssistantProvider>
       <SiteHeader />
       {children}
       <SiteFooter />
-      <ChatButton />
-    </>
+    </AssistantProvider>
   );
 }
 

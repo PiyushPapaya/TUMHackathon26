@@ -163,3 +163,33 @@ export function postLens(id: string, question: string, actor: string): Promise<L
 export const getMemoUrl = (id: string) => `${BASE_URL}/api/scenarios/${enc(id)}/memo`;
 
 export type { WeightKey };
+
+// Assistent: Linse über alle Szenarien (POST /api/ask). Liefert nur IDs aus dem Store.
+export interface AskHit {
+  scenario_id: string;
+  requirement_id: string;
+  title: string;
+  rank: number;
+  score: number;
+  lens_score: number;
+  evidence_level: EvidenceLevel;
+  reasons: LensReason[];
+}
+
+export interface AskResult {
+  question: string;
+  source: "rules" | "mixed";
+  answer: string;
+  top: AskHit[];
+}
+
+export function postAsk(question: string, actor: string): Promise<AskResult> {
+  return fetch(`${BASE_URL}/api/ask`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ question, actor }),
+  }).then(async (res) => {
+    if (!res.ok) throw new Error(res.status === 422 ? "Please type a question." : `Request failed: ${res.status}`);
+    return res.json() as Promise<AskResult>;
+  });
+}

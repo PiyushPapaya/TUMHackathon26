@@ -15,17 +15,17 @@ const STEPS = [
 
 const FEATURES = [
   ["Weight controls", "Sliders change what matters to you. \"Apply weights\" recomputes the ranking (the backend normalizes the sum to 1) and writes WEIGHTS_CHANGED to the audit trail. The change itself (for example \"Customer pain +0.10\") is stored as the rationale; a question asked in your own words is stored as the rationale when you apply it. \"Reset to default\" resets the sliders but applies nothing yet."],
-  ["Conflicting evidence", "Yellow label: two pieces of evidence contradict each other (for example US customers say something different than European ones). The detail view shows which."],
+  ["Ask in your own words", "Dark panel at the top of the cockpit. The AI turns your question into weights only, Python ranks. \"Apply & re-rank\" moves the list and stores your question as the rationale."],
+  ["Conflicting evidence", "Small yellow \"!\" next to a title: two pieces of evidence contradict each other (for example US customers say something different than European ones). The detail view shows which."],
   ["Status", "Proposed (new), Challenged (questioned), Approved, Rejected."],
-  ["Overview", "Summary: funnel from customer voices to requirements, top proposals, evidence level split, workflow and warnings."],
+  ["Assistant", "Blue button bottom right. Ask what to build first, what a label means, or where to go. It only cites requirements that exist in the data."],
   ["Export", "Downloads the current ranking as CSV, JSON or Markdown, for example for Excel or a ticket system."],
 ];
 
 const EVIDENCE = [
-  ["A · strong", "Many direct customer mentions from several sources. Reliable."],
-  ["B · medium", "Several hints, but fewer sources or fewer mentions."],
-  ["C · weak", "Little evidence. Treat with care."],
-  ["D · assumption", "Assumption or trend without direct customer voices, for example for the next vehicle generation."],
+  ["Green · Proven (A/B)", "Direct customer mentions from one or more sources. A is the strongest."],
+  ["Yellow · Weak (C)", "Little evidence. Treat with care."],
+  ["Red · Assumption (D)", "Assumption or trend without direct customer voices, for example for the next vehicle generation."],
 ];
 
 const WEIGHTS = [

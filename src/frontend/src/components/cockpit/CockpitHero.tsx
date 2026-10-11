@@ -1,11 +1,16 @@
+"use client";
+
 import type { Scenario } from "@/src/lib/api";
 import { getExportUrl } from "@/src/lib/api";
 import { getMemoUrl } from "@/src/lib/insights";
 import { Button } from "@/src/components/ui/Button";
 import { Eyebrow, SectionHeading } from "@/src/components/ui/Typography";
 import { scenarioLabel } from "@/src/components/shell/scenarioLabel";
+import { useAssistant } from "@/src/components/shell/assistant/AssistantProvider";
+import { Icon } from "@/src/components/ui/Icon";
 
 export function CockpitHero({ scenario, scenarioId }: { scenario?: Scenario; scenarioId: string }) {
+  const assistant = useAssistant();
   const n = scenario?.headline_numbers;
   const stats = n
     ? [
@@ -17,6 +22,14 @@ export function CockpitHero({ scenario, scenarioId }: { scenario?: Scenario; sce
   return (
     <header className="flex flex-wrap items-end justify-between gap-8 pb-10">
       <div>
+        {/* Guide oben links: Wer das Cockpit zum ersten Mal sieht, findet hier die fünf Schritte, ohne die Seite zu verlassen. */}
+        <button
+          type="button"
+          onClick={() => assistant.open("guide")}
+          className="mb-6 inline-flex items-center gap-2 border border-[var(--hairline)] px-3 py-1.5 text-xs font-semibold text-[var(--ink)] transition-colors hover:border-[var(--ink)]"
+        >
+          <Icon name="evidence" size={14} /> How to use the cockpit
+        </button>
         <Eyebrow>{scenario ? scenarioLabel(scenario) : "Signal2Spec"}</Eyebrow>
         <SectionHeading as="h1" className="mt-3">PM cockpit.</SectionHeading>
         <p className="mt-4 max-w-xl text-[var(--grey-500)]">
