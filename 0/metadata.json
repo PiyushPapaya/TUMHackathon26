@@ -1,0 +1,39 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4M5Q8WT74YAV0PDEH7G5Z1W",
+  "session_id": "9199cb68-b137-42c0-883c-34b744595c8f",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-11T00:27:39.8117562Z",
+  "branch": "piyush-frontend",
+  "checkpoints_count": 1,
+  "save_step_count": 1,
+  "files_touched": [
+    "src/frontend/src/components/ui/Logo.tsx"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-opus-5-5",
+  "turn_id": "eab946f07341",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 182,
+    "cache_creation_tokens": 404294,
+    "cache_read_tokens": 17748601,
+    "output_tokens": 99524,
+    "api_call_count": 91
+  },
+  "session_metrics": {
+    "turn_count": 1
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-11T00:27:39.4461812Z",
+    "agent_lines": 29,
+    "agent_removed": 10,
+    "human_added": 27,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 56,
+    "total_lines_changed": 68,
+    "agent_percentage": 57.35294117647059,
+    "metric_version": 2
+  }
+}
