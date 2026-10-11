@@ -1,0 +1,13 @@
+Pls check the frontend for bugs
+
+---
+
+Bitte fixe die ersten beiden bugs
+
+---
+
+Pls change it so in the region comparision tab in the portfolio tab you can select a card type (e.g. G60) but only if there are multiple versions of it in differen regions (e.g. G60-Eu & G60-US). If thats so enable the two dropdowns where i can select from all the regions the car has types in. Disallow selecting the same region twice. If anything is unclear ask. Make no mistakes.
+
+---
+
+commit the changes to my branch
