@@ -1,0 +1,23 @@
+ist valkles fertig
+
+---
+
+fuck wir barduej ein live demo , connected es zu vercel iregdnwie ganz schenll
+
+---
+
+<task-notification>
+<task-id>be4c45qm9</task-id>
+<tool-use-id>toolu_012tSZLTTqbWsrzwNMoi2fy3</tool-use-id>
+<output-file>C:\Users\anil1\AppData\Local\Temp\claude\C--Users-anil1-Downloads-Hackathon-TUMHackathon26\54b91c91-badc-481e-b5b3-de78b2fa4c93\tasks\be4c45qm9.output</output-file>
+<status>failed</status>
+<summary>Background command "Start live demo backend on port 8000" failed with exit code 3</summary>
+</task-notification>
+
+---
+
+kuze becshiebung 1 staz zu den repo
+
+---
+
+gcuke auf die html in docs / alyout , dda sit unsere parentation. es fehelt auf dme pfornt scrren nue ReSpec aber adaruneter nichts. wie kann man die alleterste wbeist gut getsalten
