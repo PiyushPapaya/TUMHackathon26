@@ -2,6 +2,10 @@
 
 ## Offene Punkte nach Priorität
 
+> ✅ **Stand So 11.10., 08:35: Alle P2-Punkte sind fertig.** Dennis' Auftrag (die letzten drei P2: Audit-Ursprung,
+> Reviewer-Budget, Betriebsmodell) ist abgeschlossen und gepusht (`69c084d`, `16fda4e`, `cd2b3f2`, `1cb9a65`).
+> Von P1 sind noch zwei Punkte offen: dünne Szenarien und vollständige Neuerzeugung.
+
 Die folgenden Punkte sind offen und aus dem [technischen Abgleich](docs/REPO_CHECK.md#offene-punkte-nach-priorität) übernommen. Die älteren Detailaufgaben darunter enthalten frühere Arbeitsstände; sie sind zusammen mit dem aktuellen Abgleich zu lesen.
 
 | Priorität | Punkt | Konsequenz / konkreter Abschluss |
