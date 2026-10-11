@@ -1,0 +1,79 @@
+fix and impove teh wwebiste, look at eths esttas, 
+
+<pasted_content id="31f6">
+From voice to decision · G60-US
+Thousands of voices.
+A handful of decisions.
+
+The AI does the reading and the counting. The product manager asks, decides and signs off. Every step is traceable.
+Open cockpit
+
+3,755
+
+customer voices
+
+47
+
+findings
+
+15
+
+requirements
+
+0
+
+approved by PM
+
+Who does what
+
+    01
+    Ingest
+
+    AI autonomous
+
+    Excel and PDF inputs become evidence IDs.
+
+    02
+    Findings
+
+    AI autonomous
+
+    Recurring signals are grouped with quotes.
+
+    03
+    Web
+
+    AI autonomous
+
+    External sources confirm trends and competitors.
+
+    04
+    Requirements
+
+    PM in control
+
+    AI proposes measurable, PM-ready requirements.
+
+    05
+    Prioritization
+
+    PM in control
+
+    A formula ranks. The PM asks or tunes weights.
+
+    06
+    Decision
+
+    PM in control
+
+    Approve, reject, edit or challenge.
+
+    07
+    Documentation
+
+    AI autonomous
+
+    Audit trail and memo are generated.
+</pasted_content id="31f6">
+
+, it sould coem at heer back after this slide: [Image #18]. alod make the hwoel scrooin one more inentactive better and gfiiting as it cuurentyl look lame and unnecry. make this a 2*3[Image #19]. impove the logo:[Image #20]. owuld put guiide at the cockpit at the top left:  and [Image #21] wheer czuertyl the caht is add a new cahtbot to help and naviagte the wbiete and mak eit more ffeicnet and betetr.also keep impivimg the UI and its feelinga and it a top webiste for this cahhlege so taht we can win it and all of its eftaures re visbsile asap. plan it very well
