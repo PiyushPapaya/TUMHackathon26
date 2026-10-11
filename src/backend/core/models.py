@@ -163,6 +163,7 @@ class Requirement(BaseModel):
     business: BusinessContext | None = None
     stable_key: str = ""           # Hash der sortierten signal_ids: gleiche Befunde -> gleiche ID
     badges: list[str] = []         # fertige Kurzlabels fürs Frontend, z. B. "robust", "Zukunftswette"
+    outlook: dict | None = None    # regelbasierte Nachfolger-Annahme, unabhängig vom Score
 
 
 class AuditEvent(BaseModel):

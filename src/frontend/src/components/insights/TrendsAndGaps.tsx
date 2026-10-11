@@ -11,9 +11,9 @@ export function TrendsList({ data }: { data: TrendsView }) {
   return (
     <div className="grid gap-px bg-[var(--hairline)] md:grid-cols-2">
       {items.map((t) => (
-        <article key={t.topic} className="bg-white p-6">
+        <article key={`${t.kind}-${t.requirement_id ?? t.topic}`} className="bg-white p-6">
           <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--grey-500)]">
-            {t.kind === "bet" ? `Bet for ${t.horizon}` : "Trend today"} · {categoryLabel(t.category)}
+            {t.kind === "outlook" ? `Outlook ${t.horizon}: grows · Assumption` : t.kind === "bet" ? `Bet for ${t.horizon}` : `Trend for ${t.horizon}`} · {categoryLabel(t.category)}
           </p>
           <h3 className="mt-2 text-xl font-light">{readable(t.topic)}</h3>
           <div className="mt-3 flex items-center gap-3">

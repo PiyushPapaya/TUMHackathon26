@@ -47,8 +47,9 @@ Alle fünf Aufgaben sind offen. Die Reihenfolge ist die gewünschte Arbeitsreihe
 ---
 
 Aktueller technischer Abgleich: [docs/REPO_CHECK.md](docs/REPO_CHECK.md). A1 ist im Backend und den
-sechs Snapshots ergänzt und getestet; die vollständige Browserprüfung bleibt offen. A2 bleibt eine
-Produktentscheidung. A3 benötigt weiterhin menschliche Labels (G60-US: 0 von 50).
+sechs Snapshots ergänzt und getestet; die vollständige Browserprüfung bleibt offen. A2 ist auf
+direkten Nutzerauftrag implementiert (regelbasierter Ausblick außerhalb des Scores).
+A3 benötigt weiterhin menschliche Labels (G60-US: 0 von 50).
 
 > Stand: So 11.10.2026, 07:10. Angelegt nach dem Abgleich mit dem BMW-Brief (`docs/CHALLENGE.md`).
 > Status: **Entscheidung offen.** Das Team (Piyush) entscheidet später. Ein Agent arbeitet eine Aufgabe nur ab,
@@ -95,7 +96,8 @@ Heute zeigen wir nur Lob gegen Kritik (`Signal.conflicts_with`). `Requirement.se
 
 ## A2 · Ausblick 2030 je Anforderung (3–5 Jahre vorausdenken)
 
-**Status:** offen, Entscheidung „bauen oder in der Fragerunde als nächsten Schritt nennen“ steht aus.
+**Status:** erledigt auf direkten Nutzerauftrag. Ausblick in API, Detailseite und Trendradar integriert;
+Verifikation: [docs/VERIFIKATION_A2.md](docs/VERIFIKATION_A2.md). Commit über `git log -- src/backend/core/outlook.py`.
 
 **Warum:** Der Brief sagt *„Think three to five years ahead“*. Bei G60-US betreffen 18 von 19 Anforderungen
 `horizon: "today"`. Der Score-Faktor `future_relevance` steht fast überall auf 0,1 („no trend behind it“), weil

@@ -62,6 +62,7 @@ flowchart LR
 | Web-Vertrauen | `src/backend/evidence_external/trust.py` | high/medium/low allein aus der Domain | nein |
 | Anforderungen | `src/backend/requirements_engine/derive.py` | Entwurf (LLM) + Faktoren (Code) | ja |
 | Priorisierung | `src/backend/requirements_engine/scoring.py` | gewichtete Formel, Konfidenz je Evidenzstufe | nein |
+| Nachfolger-Ausblick | `src/backend/core/outlook.py` | Kategorie-Trend und Antriebsanteile → `grows/stays/fades`, als Annahme in Detail und Trendradar | nein |
 | Evidenzstufe | `src/backend/requirements_engine/evidence_level.py` | Regeln A-D | nein |
 | Challenge | `src/backend/requirements_engine/challenge.py` | Antwort mit Belegen + Gegenbelegen | ja (Ziel) |
 | API | `src/backend/api/routes.py`, `api/views.py` | REST-Endpunkte (Schreiben + Ansichten), siehe `src/shared/API.md` | – |
@@ -132,6 +133,22 @@ flowchart LR
 | Herkunft im Bundle (`provenance`: Modell, Hash der Prompt-Dateien, Commit; `core/provenance.py`) und im Prüfpfad | Der Prüfpfad zeigt, mit welchem Modell- und Prompt-Stand die Vorschläge entstanden; alte Bundles bleiben ehrlich „not recorded“ | Alte Bundles nachträglich beschriften (geraten); volle Prompt-Texte ins Bundle (groß, stehen im Commit) |
 
 ## Externe Dienste
+
+Ausblick A2: Beim Laden berechnet `ScenarioState` den Ausblick aus Anforderungen, verknüpften
+Befunden, Web-Trends und Feedback. Die benachbarte `<scenario>/evidence.json` liefert alle
+Feedback-Kommentare für den Szenarioanteil; das Bundle enthält überwiegend Zitat-Stichproben.
+Fehlt die vollständige Datei, zeigt `baseline_source: bundle_sample` einschließlich eines
+englischen Hinweises im Satz diese Grenze. Die kritischen Kommentare sind eindeutige,
+negative Feedback-Zitate der verknüpften Befunde, keine geschätzten Gesamtnennungen.
+Mindestens zehn kritische Zitate sind für beide Segmentregeln nötig; reine ICE-Szenarien
+erhalten dadurch keinen künstlichen Rückgang. Trends derselben Kategorie haben Vorrang.
+
+**Entscheidung:** Ausblick regelbasiert statt im Score, weil sich sonst Ränge verschieben.
+Verworfen: LLM-Schätzung, weil nicht nachprüfbar. `future_relevance`, heutiger Horizont und
+Priorisierung bleiben unverändert; die Elektrifizierung des Nachfolgers ist ausdrücklich
+eine Annahme. Die zusätzlichen Feedback-Daten dienen nur diesem Ausblick und ändern weder
+das Bundle noch den bestehenden Audit-Fingerabdruck. Nach Neustart wird der Ausblick aus
+den dann vorhandenen Quelldateien erneut berechnet.
 
 | Dienst | Wofür | Ohne Netz |
 |---|---|---|

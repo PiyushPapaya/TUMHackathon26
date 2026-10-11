@@ -111,6 +111,23 @@ export interface BusinessContext {
   note: string;
 }
 
+export interface Outlook {
+  direction: "grows" | "stays" | "fades";
+  rule: "category_trend" | "bev_shift" | "ice_shift" | "no_shift";
+  successor_year: string;
+  assumption: boolean;
+  sentence: string;
+  critical_count: number;
+  scenario_feedback_count: number;
+  bev_critical_share: number;
+  bev_scenario_share: number;
+  ice_critical_share: number;
+  ice_scenario_share: number;
+  evidence_ids: string[];
+  signal_ids: string[];
+  baseline_source?: "scenario_feedback" | "bundle_sample";
+}
+
 export interface Requirement {
   id: string;
   title: string;
@@ -135,6 +152,7 @@ export interface Requirement {
   business?: BusinessContext | null;
   stable_key?: string;
   badges?: string[];
+  outlook?: Outlook | null;
 }
 
 export interface AuditEvent {
@@ -233,6 +251,7 @@ export interface WaterfallStep {
 }
 
 export interface ExplainView extends RequirementDetail {
+  outlook?: Outlook | null;
   level_label?: string;
   waterfall?: WaterfallStep[];
   quotes?: Array<Record<string, unknown>>;

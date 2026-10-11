@@ -108,6 +108,23 @@ Verkaufsangebot. Der Endpunkt veraendert weder Scores noch den Audit-Verlauf.
 `business` (`{volume_2025, volume_2030, growth_pct, market_share, note}` oder null; null-Werte = „nicht verfügbar“),
 `stable_key`, `badges` (fertige Kurzlabels, z. B. `robust`, `Konflikt`, `Zukunftswette`, `Annahme`).
 
+**Ausblick (A2, Default `null`):** `Requirement.outlook` wird beim Laden regelbasiert berechnet
+und zusätzlich als `outlook` in `GET /api/requirements/{id}/explain` ausgegeben.
+Felder: `direction` (`grows|stays|fades`), `successor_year` (aus `Scenario.successor_horizon`),
+`rule` (`category_trend|bev_shift|ice_shift|no_shift`), `assumption: true`, `sentence` (Englisch),
+`critical_count`, `scenario_feedback_count`, `bev_critical_share`, `bev_scenario_share`,
+`ice_critical_share`, `ice_scenario_share` (Anteile 0–1), `evidence_ids`, `signal_ids`,
+`baseline_source` (`scenario_feedback|bundle_sample`).
+Regelreihenfolge: Web-Trend derselben Kategorie → `grows`; sonst mindestens zehn eindeutige,
+negative Feedback-Zitate und BEV/BEVE-Anteil ≥ 1,5 × Szenarioanteil → `grows`; sonst mindestens
+zehn solche Zitate, ICE-Anteil ≥ 90 % und ICE-Szenarioanteil < 90 % → `fades`; sonst `stays`.
+Der Szenario-Nenner kommt aus der benachbarten `<scenario>/evidence.json`, wenn vorhanden;
+ohne diese Datei wird die Bundle-Stichprobe verwendet und im Satz ausdrücklich gekennzeichnet.
+Der Zähler umfasst nur zitierte kritische Feedback-Kommentare, keine hochgerechneten Nennungen.
+`GET /api/scenarios/{id}/trends` enthält für jede wachsende Anforderung einen Eintrag
+`kind: "outlook"` im Ring `successor_horizon`, mit `requirement_id`, `outlook` und dem Satz in
+`assumptions`. Das verändert weder `horizon` noch `future_relevance`, Score oder Rang.
+
 **Signal:** `id`, `kind`, `category`, `title`, `summary`, `evidence_ids`, `mention_count`, `source_types`, `conflicts_with`.
 **Neu:** `segments` (`{"engine": {"BEV": 42, "ICE": 18}, "country": {...}, "source": {...}, "feedback_type": {...}}`),
 `study_link` (`{attribute, importance, dissatisfaction}` oder null).

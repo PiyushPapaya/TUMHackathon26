@@ -22,7 +22,8 @@ from pydantic import ValidationError
 
 from core.audit import AuditLog
 from core.identity import bundle_fingerprint, recorded_fingerprint
-from core.models import Actor, ActorType, Evidence, Requirement, Scenario, Signal, Status
+from core.models import Actor, ActorType, Evidence, Requirement, Scenario, Signal, SourceType, Status
+from core.outlook import outlook
 from core.replay import replay
 from requirements_engine import scoring
 from requirements_engine.robustness import compute_robustness
@@ -34,7 +35,7 @@ SYSTEM = Actor(type=ActorType.SYSTEM, name="pipeline")
 
 
 class ScenarioState:
-    def __init__(self, bundle: dict):
+    def __init__(self, bundle: dict, feedback_evidence: list[Evidence] | None = None):
         self.scenario = Scenario(**bundle["scenario"])
         # Warnungen sind reiner Anzeigetext: aus config/ nachladen, damit eine Textkorrektur
         # (z. B. Übersetzung) keinen teuren Pipeline-Lauf braucht. Zahlen bleiben im Bundle.
@@ -54,6 +55,17 @@ class ScenarioState:
         self.opportunities: list[dict] = bundle.get("opportunities", [])
         # Herkunft (Modell, Prompt-Stand, Commit); fehlt bei Bundles von vor dem 11.10. -> None, nie geraten.
         self.provenance: dict | None = bundle.get("provenance")
+        # WARUM: Bundles enthalten Zitat-Stichproben; der Szenario-Nenner braucht alle Kommentare.
+        outlook_evidence = {e.id: e for e in feedback_evidence or [] if e.source_type == SourceType.FEEDBACK
+                            and e.derivative == self.scenario.derivative and e.market == self.scenario.market}
+        outlook_evidence.update(self.evidence)
+        web_signals = [s for s in self.signals.values() if SourceType.WEB in s.source_types]
+        for req in self.requirements.values():
+            linked = [self.signals[i] for i in req.signal_ids if i in self.signals]
+            req.outlook = outlook(req, linked, outlook_evidence, web_signals, self.scenario.successor_horizon)
+            req.outlook["baseline_source"] = "scenario_feedback" if feedback_evidence is not None else "bundle_sample"
+            if feedback_evidence is None:
+                req.outlook["sentence"] += " Scenario average uses only feedback available in this bundle."
 
 
 class Store:
@@ -74,7 +86,10 @@ class Store:
         for path in sources.values():
             bundle = json.loads(path.read_text(encoding="utf-8"))
             fingerprint = bundle_fingerprint(bundle)
-            state = ScenarioState(bundle)
+            feedback_path = path.parent / bundle["scenario"]["id"] / "evidence.json"
+            feedback_evidence = ([Evidence(**e) for e in json.loads(feedback_path.read_text(encoding="utf-8"))
+                                  if e["source_type"] == "feedback"] if feedback_path.exists() else None)
+            state = ScenarioState(bundle, feedback_evidence)
             self.states[state.scenario.id] = state
             history = self.audit.events(scenario_id=state.scenario.id)
             if history:

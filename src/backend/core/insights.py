@@ -62,6 +62,13 @@ def trends(state) -> dict:
                           "strength": sig.mention_count, "sources": sig.source_types, "signal_id": sig.id,
                           "evidence_level": None})
     for req in state.requirements.values():
+        if req.outlook and req.outlook["direction"] == "grows":
+            source_ids = req.signal_ids + req.outlook["signal_ids"]
+            items.append({"topic": req.title, "category": req.category, "horizon": horizon, "kind": "outlook",
+                          "strength": req.score, "sources": sorted({t for s in source_ids if s in state.signals
+                                                                    for t in state.signals[s].source_types}),
+                          "requirement_id": req.id, "evidence_level": req.evidence_level,
+                          "assumptions": [req.outlook["sentence"]], "outlook": req.outlook})
         if req.horizon == "next_gen":
             items.append({"topic": req.title, "category": req.category, "horizon": horizon, "kind": "bet",
                           "strength": req.score, "sources": sorted({t for s in req.signal_ids if s in state.signals
