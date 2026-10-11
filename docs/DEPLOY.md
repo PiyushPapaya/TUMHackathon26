@@ -1,7 +1,7 @@
 # Deployment und Demo-Start
 
 Kurz: **Frontend auf Vercel**, **Backend auf Render** (beide automatisch aus GitHub `main`).
-Die Pipeline-Ergebnisse (`data/processed/`) liegen seit der Freigabe der Orga im Repo (`entscheidungen/E08_bmw_daten_im_repo.md`),
+Die Pipeline-Ergebnisse (`data/processed/`) liegen seit der Freigabe der Orga im Repo (die BMW-Rohdaten nicht),
 darum kann Render das Backend direkt aus dem Repo starten. Lokal (A) bleibt das Netz für die Jury-Demo.
 
 ## A) Lokal in einem Befehl (für Jury-Demo und Probe)

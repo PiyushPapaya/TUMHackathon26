@@ -27,10 +27,8 @@ Die Prüfung rechtfertigt weder „bugfrei“ noch eine Garantie für Wettbewerb
   und gelesen. Schwerpunkt: Kundenbedürfnisse eines Nachfolgers in 3–5 Jahren, interne und externe
   Evidenz, begründete Anforderungen/Prioritäten, klare Annahmen/Unsicherheiten/Widersprüche,
   menschliche Kontrolle und Anpassbarkeit an Modelle/Märkte.
-- `README.md`, `PLAN.md`, `docs/ROADMAP.md`, Zeitplan, Architektur, Challenge, Abgabe,
-  `docs/UPGRADE_WELLE2.md`, UX-/Briefing-Abgleich und die technischen Ablauf-/Rollenpläne.
-- Arbeitsbücher für Pfad A/B/C/D/Lead sowie Team-/Mission-/Workshop-Einstiege und
-  `OFFENE_AUFGABEN.md`. Historische Haken wurden gegen aktuellen Code und Daten geprüft.
+- `README.md`, `docs/ARCHITEKTUR.md` und die internen Team-Pläne (Roadmap, Zeitplan, Arbeitsbücher;
+  nach der Abgabe aus dem Repo genommen). Historische Haken wurden gegen aktuellen Code und Daten geprüft.
 - Aktuelle Configs, Rohdatenformate, sechs verarbeitete Szenarien, Backend, API-Verträge,
   Frontend-Anbindung, Cache-/Audit-Verhalten und Tests.
 

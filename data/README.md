@@ -4,7 +4,7 @@ Was hier im Git liegt und was lokal bleibt (Regeln in `.gitignore`):
 
 | Ordner/Datei | Inhalt | Im Git? | Wer erzeugt |
 |---|---|---|---|
-| `raw/` | Originaldateien von BMW (Feedback-Excel, Studie, Absatz, Optionslisten-PDF, Brief) | **ja**, bewusste Entscheidung des Leads (10.10.): ein Ort für alle Quellen, Jury kann die Pipeline nachlaufen lassen | BMW |
+| `raw/` | Originaldateien von BMW (Feedback-Excel, Studie, Absatz, Optionslisten-PDF, Brief) | **nein** (seit 11.10.): vertrauliches Challenge-Material; die App läuft aus `processed/` | BMW |
 | `demo_cache/` | geprüfte LLM-/Webantworten für die Offline-Demo | ja | `core/llm.py`, von Hand ausgewählt |
 | `external_cache/nhtsa/` | Antworten der öffentlichen NHTSA-API (US-Behörde, gemeinfrei) | ja | `evidence_external/nhtsa.py` |
 | `processed/<szenario>/*.json` | Ergebnisse je Pipeline-Stufe (enthalten Kundenzitate) | ja, gemäß dokumentierter Freigabe vom 11.10. in `.gitignore` | `python src/backend/pipeline.py --scenario G60-US` |
@@ -17,9 +17,9 @@ Dateien in `raw/`: `F70_feedback_hackathon.xlsx`, `G60_feedback_hackathon.xlsx`,
 `F70_G60_G68_G70_customer_studies.xlsx`, `sales_volumes.xlsx`, `F70_OptionList.PDF`, `G60_OptionList.PDF`,
 `G70_OptionList.PDF`. Spalten- und Blattnamen beschreibt `config/datasets.json`.
 
-**Datenschutz:** Die BMW-Daten dürfen wir im Repo nutzen: BMW hat sie uns für die Challenge bereitgestellt,
-und der Lead hat am 10./11.10. entschieden, sie hier zu veröffentlichen. Nicht im Git bleiben `.env` (Keys)
-und `audit.db`. `cache/`, `external_cache/` und `processed/` sind `export-ignore`, damit sie nicht ins Review-Budget laufen.
+**Datenschutz:** Die BMW-Rohdateien liegen nicht im Repo. Wer die Pipeline neu laufen lässt, legt sie
+selbst in `raw/`. Ohne sie zeigt das Cockpit keine Preis-Referenz aus der Optionsliste, sonst läuft alles.
+Nicht im Git bleiben außerdem `.env` (Keys) und `audit.db`. `cache/`, `external_cache/` und `processed/` sind `export-ignore`, damit sie nicht ins Review-Budget laufen.
 
 Ohne `processed/` laufen Backend und Tests trotzdem: Dann nimmt die App das synthetische
 Beispiel aus `src/shared/beispiele/`. Tests nutzen nie echte BMW-Daten, nur Mini-Daten.

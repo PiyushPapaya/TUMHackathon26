@@ -1,4 +1,4 @@
-"""Prompt für derive_all (Pfad C). Eigene Datei, weil der Text die Regeln aus docs/pfade/PFAD-C.md trägt.
+"""Prompt für derive_all (Pfad C). Eigene Datei, weil der Text die Ableitungsregeln trägt.
 
 Ein neuer Wortlaut ergibt einen neuen Cache-Schlüssel: danach einmal live laufen lassen und das Bundle neu bauen.
 Die Regeln sind durch tests/pfad_c/test_prompt.py abgesichert, damit sie nicht still verschwinden.
