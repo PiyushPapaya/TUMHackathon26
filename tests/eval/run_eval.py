@@ -101,15 +101,19 @@ Erzeugt mit `python tests/eval/run_eval.py {m['scenario']}`. Nur Zahlen, keine B
 ## Methode
 
 - **Grounding/Wortlaut:** automatisch aus den erzeugten Dateien und der Original-Excel, jede ID einzeln geprüft.
-- **Befund-Treue:** 50 zufällige Paare (Befund, zitierter Beleg), Seed 42, mit j/n gelabelt ("belegt der Kommentar
-  die Aussage des Befunds?"). Achtung: G60-US hat aus Zeitnot Claude (KI) gelabelt, nicht ein Mensch. Die Zahl ist
-  daher nur ein Richtwert und sollte von einem Teammitglied nachgelabelt werden.
+- **Befund-Treue:** 50 zufällige Paare (Befund, zitierter Beleg), Seed 42, mit j/n gelabelt
+  ("belegt der Kommentar die Aussage des Befunds?"). Ablauf offen benannt: Claude schlug pro Paar j/n mit
+  Begründung vor, ein Teammitglied (Aditya) prüfte die Liste und bestätigte sie; die Zahl stammt also nicht
+  allein von der KI, ist aber auch kein blindes Menschenurteil. Ein zweiter Durchlauf (KI-Vorlabel, von Lasse
+  alle 50 Zeilen geprüft und bestätigt) kam ebenfalls auf 88 %, mit teils anderen Nein-Fällen.
 - **Abdeckung:** Kommentare im Umfang (ohne Werkstattfälle), die zu einer Gruppe eines ausgegebenen Befunds gehören.
 - **Akzeptanzkriterium mit Zahl:** mindestens eine Ziffer im Text. Das ist ein Näherungswert für "messbar".
 
 ## Grenzen
 
-- Stichprobe von 50 Paaren, ein Labler (KI, s. o.): grobe Größenordnung, kein Konfidenzintervall.
+- 50 Paare, Menschen prüften KI-Vorschläge (kein Blind-Label): grobe Größenordnung, kein Konfidenzintervall.
+- Befund-Treue mit KI-Vorschlag: Ankereffekt möglich; blindes Zweitlabel durch einen Menschen wäre der nächste
+  Schritt.
 - Grounding sagt, dass Quellen existieren, nicht dass die Schlussfolgerung richtig ist; dafür ist die Befund-Treue da.
 - "Zahl im Kriterium" prüft nicht, ob die Zahl sinnvoll ist.
 - Abdeckung < 100 % ist gewollt: Themen ohne BMW-Zuordnung und Gruppen unter 5 Nennungen fallen bewusst weg.

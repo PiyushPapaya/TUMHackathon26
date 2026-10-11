@@ -65,7 +65,7 @@ Die Anforderungsliste wurde nicht mit unbelegten Einträgen auf eine Zielzahl au
 | Pfad A W-A1–A5 | Datensatzprofil, Kaltstart, Segmente aus allen Gruppenmitgliedern, unbekannte Themen und fehlende Absatzwerte verarbeitet/abgesichert. |
 | Pfad A W-A6 | Chancenkarte vorhanden. „Importance“ ist ein aus Zufriedenheit abgeleiteter Proxy, keine separat gemessene Wichtigkeit; API kennzeichnet diese Grenze. |
 | Pfad A W-A7, Pfad C W-C9; offene Aufgabe A1 | Segmentkonflikte berechnet, in Bundles übernommen, mit Gegenbelegen an Explain/Challenge geliefert. G60-US hat sieben Anforderungen mit Segmentkonflikten. Browserdarstellung nicht abschließend geprüft. |
-| Pfad A W-A8, Pfad C W-C8; offene Aufgabe A3 | Automatische Evaluation funktioniert; menschliche Treue-Bewertung fehlt: 0 von 50 G60-US-Paaren gelabelt. |
+| Pfad A W-A8, Pfad C W-C8; offene Aufgabe A3 | Automatische Evaluation funktioniert. Befund-Treue G60-US 88 % (50 von 50 gelabelt; KI-Vorschlag, von Aditya geprüft und bestätigt, Ankereffekt als Grenze in `tests/eval/REPORT.md`). |
 | Pfad C W-C1 | Anforderungs-IDs bei umgeordneten Entwürfen stabil, auch today/next_gen-Kollisionen repariert. Vorgelagerte Signal-IDs bleiben teilweise positionsabhängig: keine allgemeine Stabilitätsgarantie bei neuen Quelldaten. |
 | Pfad C W-C2/W-C4 | Robustheit für alle Anforderungen ergänzt; berücksichtigt aktuelle Gewichte und bearbeiteten Aufwand. What-if verändert weder Zustand noch Audit. |
 | Pfad C W-C3; offene Aufgabe A2 | Zukunftswetten vorhanden, aber nur F70-EU und G60-US; kein flächendeckender 2030-Ausblick umgesetzt. Zusätzlicher regelbasierter Ausblick bleibt Produktentscheidung. |
@@ -139,7 +139,7 @@ liegen in `tests/eval/REPORT-*.md`; der Hauptbericht in `tests/eval/REPORT.md`.
 
 | Priorität | Punkt | Konsequenz / konkreter Abschluss |
 |---|---|---|
-| P1 | Menschliche Evaluation fehlt | Aditya/Dennis bewerten die 50 vorbereiteten G60-US-Paare in `data/eval/G60-US_sample.csv` mit j/n; danach Evaluation neu ausführen. Keine KI-erfundene Trust-Zahl verwenden. |
+| P1 | ~~Menschliche Evaluation fehlt~~ erledigt | G60-US 50 von 50 gelabelt, Befund-Treue 88 %; KI-Vorschlag, von Aditya geprüft und bestätigt. |
 | P1 | Dünne Szenarien und unvollständiger Zukunftshorizont | Piyush/Dennis recherchieren belastbare marktbezogene Wettbewerber-/Trendquellen und erzeugen neue Anforderungen; bis dahin F70-EU/G60-US als Hauptdemo, andere als Datenlücken-/Kaltstartbeweis einordnen. |
 | Erledigt | Vollständige isolierte Neuerzeugung | Alle sechs Szenarien durch alle Stufen erzeugt; Bundle-/API-/Eval-Prüfung erfolgreich. Ergebnisse und Quellstand-Manifest unter `outputs/repo-audit/`; menschliche Freigabe der neuen Inhalte bleibt erforderlich. |
 | Erledigt | Vollständiger Browser-Flow | Produktionsbuild mit lokalem Playwright geprüft: sechs Szenarien, echte PM-Aktionen, Belege, Gewichte, Downloads, mobile Ansichten und exakter Backend-Neustart. Die frühere Testserver-Ablehnung blockiert diesen Nachweis nicht mehr. |

@@ -2,11 +2,15 @@
 
 ## Offene Punkte nach Priorität
 
+> ✅ **Stand So 11.10., 08:35: Alle P2-Punkte sind fertig.** Dennis' Auftrag (die letzten drei P2: Audit-Ursprung,
+> Reviewer-Budget, Betriebsmodell) ist abgeschlossen und gepusht (`69c084d`, `16fda4e`, `cd2b3f2`, `1cb9a65`).
+> Von P1 sind noch zwei Punkte offen: dünne Szenarien und vollständige Neuerzeugung.
+
 Die folgenden Punkte sind offen und aus dem [technischen Abgleich](docs/REPO_CHECK.md#offene-punkte-nach-priorität) übernommen. Die älteren Detailaufgaben darunter enthalten frühere Arbeitsstände; sie sind zusammen mit dem aktuellen Abgleich zu lesen.
 
 | Priorität | Punkt | Konsequenz / konkreter Abschluss |
 |---|---|---|
-| P1 | Menschliche Evaluation fehlt | **Teilweise erledigt 11.10. (`26c00ce`):** Claude hat die 50 G60-US-Paare gelabelt, Befund-Treue 88 % (44 von 50), offen als KI-Label markiert in `tests/eval/REPORT.md`. **Offen:** Wenn jemand im Team 15 Minuten Zeit hat, sollte ein Mensch die CSV (`data/eval/G60-US_sample.csv`, nur lokal bei Lasse) nachlabeln. Dann gilt die Zahl als echte unabhängige Prüfung. |
+| P1 | ~~Menschliche Evaluation fehlt~~ **erledigt** | 50 von 50 G60-US-Paaren gelabelt, Befund-Treue **88 %** (`tests/eval/REPORT.md`). Zwei Durchläufe: KI-Vorschlag, von Aditya geprüft und bestätigt; KI-Vorlabel von Lasse (`26c00ce`), von Lasse alle 50 Zeilen geprüft und bestätigt, ebenfalls 88 %. Nächster Schritt, falls Zeit: blindes Zweitlabel durch einen Menschen. |
 | P1 | Dünne Szenarien und unvollständiger Zukunftshorizont | Piyush/Dennis recherchieren belastbare marktbezogene Wettbewerber-/Trendquellen und erzeugen neue Anforderungen; bis dahin F70-EU/G60-US als Hauptdemo, andere als Datenlücken-/Kaltstartbeweis einordnen. |
 | P1 | Vollständige Neuerzeugung nicht bestätigt | Alle sechs Szenarien mit aktuellem Code/Prompts in einen getrennten Ausgabeordner erzeugen, Cache-Fails und Quellen prüfen, Bundle-/API-/Eval-Prüfung wiederholen. Alte PM-Verläufe behalten; für neue Bundles separate Audit-DB verwenden. |
 | ~~P1~~ ✅ | Vollständiger Browser-Flow fehlt | **Erledigt 11.10. (`8bb2826`):** `scripts/verify_browser.cjs` hat alle sechs Szenarien inkl. Replay nach Neustart ohne Fehler durchlaufen (Offline-Demomodus, Details `docs/VERIFIKATION_P1_P2.md`). Ursprüngliche Aufgabe: Auf freigegebenem laufendem Frontend Modellwechsel, Belege, Challenge, Edit, Gewichte, Exporte und Neustart prüfen. Start des separaten Frontend-Testservers wurde automatisch abgelehnt, ohne spezifische Begründung. Build/API-Tests ersetzen diesen Schritt nicht. |
@@ -33,7 +37,7 @@ Alle fünf Aufgaben sind offen. Die Reihenfolge ist die gewünschte Arbeitsreihe
 Aktueller technischer Abgleich: [docs/REPO_CHECK.md](docs/REPO_CHECK.md). A1 ist im Backend und den
 sechs Snapshots ergänzt und getestet; die vollständige Browserprüfung bleibt offen. A2 ist auf
 direkten Nutzerauftrag implementiert (regelbasierter Ausblick außerhalb des Scores).
-A3: G60-US von Claude gelabelt (88 %), menschliches Nachlabeln offen.
+A3 ist erledigt (G60-US 88 %; KI-Vorschlag, von Aditya geprüft; reines KI-Label von Lasse ebenfalls 88 %).
 
 > Stand: So 11.10.2026, 07:10. Angelegt nach dem Abgleich mit dem BMW-Brief (`docs/CHALLENGE.md`).
 > Status: **Entscheidung offen.** Das Team (Piyush) entscheidet später. Ein Agent arbeitet eine Aufgabe nur ab,
@@ -128,7 +132,7 @@ Nachfolger-Anforderungen.“
 
 ## A3 · Befund-Treue von Hand labeln
 
-**Status:** erledigt als KI-Label (`26c00ce`): 88 %, 44 von 50. **Offen:** Wenn jemand im Team 15 Minuten Zeit hat, sollte ein Mensch die CSV nachlabeln. Dann gilt die Zahl als echte unabhängige Prüfung.
+**Status:** erledigt (So 08:30): 44 von 50 = 88 %. Claude schlug vor, Aditya prüfte und bestätigte. Lasses Durchlauf (`26c00ce`, KI-Vorlabel, von Lasse alle 50 Zeilen geprüft) kam ebenfalls auf 88 %. Offen als nächster Schritt: blindes Zweitlabel durch einen Menschen.
 
 **Warum:** Einzige fehlende Kernzahl im Eval (`tests/eval/REPORT.md`: Befund-Treue n/a, 0 von 50 gelabelt).
 Bewusst nicht per KI, sonst prüft die KI sich selbst.
@@ -145,7 +149,7 @@ letzte Spalte `passt` mit `j`/`n` füllen, dann `python tests/eval/run_eval.py G
 - Konflikt-„!“ im Cockpit nur, wenn beide Seiten zitiert sind (gleiche Regel wie Detailseite) · `7525ee6`
 - Demo-Konflikt gefunden: G60-US Rang 5 Reichweite, 38 gegen 28 Nennungen · `docs/pitch/RECHERCHE.md`
 - A1 Segment-Konflikte auf der Detailseite · `7cffbca`
-- A3 Befund-Treue G60-US 88 % (KI-gelabelt, menschliches Nachlabeln offen) · `26c00ce`
+- A3 Befund-Treue G60-US 88 %, zwei von Menschen geprüfte KI-Vorlabel (Aditya, Lasse) · `26c00ce`
 - Browser-Flow aller sechs Szenarien, stabile Signal-IDs, Prüfprotokolle für Kriterien · `8bb2826`
 - R1-R3 README-Key-Code, export-ignore, Daten-Doku · `7a7f5ef`
 - P2 Betriebsmodell: nur ein API-Prozess pro `audit.db` (Dateisperre) · `69c084d`
@@ -156,7 +160,7 @@ letzte Spalte `passt` mit `j`/`n` füllen, dann `python tests/eval/run_eval.py G
 
 ## R · Jury-KI-Review: Kern-Code sichtbar machen (Selbstreview So 07:30)
 
-> Status: **R0-R3 erledigt 11.10.** (`4eea655`, `7a7f5ef`), R4 verworfen. Simulierte EHL-Note heute **6,3/10**, mit R1-R4 ca. **7,5**.
+> Status: **FERTIG (R0-R3 erledigt 11.10.)** (`4eea655`, `7a7f5ef`), R4 verworfen. Simulierte EHL-Note heute **6,3/10**, mit R1-R4 ca. **7,5**.
 > Warum: Die Review liest nur 200.000 Zeichen, kleinste Dateien zuerst. Scoring, Audit-Hash-Kette,
 > `llm.py` und Routen sieht sie nie, sie muss dem README glauben. Prüfen: `python scripts/ehl_budget.py`.
 
