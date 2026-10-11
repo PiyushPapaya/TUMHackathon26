@@ -1,0 +1,56 @@
+/* ReSpec design tokens. Same values as src/frontend/app/globals.css, so deck, docs and app look identical.
+   Why a copy and not an import: the deck must open as a plain file without the Next.js build. */
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  /* Brand */
+  --blue: #1c69d4;        /* primary action, links, score bars */
+  --blue-hover: #0653b6;
+  --blue-50: #eef4fc;     /* tinted panels */
+  --blue-100: #dce8f9;
+  --blue-900: #0a2f66;
+
+  /* Three-stripe accent under the navigation (light blue, dark blue, red) */
+  --m-light: #81c4ff;
+  --m-dark: #16588e;
+  --m-red: #e22718;
+
+  /* Neutrals */
+  --ink: #262626;         /* body text */
+  --black: #0a0a0b;       /* dark sections, title slide */
+  --grey-100: #f6f6f6;    /* quiet background */
+  --grey-500: #6b6b6b;    /* secondary text */
+  --hairline: #e6e6e6;    /* dividers, borders */
+  --white: #ffffff;
+
+  /* Meaning colours (diagrams: who does a step) */
+  --role-ai: #1c69d4;     /* AI works alone */
+  --role-code: #7b8594;   /* plain code, no AI */
+  --role-human: #d9822b;  /* human decides (mandatory) */
+
+  /* Evidence level A-D */
+  --evidence-a: #2e9e6b;
+  --evidence-b: #7fb069;
+  --evidence-c: #e0a030;
+  --evidence-d: #d64545;
+
+  /* Type */
+  --font-sans: "Hanken Grotesk", system-ui, "Helvetica Neue", Arial, sans-serif;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+
+  /* Shape: everything square, no shadows (same rule as the app) */
+  --radius: 0;
+  --shadow: none;
+
+  /* Spacing scale (px) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+  --space-6: 64px;
+  --space-7: 96px;
+}
