@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Kein "N"-Badge des Dev-Servers unten links: Es landet sonst in Demo-Video und Screenshots.
+  devIndicators: false,
   cacheComponents: true,
   partialPrefetching: true,
   turbopack: {

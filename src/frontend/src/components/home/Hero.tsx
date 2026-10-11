@@ -1,6 +1,16 @@
+import Link from "next/link";
 import { Button } from "@/src/components/ui/Button";
+import { Icon, type IconName } from "@/src/components/ui/Icon";
 import { MediaImage } from "./MediaImage";
 import type { HomeData } from "./useHomeData";
+
+// Die vier Kernfunktionen gleich im ersten Bild, jede ein Direktlink: Die Jury sieht in 5 Sekunden, was das Produkt kann.
+const FEATURES: { icon: IconName; title: string; text: string; href: string }[] = [
+  { icon: "chat", title: "Ask in your words", text: "AI sets the focus, Python ranks", href: "/cockpit" },
+  { icon: "list", title: "Ranked & explained", text: "Score math for every proposal", href: "/cockpit" },
+  { icon: "evidence", title: "Evidence traffic light", text: "Proven, weak or assumption", href: "/cockpit" },
+  { icon: "audit", title: "Audit trail", text: "Who decided what, and why", href: "/audit" },
+];
 
 export function Hero({ data }: { data: HomeData }) {
   const f = data.funnels[data.mainId];
@@ -16,7 +26,20 @@ export function Hero({ data }: { data: HomeData }) {
           <Button href="/cockpit">Open cockpit</Button>
           <Button variant="outline-light" href="#how">See how it works</Button>
         </div>
-        <p className="mt-12 max-w-3xl border-t border-white/20 pt-4 text-xs text-white/70">
+        <ul className="mt-12 grid max-w-5xl gap-px bg-white/15 sm:grid-cols-2 lg:grid-cols-4">
+          {FEATURES.map((f) => (
+            <li key={f.title} className="bg-black/40 backdrop-blur-sm">
+              <Link href={f.href} className="group flex h-full items-start gap-3 p-4 transition-colors hover:bg-white/10">
+                <Icon name={f.icon} size={20} className="mt-0.5 shrink-0 text-[var(--m-light)]" />
+                <span>
+                  <span className="block text-sm font-semibold text-white">{f.title}</span>
+                  <span className="mt-0.5 block text-xs text-white/60">{f.text}</span>
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-8 max-w-3xl border-t border-white/20 pt-4 text-xs text-white/70">
           {f
             ? `Scenario ${data.mainId}: ${f.evidence.toLocaleString("en-US")} customer voices · ${f.signals} findings · ${f.requirements} requirements, all from the live backend.`
             : "Live numbers appear when the backend is running."}
