@@ -3,7 +3,7 @@
   "checkpoint_id": "01M4MNWB8R8DTCA5WTQTCP8NRA",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 5,
+  "checkpoints_count": 7,
   "files_touched": [
     "tests/test_repository_edges.py"
   ],
@@ -28,14 +28,21 @@
       "compact_transcript": "/2/transcript.jsonl",
       "content_hash": "/2/content_hash.txt",
       "prompt": "/2/prompt.txt"
+    },
+    {
+      "metadata": "/3/metadata.json",
+      "transcript": "/3/full.jsonl",
+      "compact_transcript": "/3/transcript.jsonl",
+      "content_hash": "/3/content_hash.txt",
+      "prompt": "/3/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 280,
-    "cache_creation_tokens": 614586,
-    "cache_read_tokens": 23113702,
-    "output_tokens": 90477,
-    "api_call_count": 139,
+    "input_tokens": 286,
+    "cache_creation_tokens": 617497,
+    "cache_read_tokens": 23615715,
+    "output_tokens": 91566,
+    "api_call_count": 142,
     "subagent_tokens": {
       "input_tokens": 2,
       "cache_creation_tokens": 14458,
