@@ -1,5 +1,21 @@
 # Offene Aufgaben
 
+## R · Jury-KI-Review: Kern-Code sichtbar machen (Selbstreview So 07:30)
+
+> Status: **Entscheidung offen** (Piyush). Simulierte EHL-Note heute **6,3/10**, mit R1-R4 ca. **7,5**.
+> Warum: Die Review liest nur 200.000 Zeichen, kleinste Dateien zuerst. Scoring, Audit-Hash-Kette,
+> `llm.py` und Routen sieht sie nie, sie muss dem README glauben. Prüfen: `python scripts/ehl_budget.py`.
+
+| ID | Aufgabe | Datei | Zeit | Status |
+|---|---|---|---|---|
+| R0 | `data/cache/`, `data/external_cache/`, `data/processed/` als `export-ignore` (fraßen ~60-80 % des Budgets). Gemessen: `src/` 21,8 % → 62 %, ungelesene Dateien 332 → 140 | `.gitattributes` | 5 min | erledigt (`4eea655`) |
+| R1 | README-Abschnitt „Key code“: 4-5 Original-Snippets mit `datei:zeile` (Score-Formel `scoring.py`, Hash-Kette `audit.py`, ID-Filter `derive.py:73`, Demo-Cache `llm.py`). Größte Wirkung, weil das README immer ganz gelesen wird. | `README.md` | 20 min | offen |
+| R2 | Weitere große Daten ausschließen: `data/demo_cache/`, `src/shared/beispiele/`, große Fixtures in `tests/pfad_c/`; 2-3 kleine Tests sichtbar lassen | `.gitattributes` | 5 min | offen |
+| R3 | README widerspricht Repo: „Cache nicht im Git“ stimmt nicht; dazu 1 Satz, dass wir die BMW-Daten im Repo nutzen dürfen (sonst Datenschutz-Kritik) | `README.md`, `data/README.md` | 10 min | offen |
+| R4 | Nach 08:00 **nicht** mehr: `pipeline.py`/`store.py` unter 200 Zeilen teilen, Root-`package.json` für Next.js-Erkennung | — | — | verworfen (Risiko > Gewinn) |
+
+---
+
 Aktueller technischer Abgleich: [docs/REPO_CHECK.md](docs/REPO_CHECK.md). A1 ist im Backend und den
 sechs Snapshots ergänzt und getestet; die vollständige Browserprüfung bleibt offen. A2 bleibt eine
 Produktentscheidung. A3 benötigt weiterhin menschliche Labels (G60-US: 0 von 50).
