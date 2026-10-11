@@ -132,8 +132,6 @@ flowchart LR
 | Genau ein API-Prozess pro `audit.db`, erzwungen per OS-Dateisperre (`core/single_process.py`) | Der Store hält PM-Status und Gewichte im RAM; ein zweiter Worker sähe fremde Entscheidungen nicht und zeigte still einen alten Stand | RAM vor jeder Anfrage aus der DB nachladen (für eine Laptop-Demo unnötig, schwer prüfbar); mehrere Worker ohne Schutz |
 | Herkunft im Bundle (`provenance`: Modell, Hash der Prompt-Dateien, Commit; `core/provenance.py`) und im Prüfpfad | Der Prüfpfad zeigt, mit welchem Modell- und Prompt-Stand die Vorschläge entstanden; alte Bundles bleiben ehrlich „not recorded“ | Alte Bundles nachträglich beschriften (geraten); volle Prompt-Texte ins Bundle (groß, stehen im Commit) |
 
-## Externe Dienste
-
 Ausblick A2: Beim Laden berechnet `ScenarioState` den Ausblick aus Anforderungen, verknüpften
 Befunden, Web-Trends und Feedback. Die benachbarte `<scenario>/evidence.json` liefert alle
 Feedback-Kommentare für den Szenarioanteil; das Bundle enthält überwiegend Zitat-Stichproben.
@@ -149,6 +147,8 @@ Priorisierung bleiben unverändert; die Elektrifizierung des Nachfolgers ist aus
 eine Annahme. Die zusätzlichen Feedback-Daten dienen nur diesem Ausblick und ändern weder
 das Bundle noch den bestehenden Audit-Fingerabdruck. Nach Neustart wird der Ausblick aus
 den dann vorhandenen Quelldateien erneut berechnet.
+
+## Externe Dienste
 
 | Dienst | Wofür | Ohne Netz |
 |---|---|---|

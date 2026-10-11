@@ -36,6 +36,9 @@ der ursprünglichen Befundgruppen.
 - `python -m ruff check src/backend tests`: erfolgreich.
 - `python -m pytest -q`: 472 Tests erfolgreich.
 - `npm run lint` und `npm run build` in `src/frontend`: erfolgreich.
+  ESLint meldet den vorhandenen ungenutzten Parameter `scenarioId` (Warnung, kein Fehler).
+- Nach Übernahme der aktuellen A1-/A3-Commits: dieselben 472 Backend-Tests und
+  sechs `segmentConflicts`-Frontendtests erfolgreich; Produktionsbuild erneut geprüft.
 - Playwright mit Produktionsfrontend und separater Audit-DB: Detailausblick und
   exakte Zahl der Outlook-Radareinträge in allen sechs Szenarien bestätigt.
 - G60-US Rang 5 auf Desktop (1440 × 1000) und Mobil (390 × 844): Satz und
