@@ -1,0 +1,216 @@
+{
+  "drafts": [
+    {
+      "title": "Keep and refine the sporty, high‑quality exterior while eliminating common exterior defects",
+      "description": "Customers continue to experience a sporty, classy exterior that turns heads, but must not encounter avoidable exterior complaints (lighting faults, finish issues, tyre noise/grip problems). The successor should preserve the attractive design and colour choices while reducing the frequency of exterior‑related faults that harm perception.",
+      "acceptance_criterion": "In pre‑launch customer clinics and a 6‑month limited field trial, at least 85% of participants rate exterior styling >=4/5 and exterior complaints (lighting, finish, visible defects) occur in fewer than 2 incidents per 1,000 vehicles. Tyre related customer complaints (whistling/noise or grip causing wheel spin) are reported by fewer than 1% of trial participants and measured tyre noise at 80 km/h is ≤ 70 dB(A) on the test route.",
+      "category": "exterior",
+      "signal_ids": [
+        "SIG-F70-EU-007",
+        "SIG-F70-EU-033",
+        "SIG-F70-EU-032",
+        "SIG-F70-EU-017"
+      ],
+      "assumptions": [
+        "Customer clinic and trial sample sizes sufficient to detect issues at the stated rates (≥1,000 vehicles or ≥300 users across regions).",
+        "Measured tyre noise target (70 dB(A) at 80 km/h) is a customer‑facing proxy for perceived whistling; specific tyre selection and road surface will affect absolute dB readings."
+      ],
+      "uncertainties": [
+        "Field tyre noise and grip depend on supplier tyre choice and regional road conditions; absolute dB thresholds may vary by country.",
+        "Complaint counts in early field trials may not fully predict long‑term ownership experience."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Front seats: deliver consistently comfortable, supportive and reliable seating for long journeys",
+      "description": "Drivers experience supportive seats that are easy to adjust, comfortable on long journeys and free from quality or reliability problems (poor stitching, creasing, squeaks, electric seat faults, seat belt faults). The seating must support a comfortable posture for typical long drives.",
+      "acceptance_criterion": "In a standardized 2‑hour mixed route comfort test with 100 participants representing the target demographic, ≥85% report no lower‑back discomfort and rate seat comfort/support ≥4/5. In accelerated reliability tests equivalent to 24 months of use plus a 12‑month early owner field trial, mechanical/electrical seat or seat belt faults are seen in <1% of vehicles and squeak/creasing complaints <2% of vehicles.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-F70-EU-008",
+        "SIG-F70-EU-009",
+        "SIG-F70-EU-036",
+        "SIG-F70-EU-WEB-04"
+      ],
+      "assumptions": [
+        "Comfort ratings use a consistent questionnaire and participant selection reflecting the 1 Series customer base.",
+        "Reliability thresholds are measured via manufacturer‑run accelerated tests plus a monitored 12‑month early field trial of ≥300 cars."
+      ],
+      "uncertainties": [
+        "Perception of comfort is subjective and will vary with occupant stature; some individual differences will remain.",
+        "Competitor comparisons from published reviews are indicative but not a direct benchmark."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Keep modern, high‑quality interior look and material feel",
+      "description": "Customers perceive the cabin as modern, stylish and of high quality at first glance and over time; materials and surfaces should look and feel premium and resist premature wear.",
+      "acceptance_criterion": "In showroom and ownership surveys, ≥90% of participants rate the interior design and material quality ≥4/5. In accelerated wear tests and a 12‑month ownership pilot, visible material defects or premature wear are reported by <2% of participants.",
+      "category": "interior",
+      "signal_ids": [
+        "SIG-F70-EU-013",
+        "SIG-F70-EU-036"
+      ],
+      "assumptions": [
+        "Survey ratings are collected from a representative set of potential buyers and early owners (≥300 respondents).",
+        "Accelerated wear testing combined with a 12‑month pilot approximates real ownership wear patterns."
+      ],
+      "uncertainties": [
+        "Material perception varies by culture and personal taste; trim option choices affect scores.",
+        "Supply constraints on high‑quality materials could affect finish consistency at launch."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Boot and vehicle access: practical luggage space plus reliable tailgate operation and easy ingress/egress",
+      "description": "Customers can load everyday luggage easily (even with hybrid/EV packaging constraints), reach the boot reliably via key/keyless and an internal button, and enter/exit the vehicle without difficulty.",
+      "acceptance_criterion": "Boot must accommodate two large suitcases (each 55 x 40 x 20 cm) plus one carry‑on (40 x 30 x 20 cm) with the hatch closed. Tailgate open/close via key, keyless and internal button must operate successfully in ≥99% of 10,000 cycle tests and show no unexpected self‑closure incidents in the 12‑month field trial. In an ingress/egress usability study (≥100 participants), ≥90% rate access/exit as 'easy' or better.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-F70-EU-022",
+        "SIG-F70-EU-025",
+        "SIG-F70-EU-039",
+        "SIG-F70-EU-042"
+      ],
+      "assumptions": [
+        "The stated luggage dimensions reflect common carry sizes used in customer testing and are appropriate proxies for everyday practicality.",
+        "Boot packaging and volumes may be reduced by hybrid/EV battery; the acceptance test ensures practical usability despite packaging constraints."
+      ],
+      "uncertainties": [
+        "Real world cargo usage varies; some owners will have larger items that exceed the test set.",
+        "Electric/hybrid configurations may force trade‑offs between boot volume and other packaging demands."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Ensure clear visibility and reliable cockpit displays: no mirror blind spots or distracting reflections, and no dashboard crashes",
+      "description": "Drivers experience exterior mirrors that do not create blind spots or cause distracting interior reflections at night, and an instrument/display system that is readable, reliable and does not remove essential functions through crashes or failures.",
+      "acceptance_criterion": "In standardized lane‑change and mirror‑visibility tests, ≥90% of drivers report no mirror‑created blind spot for typical lane changes. In night drive tests, fewer than 5% of drivers report distracting interior reflections in the exterior mirrors caused by in‑cab displays. Over a 12‑month monitored fleet of ≥500 vehicles, instrument cluster or primary display crashes that remove key driving functions must occur in fewer than 0.1% of vehicles.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SIG-F70-EU-027",
+        "SIG-F70-EU-041",
+        "SIG-F70-EU-018",
+        "SIG-F70-EU-WEB-07"
+      ],
+      "assumptions": [
+        "Visibility tests use a reproducible lane change protocol and a representative driver sample (≥100 drivers) across typical seat positions.",
+        "Display crash metric is measured from instrument cluster/display uptime and customer‑reported loss of key driving information in a 12‑month early fleet of ≥500 cars."
+      ],
+      "uncertainties": [
+        "Perceived mirror blind spots depend on driver seating position and personal habits; some residual blind‑spot reports are expected.",
+        "Display reflections depend on interior lighting setups and user display brightness settings chosen by owners."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Climate controls: provide independent driver/passenger temperature control with accessible physical controls and adequate HVAC power",
+      "description": "Drivers and front passengers can set different temperatures easily via a dedicated physical control to turn sync off, and the climate system provides effective, quiet heating and cooling without forcing users into touchscreen menus for basic adjustments.",
+      "acceptance_criterion": "Driver and passenger each have an independent temperature setpoint and a dedicated physical control to toggle sync OFF. In an ambient test at 30°C, the system cools the cabin to 22°C within 10 minutes with cabin noise ≤45 dB(A) measured at the driver's ear during steady operation. In user tests (≥150 participants), ≥90% can disable sync using the physical control within 10 seconds without consulting the screen.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-F70-EU-030"
+      ],
+      "assumptions": [
+        "Noise measurement at the driver's ear is a meaningful customer proxy for perceived HVAC noise.",
+        "Physical controls are placed ergonomically so users can operate them without frequent glances to the center display."
+      ],
+      "uncertainties": [
+        "HVAC performance depends on vehicle thermal load, insulation and ambient extremes; the target is for typical EU summer conditions (30°C).",
+        "Customer preference for physical controls versus touchscreen varies by segment and generation."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Key and driver‑profile reliability and premium feel",
+      "description": "Customers experience the key as a premium, ergonomic item that reliably locks/unlocks the car and preserves driver preferences; digital key features behave predictably and do not cause unexpected locking or alarm events.",
+      "acceptance_criterion": "In a user study, ≥85% rate the key handling and feel ≥4/5. Locking/unlocking success rate is ≥99% in 1,000 controlled operations. Driver profile and key‑linked preferences persist across power cycles in ≥99% of cases during a 12‑month monitored fleet trial, and reports of unexpected locking or alarm triggers are <0.5% of vehicles.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SIG-F70-EU-019"
+      ],
+      "assumptions": [
+        "Key feel ratings collected from users familiar with premium small premium hatchbacks.",
+        "Reliability percentages are measured across a combined lab and early‑fleet test of ≥300 vehicles."
+      ],
+      "uncertainties": [
+        "Digital key behavior can be affected by third‑party device OS updates (phone as key) outside vehicle control.",
+        "Some rare environment‑specific locking anomalies may persist despite engineering controls."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Increase rear legroom and boot practicality for electric‑architecture variants",
+      "description": "For the successor generation EV variant, customers experience noticeably more rear‑seat legroom and a more practical boot compared with today’s 1 Series, so rear passengers are comfortable on longer journeys and everyday luggage fits without compromise.",
+      "acceptance_criterion": "Compared with the current F70 baseline used in the internal benchmark, rear legroom increases by at least 35 mm and the boot can accommodate three carry‑on suitcases (each 55 x 40 x 20 cm) in a configuration test. In a user trial of ≥100 rear passengers, ≥90% rate rear‑seat comfort ≥4/5 for journeys of 90+ minutes.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SIG-F70-EU-WEB-10"
+      ],
+      "assumptions": [
+        "The successor EV uses a longer‑wheelbase EV architecture (e.g., Neue Klasse or equivalent) that makes the stated dimensional improvements feasible.",
+        "Internal baseline measurements from the F70 are available and comparable to successor packaging.",
+        "Customer acceptance measured on production‑intent vehicles or properly representative prototypes."
+      ],
+      "uncertainties": [
+        "Actual achievable wheelbase/packaging gains depend on final architecture and battery placement decisions.",
+        "Increases in rear legroom may trade off with other packaging or structural constraints."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Offer high‑quality recycled or bio‑based upholstery options in the successor interior",
+      "description": "Responding to market trends, customers can choose interior material options that are leather‑free and use recycled or bio‑based materials while maintaining a premium look and feel.",
+      "acceptance_criterion": "At launch, at least one leather‑free upholstery option based on recycled and/or bio‑based materials is available; in consumer panels (≥200 participants) that option scores ≥4/5 for perceived quality and comfort. Adoption intent for the leather‑free option is ≥25% among panel respondents.",
+      "category": "interior",
+      "signal_ids": [
+        "SIG-F70-EU-WEB-10"
+      ],
+      "assumptions": [
+        "Viable recycled or bio‑based material suppliers are available at scale and meet BMW durability and safety expectations.",
+        "Consumer panels reflect target market preferences for sustainability and premium feel."
+      ],
+      "uncertainties": [
+        "Material supply chain, cost and regulatory considerations may change availability or option positioning at launch.",
+        "Perceived premium feel of recycled materials depends on finishing and trim choices."
+      ],
+      "effort": "M",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}

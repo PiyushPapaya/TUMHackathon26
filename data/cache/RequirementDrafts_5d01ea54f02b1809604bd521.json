@@ -1,0 +1,143 @@
+{
+  "drafts": [
+    {
+      "title": "Keep the large, long touchscreen’s visual appeal while making core controls faster to reach, less cluttered, and resistant to visible smudging and glare",
+      "description": "Customers enjoy the large, long touchscreen’s look and responsiveness but also want primary driving controls easy to find, fewer menu steps for common tasks, and a screen that stays usable in bright light and does not require frequent wiping.",
+      "acceptance_criterion": "In a driving usability test (N=100), >=90% of participants locate and operate climate temperature, fan, audio volume and start navigation within 2 taps and 5 seconds using the primary driving view or a single dedicated ‘driver’ view; >=90% of participants report no need to wipe the active screen area during a continuous 1‑hour drive; in a daylight readability test (simulated bright sunlight) >=90% of participants correctly identify primary control icons without re-angling.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-011",
+        "SIG-G60-US-023",
+        "SIG-G60-US-026",
+        "SIG-G60-US-028",
+        "SIG-G60-US-032"
+      ],
+      "assumptions": [
+        "Usability tests use a representative US driver panel (mix of new and experienced BMW drivers)",
+        "Production displays and coatings available at launch provide measurable reductions in visible fingerprints compared with current hardware",
+        "A simplified or driver-focused UI mode and customizable shortcuts will be offered as part of the default software"
+      ],
+      "uncertainties": [
+        "Some customers prefer deep customization and full-feature screens by default, which may conflict with a simplified driving view",
+        "Perception of glare and smudging can vary with user behavior (e.g., touching frequency) and climate"
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Ensure Apple CarPlay connects and functions reliably so iPhone owners don’t lose media, phone or navigation integration",
+      "description": "Customers with iPhones should be able to pair, connect and use CarPlay without frequent disconnects or missing media; the system should consistently resume media and phone functions after connection or vehicle restart.",
+      "acceptance_criterion": "In lab tests across 10 popular iPhone models and iOS 16–18, CarPlay establishes a working connection and resumes media playback within 5 seconds in >=95% of connection attempts; pairing persists across vehicle restart in >=98% of attempts.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-019",
+        "SIG-G60-US-WEB-07"
+      ],
+      "assumptions": [
+        "Tested phone set includes representative models (e.g., iPhone 12–15 series) and current iOS versions at launch",
+        "Apple CarPlay protocol remains supported by Apple and phone vendors at launch",
+        "Wireless coexistence environment in test approximates real-world US conditions"
+      ],
+      "uncertainties": [
+        "Third‑party app behavior (Spotify, podcasts) may affect media resume behavior",
+        "Interference from other wireless devices or vehicle accessories could still cause occasional disconnects"
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make odometer and trip mileage immediately visible and easy to access from the instrument cluster",
+      "description": "Customers must be able to see current odometer and trip mileage or reach trip controls quickly and intuitively without dealer help or confusing steps.",
+      "acceptance_criterion": "In a 50‑user usability test, >=95% of participants locate current odometer and trip mileage within 5 seconds without prior training; accessing trip reset/selection requires no more than two actions.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-021"
+      ],
+      "assumptions": [
+        "Instrument cluster layouts allow a default or easily reachable view for odometer/trip information",
+        "Usability panel includes both new and experienced BMW drivers"
+      ],
+      "uncertainties": [
+        "User personalization that hides default elements could reduce discoverability unless safeguarded",
+        "Differences between market software variants could affect the location of the mileage display"
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Deliver a wireless charging surface that reliably charges common phones and holds them flat without repeated repositioning",
+      "description": "When placing a phone on the car’s wireless pad, customers expect consistent charging performance and correct fit for common phone sizes and cases, without having to wiggle the phone or plug a cable.",
+      "acceptance_criterion": "On the production charging surface, >=90% of tested popular phones (see assumptions) charge from 20% to 80% within 75 minutes on the front pad, and >=95% of phones remain charging without repositioning during a 15‑minute normal‑road drive test.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-029"
+      ],
+      "assumptions": [
+        "Test phone set includes representative devices (e.g., iPhone 12–15 series, Samsung Galaxy S20–S23/24 equivalents) with and without common thin cases",
+        "Qi wireless charging standards or widely adopted equivalents remain the de facto phone charging method at launch"
+      ],
+      "uncertainties": [
+        "Some phone cases, metal mounts, or third‑party accessories may prevent reliable charging",
+        "Variability across phone models and future phone designs may require updates to the pad design"
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make voice control reliably recognize and execute common driving commands across US accents and realistic cabin noise",
+      "description": "Drivers should be able to use voice to enter navigation destinations, place calls, and change climate settings with high first‑time recognition even with typical in‑car background noise.",
+      "acceptance_criterion": "In a noise‑conditioned driving test (background noise 65–75 dB) with a participant pool representative of US accents, >=90% of voice commands for navigation entry, phone calls and climate control are correctly recognized and executed on the first attempt within 3 seconds.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-042"
+      ],
+      "assumptions": [
+        "Supported command phrases for navigation, phone and climate are defined and communicated to users",
+        "Microphone array and noise suppression performance on production hardware are consistent with test conditions"
+      ],
+      "uncertainties": [
+        "Recognition performance may vary for less common accents, speech impediments, or heavy background music",
+        "Cloud‑based speech services may be affected by network latency if used as a fallback"
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Provide a reliable in‑car WiFi hotspot that supports several devices with consistent browsing performance on typical US routes",
+      "description": "Customers expect the vehicle hotspot to deliver usable internet for multiple devices during everyday drives (commutes, errands) without frequent drops or very slow loads.",
+      "acceptance_criterion": "During a 30‑minute mixed urban/suburban drive test, the vehicle hotspot supports 3 simultaneous devices with webpage load times <=5 seconds and average throughput >=10 Mbps per device in >=90% of tests, assuming an active data plan and typical carrier coverage on the test route.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SIG-G60-US-043"
+      ],
+      "assumptions": [
+        "An active vehicle data plan is provisioned for the test vehicle during evaluation",
+        "Test routes reflect typical US urban/suburban cellular coverage"
+      ],
+      "uncertainties": [
+        "Actual performance depends on carrier network conditions, which vary by geography and time",
+        "High device counts, large downloads or streaming by passengers will reduce per‑device throughput"
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}

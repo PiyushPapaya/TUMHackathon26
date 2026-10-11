@@ -1,0 +1,285 @@
+{
+  "drafts": [
+    {
+      "title": "Reduce harsh ride on broken pavement so rough roads feel composed",
+      "description": "When driving on broken or uneven pavement, customers experience noticeably less sharp vibrations and jolts — the car feels composed and comfortable rather than harsh.",
+      "acceptance_criterion": "On a standardized broken‑pavement route, a representative user panel (n≥30) rates perceived ride harshness at least 25% better (lower) than the current test vehicle median score; objective ride harshness events (measured on the same route) are reduced by at least 30%.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SCOPE-N06"
+      ],
+      "assumptions": [
+        "A standardized broken‑pavement route and repeatable ride‑comfort scoring protocol are available for comparison.",
+        "Suspension and chassis tuning improvements (software + hardware) can be implemented within the successor program timeline."
+      ],
+      "uncertainties": [
+        "Exact baseline performance of the current test vehicle must be defined before final targets are validated.",
+        "Perceived comfort is partly subjective; panel composition and test conditions will affect measured improvement."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Reduce distracting wind noise on highways above 70 mph",
+      "description": "At highway speeds customers hear less wind noise so conversations and audio are not disturbed when driving above 70 mph.",
+      "acceptance_criterion": "Interior A‑weighted SPL at the driver ear position is ≤68 dB(A) at 75 mph on a standardized highway track (window closed, vents off) and subjective annoyance rating from a user panel (n≥20) is reduced by at least 20% versus current test vehicle.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SCOPE-N15"
+      ],
+      "assumptions": [
+        "Standardized test track and microphone placement are used for repeatable measurements.",
+        "Improvements can be achieved through aero tuning, sealing and trim optimizations within the successor timeline."
+      ],
+      "uncertainties": [
+        "Actual baseline loudness and limiting factors (mirrors, seals, glass) must be confirmed during development."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make lane keeping assist steer smoothly in curves without abrupt corrections",
+      "description": "When using lane keeping assist on highways customers feel smooth, predictable steering assistance in curves and do not experience sudden or startling steering corrections.",
+      "acceptance_criterion": "On a set of representative highway curve scenarios (speeds 50–75 mph), abrupt steering assist interventions occur in fewer than 2 events per 100 miles of combined test driving; driver‑initiated overrides attributable to unexpected steering inputs occur ≤1 per 200 miles.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SCOPE-N16"
+      ],
+      "assumptions": [
+        "Representative test routes with repeated curve segments are defined to detect and count abrupt interventions.",
+        "Vehicle is operating within normal lane keeping operating conditions (good lane markings, dry road)."
+      ],
+      "uncertainties": [
+        "Driver perception of 'abrupt' varies; the chosen test thresholds must be validated with a user panel.",
+        "Extreme environmental conditions or degraded lane markings may increase intervention frequency."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Help drivers find compatible fast chargers quickly and confidently on trips",
+      "description": "When planning or driving a long trip customers are guided to fast chargers that are compatible with their vehicle and receive clear compatibility and availability information so searching is fast and not confusing.",
+      "acceptance_criterion": "For at least 90% of long‑distance trips (>100 miles) within the U.S. the vehicle navigation identifies compatible fast chargers and presents compatibility, connector type and predicted availability; a compatible charger and route option is provided to the driver within 30 seconds or 3 interactions on the vehicle UI.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SCOPE-N10"
+      ],
+      "assumptions": [
+        "Access to up‑to‑date charger metadata (connector type, power, network, real‑time availability) is available via partners or aggregators.",
+        "Back‑end integrations and real‑time data feeds can be implemented for the successor vehicle."
+      ],
+      "uncertainties": [
+        "Coverage and data quality vary by region and network; initial rollout may have gaps in some rural areas.",
+        "Different third‑party networks may expose data at different levels of detail or latency."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make the charge port indicator show charging state clearly at a glance",
+      "description": "When charging, customers can see the charge status from a short distance without opening apps — the charge port indicator clearly communicates charging, fully charged and error states.",
+      "acceptance_criterion": "Charge port indicator uses distinct visible signals that can be perceived from 2 meters in daylight (and at typical angles) and unambiguously indicate at least 'charging', 'complete' and 'error' states in a single glance.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SCOPE-N17"
+      ],
+      "assumptions": [
+        "Indicator visibility in daylight is achievable through hardware placement and signal design refinements.",
+        "User testing will validate the color/flash schemes for color‑blind accessibility and clarity."
+      ],
+      "uncertainties": [
+        "Exact illumination and visibility will depend on port placement and surrounding geometry.",
+        "Local regulations may constrain colors or signals used for external indicators."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Type approval for Level 3 automated driving (customer request)",
+      "description": "Customers request that the vehicle be homologated / type‑approved for conditional (Level 3) automated driving where allowed by regulation.",
+      "acceptance_criterion": "This is a regulatory/homologation request; no engineering acceptance criterion specified here.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SCOPE-R01"
+      ],
+      "assumptions": [],
+      "uncertainties": [
+        "Level 3 approval depends on evolving national regulations and authorities."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulation/homologation request — outside product requirement scope and dependent on external type‑approval processes."
+    },
+    {
+      "title": "Ensure powertrain complies with US CARB emission limits (customer request)",
+      "description": "Customers ask that the vehicle complies with California ARB emission limits across the U.S.",
+      "acceptance_criterion": "This is a regulatory compliance request; no product acceptance criterion specified here.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SCOPE-R03"
+      ],
+      "assumptions": [],
+      "uncertainties": [
+        "CARB requirements and testing procedures may change over time and vary by powertrain choice."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulatory compliance request — belongs to homologation and certification, not a direct customer‑facing feature requirement."
+    },
+    {
+      "title": "UN R155 cybersecurity type approval (customer request)",
+      "description": "Customers ask that the vehicle fulfils UN R155 cybersecurity approval.",
+      "acceptance_criterion": "This is a regulatory/certification request; no engineering acceptance criterion specified here.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SCOPE-R06"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulation/certification request — outside the scope of a customer‑facing requirement draft."
+    },
+    {
+      "title": "Battery passport compliance (customer request)",
+      "description": "Customers ask that the vehicle's battery complies with the EU battery passport regulation.",
+      "acceptance_criterion": "This is a regulatory/data‑reporting request; no product acceptance criterion specified here.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SCOPE-R07"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulatory/data compliance request — pertains to certification and supply‑chain reporting rather than a direct customer experience feature."
+    },
+    {
+      "title": "Request for 800 V electrical architecture (engineering spec)",
+      "description": "Customers specifically ask that the vehicle uses an 800 V electrical architecture.",
+      "acceptance_criterion": "Engineering specification request (800 V architecture); out of scope for customer‑facing requirement drafting.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SCOPE-E01"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Specific electrical architecture is a detailed engineering specification, not a direct customer‑facing requirement."
+    },
+    {
+      "title": "Request for 22 kW onboard AC charger (engineering spec)",
+      "description": "Customers ask that the onboard AC charger be upgraded to 22 kW.",
+      "acceptance_criterion": "Engineering specification request (22 kW onboard charger); out of scope for customer‑facing requirement drafting.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SCOPE-E03"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Specific charger power rating is an engineering design target rather than a customer‑facing requirement."
+    },
+    {
+      "title": "Request for solid‑state cells at 400 Wh/kg (engineering spec)",
+      "description": "Customers ask that the battery uses solid‑state cells with 400 Wh/kg energy density.",
+      "acceptance_criterion": "Engineering/materials specification request (solid‑state cells, 400 Wh/kg); out of scope for customer‑facing requirement drafting.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SCOPE-E06"
+      ],
+      "assumptions": [],
+      "uncertainties": [
+        "Solid‑state cell availability, safety and cycle life at the requested energy density within 3–5 years are uncertain."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Specific battery chemistry and energy‑density targets are engineering specifications dependent on supplier technology readiness."
+    },
+    {
+      "title": "Request for front brake disc diameter 395 mm (engineering spec)",
+      "description": "Customers ask for a front brake disc diameter of 395 mm.",
+      "acceptance_criterion": "Engineering specification request (395 mm front brake disc); out of scope for customer‑facing requirement drafting.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SCOPE-E07"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Specific mechanical part dimension is an engineering requirement, not a customer‑facing outcome."
+    },
+    {
+      "title": "Request for a specific lidar supplier for highway assist (supplier preference)",
+      "description": "Customers ask that highway assist uses a lidar sensor from a named supplier.",
+      "acceptance_criterion": "Supplier preference / component choice request; no customer‑facing acceptance criterion specified here.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SCOPE-E08"
+      ],
+      "assumptions": [],
+      "uncertainties": [
+        "Supplier availability, contractual and integration constraints apply."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Request names a specific supplier/component — engineering and procurement decision outside customer‑facing requirement scope."
+    },
+    {
+      "title": "Customer request for 600–700 mile real‑world range",
+      "description": "Customers explicitly ask for a real‑world range of at least 600 (or 700) miles on one tank or charge.",
+      "acceptance_criterion": "This is a customer engineering/target request for a specific range value (600–700 miles); treated as an engineering specification rather than a direct user‑interaction requirement.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SCOPE-N09"
+      ],
+      "assumptions": [
+        "Achieving 600–700 miles depends on powertrain selection (ICE, hybrid, or very large battery) and is subject to feasibility and regulatory constraints."
+      ],
+      "uncertainties": [
+        "Real‑world range depends on driving patterns, speed, environmental conditions and vehicle configuration; feasibility within a successor program must be evaluated."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Specific numeric range target is an engineering/product strategy decision and thus out of scope for a customer‑facing requirement draft."
+    }
+  ]
+}

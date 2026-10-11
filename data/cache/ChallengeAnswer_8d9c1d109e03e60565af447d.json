@@ -1,0 +1,24 @@
+{
+  "answer": "Unclear. The provided evidence shows widespread dissatisfaction with vents, touchscreen-only HVAC control flow, and limited interior storage (many direct complaints; HVAC: 15% dissatisfied, 29% top-2; storage: 10% dissatisfied, 39% top-2), so this appears broader than a single-age habit — but none of the inputs include age-segment data, so we cannot determine whether older customers drive these signals.",
+  "supporting_evidence_ids": [
+    "SIG-G60-US-030",
+    "SIG-G60-US-040",
+    "EV-G60-US-FB-G60-0740",
+    "EV-G60-US-FB-G60-1594",
+    "EV-G60-US-FB-G60-2989",
+    "EV-G60-US-FB-G60-1157",
+    "EV-G60-US-FB-G60-0782",
+    "EV-G60-US-ST-48",
+    "EV-G60-US-FB-G60-0696",
+    "EV-G60-US-FB-G60-1654",
+    "EV-G60-US-FB-G60-2152",
+    "EV-G60-US-FB-G60-2324",
+    "EV-G60-US-FB-G60-2803",
+    "EV-G60-US-FB-G60-3416",
+    "EV-G60-US-FB-G60-3630",
+    "EV-G60-US-FB-G60-0483",
+    "EV-G60-US-ST-35"
+  ],
+  "counter_evidence_ids": [],
+  "suggested_change": "Require the driving usability test to include and report results by age cohorts (e.g., 18–35, 36–55, 56+) and either meet acceptance criteria within each cohort or document cohort-specific shortfalls; add explicit demographic representativeness to the assumptions."
+}

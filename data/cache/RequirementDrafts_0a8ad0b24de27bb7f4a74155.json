@@ -1,0 +1,208 @@
+{
+  "drafts": [
+    {
+      "title": "Reliable voice control that correctly follows driving commands",
+      "description": "When driving, the driver can speak common commands (navigation entry, phone calls, media, climate intents) and the car executes the intended action without re-speaking or long delays.",
+      "acceptance_criterion": "In an in-vehicle noise test (simulated cabin noise at ~70 km/h), the system executes the intended action on first attempt in >=92% of 200 natural‑speech utterances and correctly handles >=95% of a validated set of 25 common driving commands (measured end‑to‑end, from utterance to action).",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N01"
+      ],
+      "assumptions": [
+        "Test uses a balanced dataset of accents and typical in-cabin noises (engine, road, wind, HVAC).",
+        "Microphones and audio processing are functioning per current BMW baseline.",
+        "OTA updates to improve models are possible during the model lifecycle."
+      ],
+      "uncertainties": [
+        "Performance may vary with uncommon accents, heavy background music, or third‑party phone-based voice assistants.",
+        "Requirement assumes vendor cooperation for model updates and in-car microphone quality."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Reliable wireless phone charging that consistently charges placed phones",
+      "description": "When a compatible phone is placed on the vehicle wireless pad using a normal user placement, it reliably starts and maintains charging through typical driving without frequent re-positioning or session dropouts.",
+      "acceptance_criterion": "With three representative Qi‑compatible phones, placing the phone centrally on the pad begins charging within 5 seconds and increases battery level by >=10% within 30 minutes during mixed driving (city/highway); charging sessions experience no interruptions in >=95% of 200 real-world drive starts.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N04"
+      ],
+      "assumptions": [
+        "Phones tested support widely used Qi profiles and are representative flagship and popular mid-range models at launch.",
+        "Users place phones roughly centered on the pad (normal use).",
+        "Testing includes typical vehicle vibrations and electromagnetic conditions."
+      ],
+      "uncertainties": [
+        "Very thick cases, magnetic accessories or unsupported phone models may reduce performance.",
+        "Future phone designs could change alignment tolerances."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Clear, readable HUD and center screen in bright sunlight without manual adjustments",
+      "description": "Critical HUD information (speed, active navigation prompt) and primary center-screen content (navigation text, key instrument readouts) remain legible in bright sunlight so drivers do not need to shade the display or manually change settings.",
+      "acceptance_criterion": "Under a controlled 10,000 lux sunlight simulation, 95% of test participants can (a) read HUD speed and next-turn instruction within 2 seconds and (b) read primary navigation text on the center screen within 2 seconds, without any manual brightness/contrast changes.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N08",
+        "SCOPE-N19"
+      ],
+      "assumptions": [
+        "10,000 lux in-lab simulation approximates bright direct sunlight for typical daytime conditions.",
+        "Test participants have corrected-to-normal vision; common sunglasses may affect results.",
+        "Adaptive display software and hardware calibration at production are available."
+      ],
+      "uncertainties": [
+        "Very dark polarized sunglasses or extreme viewing angles could reduce legibility for some users.",
+        "Different geographic daylight intensities and windshield coatings may change real-world results."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Tactile, glance-free climate controls for temperature and fan speed",
+      "description": "Drivers can change cabin temperature and fan speed by touch alone, without looking away from the road, using clearly differentiated physical controls.",
+      "acceptance_criterion": "In 100 blind-test trials (drivers keep eyes on the road), a driver can change cabin temperature by 2°C and change fan speed by one level by touch alone within 3 seconds in >=95% of trials.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N13"
+      ],
+      "assumptions": [
+        "Controls are laid out with tactile differences (shape/texture) and provide clear haptic feedback when actuated.",
+        "Drivers are familiarized with control locations as part of normal delivery orientation."
+      ],
+      "uncertainties": [
+        "Drivers with limited hand mobility or unusual glove use may have different success rates.",
+        "Exact control form factor (knob vs. buttons) will affect tactile discoverability."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Include heated steering wheel as standard in the Cold Weather package",
+      "description": "Customers who select the Cold Weather package receive a heated steering wheel as a delivered feature without needing to add it separately as an expensive standalone option.",
+      "acceptance_criterion": "100% of vehicles configured and sold with the named 'Cold Weather' package include a heated steering wheel listed in the vehicle specification and delivered in the vehicle.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-N20",
+        "SCOPE-P09"
+      ],
+      "assumptions": [
+        "Cold Weather package definition is standardized across markets for this vehicle generation.",
+        "Dealer ordering and VIN build processes will reflect the bundled content."
+      ],
+      "uncertainties": [
+        "Regional variations in package names or regulatory limits could require mapping to an equivalent package.",
+        "Some legacy dealer ordering systems may need updates to prevent package splitting."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Customer requests for lower base price, cheaper lease, bundled/free packages, package discounts, lower dealer margin, subscriptions at requested price, or zero-percent financing (pricing and commercial requests)",
+      "description": "Customers ask for lower MSRP below $50,000, lease rates cheaper than competitors, all option packages included in base, Comfort package 30% cheaper, lower dealer margins on options, heated-seats subscription at $15/month, and 0% financing offers.",
+      "acceptance_criterion": "Out of scope for product requirements: pricing, financing, dealer margin and subscription price levels are commercial decisions handled by pricing/finance teams and not specified as product engineering requirements here.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-P01",
+        "SCOPE-P02",
+        "SCOPE-P03",
+        "SCOPE-P04",
+        "SCOPE-P06",
+        "SCOPE-P08",
+        "SCOPE-P10"
+      ],
+      "assumptions": [
+        "These signals represent commercial and pricing preferences rather than product functional requirements."
+      ],
+      "uncertainties": [
+        "Customer willingness-to-pay trade-offs and competitive pricing dynamics are outside the remit of this technical product backlog."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Pricing, financing, subscription fees and dealer margin decisions are commercial topics; out of scope for product technical requirements."
+    },
+    {
+      "title": "Requests for China CCC certification of infotainment (certification request)",
+      "description": "Customers request that the infotainment system passes CCC certification for the Chinese market.",
+      "acceptance_criterion": "Out of scope for product requirements: regulatory/certification activities (CCC) are managed by compliance/regulatory teams and are not specified as product feature acceptance criteria here.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-R05"
+      ],
+      "assumptions": [
+        "Certification and homologation processes will be handled by the legal/compliance organization."
+      ],
+      "uncertainties": [
+        "Specific technical changes required for certification are unknown until compliance teams engage with certifying authorities."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulation and homologation (CCC) are outside the product feature requirement scope; handled by compliance."
+    },
+    {
+      "title": "Requests that driver profile and data storage satisfy GDPR requirements (data protection / compliance request)",
+      "description": "Customers ask that driver profiles and stored data satisfy GDPR requirements for data handling and deletion.",
+      "acceptance_criterion": "Out of scope for product requirements: legal and certification compliance tasks (GDPR) are managed by legal/privacy teams and are not defined as product feature acceptance criteria here.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-R08"
+      ],
+      "assumptions": [
+        "Privacy controls and compliance processes will be specified and validated by the privacy/legal organization.",
+        "Product teams will implement privacy controls per legal guidance but the legal acceptability is judged by the privacy team."
+      ],
+      "uncertainties": [
+        "Interpretation of specific GDPR requirements for features (data retention windows, export/delete flows) may evolve with regulation guidance."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulatory and legal compliance (GDPR) are out of scope for product technical requirements; handled by legal/privacy."
+    },
+    {
+      "title": "Request to use a specific cockpit chip (Snapdragon 8295) — engineering spec request",
+      "description": "Customers ask that the cockpit computer uses the Snapdragon 8295 chip.",
+      "acceptance_criterion": "Out of scope: requests for a named chip are an engineering/part-level specification and not a customer-facing product requirement; hardware component selection is handled in engineering BOM and platform decisions.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-E04"
+      ],
+      "assumptions": [
+        "Customers express desire for perceived performance improvements but do not specify a customer-level outcome beyond performance.",
+        "Actual hardware selection will be made by engineering considering lifecycle, supply and cost."
+      ],
+      "uncertainties": [
+        "Component availability, lifecycle and supplier constraints may prevent use of a specific chip at production.",
+        "Customer-perceived improvements should be translated into performance targets rather than a specific part."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Specific component/part requests are engineering specifications and out of scope for customer-facing product requirements."
+    }
+  ]
+}

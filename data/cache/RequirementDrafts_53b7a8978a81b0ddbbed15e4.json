@@ -1,0 +1,183 @@
+{
+  "drafts": [
+    {
+      "title": "Displays (HUD and center screen) remain readable in bright sunlight",
+      "description": "Customers can read critical information on the head-up display (HUD) and center screen in bright sunlight without having to shade the display or change viewing angle.",
+      "acceptance_criterion": "In a standardized sunlight test (direct sunlight, 1000–1100 lux at 60° incidence), HUD symbology and center-screen primary UI elements (navigation directions, speed, climate status) must be legible from driver seating position in 9 out of 10 trials; measured contrast ratio and perceived glare must result in a legibility score ≥90% vs. a calibrated visibility panel.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N08",
+        "SCOPE-N19"
+      ],
+      "assumptions": [
+        "Standardized visibility test method and calibrated panels are available for supplier validation.",
+        "HUD and screen optical coatings and brightness control can be tuned within existing automotive hardware constraints."
+      ],
+      "uncertainties": [
+        "Some extreme phone reflections or aftermarket screen protectors may still cause local glare not covered by the standardized test."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Tactile physical controls for temperature and fan speed operable without looking",
+      "description": "Drivers can adjust cabin temperature and fan speed by feel so they do not need to look at the screen or take eyes off the road.",
+      "acceptance_criterion": "A blind usability test (driver keeps eyes on road) must allow users to set a target temperature within ±1°C and change fan speed by at least two levels within 5 seconds in 9 out of 10 attempts.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SCOPE-N13"
+      ],
+      "assumptions": [
+        "Physical controls can be integrated without significantly increasing center console clutter.",
+        "User testing will use a representative sample of drivers (age and hand size variation)."
+      ],
+      "uncertainties": [
+        "Some drivers will still prefer touch control for aesthetic or secondary adjustments."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Reliable natural-language voice control with high in-vehicle accuracy",
+      "description": "Voice control recognizes and executes common driving commands reliably so drivers can keep hands on the wheel and eyes on the road.",
+      "acceptance_criterion": "Under realistic driving noise (wind/road noise up to 70 dB(A)), the voice system must correctly understand and execute 95% of a standardized set of 150 common driving commands (navigation destinations, climate, media, phone) in 20 test users across 3 accents.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N01"
+      ],
+      "assumptions": [
+        "Testing uses a standardized command set representative of customer phrasing.",
+        "Onboard language models and microphone placement will be optimized during development."
+      ],
+      "uncertainties": [
+        "Extreme accents or very noisy aftermarket audio environments may reduce accuracy below the target."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Wireless phone charging works reliably for common phones during normal drives",
+      "description": "When a compatible phone is placed correctly on the pad, charging continues without unexpected interruptions for the duration of typical drives.",
+      "acceptance_criterion": "Across a compatibility test matrix of the top 10 phone models by US market share, wireless charging sessions must remain active (no interruption >2 seconds) for 95% of 2-hour continuous-driving tests and must deliver charge increase of ≥10% for phones starting at 20% battery.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N04"
+      ],
+      "assumptions": [
+        "Test phones are placed according to user guidance; phone cases thicker than 3 mm or metallic cases are excluded from pass criteria or noted.",
+        "Tests include realistic vehicle vibration and temperature conditions."
+      ],
+      "uncertainties": [
+        "Some third-party phone cases, accessories, or phone firmware updates could cause incompatibilities not captured in the initial matrix."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Driver profile storage and controls meet GDPR data-subject rights",
+      "description": "Customers can review, export, and delete personal driver profile data and see consent logs so the driver profile satisfies GDPR data-storage and access requirements.",
+      "acceptance_criterion": "The vehicle user interface and connected portal must allow the data subject to (a) export a complete machine-readable copy of their driver profile, (b) request deletion of personal profile data, and (c) view an auditable consent log — each action must complete or be acknowledged within 48 hours; retention and processing controls must match GDPR requirements in documented data flow.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-R08"
+      ],
+      "assumptions": [
+        "Necessary backend processes and regional data handling policies will be implemented before launch.",
+        "Legal review will define exact storage duration and localization per market."
+      ],
+      "uncertainties": [
+        "Non-EU markets may have differing requirements that need separate implementation.",
+        "Third-party services integrated with profiles may have different data handling constraints."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Infotainment software prepared for China certification (CCC) at launch",
+      "description": "The infotainment stack is implemented so it can pass Chinese CCC certification and be delivered as a market variant for China.",
+      "acceptance_criterion": "Infotainment build for the China market must achieve CCC certification clearance (formal certificate issued) before vehicle delivery in China; no China-market sales rollout will occur without the certificate.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-R05"
+      ],
+      "assumptions": [
+        "Regulatory submission timelines and testing labs are available for the planned launch window.",
+        "Localization and any region-specific feature adjustments will be scoped into the China build."
+      ],
+      "uncertainties": [
+        "Certification timelines can change due to regulatory updates or additional testing requirements."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "More affordable and transparent pricing, packages and ownership offers",
+      "description": "Customers see clearer, more competitive pricing: an affordable base model, common cold-weather features included or reasonably priced, transparent dealer markup, and market-competitive lease/finance options (including optional subscriptions).",
+      "acceptance_criterion": "When the successor launches in the US: (a) an entry 5 Series model MSRP < $50,000, (b) a manufacturer-backed lease option for the entry model that is at least $50/month lower than the comparable Mercedes E-Class lease in the same region, (c) 0% APR financing available for up to 12 months on at least two popular trims, (d) heated seats offered as a subscription at $15/month with monthly cancel, (e) heated steering wheel included as standard in the Cold Weather package on at least one popular trim, (f) Comfort package price reduced by 30% vs. the current model's Comfort package, and (g) dealer markup on factory-installed options capped at 5% above MSRP or clearly disclosed at point of sale.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-P01",
+        "SCOPE-P02",
+        "SCOPE-P03",
+        "SCOPE-P04",
+        "SCOPE-P06",
+        "SCOPE-P08",
+        "SCOPE-P09",
+        "SCOPE-P10",
+        "SCOPE-N20"
+      ],
+      "assumptions": [
+        "Manufacturer and dealer agreements can be adjusted to implement capped markups and new package pricing.",
+        "Competitive lease and finance targets are measured against the equivalent Mercedes E-Class offering in the same retail region and launch period.",
+        "Some content changes (e.g., which features are standard on which trims) are acceptable to meet the MSRP and package targets."
+      ],
+      "uncertainties": [
+        "Market inflation, materials cost changes, or supply constraints could affect final MSRP and package pricing.",
+        "Dealer network cooperation is needed to implement markup caps and transparent disclosures."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Customer request for a specific cockpit chip (Snapdragon 8295) — engineering spec (out of scope)",
+      "description": "Some customers specifically requested that the cockpit computer use the Snapdragon 8295 chip. This is a hardware component request rather than a direct customer-facing outcome.",
+      "acceptance_criterion": "N/A — engineering component request. If implemented, acceptance criteria must be defined by HW performance and supplier validation plans.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-E04"
+      ],
+      "assumptions": [
+        "Customers equate a specific chip name with perceived performance; actual performance can be achieved by multiple hardware configurations."
+      ],
+      "uncertainties": [
+        "Availability, supplier contracts, and platform compatibility for a specific chip cannot be guaranteed at product launch."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "This is an engineering-level specification naming a chipset. Customer-facing outcomes (responsiveness, UI performance) should be specified instead; chipset choice is an engineering decision."
+    }
+  ]
+}

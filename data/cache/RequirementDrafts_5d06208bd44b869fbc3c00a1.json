@@ -1,0 +1,147 @@
+{
+  "drafts": [
+    {
+      "title": "Infotainment meets China certification and EU privacy requirements",
+      "description": "Customers in China can use the full infotainment feature set and customers in GDPR regions can control and erase their driver profile data. The system presents clear in-car flows for data export and deletion and is legally certified where required.",
+      "acceptance_criterion": "Infotainment obtains CCC certification for vehicles sold in China before the start of sales in China; driver profile supports data export and deletion requests and fulfils GDPR rights with deletion requests completed within 30 days and data export provided within 7 days.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-R05",
+        "SCOPE-R08"
+      ],
+      "assumptions": [
+        "Legal interpretation of GDPR and CCC requirements remains stable through product launch",
+        "Certification timelines and test criteria are achievable within normal development schedules with local partner support"
+      ],
+      "uncertainties": [
+        "National implementation details (e.g., additional local requirements beyond CCC) may add time or scope",
+        "Required server/data residency arrangements and contract changes may affect delivery timing"
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Customer-requested cockpit chip (engineering specification — out of scope)",
+      "description": "Some customers explicitly request the cockpit computer use the Snapdragon 8295 chip (engineering-level hardware request).",
+      "acceptance_criterion": "Customer request recorded: preference for Snapdragon 8295 for the cockpit computer.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-E04"
+      ],
+      "assumptions": [
+        "Signal expresses a hardware preference rather than a customer-facing outcome"
+      ],
+      "uncertainties": [
+        "Feasibility depends on supplier selection, lifecycle and platform constraints"
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "This is an engineering specification request for a specific chip; product requirements should specify customer outcomes (responsiveness, feature support) rather than a particular component."
+    },
+    {
+      "title": "Infotainment and cabin conveniences work reliably and are readable in sunlight",
+      "description": "While driving customers can successfully use voice control, trust the wireless phone charger to keep their phone charging, and read the head-up and center displays in bright sunlight without needing to shade screens or block sunlight.",
+      "acceptance_criterion": "In standardized real-world tests: voice control correctly interprets and executes 95% of a defined set of 50 common driving commands at cabin noise levels up to 70 dB; wireless charging maintains an uninterrupted charging state for 95% of 2-hour driving sessions across 5 representative phone models (with common cases); head-up and center displays remain legible in 95% of test cases representing direct sunlight up to 100,000 lux and sun angles 0–60°.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N01",
+        "SCOPE-N04",
+        "SCOPE-N08",
+        "SCOPE-N19"
+      ],
+      "assumptions": [
+        "Tests use a standardized command set and representative phone models (to be defined by validation team)",
+        "Acceptable definition of 'legible' will be agreed with UX (contrast, font size, and reading distance criteria)",
+        "Phone cases and third-party accessories remain within typical market prevalence"
+      ],
+      "uncertainties": [
+        "Extreme phone cases or non-standard devices may still fail; some connectivity-dependent voice features may vary by region",
+        "Very unusual sun angles or aftermarket window films may reduce legibility"
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Climate controls with tactile physical buttons operable without looking",
+      "description": "Customers can change temperature and fan speed by feel while driving, without needing to look at the controls.",
+      "acceptance_criterion": "Users can set temperature to within ±1°C and change fan speed by one level using only touch (no visual confirmation) within 2 seconds in 95% of validated user trials.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N13"
+      ],
+      "assumptions": [
+        "UX validation tests reflect real driving posture and common glove usage",
+        "Control layout will be optimized for reach and tactile differentiation"
+      ],
+      "uncertainties": [
+        "Gloved operation or aftermarket seat position extremes could affect success rates",
+        "Regional differences in temperature units or user expectations may require localization"
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Clear value trim and fair option pricing that includes popular packages",
+      "description": "Customers can buy a value-oriented 5 Series trim that includes commonly requested option packages (Comfort and Cold‑weather) without paying extra, and customers see predictable, fair dealer pricing for optional extras.",
+      "acceptance_criterion": "At least one factory-configured trim is offered with a base price below $50,000 (USD) that includes Comfort and Cold‑weather packages at no additional cost; the Comfort package must also be available standalone at a price at least 30% lower than today’s Comfort package price; for optional extras advertised nationally, price variation across US dealers is ≤5%.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-P01",
+        "SCOPE-P03",
+        "SCOPE-P04",
+        "SCOPE-P06",
+        "SCOPE-P09",
+        "SCOPE-N20"
+      ],
+      "assumptions": [
+        "A value trim with reduced feature set but key packages can be engineered at the target price",
+        "MSRP and dealer policies can be aligned to limit intra-market variation"
+      ],
+      "uncertainties": [
+        "Feasibility depends on material and regulatory cost pressures and regional tax/fee differences",
+        "Dealer incentives and independent dealer decisions may still affect final transaction price"
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Competitive financing, leasing and subscription options including heated seats at $15/month",
+      "description": "Customers are offered leasing, financing and subscription options that make the vehicle more affordable: a competitive lease option, a promotional 0% financing plan, and a heated seats subscription at a clear monthly price.",
+      "acceptance_criterion": "At launch provide: (a) at least one lease plan whose monthly payment is at least $50/month lower than a comparable Mercedes model (like‑for‑like trim) for the same term, (b) a 0% financing offer available on at least one model/trim for up to 36 months (subject to credit approval), and (c) a heated seats subscription option priced at $15 USD per month.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-P02",
+        "SCOPE-P08",
+        "SCOPE-P10"
+      ],
+      "assumptions": [
+        "Competitive comparator models and configurations will be defined for the lease comparison",
+        "Financing offers depend on retail financing partners and customer credit qualification",
+        "Subscription billing infrastructure and regional rules for recurring services are in place"
+      ],
+      "uncertainties": [
+        "Financing promotions may be constrained by macroeconomic conditions or finance partner risk appetite",
+        "Subscription availability and price may vary by market due to local regulation and tax"
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}

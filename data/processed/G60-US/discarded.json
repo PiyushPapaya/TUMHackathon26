@@ -1,9 +1,17 @@
 [
  {
-  "title": "Offer a vehicle-level option for a spare/run-flat solution (engineering specification — out of scope for this document)",
-  "reason": "This is an engineering/component decision (spare vs run-flat vs kit) rather than a direct customer-facing behavior specification; requires packaging/cost trade-offs and is therefore out of scope for customer-facing requirements.",
+  "title": "Off-road capability for the sedan is out of scope for the successor",
+  "reason": "Off-road capability is a vehicle positioning/hardware capability beyond the sedan's intended use; addressing it would require a different model or major platform changes.",
   "signal_ids": [
-   "SIG-G60-US-044"
+   "SIG-G60-US-045"
+  ]
+ },
+ {
+  "title": "Offer certified hands-off highway driving in supported jurisdictions (trial-level customer experience)",
+  "reason": "Scope guard: regulatory / certification wording ('certified'); out of scope per brief.",
+  "signal_ids": [
+   "SIG-G60-US-WEB-10",
+   "SIG-G60-US-024"
   ]
  }
 ]

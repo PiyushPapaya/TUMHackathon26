@@ -1,0 +1,224 @@
+{
+  "drafts": [
+    {
+      "title": "Seating ergonomics and reliable memory for tall occupants",
+      "description": "Tall drivers and rear passengers experience longer thigh support, competitive rear legroom, and dependable memory recall so they sit comfortably on every trip.",
+      "acceptance_criterion": "Front seat cushion provides at least 60 mm additional thigh support length versus the current baseline; rear-seat knee clearance (legroom) is >= 975 mm measured at SAE seating reference positions; seat memory restores the saved driver position within ≤2 cm linear displacement and ≤2° angular deviation in ≥98% of restore attempts after vehicle start or door close, across ambient temperatures -10°C to +40°C.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SCOPE-N02",
+        "SCOPE-N11",
+        "SCOPE-N14"
+      ],
+      "assumptions": [
+        "Current 5 Series baseline thigh length can be extended by ~60 mm without unacceptable packaging or seatback rake compromises.",
+        "975 mm rear knee clearance is approximately equal to or better than main competitors in the midsize luxury segment at successor launch.",
+        "Seat actuator and sensor accuracy needed to meet the memory tolerance is implementable within 3–5 years."
+      ],
+      "uncertainties": [
+        "Exact competitor rear-legroom figures at launch may differ from our assumption and could require small target adjustments.",
+        "Packaging trade-offs with optional equipment (panoramic roof, battery placement) may reduce achievable rear knee clearance in some variants."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Practical storage and trunk power for everyday bottles and portable coolers",
+      "description": "Customers can use real-world drink containers in the cabin and power a portable cooler from the trunk without workarounds.",
+      "acceptance_criterion": "Front cup holders securely accept and retain bottles up to 90 mm in diameter and upright 1.5 L bottles without tipping in ≥95% of typical driving maneuvers; trunk includes an accessible 12 V socket capable of delivering continuous 10 A to power portable coolers, usable without disassembling trunk lining.",
+      "category": "interior",
+      "signal_ids": [
+        "SCOPE-N03",
+        "SCOPE-N18"
+      ],
+      "assumptions": [
+        "Most commonly used bottles and 1.5 L containers have diameters ≤90 mm.",
+        "Typical portable coolers draw ≤10 A continuous; 10 A is sufficient for the majority of customer use cases."
+      ],
+      "uncertainties": [
+        "Some specialty coolers or accessories could draw >10 A and would need a higher-current option.",
+        "Trunk packaging and optional spare-tire configurations may constrain socket placement."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Exterior access works reliably in cold and everyday conditions (hands‑free tailgate and flush door handles)",
+      "description": "Customers can open the tailgate with a single hands-free gesture and use the door handles reliably even after freezing conditions, without repeated attempts or manual intervention.",
+      "acceptance_criterion": "Hands-free tailgate opens on the first valid foot gesture within ≤2.5 seconds in ≥95% of attempts across ambient temperatures -20°C to +40°C and after light precipitation; flush door handles operate (unlock and open on first user action) in ≥95% of cycles when tested after a 12‑hour exposure at -20°C with surface ice formation.",
+      "category": "exterior",
+      "signal_ids": [
+        "SCOPE-N05",
+        "SCOPE-N12"
+      ],
+      "assumptions": [
+        "Standardized test protocols for gesture detection and handle operation (timing, number of attempts) will be used in validation.",
+        "Environmental tests (freezing with ice formation) represent typical winter conditions experienced by customers in affected markets."
+      ],
+      "uncertainties": [
+        "Extreme environmental contamination (salt, thick ice buildup) beyond test conditions may still impair operation.",
+        "Some aftermarket covers or waxes applied to surfaces may affect freeze behavior."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Ambient lighting with broader color and brightness control",
+      "description": "Customers can personalize interior mood lighting with many colors, fine brightness steps and persistent presets.",
+      "acceptance_criterion": "Ambient lighting offers at least 64 distinct color choices, at least 10 discrete brightness levels, and at least 3 user-configurable presets; per-zone lighting settings persist across ignition cycles and apply to front and rear zones independently.",
+      "category": "interior",
+      "signal_ids": [
+        "SCOPE-N07"
+      ],
+      "assumptions": [
+        "64 colors and 10 brightness levels provide noticeably finer control versus current offering and match customer expectations.",
+        "Per-zone persistence is implemented in user profile storage that survives normal vehicle power cycles."
+      ],
+      "uncertainties": [
+        "Additional colors and zones may have small impacts on supply chain (LED modules) and software UI complexity."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Request for front‑end pedestrian protection (regulatory compliance)",
+      "description": "Customers request that the vehicle front end complies with the new EU pedestrian protection regulation.",
+      "acceptance_criterion": "This request concerns regulatory compliance and therefore is out of scope for product-level customer-facing requirements in this document; action tracked as a homologation/regulation item.",
+      "category": "exterior",
+      "signal_ids": [
+        "SCOPE-R02"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulation/homologation request (EU pedestrian protection); certification and legal compliance tasks are out of scope for customer-facing product requirements."
+    },
+    {
+      "title": "Request for rear‑seat airbag FMVSS 208 certification",
+      "description": "Customers ask that the rear-seat airbag obtains FMVSS 208 certification.",
+      "acceptance_criterion": "This request concerns a certification/regulatory approval and is out of scope for customer-facing product requirements in this document; action tracked as a homologation/regulation item.",
+      "category": "interior",
+      "signal_ids": [
+        "SCOPE-R04"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulation/certification request (FMVSS 208); legal type-approval and certification activities are out of scope."
+    },
+    {
+      "title": "Request for headlight beam pattern compliance across markets",
+      "description": "Customers request that headlights follow ECE R112 beam pattern rules in every market.",
+      "acceptance_criterion": "This request concerns regulatory beam-pattern requirements and is out of scope for customer-facing product requirements in this document; action tracked as a homologation/regulation item.",
+      "category": "exterior",
+      "signal_ids": [
+        "SCOPE-R09"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulation/homologation request (ECE R112); certification and regulation compliance are out of scope."
+    },
+    {
+      "title": "Request for specific volume-knob component (12-bit magnetic encoder)",
+      "description": "Customers asked for a specific 12-bit magnetic rotary encoder for the volume knob.",
+      "acceptance_criterion": "This is an engineering/component specification request and therefore out of scope for customer-facing requirements; engineering to evaluate and respond with a component-level decision.",
+      "category": "interior",
+      "signal_ids": [
+        "SCOPE-E02"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Engineering specification (specific component request); component-level choices are out of scope for customer-facing requirements."
+    },
+    {
+      "title": "Request for 4.5 mm laminated side glass",
+      "description": "Customers asked that side windows use 4.5 mm thick laminated glass.",
+      "acceptance_criterion": "This is a specific material/thickness request and therefore out of scope for customer-facing requirements; engineering and NVH/weight teams to evaluate material trade-offs.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SCOPE-E05"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Engineering specification (glass thickness/material); component and materials choices are out of scope."
+    },
+    {
+      "title": "Request for seat-foam density of 55 kg/m³",
+      "description": "Customers asked that the seat cushion use foam with density of 55 kg per cubic meter.",
+      "acceptance_criterion": "This is a specific material density request and therefore out of scope for customer-facing requirements; seat comfort engineering to evaluate foam grade trade-offs.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SCOPE-E09"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Engineering specification (material density); component/material requests are out of scope."
+    },
+    {
+      "title": "Request for residual value guarantee (business request)",
+      "description": "Customers request BMW guarantees a 60% residual value after five years.",
+      "acceptance_criterion": "This is a commercial/financial request and is out of scope for product technical requirements; business/finance team to address.",
+      "category": "quality_perception",
+      "signal_ids": [
+        "SCOPE-P05"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Business/commercial request (residual value guarantee); pricing and guarantees are out of scope for product requirements."
+    },
+    {
+      "title": "Request to cut production cost per car by 8% (business request)",
+      "description": "Customers asked that BMW cuts production cost per car by 8 percent.",
+      "acceptance_criterion": "This is a production-cost / business request and is out of scope for customer-facing product requirements; manufacturing and finance to evaluate.",
+      "category": "quality_perception",
+      "signal_ids": [
+        "SCOPE-P07"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Business/production-cost request; cost targets and manufacturing efficiency are out of scope."
+    }
+  ]
+}

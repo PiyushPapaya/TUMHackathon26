@@ -1,0 +1,308 @@
+{
+  "drafts": [
+    {
+      "title": "Voice assistant reliably executes common driving commands",
+      "description": "While driving, customers can speak common navigation, climate and media commands and the car executes them reliably without needing to repeat or correct the command.",
+      "acceptance_criterion": "In a real-driving noise test (urban and highway noise profiles) the voice assistant correctly recognizes and executes at least 95% of a standardized set of 50 common driving commands (navigation destination entry, call control, media control, climate setpoints) within 3 seconds.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N01"
+      ],
+      "assumptions": [
+        "Test languages: English (US) and other major languages for the market tested.",
+        "Cellular connectivity is available for cloud-based recognition where applicable; offline recognition may be used as fallback.",
+        "The standardized command set is representative of top 50 customer voice intents."
+      ],
+      "uncertainties": [
+        "Voice recognition performance may vary with aftermarket windshield coatings, heavy accents, or severe background noise (worksites).",
+        "Some improvements may rely on cloud models and therefore on connectivity."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Wireless charging maintains uninterrupted charging for common phones",
+      "description": "When a customer places a compatible phone on the in‑car wireless pad during a drive, charging continues reliably and does not stop unexpectedly.",
+      "acceptance_criterion": "Across 10 representative phone models (including popular iOS and Android models) and common thin protective cases (<=3 mm), the charging pad sustains charging without interruption in at least 95% of 30‑minute driving sessions in vehicle vibration and temperature conditions.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N04"
+      ],
+      "assumptions": [
+        "Phones tested are running manufacturer-approved wireless charging firmware and support the Qi standard.",
+        "Typical protective cases are <=3 mm thickness and do not contain metal.",
+        "Interference from aftermarket accessories is not included in the baseline test."
+      ],
+      "uncertainties": [
+        "Some phone models or firmware updates may reduce compatibility after vehicle launch.",
+        "MagSafe-style alignment requirements for some phones may affect results."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "HUD and center display remain legible in bright sunlight and glare",
+      "description": "Customers can read primary driving information and glance information on the head‑up display and read key content on the center screen when driving in bright sunlight without struggling with glare.",
+      "acceptance_criterion": "In a daylight glare usability test (sun angle and luminance representative of direct sunlight), at least 90% of test participants can correctly read primary HUD content (speed, next navigation cue) within 1.5 seconds and at least 90% can read key center‑screen driving/navigation information within 2.5 seconds from the normal driving seating position.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N08",
+        "SCOPE-N19"
+      ],
+      "assumptions": [
+        "Test uses standardized lighting rigs that simulate direct sun at typical driving angles.",
+        "Participants use normal daytime eyewear (sunglasses included) representative of the market.",
+        "HUD and screen brightness controls are set to automatic and allowed to increase to their design maximum for the test."
+      ],
+      "uncertainties": [
+        "Extreme aftermarket window tint or polarized sunglasses may still affect legibility.",
+        "Absolute luminance achievable by displays may be constrained by power/thermal tradeoffs."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Tactile climate controls for eyes‑free adjustments",
+      "description": "Customers can adjust cabin temperature and fan speed by touch without needing to look at the screen, using tactile controls that are intuitive to find from the driving position.",
+      "acceptance_criterion": "In a blind (eyes-occluded) user test, 90% of participants can change cabin temperature by ±2°C and change fan speed by one level within 3 seconds by touch alone.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-N13"
+      ],
+      "assumptions": [
+        "Tests are performed from the standard driver seating position and with typical driving gloves not thicker than 2 mm.",
+        "Controls use tactile differences (shape, surface, haptic feedback) that are discoverable by touch."
+      ],
+      "uncertainties": [
+        "Extreme glove thickness or unusual hand sizes may change results.",
+        "Some climate features may remain on-screen for advanced configuration; only primary temperature and fan must be accessible by touch."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Cold‑weather package includes heated steering wheel and is clearly represented in configurator",
+      "description": "Customers can choose a Cold‑Weather package that includes a heated steering wheel (no separate mandatory option) and see clearly in the online configurator and at dealerships that the steering wheel is included in that package.",
+      "acceptance_criterion": "The Cold‑Weather package includes the heated steering wheel for all listed trims in the US configurator and dealer documentation; 100% of configurator builds that include Cold‑Weather package show the heated steering wheel as included without additional separate option.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-N20",
+        "SCOPE-P09"
+      ],
+      "assumptions": [
+        "This requirement applies to the US market for the successor vehicle launch.",
+        "Dealer ordering system and online configurator are synchronized to show package contents."
+      ],
+      "uncertainties": [
+        "Regional regulatory or homologation differences may affect feature availability in other markets.",
+        "Some limited edition or performance trims may have different package structures."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Transparent configurator and option/subscription management in car and app",
+      "description": "Customers can configure the vehicle with clear, itemized information about which options are one‑time purchases, which are subscriptions, and see an estimated monthly payment for a standard finance or lease term so they can compare total cost and option inclusion without confusion.",
+      "acceptance_criterion": "The online/configurator flow displays an itemized cost line for every optional package and accessory, flags subscriptions distinctly, and provides an estimated monthly payment for a 36‑month lease or 60‑month finance plan; in a usability study 90% of participants rate the configurator as 'clear' (Likert 4/5 or higher) for option and cost transparency. Subscription options can be activated from the in‑car UI or companion app within two user actions.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-P01",
+        "SCOPE-P02",
+        "SCOPE-P03",
+        "SCOPE-P04",
+        "SCOPE-P06",
+        "SCOPE-P08",
+        "SCOPE-P10"
+      ],
+      "assumptions": [
+        "Monthly payment estimates assume a configurable down payment and a defined credit term (36-month lease, 60-month finance) and are clearly marked as estimates.",
+        "Subscription activation requires account authentication in the app or vehicle and available payment method.",
+        "Competitor lease comparisons are provided as an optional view but are not mandated as part of the core configurator."
+      ],
+      "uncertainties": [
+        "Local tax, fees and dealer incentives can change the final monthly payment and may differ from the displayed estimate.",
+        "Third-party subscription payment processors and varying regional regulations may affect activation flows."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "CCC (China) infotainment certification request (informational, out of scope)",
+      "description": "Customers request that the infotainment system passes China Compulsory Certification (CCC) for sales in the Chinese market.",
+      "acceptance_criterion": "Captured as a regulatory requirement for legal/market teams; engineering acceptance criteria and certification activities to be defined by regulatory program.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-R05"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Certification/regulatory requirements are out of scope for product feature requirements; logged for legal and homologation teams."
+    },
+    {
+      "title": "GDPR compliance for driver profile (informational, out of scope)",
+      "description": "Customers ask that their stored driver profiles satisfy GDPR data storage and deletion requirements.",
+      "acceptance_criterion": "Captured as a privacy/legal requirement to be fulfilled by legal and backend teams; implementation details and acceptance tests owned by compliance.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-R08"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulation and legal compliance are out of scope for product requirement drafts; logged for privacy/compliance owners."
+    },
+    {
+      "title": "Requested cockpit chip (Snapdragon 8295) (engineering spec, out of scope)",
+      "description": "Customers specifically asked that the cockpit computer use the Snapdragon 8295 chip.",
+      "acceptance_criterion": "This is an engineering component request; platform and supplier decisions are handled by engineering and procurement.",
+      "category": "infotainment_digital",
+      "signal_ids": [
+        "SCOPE-E04"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Specific component/part requests are engineering specifications and out of scope for customer-facing requirement drafts; logged for engineering consideration."
+    },
+    {
+      "title": "Base price target below $50,000 (pricing/business case, out of scope)",
+      "description": "Customers asked that the base price be lowered below 50,000 USD.",
+      "acceptance_criterion": "Captured as a pricing/business request for product planning and finance; detailed pricing decisions are out of scope for product requirements.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-P01"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Pricing and business-case targets are out of scope for product requirements; logged for pricing/strategy teams."
+    },
+    {
+      "title": "Competitively cheaper lease than Mercedes (pricing request, out of scope)",
+      "description": "Customers requested a monthly lease rate cheaper than the Mercedes competitor.",
+      "acceptance_criterion": "Captured for pricing and competitive strategy teams to evaluate; not a product technical requirement.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-P02"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Lease price positioning is a business/pricing decision and out of scope for customer-facing product requirements."
+    },
+    {
+      "title": "Request to include all options in base price (pricing/business case, out of scope)",
+      "description": "Customers asked that all option packages be included at no extra charge in the base price.",
+      "acceptance_criterion": "Captured as a pricing/packaging request for commercial teams; not implemented as a product technical requirement.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-P03"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Broad pricing model changes are out of scope for product requirements; logged for commercial/strategy teams."
+    },
+    {
+      "title": "Request to reduce Comfort package cost by 30% (pricing/business case, out of scope)",
+      "description": "Customers asked that the Comfort package be discounted by 30 percent.",
+      "acceptance_criterion": "Captured for pricing and commercial evaluation; product requirements will reflect package contents but not mandated price changes.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-P04"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Package pricing is a commercial decision and out of scope for product requirements."
+    },
+    {
+      "title": "Request to lower dealer margin on optional extras (business/pricing, out of scope)",
+      "description": "Customers asked that dealers earn a lower margin on optional extras.",
+      "acceptance_criterion": "Captured for distribution and commercial teams; not a product feature requirement.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-P06"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Dealer margin and commercial agreements are out of scope for product requirement drafts."
+    },
+    {
+      "title": "Requested subscription price for heated seats at $15/month (pricing request, out of scope)",
+      "description": "Customers asked that heated seats be offered as a subscription at 15 USD per month.",
+      "acceptance_criterion": "Captured as a pricing suggestion for subscription product and commercial teams; exact subscription pricing is out of scope for product requirements.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-P08"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Specific subscription price points are commercial decisions and out of scope for product requirements."
+    },
+    {
+      "title": "Request for 0% financing offer (pricing/finance, out of scope)",
+      "description": "Customers asked that BMW offers 0 percent financing on the new model.",
+      "acceptance_criterion": "Captured for finance and commercial teams to evaluate; financing offers are out of scope for product functional requirements.",
+      "category": "variants_packages",
+      "signal_ids": [
+        "SCOPE-P10"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Financing offers and promotional rates are commercial decisions and out of scope for product requirements."
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "drafts": [
+    {
+      "title": "Keep and improve the car’s smooth, confident ride while removing inconsistent damping",
+      "description": "Customers experience a smooth, comfortable ride and composed, confident handling on local roads and motorways. The successor must preserve today’s high perceived ride comfort and address reports of harsh or inconsistent damping so everyday and long trips feel pleasant and reassuring.",
+      "acceptance_criterion": "In a mixed-surface driving route (urban, B-roads, motorway) with a representative sample of 50 test drivers, ≥90% of drivers rate overall ride comfort and handling ≥4/5 and objective comfort metrics (ride vibration ISO metric or equivalent) do not degrade compared with the current model in the same test configuration.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-001",
+        "SIG-F70-EU-002",
+        "SIG-F70-EU-006",
+        "SIG-F70-EU-010",
+        "SIG-F70-EU-031",
+        "SIG-F70-EU-035",
+        "SIG-F70-EU-038"
+      ],
+      "assumptions": [
+        "Successor will be evaluated in comparable trim/wheel sizes to current customer fleet for a fair comparison.",
+        "Test route and driver panel are representative of typical EU customer use (mixed surfaces)."
+      ],
+      "uncertainties": [
+        "Customer perception may vary with optional wheel/tire packages; larger wheels may reduce perceived comfort.",
+        "Road surface variability between test regions could affect objective metrics."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Deliver consistently punchy, responsive acceleration and predictable torque delivery",
+      "description": "When accelerating the car feels responsive and lively across driving conditions; customers do not experience weak or delayed torque, inconsistent power delivery or torque steer that undermines engagement.",
+      "acceptance_criterion": "In blinded dynamic acceleration and real-world driving tests with 40 drivers, ≥90% of testers rate 'acceleration responsiveness and torque delivery' ≥4/5; no more than 2% of test runs exhibit noticeable torque steer or prolonged throttle‑to‑power delay as reported by drivers.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-005",
+        "SIG-F70-EU-021",
+        "SIG-F70-EU-044"
+      ],
+      "assumptions": [
+        "Performance targets are applied per engine/transmission variant; base variants will be tuned for responsiveness appropriate to their segment.",
+        "Test fleet includes representative conditions (cold start, uphill, varied fuel/charge)."
+      ],
+      "uncertainties": [
+        "Perceived responsiveness can be influenced by driver expectations and competitor benchmarking.",
+        "Hardware constraints (e.g., available propulsion options) may limit achievable acceleration in some low-cost variants."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Ensure gearbox shifts are smooth, predictable and free of jerking or slipping",
+      "description": "Customers experience seamless, effortless gear changes during city driving, pull‑aways and deceleration; the transmission should not produce hopping, lurching, loud juddering or delayed engagement that frustrates owners.",
+      "acceptance_criterion": "In urban stop‑start and launch tests with 50 drivers, ≥95% of drivers rate 'shift smoothness and predictability' ≥4/5; in repeated launch tests no more than 1% of launches show slipping/hopping or audible judder as reported by testers.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-016",
+        "SIG-F70-EU-044",
+        "SIG-F70-EU-024"
+      ],
+      "assumptions": [
+        "Evaluation covers the commonly-specified automatic transmission variants offered in the market.",
+        "Software calibrations and learning strategies available at launch are applied during tests."
+      ],
+      "uncertainties": [
+        "Field variations (wear, temperature, fuel quality) can reveal issues not observed in initial validation.",
+        "Some customer reports may be linked to early calibration or particular service histories."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Provide progressive, confidence‑inspiring brakes and user‑configurable regenerative braking",
+      "description": "Braking response and modulation feel linear and predictable to the driver: brakes do not 'do nothing' or 'grab suddenly'. Regenerative braking is adjustable so owners can choose a smooth feel that matches their preference and avoid abrupt single‑pedal behaviour they cannot tune.",
+      "acceptance_criterion": "Regenerative braking offers at least three selectable levels including near‑zero; in repeatable brake modulation tests and a 40‑driver panel ≥90% of drivers rate brake modulation and predictability ≥4/5 and report no sudden grab or uncommanded hard application during normal driving.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-026"
+      ],
+      "assumptions": [
+        "If an electrified powertrain is offered, it supports multiple, user-selectable regen levels.",
+        "Brake-by-wire characteristics and feel tuning are validated across representative temperatures and battery states of charge."
+      ],
+      "uncertainties": [
+        "Some perceived harshness may be caused by brake wear, corrosion or aftermarket pads not controlled in tests.",
+        "Customer preference for regen strength varies by market and driving style."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make driver assistance features reliable over time and robust to software updates",
+      "description": "Customers can rely on driver assistance features to keep functioning after software updates and over the vehicle lifecycle; features should not disappear or become less capable after updates and dealer support should be able to resolve issues quickly when they occur.",
+      "acceptance_criterion": "In an OTA update test sequence (minimum 5 sequential updates on pre-production vehicles across 3 regions) there must be zero loss of previously functioning driver assistance features in acceptance testing; post‑launch field target: ≤1 incident of feature disappearance or functional regression per 10,000 vehicles per year, and dealer first‑visit resolution rate ≥90% for software‑related assistance cases.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SIG-F70-EU-020",
+        "SIG-F70-EU-034",
+        "SIG-F70-EU-012"
+      ],
+      "assumptions": [
+        "Backend services, update rollout processes and dealer diagnostic tools are aligned with the vehicle software architecture at launch.",
+        "Monitoring and rollback mechanisms are implemented to detect and correct regressions quickly."
+      ],
+      "uncertainties": [
+        "Third‑party components and aftermarket interactions could cause some field incidents.",
+        "Regulatory regimes may affect permitted functionality in different markets and influence incident counts."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Make driving modes meaningful and intuitive while keeping the existing strengths",
+      "description": "When the driver selects a driving mode the difference in steering, throttle response, gearbox behaviour and (when applicable) sound should be noticeable, consistent with mode names and easy to understand; preserve the aspects customers already praise while fixing cases where modes feel superficial or inconsistent.",
+      "acceptance_criterion": "In randomized drive comparisons, ≥90% of drivers can identify selected driving modes and report the expected change in vehicle behaviour with a rating ≥4/5; no more than 5% of drivers report modes as confusing or ineffective.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-037",
+        "SIG-F70-EU-010"
+      ],
+      "assumptions": [
+        "Mode names and marketing will clearly describe the expected differences to avoid mismatched expectations.",
+        "Mode calibrations are validated across typical option combinations (steering, suspension, powertrain)."
+      ],
+      "uncertainties": [
+        "Customer expectations for what each mode should deliver may differ across markets and vehicle generations.",
+        "Optional hardware (e.g., adaptive dampers) can change the magnitude of the differences perceived."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Improve engine acoustics so noise and sound are pleasant and non‑intrusive",
+      "description": "Engine sound and cabin acoustic behaviour should feel refined: occupants should not find engine noise intrusive during city driving or at motorway speeds, and engine acoustics should match customer expectations for a premium compact car.",
+      "acceptance_criterion": "In controlled urban and motorway drives with 40 participants, ≥90% of drivers/passengers rate engine noise as 'pleasant and not intrusive' (≥4/5) and subjective complaints about intrusive engine acoustics are reduced by ≥80% versus the current model sample.",
+      "category": "driving_experience",
+      "signal_ids": [
+        "SIG-F70-EU-040"
+      ],
+      "assumptions": [
+        "Cabin sound insulation and powertrain acoustic tuning are considered during vehicle development.",
+        "Target ratings account for variability in optional equipment (wheels, tires)."
+      ],
+      "uncertainties": [
+        "Perception of 'pleasant' sound is subjective and influenced by cultural preferences and prior vehicle experience.",
+        "Acoustic improvements may be constrained by packaging or weight targets."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Offer an EV variant with a step‑change real‑world driving range to meet evolving expectations",
+      "description": "For customers choosing an electric variant, the vehicle should deliver a real‑world driving range that meets customer expectations for midsize passenger EVs in the late 2020s so owners can complete typical multi‑day journeys without frequent recharging.",
+      "acceptance_criterion": "In independent real‑world mixed‑route validation tests, the EV variant achieves ≥450 km real‑world driving range on a single charge (representative mixed driving cycle), measured on a production representative vehicle.",
+      "category": "range_charging",
+      "signal_ids": [
+        "SIG-F70-EU-WEB-08",
+        "SIG-F70-EU-043"
+      ],
+      "assumptions": [
+        "Battery energy density continues to improve along current industry trends and cell supply at expected costs is available when the successor launches.",
+        "Market demand and charging infrastructure support longer-range EVs in target EU markets."
+      ],
+      "uncertainties": [
+        "Achieving this range may depend on acceptable vehicle weight and packaging trade-offs.",
+        "Real‑world range is sensitive to ambient temperature, load and driving style; the stated number is a representative target, not a guaranteed range under all conditions."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Enable conditional automated motorway driving up to 95 km/h when regulations and approvals permit",
+      "description": "When and where permitted by regulation and market readiness, the vehicle should offer a conditional automated driving experience on motorways that reduces driver workload and stress during qualifying conditions (e.g., congested, steady‑speed motorway segments).",
+      "acceptance_criterion": "In controlled motorway validation on qualifying routes, the system can operate without continuous manual steering input at speeds up to 95 km/h for segments of at least 15 minutes in 95% of qualifying trials without requiring an immediate takeover; driver state monitoring and handback procedures function as designed during the trials.",
+      "category": "driver_assistance",
+      "signal_ids": [
+        "SIG-F70-EU-WEB-11",
+        "SIG-F70-EU-034"
+      ],
+      "assumptions": [
+        "Regulatory approvals for conditional automated driving up to 95 km/h are available in target markets at or before product launch.",
+        "Sufficient sensor, compute and infrastructure capabilities are available and certified for the chosen feature set.",
+        "Users accept documented limitations and handback procedures as part of the feature's operating design domain."
+      ],
+      "uncertainties": [
+        "Regulatory pace and differing country approvals may limit availability at launch.",
+        "Customer acceptance of conditional automation will depend on perceived reliability and local traffic conditions."
+      ],
+      "effort": "L",
+      "forward_looking": true,
+      "horizon": "next_gen",
+      "in_scope": true,
+      "scope_reason": ""
+    }
+  ]
+}

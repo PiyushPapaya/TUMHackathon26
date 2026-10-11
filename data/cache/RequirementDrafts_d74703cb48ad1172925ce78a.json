@@ -1,0 +1,283 @@
+{
+  "drafts": [
+    {
+      "title": "Front seats: longer thigh support, lasting cushion comfort and reliable memory restore",
+      "description": "Tall drivers can extend front seat thigh support and keep a consistent, supportive cushion feel over years; saved seat positions are restored reliably every time.",
+      "acceptance_criterion": "Front seats provide at least 80 mm of adjustable thigh-support extension; seat-cushion compressed thickness retains >=85% of its original thickness after an equivalent of 100,000 usage cycles (laboratory durability test); and saved seating positions are restored within ±2 cm linear and ±2° angular deviation on at least 99 out of 100 memory recalls.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SCOPE-N02",
+        "SCOPE-E09",
+        "SCOPE-N11"
+      ],
+      "assumptions": [
+        "Industry-standard seat durability protocol exists to simulate 100,000 cycles and measure compressed thickness.",
+        "80 mm extension is achievable within current vehicle packaging for the 5 Series successor without degrading other ergonomics.",
+        "Seat memory system can store position offsets per user and retain them across power cycles."
+      ],
+      "uncertainties": [
+        "Actual long-term wear depends on user weight distribution and usage patterns.",
+        "Achieving both large adjustable range and high long-term durability may require material or design trade-offs affecting seat weight or cost."
+      ],
+      "effort": "L",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Cup holders that fit common bottles and travel mugs",
+      "description": "Cup holders accept and secure common bottled beverages and popular travel mugs without needing adapters.",
+      "acceptance_criterion": "Cup holders accept cylindrical vessels up to 90 mm diameter and retain them securely under 0.3 g lateral acceleration in a standardized fixture; in a 100-sample fit test using market bottles and travel mugs, fit rate must be 100%.",
+      "category": "interior",
+      "signal_ids": [
+        "SCOPE-N03"
+      ],
+      "assumptions": [
+        "90 mm covers the large majority of common travel mugs and 1.5 L bottle base diameters found in the US market.",
+        "Retention test at 0.3 g represents typical cornering loads for passenger comfort testing."
+      ],
+      "uncertainties": [
+        "Some very large aftermarket tumblers may exceed 90 mm and will not be accommodated."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Hands-free tailgate opens reliably on the first attempt",
+      "description": "Customers can open the hands-free tailgate with a single, natural gesture without repeated attempts.",
+      "acceptance_criterion": "First-attempt open success rate of at least 95% measured over 100 consecutive real-user trials using standard foot gestures performed at 20–50 cm from the bumper, across at least 10 different users, with trunk load up to 20 kg.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SCOPE-N05"
+      ],
+      "assumptions": [
+        "Trials are conducted on dry pavement and normal footwear; extreme footwear (e.g., very thick-soled snow boots) are excluded.",
+        "Users perform a single deliberate foot motion in front of the center of the bumper."
+      ],
+      "uncertainties": [
+        "Performance may degrade with heavy bumper dirt/icing or when users stand outside the 20–50 cm window."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Flush door handles operate reliably in freezing conditions",
+      "description": "Flush door handles open on the first try in cold and icy weather so customers can access the car without manual intervention or damage.",
+      "acceptance_criterion": "After exposure to -10°C ambient conditions and up to 3 mm of ice accretion in a controlled freeze-thaw lab test, flush door handles must operate on the first attempt in at least 98% of 50 test cycles.",
+      "category": "exterior",
+      "signal_ids": [
+        "SCOPE-N12"
+      ],
+      "assumptions": [
+        "-10°C and 3 mm ice represent typical severe winter conditions in many US markets; harsher conditions may require additional measures.",
+        "Test includes salt contamination representative of winter road use."
+      ],
+      "uncertainties": [
+        "Extreme ice thicknesses or prolonged sub-zero exposure may still impair operation and could require active de-icing measures."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Ambient lighting with expanded color palette and brightness steps",
+      "description": "Customers can personalise interior ambient lighting with many distinct colors and fine-grained brightness control saved to their user profile.",
+      "acceptance_criterion": "System offers at least 64 distinct colors and 10 discrete brightness levels per lighting zone, with chosen color/brightness saved to the user's profile and applied within 1 second of selection.",
+      "category": "interior",
+      "signal_ids": [
+        "SCOPE-N07"
+      ],
+      "assumptions": [
+        "LED and control hardware can support 64-color mixing per zone within cost targets.",
+        "User profiles persist across vehicle power cycles."
+      ],
+      "uncertainties": [
+        "Perceived color accuracy can vary with interior trim materials and viewing angles."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Rear seating: legroom at or above competitive class benchmarks",
+      "description": "Rear passengers enjoy legroom that matches or exceeds main competitors in the executive sedan class.",
+      "acceptance_criterion": "Rear knee clearance of at least 900 mm measured from the rear seat cushion reference point to the front-seat back in the SAE/industry standard seating test with the front seat set for a 95th-percentile driver.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SCOPE-N14"
+      ],
+      "assumptions": [
+        "900 mm represents a competitive-class benchmark based on current market measurements; final target will be validated against competitor data during program definition.",
+        "Measurement uses an agreed industry-standard method for knee clearance."
+      ],
+      "uncertainties": [
+        "Actual packaging choices (battery for hybrids, wheelbase variants, or optional equipment) may reduce achievable legroom on some trims."
+      ],
+      "effort": "M",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Accessible 12 V power socket in the trunk for portable coolers and accessories",
+      "description": "Customers can plug a cooler or similar accessory into a consumer 12 V socket located in the trunk without removing cargo.",
+      "acceptance_criterion": "A 12 V socket is installed in the trunk, accessible without removing typical cargo, and delivers up to 12 V at 10 A (120 W) in accessory or engine-off accessory mode per vehicle electrical architecture.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SCOPE-N18"
+      ],
+      "assumptions": [
+        "Vehicle electrical architecture supports an accessory power feed to the trunk and allows up to 10 A draw without harming starting battery in normal use.",
+        "Socket location is reachable with common cooler cable lengths."
+      ],
+      "uncertainties": [
+        "Continuous high-power draws while the vehicle is parked may trigger battery-protection strategies limiting available power."
+      ],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": true,
+      "scope_reason": ""
+    },
+    {
+      "title": "Request for front-end compliance with new EU pedestrian protection regulation",
+      "description": "Customers asked that the vehicle front end meets the new EU pedestrian protection regulation.",
+      "acceptance_criterion": "Customer request: front end design complies with the new EU pedestrian protection regulation in applicable markets.",
+      "category": "exterior",
+      "signal_ids": [
+        "SCOPE-R02"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "This is a regulation / homologation requirement requested by customers; regulatory compliance and certification planning are out of scope for a customer-facing product requirement."
+    },
+    {
+      "title": "Request that rear-seat airbags obtain FMVSS 208 certification",
+      "description": "Customers asked that the rear-seat airbag system be certified to FMVSS 208.",
+      "acceptance_criterion": "Customer request: rear-seat airbag system meets FMVSS 208 certification in applicable markets.",
+      "category": "interior",
+      "signal_ids": [
+        "SCOPE-R04"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "This is a regulatory / certification request; certification is out of scope for customer-facing product requirements."
+    },
+    {
+      "title": "Request that headlights follow ECE R112 beam rules in all markets",
+      "description": "Customers asked that the headlight beam pattern conforms to ECE R112 in every market.",
+      "acceptance_criterion": "Customer request: headlights conform to ECE R112 beam pattern rules where applicable.",
+      "category": "exterior",
+      "signal_ids": [
+        "SCOPE-R09"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "Regulatory requirement request; homologation and market-specific beam compliance are out of scope for customer-facing requirements."
+    },
+    {
+      "title": "Request for a 12-bit magnetic rotary encoder for the volume knob (engineering spec)",
+      "description": "Customers asked that the volume knob uses a 12-bit magnetic rotary encoder (specific component / resolution wish).",
+      "acceptance_criterion": "Customer request: volume knob uses a 12-bit magnetic rotary encoder.",
+      "category": "interior",
+      "signal_ids": [
+        "SCOPE-E02"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "This is a request for a specific component and resolution (engineering specification); component-level specs are out of scope for customer-facing requirements."
+    },
+    {
+      "title": "Request for 4.5 mm laminated side windows (engineering spec)",
+      "description": "Customers asked that side windows use 4.5 mm thick laminated glass.",
+      "acceptance_criterion": "Customer request: side windows use 4.5 mm laminated glass.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SCOPE-E05"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "This is a request for a specific glass thickness (engineering specification); component-level specifications are out of scope for customer-facing requirements."
+    },
+    {
+      "title": "Request for seat cushion foam density of 55 kg/m³ (engineering spec)",
+      "description": "Customers asked that seat cushions be made from foam with a density of 55 kg per cubic meter.",
+      "acceptance_criterion": "Customer request: seat cushion foam density of 55 kg/m³.",
+      "category": "comfort_space",
+      "signal_ids": [
+        "SCOPE-E09"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "This is a material/engineering specification; specific material densities are out of scope for customer-facing product requirements."
+    },
+    {
+      "title": "Request for residual value guarantee of 60% after five years (pricing / commercial)",
+      "description": "Customers asked that BMW guarantees a residual value of 60% after five years.",
+      "acceptance_criterion": "Customer request: residual value guarantee of 60% after five years.",
+      "category": "quality_perception",
+      "signal_ids": [
+        "SCOPE-P05"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "This is a commercial/price guarantee request (residual value) and is out of scope for product feature requirements."
+    },
+    {
+      "title": "Request that BMW cut production cost per car by 8% (business / cost target)",
+      "description": "Customers asked BMW to reduce production cost per car by 8 percent.",
+      "acceptance_criterion": "Customer request: production cost per car reduced by 8% compared to current baseline.",
+      "category": "quality_perception",
+      "signal_ids": [
+        "SCOPE-P07"
+      ],
+      "assumptions": [],
+      "uncertainties": [],
+      "effort": "S",
+      "forward_looking": false,
+      "horizon": "today",
+      "in_scope": false,
+      "scope_reason": "This is a production cost / business target request and is out of scope for product feature requirements."
+    }
+  ]
+}
