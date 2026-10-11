@@ -1,81 +1,89 @@
-# Deployment und Demo-Start
+# Running ReSpec
 
-Kurz: **Frontend auf Vercel**, **Backend auf Render** (beide automatisch aus GitHub `main`).
-Die Pipeline-Ergebnisse (`data/processed/`) liegen seit der Freigabe der Orga im Repo (die BMW-Rohdaten nicht),
-darum kann Render das Backend direkt aus dem Repo starten. Lokal (A) bleibt das Netz für die Jury-Demo.
+Short version: locally with two commands, or online with the **frontend on Vercel** and the
+**backend on Render**, both deployed automatically from `main`. The processed pipeline results
+(`data/processed/`) are in the repo, the raw BMW files are not, so Render can start the backend
+straight from the repo.
 
-## A) Lokal in einem Befehl (für Jury-Demo und Probe)
+## A) Locally (safest for a demo)
 
 ```bash
-bash scripts/start_demo.sh        # Mac, Linux, Git-Bash auf Windows
+bash scripts/start_demo.sh        # macOS, Linux, Git Bash on Windows
 ```
 
-Das Skript startet das Backend auf `:8000`, baut das Frontend als Produktions-Build und startet es auf `:3000`.
-Auf Windows ohne Git-Bash: zwei Terminals.
+This starts the backend on `:8000`, builds the frontend for production and serves it on `:3000`.
+On Windows without Git Bash, use two terminals:
 
 ```powershell
-python -m uvicorn main:app --app-dir src/backend --port 8000
+$env:DEMO_MODUS="true"; python -m uvicorn main:app --app-dir src/backend --port 8000
 cd src/frontend; npm ci; npm run build; npx next start -p 3000
 ```
 
-Voraussetzung: `.env` aus `.env.example` kopiert, `data/processed/` vorhanden (Pipeline gelaufen oder von Piyush bekommen).
-Ohne OpenAI-Key: `DEMO_MODUS=true` in `.env` (Antworten kommen aus `data/demo_cache/`, Prompt-Linse arbeitet dann mit Regeln).
+You need a `.env` copied from `.env.example`. Without an OpenAI key, set `DEMO_MODUS=true`:
+answers then come from `data/demo_cache/` and the prompt lens falls back to keyword rules.
 
-## B) Online: Backend auf Render, Frontend auf Vercel
+The frontend talks to `http://localhost:8000` by default. If your backend runs elsewhere, set
+`NEXT_PUBLIC_API_URL` (for example in `src/frontend/.env.local`) **before** `npm run build`,
+because Next.js bakes it into the build.
 
-**Warum zwei Dienste:** Das Backend hält PM-Status im RAM und schreibt `audit.db`. Das braucht einen Prozess, der
-dauerhaft läuft (`core/single_process.py`). Vercel-Funktionen starten ständig neu, dabei gingen Entscheidungen und
-Prüfpfad verloren. Verworfen: FastAPI als Vercel-Funktion (Zustand bricht) und fest eingebaute Daten in der UI
-(Entscheiden, Gewichte, Linse gingen nicht mehr).
+## B) Online: backend on Render, frontend on Vercel
 
-**Schritt 1: Backend (zuerst, weil Vercel dessen Adresse braucht)**
-1. render.com → *New* → *Blueprint* → GitHub-Repo wählen. Render liest `render.yaml` im Root.
-2. Nach `OPENAI_API_KEY` gefragt: eigenen Key eintragen (oder leer lassen und `DEMO_MODUS` auf `true` stellen,
-   dann kostet nichts, freie Fragen an den Assistenten gehen aber nicht).
-3. Warten bis „Live“, dann `https://respec-api.onrender.com/health` öffnen (Name kann abweichen) → `"status":"ok"` und 6 Szenarien.
+**Why two services.** The backend keeps the PM state in memory and writes `audit.db`. That needs
+one process that stays alive (`core/single_process.py`). Vercel functions restart all the time,
+and decisions would get lost. We dropped two alternatives: FastAPI as a Vercel function (state breaks)
+and baking the data into the UI (no more decisions, weights or lens).
 
-**Schritt 2: Frontend**
-1. vercel.com → *Add New Project* → GitHub-Repo wählen.
-2. **Root Directory:** `src/frontend` (wichtig, sonst findet Vercel kein Next.js). Rest bleibt automatisch.
-3. **Environment Variable:** `NEXT_PUBLIC_API_URL` = Render-Adresse **ohne `/` am Ende**, z. B. `https://respec-api.onrender.com`.
-   Gilt für Production und Preview. Die Variable landet im Browser, also nie einen Key eintragen.
-4. Deploy. CORS ist schon offen für alle `*.vercel.app`-Adressen (`CORS_ORIGIN_REGEX` in `render.yaml`).
-   Eigene Domain? Dann in Render bei `CORS_ORIGINS` ergänzen.
-5. `NEXT_PUBLIC_API_URL` wird beim Build eingebacken: nach einer Änderung in Vercel **Redeploy** klicken.
+**Step 1: backend first, because Vercel needs its address**
 
-**Wissen für die Demo**
-- Gratis-Render schläft nach 15 Minuten ohne Aufruf. Der erste Aufruf danach dauert ca. 50 s.
-  **Vor Pitch und Jury-Zeit einmal `/health` öffnen.**
-- Nach Schlaf oder neuem Deploy ist `audit.db` leer (Render-Disk ist flüchtig). Die Pipeline-Daten bleiben, nur
-  PM-Entscheidungen aus der Online-Version verschwinden. Für die Jury ist das gewollt: Jeder startet sauber.
-- Öffentlicher Link + echter Key = Fremde können Credits verbrauchen. Beim OpenAI-Key ein Ausgabelimit setzen.
-- Jeder Push auf `main` deployt beide automatisch. Rote CI heißt also auch: kaputte Online-Version.
+1. render.com → *New* → *Blueprint* → pick the GitHub repo. Render reads `render.yaml` in the root.
+2. When asked for `OPENAI_API_KEY`, enter your own key. Or leave it empty and set `DEMO_MODUS` to `true`:
+   then it costs nothing, but free questions to the assistant won't work.
+3. Wait until it says *Live*, then open `https://<your-service>.onrender.com/health`.
+   You should see `"status":"ok"` and six scenarios.
 
-## C) Ersatz: Backend über einen Tunnel vom Laptop
+**Step 2: frontend**
 
-Falls Render ausfällt: Das Backend läuft auf dem Laptop, und ein Tunnel gibt ihm eine https-Adresse:
+1. vercel.com → *Add New Project* → pick the repo.
+2. **Root directory:** `src/frontend`. Without this, Vercel won't find Next.js.
+3. **Environment variable:** `NEXT_PUBLIC_API_URL` = your Render address **without a trailing `/`**.
+   Set it for production and preview. It ends up in the browser, so never put a key there.
+4. Deploy. CORS already allows every `*.vercel.app` address (`CORS_ORIGIN_REGEX` in `render.yaml`).
+   For a custom domain, add it to `CORS_ORIGINS` in Render.
+5. After changing `NEXT_PUBLIC_API_URL`, click **Redeploy**. It is baked in at build time.
 
-```bash
-cloudflared tunnel --url http://localhost:8000     # oder: ngrok http 8000
-```
+**Good to know**
 
-Die ausgegebene `https://...`-Adresse kommt als `NEXT_PUBLIC_API_URL` in Vercel (danach neu deployen) und in `CORS_ORIGINS`.
-Nachteil: Der Laptop muss während der Jury-Zeit laufen. Darum bleibt **A) lokal** der sichere Weg und B) ist die Zugabe.
+- Free Render instances sleep after 15 minutes. The first request after that takes about 50 seconds.
+  Open `/health` once before a demo.
+- After sleeping or a new deploy, `audit.db` is empty (Render's disk is not persistent). The pipeline data stays,
+  only decisions made online disappear. For a jury that is fine: everyone starts clean.
+- A public link with a real key means strangers can spend your credits. Set a spending limit on the key.
+- Every push to `main` deploys both. A red CI run means a broken online version.
 
-## D) Medien
+## C) Fallback: backend from a laptop through a tunnel
 
-- Bilder liegen in `src/frontend/public/media/` (`poster.jpg`, `split.jpg`, `scenarios/<ID>.jpg`). Fehlende Dateien sind kein Fehler.
-- Auto-Video: `bash scripts/make_frames.sh pfad/zum/v2.mp4` schreibt die Frames nach `public/media/car/`. Ziel höchstens 8 MB.
-- Die Medien-Liste entsteht beim Build. Nach neuen Dateien also neu bauen.
-- Achtung Vercel: `/media-manifest` liest `public/media/car/manifest.json` zur Laufzeit. Vercel-Funktionen sehen
-  `public/` nicht, dann greift still die Fallback-Szene. Solange `car/` leer ist, ändert das nichts.
-
-## E) Checkliste vor jedem Deploy
+If Render is down, run the backend locally and give it an https address:
 
 ```bash
-cd src/frontend && npm run lint && npm run build     # grün
-python scripts/secret_scan.py                        # keine Keys
+cloudflared tunnel --url http://localhost:8000     # or: ngrok http 8000
 ```
 
-Danach im Browser: `/`, `/cockpit`, `/overview`, `/insights`, `/portfolio`, `/evidence`, `/audit`, `/guide` laden, Konsole ohne Fehler,
-im Cockpit eine Gewichtung anwenden (Toast „WEIGHTS_CHANGED recorded“). Skill `demo-check` führt das gesamte Programm aus.
+Put the printed `https://...` address into `NEXT_PUBLIC_API_URL` on Vercel (then redeploy) and into
+`CORS_ORIGINS`. Downside: the laptop has to stay on.
+
+## D) Images and media
+
+- Images live in `src/frontend/public/media/` (`poster.jpg`, `split.jpg`, `scenarios/<ID>.jpg`). A missing file is not an error;
+  the page shows a placeholder.
+- The media list is built at build time. Rebuild after adding files.
+
+## E) Checklist before every deploy
+
+```bash
+cd src/frontend && npm run lint && npm run build     # must be green
+python -m pytest -q                                  # must be green
+python scripts/secret_scan.py                        # no keys
+```
+
+Then in the browser: open `/`, `/cockpit`, `/insights`, `/portfolio`, `/evidence`, `/audit`, `/benchmarks`,
+check the console for errors, and apply one weight change in the cockpit. It should show up in the audit trail.

@@ -1,15 +1,13 @@
 # src/
 
-Der Code. Wer braucht das: Builder (Piyush, Lasse) und alle, die erklären müssen, wie es funktioniert.
+The code. How the parts fit together is in [docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md).
 
-| Ordner | Inhalt | Pfad / Owner |
+| Folder | What it does | Built by |
 |---|---|---|
-| `backend/core/` | Datenmodell, Audit Trail, Store, LLM-Zugang | Lead (Piyush) |
-| `backend/api/`, `main.py`, `pipeline.py` | REST-Endpunkte und die Pipeline | Lead (Piyush) |
-| `backend/evidence_internal/` | Schritt 1 und 2: Belege und Befunde aus BMW-Daten | A (Aditya) |
-| `backend/evidence_external/` | Schritt 3: Webrecherche | B (Piyush) |
-| `backend/requirements_engine/` | Schritt 4 und 5: Anforderungen, Score, Challenge | C (Dennis) |
-| `frontend/` | Das PM-Cockpit (Next.js). Entspricht dem `app/`-Ordner aus dem Vorschlag. | D (Lasse) |
-| `shared/` | Verträge (`API.md`) und synthetische Beispieldaten | Lead (Piyush) |
-
-Warum `frontend/` nicht `app/` heißt: Umbenennen würde CI, Skills und Entire-Setup brechen (Karte E07).
+| `backend/evidence_internal/` | Steps 1 and 2: evidence and findings from BMW data | Aditya |
+| `backend/evidence_external/` | Step 3: web research, NHTSA, EPA | Piyush |
+| `backend/requirements_engine/` | Steps 4 and 5: requirements, score, evidence level, challenge | Dennis |
+| `backend/core/` | Data model, audit trail, store, LLM access, views | Piyush |
+| `backend/api/`, `main.py`, `pipeline.py` | REST endpoints and the pipeline runner | Piyush |
+| `frontend/` | The PM cockpit (Next.js) | Lasse |
+| `shared/` | API contract (`API.md`) and synthetic example data | Piyush |

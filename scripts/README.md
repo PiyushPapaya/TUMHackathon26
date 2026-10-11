@@ -1,15 +1,15 @@
 # scripts/
 
-Hilfsskripte für Prüfung, Daten und Demo.
+Helper scripts for checks, data and the demo.
 
-| Skript | Was es tut |
+| Script | What it does |
 |---|---|
-| `secret_scan.py` | Sucht Passwörter und API-Keys. Vor jedem Push ausführen. |
-| `ehl_budget.py` | Zeigt, welche Dateien die Jury-KI beim Review sieht (Budget 200.000 Zeichen). |
-| `verify_stack.py` | Offline-Check aller sechs Szenarien: API, PM-Entscheidung, Neustart. |
-| `check_bundles.py` | Prüft die Snapshots in `data/processed/` auf Regelverstöße. |
-| `refresh_bundles.py` | Ergänzt Metadaten in vorhandenen Snapshots ohne LLM. |
-| `new_scenario.py` | Legt eine neue Modell/Markt-Config in `config/scenarios/` an. |
-| `make_view_examples.py` | Erzeugt die Beispielantworten in `src/shared/beispiele/views/`. |
-| `migrate_signal_ids.py` | Einmalige Umstellung auf stabile Signal-IDs. |
-| `start_demo.sh` | Startet Backend und Cockpit im Demo-Modus. |
+| `start_demo.sh` | Starts backend and cockpit in demo mode |
+| `verify_stack.py` | Offline check of all six scenarios: API, PM decisions, restart replay |
+| `check_bundles.py` | Rule checks on the snapshots in `data/processed/` |
+| `refresh_bundles.py` | Adds metadata to existing snapshots without calling the LLM |
+| `new_scenario.py` | Creates a new model/market config in `config/scenarios/` |
+| `make_view_examples.py` | Regenerates the example responses in `src/shared/beispiele/views/` |
+| `migrate_signal_ids.py` | One-off migration to stable finding IDs |
+| `secret_scan.py` | Looks for passwords and API keys. Run before every push |
+| `ehl_budget.py` | Shows which files the hackathon's AI reviewer gets to see (200,000 character budget) |

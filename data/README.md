@@ -1,33 +1,32 @@
 # data/
 
-Was hier im Git liegt und was lokal bleibt (Regeln in `.gitignore`):
+What is in Git and what stays on your machine (rules in `.gitignore`):
 
-| Ordner/Datei | Inhalt | Im Git? | Wer erzeugt |
+| Folder / file | Content | In Git? | Created by |
 |---|---|---|---|
-| `raw/` | Originaldateien von BMW (Feedback-Excel, Studie, Absatz, Optionslisten-PDF, Brief) | **nein** (seit 11.10.): vertrauliches Challenge-Material; die App läuft aus `processed/` | BMW |
-| `demo_cache/` | geprüfte LLM-/Webantworten für die Offline-Demo | ja | `core/llm.py`, von Hand ausgewählt |
-| `external_cache/nhtsa/` | Antworten der öffentlichen NHTSA-API (US-Behörde, gemeinfrei) | ja | `evidence_external/nhtsa.py` |
-| `processed/<szenario>/*.json` | Ergebnisse je Pipeline-Stufe (enthalten Kundenzitate) | ja, gemäß dokumentierter Freigabe vom 11.10. in `.gitignore` | `python src/backend/pipeline.py --scenario G60-US` |
-| `processed/<szenario>.json` | Bundle, das die App beim Start lädt | ja, gleiche Freigabe | Stufe `bundle` |
-| `cache/` | alle LLM-Antworten (spart Credits) | **ja** (per `.gitattributes` nicht im Zipball) | automatisch durch `core/llm.py` |
-| `audit.db` | Prüfpfad (SQLite, Hash-Kette) | nein | automatisch beim Start des Backends |
-| `eval/` | Stichproben und menschliche Labels | nein | `tests/eval/make_sample.py` |
+| `raw/` | BMW's original files (feedback Excel, study, sales, option list PDFs, brief) | **no** (since Oct 11): confidential challenge material | BMW |
+| `processed/<scenario>/*.json` | Output of each pipeline step (contains customer quotes) | yes, approved by the organizers on Oct 11 | `python src/backend/pipeline.py --scenario G60-US` |
+| `processed/<scenario>.json` | The bundle the app loads at start | yes | pipeline step `bundle` |
+| `demo_cache/` | Checked LLM and web answers for the offline demo | yes | `core/llm.py`, picked by hand |
+| `cache/` | Every LLM answer (saves credits) | yes | `core/llm.py`, automatically |
+| `external_cache/` | Answers from the public NHTSA and EPA APIs (US government, public domain) | yes | `evidence_external/nhtsa.py`, `fueleconomy.py` |
+| `audit.db` | The audit trail (SQLite, hash chain) | no | the backend, on start |
+| `eval/` | Samples and human labels | no | `tests/eval/make_sample.py` |
 
-Dateien in `raw/`: `F70_feedback_hackathon.xlsx`, `G60_feedback_hackathon.xlsx`, `G70_feedback_hackathon.xlsx`,
-`F70_G60_G68_G70_customer_studies.xlsx`, `sales_volumes.xlsx`, `F70_OptionList.PDF`, `G60_OptionList.PDF`,
-`G70_OptionList.PDF`. Spalten- und Blattnamen beschreibt `config/datasets.json`.
+Files expected in `raw/` if you re-run the pipeline: `F70_feedback_hackathon.xlsx`, `G60_feedback_hackathon.xlsx`,
+`G70_feedback_hackathon.xlsx`, `F70_G60_G68_G70_customer_studies.xlsx`, `sales_volumes.xlsx`, `F70_OptionList.PDF`,
+`G60_OptionList.PDF`, `G70_OptionList.PDF`. Column and sheet names are described in `config/datasets.json`.
 
-**Datenschutz:** Die BMW-Rohdateien liegen nicht im Repo. Wer die Pipeline neu laufen lässt, legt sie
-selbst in `raw/`. Ohne sie zeigt das Cockpit keine Preis-Referenz aus der Optionsliste, sonst läuft alles.
-Nicht im Git bleiben außerdem `.env` (Keys) und `audit.db`. `cache/`, `external_cache/` und `processed/` sind `export-ignore`, damit sie nicht ins Review-Budget laufen.
+**Privacy.** The raw BMW files are not in the repo. Without them, everything runs except the list-price
+reference from the option list, which then shows "unavailable". `.env` (keys) and `audit.db` never go into Git.
+`cache/`, `external_cache/` and `processed/` are marked `export-ignore`, so a zip download of the repo stays small.
 
-Ohne `processed/` laufen Backend und Tests trotzdem: Dann nimmt die App das synthetische
-Beispiel aus `src/shared/beispiele/`. Tests nutzen nie echte BMW-Daten, nur Mini-Daten.
+Without `processed/`, backend and tests still run: the app then uses the synthetic example in
+`src/shared/beispiele/`. Tests never use real BMW data, only tiny made-up samples.
 
-Mit den vorhandenen Snapshots läuft die App offline (`DEMO_MODUS=true`). Ein vollständiger
-Neulauf der KI-Pipeline braucht einen OpenAI-Key oder alle zum aktuellen Prompt passenden
-Cache-Einträge. Fehlende Stufen werden nicht durch Beispiele ersetzt.
+With the shipped snapshots the app runs fully offline (`DEMO_MODUS=true`). A complete new pipeline run needs an
+OpenAI key, or cache entries that match the current prompts. Missing steps fail with an error; they are never
+replaced with example data.
 
-`python scripts/refresh_bundles.py` ergänzt vorhandene KI-Texte um aktuelle Metadaten,
-Segment-Konflikte, öffentliche Cache-Daten und Robustheit, ohne das LLM zu fragen.
-IDs, Texte und Evidenzstufen bleiben erhalten. Das ersetzt keine neue Webrecherche oder Ableitung.
+`python scripts/refresh_bundles.py` adds current metadata, segment conflicts, public cache data and robustness
+to existing snapshots without calling the LLM. IDs, texts and evidence levels stay the same.

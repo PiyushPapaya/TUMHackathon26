@@ -1,151 +1,128 @@
-# API-Vertrag (Owner: Lead)
+# API contract
 
-Basis-URL lokal: `http://localhost:8000`. Interaktive Doku mit allen Feldern: **`/docs`**.
-Datenmodell im Code: `src/backend/core/models.py` + `core/model_parts.py`. Vollständiges Beispiel-Bundle:
-`beispiele/bundle_G60-US.json` (synthetische Zitate).
+Local base URL: `http://localhost:8000`. Interactive docs with every field: **`/docs`**.
+Data model in code: `src/backend/core/models.py` and `core/model_parts.py`. A full example bundle:
+`beispiele/bundle_G60-US.json` (synthetic quotes).
 
-**Grundsatz Welle 2: Das Frontend rechnet nichts.** Jede Zahl, jedes Label, jeder Satz kommt fertig
-aus dem Backend. **Echte Beispielantwort für jeden Endpunkt:** `beispiele/views/<name>.json`
-(erzeugt mit `python scripts/make_view_examples.py`, also immer passend zum Code).
+**Rule: the frontend computes nothing.** Every number, label and sentence comes ready from the backend.
+**A real example response for every endpoint** is in `beispiele/views/<name>.json`
+(generated with `python scripts/make_view_examples.py`, so it always matches the code).
 
-## Lesen: Ansichten (fertig gerechnet)
+> Some enum values are internal German keys (`Chance`, `reich`, `einzeln`, `Lücke: nicht angeboten` ...).
+> They are stable identifiers. The cockpit translates them for display in
+> `src/frontend/src/components/insights/labels.ts`. They are listed below with their meaning.
 
-| Methode + Pfad | Ansicht | Beispiel |
+## Read: views (pre-computed)
+
+| Method + path | View | Example |
 |---|---|---|
 | `GET /health` | Status: `version`, `demo_mode`, `scenarios` | `views/health.json` |
-| `GET /api/scenarios` | Szenario-Wähler: Szenario + `data_coverage`, `badge` (`reich`/`dünn`/`Kaltstart`), `headline_numbers`, `warnings` | `views/scenarios.json` |
-| `GET /api/scenarios/{id}/overview` | Startseite: `funnel`, `top3`, `level_distribution` (A–D), `warnings`, `source_mix`, `generated_at` | `views/overview.json` |
-| `GET /api/requirements/{req_id}/explain` | Detailseite: `waterfall` (Faktor, Gewicht, Beitrag, Satz; letzter Schritt = Abschlag der Evidenzstufe), `quotes` (Top 5 mit Land/Antrieb/Quelle), `segments`, `conflicts`, `assumptions`, `offer_check`, `web_sources` (nach Vertrauen), `study`, `robustness` + `robustness_sentence`, `business`, `history` | `views/explain.json` |
-| `POST /api/scenarios/{id}/whatif` | Gewichte-Regler Live-Vorschau, **speichert nichts**: `[{id, title, old_rank, new_rank, rank_change, old_score, new_score}]` | `views/whatif.json` |
-| `GET /api/portfolio` | Matrix Kategorie × Szenario: `rows[].cells[szenario]` (Rang, Stufe), `rows[].class` (`plattformweit`/`modellspezifisch`/`marktspezifisch`/`einzeln`/`gemischt`/`nicht oben`), `rule` | `views/portfolio.json` |
-| `GET /api/benchmarks` | `quality[]` je Szenario: `funnel`, `metrics[]` (`key`, `value` in %, `target`, `ok`, `explain`); `market[]` nur US: `range[]` (EPA km, kWh/100 km, Rang), `range_gap_km`, `complaints[]` (NHTSA), `limits` | – |
-| `GET /api/compare?a=G60-US&b=G60-EU` | Markt-Vergleich: gleiche Kategorie nebeneinander, `rank_diff`, Unzufriedenheit, `sentence` | `views/compare.json` |
-| `GET /api/scenarios/{id}/opportunities` | Chancen-Karte: `points[]` mit `importance`, `dissatisfaction`, `quadrant` (`Chance`/`Stärke halten`/`Beobachten`/`Nebensache`), `thresholds` | `views/opportunities.json` |
-| `GET /api/scenarios/{id}/trends` | Trendradar: `rings` (heute, Nachfolger-Jahr), `items[]` (`kind`: `trend` oder `bet`) | `views/trends.json` |
-| `GET /api/scenarios/{id}/gaps` | „Was wir nicht wissen“: `weak_requirements` (C/D mit `why`, `next_study`), `missing_sources`, `share_weak` | `views/gaps.json` |
-| `GET /api/scenarios/{id}/evidence?signal=&segment=engine:BEV&q=&page=1&size=20` | Beleg-Browser, gefiltert und seitenweise: `{total, page, size, items}` | `views/evidence.json` |
-| `GET /api/audit/timeline?scenario_id=&requirement_id=` | Prüfpfad als Sätze: `sentence`, `actor`, `rationale` | `views/audit_timeline.json` |
+| `GET /api/scenarios` | Scenario picker: scenario + `data_coverage`, `badge` (`reich` = rich / `dünn` = thin / `Kaltstart` = cold start), `headline_numbers`, `warnings` | `views/scenarios.json` |
+| `GET /api/scenarios/{id}/overview` | Start page: `funnel`, `top3`, `level_distribution` (A-D), `warnings`, `source_mix`, `generated_at` | `views/overview.json` |
+| `GET /api/requirements/{req_id}/explain` | Detail page: `waterfall` (factor, weight, contribution, sentence; last step = evidence discount), `quotes` (top 5 with country / drivetrain / source), `segments`, `conflicts`, `assumptions`, `offer_check`, `web_sources` (by trust), `study`, `robustness` + `robustness_sentence`, `business`, `history` | `views/explain.json` |
+| `POST /api/scenarios/{id}/whatif` | Live preview for weight sliders, **saves nothing**: `[{id, title, old_rank, new_rank, rank_change, old_score, new_score}]` | `views/whatif.json` |
+| `GET /api/portfolio` | Matrix category × scenario: `rows[].cells[scenario]` (rank, level), `rows[].class` (`plattformweit` = platform-wide / `modellspezifisch` = model-specific / `marktspezifisch` = market-specific / `einzeln` = single / `gemischt` = mixed / `nicht oben` = not near the top), `rule` | `views/portfolio.json` |
+| `GET /api/benchmarks` | `quality[]` per scenario: `funnel`, `metrics[]` (`key`, `value` in %, `target`, `ok`, `explain`); `market[]` US only: `range[]` (EPA km, kWh/100 km, rank), `range_gap_km`, `complaints[]` (NHTSA), `limits` | none |
+| `GET /api/compare?a=G60-US&b=G60-EU` | Market comparison: same category side by side, `rank_diff`, dissatisfaction, `sentence` | `views/compare.json` |
+| `GET /api/scenarios/{id}/opportunities` | Opportunity map: `points[]` with `importance`, `dissatisfaction`, `quadrant` (`Chance` = opportunity / `Stärke halten` = keep strength / `Beobachten` = watch / `Nebensache` = minor), `thresholds` | `views/opportunities.json` |
+| `GET /api/scenarios/{id}/trends` | Trend radar: `rings` (today, successor year), `items[]` (`kind`: `trend` or `bet`) | `views/trends.json` |
+| `GET /api/scenarios/{id}/gaps` | "What we do not know": `weak_requirements` (C/D with `why`, `next_study`), `missing_sources`, `share_weak` | `views/gaps.json` |
+| `GET /api/scenarios/{id}/evidence?signal=&segment=engine:BEV&q=&page=1&size=20` | Evidence browser, filtered and paged: `{total, page, size, items}` | `views/evidence.json` |
+| `GET /api/audit/timeline?scenario_id=&requirement_id=` | Audit trail as sentences: `sentence`, `actor`, `rationale` | `views/audit_timeline.json` |
+| `GET /api/scenarios/{id}/matrix` | Matrix today/future × evidence: `items[req_id]` with `horizon`, `evidence_level`, `quadrant` (`Sicher & dringend` = safe and urgent / `Belegte Zukunftswette` = evidenced future bet / `Schwach belegt, heute` = weak, today / `Annahme – beobachten` = assumption, watch), `offer_gap` + `offer_gap_label` (`Lücke: nicht angeboten` = gap, not offered / `nur optional` = optional only / `Serie` = standard) | `views/matrix.json` |
+| `GET /api/requirements/{req_id}/counterparts` | Same requirement in other scenarios: per scenario `match` (`id`, `rank`, `score`) or `null` + `sentence`. Rule: same category and title Jaccard ≥ 0.3 | `views/counterparts.json` |
+| `GET /api/scenarios/{id}/memo` | Decision memo as **Markdown** (text/plain): approved requirements (otherwise top 5 as draft), score, level, evidence, assumptions, line "audit trail valid, N events" | none |
 
-| `GET /api/scenarios/{id}/matrix` | Matrix Heute/Zukunft × Evidenz: `items[req_id]` mit `horizon`, `evidence_level`, `quadrant` (`Sicher & dringend`/`Belegte Zukunftswette`/`Schwach belegt, heute`/`Annahme – beobachten`), `offer_gap` + `offer_gap_label` (`Lücke: nicht angeboten`/`nur optional`/`Serie`) | `views/matrix.json` |
-| `GET /api/requirements/{req_id}/counterparts` | Markt-Vergleich je Anforderung: pro anderem Szenario `match` (`id`, `rank`, `score`) oder `null` + `sentence` (`"F70-EU: Platz 4, Score 71"` / `"kein Gegenstück"`); Regel: gleiche Kategorie + Titel-Jaccard ≥ 0,3 | `views/counterparts.json` |
-| `GET /api/scenarios/{id}/memo` | Entscheidungs-Memo als **Markdown** (text/plain): freigegebene Anforderungen (sonst Top 5 als Entwurf), Score, Stufe, Belege, Annahmen, Zeile „Prüfpfad gültig, N Ereignisse“ | – |
-
-## Prompt-Linse: `POST /api/scenarios/{id}/lens`
+## Prompt lens: `POST /api/scenarios/{id}/lens`
 
 ```json
-{"question": "Familien in den USA, Fokus Laden und Platz", "actor": "pm.mueller"}
+{"question": "Families in the US, focus on charging and space", "actor": "pm.demo"}
 ```
 
-Antwort: `{question, interpretation, source ("ai"|"rules"), weights, filters: {categories, only_gaps}, note, top: [{requirement, lens_score, lens_rank, reasons: [{factor, contribution, sentence}]}]}` (Beispiel `views/lens.json`).
-Die KI liefert nur Gewichte + Filter, nie IDs; Python rechnet die Top 5 auf Kopien, **der Store bleibt unverändert**.
-Schreibt `AI_LENS_SUGGESTED` in den Prüfpfad. „Gewichte übernehmen“ = `PUT /weights` mit `weights` aus der Antwort und dem Prompt-Text als `rationale`.
-Fehler: `404` unbekanntes Szenario · `422` leere Frage.
+Response: `{question, interpretation, source ("ai"|"rules"), weights, filters: {categories, only_gaps}, note, top: [{requirement, lens_score, lens_rank, reasons: [{factor, contribution, sentence}]}]}` (example `views/lens.json`).
+The AI only returns weights and filters, never IDs. Python computes the top 5 on copies; **the store is not changed**.
+Writes `AI_LENS_SUGGESTED` to the audit trail. "Apply weights" = `PUT /weights` with the `weights` from the response
+and the question as `rationale`. Errors: `404` unknown scenario, `422` empty question.
 
-## Assistent: `POST /api/ask`
+## Assistant: `POST /api/ask`
 
 ```json
 {"question": "What matters most for families?", "actor": "pm.demo"}
 ```
 
-Antwort: `{question, source ("ai"|"rules"), interpretation, answer, top: [{scenario_id, requirement_id, title, rank, score, lens_score, evidence_level, signal_ids, evidence_ids, reasons}]}` (Beispiel `views/ask.json`).
-Deutet die Frage **einmal** (Linse, ein LLM-Aufruf) und rechnet sie in **allen** Szenarien (je Szenario Top 2, insgesamt max. 6). Nur IDs aus dem Store, nichts wird gespeichert (kein Prüfpfad, weil nichts vorgeschlagen wird). Fehler: `422` leere Frage.
+Response: `{question, source ("ai"|"rules"), interpretation, answer, top: [{scenario_id, requirement_id, title, rank, score, lens_score, evidence_level, signal_ids, evidence_ids, reasons}]}` (example `views/ask.json`).
+Interprets the question **once** (lens, one LLM call) and applies it to **all** scenarios (top 2 each, at most 6).
+Only IDs from the store, nothing is saved (no audit entry, because nothing is proposed). Errors: `422` empty question.
 
-## Lesen: Rohdaten (wie bisher)
+## Read: raw data
 
-| Methode + Pfad | Antwort |
+| Method + path | Response |
 |---|---|
-| `GET /api/scenarios/{id}/funnel` | `{"evidence": 3610, "signals": 8, "requirements": 5, "approved": 0}` |
+| `GET /api/scenarios/{id}/funnel` | `{"evidence": 3610, "signals": 58, "requirements": 19, "approved": 0}` |
 | `GET /api/scenarios/{id}/signals` | `[Signal]` |
-| `GET /api/scenarios/{id}/requirements` | `[Requirement]` sortiert nach `rank` |
+| `GET /api/scenarios/{id}/requirements` | `[Requirement]` sorted by `rank` |
 | `GET /api/requirements/{req_id}` | `{"requirement", "signals", "evidence", "history"}` |
-| `GET /api/audit?scenario_id=&requirement_id=` | `[AuditEvent]` chronologisch |
+| `GET /api/scenarios/{id}/product-context` | Reference from the option list: `source`, `reference_market` (Germany), `currency` (EUR), `min_eur`, `max_eur`, `pages`, `engines`, `note`. Gross list prices incl. 19 % VAT, without delivery. Missing prices stay `null`. Not a US/CN price and not a cost estimate for the successor. Changes neither scores nor the audit trail |
+| `GET /api/audit?scenario_id=&requirement_id=` | `[AuditEvent]` in order |
 | `GET /api/audit/verify` | `{"valid": true, "broken_at_seq": null, "checked": 12}` |
-| `GET /api/scenarios/{id}/export?format=csv\|json\|md` | CSV (`;`), JSON-Liste oder Markdown-Lastenheft mit Kriterien, Belegen, Annahmen und Unsicherheiten |
+| `GET /api/scenarios/{id}/export?format=csv\|json\|md` | CSV (`;`), JSON list, or a Markdown spec with criteria, evidence, assumptions and uncertainties |
 
-## Schreiben (jede Aktion erzeugt ein Audit-Ereignis, Begründung ist Pflicht)
+## Write (every action creates an audit event, a reason is required)
 
 ### `POST /api/requirements/{req_id}/decision`
 
 ```json
-{"action": "approve", "actor": "pm.mueller", "rationale": "Belege aus Feedback und Studie überzeugen"}
-{"action": "reject", "actor": "pm.mueller", "rationale": "Zu wenige Nennungen, später erneut prüfen"}
-{"action": "edit", "actor": "pm.mueller", "rationale": "Kriterium geschärft",
- "changes": {"acceptance_criterion": "Lautstärke und Temperatur blind in 1 Handgriff", "effort": "S"}}
-{"action": "challenge", "actor": "pm.mueller", "rationale": "Gegenprobe",
- "question": "Ist das nur Gewohnheit älterer Kunden?"}
+{"action": "approve", "actor": "pm.demo", "rationale": "Feedback and study agree"}
+{"action": "reject", "actor": "pm.demo", "rationale": "Too few mentions, revisit next year"}
+{"action": "edit", "actor": "pm.demo", "rationale": "Sharpened the criterion",
+ "changes": {"acceptance_criterion": "Volume and temperature blind in one move", "effort": "S"}}
+{"action": "challenge", "actor": "pm.demo", "rationale": "Double check",
+ "question": "Is this just a habit of older customers?"}
 ```
 
-Bearbeitbar: `title, description, acceptance_criterion, effort, assumptions, uncertainties`.
-Antwort: `{"requirement": Requirement, "ai_answer": null | {"answer", "supporting_evidence_ids", "counter_evidence_ids", "suggested_change"}}`.
-Fehler: `404` unbekannte ID · `422` leere Begründung, falsche Felder.
+Editable: `title, description, acceptance_criterion, effort, assumptions, uncertainties`.
+Response: `{"requirement": Requirement, "ai_answer": null | {"answer", "supporting_evidence_ids", "counter_evidence_ids", "suggested_change"}}`.
+Errors: `404` unknown ID, `422` empty reason or wrong fields.
 
-### `PUT /api/scenarios/{id}/weights` (Regler „Übernehmen“)
+### `PUT /api/scenarios/{id}/weights` (the "Apply" button)
 
 ```json
-{"weights": {"future_relevance": 0.3, "customer_pain": 0.2}, "actor": "pm.mueller",
- "rationale": "Nachfolger kommt 2030, Zukunft zählt mehr"}
+{"weights": {"future_relevance": 0.3, "customer_pain": 0.2}, "actor": "pm.demo",
+ "rationale": "Successor launches 2030, the future counts more"}
 ```
 
-Faktoren: `customer_pain, reach, satisfaction_gap, competitive_pressure, future_relevance, effort_inverse`.
-Fehlende Faktoren behalten ihren Standardwert; alles wird auf Summe 1 normiert. Antwort: neu gerankte `[Requirement]`.
-`POST /whatif` nimmt dasselbe `weights`-Objekt (ohne `actor`/`rationale`) und speichert nichts.
+Factors: `customer_pain, reach, satisfaction_gap, competitive_pressure, future_relevance, effort_inverse`.
+Missing factors keep their default; everything is normalized to sum 1. Response: re-ranked `[Requirement]`.
+`POST /whatif` takes the same `weights` object (without `actor` / `rationale`) and saves nothing.
 
-## Wichtige Felder
-
-`GET /api/scenarios/{id}/product-context` liefert Referenzkontext aus der lokal
-bereitgestellten Optionsliste: `source`, `reference_market` (Germany), `currency`
-(EUR), `min_eur`, `max_eur`, `pages`, `engines`, `note`. Grundpreise sind brutto
-inklusive 19% MwSt., ohne Ueberfuehrung. Fehlende Preise bleiben `null`. Diese
-Referenz gilt nicht als US-/CN-Preis oder als Kostenschaetzung fuer den Nachfolger.
-`engines` bezeichnet Antriebsarten in vorhandenen Belegen, nicht das vollstaendige
-Verkaufsangebot. Der Endpunkt veraendert weder Scores noch den Audit-Verlauf.
+## Key fields
 
 **Requirement:** `id`, `title`, `description`, `acceptance_criterion`, `category`, `signal_ids`, `score` (0-100), `rank`,
-`score_breakdown` (`{faktor: {value, weight, contribution, explanation}}`), `rationale`, `evidence_level` (`A|B|C|D`),
-`assumptions`, `uncertainties`, `offer_check`, `effort` (`S|M|L`), `status`, `version`.
-**Neu (Welle 2, alle mit Default):** `horizon` (`today|next_gen`), `robustness` (`{rank_min, rank_max, top3_share, runs}` oder null),
+`score_breakdown` (`{factor: {value, weight, contribution, explanation}}`), `rationale`, `evidence_level` (`A|B|C|D`),
+`assumptions`, `uncertainties`, `offer_check`, `effort` (`S|M|L`), `status`, `version`,
+`horizon` (`today|next_gen`), `robustness` (`{rank_min, rank_max, top3_share, runs}` or null),
 `segment_conflicts` (`[{dimension, segment_a, segment_b, statement, a_count, b_count, evidence_ids}]`),
-`business` (`{volume_2025, volume_2030, growth_pct, market_share, note}` oder null; null-Werte = „nicht verfügbar“),
-`stable_key`, `badges` (fertige Kurzlabels, z. B. `robust`, `Konflikt`, `Zukunftswette`, `Annahme`).
+`business` (`{volume_2025, volume_2030, growth_pct, market_share, note}` or null; null values = "not available"),
+`stable_key`, `badges` (short labels such as `robust`, conflict, future bet, assumption).
 
-**Ausblick (A2, Default `null`):** `Requirement.outlook` wird beim Laden regelbasiert berechnet
-und zusätzlich als `outlook` in `GET /api/requirements/{id}/explain` ausgegeben.
-Felder: `direction` (`grows|stays|fades`), `successor_year` (aus `Scenario.successor_horizon`),
-`rule` (`category_trend|bev_shift|ice_shift|no_shift`), `assumption: true`, `sentence` (Englisch),
-`critical_count`, `scenario_feedback_count`, `bev_critical_share`, `bev_scenario_share`,
-`ice_critical_share`, `ice_scenario_share` (Anteile 0–1), `evidence_ids`, `signal_ids`,
+**Outlook** (default `null`): `Requirement.outlook` is computed by rules on load and also returned in
+`GET /api/requirements/{id}/explain`. Fields: `direction` (`grows|stays|fades`), `successor_year`,
+`rule` (`category_trend|bev_shift|ice_shift|no_shift`), `assumption: true`, `sentence`,
+`critical_count`, `scenario_feedback_count`, BEV/ICE shares (0-1), `evidence_ids`, `signal_ids`,
 `baseline_source` (`scenario_feedback|bundle_sample`).
-Regelreihenfolge: Web-Trend derselben Kategorie → `grows`; sonst mindestens zehn eindeutige,
-negative Feedback-Zitate und BEV/BEVE-Anteil ≥ 1,5 × Szenarioanteil → `grows`; sonst mindestens
-zehn solche Zitate, ICE-Anteil ≥ 90 % und ICE-Szenarioanteil < 90 % → `fades`; sonst `stays`.
-Der Szenario-Nenner kommt aus der benachbarten `<scenario>/evidence.json`, wenn vorhanden;
-ohne diese Datei wird die Bundle-Stichprobe verwendet und im Satz ausdrücklich gekennzeichnet.
-Der Zähler umfasst nur zitierte kritische Feedback-Kommentare, keine hochgerechneten Nennungen.
-`GET /api/scenarios/{id}/trends` enthält für jede wachsende Anforderung einen Eintrag
-`kind: "outlook"` im Ring `successor_horizon`, mit `requirement_id`, `outlook` und dem Satz in
-`assumptions`. Das verändert weder `horizon` noch `future_relevance`, Score oder Rang.
+Rule order: a web trend in the same category → `grows`; otherwise at least ten unique negative feedback quotes and a
+BEV share ≥ 1.5 × the scenario share → `grows`; otherwise at least ten such quotes, ICE share ≥ 90 % and scenario ICE share
+< 90 % → `fades`; otherwise `stays`. The outlook never changes `horizon`, `future_relevance`, score or rank.
 
-**Signal:** `id`, `kind`, `category`, `title`, `summary`, `evidence_ids`, `mention_count`, `source_types`, `conflicts_with`.
-**Neu:** `segments` (`{"engine": {"BEV": 42, "ICE": 18}, "country": {...}, "source": {...}, "feedback_type": {...}}`),
-`study_link` (`{attribute, importance, dissatisfaction}` oder null).
+**Signal (finding):** `id`, `kind`, `category`, `title`, `summary`, `evidence_ids`, `mention_count`, `source_types`, `conflicts_with`,
+`segments` (`{"engine": {"BEV": 42, "ICE": 18}, "country": {...}, "source": {...}, "feedback_type": {...}}`),
+`study_link` (`{attribute, importance, dissatisfaction}` or null).
 
-**Scenario:** `id`, `derivative`, `model_name`, `market`, `countries`, `competitors`, `successor_horizon`.
-**Neu:** `data_coverage` (`{feedback, study, sales, options, web, external, badge}`), `warnings`.
+**Scenario:** `id`, `derivative`, `model_name`, `market`, `countries`, `competitors`, `successor_horizon`,
+`data_coverage` (`{feedback, study, sales, options, web, external, badge}`), `warnings`.
 
 **Evidence:** `id`, `source_type` (`feedback|study|sales|option_list|web|external_stat|feedback_external`), `source_name`,
-`text`, `url`, `retrieved_at`, `polarity` (-1/0/1), `meta` (Schlüssel u. a. `engine`, `country`, `source_letter`, `feedback_type`, `trust`, `publisher`).
+`text`, `url`, `retrieved_at`, `polarity` (-1/0/1), `meta` (keys include `engine`, `country`, `source_letter`, `feedback_type`, `trust`, `publisher`).
 
 **AuditEvent:** `seq`, `ts`, `event_type`, `scenario_id`, `requirement_id`, `actor` (`{type: ai|human|system, name}`),
 `rationale`, `payload`, `prev_hash`, `hash`.
-
-## Wer füllt welches neue Feld (Pipeline)
-
-| Feld | Pfad · Ticket | Wo |
-|---|---|---|
-| `Evidence.meta.engine/country/source_letter/feedback_type` | A · A14 | `evidence.json` |
-| `Signal.segments`, `Signal.study_link` | A · A14, A17 | `signals.json` |
-| `context.json["unmapped_topics"]` (`{thema: anzahl}`) | A · A15 | wird zu `bundle.context` |
-| `context.json["sales"]` mit `volume_2024/2025/2030`, `growth_pct`, `share_of_total_2030` (nie still 0, sonst `null`) | A · A16 | wird zu `bundle.context` |
-| `context.json["opportunities"]` (`[{attribute, category, importance, dissatisfaction, evidence_id}]`) | A · A17 | wird zu `bundle.opportunities` |
-| `Requirement.stable_key`, `horizon`, `assumptions` (Pflicht bei D), `robustness`, `business`, `segment_conflicts`, `badges` | C · C12-C19 | `requirements.json` |
-| `Scenario.data_coverage`, `funnel.generated_at` | Lead | `pipeline.py bundle_stage` |

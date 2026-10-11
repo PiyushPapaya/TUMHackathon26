@@ -29,3 +29,7 @@ data/demo_cache/ export-ignore
 src/shared/beispiele/views/ export-ignore
 tests/pfad_c/scope_cases.py export-ignore
 tests/pfad_c/SCOPE_REPORT.md export-ignore
+# Produkt-Doku für PMs und Screenshots (11.10.): auf GitHub für Menschen, aber nicht im
+# Review-Budget, sonst verdrängen ~25.000 Zeichen Erklärtext echten Code.
+docs/product/ export-ignore
+docs/images/ export-ignore

@@ -10,7 +10,7 @@ Repo unseres Teams für das **TUM.ai × EHL Grand Finale** (10.-11.10.2026, Garc
 
 1. Name und **Pfad** klären (Tabelle in `docs/PLAN.md` §6), dann `docs/pfade/PFAD-<X>.md` lesen (Ziel, Ordner, Schritte).
 2. `git switch main && git pull --no-rebase origin main`. **Alle arbeiten direkt auf `main`** (keine Branches, keine PRs).
-3. `docs/PLAN.md`, `docs/ARCHITEKTUR.md`, `docs/CHALLENGE.md` überfliegen; Uhrzeit gegen `docs/ZEITPLAN.md` halten.
+3. `docs/PLAN.md`, `docs/ARCHITECTURE.md`, `docs/CHALLENGE.md` überfliegen; Uhrzeit gegen `docs/ZEITPLAN.md` halten.
 4. `entire status` prüfen (muss „Enabled“ zeigen). Sonst: `entire enable --agent claude-code`.
 
 ## Wer schreibt wo (Ownership nach Pfaden)
@@ -71,8 +71,8 @@ Entire zeichnet unsere Prompts auf. Der EHL-Session-Reviewer gibt 35 % auf eigen
 Jede Person muss das Produkt erklären können, und eine KI-Review liest Code und README.
 
 - Lesbarer Code: sprechende Namen, kurze Kommentare, die das **WARUM** erklären. Dateien unter ~200 Zeilen halten (der Reviewer kappt danach).
-- Bei jeder Code-Änderung an Komponenten/Datenfluss: `docs/ARCHITEKTUR.md` aktualisieren (Komponenten, Datenfluss, externe APIs, Entscheidungen), einfach formuliert.
-- Neue Designentscheidung → Zeile in `docs/ARCHITEKTUR.md` (Entscheidungen) + ggf. Jury-Frage in `docs/pitch/PITCH.md`.
+- Bei jeder Code-Änderung an Komponenten/Datenfluss: `docs/ARCHITECTURE.md` aktualisieren (Komponenten, Datenfluss, externe APIs, Entscheidungen), einfach formuliert.
+- Neue Designentscheidung → Zeile in `docs/ARCHITECTURE.md` (Entscheidungen) + ggf. Jury-Frage in `docs/pitch/PITCH.md`.
 - „Erklär mir X“: erst 2 Sätze Prinzip, dann der Ablauf, dann die Stelle im Code (`datei:zeile`).
 
 ## Verifikationspflicht
@@ -102,7 +102,7 @@ Ergebnis (Befehl + Ausgabe) gehört in die Commit-Nachricht („geprüft: …“
 
 ## Wissen
 
-Plan: `docs/PLAN.md` · Pfade: `docs/pfade/` · Zeit: `docs/ZEITPLAN.md` · Brief: `docs/CHALLENGE.md` · Architektur: `docs/ARCHITEKTUR.md` · API: `src/shared/API.md` · Pitch: `docs/pitch/PITCH.md` · Abgabe: `docs/ABGABE.md` · Setup: `docs/SETUP.md` · Hilfe für Nicht-Coder: `docs/hilfe/` (Glossar, Git-Hilfe).
+Plan: `docs/PLAN.md` · Pfade: `docs/pfade/` · Zeit: `docs/ZEITPLAN.md` · Brief: `docs/CHALLENGE.md` · Architektur: `docs/ARCHITECTURE.md` · API: `src/shared/API.md` · Pitch: `docs/pitch/PITCH.md` · Abgabe: `docs/ABGABE.md` · Setup: `docs/SETUP.md` · Hilfe für Nicht-Coder: `docs/hilfe/` (Glossar, Git-Hilfe).
 
 
 
