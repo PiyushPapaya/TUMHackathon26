@@ -32,6 +32,68 @@ Alle fünf Aufgaben sind offen. Die Reihenfolge ist die gewünschte Arbeitsreihe
 | 4 | Repository visuell und inhaltlich verbessern | README, Beschreibungen und Navigation überarbeiten; passende Bilder, Screenshots und Diagramme ergänzen. Einstieg, Projektidee, Architektur und Demo sollen für neue Leser schnell verständlich sein. | offen |
 | 5 | Pitches üben | Den vollständigen Pitch einschließlich Demo mehrfach gemeinsam proben, Zeit messen, Übergänge und Rollen abstimmen sowie Juryfragen und einen Demo-Ausfall üben. Feedback in Vortrag und Slides einarbeiten. | offen |
 
+### Agenten-Auftrag zu T1–T5 (Stand So 08:52)
+
+Zeitrahmen (`docs/ZEITPLAN.md`): Feature-Freeze war 08:00 · **10:00 Pitch-Probe** · **10:30 Code-Freeze** ·
+11:30 abgegeben (Deadline 12:00). Antworten an das Team immer auf Deutsch und einfach. Nach jedem fertigen Schritt:
+Status in der Tabelle oben auf `erledigt` + Commit-Hash, dann Skill `sync`.
+
+**T1 · Projekt verstehen** (Mensch lernt, Agent hilft, ca. 20 min pro Person)
+- Lesen, in dieser Reihenfolge: `START_HIER.md` → `docs/01_projekt.md` → `PROJEKT_ERKLAERT.html` (im Browser öffnen)
+  → `docs/ARCHITEKTUR.md` (nur Datenfluss + Entscheidungen) → `docs/pitch/JURY-FAQ.md`.
+- Agent fragt die Person danach ab, eine Frage nach der anderen, und korrigiert falsche Antworten mit `datei:zeile`:
+  Welches Problem hat der BMW-PM? · Was passiert von Excel bis Anforderung (Belege → Befunde → Anforderungen)? ·
+  Woher kommt der Score (6 Faktoren, Python statt LLM)? · Was heißt Evidenzstufe A–D? · Was darf der PM
+  (approve/reject/edit/challenge, Gewichte) und wo steht das im Prüfpfad? · Was ist ein Konflikt (Lob gegen Kritik,
+  Segment-Konflikt)? · Was ist der Ausblick 2030 und warum ist er eine Annahme? · Welche Zahlen sind belegt
+  (`tests/eval/REPORT.md`: Grounding 100 %, Befund-Treue 88 %)? · Welche Grenzen sagen wir offen (dünne Szenarien)?
+- **Fertig, wenn** jede Person (Piyush, Aditya, Dennis, Lasse) alle Fragen ohne Nachlesen beantwortet. Offene
+  Verständnisfragen als Zeile in `docs/pitch/JURY-FAQ.md` ergänzen.
+
+**T2 · Pitch-Slides sehr gut gestalten** (bis 10:00 Probe)
+- Grundlage: `docs/pitch/PITCH.md` (Ablauf 3:00 + 3:00 Fragen), `docs/pitch/RECHERCHE.md` (Gewinner-Muster, Zahlen,
+  Demo-Konflikt Rang 5 Reichweite 38 gegen 28), BMW-Brief `docs/CHALLENGE.md`.
+- Aufbau: 4 Vortragsfolien (Problem mit Zitat + Zahl · Lösung in einem Satz · Demo · Ergebnis-Zahlen + eine Grenze)
+  plus Anhang, der **ohne Sprecher** verständlich ist (Workflow KI vs. Mensch, Score-Formel, Architektur, Eval,
+  Grenzen, Prüfpfad, Skalierung über 6 Szenarien).
+- Brief-Wörter müssen sichtbar vorkommen: *trustworthy sources, transparent reasoning, thoughtful prioritization,
+  uncertainty and conflicting evidence, PM firmly in control, scale across vehicle lines and markets*.
+- Erstellen über das Artifact-Werkzeug (`action: "quickstart"`, `intent: "slides"`); BMW-Logo und BMW-Branding
+  **nicht** nachbauen. Bilder aus `visuals/` und Screenshots der laufenden App (`scripts/make_visuals.py`).
+- Jede Zahl auf einer Folie mit Quelle prüfen (Code, `tests/eval/REPORT.md` oder `data/processed/*.json`), keine
+  gemessene Zeitersparnis behaupten. Export als PDF nach `outputs/`.
+- **Fertig, wenn** das Deck vorliegt, jede Zahl belegt ist und Piyush es freigegeben hat.
+
+**T3 · Codebase aufräumen** (Achtung: Code-Freeze 10:30, danach nur Fixes aus `docs/ABGABE.md`)
+- Nur **verhaltensneutrale** Änderungen: Kommentare mit WARUM, klarere Namen in privaten Funktionen, tote Dateien
+  ins `archiv/` (nie löschen), Docstrings. **Keine** Umzüge von Modulen, keine Signatur-Änderungen an
+  Pfad-Schnittstellen, nichts an Score, Rängen, Prompts oder `data/processed/`. R4 (Dateien teilen) bleibt verworfen.
+- Vorgehen: Skill `simplify` bzw. Subagent `code-simplifier` je Ordner, Ownership beachten (CLAUDE.md-Tabelle):
+  `src/backend/core|api` Piyush, `evidence_internal` Aditya, `requirements_engine` Dennis, `src/frontend` Lasse.
+  Kandidaten zuerst suchen: Dateien > 200 Zeilen, ungenutzte Exporte (`entire graph` / `brain_dead_code`),
+  Kommentare auf Deutsch/Englisch gemischt in derselben Datei, `TODO`/`FIXME`.
+- Nach **jedem** Ordner: `ruff check src/backend tests` · `python -m pytest -q` · `cd src/frontend && npm run lint &&
+  npm run build` · `python scripts/ehl_budget.py` (src-Anteil darf nicht sinken). Rot → Änderung zurücknehmen.
+- **Fertig, wenn** bis 10:15 alles grün gepusht ist. Was nicht fertig ist, bleibt liegen (Umfang kürzen, nicht Zeit).
+
+**T4 · Repository visuell verbessern** (Doku darf auch nach 10:30, solange kein Code berührt wird)
+- `README.md`: oben ein Satz Nutzen + ein Screenshot des Cockpits, dann Quickstart (3 Befehle), Architektur-Bild,
+  Abschnitt „Key code“ bleibt (R1). Bilder nach `visuals/` (Skripte `scripts/make_diagrams.py`,
+  `scripts/make_visuals.py`), im README relativ verlinken, mit Alt-Text.
+- Diagramme: Datenfluss Excel → Belege → Befunde → Anforderungen → PM-Entscheidung → Prüfpfad; Rollen KI vs. Mensch.
+- `docs/README.md` als Inhaltsverzeichnis prüfen, tote Links reparieren (`grep -o "](.*\.md)"` gegen vorhandene Dateien).
+- Achtung Budget der Jury-KI: große Bilder/Dokus nicht in `src/`; neue Doku-Ordner in `.gitattributes` als
+  `export-ignore` nur nach Rückfrage bei Piyush (geteilte Datei). Danach `python scripts/ehl_budget.py`.
+- **Fertig, wenn** ein Fremder im README in 60 Sekunden versteht, was Signal2Spec tut, und es starten kann.
+
+**T5 · Pitch üben** (10:00 Probe, danach bis 11:15 wiederholen)
+- Skill `pitch-prep`: Probe mit Stoppuhr (Ziel 2:50, hart 3:00), danach Jury-Fragen-Drill aus `docs/pitch/JURY-FAQ.md`
+  mit klarer Zuständigkeit pro Person. Skill `demo-check` vor jeder Probe (läuft die App bei Fremden, Demo-Modus an).
+- Demo-Ablauf (3 Momente): Warum (Wasserfall + Zitat) · Hinterfragen + Freigeben · Gewichte ändern + Prüfpfad.
+  Konflikt-Moment: G60-US Rang 5 Reichweite. Demo-Ausfall üben: Backup-Video abspielen ohne Pause.
+- Nach jeder Probe: zu lange Stellen kürzen in `docs/pitch/PITCH.md`, Änderungen in die Slides (T2) übernehmen.
+- **Fertig, wenn** 3 Proben hintereinander unter 3:00 liefen und jede Person ihre Jury-Fragen sicher beantwortet.
+
 ---
 
 Aktueller technischer Abgleich: [docs/REPO_CHECK.md](docs/REPO_CHECK.md). A1 ist im Backend und den
