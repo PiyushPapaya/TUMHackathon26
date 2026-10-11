@@ -1,0 +1,27 @@
+now time to work the the oicth deck. wher is the ocith deck folder. recarehc how to mke the ootimal picth dekc and hwo the preius opzch deck was, we ahve 3 mintes orbation inclidng demo and 3 minutes questions. so it shoduk be ideal. resarrch fistt really hard
+
+---
+
+<task-notification>
+<task-id>bn1k2p3hr</task-id>
+<tool-use-id>toolu_01CU12k26bxRGGHjuXBikdqF</tool-use-id>
+<output-file>C:\Users\anil1\AppData\Local\Temp\claude\C--Users-anil1-Downloads-Hackathon-TUMHackathon26\c6f572b2-7e5b-4b6c-a808-672aac4a83f6\tasks\bn1k2p3hr.output</output-file>
+<status>killed</status>
+<summary>Background command "Start backend 8001" was stopped because the system is running low on memory</summary>
+<note>This is not a failure of the command. Claude Code stopped it because the system was critically low on memory while the session was idle, which says nothing about the command or its own memory use, so there is nothing in it to debug. Do not start it again on your own, even if the work seems to need it: memory may still be short. Report what was stopped and why, and start it again only when asked. The user can turn this behavior off by starting Claude Code with CLAUDE_CODE_DISABLE_BG_SHELL_PRESSURE_REAP=1 in its environment; setting it from a shell command has no effect.</note>
+</task-notification>
+
+---
+
+<task-notification>
+<task-id>bu5b6703p</task-id>
+<tool-use-id>toolu_01CZxGCD7CUFUf9JMBEizU1z</tool-use-id>
+<output-file>C:\Users\anil1\AppData\Local\Temp\claude\C--Users-anil1-Downloads-Hackathon-TUMHackathon26\c6f572b2-7e5b-4b6c-a808-672aac4a83f6\tasks\bu5b6703p.output</output-file>
+<status>killed</status>
+<summary>Background command "Start backend 8000" was stopped because the system is running low on memory</summary>
+<note>This is not a failure of the command. Claude Code stopped it because the system was critically low on memory while the session was idle, which says nothing about the command or its own memory use, so there is nothing in it to debug. Do not start it again on your own, even if the work seems to need it: memory may still be short. Report what was stopped and why, and start it again only when asked. The user can turn this behavior off by starting Claude Code with CLAUDE_CODE_DISABLE_BG_SHELL_PRESSURE_REAP=1 in its environment; setting it from a shell command has no effect.</note>
+</task-notification>
+
+---
+
+trage dein wissen auch irgendwo ein+
