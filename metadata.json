@@ -3,13 +3,33 @@
   "checkpoint_id": "01M4N5SG8HTERJ3AQ6ZEV3D687",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 2,
+  "checkpoints_count": 3,
   "files_touched": [
     ".gitattributes",
+    "CLAUDE.md",
     "README.md",
     "config/README.md",
     "data/README.md",
+    "docs/ARCHITECTURE.md",
     "docs/DEPLOY.md",
+    "docs/EVALUATION.md",
+    "docs/README.md",
+    "docs/images/ask-in-your-words.png",
+    "docs/images/audit-trail.png",
+    "docs/images/benchmarks.png",
+    "docs/images/challenge.png",
+    "docs/images/cockpit.png",
+    "docs/images/home.jpg",
+    "docs/images/insights-matrix.png",
+    "docs/images/insights-unknowns.png",
+    "docs/images/models.jpg",
+    "docs/images/requirement-evidence.png",
+    "docs/images/requirement-score.png",
+    "docs/images/weights.png",
+    "docs/product/GLOSSARY.md",
+    "docs/product/OVERVIEW.md",
+    "docs/product/PM_GUIDE.md",
+    "docs/product/PRIORITIZATION.md",
     "scripts/README.md",
     "src/README.md",
     "src/frontend/README.md",
@@ -29,13 +49,20 @@
       "compact_transcript": "/1/transcript.jsonl",
       "content_hash": "/1/content_hash.txt",
       "prompt": "/1/prompt.txt"
+    },
+    {
+      "metadata": "/2/metadata.json",
+      "transcript": "/2/full.jsonl",
+      "compact_transcript": "/2/transcript.jsonl",
+      "content_hash": "/2/content_hash.txt",
+      "prompt": ""
     }
   ],
   "token_usage": {
-    "input_tokens": 270,
-    "cache_creation_tokens": 579089,
-    "cache_read_tokens": 24292458,
-    "output_tokens": 100161,
-    "api_call_count": 134
+    "input_tokens": 274,
+    "cache_creation_tokens": 580425,
+    "cache_read_tokens": 24625778,
+    "output_tokens": 101188,
+    "api_call_count": 136
   }
 }
