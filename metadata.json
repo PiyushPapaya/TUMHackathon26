@@ -1,0 +1,40 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4MTKYRB18W8YNB362PZ6C1P",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 2,
+  "files_touched": [
+    "OFFENE_AUFGABEN.md",
+    "docs/ARCHITEKTUR.md",
+    "docs/REPO_CHECK.md",
+    "docs/VERIFIKATION_A2.md",
+    "src/backend/core/insights.py",
+    "src/backend/core/models.py",
+    "src/backend/core/outlook.py",
+    "src/backend/core/store.py",
+    "src/backend/core/views.py",
+    "src/frontend/src/components/RequirementDetailView.tsx",
+    "src/frontend/src/components/insights/TrendsAndGaps.tsx",
+    "src/frontend/src/lib/api.ts",
+    "src/frontend/src/lib/insights.ts",
+    "src/shared/API.md",
+    "tests/pfad_b/test_outlook.py"
+  ],
+  "sessions": [
+    {
+      "metadata": "/0/metadata.json",
+      "transcript": "/0/full.jsonl",
+      "compact_transcript": "/0/transcript.jsonl",
+      "content_hash": "/0/content_hash.txt",
+      "prompt": ""
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 8,
+    "cache_creation_tokens": 4321,
+    "cache_read_tokens": 538341,
+    "output_tokens": 1818,
+    "api_call_count": 4
+  }
+}
