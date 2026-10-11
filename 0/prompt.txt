@@ -1,0 +1,43 @@
+es wird zeit alles nochmal zu organisreren und zu allen iene szaberen markown zu ecshereieb udn alles gut zu ekrkäre  fur auch die produk mangement etc in eneglihs. und ein proeghsisnelles und tatrctives readme mit bilder und workflow etc.palnne alle sgnaus genua,e soll en tatarcives udn proessionlles eindrucj erschaffen von dem gnazten proedujt. panne alles was du amchen und wo du as md scherieben erkäre willst etc
+
+---
+
+in diesem ton: Write in a natural, direct, conversational style. Use grammatically correct sentences and proper punctuation. Keep sentences relatively short and straightforward. Use simple, precise vocabulary rather than sophisticated or decorative language. Get to the point quickly and avoid unnecessary introductions, filler, rhetorical flourishes, and corporate-sounding language. Explain ideas logically and concretely. The tone should feel like an intelligent university student speaking naturally: informal but articulate, clear but not overly polished, and analytical without sounding academic. Prioritize clarity and substance over elegant phrasing.
+
+---
+
+es hat beim fonetend ein bild gefheleht., addeier dien bild un dann mache wietetre und mache es gut [Image #7] und pushe alles final
+
+---
+
+<task-notification>
+<task-id>baur1tybr</task-id>
+<tool-use-id>toolu_01QujgAhBD27r74jzMM6mmxS</tool-use-id>
+<output-file>C:\Users\anil1\AppData\Local\Temp\claude\C--Users-anil1-Downloads-Hackathon-TUMHackathon26\54b91c91-badc-481e-b5b3-de78b2fa4c93\tasks\baur1tybr.output</output-file>
+<status>failed</status>
+<summary>Background command "Start rebuilt frontend" failed with exit code 255</summary>
+</task-notification>
+
+---
+
+<task-notification>
+<task-id>bf4la3oua</task-id>
+<tool-use-id>toolu_01QHSaFpTvdxEFQ2MjcTYCnZ</tool-use-id>
+<output-file>C:\Users\anil1\AppData\Local\Temp\claude\C--Users-anil1-Downloads-Hackathon-TUMHackathon26\54b91c91-badc-481e-b5b3-de78b2fa4c93\tasks\bf4la3oua.output</output-file>
+<status>failed</status>
+<summary>Background command "Restart frontend server" failed with exit code 1</summary>
+</task-notification>
+
+---
+
+<task-notification>
+<task-id>bf4la3oua</task-id>
+<tool-use-id>toolu_01QHSaFpTvdxEFQ2MjcTYCnZ</tool-use-id>
+<output-file>C:\Users\anil1\AppData\Local\Temp\claude\C--Users-anil1-Downloads-Hackathon-TUMHackathon26\54b91c91-badc-481e-b5b3-de78b2fa4c93\tasks\bf4la3oua.output</output-file>
+<status>failed</status>
+<summary>Background command "Restart frontend server" failed with exit code 1</summary>
+</task-notification>
+
+---
+
+okay nein das sieht alles navjh AI slop auch, es soll meschlcih , autheisth und realw moikjrkne mit mehr bile rvon eftaures aund mhern menschjlcihe maobtion überall in markdowns. verebsber alles und beiele dich
