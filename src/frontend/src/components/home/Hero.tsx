@@ -20,8 +20,8 @@ export function Hero({ data }: { data: HomeData }) {
       <MediaImage src="/media/poster.jpg" alt="" priority />
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-black/50" aria-hidden="true" />
       <div className="relative mx-auto w-full max-w-[1400px] px-6 pb-16 pt-40 lg:px-10">
-        <h1 className="text-6xl font-extralight leading-[0.95] tracking-tight sm:text-8xl lg:text-[9rem]">Signal2Spec.</h1>
-        <p className="mt-6 text-2xl font-light text-white/90 sm:text-3xl">From customer voice to the next BMW.</p>
+        <h1 className="text-6xl font-extralight leading-[0.95] tracking-tight sm:text-8xl lg:text-[9rem]">ReSpec.</h1>
+        <p className="mt-6 text-2xl font-light text-white/90 sm:text-3xl">Respect the voice. Define the spec.</p>
         <div className="mt-10 flex flex-wrap gap-4">
           <Button href="/cockpit">Open cockpit</Button>
           <Button variant="outline-light" href="#how">See how it works</Button>

@@ -8,9 +8,9 @@ Bis ihr antwortet, gilt meine Empfehlung. Genauere Karten mit Vor- und Nachteile
 ---
 
 ### 1. Name und Geschichte (E01)
-- **A:** Signal2Spec, wie es ist
+- **A:** ReSpec, wie es ist
 - **B:** Neuer Name
-- **C:** Signal2Spec mit schärferer Geschichte *(Empfehlung: kein Umbenennen nötig)*
+- **C:** ReSpec mit schärferer Geschichte *(Empfehlung: kein Umbenennen nötig)*
 
 **Wir nehmen:** __ **Weil:** ____________________
 

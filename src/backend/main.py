@@ -41,7 +41,7 @@ async def lifespan(app: FastAPI):
             audit.close()
 
 
-app = FastAPI(title="Signal2Spec", version="0.2.0", lifespan=lifespan,
+app = FastAPI(title="ReSpec", version="0.2.0", lifespan=lifespan,
               description="Von Kundenbelegen zu priorisierten Anforderungen, mit PM im Loop und Prüfpfad.")
 app.add_middleware(
     CORSMiddleware,

@@ -24,7 +24,7 @@ from main import app  # noqa: E402
 def verify(processed_dir: Path = ROOT / "data" / "processed") -> dict:
     os.environ["DEMO_MODUS"] = "true"
     checks, snapshots = [], {}
-    with tempfile.TemporaryDirectory(prefix="signal2spec-verify-") as folder:
+    with tempfile.TemporaryDirectory(prefix="respec-verify-") as folder:
         os.environ["AUDIT_DB"] = str(Path(folder) / "audit.db")
         os.environ["PROCESSED_DIR"] = str(processed_dir.resolve())
         with TestClient(app) as client:

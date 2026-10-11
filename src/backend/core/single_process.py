@@ -47,7 +47,7 @@ class ProcessLock:
             self._file = None
             raise SecondProcessError(
                 f"Audit DB {self.path.with_suffix('')} is already used by another API process. "
-                "Signal2Spec runs as one API process (state lives in RAM); "
+                "ReSpec runs as one API process (state lives in RAM); "
                 "stop the other process or set a separate AUDIT_DB.") from err
         return self
 

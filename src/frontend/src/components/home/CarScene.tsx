@@ -125,7 +125,7 @@ export function CarScene({ chapters, field, onFramesStatus }: { chapters: Chapte
     <section
       id="how"
       ref={sectionRef}
-      aria-label="How Signal2Spec works"
+      aria-label="How ReSpec works"
       className={`relative bg-[var(--black)] text-white ${reduced ? "" : "h-[380vh] md:h-[560vh]"}`}
     >
       <div className={reduced ? "" : "sticky top-0 h-screen overflow-hidden"}>

@@ -57,7 +57,7 @@ export default function GuidePage() {
   return (
     <main className="mx-auto grid max-w-3xl gap-6 px-6 py-12">
       <header className="pb-4">
-        <Eyebrow>Signal2Spec</Eyebrow>
+        <Eyebrow>ReSpec</Eyebrow>
         <SectionHeading as="h1" className="mt-3">Guide to the cockpit.</SectionHeading>
         <p className="mt-4 text-[var(--grey-500)]">
           The AI proposes what to build next. You decide whether that is right, and you see the evidence for every proposal.

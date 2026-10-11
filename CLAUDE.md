@@ -1,6 +1,6 @@
 # Regeln für Claude Code (Hackathon-Team)
 
-Repo unseres Teams für das **TUM.ai × EHL Grand Finale** (10.-11.10.2026, Garching); es arbeiten **4 Personen** (Piyush, Aditya, Dennis, Lasse). Ziel: **Platz 1 in unserer Challenge.** **Challenge: BMW "AI for Product Decision Making"**, Produkt **Signal2Spec**. Stack: Next.js (`src/frontend/`) + Python/FastAPI (`src/backend/`). **Masterplan: `docs/PLAN.md`. Roadmap mit Tickets: `docs/ROADMAP.md` + Arbeitsbuch der Person in `docs/pfade/`.**
+Repo unseres Teams für das **TUM.ai × EHL Grand Finale** (10.-11.10.2026, Garching); es arbeiten **4 Personen** (Piyush, Aditya, Dennis, Lasse). Ziel: **Platz 1 in unserer Challenge.** **Challenge: BMW "AI for Product Decision Making"**, Produkt **ReSpec**. Stack: Next.js (`src/frontend/`) + Python/FastAPI (`src/backend/`). **Masterplan: `docs/PLAN.md`. Roadmap mit Tickets: `docs/ROADMAP.md` + Arbeitsbuch der Person in `docs/pfade/`.**
 
 **Claude programmiert, das Team steuert und prüft.** Arbeite Ticket für Ticket aus dem Arbeitsbuch der Person: Test zuerst, dann Code, dann jedes Fertig-Kriterium mit Befehl + Ausgabe belegen, dann Skill `sync`. Subagents sind erwünscht für unabhängige Dateien und Reviews (Regeln: `docs/ROADMAP.md` §5; Subagents committen nie).
 

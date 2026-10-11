@@ -6,9 +6,9 @@
 
 | | Name | Story | Plus | Minus |
 |---|---|---|---|---|
-| A | **Signal2Spec** (steht schon überall) | "Aus Kundenstimmen wird eine belegte Anforderungsliste." | Name ist im Code, README, Deck-Plan. Sagt, was es tut. | Klingt technisch. |
+| A | **ReSpec** (steht schon überall) | "Aus Kundenstimmen wird eine belegte Anforderungsliste." | Name ist im Code, README, Deck-Plan. Sagt, was es tut. | Klingt technisch. |
 | B | Neuer Name, gleiche Story | z. B. "Stimme des Kunden" | Merkbarer, persönlicher. | Überall umbenennen, Risiko für Fehler. |
-| C | Signal2Spec, aber neue Story | "Wir sagen nicht nur WAS BMW bauen soll, sondern wie sicher wir uns sind." | Der Satz steht schon im Plan und trifft den Brief ("evidence vs. assumptions"). | Keine. |
+| C | ReSpec, aber neue Story | "Wir sagen nicht nur WAS BMW bauen soll, sondern wie sicher wir uns sind." | Der Satz steht schon im Plan und trifft den Brief ("evidence vs. assumptions"). | Keine. |
 
 ## Beispiel aus unseren Daten
 
@@ -22,10 +22,10 @@ Der Name steht im Titel der Oberfläche und auf Folie 1. Die Story ist der erste
 
 ## Empfehlung
 
-**C.** Name behalten, Story schärfen auf: "Vom Kundenzitat zur Anforderung, mit Beleg, Unsicherheit und Prüfpfad." Das kostet keine Umbenennung.
+**ReSpec.** Kundenstimmen ernst nehmen und in belegte Anforderungen übersetzen. Der Slogan lautet: "Respect the voice. Define the spec."
 
 ## Unsere Entscheidung
-_(leer)_
+**ReSpec** mit dem Slogan **"Respect the voice. Define the spec."** (11.10.2026).
 
 ## Warum
-_(leer)_
+Das Wortspiel mit „Respect“ verbindet das Ernstnehmen der Kundenstimmen mit konkreten Produktspezifikationen.

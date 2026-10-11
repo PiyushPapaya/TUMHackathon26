@@ -1,4 +1,4 @@
-# Signal2Spec Welle 2: Schnell-Umsetzungsplan
+# ReSpec Welle 2: Schnell-Umsetzungsplan
 
 > **So benutzt du diesen Plan:** Such deinen Namen. Arbeite die Karten **von oben nach unten** ab. Pro Karte kopierst du den Prompt in deine Claude-Session, Claude schreibt zuerst den Test und dann den Code, du führst den Fertig-Befehl aus und rufst danach `sync` auf. Eine Karte dauert 20–45 Minuten. Hängst du 45 Minuten an einer Karte: Karte überspringen und Piyush Bescheid geben.
 >

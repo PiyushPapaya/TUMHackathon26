@@ -4,6 +4,10 @@ Stand: 11.10.2026. Geprüft wurde der lokale Arbeitsstand einschließlich bereit
 nicht committeter Änderungen. UI-Gestaltung und die Entscheidung über zusätzliche UI-Funktionen
 waren ausdrücklich ausgenommen. Dieser Bericht ersetzt keine fachliche Freigabe durch BMW.
 
+Nachprüfung am selben Tag: [Browser- und Pipeline-Bericht](BROWSER_PIPELINE_CHECK.md).
+Der vollständige Playwright-Ablauf und die isolierte Neuerzeugung aller sechs Szenarien
+sind inzwischen ausgeführt, einschließlich echter Backend-Neustarts.
+
 ## Ergebnis
 
 Der Kernstack funktioniert in den geprüften Abläufen: sechs Szenarien laden, Quellen anzeigen,
@@ -11,9 +15,10 @@ Anforderungen erklären, Gewichte ausprobieren/übernehmen, Anforderungen freige
 bearbeiten/hinterfragen, exportieren und nach einem Neustart denselben PM-Zustand wiederherstellen.
 Mehrere Fehler bei Randfällen wurden behoben und durch Regressionstests abgesichert.
 
-**Nicht alle Planpunkte sind fertig.** Insbesondere fehlen die menschliche Befund-Evaluation,
-ausreichende Web-/Zukunftsevidenz in mehreren Szenarien und ein vollständiger neuer Pipeline-Lauf
-mit den aktuellen Prompts. Ein erfolgreicher Build beweist außerdem keinen vollständigen Browser-Flow.
+**Nicht alle Planpunkte sind fertig.** Die menschliche Befund-Evaluation und die fachliche
+Freigabe der neuen Quellen/Zukunftsannahmen bleiben offen. Die nachgeprüften neuen Bundles
+enthalten Web- und Zukunftsbelege für alle sechs Szenarien; interne Datenlücken bleiben bestehen.
+Browser- und Pipeline-Ausführung sind im verlinkten Nachprüfbericht dokumentiert.
 Die Prüfung rechtfertigt weder „bugfrei“ noch eine Garantie für Wettbewerbsfähigkeit.
 
 ## Prüfgrundlage
@@ -136,8 +141,8 @@ liegen in `tests/eval/REPORT-*.md`; der Hauptbericht in `tests/eval/REPORT.md`.
 |---|---|---|
 | P1 | Menschliche Evaluation fehlt | Aditya/Dennis bewerten die 50 vorbereiteten G60-US-Paare in `data/eval/G60-US_sample.csv` mit j/n; danach Evaluation neu ausführen. Keine KI-erfundene Trust-Zahl verwenden. |
 | P1 | Dünne Szenarien und unvollständiger Zukunftshorizont | Piyush/Dennis recherchieren belastbare marktbezogene Wettbewerber-/Trendquellen und erzeugen neue Anforderungen; bis dahin F70-EU/G60-US als Hauptdemo, andere als Datenlücken-/Kaltstartbeweis einordnen. |
-| P1 | Vollständige Neuerzeugung nicht bestätigt | Alle sechs Szenarien mit aktuellem Code/Prompts in einen getrennten Ausgabeordner erzeugen, Cache-Fails und Quellen prüfen, Bundle-/API-/Eval-Prüfung wiederholen. Alte PM-Verläufe behalten; für neue Bundles separate Audit-DB verwenden. |
-| P1 | Vollständiger Browser-Flow fehlt | Auf freigegebenem laufendem Frontend Modellwechsel, Belege, Challenge, Edit, Gewichte, Exporte und Neustart prüfen. Start des separaten Frontend-Testservers wurde automatisch abgelehnt, ohne spezifische Begründung. Build/API-Tests ersetzen diesen Schritt nicht. |
+| Erledigt | Vollständige isolierte Neuerzeugung | Alle sechs Szenarien durch alle Stufen erzeugt; Bundle-/API-/Eval-Prüfung erfolgreich. Ergebnisse und Quellstand-Manifest unter `outputs/repo-audit/`; menschliche Freigabe der neuen Inhalte bleibt erforderlich. |
+| Erledigt | Vollständiger Browser-Flow | Produktionsbuild mit lokalem Playwright geprüft: sechs Szenarien, echte PM-Aktionen, Belege, Gewichte, Downloads, mobile Ansichten und exakter Backend-Neustart. Die frühere Testserver-Ablehnung blockiert diesen Nachweis nicht mehr. |
 | P2 | Stabile Identität bei neuen Quellen | Signal-IDs künftig aus semantischen Gruppenschlüsseln ableiten und bestehende IDs kontrolliert migrieren. Legacy-Audit ohne Fingerabdruck kann bisherige Quelldatenidentität nicht belegen und meldet eine Warnung. |
 | P2 | Chancenkarte und Akzeptanzkriterien | Proxy-Wichtigkeit ehrlich erklären. G60-EU hat nur 60 % Kriterien mit Ziffer; relative Kriterien benötigen definierte Baseline/Stichprobe. Die Ziffern-Heuristik beweist generell keine fachlich sinnvolle Messbarkeit. |
 | ~~P2~~ ✅ | Vollständigkeit des Audit-Ursprungs | **Erledigt 11.10. (`16fda4e`) für neue Läufe:** `pipeline.py` schreibt `provenance` (Modell, Hash der Prompt-Dateien, Git-Commit, `core/provenance.py`) ins Bundle; der Store übernimmt sie in `PIPELINE_LOADED` und `SIGNALS_EXTRACTED`. Grenze: Modell = Stand bei der Bündelung. Die heutigen sechs Bundles sind älter und zeigen weiter ehrlich „not recorded in snapshot“; nachträglich wird nichts geraten. Prüfen: `tests/test_pipeline.py`. |

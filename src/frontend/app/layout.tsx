@@ -11,11 +11,11 @@ const hanken = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Signal2Spec",
-  description: "From customer voice to the next BMW. Evidence-backed product requirements for PM decisions.",
+  title: "ReSpec",
+  description: "Respect the voice. Define the spec. Evidence-backed product requirements for PM decisions.",
   openGraph: {
-    title: "Signal2Spec",
-    description: "From customer voice to the next BMW.",
+    title: "ReSpec",
+    description: "Respect the voice. Define the spec.",
     type: "website",
   },
 };

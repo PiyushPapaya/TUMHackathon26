@@ -51,7 +51,7 @@ def speichern(fig, name: str) -> None:
 
 def techflow() -> None:
     fig, ax = neue_flaeche(1600, 520)
-    ax.text(10, 28, "Signal2Spec: der Weg der Daten", fontsize=16, weight="bold", color=TEXT)
+    ax.text(10, 28, "ReSpec: der Weg der Daten", fontsize=16, weight="bold", color=TEXT)
     schritte = [
         ("1 Einlesen", "Excel → Belege\nmit fester ID", GRAU_HELL, GRAU),
         ("2 Befunde", "Themen bilden,\nKI fasst zusammen", BLAU_HELL, BLAU),
@@ -103,7 +103,7 @@ def zitat_zu_requirement() -> None:
 
 def kopf(ax, titel: str, breite: int) -> None:
     box(ax, 0, 0, breite, 56, "", "white", GRAU_HELL)
-    ax.text(20, 28, "Signal2Spec", fontsize=13, weight="bold", color=BLAU, va="center")
+    ax.text(20, 28, "ReSpec", fontsize=13, weight="bold", color=BLAU, va="center")
     for i, name in enumerate(["Anforderungen", "Trichter", "Audit Trail"]):
         aktiv = name == titel
         ax.text(220 + i * 170, 28, name, fontsize=10, va="center", color=BLAU if aktiv else GRAU, weight="bold" if aktiv else "normal")

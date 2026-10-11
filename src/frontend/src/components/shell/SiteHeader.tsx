@@ -77,7 +77,7 @@ export function SiteHeader() {
         }`}
       >
         <div className="mx-auto flex h-[72px] max-w-[1400px] items-center justify-between gap-6 px-6 lg:px-10">
-          <Link href="/" aria-label="Signal2Spec home"><Logo light={light} /></Link>
+          <Link href="/" aria-label="ReSpec home"><Logo light={light} /></Link>
 
           <nav className="hidden items-center gap-6 xl:gap-8 lg:flex" aria-label="Main">
             {NAV.map((item) => {

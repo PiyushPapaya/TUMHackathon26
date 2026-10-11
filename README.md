@@ -1,4 +1,6 @@
-# Signal2Spec
+# ReSpec
+
+> **Respect the voice. Define the spec.**
 
 > **From thousands of customer voices to a prioritized, evidence-backed requirement list for the next BMW, with the product manager in control of every decision and every change on a tamper-evident audit trail.**
 

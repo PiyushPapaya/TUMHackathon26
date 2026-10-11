@@ -2,7 +2,7 @@
 
 import { useState, useSyncExternalStore } from "react";
 
-const KEY = "s2s-howto-hidden";
+const KEY = "respec-howto-hidden";
 const STEPS = [
   ["Read the ranking", "Higher score = more customers affected, bigger satisfaction gap and stronger proof."],
   ["Open a row", "See why it ranks there, the original customer quotes and what is still uncertain."],

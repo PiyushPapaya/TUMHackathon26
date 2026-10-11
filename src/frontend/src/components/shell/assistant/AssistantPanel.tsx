@@ -74,12 +74,12 @@ export function AssistantPanel({
         <span className="absolute inset-0 animate-ping bg-[var(--blue)] opacity-20 [animation-iteration-count:3]" aria-hidden="true" />
         <span className="flex h-14 w-14 items-center justify-center"><Icon name="chat" /></span>
         <span className="max-w-0 overflow-hidden whitespace-nowrap text-sm font-semibold transition-[max-width,padding] duration-300 group-hover:max-w-40 group-hover:pr-5">
-          Ask Signal2Spec
+          Ask ReSpec
         </span>
       </button>}
 
       <aside
-        aria-label="Signal2Spec assistant"
+        aria-label="ReSpec assistant"
         aria-hidden={!isOpen}
         className={`fixed bottom-0 right-0 top-0 z-50 flex w-full max-w-[420px] flex-col border-l border-[var(--hairline)] bg-white transition-[transform,box-shadow] duration-300 ease-out ${
           // Schatten nur im offenen Zustand: geschlossen lag er sonst als grauer Streifen am rechten Seitenrand.

@@ -32,7 +32,7 @@ export function CockpitHero({ scenario, scenarioId }: { scenario?: Scenario; sce
           >
             <Icon name="evidence" size={14} /> Guide
           </button>
-          <Eyebrow>{scenario ? scenarioLabel(scenario) : "Signal2Spec"}</Eyebrow>
+          <Eyebrow>{scenario ? scenarioLabel(scenario) : "ReSpec"}</Eyebrow>
         </div>
         <h1 className="mt-3 text-3xl font-medium">Ranked requirements</h1>
         <p className="mt-2 max-w-xl text-sm text-[var(--grey-500)]">What the successor of this car should do better, ranked by customer evidence. Click a row for the reasons.</p>

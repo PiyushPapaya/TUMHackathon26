@@ -18,7 +18,7 @@ export const useAssistant = () => useContext(AssistantContext);
 
 const GREETING: Message = {
   role: "bot",
-  text: "Hi, I am the Signal2Spec assistant. Ask what to build first, what a label means, or where to find something. I only answer with real requirement IDs from the data.",
+  text: "Hi, I am the ReSpec assistant. Ask what to build first, what a label means, or where to find something. I only answer with real requirement IDs from the data.",
 };
 
 const toHit = (h: AskHit): Hit => ({ id: h.requirement_id, title: h.title, scenarioId: h.scenario_id, level: h.evidence_level, note: h.reasons[0]?.sentence });

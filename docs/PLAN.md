@@ -1,11 +1,11 @@
-# Masterplan: Signal2Spec (BMW · AI for Product Decision Making)
+# Masterplan: ReSpec (BMW · AI for Product Decision Making)
 
 > Ein Dokument für alle. Lesezeit 10 Minuten. Details pro Pfad: `docs/pfade/`.
 > Zeitplan Stunde für Stunde: `docs/ZEITPLAN.md`. Brief wörtlich: `docs/CHALLENGE.md`.
 
 ## 1. Die Idee in drei Sätzen
 
-**Signal2Spec** macht aus tausenden Kundenstimmen, Studienwerten, Absatzzahlen und Webquellen
+**ReSpec** macht aus tausenden Kundenstimmen, Studienwerten, Absatzzahlen und Webquellen
 eine priorisierte Liste von Kundenanforderungen für den Nachfolger eines BMW-Modells.
 Jede Anforderung zeigt **wie gut sie belegt ist (Evidenzstufe A-D)**, **welche Annahmen sie trägt**
 und **wo Belege sich widersprechen**, bis hinunter zum einzelnen Zitat.
