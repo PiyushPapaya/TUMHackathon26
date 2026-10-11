@@ -7,7 +7,6 @@ import { FindingCard } from "@/src/components/FindingCard";
 import { AssumptionItem, OfferCheckBox } from "@/src/components/DetailBlocks";
 import { DecisionPanel } from "@/src/components/DecisionPanel";
 import { AuditTrail } from "@/src/components/AuditTrail";
-import { ProductContext } from "@/src/components/ProductContext";
 import { chartFactorSteps, rationaleWithChartPoints } from "@/src/lib/scoreSteps";
 
 const H2 = "text-xs font-semibold uppercase tracking-[0.16em] text-[var(--grey-500)]";
@@ -60,7 +59,6 @@ export function RequirementDetailView({
             <div><dt className="text-xs text-[var(--grey-500)]">Market volume 2030</dt><dd className="mt-1 font-semibold tabular-nums">{numberOrDash(business?.volume_2030)}</dd><dd className="text-xs text-[var(--grey-500)]">projection, vehicles</dd></div>
             <div><dt className="text-xs text-[var(--grey-500)]">Growth 2025 to 2030</dt><dd className="mt-1 font-semibold tabular-nums">{numberOrDash(business?.growth_pct, "%")}</dd></div>
           </dl>
-          <div className="mt-4"><ProductContext scenarioId={scenarioId} compact /></div>
         </div>
         <div className="summary-chart min-w-0"><ScoreWaterfall scoreBreakdown={requirement.score_breakdown} evidenceLevel={requirement.evidence_level} finalScore={requirement.score} waterfall={detail.waterfall} ignoreAssumptions={ignoreAssumptions} onToggleIgnoreAssumptions={onToggleIgnoreAssumptions} /></div>
         <div className="summary-criterion min-w-0 border-l-2 border-[var(--blue)] bg-[var(--grey-100)] p-4">
