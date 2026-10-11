@@ -1,7 +1,7 @@
 """Sucht nach API-Keys und Passwörtern, bevor sie im ÖFFENTLICHEN Repo landen.
 
 Warum ein eigenes Skript statt gitleaks: läuft überall, wo Python ist (Windows, Mac, CI),
-ohne Extra-Installation. Für eine gründlichere Prüfung siehe docs/ABGABE.md (gitleaks).
+ohne Extra-Installation. Für eine gründlichere Prüfung gitleaks nutzen.
 
 Aufruf:
   python scripts/secret_scan.py            # alle getrackten + gestagten Dateien

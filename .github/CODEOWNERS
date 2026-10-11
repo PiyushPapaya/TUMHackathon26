@@ -1,6 +1,5 @@
 # Wer muss Änderungen freigeben? Die LETZTE passende Zeile gilt.
 # Seit Sa 10.10. pushen alle direkt auf main; diese Datei ist nur noch eine Übersicht, wer welchen Ordner verantwortet.
-# Die Pfad-Zuordnung (wer welchen Pfad baut) steht in docs/PLAN.md, Abschnitt "Wer nimmt welchen Pfad".
 # Verteilt am Sa 14:50 (4 Personen): zweite Person pro Ordner = Besitzer des Pfads.
 
 *                                   @PiyushPapaya

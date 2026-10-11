@@ -1,10 +1,15 @@
 # scripts/
 
-Hilfsskripte. Wer braucht das: Piyush (Abgabe) und wer Bilder neu bauen will.
+Hilfsskripte für Prüfung, Daten und Demo.
 
 | Skript | Was es tut |
 |---|---|
 | `secret_scan.py` | Sucht Passwörter und API-Keys. Vor jedem Push ausführen. |
 | `ehl_budget.py` | Zeigt, welche Dateien die Jury-KI beim Review sieht (Budget 200.000 Zeichen). |
-| `make_visuals.py` | Baut die Charts in `visuals/charts/` aus den echten BMW-Daten. |
-| `make_diagrams.py` | Baut Techflow, Mockups und das Zitat-Bild in `visuals/`. |
+| `verify_stack.py` | Offline-Check aller sechs Szenarien: API, PM-Entscheidung, Neustart. |
+| `check_bundles.py` | Prüft die Snapshots in `data/processed/` auf Regelverstöße. |
+| `refresh_bundles.py` | Ergänzt Metadaten in vorhandenen Snapshots ohne LLM. |
+| `new_scenario.py` | Legt eine neue Modell/Markt-Config in `config/scenarios/` an. |
+| `make_view_examples.py` | Erzeugt die Beispielantworten in `src/shared/beispiele/views/`. |
+| `migrate_signal_ids.py` | Einmalige Umstellung auf stabile Signal-IDs. |
+| `start_demo.sh` | Startet Backend und Cockpit im Demo-Modus. |
