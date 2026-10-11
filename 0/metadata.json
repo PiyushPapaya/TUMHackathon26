@@ -1,0 +1,62 @@
+{
+  "cli_version": "0.11.4",
+  "checkpoint_id": "01M4MH51PR62NDSW10Z5GVB2D2",
+  "session_id": "e0eca6e3-d746-47c6-8172-d753ba282324",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-11T03:47:24.146262744Z",
+  "branch": "jolesRegionalFrontend",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "src/frontend/src/components/shell/SiteHeader.tsx"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-opus-5-5",
+  "turn_id": "18a9c4fcf2c8",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 18,
+    "cache_creation_tokens": 25595,
+    "cache_read_tokens": 407541,
+    "output_tokens": 2438,
+    "api_call_count": 9
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-11T03:47:24.13710525Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 6,
+    "human_modified": 2,
+    "human_removed": 0,
+    "total_committed": 6,
+    "total_lines_changed": 8,
+    "agent_percentage": 0,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 87056,
+      "user_lines_removed": 3,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".gitignore": 4,
+        "data/processed/G60-EU/context.json": 8,
+        "data/processed/G60-EU/evidence.json": 2888,
+        "data/processed/G60-US/external_evidence.json": 1040,
+        "data/processed/G60-US/external_signals.json": 102,
+        "data/processed/G70-EU/context.json": 8,
+        "data/processed/G70-EU/evidence.json": 956,
+        "data/processed/G70-US/context.json": 8,
+        "data/processed/G70-US/evidence.json": 81420,
+        "data/processed/G70-US/external_evidence.json": 557,
+        "data/processed/G70-US/external_signals.json": 59,
+        "entscheidungen/E08_bmw_daten_im_repo.md": 5,
+        "entscheidungen/LOG.md": 1
+      },
+      "user_removed_per_file": {
+        ".gitignore": 3
+      }
+    }
+  ]
+}
