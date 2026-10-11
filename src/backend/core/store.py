@@ -52,6 +52,8 @@ class ScenarioState:
         # Welle 2: Kontext (Absatz, unbekannte Themen) und Chancen-Karte, fertig aus der Pipeline
         self.context: dict = bundle.get("context", {})
         self.opportunities: list[dict] = bundle.get("opportunities", [])
+        # Herkunft (Modell, Prompt-Stand, Commit); fehlt bei Bundles von vor dem 11.10. -> None, nie geraten.
+        self.provenance: dict | None = bundle.get("provenance")
 
 
 class Store:
@@ -98,13 +100,14 @@ class Store:
         """Erste Einträge im Prüfpfad: woher die Vorschläge stammen."""
         sid = state.scenario.id
         self.audit.append("PIPELINE_LOADED", sid, SYSTEM, f"Ergebnisse geladen aus {source}",
-                          {"funnel": state.funnel, "bundle_sha256": fingerprint})
+                          {"funnel": state.funnel, "bundle_sha256": fingerprint,
+                           "provenance": state.provenance})
         self.audit.append("EVIDENCE_INGESTED", sid, SYSTEM, f"Einleseergebnis aus {source} registriert",
                           {"count": state.funnel.get("evidence", len(state.evidence)),
                            "data_coverage": state.scenario.data_coverage.model_dump(), "source": source})
         self.audit.append("SIGNALS_EXTRACTED", sid, SYSTEM, f"Befundergebnis aus {source} registriert",
                           {"count": len(state.signals), "source": source,
-                           "model": "not recorded in snapshot"})
+                           "model": (state.provenance or {}).get("llm_model", "not recorded in snapshot")})
         for req in sorted(state.requirements.values(), key=lambda r: r.rank):
             self.audit.append(
                 "REQUIREMENT_PROPOSED", sid, Actor(type=ActorType.AI, name="pipeline"),
