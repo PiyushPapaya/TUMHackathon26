@@ -51,9 +51,10 @@ Quellen: [Reskilll](https://reskilll.com/blogs/hackathon-demo-presentation-tips-
 | Grounding Befunde | 100 % der zitierten Beleg-IDs existieren, 100 % wörtlich in der Excel | `tests/eval/REPORT.md` |
 | Grounding Anforderungen | 100 % der zitierten Befund-IDs existieren (inkl. Web-Befunde) | `tests/eval/REPORT.md` (So 06:45) |
 | Messbare Kriterien | 100 % der 19 Akzeptanzkriterien enthalten eine Zahl | dieselbe Datei |
+| Befund-Treue | 88 % (44 von 50 Paaren "Kommentar belegt Befund"), **von Claude gelabelt, nicht von einem Menschen**: nur Richtwert | `tests/eval/REPORT.md` (So 11.10.) |
 
 Eval neu gelaufen (So 06:45). Vorher standen dort 89,8 % Grounding: Messfehler, weil das Skript die 5 zitierten
-Web-Befunde nicht kannte. Behoben in `tests/eval/run_eval.py`. Befund-Treue ist weiter **n/a** (0 von 50 gelabelt).
+Web-Befunde nicht kannte. Behoben in `tests/eval/run_eval.py`. Befund-Treue: 88 %, aber KI-gelabelt (Nein-Fälle: falsches Thema, z. B. Bluetooth unter WiFi, Federung unter Antrieb). Im Pitch nur mit diesem Hinweis nennen.
 
 **Konflikt-Moment der Demo (live geprüft, G60-US):** Rang 5 „Make real-world range, charging speed and charger
 availability …“. Diese Anforderung zitiert **beide Seiten**: 38 Nennungen „Range feels limited and fluctuates“ gegen

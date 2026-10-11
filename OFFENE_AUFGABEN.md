@@ -32,7 +32,7 @@ Alle fünf Aufgaben sind offen. Die Reihenfolge ist die gewünschte Arbeitsreihe
 
 Aktueller technischer Abgleich: [docs/REPO_CHECK.md](docs/REPO_CHECK.md). A1 ist im Backend und den
 sechs Snapshots ergänzt und getestet; die vollständige Browserprüfung bleibt offen. A2 bleibt eine
-Produktentscheidung. A3 benötigt weiterhin menschliche Labels (G60-US: 0 von 50).
+Produktentscheidung. A3: G60-US von Claude gelabelt (88 %), menschliches Nachlabeln offen.
 
 > Stand: So 11.10.2026, 07:10. Angelegt nach dem Abgleich mit dem BMW-Brief (`docs/CHALLENGE.md`).
 > Status: **Entscheidung offen.** Das Team (Piyush) entscheidet später. Ein Agent arbeitet eine Aufgabe nur ab,
@@ -126,7 +126,7 @@ Nachfolger-Anforderungen.“
 
 ## A3 · Befund-Treue von Hand labeln
 
-**Status:** offen, braucht einen **Menschen** (z. B. Aditya), ca. 15 Minuten.
+**Status:** erledigt als KI-Vorlabel (Lasse hat Claude labeln lassen): 88 %, 44 von 50. Ein Mensch sollte nachlabeln.
 
 **Warum:** Einzige fehlende Kernzahl im Eval (`tests/eval/REPORT.md`: Befund-Treue n/a, 0 von 50 gelabelt).
 Bewusst nicht per KI, sonst prüft die KI sich selbst.
