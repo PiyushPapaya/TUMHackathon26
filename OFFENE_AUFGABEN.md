@@ -10,7 +10,7 @@ Die folgenden Punkte sind offen und aus dem [technischen Abgleich](docs/REPO_CHE
 
 | Priorität | Punkt | Konsequenz / konkreter Abschluss |
 |---|---|---|
-| P1 | ~~Menschliche Evaluation fehlt~~ **erledigt** | 50 von 50 G60-US-Paaren gelabelt, Befund-Treue **88 %** (`tests/eval/REPORT.md`). Zwei Durchläufe: KI-Vorschlag, von Aditya geprüft und bestätigt; reines KI-Label von Lasse (`26c00ce`), ebenfalls 88 %. Nächster Schritt, falls Zeit: blindes Zweitlabel durch einen Menschen. |
+| P1 | ~~Menschliche Evaluation fehlt~~ **erledigt** | 50 von 50 G60-US-Paaren gelabelt, Befund-Treue **88 %** (`tests/eval/REPORT.md`). Zwei Durchläufe: KI-Vorschlag, von Aditya geprüft und bestätigt; KI-Vorlabel von Lasse (`26c00ce`), von Lasse alle 50 Zeilen geprüft und bestätigt, ebenfalls 88 %. Nächster Schritt, falls Zeit: blindes Zweitlabel durch einen Menschen. |
 | P1 | Dünne Szenarien und unvollständiger Zukunftshorizont | Piyush/Dennis recherchieren belastbare marktbezogene Wettbewerber-/Trendquellen und erzeugen neue Anforderungen; bis dahin F70-EU/G60-US als Hauptdemo, andere als Datenlücken-/Kaltstartbeweis einordnen. |
 | P1 | Vollständige Neuerzeugung nicht bestätigt | Alle sechs Szenarien mit aktuellem Code/Prompts in einen getrennten Ausgabeordner erzeugen, Cache-Fails und Quellen prüfen, Bundle-/API-/Eval-Prüfung wiederholen. Alte PM-Verläufe behalten; für neue Bundles separate Audit-DB verwenden. |
 | ~~P1~~ ✅ | Vollständiger Browser-Flow fehlt | **Erledigt 11.10. (`8bb2826`):** `scripts/verify_browser.cjs` hat alle sechs Szenarien inkl. Replay nach Neustart ohne Fehler durchlaufen (Offline-Demomodus, Details `docs/VERIFIKATION_P1_P2.md`). Ursprüngliche Aufgabe: Auf freigegebenem laufendem Frontend Modellwechsel, Belege, Challenge, Edit, Gewichte, Exporte und Neustart prüfen. Start des separaten Frontend-Testservers wurde automatisch abgelehnt, ohne spezifische Begründung. Build/API-Tests ersetzen diesen Schritt nicht. |
@@ -132,7 +132,7 @@ Nachfolger-Anforderungen.“
 
 ## A3 · Befund-Treue von Hand labeln
 
-**Status:** erledigt (So 08:30): 44 von 50 = 88 %. Claude schlug vor, Aditya prüfte und bestätigte. Lasses reines KI-Label (`26c00ce`) kam ebenfalls auf 88 %. Offen als nächster Schritt: blindes Zweitlabel durch einen Menschen.
+**Status:** erledigt (So 08:30): 44 von 50 = 88 %. Claude schlug vor, Aditya prüfte und bestätigte. Lasses Durchlauf (`26c00ce`, KI-Vorlabel, von Lasse alle 50 Zeilen geprüft) kam ebenfalls auf 88 %. Offen als nächster Schritt: blindes Zweitlabel durch einen Menschen.
 
 **Warum:** Einzige fehlende Kernzahl im Eval (`tests/eval/REPORT.md`: Befund-Treue n/a, 0 von 50 gelabelt).
 Bewusst nicht per KI, sonst prüft die KI sich selbst.
@@ -149,7 +149,7 @@ letzte Spalte `passt` mit `j`/`n` füllen, dann `python tests/eval/run_eval.py G
 - Konflikt-„!“ im Cockpit nur, wenn beide Seiten zitiert sind (gleiche Regel wie Detailseite) · `7525ee6`
 - Demo-Konflikt gefunden: G60-US Rang 5 Reichweite, 38 gegen 28 Nennungen · `docs/pitch/RECHERCHE.md`
 - A1 Segment-Konflikte auf der Detailseite · `7cffbca`
-- A3 Befund-Treue G60-US 88 % (KI-gelabelt, menschliches Nachlabeln offen) · `26c00ce`
+- A3 Befund-Treue G60-US 88 %, zwei von Menschen geprüfte KI-Vorlabel (Aditya, Lasse) · `26c00ce`
 - Browser-Flow aller sechs Szenarien, stabile Signal-IDs, Prüfprotokolle für Kriterien · `8bb2826`
 - R1-R3 README-Key-Code, export-ignore, Daten-Doku · `7a7f5ef`
 - P2 Betriebsmodell: nur ein API-Prozess pro `audit.db` (Dateisperre) · `69c084d`

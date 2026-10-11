@@ -51,13 +51,13 @@ Quellen: [Reskilll](https://reskilll.com/blogs/hackathon-demo-presentation-tips-
 | Grounding Befunde | 100 % der zitierten Beleg-IDs existieren, 100 % wörtlich in der Excel | `tests/eval/REPORT.md` |
 | Grounding Anforderungen | 100 % der zitierten Befund-IDs existieren (inkl. Web-Befunde) | `tests/eval/REPORT.md` (So 06:45) |
 | Messbare Kriterien | 100 % der 19 Akzeptanzkriterien enthalten eine Zahl | dieselbe Datei |
-| Befund-Treue | 88 % (44 von 50 Paaren "Kommentar belegt Befund"), **von Claude gelabelt, nicht von einem Menschen**: nur Richtwert | `tests/eval/REPORT.md` (So 11.10.) |
+| Befund-Treue | 88 % (44 von 50 Paaren "Kommentar belegt Befund"), zwei Durchläufe, je KI-Vorschlag von einem Menschen geprüft (Aditya, Lasse); kein Blind-Label | `tests/eval/REPORT.md` (So 11.10.) |
 
 Eval neu gelaufen (So 06:45). Vorher standen dort 89,8 % Grounding: Messfehler, weil das Skript die 5 zitierten
 Web-Befunde nicht kannte. Behoben in `tests/eval/run_eval.py`. **Befund-Treue G60-US: 88 %** (44 von 50 Paaren
 „Kommentar belegt den Befund“; So 08:30). Ehrlich zur Methode: Claude schlug j/n vor, Aditya prüfte und bestätigte;
-die 6 „n“ sind meist Kundenfragen, die als Beschwerde zählten (z. B. „Wofür ist der Valet-Modus?“). Ein zweiter,
-reiner KI-Durchlauf (Lasse) kam ebenfalls auf 88 % (Nein-Fälle dort: falsches Thema, z. B. Bluetooth unter WiFi).
+die 6 „n“ sind meist Kundenfragen, die als Beschwerde zählten (z. B. „Wofür ist der Valet-Modus?“). Ein zweiter
+Durchlauf (KI-Vorlabel, von Lasse alle 50 Zeilen geprüft) kam ebenfalls auf 88 % (Nein-Fälle dort: falsches Thema, z. B. Bluetooth unter WiFi).
 Im Pitch nur mit dem Hinweis „KI-Vorschlag, von uns geprüft“ nennen.
 
 **Konflikt-Moment der Demo (live geprüft, G60-US):** Rang 5 „Make real-world range, charging speed and charger
