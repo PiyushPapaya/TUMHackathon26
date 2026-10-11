@@ -24,7 +24,7 @@ NEGATIVE_LEVELS = ("I Hate It", "A Failure", "Unsatisfactory")
 TOP2_LEVELS = ("Delightful", "I Love It")
 ALL_LEVELS = (*NEGATIVE_LEVELS, "Satisfactory", "Excellent", *TOP2_LEVELS)
 
-# Schwellen aus dem Ticket A2 (docs/pfade/PFAD-A.md).
+# Schwellen aus dem Team-Ticket A2 (Kundenstudie).
 US_NEGATIVE_FROM = 0.10  # ab 10 % Unzufriedenen ist das Attribut ein Problem
 US_POSITIVE_FROM = 0.60  # ab 60 % "Delightful" + "I Love It" ist es eine Stärke
 MEAN_NEGATIVE_BELOW = 7.5
