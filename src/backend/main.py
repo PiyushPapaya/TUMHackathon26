@@ -46,6 +46,8 @@ app = FastAPI(title="ReSpec", version="0.2.0", lifespan=lifespan,
 app.add_middleware(
     CORSMiddleware,
     allow_origins=os.getenv("CORS_ORIGINS", "http://localhost:3000").split(","),
+    # Vercel gibt jeder Vorschau eine eigene Adresse; eine feste Liste würde jede davon blockieren.
+    allow_origin_regex=os.getenv("CORS_ORIGIN_REGEX") or None,
     allow_methods=["*"],
     allow_headers=["*"],
 )

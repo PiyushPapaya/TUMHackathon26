@@ -1,0 +1,25 @@
+# Render-Blueprint für das ReSpec-Backend (FastAPI). Das Frontend liegt auf Vercel (docs/DEPLOY.md).
+# Warum Render statt Vercel-Funktion: Der Store hält PM-Status im RAM und schreibt audit.db;
+# das braucht EINEN dauerhaft laufenden Prozess (core/single_process.py), Serverless startet ständig neue.
+services:
+  - type: web
+    name: respec-api
+    runtime: python
+    plan: free
+    region: frankfurt
+    buildCommand: pip install -r requirements.txt
+    # Genau ein Worker: ein zweiter sähe die Entscheidungen des ersten nicht.
+    startCommand: uvicorn main:app --app-dir src/backend --host 0.0.0.0 --port $PORT --workers 1
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.8"           # wie die CI (.github/workflows)
+      - key: CORS_ORIGINS
+        value: http://localhost:3000
+      - key: CORS_ORIGIN_REGEX
+        value: https://.*\.vercel\.app
+      - key: DEMO_MODUS
+        value: "false"
+      - key: OPENAI_API_KEY
+        sync: false               # Render fragt beim Anlegen danach; der Key steht nie im Repo
