@@ -13,7 +13,7 @@ Die folgenden Punkte sind offen und aus dem [technischen Abgleich](docs/REPO_CHE
 | P2 | Stabile Identität bei neuen Quellen | Signal-IDs künftig aus semantischen Gruppenschlüsseln ableiten und bestehende IDs kontrolliert migrieren. Legacy-Audit ohne Fingerabdruck kann bisherige Quelldatenidentität nicht belegen und meldet eine Warnung. |
 | P2 | Chancenkarte und Akzeptanzkriterien | Proxy-Wichtigkeit ehrlich erklären. G60-EU hat nur 60 % Kriterien mit Ziffer; relative Kriterien benötigen definierte Baseline/Stichprobe. Die Ziffern-Heuristik beweist generell keine fachlich sinnvolle Messbarkeit. |
 | P2 | Vollständigkeit des Audit-Ursprungs | **Erledigt 11.10. für neue Läufe:** `pipeline.py` schreibt `provenance` (Modell, Hash der Prompt-Dateien, Git-Commit, `core/provenance.py`) ins Bundle; der Store übernimmt sie in `PIPELINE_LOADED` und `SIGNALS_EXTRACTED`. Grenze: Modell = Stand bei der Bündelung. Die heutigen sechs Bundles sind älter und zeigen weiter ehrlich „not recorded in snapshot“; nachträglich wird nichts geraten. Prüfen: `tests/test_pipeline.py`. |
-| P2 | Reviewer-Budget | **Bestätigt 11.10. (HEAD, `python scripts/ehl_budget.py`):** Budget 200000/200000, `src/` jetzt **62,0 %** (vorher 21,8 %), Doku 11,9 %, 140 Dateien ungelesen. Gelesen: Frontend ~76k, Tests ~49k, Backend nur ~32k Zeichen (23 von 61 `.py`). **Demo-Datenstrategie geprüft:** `git archive HEAD` entpackt und gestartet: lädt nur das Beispiel-Bundle G60-US (5 Anforderungen), Audit-Kette gültig. Die echte Demo läuft aus dem Git-Klon (alle 6 Szenarien in `data/processed/`). Offen bleibt nur R1/R2 (Lead-Entscheidung). |
+| P2 | Reviewer-Budget | **Bestätigt 11.10. (HEAD, `python scripts/ehl_budget.py`):** Budget 200000/200000, `src/` jetzt **62,0 %** (vorher 21,8 %), Doku 11,9 %, 140 Dateien ungelesen. Gelesen: Frontend ~76k, Tests ~49k, Backend nur ~32k Zeichen (23 von 61 `.py`). **Demo-Datenstrategie geprüft:** `git archive HEAD` entpackt und gestartet: lädt nur das Beispiel-Bundle G60-US (5 Anforderungen), Audit-Kette gültig. Die echte Demo läuft aus dem Git-Klon (alle 6 Szenarien in `data/processed/`). R1-R3 umgesetzt 11.10. (siehe Abschnitt R am Ende); die Budget-Messung gilt erst nach dem Commit neu. |
 | P2 | Betriebsmodell | **Erledigt 11.10.:** Ein API-Prozess pro Audit-DB wird jetzt erzwungen (`core/single_process.py`, OS-Sperre auf `<audit.db>.lock`, Linux/Mac/Windows). Ein zweiter Prozess bricht beim Start mit klarer Meldung ab, statt still veraltete RAM-Stände zu zeigen. Live geprüft mit zwei uvicorn-Prozessen. Mehrere Worker bleiben bewusst nicht unterstützt (nächster Schritt: gemeinsamer Store statt RAM). Prüfen: `tests/pfad_b/test_single_process.py`. |
 
 ## Weitere offene Teamaufgaben – in dieser Reihenfolge
@@ -27,22 +27,6 @@ Alle fünf Aufgaben sind offen. Die Reihenfolge ist die gewünschte Arbeitsreihe
 | 3 | Gesamte Codebase aufräumen | Dateien und Ordner verständlicher organisieren, Benennung und Lesbarkeit verbessern sowie hilfreiche Kommentare zu Zweck und Entscheidungen ergänzen. Referenzen, Imports und Dokumentation anpassen; bestehende Funktionalität durch passende Checks absichern. | offen |
 | 4 | Repository visuell und inhaltlich verbessern | README, Beschreibungen und Navigation überarbeiten; passende Bilder, Screenshots und Diagramme ergänzen. Einstieg, Projektidee, Architektur und Demo sollen für neue Leser schnell verständlich sein. | offen |
 | 5 | Pitches üben | Den vollständigen Pitch einschließlich Demo mehrfach gemeinsam proben, Zeit messen, Übergänge und Rollen abstimmen sowie Juryfragen und einen Demo-Ausfall üben. Feedback in Vortrag und Slides einarbeiten. | offen |
-
----
-
-## R · Jury-KI-Review: Kern-Code sichtbar machen (Selbstreview So 07:30)
-
-> Status: **Entscheidung offen** (Piyush). Simulierte EHL-Note heute **6,3/10**, mit R1-R4 ca. **7,5**.
-> Warum: Die Review liest nur 200.000 Zeichen, kleinste Dateien zuerst. Scoring, Audit-Hash-Kette,
-> `llm.py` und Routen sieht sie nie, sie muss dem README glauben. Prüfen: `python scripts/ehl_budget.py`.
-
-| ID | Aufgabe | Datei | Zeit | Status |
-|---|---|---|---|---|
-| R0 | `data/cache/`, `data/external_cache/`, `data/processed/` als `export-ignore` (fraßen ~60-80 % des Budgets). Gemessen: `src/` 21,8 % → 62 %, ungelesene Dateien 332 → 140 | `.gitattributes` | 5 min | erledigt (`4eea655`) |
-| R1 | README-Abschnitt „Key code“: 4-5 Original-Snippets mit `datei:zeile` (Score-Formel `scoring.py`, Hash-Kette `audit.py`, ID-Filter `derive.py:73`, Demo-Cache `llm.py`). Größte Wirkung, weil das README immer ganz gelesen wird. | `README.md` | 20 min | offen |
-| R2 | Weitere große Daten ausschließen: `data/demo_cache/`, `src/shared/beispiele/`, große Fixtures in `tests/pfad_c/`; 2-3 kleine Tests sichtbar lassen | `.gitattributes` | 5 min | offen |
-| R3 | README widerspricht Repo: „Cache nicht im Git“ stimmt nicht; dazu 1 Satz, dass wir die BMW-Daten im Repo nutzen dürfen (sonst Datenschutz-Kritik) | `README.md`, `data/README.md` | 10 min | offen |
-| R4 | Nach 08:00 **nicht** mehr: `pipeline.py`/`store.py` unter 200 Zeilen teilen, Root-`package.json` für Next.js-Erkennung | — | — | verworfen (Risiko > Gewinn) |
 
 ---
 
@@ -158,3 +142,21 @@ letzte Spalte `passt` mit `j`/`n` füllen, dann `python tests/eval/run_eval.py G
 - Eval-Grounding zählt Web-Befunde mit (vorher fälschlich 89,8 %, jetzt 100 %) · `7525ee6`
 - Konflikt-„!“ im Cockpit nur, wenn beide Seiten zitiert sind (gleiche Regel wie Detailseite) · `7525ee6`
 - Demo-Konflikt gefunden: G60-US Rang 5 Reichweite, 38 gegen 28 Nennungen · `docs/pitch/RECHERCHE.md`
+
+---
+
+## R · Jury-KI-Review: Kern-Code sichtbar machen (Selbstreview So 07:30)
+
+> Status: **R0-R3 erledigt 11.10.** (noch nicht committet), R4 verworfen. Simulierte EHL-Note heute **6,3/10**, mit R1-R4 ca. **7,5**.
+> Warum: Die Review liest nur 200.000 Zeichen, kleinste Dateien zuerst. Scoring, Audit-Hash-Kette,
+> `llm.py` und Routen sieht sie nie, sie muss dem README glauben. Prüfen: `python scripts/ehl_budget.py`.
+
+| ID | Aufgabe | Datei | Zeit | Status |
+|---|---|---|---|---|
+| R0 | `data/cache/`, `data/external_cache/`, `data/processed/` als `export-ignore` (fraßen ~60-80 % des Budgets). Gemessen: `src/` 21,8 % → 62 %, ungelesene Dateien 332 → 140 | `.gitattributes` | 5 min | erledigt (`4eea655`) |
+| R1 | README-Abschnitt „Key code“: 4-5 Original-Snippets mit `datei:zeile` (Score-Formel `scoring.py`, Hash-Kette `audit.py`, ID-Filter `derive.py:73`, Demo-Cache `llm.py`). Größte Wirkung, weil das README immer ganz gelesen wird. | `README.md` | 20 min | erledigt 11.10. |
+| R2 | Weitere große Daten ausschließen: `data/demo_cache/`, `src/shared/beispiele/`, große Fixtures in `tests/pfad_c/`; 2-3 kleine Tests sichtbar lassen | `.gitattributes` | 5 min | erledigt 11.10. |
+| R3 | README widerspricht Repo: „Cache nicht im Git“ stimmt nicht; dazu 1 Satz, dass wir die BMW-Daten im Repo nutzen dürfen (sonst Datenschutz-Kritik) | `README.md`, `data/README.md` | 10 min | erledigt 11.10. |
+| R4 | Nach 08:00 **nicht** mehr: `pipeline.py`/`store.py` unter 200 Zeilen teilen, Root-`package.json` für Next.js-Erkennung | — | — | verworfen (Risiko > Gewinn) |
+
+Umsetzung: R1 = Abschnitt „Key code“ in `README.md` (5 Snippets mit `datei:zeile`). R2 = `.gitattributes` (`data/demo_cache/`, `src/shared/beispiele/views/`, `tests/pfad_c/scope_cases.py`, `SCOPE_REPORT.md`); `bundle_G60-US.json` bleibt absichtlich sichtbar, weil es das Fallback-Beispiel der App ist. R3 = Datenschutz-Satz in `README.md`, `data/README.md` (Cache liegt doch im Git, per `export-ignore` nicht im Zipball), `docs/CHALLENGE.md`.
