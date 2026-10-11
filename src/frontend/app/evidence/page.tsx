@@ -14,8 +14,7 @@ const DRIVETRAINS = [["engine:BEV", "BEV"], ["engine:PHEV", "PHEV"], ["engine:IC
 const SIZE = 20;
 
 // Beleg-Browser: jede Kundenstimme hinter einem Vorschlag, filterbar. Das macht "grounded in evidence" nachprüfbar.
-function Browser() {
-  const id = useScenarioParam();
+function Browser({ id }: { id: string }) {
   const [q, setQ] = useState("");
   const [applied, setApplied] = useState("");
   const [segment, setSegment] = useState("");
@@ -101,10 +100,17 @@ function Browser() {
   );
 }
 
+// key={id}: Beim Szenario-Wechsel im Header startet der Browser frisch. Warum: Sonst blieben Suche, Seite
+// und ein Länderfilter wie "country:FR" stehen, den es im neuen Szenario (z. B. US) nicht gibt, und die Liste zeigte 0 Treffer.
+function ScenarioBrowser() {
+  const id = useScenarioParam();
+  return <Browser key={id} id={id} />;
+}
+
 export default function EvidencePage() {
   return (
     <Suspense fallback={<main className="px-6 py-12 text-sm text-[var(--grey-500)]">Loading...</main>}>
-      <Browser />
+      <ScenarioBrowser />
     </Suspense>
   );
 }
