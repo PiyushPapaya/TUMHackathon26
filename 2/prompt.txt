@@ -19,3 +19,7 @@ okay ich üwrde bei eunser frntend noch bendchmakr zufügen ,m aber ich weiß ni
 <status>failed</status>
 <summary>Background command "Start frontend dev server on port 3011" failed with exit code 1</summary>
 </task-notification>
+
+---
+
+nein pushe alle saug main und ab jjeetz nur uaf main, alles uf main psuhen und megren
