@@ -38,7 +38,7 @@
 **In:** Ausstattung, Komfort, Platz, Bedienung, Infotainment/Digital, Design/Qualitätsanmutung, Fahrerlebnis, Reichweite/Laden aus Kundensicht, Varianten/Pakete.
 **Out:** Regulatorik/Homologation, Technik/Engineering-Specs, Preis/Business-Case (Aufwand nur grob als Faktor).
 
-## Daten (lokal in `data/raw/`, nicht im Git)
+## Daten (in `data/raw/`, laut Lead-Entscheidung im Git)
 
 | Datei | Inhalt | Größe |
 |---|---|---|

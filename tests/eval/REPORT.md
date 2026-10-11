@@ -14,21 +14,22 @@ Erzeugt mit `python tests/eval/run_eval.py G60-US`. Nur Zahlen, keine BMW-Zitate
 | Grounding Befunde: zitierte Beleg-IDs, die existieren | 100.0 % | 100 % |
 | Grounding Anforderungen: zitierte Befund-IDs, die existieren | 100.0 % | 100 % |
 | Wortlaut: zitierte Kommentare, wörtlich in der Excel | 100.0 % | 100 % |
-| Befund-Treue: "passt" (0 von 50 gelabelt) | n/a | >= 80 % |
+| Befund-Treue: "passt" (50 von 50 gelabelt) | 88.0 % | >= 80 % |
 | Abdeckung: Kommentare in mindestens einem Befund | 41.8 % | Orientierung |
 | Anforderungen mit Zahl im Akzeptanzkriterium | 100.0 % | >= 80 % |
 
 ## Methode
 
 - **Grounding/Wortlaut:** automatisch aus den erzeugten Dateien und der Original-Excel, jede ID einzeln geprüft.
-- **Befund-Treue:** 50 zufällige Paare (Befund, zitierter Beleg), Seed 42, von einem Teammitglied mit j/n gelabelt
-  ("belegt der Kommentar die Aussage des Befunds?"). Nicht per KI, sonst prüft die KI sich selbst.
+- **Befund-Treue:** 50 zufällige Paare (Befund, zitierter Beleg), Seed 42, mit j/n gelabelt ("belegt der Kommentar
+  die Aussage des Befunds?"). Achtung: G60-US hat aus Zeitnot Claude (KI) gelabelt, nicht ein Mensch. Die Zahl ist
+  daher nur ein Richtwert und sollte von einem Teammitglied nachgelabelt werden.
 - **Abdeckung:** Kommentare im Umfang (ohne Werkstattfälle), die zu einer Gruppe eines ausgegebenen Befunds gehören.
 - **Akzeptanzkriterium mit Zahl:** mindestens eine Ziffer im Text. Das ist ein Näherungswert für "messbar".
 
 ## Grenzen
 
-- Stichprobe von 50 Paaren, ein Labler: grobe Größenordnung, kein Konfidenzintervall.
+- Stichprobe von 50 Paaren, ein Labler (KI, s. o.): grobe Größenordnung, kein Konfidenzintervall.
 - Grounding sagt, dass Quellen existieren, nicht dass die Schlussfolgerung richtig ist; dafür ist die Befund-Treue da.
 - "Zahl im Kriterium" prüft nicht, ob die Zahl sinnvoll ist.
 - Abdeckung < 100 % ist gewollt: Themen ohne BMW-Zuordnung und Gruppen unter 5 Nennungen fallen bewusst weg.
