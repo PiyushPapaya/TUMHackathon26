@@ -1,0 +1,956 @@
+[
+ {
+  "id": "EV-G70-EU-FB-G70-0538",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "spending around £128k on a car and then being asked to pay extra for a heated steering wheel is ridiculous. i've owned bmws for many years and this one will be my last. i lodged a complaint with bmw and they did not actually address it at all. to me it's simple: this is a bmw, not some brand that should be pushing paid \"add ons\" on a £128k car.\ni even cancelled my order for the updated i7, which was about £146k. bmw eventually added the heated steering wheel to my current car for free, but that completely misses the point. if i wanted cheap junk with chargeable extras, i'd go to a cheap brand instead. meanwhile, mercedes s class includes a heated steering wheel at no extra cost, thank you very much.\nso congratulations to whoever thought tacking on another £100 for that option was a smart move. right now i have 3 bmws in the household, and every one of them will be replaced by a mercedes.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Body equipment, overall technology | Heated steering wheel | no_class_found",
+   "vfc3": "Dislike: price-performance ratio | Customer request: function | Like: function",
+   "feedback_type": "Wants | Likes",
+   "labels": "Body equipment, overall technology/Wants | Heated steering wheel/Wants | Heated steering wheel/Likes | no_class_found/",
+   "engine": "BEVE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-0961",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "the solid feel, the driving comfort, and how the quality comes across overall and in the small details.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes",
+   "engine": "BEVE",
+   "country": "NO",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-1171",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "it's a very good, well-designed and comfortable car, but it is overpriced, and you cannot really get the full customer satisfaction because proper ev infrastructure is missing.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "General enquiry: customer feedback",
+   "vfc3": "Information / accuracy insufficient",
+   "feedback_type": "Difficult to Use",
+   "labels": "General enquiry: customer feedback/Difficult to Use",
+   "engine": "PHEV",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-1205",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "have an i7. it arrived with faults. negotiations and the way the case is handled come across as arrogant and flippant. bmw denmark was contacted and just pointed me to the dealer or to send an email. when you drive the flagship it should simply mean sublime customer care. everything is fine until something goes wrong, and it is not a matter of money in the box. 14 days stuck in a small loaner without any compensation is not acceptable. end result - i am driving around with errors in the car and a lot of irritation. the i7 was meant to be a joy. it is not.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology | General enquiry: customer feedback | Handling / Riding | no_class_found",
+   "vfc3": "Like: function | Information / accuracy insufficient | Malfunction",
+   "feedback_type": "Likes | Difficult to Use | Defect",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes | General enquiry: customer feedback/Difficult to Use | Handling / Riding/Defect | no_class_found/",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-1374",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "incredible engineering and technology, absolutely mind blowing.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drivetrain",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Drivetrain/Likes",
+   "engine": "PHEV",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-1653",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "i have been driving bmw cars for at least 30 years and they have all been great, but i think this one might actually top the list.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "PHEV",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-1736",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "the bmw i7 is really outstanding for both comfort and the way it drives. the big all-screen look may be trendy, but at 60, and probably close to your typical buyer age, our crowd likes one button = one function. that is literally my only gribe with this otherwise extraordinary car.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Controller operation",
+   "vfc3": "Not user-friendly",
+   "feedback_type": "Difficult to Use",
+   "labels": "Controller operation/Difficult to Use",
+   "engine": "BEVE",
+   "country": "FR",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-2126",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "bmw 760, very good comfort, easy to drive, uses little petrol, the car is clearly noticable to others",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drivetrain",
+   "vfc3": "Like: Efficiency",
+   "feedback_type": "Likes",
+   "labels": "Drivetrain/Likes",
+   "engine": "PHEV",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-2174",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "overall very good, top-notch quality.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "ICE",
+   "country": "FR",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-2503",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "nice design and solid handling",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Handling / Riding",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Handling / Riding/Likes",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-2698",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "overall product quality and the impression compared with what i expected",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "PHEV",
+   "country": "FI",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-2702",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "this is probably my 7th or 8th 7 series. while the exterior styling is interesting, the comfort and ergonomics are not at the level of the earlier one. everything has to be operated through the center console, which i do not find safe while driving. the cost-cutting on this kind of vehicle feels ridiculous: the sunroof is gone without any prior notice, the little \"pocket\" on the left of the steering wheel is gone, the \"comfort plus\" setting has disappeared, and the seats are much less comfortable with fewer adjustments (for example, the headrest no longer properly supports anything). it is also very disappointing to see the v8 removed and to be forced into a hybrid petrol v6 that does not deliver driving pleasure, etc....",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Center console, front",
+   "vfc3": "Customer request: design",
+   "feedback_type": "Wants",
+   "labels": "Center console, front/Wants",
+   "engine": "PHEV",
+   "country": "FR",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-3306",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "i am very pleased with my new bmw 7 series saloon 750e x drive m sport. the handbook is quite hard to understand when it comes to the automatic parking function.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "My Modes / driving experience | Owner's Manual",
+   "vfc3": "Like: function | Not user-friendly",
+   "feedback_type": "Likes | Difficult to Use",
+   "labels": "My Modes / driving experience/Likes | Owner's Manual/Difficult to Use",
+   "engine": "PHEV",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-3560",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "overall it has been a fantastic car so far. i really like the configuration and the level of luxury, and the build feels very solid. it definitely turns heads and has a strong presence on the road, and i enjoy how it drives. my only gripes are with the software. the app itself is excellent, but idrive gives me trouble. a few things are minor but irritating, like my home screen widgets randomly vanishing so i have to re-add them. the main headache is the esim randomly refusing to activate. i do not hold this against the car itself, as it seems like something that could be fixed with an ota update rather than a hardware issue. still, it is a very frustrating bug, and the only way around it has been to cancel my ubigi plan and start over, which results in double billing. please get this fixed asap!",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Body equipment, overall technology | ConnectedDrive and Infotainment, overall technology | Drive, driving dynamics and chassis, overall technology | Personal eSIM | Remote Software Upgrade/RSU | Touch screen, operation | no_class_found",
+   "vfc3": "Workmanship appeals | Malfunction | Not user-friendly | Like: function | Damage",
+   "feedback_type": "Likes | Defect | Difficult to Use",
+   "labels": "Body equipment, overall technology/Likes | ConnectedDrive and Infotainment, overall technology/Defect | ConnectedDrive and Infotainment, overall technology/Difficult to Use | Drive, driving dynamics and chassis, overall technology/Likes | Personal eSIM/Defect | Remote Software Upgrade/RSU/Defect | Touch screen, operation/Defect | no_class_found/",
+   "engine": "PHEV",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-3593",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "the car failed within the first two weeks, and it was another couple of weeks before the local dealer could even look at it. it was fixed, but the service was extremely poor. the loaner was filthy inside and out, with damage on the front passenger wing and door. i could not get into my bmw id for more than a month because there is no mobile reception at my home, and the dealership that sold the car did nothing helpful when i asked. bmw uk responded quickly but their solution was not quite right, so i had to figure out the fix myself. needing to switch off the driver aids every single time i get in is annoying. the actual drive is fantastic, the interior is ahead of the rivals, mpg is excellent with the battery charged and performance is strong, but much weaker when the battery is empty. before this i owned a porsche panamera gts.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Door, front | Driver assistance, automated driving, overall technology | Interior design | no_class_found",
+   "vfc3": "Damage | Malfunction | Look / design appeals",
+   "feedback_type": "Defect | Likes",
+   "labels": "Door, front/Defect | Driver assistance, automated driving, overall technology/Defect | Interior design/Likes | no_class_found/",
+   "engine": "PHEV",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-3674",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "since buying it, the car has basically lived at the garage. i was able to drive it for about two weeks, and it has then sat in the garage for the past six weeks, with no timeline because parts are still not available. this is the worst car purchase i have ever made. i should have stayed with the mercedes s class. total disaster.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "BEVE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-3777",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "the best car someone can buy.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "BEVE",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-3783",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "i am happy with the new car. it is clearly more comfortable and in general more interesting than the older series i had. still, there are some drawbacks i really cannot ignore: - once the speed goes past about 110-120 km/h, the car is not well insulated anymore, wind noise becomes obvious and disturbing even though it has the special package. - at night, the driver's main rearview mirror gives a blurry picture, lights from cars behind and strong light sources look smeared, vertical lines show up and this makes driving harder. - the air conditioning will not run when the ignition is switched off. - there is no way to turn off the lights while the car is on (for example if you just want the ac working in a parking lot). - every single time you start driving you have to switch on the battery conservation function again. - the driver has no glove compartment now. before it was located to the left of the steering wheel. there is also no smaller extra glovebox like on the f01. - the driver's joystick/control stick feels very rigid when choosing left/right/up/down. - the driver's seat fails to go back to where it was before the car was shut down. - the cup holders do not offer cooling or heating at all.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Cupholder | Drivetrain | Exterior rearview mirror | Glove box | High voltage battery | Seats | Steering wheel | Vehicle, climatization | no_class_found",
+   "vfc3": "Malfunction | Drive power/driving performance not OK | Customer request: usability | insufficient storage space | Not user-friendly",
+   "feedback_type": "Defect | Difficult to Use | Wants",
+   "labels": "Cupholder/Defect | Drivetrain/Difficult to Use | Exterior rearview mirror/Wants | Glove box/Difficult to Use | High voltage battery/Difficult to Use | Seats/Defect | Steering wheel/Defect | Vehicle, climatization/Defect | no_class_found/",
+   "engine": "PHEV",
+   "country": "ES",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-FB-G70-3905",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "i am very happy with both sales and service.\ni have owned several premium bmw models before and their quality has been very good, with no failures even when new. the maintenance services have also functioned well.\nwe did not give a full ten because the service phone line does not really work/the phone is answered very slowly.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "BEVE",
+   "country": "FI",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-01",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Overall product satisfaction: mean 8.0 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Overall product satisfaction",
+   "mean": "7.98"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-02",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Exterior styling: mean 8.4 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Exterior styling",
+   "mean": "8.38"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-03",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Interior styling: mean 8.9 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Interior styling",
+   "mean": "8.92"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-04",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Quality of interior and materials used: mean 9.1 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Quality of interior and materials used",
+   "mean": "9.11"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-05",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Level of equipment: mean 9.2 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Level of equipment",
+   "mean": "9.24"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-06",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Safety: mean 9.3 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Safety",
+   "mean": "9.28"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-07",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Freedom from faults/ squeaks/ rattles: mean 8.6 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Freedom from faults/ squeaks/ rattles",
+   "mean": "8.61"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-08",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Value for money: mean 6.5 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "attribute": "Value for money",
+   "mean": "6.47"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-09",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Reliability: mean 9.7 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Reliability",
+   "mean": "9.67"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-10",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "All round visibility: mean 8.3 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "All round visibility",
+   "mean": "8.30"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-11",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Easy to read and use instruments/ controls/ displays: mean 8.2 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Easy to read and use instruments/ controls/ displays",
+   "mean": "8.19"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-12",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Smartphone integration/ connectivity: mean 8.4 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Smartphone integration/ connectivity",
+   "mean": "8.36"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-13",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Features of information and entertainment system including in-car apps: mean 8.3 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Features of information and entertainment system including in-car apps",
+   "mean": "8.29"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-14",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Easy to use information and entertainment system including in-car apps: mean 8.0 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Easy to use information and entertainment system including in-car apps",
+   "mean": "7.99"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-15",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Integrated navigation system: mean 8.8 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Integrated navigation system",
+   "mean": "8.82"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-16",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Overall seating comfort: mean 9.3 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Overall seating comfort",
+   "mean": "9.29"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-17",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Interior storage for small items: mean 8.0 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Interior storage for small items",
+   "mean": "7.96"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-18",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Acceleration: mean 8.9 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Acceleration",
+   "mean": "8.94"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-19",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Roadholding: mean 8.9 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Roadholding",
+   "mean": "8.94"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-20",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Fuel economy/ energy efficiency: mean 7.7 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Fuel economy/ energy efficiency",
+   "mean": "7.68"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-21",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Braking: mean 9.6 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Braking",
+   "mean": "9.60"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-22",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Sportiness: mean 7.0 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "attribute": "Sportiness",
+   "mean": "6.97"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-23",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Prestige/ manufacturer reputation: mean 9.2 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Prestige/ manufacturer reputation",
+   "mean": "9.23"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-24",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Manoeuvrability: mean 9.0 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Manoeuvrability",
+   "mean": "8.97"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-25",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Quality of ride: mean 9.5 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Quality of ride",
+   "mean": "9.52"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-26",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Front interior roominess: mean 9.7 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Front interior roominess",
+   "mean": "9.69"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-27",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Rear interior roominess: mean 9.4 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Rear interior roominess",
+   "mean": "9.41"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-28",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Ease of loading/ unloading luggage: mean 8.7 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Ease of loading/ unloading luggage",
+   "mean": "8.67"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-29",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Luggage capacity: mean 7.4 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "attribute": "Luggage capacity",
+   "mean": "7.41"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-30",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Ease of entry into and out of car: mean 9.2 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Ease of entry into and out of car",
+   "mean": "9.25"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-31",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Environm. friendliness: mean 7.5 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Environm. friendliness",
+   "mean": "7.51"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-32",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Heating/ ventilation/ air conditioning: mean 8.8 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Heating/ ventilation/ air conditioning",
+   "mean": "8.80"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-33",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Overall build quality: mean 8.8 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Overall build quality",
+   "mean": "8.78"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-34",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Quietness when driving: mean 9.8 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Quietness when driving",
+   "mean": "9.78"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-35",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Driving position: mean 9.1 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Driving position",
+   "mean": "9.13"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-36",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Connected services: mean 7.9 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Connected services",
+   "mean": "7.86"
+  }
+ },
+ {
+  "id": "EV-G70-EU-ST-37",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G70",
+  "market": "EU",
+  "text": "Interior versatility: mean 8.3 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Interior versatility",
+   "mean": "8.32"
+  }
+ }
+]

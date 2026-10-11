@@ -29,3 +29,8 @@ Pipeline-Ergebnisse (`data/processed/`, `data/eval/`, LLM-Cache) bleiben weiter 
 Die Jury-KI und Fremde sollen die Pipeline mit echten Daten nachbauen können (`python src/backend/pipeline.py --scenario G60-US`). Herausnehmen (B) hilft nicht, weil die Dateien in der Git-Geschichte bleiben und ein Verlauf-Umbau verboten ist.
 Verworfen: C (privat), weil unklar ist, ob die EHL-Abgabe und Entire ein privates Repo lesen können.
 **Risiko bewusst getragen:** Sagt die Orga, die Daten sind vertraulich, stellt Piyush das Repo sofort auf privat und klärt die Abgabe mit der Orga.
+
+## Update (11.10., Lasse)
+Die Orga wurde gefragt und hat die Weitergabe der BMW-Daten ausdrücklich freigegeben. Damit gilt die Einschränkung aus dem ursprünglichen Absatz ("Pipeline-Ergebnisse bleiben lokal, weil Kundenzitate in neuer Zusammenstellung") nicht mehr: `data/processed/` ist jetzt komplett freigegeben (`.gitignore` angepasst), nicht mehr nur `F70-EU.json`/`G60-US.json` wie zuvor schon im Repo.
+`data/audit.db` bleibt trotzdem lokal – das ist keine BMW-Daten-Frage, sondern reiner Laufzeit-Zustand pro Rechner (eigene Testklicks), der sonst nur Merge-Konflikte zwischen den vier Rechnern erzeugt.
+Mit Piyush abgestimmt (laut Lasse). Geprüft: Diff von `.gitignore` angesehen, keine Secrets/Keys betroffen (nur `data/*`-Regeln).

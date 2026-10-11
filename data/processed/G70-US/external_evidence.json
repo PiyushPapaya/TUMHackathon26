@@ -1,0 +1,557 @@
+[
+ {
+  "id": "EV-G70-US-NHTSA-11699171",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "The contact owns a 2024 BMW 750E. The contact stated while driving at an undisclosed speed, the high-voltage system warning light illuminated. The contact continued to drive the vehicle a short distance, and then the drive train warning light illuminated. The contact stated that the warning instructed the contact to contact the local service center. The vehicle was driven to the residence. The dealer was contacted, and the contact was informed that the vehicle was safe to drive. The contact stated that approximately three days later, while driving at an undisclosed speed with the cruise control feature enabled, the unattended driver warning light illuminated. The message indicated that 911 was being called, and the engine seized. The contact stated that the engine seized in the middle of the street. The contact stated that after waiting for several minutes, the vehicle was started and the vehicle was driven to a safe location. The vehicle was taken to the dealer; however, the failure was not duplicated. The contact was informed that the error messages were displayed due to the way the contact was driving. The manufacturer was made aware of the failure. The failure mileage was approximately 13,100.",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=7+SERIES+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11699171",
+   "components": "POWER TRAIN,ELECTRICAL SYSTEM",
+   "model": "7 SERIES SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "quality_perception"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11661019",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "My car is about 1.5 yers old, bmw 740i.  I have been towed back to the dealer twice now for the same issue.i live in Illinois and work in Milwaukee, Wisconsin, so I drive on the expressway a lot.  I received the following message on my display while driving at 75-80 mph.  The message is “ inability to drive.”  I have received this 3 times.  When it occurs the steering is more difficult and, I am told starts to shut down major systems,  so needlessly to say quite unnerving and I had difficulty getting onto the shoulder.  The first occurrence was last year in October (2024).  I was afraid to drive the car when everyone else was travelling at high speeds.  So had it towed to dealer.  The dealer did not seem to understand this message and why it happened, and even what would happen.  They did a software upgrade and told me it was fixed. On [XXX] it happened again, same message although different look with the software upgrade, and had to be towed.  I don’t trust the car since no one can tell me why this is happening and what it does.  The dealer said they are not familiar with it.  I told them we have read online that others have had this happen, but no recalls or information.  If this message is in the software there has to be a data dictionary that explains, 1) what triggers it, 2) why, 3) what does it do, and 4) can it be disabled.  No one seems to know, and it is putting me at risk of an accident, that no one understands.  I am afraid to drive the car.  If I am in an accident because of this bmw should libel.  Please help!  INFORMATION REDACTED PURSUANT TO THE FREEDOM OF INFORMATION ACT (FOIA), 5 U.S.C. 552(B)(6)",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=7+SERIES+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11661019",
+   "components": "UNKNOWN OR OTHER",
+   "model": "7 SERIES SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": ""
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11652967",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "There is an open recall on my 2024 BMW 760i and BMW has NO FIX over a year now and the NHTSA is doing nothing to pressure BMW to fix this critical issue. This is unacceptable as it puts all of us as risk and the NHTSA has to take this issue serioulsy, I am unable to sell this vehicle or get a new insurance and you folks have put no pressure on BMW to fix this. Please CC the head of the NHTSA and start putting pressure on BMW to solve this.",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=7+SERIES+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11652967",
+   "components": "SERVICE BRAKES",
+   "model": "7 SERIES SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "driving_experience"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11634634",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Car seems to be having issues with its brake function, especially in traffic or when coming to a complete stop from a distance. Also I am in fear that the issue will emerge while I am driving and I will not use the car with my 10 month old daughter.",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=7+SERIES+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11634634",
+   "components": "EXTERIOR LIGHTING,SERVICE BRAKES",
+   "model": "7 SERIES SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "driving_experience"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11625939",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "BMW issued a recall for several series including the BMW 760i x drive citing missing parts to the braking system which could cause the emergency braking and brakes to fail.  The recall was issued 10 months ago.  This was before I purchased the car.  I did not receive a recall notice until a month ago.  They did not disclose the recall at the time of the sale of the vehicle.  I drove the car for 5 months before being notified.  Before I received the recall notice I noticed some issues with the braking taking longer to stop. I then received the recall and contacted the dealer to fix the recall.  They said they had not received authorization to fix the recall from BMW.  I have not driven the car for fear of the brakes failing for over a month since I received the recall notice.  This is a $146,000 car.  The dealer said they have not been authorized by BMW to fix the recall.  How do you issue a recall on expensive cars and expect people to continue to pay for a car they can't drive?",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=7+SERIES+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11625939",
+   "components": "SERVICE BRAKES,FORWARD COLLISION AVOIDANCE",
+   "model": "7 SERIES SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "driver_assistance"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11620411",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "The contact owns a 2024 BMW 740i. The contact received a notification of NHTSA Campaign Number: 24V104000 (ELECTRONIC STABILITY CONTROL (ESC), SERVICE BRAKES, HYDRAULIC) however, the part to do the recall repair was not yet available. The local dealer was contacted. The contact stated that the manufacturer had exceeded a reasonable amount of time for the recall repair. The manufacturer was made aware of the issue. The contact had not experienced a failure. VIN tool confirms parts not available.",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=7+SERIES+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11620411",
+   "components": "ELECTRONIC STABILITY CONTROL (ESC)",
+   "model": "7 SERIES SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "driving_experience"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11620097",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Multiple Brake system failures rendering the vehicle unsafe and undriveable.  Been in the dealer 3 times and not resolved.  Qualifies as a Lemon vehicle.  Car is not safe for my family and others on the road.  Car was from BMW Sterling in Virginia.  100 miles on the clock - new vehicle lease.",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=7+SERIES+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11620097",
+   "components": "SERVICE BRAKES",
+   "model": "7 SERIES SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "driving_experience"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11562802",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "When I brushes a car, the dealer said Car has a recall for safety issue for airbags and will fix someone hit the front light with a low speed 20 mph on the street the old airbag open in the car for no reason to do this",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=7+SERIES+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11562802",
+   "components": "AIR BAGS",
+   "model": "7 SERIES SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": ""
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11704466",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "[XXX]   Problem: Multiple tire blowouts causing safety hazards and air-suspension damage    Complaint Summary:  My 2024 BMW i7 has experienced multiple tire blowouts, including the most recent , two within days of each other (12/8/2025 and 12/10/2025). On 12/8/2025, BMW replaced the right rear tire and advised me that the vehicle was safe to drive. Two days later, the left rear tire suffered the same sudden failure, requiring another tow. These failures occurred during normal driving and immediately after BMW dealership inspection and clearance.  In addition to these recent events, earlier blowouts on this vehicle have already caused damage to the air-suspension system, requiring repairs. This indicates the issue is not normal tire wear but a recurring safety defect involving the vehicle’s weight, load distribution, tire load rating, or compatibility with the i7’s unusually high curb weight.  The repeated failures and resulting suspension damage raise concerns about a broader defect in the design, load-bearing capability, or inspection procedures for this model. This vehicle is unsafe to operate, and the recurring blowouts place my family and other motorists at risk.  I am requesting that NHTSA investigate whether the BMW i7 has a systemic safety issue related to tire integrity, load capacity, or suspension stress under normal driving conditions.  INFORMATION REDACTED PURSUANT TO THE FREEDOM OF INFORMATION ACT (FOIA), 5 U.S.C. 552(B)(6)",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=I7+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11704466",
+   "components": "SUSPENSION,UNKNOWN OR OTHER",
+   "model": "I7 SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "driving_experience"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11700879",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "My knee has accidentally opened the driver door during travel which has caused the door to open unintentionally and brings the car to a stop in traffic.",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=I7+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11700879",
+   "components": "UNKNOWN OR OTHER",
+   "model": "I7 SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": ""
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11685765",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Yesterday again my 2024 I7 x50 bmw suddenly engaged its auto brakes. I have been in communication with different dealers trying to repair this problem as it almost cause another accident. Luckily there was no cars behind me and there was no cars ahead of me. The cars door also would not close. I have video evidence of this",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=I7+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11685765",
+   "components": "ELECTRICAL SYSTEM,SERVICE BRAKES,FORWARD COLLISION AVOIDANCE",
+   "model": "I7 SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "driver_assistance"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11684707",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "This is the 4th time I am having issues with this car. Major safety issues. Yesterday during during on the 405 freeway. It suddenly started to rain, the wiper malfunction while in traffic and pouring rain. A week before this incident, the steering of the car kept moving suddenly out of my line. This time my son was in the car. These dealerships do not really care to even look at it, they drive the car for 2 miles and return it with a no problem found issue. Enough is Enough. The last time it was taking to the dealership after the automatic brakes would engage suddenly, they advise me that car was taken to a mechanic which is ridiculous. I am not in communication with BMW head quarters and they keep telling me to wait for a decision. This is not a waiting decision.",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=I7+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11684707",
+   "components": "STEERING,ELECTRICAL SYSTEM,VISIBILITY/WIPER",
+   "model": "I7 SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "driving_experience"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11682433",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "This is has been continuous, yesterday my car braked on the freeway. Suddenly with no obstruction. The car behind me almost crashed into me and it would’ve been a very tragic event. I took it to the dealership and they don’t do anything, all they do is give it back to me. Yesterday also has loss of power too. I have alerted them many times, they keep saying to take it in but they don’t do anything and I don’t feel with this car. Please let BMW know because if something happens they will be heard responsible",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=I7+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11682433",
+   "components": "ELECTRICAL SYSTEM,SERVICE BRAKES,FORWARD COLLISION AVOIDANCE",
+   "model": "I7 SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "driver_assistance"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11681797",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "On August 15, 2025 at approximately 6:30pm our 2024 BMW i7 eDrive50 with the Active Park Distance Control package accelerated in reverse when parking assistance was initiated to back out of a parking space at a small business facility, causing the vehicle to strike a tree. The cronology of the incident is as follows: 1. While the driver had his foot on the brake, he touched the assisted parking icon on the dashboard display to enable the automatic backup system. 2. The driver then lifted his foot from the brake and the vehicle accelerated in reverse despite the driver NOT having his foot on the gas pedal. 3. The backup camera did not engage or show the backup view when the car was moving quickly in reverse. 4. The driver slammed on the brake just as the vehicle struck a tree with the rear right bumper and panel. In summary, the automated parking space back up feature malfunctioned by accelerating in reverse while the driver's foot was not on the gas pedal. Simultaneously, the back up camera did not engage to show the rear view while the vehicle was moving in reverse. This malfunction created a safety risk that could have put other vehicles, people or property at risk of damage or injury, beyond the estimated $8,000-$10,000 damage sustained by this BMW i7. A certified BMW collision repair facility has inspected this vehicle and are awaiting inspection from BMW customer support. The collision repair facility was not able to find a video of the incident in the vehicle camera history files or in any alerts. The driver has not attempted to reproduce the malfunction. The vehicle is awaiting inspection from BMW customer support.  There were no warning lamps or messages displayed during or after the accident.  BMW customer support has been contacted.",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=I7+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11681797",
+   "components": "ELECTRICAL SYSTEM,BACK OVER PREVENTION,FORWARD COLLISION AVOIDANCE",
+   "model": "I7 SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "driver_assistance"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11675784",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "This is the 5th time my cat suddenly brakes in the middle of traffic with no obstruction. I keep taking it to the dealership and they drive it for 1 mile and give it back. I am fed up and I have my family in the car. Last time I took it, they said something the car doesn’t recognize a driver   This is a electric car.",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=I7+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11675784",
+   "components": "ELECTRICAL SYSTEM,SERVICE BRAKES,FORWARD COLLISION AVOIDANCE",
+   "model": "I7 SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "driver_assistance"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11666432",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "I have now experienced multiple instances where the vehicle suddenly brakes on its own while driving at normal speeds, without any obstruction or hazard ahead. This is not only unacceptable — it's extremely dangerous, putting both myself and other drivers at risk of serious injury. Despite bringing the vehicle in twice to the dealership, the issue persists. I continue to receive dashboard malfunction alerts, and the automatic braking problem has not been resolved. Each time, I am left without a vehicle, impacting my ability to work. I did not purchase a $100k+ vehicle to live in fear of sudden, unpredictable, and life-threatening malfunctions. Today, while driving, the vehicle completely shut off in motion, creating a highly dangerous situation. This follows multiple previous incidents where the car automatically braked without cause and displayed repeated malfunction notifications on the dashboard. I have brought the car to the dealership twice, and yet the problem persists. This is not only unacceptable — it's an imminent risk to my safety and the safety of others on the road. The fact that a brand-new luxury vehicle with this price tag continues to experience such serious failures is beyond frustrating — it is life-threatening.",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=I7+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11666432",
+   "components": "ELECTRICAL SYSTEM,UNKNOWN OR OTHER,SERVICE BRAKES",
+   "model": "I7 SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "driving_experience"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11658955",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "This is the 3rd time my car suddenly engages automatic brakes without any obstruction ahead of me and around me. I took it to the dealership about this issue 2 times.",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=I7+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11658955",
+   "components": "SERVICE BRAKES,FORWARD COLLISION AVOIDANCE",
+   "model": "I7 SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "driver_assistance"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11630137",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "On November 9, 2024 while driving the vehicle in light traffic on the 405 southbound between the 101 and the 10 freeways, the right front of the vehicle made a cluck noise. There were no obsticales on the freeway and no other vehicle was involved. Shorthly thereafter, the vehicle made another loud clunk noise from the right front of the vehicle. I exited the 405 freeway and turned right. Within a mile, the right front suspension totally collapsed causing the car to careen left. On the street I was on, there is a center median with a curb. the car rode the curb for several feet and the left front end of the vehicles suspension collapsed. The car came to a halt and was towed to the BMW dealer where I leased the car. The car computer said chassis function restricted. Fortunately there were no other vehicles involved since the car was no longer drivable after the catastrophic suspensinon collapse.   It should also be noted that for the first 3 months after leasing this vehicle, the computer did not recognize the keys or fobs (being locked out of the car consistently) and after numberous attempts to fix the matter, BMW had the vehicle for over 6 weeks. It is evident that the i7 EDrive 50 has serious safety issues that may be related to its computer system.  These two issues should be looked at.  Had the suspension collapsed on the freeway the car most likely would have been in a serious collision.",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=I7+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11630137",
+   "components": "SUSPENSION",
+   "model": "I7 SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "driving_experience"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11626164",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "The contact owns a 2024 BMW I7. The contact stated while driving approximately 45 MPH, the \"Inability to Drive\" message was displayed on the instrument panel and the vehicle suddenly lost motive power. The contact received notification of NHTSA Campaign Number: 24V104000 (Electronic Stability Control (ESC), Service Brakes, Hydraulic); however, the part to do the recall repair was unavailable. The contact stated that the manufacturer had exceeded a reasonable amount of time for the recall repair. The manufacturer was not made aware of the failure. The failure mileage was approximately 7,500. VIN tool confirms parts not available.",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=I7+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11626164",
+   "components": "SERVICE BRAKES, HYDRAULIC,ELECTRONIC STABILITY CONTROL (ESC)",
+   "model": "I7 SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "driving_experience"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11622741",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "The contact owns a 2024 BMW I7. The contact stated that the vehicle failed to respond when the brake pedal was depressed. The contact stated that the brakes were occasionally inoperable. The contact had been driving 25 MPH due to concerns about the brakes failing with his children inside the vehicle. The contact received notification of NHTSA Campaign Number: 24V104000 (ELECTRONIC STABILITY CONTROL (ESC), SERVICE BRAKES, HYDRAULIC); however, the part to do the recall repair was not yet available. The local dealer was not contacted. The contact stated that the manufacturer had exceeded a reasonable amount of time for the recall repair. The manufacturer was not made aware of the issue. The failure mileage was approximately 2,000. VIN tool confirms parts not available.",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=I7+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11622741",
+   "components": "SERVICE BRAKES, HYDRAULIC,ELECTRONIC STABILITY CONTROL (ESC)",
+   "model": "I7 SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "driving_experience"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11578380",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "Last week while driving,  one of the front corners  level suddenly went down in the middle of the road. Car was towed to the dealership. After it was inspected by BMW dealership I was informed that there is a suspension damage and one tire rim damage \" due to impact\" and either the car  hit something or had pothole incident. I did not run or hit any object and did not drive over major potholes. So the estimate for repair of the right front air spring strut, graphed alignment and right front rim replacement was for 8200$.  The car is 3 months old and top tier BMW 7 series. I used to drive 540 just before I got this new 7 series, and i had it for almost 5 years , had been through different potholes, different quality roads, had multiple issues with run flat tires but never had an issue with the suspension. Should I question the quality of the car and parts being used?",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=I7+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11578380",
+   "components": "SUSPENSION",
+   "model": "I7 SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "driving_experience"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11565724",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "The contact owns a 2024 BMW I7. The contact stated that the vehicle had a button on the door armrest that opened the door automatically while driving. The dealer was notified and the vehicle was updated to allow the door to open at 3 MPH or lower speeds. The manufacturer was notified of the failure.  The failure mileage was unknown.",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=I7+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11565724",
+   "components": "ELECTRICAL SYSTEM",
+   "model": "I7 SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "quality_perception"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-11563276",
+  "source_type": "feedback_external",
+  "source_name": "NHTSA-Beschwerde",
+  "derivative": "G70",
+  "market": "US",
+  "text": "The contact owns a 2024 BMW I7. The contact stated while reversing at approximately 5 MPH, the driver's side door opened automatically after the contact’s knee struck the door button. There were no warning lights illuminated. The contact called the local dealer, but the vehicle was not diagnosed or repaired. The manufacturer was contacted but provided no assistance. The failure mileage was approximately 1,200.",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=BMW&model=I7+SEDAN&modelYear=2024",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": -1,
+  "meta": {
+   "odi": "11563276",
+   "components": "LATCHES/LOCKS/LINKAGES",
+   "model": "I7 SEDAN",
+   "model_year": "2024",
+   "country": "US",
+   "trust": "high",
+   "publisher": "NHTSA",
+   "category": "comfort_space"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-STAT-01",
+  "source_type": "external_stat",
+  "source_name": "NHTSA-Statistik",
+  "derivative": "G70",
+  "market": "US",
+  "text": "NHTSA complaints model years 2024/2025: Mercedes-Benz S-Class 6, BMW 7er (G70) 23 (absolute counts, not per vehicle sold).",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "NHTSA",
+   "competitor": "Mercedes-Benz S-Class",
+   "competitor_total": "6",
+   "bmw_total": "23"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-STAT-02",
+  "source_type": "external_stat",
+  "source_name": "NHTSA-Statistik",
+  "derivative": "G70",
+  "market": "US",
+  "text": "NHTSA complaints model years 2024/2025: Mercedes-Benz EQS 13, BMW 7er (G70) 23 (absolute counts, not per vehicle sold).",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "NHTSA",
+   "competitor": "Mercedes-Benz EQS",
+   "competitor_total": "13",
+   "bmw_total": "23"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-STAT-03",
+  "source_type": "external_stat",
+  "source_name": "NHTSA-Statistik",
+  "derivative": "G70",
+  "market": "US",
+  "text": "NHTSA complaints model years 2024/2025: Genesis G90 5, BMW 7er (G70) 23 (absolute counts, not per vehicle sold).",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "NHTSA",
+   "competitor": "Genesis G90",
+   "competitor_total": "5",
+   "bmw_total": "23"
+  }
+ },
+ {
+  "id": "EV-G70-US-NHTSA-STAT-04",
+  "source_type": "external_stat",
+  "source_name": "NHTSA-Statistik",
+  "derivative": "G70",
+  "market": "US",
+  "text": "NHTSA complaints model years 2024/2025: Lucid Air 25, BMW 7er (G70) 23 (absolute counts, not per vehicle sold).",
+  "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle",
+  "retrieved_at": "2026-10-10T19:23:31.395380Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "NHTSA",
+   "competitor": "Lucid Air",
+   "competitor_total": "25",
+   "bmw_total": "23"
+  }
+ }
+]

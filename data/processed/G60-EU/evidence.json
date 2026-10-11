@@ -1,0 +1,2888 @@
+[
+ {
+  "id": "EV-G60-EU-FB-G60-0025",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "feels bmw handles well.\ncar has been reliable and needs very little maintenance.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Handling / Riding | no_class_found",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Handling / Riding/Likes | no_class_found/",
+   "engine": "BEVE",
+   "country": "NO",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0034",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "for a car on a newly developed model platform, the range should have been much better. i have to drive very slowly to get a sensible distance between charges, even for 30- to 40-mile round trips, which means lots of stops. i also find it a bit stingy that with a car in this price class, basically fully equipped, you still have to buy subscriptions for things like remote parking (parking ass. prof.), welcome light animation, etc. some are one-off payments, others tie you into an annual contract period. on top of that, it wasn't really clear that these features weren't actually included when you buy the equipment packages. apart from that, it's an absolutely fantastic car, but the high weight is a small minus, because it would have been even more fun if it were at least 200-300 kg lighter",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Electric Range | Remote controlled parking | no_class_found",
+   "vfc3": "Range, not OK | Not user-friendly",
+   "feedback_type": "Difficult to Use",
+   "labels": "Electric Range/Difficult to Use | Remote controlled parking/Difficult to Use | no_class_found/",
+   "engine": "BEVE",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0052",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "since 1980 i've had about 10 bmws, mostly 5 series with 3 litre petrol or diesel engines. my last one, a 540i, was superb. this new model only came with a 2 litre petrol unless i went ev, which i didn't want. i'm not dissapointed though, the 2 litre with mht performs well and the tech in the car is in a totally new league. all good.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0077",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "i'm a bit fussy about the body shape. but bmw is always bmw, nothing else can beat it. this is already my 3rd bmw. please make the next one look a little more sporty. i still love bmw anyway.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0238",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "car itself is very good, but the after-sales service is terrible.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "General enquiry: customer feedback",
+   "vfc3": "Information / accuracy insufficient",
+   "feedback_type": "Difficult to Use",
+   "labels": "General enquiry: customer feedback/Difficult to Use",
+   "engine": "BEVE",
+   "country": "FR",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0257",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "we have been buying bmw cars for at least twenty years and i always feel very safe in them. i drive about 25 miles or so every day and usually replace the car every three years. this one is very comfortable and the visibility is excellent, which is one of my essential requirements. i really like the white interior, but it is not as nice as my last car where everything inside was light cream, so i was very disappointed. i even went to look at mercedes and audi to compare their interiors and was actually about to write the deposit cheque for a mercedes before changing my mind. learning all the new systems like the heating is taking me a while, probably because i am seventy one. we prefer a spacious car with good room for passengers. the boot is big and the saloon feels very secure as we travel often and do not want anything left visible. i also wonder why you removed the sleeves on the backs of the front seats, now there is no storage there.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Air conditioning, overall technology | All-round view | Luggage compartment | Seats | Vehicle interior, lighting | no_class_found",
+   "vfc3": "Not user-friendly | Like: view/panoramic view | Like: storage space | Malfunction | Customer request: function",
+   "feedback_type": "Difficult to Use | Likes | Defect | Wants",
+   "labels": "Air conditioning, overall technology/Difficult to Use | All-round view/Likes | Luggage compartment/Likes | Seats/Defect | Vehicle interior, lighting/Wants | no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0263",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "strong performance, very quiet, comfortable, fun to drive, and uses the interior space well.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drivetrain",
+   "vfc3": "Like: performance",
+   "feedback_type": "Likes",
+   "labels": "Drivetrain/Likes",
+   "engine": "BEVE",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0270",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "pros: handling and comfort\n\nimprovements: clearer solutions and feedback on error messages, plus faster response times from the service organization....",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Handling / Riding",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Handling / Riding/Likes",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0281",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "so far i've run well over a dozen bmw cars in my professional work",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "BEVE",
+   "country": "FI",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0298",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "im generally very happy, but in winter the electric range maybe isnt the greatest. some options are hard to find again in the menus.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "ConnectedDrive and Infotainment, overall technology | Electric Range",
+   "vfc3": "Not user-friendly | Range, not OK",
+   "feedback_type": "Difficult to Use",
+   "labels": "ConnectedDrive and Infotainment, overall technology/Difficult to Use | Electric Range/Difficult to Use",
+   "engine": "PHEV",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0325",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "i'm really unhappy with the range, and with this limitation on how many times you can fast charge in a 24 hour period. on top of that, bmw has basically said nothing about it, which is very disappointing.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Electric Range",
+   "vfc3": "Range, not OK",
+   "feedback_type": "Difficult to Use",
+   "labels": "Electric Range/Difficult to Use",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0326",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the driving characteristics of the car are absolutely incredible!!\n\nwhat bothers me is that the estimate for consumption/remaining range at destination adjusts way too slowly, for instance when a trailer is hooked up.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Trailer, use | no_class_found",
+   "vfc3": "Malfunction",
+   "feedback_type": "Defect",
+   "labels": "Trailer, use/Defect | no_class_found/",
+   "engine": "BEVE",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0400",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "car is nice, comfy to ride in, and the battery range is good even in winter, about 7 mil or so. luggage space is much better than my previoos 5series hybrid cannon car",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Electric Range",
+   "vfc3": "Like: Range",
+   "feedback_type": "Likes",
+   "labels": "Electric Range/Likes",
+   "engine": "PHEV",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0417",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "far too many teething problems.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "PHEV",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0421",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "very smoth to drive and good on fuel, feels pretty effortless.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0426",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "bmw puts the driver first and i realy like that. it's always stylish and constantly draws positive attention.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology | no_class_found",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes | no_class_found/",
+   "engine": "PHEV",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0446",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "i was given really good service when i purchased the car. at that point i was tied up with work and hardly had any free time. the salesperson even said he could drive a car out for a test drive all the way from oulu to joensuu for me. in the end i managed to arrange the time on my own.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "PHEV",
+   "country": "FI",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0506",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the bmw 530e has a full new luxury style, not just on the outside but inside too, with lots of safety systems from various angles in traffic for both driver and passengers. comfort is good, and the battery so far is fine, i get about 77 km in winter and around 94 km in summer. the driving feel is totally different and more comfortable than my old bmw 520d-2019. i recomend it as an economical car with good-luxury design, suitable as a family car, etc.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Electric Range",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Electric Range/Likes",
+   "engine": "PHEV",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0566",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "overall the car feels basically well built, but the price is still too high for what you actually get. there are several areas where it seems things have been pared back compared to what you would expect as obvious. it is not just about the equipment list you can read through (which you really have to study carefully, because it is very hard to understand exactly what the car has as standard). in terms of perceived quality, for example, the carpet in the boot and the standard radio have clearly been economised, which is far below what you expect from a premium brand. there are also obvious gaps in the standard equipment that ought to be a given and cost nothing, like the fact there is no cigar lighter socket in the trunk. you can see lines in the doors bulging slightly where the inner plate meets the edges, which feels far under the standard you would expect and becomes a daily irritation when you notice it. in the middle of the bonnet you can see a row of marks that look like spot welds from underneath. so in the end i actually regret buying it, even though in many ways it is a nice car.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Body equipment, overall technology | Personal eSIM | Radio function | Vehicle interior, lighting | no_class_found",
+   "vfc3": "Not user-friendly | Reception quality not OK",
+   "feedback_type": "Difficult to Use | Defect",
+   "labels": "Body equipment, overall technology/Difficult to Use | Personal eSIM/Difficult to Use | Radio function/Defect | Vehicle interior, lighting/Difficult to Use | no_class_found/",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0595",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "against my old 68 plate 520i, this one pulls quicker and uses less fuel. i really like the head up display and the new main screen, and the journey fuel info is handy. adaptive cruise itself works fine, but changing the gap to the car ahead while driving is awkward, especially when i want more distance in the wet. lane control helps. sat nav overall is good, yet the traffic delay icons/text are tiny and digging into that info on the move is hard, plus minor roads are shown too faintly. spotify is well integrated, simple to use and looks good. downside is the road noise, which is much louder on some surfaces and basically drowns out the audio. the speed limit warning drives me mad and is often wrong. i also want to keep the car in efficient mode without having to set it again every single journey.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "(Active) cruise control | Drivetrain | Head-Up Display | Navigation | Speed Limit Assistant | Touch screen, operation | no_class_found",
+   "vfc3": "Customer request: usability | Like: Efficiency | Like: function | Not user-friendly | Like: usability | Malfunction",
+   "feedback_type": "Wants | Likes | Difficult to Use | Defect",
+   "labels": "(Active) cruise control/Wants | Drivetrain/Likes | Head-Up Display/Likes | Navigation/Difficult to Use | Speed Limit Assistant/Difficult to Use | Touch screen, operation/Likes | Touch screen, operation/Defect | no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0621",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "a very comfortable car with solid technology and truly wonderful driving pleasure.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology | no_class_found",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes | no_class_found/",
+   "engine": "BEVE",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0658",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the 530e turned out to be a fantastic car, actually better than i had expected.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "PHEV",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0761",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "while on vacation in dordogne, france, at about 9:00 in the morning the car would not start, and only after nearly 2 hours of waiting did it finally start. on top of that i still can't get the driverless parking feature working on my iphone 12.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "ICE",
+   "country": "FR",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0798",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the car itself is very good but the info system really leaves a lot to be desired, with way too many submenus. some of the materials feel a bit questionable for such a nice car.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "ConnectedDrive and Infotainment, overall technology | no_class_found",
+   "vfc3": "Not user-friendly",
+   "feedback_type": "Difficult to Use",
+   "labels": "ConnectedDrive and Infotainment, overall technology/Difficult to Use | no_class_found/",
+   "engine": "PHEV",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0818",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "i have already sent all my issues to you by email. i was then just sent back over to the uk. my new car developed faults and i ended up without it for about a month while the matter was supposedly being resolved. what followed was a string of bad communication and incompetence, which i have already set out to you in detail. it has been the worst experience i have ever had with a new car. i am very disappointed that you refused to deal with my escalation and simply pushed me back to the uk where all the problems happened. i am sure nothing more will be done about any of this, so i honestly do not see the point of these surveys.  thank you   david harper",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0843",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "i still like my old 520 more, this one feels over-regulated. the speed warning gets on my nerves and there are a bunch of privacy data settings you have to switch off. the car also starts braking the moment you take your foot off the accelerator, so you have to press the pedal again just to stop it from slowing down. that behavior is really annoying, and it feels like i'm always battling the computer system instead of simply enjoying the drive.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "ConnectedDrive and Infotainment, overall technology | Speed Limit Assistant | no_class_found",
+   "vfc3": "Not user-friendly | Malfunction",
+   "feedback_type": "Difficult to Use | Defect",
+   "labels": "ConnectedDrive and Infotainment, overall technology/Difficult to Use | Speed Limit Assistant/Defect | no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0900",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "i am really happy with this car.\ni just hope it will last long and that it will also hold its value over time.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "BEVE",
+   "country": "FI",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0912",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "really like the car, super fun to drive. but android auto feels a bit bare, and charging operator integration is weak.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "Android Auto | Drive, driving dynamics and chassis, overall technology",
+   "vfc3": "Not user-friendly | Like: function",
+   "feedback_type": "Difficult to Use | Likes",
+   "labels": "Android Auto/Difficult to Use | Drive, driving dynamics and chassis, overall technology/Likes",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-0968",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "i've owned quite a few bmws over the years, mostly picking them up as 2-3 year old used cars with around 50000 km on them, plus 2 brand new ones in the past 20 months. whenever there was any kind of issue it got taken care of, always without me paying. great cars and consistently very good service.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "BEVE",
+   "country": "NO",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1032",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "it is about as close as you can get to an electric car that still doesnt really appear or feel like an ev. the whole premium feel is intact. the range, though, really has to be improved, right now it is simply not good enough. on top of that there are some irritating design details. 1. the seat belts bang into plastic if you dont consciously pull them fully up. 2. the small hooks in the trunk for groceries cant actually hold a bag handle. 3. the door handles are oddly placed, so people who dont know the car cant locate them in the dark. 4. the trunk lid needs a very firm pull to shut correctly, which again is hard for people unfamiliar with the car. 5. since clever is a major player in denmark, it is pretty frustrating that their charging card isnt integrated in the infotainment, so the charging guidance is basically unusable in denmark. supposedly that will be sorted.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Door, front | Electric Range | Trunk lid | Trunk lid, open / close | no_class_found",
+   "vfc3": "Damage | Range, not OK | Operating force not OK",
+   "feedback_type": "Defect | Difficult to Use",
+   "labels": "Door, front/Defect | Electric Range/Difficult to Use | Trunk lid/Defect | Trunk lid, open / close/Defect | no_class_found/",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1077",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "for professional driving, bmw provides a solid overall package thanks to a sensible mandatory care agreement. the car's quality and features justify a top rating. the option of an extended warranty is something other makers do not provide in the same way. having that extended warranty makes it much easier when the mileage stays below around 200 tkm in two years, giving the car a kind of double guarantee in professional use, and letting you extend without worrying about potentially costly repairs.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "PHEV",
+   "country": "FI",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1096",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the mix of electric driving and petrol use fits me well.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "PHEV",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1137",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "nice to drive and the range is very good",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Electric Range",
+   "vfc3": "Like: Range",
+   "feedback_type": "Likes",
+   "labels": "Electric Range/Likes",
+   "engine": "BEVE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1222",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "really love this car. the build quality is excellent, and the 2.0l engine feels very refined, runs quietly, and still has more than enough power for everyday driving situations.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Body equipment, overall technology | Drivetrain",
+   "vfc3": "Workmanship appeals | Like: performance",
+   "feedback_type": "Likes",
+   "labels": "Body equipment, overall technology/Likes | Drivetrain/Likes",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1358",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "i wish there were more ways to tweak the mod modes.\nsound adjustments should be more fine grained.\nand please include russian language for the voice assistant!",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Audio mode, sound | Intelligent Personal Assistant | no_class_found",
+   "vfc3": "Noise | Customer request: function",
+   "feedback_type": "Defect | Wants",
+   "labels": "Audio mode, sound/Defect | Intelligent Personal Assistant/Wants | no_class_found/",
+   "engine": "PHEV",
+   "country": "LV",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1370",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the charging cap is totally unacceptable. it should not be allowed to promote 200+ kw when in practice you only get that for a very short window, and then the car actually shuts down while fast charging....",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1400",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "solid quality, very plesant to drive in.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1434",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "ordered the comfort seats but they are too hard and not comfy.\nthe car doesnt float enough over bumpy roads, makes me wonder if air suspension on the sedan should have been possible.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Seats | Self-leveling suspension",
+   "vfc3": "Not comfortable | Customer request: usability",
+   "feedback_type": "Difficult to Use | Wants",
+   "labels": "Seats/Difficult to Use | Self-leveling suspension/Wants",
+   "engine": "BEVE",
+   "country": "NO",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1461",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "this is my fourth bmw since my first one back in 2016, and just when i think the standards have peaked, suddenly there are all these new features and the car basically performs better than ever for what you need. i'm still figuring out everything the 520i can do, but every trip so far has been a real pleasure behind the wheel. even though many of our roads are awful with potholes, once you are on the motorway the car is an absolute dream to drive and unmatched by anything else in its class. i did try a used 7 series on a test drive and almost went for it, but when the new 520i came out it felt like having a 7 series anyway, with plenty of space, luxury and majesty. a fantastic car and, in my view, the best in its class.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology | Drivetrain | Space / spatial impression | no_class_found",
+   "vfc3": "Like: function | Like: performance | Customer request: space / spatial impression",
+   "feedback_type": "Likes | Wants",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Drivetrain/Likes | Space / spatial impression/Wants | no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1471",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "it is very easy to drive and a lot of the features are automated, which helps me stay focused on driving in heavy traffic. auto hold, automatic headlights, sat nav options, speed limiter, all mostly automatic or semi automatic. i would like it to be simpler to change some settings, like the headlights when the sun is very bright. the heating works ok but i am still trying to sort out the lack of",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology | Exterior lighting | no_class_found",
+   "vfc3": "Like: function | Customer request: function",
+   "feedback_type": "Likes | Wants",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Exterior lighting/Wants | Exterior lighting/Likes | no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1479",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "excellent comfort and road holding. the battery manages around 9 miles. great display and system, very satisfied overall - min 5; e 5serie😊",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "High voltage battery | Touch screen, operation | no_class_found",
+   "vfc3": "Like: function | Like: usability",
+   "feedback_type": "Likes",
+   "labels": "High voltage battery/Likes | Touch screen, operation/Likes | no_class_found/",
+   "engine": "PHEV",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1485",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "just very cool cars, and good service at nordic auto viborg :-)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1500",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the car handles very well and is excellent for touring, and the hybrid system itself is very good. but i don't really feel the 300 hp that's advertised, the acceleration is gentle, especially when it's just the combustion engine working.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "Engine acoustics / engine sound | Handling / Riding",
+   "vfc3": "Customer request: sound | Like: function",
+   "feedback_type": "Wants | Likes",
+   "labels": "Engine acoustics / engine sound/Wants | Handling / Riding/Likes",
+   "engine": "PHEV",
+   "country": "FR",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1521",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "it's a great car to look at and to rive",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1545",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "this version has major improvements in driving safety systems and the infotainment setup. handling and road behavior are excellent, giving a smooth drive. on the downside, cost savings in the interior are very noticeable compared to the earlier series, including the material choices. torque, overall power and driving dynamics do not meet expectations, and a stronger engine as the entry option would help. even so, the car offers fair value and still carries a high level of prestige.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "Engine acoustics / engine sound | Handling / Riding | Impression of safety | Upholstery / interior trim | no_class_found",
+   "vfc3": "Customer request: sound | Like: function | Damage",
+   "feedback_type": "Wants | Likes | Defect",
+   "labels": "Engine acoustics / engine sound/Wants | Handling / Riding/Likes | Impression of safety/Likes | Upholstery / interior trim/Defect | no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1550",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "absolutely thrilled with my new car, even though there are a handful of things i'd tweak, overall it's great",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1568",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the driving comfort, the feeling of safety, and the sleek elegance of the car are what i enjoy most.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Impression of safety",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Impression of safety/Likes",
+   "engine": "PHEV",
+   "country": "FI",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1634",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the salespeople are very good, no complaints there. the workshop side, though, definitely has room to be improved.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "PHEV",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1746",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "it is insanely expensive, so most of my friends and family would never even think about owning one. the car itself is great, but the mileage is nowhere near what is advertised, especially when you only charge the battery to 80%. with so few physical buttons, poking around the screen to change things can feel risky while driving. sure, you can adjust stuff with voice control or from the steering wheel, but sometimes a plain old button is just much easier.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Body equipment, overall technology | Electric Range | Multi-function steering wheel operation | Touch screen, operation",
+   "vfc3": "Dislike: price-performance ratio | Range, not OK | Like: function | Size not user friendly",
+   "feedback_type": "Wants | Difficult to Use | Likes",
+   "labels": "Body equipment, overall technology/Wants | Electric Range/Difficult to Use | Multi-function steering wheel operation/Likes | Touch screen, operation/Difficult to Use",
+   "engine": "BEVE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1782",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "overall i'm satisfied. but i'm very unhappy that there are no clear directions on how to charge the i5 at fast chargers on long trips, which creates a lot of uncertainty.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1784",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "have been driving bmws for many years and the i5 is the best overall so far. my only small issues are that the headrest feels less comfortable and i just cannot get the angle quite right. i also still struggle to get the air con balanced properly, as i found the old controls to change temperature and direct air to face/hands better. they are minor niggles that i am sure i will get used to eventually.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Air conditioning, setting | Drive, driving dynamics and chassis, overall technology | Headrest, adjust | no_class_found",
+   "vfc3": "Malfunction | Like: function | Not comfortable",
+   "feedback_type": "Defect | Likes | Difficult to Use",
+   "labels": "Air conditioning, setting/Defect | Drive, driving dynamics and chassis, overall technology/Likes | Headrest, adjust/Difficult to Use | no_class_found/",
+   "engine": "BEVE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1814",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "it is a fantastic car. very comfortable, plenty of power, packed with technology and simple to charge. very straightforward to manage through the app. only letdown was the manual boot closing unless you pay for a much more expensive upgrade. very easy to wow friends and family. brilliant for long motorway trips across europe but also drives nicely around town. almost the ultimate driving machine! mark collins",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drivetrain | Handling / Riding | Trunk lid | no_class_found",
+   "vfc3": "Like: function | Like: performance | Damage",
+   "feedback_type": "Likes | Defect",
+   "labels": "Drivetrain/Likes | Handling / Riding/Likes | Trunk lid/Defect | no_class_found/",
+   "engine": "PHEV",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1835",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "i have been driving 5series for more than 20 years and i love the brand. this 5 is a delight to drive and now that i have got used to the touch screen i am very happy with it. the touch screen did take quite a while to get used to and i am still geting there. at times i find it distracting when i am driving but the verbal commands work well. the 5 is always a joy to drive.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology | Touch screen, operation | Voice control / speech recognition | no_class_found",
+   "vfc3": "Like: function | Size not user friendly | Customer request: function",
+   "feedback_type": "Likes | Difficult to Use | Wants",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Touch screen, operation/Difficult to Use | Voice control / speech recognition/Wants | no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1848",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "for me the car feels a bit oversized, but other than that it really is excellent. the one downside is the software, which is pretty sluggish and makes you tap several times for a lot of functions.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "ConnectedDrive and Infotainment, overall technology | General enquiry: customer feedback",
+   "vfc3": "Not user-friendly | Information / accuracy insufficient",
+   "feedback_type": "Difficult to Use",
+   "labels": "ConnectedDrive and Infotainment, overall technology/Difficult to Use | General enquiry: customer feedback/Difficult to Use",
+   "engine": "BEVE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-1910",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "significantly improved electric range. faster charging (up to about 11 kw ac) means it actually makes sense to plug in during a break on a long journey. however, there is now hassle with the software, since you cant download it directly in the car anymore and have to use an app that doesnt run flawlessly. it is also no longer possible to top up the battery via the petrol engine to have air conditioning the next day at a location without a charging spot.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Air conditioning, overall technology | ConnectedDrive and Infotainment, overall technology | Electric Range | High voltage battery",
+   "vfc3": "Like: function | Not user-friendly | Range, not OK | Malfunction",
+   "feedback_type": "Likes | Difficult to Use | Defect",
+   "labels": "Air conditioning, overall technology/Likes | ConnectedDrive and Infotainment, overall technology/Difficult to Use | Electric Range/Difficult to Use | High voltage battery/Defect",
+   "engine": "PHEV",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2037",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "this is already my fifth bmw, and every one before has matched what i expected, so this one feels like it has good genes and i dont think it can get any worse.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "BEVE",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2047",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "very strong acceleration, precise handling, efficient hybrid system, and a very pleasant electric drive in town. interior has nice nordic-style furniture, deep trunk, top-notch chassis, great wheeler overall and economical.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drivetrain",
+   "vfc3": "Like: performance",
+   "feedback_type": "Likes",
+   "labels": "Drivetrain/Likes",
+   "engine": "PHEV",
+   "country": "FR",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2083",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "very good bmw, runs quiet and sits just right on the road.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "BEVE",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2109",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "for me this is much better than full electric, since i always have petroleum backup. plus it has the b58, which i consider the best engine in the world at the moment.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drivetrain | no_class_found",
+   "vfc3": "Like: performance",
+   "feedback_type": "Likes",
+   "labels": "Drivetrain/Likes | no_class_found/",
+   "engine": "PHEV",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2231",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "really pleased with how it drives, the tech in it is excellent, the security cameras and speed recognition work great, the close vehicle warning and the yellow alerts on the wing mirrors are very helpful, and it slows down brilliantly when you come off the accelerator. the manual gear shifts on the levers behind the wheel feel really good to use. petrol usage is very eco friendly, and the sport mode sensation is amazing. the location and other monitoring features in the smartphone app are excellent. the car looks amazing, and a few people on the pavements have waved and given a thumbs up as i passed. thanks to the monitoring app and security i managed to get a great insurance deal at a little over £500, as the car is seen as low risk for theft and i can track it myself if it ever did get stolen, thankyou.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Wheels / tires",
+   "vfc3": "Look / design appeals",
+   "feedback_type": "Likes",
+   "labels": "Wheels / tires/Likes",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2232",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "it's the world's best driving machine, in every single category.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes",
+   "engine": "PHEV",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2254",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "overall, the cars are very high quality, both in materials and in how they are put together, and also when it comes to driving feel and comfort. the software is actually really good, but there is a major but. it is almost ridiculous that you cant \"talk\" danish to the car. danish voice control exists even in cheap little pispotters. it comes across a bit arrogant that danish has been left out for years. that really has to be fixed if the total experience is going to feel properly high quality.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Body equipment, overall technology | ConnectedDrive and Infotainment, overall technology | Drive, driving dynamics and chassis, overall technology | no_class_found",
+   "vfc3": "Like: price-performance ratio | Like: function",
+   "feedback_type": "Likes",
+   "labels": "Body equipment, overall technology/Likes | ConnectedDrive and Infotainment, overall technology/Likes | Drive, driving dynamics and chassis, overall technology/Likes | no_class_found/",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2283",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "driving comfort feels good to me in every aspect.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes",
+   "engine": "BEVE",
+   "country": "FI",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2318",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "after taking delivery of my 4th bmw, especially with this new highly digitalised model, i expected bmw to get in touch to see how things were going, but nobody has contacted me. i would really like a free review to confirm that i'm using all the features efficiently and effectively.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2329",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "very high quality car overall, from the finish to the driving enjoyment. it does feel heavy, but the electric motor torque makes up for that. a bit let down by some of the plastic parts inside, and the black plastic grille does not feel very premium either.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology | Radiator grille | no_class_found",
+   "vfc3": "Like: function | Damage",
+   "feedback_type": "Likes | Defect",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Radiator grille/Defect | no_class_found/",
+   "engine": "BEVE",
+   "country": "FR",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2332",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "i have been driving bmws for about 8 years and right now i own two. when i ordered the 5 series i specifically asked about fitting a tow bar and was told to go through a third party. after buying the car, that company said there is no tow bar for this model at the moment. i then called bmw and was told i never asked about a tow bar, which is simply not true. now i have a touring caravan i can't use and i'm extremely upset, really feel let down after all these years. regards mark taylor",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Trailer, use",
+   "vfc3": "Malfunction",
+   "feedback_type": "Defect",
+   "labels": "Trailer, use/Defect",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2386",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "i think choosing a car is a personal decision and should be left to each person's own discretion. if anyone asks me, i personally prefer the 520 and would say so if i'm consulted.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2405",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the car is fantastic and has completely removed my range anxiety, which is brilliant. i want to give a special thanks to alex in customer service and to jamie roberts, daniel and chris at the bmw cardiff dealership, they really couldnt do enough for me. the customer service and the bmw cardiff team have been brilliant and i would recommend you to everyone.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "BEVE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2424",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the apps built into the car really ought to be reachable from the phone, so you don't have to sit in the car and fiddle with them - you can do that in a mercedes, which was my previous car. the windows also can't be closed via the app, while mercedes manages that. if they could close themselves automatically when it rains, like mercedes does, i haven't found any sign that they do, but they should. the car has locked me out several times when i've left either the phone or the keys inside. settings in the app like folding the mirrors when locking don't actually work when it's other users, even though the option is set in the app. my wife is forced to type in a pin code and can't just pick her id, supposedly because of the risk that her phone might be stolen - but the primary user's phone can be stolen too, so that explanation doesn't make sense. the information shown in the dashboard is poor no matter which view you choose. the radio will not receive a signal while i'm driving through the limfjord tunnel, which i go through every day, and that's something i've never run into with any other car i've owned. the winter range is deeply reprehensible and honestly my biggest complaint: no more winter holiday trips, because the real range on the motorway at 130 kmh in frost is at most about 250 km. well, i guess i have to stop somewhere, but i'm left disappointed. mvh mads",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Electric Range | Exterior rearview mirror | Instrument panel | Radio function | Seats | Side window, open / close | Vehicle, lock / unlock | no_class_found",
+   "vfc3": "Range, not OK | Customer request: usability | Malfunction | Not user-friendly | Customer request: function",
+   "feedback_type": "Difficult to Use | Wants | Defect",
+   "labels": "Electric Range/Difficult to Use | Exterior rearview mirror/Wants | Instrument panel/Defect | Radio function/Difficult to Use | Seats/Wants | Side window, open / close/Defect | Vehicle, lock / unlock/Defect | no_class_found/",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2488",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "it's awesome to drive, and all the controls and screens are positioned just right. the design is awesome and the engine is really good.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology | no_class_found",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes | no_class_found/",
+   "engine": "BEVE",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2503",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the low fuel use, about 4-4.5 liters per 100 km, is absolutely fantastic.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drivetrain",
+   "vfc3": "Like: Efficiency",
+   "feedback_type": "Likes",
+   "labels": "Drivetrain/Likes",
+   "engine": "ICE",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2512",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "i am absolutely thrilled :) i've been driving bmw 5 series for many years, and with this i5 it feels like they've reached a new level. the car is sporty even though it's fairly big and heavy because of the battery, it's quiet, the design is attractive, and the interior is really nice :) big praise to the german engineers.\n\nas for improvements... would be great if a bit more equipment came standard or as cheaper retrofits, if the passenger seat had more electric adjustment, and if the tailgate had a close button instead of having to drop my shopping bags to shut it by hand (spoken like a diva :))",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "Interior acoustics | Trunk lid, open / close | no_class_found",
+   "vfc3": "Like: sound | Customer request: function",
+   "feedback_type": "Likes | Wants",
+   "labels": "Interior acoustics/Likes | Trunk lid, open / close/Wants | no_class_found/",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2529",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "overall i'm really happy. but i had clearly asked for the best lights available, even mentioned mercedes matrix lights, and u can i state i ended up with led instead of adaptive led. that feels fundamentally sloppy.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2542",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "switching from an older 3 series into this new i5, you really notice a lot of cost-saving compared to a 10-year-old car. 1) where you sit it's faux leather, with fabric underneath, while my old car had real leather everywhere. 2) the lower parts of the door panels are just cheap plastic instead of the soundproof material and leather my previous 3 series used. 3) there are odd electrical sounds when you charge your phone. 4) with the climate running and the car standing still, you hear something like droplets landing on plastic. overall it's a cool car with plenty of kit and tech, but a lot has clearly been saved, and i honestly hadn't expected these \"flaws\" from a brand new i5.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Door, front | no_class_found",
+   "vfc3": "Damage",
+   "feedback_type": "Defect",
+   "labels": "Door, front/Defect | no_class_found/",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2548",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "rides are solid, suspension feels comfy yet still carries loads well. performance is enough for what i need, and the interior seems very high quality.\nthere is quite a bit of tire humming, maybe from tires that are too low and possibly big rims. space is fine. why is there no insulation under the hood?",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Audio mode, sound | Cushioning / damping vehicle | Drivetrain | Interior design | Wheels / tires",
+   "vfc3": "Noise | Like: usability | Like: performance | Look / design appeals",
+   "feedback_type": "Defect | Likes | Difficult to Use",
+   "labels": "Audio mode, sound/Defect | Cushioning / damping vehicle/Likes | Drivetrain/Likes | Interior design/Likes | Wheels / tires/Difficult to Use",
+   "engine": "PHEV",
+   "country": "FI",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2554",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "it is a really good car and the service i get from you has always been reliable. at the same time you can tell it is a fresh model, there are some small details that get a bit irritating:\n\n1. the plastic cover you take off at a fast charger ends up swinging and knocking against the body when it is windy, it could really use some kind of simple holder so it stays put while charging.\n\n2. the front passenger seat belt tends to tap against the b-pillar while driving, which creates an annoying knocking noise.\n\n3. the choice for whether the car should beep when locking/unlocking keeps disappearing and i have already had to switch those beeps off four times, even though i have only had the car around 3 months.\n\n4. the charging cable supplied with the car is too short, since the car is quite long and many chargers make you drive straight in, it would help a lot if the cable was roughly 1-1.5 meters longer.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Body equipment, overall technology | Charging cable | Park Distance Control (PDC) | Seat belts | no_class_found",
+   "vfc3": "Customer request: function | Customer request: usability | Not user-friendly | Malfunction | Noise",
+   "feedback_type": "Wants | Difficult to Use | Defect",
+   "labels": "Body equipment, overall technology/Wants | Charging cable/Wants | Charging cable/Difficult to Use | Park Distance Control (PDC)/Defect | Seat belts/Defect | no_class_found/",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2588",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "i have been really happy with the car itself, plus the whole sales and delivery experience and the follow-up service. up to now, this is clearly the best bmw i have owned, and at the same time the biggest model update compared with the previous one i had.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "ICE",
+   "country": "FI",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2612",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the vehicle is fantastic overall, but there are a few things i feel could be improved.\n\non the front passenger side, the seat belt is set up so that the buckle ends up resting and vibrating against the side of the car if the belt gets twisted, and this was already an issue on my earlier 5 series.\n\nwhen i spray the windshield washer, the water now runs down from the top of the windscreen, which did not happen on my old 5 series.\n\nthe steering wheel buttons are much too tiny, the previous design was better.\n\nthere is no indication when the battery preheating is actually on.\n\ni would like more options to switch off atc etc, before there used to be a button for that.\n\nand yes, buttons are great :-d",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "High voltage battery | no_class_found",
+   "vfc3": "Malfunction",
+   "feedback_type": "Defect",
+   "labels": "High voltage battery/Defect | no_class_found/",
+   "engine": "BEVE",
+   "country": "NO",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2698",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "high-quality, comfortable, and very innovative.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "BEVE",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2749",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "unfortunately, after taking delivery of my new car in late 2023, it is now off the road and sitting at the dealer in early 2024. the car developed a drivetrain fault, which caused the radiator to overheat and meant the electric fan has to be replaced. the timing for a new electric fan is still unknown because of product back order problems.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Radiator grille | no_class_found",
+   "vfc3": "Damage",
+   "feedback_type": "Defect",
+   "labels": "Radiator grille/Defect | no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2752",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "extremely comfortable car and easy to drive, and it is also fast. the 60 liter gas tank together with a battery that does 100 km is a major advantage compared to earlier models (previously had a 330e with a 40 liter tank and 35 km battery range).",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology | Electric Range",
+   "vfc3": "Like: function | Range, not OK",
+   "feedback_type": "Likes | Difficult to Use",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Electric Range/Difficult to Use",
+   "engine": "PHEV",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2772",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "i put a nine instead of ten because, even though this car is excellent, it is overpriced. being expensive would be acceptable, but here you pushed it a bit too far. it drives excellently and i am slowly getting used to how complex the controls are. i also think the mileage forecast is overstated, and you are probably well aware of that.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Body equipment, overall technology | Drive, driving dynamics and chassis, overall technology | Electric Range | no_class_found",
+   "vfc3": "Dislike: price-performance ratio | Like: function | Range, not OK",
+   "feedback_type": "Wants | Likes | Difficult to Use",
+   "labels": "Body equipment, overall technology/Wants | Drive, driving dynamics and chassis, overall technology/Likes | Electric Range/Difficult to Use | no_class_found/",
+   "engine": "BEVE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2775",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "overall i like the vehicle, but the interior feels rubbery and the real-world range is embarrassingly short",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Electric Range | Interior",
+   "vfc3": "Range, not OK | Not user-friendly",
+   "feedback_type": "Difficult to Use",
+   "labels": "Electric Range/Difficult to Use | Interior/Difficult to Use",
+   "engine": "BEVE",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2789",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "as a vehicle, the bmw feels nicely luxurious, practical and enjoyable to drive. plus, the dealer i've dealt with has been excellent, both during the purchase and afterward, giving me good advice and guidance whenever i have questions.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology | no_class_found",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes | no_class_found/",
+   "engine": "PHEV",
+   "country": "FI",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2926",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "very comfy car with a sort of limousine vibe, economical in terms of consumption and packed with good features.\ni still wish it had soft-close on the doors.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "BEVE",
+   "country": "NO",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2972",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the car turned out a bit too small for me and the electric range was far under what was advertised, so i ended up trading it for an i7 demonstrator.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Electric Range | no_class_found",
+   "vfc3": "Range, not OK",
+   "feedback_type": "Difficult to Use",
+   "labels": "Electric Range/Difficult to Use | no_class_found/",
+   "engine": "PHEV",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2974",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "fantastic car to have and drive, nicely built, comfortable and very stylish.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-2979",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "positives: the car drives very smoothly and feels great on the road. it has plenty of space, and with the right options selected it is very comfortable. the self driving related tech works quite well. the harmon kardon audio sounds good.\nnegatives: the turning circle is really bad. when a passenger gestures with their hand while talking, it ends up activating the gesture control. i don't understand why the display has to jump from the navigation map to digital art whenever i switch into eco mode. i also can't set which driving mode the car should start in each time, so i have to turn eco driving on manually on every trip. i don't get why the youtube app demands an esim even though the car is already connected to my phone through carplay or bluetooth and could use that data. and even though i paid for the led headlight animation upgrade, the animation hasn't changed at all.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Apple CarPlay | Audio mode, sound | Drive, driving dynamics and chassis, overall technology | Exterior lighting | Gesture control | My Modes / driving experience | Steering | Touch screen, operation | no_class_found",
+   "vfc3": "Not user-friendly | Like: sound | Like: function | Malfunction",
+   "feedback_type": "Difficult to Use | Likes | Defect",
+   "labels": "Apple CarPlay/Difficult to Use | Audio mode, sound/Likes | Drive, driving dynamics and chassis, overall technology/Likes | Exterior lighting/Defect | Gesture control/Defect | My Modes / driving experience/Difficult to Use | Steering/Defect | Touch screen, operation/Defect | no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3034",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "despues de unos 40 años con vehiculos peugeot (alrededor de veinte autos nuevos), al no encontrar ningun producto nuevo de mi marca habitual, empecé a mirar otros fabricantes. no me arrepiento de la eleccion y me sorprende la calidad reconocida de la marca bmw.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "PHEV",
+   "country": "FR",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3073",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "a few days after i picked up the car i started having issues with the tyre pressure. i put air in it a couple of times, then brought it to the local bmw who told me everything was fine, but the problem is still there. i really cant get why this happens on a brand new car.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3181",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "improvement: the remote software upgrade setup is way too complicated - it took almost 3 days before the car had all services back.\n\nwhy is it not possible to pick my own dashboard/color in the car when efficiency is selected.\n\nruns satme well.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Instrument panel | Remote Software Upgrade/RSU | no_class_found",
+   "vfc3": "Damage | Customer request: usability",
+   "feedback_type": "Defect | Wants",
+   "labels": "Instrument panel/Defect | Remote Software Upgrade/RSU/Wants | no_class_found/",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3229",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the car has serious defects and the importer/dealer doesn't seem interested in resolving them, even after several inquiries from me.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3232",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the software works well and the range estimates are pretty accurate. assisted driving gives good support for the driver. the one thing that really disappoints me is that the driver seat does not have memory as standard.\n\nit would be great to have a better way in the app to plan charging stops and then send the entire planned route directly to the car. same thing for trips with several waypoints. right now it comes over as separate stops and you have to piece the whole route together again in the car.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "Driver assistance, automated driving, overall technology | Electric Range | Route optimized for charging | Seat memory | no_class_found",
+   "vfc3": "Like: function | Like: Range | Customer request: usability | Malfunction",
+   "feedback_type": "Likes | Wants | Defect",
+   "labels": "Driver assistance, automated driving, overall technology/Likes | Electric Range/Likes | Route optimized for charging/Wants | Seat memory/Defect | no_class_found/",
+   "engine": "BEVE",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3315",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "i want the app to clearly show how much power in kw is being charged. on long trips, fast charging stations should stand out more visually. if i choose circle c, that should be the only result in the gps.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Charge high-voltage battery | Navigation | Public charging / external providers",
+   "vfc3": "Malfunction | Customer request: usability | Customer request: function",
+   "feedback_type": "Defect | Wants",
+   "labels": "Charge high-voltage battery/Defect | Navigation/Wants | Public charging / external providers/Wants",
+   "engine": "BEVE",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3316",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "veldig god bil, driftsikkerheten er helt på topp, trivelig forhandler",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "PHEV",
+   "country": "NO",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3326",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "quality and comfort.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "BEVE",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3380",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "excellent car with a big boot that fits prams and baby gear, very comfortable and equipped with all the necessary tech and safety features.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Driver assistance, automated driving, overall technology",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Driver assistance, automated driving, overall technology/Likes",
+   "engine": "ICE",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3406",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "such a wonderfully put-together car, it really brings me a lot of happiness and joy to drive.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes",
+   "engine": "PHEV",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3433",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the car itself is excellent, but the range really should be higher for something in this price bracket. mine listed at around sek 1,020,000 and in summer i only get roughly 420 km, which i find too limited.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Body equipment, overall technology | Electric Range",
+   "vfc3": "Dislike: price-performance ratio | Range, not OK",
+   "feedback_type": "Wants | Difficult to Use",
+   "labels": "Body equipment, overall technology/Wants | Electric Range/Difficult to Use",
+   "engine": "BEVE",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3537",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "i dislike that a few functions just cannot be turned off. also there are some technical and design details that really could be executed better.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "PHEV",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3567",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "very nice driving feel, good finish on the interior parts and great sound quality from the b&w system, plus the car has sporty traits.\n\nbut a lot of the washer fluid and water from the windshield ends up on the left side window when using the wipers, which is annoying. the suspension is on the softer side and the car rocks or bobs unless it is in sport mode. the low and high beams are also not as good as on the i4 m lazer.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "vfc2": "Audio mode, sound | Drive, driving dynamics and chassis, overall technology | Exterior lighting | My Modes / driving experience | Vehicle, climatization | no_class_found",
+   "vfc3": "Like: sound | Like: function | Light intensity not OK | Malfunction | Condensation",
+   "feedback_type": "Likes | Difficult to Use | Defect",
+   "labels": "Audio mode, sound/Likes | Drive, driving dynamics and chassis, overall technology/Likes | Exterior lighting/Difficult to Use | My Modes / driving experience/Defect | Vehicle, climatization/Difficult to Use | no_class_found/",
+   "engine": "BEVE",
+   "country": "NO",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3633",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the driving experience is very impressive, and nearly all our local town trips are now done purely on electric. only when we travel out of town do we use the 20ltr petrol engine together with the electric power, and we are getting an excellent 60 miles on electric. very happy with it so far.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Electric Range",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Electric Range/Likes",
+   "engine": "PHEV",
+   "country": "GB",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3651",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "hello, in general i am happy with the car, but i am really upset about how often it wants oil changes. my order sheet clearly said 24 months or 30,000 kms, yet the car asked for an oil change at 16,400 kms, which feels really abused. i did the oil service at 16,733 kms and the maintenance counter was reset to 30,000 kms. since then i drove 2,310 kms and now it tells me the next oil change is in 25,000 kms. is the maintenance planner wrong, or was the sales promise simply false? i could have accepted a request at 25,000 kms based on usage, but 16,400 kms makes no sense. i'm a road professional and i have never seen that. kind regards",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "ICE",
+   "country": "FR",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3679",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "for about twenty years i drove a bmw 530d, and now that i have just started driving a bmw 520d xdrive, the ride comfort and safety feel improved, actually hugely better",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Impression of safety",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Impression of safety/Likes",
+   "engine": "ICE",
+   "country": "ES",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3690",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "great handling, design and quality, plus good servcie and reliability",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Handling / Riding",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Handling / Riding/Likes",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3734",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "stortrivs verkligen med min 550e",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "vfc2": "no_class_found",
+   "vfc3": "",
+   "feedback_type": "",
+   "labels": "no_class_found/",
+   "engine": "PHEV",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3745",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the car itself drives nicely, but the real-world range is waaaay off from what they claim.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3762",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "drives like a dream and super dept. in viborg",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes",
+   "engine": "BEVE",
+   "country": "DK",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3886",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "the bmw i5 edrive is a car i genuinely enjoy getting behind the wheel of. the battery range is somewhat limited, but still reasonable for everyday driving. the ride is comfortable and the finish is nice. my only real regret is that the engine compartment area isn't used to provide an extra trunk.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drivetrain | Handling / Riding | High voltage battery | no_class_found",
+   "vfc3": "Malfunction | Like: function",
+   "feedback_type": "Defect | Likes",
+   "labels": "Drivetrain/Defect | Handling / Riding/Likes | High voltage battery/Likes | no_class_found/",
+   "engine": "BEVE",
+   "country": "FR",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3904",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "really comfortable to ride, great driving feel, the car seems solid and safe",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology | Impression of safety",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Impression of safety/Likes",
+   "engine": "BEVE",
+   "country": "NO",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-FB-G60-3931",
+  "source_type": "feedback",
+  "source_name": "Feedback Quelle A",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "great driving car with a very logical layout and a nice balance of analog and digital controls. as a pilot i really value the headup display a lot.",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "vfc2": "Drive, driving dynamics and chassis, overall technology | Head-Up Display",
+   "vfc3": "Like: function",
+   "feedback_type": "Likes",
+   "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Head-Up Display/Likes",
+   "engine": "BEVE",
+   "country": "SE",
+   "source": "A",
+   "scope": "in"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-01",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Overall product satisfaction: mean 8.3 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Overall product satisfaction",
+   "mean": "8.32"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-02",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Exterior styling: mean 9.8 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Exterior styling",
+   "mean": "9.83"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-03",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Interior styling: mean 8.5 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Interior styling",
+   "mean": "8.55"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-04",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Quality of interior and materials used: mean 7.8 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Quality of interior and materials used",
+   "mean": "7.75"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-05",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Level of equipment: mean 7.8 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Level of equipment",
+   "mean": "7.77"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-06",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Safety: mean 9.2 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Safety",
+   "mean": "9.15"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-07",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Freedom from faults/ squeaks/ rattles: mean 8.4 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Freedom from faults/ squeaks/ rattles",
+   "mean": "8.41"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-08",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Value for money: mean 7.4 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "attribute": "Value for money",
+   "mean": "7.36"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-09",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Reliability: mean 9.3 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Reliability",
+   "mean": "9.25"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-10",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "All round visibility: mean 8.6 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "All round visibility",
+   "mean": "8.64"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-11",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Easy to read and use instruments/ controls/ displays: mean 8.1 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Easy to read and use instruments/ controls/ displays",
+   "mean": "8.07"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-12",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Smartphone integration/ connectivity: mean 8.5 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Smartphone integration/ connectivity",
+   "mean": "8.46"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-13",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Features of information and entertainment system including in-car apps: mean 8.2 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Features of information and entertainment system including in-car apps",
+   "mean": "8.19"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-14",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Easy to use information and entertainment system including in-car apps: mean 8.3 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Easy to use information and entertainment system including in-car apps",
+   "mean": "8.26"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-15",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Integrated navigation system: mean 8.6 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Integrated navigation system",
+   "mean": "8.59"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-16",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Overall seating comfort: mean 8.8 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Overall seating comfort",
+   "mean": "8.81"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-17",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Interior storage for small items: mean 7.7 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Interior storage for small items",
+   "mean": "7.72"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-18",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Acceleration: mean 8.8 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Acceleration",
+   "mean": "8.85"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-19",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Roadholding: mean 8.2 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Roadholding",
+   "mean": "8.15"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-20",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Fuel economy/ energy efficiency: mean 7.4 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "attribute": "Fuel economy/ energy efficiency",
+   "mean": "7.45"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-21",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Braking: mean 8.3 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Braking",
+   "mean": "8.25"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-22",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Sportiness: mean 7.6 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Sportiness",
+   "mean": "7.64"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-23",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Prestige/ manufacturer reputation: mean 8.9 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Prestige/ manufacturer reputation",
+   "mean": "8.95"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-24",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Manoeuvrability: mean 8.7 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Manoeuvrability",
+   "mean": "8.73"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-25",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Quality of ride: mean 9.9 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Quality of ride",
+   "mean": "9.95"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-26",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Front interior roominess: mean 8.9 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Front interior roominess",
+   "mean": "8.88"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-27",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Rear interior roominess: mean 7.5 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "attribute": "Rear interior roominess",
+   "mean": "7.46"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-28",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Ease of loading/ unloading luggage: mean 7.2 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "attribute": "Ease of loading/ unloading luggage",
+   "mean": "7.24"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-29",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Luggage capacity: mean 7.5 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Luggage capacity",
+   "mean": "7.54"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-30",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Ease of entry into and out of car: mean 7.9 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Ease of entry into and out of car",
+   "mean": "7.91"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-31",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Environm. friendliness: mean 7.6 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Environm. friendliness",
+   "mean": "7.59"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-32",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Heating/ ventilation/ air conditioning: mean 7.5 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "attribute": "Heating/ ventilation/ air conditioning",
+   "mean": "7.47"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-33",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Overall build quality: mean 7.7 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Overall build quality",
+   "mean": "7.67"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-34",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Quietness when driving: mean 7.8 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Quietness when driving",
+   "mean": "7.79"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-35",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Driving position: mean 9.2 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 1,
+  "meta": {
+   "attribute": "Driving position",
+   "mean": "9.17"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-36",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Connected services: mean 7.4 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": -1,
+  "meta": {
+   "attribute": "Connected services",
+   "mean": "7.37"
+  }
+ },
+ {
+  "id": "EV-G60-EU-ST-37",
+  "source_type": "study",
+  "source_name": "EU-Studie 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Interior versatility: mean 8.1 (EU study 2025)",
+  "url": null,
+  "retrieved_at": null,
+  "polarity": 0,
+  "meta": {
+   "attribute": "Interior versatility",
+   "mean": "8.14"
+  }
+ }
+]

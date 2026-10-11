@@ -1,0 +1,59 @@
+[
+ {
+  "id": "SIG-G70-US-NHTSA-01",
+  "kind": "complaint",
+  "category": "driving_experience",
+  "title": "US-Behördenbeschwerden: Service Brakes und Electronic Stability Control (Esc)",
+  "summary": "11 NHTSA-Beschwerden zu Service Brakes und Electronic Stability Control (Esc) (BMW 7er (G70), US).",
+  "evidence_ids": [
+   "EV-G70-US-NHTSA-11652967",
+   "EV-G70-US-NHTSA-11634634",
+   "EV-G70-US-NHTSA-11620411",
+   "EV-G70-US-NHTSA-11620097",
+   "EV-G70-US-NHTSA-11704466",
+   "EV-G70-US-NHTSA-11684707",
+   "EV-G70-US-NHTSA-11666432",
+   "EV-G70-US-NHTSA-11630137",
+   "EV-G70-US-NHTSA-11626164",
+   "EV-G70-US-NHTSA-11622741",
+   "EV-G70-US-NHTSA-11578380",
+   "EV-G70-US-NHTSA-STAT-01",
+   "EV-G70-US-NHTSA-STAT-02",
+   "EV-G70-US-NHTSA-STAT-03",
+   "EV-G70-US-NHTSA-STAT-04"
+  ],
+  "mention_count": 11,
+  "source_types": [
+   "feedback_external"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G70-US-NHTSA-02",
+  "kind": "complaint",
+  "category": "driver_assistance",
+  "title": "US-Behördenbeschwerden: Forward Collision Avoidance und Service Brakes",
+  "summary": "6 NHTSA-Beschwerden zu Forward Collision Avoidance und Service Brakes (BMW 7er (G70), US).",
+  "evidence_ids": [
+   "EV-G70-US-NHTSA-11625939",
+   "EV-G70-US-NHTSA-11685765",
+   "EV-G70-US-NHTSA-11682433",
+   "EV-G70-US-NHTSA-11681797",
+   "EV-G70-US-NHTSA-11675784",
+   "EV-G70-US-NHTSA-11658955",
+   "EV-G70-US-NHTSA-STAT-01",
+   "EV-G70-US-NHTSA-STAT-02",
+   "EV-G70-US-NHTSA-STAT-03",
+   "EV-G70-US-NHTSA-STAT-04"
+  ],
+  "mention_count": 6,
+  "source_types": [
+   "feedback_external"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ }
+]

@@ -5,9 +5,8 @@
 *.pem
 *.key
 
-# ─── BMW-Daten (vertraulich, Repo ist ÖFFENTLICH) ────────────────────────
-# Rohdaten, Pipeline-Ergebnisse (enthalten Kundenzitate), LLM-Cache, Audit-DB
-# bleiben lokal. Verteilung im Team per USB/Drive, siehe data/README.md.
+# ─── BMW-Daten (Repo ist ÖFFENTLICH) ─────────────────────────────────────
+# LLM-Cache und Audit-DB (lokaler Laufzeit-Zustand pro Rechner) bleiben lokal.
 data/*
 !data/README.md
 # Bewusste Entscheidung (Piyush, 10.10.2026): BMW-Rohdateien liegen im Repo
@@ -16,6 +15,8 @@ data/*
 !data/demo_cache/
 # Öffentliche Behördendaten (NHTSA, gemeinfrei) für die Offline-Demo; keine BMW-Daten
 !data/external_cache/
+# Orga hat die Weitergabe der BMW-Daten freigegeben (siehe entscheidungen/E08): Pipeline-Ergebnisse jetzt auch im Repo
+!data/processed/
 
 # ─── Lokale Einstellungen von Claude Code und Entire ─────────────────────
 .claude/settings.local.json
