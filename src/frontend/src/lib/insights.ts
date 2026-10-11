@@ -178,7 +178,8 @@ export interface AskHit {
 
 export interface AskResult {
   question: string;
-  source: "rules" | "mixed";
+  source: "ai" | "rules";
+  interpretation?: string;
   answer: string;
   top: AskHit[];
 }

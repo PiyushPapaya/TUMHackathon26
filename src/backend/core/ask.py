@@ -17,11 +17,13 @@ TOP_PER_SCENARIO = 2
 def answer(states: dict, question: str) -> dict:
     """PM-Frage -> Top-Anforderungen ueber alle geladenen Szenarien."""
     rows = []
-    sources = set()
+    # Frage EINMAL deuten (ein LLM-Aufruf), dann in jedem Szenario in Python rechnen.
+    # Warum: Die Deutung hängt nicht vom Szenario ab; sechs Aufrufe kosteten ~5 s je neuer Frage
+    # und konnten dieselbe Frage pro Markt verschieden deuten.
+    plan, source = lens.plan_lens(question)
     for scenario_id, state in sorted(states.items()):
-        result = lens.run_lens(state, question)
-        sources.add(result["source"])
-        for item in result["top"][:TOP_PER_SCENARIO]:
+        top, _note = lens.apply_lens(state, plan)
+        for item in top[:TOP_PER_SCENARIO]:
             req = item["requirement"]
             linked = [state.signals[sid] for sid in req["signal_ids"] if sid in state.signals]
             evidence_ids = sorted({eid for sig in linked for eid in sig.evidence_ids})
@@ -41,7 +43,8 @@ def answer(states: dict, question: str) -> dict:
     top = rows[:TOP_SCENARIOS * TOP_PER_SCENARIO]
     return {
         "question": question,
-        "source": "rules" if sources == {"rules"} else "mixed",
+        "source": source,
+        "interpretation": plan["interpretation"],
         "answer": _sentence(top),
         "top": top,
     }

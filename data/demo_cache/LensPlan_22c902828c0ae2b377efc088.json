@@ -1,0 +1,33 @@
+{
+  "weights": [
+    {
+      "factor": "customer_pain",
+      "weight": 0.8
+    },
+    {
+      "factor": "reach",
+      "weight": 0.9
+    },
+    {
+      "factor": "satisfaction_gap",
+      "weight": 0.7
+    },
+    {
+      "factor": "competitive_pressure",
+      "weight": 0.7
+    },
+    {
+      "factor": "future_relevance",
+      "weight": 0.95
+    },
+    {
+      "factor": "effort_inverse",
+      "weight": 0.35
+    }
+  ],
+  "categories": [
+    "range_charging"
+  ],
+  "only_gaps": false,
+  "interpretation": "Prioritize product decisions for vehicle charging: infrastructure, charge speed, convenience, home and public solutions."
+}

@@ -71,15 +71,17 @@ export function AssistantProvider({ children }: { children: React.ReactNode }) {
           const res = await postAsk(routed.question, "pm.demo").catch(async () => {
             const lens = await postLens(scenarioId, routed.question, "pm.demo");
             return {
-              question: lens.question, source: "rules" as const, answer: lens.interpretation,
+              question: lens.question, source: lens.source, interpretation: lens.interpretation, answer: lens.interpretation,
               top: lens.top.map((t) => ({ scenario_id: scenarioId, requirement_id: t.requirement.id, title: t.requirement.title, rank: t.requirement.rank, score: t.lens_score, lens_score: t.lens_score, evidence_level: t.requirement.evidence_level, reasons: t.reasons })),
             };
           });
           push({
             role: "bot",
-            text: res.top.length ? `Best matches across all models and markets:` : "I found no matching requirement. Try a topic like charging, space, infotainment or a model like \"7 Series US\".",
+            text: res.top.length
+              ? `${res.interpretation ? `I read this as: ${res.interpretation} ` : ""}Best matches across all models and markets:`
+              : "I found no matching requirement. Try a topic like charging, space, infotainment or a model like \"7 Series US\".",
             hits: res.top.map(toHit),
-            source: res.source === "rules" ? "Matched by keyword rules on the real data" : "Matched by the AI lens on the real data",
+            source: res.source === "rules" ? "Matched by keyword rules on the real data" : "AI set the focus, Python ranked the real data",
           });
         }
       } catch (e) {

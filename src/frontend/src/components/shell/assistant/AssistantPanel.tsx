@@ -112,7 +112,7 @@ export function AssistantPanel({
           <>
             <div ref={listRef} className="flex flex-1 flex-col gap-4 overflow-y-auto px-6 py-6">
               {messages.map((m, i) => <Bubble key={i} m={m} />)}
-              {busy && <p className="self-start bg-[var(--grey-100)] px-4 py-3 text-sm text-[var(--grey-500)]">Looking through the data…</p>}
+              {busy && <p className="self-start bg-[var(--grey-100)] px-4 py-3 text-sm text-[var(--grey-500)]">Reading your question and ranking the data… (a few seconds the first time)</p>}
               {messages.length <= 1 && (
                 <div className="flex flex-wrap gap-2">
                   {QUICK.map((q) => (

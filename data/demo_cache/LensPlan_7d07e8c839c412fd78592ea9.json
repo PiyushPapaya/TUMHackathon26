@@ -1,0 +1,31 @@
+{
+  "weights": [
+    {
+      "factor": "customer_pain",
+      "weight": 0.18
+    },
+    {
+      "factor": "reach",
+      "weight": 0.07
+    },
+    {
+      "factor": "satisfaction_gap",
+      "weight": 0.22
+    },
+    {
+      "factor": "competitive_pressure",
+      "weight": 0.3
+    },
+    {
+      "factor": "future_relevance",
+      "weight": 0.18
+    },
+    {
+      "factor": "effort_inverse",
+      "weight": 0.05
+    }
+  ],
+  "categories": [],
+  "only_gaps": true,
+  "interpretation": "Identify product areas where competitors outperform us across features, quality, and customer perception."
+}

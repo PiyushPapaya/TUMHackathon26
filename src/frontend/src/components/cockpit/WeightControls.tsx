@@ -50,7 +50,7 @@ export function WeightControls({
       </div>
       <div className="flex flex-wrap items-center gap-3 pb-6">
         <Button disabled={applying} onClick={onApply}>{applying ? "Applying..." : "Apply weights"}</Button>
-        <Button variant="outline" onClick={onReset}>Reset</Button>
+        <Button variant="outline" disabled={applying} onClick={onReset}>Reset to default</Button>
         <p className="text-xs text-[var(--grey-500)]">The change itself is recorded as the rationale.</p>
       </div>
     </details>

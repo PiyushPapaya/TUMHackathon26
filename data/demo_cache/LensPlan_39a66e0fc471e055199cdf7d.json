@@ -1,0 +1,31 @@
+{
+  "weights": [
+    {
+      "factor": "customer_pain",
+      "weight": 0.6
+    },
+    {
+      "factor": "reach",
+      "weight": 0.6
+    },
+    {
+      "factor": "satisfaction_gap",
+      "weight": 0.45
+    },
+    {
+      "factor": "competitive_pressure",
+      "weight": 0.75
+    },
+    {
+      "factor": "future_relevance",
+      "weight": 0.95
+    },
+    {
+      "factor": "effort_inverse",
+      "weight": 0.2
+    }
+  ],
+  "categories": [],
+  "only_gaps": false,
+  "interpretation": "Assess and prioritize attributes and trade-offs for the vehicle replacing the current model in 2030."
+}

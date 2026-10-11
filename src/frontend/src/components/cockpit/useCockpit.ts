@@ -145,6 +145,9 @@ export function useCockpit(initialScenarioId: string | null) {
   return {
     scenarioId, selectedScenario, requirements, weights, setWeights,
     previousRanks, highlightRanks, loading, applying, error, toast,
-    conflictTitles, applyWeights, resetWeights: () => setWeights(DEFAULT_WEIGHTS),
+    conflictTitles, applyWeights,
+    // Reset wendet die Standardgewichte wirklich an (mit Eintrag im Prüfpfad), statt nur die Regler zu verschieben.
+    // Warum: Ein Reglertest hatte G60-US auf "nur Customer pain" gestellt, danach zeigten alle Top-Scores 100.
+    resetWeights: () => applyWeights(DEFAULT_WEIGHTS, "Reset to default weights."),
   };
 }

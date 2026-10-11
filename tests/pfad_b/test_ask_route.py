@@ -22,3 +22,15 @@ def test_ask_schreibt_keinen_pruefpfad(client, monkeypatch):
 def test_ask_leere_frage_ist_422(client):
     assert client.post("/api/ask", json={"question": "", "actor": "pm"}).status_code == 422
     assert client.post("/api/ask", json={"question": "   ", "actor": "pm"}).status_code == 422
+
+
+def test_ask_deutet_die_frage_nur_einmal(client, monkeypatch):
+    """Ein LLM-Aufruf pro Frage statt einer pro Szenario (Demo-Tempo, gleiche Deutung überall)."""
+    from core import lens
+
+    calls = []
+    real = lens.plan_lens
+    monkeypatch.setattr(lens, "plan_lens", lambda q: calls.append(q) or real(q))
+    monkeypatch.setenv("DEMO_MODUS", "true")
+    client.post("/api/ask", json={"question": "seats", "actor": "pm.test"})
+    assert calls == ["seats"]

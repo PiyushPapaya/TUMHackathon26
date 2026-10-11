@@ -36,7 +36,7 @@ Do not answer the question. Return:
   competitive_pressure = competitors are better; future_relevance = trends in 3-5 years; effort_inverse = quick wins.
 - categories: only categories the question names, from: {", ".join(c.value for c in Category)}. Empty = all.
 - only_gaps: true only if the PM asks for things missing from today's offer.
-- interpretation: one sentence in German, what you understood."""
+- interpretation: one short sentence (max 20 words) in the language of the question, what you understood."""
 
 # Regel-Fallback: Schlüsselwort (klein, Deutsch + Englisch) -> Kategorie bzw. Faktor
 CATEGORY_WORDS = {
@@ -92,10 +92,11 @@ def rule_plan(question: str) -> LensPlan:
     cats = [c for c, words in CATEGORY_WORDS.items() if any(w in q for w in words)]
     factors = [f for f, words in FACTOR_WORDS.items() if any(w in q for w in words)]
     gaps = any(w in q for w in GAP_WORDS)
-    parts = ([f"Kategorien: {', '.join(cats)}"] if cats else []) + ([f"Fokus: {', '.join(factors)}"] if factors else [])
-    text = "Regel-Linse (ohne KI): " + ("; ".join(parts) if parts else "keine Schlüsselwörter, Standardgewichte")
+    # Englisch wie die Oberfläche; die Schlüsselwörter selbst verstehen weiter Deutsch und Englisch.
+    parts = ([f"categories: {', '.join(cats)}"] if cats else []) + ([f"focus: {', '.join(factors)}"] if factors else [])
+    text = "Keyword lens (no AI): " + ("; ".join(parts) if parts else "no keywords found, default weights")
     return LensPlan(weights=[FactorWeight(factor=f, weight=FOCUS_WEIGHT) for f in factors], categories=cats,
-                    only_gaps=gaps, interpretation=text + (", nur Ausstattungslücken." if gaps else "."))
+                    only_gaps=gaps, interpretation=text + (", only gaps in today's offer." if gaps else "."))
 
 
 def plan_lens(question: str) -> tuple[dict, str]:

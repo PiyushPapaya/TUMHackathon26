@@ -1,0 +1,33 @@
+{
+  "weights": [
+    {
+      "factor": "customer_pain",
+      "weight": 0.6
+    },
+    {
+      "factor": "reach",
+      "weight": 0.9
+    },
+    {
+      "factor": "satisfaction_gap",
+      "weight": 0.7
+    },
+    {
+      "factor": "competitive_pressure",
+      "weight": 0.8
+    },
+    {
+      "factor": "future_relevance",
+      "weight": 0.95
+    },
+    {
+      "factor": "effort_inverse",
+      "weight": 0.2
+    }
+  ],
+  "categories": [
+    "infotainment_digital"
+  ],
+  "only_gaps": false,
+  "interpretation": "Prioritize digital infotainment features and improvements across software, UX, connectivity and services."
+}

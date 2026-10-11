@@ -46,8 +46,8 @@ Fehler: `404` unbekanntes Szenario · `422` leere Frage.
 {"question": "What matters most for families?", "actor": "pm.demo"}
 ```
 
-Antwort: `{question, source ("rules"|"mixed"), answer, top: [{scenario_id, requirement_id, title, rank, score, lens_score, evidence_level, signal_ids, evidence_ids, reasons}]}` (Beispiel `views/ask.json`).
-Läuft die Linse über **alle** Szenarien (je Szenario Top 2, insgesamt max. 6). Nur IDs aus dem Store, nichts wird gespeichert (kein Prüfpfad, weil nichts vorgeschlagen wird). Fehler: `422` leere Frage.
+Antwort: `{question, source ("ai"|"rules"), interpretation, answer, top: [{scenario_id, requirement_id, title, rank, score, lens_score, evidence_level, signal_ids, evidence_ids, reasons}]}` (Beispiel `views/ask.json`).
+Deutet die Frage **einmal** (Linse, ein LLM-Aufruf) und rechnet sie in **allen** Szenarien (je Szenario Top 2, insgesamt max. 6). Nur IDs aus dem Store, nichts wird gespeichert (kein Prüfpfad, weil nichts vorgeschlagen wird). Fehler: `422` leere Frage.
 
 ## Lesen: Rohdaten (wie bisher)
 
