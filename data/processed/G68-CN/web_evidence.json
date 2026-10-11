@@ -1,1 +1,2790 @@
-[]
+[
+ {
+  "id": "EV-G68-CN-WEB-01",
+  "source_type": "web",
+  "source_name": "Mercedes-Benz China brochure",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Mercedes-Benz E‑Class L (long‑wheelbase for China) is explicitly marketed and documented as a rear‑seat‑focused, comfort‑tuned model with suspension and interior features aimed at a softer, quieter ride for rear passengers.",
+  "url": "https://www.mercedes-benz.com.cn/content/dam/mb-vehicles-data-cn/2025/2025brochure/june/E-ClassL_brochure.pdf",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mercedes-Benz China brochure",
+   "published": "2025",
+   "stance": "supports",
+   "about": "E‑Class L ride/positioning",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-02",
+  "source_type": "web",
+  "source_name": "Autohome (Chinese auto media)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Chinese reviews and comparisons consistently describe the E‑Class L as tuned toward plush comfort and rear‑passenger luxury, while describing the BMW 5‑series long‑wheelbase as retaining a firmer, more driver‑oriented chassis (though the G68 LWB also increases rear legroom and softens the ride compared with its standard wheelbase variants).",
+  "url": "https://www.autohome.com.cn/ask/23070411.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autohome (Chinese auto media)",
+   "published": "2026",
+   "stance": "supports",
+   "about": "E‑Class L vs BMW 5 LWB driving/comfort comparison",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-03",
+  "source_type": "web",
+  "source_name": "Sohu Auto",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Multiple Chinese car reviews and guides making side‑by‑side comparisons conclude the practical difference as: E‑Class L = softer, quieter, rear‑comfort priority; BMW 5‑series LWB (G68) = slightly more rear legroom and a firmer, more engaging/driver‑focused setup.",
+  "url": "https://www.sohu.com/a/780438068_471549",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Sohu Auto",
+   "published": "2024-2026 (comparison article)",
+   "stance": "supports",
+   "about": "E‑Class L vs BMW 5 LWB ride/space differences",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-04",
+  "source_type": "web",
+  "source_name": "China Auto Quality (AQSIQ) complaint database",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Public complaint records in China document cases where Mercedes‑E‑Class owners reported unexpected or multiple automatic emergency‑braking activations and delayed AEB reactions (owners filed complaints to national auto‑quality platforms describing ‘sudden emergency braking’ during normal driving).",
+  "url": "https://www.aqsiqauto.com/complaint/qichetousu_info?id=25687",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "China Auto Quality (AQSIQ) complaint database",
+   "published": "2022 (example)",
+   "stance": "supports",
+   "about": "Mercedes E‑Class braking complaints (AEB/automatic braking)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-05",
+  "source_type": "web",
+  "source_name": "12365auto (car quality forum)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Chinese owner forums and complaint sites (12365auto, Dongchedi and similar) contain multiple threads and owner reports describing E‑Class (including long‑wheelbase) brake issues such as sudden AEB activation, brake pedal feel described as soft/non‑linear, or brake‑disc/deformation‑related vibration at speed.",
+  "url": "https://bbs.12365auto.com/seriesforum/115-1-1-0.shtml",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "12365auto (car quality forum)",
+   "published": "2024–2026 (forum list)",
+   "stance": "supports",
+   "about": "Owner reports of braking issues on E‑Class",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-06",
+  "source_type": "web",
+  "source_name": "China Auto Quality (AQSIQ) complaint database",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW 5‑series long‑wheelbase (G68) has its own set of brake/stop‑feel complaints in China (examples logged in the national complaint database and on Sina/Autohome), including reports of sudden AEB events, brake‑disc distortion or uneven wear — i.e., braking complaints are present for both marques in the CN market, though specific failure modes cited (AEB mis‑activation vs. disc wear/distortion) vary by report.",
+  "url": "https://www.aqsiqauto.com/complaint/qichetousu_info?id=75745",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "China Auto Quality (AQSIQ) complaint database",
+   "published": "2024–2026 (example)",
+   "stance": "supports",
+   "about": "BMW 5‑series braking complaints in China",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-07",
+  "source_type": "web",
+  "source_name": "Audi China (audi.cn)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "The China-market Audi A6L lists a multi-screen cockpit with an 11.9‑inch navigation/display, a 14.5‑inch panoramic central display, and an optional 10.9‑inch passenger display; the page also advertises wireless Apple CarPlay and cross‑screen information flow for China models.",
+  "url": "https://www.audi.cn/zh/models/a/a6/new_a6l.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Audi China (audi.cn)",
+   "published": "accessed 2026-10-11",
+   "stance": "neutral",
+   "about": "Audi A6L infotainment & displays (China)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-08",
+  "source_type": "web",
+  "source_name": "Audi MediaCenter (audi-mediacenter.com)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Audi states its China A6L variants use the brand’s E³ 1.2 electronics architecture and 'China‑tailored' smart‑cockpit technologies including localized infotainment, navigation, an app store and a market‑specific Audi Assistant.",
+  "url": "https://www.audi-mediacenter.com/en/press-releases/auto-china-2026-audi-continues-its-product-initiative-with-china-tailored-models-and-technologies-17104/download",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Audi MediaCenter (audi-mediacenter.com)",
+   "published": "accessed 2026-10-11",
+   "stance": "neutral",
+   "about": "Audi A6L electronics architecture and China‑specific services",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-09",
+  "source_type": "web",
+  "source_name": "Sina Auto (k.sina.com.cn)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Chinese automotive reporting and reviews note Audi upgraded the A6L's processing hardware (so‑called '8150' chip in local coverage) and report improved MMI responsiveness and faster navigation loading compared with prior Audi units.",
+  "url": "https://k.sina.com.cn/article_7879849086_1d5acf47e06801i7m0.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Sina Auto (k.sina.com.cn)",
+   "published": "accessed 2026-10-11",
+   "stance": "neutral",
+   "about": "Audi A6L MMI performance (China)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-10",
+  "source_type": "web",
+  "source_name": "车质网 / 12365auto.com",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "There are documented customer complaints in China reporting frequent vehicle infotainment disconnections for the Audi A6L (example complaint posted on the Chinese vehicle complaints site 12365auto describing 'frequent disconnect' of the car infotainment system).",
+  "url": "https://www.12365auto.com/zlts/20260402/1622592.shtml",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "车质网 / 12365auto.com",
+   "published": "accessed 2026-10-11",
+   "stance": "supports",
+   "about": "Audi A6L connected services / infotainment complaints (China)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-11",
+  "source_type": "web",
+  "source_name": "Sina Auto feedback (feedback.auto.sina.com.cn)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "A separate China user feedback entry on Sina’s auto feedback pages documents an Audi A6L central screen black‑out / infotainment failure reported by an owner (specific feedback page for an A6L complaint).",
+  "url": "https://feedback.auto.sina.com.cn/fb/detail/890133/?c=spr_auto_trackid_4fab247841a7af25",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Sina Auto feedback (feedback.auto.sina.com.cn)",
+   "published": "accessed 2026-10-11",
+   "stance": "supports",
+   "about": "Audi A6L screen black‑out / infotainment failure (China)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-12",
+  "source_type": "web",
+  "source_name": "BMW China (bmw.com.cn)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "The China‑market BMW 5 Series long‑wheelbase (G68) is specified with a 12.3‑inch digital instrument and a 14.9‑inch curved central display (a unified 'dual‑screen' layout), running BMW’s recent iDrive software (8.5 or 9 depending on production month) and commonly fitted with a Snapdragon 8155‑class SoC in China reviews.",
+  "url": "https://www.bmw.com.cn/zh/all-models/5-series/sedan/2024/specsheet.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW China (bmw.com.cn)",
+   "published": "accessed 2026-10-11",
+   "stance": "neutral",
+   "about": "BMW 5 Series L (G68) displays and OS (China)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-13",
+  "source_type": "web",
+  "source_name": "懂车帝 / Dongchedi",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Chinese press/reviews note BMW's G68 long‑wheelbase keeps the large curved driver+center screen and iDrive software, but several connectivity items (for example 5G modem and AR‑HUD) are offered as optional/paid equipment in China rather than standard.",
+  "url": "https://www.dongchedi.com/article/7547723258729087531",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "懂车帝 / Dongchedi",
+   "published": "accessed 2026-10-11",
+   "stance": "neutral",
+   "about": "BMW 5 Series L (G68) connectivity options (China)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-14",
+  "source_type": "web",
+  "source_name": "Autohome / 车家号 (chejiahao.autohome.com.cn)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "There are customer complaints and forum threads in China about BMW connected services and in‑car software (examples: threads titled about 'BMW cloud/ConnectedDrive complaints' on Autohome/chejiahao and multiple complaints listed on the Chinese complaint aggregator 12365auto where owners say infotainment functions are missing or differ from descriptions).",
+  "url": "https://chejiahao.autohome.com.cn/info/5502897",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autohome / 车家号 (chejiahao.autohome.com.cn)",
+   "published": "accessed 2026-10-11",
+   "stance": "supports",
+   "about": "BMW Connected services / cloud complaints (China)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-15",
+  "source_type": "web",
+  "source_name": "车质网 / 12365auto.com",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "12365auto’s BMW 5 Series pages list multiple entries where owners report the vehicle infotainment/system functions (ID7/ID8/ID9 era systems) did not match advertised descriptions or had missing features — a documented source of 'connected services' dissatisfaction in China.",
+  "url": "https://www.12365auto.com/series/79/index.shtml",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "车质网 / 12365auto.com",
+   "published": "accessed 2026-10-11",
+   "stance": "supports",
+   "about": "BMW 5 Series infotainment complaints (China)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-16",
+  "source_type": "web",
+  "source_name": "Composite sources: Audi China (audi.cn), BMW China (bmw.com.cn), Chinese media and complaint sites (Sina, 12365auto, Autohome)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Summary comparison from China sources: Audi’s China A6L emphasizes localized 'smart cockpit' features (localized assistant, app‑store, passenger screen options and Audi’s E³ architecture) and reports of some owners showing intermittent disconnects or black screens; BMW’s G68 long‑wheelbase emphasizes a large curved dual‑screen driver+center layout with iDrive and high‑res displays but some cloud/connected features and 5G connectivity are optional and BMW owners have also posted complaints about cloud/connected functionality not matching expectations in China.",
+  "url": "https://www.audi.cn/zh/models/a/a6/new_a6l.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Composite sources: Audi China (audi.cn), BMW China (bmw.com.cn), Chinese media and complaint sites (Sina, 12365auto, Autohome)",
+   "published": "accessed 2026-10-11",
+   "stance": "neutral",
+   "about": "Comparative summary: Audi A6L vs BMW 5 Series L infotainment & connected services (China, 2025–2026)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-17",
+  "source_type": "web",
+  "source_name": "NIO (user manual)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "NIO ET7 wheelbase is 3,060 mm (NIO technical/user manual).",
+  "url": "https://www.nio.com/cdn-static/www/user-instructions/ET7/index.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "NIO (user manual)",
+   "published": "2023 (user manual published online)",
+   "stance": "supports",
+   "about": "NIO ET7 dimensions",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G68-CN-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-18",
+  "source_type": "web",
+  "source_name": "Dongchedi (Chinese auto site, owner reviews summary)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "NIO ET7 owners and Chinese reviews repeatedly describe the ET7 rear cabin as spacious with massage/ventilated rear seats and air-suspension‑aided comfort (common owner reviews and Chinese auto media summaries).",
+  "url": "https://www.dongchedi.com/auto/series/score/3478-x-S0-P140-x-x-1",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Dongchedi (Chinese auto site, owner reviews summary)",
+   "published": "2023-02-15 (example review date)",
+   "stance": "supports",
+   "about": "ET7 rear comfort features",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G68-CN-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-19",
+  "source_type": "web",
+  "source_name": "CarNewsChina",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Several Chinese sources list the ET7 luggage area as able to accommodate two 28-inch suitcases side-by-side and report a trunk/boot volume cited in some spec summaries around ~503 L (practical suitcase test and spec summaries referenced in Chinese reviews).",
+  "url": "https://carnewschina.com/2022/11/19/i-bought-my-nio-et7-three-months-ago-and-here-is-all-you-should-know/",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "CarNewsChina",
+   "published": "2022-11-19",
+   "stance": "supports",
+   "about": "ET7 trunk practical capacity",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G68-CN-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-20",
+  "source_type": "web",
+  "source_name": "Sohu Auto (owner review collection)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Chinese owner posts and reviews repeatedly report that the ET7’s trunk opening/geometry reduces loading convenience (comments such as 'trunk opening small' or 'lifting/angling large items is awkward' appear in multiple owner threads and vehicle reviews).",
+  "url": "https://db.auto.sohu.com/trim_179614/dianping",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Sohu Auto (owner review collection)",
+   "published": "2026 (review pages updated)",
+   "stance": "supports",
+   "about": "ET7 trunk opening / loading complaints",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G68-CN-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-21",
+  "source_type": "web",
+  "source_name": "BMW Group (China press materials)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW 5 Series long‑wheelbase (G68, China) wheelbase is 3,105 mm (BMW China / model documentation for the Li/G68 long‑wheelbase 5 Series).",
+  "url": "https://www.press.bmwgroup.com/china/article/attachment/T0350932ZH_CN/500393",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group (China press materials)",
+   "published": "BMW China press release (model launch materials)",
+   "stance": "supports",
+   "about": "BMW 5 Series (G68 Li) dimensions",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G68-CN-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-22",
+  "source_type": "web",
+  "source_name": "PCauto (Chinese auto media)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Chinese tests and technical summaries list the BMW 5 Series LWB boot/trunk at about 520 L (commonly quoted official figure for conventional 5‑Series petrol/hybrid models) and measured internal trunk dimensions used in luggage tests (e.g., stated 520 L, depth/width/height measurements in media tests).",
+  "url": "https://www.pcauto.com.cn/gl/246299.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "PCauto (Chinese auto media)",
+   "published": "2026 (article date)",
+   "stance": "supports",
+   "about": "BMW 5 Series LWB trunk volume ~520 L",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G68-CN-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-23",
+  "source_type": "web",
+  "source_name": "Sina Auto (test drive / review)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Chinese media and test drives of the BMW G68 long‑wheelbase emphasize significantly improved rear legroom and rear‑seat comfort (Li/G68 long wheelbase is repeatedly described as 'notably more spacious in the rear' in 2025–2026 Chinese reviews).",
+  "url": "https://auto.sina.cn/2026-09-08/detail-inircrns4453040.d.html?vt=4",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Sina Auto (test drive / review)",
+   "published": "2026-09-08",
+   "stance": "supports",
+   "about": "BMW 5 Series LWB rear comfort / legroom",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G68-CN-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-24",
+  "source_type": "web",
+  "source_name": "Autohome (Chinese auto media)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Some Chinese reviews and owner threads note that the BMW 5 Series trunk opening geometry is not as large as an estate/wagon’s and that very large/bulky items can require awkward handling, though the 5 Series Li’s regular trunk shape and electric tailgate (sensor opening in many trims) are presented as adding convenience versus some sedan competitors.",
+  "url": "https://www.autohome.com.cn/65/22861/32/Section.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autohome (Chinese auto media)",
+   "published": "2026 (model coverage)",
+   "stance": "supports",
+   "about": "BMW 5 Series Li trunk opening and usability notes",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G68-CN-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-25",
+  "source_type": "web",
+  "source_name": "Multiple sources (NIO user manual, Chinese media and owner forums summarized above)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Synthesis based on the cited, verifiable sources: for China-market 2025–2026 model years, the ET7 offers class‑leading rear comfort features (air suspension, rear massage/ventilation) and generous rear legroom (wheelbase 3,060 mm) but is reported by multiple owners/reviews to have trunk opening/geometry that makes loading and unloading large/bulky luggage less convenient; the BMW 5er long‑wheelbase (G68, wheelbase 3,105 mm) provides more regular trunk volume (~520 L) and clearly improved rear legroom and rear comfort for Li buyers, and its trunk geometry/electric tailgate is often described as easier for routine luggage loading even if very large items can still be awkward compared with an estate—each statement is supported by the linked Chinese reviews and official/spec pages above.",
+  "url": "https://www.nio.com/cdn-static/www/user-instructions/ET7/index.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Multiple sources (NIO user manual, Chinese media and owner forums summarized above)",
+   "published": "2022–2026 (sources dates vary)",
+   "stance": "neutral",
+   "about": "Overall comparative summary (supported by prior cited URLs)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G68-CN-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-26",
+  "source_type": "web",
+  "source_name": "Sina Auto",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "In the China market the BMW 5 Series long-wheelbase (G68 / 5 Li) is widely reviewed as tuned toward comfort and class-leading cabin refinement and NVH (quietness), prioritizing rear-seat space and a smooth ride for executive use.",
+  "url": "https://auto.sina.cn/2026-09-08/detail-inircrns4453040.d.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Sina Auto",
+   "published": "2026-09-08",
+   "stance": "supports",
+   "about": "BMW 5 Series (G68) ride comfort and NVH in China",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-27",
+  "source_type": "web",
+  "source_name": "汽车百科网 (csruier.cn)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Multiple Chinese reviews and owner forums note the G68’s chassis tuning is softer than previous 5‑series generations, so handling is competent and stable but less ‘sporty’/sharp than older BMWs or direct German sport rivals.",
+  "url": "https://www.csruier.cn/cs/12680.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "汽车百科网 (csruier.cn)",
+   "published": "2025",
+   "stance": "supports",
+   "about": "BMW 5 Series (G68) handling compromise",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-28",
+  "source_type": "web",
+  "source_name": "Autohome (汽车之家)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Professional tests and owner reports show the BYD Han EV is generally perceived in China as offering a quiet, comfortable, and smooth electric-sedan ride (good NVH for its segment), with city-oriented suspension tuning that favors comfort.",
+  "url": "https://www.autohome.com.cn/drive/202607/1315833.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autohome (汽车之家)",
+   "published": "2026-07-18",
+   "stance": "supports",
+   "about": "BYD Han ride comfort and NVH",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-29",
+  "source_type": "web",
+  "source_name": "Autohome forum (车主/owner reports)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Driver‑focused reviewers and owners say the BYD Han’s handling is adequate for daily use but not as dynamically precise as premium German sedans (owners describe softer suspension, more body roll in fast transitions), i.e., BYD prioritizes comfort over sporty handling.",
+  "url": "https://club.autohome.com.cn/bbs/thread/e79ad455dbc6b858/102303274-1.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autohome forum (车主/owner reports)",
+   "published": "2024-? (forum post)",
+   "stance": "supports",
+   "about": "BYD Han handling vs premium German cars",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-30",
+  "source_type": "web",
+  "source_name": "12365auto (车质网)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "There are multiple verified owner complaints in Chinese consumer‑complaint sites reporting brake-system problems on BYD Han examples (reports include brake noise, abnormal brake warnings, and at least one complaint of a hard pedal / braking-assist failure after delivery), indicating recurring braking-related customer complaints in 2024–2026.",
+  "url": "https://www.12365auto.com/zlts/6-2859-0-0-0-5_0-0-0-0-0-0-0-1.shtml",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "12365auto (车质网)",
+   "published": "compiled 2024–2026 (forum/complaint aggregation)",
+   "stance": "supports",
+   "about": "BYD Han braking complaints",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-31",
+  "source_type": "web",
+  "source_name": "Sina Tousu / Black Cat complaints mirror (黑猫投诉)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Individual, detailed consumer complaints filed (public complaint pages) describe cases where BYD Han owners reported sudden brake‑related faults (dashboard warnings, hard/insufficient brake assist) shortly after delivery and sought dealer or regulator intervention.",
+  "url": "https://tousu.sina.com.cn/complaint/view/17385047301?sld=23697cf1fb39b7f16a91eb5d12b14008",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Sina Tousu / Black Cat complaints mirror (黑猫投诉)",
+   "published": "2025-07 (complaint date)",
+   "stance": "supports",
+   "about": "Specific BYD Han brake-failure consumer complaint",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-32",
+  "source_type": "web",
+  "source_name": "BitAuto (易车/Bitauto)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Mercedes‑Benz E‑Class L (China) ships with an MBUX-based multi‑screen cockpit (a three‑screen / linked‑screen layout) powered by a Qualcomm Snapdragon 8295 SoC and MBUX software (MBUX 2.x/3.0 in press reviews of the 2025 E300L).",
+  "url": "https://www.bitauto.com/article/1003101128665/",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BitAuto (易车/Bitauto)",
+   "published": "Jun 7, 2025",
+   "stance": "supports",
+   "about": "E‑Class L display hardware / MBUX",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-33",
+  "source_type": "web",
+  "source_name": "Sohu Auto",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "On 12 June 2025 Mercedes‑me backend failures caused widespread loss of navigation, CarPlay and related functions across vehicles running MBUX 2.0/3.0 in China, with owners reporting blank/disabled map displays and official owner notices saying Mercedes is investigating and repairing the issue.",
+  "url": "https://www.sohu.com/a/903864259_121823381",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Sohu Auto",
+   "published": "2025-06-12",
+   "stance": "supports",
+   "about": "Mercedes‑me outage (June 12, 2025)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-34",
+  "source_type": "web",
+  "source_name": "Sina Auto (owner feedback)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Chinese consumer complaint and feedback threads document repeated E‑Class (including long‑wheelbase E300L) owner reports of MBUX instability: black/blue screens, navigation failures, frequent dealer visits and other infotainment malfunctions (multiple complaint pages and forum posts from 2024–2026).",
+  "url": "https://feedback.auto.sina.cn/fb/detail/864638/?c=spr_auto_trackid_4fab247841a7af25",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Sina Auto (owner feedback)",
+   "published": "(complaint thread)",
+   "stance": "supports",
+   "about": "MBUX stability / owner complaints",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-35",
+  "source_type": "web",
+  "source_name": "BitAuto (易车/Bitauto)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Press reviews of the China‑market E300L note the car’s linked‑screen MBUX cockpit offers GPS/AR navigation, multimedia and connected‑services features but (in the cited review) the vehicle only offered Apple CarPlay as the phone‑link option at the time, which reviewers flagged as inconvenient for Huawei/Android‑dominated users in China.",
+  "url": "https://www.bitauto.com/article/1003101128665/",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BitAuto (易车/Bitauto)",
+   "published": "Jun 7, 2025",
+   "stance": "supports",
+   "about": "Phone‑integration on E‑Class L (CarPlay only per review)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-36",
+  "source_type": "web",
+  "source_name": "Sina (news/vehicle coverage)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "The China‑market BMW 5 Series long‑wheelbase (G68) is delivered with a 12.3\" digital instrument cluster plus a 14.9\" central multimedia touchscreen presented as a curved/‘floating’ dual‑screen, running BMW’s latest in‑car OS (market references to iDrive/BMW OS 8.5 / iDrive 8.x in 2024–2026 coverage) and offering optional large rear‑seat entertainment screens for the long‑wheelbase model.",
+  "url": "https://k.sina.com.cn/article_7879923871_1d5ae189f06801a9vo.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Sina (news/vehicle coverage)",
+   "published": "2026-07-03 (article compilation)",
+   "stance": "supports",
+   "about": "BMW G68 display hardware / iDrive 8.x",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-37",
+  "source_type": "web",
+  "source_name": "BMW China (My BMW legal/policy page)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW’s China ‘My BMW’ / ‘互联驾驶’ documentation and privacy/service policy show BMW’s in‑car connected services are cloud‑based, integrate local content partners (QQ Music, Tencent Video, etc.), require BMW ID/real‑name linkage, and rely on cloud services and third‑party providers for features such as navigation, streaming and remote functions.",
+  "url": "https://myprofile.bmw.com.cn/api/gateway/views/legal-documents/privacy-policy-zh_CN.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW China (My BMW legal/policy page)",
+   "published": "(official policy page)",
+   "stance": "supports",
+   "about": "BMW My BMW / connected services policy",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-38",
+  "source_type": "web",
+  "source_name": "Sina (auto coverage summary)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Public coverage of BMW service terms in China documents how some BMW cloud features are time‑limited (examples reported: remote‑control services for vehicles produced from 2022 onward are covered longer, while certain in‑car app services commonly have limited free periods around 3 years and can be renewed via My BMW); the articles outline renewal options and prices that users must purchase after the free period.",
+  "url": "https://k.sina.cn/article_7880068201_1d5b04c6901901x96w.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Sina (auto coverage summary)",
+   "published": "2026-03-23",
+   "stance": "supports",
+   "about": "BMW connected‑service validity / renewals in China",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-39",
+  "source_type": "web",
+  "source_name": "Autohome forum (owner report)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Owner forums and Autohome user reports for the G68 show iDrive 8.x (8.5) is generally reported by users as fluid and stable in daily use, with many owners praising the curved dual‑screen and smooth UI; by contrast, the documented Mercedes‑me / MBUX incidents generated higher‑visibility, system‑wide owner complaints in mid‑2025. (See Autohome owner thread and the Mercedes outage coverage above for direct examples.)",
+  "url": "https://club.autohome.com.cn/bbs/thread/4897306c5b6d1bfc/110054203-1.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autohome forum (owner report)",
+   "published": "2024-12-12 (forum post)",
+   "stance": "supports",
+   "about": "User‑reported system stability: BMW vs Mercedes",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-40",
+  "source_type": "web",
+  "source_name": "Sohu Auto (outage report)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Practical summary for the CN market (2025–2026): the documented owner phrase “Connected services: complaint” aligns with public records — Mercedes E‑Class L (MBUX/Mercedes‑me) experienced high‑visibility backend outages and numerous owner complaints in 2025, while BMW G68’s main reported friction points in China are subscription/expiry rules and occasional phone‑integration quirks rather than a single large backend outage.",
+  "url": "https://www.sohu.com/a/903864259_121823381",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Sohu Auto (outage report)",
+   "published": "2025-06-12",
+   "stance": "supports",
+   "about": "Summary: reason for 'Connected services: complaint'",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-41",
+  "source_type": "web",
+  "source_name": "Audi China (contact.audi.cn)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Audi China’s official specification for the A6L lists trunk (luggage compartment) capacity as 430 L — https://contact.audi.cn/contact/performanceequipment_exportEquipment.htm?carStyleId=10218&cnname=A6&is_publish=4&isen=0&typeId_0=2023&typeId_1=2024",
+  "url": "https://contact.audi.cn/contact/performanceequipment_exportEquipment.htm?carStyleId=10218&cnname=A6&is_publish=4&isen=0&typeId_0=2023&typeId_1=2024",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Audi China (contact.audi.cn)",
+   "published": "accessed 2026-10-11",
+   "stance": "neutral",
+   "about": "Audi A6L trunk capacity (China)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G68-CN-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-42",
+  "source_type": "web",
+  "source_name": "Audi China (audi.cn)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Audi China’s model page for the A6L shows a wheelbase of 3024 mm (i.e., the long-wheelbase A6L sold in China has a 3024 mm wheelbase) — https://www.audi.cn/zh/models/a/a6/a6l.html",
+  "url": "https://www.audi.cn/zh/models/a/a6/a6l.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Audi China (audi.cn)",
+   "published": "accessed 2026-10-11",
+   "stance": "neutral",
+   "about": "Audi A6L wheelbase (China)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G68-CN-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-43",
+  "source_type": "web",
+  "source_name": "BMW Hong Kong (bmw.com.hk / estore.bmwhk.com)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW’s official Hong Kong product/spec page lists the (5 Series) maximum luggage/trunk capacity as 520 L for the 5 Series sedan (the China-market long‑wheelbase model is commonly listed with similar trunk figures) — https://estore.bmwhk.com/zh/gasoline-cars/5-series/520i/checkout",
+  "url": "https://estore.bmwhk.com/zh/gasoline-cars/5-series/520i/checkout",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Hong Kong (bmw.com.hk / estore.bmwhk.com)",
+   "published": "accessed 2026-10-11",
+   "stance": "neutral",
+   "about": "BMW 5 Series (Li/G68) trunk capacity",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G68-CN-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-44",
+  "source_type": "web",
+  "source_name": "Autohome (chejiahao.autohome.com.cn)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Media and specification summaries for the China long‑wheelbase BMW 5 Series (G68 / Li) report a wheelbase of about 3105 mm (China LWB version) — https://chejiahao.autohome.com.cn/info/25403647",
+  "url": "https://chejiahao.autohome.com.cn/info/25403647",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autohome (chejiahao.autohome.com.cn)",
+   "published": "published 2026-05 (article crawl/accessed 2026-10-11)",
+   "stance": "neutral",
+   "about": "BMW 5 Series Li (G68) wheelbase (China)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G68-CN-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-45",
+  "source_type": "web",
+  "source_name": "12365auto (车质网)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Independent practicality test (2019 车质网 practical test) measured the A6L rear luggage opening as wide and with a relatively low loading height — reported opening width ~109 cm, depth ~114 cm and vertical internal height ~50 cm (practical result cited for easier luggage loading) — https://m.12365auto.com/scbg/20190508/388748-all.shtml",
+  "url": "https://m.12365auto.com/scbg/20190508/388748-all.shtml",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "12365auto (车质网)",
+   "published": "2019-05-08",
+   "stance": "supports",
+   "about": "Measured Audi A6L trunk opening dimensions and loading ease",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G68-CN-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-46",
+  "source_type": "web",
+  "source_name": "Dongchedi / Autohome forum threads",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Multiple owner forum reports for the BMW 5 Series (Li/G68) note practical complaints: the hands‑free (kick) trunk sensor can be insensitive and some owners describe the trunk lid as heavy/difficult to operate for some users — example forum reports — https://www.dongchedi.com/community/120/dakareyi and https://club.autohome.com.cn/bbs/thread/97022f8fd078c450/116379794-1.html",
+  "url": "https://www.dongchedi.com/community/120/dakareyi",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Dongchedi / Autohome forum threads",
+   "published": "forum posts (various dates), accessed 2026-10-11",
+   "stance": "supports",
+   "about": "BMW 5 Series Li owner complaints about trunk sensor / trunk ease-of-use",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G68-CN-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-47",
+  "source_type": "web",
+  "source_name": "Yiche (易车) / Autohome forums",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Knowledge‑base and user reports note the A6L’s rear seats do not fold flat (no split‑fold functionality on many China A6L trims), which limits cargo flexibility for long items even though the trunk is regularly shaped — https://www.yiche.com/zhishiku/23108197.htm and forum discussion noting limited rear-seat folding.",
+  "url": "https://www.yiche.com/zhishiku/23108197.htm",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Yiche (易车) / Autohome forums",
+   "published": "accessed 2026-10-11",
+   "stance": "supports",
+   "about": "Audi A6L rear seat non-folding limits cargo flexibility",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G68-CN-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-48",
+  "source_type": "web",
+  "source_name": "Sina / Autohome",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Comparative reviews and recent CN-market comparisons conclude: BMW 5 Li (G68) generally offers a longer wheelbase and stronger rear-seat legroom/comfort for passengers, while the Audi A6L offers a more regular, rectangular trunk shape and lower loading height that can make placing suitcases easier — see comparison articles and tests (example: Sina.cn comparison citing Audi/BMW data and Autohome coverage) — https://www.sina.cn/gc/article/nispiqq6267660.html and https://www.autohome.com.cn/65/22861/32/Section.html",
+  "url": "https://www.sina.cn/gc/article/nispiqq6267660.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Sina / Autohome",
+   "published": "Sina comparison (accessed 2026-10-11); Autohome pages (various)",
+   "stance": "neutral",
+   "about": "CN-market comparisons: A6L vs BMW 5 Li (G68) on rear comfort and trunk practicality",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G68-CN-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-49",
+  "source_type": "web",
+  "source_name": "ChineseCarsGuide",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Li Auto L9 (Livis / facelift) is widely reviewed as a plush, air‑suspension‑equipped three‑row flagship that prioritizes passenger comfort and a quiet cabin for long‑distance family use (review: Jun 23, 2026).",
+  "url": "https://chinesecarsguide.com/guides/li-auto-l9/",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ChineseCarsGuide",
+   "published": "2026-06-23",
+   "stance": "supports",
+   "about": "Li Auto L9 — ride comfort and cabin comfort (2026 review)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-50",
+  "source_type": "web",
+  "source_name": "Autohome (汽车之家) — test drive article",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "In an Autohome instrumented test (June 16, 2025) the L9 facelift’s dual‑chamber air suspension improved body control and dynamic response but Autohome reported the brake pedal as relatively soft/long in travel and measured a 100–0 km/h braking distance of 37.92 m (described as “mid‑range” performance for a 2.57‑ton vehicle).",
+  "url": "https://www.autohome.com.cn/drive/202506/1306702.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autohome (汽车之家) — test drive article",
+   "published": "2025-06-16",
+   "stance": "supports",
+   "about": "Li Auto L9 — test results for suspension and braking (2025 Autohome test)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-51",
+  "source_type": "web",
+  "source_name": "Sina Auto (owner complaint page)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Multiple owner forum posts and official complaint records document braking‑related problems for L9 owners: forum/owner reports describe brake noise, perceived pedal ‘dead travel’ or vague initial pedal feel, and formal complaints to the national vehicle complaint portal and 12365 include brake‑system and brake‑assist fault reports (examples: Sina feedback entry dated 2025‑07‑01 and 12365 list with a 'brake assist system fault' entry dated 2026‑10‑08).",
+  "url": "https://feedback.auto.sina.cn/fb/detail/769620/?c=spr_auto_trackid_4fab247841a7af25",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Sina Auto (owner complaint page)",
+   "published": "2025-07-01",
+   "stance": "supports",
+   "about": "Li Auto L9 — owner complaints about braking (forum/complaint records)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-52",
+  "source_type": "web",
+  "source_name": "12365 / 车质网 (vehicle complaint portal)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "The national vehicle complaint site 12365 lists multiple recent L9 entries including a 2026‑10‑08 record referencing a ‘brake assist system fault’ (documented complaint records for L9 models).",
+  "url": "https://m.12365auto.com/carseries/series_zlts.aspx?sid=3353",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "12365 / 车质网 (vehicle complaint portal)",
+   "published": "2026-10-08",
+   "stance": "supports",
+   "about": "Li Auto L9 — formal complaint records (brake system entries)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-53",
+  "source_type": "web",
+  "source_name": "Sina Auto (test/analysis)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "For the China market, the BMW 5 Series long‑wheelbase (G68) is documented by BMW and independent media (2025–2026) as a China‑specific long‑wheelbase sedan (wheelbase 3105 mm) that is tuned toward a balance of composed chassis behavior and upgraded rear‑seat comfort and high cabin quietness (reviews from Sept 8, 2026 characterize the G68 long‑wheelbase 5‑series as ‘rear‑seat/comfort‑focused’ and notably quiet).",
+  "url": "https://k.sina.com.cn/article_7879849086_1d5acf47e06801gt1c.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Sina Auto (test/analysis)",
+   "published": "2026-09-08",
+   "stance": "supports",
+   "about": "BMW 5 Series G68 (China LWB) — ride comfort and rear‑seat comfort (2026 reviews)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-54",
+  "source_type": "web",
+  "source_name": "BMW China (official brochure / spec PDF)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW China technical materials show the G68 long‑wheelbase 5 Series specification and wheelbase (3105 mm) that underpin the model’s China‑market rear‑seat space and comfort positioning (BMW spec PDF, 2025 brochure).",
+  "url": "https://www.bmw.com.cn/content/dam/bmw/marketCN/common/all-models/5-series/sedan/2025/20250429/G68_ICE.pdf.asset.1745983323085.pdf",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW China (official brochure / spec PDF)",
+   "published": "2025-04-29",
+   "stance": "supports",
+   "about": "BMW 5 Series G68 — official specifications (wheelbase, equipment)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-55",
+  "source_type": "web",
+  "source_name": "Compiled inference from ChineseCarsGuide, Autohome (2025), Sina Auto (2026) and 12365 complaint records",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Inference (based on the cited reviews and complaints): relative to the BMW 5‑Series G68 LWB sedan, the Li Auto L9 (a large three‑row SUV with air suspension) generally delivers a higher seating position, more three‑row passenger space and a ‘softer’ / more cushioned long‑distance ride (many press reviews and owner reports), while the G68 sedan provides a more sedan‑typical composed chassis, stronger rear‑seat legroom/quietness per China‑market tuning; however, the L9 has a documented pattern of owner complaints about brake pedal feel, brake noise and a small number of ADAS/braking incidents—so buyers comparing ride comfort should weigh L9’s SUV comfort and space against the 5‑Series’ sedan refinement and (generally) steadier braking feedback.",
+  "url": "https://chinesecarsguide.com/guides/li-auto-l9/,https://www.autohome.com.cn/drive/202506/1306702.html,https://k.sina.com.cn/article_7879849086_1d5acf47e06801gt1c.html,https://m.12365auto.com/carseries/series_zlts.aspx?sid=3353",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Compiled inference from ChineseCarsGuide, Autohome (2025), Sina Auto (2026) and 12365 complaint records",
+   "published": "sources 2025–2026",
+   "stance": "neutral",
+   "about": "Comparative inference — Li Auto L9 (SUV) vs BMW 5 Series G68 (LWB sedan) on ride comfort, driving experience, and braking complaints",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-5c56d4653d607e2c",
+   "supports_signal_ids": "SIG-G68-CN-g1-5c56d4653d607e2c"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-56",
+  "source_type": "web",
+  "source_name": "Autohome",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BYD Han L (2025) central infotainment: a 15.6‑inch 2.5K touchscreen running BYD’s DiLink smart‑cabin (DiLink150), with reported configurations listing up to 12 GB RAM, built‑in 5G and OTA support in model specs. ",
+  "url": "https://m.autohome.com.cn/news/202409/1300297.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autohome",
+   "published": "2024-09-13",
+   "stance": "supports",
+   "about": "BYD Han infotainment specifications and hardware.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-57",
+  "source_type": "web",
+  "source_name": "ITHome (IT之家)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BYD has pushed OTA upgrades for the Han L DiLink cabin (UI refresh, new features and phone compatibility) — BYD announced OTA DiLink updates for the Han L in 2025. ",
+  "url": "https://www.ithome.com/0/879/861.htm",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ITHome (IT之家)",
+   "published": "2024-09-02",
+   "stance": "supports",
+   "about": "BYD Han DiLink OTA updates.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-58",
+  "source_type": "web",
+  "source_name": "BYD Han user manual (uploaded)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BYD’s DiLink implementation is touchscreen‑first and app/ecosystem oriented (One ID account, app store, in‑car apps and voice assistant); the Han user manual and official spec pages show a large central touch screen and DiLink menus while only a small number of physical controls are documented. ",
+  "url": "https://www.scribd.com/document/957280545/%E6%B1%89l-Dm-I%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C1104",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BYD Han user manual (uploaded)",
+   "published": "(user manual date)",
+   "stance": "supports",
+   "about": "BYD Han controls and DiLink design.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-59",
+  "source_type": "web",
+  "source_name": "Autohome",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Public reporting and specifications note the BMW 5‑series long‑wheelbase (G68, China) uses a curved dual display (12.3″ instrument + 14.9″ central screen), runs BMW’s iDrive (reported iDrive 8.5, with later production items moving toward iDrive 9), and offers an optional 31″ 8K rear ‘floating’ screen for LWB models. ",
+  "url": "https://m.autohome.com.cn/news/202311/1290125.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autohome",
+   "published": "2023-11-17",
+   "stance": "supports",
+   "about": "BMW 5 (G68) display hardware and software.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-60",
+  "source_type": "web",
+  "source_name": "BMW ConnectedDrive (regional site)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW’s cockpit mixes touchscreen input with the traditional iDrive controller, steering‑wheel and physical controls, and BMW’s cloud ConnectedDrive/My BMW services require BMW ID/registration and are delivered as regionally managed, subscription/contractable digital services. ",
+  "url": "https://www.bmw-me.com/en/digital-services/bmw-connecteddrive.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW ConnectedDrive (regional site)",
+   "published": "(site content)",
+   "stance": "supports",
+   "about": "BMW ConnectedDrive requirements and control approach.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-61",
+  "source_type": "web",
+  "source_name": "Autohome forum (thread)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Chinese owner complaint portals and forums show multiple complaints about BYD Han (2025/2026) infotainment/‘car‑machine’ problems, including screen freezes, lagging voice assistant, missing promised functions and disputes over software/upgrade costs; examples appear on Autohome forum threads and national complaint portals (车质网 / 中国汽车质量网). ",
+  "url": "https://club.autohome.com.cn/bbs/threadowner/b90ba349b6997d03/110679301-1.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autohome forum (thread)",
+   "published": "(forum post)",
+   "stance": "supports",
+   "about": "BYD Han owner complaints (infotainment).",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-62",
+  "source_type": "web",
+  "source_name": "12365 Auto Complaints (车质网)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Official Chinese complaint listings include BYD Han entries for service and central‑screen/electrical faults (search listings on 12365auto and the China automotive quality portal show BYD Han complaints filed in 2025–2026). ",
+  "url": "https://www.12365auto.com/zlts/0-0-0-0-0-0_0-0-0-0-4-0-0-9.shtml",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "12365 Auto Complaints (车质网)",
+   "published": "(listing pages)",
+   "stance": "supports",
+   "about": "BYD Han complaints on national portals.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-63",
+  "source_type": "web",
+  "source_name": "China Automotive Quality Portal (中国汽车质量网)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Chinese complaint records also show BMW 5‑series owners have filed connected‑service / car‑system complaints (e.g., ID7/ID‑system function mismatches and remote/connected features ‘missing’ or restricted), with cases registered on the national complaint portal and 12365. ",
+  "url": "https://www.aqsiqauto.com/complaint/qichetousu_info?id=21856",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "China Automotive Quality Portal (中国汽车质量网)",
+   "published": "(complaint record)",
+   "stance": "supports",
+   "about": "BMW 5 series connected‑service complaints.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-64",
+  "source_type": "web",
+  "source_name": "Autohome / 12365 / China automotive quality portals (sources combined)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Inference (based on those sources): BYD’s Han (DiLink, large touchscreen, rapid feature additions) is more aggressive about integrated app/5G features and in‑car app ecosystems, and has a visible complaint volume on Chinese owner/complaint sites about infotainment and connected‑service reliability; BMW’s G68 emphasizes a blended physical+software control approach (iDrive + touchscreen + physical controls) and also appears in complaint records, but the documented Chinese complaints for BMW tend to focus on functional mismatches or feature gating (ID7/remote services) rather than the same pattern of frequent UI lag or screen freezing reported for some BYD Han owners. ",
+  "url": "https://m.autohome.com.cn/news/202409/1300297.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autohome / 12365 / China automotive quality portals (sources combined)",
+   "published": "(2024–2026 reportage & complaint listings)",
+   "stance": "neutral",
+   "about": "Comparative inference about BYD Han vs BMW G68 infotainment and complaint patterns.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G68-CN-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G68-CN-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-65",
+  "source_type": "web",
+  "source_name": "CnEVPost",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Chinese charger-makers and OEM networks have already rolled out 600 kW liquid‑cooled ‘ultra‑fast’ chargers and are publicly piloting megawatt‑class chargers (commercial demonstrations and product announcements in 2024–2026), a trend that will continue into the late‑2020s.",
+  "url": "https://cnevpost.com/2025/03/31/zeekr-unveils-1-2-mw-charger/",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "CnEVPost",
+   "published": "2025-03-31",
+   "stance": "supports",
+   "about": "charging speed",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-66",
+  "source_type": "web",
+  "source_name": "Huawei Digital Power",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Chinese technology providers such as Huawei advertise and deploy 600 kW liquid‑cooled ultra‑fast charging solutions in urban pilot stations, showing that 600 kW class hardware is in commercial use in China today.",
+  "url": "https://digitalpower.huawei.com/en/blogs/what-makes-ultra-fast-charging-possible",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Huawei Digital Power",
+   "published": "2023-04-??",
+   "stance": "supports",
+   "about": "charging speed",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-67",
+  "source_type": "web",
+  "source_name": "ResearchInChina",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Industry research forecasts that passenger cars in China will increasingly adopt 800–1,000 V high‑voltage architectures by 2030, enabling much higher peak charge rates for vehicles introduced in the 2028–2031 window.",
+  "url": "https://www.researchinchina.com/Htmls/Report/2025/77091.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ResearchInChina",
+   "published": "2025",
+   "stance": "supports",
+   "about": "charging speed / vehicle architecture",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-68",
+  "source_type": "web",
+  "source_name": "CATL",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "CATL’s 2022 Qilin (CTP 3.0) product is published with a cell‑level energy density figure of about 255 Wh/kg and manufacturer claims that Qilin‑equipped packs can deliver ~1,000 km CLTC range and very fast (manufacturer‑quoted ~10‑minute 10–80%) charging for premium applications.",
+  "url": "https://www.catl.com/en/news/958.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "CATL",
+   "published": "2022-06-23",
+   "stance": "supports",
+   "about": "real‑world range / battery energy density",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-69",
+  "source_type": "web",
+  "source_name": "CnEVPost (reporting CATL)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "CATL and other Chinese battery suppliers have continued to announce higher‑energy‑density ‘condensed’ and next‑generation cells (announcements in 2025–2026 cite cell‑level gravimetric energy densities rising toward ~300–350 Wh/kg for advanced products aimed at premium vehicles), implying materially longer packaged range for premium cars by 2028–2031 if adopted.",
+  "url": "https://cnevpost.com/2026/04/21/catl-unveils-new-battery-products-2026-tech-day/",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "CnEVPost (reporting CATL)",
+   "published": "2026-04-21",
+   "stance": "supports",
+   "about": "real‑world range / battery energy density",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-70",
+  "source_type": "web",
+  "source_name": "Fastmarkets",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Independent industry analyses and market trackers project semi‑solid and solid‑state cells to move from pilot to niche commercialization in the late 2020s (roughly 2026–2030) and expect premium vehicle cell energy densities to cross the ~300 Wh/kg threshold toward 2030, enabling longer real‑world ranges for premium models.",
+  "url": "https://www.fastmarkets.com/insights/the-future-of-solid-state-batteries-in-electric-vehicles-from-innovation-to-commercial-reality/",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Fastmarkets",
+   "published": "2026",
+   "stance": "supports",
+   "about": "real‑world range / battery technology timeline",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-71",
+  "source_type": "web",
+  "source_name": "ScienceDirect (peer‑reviewed article)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Academic and technical comparisons show that China’s CLTC test procedure typically gives more optimistic range numbers than WLTP or EPA laboratory cycles, so CLTC‑reported ranges (including manufacturer 1,000 km claims) should be expected to overstate real‑world range versus WLTP/EPA metrics.",
+  "url": "https://doi.org/10.1016/j.hazadv.2026.101013",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ScienceDirect (peer‑reviewed article)",
+   "published": "2026",
+   "stance": "supports",
+   "about": "real‑world range / test cycles",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-72",
+  "source_type": "web",
+  "source_name": "The State Council (English site)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "China’s national 2025–2027 EV charging ‘three‑year doubling’ action plan sets targets of roughly 28 million charging facilities and public charging capacity above ~300 million kW by end‑2027, signalling major growth in public and semi‑public charging availability through 2028–2031.",
+  "url": "https://english.www.gov.cn/english.www.gov.cn/news/202510/15/content_WS68ef9871c6d00ca5f9a06d46.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "The State Council (English site)",
+   "published": "2025-10-15",
+   "stance": "supports",
+   "about": "charging network access",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-73",
+  "source_type": "web",
+  "source_name": "IEA Global EV Outlook 2026",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "International bodies (IEA) forecast strong increases in China’s public charging capacity and a growing share of higher‑power public fast chargers up to 2030, supporting higher‑power charging access for premium vehicles in that timeframe.",
+  "url": "https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-charging-chap-6-and-10",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "IEA Global EV Outlook 2026",
+   "published": "2026",
+   "stance": "supports",
+   "about": "charging network access",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-74",
+  "source_type": "web",
+  "source_name": "S&P Global Mobility",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Market forecasters (S&P Global Mobility and others) estimate Greater China cumulatively installing on the order of tens of millions of chargers by 2030 (S&P cited ~12.3 million chargers for Greater China in some forecasts), implying materially improved geographic access to charging for premium buyers across 2028–2031 (forecasts vary by provider and scenario).",
+  "url": "https://www.spglobal.com/automotive-insights/en/blogs/2025/11/expansion-of-ev-charging-infrastructure-slows",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "S&P Global Mobility",
+   "published": "2025-11",
+   "stance": "supports",
+   "about": "charging network access",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-75",
+  "source_type": "web",
+  "source_name": "ResearchInChina (used to support architecture timing)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "(Inference) Combining vehicle‑level trends (wider 800‑1,000 V adoption; higher‑energy‑density cells entering premium cars) with charging‑side trends (wider roll‑out of 250–600 kW+ chargers and OEM megawatt pilots plus national charger targets) implies that premium mid‑size long‑wheelbase cars sold in China in 2028–2031 should be increasingly able to support much faster top‑up charging and longer practical ranges than 2024 models — but actual on‑road range will remain sensitive to test‑cycle (CLTC vs WLTP/EPA) differences and vehicle configuration.",
+  "url": "https://www.researchinchina.com/Htmls/Report/2025/77091.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ResearchInChina (used to support architecture timing)",
+   "published": "2025",
+   "stance": "neutral",
+   "about": "overall implication 2028–2031",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-76",
+  "source_type": "web",
+  "source_name": "BMW Group press release",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW has publicly stated that the BMW Intelligent Personal Assistant for vehicles sold in China will be enhanced with large-language-model functionality from Alibaba and with AI “reasoning” features from DeepSeek (China-specific LLM/AI integration).",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0457355EN/the-start-of-a-new-era-the-bmw-group-at-auto-china-2026",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press release",
+   "published": "24 April 2026",
+   "stance": "supports",
+   "about": "BMW Intelligent Personal Assistant, LLM integration in China. ([press.bmwgroup.com](https://www.press.bmwgroup.com/global/article/detail/T0457355EN/the-start-of-a-new-era-the-bmw-group-at-auto-china-2026?forceSitePreference=DESKTOP&utm_source=openai))",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-77",
+  "source_type": "web",
+  "source_name": "BMW Group press release",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW announced a China-focused partnership with Momenta to co‑develop Advanced Driver Assistance Systems (ADAS) “in China, for China,” starting with BMW’s Neue Klasse models for the Chinese market.",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0451365EN/in-china-and-for-china-bmw-group-partners-with-momenta-to-set-the-benchmark-for-smart-symbiotic-and?forceSitePreference=DESKTOP",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press release",
+   "published": "15 July 2025",
+   "stance": "supports",
+   "about": "BMW–Momenta ADAS partnership for China. ([press.bmwgroup.com](https://www.press.bmwgroup.com/global/article/detail/T0451365EN/in-china-and-for-china-bmw-group-partners-with-momenta-to-set-the-benchmark-for-smart-symbiotic-and?forceSitePreference=DESKTOP&utm_source=openai))",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-78",
+  "source_type": "web",
+  "source_name": "BMW Group press release",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW describes the Neue Klasse as a software‑defined vehicle architecture built around four high‑performance central computers (’Superbrains’) and a zonal E/E architecture, expressly to enable continuous feature development and faster over‑the‑air (OTA) delivery of new functions across model lines.",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0448372EN/four-superbrains-for-the-neue-klasse-more-intelligent-more-efficient-more-powerful?forceSitePreference=DESKTOP",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press release",
+   "published": "11 March 2025",
+   "stance": "supports",
+   "about": "Neue Klasse 'Superbrains' and OTA enablement. ([press.bmwgroup.com](https://www.press.bmwgroup.com/global/article/detail/T0448372EN/four-superbrains-for-the-neue-klasse-more-intelligent-more-efficient-more-powerful?forceSitePreference=DESKTOP&utm_source=openai))",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-79",
+  "source_type": "web",
+  "source_name": "BMW Group press release",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW’s China‑spec iX3 long‑wheelbase and BMW materials for China state that the Chinese derivative of BMW Operating System X will include roughly 70% locally developed software and will use Chinese navigation (Amap) and China‑local AI partners (Alibaba, DeepSeek); the same materials also list integration with Huawei technologies (Digital Key, HiCar, My BMW app on HarmonyOS NEXT).",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0455143EN/bmw-ix3-long-wheelbase-advances-toward-world-premiere?showMedia=photo",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press release",
+   "published": "21 January 2026",
+   "stance": "supports",
+   "about": "Localization of OS X for China; Huawei/Banma/DeepSeek/Amap integration. ([press.bmwgroup.com](https://www.press.bmwgroup.com/global/article/detail/T0455143EN/bmw-ix3-long-wheelbase-advances-toward-world-premiere?showMedia=photo&utm_source=openai))",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-80",
+  "source_type": "web",
+  "source_name": "BMW Group press release",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW’s press materials for the China‑only long‑wheelbase 5 Series (G68) and the China release of the global 5 Series list an optional/rear‑seat ‘BMW Theatre Screen’ (31.3‑inch, 8K) and 5G connectivity for rear‑seat entertainment in China‑market versions.",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0427958EN/the-new-bmw-5-series-sedan-and-the-new-bmw-i5-%E2%80%93-exclusively-from-china-for-china?language=en",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press release",
+   "published": "26 September 2023",
+   "stance": "supports",
+   "about": "BMW Theatre Screen and 5G connectivity for China long‑wheelbase 5 Series. ([press.bmwgroup.com](https://www.press.bmwgroup.com/global/article/detail/T0427958EN/the-new-bmw-5-series-sedan-and-the-new-bmw-i5-%E2%80%93-exclusively-from-china-for-china?language=en&utm_source=openai))",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-81",
+  "source_type": "web",
+  "source_name": "BMW Group – Connected Car / Innovation pages",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW states that its Remote Software Upgrade (OTA) capability is already available in millions of BMWs globally (BMW public materials cite multi‑million OTA‑capable fleet numbers) and that the Neue Klasse and OS X are intended to increase the pace and scope of feature delivery via OTA.",
+  "url": "https://www.bmwgroup.com/en/innovation/connected-car.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group – Connected Car / Innovation pages",
+   "published": "(web page updated 2026)",
+   "stance": "supports",
+   "about": "BMW Remote Software Upgrade / OTA fleet and Neue Klasse enabling scope. ([bmwgroup.com](https://www.bmwgroup.com/content/grpw/websites/bmwgroup_com/en/innovation/connected-car.html?utm_source=openai))",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-82",
+  "source_type": "web",
+  "source_name": "BMW USA (ConnectedDrive release notes)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW’s customer‑facing release notes and Remote Software Upgrade documentation show regular OTA releases and feature updates (example release notes PDFs and RSU release notes in 2025), indicating OTA is already used to deliver functional and infotainment changes on a quarterly/half‑year cadence. (example: BMW US release notes July 2025 and March 2025).",
+  "url": "https://www.bmwusa.com/content/dam/bmw/common/connected-drive/pdf/2025/ReleaseNotes_2507_US_BMW-v2.pdf",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "BMW USA (ConnectedDrive release notes)",
+   "published": "July 2025",
+   "stance": "supports",
+   "about": "Concrete BMW OTA release notes (examples). ([bmwusa.com](https://www.bmwusa.com/content/dam/bmw/common/connected-drive/pdf/2025/ReleaseNotes_2507_US_BMW-v2.pdf?utm_source=openai))",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-83",
+  "source_type": "web",
+  "source_name": "SEC filing quoting MIIT materials (company 20‑F)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "China’s regulatory framework for connected/intelligent vehicles requires manufacturers to manage vehicle data security and software‑update processes (MIIT ‘Access Administration’ guidance and the several PRC automobile data security rules); filings or records with authorities are required for changes that affect vehicle safety or core parameters — regulations therefore materially affect how OEMs implement OTA in China.",
+  "url": "https://www.sec.gov/Archives/edgar/data/1957413/000149315224017246/form20-f.htm",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "SEC filing quoting MIIT materials (company 20‑F)",
+   "published": "(document quoting MIIT guidance)",
+   "stance": "supports",
+   "about": "MIIT 'Access Administration' and automobile data security measures governing OTA in China. ([sec.gov](https://www.sec.gov/Archives/edgar/data/1957413/000149315224017246/form20-f.htm?utm_source=openai))",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-84",
+  "source_type": "web",
+  "source_name": "NewlyPossible (Chinese automated‑driving standards tracker)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "China has been publishing national standards and draft mandatory requirements that include software‑update management and OTA security for intelligent and automated vehicles (public standards and trackers list OTA/software‑update management standards issued 2024–2025, with effective dates into 2026 and onward).",
+  "url": "https://www.newlypossible.org/wiki/Chinese_Automated_Driving_Standards",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "NewlyPossible (Chinese automated‑driving standards tracker)",
+   "published": "(standards tracker; updated 2026)",
+   "stance": "supports",
+   "about": "Chinese national standards covering OTA and software‑update management for ICVs. ([newlypossible.org](https://www.newlypossible.org/wiki/Chinese_Automated_Driving_Standards?utm_source=openai))",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-85",
+  "source_type": "web",
+  "source_name": "Banma (AliOS / Alibaba automotive JV) – corporate site and announcements",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Banma (Alibaba’s automotive JV, AliOS/Banma) and allied vendors are publicly promoting in‑car AI, payment and app‑ecosystem integrations (examples: Banma’s platform, Alipay/AI‑pay tie‑ups, and ‘agent’ AI features shown at 2026 Beijing Auto Show), indicating OEMs in China (including BMW per BMW press) will deliver cockpit AI + in‑car payments and mini‑app integrations via local platform partners.",
+  "url": "https://www.ebanma.com/en",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Banma (AliOS / Alibaba automotive JV) – corporate site and announcements",
+   "published": "(site updated 2026)",
+   "stance": "supports",
+   "about": "Banma / AliOS activity: in‑car AI, Alipay integration, app ecosystem for cars in China. ([ebanma.com](https://www.ebanma.com/en?utm_source=openai))",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-86",
+  "source_type": "web",
+  "source_name": "Douglas Insights (industry market research)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Independent industry research and market reports forecast continued strong growth of automotive software and OTA monetization through 2028–2030 (examples: market analyses that project rapid growth in infotainment/OTA/security software value and increasing use of OTA to deliver features and post‑sale functions).",
+  "url": "https://www.douglasinsights.com/automotive-software-market/",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Douglas Insights (industry market research)",
+   "published": "(market research page 2025–2026)",
+   "stance": "supports",
+   "about": "Market forecasts for automotive software/OTA monetization growth through 2030+. ([douglasinsights.com](https://www.douglasinsights.com/automotive-software-market/?utm_source=openai))",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-87",
+  "source_type": "web",
+  "source_name": "Infineon Technologies press release",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Infineon (supplier) states it is supporting BMW’s Neue Klasse central compute architecture (microcontrollers/security building blocks), showing Tier‑1 / semiconductor supplier engagement for BMW’s future centralized compute and secure‑by‑design architectures.",
+  "url": "https://www.infineon.com/press-release/2026/infatv202602-049",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Infineon Technologies press release",
+   "published": "16 February 2026",
+   "stance": "supports",
+   "about": "Infineon involvement in BMW Neue Klasse compute/security architecture. ([infineon.com](https://www.infineon.com/press-release/2026/infatv202602-049?utm_source=openai))",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-88",
+  "source_type": "web",
+  "source_name": "BMW Group Report 2025 (Investor & Analyst materials)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW publicly states it will roll the Neue Klasse digital architecture and software approach (BMW OS X / Panoramic iDrive / Superbrains) across its future model portfolio after the initial Neue Klasse launches (BMW investor / I&A materials state rollout across models and drivetrains into 2026–2027 and beyond).",
+  "url": "https://www.bmwgroup.com/en/report/2025/downloads/BMW-Group-Report-2025-en.pdf?page=307",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Report 2025 (Investor & Analyst materials)",
+   "published": "2025",
+   "stance": "supports",
+   "about": "BMW plan to deploy Neue Klasse architecture across model portfolio. ([bmwgroup.com](https://www.bmwgroup.com/en/report/2025/downloads/BMW-Group-Report-2025-en.pdf?utm_source=openai))",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-89",
+  "source_type": "web",
+  "source_name": "BMW Group press & regulatory sources (inference supported by BMW press and MIIT filings)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "(Inference) Given BMW’s announced China localization of OS X (≈70% local software), the Momenta ADAS partnership for China, BMW’s public LLM/DeepSeek and Alibaba integrations, plus China’s OTA/data‑security rules, it is reasonable to expect that long‑wheelbase premium sedans in the 5‑Series segment sold in China between 2028–2031 will (a) run increasingly China‑localized infotainment and voice/AI assistants (Alibaba/DeepSeek/Banma integrations), (b) receive regular OTA feature and ADAS improvements tailored for Chinese traffic and navigation (Amap), and (c) be subject to China’s OTA/filed update procedures and cybersecurity requirements. (This line is an inference based on the cited BMW plans, partnerships and China regulatory sources.)",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0455143EN/bmw-ix3-long-wheelbase-advances-toward-world-premiere?showMedia=photo",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press & regulatory sources (inference supported by BMW press and MIIT filings)",
+   "published": "(supporting sources 2025–2026)",
+   "stance": "neutral",
+   "about": "Inference combining BMW localization + Momenta + DeepSeek/Alibaba + China OTA rules. ([press.bmwgroup.com](https://www.press.bmwgroup.com/global/article/detail/T0455143EN/bmw-ix3-long-wheelbase-advances-toward-world-premiere?showMedia=photo&utm_source=openai))",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-90",
+  "source_type": "web",
+  "source_name": "Ministry of Commerce (MOFCOM) draft document repository",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "China’s draft revision of the national standard GB 4094 (Automotive control components/indicators/signalling) explicitly records that many safety‑related virtual controls should be backed by physical (tactile) controls to preserve blind operation and usability (draft published Feb 2026; revision work references GB4094‑2016).",
+  "url": "https://picpolicy.mofcom.gov.cn/file/20260226/49331772068249797.pdf",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Ministry of Commerce (MOFCOM) draft document repository",
+   "published": "Feb 2026",
+   "stance": "supports",
+   "about": "China GB 4094 revision draft requiring physical controls",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-91",
+  "source_type": "web",
+  "source_name": "C‑NCAP / China Automotive Technology & Research Center",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "China’s 2026 C‑ICAP update (China Intelligent Connected Vehicle Assessment Protocol) adds explicit human‑machine‑interaction test items that include physical‑button checks and multimodal voice/screen interaction tests, and the C‑ICAP 2026 rules are effective from July 1, 2026 (thereby pushing OEMs to retain or reintroduce physical controls).",
+  "url": "https://www.c-ncap.org.cn/article-detail/2066337316846206978?type=2",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "C‑NCAP / China Automotive Technology & Research Center",
+   "published": "June 15, 2026",
+   "stance": "supports",
+   "about": "C‑ICAP 2026 adds physical‑button and multimodal HMI assessment items",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-92",
+  "source_type": "web",
+  "source_name": "BitAuto (automotive industry media)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Chinese industry reporting and coverage of the standard changes state the new rules will force the return of dedicated physical controls for as many as 19 core/safety functions and that broadly enforceable application for new production models begins in 2027 (media summaries and reporting of MOFCOM/SAC drafts and timelines).",
+  "url": "https://www.bitauto.com/article/1003111430194/",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BitAuto (automotive industry media)",
+   "published": "2026 (article)",
+   "stance": "supports",
+   "about": "media reporting on 19 functions and 2027 enforcement timeline",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-93",
+  "source_type": "web",
+  "source_name": "BMW Group (iFactory / CES 2025 announcement)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW’s published Panoramic iDrive concept (announced CES 2025 and slated for Neue Klasse/redesigns from late‑2025 onward) describes an HMI philosophy of an 'optimal combination of analogue and digital controls' — switches, buttons, touch and voice — and emphasises the multifunction steering wheel (with dedicated wake/voice button) as a primary physical control element.",
+  "url": "https://www.visit-bmwgroup.com/en/world-premiere-at-ces-2025-the-new-bmw-panoramic-idrive/",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group (iFactory / CES 2025 announcement)",
+   "published": "Jan 9, 2025",
+   "stance": "supports",
+   "about": "BMW Panoramic iDrive commitment to hybrid (physical + digital + voice) controls",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-94",
+  "source_type": "web",
+  "source_name": "BMW Group press release",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW’s China launch materials for the G60/G68 5‑Series long‑wheelbase confirm China‑specific large curved/‘floating’ displays, rear ‘theatre screen’ and explicit integration with Chinese digital services (iQiyi, Huawei AppGallery) — showing OEMs will keep large multi‑screen infotainment while addressing China‑local ecosystems.",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0427958EN/the-new-bmw-5-series-sedan-and-the-new-bmw-i5-%E2%80%93-exclusively-from-china-for-china?language=en",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press release",
+   "published": "Aug 8, 2023",
+   "stance": "supports",
+   "about": "BMW G60/G68 China features and China‑specific digital service integration",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-95",
+  "source_type": "web",
+  "source_name": "PR Newswire / BOE press coverage (CES 2025)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Chinese market suppliers and display makers continue to commercialise very large, high‑resolution automotive displays (example: BOE’s 31.6\" spliced/slidable automotive OLED showcased at CES 2025), indicating premium interiors through 2028–2031 will increasingly feature large panoramic screens for infotainment and rear‑seat media while coexisting with tactile controls required by regulation.",
+  "url": "https://www.prnewswire.com/news-releases/boe-shines-at-ces-2025-with-cutting-edge-technologies-leveraging-the-hero-initiative-to-unlock-a-smarter-future-across-diverse-scenarios-302346512.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "PR Newswire / BOE press coverage (CES 2025)",
+   "published": "Jan 2025",
+   "stance": "supports",
+   "about": "BOE CES 2025 large automotive displays",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-96",
+  "source_type": "web",
+  "source_name": "Ipsos (whitepaper)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Market research and China‑market white papers (e.g., Ipsos 2020 China ICV whitepaper and industry HMI market forecasts) project strong adoption of AI‑driven, multimodal voice assistants and broader multimodal HMI by ~2030 in China; combined with the new standards, this implies premium cars (BMW 5‑class long‑wheelbase segment) will deploy mature voice + touchscreen ecosystems while keeping mandated physical controls between 2028–2031.",
+  "url": "https://www.ipsos.com/sites/default/files/ct/publication/documents/2020-09/china-tech-driven-icv-for-the-next-decade-2020-ipsos.pdf",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Ipsos (whitepaper)",
+   "published": "July 2020",
+   "stance": "supports",
+   "about": "forecast of AI/voice/multimodal HMI adoption in China by 2030",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-97",
+  "source_type": "web",
+  "source_name": "Bonafide Research",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Industry forecasts (China Automotive Interior Materials Outlook) project rising adoption of sustainable interior materials in China through 2031 driven by NEV growth and increasing demand for premium interiors.",
+  "url": "https://www.bonafideresearch.com/product/2608000904/china-automotive-interiormaterials-market",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Bonafide Research",
+   "published": "2026 (report listing published 2 months ago)",
+   "stance": "supports",
+   "about": "Adoption of sustainable interior materials in China through 2031",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-98",
+  "source_type": "web",
+  "source_name": "GEP Research",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Market research projects a rapid expansion of 'smart cabin' interior components (touch surfaces, ambient lighting, embedded sensor textiles), estimating the smart cabin segment will surpass a large multibillion-dollar scale by the late 2020s and therefore shape interiors between 2028–2031.",
+  "url": "https://www.gepresearch.com/86/view-1145589-1.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "GEP Research",
+   "published": "2026 (report listing published last month)",
+   "stance": "supports",
+   "about": "Growth of smart-cabin interior components 2026–2031",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-99",
+  "source_type": "web",
+  "source_name": "ResearchInChina",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "A 2026 smart-interior industry report highlights the \"wide application of new sustainable interior materials\" and the rapid rise of interior intelligence (health/environment protection, embedded electronics), identifying these as the two most prominent technical trends for automotive interiors.",
+  "url": "https://www.researchinchina.com/Htmls/Report/2026/80173.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ResearchInChina",
+   "published": "2026-03-?? (Automotive Smart Interior Research Report, 2026)",
+   "stance": "supports",
+   "about": "Sustainability and intelligence as dominant interior technology trends",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-100",
+  "source_type": "web",
+  "source_name": "McKinsey & Company",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Strategy analyses from McKinsey show China becoming the fastest‑growing luxury-car market to 2031 and say Chinese premium buyers increasingly expect deep integration with local digital ecosystems and stronger localization/customization of interior features—implications for China-tailored premium long‑wheelbase interiors 2028–2031.",
+  "url": "https://www.mckinsey.com.br/industries/automotive-and-assembly/our-insights/five-trends-shaping-tomorrows-luxury-car-market",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "McKinsey & Company",
+   "published": "2022 (analysis referencing outlook to 2031)",
+   "stance": "supports",
+   "about": "China luxury market growth and demand for localized digital/ interior customization",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-101",
+  "source_type": "web",
+  "source_name": "The State Council of the People’s Republic of China (english.gov.cn)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "China’s national 'dual carbon' policy (peak before 2030 and carbon neutrality before 2060) and recent government measures to operationalize carbon‑peaking are being used to drive lifecycle carbon accounting and low‑carbon material choices across automotive supply chains—an upstream driver for interior material changes by 2028–2031.",
+  "url": "https://english.www.gov.cn/policies/latestreleases/202604/24/content_WS69eac173c6d00ca5f9a0a9d4.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "The State Council of the People’s Republic of China (english.gov.cn)",
+   "published": "2026-04-24",
+   "stance": "supports",
+   "about": "Policy driver (Dual Carbon) influencing material choices in automotive interiors",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-102",
+  "source_type": "web",
+  "source_name": "Asahi Kasei (corporate report)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Tier‑1 material suppliers report localizing sustainable/synthetic upholstery production in China (e.g., Asahi Kasei has expanded production of PVC synthetic leather in China), supporting wider use of such materials in premium Chinese models by the late 2020s.",
+  "url": "https://www.asahi-kasei.com/ir/library/asahikasei_report/pdf/23en.pdf",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Asahi Kasei (corporate report)",
+   "published": "2023",
+   "stance": "supports",
+   "about": "Localization of synthetic/sustainable upholstery production in China",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-103",
+  "source_type": "web",
+  "source_name": "Zeekr (sustainability report)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "OEMs and Chinese EV brands are marketing cabin air‑quality and 'Green Cabin' certifications (example: Zeekr references CATARC 'Green Cabin' certification) — indicating health‑focused materials, filtration, and interior monitoring will be a purchase differentiator for premium models 2028–2031.",
+  "url": "https://filecache.investorroom.com/mr5irasia_zeekr/178/download/2024%20Zeekr%20Sustainability%20Report.pdf",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Zeekr (sustainability report)",
+   "published": "2024",
+   "stance": "supports",
+   "about": "Cabin air quality certification and health-focused interior materials",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-104",
+  "source_type": "web",
+  "source_name": "SGS China",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Testing/consulting firms document increased integration of post‑consumer recycled materials into interior components (recycled plastics, textiles for insulation, recycled fibres for trims) and describe solutions to scale adoption toward 2030—supporting expectations of higher recycled content in premium Chinese interiors by 2028–2031.",
+  "url": "https://www.sgsgroup.com.cn/en-cn/news/2026/04/supporting-the-transition-to-recycled-materials-in-automotive",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "SGS China",
+   "published": "2026-04-14",
+   "stance": "supports",
+   "about": "Use of recycled materials in interior components and scaling toward 2030",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-105",
+  "source_type": "web",
+  "source_name": "IMARC Group",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Automotive upholstery market analyses note plant‑based leather alternatives (cactus, apple‑waste, mycelium) are moving from concept to production and that several luxury OEMs target animal‑free or higher‑recycled content interiors by ~2028–2030—implying premium China long‑wheelbase variants could adopt such materials between 2028–2031.",
+  "url": "https://www.imarcgroup.com/automotive-upholstery-market",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "IMARC Group",
+   "published": "2026 (market report listing)",
+   "stance": "supports",
+   "about": "Plant‑based leather and animal‑free upholstery adoption timetable",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-106",
+  "source_type": "web",
+  "source_name": "ECNS (China news service)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Historical and launch coverage of China‑long‑wheelbase 'Li' variants (BMW 5‑series Li and others) show these models continue to prioritize rear‑seat space, multi‑screen rear entertainment, rear controls and luxury rear amenities—supporting the expectation that long‑wheelbase premium sedans in China (G68 segment) will keep evolving rear‑centric space concepts through 2028–2031.",
+  "url": "https://www.ecns.cn/business/2017/06-26/262881.shtml",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ECNS (China news service)",
+   "published": "2017-06-26",
+   "stance": "supports",
+   "about": "Rear‑centric space concepts in China long‑wheelbase premium sedans",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-107",
+  "source_type": "web",
+  "source_name": "Ministry of Industry and Information Technology (MIIT), PRC",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "China’s Ministry of Industry and Information Technology (MIIT) published the mandatory national standard “Intelligent and connected vehicle — Safety requirements of combined driver assistance system” (GB 47955—2026) on 2 July 2026; MIIT states the standard was approved for release on 27 June 2026 and is scheduled to enter into force on 1 January 2027 (this establishes a national, mandatory safety baseline for L2 combined driver assistance systems).",
+  "url": "https://www.miit.gov.cn/jgsj/zbys/gzdt/art/2026/art_597aed2718264440a0caa19e883f8d74.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Ministry of Industry and Information Technology (MIIT), PRC",
+   "published": "2026-07-02",
+   "stance": "supports",
+   "about": "China national standard for combined driver assistance (GB 47955—2026)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-108",
+  "source_type": "web",
+  "source_name": "Ministry of Industry and Information Technology (MIIT), PRC",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "MIIT published a public consultation on the draft mandatory national standard “Intelligent and Connected Vehicle — Safety Requirements of Combined Driver Assistance System” on 17 September 2025 (the consultation was for a compulsory standard that would set safety requirements for combined L2 driver assistance products if adopted).",
+  "url": "https://www.miit.gov.cn/jgsj/zbys/qcgy/art/2025/art_b4c467db98344caaaed2ff97b56cc3dd.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Ministry of Industry and Information Technology (MIIT), PRC",
+   "published": "2025-09-17",
+   "stance": "supports",
+   "about": "MIIT public consultation — Combined Driver Assistance System standard (draft)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-109",
+  "source_type": "web",
+  "source_name": "BMW Brilliance Automotive (BBA)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW Brilliance (BMW’s China JV) announced on 17 November 2025 that BMW and Chinese autonomous-driving software company Momenta are jointly developing a full‑scenario, navigation‑guided assistant tailored for China; BMW Brilliance says the system is set for production debut on a locally produced Neue Klasse BMW iX3 in 2026 and will be extended to multiple locally produced models.",
+  "url": "https://www.bmw-brilliance.cn/cn/en/news/news/2025-11-17.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Brilliance Automotive (BBA)",
+   "published": "2025-11-17",
+   "stance": "supports",
+   "about": "BMW–Momenta collaboration and planned 2026 production debut in China",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-110",
+  "source_type": "web",
+  "source_name": "BMW Group press (Asia)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW Group has publicly stated that Level 3 (highly automated, conditional) driving functionality has been offered in new BMW 7 Series models since March 2024 (BMW Personal Pilot L3) and that BMW maintains R&D/testing activities (including in China) to expand automated‑driving functions to additional models over time.",
+  "url": "https://www.press.bmwgroup.com/asia/article/detail/T0443363EN/road-to-autonomous-driving%3A-bmw-is-the-first-car-manufacturer-to-receive-approval-for-the-combination-of-level-2-and-level-3?language=en",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press (Asia)",
+   "published": "2024-06-25",
+   "stance": "supports",
+   "about": "BMW 7 Series — Level 3 availability and BMW AD R&D",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-111",
+  "source_type": "web",
+  "source_name": "BMW Group (China Day presentation)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "At BMW Group China Day (10–11 October 2023) BMW explicitly listed “L2+ hands‑off driving with Automated Lane Change on highway” as a China‑market capability, signalling OEM product planning for hands‑off/highway L2+ functions in China‑produced vehicles.",
+  "url": "https://www.bmwgroup.com/content/dam/grpw/websites/bmwgroup_com/ir/downloads/en/2023/231010-China-Day-Presentation.pdf",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group (China Day presentation)",
+   "published": "2023-10-10/11",
+   "stance": "supports",
+   "about": "BMW China Day — L2+ hands‑off feature (presentation slide)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-112",
+  "source_type": "web",
+  "source_name": "Qualcomm (press release)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Qualcomm announced on 29 July 2026 that it was named BMW Group’s lead compute silicon provider for digital cockpit and automated driving “through the next decade”, indicating BMW has committed a multi‑year in‑vehicle compute roadmap that can support progressively more advanced L2+/L3 features in the late 2020s and beyond.",
+  "url": "https://www.qualcomm.com/news/releases/2026/07/qualcomm-named-bmw-group-s-lead-compute-silicon-provider-for-dig",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Qualcomm (press release)",
+   "published": "2026-07-29",
+   "stance": "supports",
+   "about": "Qualcomm–BMW compute partnership (multi‑year roadmap)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-113",
+  "source_type": "web",
+  "source_name": "NVIDIA (press release)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "NVIDIA (March 16, 2026) and other suppliers have publicly announced timelines to scale Level‑4 robotaxi and advanced autonomy deployments by 2027–2028 (NVIDIA stated full‑stack autonomous deployments with partners are planned to expand to multiple markets by 2028), which signals accelerating AV/compute/perception capability roll‑out in China’s supplier ecosystem during the same period.",
+  "url": "https://investor.nvidia.com/news/press-release-details/2026/BYD-Geely-Isuzu-and-Nissan-Adopt-NVIDIA-DRIVE-Hyperion-for-Level-4-Vehicles/default.aspx",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "NVIDIA (press release)",
+   "published": "2026-03-16",
+   "stance": "supports",
+   "about": "NVIDIA announcement on supplier timelines for L4 adoption (ecosystem signal)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-114",
+  "source_type": "web",
+  "source_name": "Inference supported by sources (BMW Brilliance, MIIT, BMW Group, Qualcomm)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Inference (based on the MIIT mandatory standards, BMW Brilliance’s Momenta partnership and production plans, BMW’s existing Level‑3 rollout in the 7 Series, BMW China L2+ product messaging, and BMW’s compute roadmap with Qualcomm): it is reasonable to expect that between 2028 and 2031 premium locally produced executive models in the segment of the BMW 5 Series long‑wheelbase (G68) in China will see wider deployment of advanced L2+ hands‑off highway features and staged introduction/expansion of conditional Level‑3 (driver‑supervised, limited‑scenario) functions — provided homologation, local testing and the national/local regulatory approvals proceed as signalled by the cited sources. (This statement is an inference drawn from the cited sources.)",
+  "url": "https://www.bmw-brilliance.cn/cn/en/news/news/2025-11-17.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Inference supported by sources (BMW Brilliance, MIIT, BMW Group, Qualcomm)",
+   "published": "inference based on sources dated 2023–2026",
+   "stance": "neutral",
+   "about": "Expected rollout timing for L2+/L3 in China premium long‑wheelbase models (2028–2031)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-115",
+  "source_type": "web",
+  "source_name": "Future Market Insights",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Industry market reports project rapid growth in factory-fit ‘business-class’ rear-seat lounge systems in China through 2031–2036, driven by demand for executive recliners, ottomans, powered leg rests, massage and integrated rear-seat entertainment—making advanced rear-cabin packages a larger value pool for premium long-wheelbase sedans by 2028–2031.",
+  "url": "https://www.futuremarketinsights.com/reports/business-class-rear-seat-lounge-systems-market",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Future Market Insights",
+   "published": "2026",
+   "stance": "supports",
+   "about": "rear-seat lounge systems market growth in China",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-116",
+  "source_type": "web",
+  "source_name": "Knowledge Sourcing",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Independent market research forecasts the global automotive rear-seat comfort systems market will grow ~13.1% CAGR from 2026 to 2031 (to ~USD 7.6B by 2031), with Asia Pacific (led by China) cited as the principal growth engine for second-row lounge, zero-gravity seats, massage and software-controlled rear comfort—implying wide availability of these features in premium long-wheelbase sedans by 2028–2031.",
+  "url": "https://www.knowledge-sourcing.com/report/automotive-rear-seat-comfort-systems-market",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Knowledge Sourcing",
+   "published": "Last updated 5 Oct 2026",
+   "stance": "supports",
+   "about": "rear-seat comfort systems CAGR and China role",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-117",
+  "source_type": "web",
+  "source_name": "Carscoops",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW’s China-spec long-wheelbase 5 Series (G68) already demonstrates the feature migration that will continue into the late-2020s: the China model received a 31.3-inch 8K ‘BMW Theater’ rear‑passenger panoramic display, showing flagship rear‑entertainment content is being adopted in upper‑mid premium LWB sedans in China.",
+  "url": "https://www.carscoops.com/2023/08/chinese-spec-bmw-5-series-and-i5-debut-with-extended-wheelbase-and-rear-passenger-screen/",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Carscoops",
+   "published": "August 8, 2023",
+   "stance": "supports",
+   "about": "rear entertainment in BMW 5 LWB (G68) China",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-118",
+  "source_type": "web",
+  "source_name": "Future Market Insights",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Seating and interior suppliers (Adient, Lear, FORVIA, Hyundai Transys, Toyota Boshoku, Gentherm, Magna, Yanfeng) are publicly positioned to deliver integrated second‑row executive recliners, ottomans, thermal and massage modules and software controllers for OEM factory fit programs—indicating supplier capability to scale rear‑lounge features into long‑wheelbase premium sedans across 2028–2031.",
+  "url": "https://www.futuremarketinsights.com/reports/business-class-rear-seat-lounge-systems-market",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Future Market Insights",
+   "published": "2026",
+   "stance": "supports",
+   "about": "supplier readiness for rear-lounge packages",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-119",
+  "source_type": "web",
+  "source_name": "Tianxia Gongchang Research (China Intelligent Driving 2026 report)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "China‑market AD/ADAS industry analyses and supply‑chain reports project NOA (Navigate‑on‑Autopilot) penetration to rise sharply through 2028–2030 (NOA front‑fit ~40% by 2028 and ~55% by 2030 in some forecasts, with highway NOA >60% by ~2028), meaning premium long‑wheelbase sedans will increasingly be offered with advanced ‘chauffeur‑assist’ driving functions during 2028–2031.",
+  "url": "https://faxiangongchang.com/en/reports/china-intelligent-driving-2026",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Tianxia Gongchang Research (China Intelligent Driving 2026 report)",
+   "published": "June 2, 2026",
+   "stance": "supports",
+   "about": "NOA / chauffeur-assist penetration in China",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-120",
+  "source_type": "web",
+  "source_name": "McKinsey & Company",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Major China‑market intelligence (McKinsey China Auto Consumer Insights 2026) reports that consumers see city NOA/advanced driver assistance and in‑vehicle AI as essential features and expect higher‑level autonomy by the 2030s—supporting OEM product planning to pair advanced chauffeur‑assist ADAS with rear‑seat comfort and smart‑cabin services in premium long‑wheelbase sedans by 2028–2031.",
+  "url": "https://www.mckinsey.com/cn/our-insights/our-insights/value-is-the-compass-consumers-set-the-pace",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "McKinsey & Company",
+   "published": "September 22, 2026",
+   "stance": "supports",
+   "about": "consumer expectation for NOA and in‑vehicle AI in China",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-121",
+  "source_type": "web",
+  "source_name": "Mordor Intelligence",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "China luxury‑market analyses note stronger demand for long‑wheelbase chassis plus adaptive air‑suspension and ride‑comfort packages to improve rear‑seat comfort on variable road quality—an expectation that premium LWB sedans will increasingly include adaptive suspension and rear‑focused ride tuning as part of comfort packages through 2028–2031.",
+  "url": "https://www.mordorintelligence.com/industry-reports/china-luxury-car-market",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mordor Intelligence",
+   "published": "2026",
+   "stance": "supports",
+   "about": "adaptive suspension and ride tuning for rear comfort in China premium LWB sedans",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-122",
+  "source_type": "web",
+  "source_name": "BMWBLOG",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW‑market reporting on BMW’s 2026 Capital Market Day product roadmap indicates BMW plans China‑specific LWB model updates in the 2027–2028 timeframe (article interpretation: a mid‑cycle/facelift for the G60/G68 family and refreshed long‑wheelbase 5/i5 on BMW’s China roadmap), implying BMW may refresh G68 long‑wheelbase rear‑cabin features in that window (2027–2028) ahead of broader 2028–2031 segment changes.",
+  "url": "https://www.bmwblog.com/2026/10/01/bmw-teases-new-cars-china-2027/",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMWBLOG",
+   "published": "October 1, 2026",
+   "stance": "supports",
+   "about": "BMW China product roadmap and G68 mid-cycle timing",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-123",
+  "source_type": "web",
+  "source_name": "Alibaba Group",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW and Alibaba announced on March 26, 2025 a deepened strategic partnership to integrate Alibaba’s Qwen LLM and Banma’s smart‑cockpit technology into BMW China models (the collaboration was presented as targeting Neue Klasse cars produced in China, with initial in‑vehicle AI deliveries planned from 2026).",
+  "url": "https://home.alibabagroup.com/en-US/document-1841616313521274880",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Alibaba Group",
+   "published": "2025-03-26",
+   "stance": "supports",
+   "about": "BMW–Alibaba strategic partnership (Qwen / Banma) in‑car AI for China",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-124",
+  "source_type": "web",
+  "source_name": "Banma (ebanma.com)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Banma (Alibaba’s automotive unit) documents describe Yan AI as a smart‑cockpit core and state that Yan AI / Banma upgrades will be installed on OEM models in China (Banma materials reference Yan AI installations and upgrades for 2026 deployments).",
+  "url": "https://www.ebanma.com/en/m/business",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Banma (ebanma.com)",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Banma Yan AI smart cockpit deployments (OEMs, 2026) in China",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-125",
+  "source_type": "web",
+  "source_name": "BMW Group press (Oliver Zipse statement)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW public materials and executive statements confirm BMW plans to integrate local Chinese AI/voice functionality into its China market Intelligent Personal Assistant (including plans to add features sourced from Chinese partners such as DeepSeek/Baidu for vehicles sold in China).",
+  "url": "https://www.press.bmwgroup.com/netherlands/article/detail/T0451640NL/statement-oliver-zipse-voorzitter-van-de-raad-van-bestuur-van-bmw-ag-halfjaarverslag-conference-call-tot-30-juni-2025",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press (Oliver Zipse statement)",
+   "published": "2025-06-30",
+   "stance": "supports",
+   "about": "BMW plans to enhance BMW Intelligent Personal Assistant with Chinese partner functionality for China market",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-126",
+  "source_type": "web",
+  "source_name": "IndexBox (market report)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Market research forecasts an inflection toward AAOS/Android‑Automotive and software‑defined cockpit architectures in China around 2028–2029, which analysts say will enable broader third‑party app ecosystems and app‑store‑style in‑car experiences by the late 2020s. ",
+  "url": "https://www.indexbox.io/store/china-android-automotive-os-aaos-market-analysis-forecast-size-trends-and-insights/",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "IndexBox (market report)",
+   "published": "2026 report (covering 2026–2035)",
+   "stance": "supports",
+   "about": "AAOS adoption inflection in China ~2028–2029 enabling third‑party in‑car apps",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-127",
+  "source_type": "web",
+  "source_name": "S&P Global / Autotech Insight",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Sector reporting and OEM announcements show multiple Chinese tech firms (Baidu’s ERNIE/DeepSeek, Alibaba’s Qwen/Banma, iFlytek and others) are already integrating LLM‑based cockpit assistants with OEMs and conducting mass‑vehicle rollouts or pilots—signalling a shift to conversational, LLM‑powered Mandarin assistants in production cars.",
+  "url": "https://autotechinsight.spglobal.com/main/news/view/printer-friendly?id=5272027",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "S&P Global / Autotech Insight",
+   "published": "2026 (briefing)",
+   "stance": "supports",
+   "about": "Baidu/Alibaba/iFlytek LLM integrations with OEMs for in‑car assistants in China",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-128",
+  "source_type": "web",
+  "source_name": "Cerence (press release)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Vendor announcements and industry briefs (e.g., Cerence, Volkswagen) describe an industry move toward ‘agentic’ LLM‑powered in‑car assistants (multistep, context‑aware agents) and describe OEM rollout plans through the late 2020s — implying premium‑segment cockpits will adopt more capable Mandarin LLM assistants between 2028–2031.",
+  "url": "https://investors.cerence.com/_assets/_e190f3d0aa8dde23f8a9c4c14cb82c95/cerence/news/2025-03-13_Cerence_AI_Debuts_xUI_its_Hybrid_LLM_Based_104.pdf",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Cerence (press release)",
+   "published": "2025-03-13",
+   "stance": "supports",
+   "about": "cerence xUI and industry move to LLM‑based agentic in‑car assistants",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-129",
+  "source_type": "web",
+  "source_name": "Changan Automobile (2025/2026 annual report)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Huawei’s HarmonyOS Cockpit and OEM partners (examples in supplier/OEM filings such as Changan’s product reports) are building native HarmonyOS in‑car app ecosystems (HarmonyOS Cockpit versions cited in OEM releases), which indicates growth in native Chinese app/content integrations in cockpits that premium cars in China will leverage during 2028–2031.",
+  "url": "https://static.cninfo.com.cn/finalpage/2026-04-11/1225093379.PDF",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Changan Automobile (2025/2026 annual report)",
+   "published": "2026-04-11",
+   "stance": "supports",
+   "about": "HarmonyOS Cockpit adoption and native in‑car app ecosystems (OEM disclosures)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-130",
+  "source_type": "web",
+  "source_name": "Fortune Business Insights",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Market studies of the in‑vehicle AI/voice‑assistant sector project strong growth for in‑car AI and voice assistant revenues through 2030, supporting richer Mandarin capabilities and monetizable local apps in China’s premium cockpit segment over 2028–2031.",
+  "url": "https://www.fortunebusinessinsights.com/in-vehicle-ai-assistants-market-116192",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Fortune Business Insights",
+   "published": "2025–2026 (market forecast)",
+   "stance": "supports",
+   "about": "in‑vehicle AI assistant market growth through 2030 supporting advanced Mandarin voice features",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-131",
+  "source_type": "web",
+  "source_name": "ChinaEVHome",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "CIC Consulting (Bluebook) projects China urban NOA penetration to rise from 11.3% in 2025 to 62.4% in 2030, and annual vehicle sales equipped with urban NOA to increase from 2.6 million to 18.2 million by 2030. Source: https://chinaevhome.com/2026/06/16/cic-bluebook-momenta-huawei-control-over-80-of-china-urban-noa-market/",
+  "url": "https://chinaevhome.com/2026/06/16/cic-bluebook-momenta-huawei-control-over-80-of-china-urban-noa-market/",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ChinaEVHome",
+   "published": "2026-06-16",
+   "stance": "supports",
+   "about": "China urban NOA market projection",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-132",
+  "source_type": "web",
+  "source_name": "Sina Finance (reporting CAAM)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "China Automotive Industry Association (cited in Sina Finance) reports that urban NOA entered large‑scale deployment in 2025 and expects urban NOA to become mainstream in China by 2030. Source: https://finance.sina.com.cn/jjxw/2026-01-14/doc-inhhhhqr8378245.shtml",
+  "url": "https://finance.sina.com.cn/jjxw/2026-01-14/doc-inhhhhqr8378245.shtml",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Sina Finance (reporting CAAM)",
+   "published": "2026-01-14",
+   "stance": "supports",
+   "about": "CAAM 2025 Urban NOA research report",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-133",
+  "source_type": "web",
+  "source_name": "Frost & Sullivan",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Frost & Sullivan (Jul 6, 2026) projects China’s NOA-equipped passenger vehicle base will grow rapidly (from ~2.4M in 2025 toward multi‑millions by 2030s), and highlights key trends that will drive urban NOA scale: transition to map‑light/map‑free and vision‑first architectures, OTA updates and recurring software monetization (subscriptions), and falling sensor/compute costs. Source: https://www.frost.com/growth-opportunity-news/mobility-automotive-transportation/digital-software/growth-in-china-passenger-vehicle-navigation-on-autopilot-noa-market-to-hinge-on-delivery-of-scalable-safe-and-commercially-sustainable-urban-autonomy-experiences/",
+  "url": "https://www.frost.com/growth-opportunity-news/mobility-automotive-transportation/digital-software/growth-in-china-passenger-vehicle-navigation-on-autopilot-noa-market-to-hinge-on-delivery-of-scalable-safe-and-commercially-sustainable-urban-autonomy-experiences/",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Frost & Sullivan",
+   "published": "2026-07-06",
+   "stance": "supports",
+   "about": "Market trends and commercialization drivers for China NOA",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-134",
+  "source_type": "web",
+  "source_name": "BMW Group Press",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "BMW Group (Press, Auto China 2026) announced China‑specific navigation‑guided (address‑to‑address) driver assistance developed with local partners (Amap, Momenta), and stated Neue Klasse driver‑assistance/OS roll‑out in China starting 2026 with expansion to models equipped with BMW Operating System 9/X from H2 2026. Source: https://www.press.bmwgroup.com/global/article/detail/T0457355EN/the-start-of-a-new-era-the-bmw-group-at-auto-china-2026?forceSitePreference=DESKTOP",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0457355EN/the-start-of-a-new-era-the-bmw-group-at-auto-china-2026?forceSitePreference=DESKTOP",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press",
+   "published": "2026-04-24",
+   "stance": "supports",
+   "about": "BMW China driver assistance strategy (Neue Klasse) and local partnerships",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-135",
+  "source_type": "web",
+  "source_name": "Momenta",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Momenta (company announcement, 15 July 2025) states it partnered with BMW Group Region China to co‑develop a Navigation‑on‑Autopilot (NOA) solution that will debut on locally produced Neue Klasse models, covering highway and urban NOA. Source: https://www.momenta.ai/en/article/284.html",
+  "url": "https://www.momenta.ai/en/article/284.html",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Momenta",
+   "published": "2025-07-15",
+   "stance": "supports",
+   "about": "BMW–Momenta partnership for NOA in China",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-136",
+  "source_type": "web",
+  "source_name": "ChinaEVHome (reporting CIC Bluebook)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "CIC Bluebook (reported by ChinaEVHome) documents third‑party supplier concentration in China’s urban NOA market: Momenta ~65% and Huawei ~18% share (March 2025–Feb 2026 period), indicating most OEMs will source third‑party NOA stacks rather than build all components in‑house. Source (market shares): https://chinaevhome.com/2026/06/16/cic-bluebook-momenta-huawei-control-over-80-of-china-urban-noa-market/",
+  "url": "https://chinaevhome.com/2026/06/16/cic-bluebook-momenta-huawei-control-over-80-of-china-urban-noa-market/",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ChinaEVHome (reporting CIC Bluebook)",
+   "published": "2026-06-16",
+   "stance": "supports",
+   "about": "third‑party NOA supplier market shares",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-137",
+  "source_type": "web",
+  "source_name": "ResearchInChina",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "ResearchInChina (Oct 2024) and industry reports document the emergence and adoption of map‑free or HD‑map‑light urban NOA architectures in China (examples cited: Huawei NCA, Xpeng XNGP), which are being promoted to enable nationwide urban NOA scale without full HD‑map coverage. Source: https://www.researchinchina.com/Report/ReportInfo.aspx?id=76027",
+  "url": "https://www.researchinchina.com/Report/ReportInfo.aspx?id=76027",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ResearchInChina",
+   "published": "2024-10",
+   "stance": "supports",
+   "about": "map‑free NOA technical trend in China",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-138",
+  "source_type": "web",
+  "source_name": "FEV Consulting; Fire Stone Auto Technology",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "FEV Consulting and industry coverage (May–Apr 2026) report expansion of Vehicle‑Road‑Cloud integration pilot cities in China and note roadside perception supplementation is being deployed to improve urban NOA reliability and scale. Source (FEV PDF): https://www.fev-consulting.com/app/uploads/2026/04/FEV-Consulting-China-Annual-Report-of-China-Automotive-2025-EN-Version.pdf ; Source (industry summary): https://www.sdfs-auto.com/news/dual-engines-urban-noa-becomes-the-battlefro-85541243.html",
+  "url": "https://www.fev-consulting.com/app/uploads/2026/04/FEV-Consulting-China-Annual-Report-of-China-Automotive-2025-EN-Version.pdf",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "FEV Consulting; Fire Stone Auto Technology",
+   "published": "2026-04 (FEV) / 2026-05-25 (Fire Stone)",
+   "stance": "supports",
+   "about": "vehicle‑road‑cloud pilots and roadside perception supporting urban NOA",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-139",
+  "source_type": "web",
+  "source_name": "ChinaEVHome (reporting CIC Bluebook); ResearchInChina",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "CIC Bluebook and ResearchInChina data show urban NOA is moving from high‑end differentiation into mid‑price segments (research cites rapid penetration in RMB 200k–400k segment and projections that the 200k–400k segment will approach very high penetration by 2030). Source: https://chinaevhome.com/2026/06/16/cic-bluebook-momenta-huawei-control-over-80-of-china-urban-noa-market/ and https://www.researchinchina.com/Report/ReportInfo.aspx?id=76027",
+  "url": "https://chinaevhome.com/2026/06/16/cic-bluebook-momenta-huawei-control-over-80-of-china-urban-noa-market/",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ChinaEVHome (reporting CIC Bluebook); ResearchInChina",
+   "published": "2026-06-16 (ChinaEVHome reporting) / 2024-10 (ResearchInChina)",
+   "stance": "supports",
+   "about": "price‑segment penetration of urban NOA",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G68-CN-WEB-140",
+  "source_type": "web",
+  "source_name": "Inference (sources: BMW press; Momenta; CIC Bluebook; ResearchInChina; Frost)",
+  "derivative": "G68",
+  "market": "CN",
+  "text": "Inference (based on the sources above): because (a) BMW has committed to China‑specific, partner‑built NOA for its Neue Klasse models (BMW + Momenta/Amap), (b) third‑party suppliers (Momenta/Huawei) dominate the Chinese NOA stack, and (c) industry forecasts show rapid penetration of urban NOA into the 200k–400k RMB segment and strong regulatory/infrastructure support through 2030, it is reasonable to expect premium Chinese‑market long‑wheelbase models in the BMW 5‑series class (G68) to be offered with progressively capable urban NOA (feature activation, OTA upgrades, and subscription options) during the 2028–2031 window. Sources for this inference: BMW press release (Auto China 2026): https://www.press.bmwgroup.com/global/article/detail/T0457355EN/the-start-of-a-new-era-the-bmw-group-at-auto-china-2026?forceSitePreference=DESKTOP ; Momenta announcement 2025: https://www.momenta.ai/en/article/284.html ; CIC Bluebook summary: https://chinaevhome.com/2026/06/16/cic-bluebook-momenta-huawei-control-over-80-of-china-urban-noa-market/ ; ResearchInChina report (Oct 2024): https://www.researchinchina.com/Report/ReportInfo.aspx?id=76027 ; Frost analysis (Jul 6, 2026): https://www.frost.com/growth-opportunity-news/mobility-automotive-transportation/digital-software/growth-in-china-passenger-vehicle-navigation-on-autopilot-noa-market-to-hinge-on-delivery-of-scalable-safe-and-commercially-sustainable-urban-autonomy-experiences/",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0457355EN/the-start-of-a-new-era-the-bmw-group-at-auto-china-2026?forceSitePreference=DESKTOP",
+  "retrieved_at": "2026-10-11T07:07:16.559152Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Inference (sources: BMW press; Momenta; CIC Bluebook; ResearchInChina; Frost)",
+   "published": "derived 2026",
+   "stance": "neutral",
+   "about": "inference for BMW G68‑segment NOA deployment 2028–2031",
+   "question_kind": "trend"
+  }
+ }
+]

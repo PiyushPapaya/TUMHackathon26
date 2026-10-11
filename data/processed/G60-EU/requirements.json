@@ -1,195 +1,30 @@
 [
  {
-  "id": "REQ-G60-EU-001",
-  "title": "Improve Electric Range for the successor",
-  "description": "Address the customer pain or unmet need around Electric Range with a measurable user outcome.",
-  "acceptance_criterion": "On a fixed 200 km mixed urban/motorway trip starting at 100% charge, at least 80 of 100 BEV owners rate electric-range adequacy at least 4 on a 1-5 scale after the trip. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
-  "category": "range_charging",
+  "id": "REQ-G60-EU-832ea7",
+  "title": "Infotainment responds immediately to touch and voice so interactions feel instantaneous",
+  "description": "When the driver or passenger touches the centre screen or uses voice, the system reacts without noticeable delay so interactions feel immediate and natural (no visible lag, no spinning/loading states). This reduces frustration and makes routine tasks feel fast.",
+  "acceptance_criterion": "Instrumented in-vehicle usability test: 30 participants (EU 5 Series target demographic: ages 30–70, 50% self-identified as non-technical, balanced gender, mix of current BMW owners and prospective buyers) each performs a scripted set of 20 representative touchscreen/voice actions (20 actions × 30 participants = 600 measured actions). Measure system response latency (time from user input — touch or voice command — to first visible UI response). Pass if (a) the median latency across all measured actions ≤ 120 ms, and (b) the 95th percentile latency across all measured actions ≤ 250 ms. Secondary perceptual check: at least 90% of participants must rate perceived responsiveness ≥ 4 on a 1–5 Likert scale after the session. Test runs must be performed in at least 5 vehicles (different build dates) under typical in-car conditions (ambient temp 15–25°C, normal cellular signal).",
+  "category": "infotainment_digital",
   "signal_ids": [
-   "SIG-G60-EU-002"
+   "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "SIG-G60-EU-g1-1e0b051a8af5c4f8",
+   "SIG-G60-EU-g1-ebd9a459a9c67b55",
+   "SIG-G60-EU-g1-b6073d391f9db2d1"
   ],
-  "score": 47.9,
+  "score": 62.9,
   "rank": 1,
   "score_breakdown": {
    "customer_pain": {
-    "value": 1.0,
+    "value": 0.676,
     "weight": 0.25,
-    "contribution": 25.0,
-    "explanation": "Mostly complaints (Difficult to Use / Likes | Difficult to Use), 12 mentions"
+    "contribution": 16.9,
+    "explanation": "Mostly competitor advantages (Difficult to Use), 17 mentions"
    },
    "reach": {
-    "value": 0.707,
+    "value": 0.652,
     "weight": 0.2,
-    "contribution": 14.1,
-    "explanation": "12 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
-   },
-   "satisfaction_gap": {
-    "value": 0.517,
-    "weight": 0.2,
-    "contribution": 10.3,
-    "explanation": "Fuel economy/ energy efficiency: mean 7.45 of 10"
-   },
-   "competitive_pressure": {
-    "value": 0.0,
-    "weight": 0.15,
-    "contribution": 0.0,
-    "explanation": "no trusted web source shows a competitor advantage"
-   },
-   "future_relevance": {
-    "value": 0.1,
-    "weight": 0.1,
-    "contribution": 1.0,
-    "explanation": "no trend behind it"
-   },
-   "effort_inverse": {
-    "value": 0.6,
-    "weight": 0.1,
-    "contribution": 6.0,
-    "explanation": "effort estimate M"
-   }
-  },
-  "rationale": "Ranked mainly because of customer pain (25 points) and reach (14.1 points). Evidence level B: Only 12 mentions, but confirmed by 2 independent source types.",
-  "evidence_level": "B",
-  "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available.",
-   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
-  ],
-  "uncertainties": [
-   "Needs PM wording review before approval."
-  ],
-  "offer_check": {
-   "status": "unknown",
-   "note": "Check not possible (RuntimeError).",
-   "option_code": null
-  },
-  "effort": "M",
-  "status": "proposed",
-  "version": 1,
-  "horizon": "today",
-  "robustness": {
-   "rank_min": 1,
-   "rank_max": 1,
-   "top3_share": 1.0,
-   "runs": 500
-  },
-  "segment_conflicts": [],
-  "business": {
-   "volume_2025": 115000,
-   "volume_2030": 127000,
-   "growth_pct": 15.5,
-   "market_share": 0.402,
-   "note": "Sales context from sales_volumes.xlsx"
-  },
-  "stable_key": "",
-  "badges": []
- },
- {
-  "id": "REQ-G60-EU-004",
-  "title": "Improve Ease of loading/ unloading luggage for the successor",
-  "description": "Address the customer pain or unmet need around Ease of loading/ unloading luggage with a measurable user outcome.",
-  "acceptance_criterion": "At least 80 of 100 customers independently load and unload two 55 x 40 x 20 cm suitcases within 60 seconds each way, without moving the rear seats or needing assistance. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
-  "category": "comfort_space",
-  "signal_ids": [
-   "SIG-G60-EU-008"
-  ],
-  "score": 33.5,
-  "rank": 2,
-  "score_breakdown": {
-   "customer_pain": {
-    "value": 1.0,
-    "weight": 0.25,
-    "contribution": 25.0,
-    "explanation": "Mostly complaints, 1 mentions"
-   },
-   "reach": {
-    "value": 0.204,
-    "weight": 0.2,
-    "contribution": 4.1,
-    "explanation": "1 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
-   },
-   "satisfaction_gap": {
-    "value": 0.587,
-    "weight": 0.2,
-    "contribution": 11.7,
-    "explanation": "Ease of loading/ unloading luggage: mean 7.24 of 10"
-   },
-   "competitive_pressure": {
-    "value": 0.0,
-    "weight": 0.15,
-    "contribution": 0.0,
-    "explanation": "no trusted web source shows a competitor advantage"
-   },
-   "future_relevance": {
-    "value": 0.1,
-    "weight": 0.1,
-    "contribution": 1.0,
-    "explanation": "no trend behind it"
-   },
-   "effort_inverse": {
-    "value": 0.6,
-    "weight": 0.1,
-    "contribution": 6.0,
-    "explanation": "effort estimate M"
-   }
-  },
-  "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (11.7 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
-  "evidence_level": "C",
-  "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available.",
-   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
-  ],
-  "uncertainties": [
-   "Needs PM wording review before approval."
-  ],
-  "offer_check": {
-   "status": "unknown",
-   "note": "Check not possible (RuntimeError).",
-   "option_code": null
-  },
-  "effort": "M",
-  "status": "proposed",
-  "version": 1,
-  "horizon": "today",
-  "robustness": {
-   "rank_min": 2,
-   "rank_max": 3,
-   "top3_share": 1.0,
-   "runs": 500
-  },
-  "segment_conflicts": [],
-  "business": {
-   "volume_2025": 115000,
-   "volume_2030": 127000,
-   "growth_pct": 15.5,
-   "market_share": 0.402,
-   "note": "Sales context from sales_volumes.xlsx"
-  },
-  "stable_key": "",
-  "badges": []
- },
- {
-  "id": "REQ-G60-EU-003",
-  "title": "Improve Connected services for the successor",
-  "description": "Address the customer pain or unmet need around Connected services with a measurable user outcome.",
-  "acceptance_criterion": "At least 80 of 100 customers independently pair their phone, reconnect it after a vehicle restart and access their saved navigation destination, with all three tasks completed within 3 minutes in a stationary vehicle. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
-  "category": "infotainment_digital",
-  "signal_ids": [
-   "SIG-G60-EU-007"
-  ],
-  "score": 32.9,
-  "rank": 3,
-  "score_breakdown": {
-   "customer_pain": {
-    "value": 1.0,
-    "weight": 0.25,
-    "contribution": 25.0,
-    "explanation": "Mostly complaints, 1 mentions"
-   },
-   "reach": {
-    "value": 0.204,
-    "weight": 0.2,
-    "contribution": 4.1,
-    "explanation": "1 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+    "contribution": 13.0,
+    "explanation": "17 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.543,
@@ -198,16 +33,16 @@
     "explanation": "Connected services: mean 7.37 of 10"
    },
    "competitive_pressure": {
-    "value": 0.0,
+    "value": 1.0,
     "weight": 0.15,
-    "contribution": 0.0,
-    "explanation": "no trusted web source shows a competitor advantage"
+    "contribution": 15.0,
+    "explanation": "competitor advantage backed by a high-trust web source"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.11,
     "weight": 0.1,
-    "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "contribution": 1.1,
+    "explanation": "no trend behind it; market growth 2025-2030: +10.4 %"
    },
    "effort_inverse": {
     "value": 0.6,
@@ -216,18 +51,35 @@
     "explanation": "effort estimate M"
    }
   },
-  "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (10.9 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
-  "evidence_level": "C",
+  "rationale": "Ranked mainly because of customer pain (16.9 points) and competitive pressure (15 points). Evidence level A: 17 mentions, confirmed by 3 independent source types.",
+  "evidence_level": "A",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available.",
-   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
+   "Test vehicles under test have production-level software representative of the candidate release.",
+   "Instrumentation is capable of measuring from input event to first-frame UI update with ±10 ms precision.",
+   "Typical in-car connectivity conditions are available for any cloud-backed UI actions; purely local UI actions should meet latency targets independently of network.",
+   "Tasks are implemented as they would be presented to customers in production software (no engineering-only shortcuts).",
+   "Voice invocation counts as one interaction if it completes the task without intermediate screen taps.",
+   "Driving-simulated environment is used to emulate attention constraints; non-safety-critical tasks may allow brief glances.",
+   "Driving-simulator prompts are representative of typical on-road prompts (safety-critical warnings that must be presented are excluded from suppression).",
+   "’Blocking modal’ is defined as a dialog that requires explicit user dismissal before continuing the primary driving UI.",
+   "Production-level wording and localization are used for prompts during the test.",
+   "The 2025 study questionnaire and scoring rubric are available to replicate exactly.",
+   "Sample quotas will match the original study to ensure comparability (age, country, ownership status).",
+   "Connected-services scope includes companion app flows and OTA update experience as evaluated in the original instrument."
   ],
   "uncertainties": [
-   "Needs PM wording review before approval."
+   "Current G60 baseline latency (median and 95th percentile) is not provided in the signals; baseline measurements must be taken before A/B comparisons.",
+   "Some features (map rendering, large OTA-installed apps) may have different performance characteristics; scope here covers standard cockpit UI actions (menus, climate, media, common voice intents).",
+   "The existing G60 task interaction counts and times are not supplied in the signals; comparator baseline should be measured before formal A/B comparisons.",
+   "Some customers may prefer physical controls; this requirement targets touchscreen/voice flow efficiency, not whether physical knobs are retained.",
+   "Signals describe prompts as 'intrusive' but do not catalogue which specific dialogs trigger the most complaints; a prompt audit is required to prioritise changes.",
+   "Regulatory-required safety warnings may limit the ability to suppress certain dialogs; those exceptions will be documented and excluded from the suppression metric.",
+   "If the original 2025 study instrument or sampling frame is not available, an equivalent validated questionnaire must be produced before testing.",
+   "Some issues (e.g., app store approvals or third-party service outages) are external to vehicle software and may affect results."
   ],
   "offer_check": {
-   "status": "unknown",
-   "note": "Check not possible (RuntimeError).",
+   "status": "standard",
+   "note": "BMW Operating System 8.5 is the infotainment platform enabling fast touch response and integration with the voice assistant. (BMW Operating System 8.5)",
    "option_code": null
   },
   "effort": "M",
@@ -235,45 +87,228 @@
   "version": 1,
   "horizon": "today",
   "robustness": {
-   "rank_min": 3,
-   "rank_max": 4,
-   "top3_share": 0.646,
+   "rank_min": 1,
+   "rank_max": 2,
+   "top3_share": 1.0,
    "runs": 500
   },
   "segment_conflicts": [],
   "business": {
    "volume_2025": 115000,
    "volume_2030": 127000,
-   "growth_pct": 15.5,
+   "growth_pct": 10.435,
    "market_share": 0.402,
-   "note": "Sales context from sales_volumes.xlsx"
+   "note": ""
   },
-  "stable_key": "",
-  "badges": []
+  "stable_key": "832ea7",
+  "badges": [],
+  "outlook": null
  },
  {
-  "id": "REQ-G60-EU-006",
-  "title": "Improve Rear interior roominess for the successor",
-  "description": "Address the customer pain or unmet need around Rear interior roominess with a measurable user outcome.",
-  "acceptance_criterion": "At least 80 of 100 customers rate rear-seat knee room at least 4 on a 1-5 scale after a 30-minute trip, with the front seat set to the same documented driver position; include quotas of 33 rear passengers below 170 cm, 34 at 170-185 cm and 33 above 185 cm. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
+  "id": "REQ-G60-EU-99ce7c",
+  "title": "Deliver usable electric range and consistent cold‑weather performance that meets customer expectations",
+  "description": "Customers can complete typical daily trips on electric power even in cold weather and do not experience the large shortfalls vs advertised range that cause slower driving or extra charging stops. Variants that today are praised for reliable range keep that reliability across temperatures and driving styles.",
+  "acceptance_criterion": "Measure electric‑only real‑world range in a standardized cold‑weather test (ambient temperature -7 ±2 °C) using N=20 production successor vehicles with 100% start SOC, standardized urban/suburban driving profile (50% city, 50% mixed speed), and no battery preconditioning. Record the distance driven until the vehicle exits electric‑only mode. Pass if (a) the fleet mean real‑world cold‑weather electric range >= 60 km, and (b) no more than 10% of tested vehicles have an individual range < 50 km. Report per‑vehicle values and full test logs. When variants today receive praise for reliable range, those variants must meet the same pass thresholds in this test.",
+  "category": "range_charging",
+  "signal_ids": [
+   "SIG-G60-EU-g1-8cc0e559a909d782",
+   "SIG-G60-EU-g1-fdeec05dca30e2cd",
+   "SIG-G60-EU-g1-0a8be1f6051bbae1"
+  ],
+  "score": 61.9,
+  "rank": 2,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.806,
+    "weight": 0.25,
+    "contribution": 20.1,
+    "explanation": "Mostly complaints (Difficult to Use / Likes), 18 mentions"
+   },
+   "reach": {
+    "value": 0.671,
+    "weight": 0.2,
+    "contribution": 13.4,
+    "explanation": "18 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
+   },
+   "satisfaction_gap": {
+    "value": 0.517,
+    "weight": 0.2,
+    "contribution": 10.3,
+    "explanation": "Fuel economy/ energy efficiency: mean 7.45 of 10"
+   },
+   "competitive_pressure": {
+    "value": 1.0,
+    "weight": 0.15,
+    "contribution": 15.0,
+    "explanation": "competitor advantage backed by a high-trust web source"
+   },
+   "future_relevance": {
+    "value": 0.11,
+    "weight": 0.1,
+    "contribution": 1.1,
+    "explanation": "no trend behind it; market growth 2025-2030: +10.4 %"
+   },
+   "effort_inverse": {
+    "value": 0.2,
+    "weight": 0.1,
+    "contribution": 2.0,
+    "explanation": "effort estimate L"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (20.1 points) and competitive pressure (15 points). Evidence level A: 18 mentions, confirmed by 3 independent source types.",
+  "evidence_level": "A",
+  "assumptions": [
+   "Typical customer daily trips in target markets are adequately represented by a 50/50 city/mixed driving profile and a 60 km cold‑weather target is aligned with customer expectations for a premium PHEV sedan in 3–5 years.",
+   "Successor will offer PHEV variants aimed at providing at least this level of electric range.",
+   "The onboard estimator will have access to typical vehicle sensors and state data used today to compute range estimates; the validation focuses on end‑user accuracy rather than internal algorithm details.",
+   "In‑car UI can surface charger handshake information and estimated time‑to‑charge in route planning and during charging sessions.",
+   "User trial scenarios reflect common EU public‑charging conditions (varying charger power, congestion)."
+  ],
+  "uncertainties": [
+   "Current baseline cold‑weather measured range for the 2025 G60 under this exact protocol is not available and should be measured before comparative claims.",
+   "Real‑world results may vary by optional equipment (wheel size, roof load) not fully controlled in the fleet sample; test vehicles must be representative of common customer configurations.",
+   "Baseline MAPE for the current G60 under the same protocol must be measured to support relative claims; this requirement sets an absolute target for successor validation.",
+   "Actual charger handshake behaviour in the field may vary by charger operator; validation uses simulated or recorded real‑world handshake logs to ensure reproducible user trials."
+  ],
+  "offer_check": {
+   "status": "not_offered",
+   "note": "No listed option provides battery thermal management, heat‑pump or explicit preconditioning to ensure reliable cold‑weather range.",
+   "option_code": null
+  },
+  "effort": "L",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 1,
+   "rank_max": 2,
+   "top3_share": 1.0,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 115000,
+   "volume_2030": 127000,
+   "growth_pct": 10.435,
+   "market_share": 0.402,
+   "note": ""
+  },
+  "stable_key": "99ce7c",
+  "badges": [],
+  "outlook": null
+ },
+ {
+  "id": "REQ-G60-EU-9bb8fa",
+  "title": "Make loading/unloading typical checked suitcases and carry‑ons quick and ergonomically easy without folding rear seats",
+  "description": "When using the 5 Series luggage area, a single adult can load common checked suitcases and carry‑on bags quickly and without awkward tilting, lifting above shoulder height, or having to fold rear seats. Customers perceive loading/unloading as noticeably easier than the current model.",
+  "acceptance_criterion": "Two-part validation: (1) Subjective: In a controlled EU consumer study that repeats the 2025 methodology, the mean ease‑of‑loading/unloading score increases from the G60 baseline of 7.2 (EU study 2025) to at least 8.2. Sample: 200 participants matched to the 5 Series shopper/owner demographic (age, gender, household travel behaviour). Statistical test: paired or matched sample against the G60 baseline or a matched G60 control group; result significant at p<0.05. (2) Objective task: 30 different adult participants (balanced by sex, ages 18–65, carrying typical luggage-handling strength) each perform an individual loading trial: load 3 checked suitcases (assumed dimensions 76×50×32 cm) plus 2 cabin bags (assumed dimensions 55×40×20 cm) into the luggage area without folding rear seats. Success is defined as completing the load within 90 seconds without needing two‑person assistance or forceful wedging. Pass threshold: ≥27/30 successful trials (90%). Record time, need for assistance, and any damage to luggage.",
   "category": "comfort_space",
   "signal_ids": [
-   "SIG-G60-EU-010"
+   "SIG-G60-EU-g1-9cf42e0d041bc38d",
+   "SIG-G60-EU-g1-556aea849ce1c333"
   ],
-  "score": 32.5,
+  "score": 39.2,
+  "rank": 3,
+  "score_breakdown": {
+   "customer_pain": {
+    "value": 0.667,
+    "weight": 0.25,
+    "contribution": 16.7,
+    "explanation": "Mostly competitor advantages, 3 mentions"
+   },
+   "reach": {
+    "value": 0.274,
+    "weight": 0.2,
+    "contribution": 5.5,
+    "explanation": "3 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
+   },
+   "satisfaction_gap": {
+    "value": 0.587,
+    "weight": 0.2,
+    "contribution": 11.7,
+    "explanation": "Ease of loading/ unloading luggage: mean 7.24 of 10"
+   },
+   "competitive_pressure": {
+    "value": 1.0,
+    "weight": 0.15,
+    "contribution": 15.0,
+    "explanation": "competitor advantage backed by a high-trust web source"
+   },
+   "future_relevance": {
+    "value": 0.11,
+    "weight": 0.1,
+    "contribution": 1.1,
+    "explanation": "no trend behind it; market growth 2025-2030: +10.4 %"
+   },
+   "effort_inverse": {
+    "value": 0.6,
+    "weight": 0.1,
+    "contribution": 6.0,
+    "explanation": "effort estimate M"
+   }
+  },
+  "rationale": "Ranked mainly because of customer pain (16.7 points) and competitive pressure (15 points). Evidence level C: Only 3 mentions: a hint, not a solid finding.",
+  "evidence_level": "C",
+  "assumptions": [
+   "Standard checked suitcase dimensions for the test are 76×50×32 cm and cabin bag dimensions 55×40×20 cm.",
+   "90 seconds is a realistic target for a single person to load this set of luggage; this target assumes the luggage aperture height, sill design and cargo floor layout allow ergonomic placement.",
+   "The EU 2025 study methodology for the subjective score is available and can be replicated for a matched sample."
+  ],
+  "uncertainties": [
+   "Objective baseline measures of G60 real‑world loading success (same suitcase set and task) are not available and must be measured before final validation.",
+   "The 2025 subjective baseline (mean 7.2) must be verified to be from a comparable sample and questionnaire wording; differences in protocol could affect comparability."
+  ],
+  "offer_check": {
+   "status": "optional",
+   "note": "Automatic tailgate and Comfort Access included, enabling hands-free, faster ergonomic loading/unloading without folding rear seats. (TRAVEL PAKET)",
+   "option_code": "7LK"
+  },
+  "effort": "M",
+  "status": "proposed",
+  "version": 1,
+  "horizon": "today",
+  "robustness": {
+   "rank_min": 3,
+   "rank_max": 5,
+   "top3_share": 0.93,
+   "runs": 500
+  },
+  "segment_conflicts": [],
+  "business": {
+   "volume_2025": 115000,
+   "volume_2030": 127000,
+   "growth_pct": 10.435,
+   "market_share": 0.402,
+   "note": ""
+  },
+  "stable_key": "9bb8fa",
+  "badges": [],
+  "outlook": null
+ },
+ {
+  "id": "REQ-G60-EU-29dc23",
+  "title": "Rear-seat occupants perceive and experience noticeably more room for long trips, including taller passengers",
+  "description": "Rear passengers—especially taller adults—experience improved legroom and headroom for multi‑hour journeys: they report less leg/head discomfort and objectively have measurable knee clearance behind a typical front seat position.",
+  "acceptance_criterion": "Two-part validation: (1) Subjective: Using the same EU study methodology, mean rear interior roominess score improves from the G60 baseline of 7.5 to at least 8.5. Sample: 200 participants representative of 5 Series shoppers/owners; ensure ≥30% of participants are tall (height ≥185 cm). Statistical significance p<0.05 versus baseline or matched G60 control. (2) Objective: Seating‑fit task: pairs of adults where at least one occupant is ≥185 cm sit in the rear behind a front seat set to a representative driving position for a 95th‑percentile driver. Measure knee clearance (rear occupant femur to front seat back) and head clearance. Pass if ≥80% of tested rear occupants have ≥50 mm knee clearance and no head contact at normal posture. Test sample: 30 rear occupant tests with the described height distribution and repeated on 5 vehicles (total 150 measurements).",
+  "category": "comfort_space",
+  "signal_ids": [
+   "SIG-G60-EU-g1-c05e4775de723036",
+   "SIG-G60-EU-g1-87f345847daff4e6"
+  ],
+  "score": 38.0,
   "rank": 4,
   "score_breakdown": {
    "customer_pain": {
-    "value": 1.0,
+    "value": 0.583,
     "weight": 0.25,
-    "contribution": 25.0,
-    "explanation": "Mostly complaints, 1 mentions"
+    "contribution": 14.6,
+    "explanation": "Mostly competitor advantages, 6 mentions"
    },
    "reach": {
-    "value": 0.204,
+    "value": 0.387,
     "weight": 0.2,
-    "contribution": 4.1,
-    "explanation": "1 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+    "contribution": 7.7,
+    "explanation": "6 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.513,
@@ -282,82 +317,86 @@
     "explanation": "Rear interior roominess: mean 7.46 of 10"
    },
    "competitive_pressure": {
-    "value": 0.0,
+    "value": 0.6,
     "weight": 0.15,
-    "contribution": 0.0,
-    "explanation": "no trusted web source shows a competitor advantage"
+    "contribution": 9.0,
+    "explanation": "competitor advantage backed by a medium-trust web source"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.11,
     "weight": 0.1,
-    "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "contribution": 1.1,
+    "explanation": "no trend behind it; market growth 2025-2030: +10.4 %"
    },
    "effort_inverse": {
-    "value": 0.6,
+    "value": 0.2,
     "weight": 0.1,
-    "contribution": 6.0,
-    "explanation": "effort estimate M"
+    "contribution": 2.0,
+    "explanation": "effort estimate L"
    }
   },
-  "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (10.3 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
-  "evidence_level": "C",
+  "rationale": "Ranked mainly because of customer pain (14.6 points) and satisfaction gap (10.3 points). Evidence level B: Only 6 mentions, but confirmed by 2 independent source types.",
+  "evidence_level": "B",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available.",
-   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
+   "‘Comfortable’ knee clearance is operationalised as ≥50 mm of free space in normal seating posture for sustained travel.",
+   "Front seat driving position for the 95th‑percentile driver will be defined according to an agreed EU anthropometric reference for comparability.",
+   "The EU 2025 rear‑roominess study protocol and questionnaire are reproducible for the subjective part."
   ],
   "uncertainties": [
-   "Needs PM wording review before approval."
+   "A directly comparable objective baseline (G60 knee/head clearance measured using the exact test setup above) is not available and must be measured before final validation; Autocar’s published figure (~740 mm knee room) uses a different test method.",
+   "Passenger posture during long trips may vary; the 50 mm knee clearance assumption is a comfort threshold based on ergonomic literature but could be refined by further user testing."
   ],
   "offer_check": {
-   "status": "unknown",
-   "note": "Check not possible (RuntimeError).",
+   "status": "not_offered",
+   "note": "No listed option increases rear legroom or offers rear-seat adjustment to provide noticeably more space for taller passengers.",
    "option_code": null
   },
-  "effort": "M",
+  "effort": "L",
   "status": "proposed",
   "version": 1,
   "horizon": "today",
   "robustness": {
-   "rank_min": 4,
+   "rank_min": 3,
    "rank_max": 5,
-   "top3_share": 0.0,
+   "top3_share": 0.064,
    "runs": 500
   },
   "segment_conflicts": [],
   "business": {
    "volume_2025": 115000,
    "volume_2030": 127000,
-   "growth_pct": 15.5,
+   "growth_pct": 10.435,
    "market_share": 0.402,
-   "note": "Sales context from sales_volumes.xlsx"
+   "note": ""
   },
-  "stable_key": "",
-  "badges": []
+  "stable_key": "29dc23",
+  "badges": [],
+  "outlook": null
  },
  {
-  "id": "REQ-G60-EU-005",
-  "title": "Improve Heating/ ventilation/ air conditioning for the successor",
-  "description": "Address the customer pain or unmet need around Heating/ ventilation/ air conditioning with a measurable user outcome.",
-  "acceptance_criterion": "At least 80 of 100 customers independently set their preferred temperature within 15 seconds and rate thermal comfort at least 4 on a 1-5 scale after 10 minutes; test separate sessions with starting cabin temperatures of 10 and 30 degrees Celsius. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
+  "id": "REQ-G60-EU-00be3c",
+  "title": "Deliver faster, more consistent cabin thermal comfort and perceived HVAC performance for all seating positions",
+  "description": "Customers experience the cabin reaching a comfortable temperature quickly after startup and report consistent comfort across front and rear seats (no cold/hot spots). Perceived heating/ventilation/air conditioning performance is improved versus the current model.",
+  "acceptance_criterion": "Two-part validation: (1) Subjective: In a repeat of the 2025 EU study methodology, the mean HVAC satisfaction score increases from the G60 baseline of 7.5 to at least 8.5. Sample: 200 participants matched to 5 Series shoppers/owners; statistical significance p<0.05 versus baseline or matched control. (2) Objective: Environmental‑chamber test: with vehicle cabin pre‑cooled to -10°C ambient, set climate to Auto and target 21°C. Measured at front and rear seating positions, the cabin must reach 21°C ±2°C within 8 minutes and show ≤2°C temperature variance between seating positions within 15 minutes. Test sample: 15 vehicles, 3 repeated runs each (45 runs). Pass threshold: ≥42/45 runs meet the timing and variance criteria (≥93%). Record setup, sensor locations and repeatability.",
   "category": "comfort_space",
   "signal_ids": [
-   "SIG-G60-EU-009"
+   "SIG-G60-EU-g1-51bf94f3f5a2546a",
+   "SIG-G60-EU-g1-943eafb0e48a7781"
   ],
-  "score": 32.4,
+  "score": 34.7,
   "rank": 5,
   "score_breakdown": {
    "customer_pain": {
-    "value": 1.0,
+    "value": 0.75,
     "weight": 0.25,
-    "contribution": 25.0,
-    "explanation": "Mostly complaints, 1 mentions"
+    "contribution": 18.8,
+    "explanation": "Mostly complaints, 2 mentions"
    },
    "reach": {
-    "value": 0.204,
+    "value": 0.224,
     "weight": 0.2,
-    "contribution": 4.1,
-    "explanation": "1 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+    "contribution": 4.5,
+    "explanation": "2 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.51,
@@ -366,16 +405,16 @@
     "explanation": "Heating/ ventilation/ air conditioning: mean 7.47 of 10"
    },
    "competitive_pressure": {
-    "value": 0.0,
+    "value": 0.6,
     "weight": 0.15,
-    "contribution": 0.0,
-    "explanation": "no trusted web source shows a competitor advantage"
+    "contribution": 9.0,
+    "explanation": "competitor advantage backed by a medium-trust web source"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.11,
     "weight": 0.1,
-    "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "contribution": 1.1,
+    "explanation": "no trend behind it; market growth 2025-2030: +10.4 %"
    },
    "effort_inverse": {
     "value": 0.6,
@@ -384,19 +423,21 @@
     "explanation": "effort estimate M"
    }
   },
-  "rationale": "Ranked mainly because of customer pain (25 points) and satisfaction gap (10.2 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
+  "rationale": "Ranked mainly because of customer pain (18.8 points) and satisfaction gap (10.2 points). Evidence level C: Only 2 mentions: a hint, not a solid finding.",
   "evidence_level": "C",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available.",
-   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
+   "Comfort target is defined as 21°C cabin air temperature; ±2°C is considered perceivably consistent across seats for typical occupants.",
+   "8 minutes to reach target from -10°C is a realistic and customer‑meaningful improvement target for a successor model.",
+   "The EU 2025 HVAC satisfaction study protocol is reproducible for the subjective part."
   ],
   "uncertainties": [
-   "Needs PM wording review before approval."
+   "Objective baseline metrics for G60 time‑to‑temperature and inter-seat variance under the exact chamber protocol above are not available and must be measured before final validation.",
+   "The Mercedes‑E‑Class signal highlights competitor comfort positioning (softer ride) rather than direct HVAC metrics; using it assumes customers link overall perceived cabin comfort to HVAC responsiveness."
   ],
   "offer_check": {
-   "status": "unknown",
-   "note": "Check not possible (RuntimeError).",
-   "option_code": null
+   "status": "optional",
+   "note": "Contains 4-zone climate control, active front-seat ventilation and front/rear seat heating to speed and equalize thermal comfort and HVAC perception. (COMFORT PAKET)",
+   "option_code": "7VB"
   },
   "effort": "M",
   "status": "proposed",
@@ -412,36 +453,39 @@
   "business": {
    "volume_2025": 115000,
    "volume_2030": 127000,
-   "growth_pct": 15.5,
+   "growth_pct": 10.435,
    "market_share": 0.402,
-   "note": "Sales context from sales_volumes.xlsx"
+   "note": ""
   },
-  "stable_key": "",
-  "badges": []
+  "stable_key": "00be3c",
+  "badges": [],
+  "outlook": null
  },
  {
-  "id": "REQ-G60-EU-007",
-  "title": "Maintain Drive, driving dynamics and chassis, overall technology as a proven strength",
-  "description": "Keep the customer experience around Drive, driving dynamics and chassis, overall technology at least at today's level.",
-  "acceptance_criterion": "After the same 200 km mixed urban/motorway route, mean paired successor-minus-baseline satisfaction for overall driving experience on the same 1-5 scale must be at least 0.0 points. Report the paired difference and its 95% confidence interval; an interval spanning negative values requires PM review before claiming preservation. Baseline: a production model-year 2025 G60/i5 with the same powertrain, trim and software version recorded before testing. Measure and freeze the baseline before testing the successor; use the same participants, route, duration, load, tyres, ambient conditions and rating questions. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
+  "id": "REQ-G60-EU-fa70ef",
+  "title": "Keep the car's engaging, quiet and comfortable driving feel",
+  "description": "Drivers experience the successor 5 Series as at least as fun, refined and comfortable to drive as the current G60: strong, quiet acceleration, confident handling, and well‑positioned, intuitive controls across everyday and touring routes.",
+  "acceptance_criterion": "Conduct a blinded on‑road comparative driving study with N=30 licensed drivers (balanced by age 25–65 and gender, mixed urban/suburban/touring driving experience). Each driver completes the same 60 km route in the baseline G60 (model year 2025) and the successor car, in randomized order, with matched tire type and load. After each drive, drivers rate 'Overall Driving Experience' on a 1–10 scale and answer a 5‑question usability checklist about control placement. Pass if (a) the successor's mean Overall Driving Experience rating is >= the baseline G60 mean (baseline mean must be measured before validation) and (b) at least 80% of drivers give 'acceptable' or better responses on the usability checklist for the successor. Record and report per‑driver results; report fails if more than 1 vehicle shows a systematic negative outlier (>=1.5 points lower than baseline mean).",
   "category": "driving_experience",
   "signal_ids": [
-   "SIG-G60-EU-001"
+   "SIG-G60-EU-g1-2eb6c60338293688",
+   "SIG-G60-EU-g1-0d3f4592c15c0f5f",
+   "SIG-G60-EU-g1-545ac46f6e8e9200"
   ],
-  "score": 31.4,
+  "score": 31.5,
   "rank": 6,
   "score_breakdown": {
    "customer_pain": {
     "value": 0.4,
     "weight": 0.25,
     "contribution": 10.0,
-    "explanation": "Mostly strengths (Likes / Difficult to Use | Likes), 24 mentions"
+    "explanation": "Mostly strengths (Likes / Defect | Likes | Difficult to Use), 40 mentions"
    },
    "reach": {
     "value": 1.0,
     "weight": 0.2,
     "contribution": 20.0,
-    "explanation": "24 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+    "explanation": "40 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -456,10 +500,10 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 0.11,
     "weight": 0.1,
-    "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "contribution": 1.1,
+    "explanation": "no trend behind it; market growth 2025-2030: +10.4 %"
    },
    "effort_inverse": {
     "value": 0.6,
@@ -468,19 +512,18 @@
     "explanation": "effort estimate M"
    }
   },
-  "rationale": "Ranked mainly because of reach (20 points) and customer pain (10 points). Evidence level B: 24 mentions, but from a single source type.",
+  "rationale": "Ranked mainly because of reach (20 points) and customer pain (10 points). Evidence level B: 40 mentions, but from a single source type.",
   "evidence_level": "B",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available.",
-   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
+   "A representative baseline G60 (model year 2025) exemplar and its mean Overall Driving Experience rating will be measured prior to validation.",
+   "Test vehicles are configured in representative equipment levels for the 5 Series segment used by customers giving feedback."
   ],
   "uncertainties": [
-   "Needs PM wording review before approval.",
-   "The model-year 2025 baseline measurement and matched customer sample have not yet been collected; measure them before validation."
+   "Baseline G60 mean Overall Driving Experience rating is not yet available and must be measured under the same protocol before a pass/fail decision can be made."
   ],
   "offer_check": {
-   "status": "unknown",
-   "note": "Check not possible (RuntimeError).",
+   "status": "standard",
+   "note": "Adaptive suspension adjusts damping for ride comfort, reduced noise and dynamic, engaging handling. (Adaptives Fahrwerk Professional)",
    "option_code": null
   },
   "effort": "M",
@@ -488,45 +531,46 @@
   "version": 1,
   "horizon": "today",
   "robustness": {
-   "rank_min": 2,
-   "rank_max": 7,
-   "top3_share": 0.354,
+   "rank_min": 3,
+   "rank_max": 6,
+   "top3_share": 0.006,
    "runs": 500
   },
   "segment_conflicts": [],
   "business": {
    "volume_2025": 115000,
    "volume_2030": 127000,
-   "growth_pct": 15.5,
+   "growth_pct": 10.435,
    "market_share": 0.402,
-   "note": "Sales context from sales_volumes.xlsx"
+   "note": ""
   },
-  "stable_key": "",
-  "badges": []
+  "stable_key": "fa70ef",
+  "badges": [],
+  "outlook": null
  },
  {
-  "id": "REQ-G60-EU-002",
-  "title": "Improve ConnectedDrive and Infotainment, overall technology for the successor",
-  "description": "Address the customer pain or unmet need around ConnectedDrive and Infotainment, overall technology with a measurable user outcome.",
-  "acceptance_criterion": "At least 80 of 100 customers independently complete all three tasks without assistance: set a navigation destination, change an audio source and adjust cabin temperature; each task must finish within 30 seconds in a stationary vehicle. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
-  "category": "infotainment_digital",
+  "id": "REQ-G60-EU-70883a",
+  "title": "Use emerging high‑power public charging to materially shorten long‑distance charging stops (assumes broad HVC adoption)",
+  "description": "When customers connect at modern high‑power public chargers available on main corridors, they experience significantly shorter 20–80% charging times compared with current HPC averages and the car reports realistic timelines to the driver.",
+  "acceptance_criterion": "Field trial across N=20 high‑power public charging sessions at CCS‑compatible sites (minimum available peak power 300 kW at the pedestal) in representative EU locations. For each session record peak sustained power and the elapsed time from 20% to 80% SOC. Pass if the median 20–80% time across sessions is <= 15 minutes and at least 70% of sessions achieve a measured peak power >= 200 kW. Also, the vehicle's predicted 20–80% time at session start must be within ±20% of the measured time in at least 80% of sessions. Participants and sessions should reflect typical customer usage (loaded vehicle, ambient temperature logged).",
+  "category": "range_charging",
   "signal_ids": [
-   "SIG-G60-EU-005"
+   "SIG-G60-EU-g1-f04bcceafa4e5e63"
   ],
-  "score": 28.8,
+  "score": 12.0,
   "rank": 7,
   "score_breakdown": {
    "customer_pain": {
-    "value": 1.0,
+    "value": 0.3,
     "weight": 0.25,
-    "contribution": 25.0,
-    "explanation": "Mostly complaints (Difficult to Use / Difficult to Use | Defect), 5 mentions"
+    "contribution": 7.5,
+    "explanation": "Mostly trends, 2 mentions"
    },
    "reach": {
-    "value": 0.456,
+    "value": 0.224,
     "weight": 0.2,
-    "contribution": 9.1,
-    "explanation": "5 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+    "contribution": 4.5,
+    "explanation": "2 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -541,38 +585,40 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 1.0,
     "weight": 0.1,
-    "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "contribution": 10.0,
+    "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +10.4 %"
    },
    "effort_inverse": {
-    "value": 0.6,
+    "value": 0.2,
     "weight": 0.1,
-    "contribution": 6.0,
-    "explanation": "effort estimate M"
+    "contribution": 2.0,
+    "explanation": "effort estimate L"
    }
   },
-  "rationale": "Ranked mainly because of customer pain (25 points) and reach (9.1 points). Evidence level C: Only 5 mentions: a hint, not a solid finding.",
-  "evidence_level": "C",
+  "rationale": "Ranked mainly because of future relevance (10 points) and customer pain (7.5 points). Evidence level D: Bet on the next generation: only 0 direct customer mentions, the rest rests on trends (assumption).",
+  "evidence_level": "D",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available.",
-   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
+   "Public high‑power charging infrastructure (modular HYC1000‑class or comparable CCS pedestals) is installed and accessible to non‑Tesla premium vehicles at the time of successor launch.",
+   "Successor battery chemistry and thermal management support high‑power charging without premature tapering to very low power.",
+   "Charge station operators provide at least some pedestals capable of sustained >=300 kW power and support for the connector standard used in the EU."
   ],
   "uncertainties": [
-   "Needs PM wording review before approval."
+   "Availability of compatible high‑power pedestals at enough geographic locations for a 20‑session trial depends on regional infrastructure rollout speed and operator access policies.",
+   "Regulatory or operator restrictions on peak power allocation or on non‑OEM access could limit achievable peak power in some sites."
   ],
   "offer_check": {
-   "status": "unknown",
-   "note": "Check not possible (RuntimeError).",
+   "status": "not_offered",
+   "note": "No option provides DC high‑power (HPC/CCS) charging; list only shows Mode 3 cable and 22 kW AC charging.",
    "option_code": null
   },
-  "effort": "M",
+  "effort": "L",
   "status": "proposed",
   "version": 1,
-  "horizon": "today",
+  "horizon": "next_gen",
   "robustness": {
-   "rank_min": 6,
+   "rank_min": 7,
    "rank_max": 7,
    "top3_share": 0.0,
    "runs": 500
@@ -581,36 +627,40 @@
   "business": {
    "volume_2025": 115000,
    "volume_2030": 127000,
-   "growth_pct": 15.5,
+   "growth_pct": 10.435,
    "market_share": 0.402,
-   "note": "Sales context from sales_volumes.xlsx"
+   "note": ""
   },
-  "stable_key": "",
-  "badges": []
+  "stable_key": "70883a",
+  "badges": [
+   "Zukunftswette",
+   "Annahme"
+  ],
+  "outlook": null
  },
  {
-  "id": "REQ-G60-EU-008",
-  "title": "Maintain Drivetrain as a proven strength",
-  "description": "Keep the customer experience around Drivetrain at least at today's level.",
-  "acceptance_criterion": "After the same 200 km mixed urban/motorway route, mean paired successor-minus-baseline satisfaction for powertrain response on the same 1-5 scale must be at least 0.0 points. Report the paired difference and its 95% confidence interval; an interval spanning negative values requires PM review before claiming preservation. Baseline: a production model-year 2025 G60/i5 with the same powertrain, trim and software version recorded before testing. Measure and freeze the baseline before testing the successor; use the same participants, route, duration, load, tyres, ambient conditions and rating questions. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
-  "category": "driving_experience",
+  "id": "REQ-G60-EU-efe638",
+  "title": "Contextual, AI-based cockpit assistant provides useful hands-free help and proactive suggestions",
+  "description": "An in-cockpit assistant understands natural requests and proactively suggests contextual actions (navigation shortcuts, calendar-aware routing, media suggestions) so customers can get useful help hands-free and with fewer manual steps.",
+  "acceptance_criterion": "Customer trial (field pilot): 100 representative EU users (owners or regular drivers of premium sedans; balanced tech-savvy and non-tech-savvy) use the assistant over 4 weeks in daily driving. Success metric is assistant task completion rate without fallback to manual UI: at least 70% of valid assistant requests (intent-defined set) must be completed end-to-end by the assistant without requiring the driver to use the touchscreen. Additionally, compared with a control group of 100 matched users in vehicles without the assistant, the trial group must report a statistically significant increase (p < 0.05) in perceived cockpit usefulness (measured by a validated 10-point scale) of ≥ 1.0 points. Pilot must log request types, success/failure reasons, and perceived usefulness.",
+  "category": "infotainment_digital",
   "signal_ids": [
-   "SIG-G60-EU-003"
+   "SIG-G60-EU-g1-a6387297e1cb947e"
   ],
-  "score": 20.4,
+  "score": 12.0,
   "rank": 8,
   "score_breakdown": {
    "customer_pain": {
-    "value": 0.4,
+    "value": 0.3,
     "weight": 0.25,
-    "contribution": 10.0,
-    "explanation": "Mostly strengths (Likes / Wants | Likes | Difficult to Use | Defect), 9 mentions"
+    "contribution": 7.5,
+    "explanation": "Mostly trends, 2 mentions"
    },
    "reach": {
-    "value": 0.612,
+    "value": 0.224,
     "weight": 0.2,
-    "contribution": 12.2,
-    "explanation": "9 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+    "contribution": 4.5,
+    "explanation": "2 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -625,37 +675,43 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 1.0,
     "weight": 0.1,
-    "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "contribution": 10.0,
+    "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +10.4 %"
    },
    "effort_inverse": {
-    "value": 0.6,
+    "value": 0.2,
     "weight": 0.1,
-    "contribution": 6.0,
-    "explanation": "effort estimate M"
+    "contribution": 2.0,
+    "explanation": "effort estimate L"
    }
   },
-  "rationale": "Ranked mainly because of reach (12.2 points) and customer pain (10 points). Evidence level C: Only 9 mentions: a hint, not a solid finding.",
-  "evidence_level": "C",
+  "rationale": "Ranked mainly because of future relevance (10 points) and customer pain (7.5 points). Evidence level D: Bet on the next generation: only 0 direct customer mentions, the rest rests on trends (assumption).",
+  "evidence_level": "D",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available.",
-   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
+   "Cloud connectivity and edge compute available to support natural-language processing for the pilot; fallback handling is implemented safely.",
+   "Appropriate data-consent flows are in place so users agree to assistant telemetry for evaluation.",
+   "OEM backend and update channels support delivering incremental assistant improvements during the 4-week pilot.",
+   "Sufficient cellular connectivity/data plans or home Wi‑Fi integration for pilot vehicles; backend update orchestration is deployed.",
+   "Legal/telecom regulations allow OTA delivery of the planned features in the pilot countries.",
+   "Vehicles in the pilot have hardware capable of receiving and running the new features."
   ],
   "uncertainties": [
-   "Needs PM wording review before approval.",
-   "The model-year 2025 baseline measurement and matched customer sample have not yet been collected; measure them before validation."
+   "Regulatory or privacy constraints in specific EU countries may limit available assistant features; pilot cohorts should exclude countries where features are blocked.",
+   "Quality of third-party speech/AI services and language support for multiple EU languages may vary and affect measured success rates.",
+   "Some failures may be caused by third-party app stores or services outside OEM control; these should be identified but may not be remediable within the pilot.",
+   "Actual customer perception of 'value' depends on the specific features delivered; pilot must include a clearly described set of feature changes."
   ],
   "offer_check": {
-   "status": "unknown",
-   "note": "Check not possible (RuntimeError).",
+   "status": "standard",
+   "note": "Standard Intelligent Personal Assistant offers AI-based voice assistance with contextual features and proactive suggestions. (Intelligent Personal Assistant6)",
    "option_code": null
   },
-  "effort": "M",
+  "effort": "L",
   "status": "proposed",
   "version": 1,
-  "horizon": "today",
+  "horizon": "next_gen",
   "robustness": {
    "rank_min": 8,
    "rank_max": 8,
@@ -666,36 +722,40 @@
   "business": {
    "volume_2025": 115000,
    "volume_2030": 127000,
-   "growth_pct": 15.5,
+   "growth_pct": 10.435,
    "market_share": 0.402,
-   "note": "Sales context from sales_volumes.xlsx"
+   "note": ""
   },
-  "stable_key": "",
-  "badges": []
+  "stable_key": "efe638",
+  "badges": [
+   "Zukunftswette",
+   "Annahme"
+  ],
+  "outlook": null
  },
  {
-  "id": "REQ-G60-EU-009",
-  "title": "Maintain Handling / Riding as a proven strength",
-  "description": "Keep the customer experience around Handling / Riding at least at today's level.",
-  "acceptance_criterion": "After the same 200 km mixed urban/motorway route, mean paired successor-minus-baseline satisfaction for ride comfort and handling on the same 1-5 scale must be at least 0.0 points. Report the paired difference and its 95% confidence interval; an interval spanning negative values requires PM review before claiming preservation. Baseline: a production model-year 2025 G60/i5 with the same powertrain, trim and software version recorded before testing. Measure and freeze the baseline before testing the successor; use the same participants, route, duration, load, tyres, ambient conditions and rating questions. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
-  "category": "driving_experience",
+  "id": "REQ-G60-EU-b20d86",
+  "title": "Offer limited, regulated hands‑off driving on approved roads under strict conditions (pilot target)",
+  "description": "On approved segments and under defined conditions, drivers can temporarily hand off lateral and longitudinal control to the vehicle for an extended, comfortable stretch (the vehicle clearly indicates when hands‑off is permitted and when the driver must resume control).",
+  "acceptance_criterion": "Country‑by‑country pilot with N=50 consenting participants on approved routes where limited hands‑off operation is permitted. During the pilot measure total pilot kilometers and the proportion of kilometers where the system maintained lane position and speed without requiring corrective driver intervention. Pass if the system completes >=95% of pilot kilometers without safety‑critical interventions and participants report at least 80% perceived confidence/trust (measured via a post‑trial questionnaire). Document any driver takeover events and their causes. The pilot must run only where local approvals and regulations allow the tested functionality.",
+  "category": "driver_assistance",
   "signal_ids": [
-   "SIG-G60-EU-004"
+   "SIG-G60-EU-g1-ac48e4ba11dea7e1"
   ],
-  "score": 19.5,
+  "score": 11.3,
   "rank": 9,
   "score_breakdown": {
    "customer_pain": {
-    "value": 0.4,
+    "value": 0.3,
     "weight": 0.25,
-    "contribution": 10.0,
-    "explanation": "Mostly strengths (Likes / Wants | Likes), 7 mentions"
+    "contribution": 7.5,
+    "explanation": "Mostly trends, 1 mentions"
    },
    "reach": {
-    "value": 0.54,
+    "value": 0.158,
     "weight": 0.2,
-    "contribution": 10.8,
-    "explanation": "7 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
+    "contribution": 3.2,
+    "explanation": "1 of at most 40 mentions (square root scale); EU = 40 % of 2030 volume (127,000 cars)"
    },
    "satisfaction_gap": {
     "value": 0.0,
@@ -710,37 +770,38 @@
     "explanation": "no trusted web source shows a competitor advantage"
    },
    "future_relevance": {
-    "value": 0.1,
+    "value": 1.0,
     "weight": 0.1,
-    "contribution": 1.0,
-    "explanation": "no trend behind it"
+    "contribution": 10.0,
+    "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +10.4 %"
    },
    "effort_inverse": {
-    "value": 0.6,
+    "value": 0.2,
     "weight": 0.1,
-    "contribution": 6.0,
-    "explanation": "effort estimate M"
+    "contribution": 2.0,
+    "explanation": "effort estimate L"
    }
   },
-  "rationale": "Ranked mainly because of reach (10.8 points) and customer pain (10 points). Evidence level C: Only 7 mentions: a hint, not a solid finding.",
-  "evidence_level": "C",
+  "rationale": "Ranked mainly because of future relevance (10 points) and customer pain (7.5 points). Evidence level D: Bet on the next generation: only 0 direct customer mentions, the rest rests on trends (assumption).",
+  "evidence_level": "D",
   "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available.",
-   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
+   "National regulatory approvals or trial permits are obtained for limited, supervised hands‑off operation in the chosen pilot countries.",
+   "High‑definition map and roadside marker infrastructure used in pilot routes are available and maintained for the trial.",
+   "Participant selection covers a representative mix of typical 5 Series drivers (age 25–70, mixed motorway experience)."
   ],
   "uncertainties": [
-   "Needs PM wording review before approval.",
-   "The model-year 2025 baseline measurement and matched customer sample have not yet been collected; measure them before validation."
+   "Regulatory approvals and national trial windows are uncertain and vary by country; deployment depends on the state of approvals at pilot time.",
+   "The trial outcome depends on safe integration of maps, signage recognition and vehicle control performance; these system details must be validated within the pilot and may require iterations."
   ],
   "offer_check": {
-   "status": "unknown",
-   "note": "Check not possible (RuntimeError).",
-   "option_code": null
+   "status": "optional",
+   "note": "Contains steering and lane‑guidance assistant and active cruise control — advanced assistance but no explicit limited 'hands‑off' pilot claim. (Driving Assistant Plus)",
+   "option_code": "5AT"
   },
-  "effort": "M",
+  "effort": "L",
   "status": "proposed",
   "version": 1,
-  "horizon": "today",
+  "horizon": "next_gen",
   "robustness": {
    "rank_min": 9,
    "rank_max": 9,
@@ -751,96 +812,15 @@
   "business": {
    "volume_2025": 115000,
    "volume_2030": 127000,
-   "growth_pct": 15.5,
+   "growth_pct": 10.435,
    "market_share": 0.402,
-   "note": "Sales context from sales_volumes.xlsx"
+   "note": ""
   },
-  "stable_key": "",
-  "badges": []
- },
- {
-  "id": "REQ-G60-EU-010",
-  "title": "Maintain Electric Range as a proven strength",
-  "description": "Keep the customer experience around Electric Range at least at today's level.",
-  "acceptance_criterion": "After the same 200 km mixed urban/motorway route, mean paired successor-minus-baseline satisfaction for electric-range adequacy on the same 1-5 scale must be at least 0.0 points. Report the paired difference and its 95% confidence interval; an interval spanning negative values requires PM review before claiming preservation. Baseline: a production model-year 2025 G60/i5 with the same powertrain, trim and software version recorded before testing. Measure and freeze the baseline before testing the successor; use the same participants, route, duration, load, tyres, ambient conditions and rating questions. Sample: 100 licensed current G60/i5 customers from the scenario markets, recruited with quotas for age, gender and powertrain matching the target customer population; each tests both vehicles in counterbalanced order.",
-  "category": "range_charging",
-  "signal_ids": [
-   "SIG-G60-EU-006"
+  "stable_key": "b20d86",
+  "badges": [
+   "Zukunftswette",
+   "Annahme"
   ],
-  "score": 18.3,
-  "rank": 10,
-  "score_breakdown": {
-   "customer_pain": {
-    "value": 0.4,
-    "weight": 0.25,
-    "contribution": 10.0,
-    "explanation": "Mostly strengths (Likes / Likes | Wants | Defect), 5 mentions"
-   },
-   "reach": {
-    "value": 0.456,
-    "weight": 0.2,
-    "contribution": 9.1,
-    "explanation": "5 of at most 24 mentions (square root scale); EU = 40 % of 2030 volume"
-   },
-   "satisfaction_gap": {
-    "value": 0.0,
-    "weight": 0.2,
-    "contribution": 0.0,
-    "explanation": "no study data"
-   },
-   "competitive_pressure": {
-    "value": 0.0,
-    "weight": 0.15,
-    "contribution": 0.0,
-    "explanation": "no trusted web source shows a competitor advantage"
-   },
-   "future_relevance": {
-    "value": 0.1,
-    "weight": 0.1,
-    "contribution": 1.0,
-    "explanation": "no trend behind it"
-   },
-   "effort_inverse": {
-    "value": 0.6,
-    "weight": 0.1,
-    "contribution": 6.0,
-    "explanation": "effort estimate M"
-   }
-  },
-  "rationale": "Ranked mainly because of customer pain (10 points) and reach (9.1 points). Evidence level C: Only 5 mentions: a hint, not a solid finding.",
-  "evidence_level": "C",
-  "assumptions": [
-   "Rule-based fallback draft because no cached LLM draft was available.",
-   "Proposed validation protocol: thresholds, sample size and recruitment quotas are assumptions for PM review, not observed BMW study results."
-  ],
-  "uncertainties": [
-   "Needs PM wording review before approval.",
-   "The model-year 2025 baseline measurement and matched customer sample have not yet been collected; measure them before validation."
-  ],
-  "offer_check": {
-   "status": "unknown",
-   "note": "Check not possible (RuntimeError).",
-   "option_code": null
-  },
-  "effort": "M",
-  "status": "proposed",
-  "version": 1,
-  "horizon": "today",
-  "robustness": {
-   "rank_min": 10,
-   "rank_max": 10,
-   "top3_share": 0.0,
-   "runs": 500
-  },
-  "segment_conflicts": [],
-  "business": {
-   "volume_2025": 115000,
-   "volume_2030": 127000,
-   "growth_pct": 15.5,
-   "market_share": 0.402,
-   "note": "Sales context from sales_volumes.xlsx"
-  },
-  "stable_key": "",
-  "badges": []
+  "outlook": null
  }
 ]

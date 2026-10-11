@@ -8,6 +8,7 @@
   "growth_pct": 4.0,
   "growth_2024_2025_pct": 10.294
  },
+ "warnings": [],
  "unmapped_topics": {},
  "opportunities": [
   {
@@ -235,6 +236,5 @@
    "evidence_id": "EV-G68-CN-ST-28"
   }
  ],
- "warnings": [],
  "segment_conflicts": {}
 }

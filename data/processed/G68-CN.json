@@ -37,17 +37,17 @@
    "study": 37,
    "sales": 1,
    "options": 0,
-   "web": 0,
+   "web": 140,
    "external": 0,
    "badge": "Kaltstart"
   }
  },
  "funnel": {
-  "evidence": 37,
-  "signals": 3,
-  "requirements": 3,
+  "evidence": 177,
+  "signals": 5,
+  "requirements": 5,
   "approved": 0,
-  "generated_at": "2026-10-11T04:56:02+00:00"
+  "generated_at": "2026-10-11T07:59:53+00:00"
  },
  "weights": {},
  "evidence": [
@@ -95,11 +95,49 @@
     "attribute": "Connected services",
     "mean": "7.35"
    }
+  },
+  {
+   "id": "EV-G68-CN-WEB-82",
+   "source_type": "web",
+   "source_name": "BMW USA (ConnectedDrive release notes)",
+   "derivative": "G68",
+   "market": "CN",
+   "text": "BMW’s customer‑facing release notes and Remote Software Upgrade documentation show regular OTA releases and feature updates (example release notes PDFs and RSU release notes in 2025), indicating OTA is already used to deliver functional and infotainment changes on a quarterly/half‑year cadence. (example: BMW US release notes July 2025 and March 2025).",
+   "url": "https://www.bmwusa.com/content/dam/bmw/common/connected-drive/pdf/2025/ReleaseNotes_2507_US_BMW-v2.pdf",
+   "retrieved_at": "2026-10-11T07:07:16.559152Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "BMW USA (ConnectedDrive release notes)",
+    "published": "July 2025",
+    "stance": "supports",
+    "about": "Concrete BMW OTA release notes (examples). ([bmwusa.com](https://www.bmwusa.com/content/dam/bmw/common/connected-drive/pdf/2025/ReleaseNotes_2507_US_BMW-v2.pdf?utm_source=openai))",
+    "question_kind": "trend"
+   }
+  },
+  {
+   "id": "EV-G68-CN-WEB-120",
+   "source_type": "web",
+   "source_name": "McKinsey & Company",
+   "derivative": "G68",
+   "market": "CN",
+   "text": "Major China‑market intelligence (McKinsey China Auto Consumer Insights 2026) reports that consumers see city NOA/advanced driver assistance and in‑vehicle AI as essential features and expect higher‑level autonomy by the 2030s—supporting OEM product planning to pair advanced chauffeur‑assist ADAS with rear‑seat comfort and smart‑cabin services in premium long‑wheelbase sedans by 2028–2031.",
+   "url": "https://www.mckinsey.com/cn/our-insights/our-insights/value-is-the-compass-consumers-set-the-pace",
+   "retrieved_at": "2026-10-11T07:07:16.559152Z",
+   "polarity": 0,
+   "meta": {
+    "trust": "high",
+    "publisher": "McKinsey & Company",
+    "published": "September 22, 2026",
+    "stance": "supports",
+    "about": "consumer expectation for NOA and in‑vehicle AI in China",
+    "question_kind": "trend"
+   }
   }
  ],
  "signals": [
   {
-   "id": "SIG-G68-CN-001",
+   "id": "SIG-G68-CN-g1-5c56d4653d607e2c",
    "kind": "complaint",
    "category": "driving_experience",
    "title": "Braking: complaint",
@@ -120,7 +158,7 @@
    }
   },
   {
-   "id": "SIG-G68-CN-002",
+   "id": "SIG-G68-CN-g1-b6073d391f9db2d1",
    "kind": "complaint",
    "category": "infotainment_digital",
    "title": "Connected services: complaint",
@@ -141,7 +179,7 @@
    }
   },
   {
-   "id": "SIG-G68-CN-003",
+   "id": "SIG-G68-CN-g1-9cf42e0d041bc38d",
    "kind": "complaint",
    "category": "comfort_space",
    "title": "Ease of loading/ unloading luggage: complaint",
@@ -160,17 +198,51 @@
     "importance": 0.725,
     "dissatisfaction": 0.5833333333333334
    }
+  },
+  {
+   "id": "SIG-G68-CN-g1-a78979bb71a82bc4",
+   "kind": "trend",
+   "category": "infotainment_digital",
+   "title": "Trend 2028-2031: infotainment_digital",
+   "summary": "BMW’s customer‑facing release notes and Remote Software Upgrade documentation show regular OTA releases and feature updates (example release notes PDFs and RSU release notes in 2025), indicating OTA is already used to deliver functional and infotainment changes on a quarterly/half‑year cadence. (example: BMW US release notes July 2025 and March 2025).",
+   "evidence_ids": [
+    "EV-G68-CN-WEB-82"
+   ],
+   "mention_count": 1,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
+  },
+  {
+   "id": "SIG-G68-CN-g1-1e46470f79d850fd",
+   "kind": "trend",
+   "category": "comfort_space",
+   "title": "Trend 2028-2031: comfort_space",
+   "summary": "Major China‑market intelligence (McKinsey China Auto Consumer Insights 2026) reports that consumers see city NOA/advanced driver assistance and in‑vehicle AI as essential features and expect higher‑level autonomy by the 2030s—supporting OEM product planning to pair advanced chauffeur‑assist ADAS with rear‑seat comfort and smart‑cabin services in premium long‑wheelbase sedans by 2028–2031.",
+   "evidence_ids": [
+    "EV-G68-CN-WEB-120"
+   ],
+   "mention_count": 1,
+   "source_types": [
+    "web"
+   ],
+   "conflicts_with": [],
+   "segments": {},
+   "study_link": null
   }
  ],
  "requirements": [
   {
-   "id": "REQ-G68-CN-003",
-   "title": "Improve Ease of loading/ unloading luggage for the successor",
-   "description": "Address the customer pain or unmet need around Ease of loading/ unloading luggage with a measurable user outcome.",
-   "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+   "id": "REQ-G68-CN-b6837d",
+   "title": "Make loading and unloading luggage noticeably easier for rear passengers and trunk users in China",
+   "description": "Customers can load and unload a typical checked suitcase and a carry-on into the vehicle trunk and remove them again with less effort and without awkward body postures, and they perceive the process as clearly improved compared with the current G68 long‑wheelbase model sold in China.",
+   "acceptance_criterion": "Conduct a controlled usability study in China with 50 participants representative of G68 long‑wheelbase customers (age 30–60, 50% female, 50% male, at least 30% frequent travelers who use trunk monthly). Using the same questionnaire and 1–10 rating scale used in the baseline CN study (baseline mean = 7.3 from SIG-G68-CN-g1-9cf42e0d041bc38d), each participant performs a standardized luggage loading and unloading task (one 28-inch checked bag ~15 kg and one 23-inch carry‑on ~8–10 kg) into/from the trunk. The vehicle passes if (a) the mean subjective 'ease of loading/unloading' score ≥ 8.5 and (b) at least 70% of participants rate the experience ≥ 8. The baseline (mean 7.3) must be measured or confirmed with the same protocol on an exemplar G68 CN before final validation. Sample selection must match the described demographics and travel frequency.",
    "category": "comfort_space",
    "signal_ids": [
-    "SIG-G68-CN-003"
+    "SIG-G68-CN-g1-9cf42e0d041bc38d"
    ],
    "score": 44.6,
    "rank": 1,
@@ -185,7 +257,7 @@
      "value": 1.0,
      "weight": 0.2,
      "contribution": 20.0,
-     "explanation": "1 of at most 1 mentions (square root scale); CN = 25 % of 2030 volume"
+     "explanation": "1 of at most 1 mentions (square root scale); CN = 25 % of 2030 volume (78,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.583,
@@ -200,10 +272,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.104,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +4.0 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -215,14 +287,17 @@
    "rationale": "Ranked mainly because of customer pain (25 points) and reach (20 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
    "evidence_level": "C",
    "assumptions": [
-    "Rule-based fallback draft because no cached LLM draft was available."
+    "Baseline mean 7.3 (SIG-G68-CN-g1-9cf42e0d041bc38d) is measured on the same 1–10 questionnaire and comparable participant pool; the successor can change trunk geometry/lighting/threshold/features that affect perceived ease within the next model cycle.",
+    "Target mean 8.5 represents a clear, perceivable improvement (chosen as realistic and meaningful for premium customers).",
+    "Standardized luggage sizes and weights (28\" ~15 kg, 23\" ~8–10 kg) reflect typical customer baggage in China."
    ],
    "uncertainties": [
-    "Needs PM wording review before approval."
+    "Full protocol and question wording from the referenced CN study are not publicly available; validation requires replicating the original questionnaire and test conditions.",
+    "The exact contribution of single design changes (e.g., sill height vs opening width vs lighting) to the subjective score is uncertain and will require iteration."
    ],
    "offer_check": {
     "status": "unknown",
-    "note": "Option list not checked yet (C5).",
+    "note": "No option list exists for this scenario (cold start): nothing to compare.",
     "option_code": null
    },
    "effort": "M",
@@ -239,21 +314,22 @@
    "business": {
     "volume_2025": 75000,
     "volume_2030": 78000,
-    "growth_pct": 14.7,
+    "growth_pct": 4.0,
     "market_share": 0.247,
-    "note": "Sales context from sales_volumes.xlsx"
+    "note": ""
    },
-   "stable_key": "",
-   "badges": []
+   "stable_key": "b6837d",
+   "badges": [],
+   "outlook": null
   },
   {
-   "id": "REQ-G68-CN-002",
-   "title": "Improve Connected services for the successor",
-   "description": "Address the customer pain or unmet need around Connected services with a measurable user outcome.",
-   "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+   "id": "REQ-G68-CN-d3a797",
+   "title": "Improve perceived quality of Connected Services for Chinese G68 customers",
+   "description": "Customers in China experience Connected Services that feel noticeably more valuable and reliable than today: they rate the overall Connected Services offering higher when asked the same question used in the 2025 CN study (same wording and scale).",
+   "acceptance_criterion": "Measure using the same questionnaire and numeric scale as the CN 2025 study (baseline mean = 7.3 from SIG-G68-CN-g1-b6073d391f9db2d1). Collect responses from a stratified random sample of 400 G68 (Long) owners/primary drivers in China who have used any Connected Service at least once in the prior 6 months. Stratify by region (≥4 regions), urban vs. suburban, and ownership duration (<1 year, 1–3 years, >3 years). Pass if (a) the sample mean score ≥ 8.2 and (b) a one‑sample t‑test versus the baseline mean of 7.3 yields p < 0.05. If the survey instrument differs from 2025, perform an equivalence calibration study (n≥100) before validation.",
    "category": "infotainment_digital",
    "signal_ids": [
-    "SIG-G68-CN-002"
+    "SIG-G68-CN-g1-b6073d391f9db2d1"
    ],
    "score": 44.1,
    "rank": 2,
@@ -268,7 +344,7 @@
      "value": 1.0,
      "weight": 0.2,
      "contribution": 20.0,
-     "explanation": "1 of at most 1 mentions (square root scale); CN = 25 % of 2030 volume"
+     "explanation": "1 of at most 1 mentions (square root scale); CN = 25 % of 2030 volume (78,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.55,
@@ -283,10 +359,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.104,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +4.0 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -298,14 +374,19 @@
    "rationale": "Ranked mainly because of customer pain (25 points) and reach (20 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
    "evidence_level": "C",
    "assumptions": [
-    "Rule-based fallback draft because no cached LLM draft was available."
+    "Baseline mean 7.3 is the CN 2025 study result cited in SIG-G68-CN-g1-b6073d391f9db2d1 and uses an interval numeric scale allowing t‑test comparison.",
+    "Target mean 8.2 is an achievable, meaningful improvement within a 3–5 year successor cycle based on product improvements to services, UX and stability.",
+    "Survey instrument will be identical or equivalently calibrated to the 2025 questionnaire; if not identical, a calibration step (n≥100) will be executed before the main test.",
+    "Sample size n=400 gives ~90% power to detect a mean increase of 0.5–0.9 points assuming SD ≈1.5 (typical for service satisfaction scales)."
    ],
    "uncertainties": [
-    "Needs PM wording review before approval."
+    "The 2025 study methodology (sampling frame, exact question wording, scale endpoints and SD) is not fully documented in the signal; this may affect comparability.",
+    "SIG does not identify specific pain points (connectivity, billing, features), so improvements must address the whole service experience; the most impactful interventions are not specified here.",
+    "Customer segments (e.g., fleet vs private) may differ; achieving the mean target in some subsegments may be harder."
    ],
    "offer_check": {
     "status": "unknown",
-    "note": "Option list not checked yet (C5).",
+    "note": "No option list exists for this scenario (cold start): nothing to compare.",
     "option_code": null
    },
    "effort": "M",
@@ -322,21 +403,22 @@
    "business": {
     "volume_2025": 75000,
     "volume_2030": 78000,
-    "growth_pct": 14.7,
+    "growth_pct": 4.0,
     "market_share": 0.247,
-    "note": "Sales context from sales_volumes.xlsx"
+    "note": ""
    },
-   "stable_key": "",
-   "badges": []
+   "stable_key": "d3a797",
+   "badges": [],
+   "outlook": null
   },
   {
-   "id": "REQ-G68-CN-001",
-   "title": "Improve Braking for the successor",
-   "description": "Address the customer pain or unmet need around Braking with a measurable user outcome.",
-   "acceptance_criterion": "Validated with at least 80 percent task success or satisfaction in a customer clinic.",
+   "id": "REQ-G68-CN-13375f",
+   "title": "Braking feels confident, responsive and predictable to the driver in everyday driving",
+   "description": "When performing normal and emergency stops in China, drivers experience braking as confident, predictable and well-modulated — they rate the braking experience high on a 1–10 scale and do not report hesitations, abrupt (surprising) decays in deceleration or lack of confidence in repeated stops.",
+   "acceptance_criterion": "Conduct a controlled user validation in China with the successor vehicle and a matched baseline G68 (model year 2025) using an identical protocol. Recruit 36 licensed drivers representative of Chinese 5-Series buyers (age 30–60, mix of genders and driving experience). Each participant performs 10 supervised braking runs: 3 runs at 30 km/h, 4 runs at 60 km/h, 3 runs at 100 km/h; runs are performed on dry asphalt and on a standardized wet surface (50/50 split across participants). After the session each participant gives an overall braking experience rating (1–10 scale) covering confidence, predictability and responsiveness. Pass criteria (both must be met): (1) mean participant rating for the successor ≥ 8.5/10 across all participants and runs; (2) the successor mean exceeds the baseline G68 (2025) mean of 7.4 by at least 0.6 points and the difference is statistically significant (two-sample t-test, p < 0.05) when comparing successor (N=36) to baseline measured with the identical protocol (N=36). If the historical baseline study (SIG-G68-CN-g1-5c56d4653d607e2c) does not provide a matched baseline sample, measure the baseline G68 with the same protocol before validating the successor.",
    "category": "driving_experience",
    "signal_ids": [
-    "SIG-G68-CN-001"
+    "SIG-G68-CN-g1-5c56d4653d607e2c"
    ],
    "score": 44.0,
    "rank": 3,
@@ -351,7 +433,7 @@
      "value": 1.0,
      "weight": 0.2,
      "contribution": 20.0,
-     "explanation": "1 of at most 1 mentions (square root scale); CN = 25 % of 2030 volume"
+     "explanation": "1 of at most 1 mentions (square root scale); CN = 25 % of 2030 volume (78,000 cars)"
     },
     "satisfaction_gap": {
      "value": 0.54,
@@ -366,10 +448,10 @@
      "explanation": "no trusted web source shows a competitor advantage"
     },
     "future_relevance": {
-     "value": 0.1,
+     "value": 0.104,
      "weight": 0.1,
      "contribution": 1.0,
-     "explanation": "no trend behind it"
+     "explanation": "no trend behind it; market growth 2025-2030: +4.0 %"
     },
     "effort_inverse": {
      "value": 0.6,
@@ -381,14 +463,18 @@
    "rationale": "Ranked mainly because of customer pain (25 points) and reach (20 points). Evidence level C: Only 1 mentions: a hint, not a solid finding.",
    "evidence_level": "C",
    "assumptions": [
-    "Rule-based fallback draft because no cached LLM draft was available."
+    "The 7.4 value reported in SIG-G68-CN-g1-5c56d4653d607e2c is on a 1–10 subjective rating scale comparable to the one used for this validation.",
+    "A mean target of 8.5/10 represents a clear and perceptible improvement for customers in the Chinese market and is achievable within the successor development timeframe (3–5 years).",
+    "Recruitment of 36 participants with the specified demographic mix provides sufficient statistical power to detect a ≥0.6 point difference at p<0.05 under the stated protocol.",
+    "Braking behavior is evaluated with production-configured brake systems and standard tires representative of Chinese market specification."
    ],
    "uncertainties": [
-    "Needs PM wording review before approval."
+    "The original SIG study's methodology (sample size, participant mix, exact question wording and rating scale) is not fully available; a matched baseline measurement of the G68 may be required if the original protocol cannot be reproduced.",
+    "External factors (tire compound, brake bedding state, local temperature/humidity) can affect subjective ratings; tight test control and documentation are required."
    ],
    "offer_check": {
     "status": "unknown",
-    "note": "Option list not checked yet (C5).",
+    "note": "No option list exists for this scenario (cold start): nothing to compare.",
     "option_code": null
    },
    "effort": "M",
@@ -405,12 +491,200 @@
    "business": {
     "volume_2025": 75000,
     "volume_2030": 78000,
-    "growth_pct": 14.7,
+    "growth_pct": 4.0,
     "market_share": 0.247,
-    "note": "Sales context from sales_volumes.xlsx"
+    "note": ""
    },
-   "stable_key": "",
-   "badges": []
+   "stable_key": "13375f",
+   "badges": [],
+   "outlook": null
+  },
+  {
+   "id": "REQ-G68-CN-43b141",
+   "title": "Provide a regular quarterly cadence of OTA feature and infotainment updates with clear customer-facing release notes",
+   "description": "Customers receive functional/feature updates to infotainment and connected services on a predictable cadence (at least three distinct feature RSUs/OTAs within any 12‑month window) and can read clear, human‑facing release notes in the vehicle and via the BMW app/portal so they immediately understand what changed.",
+   "acceptance_criterion": "Run a 12‑month post‑launch trial on a representative fleet sample of 200 G68 (Long) vehicles in China with active connectivity and owner consent to receive RSUs. Demonstrate that: (1) BMW publishes and pushes at least 3 distinct feature/function OTA releases (release notes PDF or in‑app text) within the 12 months; (2) delivery reaches ≥80% of the trial vehicles within 30 calendar days of each release (measured from server delivery logs and vehicle receipt acknowledgment); and (3) after each update no more than 2% of trial participants report a new, unresolved degradation of core vehicle or Connected Services functionality attributable to the update (measured by a structured post‑update survey within 14 days plus support ticket classification). Pass requires all three conditions met for the 12‑month period.",
+   "category": "infotainment_digital",
+   "signal_ids": [
+    "SIG-G68-CN-g1-a78979bb71a82bc4"
+   ],
+   "score": 19.8,
+   "rank": 4,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.3,
+     "weight": 0.25,
+     "contribution": 7.5,
+     "explanation": "Mostly trends, 1 mentions"
+    },
+    "reach": {
+     "value": 1.0,
+     "weight": 0.2,
+     "contribution": 20.0,
+     "explanation": "1 of at most 1 mentions (square root scale); CN = 25 % of 2030 volume (78,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.0,
+     "weight": 0.2,
+     "contribution": 0.0,
+     "explanation": "no study data"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 1.0,
+     "weight": 0.1,
+     "contribution": 10.0,
+     "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +4.0 %"
+    },
+    "effort_inverse": {
+     "value": 0.2,
+     "weight": 0.1,
+     "contribution": 2.0,
+     "explanation": "effort estimate L"
+    }
+   },
+   "rationale": "Ranked mainly because of reach (20 points) and future relevance (10 points). Evidence level D: Bet on the next generation: only 0 direct customer mentions, the rest rests on trends (assumption).",
+   "evidence_level": "D",
+   "assumptions": [
+    "Trend in SIG-G68-CN-g1-a78979bb71a82bc4 indicates quarterly/half‑year OTA cadence is expected and feasible; we assume infrastructure and RSU processes scale to the successor vehicle.",
+    "Customers in the trial have active cellular connectivity and consent to receive updates; carriers and local regulations allow OTA delivery at scale in China.",
+    "Delivery logs and vehicle acknowledgements reliably indicate successful delivery; support tickets can be attributed to a specific update by timestamp and diagnostics.",
+    "Customers can reliably recall and judge the usefulness of updates on a 5‑point scale; a 0.4‑point shift is meaningful for this metric.",
+    "Release notes are authored in customer‑facing language and localized for China; publishing channels (in‑vehicle UI and app/portal) are available at launch.",
+    "Baseline perceived usefulness can be measured prior to large‑scale OTA cadence to allow paired or matched analysis."
+   ],
+   "uncertainties": [
+    "Network coverage variability and carrier policies in China may affect delivery within 30 days for some vehicles.",
+    "Regulatory or homologation constraints for functional updates in China may change between now and launch and could limit update scope or cadence—this needs confirmation.",
+    "SIG does not specify which kinds of changes are expected (bug fixes vs new features); defining what qualifies as a 'feature/function' release will be required.",
+    "The signal shows OTA cadence trends but does not document prior measures of perceived usefulness; a baseline measurement is required before validation.",
+    "If many updates are minor bug fixes, customers may not perceive increased usefulness despite higher cadence; content mix matters.",
+    "Customer language preferences and regional app/portal delivery constraints could affect accessibility of release notes."
+   ],
+   "offer_check": {
+    "status": "unknown",
+    "note": "No option list exists for this scenario (cold start): nothing to compare.",
+    "option_code": null
+   },
+   "effort": "L",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "next_gen",
+   "robustness": {
+    "rank_min": 4,
+    "rank_max": 4,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 75000,
+    "volume_2030": 78000,
+    "growth_pct": 4.0,
+    "market_share": 0.247,
+    "note": ""
+   },
+   "stable_key": "43b141",
+   "badges": [
+    "Zukunftswette",
+    "Annahme"
+   ],
+   "outlook": null
+  },
+  {
+   "id": "REQ-G68-CN-abeb36",
+   "title": "Deliver rear‑seat comfort and smart‑cabin experience that supports productive or relaxing chauffeur‑mode rides for China customers",
+   "description": "When the vehicle operates in advanced chauffeur/driver‑assistance mode, rear‑seat occupants experience the cabin as a practical and comfortable space for working or relaxing (able to perform short work tasks and report high comfort), aligning the long‑wheelbase sedan with China customer expectations for paired chauffeur‑assist and rear‑seat services by 2028–2031.",
+   "acceptance_criterion": "Customer trial in China with 40 participants who frequently use rear seats or are representative executive rear‑seat users (age 30–65, mix of executives and private chauffeur riders). Each participant experiences a 30‑minute supervised chauffeur‑assist driving session using the successor vehicle's chauffeur mode with the enhanced rear‑seat smart‑cabin package. After the session participants complete (a) a 1–10 'rear‑seat suitability for working/relaxing during chauffeur rides' rating and (b) a short 10‑minute productivity/comfort task (reading comprehension or typing) and report motion‑related discomfort on a 1–10 scale. The vehicle passes if mean suitability rating ≥ 8.0 and at least 75% of participants rate suitability ≥ 7, and no more than 15% of participants report motion‑related discomfort ≥ 6. For comparison, the same protocol must be run on a current G68 CN baseline vehicle to measure baseline values before final validation (if baseline values are not already available).",
+   "category": "comfort_space",
+   "signal_ids": [
+    "SIG-G68-CN-g1-1e46470f79d850fd"
+   ],
+   "score": 19.8,
+   "rank": 5,
+   "score_breakdown": {
+    "customer_pain": {
+     "value": 0.3,
+     "weight": 0.25,
+     "contribution": 7.5,
+     "explanation": "Mostly trends, 1 mentions"
+    },
+    "reach": {
+     "value": 1.0,
+     "weight": 0.2,
+     "contribution": 20.0,
+     "explanation": "1 of at most 1 mentions (square root scale); CN = 25 % of 2030 volume (78,000 cars)"
+    },
+    "satisfaction_gap": {
+     "value": 0.0,
+     "weight": 0.2,
+     "contribution": 0.0,
+     "explanation": "no study data"
+    },
+    "competitive_pressure": {
+     "value": 0.0,
+     "weight": 0.15,
+     "contribution": 0.0,
+     "explanation": "no trusted web source shows a competitor advantage"
+    },
+    "future_relevance": {
+     "value": 1.0,
+     "weight": 0.1,
+     "contribution": 10.0,
+     "explanation": "linked to a 3-5 year trend (assumption); market growth 2025-2030: +4.0 %"
+    },
+    "effort_inverse": {
+     "value": 0.2,
+     "weight": 0.1,
+     "contribution": 2.0,
+     "explanation": "effort estimate L"
+    }
+   },
+   "rationale": "Ranked mainly because of reach (20 points) and future relevance (10 points). Evidence level D: Bet on the next generation: only 0 direct customer mentions, the rest rests on trends (assumption).",
+   "evidence_level": "D",
+   "assumptions": [
+    "Advanced chauffeur‑assist features that enable extended supervised rear‑seat use are available and permitted in the China market by the successor launch window (2028–2031).",
+    "Customers will value and use rear‑seat smart‑cabin services when reliable chauffeur mode is available, as indicated by the cited trend study.",
+    "A 30‑minute trial and the selected productivity/comfort tasks are representative of real customer use for short chauffeur journeys."
+   ],
+   "uncertainties": [
+    "Regulatory approval timelines and exact scope of permitted chauffeur features in China at launch are uncertain and may affect what can be offered; regulatory status must be confirmed prior to validation.",
+    "No baseline G68 chauffeur‑mode rear‑seat suitability data (using this protocol) is currently available; a baseline measurement run on the current model is required before final pass/fail determination."
+   ],
+   "offer_check": {
+    "status": "unknown",
+    "note": "No option list exists for this scenario (cold start): nothing to compare.",
+    "option_code": null
+   },
+   "effort": "L",
+   "status": "proposed",
+   "version": 1,
+   "horizon": "next_gen",
+   "robustness": {
+    "rank_min": 5,
+    "rank_max": 5,
+    "top3_share": 0.0,
+    "runs": 500
+   },
+   "segment_conflicts": [],
+   "business": {
+    "volume_2025": 75000,
+    "volume_2030": 78000,
+    "growth_pct": 4.0,
+    "market_share": 0.247,
+    "note": ""
+   },
+   "stable_key": "abeb36",
+   "badges": [
+    "Zukunftswette",
+    "Annahme"
+   ],
+   "outlook": null
   }
  ],
  "discarded": [],
@@ -424,8 +698,8 @@
    "growth_pct": 4.0,
    "growth_2024_2025_pct": 10.294
   },
-  "unmapped_topics": {},
   "warnings": [],
+  "unmapped_topics": {},
   "segment_conflicts": {},
   "counter_evidence": {}
  },
@@ -654,5 +928,10 @@
    "dissatisfaction": 0.583,
    "evidence_id": "EV-G68-CN-ST-28"
   }
- ]
+ ],
+ "provenance": {
+  "llm_model": "gpt-5-mini",
+  "prompt_sources_sha256": "12640dd429f90ef6d54fbe14dca5c1578ee566b4e87b82712ab6aba551ae6abc",
+  "code_commit": "69e5342d3d24f64e3aead60b0094477ec20cf13a"
+ }
 }

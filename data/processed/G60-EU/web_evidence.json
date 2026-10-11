@@ -1,1 +1,2117 @@
-[]
+[
+ {
+  "id": "EV-G60-EU-WEB-01",
+  "source_type": "web",
+  "source_name": "BMW Press",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW’s battery-electric BMW i5 (G60) official WLTP ranges: i5 eDrive40 reported WLTP 497–582 km (depending on body/trim) and i5 M60 xDrive 455–516 km (WLTP).",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0416261EN?language=en",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Press",
+   "published": "BMW press release (official)",
+   "stance": "supports",
+   "about": "BMW i5 WLTP range (G60)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-8cc0e559a909d782",
+   "supports_signal_ids": "SIG-G60-EU-g1-8cc0e559a909d782"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-02",
+  "source_type": "web",
+  "source_name": "BMW UK (official)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW publishes battery and charging specs for the i5: battery ~81.2 kWh (gross) for high-range variants, DC fast charging up to ~205 kW, and AC charging usually 11 kW (22 kW available on some trims/options).",
+  "url": "https://www.bmw.co.uk/en_GB/all-models/m-series/i5-m60/i5-m60-xdrive-touring-2024-g61bev-technical-data.html",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW UK (official)",
+   "published": "BMW technical data (online)",
+   "stance": "supports",
+   "about": "BMW i5 battery & charging capabilities",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-8cc0e559a909d782",
+   "supports_signal_ids": "SIG-G60-EU-g1-8cc0e559a909d782"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-03",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz brochure (UK spec, PDF posted online)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Mercedes lists the E‑Class plug‑in hybrids (example E 300 e/E 300 de) with an Equivalent All‑Electric Range (EAER) of about 68–71 miles WLTP (≈109–114 km) and quotes a battery capacity in the ~19.5 kWh class for those PHEV models.",
+  "url": "https://www.scribd.com/document/985146651/E-Class-December-2025-Brochure",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mercedes‑Benz brochure (UK spec, PDF posted online)",
+   "published": "2024/2025 brochure",
+   "stance": "supports",
+   "about": "Mercedes E‑Class (E 300 e) WLTP electric range & battery capacity",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-8cc0e559a909d782",
+   "supports_signal_ids": "SIG-G60-EU-g1-8cc0e559a909d782"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-04",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz Group (environmental information)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Mercedes’ technical material (environmental check) also states the E‑Class PHEV electric range can be quoted up to roughly 118 km WLTP for certain variants/conditions (manufacturer figure for EAER).",
+  "url": "https://group.mercedes-benz.com/sustainability/environment-climate/decarbonisation/environmental-check/e-300-e.html",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Mercedes‑Benz Group (environmental information)",
+   "published": "Jan 30, 2024 (page updated)",
+   "stance": "supports",
+   "about": "Mercedes E‑Class PHEV WLTP range (environmental check)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-8cc0e559a909d782",
+   "supports_signal_ids": "SIG-G60-EU-g1-8cc0e559a909d782"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-05",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz brochure (UK spec, PDF posted online)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Mercedes documents charging hardware for the E‑Class PHEV: onboard AC charging 11 kW (Mode 3) and DC charging capability up to about 55 kW (10–80% in ~20 minutes quoted for the PHEV variants).",
+  "url": "https://www.scribd.com/document/985146651/E-Class-December-2025-Brochure",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mercedes‑Benz brochure (UK spec, PDF posted online)",
+   "published": "2024/2025 brochure",
+   "stance": "supports",
+   "about": "Mercedes E‑Class PHEV charging power (AC 11 kW, DC ~55 kW)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-8cc0e559a909d782",
+   "supports_signal_ids": "SIG-G60-EU-g1-8cc0e559a909d782"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-06",
+  "source_type": "web",
+  "source_name": "BMW UK (technical data)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "By contrast the BMW i5 (BEV) supports much higher DC power (≈205 kW peak on published data) which enables much faster long‑distance recharging on high‑power public CCS chargers compared with the E‑Class PHEV’s ~55 kW DC limit; BMW sources and technical pages show the higher DC rate and slower recharge times on 11 kW AC for smaller BEV chargers. ",
+  "url": "https://www.bmw.co.uk/en_GB/all-models/m-series/i5-m60/i5-m60-xdrive-touring-2024-g61bev-technical-data.html",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW UK (technical data)",
+   "published": "BMW technical data (online)",
+   "stance": "supports",
+   "about": "BMW i5 high DC charging vs Mercedes PHEV DC limit",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-8cc0e559a909d782",
+   "supports_signal_ids": "SIG-G60-EU-g1-8cc0e559a909d782"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-07",
+  "source_type": "web",
+  "source_name": "European Environment Agency (EEA) / EAFO data referenced",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "European charging infrastructure: the majority of public points in the EU are AC (low/medium power), while DC fast chargers have been growing rapidly (EEA/EAFO reported ~73,800 DC chargers in 2023 and later datasets/analyses report EU public chargers surpassing ~900,000 by late 2025 with roughly 12–15% being DC fast chargers), so BEVs that can use high‑power DC (like the i5) benefit more from the expanding ultra‑fast network but availability is still uneven across countries.",
+  "url": "https://www.eea.europa.eu/en/analysis/publications/sustainability-of-europes-mobility-systems/energy-infrastructure",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "European Environment Agency (EEA) / EAFO data referenced",
+   "published": "EEA report (using EAFO data, 2024/2025)",
+   "stance": "supports",
+   "about": "EU public charging point counts and DC share (2023–2025)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-8cc0e559a909d782",
+   "supports_signal_ids": "SIG-G60-EU-g1-8cc0e559a909d782"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-08",
+  "source_type": "web",
+  "source_name": "MotorTrend",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "The 2025 Audi A6 e‑tron uses Android Automotive OS and is offered with a triple‑screen layout: an 11.9‑inch digital instrument cluster, a 14.5‑inch centre OLED touchscreen and an optional 10.9‑inch passenger touchscreen (2025 model year).",
+  "url": "https://www.motortrend.com/news/2025-audi-a6-e-tron-first-look-review/",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "MotorTrend",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Audi A6 e-tron infotainment hardware.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-09",
+  "source_type": "web",
+  "source_name": "Consumer Reports",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Multiple independent reviews note Audi’s A6 e‑tron replaces many physical knobs with capacitive‑touch controls and that the screen‑forward layout can feel overwhelming to some users (few physical knobs/buttons).",
+  "url": "https://www.consumerreports.org/cars/audi/a6-e-tron/2025/road-test-report/",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Consumer Reports",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Audi controls (physical vs touch).",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-10",
+  "source_type": "web",
+  "source_name": "Edmunds",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Reviewers described the A6 e‑tron’s interface as ‘menu‑heavy’ and reviewers/owners reported software glitches and intermittent sluggishness on 2025 A6 e‑tron examples (reports from 2025–2026).",
+  "url": "https://www.edmunds.com/car-news/2025-audi-a6-s6-e-tron-first-drive.html",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Edmunds",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Audi A6 e-tron infotainment usability and reported sluggishness.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-11",
+  "source_type": "web",
+  "source_name": "Reddit (owner reports)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Owner posts and forum threads for 2025 Audi e‑tron family cars document users reporting buggy MMI behaviour, freezes, CarPlay disconnects and perceived sluggish software. ",
+  "url": "https://www.reddit.com/r/etron/comments/1tes6tm/infotainment_system/",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Reddit (owner reports)",
+   "published": "2026",
+   "stance": "supports",
+   "about": "Customer-reported Audi infotainment issues.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-12",
+  "source_type": "web",
+  "source_name": "MotorTrend",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Audi’s A6 e‑tron infotainment runs on Android Automotive OS with an Audi Application Store and supports over‑the‑air (OTA) updates, enabling software fixes and app delivery via OTA. ",
+  "url": "https://www.motortrend.com/features/2025-audi-lineup-updates-changes/",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "MotorTrend",
+   "published": "2025",
+   "stance": "supports",
+   "about": "Audi A6 e-tron software platform and OTA.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-13",
+  "source_type": "web",
+  "source_name": "Top Gear",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "The BMW 5‑Series (G60 / 2024–2026) uses BMW’s curved ‘Curved Display’ (paired 12.3‑inch driver cluster + 14.9‑inch central touchscreen) running BMW Operating System (iDrive) 8/8.5 in European market cars. ",
+  "url": "https://www.topgear.com/car-reviews/bmw/5-series/interior",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Top Gear",
+   "published": "2024",
+   "stance": "supports",
+   "about": "BMW 5 Series display hardware and OS.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-14",
+  "source_type": "web",
+  "source_name": "CarGurus",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Many BMW 5‑Series reviews note BMW has retained tactile controls (and the iDrive controller on many variants), which reviewers say can make common tasks quicker than a pure touch‑only approach. ",
+  "url": "https://www.cargurus.co.uk/research/BMW-5-Series-2024-mg660",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "CarGurus",
+   "published": "2024",
+   "stance": "supports",
+   "about": "BMW 5 Series controls — tactile vs touchscreen.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-15",
+  "source_type": "web",
+  "source_name": "Autoblog",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Critics and some owners say BMW’s iDrive 8/8.5 has a learning curve and that a few functions (notably some climate/vehicle settings) are buried in menus, and there are isolated owner reports of interface lag or sluggishness (2024–2026 commentary).",
+  "url": "https://www.autoblog.com/news/2025-bmw-5-series-review-214412817.html",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Autoblog",
+   "published": "2025",
+   "stance": "supports",
+   "about": "BMW infotainment usability and owner/reviewer frustration.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-16",
+  "source_type": "web",
+  "source_name": "BMW (customer support page)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW’s iDrive platform supports over‑the‑air (OTA) updates (iDrive 8/8.5), so BMW can and does deliver software fixes and feature updates over time, though owners report OTA rollouts and fixes have been uneven in practice. ",
+  "url": "https://www.bmw.com.sg/en/more-bmw/customer-support.html",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW (customer support page)",
+   "published": "2025",
+   "stance": "supports",
+   "about": "BMW OTA capability and owner experience.",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-17",
+  "source_type": "web",
+  "source_name": "MotorTrend (Audi) and multiple BMW reviews (Top Gear/Autoblog)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "In the EU market for 2025–2026 the practical difference is that Audi’s A6 e‑tron is a screen‑first, Android Automotive‑based system with fewer physical controls (some reviewers and customers find it menu‑heavy and occasionally sluggish), while the BMW 5‑Series uses a large curved display but generally retains more tactile controls and the iDrive interaction paradigm (which many reviewers find faster for routine tasks, though it too has reported frustrations and a learning curve).",
+  "url": "https://www.motortrend.com/news/2025-audi-a6-e-tron-first-look-review/",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "MotorTrend (Audi) and multiple BMW reviews (Top Gear/Autoblog)",
+   "published": "2025–2026",
+   "stance": "neutral",
+   "about": "Comparative summary (Audi A6 e-tron vs BMW 5 Series G60 infotainment).",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-18",
+  "source_type": "web",
+  "source_name": "Top Gear",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "The Volvo ES90 uses Android Automotive with built‑in Google services (Google Maps, Google Assistant, Google Play) and a 14.5‑inch portrait central touchscreen as the primary infotainment interface. ([topgear.com](https://www.topgear.com/car-reviews/volvo/es90/interior))",
+  "url": "https://www.topgear.com/car-reviews/volvo/es90/interior",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Top Gear",
+   "published": "2026",
+   "stance": "neutral",
+   "about": "Volvo ES90 infotainment",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G60-EU-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-19",
+  "source_type": "web",
+  "source_name": "Auto Express",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Multiple European reviews note Volvo has removed many physical controls and moved common functions (climate, seat/mirror adjustment, etc.) into the central touchscreen, which has prompted ergonomic criticisms. ([topgear.com](https://www.topgear.com/car-reviews/volvo/es90/interior))",
+  "url": "https://www.autoexpress.co.uk/volvo/es90",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Auto Express",
+   "published": "2026",
+   "stance": "neutral",
+   "about": "Volvo ES90 controls",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G60-EU-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-20",
+  "source_type": "web",
+  "source_name": "Autocar",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Reviewers describe the ES90’s Android‑based system as graphically crisp and responsive, but report early software 'kinks' and a rollout that required software/hardware fixes during 2025–2026. ([dev.images.cdn.autocar.co.uk](https://dev.images.cdn.autocar.co.uk/car-review/volvo/es90))",
+  "url": "https://www.autocar.co.uk/car-review/volvo/es90",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Autocar",
+   "published": "2026",
+   "stance": "neutral",
+   "about": "Volvo ES90 infotainment performance",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G60-EU-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-21",
+  "source_type": "web",
+  "source_name": "Volvo Cars (user manual)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Volvo supplies connected services and a Volvo Cars app for remote functions on the ES90, and the official ES90 user manual states use of connected services is subject to conditions and that Volvo may suspend access in cases such as disproportionate data use. ([volvocars.com](https://www.volvocars.com/static/support-content/pdfs/uk_en-GB_es90_2026_UM_b02b0168a59415a9457a102f1bd113d7.pdf?utm_source=openai))",
+  "url": "https://www.volvocars.com/static/support-content/pdfs/uk_en-GB_es90_2026_UM_b02b0168a59415a9457a102f1bd113d7.pdf",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Volvo Cars (user manual)",
+   "published": "2026 (user manual)",
+   "stance": "neutral",
+   "about": "Volvo ES90 connected services terms",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G60-EU-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-22",
+  "source_type": "web",
+  "source_name": "BMW Group (press release)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "The BMW 5er (G60) uses BMW iDrive with the 'BMW Curved Display' (driver cluster plus a large central screen — roughly a 12.3‑inch driver display and a ~14.9‑inch central Control Display), runs BMW Operating System 8.5 and includes the QuickSelect UI. ([press.bmwgroup.com](https://www.press.bmwgroup.com/deutschland/article/detail/T0416261DE/die-neue-bmw-5er-limousine))",
+  "url": "https://www.press.bmwgroup.com/deutschland/article/detail/T0416261DE/die-neue-bmw-5er-limousine",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group (press release)",
+   "published": "2023–2024 (model launch)",
+   "stance": "neutral",
+   "about": "BMW 5er (G60) displays and OS",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G60-EU-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-23",
+  "source_type": "web",
+  "source_name": "BMW Group (press release)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Unlike Volvo’s touchscreen‑first layout, BMW’s G60 retains a physical iDrive controller on the centre console and multifunction steering‑wheel buttons, which reviewers and BMW’s own press materials present as keeping frequent controls accessible without navigating deep touchscreen menus. ([press.bmwgroup.com](https://www.press.bmwgroup.com/deutschland/article/detail/T0416261DE/die-neue-bmw-5er-limousine))",
+  "url": "https://www.press.bmwgroup.com/deutschland/article/detail/T0416261DE/die-neue-bmw-5er-limousine",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group (press release)",
+   "published": "2023–2024 (model launch)",
+   "stance": "neutral",
+   "about": "BMW 5er (G60) controls vs touchscreen",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G60-EU-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-24",
+  "source_type": "web",
+  "source_name": "Trustpilot (BMW Group Belux reviews)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "European customer reviews and forum threads have repeatedly complained about BMW ConnectedDrive/Connected Services: examples cite subscription fees, services expiring or requiring payment to re‑enable, and support friction — issues discussed in Trustpilot reviews and in forum posts between 2022–2026. ([uk.trustpilot.com](https://uk.trustpilot.com/review/bmw.be))",
+  "url": "https://uk.trustpilot.com/review/bmw.be",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Trustpilot (BMW Group Belux reviews)",
+   "published": "2022–2026 (customer reviews)",
+   "stance": "supports",
+   "about": "BMW ConnectedDrive customer complaints",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G60-EU-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-25",
+  "source_type": "web",
+  "source_name": "Reddit (r/BMWi3)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Users have reported loss of MyBMW app features (for example, charging‑state monitoring) when Connected Services subscriptions expire or when connectivity glitches occur, with multiple forum posts describing the symptom and its relation to an active subscription. ([reddit.com](https://www.reddit.com/r/BMWi3/comments/1kffqin/anyone_else_lose_the_ability_to_track_charging/))",
+  "url": "https://www.reddit.com/r/BMWi3/comments/1kffqin/anyone_else_lose_the_ability_to_track_charging/",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Reddit (r/BMWi3)",
+   "published": "2025–2026 (forum posts)",
+   "stance": "supports",
+   "about": "BMW Connected Services app issues",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-b6073d391f9db2d1",
+   "supports_signal_ids": "SIG-G60-EU-g1-b6073d391f9db2d1"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-26",
+  "source_type": "web",
+  "source_name": "Tesla (Owner's Manual PDF)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Tesla Model S (EU Owner's Manual) lists rear cargo volume 26.3 cu ft (744.7 L), front cargo 2.1 cu ft (59.5 L), total cargo volume 28.4 cu ft (804.2 L) and rear seats folded 58.1 cu ft (1,645.2 L).",
+  "url": "https://www.tesla.com/sites/default/files/pdfs/JO/model_s_eu_en.PDF",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Tesla (Owner's Manual PDF)",
+   "published": "accessed 2026-10-11",
+   "stance": "supports",
+   "about": "Tesla Model S cargo volume",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G60-EU-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-27",
+  "source_type": "web",
+  "source_name": "BMW (Press PDF / Technical data)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW's official technical data (valid from 03/2025) lists the BMW 5er Limousine boot as 520 L for petrol/diesel and plug‑in‑hybrid saloon variants, and 490 L for the i5 (pure‑electric) variants.",
+  "url": "https://www.press.bmwgroup.com/deutschland/article/attachment/T0443474DE/629033",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW (Press PDF / Technical data)",
+   "published": "05 Mar 2025",
+   "stance": "supports",
+   "about": "BMW 5 Series (G60) cargo volume",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G60-EU-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-28",
+  "source_type": "web",
+  "source_name": "Carwow (review)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Carwow's 2026 review notes the Model S has a hatchback‑style boot making loading easy overall, but explicitly reports “there is a lip, which might interfere with some loading and unloading.”",
+  "url": "https://www.carwow.co.uk/tesla/model-s",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Carwow (review)",
+   "published": "accessed 2026-10-11",
+   "stance": "supports",
+   "about": "Model S loading ease / reviewer-reported complaint",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G60-EU-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-29",
+  "source_type": "web",
+  "source_name": "Tesla (Owner's Manual PDF)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Tesla's EU Owner's Manual lists interior measurements including rear legroom 35.4 in (899 mm) and documents load limits and a lower‑trunk compartment (i.e., a low/flat floor and specific weight limits for cargo areas).",
+  "url": "https://www.tesla.com/sites/default/files/pdfs/JO/model_s_eu_en.PDF",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Tesla (Owner's Manual PDF)",
+   "published": "accessed 2026-10-11",
+   "stance": "supports",
+   "about": "Tesla Model S interior dimensions and cargo details",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G60-EU-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-30",
+  "source_type": "web",
+  "source_name": "Reddit (r/TeslaSupport thread)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "There are owner/customer posts reporting practical issues with the Model S rear cargo well (changes to the cargo well shape and problems fitting liners or loading certain items), for example Reddit threads documenting a 'trunk well change' and liner/fitment complaints.",
+  "url": "https://www.reddit.com/r/TeslaSupport/comments/1i9v1qk",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Reddit (r/TeslaSupport thread)",
+   "published": "accessed 2026-10-11",
+   "stance": "supports",
+   "about": "customer-reported loading/unloading complaints for Model S",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-9cf42e0d041bc38d",
+   "supports_signal_ids": "SIG-G60-EU-g1-9cf42e0d041bc38d"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-31",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz (Germany) — E‑Class model overview",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Mercedes‑Benz E‑Class (W214) saloon (conventionally‑engined petrol/diesel) has a luggage compartment (boot) volume of 540 litres (seats up) according to the official Mercedes‑Benz EU model page.",
+  "url": "https://www.mercedes-benz.de/passengercars/models/saloon/e-class/overview.html",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mercedes‑Benz (Germany) — E‑Class model overview",
+   "published": "accessed 2026-10-11",
+   "stance": "supports",
+   "about": "Mercedes‑Benz E‑Class boot capacity (EU) 2025/2026",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-51bf94f3f5a2546a",
+   "supports_signal_ids": "SIG-G60-EU-g1-51bf94f3f5a2546a"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-32",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz (Germany) — E‑Class model overview",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Mercedes‑Benz E‑Class plug‑in hybrid saloon models have a reduced boot volume of 370 litres (seats up) on the same Mercedes‑Benz EU model technical overview.",
+  "url": "https://www.mercedes-benz.de/passengercars/models/saloon/e-class/overview.html",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Mercedes‑Benz (Germany) — E‑Class model overview",
+   "published": "accessed 2026-10-11",
+   "stance": "supports",
+   "about": "Mercedes‑Benz E‑Class PHEV boot capacity (EU) 2025/2026",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-51bf94f3f5a2546a",
+   "supports_signal_ids": "SIG-G60-EU-g1-51bf94f3f5a2546a"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-33",
+  "source_type": "web",
+  "source_name": "BMW Group Press (technical data PDF)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW 5 Series Sedan (G60) technical specifications published by BMW (\"Specifications of the BMW 5 Series Sedan, valid from 03/2025\") list luggage compartment capacity of 520 litres for the petrol/plug‑in hybrid combustion variants.",
+  "url": "https://www.press.bmwgroup.com/global/article/attachment/T0443474EN/629035",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press (technical data PDF)",
+   "published": "05 March 2025",
+   "stance": "supports",
+   "about": "BMW 5 Series (G60) boot capacity (specs valid from Mar 2025)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-51bf94f3f5a2546a",
+   "supports_signal_ids": "SIG-G60-EU-g1-51bf94f3f5a2546a"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-34",
+  "source_type": "web",
+  "source_name": "BMW Group Press (technical data PDF)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW i5 (the BEV version of the G60/5‑Series family) is listed in the BMW technical data as having a luggage compartment volume of 490 litres for the i5 eDrive40 variant.",
+  "url": "https://www.press.bmwgroup.com/global/article/attachment/T0443474EN/629035",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press (technical data PDF)",
+   "published": "05 March 2025",
+   "stance": "supports",
+   "about": "BMW i5 (G60 family) boot capacity (BEV) 2025",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-51bf94f3f5a2546a",
+   "supports_signal_ids": "SIG-G60-EU-g1-51bf94f3f5a2546a"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-35",
+  "source_type": "web",
+  "source_name": "Carwow (UK) review — E‑Class",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Independent reviewers describe the Mercedes‑Benz E‑Class (W214) as emphasising ride comfort and quietness — Carwow's review calls the E‑Class 'incredibly comfortable' and notes a softer, more insulated ride (optionally helped by air suspension).",
+  "url": "https://www.carwow.co.uk/mercedes/e-class",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Carwow (UK) review — E‑Class",
+   "published": "accessed 2026-10-11",
+   "stance": "supports",
+   "about": "Mercedes‑Benz E‑Class ride comfort (reviews) 2025/2026",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-51bf94f3f5a2546a",
+   "supports_signal_ids": "SIG-G60-EU-g1-51bf94f3f5a2546a"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-36",
+  "source_type": "web",
+  "source_name": "Auto Express (UK) — BMW 5 Series review",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Independent reviews and road tests characterise the BMW 5 Series (G60) as still more focused on handling/driver engagement and slightly firmer in ride than the E‑Class while remaining very capable and refined — Auto Express explicitly contrasts the 5 Series' firmer ride/keen dynamics with the E‑Class's softer ride.",
+  "url": "https://www.autoexpress.co.uk/bmw/5-series",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Auto Express (UK) — BMW 5 Series review",
+   "published": "28 June 2024 (review)",
+   "stance": "supports",
+   "about": "BMW 5 Series (G60) driving dynamics and ride (reviews) 2024–2026",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-51bf94f3f5a2546a",
+   "supports_signal_ids": "SIG-G60-EU-g1-51bf94f3f5a2546a"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-37",
+  "source_type": "web",
+  "source_name": "NHTSA / Mercedes‑Benz TSB (published copy)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Mercedes issued technical service bulletins (TSBs) affecting model series including the E‑Class (series 214): TSB LI83.50‑P‑078996 (dated 10 March 2025) documents customer complaints of 'no airflow or ventilation from the rear blower' (heating/ventilation/air‑conditioning symptom) and prescribes SCN coding of the N10/6*1 control unit as the remedy; the TSB text is published in NHTSA/TSB documents and service‑bulletin archives.",
+  "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11015630-0001.pdf",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "NHTSA / Mercedes‑Benz TSB (published copy)",
+   "published": "10 March 2025 (TSB LI83.50‑P‑078996)",
+   "stance": "supports",
+   "about": "Mercedes E‑Class (W214) HVAC rear‑blower no‑airflow TSB (Mar 10, 2025)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-51bf94f3f5a2546a",
+   "supports_signal_ids": "SIG-G60-EU-g1-51bf94f3f5a2546a"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-38",
+  "source_type": "web",
+  "source_name": "NHTSA recall report (BMW Campaign 26V096000)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW of North America reported a safety recall (NHTSA Campaign 26V096000, filed 19 February 2026) affecting many BMW models including 5‑Series/i5 derivatives: 'the electrical wiring harness for the air conditioning system may become damaged during replacement of the cabin air filter' — dealers are to inspect/replace the harness and add a retaining strap/bracket as necessary (recall report PDF on NHTSA static site).",
+  "url": "https://static.nhtsa.gov/odi/rcl/2026/RCLRPT-26V096-6591.pdf",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "NHTSA recall report (BMW Campaign 26V096000)",
+   "published": "19 February 2026 (NHTSA Campaign 26V096000)",
+   "stance": "supports",
+   "about": "BMW 5 Series / i5 air‑conditioning wiring harness recall (Feb 19, 2026)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-51bf94f3f5a2546a",
+   "supports_signal_ids": "SIG-G60-EU-g1-51bf94f3f5a2546a"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-39",
+  "source_type": "web",
+  "source_name": "Top Gear",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Audi’s A6 e‑tron Sportback and Avant are reported by multiple European reviews to have a 502‑litre luggage compartment (seats up) and a small front trunk (~27 litres) for charging cables.",
+  "url": "https://www.topgear.com/car-reviews/audi/a6-e-tron/interior",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Top Gear",
+   "published": "2025-02-17",
+   "stance": "supports",
+   "about": "Audi A6 e-tron (Sportback / Avant) boot capacity",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-c05e4775de723036",
+   "supports_signal_ids": "SIG-G60-EU-g1-c05e4775de723036"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-40",
+  "source_type": "web",
+  "source_name": "Auto Express",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "European reviews note the A6 e‑tron Sportback’s rear bench is relatively tight for tall passengers: the high battery floor plus the sloping Sportback roofline reduce rear headroom and rear foot space, and reviewers recommend the Avant/estate if rear‑seat room is a priority.",
+  "url": "https://www.autoexpress.co.uk/audi/a6/365223/audi-a6-e-tron-review",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Auto Express",
+   "published": "",
+   "stance": "supports",
+   "about": "Audi A6 e-tron rear passenger space / practicality",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-c05e4775de723036",
+   "supports_signal_ids": "SIG-G60-EU-g1-c05e4775de723036"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-41",
+  "source_type": "web",
+  "source_name": "Autocar",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Autocar’s measurements and comparison report the Audi A6’s typical rear knee room at about 700 mm and state the latest BMW 5‑Series (the ‘G60’ generation) offers roughly 740 mm rear knee room in their comparison—i.e. the BMW is measurably roomier rearwards in that test.",
+  "url": "https://www.autocar.co.uk/car-review/audi/a6",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Autocar",
+   "published": "",
+   "stance": "supports",
+   "about": "Audi A6 vs BMW 5 Series rear knee room (measured comparison)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-c05e4775de723036",
+   "supports_signal_ids": "SIG-G60-EU-g1-c05e4775de723036"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-42",
+  "source_type": "web",
+  "source_name": "Kelley Blue Book (KBB)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Kelley Blue Book lists the BMW 5‑Series (sedan) rear legroom at about 37 inches (≈940 mm) and a trunk volume of 18.4 cu ft (≈521 litres), indicating class‑competitive rear legroom and a large sedan boot in the G60‑generation models.",
+  "url": "https://www.kbb.com/bmw/5-series/2026/?bodystyle=sedan",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Kelley Blue Book (KBB)",
+   "published": "",
+   "stance": "supports",
+   "about": "BMW 5 Series (G60) rear legroom and trunk volume",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-c05e4775de723036",
+   "supports_signal_ids": "SIG-G60-EU-g1-c05e4775de723036"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-43",
+  "source_type": "web",
+  "source_name": "Autocar",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Autocar explicitly states that, for boot capacity in comparable variants, BMW’s 530e manages about 520 litres (making it a class leader in some comparisons), while the A6 variants they tested (particularly hybrids) can have notably less usable boot space—supporting the finding that BMW variants often offer more rear/cargo practicality.",
+  "url": "https://www.autocar.co.uk/car-review/audi/a6",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Autocar",
+   "published": "",
+   "stance": "supports",
+   "about": "BMW 530e boot capacity vs Audi A6 boot/practicality",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-c05e4775de723036",
+   "supports_signal_ids": "SIG-G60-EU-g1-c05e4775de723036"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-44",
+  "source_type": "web",
+  "source_name": "Auto Express (supported by Autocar measurements)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Summary (reviewed EU market 2025/2026): independent European road tests conclude the A6 e‑tron Sportback gives competitive boot volume (502 L) and useful frunk space, but its rear‑seat accommodation is generally tighter than the BMW 5‑Series (G60) sedan—reviews and measured figures have driven customer complaints about rear interior roominess for the A6 Sportback; reviewers therefore recommend the A6 Avant or choosing the BMW 5 if rear‑seat space is a priority.",
+  "url": "https://www.autoexpress.co.uk/audi/a6/365223/audi-a6-e-tron-review",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Auto Express (supported by Autocar measurements)",
+   "published": "",
+   "stance": "supports",
+   "about": "Overall comparison: Audi A6 e-tron (Sportback/Avant) vs BMW 5 Series (G60) on comfort and cargo",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-c05e4775de723036",
+   "supports_signal_ids": "SIG-G60-EU-g1-c05e4775de723036"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-45",
+  "source_type": "web",
+  "source_name": "Teslarati",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Tesla announced (and European media reported) that the refreshed Model S Long Range is quoted at up to 744 km WLTP for the EU market (Tesla Europe post cited by news outlets on 22 Oct 2025).",
+  "url": "https://www.teslarati.com/tesla-model-s-model-x-comeback-europe/",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Teslarati",
+   "published": "2025-10-22",
+   "stance": "supports",
+   "about": "Tesla Model S WLTP range (Europe 2025)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-8cc0e559a909d782",
+   "supports_signal_ids": "SIG-G60-EU-g1-8cc0e559a909d782"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-46",
+  "source_type": "web",
+  "source_name": "BMW (official)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW’s official product page lists the battery-electric BMW i5 (G60) eDrive40 Limousine with WLTP electric range values of 513–627 km (multiple configuration/consumption entries; BMW shows up to 601 km for some configurations).",
+  "url": "https://www.bmw.de/de/neufahrzeuge/bmw-i/i5/bmw-i5-ueberblick.html",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW (official)",
+   "published": "accessed 2026-10-11",
+   "stance": "supports",
+   "about": "BMW i5 (G60) WLTP range (Europe 2025/2026)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-8cc0e559a909d782",
+   "supports_signal_ids": "SIG-G60-EU-g1-8cc0e559a909d782"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-47",
+  "source_type": "web",
+  "source_name": "EVTrip / independent EV data",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Manufacturer and independent-spec aggregators report the Model S uses roughly a ~95 kWh usable battery and has a peak DC charging capability around 250 kW (realistic 10–80% sessions typically ~25–30 minutes on an unrestricted high‑power charger under favorable conditions).",
+  "url": "https://evtrip.dev/ev/tesla-model-s",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EVTrip / independent EV data",
+   "published": "accessed 2026-10-11",
+   "stance": "supports",
+   "about": "Tesla Model S charging power and 10–80% times",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-8cc0e559a909d782",
+   "supports_signal_ids": "SIG-G60-EU-g1-8cc0e559a909d782"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-48",
+  "source_type": "web",
+  "source_name": "BMW (official)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW’s official i5 charging specifications state DC fast charging up to 205 kW (depending on the charger and vehicle) and indicate a 10–80% DC charge time of approximately 0:30 hours on a suitable high‑power DC station.",
+  "url": "https://www.bmw.de/de/neufahrzeuge/bmw-i/i5/bmw-i5-ueberblick.html",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW (official)",
+   "published": "accessed 2026-10-11",
+   "stance": "supports",
+   "about": "BMW i5 (G60) DC charging rate and 10–80% time",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-8cc0e559a909d782",
+   "supports_signal_ids": "SIG-G60-EU-g1-8cc0e559a909d782"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-49",
+  "source_type": "web",
+  "source_name": "Wikipedia (summary of industry figures)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Tesla operates a large proprietary Supercharger network in Europe (industry trackers and summaries put the European Supercharger station count around the mid‑thousands of stalls / roughly 1,600–1,800 stations across Europe as of 2026), giving Tesla owners a contiguous, manufacturer‑operated fast‑charging network in many countries.",
+  "url": "https://en.wikipedia.org/wiki/Electric_vehicle_charging_network",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Wikipedia (summary of industry figures)",
+   "published": "April 2026 (data point)",
+   "stance": "supports",
+   "about": "Tesla Supercharger network size and coverage in Europe (2026)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-8cc0e559a909d782",
+   "supports_signal_ids": "SIG-G60-EU-g1-8cc0e559a909d782"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-50",
+  "source_type": "web",
+  "source_name": "IONITY (official press release)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "IONITY—one of the main pan‑European high‑power charging operators used by many OEMs (including via BMW’s offers)—reported financing and scale-up plans in 2025 and stated it operated over 700 sites and more than 5,000 high‑power charging points across 24 European countries (May 2025 press release).",
+  "url": "https://www.ionity.eu/nl/ionity/persberichten/ionity-verzekert-recordfinanciering-om-kritieke-infrastructuur-uit-te-breiden-voor-europas-elektrische-toekomst",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "IONITY (official press release)",
+   "published": "2025-05-15",
+   "stance": "supports",
+   "about": "Ionity network size and high‑power charging points (May 2025)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-8cc0e559a909d782",
+   "supports_signal_ids": "SIG-G60-EU-g1-8cc0e559a909d782"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-51",
+  "source_type": "web",
+  "source_name": "BMW Group press release",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW’s charging service (BMW Charging) advertises integrated access to a very large set of public charging points via roaming and partnerships (BMW has stated access to hundreds of thousands of public points and direct integration of the IONITY high‑power network and Plug & Charge support for compatible stations).",
+  "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0418871EN_GB/the-new-bmw-5-series-saloon",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press release",
+   "published": "2023 (press release) / accessed 2026-10-11",
+   "stance": "supports",
+   "about": "BMW Charging network access and Ionity integration",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-8cc0e559a909d782",
+   "supports_signal_ids": "SIG-G60-EU-g1-8cc0e559a909d782"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-52",
+  "source_type": "web",
+  "source_name": "International Council on Clean Transportation (ICCT) / research brief",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Independent and academic testing and reviews since 2024–2026 show WLTP is a laboratory test and real‑world BEV energy use and achievable range commonly fall short of WLTP on sustained motorway driving—studies and testing programs report typical real‑world consumption can be roughly ~10–25% (or in some cases around +25%) worse than WLTP figures depending on speed, temperature and driving profile.",
+  "url": "https://theicct.org/wp-content/uploads/2025/07/ID-392-%E2%80%93-Life-cycle-GHG_report_final.pdf",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "International Council on Clean Transportation (ICCT) / research brief",
+   "published": "2025",
+   "stance": "supports",
+   "about": "WLTP vs real‑world electric vehicle range and consumption (2024–2026 studies)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-8cc0e559a909d782",
+   "supports_signal_ids": "SIG-G60-EU-g1-8cc0e559a909d782"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-53",
+  "source_type": "web",
+  "source_name": "Fastned (news about Spark Alliance, 2025)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Operational reports and charging‑network trackers in 2025–2026 show Tesla’s Supercharger network continues to have high utilisation and consistent availability metrics (Tesla reported record Supercharger usage in 2026 Q2), while non‑Tesla drivers in Europe typically use public CCS networks (IONITY, Fastned, others) accessed via OEM roaming services (BMW Charging provides bundled roaming, fixed tariffs and Plug & Charge on many compatible networks).",
+  "url": "https://www.fastnedcharging.com/hq/en/ev-charging-leaders-unite-to-create-europes-largest-and-most-reliable-public-charging-network",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Fastned (news about Spark Alliance, 2025)",
+   "published": "2025-04-02",
+   "stance": "neutral",
+   "about": "Comparison of Supercharger (Tesla) usage and public CCS networks (Ionity, Fastned) and OEM roaming (BMW)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-8cc0e559a909d782",
+   "supports_signal_ids": "SIG-G60-EU-g1-8cc0e559a909d782"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-54",
+  "source_type": "web",
+  "source_name": "Autocar India",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "The Mercedes‑Benz E‑Class (2024–) is offered with third‑generation MBUX and an optional 'MBUX Superscreen' (12.3\" driver, 14.4\" center, 12.3\" passenger) powered by a Qualcomm Snapdragon 8295 chipset; at least some professional reviews say the display quality, speed and functionality are strong. ",
+  "url": "https://www.autocarindia.com/car-reviews-amp/2024-mercedes-e-class-review-smooth-and-easy-432514",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Autocar India",
+   "published": "25 Aug 2024",
+   "stance": "contradicts",
+   "about": "Mercedes‑Benz E‑Class infotainment hardware and reviewer assessment",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-55",
+  "source_type": "web",
+  "source_name": "The Drive",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Several professional reviews (e.g., The Drive) state that Mercedes’ new MBUX UI in the E‑Class is feature‑rich but can be confusing and requires time to learn, with important controls (HVAC submenus, some shortcuts) buried or behaving unexpectedly — i.e., hard to use for some testers. ",
+  "url": "https://www.thedrive.com/car-reviews/2024-mercedes-benz-e-class-first-drive-review",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "The Drive",
+   "published": "28 Mar 2024",
+   "stance": "supports",
+   "about": "Mercedes‑Benz E‑Class MBUX usability (complexity/learning curve)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-56",
+  "source_type": "web",
+  "source_name": "NHTSA / Mercedes‑Benz service bulletin (via NHTSA)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Mercedes‑Benz filed a U.S. service campaign (Campaign No. 2024090016) for certain MY2024 E‑Class/CLE vehicles because the MBUX control‑unit and head‑unit software ‘does not correspond to the current series production configuration’ and 'the infotainment system may not function correctly' — dealers will update the software. ",
+  "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11012178-0001.pdf",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "NHTSA / Mercedes‑Benz service bulletin (via NHTSA)",
+   "published": "January 2025",
+   "stance": "supports",
+   "about": "MY2024 Mercedes E‑Class MBUX software service campaign (infotainment faults)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-57",
+  "source_type": "web",
+  "source_name": "ÖAMTC (Austrian automobile club)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "European safety/recall notices document the same type of MBUX software problem: ÖAMTC (Austria) reports affected E‑Class/CLE vehicles (production Nov 2021–Jan 2024) and that a software update is being applied (ÖAMTC status: 4 Sept 2025), and ADAC lists a related recall entry (recall date shown Jan 2026) describing MBUX multimedia software not meeting specifications and requiring an update. ",
+  "url": "https://www.oeamtc.at/rueckrufaktionen/mercedes-benz-e-klasse-cle-probleme-mit-der-software-des-mbux-multimediasystems-82179435",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ÖAMTC (Austrian automobile club)",
+   "published": "Stand: 04.09.2025",
+   "stance": "supports",
+   "about": "EU recalls/service actions for Mercedes MBUX software issues",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-58",
+  "source_type": "web",
+  "source_name": "MotorTrend",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "The BMW 5‑Series (G60) launched with BMW’s iDrive 8.5 and a single‑piece curved display (12.3\" instrument + 14.9\" infotainment); multiple reviews (MotorTrend, Auto Express, CarGurus) describe iDrive 8.5 as an improved, responsive and feature‑rich interface, though it has a learning curve. ",
+  "url": "https://www.motortrend.com/reviews/2024-bmw-530i-xdrive-5-series-first-drive-review",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "MotorTrend",
+   "published": "25 Apr 2024",
+   "stance": "contradicts",
+   "about": "BMW 5 Series (G60) iDrive 8.5 responsiveness and reviewer assessment",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-59",
+  "source_type": "web",
+  "source_name": "Auto Express",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Reviewers and buyers note BMW retained a physical iDrive rotary controller and shortcut keys on the 5‑Series center tunnel; outlets say the rotary knob provides a less‑distracting, more tactile way to operate many functions on the move compared with touchscreen‑only designs. ",
+  "url": "https://www.autoexpress.co.uk/bmw/5-series",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "medium",
+   "publisher": "Auto Express",
+   "published": "(review updated online; page accessed 2026)",
+   "stance": "contradicts",
+   "about": "BMW 5 Series physical controls (iDrive rotary) vs touchscreen usability",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-60",
+  "source_type": "web",
+  "source_name": "Motor‑Talk forum (owner reports)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "User/owner forum threads and posts show real customers reporting MBUX sluggishness, black screens, lost connectivity, and repeated workshop visits for MBUX resets or updates (examples on German forums like Motor‑Talk and international threads), indicating the customer complaint 'sluggish and hard to use' has been reported by owners in the field. ",
+  "url": "https://www.motor-talk.de/forum/w214-mbux3-software-probleme-t7691826.html",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Motor‑Talk forum (owner reports)",
+   "published": "Oct 2024 – ongoing (forum thread)",
+   "stance": "supports",
+   "about": "Owner reports of Mercedes MBUX software problems (sluggishness, failures)",
+   "question_kind": "competitor",
+   "supports_signal_id": "SIG-G60-EU-g1-bc69af266b41dcb6",
+   "supports_signal_ids": "SIG-G60-EU-g1-bc69af266b41dcb6"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-61",
+  "source_type": "web",
+  "source_name": "EUR-Lex / European Union",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "The EU’s Alternative Fuels Infrastructure Regulation (AFIR, Regulation (EU) 2023/1804) establishes binding deployment targets and rules for public EV recharging infrastructure across the Trans‑European Transport Network (TEN‑T) and urban nodes, and entered into force in 2024 (text: Regulation (EU) 2023/1804). ([eur-lex.europa.eu](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32023R1804&utm_source=openai))",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R1804",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EUR-Lex / European Union",
+   "published": "13 September 2023",
+   "stance": "neutral",
+   "about": "AFIR / EU charging infrastructure targets",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-62",
+  "source_type": "web",
+  "source_name": "BDEW (German Association of Energy and Water Industries)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "AFIR requires ad‑hoc (pay‑as‑you‑charge) payment and greater price transparency at publicly accessible charging points and includes retrofit obligations for higher‑power chargers (interpretation/guidance and implementation milestones note retrofit obligations from 2027 for certain >50 kW points). ([bdew.de](https://www.bdew.de/media/documents/AFIR_Interpretation_Paper_BDEW_EN.pdf?utm_source=openai))",
+  "url": "https://www.bdew.de/media/documents/AFIR_Interpretation_Paper_BDEW_EN.pdf",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BDEW (German Association of Energy and Water Industries)",
+   "published": "11 August 2023",
+   "stance": "neutral",
+   "about": "AFIR ad-hoc payment / retrofit requirements",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-63",
+  "source_type": "web",
+  "source_name": "IONITY (press release)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Ionity (European high‑power charging network) announced plans and secured financing to expand its network to more than 1,300 stations and to more than ~13,000 charging points in Europe by 2030, with existing stations offering a minimum of 350 kW per plug. ([ionity.eu](https://ionity.eu/_Resources/Persistent/8/1/a/2/81a23f093448ce50baac55376ee21346fd6c5325/240507_IONITY_PI_GTF_EN.pdf?utm_source=openai))",
+  "url": "https://ionity.eu/_Resources/Persistent/8/1/a/2/81a23f093448ce50baac55376ee21346fd6c5325/240507_IONITY_PI_GTF_EN.pdf",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "IONITY (press release)",
+   "published": "15 May 2024 (press release PDF dated May 2024/2025 in announcement)",
+   "stance": "neutral",
+   "about": "Ionity network expansion and 350 kW stations",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-64",
+  "source_type": "web",
+  "source_name": "electrive.com",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Ionity and industry reporting say Ionity operates 350 kW chargers today and is investigating/rolling out higher‑power hardware (plans discussed to add chargers with up to ~600 kW in the near future). ([electrive.com](https://www.electrive.com/2024/04/27/building-and-operating-a-pan-european-hpc-network-marcus-groll-from-ionity/?utm_source=openai))",
+  "url": "https://www.electrive.com/2024/04/27/building-and-operating-a-pan-european-hpc-network-marcus-groll-from-ionity/",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "electrive.com",
+   "published": "27 April 2024",
+   "stance": "neutral",
+   "about": "Ionity plans for 600 kW hardware",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-65",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz Media",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Mercedes‑Benz has announced deployment of modular high‑performance charging infrastructure (HYC1000 systems) able to provide up to 1,000 kW per power unit and to intelligently distribute that power across multiple charging points at select Mercedes charging parks (installation starting in 2026 at select sites). ([media.mbusa.com](https://media.mbusa.com/news/mercedes-benz-sets-new-standards-for-public-charging-integration-of-revolutionary-high-performance-fast-charger-into-the-companys-own-fast-charging-network?utm_source=openai))",
+  "url": "https://media.mbusa.com/news/mercedes-benz-sets-new-standards-for-public-charging-integration-of-revolutionary-high-performance-fast-charger-into-the-companys-own-fast-charging-network",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Mercedes‑Benz Media",
+   "published": "8 September 2025",
+   "stance": "neutral",
+   "about": "Mercedes HYC1000 high‑power charging deployment",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-66",
+  "source_type": "web",
+  "source_name": "BMW Group (newsroom)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW states its Neue Klasse architecture (production from 2025) uses a Gen‑6 800‑volt eDrive and new cylindrical cells that BMW says increase cell energy density by more than ~20%, improve charging speed by up to ~30% and increase range by up to ~30% vs prior BMW EVs — technology that should be common in premium BMW models and influence segment rivals by 2028–2031. ([bmwgroup.com](https://www.bmwgroup.com/en/news/general/2023/neueklasse.html?utm_source=openai))",
+  "url": "https://www.bmwgroup.com/en/news/general/2023/neueklasse.html",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group (newsroom)",
+   "published": "May 2023",
+   "stance": "neutral",
+   "about": "BMW Neue Klasse: 800V, cell energy density, charging speed, range improvements",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-67",
+  "source_type": "web",
+  "source_name": "McKinsey & Company (Battery insights / energy transition report)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Industry analyses (McKinsey Battery Insights and others) project substantial improvements in cell and pack specific energy through 2030 — e.g., McKinsey and other industry sources show cell‑level specific energy rising materially toward the late 2020s (cell‑level projections commonly cited in the industry are in the order of a few‑hundred Wh/kg by 2030, enabling higher pack energy per vehicle). These cell/pack gains are the technical basis for 2028–2031 mid‑segment premium cars to offer materially longer real‑world range than 2024 models. ([mckinsey.de](https://www.mckinsey.de/~/media/mckinsey/mckinsey%20global%20institute/our%20research/the%20hard%20stuff%20navigating%20the%20physical%20realities%20of%20the%20energy%20transition/the-hard-stuff-navigating-the-physical-realities-of-the-energy-transition.pdf?utm_source=openai))",
+  "url": "https://www.mckinsey.de/~/media/mckinsey/mckinsey%20global%20institute/our%20research/the%20hard%20stuff%20navigating%20the%20physical%20realities%20of%20the%20energy%20transition/the-hard-stuff-navigating-the-physical-realities-of-the-energy-transition.pdf",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "McKinsey & Company (Battery insights / energy transition report)",
+   "published": "2024 (McKinsey analysis & projections)",
+   "stance": "neutral",
+   "about": "Battery cell specific energy projections to 2030",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-68",
+  "source_type": "web",
+  "source_name": "International Energy Agency (IEA), Global EV Outlook 2025",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "The IEA’s Global EV Outlook 2025 documents rapid growth in ultra‑fast public chargers (≥150 kW): ultra‑fast chargers grew by about 50% in 2024 and accounted for nearly 10% of public fast chargers, and the IEA highlights that charging capacity (not just connector count) must grow substantially to support the larger EV fleet through 2030 — a regulatory and market push that will increase available fast charging for premium cars in the EU between 2028–2031. ([iea.org](https://www.iea.org/reports/global-ev-outlook-2025/executive-summary?utm_source=openai))",
+  "url": "https://www.iea.org/reports/global-ev-outlook-2025/executive-summary",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "International Energy Agency (IEA), Global EV Outlook 2025",
+   "published": "14 May 2025 (Global EV Outlook 2025)",
+   "stance": "neutral",
+   "about": "Growth of ultra-fast chargers and infrastructure needs to 2030",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-69",
+  "source_type": "web",
+  "source_name": "Consumer Reports",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Tesla’s European Supercharger fleet already uses CCS‑compatible pedestals at many sites and Tesla has been progressively opening Supercharger sites or specific stalls to non‑Tesla vehicles (and OEMs have been announcing access partnerships), which increases public high‑power charging access for non‑Tesla premium cars across EU markets. Consumer Reports and other outlets summarise these developments and partnerships. ([consumerreports.org](https://www.consumerreports.org/cars/hybrids-evs/tesla-superchargers-open-to-other-evs-what-to-know-a9262067544?utm_source=openai))",
+  "url": "https://www.consumerreports.org/cars/hybrids-evs/tesla-superchargers-open-to-other-evs-what-to-know-a9262067544",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Consumer Reports",
+   "published": "2024 (article summarising network opening developments)",
+   "stance": "neutral",
+   "about": "Tesla Superchargers opening to non‑Tesla / CCS compatibility in Europe",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-70",
+  "source_type": "web",
+  "source_name": "EUR-Lex / European Union",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "UNECE/UN R155 (vehicle cybersecurity) and R156 (software update and software update management systems) have been incorporated into the EU type-approval framework and therefore require OEMs to implement cybersecurity management systems and compliant software-update management systems for type approval of new vehicles in the EU (affecting how OEMs design OTA capability and update governance). ([eur-lex.europa.eu](https://eur-lex.europa.eu/eli/reg/2018/858?utm_source=openai))",
+  "url": "https://eur-lex.europa.eu/eli/reg/2018/858",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EUR-Lex / European Union",
+   "published": "consolidated 2018 (amendments referenced 2022–2026)",
+   "stance": "supports",
+   "about": "Regulatory requirement (UNECE R155 / R156) for vehicle cybersecurity and software update management affecting OTA",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-71",
+  "source_type": "web",
+  "source_name": "European Commission / Digital Strategy",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "The EU’s revised AI regulatory timetable (AI Act / 'AI Omnibus') sets a delayed application date of 2 August 2028 for rules covering high‑risk AI systems embedded in products, meaning automotive AI systems classified as high‑risk (e.g., ADAS, driver‑monitoring, certain safety‑relevant models) will be subject to AI Act obligations from that date. ([digital-strategy.ec.europa.eu](https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force?utm_source=openai))",
+  "url": "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "European Commission / Digital Strategy",
+   "published": "AI Omnibus news, July 27, 2026",
+   "stance": "supports",
+   "about": "AI Act implementation timeline for high‑risk AI embedded in products (including vehicle systems)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-72",
+  "source_type": "web",
+  "source_name": "BMW Group press release / ComputerBase reporting",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW Operating System 9 is based on Android Automotive (AOSP variant) and includes an in‑vehicle app store and expanded OTA update functionality; BMW has stated it can deliver Remote Software Upgrades (OTA) across its fleet and has delivered millions of OTA updates to vehicles to date. ([computerbase.de](https://www.computerbase.de/news/mobilitaet/infotainment-bmw-os-9-basiert-auf-android-und-wer-das-update-bekommt.82967/?utm_source=openai))",
+  "url": "https://www.press.bmwgroup.com/pressclub/p/si/pressDetail.html?id=T0445590SL&left_menu_item=node__5243&outputChannelId=58&title=10-milijonov-in-ve%C4%8D-posodobitve-programske-opreme-dobavljene-voznemu-parku-bmw-group-dosegajo-nov",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press release / ComputerBase reporting",
+   "published": "BMW press release (2024) / reporting on OS9 (2023–2024)",
+   "stance": "supports",
+   "about": "BMW OS9 architecture, app store and OTA capability",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-73",
+  "source_type": "web",
+  "source_name": "McKinsey & Company / S&P Global Autotech Insight",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Industry analyses and market reports show premium OEMs are shifting to zonal/centralized E/E and 'software‑defined vehicle' architectures, and most OEMs target rollout of central compute, cross‑domain software and frequent OTA delivery for premium lines within the 2026–2030 timeframe — a trend expected to underpin widespread SDV/OTA capabilities by 2028–2031. ([autotechinsight.spglobal.com](https://autotechinsight.spglobal.com/shop/product/5003647/oems-deployment-strategy-for-the-software-defined-vehicle-sdv?utm_source=openai))",
+  "url": "https://www.mckinsey.com/features/mckinsey-center-for-future-mobility/our-insights/mapping-the-automotive-software-and-electronics-landscape",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "McKinsey & Company / S&P Global Autotech Insight",
+   "published": "McKinsey article Jan 6, 2026; S&P Global Autotech insight (2025–2026)",
+   "stance": "supports",
+   "about": "Market/technology trend: centralized computing and SDV deployment timelines for premium OEMs",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-74",
+  "source_type": "web",
+  "source_name": "Audi (official) / market research (DataIntelo)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "OEMs are already commercialising 'functions‑on‑demand' and pay‑for‑feature models (example: Audi’s official 'Functions on Demand' page for dual‑zone climate shows monthly, yearly and lifetime booking options), and market research expects growth in automaker subscription revenues into the late 2020s — indicating pay‑per‑feature/subscription monetisation of in‑car software will expand through 2028–2031. ([audi.ie](https://www.audi.ie/en/models/functions-on-demand-2023/dual-zone-deluxe-automatic-air-conditioning/))",
+  "url": "https://www.audi.ie/en/models/functions-on-demand-2023/dual-zone-deluxe-automatic-air-conditioning/",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Audi (official) / market research (DataIntelo)",
+   "published": "Audi functions‑on‑demand page (2023; maintained 2026) / market research (2025–2026)",
+   "stance": "supports",
+   "about": "Trend: subscription and on‑demand monetisation of in‑car features",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-75",
+  "source_type": "web",
+  "source_name": "European Data Protection Board (EDPB) / Agnile Technologies summary",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "European data‑protection and cybersecurity instruments (EDPB connected‑vehicle guidance / GDPR expectations; NIS2; the Cyber Resilience Act and the EU Data Act) are already shaping requirements for in‑car data processing, back‑end services and supplier obligations — OEMs and their cloud partners will need GDPR‑compliant data handling, stronger privacy‑by‑design and incident/reporting capabilities for services and apps in 2028–2031. ([edpb.europa.eu](https://www.edpb.europa.eu/system/files/2025-05/edpb_letter_20250505_in_car-video-cameras-and-dashcams_en.pdf?utm_source=openai))",
+  "url": "https://www.edpb.europa.eu/system/files/2025-05/edpb_letter_20250505_in_car-video-cameras-and-dashcams_en.pdf",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "European Data Protection Board (EDPB) / Agnile Technologies summary",
+   "published": "EDPB letter (May 5, 2025) / Agnile (2026)",
+   "stance": "supports",
+   "about": "Regulatory constraints: GDPR/EDPB guidance and cybersecurity legislation affecting in‑car data and services",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-76",
+  "source_type": "web",
+  "source_name": "McKinsey & Company",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Consultancies and market analysts project significant growth in the automotive software and electronics market and expect generative/edge AI capabilities to be integrated into vehicle cockpits and personalization services across premium models by the late 2020s, enabling AI‑based assistants, contextual recommendations and voice/chat features delivered via OTA updates and cloud‑edge orchestration. ([mckinsey.com](https://www.mckinsey.com/features/mckinsey-center-for-future-mobility/our-insights/mapping-the-automotive-software-and-electronics-landscape?trk=article-ssr-frontend-pulse_little-text-block&utm_source=openai))",
+  "url": "https://www.mckinsey.com/features/mckinsey-center-for-future-mobility/our-insights/mapping-the-automotive-software-and-electronics-landscape",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "McKinsey & Company",
+   "published": "January 6, 2026",
+   "stance": "supports",
+   "about": "Trend: integration of generative/edge AI into vehicle cockpits and services by late 2020s",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-77",
+  "source_type": "web",
+  "source_name": "Wikipedia (Android Automotive summary) / t3n reporting on VW/CARIAD app store (2023)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Adoption of Android Automotive and OEM app‑store ecosystems (OEM‑controlled or third‑party app‑stores such as Aptoide) is underway among European premium OEMs (BMW, Volkswagen Group, Mercedes tech paths), which points to expanding in‑vehicle third‑party apps and entertainment/commerce services between 2028 and 2031. ([en.wikipedia.org](https://en.wikipedia.org/wiki/Android_Automotive?utm_source=openai))",
+  "url": "https://en.wikipedia.org/wiki/Android_Automotive",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Wikipedia (Android Automotive summary) / t3n reporting on VW/CARIAD app store (2023)",
+   "published": "Android Automotive (ongoing); t3n article (2023)",
+   "stance": "supports",
+   "about": "Trend: Android Automotive / OEM app‑store adoption enabling third‑party in‑car apps",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-78",
+  "source_type": "web",
+  "source_name": "EUR-Lex / Alora Advisory (market outlook)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Because UNECE R155/R156, the EU Data Act, NIS2 and the Cyber Resilience Act place obligations on OEMs, suppliers and cloud/back‑end providers, OEMs selling premium models (e.g., BMW‑class limousines) in the EU will need certified cyber‑security and update‑management processes, SBOMs and incident reporting capabilities as part of their OTA/app ecosystems by 2028–2031. ([eur-lex.europa.eu](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32022R2236&utm_source=openai))",
+  "url": "https://eur-lex.europa.eu/eli/reg/2018/858",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EUR-Lex / Alora Advisory (market outlook)",
+   "published": "Consolidated regulation (2018/858 with 2022–2026 amendments) / market outlook (2026)",
+   "stance": "supports",
+   "about": "Practical compliance requirements for OTA/app ecosystems in EU market",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-79",
+  "source_type": "web",
+  "source_name": "Euro NCAP",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Euro NCAP’s 2026 protocols introduce a new HMI assessment that explicitly gives credit for the availability of physical buttons for commonly used controls.",
+  "url": "https://www.euroncap.com/press-media/euro-ncap-announces-2026-protocol-changes-to-tackle-modern-driving-risks/",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Euro NCAP",
+   "published": "26 November 2025",
+   "stance": "supports",
+   "about": "Regulatory change — Euro NCAP HMI assessment.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-80",
+  "source_type": "web",
+  "source_name": "EE Times",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Public reporting of the 2026 Euro NCAP changes and follow-up coverage specify that OEMs targeting high EU safety scores will be expected to keep tactile controls for frequently‑used, safety‑critical functions (commonly cited examples: indicators/turn signals, hazard lights, horn, wipers and eCall).",
+  "url": "https://www.eetimes.com/voice-technology-answering-europes-call-for-safer-automotive-controls/",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EE Times",
+   "published": "20 June 2025",
+   "stance": "supports",
+   "about": "Interpretation of Euro NCAP HMI expectations and commonly‑cited control list.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-81",
+  "source_type": "web",
+  "source_name": "BMW Group",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW’s Neue Klasse / Panoramic iDrive and BMW Operating System X publicly demonstrate BMW moving premium cabins toward large central touchscreens, a Panoramic Vision HUD, and multimodal inputs while retaining multifunction steering‑wheel controls.",
+  "url": "https://www.bmwgroup.jobs/content/grpw/websites/bmwgroup_com/en/innovation/connected-car.html",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group",
+   "published": "05 January 2026",
+   "stance": "supports",
+   "about": "BMW product strategy — Panoramic iDrive and multimodal HMI.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-82",
+  "source_type": "web",
+  "source_name": "BMW Group Press",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW has announced that the BMW Intelligent Personal Assistant will be expanded with LLM‑based Amazon Alexa+ and rolled out to vehicles with Operating System 9 and X from the second half of 2026, enabling more natural, context‑sensitive in‑car voice interaction.",
+  "url": "https://www.press.bmwgroup.com/usa/article/detail/T0454787EN_US?forceSitePreference=DESKTOP",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group Press",
+   "published": "05 January 2026",
+   "stance": "supports",
+   "about": "BMW announcement — LLM/Alexa+ integration.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-83",
+  "source_type": "web",
+  "source_name": "MarketsandMarkets",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Market and supplier reports forecast strong growth for multimodal HMI (touch + voice + gesture + haptics) through the late 2020s, with touchscreens remaining the dominant display/control surface in premium segments but OEMs investing increasingly in integrated voice and haptic solutions.",
+  "url": "https://www.marketsandmarkets.com/Market-Reports/automotive-digital-cockpit-market-56470878.html",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "MarketsandMarkets",
+   "published": "2025–2026 (report)",
+   "stance": "supports",
+   "about": "Market forecast — multimodal HMI and touchscreen dominance in premium cars.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-84",
+  "source_type": "web",
+  "source_name": "Sonatus / Wards Intelligence (press release via Nasdaq)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Industry SDV roadmaps and surveys indicate OEMs expect centralized/zonal compute, OTA updates and software‑defined vehicle architectures to enable rollout and continuous upgrade of advanced HMI and in‑car AI features across premium model lines in the 2028–2031 timeframe.",
+  "url": "https://www.nasdaq.com/press-release/2025-sdv-survey-automotive-industry-betting-ai-ota-updates-and-advanced-software",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Sonatus / Wards Intelligence (press release via Nasdaq)",
+   "published": "2025",
+   "stance": "supports",
+   "about": "SDV survey — timelines for SDV, OTA and HMI deployment.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-85",
+  "source_type": "web",
+  "source_name": "MDPI Applied Sciences (peer‑reviewed paper)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Peer‑reviewed user research finds a majority of drivers prefer physical/tactile controls for many frequently used functions and documents longer task times and higher distraction for deep touchscreen menus—findings that influence OEM and regulator HMI design choices in Europe.",
+  "url": "https://www.mdpi.com/2076-3417/15/24/12967",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "MDPI Applied Sciences (peer‑reviewed paper)",
+   "published": "24 December 2024",
+   "stance": "supports",
+   "about": "User research on preference for physical controls and touchscreen distraction.",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-86",
+  "source_type": "web",
+  "source_name": "EUR-Lex / European Union",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "The EU’s new Regulation on circularity requirements for vehicle design (Reg. 2026/1738) requires a minimum 15% recycled plastic content by weight in new vehicle types type‑approved from 1 September 2032 (with methodology and verification measures to be adopted earlier).",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1789606838573&uri=CELEX%3A32026R1738",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EUR-Lex / European Union",
+   "published": "2026",
+   "stance": "supports",
+   "about": "regulation / sustainable materials",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-87",
+  "source_type": "web",
+  "source_name": "European Commission – Environment",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "EU institutions’ recent press statements and fact sheets state the new vehicle circularity rules will set mandatory recycled plastic targets (15% from 2032, rising later to 25%), which will directly drive OEM interior material sourcing and design for recyclability across the EU market.",
+  "url": "https://environment.ec.europa.eu/news/new-rules-more-circular-european-automotive-sector-2026-08-12_en",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "European Commission – Environment",
+   "published": "2026-08-12",
+   "stance": "supports",
+   "about": "regulation / sustainable materials",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-88",
+  "source_type": "web",
+  "source_name": "BMW Group press (Sustainability through Innovation 2022)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW Group has stated a target to use thermoplastics with ~40% recycled content in new vehicles by 2030 and is developing mono‑material and secondary‑material interior concepts to reduce CO2 and improve circularity.",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0403367EN/bmw-group-sustainability-through-innovation-2022",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press (Sustainability through Innovation 2022)",
+   "published": "2022",
+   "stance": "supports",
+   "about": "OEM commitment / sustainable materials",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-89",
+  "source_type": "web",
+  "source_name": "BMW Group press (Vision Neue Klasse)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW’s Vision Neue Klasse (press materials) presents interior concepts that reduce material variety, increase secondary/plant‑based materials (example ‘Verdana’), and promote a more open, ‘living‑room’ interior language for upcoming BMW EVs that will influence premium models during the late 2020s.",
+  "url": "https://www.press.bmwgroup.com/deutschland/article/detail/T0440360EN/first-look-at-neue-klasse-as-sav-the-bmw-vision-neue-klasse-x?forceSitePreference=DESKTOP",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press (Vision Neue Klasse)",
+   "published": "2023-09-02",
+   "stance": "supports",
+   "about": "interior design / space concept",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-90",
+  "source_type": "web",
+  "source_name": "BMW Group press (new BMW 5 Series press release)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW’s official model materials updates show the new BMW 5 Series (G60/i5 family) is offered with a fully leather‑free, 'Veganza' synthetic interior (seats, dash, door panels) as standard in many markets — an indicator that premium mid‑segment cabins will shift toward high‑quality animal‑free alternatives in this timeframe.",
+  "url": "https://www.press.bmwgroup.com/usa/article/detail/T0418778EN_US/the-all-new-2024-bmw-5-series?language=en_US",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press (new BMW 5 Series press release)",
+   "published": "2023-05-24",
+   "stance": "supports",
+   "about": "interior materials / OEM offering",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-91",
+  "source_type": "web",
+  "source_name": "Messe Frankfurt – Automotive Industry Insights",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "EV‑native packaging (battery underfloor / flat floor) increases usable cabin volume and enables lounge‑like, reconfigurable layouts (sliding consoles, longer seat travel); trade and OEM sources identify flat‑floor EV architecture as a key enabler of new premium space concepts for the late 2020s and beyond.",
+  "url": "https://automotive.messefrankfurt.com/global/en/news-insights/industry-insights/purpose-driven-design-evolution-of-e-cars.html",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Messe Frankfurt – Automotive Industry Insights",
+   "published": "2025-05-13",
+   "stance": "supports",
+   "about": "space concept / EV packaging",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-92",
+  "source_type": "web",
+  "source_name": "Yanfeng (company press / product pages)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Market and supplier reports note a growth in reconfigurable 'smart cabin' concepts (AI personalisation, emotion sensing, adaptive lighting and seating) from tier‑1 suppliers — Yanfeng’s XiM smart‑cabin concepts and award wins in 2025/2026 are concrete examples indicating production‑ready smart‑cabin features will enter premium segments in the 2028–2031 window.",
+  "url": "https://www.yanfeng.com/en/press-contact/europe-south-africa-and-north-america?force-boost-warm=1",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Yanfeng (company press / product pages)",
+   "published": "2025 (updated 2026)",
+   "stance": "supports",
+   "about": "space concept / digital personalization",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-93",
+  "source_type": "web",
+  "source_name": "Covestro (press reported via EuropaWire)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Chemical‑industry and tier‑1 supplier initiatives (example: Covestro’s PCR polycarbonates from end‑of‑life headlamps; BASF pilot projects for chemical recycling with OEM partners) demonstrate scaling of post‑consumer and chemically recycled polymers suitable for visible interior parts — enabling higher recycled content in premium interiors toward 2028‑2031.",
+  "url": "https://news.europawire.eu/covestro-introduces-pcr-polycarbonates-from-discarded-headlamps-to-boost-automotive-sustainability/eu-press-release/2025/04/15/12/15/27/152227/",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "Covestro (press reported via EuropaWire)",
+   "published": "2025-04-15",
+   "stance": "supports",
+   "about": "sustainable materials / supplier development",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-94",
+  "source_type": "web",
+  "source_name": "BASF press release",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BASF reported completion of pilot projects (with OEM partners) on chemical recycling routes for automotive plastics in 2025, indicating OEM‑supplychain pathways to reintroduce ELV plastics into premium interior components are being validated for scaling in the late 2020s.",
+  "url": "https://www.basf.com/global/en/media/news-releases/2025/09/p-25-160",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BASF press release",
+   "published": "2025-09-29",
+   "stance": "supports",
+   "about": "sustainable materials / recycling",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-95",
+  "source_type": "web",
+  "source_name": "GII Research (market report summary)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Industry market studies forecast the sustainable and bio‑based premium interior materials segment will grow strongly (double‑digit CAGR for sustainable premium materials in some forecasts) as OEM sustainability commitments, EU circularity rules, and consumer demand push recycled textiles, bio‑polymers, and leather alternatives into premium cabins by 2030–2035.",
+  "url": "https://www.giiresearch.com/report/meti2132826-automotive-premium-interior-materials-market-by.html",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "GII Research (market report summary)",
+   "published": "2026 (report)",
+   "stance": "supports",
+   "about": "market forecast / sustainable materials",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-96",
+  "source_type": "web",
+  "source_name": "ScienceDirect (journal article on VOC emissions from automotive interior components)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Multiple industry reports and scientific studies document rising OEM/spec demands for low‑VOC, low‑odor and improved cabin air quality materials — a requirement that will accelerate qualification of low‑VOC foams, adhesives and coatings for premium cabins between 2028–2031 as quieter EV cabins make indoor air quality a differentiator.",
+  "url": "https://www.sciencedirect.com/science/article/pii/S0360132324009788",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "ScienceDirect (journal article on VOC emissions from automotive interior components)",
+   "published": "2024-12-01",
+   "stance": "supports",
+   "about": "sustainable materials / indoor air quality",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-97",
+  "source_type": "web",
+  "source_name": "BMW Group press (M Visionary Materials Seat Evo / concept materials)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Tier‑1 seating and interior suppliers are developing mono‑material or easily disassemblable seat architectures (BMW M Visionary Materials Seat examples; i Vision Circular concepts) to enable circularity and higher recycled content in premium interiors — these concepts are being qualified for series use and are expected to propagate into mid‑segment premium cars in the 2028–2031 period.",
+  "url": "https://www.press.bmwgroup.com/usa/article/attachment/T0452842EN_US/638621",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press (M Visionary Materials Seat Evo / concept materials)",
+   "published": "2025 (press attachment)",
+   "stance": "supports",
+   "about": "interior design / recyclability",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-98",
+  "source_type": "web",
+  "source_name": "UNECE",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "UN Regulation No.157 (ALKS) has been adopted and has been amended to enable higher-speed motorway automated functions (including automated lane changes and operational speeds up to 130 km/h), creating an international technical basis that enables motorway-level automated driving features in vehicles sold in UNECE / EU markets.",
+  "url": "https://unece.org/transport/documents/2021/03/standards/un-regulation-no-157-automated-lane-keeping-systems-alks",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "UNECE",
+   "published": "2021 (with subsequent amendments)",
+   "stance": "supports",
+   "about": "Regulatory enabling for Level 3 motorway ADS",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-99",
+  "source_type": "web",
+  "source_name": "EUR-Lex / European Union",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "UN Regulation No.171 (DCAS) — the Driver Control Assistance Systems approval framework — was adopted and transposed into EU law (Regulation (EU) 2024/2689), providing type-approval rules and driver-monitoring/behaviour requirements that underpin hands‑off Level 2+ and initial Level‑3-capable features in vehicles in the EU.",
+  "url": "https://eur-lex.europa.eu/eli/reg/2024/2689/oj",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "EUR-Lex / European Union",
+   "published": "2024-09- / 2024",
+   "stance": "supports",
+   "about": "EU adoption of UN R171 / DCAS",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-100",
+  "source_type": "web",
+  "source_name": "BMW Group press centre",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "BMW publicly documents a hands‑free 'Motorway/Highway Assistant' with hands‑off operation up to 130 km/h (BMW Motorway/Highway Assistant) and states that the function is already used in the 5 Series and will be further developed as 'BMW Symbiotic Drive' and rolled out (with Level‑2++ capabilities and OTA activation planned from 2027 onward).",
+  "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0458398EN_GB/bmw-motorway-assistant-over-200-million-kilometres-driven-hands-free-by-customers",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group press centre",
+   "published": "2026-06-09",
+   "stance": "supports",
+   "about": "BMW hands-off L2+ rollout (Motorway Assistant / Symbiotic Drive)",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-101",
+  "source_type": "web",
+  "source_name": "BMW Group (Capital Market Day 2026 press release)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "At BMW’s Capital Market Day 2026 BMW said it will introduce 'Level2++ driver assistance solutions for China, the EU and the US to launch in 2027' and that navigation‑guided driver assistance based on the DCAS regulation will be offered in Germany from 2027, implying product and legal groundwork for broader L2+/L2++ availability in premium models during the 2028–2031 period.",
+  "url": "https://www.press.bmwgroup.com/global/article/detail/T0461229EN/agility-efficiency-ai-based-innovations:-bmw-group-sets-course-for-greater-profitability-and-resilience?showMedia=photo",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group (Capital Market Day 2026 press release)",
+   "published": "2026-09-30",
+   "stance": "supports",
+   "about": "BMW roadmap for L2++ launch 2027 / DCAS-based features",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-102",
+  "source_type": "web",
+  "source_name": "S&P Global Mobility (Autotech Insight)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Industry analyses (S&P Global Mobility and others) forecast that Level‑2+ (hands‑free/eyes‑on and eyes‑off variants) adoption will outpace Level‑3 deployment through the late 2020s, making L2+ the mainstream automation path in 2026–2030 while Level‑3 remains a smaller, slower niche—meaning premium mid‑size cars (5‑Series segment) are more likely to gain advanced L2+/L2++ features broadly by 2028–2031 than widespread Level‑3 functionality.",
+  "url": "https://www.spglobal.com/automotive-insights/en/blogs/2026/04/why-level-2-plus-is-outpacing-level-3-autonomous-driving",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "S&P Global Mobility (Autotech Insight)",
+   "published": "2026-04",
+   "stance": "supports",
+   "about": "Market adoption forecast: L2+ vs L3 through 2026–2030",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-103",
+  "source_type": "web",
+  "source_name": "UNECE (WP.29/GRVA documents)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Regulatory and certification activity (UNECE / WP.29 documents and drafts) continues to refine test and approval requirements (R157, R171 and related supplements), signalling that homologation and safety-validation processes needed for higher-speed automated motorway and DCAS‑based navigation‑guided functions will be available and used by OEMs as the legal basis for market introductions in Europe.",
+  "url": "https://unece.org/sites/default/files/2025-06/R157r1e.pdf",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "UNECE (WP.29/GRVA documents)",
+   "published": "2025-06 (amendment documents)",
+   "stance": "supports",
+   "about": "UNECE regulatory refinement for homologation of motorway ADS / DCAS",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-104",
+  "source_type": "web",
+  "source_name": "Mercedes‑Benz media centre",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Mercedes‑Benz was granted national approval in Germany to test special marker lights and to trial DRIVE PILOT and other Level‑3/advanced systems for limited purposes (approval initially limited until July 2028), showing that OEM testing and national trials for Level‑3 features continue in the EU and that limited, country‑by‑country deployments/testing of Level‑3 systems are ongoing.",
+  "url": "https://media.mercedes-benz.com/article/1c19e612-5fe0-4f87-8a21-4dc45bbc2797",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "high",
+   "publisher": "Mercedes‑Benz media centre",
+   "published": "2025-03-05 (approval reported)",
+   "stance": "supports",
+   "about": "Mercedes testing/limited approval for Level‑3 Drive Pilot trials through 2028",
+   "question_kind": "trend"
+  }
+ },
+ {
+  "id": "EV-G60-EU-WEB-105",
+  "source_type": "web",
+  "source_name": "BMW Group (innovation / automated driving overview)",
+  "derivative": "G60",
+  "market": "EU",
+  "text": "Technical and supply‑side trends cited by OEMs and suppliers (in investor materials and market reports) point to wider adoption of zonal E/E architectures, centralized ADAS domain controllers and greater compute/AI capability across vehicle lines — technologies OEMs identify as enabling faster rollout of advanced L2+/L2++ and future Level‑3 functions across premium segments through 2027–2030.",
+  "url": "https://www.bmwgroup.com/en/innovation/automatisiertes-fahren.html",
+  "retrieved_at": "2026-10-11T06:37:01.864239Z",
+  "polarity": 0,
+  "meta": {
+   "trust": "low",
+   "publisher": "BMW Group (innovation / automated driving overview)",
+   "published": "2026 (web updates)",
+   "stance": "supports",
+   "about": "E/E architecture and compute enabling advanced ADAS rollout",
+   "question_kind": "trend"
+  }
+ }
+]

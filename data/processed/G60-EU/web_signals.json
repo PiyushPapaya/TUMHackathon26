@@ -1,1 +1,171 @@
-[]
+[
+ {
+  "id": "SIG-G60-EU-g1-0a8be1f6051bbae1",
+  "kind": "competitor_advantage",
+  "category": "range_charging",
+  "title": "Mercedes-Benz E-Class: Range is embarrassingly short",
+  "summary": "Mercedes’ technical material (environmental check) also states the E‑Class PHEV electric range can be quoted up to roughly 118 km WLTP for certain variants/conditions (manufacturer figure for EAER).",
+  "evidence_ids": [
+   "EV-G60-EU-WEB-04"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G60-EU-g1-1e0b051a8af5c4f8",
+  "kind": "competitor_advantage",
+  "category": "infotainment_digital",
+  "title": "Audi A6 e-tron: Infotainment software is sluggish and hard to use",
+  "summary": "The 2025 Audi A6 e‑tron uses Android Automotive OS and is offered with a triple‑screen layout: an 11.9‑inch digital instrument cluster, a 14.5‑inch centre OLED touchscreen and an optional 10.9‑inch passenger touchscreen (2025 model year). Multiple independent reviews note Audi’s A6 e‑tron replaces many physical knobs with capacitive‑touch controls and that the screen‑forward layout can feel overwhelming to some users (few physical knobs/buttons). Reviewers described the A6 e‑tron’s interface as ‘menu‑heavy’ and reviewers/owners reported software glitches and intermittent sluggishness on 2025 A6 e‑tron examples (reports from 2025–2026).",
+  "evidence_ids": [
+   "EV-G60-EU-WEB-08",
+   "EV-G60-EU-WEB-09",
+   "EV-G60-EU-WEB-10",
+   "EV-G60-EU-WEB-12",
+   "EV-G60-EU-WEB-13",
+   "EV-G60-EU-WEB-15",
+   "EV-G60-EU-WEB-17"
+  ],
+  "mention_count": 7,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G60-EU-g1-ebd9a459a9c67b55",
+  "kind": "competitor_advantage",
+  "category": "infotainment_digital",
+  "title": "Volvo ES90: Connected services: complaint",
+  "summary": "The Volvo ES90 uses Android Automotive with built‑in Google services (Google Maps, Google Assistant, Google Play) and a 14.5‑inch portrait central touchscreen as the primary infotainment interface. ([topgear.com](https://www.topgear.com/car-reviews/volvo/es90/interior)) Multiple European reviews note Volvo has removed many physical controls and moved common functions (climate, seat/mirror adjustment, etc.) into the central touchscreen, which has prompted ergonomic criticisms. ([topgear.com](https://www.topgear.com/car-reviews/volvo/es90/interior)) Reviewers describe the ES90’s Android‑based system as graphically crisp and responsive, but report early software 'kinks' and a rollout that required software/hardware fixes during 2025–2026. ([dev.images.cdn.autocar.co.uk](https://dev.images.cdn.autocar.co.uk/car-review/volvo/es90))",
+  "evidence_ids": [
+   "EV-G60-EU-WEB-18",
+   "EV-G60-EU-WEB-19",
+   "EV-G60-EU-WEB-20",
+   "EV-G60-EU-WEB-21"
+  ],
+  "mention_count": 4,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G60-EU-g1-556aea849ce1c333",
+  "kind": "competitor_advantage",
+  "category": "comfort_space",
+  "title": "Tesla Model S: Ease of loading/ unloading luggage: complaint",
+  "summary": "Tesla Model S (EU Owner's Manual) lists rear cargo volume 26.3 cu ft (744.7 L), front cargo 2.1 cu ft (59.5 L), total cargo volume 28.4 cu ft (804.2 L) and rear seats folded 58.1 cu ft (1,645.2 L). Tesla's EU Owner's Manual lists interior measurements including rear legroom 35.4 in (899 mm) and documents load limits and a lower‑trunk compartment (i.e., a low/flat floor and specific weight limits for cargo areas).",
+  "evidence_ids": [
+   "EV-G60-EU-WEB-26",
+   "EV-G60-EU-WEB-29"
+  ],
+  "mention_count": 2,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G60-EU-g1-943eafb0e48a7781",
+  "kind": "competitor_advantage",
+  "category": "comfort_space",
+  "title": "Mercedes-Benz E-Class: Heating/ ventilation/ air conditioning: complaint",
+  "summary": "Independent reviews and road tests characterise the BMW 5 Series (G60) as still more focused on handling/driver engagement and slightly firmer in ride than the E‑Class while remaining very capable and refined — Auto Express explicitly contrasts the 5 Series' firmer ride/keen dynamics with the E‑Class's softer ride.",
+  "evidence_ids": [
+   "EV-G60-EU-WEB-36"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G60-EU-g1-87f345847daff4e6",
+  "kind": "competitor_advantage",
+  "category": "comfort_space",
+  "title": "Audi A6 e-tron: Rear interior roominess: complaint",
+  "summary": "Audi’s A6 e‑tron Sportback and Avant are reported by multiple European reviews to have a 502‑litre luggage compartment (seats up) and a small front trunk (~27 litres) for charging cables. European reviews note the A6 e‑tron Sportback’s rear bench is relatively tight for tall passengers: the high battery floor plus the sloping Sportback roofline reduce rear headroom and rear foot space, and reviewers recommend the Avant/estate if rear‑seat room is a priority. Autocar’s measurements and comparison report the Audi A6’s typical rear knee room at about 700 mm and state the latest BMW 5‑Series (the ‘G60’ generation) offers roughly 740 mm rear knee room in their comparison—i.e. the BMW is measurably roomier rearwards in that test.",
+  "evidence_ids": [
+   "EV-G60-EU-WEB-39",
+   "EV-G60-EU-WEB-40",
+   "EV-G60-EU-WEB-41",
+   "EV-G60-EU-WEB-43",
+   "EV-G60-EU-WEB-44"
+  ],
+  "mention_count": 5,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G60-EU-g1-f04bcceafa4e5e63",
+  "kind": "trend",
+  "category": "range_charging",
+  "title": "Trend 2028-2031: range_charging",
+  "summary": "Mercedes‑Benz has announced deployment of modular high‑performance charging infrastructure (HYC1000 systems) able to provide up to 1,000 kW per power unit and to intelligently distribute that power across multiple charging points at select Mercedes charging parks (installation starting in 2026 at select sites). ([media.mbusa.com](https://media.mbusa.com/news/mercedes-benz-sets-new-standards-for-public-charging-integration-of-revolutionary-high-performance-fast-charger-into-the-companys-own-fast-charging-network?utm_source=openai)) Tesla’s European Supercharger fleet already uses CCS‑compatible pedestals at many sites and Tesla has been progressively opening Supercharger sites or specific stalls to non‑Tesla vehicles (and OEMs have been announcing access partnerships), which increases public high‑power charging access for non‑Tesla premium cars across EU markets. Consumer Reports and other outlets summarise these developments and partnerships. ([consumerreports.org](https://www.consumerreports.org/cars/hybrids-evs/tesla-superchargers-open-to-other-evs-what-to-know-a9262067544?utm_source=openai))",
+  "evidence_ids": [
+   "EV-G60-EU-WEB-65",
+   "EV-G60-EU-WEB-69"
+  ],
+  "mention_count": 2,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G60-EU-g1-a6387297e1cb947e",
+  "kind": "trend",
+  "category": "infotainment_digital",
+  "title": "Trend 2028-2031: infotainment_digital",
+  "summary": "Industry analyses and market reports show premium OEMs are shifting to zonal/centralized E/E and 'software‑defined vehicle' architectures, and most OEMs target rollout of central compute, cross‑domain software and frequent OTA delivery for premium lines within the 2026–2030 timeframe — a trend expected to underpin widespread SDV/OTA capabilities by 2028–2031. ([autotechinsight.spglobal.com](https://autotechinsight.spglobal.com/shop/product/5003647/oems-deployment-strategy-for-the-software-defined-vehicle-sdv?utm_source=openai)) Consultancies and market analysts project significant growth in the automotive software and electronics market and expect generative/edge AI capabilities to be integrated into vehicle cockpits and personalization services across premium models by the late 2020s, enabling AI‑based assistants, contextual recommendations and voice/chat features delivered via OTA updates and cloud‑edge orchestration. ([mckinsey.com](https://www.mckinsey.com/features/mckinsey-center-for-future-mobility/our-insights/mapping-the-automotive-software-and-electronics-landscape?trk=article-ssr-frontend-pulse_little-text-block&utm_source=openai))",
+  "evidence_ids": [
+   "EV-G60-EU-WEB-73",
+   "EV-G60-EU-WEB-76"
+  ],
+  "mention_count": 2,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ },
+ {
+  "id": "SIG-G60-EU-g1-ac48e4ba11dea7e1",
+  "kind": "trend",
+  "category": "driver_assistance",
+  "title": "Trend 2028-2031: driver_assistance",
+  "summary": "Mercedes‑Benz was granted national approval in Germany to test special marker lights and to trial DRIVE PILOT and other Level‑3/advanced systems for limited purposes (approval initially limited until July 2028), showing that OEM testing and national trials for Level‑3 features continue in the EU and that limited, country‑by‑country deployments/testing of Level‑3 systems are ongoing.",
+  "evidence_ids": [
+   "EV-G60-EU-WEB-104"
+  ],
+  "mention_count": 1,
+  "source_types": [
+   "web"
+  ],
+  "conflicts_with": [],
+  "segments": {},
+  "study_link": null
+ }
+]

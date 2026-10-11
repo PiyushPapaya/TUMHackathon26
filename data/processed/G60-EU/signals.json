@@ -1,19 +1,16 @@
 [
  {
-  "id": "SIG-G60-EU-001",
+  "id": "SIG-G60-EU-g1-2eb6c60338293688",
   "kind": "delight",
   "category": "driving_experience",
-  "title": "Drive, driving dynamics and chassis, overall technology: delight",
-  "summary": "24 customer comments about 'Drive, driving dynamics and chassis, overall technology' (delight).",
+  "title": "Really fun and comfortable to drive",
+  "summary": "Customers consistently praise how enjoyable and comfortable the car is to drive, noting a solid build and a great driving feel. Many also mention well‑positioned controls and useful displays that enhance the overall driving experience.",
   "evidence_ids": [
-   "EV-G60-EU-FB-G60-0426",
    "EV-G60-EU-FB-G60-0621",
-   "EV-G60-EU-FB-G60-0912",
-   "EV-G60-EU-FB-G60-2232",
-   "EV-G60-EU-FB-G60-2329",
    "EV-G60-EU-FB-G60-2488",
-   "EV-G60-EU-FB-G60-2752",
-   "EV-G60-EU-FB-G60-2789"
+   "EV-G60-EU-FB-G60-3406",
+   "EV-G60-EU-FB-G60-2232",
+   "EV-G60-EU-FB-G60-3931"
   ],
   "mention_count": 24,
   "source_types": [
@@ -47,20 +44,17 @@
   "study_link": null
  },
  {
-  "id": "SIG-G60-EU-002",
+  "id": "SIG-G60-EU-g1-8cc0e559a909d782",
   "kind": "complaint",
   "category": "range_charging",
-  "title": "Electric Range: complaint",
-  "summary": "12 customer comments about 'Electric Range' (complaint). Study: Fuel economy/ energy efficiency: mean 7.4 (EU study 2025).",
+  "title": "Range is embarrassingly short",
+  "summary": "Customers say the electric range is shorter than expected and often falls short of what was advertised, especially in winter, forcing slower driving or extra stops. They are also frustrated by limits on fast charging and by a lack of clear communication from BMW. Study: Fuel economy/ energy efficiency: mean 7.4 (EU study 2025).",
   "evidence_ids": [
-   "EV-G60-EU-FB-G60-0298",
-   "EV-G60-EU-FB-G60-0325",
-   "EV-G60-EU-FB-G60-2752",
    "EV-G60-EU-FB-G60-2775",
    "EV-G60-EU-FB-G60-2972",
-   "EV-G60-EU-FB-G60-3433",
+   "EV-G60-EU-FB-G60-0325",
    "EV-G60-EU-FB-G60-0034",
-   "EV-G60-EU-FB-G60-1032",
+   "EV-G60-EU-FB-G60-0298",
    "EV-G60-EU-ST-20"
   ],
   "mention_count": 12,
@@ -96,20 +90,17 @@
   }
  },
  {
-  "id": "SIG-G60-EU-003",
+  "id": "SIG-G60-EU-g1-0d3f4592c15c0f5f",
   "kind": "delight",
   "category": "driving_experience",
-  "title": "Drivetrain: delight",
-  "summary": "9 customer comments about 'Drivetrain' (delight).",
+  "title": "Strong, very quiet and fun to drive",
+  "summary": "Customers say the drivetrain feels powerful, refined and very quiet, making the car enjoyable to drive. They also praise the fuel efficiency and the pleasant electric driving in town while finding acceleration and handling satisfying.",
   "evidence_ids": [
    "EV-G60-EU-FB-G60-0263",
    "EV-G60-EU-FB-G60-1222",
    "EV-G60-EU-FB-G60-2047",
-   "EV-G60-EU-FB-G60-2109",
    "EV-G60-EU-FB-G60-2503",
-   "EV-G60-EU-FB-G60-0595",
-   "EV-G60-EU-FB-G60-1461",
-   "EV-G60-EU-FB-G60-1814"
+   "EV-G60-EU-FB-G60-2548"
   ],
   "mention_count": 9,
   "source_types": [
@@ -141,19 +132,17 @@
   "study_link": null
  },
  {
-  "id": "SIG-G60-EU-004",
+  "id": "SIG-G60-EU-g1-545ac46f6e8e9200",
   "kind": "delight",
   "category": "driving_experience",
-  "title": "Handling / Riding: delight",
-  "summary": "7 customer comments about 'Handling / Riding' (delight).",
+  "title": "Great handling and comfort",
+  "summary": "Customers say the car handles very well, with smooth road behavior and a comfortable ride that makes driving enjoyable for everyday use and touring. They describe the driving experience as confident and pleasant to be behind the wheel of.",
   "evidence_ids": [
    "EV-G60-EU-FB-G60-0025",
    "EV-G60-EU-FB-G60-0270",
-   "EV-G60-EU-FB-G60-1500",
    "EV-G60-EU-FB-G60-3690",
-   "EV-G60-EU-FB-G60-3886",
    "EV-G60-EU-FB-G60-1545",
-   "EV-G60-EU-FB-G60-1814"
+   "EV-G60-EU-FB-G60-3886"
   ],
   "mention_count": 7,
   "source_types": [
@@ -184,17 +173,17 @@
   "study_link": null
  },
  {
-  "id": "SIG-G60-EU-005",
+  "id": "SIG-G60-EU-g1-bc69af266b41dcb6",
   "kind": "complaint",
   "category": "infotainment_digital",
-  "title": "ConnectedDrive and Infotainment, overall technology: complaint",
-  "summary": "5 customer comments about 'ConnectedDrive and Infotainment, overall technology' (complaint).",
+  "title": "Infotainment software is sluggish and hard to use",
+  "summary": "The infotainment and connected software feel sluggish and overcomplicated. Menus and submenus make options hard to find, many functions need repeated taps, privacy and warning settings are intrusive, and software updates or the companion app can be a hassle.",
   "evidence_ids": [
-   "EV-G60-EU-FB-G60-0298",
    "EV-G60-EU-FB-G60-0798",
    "EV-G60-EU-FB-G60-1848",
-   "EV-G60-EU-FB-G60-0843",
-   "EV-G60-EU-FB-G60-1910"
+   "EV-G60-EU-FB-G60-1910",
+   "EV-G60-EU-FB-G60-0298",
+   "EV-G60-EU-FB-G60-0843"
   ],
   "mention_count": 5,
   "source_types": [
@@ -223,11 +212,11 @@
   "study_link": null
  },
  {
-  "id": "SIG-G60-EU-006",
+  "id": "SIG-G60-EU-g1-fdeec05dca30e2cd",
   "kind": "delight",
   "category": "range_charging",
-  "title": "Electric Range: delight",
-  "summary": "5 customer comments about 'Electric Range' (delight).",
+  "title": "Battery range is very good and reliable",
+  "summary": "Customers say the battery range meets expectations and stays reliable even in cold weather, letting many local trips be done purely on electric power. They also find the range estimates and onboard software accurate and supportive.",
   "evidence_ids": [
    "EV-G60-EU-FB-G60-0400",
    "EV-G60-EU-FB-G60-3633",
@@ -261,7 +250,7 @@
   "study_link": null
  },
  {
-  "id": "SIG-G60-EU-007",
+  "id": "SIG-G60-EU-g1-b6073d391f9db2d1",
   "kind": "complaint",
   "category": "infotainment_digital",
   "title": "Connected services: complaint",
@@ -282,7 +271,7 @@
   }
  },
  {
-  "id": "SIG-G60-EU-008",
+  "id": "SIG-G60-EU-g1-9cf42e0d041bc38d",
   "kind": "complaint",
   "category": "comfort_space",
   "title": "Ease of loading/ unloading luggage: complaint",
@@ -303,7 +292,7 @@
   }
  },
  {
-  "id": "SIG-G60-EU-009",
+  "id": "SIG-G60-EU-g1-51bf94f3f5a2546a",
   "kind": "complaint",
   "category": "comfort_space",
   "title": "Heating/ ventilation/ air conditioning: complaint",
@@ -324,7 +313,7 @@
   }
  },
  {
-  "id": "SIG-G60-EU-010",
+  "id": "SIG-G60-EU-g1-c05e4775de723036",
   "kind": "complaint",
   "category": "comfort_space",
   "title": "Rear interior roominess: complaint",
