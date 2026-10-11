@@ -3,7 +3,7 @@
   "checkpoint_id": "01M4MGPCD6X2ZHXQWXT84HK4WQ",
   "strategy": "manual-commit",
   "branch": "jolesRegionalFrontend",
-  "checkpoints_count": 4,
+  "checkpoints_count": 6,
   "files_touched": [
     "src/frontend/src/components/shell/assistant/intents.test.mjs",
     "src/frontend/src/components/shell/assistant/intents.ts"
@@ -22,13 +22,20 @@
       "compact_transcript": "/1/transcript.jsonl",
       "content_hash": "/1/content_hash.txt",
       "prompt": "/1/prompt.txt"
+    },
+    {
+      "metadata": "/2/metadata.json",
+      "transcript": "/2/full.jsonl",
+      "compact_transcript": "/2/transcript.jsonl",
+      "content_hash": "/2/content_hash.txt",
+      "prompt": "/2/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 202,
-    "cache_creation_tokens": 244536,
-    "cache_read_tokens": 10366699,
-    "output_tokens": 72684,
-    "api_call_count": 101
+    "input_tokens": 208,
+    "cache_creation_tokens": 246799,
+    "cache_read_tokens": 10516412,
+    "output_tokens": 73490,
+    "api_call_count": 104
   }
 }
