@@ -1,0 +1,5 @@
+alles klar wir sind bei them apoithe sund wir wollen ihr gehen dass wir das orojjet auch shee gut verstehen, dende uafgeb ist es ertsee eine zusmamnefasung ode den tasakc und id evorhenegsweise von dem porjkt in mittelmäßiger detaik zu becshereiben für alle, sodass wi das poroket völlig verstehen. mache dafür gerene ein html oder pdf date in in root von dne repo mit keiem ordenr, sodass alles es her gut verstehen. dnek dennach wie du es gut ereklremn kannst und mache e sdann
+
+---
+
+ja du sollst es in root comitten, nein die pocceses daten auhc mitnehmen mienete piyush
