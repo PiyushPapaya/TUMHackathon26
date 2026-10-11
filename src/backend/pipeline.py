@@ -10,6 +10,7 @@ Aufruf (aus dem Repo-Root):
   python src/backend/pipeline.py --scenario G60-US              # alle Stufen
   python src/backend/pipeline.py --scenario G60-US --stage signals
   python src/backend/pipeline.py --scenario all                 # alle Szenarien, Zusammenfassung am Ende
+  python src/backend/pipeline.py --scenario all --out data/regen  # Neulauf getrennt von der Demo
 """
 
 from __future__ import annotations
@@ -218,11 +219,16 @@ def print_summary(results: list[dict]) -> None:
         print(f"  {status} {r['id']:8} {counts}{web}" + (f"  <- {r['failed']}" if r["failed"] else ""))
 
 
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
+    global OUT_DIR
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--scenario", required=True, help="z. B. G60-US (Datei in config/scenarios/) oder all")
     parser.add_argument("--stage", choices=[*STAGES, "all"], default="all")
-    args = parser.parse_args()
+    # Getrennter Ordner: Neuerzeugung prüfen, ohne die Demo-Bundles (und ihre PM-Verläufe) zu überschreiben.
+    parser.add_argument("--out", type=Path, default=None, help="Ausgabeordner statt data/processed")
+    args = parser.parse_args(argv)
+    if args.out:
+        OUT_DIR = args.out
     ids = all_scenario_ids() if args.scenario == "all" else [args.scenario]
     stages = STAGES if args.stage == "all" else [args.stage]
     results = [run_scenario(load_config(sid), stages) for sid in ids]

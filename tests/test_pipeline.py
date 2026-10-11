@@ -120,5 +120,23 @@ def test_kaputte_webfrage_kostet_nur_diese_frage(monkeypatch):
     assert claims.FAILED_QUESTIONS == ["kaputt?"]
 
 
+def test_out_schreibt_in_getrennten_ordner(tmp_path, monkeypatch):
+    """Neuerzeugung prüfen, ohne die Demo-Bundles in data/processed zu überschreiben."""
+    original = pipeline.OUT_DIR
+    seen = []
+    monkeypatch.setattr(pipeline, "load_config", lambda sid: {"id": sid})
+    monkeypatch.setattr(pipeline, "run_scenario",
+                        lambda cfg, stages: seen.append(pipeline.OUT_DIR) or {"id": cfg["id"], "failed": None,
+                                                                                "web_failed": 0})
+    try:
+        try:
+            pipeline.main(["--scenario", "X", "--stage", "bundle", "--out", str(tmp_path / "neu")])
+        except SystemExit as stop:
+            assert stop.code == 0
+        assert seen == [tmp_path / "neu"]
+    finally:
+        pipeline.OUT_DIR = original
+
+
 def test_all_findet_alle_configs():
     assert {"G60-US", "G68-CN", "G60-EU"} <= set(pipeline.all_scenario_ids())
