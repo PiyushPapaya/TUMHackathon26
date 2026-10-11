@@ -118,7 +118,8 @@
     "labels": "Panorama glass roof/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -138,7 +139,8 @@
     "labels": "Drivetrain/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -158,7 +160,8 @@
     "labels": "Handling / Riding/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -178,7 +181,8 @@
     "labels": "Interior comfort/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -198,7 +202,8 @@
     "labels": "Exterior design/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -218,7 +223,8 @@
     "labels": "Exterior design/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -238,7 +244,8 @@
     "labels": "Automatic engine start-stop function (MSA)/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -258,7 +265,8 @@
     "labels": "Electric Range/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -279,7 +287,8 @@
     "engine": "BEVE",
     "source": "D",
     "scope": "in",
-    "polarity_basis": "source_d_praise"
+    "polarity_basis": "source_d_praise",
+    "country": "US"
    }
   },
   {
@@ -299,7 +308,8 @@
     "labels": "WiFi hotspot/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -319,7 +329,8 @@
     "labels": "Charge high-voltage battery/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -339,7 +350,8 @@
     "labels": "Interior design/Likes",
     "engine": "PHEV",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -359,7 +371,8 @@
     "labels": "Electric Range/Likes",
     "engine": "PHEV",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -379,7 +392,8 @@
     "labels": "Public charging / external providers/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -399,7 +413,8 @@
     "labels": "Exterior design/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -419,7 +434,8 @@
     "labels": "Highway assistant/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -439,7 +455,8 @@
     "labels": "Space / spatial impression/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -459,7 +476,8 @@
     "labels": "Drivetrain/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -479,7 +497,8 @@
     "labels": "Interior design/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -500,7 +519,8 @@
     "engine": "BEVE",
     "source": "D",
     "scope": "in",
-    "polarity_basis": "source_d_praise"
+    "polarity_basis": "source_d_praise",
+    "country": "US"
    }
   },
   {
@@ -520,7 +540,8 @@
     "labels": "Instrument cluster/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -540,7 +561,8 @@
     "labels": "Panorama glass roof/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -560,7 +582,8 @@
     "labels": "Interior design/Wants",
     "engine": "PHEV",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -580,7 +603,8 @@
     "labels": "Operating concept, operating system/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -600,7 +624,8 @@
     "labels": "Panorama glass roof/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -620,7 +645,8 @@
     "labels": "Seats/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -640,7 +666,8 @@
     "labels": "Public charging / external providers/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -660,7 +687,8 @@
     "labels": "Handling / Riding/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -680,7 +708,8 @@
     "labels": "Seats/Difficult to Use",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -700,7 +729,8 @@
     "labels": "Braking/Difficult to Use",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -720,7 +750,8 @@
     "labels": "Vehicle, lock / unlock/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -740,7 +771,8 @@
     "labels": "Body equipment, overall technology/Likes | Drive, driving dynamics and chassis, overall technology/Likes | Seats/Defect | Seats/Likes | no_class_found/",
     "engine": "BEVE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -760,7 +792,8 @@
     "labels": "Automatic engine start-stop function (MSA)/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -780,7 +813,8 @@
     "labels": "Mobile device, wireless charging/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -800,7 +834,8 @@
     "labels": "Seats/Wants",
     "engine": "PHEV",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -820,7 +855,8 @@
     "labels": "Exterior design/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -840,7 +876,8 @@
     "labels": "Electric Range/Likes",
     "engine": "PHEV",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -860,7 +897,8 @@
     "labels": "Exterior/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -880,7 +918,8 @@
     "labels": "Operating concept, operating system/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -900,7 +939,8 @@
     "labels": "Electric Range/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -920,7 +960,8 @@
     "labels": "Braking/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -940,7 +981,8 @@
     "labels": "Interior design/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -960,7 +1002,8 @@
     "labels": "Voice control / speech recognition/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -980,7 +1023,8 @@
     "labels": "Interior design/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1000,7 +1044,8 @@
     "labels": "Interior design/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1020,7 +1065,8 @@
     "labels": "Highway assistant/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1040,7 +1086,8 @@
     "labels": "Charge high-voltage battery/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1060,7 +1107,8 @@
     "labels": "Handling / Riding/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1080,7 +1128,8 @@
     "labels": "Public charging / external providers/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1100,7 +1149,8 @@
     "labels": "Seats/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1120,7 +1170,8 @@
     "labels": "Storage compartments/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1140,7 +1191,8 @@
     "labels": "Panorama glass roof/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1160,7 +1212,8 @@
     "labels": "Operating concept, operating system/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1180,7 +1233,8 @@
     "labels": "Drivetrain/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1200,7 +1254,8 @@
     "labels": "Exterior design/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1220,7 +1275,8 @@
     "labels": "Automatic engine start-stop function (MSA)/Difficult to Use",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1240,7 +1296,8 @@
     "labels": "My Modes / driving experience/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1260,7 +1317,8 @@
     "labels": "Interior design/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1280,7 +1338,8 @@
     "labels": "Electric Range/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1300,7 +1359,8 @@
     "labels": "Automatic engine start-stop function (MSA)/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1320,7 +1380,8 @@
     "labels": "Storage compartments/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1340,7 +1401,8 @@
     "labels": "Exterior/Likes | Handling / Riding/Likes | My Modes / driving experience/Wants | Vehicle key/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1360,7 +1422,8 @@
     "labels": "Seats/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1380,7 +1443,8 @@
     "labels": "Interior comfort/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1400,7 +1464,8 @@
     "labels": "Space / spatial impression/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1420,7 +1485,8 @@
     "labels": "Seats/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1440,7 +1506,8 @@
     "labels": "Voice control / speech recognition/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1460,7 +1527,8 @@
     "labels": "Ambient light/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1480,7 +1548,8 @@
     "labels": "Comfort Access/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1500,7 +1569,8 @@
     "labels": "Air conditioning control panel/Difficult to Use",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1520,7 +1590,8 @@
     "labels": "Drivetrain/Likes | no_class_found/",
     "engine": "PHEV",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1540,7 +1611,8 @@
     "labels": "Automatic engine start-stop function (MSA)/Difficult to Use",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1560,7 +1632,8 @@
     "labels": "Air conditioning control panel/Difficult to Use",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1580,7 +1653,8 @@
     "labels": "Ambient light/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1600,7 +1674,8 @@
     "labels": "Seats/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1620,7 +1695,8 @@
     "labels": "Door, open / close/Difficult to Use | Instrument panel/Difficult to Use | Luggage compartment/Difficult to Use | Seats/Wants | Wheels / tires/Defect | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1640,7 +1716,8 @@
     "labels": "non-contact trunk lid opening/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1660,7 +1737,8 @@
     "labels": "Braking/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1680,7 +1758,8 @@
     "labels": "Interior design/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1700,7 +1779,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | Drivetrain/Likes | Handling / Riding/Likes | Interior comfort/Likes",
     "engine": "BEVE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1720,7 +1800,8 @@
     "labels": "Automatic engine start-stop function (MSA)/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1740,7 +1821,8 @@
     "labels": "Drivetrain/Difficult to Use",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1760,7 +1842,8 @@
     "labels": "Ambient light/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1780,7 +1863,8 @@
     "labels": "Operate selector lever/Wants | Outer door handle, front/Difficult to Use | Seats/Defect | Voice control / speech recognition/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1800,7 +1884,8 @@
     "labels": "Exterior/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1820,7 +1905,8 @@
     "labels": "Touch screen, operation/Difficult to Use",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1840,7 +1926,8 @@
     "labels": "My Modes / driving experience/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1860,7 +1947,8 @@
     "labels": "Panorama glass roof/Wants",
     "engine": "PHEV",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1880,7 +1968,8 @@
     "labels": "Electric Range/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1900,7 +1989,8 @@
     "labels": "Seats/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1920,7 +2010,8 @@
     "labels": "Exterior design/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1940,7 +2031,8 @@
     "labels": "WiFi hotspot/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1960,7 +2052,8 @@
     "labels": "Apple CarPlay/Difficult to Use",
     "engine": "PHEV",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -1980,7 +2073,8 @@
     "labels": "Operating concept, operating system/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2000,7 +2094,8 @@
     "labels": "Vehicle, lock / unlock/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2020,7 +2115,8 @@
     "labels": "Exterior design/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2040,7 +2136,8 @@
     "labels": "Exterior design/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2060,7 +2157,8 @@
     "labels": "Instrument cluster/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2080,7 +2178,8 @@
     "labels": "Operating concept, operating system/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2100,7 +2199,8 @@
     "labels": "Exterior/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2120,7 +2220,8 @@
     "labels": "Touch screen, operation/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2140,7 +2241,8 @@
     "labels": "Air conditioning control panel/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2160,7 +2262,8 @@
     "labels": "Seats/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2180,7 +2283,8 @@
     "labels": "Blower function/Wants | Drive, driving dynamics and chassis, overall technology/Likes | Drivetrain/Wants | Steering wheel/Wants | no_class_found/",
     "engine": "BEVE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2200,7 +2304,8 @@
     "labels": "My Modes / driving experience/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2220,7 +2325,8 @@
     "labels": "Comfort Access/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2240,7 +2346,8 @@
     "labels": "Interior design/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2260,7 +2367,8 @@
     "labels": "Exterior design/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2280,7 +2388,8 @@
     "labels": "Exterior/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2300,7 +2409,8 @@
     "labels": "Drivetrain/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2320,7 +2430,8 @@
     "labels": "Exterior design/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2340,7 +2451,8 @@
     "labels": "Seats/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2360,7 +2472,8 @@
     "labels": "Center console, front/Likes | Center console, front/Difficult to Use | Drivetrain/Wants",
     "engine": "BEVE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2380,7 +2493,8 @@
     "labels": "Seats/Difficult to Use",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2400,7 +2514,8 @@
     "labels": "non-contact trunk lid opening/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2420,7 +2535,8 @@
     "labels": "Handling / Riding/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2440,7 +2556,8 @@
     "labels": "Operating concept, operating system/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2460,7 +2577,8 @@
     "labels": "Exterior design/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2480,7 +2598,8 @@
     "labels": "Interior design/Likes",
     "engine": "PHEV",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2500,7 +2619,8 @@
     "labels": "Drivetrain/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2520,7 +2640,8 @@
     "labels": "Highway assistant/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2540,7 +2661,8 @@
     "labels": "Apple CarPlay/Defect | Charge high-voltage battery/Defect | Drivetrain/Difficult to Use | Navigation/Difficult to Use | Public charging / external providers/Difficult to Use | Remote Engine Start (My BMW App / MINI App)/Difficult to Use | Voice control / speech recognition/Defect | no_class_found/",
     "engine": "BEVE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2560,7 +2682,8 @@
     "labels": "My Modes / driving experience/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2580,7 +2703,8 @@
     "labels": "Interior design/Wants",
     "engine": "PHEV",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2600,7 +2724,8 @@
     "labels": "Apple CarPlay/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2620,7 +2745,8 @@
     "labels": "Air conditioning control panel/Difficult to Use",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2640,7 +2766,8 @@
     "labels": "Automatic engine start-stop function (MSA)/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2660,7 +2787,8 @@
     "labels": "Automatic engine start-stop function (MSA)/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2680,7 +2808,8 @@
     "labels": "Exterior design/Wants",
     "engine": "PHEV",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2700,7 +2829,8 @@
     "labels": "Storage compartments/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2720,7 +2850,8 @@
     "labels": "Public charging / external providers/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2740,7 +2871,8 @@
     "labels": "Touch screen, operation/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2760,7 +2892,8 @@
     "labels": "Interior design/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2780,7 +2913,8 @@
     "labels": "WiFi hotspot/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2800,7 +2934,8 @@
     "labels": "Operating concept, operating system/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2820,7 +2955,8 @@
     "labels": "Panorama glass roof/Wants",
     "engine": "PHEV",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2840,7 +2976,8 @@
     "labels": "Apple CarPlay/Difficult to Use",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2860,7 +2997,8 @@
     "labels": "Operating concept, operating system/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2880,7 +3018,8 @@
     "labels": "Drivetrain/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2900,7 +3039,8 @@
     "labels": "Ambient light/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2920,7 +3060,8 @@
     "labels": "Mobile device, wireless charging/Defect",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2940,7 +3081,8 @@
     "labels": "My Modes / driving experience/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2960,7 +3102,8 @@
     "labels": "Voice control / speech recognition/Difficult to Use",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -2980,7 +3123,8 @@
     "labels": "Body equipment, overall technology/Wants | Drivetrain/Wants | RSC tire/Wants | Touch screen, operation/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3000,7 +3144,8 @@
     "labels": "Drivetrain/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3020,7 +3165,8 @@
     "labels": "Interior design/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3040,7 +3186,8 @@
     "labels": "Charge high-voltage battery/Wants | Drive, driving dynamics and chassis, overall technology/Likes | Electric Range/Difficult to Use | Vehicle, access and exit/Wants | no_class_found/",
     "engine": "BEVE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3060,7 +3207,8 @@
     "labels": "Operating concept, operating system/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3080,7 +3228,8 @@
     "labels": "Automatic engine start-stop function (MSA)/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3100,7 +3249,8 @@
     "labels": "Interior comfort/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3120,7 +3270,8 @@
     "labels": "Exterior design/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3140,7 +3291,8 @@
     "labels": "Owner's Manual/Wants | Seats/Wants | Seats/Difficult to Use",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3160,7 +3312,8 @@
     "labels": "Panorama glass roof/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3180,7 +3333,8 @@
     "labels": "Touch screen, operation/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3200,7 +3354,8 @@
     "labels": "Electric Range/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3220,7 +3375,8 @@
     "labels": "Exterior/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3240,7 +3396,8 @@
     "labels": "Storage compartments/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3260,7 +3417,8 @@
     "labels": "Electric Range/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3280,7 +3438,8 @@
     "labels": "My Modes / driving experience/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3300,7 +3459,8 @@
     "labels": "Apple CarPlay/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3320,7 +3480,8 @@
     "labels": "Touch screen, operation/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3340,7 +3501,8 @@
     "labels": "Touch screen, operation/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3360,7 +3522,8 @@
     "labels": "My Modes / driving experience/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3380,7 +3543,8 @@
     "labels": "Storage compartments/Difficult to Use",
     "engine": "PHEV",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3400,7 +3564,8 @@
     "labels": "Public charging / external providers/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3420,7 +3585,8 @@
     "labels": "Automatic engine start-stop function (MSA)/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3440,7 +3606,8 @@
     "labels": "Voice control / speech recognition/Difficult to Use",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3460,7 +3627,8 @@
     "labels": "Automatic engine start-stop function (MSA)/Difficult to Use",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3480,7 +3648,8 @@
     "labels": "Voice control / speech recognition/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3500,7 +3669,8 @@
     "labels": "Panorama glass roof/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3520,7 +3690,8 @@
     "labels": "Comfort Access/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3540,7 +3711,8 @@
     "labels": "My Modes / driving experience/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3560,7 +3732,8 @@
     "labels": "Space / spatial impression/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3580,7 +3753,8 @@
     "labels": "Operating concept, operating system/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3600,7 +3774,8 @@
     "labels": "WiFi hotspot/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3620,7 +3795,8 @@
     "labels": "Operating concept, operating system/Wants",
     "engine": "PHEV",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3640,7 +3816,8 @@
     "labels": "Braking/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3660,7 +3837,8 @@
     "labels": "Interior comfort/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3680,7 +3858,8 @@
     "labels": "My Modes / driving experience/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3700,7 +3879,8 @@
     "labels": "Operating concept, operating system/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3720,7 +3900,8 @@
     "labels": "My Modes / driving experience/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3740,7 +3921,8 @@
     "labels": "Seats/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3760,7 +3942,8 @@
     "labels": "Storage compartments/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3780,7 +3963,8 @@
     "labels": "WiFi hotspot/Difficult to Use",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3801,7 +3985,8 @@
     "engine": "BEVE",
     "source": "D",
     "scope": "in",
-    "polarity_basis": "source_d_praise"
+    "polarity_basis": "source_d_praise",
+    "country": "US"
    }
   },
   {
@@ -3821,7 +4006,8 @@
     "labels": "Operating concept, operating system/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3841,7 +4027,8 @@
     "labels": "Braking/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3861,7 +4048,8 @@
     "labels": "WiFi hotspot/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3881,7 +4069,8 @@
     "labels": "Operating concept, operating system/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3901,7 +4090,8 @@
     "labels": "Operating concept, operating system/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3921,7 +4111,8 @@
     "labels": "Vehicle, lock / unlock/Defect",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3941,7 +4132,8 @@
     "labels": "Vehicle, lock / unlock/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3961,7 +4153,8 @@
     "labels": "Touch screen, operation/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -3981,7 +4174,8 @@
     "labels": "Touch screen, operation/Defect | Touch screen, operation/Difficult to Use | Voice control / speech recognition/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4001,7 +4195,8 @@
     "labels": "Automatic engine start-stop function (MSA)/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4021,7 +4216,8 @@
     "labels": "Air conditioning control panel/Difficult to Use",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4041,7 +4237,8 @@
     "labels": "Seats/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4061,7 +4258,8 @@
     "labels": "Operating concept, operating system/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4081,7 +4279,8 @@
     "labels": "Mobile device, wireless charging/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4101,7 +4300,8 @@
     "labels": "Mobile device, wireless charging/Defect",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4121,7 +4321,8 @@
     "labels": "Space / spatial impression/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4141,7 +4342,8 @@
     "labels": "Apple CarPlay/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4161,7 +4363,8 @@
     "labels": "Highway assistant/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4181,7 +4384,8 @@
     "labels": "non-contact trunk lid opening/Difficult to Use",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4201,7 +4405,8 @@
     "labels": "Drivetrain/Difficult to Use",
     "engine": "PHEV",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4221,7 +4426,8 @@
     "labels": "non-contact trunk lid opening/Difficult to Use",
     "engine": "BEVE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4242,7 +4448,8 @@
     "engine": "BEVE",
     "source": "D",
     "scope": "in",
-    "polarity_basis": "source_d_praise"
+    "polarity_basis": "source_d_praise",
+    "country": "US"
    }
   },
   {
@@ -4262,7 +4469,8 @@
     "labels": "Touch screen, operation/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4282,7 +4490,8 @@
     "labels": "Comfort Access/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4302,7 +4511,8 @@
     "labels": "non-contact trunk lid opening/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4322,7 +4532,8 @@
     "labels": "Space / spatial impression/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4342,7 +4553,8 @@
     "labels": "My Modes / driving experience/Likes",
     "engine": "PHEV",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4362,7 +4574,8 @@
     "labels": "Drivetrain/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4382,7 +4595,8 @@
     "labels": "Operating concept, operating system/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4402,7 +4616,8 @@
     "labels": "Ambient light/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4422,7 +4637,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | no_class_found/",
     "engine": "BEVE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4442,7 +4658,8 @@
     "labels": "Storage compartments/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4462,7 +4679,8 @@
     "labels": "Cushioning / damping vehicle/Wants | Drive, driving dynamics and chassis, overall technology/Likes | Seats/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4482,7 +4700,8 @@
     "labels": "Vehicle, access and exit/Wants | Vehicle, lock / unlock/Defect | no_class_found/",
     "engine": "BEVE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4502,7 +4721,8 @@
     "labels": "Seats/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4522,7 +4742,8 @@
     "labels": "Comfort Access/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4542,7 +4763,8 @@
     "labels": "Instrument cluster/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4562,7 +4784,8 @@
     "labels": "Mobile device, wireless charging/Defect",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4582,7 +4805,8 @@
     "labels": "Drive, driving dynamics and chassis, overall technology/Likes | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4602,7 +4826,8 @@
     "labels": "My Modes / driving experience/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4622,7 +4847,8 @@
     "labels": "Drivetrain/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4642,7 +4868,8 @@
     "labels": "Drivetrain/Defect",
     "engine": "ICE",
     "source": "C",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4662,7 +4889,8 @@
     "labels": "Ambient light/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4682,7 +4910,8 @@
     "labels": "Highway assistant/Likes",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4702,7 +4931,8 @@
     "labels": "Ambient light/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4722,7 +4952,8 @@
     "labels": "Operating concept, operating system/Likes",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4742,7 +4973,8 @@
     "labels": "Storage compartments/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4762,7 +4994,8 @@
     "labels": "Drivetrain/Wants | Electric Range/Difficult to Use",
     "engine": "PHEV",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4782,7 +5015,8 @@
     "labels": "Charge high-voltage battery/Difficult to Use",
     "engine": "PHEV",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4802,7 +5036,8 @@
     "labels": "Ambient light/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4822,7 +5057,8 @@
     "labels": "Instrument cluster/Difficult to Use",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4842,7 +5078,8 @@
     "labels": "Interior comfort/Likes | no_class_found/",
     "engine": "BEVE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4862,7 +5099,8 @@
     "labels": "Adjustment of lower lumbar support/Defect | Seats/Difficult to Use | no_class_found/",
     "engine": "ICE",
     "source": "A",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4882,7 +5120,8 @@
     "labels": "Comfort Access/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4902,7 +5141,8 @@
     "labels": "Comfort Access/Wants",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4922,7 +5162,8 @@
     "labels": "Comfort Access/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4942,7 +5183,8 @@
     "labels": "Charge high-voltage battery/Difficult to Use",
     "engine": "BEVE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
@@ -4963,7 +5205,8 @@
     "engine": "BEVE",
     "source": "D",
     "scope": "in",
-    "polarity_basis": "source_d_praise"
+    "polarity_basis": "source_d_praise",
+    "country": "US"
    }
   },
   {
@@ -4983,7 +5226,8 @@
     "labels": "Seats/Wants",
     "engine": "ICE",
     "source": "B",
-    "scope": "in"
+    "scope": "in",
+    "country": "US"
    }
   },
   {
